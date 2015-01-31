@@ -1,0 +1,4568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>17/12/2002</designer:date>
+         <formid>
+            <serialnumber>FBB639BF-3CA1-4097-ACFF-537C40BB9CAC</serialnumber>
+            <version>1.6.3</version>
+            <title>AF FORM 3952,  19970801 CHEMICAL/HAZARDOUS MATERIAL REQUEST AUTHORIZATION PART I - MATERIAL REQUEST</title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <printsettings>
+            <border>off</border>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+         </printsettings>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>AF395200,  19970801</label>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+         
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>1020;1320</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>4533AF16-D40B-452E-8390-C2045F086FCE</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>TypRqest</next>
+         
+         <label>AF3952 P1</label>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'">PAGE1.toolbar_bg_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.toolbar_bg_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'">PAGE1.af_logo_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.af_logo_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <previous>CalDtB</previous>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE2.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE2.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE1.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">on</visible>
+         <next>TypRqest</next>
+         <previous>Email_BUTTON</previous>
+      </button>
+      <field sid="TypRqest">
+         <itemlocation>
+            <x>610</x>
+            <y>47</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>AF FORM 3952,
+CHEMICAL or HAZARDOUS MATERIAL REQUEST AUTHORIZATION.
+PART 1.  MATERIAL REQUEST.
+1. enter TYPE OF REQUEST.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>CalDtB</previous>
+         <next>ProsCode</next>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+            </presentation>
+         </format>
+      </field>
+      <field sid="ProsCode">
+         <itemlocation>
+            <x>817</x>
+            <y>47</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>2. enter PROCESS CODE.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>TypRqest</previous>
+         <next>Command</next>
+         <size>
+            <width>16</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="Command">
+         <itemlocation>
+            <x>40</x>
+            <y>107</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Section 1.  REQUESTOR INFORMATION.
+3. enter COMMAND or INSTALLATION or ORGANIZATION or OFFICE SYMBOL.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>ProsCode</previous>
+         <next>WorkCtr</next>
+         <size>
+            <width>58</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="WorkCtr">
+         <itemlocation>
+            <x>629</x>
+            <y>107</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>4. enter WORKCENTER TITLE.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>Command</previous>
+         <next>DODSupplyCd</next>
+         <size>
+            <width>35</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="DODSupplyCd">
+         <itemlocation>
+            <x>40</x>
+            <y>148</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>5. enter DODAAC and SUPPLY ACCOUNT CODE(S).</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>WorkCtr</previous>
+         <next>BuildNo</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>38</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="BuildNo">
+         <itemlocation>
+            <x>435</x>
+            <y>148</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>6. enter BUILDING NUMBER.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>DODSupplyCd</previous>
+         <next>Location</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>17</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="Location">
+         <border>off</border>
+         <acclabel>7. enter LOCATION and Be specific.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>BuildNo</previous>
+         <next>MatlName</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <itemlocation>
+            <x>615</x>
+            <y>148</y>
+         </itemlocation>
+         <size>
+            <width>36</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="MatlName">
+         <itemlocation>
+            <x>40</x>
+            <y>207</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Section 2.  MATERIAL INFORMATION (Attach copy of MSDS)
+8. enter MATERIAL NAME.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>Location</previous>
+         <next>NsnLsnMsn</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>38</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="NsnLsnMsn">
+         <itemlocation>
+            <x>435</x>
+            <y>207</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>9. enter N S N or L S N or M S N.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>MatlName</previous>
+         <next>MatSpc</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>34</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="MatSpc">
+         <itemlocation>
+            <x>783</x>
+            <y>207</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>10. enter MATERIAL SPECIFICATION.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>NsnLsnMsn</previous>
+         <next>SolMfctr</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>19</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="SolMfctr">
+         <itemlocation>
+            <x>40</x>
+            <y>247</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>11a. enter SOLE SOURCE MANUFACTURER NAME or CAGE.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>MatSpc</previous>
+         <next>SolPrtNo</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>38</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="DrawAmt">
+         <itemlocation>
+            <x>433</x>
+            <y>288</y>
+            <width>180</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>14. enter DRAW AMOUNT.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <previous>UntIssue</previous>
+         <next>DrwFrqcy</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="DrwFrqcy">
+         <itemlocation>
+            <x>634</x>
+            <y>288</y>
+            <width>345</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>15. enter DRAW FREQUENCY.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>DrawAmt</previous>
+         <next>DocumtNo</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>36</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="MSDS">
+         <itemlocation>
+            <x>40</x>
+            <y>287</y>
+            <width>178</width>
+         </itemlocation>
+         <border>off</border>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>SolPrtNo</previous>
+         <next>UntIssue</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>38</width>
+            <height>1</height>
+         </size>
+         <acclabel>12. MSDS REFERENCE #/DATE.</acclabel>
+      </field>
+      <field sid="Process">
+         <itemlocation>
+            <x>39</x>
+            <y>511</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Section 4. Process Information.
+18. enter PROCESS and Fully describe work activity and process in which this material is used.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ReviseDt_4</previous>
+         <next>AmMtlPcs</next>
+         <size>
+            <width>94</width>
+            <height>7</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="AmMtlPcs">
+         <itemlocation>
+            <x>40</x>
+            <y>668</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>19. enter AMOUNT OF MATERIAL USED PER PROCESS.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>Process</previous>
+         <next>FreqPcs</next>
+         <size>
+            <width>42</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="FreqPcs">
+         <itemlocation>
+            <x>471</x>
+            <y>668</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>20. enter FREQUENCY OF PROCESS.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>AmMtlPcs</previous>
+         <next>DuraPcs</next>
+         <size>
+            <width>28</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="DuraPcs">
+         <itemlocation>
+            <x>759</x>
+            <y>668</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>21. enter DURATION OF PROCESS.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>FreqPcs</previous>
+         <next>EngrCtrls</next>
+         <size>
+            <width>22</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="EngrCtrls">
+         <itemlocation>
+            <x>39</x>
+            <y>712</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>22. DESCRIBE ANY ENGINEERING CONTROLS IN USE DURING THE PROCESS such as exhaust or ventilation systems, enclosures, covered tanks, cooling coils, etcetera.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>DuraPcs</previous>
+         <next>PrsPrtEq</next>
+         <size>
+            <width>94</width>
+            <height>3</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="PrsPrtEq">
+         <itemlocation>
+            <x>39</x>
+            <y>793</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>23. INDICATE ANY PERSONAL PROTECTIVE EQUIPMENT P P E CURRENTLY BEING USED IN CONJUNCTION WITH THIS PROCESS.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>EngrCtrls</previous>
+         <next>MethDisp</next>
+         <size>
+            <width>94</width>
+            <height>3</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="MethDisp">
+         <itemlocation>
+            <x>39</x>
+            <y>871</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>24. DESCRIBE THE METHOD OF DISPOSAL FOR THE WASTE THAT IS GENERATED.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>PrsPrtEq</previous>
+         <next>AdtlRmks</next>
+         <size>
+            <width>94</width>
+            <height>3</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="AdtlRmks">
+         <itemlocation>
+            <x>41</x>
+            <y>967</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>section 5. remarks.&#xD;
+25. PROVIDE ADDITIONAL INFORMATION.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>MethDisp</previous>
+         <next>ReqName</next>
+         <size>
+            <width>94</width>
+            <height>8</height>
+         </size>
+      </field>
+      <field sid="ReqName">
+         <itemlocation>
+            <x>40</x>
+            <y>1158</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>SECTION 6.  CERTIFICATION.
+26 ay. enter REQUESTORS NAME or O R G N SYMBOL or TELEPHONE Number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>AdtlRmks</previous>
+         <next>FIELD1</next>
+         <size>
+            <width>40</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="FIELD1">
+         <itemlocation>
+            <x>452</x>
+            <y>1169</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>26b. SIGNATURE "I certify that material will be used as stated above."</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <size>
+            <width>35</width>
+            <height>1</height>
+         </size>
+         <previous>ReqName</previous>
+         <next>CalDtA</next>
+      </field>
+      <field sid="FIELD2">
+         <itemlocation>
+            <x>453</x>
+            <y>1228</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>27b. SIGNATURE "I certify that material will be used as stated above."</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <size>
+            <width>35</width>
+            <height>1</height>
+         </size>
+         <previous>CertName</previous>
+         <next>CalDtB</next>
+      </field>
+      <field sid="CalDtA">
+         <itemlocation>
+            <x>833</x>
+            <y>1168</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>26c. DATE
+Please use Y2K format:  YYYYMMDD
+19 August 1946 should be entered as 19460819</acclabel>
+         <value></value>
+         <help>CalDtA_HELP</help>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <previous>FIELD1</previous>
+         <next>CertName</next>
+         <size>
+            <width>11</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+      </field>
+      <help sid="CalDtA_HELP">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+19 August 1946 should be entered as 19460819</value>
+      </help>
+      <field sid="CertName">
+         <itemlocation>
+            <x>40</x>
+            <y>1219</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>27 ay. enter CERTIFYING OFFICIALS NAME or O R G N SYMBOL or TELEPHONE number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>CalDtA</previous>
+         <next>FIELD2</next>
+         <size>
+            <width>40</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="CalDtB">
+         <itemlocation>
+            <x>833</x>
+            <y>1228</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>27c. DATE
+Please use Y2K format:  YYYYMMDD
+19 August 1946 should be entered as 19460819</acclabel>
+         <value></value>
+         <help>CalDtB_HELP</help>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <previous>FIELD2</previous>
+         <next>TypRqest</next>
+         <size>
+            <width>11</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+      </field>
+      <help sid="CalDtB_HELP">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+19 August 1946 should be entered as 19460819</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>613</x>
+            <y>30</y>
+         </itemlocation>
+         <value>1. TYPE OF REQUEST</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>820</x>
+            <y>30</y>
+         </itemlocation>
+         <value>2. PROCESS CODE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>72</x>
+            <y>38</y>
+         </itemlocation>
+         <value>CHEMICAL/HAZARDOUS MATERIAL REQUEST AUTHORIZATION FORM</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>9</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>231</x>
+            <y>53</y>
+         </itemlocation>
+         <value>PART I - MATERIAL REQUEST</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>39</x>
+            <y>72</y>
+            <width>948</width>
+            <height>21</height>
+         </itemlocation>
+         <value>SECTION I.  REQUESTOR INFORMATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>42</x>
+            <y>90</y>
+         </itemlocation>
+         <value>3. COMMAND/INSTALLATION/ORGANIZATION/OFFICE SYMBOL:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>632</x>
+            <y>90</y>
+         </itemlocation>
+         <value>4. WORKCENTER TITLE:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>38</x>
+            <y>172</y>
+            <height>20</height>
+            <width>948</width>
+         </itemlocation>
+         <value>SECTION II.  MATERIAL INFORMATION  (Attach copy of MSDS)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>42</x>
+            <y>131</y>
+         </itemlocation>
+         <value>5. DODAAC and SUPPLY ACCOUNT CODE(S)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>438</x>
+            <y>131</y>
+         </itemlocation>
+         <value>6. BUILDING NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>618</x>
+            <y>131</y>
+         </itemlocation>
+         <value>7. LOCATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>691</x>
+            <y>131</y>
+         </itemlocation>
+         <value> (Be specific)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>42</x>
+            <y>190</y>
+         </itemlocation>
+         <value>8. MATERIAL NAME</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>438</x>
+            <y>190</y>
+         </itemlocation>
+         <value>9. NSN/LSN/MSN</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>786</x>
+            <y>190</y>
+         </itemlocation>
+         <value>10. MATERIAL SPECIFICATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>42</x>
+            <y>230</y>
+         </itemlocation>
+         <value>11a. SOLE SOURCE MANUFACTURER NAME/CAGE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>436</x>
+            <y>270</y>
+         </itemlocation>
+         <value>14. DRAW AMOUNT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_19">
+         <itemlocation>
+            <x>42</x>
+            <y>270</y>
+         </itemlocation>
+         <value>12. MSDS REFERENCE #/DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_20">
+         <itemlocation>
+            <x>632</x>
+            <y>269</y>
+            <width>152</width>
+         </itemlocation>
+         <value>15. DRAW FREQUENCY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>38</x>
+            <y>313</y>
+            <width>948</width>
+            <height>20</height>
+         </itemlocation>
+         <value>SECTION III.  REQUIRING DOCUMENT(S) (Attach copies of specified pages)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>77</x>
+            <y>334</y>
+         </itemlocation>
+         <value>16a. DOCUMENT NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>310</x>
+            <y>334</y>
+         </itemlocation>
+         <value>16b. PARAGRAPH NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>489</x>
+            <y>334</y>
+         </itemlocation>
+         <value>16c. PAGE NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>608</x>
+            <y>334</y>
+         </itemlocation>
+         <value>16d. REVISION/CHANGE NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>807</x>
+            <y>334</y>
+         </itemlocation>
+         <value>16e. REVISION/CHANGE DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>39</x>
+            <y>450</y>
+            <width>948</width>
+            <height>20</height>
+         </itemlocation>
+         <value>SECTION IV.  PROCESS INFORMATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <bgcolor>#C0C0C0</bgcolor>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>42</x>
+            <y>472</y>
+            <width>527</width>
+         </itemlocation>
+         <value>17. IS THIS REQUEST FOR A NEW WORKLOAD OR PROCESS IN THIS SHOP? (Circle one):</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>618</x>
+            <y>472</y>
+         </itemlocation>
+         <value>YES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>774</x>
+            <y>472</y>
+         </itemlocation>
+         <value>NO</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>42</x>
+            <y>491</y>
+         </itemlocation>
+         <value>18.PROCESS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>124</x>
+            <y>491</y>
+         </itemlocation>
+         <value>(Fully describe the process in which this material is used.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>42</x>
+            <y>649</y>
+         </itemlocation>
+         <value>19. AMOUNT OF MATERIAL USED PER PROCESS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_34">
+         <itemlocation>
+            <x>474</x>
+            <y>649</y>
+         </itemlocation>
+         <value>20. FREQUENCY OF PROCESS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_35">
+         <itemlocation>
+            <x>762</x>
+            <y>649</y>
+         </itemlocation>
+         <value>21. DURATION OF PROCESS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_36">
+         <itemlocation>
+            <x>42</x>
+            <y>694</y>
+         </itemlocation>
+         <value>22. DESCRIBE ANY ENGINEERING CONTROLS IN USE DURING THE PROCESS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_37">
+         <itemlocation>
+            <x>493</x>
+            <y>694</y>
+         </itemlocation>
+         <value>(such as exhaust/ventilation systems, enclosures, covered tanks, cooling coils, etc.) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>42</x>
+            <y>773</y>
+         </itemlocation>
+         <value>23. INDICATE ANY PERSONAL PROTECTIVE EQUIPMENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_39">
+         <itemlocation>
+            <x>362</x>
+            <y>773</y>
+         </itemlocation>
+         <value> (PPE)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_40">
+         <itemlocation>
+            <x>397</x>
+            <y>773</y>
+         </itemlocation>
+         <value> CURRENTLY BEING USED IN CONJUNCTION WITH THIS PROCESS   </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_41">
+         <itemlocation>
+            <x>42</x>
+            <y>855</y>
+         </itemlocation>
+         <value>24. DESCRIBE THE METHOD OF DISPOSAL FOR THE WASTE THAT IS GENERATED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>39</x>
+            <y>932</y>
+            <width>948</width>
+            <height>20</height>
+         </itemlocation>
+         <value>SECTION V.  REMARKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>42</x>
+            <y>949</y>
+         </itemlocation>
+         <value>25. PROVIDE ADDITIONAL INFORMATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>39</x>
+            <y>1124</y>
+            <width>948</width>
+            <height>20</height>
+         </itemlocation>
+         <value>SECTION VI.  CERTIFICATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <bgcolor>#C0C0C0</bgcolor>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>42</x>
+            <y>1142</y>
+         </itemlocation>
+         <value>26a. REQUESTER'S NAME/ORGN SYMBOL, AND PHONE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>448</x>
+            <y>1142</y>
+         </itemlocation>
+         <value>26b. SIGNATURE "I certify that material will be used as stated above."</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>836</x>
+            <y>1142</y>
+         </itemlocation>
+         <value>26c. DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>42</x>
+            <y>1202</y>
+         </itemlocation>
+         <value>27a. CERTIFYING OFFICIAL'S NAME/ORGN SYMBOL/TELEPHONE NO.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_49">
+         <itemlocation>
+            <x>450</x>
+            <y>1202</y>
+         </itemlocation>
+         <value>27b. SIGNATURE  "I certify that material is required as stated above."</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>836</x>
+            <y>1202</y>
+         </itemlocation>
+         <value>27c. DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_51">
+         <itemlocation>
+            <x>36</x>
+            <y>1259</y>
+         </itemlocation>
+         <value>AF IMT 3952, 20050301, V1</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>38</x>
+            <y>32</y>
+            <width>948</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>38</x>
+            <y>1262</y>
+            <width>948</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>38</x>
+            <y>72</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>38</x>
+            <y>92</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>38</x>
+            <y>132</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_9">
+         <itemlocation>
+            <x>39</x>
+            <y>192</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>38</x>
+            <y>172</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>38</x>
+            <y>232</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>38</x>
+            <y>272</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>38</x>
+            <y>312</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>38</x>
+            <y>332</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_22">
+         <itemlocation>
+            <x>38</x>
+            <y>470</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>38</x>
+            <y>491</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_24">
+         <itemlocation>
+            <x>38</x>
+            <y>649</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>38</x>
+            <y>692</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_26">
+         <itemlocation>
+            <x>38</x>
+            <y>774</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>38</x>
+            <y>856</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_28">
+         <itemlocation>
+            <x>38</x>
+            <y>933</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_29">
+         <itemlocation>
+            <x>38</x>
+            <y>951</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_30">
+         <itemlocation>
+            <x>38</x>
+            <y>1124</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_31">
+         <itemlocation>
+            <x>38</x>
+            <y>1143</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_32">
+         <itemlocation>
+            <x>38</x>
+            <y>1203</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_34">
+         <itemlocation>
+            <x>432</x>
+            <y>190</y>
+            <width>1</width>
+            <height>123</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_36">
+         <itemlocation>
+            <x>470</x>
+            <y>650</y>
+            <width>1</width>
+            <height>42</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_37">
+         <itemlocation>
+            <x>446</x>
+            <y>1144</y>
+            <width>1</width>
+            <height>120</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_41">
+         <itemlocation>
+            <x>609</x>
+            <y>32</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_42">
+         <itemlocation>
+            <x>628</x>
+            <y>92</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_43">
+         <itemlocation>
+            <x>614</x>
+            <y>132</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_47">
+         <itemlocation>
+            <x>758</x>
+            <y>650</y>
+            <width>1</width>
+            <height>42</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_49">
+         <itemlocation>
+            <x>816</x>
+            <y>32</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_50">
+         <itemlocation>
+            <x>782</x>
+            <y>192</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_51">
+         <itemlocation>
+            <x>832</x>
+            <y>1142</y>
+            <width>1</width>
+            <height>122</height>
+         </itemlocation>
+      </line>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>1020</x>
+            <y>1320</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2ZMWgjVxCGne6qoFLtkSaGFBIcQYZLYcEVMbiIwYUPUhiRwhw5COKKQ1wThAsh
+UhiRwiwpDHvFgVQE5OJAaS4ohUEuDtaFYF2o2MLFFi62UKF8syM/rWRxWp1WMoIbVqDdnTfvf/Pm
+zfvnbX735TcboXzP71t+P/DL8vtqIx0+z/H+36/1dyf+eso64x70A+fcbv9Zbp9Wvct2cOs7f9uD
+/mAQBJ2GxfPOOyvwfe9jh7foe1cOCtoeBb/nuh+a3lWHhmgObgN5TpMbT4xjJGw+kq5DR5h1zutD
+hYYo6x+sSReXbdE5rbr/tfQWI3rpkw3to7b9WN41rOqTlH/tSPf9gfuh1aoUgVt/9bz5uoCCe9HW
+jquZlH20Z/+yU32apkv+gMO/dnlOx62Tkv1zHnegy9ty5hFNhqDRyaWxzxN0sB/c+NVcCsudtzXr
+pyzDxgvoOO/r7kULywBAzTrIu/80ubgd4qZL+zAvffh++btRHziAEdd/3bMOtpyGHXVZ/WiPVs3f
+XzSPi9wa3EC0D3fo3trfUn8rbhSwIw5r2LVnmzhF/BUCRQHcjIEm1m4Wr7WOi9xGuwN37dlj3Mel
+vpuCmxlXbUaMNrcyNcZhoTBu+uAt3URx42/s4hIcho7BjQt5G3ge1phSDOJmBg8O9bfETNfBIGMj
+CJlGCbwbT8wygZUi7pC+rp3AxDdWZOJCB7cqJfWT3N4GrT9KREjzzYsJ3DLa0zIOG46wYTOnWCRC
+aMLVOathTXDf+vpEHob6dIdBzIKJt/TSPimrAtMbhMsD6PVXBUbVPqsSb7gA6HqpO9Y5n6yjfMG9
+WvmCe7WyRNxst2zAusUkLkvBDVaSMdsNu1j9t+fB7BZzyxJw91x2aRCbSzZdJTbJScK4hTD2XPjM
+JO7LNtATjJnEcLM/s3XDPYKQGE/ECYihUMIxQpq6uCSDGyIFzVLvGuYo6/LdcF1C2fUthAm6tniP
+CeAW+pZJmaiAr+pzCJApL6BQ0chhNhbsNAHc8EcYqcEEg4XlQeX01trPQgyjEc8T3P/wuP0wfCGu
+5UxKw0A4d8S7UsV97NTCQKLUUH67oCSZT6TgCJcd/qYUMLi1smLhwtGT6mtZ+6UEfS5N3LdOysuw
+nwTunksGZDmai6qHYJATAa7BoPPWir4lM+q5wEPiJpqJ6Wg0N98UKOpGJdx5nTihqNN0Ply7mVT7
+r+rD4KYuZJFFEcuiPK+T/vjDpQcp1kEexKxafFz7cTOqTzVNpbxS3PTH/hcFAT7cTN06SiMUsD3X
+uFny+rVj8uOQAoTnNqvDPebpzCMCmmRCYh7bXE5KRNEESnKinC7l0mMDXhFuz4OHGM6kPDua+AR0
+pah5mkA3yuODHO1EenS2dNytSmk09V2mvjDp1PCIYyRdZyKo5DjqahRUwreWjVuPxXChLLWLaUvt
+ZspSm7KIc2lyvCzibYmZeaN8btzsIzgvPC8tVyOpjQAgtX2aYZNt7iVNOQmT08OjvSXi1kMz7Wks
+NnY34zrMc+3DsWoIAixeOKveP8pLDDdLzczsyGevC4xnDiP9wQSt1ajTfJ88bjn1PC6Ox2jKMOx5
+ZcraONqJD3wO3MJUo/O7vzXXzN4XUMJVJqYuZtu4uCkZSdWjHEx67idzvkAtZxJ8+LUjVgEaFzfW
+h6a35UDeTa44l1Kf8vQuwZMu47SKhZvI1mqFEIRjMJuG7i0u4JavHV2nGS4eqOLUHWBCYuHWypf0
+LJxuN8uOONfanyng1gJPEzz78cwmsXAr0we31u0LUuf7Aj8ZBsmxbEPQh5kun41bHIutu4pdPvwl
+g3ZMTMEvmzH16CxeHtffJlXJB64lCGs9svtmZyarWLhhqmajWYazfT2Iu2O2ceIwXj7B6IGQisXP
+mT4hLMphHMZY9HHzt9CSJ6nPLgfjCN6Bn8U8t5hvn/9cSHFFz7riaK7t953/ATisIIluIwAA</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2dsY4cRRCG10SIABE6dYYlAiytEAgnWCIAyQGWCDiJACEHDvwWhBf6eYh4BF4B
+Ul6Bu927vb3Z7uqq6Z6ump7v029h6q6LPpvr6qt/evrV60/+fbK75aubX5/f/Przo93u25t/Ptk9
+PcT//ufJ7q9Pd4df9/wHAAAAoIa9AwAAAFhw2jv88cXHCKGCvpzos6n2JX39tKyXEz27fvksGdcH
+cxmscW3QMrEHfZdQatT9wNtPeH79vVE/nOtFQq+L+ub6p5R+nuhVQr8cFCqPnKTVVLP68frXqT68
+fYNM8tg7KL5RRpZ/OQolv9pYrCFn6lMiMovl8gvnVL8dlIzrg63iyqBpYnd6c9KHMwl/Jvml9OrD
+u3ud/17Q+3P9nlTnlRnABJ4FAAAAWOi+d/D/WReh+Jp2ZJZpyuSa8y+fpW0FdbBVXBk0TUzuNKWS
+n0bVuBXdDYvzflOoPHKSVlNNNt0yfTd3C2BF8tg73P4f4W0ZxDIsblb3y7Iws5hkKkxljQpb9Po4
+EQ3W/mBOxEW7ftKxP60Qybg+2CquDJomltKDmyCNunMlHg9UmhS4FTAWeBYAAABgoePewb8PHE37
+WT/Yo/Wq2JQpdmT2HToyh6ZM+XPmZbDGm6vUbBIGHttPcqNK37Qqdiq1vSpFoypUHjlJq6laenPu
+RsAq5LF3ODt5s2lNK8mdZ6FwGcpGQMYaqCxlA9fGesOiZu1f3sK1ni+YLhXJuD7YKq4Mmib2SBem
+gzBq6lkY3QqFYdFhNQZoAp4FAAAAWOiyd/DvFccUnsWmtK5HSJNxfbBVXBk0TUxuNiWSn7eiXhS6
+VH0esbV270PlqfUs2j9M7G4HBJfH3uHgVlgMC/m7SnWkqWnOGR/ND5kWk73OZdDUnFwhqixlA9fG
+Tb3oyWpYvBVtBU2wVVwZNE3sQSlbQRj14Fm0P16x6DoM0Bw8CwAAALCw8N7Bv1EcWXgWG5H3i57m
+PEJathXEYKu4MmiamNxpEkYdW07uLwSZ0bQKlafBOYuur0Fxtwwc5bF3OK6asmFx+IRpS3/2R5fI
+af2oPORmOTnVk9vf70sug77m5KpQZSkbuDb6Lv9hj1dsRXnTQRiVfDcUbgVsEjwLAAAAsLBw3wFJ
+wrPYguo7Mn3eeTHpvyTj+mCruDJompjcbBJGyZ5FnxeCzGtahcojJwnYp/NvkznIY+/gv1qvRXvR
+ZTDVnFwhqixlA9dGx+U/8vGKTUi0GISBRwPilKTasGi+9gJ0A88CAAAALNB38O07uM8BLadVXyma
+jOuDreLKoGlicqdJGCV4FjGPV+RsAt88chL/4xUXfTr/TllXeewd/FfrdWmfcRlm1JxcFaosZQPX
+Rqtbsdb3QZWv296cZJdBGPj+5FnUvg+q4aoL4AKeBQAAAFig7+DYdHCfA+qm1TVo9G9bMmWwxpVB
+08Tk3pMwKmlYxHkflNCuCpVHThLneMX2OnQee4fy8+dn30n+C3kE7VPVY17N4TILLrNoftoid+WE
+MtgqrgyaJnanjNEgjHp3VX+8osl6C+AOngUAAABYaLR38P8xfnXCs9iIVvrC7oKtUAq2iiuDponJ
+nSZh1KVn4fM+KHuXKlQeOQmvQfGQx96hfMX2xfeT/3LuIS6ziFUbI5+26OPibmNRTEn0HYSBdddt
+V660AKHAswAAAAAL1XsH95/n1yo8iy1ovS/sTsb1wVZxZdA0MbnZJIw69yziHK/QNKpC5ZGT8BqU
+vvLYO9z+JVuOV9zr+eIL9iq0F10GLrPgMgtc3IVU824o3AqAA3gWAAAAYKFi7+D/o/uqhWcxttb+
+wu70lRPqYKu4MmiamNxpEkadPAuHFlXdY7Wh8hSS8CRxJ3nsHQ5uhfl4xdGwwLO4057LLMK8DyrI
+8YpALq7Yulcpl8Eab66S7yAMlD2LlGFRuTwDhAXPAgAAACzM2jv4/9C+dmFYbFDr6tQk4/pgLoM1
+rg1aJiZ3oIQ/E/e21OzOVKg8chKvZpyrfdBZHnuH4ypYNCz81+ngujUaLqrHzJqTKUSVpWzGF7Wu
+2oiLIbsYybg+2CquDJom9kip+yxyo3Q3VuBWwBbAswAAAAALs/oOqFZ4FltTsSkT5EUY6Qusc7ZC
+PtgqrgyaJiY3mxLJzz+hz5GKWR0ooQkVKo+chCMVS8pj7+C/+o6kO89C4TKUjYCMNVBZyqxf0epq
+Y41h0adc+C6cW7iDO3nmQr6DW2FYNFyeAcKCZwEAAAAW6Du4CM9iU1rjI6TJuD7YKq4MmiYmN5uE
+Uas7XnFpE0TIIyfh5ezLyGPv4L/0jqe9zmXQ1JxcIaosZaYvZ421UWVYDHO8YusL54Uq7uDOGxbN
+l2eAsOBZAAAAgAX6Di7Cs9iI+rzzYtqRuWjKzHiEVLIVFMFWcWXQNDH50VhhVMwOlKYJFSqPnMT9
+KeHh5LF3WOLeislN3JeffP6vpo8ukdP6UeWQqddQc/1ErgpVlrLha2OxhngZFiyci6viDm7cCoAD
+eBYAAABgQdw7+Ld8RxWexRZU35Hp886LZBcmGdcHW8WVQdPE5GaTMGrBF3zMcCssj8yGylP+unhK
+uI089g7HxY97K5bSXnQZTDUnV4gqS9nwtdFqWIQoF90WTu7gTg1MGRaLLs8AYcGzAAAAAAti3wEt
+JTyLsTXSlaKjKtdpkobEOV5hbEKFylN4FLhh3019a+xw8tg7+K+7W9A+4zLMqDm5KlRZyuT5j1Qb
+gxyvcLxuO9nVT8b1wVwGa1wbtExM0Pu8pfIOtwLgATwLAAAAsEDfwUV4FgNrpCtFR5XQbBJGhbg/
+9dWcd3yEyiMnaTVV3Ip+ewf/RXc7SlaMeTWn+N9qnnak2sh129M+f/K4wVXKVhCDreLKoGligmEx
+9SyuHg3ErQC4B88CAAAALNzvHfx/FN+U8CxG1TCPkA4sudM007MIebzi1IQKlUdO0mqq2zMsnPYO
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <field sid="DocumtNo">
+         <itemlocation>
+            <x>40</x>
+            <y>353</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Section 3. Rquiring Document or documents.16 ay.  row 1.  enter document number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>left</justify>
+         <previous>DrwFrqcy</previous>
+         <next>ParaNo</next>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ParaNo">
+         <itemlocation>
+            <x>303</x>
+            <y>353</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 1. 16 b. enter paragraph number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>DocumtNo</previous>
+         <next>PageNo</next>
+         <size>
+            <width>18</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="PageNo">
+         <itemlocation>
+            <x>496</x>
+            <y>353</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 1. 16 c. enter page number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ParaNo</previous>
+         <next>ReviseNo</next>
+         <size>
+            <width>10</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseNo">
+         <itemlocation>
+            <x>609</x>
+            <y>353</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>section 3. requiring documents.&#xD;
+row 1. 16 d. enter revision or change number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>PageNo</previous>
+         <next>ReviseDt</next>
+         <size>
+            <width>19</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseDt">
+         <itemlocation>
+            <x>832</x>
+            <y>353</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ReviseNo</previous>
+         <next>DocumtNo_2</next>
+         <size>
+            <width>12</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <help>HELP1</help>
+      </field>
+      <field sid="DocumtNo_2">
+         <itemlocation>
+            <x>40</x>
+            <y>377</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 2. 16 ay. enter document number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>left</justify>
+         <previous>ReviseDt</previous>
+         <next>ParaNo_2</next>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ParaNo_2">
+         <itemlocation>
+            <x>303</x>
+            <y>377</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 2. 16 b. enter paragraph number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>DocumtNo_2</previous>
+         <next>PageNo_2</next>
+         <size>
+            <width>18</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="PageNo_2">
+         <itemlocation>
+            <x>496</x>
+            <y>377</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 2. 16 c. enter page number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ParaNo_2</previous>
+         <next>ReviseNo_2</next>
+         <size>
+            <width>10</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseNo_2">
+         <itemlocation>
+            <x>609</x>
+            <y>377</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 2. 16 d. enter revision or change number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>PageNo_2</previous>
+         <next>ReviseDt_2</next>
+         <size>
+            <width>19</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseDt_2">
+         <itemlocation>
+            <x>832</x>
+            <y>377</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ReviseNo_2</previous>
+         <next>DocumtNo_3</next>
+         <size>
+            <width>12</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <help>HELP2</help>
+      </field>
+      <field sid="DocumtNo_3">
+         <itemlocation>
+            <x>40</x>
+            <y>401</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 3. 16 ay. enter document number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>left</justify>
+         <previous>ReviseDt_2</previous>
+         <next>ParaNo_3</next>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ParaNo_3">
+         <itemlocation>
+            <x>303</x>
+            <y>401</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 3. 16 b. enter paragraph number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>DocumtNo_3</previous>
+         <next>PageNo_3</next>
+         <size>
+            <width>18</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="PageNo_3">
+         <itemlocation>
+            <x>496</x>
+            <y>401</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 3. 16 c. enter page number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ParaNo_3</previous>
+         <next>ReviseNo_3</next>
+         <size>
+            <width>10</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseNo_3">
+         <itemlocation>
+            <x>609</x>
+            <y>401</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 3. 16 d. enter revision or change number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>PageNo_3</previous>
+         <next>ReviseDt_3</next>
+         <size>
+            <width>19</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseDt_3">
+         <itemlocation>
+            <x>832</x>
+            <y>401</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ReviseNo_3</previous>
+         <next>DocumtNo_4</next>
+         <size>
+            <width>12</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <help>HELP3</help>
+      </field>
+      <field sid="DocumtNo_4">
+         <itemlocation>
+            <x>40</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 4. 16 ay. enter document number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>left</justify>
+         <previous>ReviseDt_3</previous>
+         <next>ParaNo_4</next>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ParaNo_4">
+         <itemlocation>
+            <x>303</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 4. 16 b. enter paragraph number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>DocumtNo_4</previous>
+         <next>PageNo_4</next>
+         <size>
+            <width>18</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="PageNo_4">
+         <itemlocation>
+            <x>496</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 4. 16 c. enter page number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ParaNo_4</previous>
+         <next>ReviseNo_4</next>
+         <size>
+            <width>10</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseNo_4">
+         <itemlocation>
+            <x>609</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>row 4. 16 d. enter revision or change number.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>PageNo_4</previous>
+         <next>ReviseDt_4</next>
+         <size>
+            <width>19</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+      </field>
+      <field sid="ReviseDt_4">
+         <itemlocation>
+            <x>832</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>ReviseNo_4</previous>
+         <next>Process</next>
+         <size>
+            <width>12</width>
+            <height>1</height>
+         </size>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <help>HELP4</help>
+      </field>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>985</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1230</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>38</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1230</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_15">
+         <itemlocation>
+            <x>38</x>
+            <y>353</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>38</x>
+            <y>377</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_17">
+         <itemlocation>
+            <x>38</x>
+            <y>401</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>38</x>
+            <y>425</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>38</x>
+            <y>449</y>
+            <width>948</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_33">
+         <itemlocation>
+            <x>298</x>
+            <y>333</y>
+            <width>1</width>
+            <height>117</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_35">
+         <itemlocation>
+            <x>490</x>
+            <y>333</y>
+            <width>1</width>
+            <height>117</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_39">
+         <itemlocation>
+            <x>608</x>
+            <y>333</y>
+            <width>1</width>
+            <height>117</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_48">
+         <itemlocation>
+            <x>807</x>
+            <y>333</y>
+            <width>1</width>
+            <height>117</height>
+         </itemlocation>
+      </line>
+      <help sid="Yes_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="No_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="HELP1">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <help sid="HELP2">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <help sid="HELP3">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <help sid="HELP4">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <help sid="HELP5">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <help sid="HELP6">
+         <value>Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</value>
+      </help>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>432</x>
+            <y>132</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_52">
+         <itemlocation>
+            <x>628</x>
+            <y>272</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_53">
+         <itemlocation>
+            <x>232</x>
+            <y>272</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <field sid="UntIssue">
+         <itemlocation>
+            <x>245</x>
+            <y>288</y>
+            <width>178</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>13. enter UNIT OF ISSUE.
+</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>MSDS</previous>
+         <next>DrawAmt</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <size>
+            <width>38</width>
+            <height>1</height>
+         </size>
+      </field>
+      <label sid="LABEL_52">
+         <itemlocation>
+            <x>247</x>
+            <y>271</y>
+         </itemlocation>
+         <value>13. UNIT OF ISSUE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <field sid="SolPrtNo">
+         <itemlocation>
+            <x>433</x>
+            <y>247</y>
+            <width>546</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <previous>SolMfctr</previous>
+         <next>MSDS</next>
+         <texttype>text/rtf</texttype>
+         <rtf>{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Times New Roman;}}&#xD;
+{\colortbl ;\red0\green0\blue0;}&#xD;
+\viewkind4\uc1\pard\qc\cf1\f0\fs20\par&#xD;
+}&#xD;
+</rtf>
+         <acclabel>11b. enter SOLE SOURCE PART NUMBER/TRADE NAME.</acclabel>
+      </field>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>436</x>
+            <y>230</y>
+         </itemlocation>
+         <value>11b. SOLE SOURCE PART NUMBER/TRADE NAME</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="yes">
+         <itemlocation>
+            <x>591</x>
+            <y>471</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>YES.
+17. IS THIS REQUEST FOR A NEW WORKLOAD OR PROCESS IN THIS SHOP? (Circle one): Yes or No. </acclabel>
+         <value>off</value>
+         <help>Yes_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('no.value','off')) : ''"></custom:push_value>
+         <previous>CalDtD</previous>
+         <next>no</next>
+      </check>
+      <check sid="no">
+         <itemlocation>
+            <x>746</x>
+            <y>471</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>NO.
+17. IS THIS REQUEST FOR A NEW WORKLOAD OR PROCESS IN THIS SHOP? (Circle one): Yes or No. </acclabel>
+         <value>off</value>
+         <help>Yes_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('yes.value','off')) : ''"></custom:push_value>
+         <previous>yes</previous>
+         <next>NotAuthC</next>
+      </check>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>4A7D45A4-5BA7-49AC-B70C-501CCB94D675</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>AuthizA</next>
+         <label>AF3952 P2</label>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'">PAGE1.toolbar_bg_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.toolbar_bg_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'">PAGE1.af_logo_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.af_logo_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <previous>CalDtE_</previous>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <previous>Close_BUTTON</previous>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE1.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">on</visible>
+         <next>AuthizA</next>
+         <previous>Email_BUTTON</previous>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE1.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE2.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">off</visible>
+      </button>
+      <field sid="RemrksA">
+         <itemlocation>
+            <x>33</x>
+            <y>220</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter REMARKS. For information on specific health hazards or precautions for use, consult the manufacturers MATERIAL SAFETY DATA SHEET  M S D S or your&#xD;  BIOENVIRONMENTAL ENGINEERING REVIEWER.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Contr1</previous>
+         <next>BioEngrInfo</next>
+         <size>
+            <width>89</width>
+            <height>6</height>
+         </size>
+      </field>
+      <field sid="BioEngrInfo">
+         <itemlocation>
+            <x>33</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>For information on specific health hazards or precautions for use, consult the manufacturers MATERIAL SAFETY DATA SHEET, M S D S, or your BIOENVIRONMENTAL ENGINEERING REVIEWER. enter BIOENVIRONMENTAL ENGINEERING REVIEWERS NAME, TITLE, ORGANIZATION, OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>RemrksA</previous>
+         <next>FIELD1</next>
+         <size>
+            <width>49</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="FIELD1">
+         <itemlocation>
+            <x>550</x>
+            <y>426</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>For information on specific health hazards or precautions for use, consult the manufacturers MATERIAL SAFETY DATA SHEET, M S D S, or your BIOENVIRONMENTAL ENGINEERING REVIEWER. enter BIOENVIRONMENTAL ENGINEERING REVIEWERS NAME, TITLE, ORGANIZATION OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <size>
+            <width>24</width>
+            <height>1</height>
+         </size>
+         <previous>BioEngrInfo</previous>
+         <next>CalDtC</next>
+      </field>
+      <field sid="FIELD2">
+         <itemlocation>
+            <x>546</x>
+            <y>774</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>For information on specific health hazards or precautions for use, consult the manufacturers MATERIAL SAFETY DATA SHEET, M S D S, or your BIOENVIRONMENTAL ENGINEERING REVIEWER. enter BIOENVIRONMENTAL ENGINEERING REVIEWERS NAME, TITLE, ORGANIZATION OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <size>
+            <width>24</width>
+            <height>1</height>
+         </size>
+         <previous>SOfcInfo</previous>
+         <next>CalDtD</next>
+      </field>
+      <field sid="FIELD3">
+         <itemlocation>
+            <x>540</x>
+            <y>1127</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>For information on specific health hazards or precautions for use, consult the manufacturers MATERIAL SAFETY DATA SHEET, M S D S, or your BIOENVIRONMENTAL ENGINEERING REVIEWER. enter BIOENVIRONMENTAL ENGINEERING REVIEWERS NAME, TITLE, ORGANIZATION OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <size>
+            <width>24</width>
+            <height>1</height>
+         </size>
+         <next>CalDtE</next>
+         <previous>EnvRInfo</previous>
+      </field>
+      <field sid="CalDtC">
+         <itemlocation>
+            <x>807</x>
+            <y>425</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>DATE
+enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>CalDtC_HELP</help>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <previous>FIELD1</previous>
+         <next>AuthizB</next>
+         <size>
+            <width>11</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as    19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+      </field>
+      <field sid="CalDtD">
+         <itemlocation>
+            <x>807</x>
+            <y>774</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>CalDtC_HELP</help>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>11</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <previous>FIELD2</previous>
+         <next>AuthC</next>
+      </field>
+      <field sid="CalDtE">
+         <itemlocation>
+            <x>807</x>
+            <y>1127</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>DATE
+enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>CalDtC_HELP</help>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>11</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+         <previous>FIELD3</previous>
+         <next>AuthizA</next>
+      </field>
+      <help sid="CalDtC_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <field sid="RemrksB">
+         <itemlocation>
+            <x>32</x>
+            <y>578</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter REMARKS.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Contr2</previous>
+         <next>SOfcInfo</next>
+         <size>
+            <width>89</width>
+            <height>8</height>
+         </size>
+      </field>
+      <field sid="SOfcInfo">
+         <itemlocation>
+            <x>32</x>
+            <y>772</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter SAFETY OFFICE REVIEWERS NAME, TITLE, ORGANIZATION, OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>RemrksB</previous>
+         <next>FIELD2</next>
+         <size>
+            <width>49</width>
+            <height>2</height>
+         </size>
+      </field>
+      <help sid="CalDtD_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <field sid="ODSApvNo">
+         <itemlocation>
+            <x>682</x>
+            <y>925</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter O D S  SAO APPROVAL NUMBER.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>NotAuthC</previous>
+         <next>RemrksC</next>
+         <size>
+            <width>24</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="RemrksC">
+         <itemlocation>
+            <x>32</x>
+            <y>955</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter REMARKS.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ODSApvNo</previous>
+         <next>EnvRInfo</next>
+         <size>
+            <width>89</width>
+            <height>6</height>
+         </size>
+      </field>
+      <field sid="EnvRInfo">
+         <itemlocation>
+            <x>32</x>
+            <y>1122</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter ENVIRONMENTAL REVIEWERS NAME, TITLE, ORGANIZATION, OFFICE SYMBOL, AND TELEPHONE NUMBER. signature.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>RemrksC</previous>
+         <size>
+            <width>49</width>
+            <height>2</height>
+         </size>
+         <next>FIELD3</next>
+      </field>
+      <help sid="CalDtE_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>241</x>
+            <y>60</y>
+         </itemlocation>
+         <value>CHEMICAL/HAZARDOUS MATERIAL REQUEST/AUTHORIZATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>9</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_54">
+         <itemlocation>
+            <x>359</x>
+            <y>75</y>
+         </itemlocation>
+         <value>PART II - MATERIAL AUTHORIZATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_55">
+         <itemlocation>
+            <x>31</x>
+            <y>93</y>
+            <height>22</height>
+            <width>418</width>
+         </itemlocation>
+         <value>SECTION I.  HEALTH REVIEW</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>right</justify>
+      </label>
+      <label sid="LABEL_56">
+         <itemlocation>
+            <x>447</x>
+            <y>94</y>
+            <height>21</height>
+            <width>484</width>
+         </itemlocation>
+         <value> (To be filled in by the Bioenvironmental Engineer)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+      </label>
+      <label sid="LABEL_57">
+         <itemlocation>
+            <x>82</x>
+            <y>126</y>
+         </itemlocation>
+         <value>BLANKET
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_58">
+         <itemlocation>
+            <x>232</x>
+            <y>116</y>
+         </itemlocation>
+         <value>AUTHORIZED WITH THE
+RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE
+LISTED BELOW (IF ANY)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_59">
+         <itemlocation>
+            <x>475</x>
+            <y>125</y>
+         </itemlocation>
+         <value>NOT
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_60">
+         <itemlocation>
+            <x>35</x>
+            <y>200</y>
+         </itemlocation>
+         <value>REMARKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_61">
+         <itemlocation>
+            <x>35</x>
+            <y>338</y>
+            <height>51</height>
+            <width>887</width>
+         </itemlocation>
+         <value>For information on specific health hazards or precautions for use, consult the manufacturer's MATERIAL SAFETY DATA SHEET (MSDS) or your
+
+BIOENVIRONMENTAL ENGINEERING REVIEWER.</value>
+         <linespacing>-6</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_62">
+         <itemlocation>
+            <x>34</x>
+            <y>389</y>
+            <height>22</height>
+         </itemlocation>
+         <value>BIOENVIRONMENTAL ENGINEERING REVIEWER'S NAME, TITLE, ORGANIZATION OFFICE,</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_63">
+         <itemlocation>
+            <x>546</x>
+            <y>390</y>
+         </itemlocation>
+         <value>SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_64">
+         <itemlocation>
+            <x>798</x>
+            <y>390</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_65">
+         <itemlocation>
+            <x>31</x>
+            <y>469</y>
+            <height>20</height>
+            <width>415</width>
+         </itemlocation>
+         <value>SECTION II.  SAFETY REVIEW </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>right</justify>
+      </label>
+      <label sid="LABEL_66">
+         <itemlocation>
+            <x>446</x>
+            <y>467</y>
+            <height>22</height>
+            <width>486</width>
+         </itemlocation>
+         <value>(To be filled in by the Safety Office)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+      </label>
+      <label sid="LABEL_67">
+         <itemlocation>
+            <x>82</x>
+            <y>498</y>
+         </itemlocation>
+         <value>BLANKET
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_68">
+         <itemlocation>
+            <x>232</x>
+            <y>490</y>
+         </itemlocation>
+         <value>AUTHORIZED WITH THE
+RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE
+LISTED BELOW (IF ANY)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_69">
+         <itemlocation>
+            <x>473</x>
+            <y>498</y>
+         </itemlocation>
+         <value>NOT
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_70">
+         <itemlocation>
+            <x>34</x>
+            <y>559</y>
+         </itemlocation>
+         <value>REMARKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_71">
+         <itemlocation>
+            <x>34</x>
+            <y>737</y>
+            <width>495</width>
+            <height>22</height>
+         </itemlocation>
+         <value>SAFETY OFFICE REVIEWER'S NAME, TITLE, ORGANIZATION, OFFICE SYMBOL, AND</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_72">
+         <itemlocation>
+            <x>538</x>
+            <y>738</y>
+         </itemlocation>
+         <value>SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_73">
+         <itemlocation>
+            <x>799</x>
+            <y>738</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_74">
+         <itemlocation>
+            <x>31</x>
+            <y>816</y>
+            <height>20</height>
+            <width>467</width>
+         </itemlocation>
+         <value>SECTION III. ENVIRONMENTAL AND FIRE PROTECTION REVIEW</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>right</justify>
+      </label>
+      <label sid="LABEL_75">
+         <itemlocation>
+            <x>497</x>
+            <y>816</y>
+            <height>20</height>
+            <width>434</width>
+         </itemlocation>
+         <value>(To be filled in by Civil Engineering/Environmental Management).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+      </label>
+      <label sid="LABEL_76">
+         <itemlocation>
+            <x>82</x>
+            <y>849</y>
+         </itemlocation>
+         <value>BLANKET
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_77">
+         <itemlocation>
+            <x>232</x>
+            <y>838</y>
+         </itemlocation>
+         <value>AUTHORIZED WITH THE
+RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE
+LISTED BELOW (IF ANY)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_78">
+         <itemlocation>
+            <x>475</x>
+            <y>849</y>
+         </itemlocation>
+         <value>NOT
+AUTHORIZED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_79">
+         <itemlocation>
+            <x>681</x>
+            <y>906</y>
+         </itemlocation>
+         <value>ODS SAO APPROVAL NUMBERr</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_80">
+         <itemlocation>
+            <x>34</x>
+            <y>907</y>
+         </itemlocation>
+         <value>REMARKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_81">
+         <itemlocation>
+            <x>34</x>
+            <y>1085</y>
+            <height>22</height>
+         </itemlocation>
+         <value>CIVIL ENGINEERING REVIEWER'S NAME, TITLE, ORGANIZATION OFFICE SYMBOL, AND</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_82">
+         <itemlocation>
+            <x>538</x>
+            <y>1086</y>
+         </itemlocation>
+         <value>SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_83">
+         <itemlocation>
+            <x>799</x>
+            <y>1086</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_84">
+         <itemlocation>
+            <x>35</x>
+            <y>1188</y>
+         </itemlocation>
+         <value>ANY changes to the conditions or process stated on the AF Form 3952 invalidate this authorization.  Notify the
+HAZMART of any changes or resubmit your AF Form 3952. </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_86">
+         <itemlocation>
+            <x>28</x>
+            <y>1235</y>
+         </itemlocation>
+         <value>AF IMT 3952, 20050301, V1</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_87">
+         <itemlocation>
+            <x>187</x>
+            <y>1235</y>
+         </itemlocation>
+         <value>  (REVERSE) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_52">
+         <itemlocation>
+            <x>30</x>
+            <y>54</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_53">
+         <itemlocation>
+            <x>930</x>
+            <y>54</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_54">
+         <itemlocation>
+            <x>30</x>
+            <y>1234</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_55">
+         <itemlocation>
+            <x>30</x>
+            <y>54</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_56">
+         <itemlocation>
+            <x>30</x>
+            <y>94</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_57">
+         <itemlocation>
+            <x>30</x>
+            <y>114</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_61">
+         <itemlocation>
+            <x>30</x>
+            <y>339</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_62">
+         <itemlocation>
+            <x>30</x>
+            <y>388</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_63">
+         <itemlocation>
+            <x>30</x>
+            <y>468</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_64">
+         <itemlocation>
+            <x>30</x>
+            <y>488</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_68">
+         <itemlocation>
+            <x>30</x>
+            <y>736</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_69">
+         <itemlocation>
+            <x>30</x>
+            <y>816</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_70">
+         <itemlocation>
+            <x>30</x>
+            <y>836</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_74">
+         <itemlocation>
+            <x>678</x>
+            <y>949</y>
+            <width>254</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_75">
+         <itemlocation>
+            <x>30</x>
+            <y>1084</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_76">
+         <itemlocation>
+            <x>30</x>
+            <y>1187</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_93">
+         <itemlocation>
+            <x>542</x>
+            <y>388</y>
+            <width>1</width>
+            <height>81</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_95">
+         <itemlocation>
+            <x>534</x>
+            <y>736</y>
+            <width>1</width>
+            <height>81</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_97">
+         <itemlocation>
+            <x>534</x>
+            <y>1084</y>
+            <width>1</width>
+            <height>82</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_98">
+         <itemlocation>
+            <x>678</x>
+            <y>904</y>
+            <width>1</width>
+            <height>46</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_99">
+         <itemlocation>
+            <x>795</x>
+            <y>388</y>
+            <width>1</width>
+            <height>81</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_100">
+         <itemlocation>
+            <x>795</x>
+            <y>736</y>
+            <width>1</width>
+            <height>81</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_101">
+         <itemlocation>
+            <x>795</x>
+            <y>1084</y>
+            <width>1</width>
+            <height>82</height>
+         </itemlocation>
+      </line>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>0</x>
+            <y>0</y>
+            <width>960</width>
+            <height>1260</height>
+         </itemlocation>
+      </spacer>
+      <check sid="AuthizA">
+         <itemlocation>
+            <x>53</x>
+            <y>132</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <acclabel>AF FORM 3952.  reverse. CHEMICAL or HAZARDOUS MATERIAL REQUEST or AUTHORIZATION. PART 2.  MATERIAL AUTHORIZATION. SECTION 1.  HEALTH REVIEW. To be filled in by the Bioenvironmental Engineer. check for blanket authorized.</acclabel>
+         <value>off</value>
+         <help>AuthizA_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AthWConA.value','off') + set('NotAuthA.value','off') + set('PAGE2.Contr1.value','off')) : ''"></custom:push_value>
+         <previous>CalDtE</previous>
+         <next>AthWConA</next>
+      </check>
+      <help sid="AuthizA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="AthWConA">
+         <itemlocation>
+            <x>203</x>
+            <y>132</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <acclabel>check for AUTHORIZED WITH THE RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE LISTED BELOW (IF ANY).</acclabel>
+         <value>off</value>
+         <help>AthWConA_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizA.value','off') + set('NotAuthA.value','off') + set('PAGE2.Contr1.value','off')) : ''"></custom:push_value>
+         <previous>AuthizA</previous>
+         <next>NotAuthA</next>
+      </check>
+      <help sid="AthWConA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="NotAuthA">
+         <itemlocation>
+            <x>446</x>
+            <y>132</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <acclabel>check for NOT AUTHORIZED.</acclabel>
+         <value>off</value>
+         <help>NotAuthA_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizA.value','off') + set('AthWConA.value','off') + set('PAGE2.Contr1.value','off')) : ''"></custom:push_value>
+         <previous>AthWConA</previous>
+         <next>Contr1</next>
+      </check>
+      <help sid="NotAuthA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="AuthizB">
+         <itemlocation>
+            <x>53</x>
+            <y>505</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>SECTION 2.  OCCUPATIONAL SAFETY REVIEW. To be filled in by the Safety Office. check for blanket authorized.</acclabel>
+         <value>off</value>
+         <help>AuthizB_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AthWConB.value','off') + set('NotAuthB.value','off') + set('PAGE2.Contr2.value','off')) : ''"></custom:push_value>
+         <previous>CalDtC</previous>
+         <next>AthWConB</next>
+      </check>
+      <help sid="AuthizB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="AthWConB">
+         <itemlocation>
+            <x>203</x>
+            <y>505</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>check for AUTHORIZED WITH THE RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE LISTED BELOW (IF ANY).</acclabel>
+         <value>off</value>
+         <help>AthWConB_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizB.value','off') + set('NotAuthB.value','off') + set('PAGE2.Contr2.value','off')) : ''"></custom:push_value>
+         <previous>AuthizB</previous>
+         <next>NotAuthB</next>
+      </check>
+      <help sid="AthWConB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="NotAuthB">
+         <itemlocation>
+            <x>444</x>
+            <y>505</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>check for NOT AUTHORIZED.</acclabel>
+         <value>off</value>
+         <help>NotAuthB_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizB.value','off') + set('AthWConB.value','off') + set('PAGE2.Contr2.value','off')) : ''"></custom:push_value>
+         <previous>AthWConB</previous>
+         <next>Contr2</next>
+      </check>
+      <help sid="NotAuthB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="AuthC">
+         <itemlocation>
+            <x>53</x>
+            <y>856</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>SECTION 3. ENVIRONEMENTAL MANAGEMENT REVIEW. To be filled in by Environmental Management.  check for blanket AUTHORIZED.</acclabel>
+         <value>off</value>
+         <help>AuthC_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AthWConC.value','off') + set('NotAuthC.value','off')) : ''"></custom:push_value>
+         <previous>CalDtD</previous>
+         <next>AthWConC</next>
+      </check>
+      <help sid="AuthC_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="AthWConC">
+         <itemlocation>
+            <x>203</x>
+            <y>856</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>check for AUTHORIZED WITH THE RESTRICTIONS LISTED IN PART
+1 SECTION IV AND THOSE LISTED BELOW (IF ANY).</acclabel>
+         <value>off</value>
+         <help>AthWConC_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthC.value','off') + set('NotAuthC.value','off')) : ''"></custom:push_value>
+         <previous>AuthC</previous>
+         <next>NotAuthC</next>
+      </check>
+      <help sid="AthWConC_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="NotAuthC">
+         <itemlocation>
+            <x>446</x>
+            <y>856</y>
+            <width>19</width>
+            <height>19</height>
+         </itemlocation>
+         <acclabel>check for NOT AUTHORIZED.</acclabel>
+         <value>off</value>
+         <help>NotAuthC_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthC.value','off') + set('AthWConC.value','off')) : ''"></custom:push_value>
+         <previous>AthWConC</previous>
+         <next>ODSApvNo</next>
+      </check>
+      <help sid="NotAuthC_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="Contr1">
+         <itemlocation>
+            <x>581</x>
+            <y>132</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <acclabel>check for CONTRACTOR SUBMITTED 3952-REVIEWED FOR
+INFORMATION PURPOSES ONLY. (This does not involve  evaluation and approval of the conractor's safety and health programs)</acclabel>
+         <value>off</value>
+         <help>PAGE1.Yes_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizA.value','off') + set('AthWConA.value','off') + set('NotAuthA.value','off')) : ''"></custom:push_value>
+         <previous>NotAuthA</previous>
+         <next>RemrksA</next>
+      </check>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>610</x>
+            <y>116</y>
+         </itemlocation>
+         <value>CONTRACTOR SUBMITTED 3952-REVIEWED FOR
+INFORMATION PURPOSES ONLY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>799</x>
+            <y>131</y>
+         </itemlocation>
+         <value>(This does not involve </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>610</x>
+            <y>144</y>
+         </itemlocation>
+         <value>evaluation and approval of the conractor's safety and</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>610</x>
+            <y>157</y>
+         </itemlocation>
+         <value>health programs)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>904</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>30</x>
+            <y>557</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>30</x>
+            <y>198</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>34</x>
+            <y>404</y>
+            <height>22</height>
+         </itemlocation>
+         <value>SYMBOL, AND PHONE NO.</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>34</x>
+            <y>752</y>
+            <height>22</height>
+         </itemlocation>
+         <value>SYMBOL, AND PHONE NO.</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>34</x>
+            <y>1102</y>
+            <height>22</height>
+         </itemlocation>
+         <value>TELEPHONE NUMBER</value>
+         <linespacing>-5</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="Contr2">
+         <itemlocation>
+            <x>585</x>
+            <y>507</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <acclabel>check for CONTRACTOR SUBMITTED 3952-REVIEWED FOR
+INFORMATION PURPOSES ONLY. (This does not involve  evaluation and approval of the conractor's safety and health programs)</acclabel>
+         <value>off</value>
+         <help>PAGE1.Yes_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('AuthizB.value','off') + set('AthWConB.value','off') + set('PAGE2.NotAuthB.value','off')) : ''"></custom:push_value>
+         <previous>NotAuthB</previous>
+         <next>RemrksB</next>
+      </check>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>610</x>
+            <y>490</y>
+         </itemlocation>
+         <value>CONTRACTOR SUBMITTED 3952-REVIEWED FOR
+INFORMATION PURPOSES ONLY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>800</x>
+            <y>505</y>
+         </itemlocation>
+         <value>(This does not involve </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>611</x>
+            <y>518</y>
+         </itemlocation>
+         <value>evaluation and approval of the conractor's safety and</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>611</x>
+            <y>531</y>
+         </itemlocation>
+         <value>health programs)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>31</x>
+            <y>1166</y>
+            <height>22</height>
+            <width>899</width>
+         </itemlocation>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>#C0C0C0</bgcolor>
+         <justify>right</justify>
+      </label>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>1166</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+   </page>
+</XFDL>

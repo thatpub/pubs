@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.6" xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.6">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>7/1/2003</designer:date>
+         <formid>
+            <serialnumber>81496809-8154-4B0A-B9EF-A0CF45A2B641</serialnumber>
+            <version>1.9.4</version>
+            <title>MOUNTAIN HOME AFB IMT 37, 20040201</title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>MH0037, 19980201</label>
+         <printsettings>
+            <border>off</border>
+            <dialog>
+               <printpages>
+                  <choice>current</choice>
+               </printpages>
+            </dialog>
+         </printsettings>
+         <saveformat>application/vnd.xfdl</saveformat>
+         
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>MHAFB</custom:prefix>
+               <custom:number>37</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>20040201</custom:date>
+            <custom:longtitle>Permit to Park Recreational Vehicle in Family Housing Area</custom:longtitle>
+            <custom:version>4</custom:version>
+            <custom:funccode>3150</custom:funccode>
+            <custom:funcstatement>To obtain permission to park RV is military family housing area.</custom:funcstatement>
+            <custom:ui>CD</custom:ui>
+            <custom:ur>EA</custom:ur>
+            <custom:prescdir>MHAFBI 31-204</custom:prescdir>
+            <custom:opr>366 SFS/S5M</custom:opr>
+            <custom:medium>P</custom:medium>
+            <custom:source>S and I OPR</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst>Print on white cardstock</custom:spinst>
+            <custom:dist>LRA</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>AU</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede>MOUNTAIN HOME AFB FORM 37 (V3), 19980201</custom:supercede>
+         </custom:form_metadata>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>32B999B7-3D71-4121-901B-A2B40B98B0C3</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>FIELD2</next>
+         <label>PAGE 1</label>
+      </global>
+   <toolbar sid="TOOLBAR">
+         <designer:height>78</designer:height>
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'">PAGE1.toolbar_bg_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.toolbar_bg_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'">PAGE1.af_logo_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.af_logo_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <next>Save_BUTTON</next>
+         <previous>Submit_BUTTON</previous>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <next>Print_BUTTON</next>
+         <previous>Close_BUTTON</previous>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         <next>Email_BUTTON</next>
+         <previous>Save_BUTTON</previous>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         <next>prev_button</next>
+         <previous>Print_BUTTON</previous>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+         <next>Close_BUTTON</next>
+         <previous>FIELD16</previous>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE1.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">off</visible>
+         <next>next_button</next>
+         <previous>Email_BUTTON</previous>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE1.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE1.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">off</visible>
+         <next>FIELD2</next>
+         <previous>prev_button</previous>
+      </button>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>30</x>
+            <y>36</y>
+            <width>901</width>
+            <height>39</height>
+         </itemlocation>
+         <value>PERMIT TO PARK RECREATIONAL VEHICLE IN FAMILY HOUSING AREA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>30</x>
+            <y>74</y>
+            <width>901</width>
+            <height>28</height>
+         </itemlocation>
+         <value>PART I.  (To Be Completed by Owner of Vehicle)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>32</x>
+            <y>404</y>
+            <width>899</width>
+            <height>30</height>
+         </itemlocation>
+         <value>PART II.  (To Be Completed by 366 CES/CEH (Housing Office)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <field sid="FIELD12">
+         <itemlocation>
+            <x>34</x>
+            <y>359</y>
+            <width>428</width>
+            <height>49</height>
+         </itemlocation>
+         <value>SIGNATURE OF OWNER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD13</next>
+         <previous>FIELD11</previous>
+      </field>
+      <field sid="FIELD13">
+         <itemlocation>
+            <x>466</x>
+            <y>359</y>
+            <width>462</width>
+            <height>50</height>
+         </itemlocation>
+         <value>ORGANIZATION/DUTY PHONE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD1</next>
+         <previous>FIELD12</previous>
+      </field>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>31</x>
+            <y>528</y>
+            <width>900</width>
+            <height>30</height>
+         </itemlocation>
+         <value>THIS PERMIT MUST BE VISIBLY DISPLAYED ON RECREATIONAL VEHICLE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <border>on</border>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>33</x>
+            <y>558</y>
+            <width>401</width>
+            <height>26</height>
+         </itemlocation>
+         <value>MOUNTAIN HOME AFB FORM 37,20040201 (LRA)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>464</x>
+            <y>558</y>
+            <width>48</width>
+            <height>26</height>
+         </itemlocation>
+         <value>(V4)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>0</x>
+            <y>0</y>
+            <width>960</width>
+            <height>1260</height>
+         </itemlocation>
+      </spacer>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">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</mimedata>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+      </data>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>34</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>929</x>
+            <y>34</y>
+            <width>1</width>
+            <height>524</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>34</y>
+            <width>1</width>
+            <height>1178</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>30</x>
+            <y>36</y>
+            <width>2</width>
+            <height>522</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>929</x>
+            <y>34</y>
+            <width>2</width>
+            <height>524</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>31</x>
+            <y>556</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <field sid="FIELD2">
+         <itemlocation>
+            <x>34</x>
+            <y>103</y>
+            <width>476</width>
+            <height>23</height>
+         </itemlocation>
+         <value>DESCRIPTION OF RECREATIONAL VEHICLE TO BE PARKED IN FAMILY HOUSING</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <next>FIELD3</next>
+      </field>
+      <field sid="FIELD3">
+         <itemlocation>
+            <x>34</x>
+            <y>127</y>
+            <width>893</width>
+            <height>36</height>
+         </itemlocation>
+         <value></value>
+         <border>off</border>
+         <next>CHECK1</next>
+         <previous>FIELD2</previous>
+      </field>
+      <label sid="LABEL6">
+         <itemlocation>
+            <x>851</x>
+            <y>134</y>
+            <width>39</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Boat</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="CHECK7">
+         <itemlocation>
+            <x>831</x>
+            <y>137</y>
+            <width>16</width>
+            <height>15</height>
+         </itemlocation>
+         <value>off</value>
+         <next>FIELD4</next>
+         <previous>CHECK6</previous>
+      </check>
+      <label sid="LABEL5">
+         <itemlocation>
+            <x>720</x>
+            <y>134</y>
+            <width>59</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Camper</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL4">
+         <itemlocation>
+            <x>556</x>
+            <y>134</y>
+            <width>82</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Motor Home</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL3">
+         <itemlocation>
+            <x>357</x>
+            <y>134</y>
+            <width>125</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Tent Trailer (Pop-Up)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="CHECK5">
+         <itemlocation>
+            <x>536</x>
+            <y>137</y>
+            <width>16</width>
+            <height>15</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK6</next>
+         <previous>CHECK4</previous>
+      </check>
+      <label sid="LABEL2">
+         <itemlocation>
+            <x>203</x>
+            <y>134</y>
+            <width>80</width>
+            <height>21</height>
+         </itemlocation>
+         <value>5th Wheel</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>61</x>
+            <y>134</y>
+            <width>80</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Travel Trailer</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="CHECK2">
+         <itemlocation>
+            <x>183</x>
+            <y>137</y>
+            <width>16</width>
+            <height>15</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK4</next>
+         <previous>CHECK1</previous>
+      </check>
+      <check sid="CHECK1">
+         <itemlocation>
+            <x>41</x>
+            <y>136</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK2</next>
+         <previous>FIELD3</previous>
+      </check>
+      <check sid="CHECK4">
+         <itemlocation>
+            <x>337</x>
+            <y>137</y>
+            <width>16</width>
+            <height>15</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK5</next>
+         <previous>CHECK2</previous>
+      </check>
+      <check sid="CHECK6">
+         <itemlocation>
+            <x>700</x>
+            <y>137</y>
+            <width>16</width>
+            <height>15</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK7</next>
+         <previous>CHECK5</previous>
+      </check>
+      <field sid="FIELD4">
+         <itemlocation>
+            <x>34</x>
+            <y>161</y>
+            <width>278</width>
+            <height>46</height>
+         </itemlocation>
+         <value>MAKE/MODEL OF VEHICLE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <labelborder>on</labelborder>
+         <next>FIELD5</next>
+         <previous>CHECK7</previous>
+      </field>
+      <field sid="FIELD5">
+         <itemlocation>
+            <x>316</x>
+            <y>161</y>
+            <width>213</width>
+            <height>46</height>
+         </itemlocation>
+         <value>COLOR OF VEHICLE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <labelborder>on</labelborder>
+         <next>FIELD6</next>
+         <previous>FIELD4</previous>
+      </field>
+      <field sid="FIELD6">
+         <itemlocation>
+            <x>533</x>
+            <y>161</y>
+            <width>395</width>
+            <height>46</height>
+         </itemlocation>
+         <value>REGISTRATION/PLATE NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <labelborder>on</labelborder>
+         <next>FIELD7</next>
+         <previous>FIELD5</previous>
+      </field>
+      <field sid="FIELD7">
+         <itemlocation>
+            <x>34</x>
+            <y>205</y>
+            <width>278</width>
+            <height>53</height>
+         </itemlocation>
+         <value>NUMBER OF DAYS VEHICLE IS TO BE PARKED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD8</next>
+         <previous>FIELD6</previous>
+      </field>
+      <field sid="FIELD9">
+         <itemlocation>
+            <x>624</x>
+            <y>207</y>
+            <width>304</width>
+            <height>51</height>
+         </itemlocation>
+         <value>ENDING DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD10</next>
+         <previous>FIELD8</previous>
+      </field>
+      <field sid="FIELD8">
+         <itemlocation>
+            <x>316</x>
+            <y>207</y>
+            <width>304</width>
+            <height>51</height>
+         </itemlocation>
+         <value>BEGINNING DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD9</next>
+         <previous>FIELD7</previous>
+      </field>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>30</x>
+            <y>408</y>
+            <width>896</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>32</x>
+            <y>434</y>
+            <width>899</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>30</x>
+            <y>528</y>
+            <width>899</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL7">
+         <itemlocation>
+            <x>30</x>
+            <y>257</y>
+            <width>901</width>
+            <height>54</height>
+         </itemlocation>
+         <value>By signing this form, you acknowledge you accept the responsibility and compliance as identified in MHAFBI 31-204 and the &#xD;
+Family Housing Brochure.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <border>on</border>
+      </label>
+      <field sid="FIELD11">
+         <itemlocation>
+            <x>466</x>
+            <y>310</y>
+            <width>462</width>
+            <height>50</height>
+         </itemlocation>
+         <value>ADDRESS OF PARKED RECREATIONAL VEHICLE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD12</next>
+         <previous>FIELD10</previous>
+      </field>
+      <field sid="FIELD10">
+         <itemlocation>
+            <x>34</x>
+            <y>310</y>
+            <width>428</width>
+            <height>51</height>
+         </itemlocation>
+         <value>PRINTED NAME OF OWNER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD11</next>
+         <previous>FIELD9</previous>
+      </field>
+      <field sid="FIELD1">
+         <itemlocation>
+            <x>34</x>
+            <y>439</y>
+            <width>271</width>
+            <height>38</height>
+         </itemlocation>
+         <value></value>
+         <border>off</border>
+         <next>CHECK8</next>
+         <previous>FIELD13</previous>
+      </field>
+      <check sid="CHECK8">
+         <itemlocation>
+            <x>42</x>
+            <y>450</y>
+            <width>16</width>
+            <height>17</height>
+         </itemlocation>
+         <value>off</value>
+         <next>CHECK9</next>
+         <previous>FIELD1</previous>
+      </check>
+      <label sid="LABEL8">
+         <value>Approved</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>62</x>
+            <y>448</y>
+            <width>61</width>
+            <height>22</height>
+         </itemlocation>
+      </label>
+      <check sid="CHECK9">
+         <itemlocation>
+            <x>159</x>
+            <y>450</y>
+            <width>16</width>
+            <height>17</height>
+         </itemlocation>
+         <value>off</value>
+         <next>FIELD14</next>
+         <previous>CHECK8</previous>
+      </check>
+      <label sid="LABEL9">
+         <itemlocation>
+            <x>182</x>
+            <y>448</y>
+            <width>100</width>
+            <height>22</height>
+         </itemlocation>
+         <value>Disapproved</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <field sid="FIELD14">
+         <itemlocation>
+            <x>309</x>
+            <y>439</y>
+            <width>619</width>
+            <height>38</height>
+         </itemlocation>
+         <value>REASON FOR DISAPPROVAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <next>FIELD15</next>
+         <previous>CHECK9</previous>
+      </field>
+      <field sid="FIELD15">
+         <itemlocation>
+            <x>34</x>
+            <y>482</y>
+            <width>645</width>
+            <height>46</height>
+         </itemlocation>
+         <value>366 CES HOUSING OFFICE REPRESENTATIVE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD16</next>
+         <previous>FIELD14</previous>
+      </field>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>31</x>
+            <y>557</y>
+            <width>898</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <field sid="FIELD16">
+         <itemlocation>
+            <x>683</x>
+            <y>482</y>
+            <width>246</width>
+            <height>46</height>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>FIELD15</previous>
+         <next>Submit_BUTTON</next>
+      </field>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>34</x>
+            <y>74</y>
+            <width>897</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>30</x>
+            <y>102</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+   </page>
+</XFDL>

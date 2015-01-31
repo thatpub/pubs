@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xml:lang="en-US-u-cu-USD-x-csymbol-$" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/8.0" xmlns="http://www.ibm.com/xmlns/prod/XFDL/8.0">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>20130813</designer:date>
+         <formid>
+            <serialnumber>2E635C936BBF22E6:-751C375E:1407824303B:-7FFF</serialnumber>
+            <version>1.9.0</version>
+            <title>AF FORM 438, 19790901  </title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <saveformat>application/vnd.xfdl;content-encoding="base64-gzip"</saveformat>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>AF438, 19790901</label>
+         
+         <printsettings>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+            <border>off</border>
+         </printsettings>
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>AF</custom:prefix>
+               <custom:number>438</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>1979/09/01</custom:date>
+            <custom:longtitle>Medical Care - third Party Liability Nortification</custom:longtitle>
+            <version>3</version>
+            <custom:funccode>4120</custom:funccode>
+            <custom:funcstatement>This version opens the second page as a continuation page.</custom:funcstatement>
+            <custom:ui>EF</custom:ui>
+            <custom:ur>EF</custom:ur>
+            <custom:prescdir>AFI41-115</custom:prescdir>
+            <custom:opr>AFMOA/SGSA</custom:opr>
+            <custom:medium>E</custom:medium>
+            <custom:source>AFPUBS</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst></custom:spinst>
+            <custom:dist>F</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>AD</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede></custom:supercede>
+         </custom:form_metadata>
+         <form_metadata>
+            <shorttitle>
+               <prefix>AF</prefix>
+               <number>438</number>
+               <suffix></suffix>
+            </shorttitle>
+            <secclass>U</secclass>
+            <sphand>NONE</sphand>
+            <date>1979/09/01</date>
+            <longtitle>Medical Care - Third Party Liability Notification</longtitle>
+            <version>3</version>
+            <funccode>4120</funccode>
+            <funcstatement>AF 438 has been revised to allow the continuation of information on the reverse of the form.</funcstatement>
+            <ui>EF</ui>
+            <ur>EF</ur>
+            <prescdir>AFI41-115</prescdir>
+            <opr>AFMOA/SGSA</opr>
+            <medium>E</medium>
+            <source>AFPUBS</source>
+            <ombnbr></ombnbr>
+            <spinst></spinst>
+            <dist>F</dist>
+            <prodcode>F</prodcode>
+            <prodtype>AD</prodtype>
+            <pa></pa>
+            <supercede></supercede>
+         </form_metadata>
+         <designer:formlocked>on</designer:formlocked>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>1020;1320</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>2B6A77F7-0456-40B5-B1EC-520A98ECEE74</serialnumber>
+         </pageid>
+         <next>PatData</next>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>AF 438 P 1</label>
+         
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+         <imagemode suppresstext="true"></imagemode>
+         
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+         <imagemode suppresstext="true"></imagemode>
+         
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Close</value>
+         
+         <previous>CalDtB</previous>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save</value>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Print</value>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Email</value>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         
+         <next>PatData</next>
+         <previous>Email_BUTTON</previous>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+      </button>
+      <field sid="PatData">
+         <itemlocation>
+            <x>33</x>
+            <y>102</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Ay F FORM 4 38, 19 79 o 9 o 1.&#xD;
+PREVIOUS EDITION WILL BE USED.&#xD;
+MEDICAL CARE. THIRD PARTY LIABILITY NOTIFICATION.&#xD;
+1.  enter PATIENT DATA.</acclabel>
+         <value></value>
+         <next>PatDataA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>PatData</previous>
+         <size>
+            <width>47</width>
+            <height>13</height>
+         </size>
+      </field>
+      <field sid="PatDataA">
+         <itemlocation>
+            <x>513</x>
+            <y>253</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>PATIENT DATA WILL INCLUDE.&#xD;
+Name.&#xD;
+Last, First, Middle Initial.&#xD;
+Grade and Social Security number.&#xD;
+Component Organization and Station.&#xD;
+Home Address.&#xD;
+Include ZIP Code.&#xD;
+Branch of Service.&#xD;
+for example, Army, Navy, Air Force.&#xD;
+Status.&#xD;
+for example, E Ay D, Retired, Inactive Duty for Training, etcetera.&#xD;
+Medical Treatment Facility Date of Admission. enter appropriate information.</acclabel>
+         <value></value>
+         <previous>PatData</previous>
+         <next>Diagnos</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>46</width>
+            <height>5</height>
+         </size>
+      </field>
+      <field sid="Diagnos">
+         <itemlocation>
+            <x>33</x>
+            <y>417</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>SHOW ITEM NUMBERS TO WHICH ENTRIES APPLY WHEN CONTINUING ON REVERSE.&#xD;
+2.  enter DIAGNOSIS.&#xD;
+Use standard diagnostic terms.</acclabel>
+         <value></value>
+         <previous>PatDataA</previous>
+         <next>CheckA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>47</width>
+            <height>9</height>
+         </size>
+      </field>
+      <field sid="Prognos">
+         <itemlocation>
+            <x>512</x>
+            <y>431</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>3. enter  PROGNOSIS.&#xD;
+Include expected length of hospitalization or expected&#xD;
+number of outpatient visits.</acclabel>
+         <value></value>
+         <previous>CheckA</previous>
+         <next>CheckB</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>47</width>
+            <height>8</height>
+         </size>
+      </field>
+      <field sid="Injury">
+         <itemlocation>
+            <x>32</x>
+            <y>635</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>4.  enter CAUSE OF INJURY.</acclabel>
+         <value></value>
+         <previous>CheckB</previous>
+         <next>CheckC</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>95</width>
+            <height>8</height>
+         </size>
+      </field>
+      <field sid="Remarks">
+         <itemlocation>
+            <x>32</x>
+            <y>835</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>5. REMARKS.</acclabel>
+         <value></value>
+         <previous>CheckC</previous>
+         <next>CheckD</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>95</width>
+            <height>9</height>
+         </size>
+      </field>
+      <field sid="Agency">
+         <itemlocation>
+            <x>33</x>
+            <y>1057</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>6.  enter AGENCY SPONSORING PATIENT.</acclabel>
+         <value></value>
+         <previous>CheckD</previous>
+         <next>Dispos</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <size>
+            <width>20</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="Dispos">
+         <itemlocation>
+            <x>244</x>
+            <y>1057</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>7.  enter DISPOSITION OF PATIENT.</acclabel>
+         <value></value>
+         <previous>Agency</previous>
+         <next>CalDtA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>48</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="CalDtA">
+         <itemlocation>
+            <x>731</x>
+            <y>1065</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>8. DATE OF DISPOSTION. enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>CalDtA_HELP</help>
+         <previous>Dispos</previous>
+         <next>Facility</next>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+      </field>
+      <help sid="CalDtA_HELP">
+         <value>Enter date as YYYYMMDD</value>
+      </help>
+      <field sid="Facility">
+         <itemlocation>
+            <x>33</x>
+            <y>1140</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>9.&#xD;
+DAYS BED OCCUPIED. enter&#xD;
+THIS FACILITY.</acclabel>
+         <value></value>
+         <previous>CalDtA</previous>
+         <next>Total</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>20</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="Total">
+         <itemlocation>
+            <x>242</x>
+            <y>1140</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD;
+TOTAL TO DATE.</acclabel>
+         <value></value>
+         <previous>Facility</previous>
+         <next>FaciliyA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>22</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="FaciliyA">
+         <itemlocation>
+            <x>470</x>
+            <y>1140</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>10.&#xD;
+OUTPATIENT VISITS. enter&#xD;
+THIS FACILITY.</acclabel>
+         <value></value>
+         <previous>Total</previous>
+         <next>TotalA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>25</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="TotalA">
+         <itemlocation>
+            <x>731</x>
+            <y>1140</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD;
+TOTAL TO DATE.</acclabel>
+         <value></value>
+         <previous>FaciliyA</previous>
+         <next>Initial</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+         <size>
+            <width>25</width>
+            <height>2</height>
+         </size>
+      </field>
+      <field sid="Amount">
+         <itemlocation>
+            <x>470</x>
+            <y>1208</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>12.  enter AMOUNT PAID BY PATIENT.</acclabel>
+         <value></value>
+         <help>Amount_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Final</previous>
+         <next>Control</next>
+         <format>
+            <datatype>currency</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+            </presentation>
+         </format>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+      </field>
+      <help sid="Amount_HELP">
+         <value>Enter numbers only.</value>
+      </help>
+      <field sid="Control">
+         <itemlocation>
+            <x>731</x>
+            <y>1208</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>13.  enter CONTROL NUMBER.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Amount</previous>
+         <next>CalDtB</next>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <size>
+            <width>25</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="FIELD1">
+         <border>off</border>
+         <acclabel>13.  enter CONTROL NUMBER.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>never</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <itemlocation>
+            <x>247</x>
+            <y>1255</y>
+         </itemlocation>
+         <size>
+            <width>73</width>
+            <height>1</height>
+         </size>
+      </field>
+      <field sid="CalDtB">
+         <itemlocation>
+            <x>33</x>
+            <y>1255</y>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter date as Y Y Y Y M M D D.&#xD;
+SIGNATURE OF PATIENT AFFAIRS OFFICIAL.</acclabel>
+         <value></value>
+         <help>CalDtB_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Control</previous>
+         <next>next_button</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <size>
+            <width>18</width>
+            <height>1</height>
+         </size>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>8</max>
+                </length>
+                <message>This entry is invalid. &#xD;
+Please use Y2K format:  YYYYMMDD&#xD;
+Enter 19 August 1946 as 19460819</message>
+            </constraints>
+            <presentation>
+                <pattern>yyyyMMdd</pattern>
+            </presentation>
+         </format>
+      </field>
+      <help sid="CalDtB_HELP">
+         <value>Enter date as YYYYMMDD</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>280</x>
+            <y>48</y>
+         </itemlocation>
+         <value>MEDICAL CARE - THIRD PARTY LIABILITY NOTIFICATION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>34</x>
+            <y>84</y>
+         </itemlocation>
+         <value>1. PATIENT DATA </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>514</x>
+            <y>84</y>
+         </itemlocation>
+         <value>PATIENT DATA WILL INCLUDE: </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>514</x>
+            <y>102</y>
+         </itemlocation>
+         <value>Name -  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>558</x>
+            <y>102</y>
+         </itemlocation>
+         <value>(Last, First, Middle Initial) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>514</x>
+            <y>120</y>
+         </itemlocation>
+         <value>Grade and Social Security No. </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>514</x>
+            <y>138</y>
+         </itemlocation>
+         <value>Component
+Organization and Station </value>
+         <linespacing>-2</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>514</x>
+            <y>170</y>
+         </itemlocation>
+         <value>Home Address </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>597</x>
+            <y>170</y>
+         </itemlocation>
+         <value> (Include ZIP Code) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>514</x>
+            <y>187</y>
+         </itemlocation>
+         <value>Branch of Service  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>607</x>
+            <y>187</y>
+         </itemlocation>
+         <value>(i.e., Army, Navy, Air Force) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>514</x>
+            <y>205</y>
+         </itemlocation>
+         <value>Status </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>549</x>
+            <y>205</y>
+         </itemlocation>
+         <value> (i.e., EAD, Retired, Inactive Duty for Training, etc.) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>514</x>
+            <y>223</y>
+         </itemlocation>
+         <value>Medical Treatment Facility
+Date of Admission </value>
+         <linespacing>-2</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>230</x>
+            <y>375</y>
+         </itemlocation>
+         <value>(SHOW ITEM NUMBERS TO WHICH ENTRIES APPLY WHEN CONTINUING ON REVERSE) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>34</x>
+            <y>396</y>
+         </itemlocation>
+         <value>2. DIAGNOSIS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>112</x>
+            <y>396</y>
+         </itemlocation>
+         <value> (Use standard diagnostic terms) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>512</x>
+            <y>397</y>
+         </itemlocation>
+         <value>3. PROGNOSIS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_19">
+         <itemlocation>
+            <x>597</x>
+            <y>396</y>
+         </itemlocation>
+         <value> (Include expected length of hospitalization or expected </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_20">
+         <itemlocation>
+            <x>525</x>
+            <y>410</y>
+         </itemlocation>
+         <value>number of outpatient visits) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>34</x>
+            <y>592</y>
+         </itemlocation>
+         <value>(Check </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>105</x>
+            <y>592</y>
+         </itemlocation>
+         <value>if continued on reverse) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>520</x>
+            <y>592</y>
+         </itemlocation>
+         <value>(Check </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>593</x>
+            <y>592</y>
+         </itemlocation>
+         <value>if continued on reverse) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>34</x>
+            <y>616</y>
+         </itemlocation>
+         <value>4. CAUSE OF INJURY </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>670</x>
+            <y>794</y>
+         </itemlocation>
+         <value>(Check </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>742</x>
+            <y>794</y>
+         </itemlocation>
+         <value>if continued on reverse) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>34</x>
+            <y>816</y>
+         </itemlocation>
+         <value>5. REMARKS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>670</x>
+            <y>1016</y>
+         </itemlocation>
+         <value>(Check </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>742</x>
+            <y>1016</y>
+         </itemlocation>
+         <value>if continued on reverse) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>34</x>
+            <y>1037</y>
+         </itemlocation>
+         <value>6. AGENCY SPONSORING PATIENT </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>246</x>
+            <y>1037</y>
+         </itemlocation>
+         <value>7. DISPOSITION OF PATIENT </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>731</x>
+            <y>1037</y>
+         </itemlocation>
+         <value>8. DATE OF DISPOSTION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_34">
+         <itemlocation>
+            <x>34</x>
+            <y>1099</y>
+         </itemlocation>
+         <value>9. </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_35">
+         <itemlocation>
+            <x>69</x>
+            <y>1099</y>
+         </itemlocation>
+         <value>DAYS BED OCCUPIED </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_36">
+         <itemlocation>
+            <x>472</x>
+            <y>1099</y>
+         </itemlocation>
+         <value>10. </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_37">
+         <itemlocation>
+            <x>513</x>
+            <y>1099</y>
+         </itemlocation>
+         <value>OUTPATIENT VISITS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>97</x>
+            <y>1121</y>
+         </itemlocation>
+         <value>THIS FACILITY </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_39">
+         <itemlocation>
+            <x>313</x>
+            <y>1121</y>
+         </itemlocation>
+         <value>TOTAL TO DATE </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_40">
+         <itemlocation>
+            <x>541</x>
+            <y>1121</y>
+         </itemlocation>
+         <value>THIS FACILITY </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_41">
+         <itemlocation>
+            <x>797</x>
+            <y>1121</y>
+         </itemlocation>
+         <value>TOTAL TO DATE </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>34</x>
+            <y>1186</y>
+         </itemlocation>
+         <value>11. TYPE OF NOTIFICATION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>472</x>
+            <y>1186</y>
+         </itemlocation>
+         <value>12. AMOUNT PAID BY PATIENT </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>733</x>
+            <y>1186</y>
+         </itemlocation>
+         <value>13. CONTROL NUMBER </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>58</x>
+            <y>1210</y>
+         </itemlocation>
+         <value>INITIAL </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>208</x>
+            <y>1210</y>
+         </itemlocation>
+         <value>TRANSFER </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>370</x>
+            <y>1210</y>
+         </itemlocation>
+         <value>FINAL </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>34</x>
+            <y>1233</y>
+         </itemlocation>
+         <value>DATE </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_49">
+         <itemlocation>
+            <x>246</x>
+            <y>1233</y>
+         </itemlocation>
+         <value>SIGNATURE OF PATIENT AFFAIRS OFFICIAL </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>38</x>
+            <y>1282</y>
+            <width>236</width>
+            <height>26</height>
+         </itemlocation>
+         <value>AF IMT 438, 19790901, V3</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_52">
+         <itemlocation>
+            <x>404</x>
+            <y>1287</y>
+         </itemlocation>
+         <value>PREVIOUS EDITION WILL BE USED. </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <check sid="CheckA">
+         <itemlocation>
+            <x>82</x>
+            <y>591</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>Check if continued on reverse.</acclabel>
+         <value>off</value>
+         <help>CheckA_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Diagnos</previous>
+         <next>Prognos</next>
+      </check>
+      <help sid="CheckA_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="CheckB">
+         <itemlocation>
+            <x>570</x>
+            <y>591</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>Check if continued on reverse.</acclabel>
+         <value>off</value>
+         <help>CheckB_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Prognos</previous>
+         <next>Injury</next>
+      </check>
+      <help sid="CheckB_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="CheckC">
+         <itemlocation>
+            <x>720</x>
+            <y>793</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>Check if continued on reverse.</acclabel>
+         <value>off</value>
+         <help>CheckC_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Injury</previous>
+         <next>Remarks</next>
+      </check>
+      <help sid="CheckC_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="CheckD">
+         <itemlocation>
+            <x>719</x>
+            <y>1013</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>Check if continued on reverse.</acclabel>
+         <value>off</value>
+         <help>CheckD_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Remarks</previous>
+         <next>Agency</next>
+      </check>
+      <help sid="CheckD_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="Initial">
+         <itemlocation>
+            <x>35</x>
+            <y>1210</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>11. TYPE OF NOTIFICATION. check for&#xD;
+INITIAL.</acclabel>
+         <value>off</value>
+         <help>Initial_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>TotalA</previous>
+         <next>Transfer</next>
+         <custom:mec_compute xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Transfer.value', 'off') + set('Final.value', 'off')) : ''"></custom:mec_compute>
+      </check>
+      <help sid="Initial_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="Transfer">
+         <itemlocation>
+            <x>183</x>
+            <y>1210</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>check for&#xD;
+TRANSFER.</acclabel>
+         <value>off</value>
+         <help>Transfer_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Initial</previous>
+         <next>Final</next>
+         <custom:mec_compute xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Initial.value', 'off') + set('Final.value', 'off')) : ''"></custom:mec_compute>
+      </check>
+      <help sid="Transfer_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <check sid="Final">
+         <itemlocation>
+            <x>347</x>
+            <y>1210</y>
+            <width>22</width>
+            <height>22</height>
+         </itemlocation>
+         <acclabel>check for&#xD;
+FINAL.</acclabel>
+         <value>off</value>
+         <help>Final_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>Transfer</previous>
+         <next>Amount</next>
+         <custom:mec_compute xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Initial.value', 'off') + set('Transfer.value', 'off')) : ''"></custom:mec_compute>
+      </check>
+      <help sid="Final_HELP">
+         <value>To create a checkmark, either hit the spacebar or "X" key, or click on the space with the mouse.</value>
+      </help>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>1020</x>
+            <y>1320</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">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</mimedata>
+         
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         
+      </data>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>31</x>
+            <y>32</y>
+            <width>958</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>988</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1249</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>30</x>
+            <y>1281</y>
+            <width>959</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1249</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>30</x>
+            <y>82</y>
+            <width>959</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>30</x>
+            <y>356</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>30</x>
+            <y>394</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>30</x>
+            <y>614</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_9">
+         <itemlocation>
+            <x>30</x>
+            <y>814</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>30</x>
+            <y>1035</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>30</x>
+            <y>1100</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>30</x>
+            <y>1121</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>30</x>
+            <y>1140</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>30</x>
+            <y>1185</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_15">
+         <itemlocation>
+            <x>30</x>
+            <y>1207</y>
+            <width>438</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>30</x>
+            <y>1233</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_17">
+         <itemlocation>
+            <x>241</x>
+            <y>1036</y>
+            <width>1</width>
+            <height>64</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>240</x>
+            <y>1121</y>
+            <width>1</width>
+            <height>64</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>242</x>
+            <y>1234</y>
+            <width>1</width>
+            <height>48</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>510</x>
+            <y>82</y>
+            <width>1</width>
+            <height>274</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>509</x>
+            <y>394</y>
+            <width>1</width>
+            <height>221</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_22">
+         <itemlocation>
+            <x>468</x>
+            <y>1100</y>
+            <width>1</width>
+            <height>134</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>730</x>
+            <y>1035</y>
+            <width>1</width>
+            <height>66</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_24">
+         <itemlocation>
+            <x>729</x>
+            <y>1122</y>
+            <width>1</width>
+            <height>112</height>
+         </itemlocation>
+      </line>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <designer:pagesize>1020;1320</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>B5EF9CAE-BCFE-4CBE-BF46-421518A8B586</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>ACC_FIELD</next>
+         <label>AF 438 P 2</label>
+         
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+         <imagemode suppresstext="true"></imagemode>
+         
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+         <imagemode suppresstext="true"></imagemode>
+         
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Close</value>
+         
+         <previous>ACC_FIELD</previous>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save</value>
+         
+         <previous>Close_BUTTON</previous>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Print</value>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Email</value>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         
+         <next>ACC_FIELD</next>
+         <previous>Email_BUTTON</previous>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         <borderinfo>
+            <color>49,77,140</color>
+         </borderinfo>
+         
+      </button>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>357</x>
+            <y>28</y>
+         </itemlocation>
+         <value>AF IMT 438  CONTINUATION SHEET </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>1020</x>
+            <y>1320</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <field sid="ACC_FIELD">
+         <itemlocation>
+            <x>33</x>
+            <y>46</y>
+         </itemlocation>
+         <value></value>
+         
+         <border>off</border>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <acclabel>Ay F FORM 4 38  CONTINUATION SHEET. This page does not contain any fillable fields and is reed only.</acclabel>
+         <previous>prev_button</previous>
+         <next>Save_BUTTON</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <size>
+            <width>95</width>
+            <height>64</height>
+         </size>
+      </field>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>31</x>
+            <y>30</y>
+            <width>960</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_26">
+         <itemlocation>
+            <x>990</x>
+            <y>31</y>
+            <width>2</width>
+            <height>1238</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>31</x>
+            <y>1268</y>
+            <width>960</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_28">
+         <itemlocation>
+            <x>30</x>
+            <y>31</y>
+            <width>2</width>
+            <height>1238</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>756</x>
+            <y>1271</y>
+         </itemlocation>
+         <value>AF IMT 438, 19790901, V3</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </label>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>40</x>
+            <y>1271</y>
+         </itemlocation>
+         <value>(Reverse)</value>
+         <size>
+            <width>8</width>
+            <height>1</height>
+         </size>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+   </page>
+</XFDL>

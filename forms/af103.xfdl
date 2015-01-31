@@ -1,0 +1,5065 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>15/11/2002</designer:date>
+         <formid>
+            <serialnumber>8595FF15-135E-4F0C-8E49-2E37C1CE0CE8</serialnumber>
+            <version>1.8.9</version>
+            <title>AF FORM 103, 19940801</title>
+         </formid>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         <label>AF00103, 19940801</label>
+         
+         <printsettings>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+            <border>off</border>
+         </printsettings>
+         
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>AF</custom:prefix>
+               <custom:number>103</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>1994/08/01</custom:date>
+            <custom:longtitle>Base Civil Engineering Work Clearance Request</custom:longtitle>
+            <version>3</version>
+            <custom:funccode>3220</custom:funccode>
+            <custom:funcstatement>TBD</custom:funcstatement>
+            <custom:ui>EF</custom:ui>
+            <custom:ur>EA</custom:ur>
+            <custom:prescdir>AFI32-1001</custom:prescdir>
+            <custom:opr>HQ USAF/ILEOP</custom:opr>
+            <custom:medium>E</custom:medium>
+            <custom:source>AFPUBS</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst></custom:spinst>
+            <custom:dist>F</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>AD</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede></custom:supercede>
+         </custom:form_metadata>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+            <validoverlap>9</validoverlap>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         <custom:setHelpMode xfdl:compute="mouseover == 'on' &#xA;
+ ? (set('global.global.oldHelpMode', viewer.getHelpMode()) +. &#xA;
+viewer.setHelpMode('on')) &#xA;
+: viewer.setHelpMode(global.global.oldHelpMode)"></custom:setHelpMode>
+
+         
+         
+         <pageid>
+            <serialnumber>54B817FA-C804-4C11-BF13-885E984331D1</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>CalDtA</next>
+      </global>
+   <toolbar sid="TOOLBAR">
+         <designer:height>85</designer:height>
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+         
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>28</y>
+         </itemlocation>
+         
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         
+         <previous>CalDtD</previous>
+         <next>CalDtA</next>
+      </button>
+      <field sid="CalDtA">
+         <itemlocation>
+            <x>715</x>
+            <y>63</y>
+            <width>215</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Ay F FORM 103, 19940801 I M T V 1.&#xD;
+BASE CIVIL ENGINEERING WORK CLEARANCE REQUEST.&#xD;
+The BCE work clearance request is used for any work (contract or in-house) that may disrupt aircraft or vehicular traffic flow, base utility services, protection provided by fire and intrusion alarm system, or routine activities of the installation.  This form is used to coordinate the required work with key base activities and keep customer inconvenience to a minimum.  It is also used to identify potentially hazardous work conditions in an attempt to prevent accidents.  The work clearance request is processed just prior to the start of work.  If delays are encountered and the conditions at the job site change (or may have changed) this work clearance request must be reprocessed.&#xD;
+Enter date as Y Y Y Y M MD D.</acclabel>
+         <value></value>
+         <help>CalDtA_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>AppOffcrSig</previous>
+         <next>LOCA</next>
+      </field>
+      <help sid="AppOffcrSig_DATE_HELP1">
+         <value>Date auto-populates with Approving Officer's signature.</value>
+      </help>
+      <help sid="AppOffcrSig_DATE1_HELP1">
+         <value>Date auto-populates with Approving Officer's signature.</value>
+      </help>
+      <help sid="CalDtA_HELP">
+         <value>Entery date as YYYYMMDD.</value>
+      </help>
+      <field sid="LOCA">
+         <itemlocation>
+            <x>319</x>
+            <y>92</y>
+            <width>600</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>1.  Clearance is requested to proceed with work at</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>CalDtA</previous>
+         <next>WONO</next>
+      </field>
+      <field sid="WONO">
+         <itemlocation>
+            <x>151</x>
+            <y>129</y>
+            <width>168</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>on Work Order Number</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>LOCA</previous>
+         <next>CTRNO</next>
+      </field>
+      <field sid="CTRNO">
+         <itemlocation>
+            <x>403</x>
+            <y>129</y>
+            <width>204</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Contract Number</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>WONO</previous>
+         <next>HAS</next>
+      </field>
+      <field sid="OTH">
+         <itemlocation>
+            <x>715</x>
+            <y>267</y>
+            <width>215</width>
+            <height>22</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Field Other</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>GHI_3</previous>
+         <next>CalDtB</next>
+      </field>
+      <field sid="CalDtB">
+         <itemlocation>
+            <x>32</x>
+            <y>303</y>
+            <width>466</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>3.  DATE CLEARANCE REQUIRED&#xD;
+Enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>CalDtB_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>OTH</previous>
+         <next>ReqOffclSig</next>
+      </field>
+      <help sid="CalDtB_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <help sid="CalDtC_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <field sid="TELE">
+         <itemlocation>
+            <x>499</x>
+            <y>343</y>
+            <width>215</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>6.  TELEPHONE Number. &#xD;
+Number will be formatted automatically.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>ReqOffclSig</previous>
+         <next>ORGN</next>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <template>(...) ...-....</template>
+                <patterns>
+                    <pattern>\((\d\d\d)\) (\d\d\d)-(\d\d\d\d)</pattern>
+                </patterns>
+            </constraints>
+            <presentation>
+                <patternrefs>
+                    <patternref>($1) $2-$3</patternref>
+                </patternrefs>
+            </presentation>
+         </format>
+      </field>
+      <field sid="ORGN">
+         <itemlocation>
+            <x>715</x>
+            <y>343</y>
+            <width>215</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>7.  ORGANIZATION</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>TELE</previous>
+         <next>REMKA</next>
+      </field>
+      <field sid="ZONE">
+         <itemlocation>
+            <x>119</x>
+            <y>713</y>
+            <width>130</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>I. Zone. Organization.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>SIGNATURE8</previous>
+         <next>REMKB</next>
+      </field>
+      <field sid="OTHB">
+         <itemlocation>
+            <x>175</x>
+            <y>747</y>
+            <width>167</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>J. Other. Specify.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE9</previous>
+         <next>REMKC</next>
+      </field>
+      <field sid="OTHC">
+         <itemlocation>
+            <x>174</x>
+            <y>1078</y>
+            <width>755</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Other. Specify.</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>SIGNATURE16</previous>
+         <next>APPRVD</next>
+      </field>
+      <help sid="CalDtD_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>718</x>
+            <y>47</y>
+         </itemlocation>
+         <value>DATE PREPARED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>139</x>
+            <y>49</y>
+         </itemlocation>
+         <value>BASE CIVIL ENGINEERING WORK CLEARANCE REQUEST</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>293</x>
+            <y>69</y>
+         </itemlocation>
+         <value>(See Instructions on Reverse)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>34</x>
+            <y>96</y>
+         </itemlocation>
+         <value>1.  Clearance is requested to proceed with work at</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>34</x>
+            <y>134</y>
+         </itemlocation>
+         <value>on Work Order No.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>322</x>
+            <y>134</y>
+         </itemlocation>
+         <value>, Contract No.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>610</x>
+            <y>134</y>
+         </itemlocation>
+         <value>, involving excavation or utility disturbance per</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>34</x>
+            <y>173</y>
+         </itemlocation>
+         <value>attached sketch.  This area</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>226</x>
+            <y>173</y>
+         </itemlocation>
+         <value>has</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>286</x>
+            <y>173</y>
+         </itemlocation>
+         <value>has not been staked or clearly marked.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>34</x>
+            <y>207</y>
+         </itemlocation>
+         <value>2.  TYPE OF FACILITY/WORK INVOLVED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>646</x>
+            <y>228</y>
+         </itemlocation>
+         <value>G.  AIRCRAFT OR VEHICULAR TRAFFIC FLOW</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>58</x>
+            <y>230</y>
+         </itemlocation>
+         <value>A.  PAVEMENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>262</x>
+            <y>230</y>
+         </itemlocation>
+         <value>D.  FIRE DETECTION &amp; PROTECTION SYSTEMS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>646</x>
+            <y>248</y>
+         </itemlocation>
+         <value>H.  SECURITY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>58</x>
+            <y>250</y>
+         </itemlocation>
+         <value>B.  DRAINAGE SYSTEMS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>262</x>
+            <y>250</y>
+         </itemlocation>
+         <value>E.  UTILITY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>370</x>
+            <y>250</y>
+         </itemlocation>
+         <value>OVERHEAD</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_19">
+         <itemlocation>
+            <x>502</x>
+            <y>250</y>
+         </itemlocation>
+         <value>UNDERGROUND</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_20">
+         <itemlocation>
+            <x>646</x>
+            <y>268</y>
+         </itemlocation>
+         <value>I.  OTHER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>58</x>
+            <y>270</y>
+         </itemlocation>
+         <value>C.  RAILROAD TRACKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>262</x>
+            <y>270</y>
+         </itemlocation>
+         <value>F.  COMM</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>370</x>
+            <y>271</y>
+         </itemlocation>
+         <value>OVERHEAD</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>502</x>
+            <y>271</y>
+         </itemlocation>
+         <value>UNDERGROUND</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>34</x>
+            <y>287</y>
+         </itemlocation>
+         <value>3.  DATE CLEARANCE REQUIRED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>502</x>
+            <y>286</y>
+         </itemlocation>
+         <value>4.  DATE OF CLEARANCE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>34</x>
+            <y>327</y>
+         </itemlocation>
+         <value>5. SIGNATURE OF REQUESTING OFFICIAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>502</x>
+            <y>327</y>
+         </itemlocation>
+         <value>6.  TELEPHONE NO.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>718</x>
+            <y>327</y>
+         </itemlocation>
+         <value>7.  ORGANIZATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>141</x>
+            <y>369</y>
+         </itemlocation>
+         <value>ORGANIZATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>370</x>
+            <y>368</y>
+            <width>72</width>
+         </itemlocation>
+         <value>REMARKS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>445</x>
+            <y>368</y>
+            <width>216</width>
+            <height>21</height>
+         </itemlocation>
+         <value> (Use Reverse for additional comments)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>728</x>
+            <y>368</y>
+         </itemlocation>
+         <value>REVIEWER'S NAME AND INITIALS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_34">
+         <itemlocation>
+            <x>34</x>
+            <y>388</y>
+         </itemlocation>
+         <value>8.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_35">
+         <itemlocation>
+            <x>58</x>
+            <y>398</y>
+         </itemlocation>
+         <value>A.  ELECTRICAL DISTRIBUTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_36">
+         <itemlocation>
+            <x>34</x>
+            <y>405</y>
+         </itemlocation>
+         <value>B</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_37">
+         <itemlocation>
+            <x>34</x>
+            <y>421</y>
+         </itemlocation>
+         <value>A</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>34</x>
+            <y>438</y>
+         </itemlocation>
+         <value>S</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_39">
+         <itemlocation>
+            <x>58</x>
+            <y>438</y>
+         </itemlocation>
+         <value>B.  STEAM DISTRIBUTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_40">
+         <itemlocation>
+            <x>34</x>
+            <y>455</y>
+         </itemlocation>
+         <value>E</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_41">
+         <itemlocation>
+            <x>58</x>
+            <y>478</y>
+         </itemlocation>
+         <value>C.  WATER DISTRIBUTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>34</x>
+            <y>489</y>
+         </itemlocation>
+         <value>C</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>34</x>
+            <y>505</y>
+         </itemlocation>
+         <value>I</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>58</x>
+            <y>518</y>
+         </itemlocation>
+         <value>D.  POL DISTRIBUTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>34</x>
+            <y>522</y>
+         </itemlocation>
+         <value>V</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>34</x>
+            <y>539</y>
+         </itemlocation>
+         <value>I L</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>58</x>
+            <y>558</y>
+         </itemlocation>
+         <value>E.  SEWER DISTRIBUTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>34</x>
+            <y>573</y>
+         </itemlocation>
+         <value>E</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_49">
+         <itemlocation>
+            <x>34</x>
+            <y>589</y>
+         </itemlocation>
+         <value>N</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>58</x>
+            <y>598</y>
+         </itemlocation>
+         <value>F.  ENVIRONMENTAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_51">
+         <itemlocation>
+            <x>34</x>
+            <y>606</y>
+         </itemlocation>
+         <value>G</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_52">
+         <itemlocation>
+            <x>34</x>
+            <y>623</y>
+         </itemlocation>
+         <value>I</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>58</x>
+            <y>638</y>
+         </itemlocation>
+         <value>G.  PAVEMENTS/ GROUNDS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_54">
+         <itemlocation>
+            <x>34</x>
+            <y>640</y>
+         </itemlocation>
+         <value>N</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_55">
+         <itemlocation>
+            <x>34</x>
+            <y>657</y>
+         </itemlocation>
+         <value>E</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_56">
+         <itemlocation>
+            <x>34</x>
+            <y>673</y>
+         </itemlocation>
+         <value>E</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_57">
+         <itemlocation>
+            <x>58</x>
+            <y>678</y>
+         </itemlocation>
+         <value>H.  FIRE PROTECTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_58">
+         <itemlocation>
+            <x>34</x>
+            <y>690</y>
+         </itemlocation>
+         <value>R</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_59">
+         <itemlocation>
+            <x>34</x>
+            <y>707</y>
+         </itemlocation>
+         <value>I</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_60">
+         <itemlocation>
+            <x>58</x>
+            <y>719</y>
+         </itemlocation>
+         <value>I.  ZONE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_61">
+         <itemlocation>
+            <x>34</x>
+            <y>724</y>
+         </itemlocation>
+         <value>N</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_62">
+         <itemlocation>
+            <x>34</x>
+            <y>741</y>
+         </itemlocation>
+         <value>G</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_63">
+         <itemlocation>
+            <x>58</x>
+            <y>758</y>
+         </itemlocation>
+         <value>J.  OTHER </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_64">
+         <itemlocation>
+            <x>118</x>
+            <y>758</y>
+         </itemlocation>
+         <value>(Specify)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_65">
+         <itemlocation>
+            <x>34</x>
+            <y>798</y>
+         </itemlocation>
+         <value>9.  SECURITY POLICE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_66">
+         <itemlocation>
+            <x>34</x>
+            <y>838</y>
+         </itemlocation>
+         <value>10.  SAFETY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_67">
+         <itemlocation>
+            <x>34</x>
+            <y>878</y>
+         </itemlocation>
+         <value>11.  COMMUNICATIONS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_68">
+         <itemlocation>
+            <x>34</x>
+            <y>918</y>
+         </itemlocation>
+         <value>12.  BASE OPERATIONS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_69">
+         <itemlocation>
+            <x>34</x>
+            <y>958</y>
+         </itemlocation>
+         <value>13.  CABLE TV</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_70">
+         <itemlocation>
+            <x>34</x>
+            <y>991</y>
+         </itemlocation>
+         <value>14.  COMMERCIAL UTILITY COMPANY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_71">
+         <itemlocation>
+            <x>58</x>
+            <y>1012</y>
+         </itemlocation>
+         <value>TELEPHONE
+GAS
+ELECTRIC</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_72">
+         <itemlocation>
+            <x>34</x>
+            <y>1074</y>
+         </itemlocation>
+         <value>15.  OTHER </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_73">
+         <itemlocation>
+            <x>102</x>
+            <y>1074</y>
+         </itemlocation>
+         <value> (Specify)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_74">
+         <itemlocation>
+            <x>34</x>
+            <y>1120</y>
+         </itemlocation>
+         <value>16.  REQUESTED CLEARANCE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_75">
+         <itemlocation>
+            <x>346</x>
+            <y>1119</y>
+         </itemlocation>
+         <value>APPROVED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_76">
+         <itemlocation>
+            <x>598</x>
+            <y>1119</y>
+         </itemlocation>
+         <value>DISAPPROVED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_77">
+         <itemlocation>
+            <x>34</x>
+            <y>1147</y>
+         </itemlocation>
+         <value>17.  TYPED NAME AND SIGNATURE OF APPROVING OFFICER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_78">
+         <itemlocation>
+            <x>378</x>
+            <y>1147</y>
+         </itemlocation>
+         <value> (Chief of Operations Flight or Chief of Engineering Flight)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_79">
+         <itemlocation>
+            <x>742</x>
+            <y>1150</y>
+         </itemlocation>
+         <value>17a.  DATE SIGNED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_80">
+         <itemlocation>
+            <x>482</x>
+            <y>1210</y>
+         </itemlocation>
+         <value>PREVIOUS EDITIONS ARE OBSOLETE.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_81">
+         <itemlocation>
+            <x>32</x>
+            <y>1207</y>
+         </itemlocation>
+         <value>AF IMT 103, 19940801, V3</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>30</x>
+            <y>1208</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>48</y>
+            <width>2</width>
+            <height>1158</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>30</x>
+            <y>88</y>
+            <width>685</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>30</x>
+            <y>88</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>319</x>
+            <y>117</y>
+            <width>600</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>403</x>
+            <y>154</y>
+            <width>204</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_9">
+         <itemlocation>
+            <x>151</x>
+            <y>154</y>
+            <width>168</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>30</x>
+            <y>208</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>30</x>
+            <y>228</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>30</x>
+            <y>248</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>30</x>
+            <y>268</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>30</x>
+            <y>288</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>30</x>
+            <y>328</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>30</x>
+            <y>368</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_37">
+         <itemlocation>
+            <x>119</x>
+            <y>739</y>
+            <width>130</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_46">
+         <itemlocation>
+            <x>172</x>
+            <y>1105</y>
+            <width>757</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_48">
+         <itemlocation>
+            <x>30</x>
+            <y>1112</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_49">
+         <itemlocation>
+            <x>30</x>
+            <y>1148</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_50">
+         <itemlocation>
+            <x>54</x>
+            <y>388</y>
+            <width>1</width>
+            <height>401</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_54">
+         <itemlocation>
+            <x>498</x>
+            <y>288</y>
+            <width>1</width>
+            <height>81</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_55">
+         <itemlocation>
+            <x>714</x>
+            <y>48</y>
+            <width>1</width>
+            <height>41</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_57">
+         <itemlocation>
+            <x>738</x>
+            <y>1148</y>
+            <width>1</width>
+            <height>62</height>
+         </itemlocation>
+      </line>
+      <box sid="BOX52154">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>197</x>
+            <y>174</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX29267">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>257</x>
+            <y>174</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX65269">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>230</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="ABC">
+         <itemlocation>
+            <x>37</x>
+            <y>231</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>2.  TYPE OF FACILITY WORK INVOLVED.&#xD;
+Check box A.  PAVEMENTS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>HASNOT</previous>
+         <next>ABC_2</next>
+      </check>
+      <box sid="BOX7435">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>250</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="ABC_2">
+         <itemlocation>
+            <x>37</x>
+            <y>251</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box B.  DRAINAGE SYSTEMS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ABC</previous>
+         <next>ABC_3</next>
+      </check>
+      <box sid="BOX16212">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>270</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="ABC_3">
+         <itemlocation>
+            <x>37</x>
+            <y>271</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box C.  RAILROAD TRACKS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ABC_2</previous>
+         <next>D</next>
+      </check>
+      <box sid="BOX31112">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>238</x>
+            <y>230</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="D">
+         <itemlocation>
+            <x>239</x>
+            <y>231</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box D.  FIRE DETECTION and PROTECTION SYSTEMS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ABC_3</previous>
+         <next>E</next>
+      </check>
+      <box sid="BOX96185">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>238</x>
+            <y>250</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="E">
+         <itemlocation>
+            <x>239</x>
+            <y>251</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box E.  UTILITY</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>D</previous>
+         <next>F</next>
+      </check>
+      <box sid="BOX49051">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>345</x>
+            <y>250</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="OVHA">
+         <itemlocation>
+            <x>346</x>
+            <y>251</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box OVERHEAD</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>F</previous>
+         <next>OVHB</next>
+      </check>
+      <box sid="BOX87691">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>477</x>
+            <y>249</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="UNDGA">
+         <itemlocation>
+            <x>478</x>
+            <y>250</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box UNDERGROUND</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>OVHB</previous>
+         <next>UNDGB</next>
+      </check>
+      <box sid="BOX14132">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>238</x>
+            <y>270</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="F">
+         <itemlocation>
+            <x>239</x>
+            <y>271</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box F.  COMMUNICATIONS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>E</previous>
+         <next>OVHA</next>
+      </check>
+      <box sid="BOX78420">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>345</x>
+            <y>270</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="OVHB">
+         <itemlocation>
+            <x>346</x>
+            <y>271</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box OVERHEAD</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>OVHA</previous>
+         <next>UNDGA</next>
+      </check>
+      <box sid="BOX52091">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>477</x>
+            <y>270</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="UNDGB">
+         <itemlocation>
+            <x>478</x>
+            <y>271</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box UNDERGROUND</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>UNDGA</previous>
+         <next>GHI</next>
+      </check>
+      <box sid="BOX27511">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>621</x>
+            <y>230</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GHI">
+         <itemlocation>
+            <x>622</x>
+            <y>231</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box G.  AIRCRAFT OR VEHICULAR TRAFFIC FLOW</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>UNDGB</previous>
+         <next>GHI_2</next>
+      </check>
+      <box sid="BOX55925">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>621</x>
+            <y>250</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GHI_2">
+         <itemlocation>
+            <x>622</x>
+            <y>251</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box H.  SECURITY</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>GHI</previous>
+         <next>GHI_3</next>
+      </check>
+      <box sid="BOX10906">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>621</x>
+            <y>270</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GHI_3">
+         <itemlocation>
+            <x>622</x>
+            <y>271</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box I.  OTHER</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>GHI_2</previous>
+         <next>OTH</next>
+      </check>
+      <box sid="BOX68026">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>1011</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="COMUTIL">
+         <itemlocation>
+            <x>37</x>
+            <y>1012</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>14.  COMMERCIAL UTILITY COMPANY.&#xD;
+Check box telephone</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE15</previous>
+         <next>COMUTIL_2</next>
+      </check>
+      <box sid="BOX28756">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>1030</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="COMUTIL_2">
+         <itemlocation>
+            <x>37</x>
+            <y>1031</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>14.  COMMERCIAL UTILITY COMPANY&#xD;
+Check box Gas</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>COMUTIL</previous>
+         <next>COMUTIL_3</next>
+      </check>
+      <box sid="BOX3072">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>36</x>
+            <y>1050</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="COMUTIL_3">
+         <itemlocation>
+            <x>37</x>
+            <y>1051</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>14.  COMMERCIAL UTILITY COMPANY&#xD;
+Check box electric</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>COMUTIL_2</previous>
+         <next>REMKE</next>
+      </check>
+      <box sid="BOX74846">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>317</x>
+            <y>1121</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX49909">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>569</x>
+            <y>1120</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1281</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2ZMWgjVxCGne6qoFLtkSaGFBIcQYZLYcEVMbiIwYUPUhiRwhw5COKKQ1wThAsh
+UhiRwiwpDHvFgVQE5OJAaS4ohUEuDtaFYF2o2MLFFi62UKF8syM/rWRxWp1WMoIbVqDdnTfvf/Pm
+zfvnbX735TcboXzP71t+P/DL8vtqIx0+z/H+36/1dyf+eso64x70A+fcbv9Zbp9Wvct2cOs7f9uD
+/mAQBJ2GxfPOOyvwfe9jh7foe1cOCtoeBb/nuh+a3lWHhmgObgN5TpMbT4xjJGw+kq5DR5h1zutD
+hYYo6x+sSReXbdE5rbr/tfQWI3rpkw3to7b9WN41rOqTlH/tSPf9gfuh1aoUgVt/9bz5uoCCe9HW
+jquZlH20Z/+yU32apkv+gMO/dnlOx62Tkv1zHnegy9ty5hFNhqDRyaWxzxN0sB/c+NVcCsudtzXr
+pyzDxgvoOO/r7kULywBAzTrIu/80ubgd4qZL+zAvffh++btRHziAEdd/3bMOtpyGHXVZ/WiPVs3f
+XzSPi9wa3EC0D3fo3trfUn8rbhSwIw5r2LVnmzhF/BUCRQHcjIEm1m4Wr7WOi9xGuwN37dlj3Mel
+vpuCmxlXbUaMNrcyNcZhoTBu+uAt3URx42/s4hIcho7BjQt5G3ge1phSDOJmBg8O9bfETNfBIGMj
+CJlGCbwbT8wygZUi7pC+rp3AxDdWZOJCB7cqJfWT3N4GrT9KREjzzYsJ3DLa0zIOG46wYTOnWCRC
+aMLVOathTXDf+vpEHob6dIdBzIKJt/TSPimrAtMbhMsD6PVXBUbVPqsSb7gA6HqpO9Y5n6yjfMG9
+WvmCe7WyRNxst2zAusUkLkvBDVaSMdsNu1j9t+fB7BZzyxJw91x2aRCbSzZdJTbJScK4hTD2XPjM
+JO7LNtATjJnEcLM/s3XDPYKQGE/ECYihUMIxQpq6uCSDGyIFzVLvGuYo6/LdcF1C2fUthAm6tniP
+CeAW+pZJmaiAr+pzCJApL6BQ0chhNhbsNAHc8EcYqcEEg4XlQeX01trPQgyjEc8T3P/wuP0wfCGu
+5UxKw0A4d8S7UsV97NTCQKLUUH67oCSZT6TgCJcd/qYUMLi1smLhwtGT6mtZ+6UEfS5N3LdOysuw
+nwTunksGZDmai6qHYJATAa7BoPPWir4lM+q5wEPiJpqJ6Wg0N98UKOpGJdx5nTihqNN0Ply7mVT7
+r+rD4KYuZJFFEcuiPK+T/vjDpQcp1kEexKxafFz7cTOqTzVNpbxS3PTH/hcFAT7cTN06SiMUsD3X
+uFny+rVj8uOQAoTnNqvDPebpzCMCmmRCYh7bXE5KRNEESnKinC7l0mMDXhFuz4OHGM6kPDua+AR0
+pah5mkA3yuODHO1EenS2dNytSmk09V2mvjDp1PCIYyRdZyKo5DjqahRUwreWjVuPxXChLLWLaUvt
+ZspSm7KIc2lyvCzibYmZeaN8btzsIzgvPC8tVyOpjQAgtX2aYZNt7iVNOQmT08OjvSXi1kMz7Wks
+NnY34zrMc+3DsWoIAixeOKveP8pLDDdLzczsyGevC4xnDiP9wQSt1ajTfJ88bjn1PC6Ox2jKMOx5
+ZcraONqJD3wO3MJUo/O7vzXXzN4XUMJVJqYuZtu4uCkZSdWjHEx67idzvkAtZxJ8+LUjVgEaFzfW
+h6a35UDeTa44l1Kf8vQuwZMu47SKhZvI1mqFEIRjMJuG7i0u4JavHV2nGS4eqOLUHWBCYuHWypf0
+LJxuN8uOONfanyng1gJPEzz78cwmsXAr0we31u0LUuf7Aj8ZBsmxbEPQh5kun41bHIutu4pdPvwl
+g3ZMTMEvmzH16CxeHtffJlXJB64lCGs9svtmZyarWLhhqmajWYazfT2Iu2O2ceIwXj7B6IGQisXP
+mT4hLMphHMZY9HHzt9CSJ6nPLgfjCN6Bn8U8t5hvn/9cSHFFz7riaK7t953/ATisIIluIwAA</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+         
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2dsY4cRRCG10SIABE6dYYlAiytEAgnWCIAyQGWCDiJACEHDvwWhBf6eYh4BF4B
+Ul6Bu927vb3Z7uqq6Z6ump7v029h6q6LPpvr6qt/evrV60/+fbK75aubX5/f/Przo93u25t/Ptk9
+PcT//ufJ7q9Pd4df9/wHAAAAoIa9AwAAAFhw2jv88cXHCKGCvpzos6n2JX39tKyXEz27fvksGdcH
+cxmscW3QMrEHfZdQatT9wNtPeH79vVE/nOtFQq+L+ub6p5R+nuhVQr8cFCqPnKTVVLP68frXqT68
+fYNM8tg7KL5RRpZ/OQolv9pYrCFn6lMiMovl8gvnVL8dlIzrg63iyqBpYnd6c9KHMwl/Jvml9OrD
+u3ud/17Q+3P9nlTnlRnABJ4FAAAAWOi+d/D/WReh+Jp2ZJZpyuSa8y+fpW0FdbBVXBk0TUzuNKWS
+n0bVuBXdDYvzflOoPHKSVlNNNt0yfTd3C2BF8tg73P4f4W0ZxDIsblb3y7Iws5hkKkxljQpb9Po4
+EQ3W/mBOxEW7ftKxP60Qybg+2CquDJomltKDmyCNunMlHg9UmhS4FTAWeBYAAABgoePewb8PHE37
+WT/Yo/Wq2JQpdmT2HToyh6ZM+XPmZbDGm6vUbBIGHttPcqNK37Qqdiq1vSpFoypUHjlJq6laenPu
+RsAq5LF3ODt5s2lNK8mdZ6FwGcpGQMYaqCxlA9fGesOiZu1f3sK1ni+YLhXJuD7YKq4Mmib2SBem
+gzBq6lkY3QqFYdFhNQZoAp4FAAAAWOiyd/DvFccUnsWmtK5HSJNxfbBVXBk0TUxuNiWSn7eiXhS6
+VH0esbV270PlqfUs2j9M7G4HBJfH3uHgVlgMC/m7SnWkqWnOGR/ND5kWk73OZdDUnFwhqixlA9fG
+Tb3oyWpYvBVtBU2wVVwZNE3sQSlbQRj14Fm0P16x6DoM0Bw8CwAAALCw8N7Bv1EcWXgWG5H3i57m
+PEJathXEYKu4MmiamNxpEkYdW07uLwSZ0bQKlafBOYuur0Fxtwwc5bF3OK6asmFx+IRpS3/2R5fI
+af2oPORmOTnVk9vf70sug77m5KpQZSkbuDb6Lv9hj1dsRXnTQRiVfDcUbgVsEjwLAAAAsLBw3wFJ
+wrPYguo7Mn3eeTHpvyTj+mCruDJompjcbBJGyZ5FnxeCzGtahcojJwnYp/NvkznIY+/gv1qvRXvR
+ZTDVnFwhqixlA9dGx+U/8vGKTUi0GISBRwPilKTasGi+9gJ0A88CAAAALNB38O07uM8BLadVXyma
+jOuDreLKoGlicqdJGCV4FjGPV+RsAt88chL/4xUXfTr/TllXeewd/FfrdWmfcRlm1JxcFaosZQPX
+Rqtbsdb3QZWv296cZJdBGPj+5FnUvg+q4aoL4AKeBQAAAFig7+DYdHCfA+qm1TVo9G9bMmWwxpVB
+08Tk3pMwKmlYxHkflNCuCpVHThLneMX2OnQee4fy8+dn30n+C3kE7VPVY17N4TILLrNoftoid+WE
+MtgqrgyaJnanjNEgjHp3VX+8osl6C+AOngUAAABYaLR38P8xfnXCs9iIVvrC7oKtUAq2iiuDponJ
+nSZh1KVn4fM+KHuXKlQeOQmvQfGQx96hfMX2xfeT/3LuIS6ziFUbI5+26OPibmNRTEn0HYSBdddt
+V660AKHAswAAAAAL1XsH95/n1yo8iy1ovS/sTsb1wVZxZdA0MbnZJIw69yziHK/QNKpC5ZGT8BqU
+vvLYO9z+JVuOV9zr+eIL9iq0F10GLrPgMgtc3IVU824o3AqAA3gWAAAAYKFi7+D/o/uqhWcxttb+
+wu70lRPqYKu4MmiamNxpEkadPAuHFlXdY7Wh8hSS8CRxJ3nsHQ5uhfl4xdGwwLO4057LLMK8DyrI
+8YpALq7Yulcpl8Eab66S7yAMlD2LlGFRuTwDhAXPAgAAACzM2jv4/9C+dmFYbFDr6tQk4/pgLoM1
+rg1aJiZ3oIQ/E/e21OzOVKg8chKvZpyrfdBZHnuH4ypYNCz81+ngujUaLqrHzJqTKUSVpWzGF7Wu
+2oiLIbsYybg+2CquDJom9kip+yxyo3Q3VuBWwBbAswAAAAALs/oOqFZ4FltTsSkT5EUY6Qusc7ZC
+PtgqrgyaJiY3mxLJzz+hz5GKWR0ooQkVKo+chCMVS8pj7+C/+o6kO89C4TKUjYCMNVBZyqxf0epq
+Y41h0adc+C6cW7iDO3nmQr6DW2FYNFyeAcKCZwEAAAAW6Du4CM9iU1rjI6TJuD7YKq4MmiYmN5uE
+Uas7XnFpE0TIIyfh5ezLyGPv4L/0jqe9zmXQ1JxcIaosZaYvZ421UWVYDHO8YusL54Uq7uDOGxbN
+l2eAsOBZAAAAgAX6Di7Cs9iI+rzzYtqRuWjKzHiEVLIVFMFWcWXQNDH50VhhVMwOlKYJFSqPnMT9
+KeHh5LF3WOLeislN3JeffP6vpo8ukdP6UeWQqddQc/1ErgpVlrLha2OxhngZFiyci6viDm7cCoAD
+eBYAAABgQdw7+Ld8RxWexRZU35Hp886LZBcmGdcHW8WVQdPE5GaTMGrBF3zMcCssj8yGylP+unhK
+uI089g7HxY97K5bSXnQZTDUnV4gqS9nwtdFqWIQoF90WTu7gTg1MGRaLLs8AYcGzAAAAAAti3wEt
+JTyLsTXSlaKjKtdpkobEOV5hbEKFylN4FLhh3019a+xw8tg7+K+7W9A+4zLMqDm5KlRZyuT5j1Qb
+gxyvcLxuO9nVT8b1wVwGa1wbtExM0Pu8pfIOtwLgATwLAAAAsEDfwUV4FgNrpCtFR5XQbBJGhbg/
+9dWcd3yEyiMnaTVV3Ip+ewf/RXc7SlaMeTWn+N9qnnak2sh129M+f/K4wVXKVhCDreLKoGligmEx
+9SyuHg3ErQC4B88CAAAALNzvHfx/FN+U8CxG1TCPkA4sudM007MIebzi1IQKlUdO0mqq2zMsnPYO
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+         
+      </data>
+      <check sid="APPRVD">
+         <itemlocation>
+            <x>318</x>
+            <y>1122</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box APPRVD</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('DAPPRVD.value','off')) : ''"></custom:push_value>
+         <previous>OTHC</previous>
+         <next>DAPPRVD</next>
+      </check>
+      <check sid="DAPPRVD">
+         <itemlocation>
+            <x>570</x>
+            <y>1121</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>16.  REQUESTED CLEARANCE.,&#xD;
+Check box disapproved.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('APPRVD.value','off')) : ''"></custom:push_value>
+         <previous>APPRVD</previous>
+         <next>AppOffcrSig</next>
+      </check>
+      <check sid="HAS">
+         <itemlocation>
+            <x>198</x>
+            <y>175</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>involving excavation or utility disturbance per attached sketch.  This area.&#xD;
+Check box HAS</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('HASNOT.value','off')) : ''"></custom:push_value>
+         <previous>CTRNO</previous>
+         <next>HASNOT</next>
+      </check>
+      <check sid="HASNOT">
+         <itemlocation>
+            <x>258</x>
+            <y>175</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check box has not been staked or clearly marked.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('HAS.value','off')) : ''"></custom:push_value>
+         <previous>HAS</previous>
+         <next>ABC</next>
+      </check>
+      <field sid="REMKA">
+         <itemlocation>
+            <x>342</x>
+            <y>387</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>ORGANIZATION. 8. Base civil engineering. A. Electrical distribution. REMARKS.  Use Reverse for additional comments. </acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ORGN</previous>
+         <next>SIGNATURE1</next>
+      </field>
+      <field sid="REMKA_2">
+         <itemlocation>
+            <x>342</x>
+            <y>427</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>B.  STEAM DISTRIBUTION. remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE1</previous>
+         <next>SIGNATURE2</next>
+      </field>
+      <field sid="REMKA_3">
+         <itemlocation>
+            <x>342</x>
+            <y>467</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>C.  WATER DISTRIBUTION. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE2</previous>
+         <next>SIGNATURE3</next>
+      </field>
+      <field sid="REMKA_4">
+         <itemlocation>
+            <x>342</x>
+            <y>507</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>D.  P O L DISTRIBUTION. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE3</previous>
+         <next>SIGNATURE4</next>
+      </field>
+      <field sid="REMKA_5">
+         <itemlocation>
+            <x>342</x>
+            <y>547</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>E.  SEWER DISTRIBUTION. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE4</previous>
+         <next>SIGNATURE5</next>
+      </field>
+      <field sid="REMKA_6">
+         <itemlocation>
+            <x>342</x>
+            <y>587</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>F.  ENVIRONMENTAL. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE5</previous>
+         <next>SIGNATURE6</next>
+      </field>
+      <field sid="REMKA_7">
+         <itemlocation>
+            <x>342</x>
+            <y>627</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>G.  PAVEMENTS or GROUNDS</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE6</previous>
+         <next>SIGNATURE7</next>
+      </field>
+      <field sid="REMKA_8">
+         <itemlocation>
+            <x>342</x>
+            <y>667</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>H.  FIRE PROTECTION. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE7</previous>
+         <next>SIGNATURE8</next>
+      </field>
+      <field sid="REMKB">
+         <itemlocation>
+            <x>342</x>
+            <y>707</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>I. Zone. Organization. Remarks.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>ZONE</previous>
+         <next>SIGNATURE9</next>
+      </field>
+      <field sid="REMKC">
+         <itemlocation>
+            <x>342</x>
+            <y>747</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Other remarks.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>OTHB</previous>
+         <next>SIGNATURE10</next>
+      </field>
+      <field sid="REMKD">
+         <itemlocation>
+            <x>342</x>
+            <y>787</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>9.  SECURITY POLICE. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE10</previous>
+         <next>SIGNATURE11</next>
+      </field>
+      <field sid="REMKD_2">
+         <itemlocation>
+            <x>342</x>
+            <y>827</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>10.  SAFETY. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE12</previous>
+         <next>SIGNATURE12</next>
+      </field>
+      <field sid="REMKD_3">
+         <itemlocation>
+            <x>342</x>
+            <y>867</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>11.  COMMUNICATIONS. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE12</previous>
+         <next>SIGNATURE13</next>
+      </field>
+      <field sid="REMKD_4">
+         <itemlocation>
+            <x>342</x>
+            <y>907</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>12.  BASE OPERATIONS. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE13</previous>
+         <next>SIGNATURE14</next>
+      </field>
+      <field sid="REMKD_5">
+         <itemlocation>
+            <x>342</x>
+            <y>947</y>
+            <width>373</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>13.  CABLE TV. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>SIGNATURE14</previous>
+         <next>SIGNATURE15</next>
+      </field>
+      <field sid="REMKE">
+         <itemlocation>
+            <x>342</x>
+            <y>992</y>
+            <width>373</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>14.  COMMERCIAL UTILITY COMPANY. Remarks</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>COMUTIL_3</previous>
+         <next>SIGNATURE16</next>
+         <size>
+            <height>4</height>
+         </size>
+      </field>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>930</x>
+            <y>47</y>
+            <width>2</width>
+            <height>1161</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>30</x>
+            <y>387</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>54</x>
+            <y>427</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>54</x>
+            <y>467</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>54</x>
+            <y>507</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_29">
+         <itemlocation>
+            <x>54</x>
+            <y>587</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_31">
+         <itemlocation>
+            <x>54</x>
+            <y>627</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_33">
+         <itemlocation>
+            <x>54</x>
+            <y>667</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_35">
+         <itemlocation>
+            <x>54</x>
+            <y>707</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_38">
+         <itemlocation>
+            <x>54</x>
+            <y>747</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_39">
+         <itemlocation>
+            <x>30</x>
+            <y>787</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_40">
+         <itemlocation>
+            <x>30</x>
+            <y>827</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_41">
+         <itemlocation>
+            <x>30</x>
+            <y>867</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_42">
+         <itemlocation>
+            <x>30</x>
+            <y>907</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_43">
+         <itemlocation>
+            <x>30</x>
+            <y>947</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_44">
+         <itemlocation>
+            <x>30</x>
+            <y>987</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_45">
+         <itemlocation>
+            <x>30</x>
+            <y>1070</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_51">
+         <itemlocation>
+            <x>342</x>
+            <y>367</y>
+            <width>1</width>
+            <height>704</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_56">
+         <itemlocation>
+            <x>714</x>
+            <y>327</y>
+            <width>1</width>
+            <height>744</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>47</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>54</x>
+            <y>548</y>
+            <width>878</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <button sid="ReqOffclSig">
+         <itemlocation>
+            <x>34</x>
+            <y>344</y>
+            <width>460</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE2_1946938368</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <bgcolor>#FFFFFF</bgcolor>
+         <border>off</border>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+         <previous>CalDtB</previous>
+         <next>TELE</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.BOX68026</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+      </button>
+      <button sid="AppOffcrSig">
+         <itemlocation>
+            <x>37</x>
+            <y>1170</y>
+            <width>693</width>
+            <height>36</height>
+            <width>692</width>
+            <height>31</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <designer:design>
+            <designer:designValue key="signatureAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <signature>SIGNATURE1_439321747</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <bgcolor>#FFFFFF</bgcolor>
+         <border>off</border>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+         <previous>DAPPRVD</previous>
+         <next>CalDtA</next>
+         <signer></signer>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+      </button>
+      <label sid="AppOffcrSig_DATE">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <itemlocation>
+            <after>AppOffcrSig</after>
+            <alignb2b>AppOffcrSig</alignb2b>
+            <width>150</width>
+            <offsetx>17</offsetx>
+            <offsety>-4</offsety>
+         </itemlocation>
+         <value compute="toggle(AppOffcrSig.signer)=='1' ? AppOffcrSig.signer == '' ? '' : tolower(AppOffcrSig.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <format>
+            <datatype>date</datatype>
+            <presentation>
+               <style>numeric</style>
+            </presentation>
+         </format>
+         <help>AppOffcrSig_DATE_HELP1</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="AppOffcrSig_DATE1">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <value compute="toggle(AppOffcrSig.signer)=='1' ? AppOffcrSig.signer == '' ? '' : tolower(AppOffcrSig.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <help>AppOffcrSig_DATE1_HELP1</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <itemlocation>
+            <after>AppOffcrSig</after>
+            <alignb2b>AppOffcrSig</alignb2b>
+            <width>150</width>
+            <offsetx>-230</offsetx>
+            <offsety>-872</offsety>
+         </itemlocation>
+         <format>
+            <datatype>date</datatype>
+            <presentation>
+               <style>numeric</style>
+            </presentation>
+         </format>
+      </label>
+      <button sid="SIGNATURE1">
+         <itemlocation>
+            <x>716</x>
+            <y>398</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE1_101752733</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA</previous>
+         <next>REMKA_2</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE2">
+         <itemlocation>
+            <x>716</x>
+            <y>437</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE2_2011635237</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_2</previous>
+         <next>REMKA_3</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE3">
+         <itemlocation>
+            <x>716</x>
+            <y>478</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE3_57006451</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_3</previous>
+         <next>REMKA_4</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.BOX49051</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE4">
+         <itemlocation>
+            <x>716</x>
+            <y>518</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE4_875840067</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_4</previous>
+         <next>REMKA_5</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE5">
+         <itemlocation>
+            <x>716</x>
+            <y>558</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE5_1481326701</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_5</previous>
+         <next>REMKA_6</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE6">
+         <itemlocation>
+            <x>716</x>
+            <y>596</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE6_793029054</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_6</previous>
+         <next>REMKA_7</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE7">
+         <itemlocation>
+            <x>716</x>
+            <y>636</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE7_359972289</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_7</previous>
+         <next>REMKA_8</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE8">
+         <itemlocation>
+            <x>716</x>
+            <y>678</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE8_712501148</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKA_8</previous>
+         <next>ZONE</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE9">
+         <itemlocation>
+            <x>716</x>
+            <y>719</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE9_455996389</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKB</previous>
+         <next>OTHB</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE10">
+         <itemlocation>
+            <x>716</x>
+            <y>759</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE10_590721721</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKC</previous>
+         <next>REMKD</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE11">
+         <itemlocation>
+            <x>716</x>
+            <y>796</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE11_735173017</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKD</previous>
+         <next>REMKD_2</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE12">
+         <itemlocation>
+            <x>716</x>
+            <y>837</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE12_1461810722</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKD_2</previous>
+         <next>REMKD_3</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE13">
+         <itemlocation>
+            <x>716</x>
+            <y>879</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE13_2015861986</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKD_3</previous>
+         <next>REMKD_4</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE14">
+         <itemlocation>
+            <x>716</x>
+            <y>918</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE14_279941865</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKD_4</previous>
+         <next>REMKD_5</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATURE16">
+         <itemlocation>
+            <x>716</x>
+            <y>1015</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE16_1880977784</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <border>off</border>
+         <bgcolor>#FFFFFF</bgcolor>
+         <previous>REMKE</previous>
+         <next>OTHC</next>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>PAGE1.REMKD_5</itemref>
+            <itemref>PAGE1.SIGNATUREfor13</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>SIGNATURE17_1387069447</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+      </button>
+      <button sid="SIGNATUREfor13">
+         <itemlocation>
+            <x>716</x>
+            <y>957</y>
+            <width>213</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE17_1387069447</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <bgcolor>#FFFFFF</bgcolor>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : 'on'">on</printvisible>
+         <border>off</border>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.WONO</itemref>
+            <itemref>PAGE1.CTRNO</itemref>
+            <itemref>PAGE1.HAS</itemref>
+            <itemref>PAGE1.HASNOT</itemref>
+            <itemref>PAGE1.ABC</itemref>
+            <itemref>PAGE1.ABC_2</itemref>
+            <itemref>PAGE1.ABC_3</itemref>
+            <itemref>PAGE1.D</itemref>
+            <itemref>PAGE1.E</itemref>
+            <itemref>PAGE1.F</itemref>
+            <itemref>PAGE1.OVHA</itemref>
+            <itemref>PAGE1.OVHB</itemref>
+            <itemref>PAGE1.UNDGA</itemref>
+            <itemref>PAGE1.UNDGB</itemref>
+            <itemref>PAGE1.GHI</itemref>
+            <itemref>PAGE1.GHI_2</itemref>
+            <itemref>PAGE1.GHI_3</itemref>
+            <itemref>PAGE1.OTH</itemref>
+            <itemref>PAGE1.AppOffcrSig</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE</itemref>
+            <itemref>PAGE1.AppOffcrSig_DATE1</itemref>
+            <itemref>PAGE1.COMUTIL</itemref>
+            <itemref>PAGE1.COMUTIL_2</itemref>
+            <itemref>PAGE1.COMUTIL_3</itemref>
+            <itemref>PAGE1.REMKE</itemref>
+            <itemref>PAGE1.SIGNATURE16</itemref>
+            <itemref>PAGE1.OTHC</itemref>
+            <itemref>PAGE1.APPRVD</itemref>
+            <itemref>PAGE1.DAPPRVD</itemref>
+            <itemref>PAGE1.REMKA</itemref>
+            <itemref>PAGE1.SIGNATURE1</itemref>
+            <itemref>PAGE1.REMKA_2</itemref>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.REMKA_3</itemref>
+            <itemref>PAGE1.SIGNATURE3</itemref>
+            <itemref>PAGE1.REMKA_4</itemref>
+            <itemref>PAGE1.SIGNATURE4</itemref>
+            <itemref>PAGE1.REMKA_5</itemref>
+            <itemref>PAGE1.SIGNATURE5</itemref>
+            <itemref>PAGE1.REMKA_6</itemref>
+            <itemref>PAGE1.SIGNATURE6</itemref>
+            <itemref>PAGE1.REMKA_7</itemref>
+            <itemref>PAGE1.SIGNATURE7</itemref>
+            <itemref>PAGE1.REMKA_8</itemref>
+            <itemref>PAGE1.SIGNATURE8</itemref>
+            <itemref>PAGE1.ZONE</itemref>
+            <itemref>PAGE1.REMKB</itemref>
+            <itemref>PAGE1.SIGNATURE9</itemref>
+            <itemref>PAGE1.OTHB</itemref>
+            <itemref>PAGE1.REMKC</itemref>
+            <itemref>PAGE1.SIGNATURE10</itemref>
+            <itemref>PAGE1.REMKD</itemref>
+            <itemref>PAGE1.SIGNATURE11</itemref>
+            <itemref>PAGE1.REMKD_2</itemref>
+            <itemref>PAGE1.SIGNATURE12</itemref>
+            <itemref>PAGE1.REMKD_3</itemref>
+            <itemref>PAGE1.SIGNATURE13</itemref>
+            <itemref>PAGE1.REMKD_4</itemref>
+            <itemref>PAGE1.SIGNATURE14</itemref>
+            <itemref>SIGNATURE1_439321747</itemref>
+            <itemref>SIGNATURE16_1880977784</itemref>
+            <itemref>SIGNATURE1_101752733</itemref>
+            <itemref>SIGNATURE2_2011635237</itemref>
+            <itemref>SIGNATURE3_57006451</itemref>
+            <itemref>SIGNATURE4_875840067</itemref>
+            <itemref>SIGNATURE5_1481326701</itemref>
+            <itemref>SIGNATURE6_793029054</itemref>
+            <itemref>SIGNATURE7_359972289</itemref>
+            <itemref>SIGNATURE8_712501148</itemref>
+            <itemref>SIGNATURE9_455996389</itemref>
+            <itemref>SIGNATURE10_590721721</itemref>
+            <itemref>SIGNATURE11_735173017</itemref>
+            <itemref>SIGNATURE12_1461810722</itemref>
+            <itemref>SIGNATURE13_2015861986</itemref>
+            <itemref>SIGNATURE14_279941865</itemref>
+            <itemref>PAGE2.REMKSF</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+      </button>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>A741D1D6-8973-4B57-918B-42753DC0A000</serialnumber>
+         </pageid>
+         <next>REMKSF</next>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+         
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+         
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         
+         <previous>REMKSF</previous>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         
+      </button>
+      <field sid="REMKSF">
+         <itemlocation>
+            <x>32</x>
+            <y>211</y>
+            <width>898</width>
+            <height>1016</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>18. Remarks. This section must describe specific precautionary measure to be taken before and during work accomplishment.  Specific comments concerning the approved method of excavation, hand or powered equipment, should be included.</acclabel>
+         <value></value>
+         <previous>prev_button</previous>
+         <next>Save_BUTTON</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </field>
+      <label sid="LABEL_83">
+         <itemlocation>
+            <x>427</x>
+            <y>48</y>
+         </itemlocation>
+         <value>INSTRUCTIONS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_84">
+         <itemlocation>
+            <x>35</x>
+            <y>68</y>
+         </itemlocation>
+         <value>The BCE work clearance request is used for any work (contract or in-house) that may disrupt aircraft or vehicular traffic flow, base utility services,
+protection provided by fire and intrusion alarm system, or routine activities of the installation.  This form is used to coordinate the required work with key
+base activities and keep customer inconvenience to a minimum.  It is also used to identify potentially hazardous work conditions in an attempt to
+prevent accidents.  The work clearance request is processed just prior to the start of work.  If delays are encountered and the conditions at the job site
+change (or may have changed) this work clearance request must be reprocessed.</value>
+         <linespacing>1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_85">
+         <itemlocation>
+            <x>34</x>
+            <y>168</y>
+         </itemlocation>
+         <value>18.  REMARKS.  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_86">
+         <itemlocation>
+            <x>124</x>
+            <y>168</y>
+         </itemlocation>
+         <value>(This section must describe specific precautionary measure to be taken before and during work accomplishment.  Specific comments </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_87">
+         <itemlocation>
+            <x>34</x>
+            <y>180</y>
+         </itemlocation>
+         <value>concerning the approved method of excavation, hand or powered equipment, should be included.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_88">
+         <itemlocation>
+            <x>34</x>
+            <y>1226</y>
+            <width>188</width>
+            <height>22</height>
+         </itemlocation>
+         <value>AF IMT 103, 19940801, V3 </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_89">
+         <itemlocation>
+            <x>323</x>
+            <y>1226</y>
+         </itemlocation>
+         <value> (REVERSE)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_58">
+         <itemlocation>
+            <x>30</x>
+            <y>47</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_59">
+         <itemlocation>
+            <x>30</x>
+            <y>167</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_60">
+         <itemlocation>
+            <x>30</x>
+            <y>1227</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_61">
+         <itemlocation>
+            <x>30</x>
+            <y>47</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_62">
+         <itemlocation>
+            <x>930</x>
+            <y>47</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+</XFDL>

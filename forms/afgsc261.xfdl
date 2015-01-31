@@ -1,0 +1,5031 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>23/12/2002</designer:date>
+         <formid>
+            <serialnumber>3BAF9372-8DC1-4E31-BAE5-B1EB87F10F38</serialnumber>
+            <version>1.6.6</version>
+            <title>ACC FORM 00261, 19930101</title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <printsettings>
+            <border>off</border>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+         </printsettings>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>ACC00261, 19930101</label>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5">IBM Lotus Forms Designer</editor>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+               <editor minversion="3.5.1" version="4.0.0">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+         
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>9841398A-43A0-4081-BD4A-8CB5E8059D57</serialnumber>
+         </pageid>
+         <next>Date</next>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>AFGSC FORM 261</label>
+      </global>
+      <toolbar sid="TOOLBAR">
+         <designer:height>78</designer:height>
+      </toolbar>
+      <label sid="LABEL44">
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>0</x>
+            <y>0</y>
+         </itemlocation>
+         <image>DATA1</image>
+         <active>off</active>
+      </label>
+      <button sid="BUTTON8">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>206</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save As</value>
+         <previous>FIELD37</previous>
+      </button>
+      <button sid="BUTTON9">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveform</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>283</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+      </button>
+      <button sid="BUTTON10">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>360</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="BUTTON11">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>437</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="BUTTON12">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>129</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+      </button>
+      <button sid="BUTTON13">
+         <url compute="'#' +. custom:page_prev">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>578</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE2.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="BUTTON14">
+         <url compute="'#' +. custom:page_next">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>655</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE2.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE1.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">on</visible>
+         <previous>Comments</previous>
+      </button>
+      <box sid="BOX2">
+         <itemlocation>
+            <x>318</x>
+            <y>454</y>
+            <width>132</width>
+            <height>40</height>
+         </itemlocation>
+         <border>on</border>
+         <bgcolor>175,175,175</bgcolor>
+      </box>
+      <box sid="BOX1">
+         <itemlocation>
+            <x>318</x>
+            <y>333</y>
+            <width>132</width>
+            <height>41</height>
+         </itemlocation>
+         <border>on</border>
+         <bgcolor>175,175,175</bgcolor>
+      </box>
+      <field sid="Date">
+         <itemlocation>
+            <x>692</x>
+            <y>68</y>
+            <width>237</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>AY C C FORM 2 61, 19 93 o 1 o 1.&#xD; INSTRUCTOR  EVALUATION CHECKLIST. enter date in Y Y Y Y M M D D format</acclabel>
+         <value></value>
+         <help>Date_HELP</help>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <next>Name</next>
+         <previous>Date</previous>
+      </field>
+      <help sid="Date_HELP">
+         <value>Enter date as YYYYMMDD (Example:  20000101)</value>
+      </help>
+      <field sid="Name">
+         <itemlocation>
+            <x>33</x>
+            <y>167</y>
+            <width>416</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter name using last name comma first name comma middle initial format</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Organ</next>
+         <previous>Date</previous>
+      </field>
+      <field sid="Organ">
+         <itemlocation>
+            <x>452</x>
+            <y>167</y>
+            <width>237</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; ORGANIZATION.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>TimeSt</next>
+         <previous>Name</previous>
+      </field>
+      <field sid="TimeSt">
+         <itemlocation>
+            <x>692</x>
+            <y>167</y>
+            <width>117</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; TIME STARTED.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>TimeDis</next>
+         <previous>Organ</previous>
+         <justify>center</justify>
+      </field>
+      <field sid="TimeDis">
+         <itemlocation>
+            <x>812</x>
+            <y>167</y>
+            <width>117</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; TIME DISMISSED.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Evalu</next>
+         <previous>TimeSt</previous>
+         <justify>center</justify>
+      </field>
+      <field sid="Evalu">
+         <itemlocation>
+            <x>33</x>
+            <y>227</y>
+            <width>416</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; EVALUATOR.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Course</next>
+         <previous>TimeDis</previous>
+      </field>
+      <field sid="Course">
+         <itemlocation>
+            <x>452</x>
+            <y>227</y>
+            <width>237</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; COURSE.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Subject</next>
+         <previous>Evalu</previous>
+         <justify>center</justify>
+      </field>
+      <field sid="Subject">
+         <itemlocation>
+            <x>692</x>
+            <y>227</y>
+            <width>237</width>
+            <height>46</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; SUBJECT.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Houkep</next>
+         <previous>Course</previous>
+      </field>
+      <field sid="Comments">
+         <itemlocation>
+            <x>452</x>
+            <y>340</y>
+            <width>477</width>
+            <height>857</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD; COMMENTS.&#xD; Instructional improvement techniques covered in the evaluation debriefing.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>BUTTON14</next>
+         <previous>NARating_19</previous>
+      </field>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>697</x>
+            <y>37</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>164</x>
+            <y>49</y>
+         </itemlocation>
+         <value>INSTRUCTOR  EVALUATION CHECKLIST</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>157</x>
+            <y>107</y>
+            <width>711</width>
+            <height>36</height>
+         </itemlocation>
+         <value>Mark (X) each item in Section I as SUPERIOR (S), GOOD (G), WEAK (W).  Items which are not applicable to the type of lesson
+presented will be (NA).  Follow-up evaluation is required in Section IV within 30 days when any block is rated "WEAK" (W).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>37</x>
+            <y>113</y>
+         </itemlocation>
+         <value>INSTRUCTIONS:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>33</x>
+            <y>152</y>
+         </itemlocation>
+         <value> NAME </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>72</x>
+            <y>152</y>
+         </itemlocation>
+         <value>(Last, First, Middle Initial)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>457</x>
+            <y>152</y>
+         </itemlocation>
+         <value>ORGANIZATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>697</x>
+            <y>152</y>
+         </itemlocation>
+         <value>TIME STARTED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>817</x>
+            <y>152</y>
+         </itemlocation>
+         <value>TIME DISMISSED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>37</x>
+            <y>212</y>
+         </itemlocation>
+         <value>EVALUATOR</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>457</x>
+            <y>212</y>
+         </itemlocation>
+         <value>COURSE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>697</x>
+            <y>212</y>
+         </itemlocation>
+         <value>SUBJECT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>648</x>
+            <y>276</y>
+         </itemlocation>
+         <value>COMMENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>330</x>
+            <y>278</y>
+         </itemlocation>
+         <value>RATING</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>379</x>
+            <y>279</y>
+         </itemlocation>
+         <value> (Mark X)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>44</x>
+            <y>293</y>
+         </itemlocation>
+         <value>I</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>151</x>
+            <y>293</y>
+         </itemlocation>
+         <value>ITEMS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>551</x>
+            <y>293</y>
+            <width>294</width>
+            <height>40</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>(Instructional improvement techniques covered
+in the evaluation debriefing)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_19">
+         <itemlocation>
+            <x>328</x>
+            <y>308</y>
+         </itemlocation>
+         <value>S</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_20">
+         <itemlocation>
+            <x>360</x>
+            <y>308</y>
+         </itemlocation>
+         <value>G</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>392</x>
+            <y>308</y>
+         </itemlocation>
+         <value>W</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>421</x>
+            <y>308</y>
+         </itemlocation>
+         <value>NA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>37</x>
+            <y>337</y>
+         </itemlocation>
+         <value>1.  CONDITION OF TRAINING AREA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>53</x>
+            <y>351</y>
+         </itemlocation>
+         <value>(Subject to instructor control)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>53</x>
+            <y>378</y>
+         </itemlocation>
+         <value>A.  HOUSEKEEPING</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>65</x>
+            <y>394</y>
+         </itemlocation>
+         <value>(Cleanliness, equipment operation, etc.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>53</x>
+            <y>417</y>
+         </itemlocation>
+         <value>B.  ENVIRONMENTAL FACTORS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>65</x>
+            <y>433</y>
+         </itemlocation>
+         <value>(Temperature, ventilation, noise, lighting, etc.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>37</x>
+            <y>465</y>
+         </itemlocation>
+         <value>2.  INSTRUCTOR EFFECTIVENESS IN</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>53</x>
+            <y>505</y>
+         </itemlocation>
+         <value>A.  PREPARING FOR INSTRUCTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>53</x>
+            <y>545</y>
+         </itemlocation>
+         <value>B.  LESSON PLAN USE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>53</x>
+            <y>585</y>
+         </itemlocation>
+         <value>C.  INSTRUCTIONAL TECHNIQUES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>53</x>
+            <y>625</y>
+         </itemlocation>
+         <value>D.  COMMUNICATIVE SKILLS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_34">
+         <itemlocation>
+            <x>53</x>
+            <y>665</y>
+         </itemlocation>
+         <value>E.  USE OF TRAINING AIDS/MATERIALS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_35">
+         <itemlocation>
+            <x>53</x>
+            <y>705</y>
+         </itemlocation>
+         <value>F.  QUESTIONING TECHNIQUES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_36">
+         <itemlocation>
+            <x>53</x>
+            <y>745</y>
+         </itemlocation>
+         <value>G.  RAPPORT WITH STUDENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_37">
+         <itemlocation>
+            <x>53</x>
+            <y>785</y>
+         </itemlocation>
+         <value>H.  SHOWING INTEREST AND ENTHUSIASM</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>56</x>
+            <y>825</y>
+         </itemlocation>
+         <value>I.  SUPERVISING STUDENT ACTIVITIES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_39">
+         <itemlocation>
+            <x>53</x>
+            <y>865</y>
+         </itemlocation>
+         <value>J.  APPRAISAL/SUMMARY TECHNIQUES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_40">
+         <itemlocation>
+            <x>53</x>
+            <y>897</y>
+         </itemlocation>
+         <value>K.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_41">
+         <itemlocation>
+            <x>69</x>
+            <y>897</y>
+         </itemlocation>
+         <value>EMPHASIZING PROPER USE OF TECH
+DATA</value>
+         <linespacing>-3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>53</x>
+            <y>937</y>
+         </itemlocation>
+         <value>L.  ENCOURAGING MAXIMUM STUDENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>69</x>
+            <y>952</y>
+         </itemlocation>
+         <value>PARTICIPATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>53</x>
+            <y>985</y>
+         </itemlocation>
+         <value>M.  HELPING STUDENTS WHEN NEEDED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>53</x>
+            <y>1017</y>
+         </itemlocation>
+         <value>N.  PROVIDING GUIDANCE FOR STUDENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>69</x>
+            <y>1032</y>
+         </itemlocation>
+         <value>AS NEEDED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>53</x>
+            <y>1057</y>
+         </itemlocation>
+         <value>O.  ENCOURAGING AND MOTIVATING</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>69</x>
+            <y>1072</y>
+         </itemlocation>
+         <value>STUDENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_49">
+         <itemlocation>
+            <x>53</x>
+            <y>1105</y>
+         </itemlocation>
+         <value>P.  MASTERY OF SUBJECT MATTER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>53</x>
+            <y>1145</y>
+         </itemlocation>
+         <value>Q.  EMPHASIZING SAFETY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_51">
+         <itemlocation>
+            <x>53</x>
+            <y>1185</y>
+         </itemlocation>
+         <value>R.  PERSONAL APPEARANCE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_52">
+         <itemlocation>
+            <x>53</x>
+            <y>1225</y>
+         </itemlocation>
+         <value>S.  INTEGRITY AND PROFESSIONALISM</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>30</x>
+            <y>1255</y>
+         </itemlocation>
+         <value>AFGSC FORM 261, 20130319</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <box sid="BOX35711">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>387</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX14217">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>387</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX41787">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>387</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX6953">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>387</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX38697">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>427</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX79635">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>427</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX71479">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>427</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX47035">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>427</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX82804">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>507</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating">
+         <itemlocation>
+            <x>328</x>
+            <y>508</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>2.  INSTRUCTOR EFFECTIVENESS IN.&#xD; A.  PREPARING FOR INSTRUCTION. check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating</next>
+         <previous>Envir_4</previous>
+      </check>
+      <box sid="BOX97951">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>507</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating">
+         <itemlocation>
+            <x>361</x>
+            <y>508</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating</next>
+         <previous>SRating</previous>
+      </check>
+      <box sid="BOX97295">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>507</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating">
+         <itemlocation>
+            <x>394</x>
+            <y>508</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating</next>
+         <previous>GRating</previous>
+      </check>
+      <box sid="BOX56604">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>507</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating">
+         <itemlocation>
+            <x>427</x>
+            <y>508</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_2</next>
+         <previous>WRating</previous>
+      </check>
+      <box sid="BOX72057">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>547</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_2">
+         <itemlocation>
+            <x>328</x>
+            <y>548</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>B.  LESSON PLAN USE.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_2</next>
+         <previous>NARating</previous>
+      </check>
+      <box sid="BOX92028">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>547</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_2">
+         <itemlocation>
+            <x>361</x>
+            <y>548</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_2</next>
+         <previous>SRating_2</previous>
+      </check>
+      <box sid="BOX16238">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>547</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_2">
+         <itemlocation>
+            <x>394</x>
+            <y>548</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_2</next>
+         <previous>GRating_2</previous>
+      </check>
+      <box sid="BOX19515">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>547</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_2">
+         <itemlocation>
+            <x>427</x>
+            <y>548</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for S.&#xD;  check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_3</next>
+         <previous>WRating_2</previous>
+      </check>
+      <box sid="BOX34685">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>587</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_3">
+         <itemlocation>
+            <x>328</x>
+            <y>588</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>C.  INSTRUCTIONAL TECHNIQUES.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_3</next>
+         <previous>NARating_2</previous>
+      </check>
+      <box sid="BOX15681">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>587</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_3">
+         <itemlocation>
+            <x>361</x>
+            <y>588</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_3</next>
+         <previous>SRating_3</previous>
+      </check>
+      <box sid="BOX44603">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>587</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_3">
+         <itemlocation>
+            <x>394</x>
+            <y>588</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_3</next>
+         <previous>GRating_3</previous>
+      </check>
+      <box sid="BOX558">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>587</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_3">
+         <itemlocation>
+            <x>427</x>
+            <y>588</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_4</next>
+         <previous>WRating_3</previous>
+      </check>
+      <box sid="BOX25356">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>627</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_4">
+         <itemlocation>
+            <x>328</x>
+            <y>628</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>D.  COMMUNICATIVE SKILLS.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_4</next>
+         <previous>NARating_3</previous>
+      </check>
+      <box sid="BOX43532">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>627</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_4">
+         <itemlocation>
+            <x>361</x>
+            <y>628</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_4</next>
+         <previous>SRating_4</previous>
+      </check>
+      <box sid="BOX55209">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>627</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_4">
+         <itemlocation>
+            <x>394</x>
+            <y>628</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_4</next>
+         <previous>GRating_4</previous>
+      </check>
+      <box sid="BOX93764">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>627</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_4">
+         <itemlocation>
+            <x>427</x>
+            <y>628</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_5</next>
+         <previous>WRating_4</previous>
+      </check>
+      <box sid="BOX43819">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>667</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_5">
+         <itemlocation>
+            <x>328</x>
+            <y>668</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>E.  USE OF TRAINING AIDS or MATERIALS.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_5</next>
+         <previous>NARating_4</previous>
+      </check>
+      <box sid="BOX65479">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>667</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_5">
+         <itemlocation>
+            <x>361</x>
+            <y>668</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_5</next>
+         <previous>SRating_5</previous>
+      </check>
+      <box sid="BOX3754">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>667</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_5">
+         <itemlocation>
+            <x>394</x>
+            <y>668</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_5</next>
+         <previous>GRating_5</previous>
+      </check>
+      <box sid="BOX70960">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>667</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_5">
+         <itemlocation>
+            <x>427</x>
+            <y>668</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_6</next>
+         <previous>WRating_5</previous>
+      </check>
+      <box sid="BOX369">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>707</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_6">
+         <itemlocation>
+            <x>328</x>
+            <y>708</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>F.  QUESTIONING TECHNIQUES.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_6</next>
+         <previous>NARating_5</previous>
+      </check>
+      <box sid="BOX63001">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>707</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_6">
+         <itemlocation>
+            <x>361</x>
+            <y>708</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_6</next>
+         <previous>SRating_6</previous>
+      </check>
+      <box sid="BOX48193">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>707</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_6">
+         <itemlocation>
+            <x>394</x>
+            <y>708</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_6</next>
+         <previous>GRating_6</previous>
+      </check>
+      <box sid="BOX48857">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>707</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_6">
+         <itemlocation>
+            <x>427</x>
+            <y>708</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_7</next>
+         <previous>WRating_6</previous>
+      </check>
+      <box sid="BOX68803">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>747</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_7">
+         <itemlocation>
+            <x>328</x>
+            <y>748</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>G.  RAPPORT WITH STUDENTS.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_7</next>
+         <previous>NARating_6</previous>
+      </check>
+      <box sid="BOX71181">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>747</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_7">
+         <itemlocation>
+            <x>361</x>
+            <y>748</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_7</next>
+         <previous>SRating_7</previous>
+      </check>
+      <box sid="BOX14372">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>747</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_7">
+         <itemlocation>
+            <x>394</x>
+            <y>748</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_7</next>
+         <previous>GRating_7</previous>
+      </check>
+      <box sid="BOX21180">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>747</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_7">
+         <itemlocation>
+            <x>427</x>
+            <y>748</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_8</next>
+         <previous>WRating_7</previous>
+      </check>
+      <box sid="BOX80944">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>787</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_8">
+         <itemlocation>
+            <x>328</x>
+            <y>788</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>H.  SHOWING INTEREST AND ENTHUSIASM.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_8</next>
+         <previous>NARating_7</previous>
+      </check>
+      <box sid="BOX85125">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>787</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_8">
+         <itemlocation>
+            <x>361</x>
+            <y>788</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_8</next>
+         <previous>SRating_8</previous>
+      </check>
+      <box sid="BOX63585">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>787</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_8">
+         <itemlocation>
+            <x>394</x>
+            <y>788</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_8</next>
+         <previous>GRating_8</previous>
+      </check>
+      <box sid="BOX8695">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>787</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_8">
+         <itemlocation>
+            <x>427</x>
+            <y>788</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_9</next>
+         <previous>WRating_8</previous>
+      </check>
+      <box sid="BOX33265">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>827</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_9">
+         <itemlocation>
+            <x>328</x>
+            <y>828</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>I.  SUPERVISING STUDENT ACTIVITIES.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_9</next>
+         <previous>NARating_8</previous>
+      </check>
+      <box sid="BOX52345">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>827</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_9">
+         <itemlocation>
+            <x>361</x>
+            <y>828</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_9</next>
+         <previous>SRating_9</previous>
+      </check>
+      <box sid="BOX73277">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>827</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_9">
+         <itemlocation>
+            <x>394</x>
+            <y>828</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_9</next>
+         <previous>GRating_9</previous>
+      </check>
+      <box sid="BOX64488">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>827</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_9">
+         <itemlocation>
+            <x>427</x>
+            <y>828</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_10</next>
+         <previous>WRating_9</previous>
+      </check>
+      <box sid="BOX95833">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>867</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_10">
+         <itemlocation>
+            <x>328</x>
+            <y>868</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>J.  APPRAISAL or SUMMARY TECHNIQUES.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_10</next>
+         <previous>NARating_9</previous>
+      </check>
+      <box sid="BOX3738">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>867</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_10">
+         <itemlocation>
+            <x>361</x>
+            <y>868</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_10</next>
+         <previous>SRating_10</previous>
+      </check>
+      <box sid="BOX50835">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>867</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_10">
+         <itemlocation>
+            <x>394</x>
+            <y>868</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_10</next>
+         <previous>GRating_10</previous>
+      </check>
+      <box sid="BOX34389">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>867</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_10">
+         <itemlocation>
+            <x>427</x>
+            <y>868</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_11</next>
+         <previous>WRating_10</previous>
+      </check>
+      <box sid="BOX36483">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>907</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_11">
+         <itemlocation>
+            <x>328</x>
+            <y>908</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>K.&#xD; EMPHASIZING PROPER USE OF TECH DATA.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_11</next>
+         <previous>NARating_10</previous>
+      </check>
+      <box sid="BOX14917">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>907</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_11">
+         <itemlocation>
+            <x>361</x>
+            <y>908</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_11</next>
+         <previous>SRating_11</previous>
+      </check>
+      <box sid="BOX62192">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>907</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_11">
+         <itemlocation>
+            <x>394</x>
+            <y>908</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_11</next>
+         <previous>GRating_11</previous>
+      </check>
+      <box sid="BOX13226">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>907</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_11">
+         <itemlocation>
+            <x>427</x>
+            <y>908</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_12</next>
+         <previous>WRating_11</previous>
+      </check>
+      <box sid="BOX99068">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>947</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_12">
+         <itemlocation>
+            <x>328</x>
+            <y>948</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>L.  ENCOURAGING MAXIMUM STUDENT.&#xD; PARTICIPATION.&#xD; check for S.&#xD; </acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_12</next>
+         <previous>NARating_11</previous>
+      </check>
+      <box sid="BOX56972">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>947</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_12">
+         <itemlocation>
+            <x>361</x>
+            <y>948</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_12</next>
+         <previous>SRating_12</previous>
+      </check>
+      <box sid="BOX71937">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>947</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_12">
+         <itemlocation>
+            <x>394</x>
+            <y>948</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_12</next>
+         <previous>GRating_12</previous>
+      </check>
+      <box sid="BOX56397">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>947</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_12">
+         <itemlocation>
+            <x>427</x>
+            <y>948</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_13</next>
+         <previous>WRating_12</previous>
+      </check>
+      <box sid="BOX3602">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>987</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_13">
+         <itemlocation>
+            <x>328</x>
+            <y>988</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>M.  HELPING STUDENTS WHEN NEEDED.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_13</next>
+         <previous>NARating_12</previous>
+      </check>
+      <box sid="BOX91122">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>987</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_13">
+         <itemlocation>
+            <x>361</x>
+            <y>988</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_13</next>
+         <previous>SRating_13</previous>
+      </check>
+      <box sid="BOX59681">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>987</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_13">
+         <itemlocation>
+            <x>394</x>
+            <y>988</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_13</next>
+         <previous>GRating_13</previous>
+      </check>
+      <box sid="BOX3227">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>987</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_13">
+         <itemlocation>
+            <x>427</x>
+            <y>988</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_14</next>
+         <previous>WRating_13</previous>
+      </check>
+      <box sid="BOX68247">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1027</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_14">
+         <itemlocation>
+            <x>328</x>
+            <y>1028</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>N.  PROVIDING GUIDANCE FOR STUDENTS &#xD; AS NEEDED.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_14</next>
+         <previous>NARating_13</previous>
+      </check>
+      <box sid="BOX85267">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1027</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_14">
+         <itemlocation>
+            <x>361</x>
+            <y>1028</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_14</next>
+         <previous>SRating_14</previous>
+      </check>
+      <box sid="BOX98606">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1027</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_14">
+         <itemlocation>
+            <x>394</x>
+            <y>1028</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_14</next>
+         <previous>GRating_14</previous>
+      </check>
+      <box sid="BOX43687">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1027</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_14">
+         <itemlocation>
+            <x>427</x>
+            <y>1028</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_15</next>
+         <previous>WRating_14</previous>
+      </check>
+      <box sid="BOX88356">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1067</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_15">
+         <itemlocation>
+            <x>328</x>
+            <y>1068</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>O.  ENCOURAGING AND MOTIVATING.&#xD; STUDENTS.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_15</next>
+         <previous>NARating_14</previous>
+      </check>
+      <box sid="BOX82101">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1067</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_15">
+         <itemlocation>
+            <x>361</x>
+            <y>1068</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_15</next>
+         <previous>SRating_15</previous>
+      </check>
+      <box sid="BOX56473">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1067</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_15">
+         <itemlocation>
+            <x>394</x>
+            <y>1068</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_15</next>
+         <previous>GRating_15</previous>
+      </check>
+      <box sid="BOX13274">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1067</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_15">
+         <itemlocation>
+            <x>427</x>
+            <y>1068</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_16</next>
+         <previous>WRating_15</previous>
+      </check>
+      <box sid="BOX46156">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1107</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_16">
+         <itemlocation>
+            <x>328</x>
+            <y>1108</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>P.  MASTERY OF SUBJECT MATTER.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_16</next>
+         <previous>NARating_15</previous>
+      </check>
+      <box sid="BOX28253">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1107</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_16">
+         <itemlocation>
+            <x>361</x>
+            <y>1108</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_16</next>
+         <previous>SRating_16</previous>
+      </check>
+      <box sid="BOX6772">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1107</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_16">
+         <itemlocation>
+            <x>394</x>
+            <y>1108</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_16</next>
+         <previous>GRating_16</previous>
+      </check>
+      <box sid="BOX32172">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1107</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_16">
+         <itemlocation>
+            <x>427</x>
+            <y>1108</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_17</next>
+         <previous>WRating_16</previous>
+      </check>
+      <box sid="BOX66170">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1147</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_17">
+         <itemlocation>
+            <x>328</x>
+            <y>1148</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Q.  EMPHASIZING SAFETY.  check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_17</next>
+         <previous>NARating_16</previous>
+      </check>
+      <box sid="BOX81794">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1147</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_17">
+         <itemlocation>
+            <x>361</x>
+            <y>1148</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_17</next>
+         <previous>SRating_17</previous>
+      </check>
+      <box sid="BOX18287">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1147</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_17">
+         <itemlocation>
+            <x>394</x>
+            <y>1148</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_17</next>
+         <previous>GRating_17</previous>
+      </check>
+      <box sid="BOX14340">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1147</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_17">
+         <itemlocation>
+            <x>427</x>
+            <y>1148</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_18</next>
+         <previous>WRating_17</previous>
+      </check>
+      <box sid="BOX76083">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1187</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_18">
+         <itemlocation>
+            <x>328</x>
+            <y>1188</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>R.  PERSONAL APPEARANCE.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_18</next>
+         <previous>NARating_17</previous>
+      </check>
+      <box sid="BOX51526">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1187</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_18">
+         <itemlocation>
+            <x>361</x>
+            <y>1188</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_18</next>
+         <previous>SRating_18</previous>
+      </check>
+      <box sid="BOX25034">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1187</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_18">
+         <itemlocation>
+            <x>394</x>
+            <y>1188</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_18</next>
+         <previous>GRating_18</previous>
+      </check>
+      <box sid="BOX59700">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1187</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_18">
+         <itemlocation>
+            <x>427</x>
+            <y>1188</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>SRating_19</next>
+         <previous>WRating_18</previous>
+      </check>
+      <box sid="BOX80543">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>1227</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="SRating_19">
+         <itemlocation>
+            <x>328</x>
+            <y>1228</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>S.  INTEGRITY AND PROFESSIONALISM.&#xD; check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>GRating_19</next>
+         <previous>NARating_18</previous>
+      </check>
+      <box sid="BOX85603">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>1227</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="GRating_19">
+         <itemlocation>
+            <x>361</x>
+            <y>1228</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>WRating_19</next>
+         <previous>SRating_19</previous>
+      </check>
+      <box sid="BOX65328">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>1227</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="WRating_19">
+         <itemlocation>
+            <x>394</x>
+            <y>1228</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>NARating_19</next>
+         <previous>GRating_19</previous>
+      </check>
+      <box sid="BOX8393">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>1227</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="NARating_19">
+         <itemlocation>
+            <x>427</x>
+            <y>1228</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <previous>WRating_19</previous>
+         <next>Comments</next>
+      </check>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">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</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <check sid="Houkep">
+         <itemlocation>
+            <x>328</x>
+            <y>388</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>RATING.&#xD;  check appropriately.&#xD; 1.  CONDITION OF TRAINING AREA.&#xD; Subject to instructor control.&#xD; A.  HOUSEKEEPING.&#xD; Cleanliness, equipment operation, etcetera.  check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Houkep_2.value','off') + set('Houkep_3.value','off') + set('Houkep_4.value','off')) : ''"></custom:push_value>
+         <next>Houkep_2</next>
+         <previous>Subject</previous>
+      </check>
+      <check sid="Houkep_2">
+         <itemlocation>
+            <x>361</x>
+            <y>388</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Houkep.value','off') + set('Houkep_3.value','off') + set('Houkep_4.value','off')) : ''"></custom:push_value>
+         <next>Houkep_3</next>
+         <previous>Houkep</previous>
+      </check>
+      <check sid="Houkep_3">
+         <itemlocation>
+            <x>394</x>
+            <y>388</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Houkep.value','off') + set('Houkep_2.value','off') + set('Houkep_4.value','off')) : ''"></custom:push_value>
+         <next>Houkep_4</next>
+         <previous>Houkep_2</previous>
+      </check>
+      <check sid="Houkep_4">
+         <itemlocation>
+            <x>427</x>
+            <y>388</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Houkep.value','off') + set('Houkep_2.value','off') + set('Houkep_3.value','off')) : ''"></custom:push_value>
+         <next>Envir</next>
+         <previous>Houkep_3</previous>
+      </check>
+      <check sid="Envir">
+         <itemlocation>
+            <x>328</x>
+            <y>428</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>B.  ENVIRONMENTAL FACTORS.&#xD; Temperature, ventilation, noise, lighting, etcetera.  check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Envir_2.value','off') + set('Envir_3.value','off') + set('Envir_4.value','off')) : ''"></custom:push_value>
+         <next>Envir_2</next>
+         <previous>Houkep_4</previous>
+      </check>
+      <check sid="Envir_2">
+         <itemlocation>
+            <x>361</x>
+            <y>428</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Envir.value','off') + set('Envir_3.value','off') + set('Envir_4.value','off')) : ''"></custom:push_value>
+         <next>Envir_3</next>
+         <previous>Envir</previous>
+      </check>
+      <check sid="Envir_3">
+         <itemlocation>
+            <x>394</x>
+            <y>428</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Envir.value','off') + set('Envir_2.value','off') + set('Envir_4.value','off')) : ''"></custom:push_value>
+         <next>Envir_4</next>
+         <previous>Envir_2</previous>
+      </check>
+      <check sid="Envir_4">
+         <itemlocation>
+            <x>427</x>
+            <y>428</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Envir.value','off') + set('Envir_2.value','off') + set('Envir_3.value','off')) : ''"></custom:push_value>
+         <next>SRating</next>
+         <previous>Envir_3</previous>
+      </check>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>33</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>930</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1222</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>30</x>
+            <y>1253</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1222</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>30</x>
+            <y>94</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>30</x>
+            <y>154</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>30</x>
+            <y>214</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>30</x>
+            <y>274</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>318</x>
+            <y>304</y>
+            <width>133</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>30</x>
+            <y>333</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>30</x>
+            <y>374</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>30</x>
+            <y>414</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>30</x>
+            <y>454</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_15">
+         <itemlocation>
+            <x>30</x>
+            <y>494</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>30</x>
+            <y>534</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_17">
+         <itemlocation>
+            <x>30</x>
+            <y>574</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>30</x>
+            <y>614</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>30</x>
+            <y>654</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>30</x>
+            <y>694</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>30</x>
+            <y>734</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_22">
+         <itemlocation>
+            <x>30</x>
+            <y>774</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>30</x>
+            <y>814</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_24">
+         <itemlocation>
+            <x>30</x>
+            <y>854</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>30</x>
+            <y>894</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_26">
+         <itemlocation>
+            <x>30</x>
+            <y>934</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>30</x>
+            <y>974</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_28">
+         <itemlocation>
+            <x>30</x>
+            <y>1014</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_29">
+         <itemlocation>
+            <x>30</x>
+            <y>1054</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_30">
+         <itemlocation>
+            <x>30</x>
+            <y>1094</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_31">
+         <itemlocation>
+            <x>30</x>
+            <y>1134</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_32">
+         <itemlocation>
+            <x>30</x>
+            <y>1174</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_33">
+         <itemlocation>
+            <x>30</x>
+            <y>1214</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_34">
+         <itemlocation>
+            <x>318</x>
+            <y>274</y>
+            <width>1</width>
+            <height>981</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_35">
+         <itemlocation>
+            <x>351</x>
+            <y>304</y>
+            <width>1</width>
+            <height>951</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_36">
+         <itemlocation>
+            <x>384</x>
+            <y>304</y>
+            <width>1</width>
+            <height>951</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_39">
+         <itemlocation>
+            <x>417</x>
+            <y>304</y>
+            <width>1</width>
+            <height>951</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_40">
+         <itemlocation>
+            <x>450</x>
+            <y>154</y>
+            <width>1</width>
+            <height>1101</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_41">
+         <itemlocation>
+            <x>690</x>
+            <y>33</y>
+            <width>1</width>
+            <height>62</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_42">
+         <itemlocation>
+            <x>690</x>
+            <y>154</y>
+            <width>1</width>
+            <height>121</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_43">
+         <itemlocation>
+            <x>810</x>
+            <y>154</y>
+            <width>1</width>
+            <height>61</height>
+         </itemlocation>
+      </line>
+      <data sid="DATA1">
+         <filename>C:\Documents and Settings\Bobbie.Dickerson\Desktop\New Toolbar\newbar_greybackseal.PNG</filename>
+         <mimedata encoding="base64-gzip">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
+P88LAAA=</mimedata>
+      </data>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>58B20D1F-D16E-4250-8947-9CAB9FC6356B</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>AOther</next>
+      </global>
+      <toolbar sid="TOOLBAR">
+         <designer:height>78</designer:height>
+      </toolbar>
+      <label sid="LABEL44">
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>0</x>
+            <y>0</y>
+         </itemlocation>
+         <image>PAGE1.DATA1</image>
+         <active>off</active>
+      </label>
+      <button sid="BUTTON8">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>206</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save As</value>
+         <previous>FollwUp</previous>
+      </button>
+      <button sid="BUTTON9">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveform</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>283</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+      </button>
+      <button sid="BUTTON10">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>360</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="BUTTON11">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>437</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="BUTTON12">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>129</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+      </button>
+      <button sid="BUTTON13">
+         <url compute="'#' +. custom:page_prev">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>578</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE1.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">on</visible>
+      </button>
+      <button sid="BUTTON14">
+         <url compute="'#' +. custom:page_next">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>655</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE1.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE2.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">off</visible>
+      </button>
+      <box sid="BOX1">
+         <itemlocation>
+            <x>318</x>
+            <y>94</y>
+            <width>132</width>
+            <height>36</height>
+         </itemlocation>
+         <border>on</border>
+         <bgcolor>175,175,175</bgcolor>
+      </box>
+      <field sid="AOther">
+         <itemlocation>
+            <x>79</x>
+            <y>136</y>
+            <width>238</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>other items to be evaluated which are not mentioned. enter item header 1.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>prev_button</previous>
+         <next>ARatings</next>
+      </field>
+      <field sid="BOther">
+         <itemlocation>
+            <x>79</x>
+            <y>172</y>
+            <width>238</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel> enter item header 2.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>ARatings_4</previous>
+         <next>BRatings</next>
+      </field>
+      <field sid="COther">
+         <itemlocation>
+            <x>79</x>
+            <y>208</y>
+            <width>238</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel> enter item header 3.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>BRatings_4</previous>
+         <next>CRatings</next>
+      </field>
+      <field sid="Comcont">
+         <itemlocation>
+            <x>452</x>
+            <y>94</y>
+            <width>477</width>
+            <height>145</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>enter&#xD;
+COMMENTS.&#xD;
+Instructional improvement techniques covered in the evaluation debriefing.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>CRatings_4</previous>
+         <next>Recom</next>
+      </field>
+      <field sid="Recom">
+         <itemlocation>
+            <x>33</x>
+            <y>387</y>
+            <width>896</width>
+            <height>358</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>III.&#xD;
+enter&#xD;
+RECOMMENDATIONS FOR IMPROVEMENT.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>Comcont</previous>
+         <next>FollwUp</next>
+      </field>
+      <field sid="FollwUp">
+         <itemlocation>
+            <x>33</x>
+            <y>807</y>
+            <width>896</width>
+            <height>358</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>IV.&#xD;
+ enter FOLLOW-UP EVALUATION.&#xD;
+Required for items checked as weak within 30 days.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>Recom</previous>
+         <next>BUTTON8</next>
+      </field>
+      <label sid="LABEL_55">
+         <itemlocation>
+            <x>648</x>
+            <y>37</y>
+         </itemlocation>
+         <value>COMMENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_56">
+         <itemlocation>
+            <x>330</x>
+            <y>38</y>
+         </itemlocation>
+         <value>RATING </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_58">
+         <itemlocation>
+            <x>387</x>
+            <y>38</y>
+         </itemlocation>
+         <value>(Mark X)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_59">
+         <itemlocation>
+            <x>42</x>
+            <y>53</y>
+         </itemlocation>
+         <value>I.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_60">
+         <itemlocation>
+            <x>116</x>
+            <y>53</y>
+         </itemlocation>
+         <value>ITEMS </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_61">
+         <itemlocation>
+            <x>160</x>
+            <y>54</y>
+         </itemlocation>
+         <value>(Continued)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_62">
+         <itemlocation>
+            <x>551</x>
+            <y>54</y>
+            <width>295</width>
+            <height>41</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>(Instructional improvement techniques covered
+in the evaluation debriefing)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_63">
+         <itemlocation>
+            <x>328</x>
+            <y>68</y>
+         </itemlocation>
+         <value>S</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_64">
+         <itemlocation>
+            <x>360</x>
+            <y>68</y>
+         </itemlocation>
+         <value>G</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_65">
+         <itemlocation>
+            <x>391</x>
+            <y>68</y>
+         </itemlocation>
+         <value>W</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_66">
+         <itemlocation>
+            <x>421</x>
+            <y>68</y>
+         </itemlocation>
+         <value>NA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_67">
+         <itemlocation>
+            <x>33</x>
+            <y>102</y>
+         </itemlocation>
+         <value> 3.  OTHER </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_68">
+         <itemlocation>
+            <x>97</x>
+            <y>102</y>
+         </itemlocation>
+         <value>(For optional use by supervisor)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_69">
+         <itemlocation>
+            <x>53</x>
+            <y>138</y>
+         </itemlocation>
+         <value>A.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_70">
+         <itemlocation>
+            <x>53</x>
+            <y>174</y>
+         </itemlocation>
+         <value>B.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_71">
+         <itemlocation>
+            <x>53</x>
+            <y>210</y>
+         </itemlocation>
+         <value>C.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_72">
+         <itemlocation>
+            <x>40</x>
+            <y>242</y>
+         </itemlocation>
+         <value>II.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_73">
+         <itemlocation>
+            <x>357</x>
+            <y>242</y>
+         </itemlocation>
+         <value>ACKNOWLEDGEMENT OF INTERVIEW</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_74">
+         <itemlocation>
+            <x>37</x>
+            <y>266</y>
+         </itemlocation>
+         <value>SIGNATURE OF EVALUATOR</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_75">
+         <itemlocation>
+            <x>325</x>
+            <y>266</y>
+         </itemlocation>
+         <value>DATE AND SIGNATURE OF INSTRUCTOR
+EVALUATED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_76">
+         <itemlocation>
+            <x>630</x>
+            <y>266</y>
+         </itemlocation>
+         <value>SIGNATURE OF IMMEDIATE SUPERVISOR
+OF EVALUATOR</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_77">
+         <itemlocation>
+            <x>39</x>
+            <y>344</y>
+         </itemlocation>
+         <value>III.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_78">
+         <itemlocation>
+            <x>341</x>
+            <y>344</y>
+         </itemlocation>
+         <value>RECOMMENDATIONS FOR IMPROVEMENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_79">
+         <itemlocation>
+            <x>37</x>
+            <y>764</y>
+         </itemlocation>
+         <value>IV.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_80">
+         <itemlocation>
+            <x>237</x>
+            <y>764</y>
+         </itemlocation>
+         <value>FOLLOW-UP EVALUATION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_81">
+         <itemlocation>
+            <x>407</x>
+            <y>765</y>
+         </itemlocation>
+         <value>(Required for items checked as weak within 30 days)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_82">
+         <itemlocation>
+            <x>30</x>
+            <y>1178</y>
+         </itemlocation>
+         <value>SIGNATURE OF SUPERVISOR</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_83">
+         <itemlocation>
+            <x>396</x>
+            <y>1178</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_84">
+         <itemlocation>
+            <x>486</x>
+            <y>1178</y>
+         </itemlocation>
+         <value>SIGNATURE OF INSTRUCTOR EVALUATED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_85">
+         <itemlocation>
+            <x>846</x>
+            <y>1178</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_86">
+         <itemlocation>
+            <x>30</x>
+            <y>1255</y>
+         </itemlocation>
+         <value>AFGSC FORM 261, 2013XXXX</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_89">
+         <itemlocation>
+            <x>219</x>
+            <y>1255</y>
+         </itemlocation>
+         <value>(Reverse)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <box sid="BOX6236">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>140</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX19321">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>140</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX18721">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>140</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX79859">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>140</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX30598">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>176</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX12340">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>176</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX62566">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>176</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX41515">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>176</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX63651">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>327</x>
+            <y>213</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX54112">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>360</x>
+            <y>213</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX16191">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>393</x>
+            <y>213</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX51862">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>426</x>
+            <y>213</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <check sid="ARatings">
+         <itemlocation>
+            <x>328</x>
+            <y>141</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>enter rating for item header 1. check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('ARatings_2.value','off') + set('ARatings_3.value','off') + set('ARatings_4.value','off')) : ''"></custom:push_value>
+         <previous>AOther</previous>
+         <next>ARatings_2</next>
+      </check>
+      <check sid="ARatings_2">
+         <itemlocation>
+            <x>361</x>
+            <y>141</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('ARatings.value','off') + set('ARatings_3.value','off') + set('ARatings_4.value','off')) : ''"></custom:push_value>
+         <previous>ARatings</previous>
+         <next>ARatings_3</next>
+      </check>
+      <check sid="ARatings_3">
+         <itemlocation>
+            <x>394</x>
+            <y>141</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('ARatings.value','off') + set('ARatings_2.value','off') + set('ARatings_4.value','off')) : ''"></custom:push_value>
+         <previous>ARatings_2</previous>
+         <next>ARatings_4</next>
+      </check>
+      <check sid="ARatings_4">
+         <itemlocation>
+            <x>427</x>
+            <y>141</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('ARatings.value','off') + set('ARatings_2.value','off') + set('ARatings_3.value','off')) : ''"></custom:push_value>
+         <previous>ARatings_3</previous>
+         <next>BOther</next>
+      </check>
+      <check sid="BRatings">
+         <itemlocation>
+            <x>328</x>
+            <y>177</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>enter rating for item header 2. check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('BRatings_2.value','off') + set('BRatings_3.value','off') + set('BRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>BOther</previous>
+         <next>BRatings_2</next>
+      </check>
+      <check sid="BRatings_2">
+         <itemlocation>
+            <x>361</x>
+            <y>177</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('BRatings.value','off') + set('BRatings_3.value','off') + set('BRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>BRatings</previous>
+         <next>BRatings_3</next>
+      </check>
+      <check sid="BRatings_3">
+         <itemlocation>
+            <x>394</x>
+            <y>177</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('BRatings.value','off') + set('BRatings_2.value','off') + set('BRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>BRatings_2</previous>
+         <next>BRatings_4</next>
+      </check>
+      <check sid="BRatings_4">
+         <itemlocation>
+            <x>427</x>
+            <y>177</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('BRatings.value','off') + set('BRatings_2.value','off') + set('BRatings_3.value','off')) : ''"></custom:push_value>
+         <previous>BRatings_3</previous>
+         <next>COther</next>
+      </check>
+      <check sid="CRatings">
+         <itemlocation>
+            <x>328</x>
+            <y>214</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel> enter rating for item header 2. check for S.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('CRatings_2.value','off') + set('CRatings_3.value','off') + set('CRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>COther</previous>
+         <next>CRatings_2</next>
+      </check>
+      <check sid="CRatings_2">
+         <itemlocation>
+            <x>361</x>
+            <y>214</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for G.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('CRatings.value','off') + set('CRatings_3.value','off') + set('CRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>CRatings</previous>
+         <next>CRatings_3</next>
+      </check>
+      <check sid="CRatings_3">
+         <itemlocation>
+            <x>394</x>
+            <y>214</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for W.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('CRatings.value','off') + set('CRatings_2.value','off') + set('CRatings_4.value','off')) : ''"></custom:push_value>
+         <previous>CRatings_2</previous>
+         <next>CRatings_4</next>
+      </check>
+      <check sid="CRatings_4">
+         <itemlocation>
+            <x>427</x>
+            <y>214</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>check for N AY.</acclabel>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('CRatings.value','off') + set('CRatings_2.value','off') + set('CRatings_3.value','off')) : ''"></custom:push_value>
+         <previous>CRatings_3</previous>
+         <next>Comcont</next>
+      </check>
+      <line sid="LINE_44">
+         <itemlocation>
+            <x>30</x>
+            <y>33</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_45">
+         <itemlocation>
+            <x>930</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1222</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_46">
+         <itemlocation>
+            <x>30</x>
+            <y>1253</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_47">
+         <itemlocation>
+            <x>30</x>
+            <y>33</y>
+            <width>2</width>
+            <height>1222</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_48">
+         <itemlocation>
+            <x>318</x>
+            <y>64</y>
+            <width>133</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_49">
+         <itemlocation>
+            <x>30</x>
+            <y>94</y>
+            <width>289</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_50">
+         <itemlocation>
+            <x>30</x>
+            <y>94</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_51">
+         <itemlocation>
+            <x>30</x>
+            <y>130</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_52">
+         <itemlocation>
+            <x>30</x>
+            <y>166</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_53">
+         <itemlocation>
+            <x>30</x>
+            <y>202</y>
+            <width>421</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_54">
+         <itemlocation>
+            <x>30</x>
+            <y>238</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_55">
+         <itemlocation>
+            <x>30</x>
+            <y>268</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_56">
+         <itemlocation>
+            <x>30</x>
+            <y>340</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_57">
+         <itemlocation>
+            <x>30</x>
+            <y>370</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_58">
+         <itemlocation>
+            <x>30</x>
+            <y>760</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_59">
+         <itemlocation>
+            <x>30</x>
+            <y>790</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE_60">
+         <itemlocation>
+            <x>30</x>
+            <y>1180</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_61">
+         <itemlocation>
+            <x>318</x>
+            <y>33</y>
+            <width>1</width>
+            <height>206</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_62">
+         <itemlocation>
+            <x>318</x>
+            <y>268</y>
+            <width>1</width>
+            <height>73</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_63">
+         <itemlocation>
+            <x>351</x>
+            <y>64</y>
+            <width>1</width>
+            <height>175</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_64">
+         <itemlocation>
+            <x>384</x>
+            <y>64</y>
+            <width>1</width>
+            <height>175</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_65">
+         <itemlocation>
+            <x>390</x>
+            <y>1180</y>
+            <width>1</width>
+            <height>75</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_66">
+         <itemlocation>
+            <x>417</x>
+            <y>64</y>
+            <width>1</width>
+            <height>175</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_67">
+         <itemlocation>
+            <x>450</x>
+            <y>33</y>
+            <width>1</width>
+            <height>206</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_68">
+         <itemlocation>
+            <x>480</x>
+            <y>1180</y>
+            <width>1</width>
+            <height>75</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_69">
+         <itemlocation>
+            <x>624</x>
+            <y>268</y>
+            <width>1</width>
+            <height>73</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_70">
+         <itemlocation>
+            <x>840</x>
+            <y>1180</y>
+            <width>1</width>
+            <height>75</height>
+         </itemlocation>
+      </line>
+   </page>
+</XFDL>

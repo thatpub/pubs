@@ -1,0 +1,5205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/8.0" xmlns="http://www.ibm.com/xmlns/prod/XFDL/8.0">
+   <globalpage sid="global">
+      <global sid="global">
+         <formid>
+            <serialnumber>A3B13FE3-AFB8-481D-AB7C-6FAE931BA941</serialnumber>
+            <version>3.84.4</version>
+            <title>AF FORM 931, 20080618, PERFORMANCE FEEDBACK WORKSHEET (AB THRU TSGT)</title>
+         </formid>
+         <label>AF093100, 20000101</label>
+         <printsettings>
+            <border>off</border>
+         </printsettings>
+         <designer:date>24/6/2002</designer:date>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <custom:submit_url></custom:submit_url>
+         
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>AF</custom:prefix>
+               <custom:number>724</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>2014/07/01</custom:date>
+            <custom:longtitle>Airman Comprehensive Assessment Worksheet (2Lt thru Col)</custom:longtitle>
+            <custom:version>0</custom:version>
+            <custom:funccode>3620</custom:funccode>
+            <custom:funcstatement>Form used to assess servicemember's duty performance</custom:funcstatement>
+            <custom:ui>EF</custom:ui>
+            <custom:ur>EA</custom:ur>
+            <custom:prescdir>AFI 36-2406</custom:prescdir>
+            <custom:opr>HQ AFPC/DPSID</custom:opr>
+            <custom:medium>E</custom:medium>
+            <custom:source>AFPUBS</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst></custom:spinst>
+            <custom:dist>F</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>AD</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede>AF Form 724, 2014/01/01</custom:supercede>
+         </custom:form_metadata>
+         <transmitformat>application/vnd.xfdl</transmitformat>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+            <defaults>
+               <themecolor>#000000</themecolor>
+            </defaults>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5.1" version="4.0.0">IBM Forms Designer</editor>
+            </editors>
+         </history>
+         
+      </global>
+   </globalpage>
+   <page sid="Page1">
+      <global sid="global">
+         <pageid>
+            <serialnumber>484D873F-22D7-4D84-B742-FC6FFCA06D2D</serialnumber>
+         </pageid>
+         <designer:pagesize>960;1320</designer:pagesize>
+         
+         
+         
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>AF Form 724, P1</label>
+         <next>NAME</next>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+         </fontinfo>
+         <ufv_settings>
+            <validoverlap>8</validoverlap>
+         </ufv_settings>
+      </global>
+   <toolbar sid="TOOLBAR">
+         <designer:height>115</designer:height>
+      </toolbar>
+      <label sid="LABEL7">
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>37</x>
+            <y>38</y>
+         </itemlocation>
+         <image>DATA2</image>
+         <active>off</active>
+         <imagemode suppresstext="true"></imagemode>
+      </label>
+      <button sid="BUTTON8">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>243</x>
+            <y>62</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save As</value>
+         <next>BUTTON9</next>
+         <previous>BUTTON12</previous>
+      </button>
+      <button sid="BUTTON9">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>320</x>
+            <y>62</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save</value>
+         <next>BUTTON10</next>
+         <previous>BUTTON8</previous>
+      </button>
+      <button sid="BUTTON10">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>397</x>
+            <y>62</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Print</value>
+         <next>BUTTON14</next>
+         <previous>BUTTON9</previous>
+      </button>
+      <button sid="BUTTON12">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>166</x>
+            <y>62</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Close</value>
+         <next>BUTTON8</next>
+         <previous>VI_2Comments</previous>
+      </button>
+      <button sid="BUTTON14">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>538</x>
+            <y>62</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         <next>NAME</next>
+         <previous>BUTTON10</previous>
+      </button>
+      <line sid="FFText1_BorderBottom">
+         <itemlocation>
+            <x>28</x>
+            <y>36</y>
+            <width>911</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>27</x>
+            <y>122</y>
+            <width>911</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine28">
+         <itemlocation>
+            <x>27</x>
+            <y>9</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine29">
+         <itemlocation>
+            <x>937</x>
+            <y>11</y>
+            <width>2</width>
+            <height>1284</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine30">
+         <itemlocation>
+            <x>28</x>
+            <y>1293</y>
+            <width>911</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <field sid="NAME">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>30</x>
+            <y>161</y>
+            <width>407</width>
+            <height>29</height>
+         </itemlocation>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <acclabel>Section 1.  PERSONAL INFORMATION. Name.</acclabel>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <length>
+                    <min>0</min>
+                    <max>40</max>
+                </length>
+            </constraints>
+            <presentation>
+            </presentation>
+         </format>
+         <next>GRADE</next>
+      </field>
+      <popup sid="GRADE">
+         <border>off</border>
+         <justify>center</justify>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>441</x>
+            <y>161</y>
+            <width>157</width>
+            <height>27</height>
+         </itemlocation>
+         <help>GRADE_help</help>
+         <label></label>
+         <group>GRADE_group</group>
+         <acclabel>Grade.</acclabel>
+         <next>Unit</next>
+         <previous>NAME</previous>
+      </popup>
+      <cell sid="CELL1">
+         <group>GRADE_group</group>
+         <value>2 Lt</value>
+      </cell>
+      <cell sid="CELL5">
+         <group>GRADE_group</group>
+         <value>1 Lt</value>
+      </cell>
+      <cell sid="CELL6">
+         <group>GRADE_group</group>
+         <value>Capt</value>
+      </cell>
+      <cell sid="CELL7">
+         <group>GRADE_group</group>
+         <value>Maj</value>
+      </cell>
+      <cell sid="CELL8">
+         <group>GRADE_group</group>
+         <value>Lt Col</value>
+      </cell>
+      <cell sid="CELL9">
+         <group>GRADE_group</group>
+         <value>Col</value>
+      </cell>
+      <help sid="GRADE_help">
+         <value>Select the item desired.</value>
+      </help>
+      <field sid="Unit">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>600</x>
+            <y>161</y>
+            <width>335</width>
+            <height>29</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <value></value>
+         <scrollvert>fixed</scrollvert>
+         <acclabel>Unit.</acclabel>
+         <next>InitialCHECK</next>
+         <previous>GRADE</previous>
+      </field>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1320</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <label sid="FFText1_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>203</x>
+            <y>11</y>
+            <width>468</width>
+            <height>26</height>
+         </itemlocation>
+         <value>AIRMAN COMPREHENSIVE ASSESSMENT WORKSHEET</value>
+      </label>
+      <label sid="FFText1_3">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>655</x>
+            <y>11</y>
+            <width>124</width>
+            <height>26</height>
+         </itemlocation>
+         <value> (2Lt thru Col)</value>
+      </label>
+      <label sid="FFText2_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>123</y>
+         </itemlocation>
+         <value>I.  PERSONAL INFORMATION</value>
+      </label>
+      <label sid="FFText4_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>30</x>
+            <y>1294</y>
+            <width>206</width>
+            <height>26</height>
+         </itemlocation>
+         <value>AF FORM 724A, 20140701</value>
+      </label>
+      <label sid="FFText5_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>197</y>
+            <height>22</height>
+         </itemlocation>
+         <value>II.  TYPE OF ASSESSMENT:</value>
+      </label>
+      <label sid="FFText6_2">
+         <itemlocation>
+            <x>272</x>
+            <y>197</y>
+            <width>66</width>
+            <height>22</height>
+         </itemlocation>
+         <value>INITIAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText7_2">
+         <itemlocation>
+            <x>726</x>
+            <y>197</y>
+            <width>146</width>
+            <height>22</height>
+         </itemlocation>
+         <value>RATER DIRECTED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText8_2">
+         <itemlocation>
+            <x>536</x>
+            <y>197</y>
+            <width>138</width>
+            <height>22</height>
+         </itemlocation>
+         <value>RATEE REQUESTED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText9_2">
+         <itemlocation>
+            <x>399</x>
+            <y>197</y>
+            <width>93</width>
+            <height>22</height>
+         </itemlocation>
+         <value>MID-TERM</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText31_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>143</y>
+            <width>39</width>
+            <height>21</height>
+         </itemlocation>
+         <value>NAME</value>
+      </label>
+      <label sid="FFText32_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>441</x>
+            <y>143</y>
+            <width>51</width>
+            <height>21</height>
+         </itemlocation>
+         <value>GRADE</value>
+      </label>
+      <label sid="FFText33_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>600</x>
+            <y>143</y>
+            <width>34</width>
+            <height>21</height>
+         </itemlocation>
+         <value>UNIT</value>
+      </label>
+      <line sid="FFText32_BorderRight">
+         <itemlocation>
+            <x>600</x>
+            <y>143</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText32_BorderLeft">
+         <itemlocation>
+            <x>438</x>
+            <y>143</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText2_BorderBottom">
+         <itemlocation>
+            <x>28</x>
+            <y>143</y>
+            <width>911</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine31">
+         <itemlocation>
+            <x>27</x>
+            <y>11</y>
+            <width>2</width>
+            <height>1284</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <data sid="DATA1">
+         <filename>C:\Documents and Settings\tmohrs\Desktop\arrow_724A.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+3YMQ6CQBRF0c8GTOhYgibWLoDeTbBWa7ekPxgqkHk68ZlM7kl+w0BCcQMM43U6
+xeySc8y55/Q5XQzz8XOu3w6vWTwAC1qDC63BhdbgorXGlx12iHmUTolgF4ECMZL3i7Hyg7tEC8RU
+tg6vLwW+UGrt3/eHpvBcg4XwDv3oJQyIqbAPRTUxEv6voZqYBwXBhdbgQmtwoTW4RDwBdiVNAGIp
+AAA=</mimedata>
+      </data>
+      <line sid="FFText5_BorderTop">
+         <itemlocation>
+            <x>28</x>
+            <y>191</y>
+            <width>911</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <data sid="DATA9">
+         <filename>C:\Documents and Settings\spugh\My Documents\Original AF Forms\logos\buttons\next.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC3Py7eNjAAMzINYAYg8gFgRiRgYJsHgEUP4IFI8AcODAga4g4+GERv01tBB5/voP
+BrjYWGVxaRn8/sIviFUZsoEERejpL+TYwRULuGIQT1hRHq1U9xeupEhkIqSW7yjxF54ERmo6HMz+
+QosyXDGLpoDqPqLcX+TZjstTBEUGub8odzPt/DX40ai/hhaC+2uYAap1dQYfAADMHInSjg4AAA==
+</mimedata>
+      </data>
+      <data sid="DATA10">
+         <filename>C:\Documents and Settings\spugh\My Documents\Original AF Forms\logos\buttons\previous.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC3Py7eNjAAMzINYAYg8gFgRiRgYJsHgEUP4IFI8AcODAga4g4+GERv01tBAl/voP
+BgQF/yMBTEFMXfjVE1RJ0F9Y3Uyqvwg6Hk2KQkH8/sIV5mTEF341eBhEegFXlKH5i0gfEUwbuNQQ
+9A7x/sLlI2r5C48bCKqh3F+0Tod4ghGXCH5H4nI2fpX4/QXXhV8Ef4gNLKK8nMcVYmQYNUj8NZjR
+qL+GFoL7a5gBqnV1Bh8AAEK6TmqODgAA</mimedata>
+      </data>
+      <data sid="DATA13">
+         <filename>C:\Original AF Forms\logos\buttons\previous_off.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC3Py7eNjAAMzINYAYg8gFgRiRgYJsHgEUP4IFI8AcODAgYbhBUb9NbQAJf76DwYE
+Bf8jAUxBTF341RNUSdBfWN1Mqr8IOh5NikJB/P7CFeb4vUDQX5iCeBhEegFXlKH5i0gfYZpJjL3E
+eId4f+HyEbX8hccNBNVQ7i9cjqRWOsQTjLhE8DsSl7Pxq8TvL7gu/CL4Q2xgAeXlPK4QI8MoSkxA
+A6P18tACw95fwwxQ0LkZ7AAASjooTI4OAAA=</mimedata>
+      </data>
+      <data sid="DATA14">
+         <filename>C:\Original AF Forms\logos\buttons\next_off.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC3Py7eNjAAMzINYAYg8gFgRiRgYJsHgEUP4IFI8AcODAgYbhBUb9NbQAef76Dwa4
+2FhlcWmhEaCiv/ALYlWGbCBBEZIAhf5Cjh1csYArBnGZiUeEeEB1f+FKikQmQmr5jhJ/4UlgpKZD
+PL4YcH81oEYZmqtwxSbVfQQB1C0PSdWLLEhQhCRAf381UOxmYsBovTy0wLD31zADFHRuBjsAAFHr
+iIaODgAA</mimedata>
+      </data>
+      <data sid="DATA6">
+         <filename>C:\Documents and Settings\bfraser\Desktop\arrow_724Agrey.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+3YMQ6CQBRF0c8GTOhYgibWLoDeTbBWa7fiFvzBUIHM04nPZHJP8hsGEoobYBiv
+0ylml5xjzj2nz+limI+fc/12eM3iAVjQGlxoDS60BhetNb7ssEPMo3RKBLsIFIiRvF+MlR/cJVog
+prJ1eH0p8IVSa/++PzSF5xoshHfoRy9hQEyFfSiqiZHwfw3VxDwoCC60BhdagwutwSXiCZqvrxFi
+KQAA</mimedata>
+      </data>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">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</mimedata>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+      </data>
+      <data sid="DATA2">
+         <filename>C:\Documents and Settings\Bobbie.Dickerson\Desktop\New Toolbar\newbar_greybackseal.PNG</filename>
+         <mimedata encoding="base64-gzip">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
+P88LAAA=</mimedata>
+      </data>
+      <check sid="InitialCHECK">
+         <itemlocation>
+            <x>232</x>
+            <y>190</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('MidTermCHECK.value', 'off') + set('RateeReqCHECK.value', 'off') + set('RaterDirectedCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>MidTermCHECK</next>
+         <previous>Unit</previous>
+      </check>
+      <check sid="MidTermCHECK">
+         <itemlocation>
+            <x>359</x>
+            <y>190</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('InitialCHECK.value', 'off') + set('RateeReqCHECK.value', 'off') + set('RaterDirectedCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>RateeReqCHECK</next>
+         <previous>InitialCHECK</previous>
+      </check>
+      <check sid="RateeReqCHECK">
+         <itemlocation>
+            <x>496</x>
+            <y>190</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('InitialCHECK.value', 'off') + set('MidTermCHECK.value', 'off') + set('RaterDirectedCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>RaterDirectedCHECK</next>
+         <previous>MidTermCHECK</previous>
+      </check>
+      <check sid="RaterDirectedCHECK">
+         <itemlocation>
+            <x>686</x>
+            <y>190</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('InitialCHECK.value', 'off') + set('MidTermCHECK.value', 'off') + set('RateeReqCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>III_1</next>
+         <previous>RateeReqCHECK</previous>
+      </check>
+      <label sid="LABEL10">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>50</y>
+            <height>22</height>
+         </itemlocation>
+         <value>AUTHORITY:  Title 10, United States Code (U.S.C.) 8013, Secretary of the Air Force; AFI 36-2406, and Executive Order 9397 (SSN), as amended.</value>
+      </label>
+      <label sid="LABEL55">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>84</y>
+            <height>22</height>
+         </itemlocation>
+         <value>ROUTINE USES:  May specifically be disclosed outside the DoD as a routine use pursuant to 5 U.S.C. 552a(b)(3).  DoD Blanket Routine Uses apply.</value>
+      </label>
+      <label sid="LABEL52">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>67</y>
+            <height>22</height>
+         </itemlocation>
+         <value>PURPOSE:  Form is used to document effectiveness/duty performance history.</value>
+      </label>
+      <label sid="LABEL23">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>395</x>
+            <y>33</y>
+            <width>177</width>
+            <height>22</height>
+         </itemlocation>
+         <value>PRIVACY ACT STATEMENT</value>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL27">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>101</y>
+            <height>22</height>
+         </itemlocation>
+         <value>DISCLOSURE:   Mandatory.  SSN is used for positive identification.</value>
+      </label>
+      <label sid="FFText35_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>29</x>
+            <y>223</y>
+         </itemlocation>
+         <value>III.  SELF ASSESSMENT </value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL49">
+         <itemlocation>
+            <x>183</x>
+            <y>223</y>
+            <height>22</height>
+         </itemlocation>
+         <value>(To be completed by Ratee and forwarded to Rater)</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL11">
+         <itemlocation>
+            <x>50</x>
+            <y>405</y>
+            <height>23</height>
+         </itemlocation>
+         <value>(If applicable)</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL28">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>668</y>
+         </itemlocation>
+         <value>of an Airman at all times</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL1">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>29</x>
+            <y>244</y>
+         </itemlocation>
+         <value>RESPONSIBILITY:</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL18">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>423</y>
+         </itemlocation>
+         <value>ACCOUNTABILITY:</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL19">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>527</y>
+            <height>22</height>
+         </itemlocation>
+         <value>AIR FORCE CULTURE:</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL24">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>693</y>
+         </itemlocation>
+         <value>SELF:</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL5">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>891</x>
+            <y>243</y>
+         </itemlocation>
+         <value>RATEE</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>510</x>
+            <y>223</y>
+            <width>97</width>
+            <height>22</height>
+         </itemlocation>
+         <value>Rating Scale:</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <label sid="LABEL4">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>602</x>
+            <y>223</y>
+            <width>328</width>
+            <height>22</height>
+         </itemlocation>
+         <value>Y = Yes, understands; N = Need more information</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>27</x>
+            <y>262</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>27</x>
+            <y>288</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>27</x>
+            <y>315</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>27</x>
+            <y>342</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>27</x>
+            <y>367</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>27</x>
+            <y>392</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>27</x>
+            <y>245</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>27</x>
+            <y>222</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="LABEL3">
+         <itemlocation>
+            <x>32</x>
+            <y>264</y>
+            <height>23</height>
+         </itemlocation>
+         <value>1.  Understands the importance of doing the right thing even when it is unpopular or difficult.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL54">
+         <itemlocation>
+            <x>32</x>
+            <y>345</y>
+            <height>23</height>
+         </itemlocation>
+         <value>4.  Understands the importance of refusing to participate in inappropriate behavior(s) despite social pressure(s).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL53">
+         <itemlocation>
+            <x>32</x>
+            <y>318</y>
+            <height>23</height>
+         </itemlocation>
+         <value>3.  Understands the importance of admitting to shortcomings or mistakes.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL8">
+         <itemlocation>
+            <x>32</x>
+            <y>291</y>
+            <height>23</height>
+         </itemlocation>
+         <value>2.  Understands the importance of responsibility in the use and care of equipment and assets.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL9">
+         <itemlocation>
+            <x>32</x>
+            <y>389</y>
+            <height>23</height>
+         </itemlocation>
+         <value>6.  Understands the importance of providing support and welfare of family and ensuring they are prepared for separations and/or reunions.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL13">
+         <itemlocation>
+            <x>32</x>
+            <y>370</y>
+            <height>22</height>
+         </itemlocation>
+         <value>5.  Understands the importance of accomplishing tasks in a timely manner.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL14">
+         <itemlocation>
+            <x>32</x>
+            <y>501</y>
+            <height>23</height>
+         </itemlocation>
+         <value>9.  Understands the importance of living within means financially</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL15">
+         <itemlocation>
+            <x>32</x>
+            <y>474</y>
+            <height>23</height>
+         </itemlocation>
+         <value>8.  Understands the importance of application of situational awareness and sound judgment.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL12">
+         <itemlocation>
+            <x>32</x>
+            <y>447</y>
+            <height>23</height>
+         </itemlocation>
+         <value>7.  Understands the importance of the AF Core Values/standards and how others should be accountable.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL17">
+         <itemlocation>
+            <x>32</x>
+            <y>551</y>
+            <height>23</height>
+         </itemlocation>
+         <value>10.  Understands the importance of leading by example.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL20">
+         <itemlocation>
+            <x>32</x>
+            <y>578</y>
+            <height>23</height>
+         </itemlocation>
+         <value>11.  Understands the importance of respecting self and others.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL21">
+         <itemlocation>
+            <x>32</x>
+            <y>605</y>
+            <height>23</height>
+         </itemlocation>
+         <value>12.  Understands the importance of looking after fellow Airmen and their families</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL26">
+         <itemlocation>
+            <x>32</x>
+            <y>743</y>
+            <height>23</height>
+         </itemlocation>
+         <value>16.  Understands the importance of setting aside quality time to be with family and friends.  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL16">
+         <itemlocation>
+            <x>32</x>
+            <y>770</y>
+            <height>23</height>
+         </itemlocation>
+         <value>17.  Understands the importance of striving to meet personal/professional goals.  Review Section VII for discussing during the assessment session.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL25">
+         <itemlocation>
+            <x>32</x>
+            <y>716</y>
+            <height>23</height>
+         </itemlocation>
+         <value>15.  Understands the importance of setting aside time to assess self, as well as personal and professional goals.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL22">
+         <itemlocation>
+            <x>32</x>
+            <y>632</y>
+            <height>23</height>
+         </itemlocation>
+         <value>13.  Understands the importance of showing enthusiasm in being an Airman and inspiring others to reach their full potential.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL6">
+         <itemlocation>
+            <x>32</x>
+            <y>654</y>
+         </itemlocation>
+         <value>14.  Understands the importance of upholding the proud heritage of the Air Force and the importance of displaying the professional characteristics</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>27</x>
+            <y>423</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>27</x>
+            <y>471</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>27</x>
+            <y>498</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>27</x>
+            <y>525</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE16">
+         <itemlocation>
+            <x>27</x>
+            <y>575</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE19">
+         <itemlocation>
+            <x>27</x>
+            <y>602</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE20">
+         <itemlocation>
+            <x>27</x>
+            <y>629</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE21">
+         <itemlocation>
+            <x>27</x>
+            <y>656</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE23">
+         <itemlocation>
+            <x>27</x>
+            <y>714</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE22">
+         <itemlocation>
+            <x>27</x>
+            <y>691</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE24">
+         <itemlocation>
+            <x>27</x>
+            <y>740</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE29">
+         <itemlocation>
+            <x>27</x>
+            <y>767</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE18">
+         <itemlocation>
+            <x>27</x>
+            <y>548</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE17">
+         <itemlocation>
+            <x>27</x>
+            <y>444</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE26">
+         <itemlocation>
+            <x>887</x>
+            <y>242</y>
+            <width>1</width>
+            <height>182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE44">
+         <itemlocation>
+            <x>887</x>
+            <y>444</y>
+            <width>1</width>
+            <height>82</height>
+         </itemlocation>
+      </line>
+      <field sid="III_1">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>264</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_2</next>
+         <previous>RaterDirectedCHECK</previous>
+      </field>
+      <field sid="III_6">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>396</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_7</next>
+         <previous>III_5</previous>
+      </field>
+      <field sid="III_9">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>501</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_10</next>
+         <previous>III_8</previous>
+      </field>
+      <field sid="III_11">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>579</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_12</next>
+         <previous>III_10</previous>
+      </field>
+      <field sid="III_10">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>551</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_11</next>
+         <previous>III_9</previous>
+      </field>
+      <field sid="III_7">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>447</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_8</next>
+         <previous>III_6</previous>
+      </field>
+      <field sid="III_8">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>475</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_9</next>
+         <previous>III_7</previous>
+      </field>
+      <field sid="III_2">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>292</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_3</next>
+         <previous>III_1</previous>
+      </field>
+      <field sid="III_3">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>318</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_4</next>
+         <previous>III_2</previous>
+      </field>
+      <field sid="III_4">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>344</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_5</next>
+         <previous>III_3</previous>
+      </field>
+      <field sid="III_5">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>370</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_6</next>
+         <previous>III_4</previous>
+      </field>
+      <line sid="LINE43">
+         <itemlocation>
+            <x>887</x>
+            <y>548</y>
+            <width>1</width>
+            <height>144</height>
+         </itemlocation>
+      </line>
+      <field sid="III_12">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>605</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <previous>III_11</previous>
+      </field>
+      <field sid="III_13">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>633</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_14</next>
+         <previous>FIELD37</previous>
+      </field>
+      <field sid="III_14">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>663</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_15</next>
+         <previous>III_13</previous>
+      </field>
+      <field sid="III_16">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>743</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_17</next>
+         <previous>III_15</previous>
+      </field>
+      <field sid="III_17">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>771</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <previous>III_16</previous>
+         <next>IV_AmnCriticalRole</next>
+      </field>
+      <field sid="III_15">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>897</x>
+            <y>717</y>
+         </itemlocation>
+         <size>
+            <width>3</width>
+            <height>1</height>
+         </size>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>III_16</next>
+         <previous>III_14</previous>
+      </field>
+      <line sid="LINE48">
+         <itemlocation>
+            <x>887</x>
+            <y>714</y>
+            <width>1</width>
+            <height>82</height>
+         </itemlocation>
+      </line>
+      <field sid="V_ReadinessIndex">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>600</x>
+            <y>926</y>
+            <width>28</width>
+            <height>21</height>
+         </itemlocation>
+         <value></value>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>AEFIndicator</next>
+         <previous>IV_AmnCriticalRole</previous>
+      </field>
+      <label sid="FFText12_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>798</y>
+            <height>22</height>
+         </itemlocation>
+         <value>IV.  AIRMAN'S CRITICAL ROLE IN SUPPORT OF THE MISSION</value>
+      </label>
+      <label sid="LABEL32">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>931</y>
+         </itemlocation>
+         <value>R = RED</value>
+      </label>
+      <label sid="LABEL30">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>914</y>
+         </itemlocation>
+         <value>V.  INDIVIDUAL READINESS INDEX </value>
+      </label>
+      <line sid="FFText12_BorderTop">
+         <itemlocation>
+            <x>27</x>
+            <y>794</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>27</x>
+            <y>912</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>27</x>
+            <y>817</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE25">
+         <itemlocation>
+            <x>27</x>
+            <y>950</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <field sid="IV_AmnCriticalRole">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>29</x>
+            <y>817</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>4</height>
+         </size>
+         <next>V_ReadinessIndex</next>
+         <previous>III_17</previous>
+      </field>
+      <label sid="LABEL50">
+         <itemlocation>
+            <x>424</x>
+            <y>798</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(To be completed by Rater)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL39">
+         <itemlocation>
+            <x>235</x>
+            <y>1006</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(To be completed by Rater)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL29">
+         <itemlocation>
+            <x>223</x>
+            <y>914</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(Completed by Rater after talking to unit deployment manager)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL34">
+         <itemlocation>
+            <x>31</x>
+            <y>953</y>
+            <width>453</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Are all deployment requirements current in accordance with AFI 10-403?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL41">
+         <itemlocation>
+            <x>602</x>
+            <y>953</y>
+            <height>21</height>
+         </itemlocation>
+         <value>AEF Indicator</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <field sid="V_Comments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>29</x>
+            <y>974</y>
+            <width>907</width>
+            <height>29</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <previous>AEFIndicator</previous>
+         <next>VI_1NAInitialCHECK</next>
+      </field>
+      <label sid="LABEL40">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>1006</y>
+            <height>22</height>
+         </itemlocation>
+         <value>VI.  PERFORMANCE FEEDBACK</value>
+      </label>
+      <line sid="LINE30">
+         <itemlocation>
+            <x>27</x>
+            <y>1004</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE31">
+         <itemlocation>
+            <x>27</x>
+            <y>1028</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE28">
+         <itemlocation>
+            <x>27</x>
+            <y>1052</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <field sid="VI_1Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>29</x>
+            <y>1084</y>
+            <width>907</width>
+            <height>72</height>
+         </itemlocation>
+         <next>VI_2NAInitialCHECK</next>
+         <previous>VI_1ClearlyExceedsCHECK</previous>
+      </field>
+      <label sid="FFText13_2">
+         <itemlocation>
+            <x>31</x>
+            <y>1030</y>
+            <width>116</width>
+            <height>21</height>
+         </itemlocation>
+         <value>1.  Job Knowledge.</value>
+      </label>
+      <label sid="FFText14_1">
+         <itemlocation>
+            <x>143</x>
+            <y>1030</y>
+            <width>792</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Has knowledge required to perform duties effectively.  Strives to improve knowledge.  Applies knowledge to handle non-routine situations.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL31">
+         <itemlocation>
+            <x>599</x>
+            <y>1058</y>
+            <width>105</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL33">
+         <itemlocation>
+            <x>461</x>
+            <y>1058</y>
+            <width>91</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <label sid="LABEL36">
+         <itemlocation>
+            <x>235</x>
+            <y>1058</y>
+            <width>88</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL37">
+         <itemlocation>
+            <x>69</x>
+            <y>1058</y>
+            <width>119</width>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <label sid="LABEL38">
+         <itemlocation>
+            <x>364</x>
+            <y>1058</y>
+            <width>41</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_1ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>566</x>
+            <y>1051</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_1NAInitialCHECK.value', 'off') + set('VI_1DoesNotMeetCHECK.value', 'off')+ set('VI_1MeetsCHECK.value', 'off') + set('VI_1AboveAveCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_1Comments</next>
+         <previous>VI_1AboveAveCHECK</previous>
+      </check>
+      <check sid="VI_1NAInitialCHECK">
+         <itemlocation>
+            <x>37</x>
+            <y>1051</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_1DoesNotMeetCHECK.value', 'off') + set('VI_1MeetsCHECK.value', 'off')+ set('VI_1AboveAveCHECK.value', 'off') + set('VI_1ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_1DoesNotMeetCHECK</next>
+         <previous>V_Comments</previous>
+      </check>
+      <check sid="VI_1AboveAveCHECK">
+         <itemlocation>
+            <x>426</x>
+            <y>1051</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_1NAInitialCHECK.value', 'off') + set('VI_1DoesNotMeetCHECK.value', 'off')+ set('VI_1MeetsCHECK.value', 'off') + set('VI_1ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_1ClearlyExceedsCHECK</next>
+         <previous>VI_1MeetsCHECK</previous>
+      </check>
+      <check sid="VI_1MeetsCHECK">
+         <itemlocation>
+            <x>335</x>
+            <y>1051</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_1NAInitialCHECK.value', 'off') + set('VI_1DoesNotMeetCHECK.value', 'off')+ set('VI_1AboveAveCHECK.value', 'off') + set('VI_1ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_1AboveAveCHECK</next>
+         <previous>VI_1DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_1DoesNotMeetCHECK">
+         <itemlocation>
+            <x>200</x>
+            <y>1051</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_1NAInitialCHECK.value', 'off') + set('VI_1MeetsCHECK.value', 'off')+ set('VI_1AboveAveCHECK.value', 'off') + set('VI_1ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_1MeetsCHECK</next>
+         <previous>VI_1NAInitialCHECK</previous>
+      </check>
+      <line sid="LINE32">
+         <itemlocation>
+            <x>27</x>
+            <y>1083</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE34">
+         <itemlocation>
+            <x>27</x>
+            <y>1221</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText13_BorderBottom">
+         <itemlocation>
+            <x>27</x>
+            <y>1155</y>
+            <width>910</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE33">
+         <itemlocation>
+            <x>27</x>
+            <y>1190</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="FFText23_2">
+         <itemlocation>
+            <x>29</x>
+            <y>1156</y>
+            <width>130</width>
+            <height>21</height>
+         </itemlocation>
+         <value>2.  Leadership Skills.</value>
+      </label>
+      <label sid="LABEL42">
+         <itemlocation>
+            <x>45</x>
+            <y>1170</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Self-confident.  Motivates subordinates.  Has respect and confidence of subordinates.  Fair and consistent in evaluation of subordinates.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL35">
+         <itemlocation>
+            <x>152</x>
+            <y>1156</y>
+            <width>784</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Sets and enforces standards.  Promotes a healthy organizational climate.  Works well with others.  Fosters teamwork.  Displays initiative.  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL43">
+         <itemlocation>
+            <x>599</x>
+            <y>1194</y>
+            <width>100</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL44">
+         <itemlocation>
+            <x>461</x>
+            <y>1194</y>
+            <width>91</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <label sid="LABEL45">
+         <itemlocation>
+            <x>236</x>
+            <y>1194</y>
+            <width>88</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL46">
+         <itemlocation>
+            <x>371</x>
+            <y>1194</y>
+            <width>41</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_2ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>564</x>
+            <y>1187</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_2NAInitialCHECK.value', 'off') + set('VI_2DoesNotMeetCHECK.value', 'off')+ set('VI_2MeetsCHECK.value', 'off') + set('VI_2AboveAveCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_2Comments</next>
+         <previous>VI_2AboveAveCHECK</previous>
+      </check>
+      <check sid="VI_2AboveAveCHECK">
+         <itemlocation>
+            <x>426</x>
+            <y>1187</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_2NAInitialCHECK.value', 'off') + set('VI_2DoesNotMeetCHECK.value', 'off')+ set('VI_2MeetsCHECK.value', 'off') + set('VI_2ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_2ClearlyExceedsCHECK</next>
+         <previous>VI_2MeetsCHECK</previous>
+      </check>
+      <check sid="VI_2MeetsCHECK">
+         <itemlocation>
+            <x>336</x>
+            <y>1187</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_2NAInitialCHECK.value', 'off') + set('VI_2DoesNotMeetCHECK.value', 'off')+ set('VI_2AboveAveCHECK.value', 'off') + set('VI_2ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_2AboveAveCHECK</next>
+         <previous>VI_2DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_2DoesNotMeetCHECK">
+         <itemlocation>
+            <x>201</x>
+            <y>1187</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_2NAInitialCHECK.value', 'off') + set('VI_2MeetsCHECK.value', 'off')+ set('VI_2AboveAveCHECK.value', 'off') + set('VI_2ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_2MeetsCHECK</next>
+         <previous>VI_2NAInitialCHECK</previous>
+      </check>
+      <label sid="LABEL47">
+         <itemlocation>
+            <x>70</x>
+            <y>1194</y>
+            <width>119</width>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <check sid="VI_2NAInitialCHECK">
+         <itemlocation>
+            <x>38</x>
+            <y>1187</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_2DoesNotMeetCHECK.value', 'off') + set('VI_2MeetsCHECK.value', 'off')+ set('VI_2AboveAveCHECK.value', 'off') + set('VI_2ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_2DoesNotMeetCHECK</next>
+         <previous>VI_1Comments</previous>
+      </check>
+      <field sid="VI_2Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>29</x>
+            <y>1222</y>
+            <width>907</width>
+            <height>72</height>
+         </itemlocation>
+         <previous>VI_2ClearlyExceedsCHECK</previous>
+         <next>BUTTON12</next>
+      </field>
+      <label sid="FOUO">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>619</x>
+            <y>1294</y>
+         </itemlocation>
+         <value>PRIVACY ACT INFORMATION:  The information in this form is FOR OFFICIAL USE ONLY.  Protect IAW the Privacy Act of 1974.</value>
+         <size>
+            <width>52</width>
+            <height>2</height>
+         </size>
+      </label>
+      <field sid="AEFIndicator">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>681</x>
+            <y>953</y>
+            <width>129</width>
+            <height>21</height>
+         </itemlocation>
+         <value></value>
+         <justify>center</justify>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <casetype>upper</casetype>
+            </presentation>
+         </format>
+         <next>V_Comments</next>
+         <previous>V_ReadinessIndex</previous>
+      </field>
+      <label sid="FOUO1">
+         <itemlocation>
+            <x>323</x>
+            <y>1296</y>
+            <width>218</width>
+         </itemlocation>
+         <value>PREVIOUS EDITIONS ARE OBSOLETE</value>
+         <size>
+            <width>52</width>
+         </size>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL48">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>328</x>
+            <y>931</y>
+         </itemlocation>
+         <value>G = GREEN</value>
+      </label>
+      <label sid="LABEL51">
+         <itemlocation>
+            <x>81</x>
+            <y>931</y>
+         </itemlocation>
+         <value>(UNSAT/NOT CURRENTLY DEPLOYABLE); </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL56">
+         <itemlocation>
+            <x>394</x>
+            <y>931</y>
+         </itemlocation>
+         <value>(SAT/CURRENTLY DEPLOYABLE)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL57">
+         <itemlocation>
+            <x>381</x>
+            <y>1006</y>
+            <height>21</height>
+         </itemlocation>
+         <value> - Information may be used on next OPR</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL58">
+         <itemlocation>
+            <x>405</x>
+            <y>501</y>
+            <height>23</height>
+         </itemlocation>
+         <value>(budgets, saves, spends responsibility, etc.).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL59">
+         <itemlocation>
+            <x>494</x>
+            <y>605</y>
+            <height>23</height>
+         </itemlocation>
+         <value>(to include while fellow Airmen are deployed).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL60">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>173</x>
+            <y>668</y>
+         </itemlocation>
+         <value>(24/7).</value>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+      </label>
+   </page>
+   <page sid="Page2">
+      <global sid="global">
+         <pageid>
+            <serialnumber>8B3A0ECB-1708-4838-B055-0A43F8DEA10F</serialnumber>
+         </pageid>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <designer:pagesize>960;1320</designer:pagesize>
+         
+         
+         
+         <next>VI_3NAInitialCHECK</next>
+         <bgcolor>207,207,207</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>AF Form 724, P2</label>
+         <ufv_settings>
+            <validoverlap>15</validoverlap>
+         </ufv_settings>
+      </global>
+   <toolbar sid="TOOLBAR">
+         <designer:height>83</designer:height>
+      </toolbar>
+      <label sid="LABEL3">
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>34</x>
+            <y>6</y>
+         </itemlocation>
+         <image>DATA1</image>
+         <active>off</active>
+         <imagemode suppresstext="true"></imagemode>
+      </label>
+      <button sid="BUTTON8">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>260</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save As</value>
+         <next>BUTTON9</next>
+         <previous>BUTTON12</previous>
+      </button>
+      <button sid="BUTTON9">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>337</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Save</value>
+         <next>BUTTON10</next>
+         <previous>BUTTON8</previous>
+      </button>
+      <button sid="BUTTON10">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>414</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Print</value>
+         <next>BUTTON13</next>
+         <previous>BUTTON9</previous>
+      </button>
+      <button sid="BUTTON12">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>183</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <value>Close</value>
+         <next>BUTTON8</next>
+         <previous>CalDt</previous>
+      </button>
+      <button sid="BUTTON13">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>551</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         <next>BUTTON14</next>
+         <previous>BUTTON10</previous>
+      </button>
+      <button sid="BUTTON14">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>649</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode suppresstext="false">clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         <next>VI_3NAInitialCHECK</next>
+         <previous>BUTTON13</previous>
+      </button>
+      <line sid="FFText35_BorderRight">
+         <itemlocation>
+            <x>930</x>
+            <y>372</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText35_BorderLeft">
+         <itemlocation>
+            <x>30</x>
+            <y>372</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText37_BorderRight">
+         <itemlocation>
+            <x>402</x>
+            <y>1238</y>
+            <width>1</width>
+            <height>55</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText37_BorderBottom">
+         <itemlocation>
+            <x>30</x>
+            <y>1282</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="FFText38_BorderRight">
+         <itemlocation>
+            <x>775</x>
+            <y>1238</y>
+            <width>1</width>
+            <height>55</height>
+         </itemlocation>
+      </line>
+      <field sid="VII_6Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>999</y>
+            <width>907</width>
+            <height>82</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <value></value>
+         <scrollvert>fixed</scrollvert>
+         <acclabel>section 6. STRENGTHS, SUGGESTED GOALS AND ADDITIONAL COMMENTS.   Enlisted Professional Development: EES, Assignments, PME, Mentoring, Career Advice, etcetera.</acclabel>
+         <next>VII_7Comments</next>
+         <previous>VII_5Comments</previous>
+         <size>
+            <width>89</width>
+            <height>4</height>
+         </size>
+      </field>
+      <field sid="VII_7Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>1098</y>
+            <width>907</width>
+            <height>101</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <value></value>
+         <scrollvert>fixed</scrollvert>
+         <acclabel>section 6. STRENGTHS, SUGGESTED GOALS AND ADDITIONAL COMMENTS.   Enlisted Professional Development: EES, Assignments, PME, Mentoring, Career Advice, etcetera.</acclabel>
+         <size>
+            <width>89</width>
+            <height>5</height>
+         </size>
+         <next>CalDt</next>
+         <previous>VII_6Comments</previous>
+      </field>
+      <label sid="CalDt_label">
+         <itemlocation>
+            <x>778</x>
+            <y>1237</y>
+         </itemlocation>
+         <value>DATE  </value>
+      </label>
+      <line sid="FFLine47">
+         <itemlocation>
+            <x>30</x>
+            <y>6</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine48">
+         <itemlocation>
+            <x>940</x>
+            <y>6</y>
+            <width>2</width>
+            <height>1288</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine49">
+         <itemlocation>
+            <x>30</x>
+            <y>6</y>
+            <width>2</width>
+            <height>1288</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine50">
+         <itemlocation>
+            <x>30</x>
+            <y>1292</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1320</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+      <label sid="FFText36_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>1294</y>
+            <width>165</width>
+            <height>22</height>
+         </itemlocation>
+         <value>AF FORM 724A, 20140701</value>
+      </label>
+      <label sid="FFText37_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>34</x>
+            <y>1237</y>
+            <width>138</width>
+            <height>21</height>
+         </itemlocation>
+         <value>RATEE SIGNATURE</value>
+      </label>
+      <label sid="FFText38_2">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>405</x>
+            <y>1237</y>
+            <width>138</width>
+            <height>21</height>
+         </itemlocation>
+         <value>RATER SIGNATURE</value>
+      </label>
+      <line sid="FFText37_BorderTop">
+         <itemlocation>
+            <x>30</x>
+            <y>1238</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <data sid="DATA1">
+         <filename>C:\Documents and Settings\Bobbie.Dickerson\Desktop\New Toolbar\newbar_greybackseal.PNG</filename>
+         <mimedata encoding="base64-gzip">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
+P88LAAA=</mimedata>
+      </data>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>30</x>
+            <y>919</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="FOUO">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>622</x>
+            <y>1294</y>
+         </itemlocation>
+         <value>PRIVACY ACT INFORMATION:  The information in this form is FOR OFFICIAL USE ONLY.  Protect IAW the Privacy Act of 1974.</value>
+         <size>
+            <width>52</width>
+            <height>2</height>
+         </size>
+      </label>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>30</x>
+            <y>358</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>30</x>
+            <y>516</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>30</x>
+            <y>485</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>30</x>
+            <y>464</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <field sid="VI_6Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>32</x>
+            <y>392</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>3</height>
+         </size>
+         <next>VI_7DoesNotMeetCHECK</next>
+         <previous>VI_6ClearlyExceedsCHECK</previous>
+      </field>
+      <field sid="VI_7Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>32</x>
+            <y>518</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>3</height>
+         </size>
+         <next>VII_1Comments</next>
+         <previous>VI_7NextFADue</previous>
+      </field>
+      <label sid="LABEL34">
+         <itemlocation>
+            <x>177</x>
+            <y>339</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Listens, speaks, and writes effectively.  Clearly and succinctly conveys ideas.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText30_2">
+         <itemlocation>
+            <x>32</x>
+            <y>339</y>
+            <height>21</height>
+         </itemlocation>
+         <value>6.  Communication Skills. </value>
+      </label>
+      <label sid="LABEL2">
+         <itemlocation>
+            <x>34</x>
+            <y>464</y>
+            <width>122</width>
+            <height>21</height>
+         </itemlocation>
+         <value>7.  Physical Fitness.</value>
+      </label>
+      <label sid="LABEL29">
+         <itemlocation>
+            <x>239</x>
+            <y>491</y>
+            <width>56</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <label sid="LABEL30">
+         <itemlocation>
+            <x>374</x>
+            <y>491</y>
+            <width>72</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Exempt</value>
+      </label>
+      <check sid="VI_7ExemptCHECK">
+         <itemlocation>
+            <x>339</x>
+            <y>484</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_7DoesNotMeetCHECK.value', 'off') + set('VI_7MeetsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_7NextFADue</next>
+         <previous>VI_7MeetsCHECK</previous>
+      </check>
+      <check sid="VI_7MeetsCHECK">
+         <itemlocation>
+            <x>204</x>
+            <y>484</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_7DoesNotMeetCHECK.value', 'off') + set('VI_7ExemptCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_7ExemptCHECK</next>
+         <previous>VI_7DoesNotMeetCHECK</previous>
+      </check>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>30</x>
+            <y>390</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL10">
+         <itemlocation>
+            <x>73</x>
+            <y>491</y>
+            <width>102</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <check sid="VI_7DoesNotMeetCHECK">
+         <itemlocation>
+            <x>41</x>
+            <y>484</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_7MeetsCHECK.value', 'off') + set('VI_7ExemptCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_7MeetsCHECK</next>
+         <previous>VI_6Comments</previous>
+      </check>
+      <label sid="LABEL31">
+         <itemlocation>
+            <x>35</x>
+            <y>614</y>
+            <width>159</width>
+            <height>21</height>
+         </itemlocation>
+         <value>1.  How do you think you are</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL36">
+         <itemlocation>
+            <x>34</x>
+            <y>658</y>
+            <width>148</width>
+            <height>21</height>
+         </itemlocation>
+         <value>2.  What are some of your</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL51">
+         <itemlocation>
+            <x>34</x>
+            <y>680</y>
+            <width>98</width>
+            <height>21</height>
+         </itemlocation>
+         <value>2a.  Do you have</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL54">
+         <itemlocation>
+            <x>34</x>
+            <y>739</y>
+            <width>106</width>
+            <height>21</height>
+         </itemlocation>
+         <value>2b.  What are your </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL38">
+         <itemlocation>
+            <x>211</x>
+            <y>658</y>
+            <width>134</width>
+            <height>21</height>
+         </itemlocation>
+         <value>for self-improvement?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL40">
+         <itemlocation>
+            <x>442</x>
+            <y>658</y>
+            <width>70</width>
+            <height>21</height>
+         </itemlocation>
+         <value>SMART -- S</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL33">
+         <itemlocation>
+            <x>253</x>
+            <y>614</y>
+            <width>218</width>
+            <height>21</height>
+         </itemlocation>
+         <value>in the unit?  How can your unit help you </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL32">
+         <itemlocation>
+            <x>190</x>
+            <y>614</y>
+            <width>67</width>
+            <height>21</height>
+         </itemlocation>
+         <value>performing</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL52">
+         <itemlocation>
+            <x>126</x>
+            <y>680</y>
+            <width>59</width>
+            <height>21</height>
+         </itemlocation>
+         <value>personal</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL55">
+         <itemlocation>
+            <x>135</x>
+            <y>739</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <value>professional</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL75">
+         <itemlocation>
+            <x>234</x>
+            <y>919</y>
+            <width>60</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Wingman</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL37">
+         <itemlocation>
+            <x>176</x>
+            <y>658</y>
+            <width>39</width>
+            <height>21</height>
+         </itemlocation>
+         <value>goals</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL35">
+         <itemlocation>
+            <x>469</x>
+            <y>614</y>
+            <width>103</width>
+            <height>21</height>
+         </itemlocation>
+         <value>perform better?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL73">
+         <itemlocation>
+            <x>323</x>
+            <y>919</y>
+            <width>52</width>
+            <height>21</height>
+         </itemlocation>
+         <value>mentor?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL74">
+         <itemlocation>
+            <x>289</x>
+            <y>919</y>
+            <width>37</width>
+            <height>21</height>
+         </itemlocation>
+         <value>and a </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL72">
+         <itemlocation>
+            <x>35</x>
+            <y>919</y>
+            <width>203</width>
+            <height>21</height>
+         </itemlocation>
+         <value>5.  How would you rate yourself as a </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL77">
+         <itemlocation>
+            <x>35</x>
+            <y>980</y>
+            <width>304</width>
+            <height>21</height>
+         </itemlocation>
+         <value>6.  Would you like to offer any suggestions/feedback?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL80">
+         <itemlocation>
+            <x>35</x>
+            <y>1082</y>
+            <height>21</height>
+         </itemlocation>
+         <value>7.  Expectations for unit and ratee</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL68">
+         <itemlocation>
+            <x>35</x>
+            <y>1217</y>
+            <height>21</height>
+         </itemlocation>
+         <value>evaluations</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL67">
+         <itemlocation>
+            <x>35</x>
+            <y>1200</y>
+            <height>21</height>
+         </itemlocation>
+         <value>8.  NOTE:  This information is to enhance open communication, the rater will not utilize or document any areas discussed in Section III or VII when preparing </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL76">
+         <itemlocation>
+            <x>374</x>
+            <y>919</y>
+            <width>255</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Can you provide some specific examples?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL62">
+         <itemlocation>
+            <x>327</x>
+            <y>980</y>
+            <width>546</width>
+            <height>21</height>
+         </itemlocation>
+         <value>(e.g., unit improvements, safety, productivity enhancements, existing programs, living conditions)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE37">
+         <itemlocation>
+            <x>30</x>
+            <y>1081</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>30</x>
+            <y>1199</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE38">
+         <itemlocation>
+            <x>30</x>
+            <y>740</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE40">
+         <itemlocation>
+            <x>30</x>
+            <y>798</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE36">
+         <itemlocation>
+            <x>30</x>
+            <y>679</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE42">
+         <itemlocation>
+            <x>30</x>
+            <y>859</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE30">
+         <itemlocation>
+            <x>30</x>
+            <y>657</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE47">
+         <itemlocation>
+            <x>30</x>
+            <y>979</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL27">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>35</x>
+            <y>592</y>
+         </itemlocation>
+         <value>VII.  KNOWING YOUR AIRMAN </value>
+         <border>on</border>
+         <borderinfo>
+            <color>255,255,255</color>
+         </borderinfo>
+      </label>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>237</x>
+            <y>592</y>
+            <height>22</height>
+         </itemlocation>
+         <value>(To be discussed by Ratee and Rater during the feedback session)</value>
+         <border>on</border>
+         <borderinfo>
+            <color>255,255,255</color>
+         </borderinfo>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE28">
+         <itemlocation>
+            <x>30</x>
+            <y>614</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE29">
+         <itemlocation>
+            <x>30</x>
+            <y>590</y>
+            <width>912</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <field sid="VII_1Comments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>632</y>
+            <width>907</width>
+            <height>25</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>1</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <next>VII_2aComments</next>
+         <previous>VI_7Comments</previous>
+      </field>
+      <field sid="VII_2aComments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>696</y>
+            <width>907</width>
+            <height>44</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>2</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <next>VII_2bComments</next>
+         <previous>VII_1Comments</previous>
+      </field>
+      <field sid="VII_2bComments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>754</y>
+            <width>907</width>
+            <height>44</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>2</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <next>VII_3Comments</next>
+         <previous>VII_2aComments</previous>
+      </field>
+      <field sid="VII_3Comments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>815</y>
+            <width>907</width>
+            <height>44</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>2</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <next>VII_4Comments</next>
+         <previous>VII_2bComments</previous>
+      </field>
+      <field sid="VII_4Comments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>875</y>
+            <width>907</width>
+            <height>44</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>2</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <previous>VII_3Comments</previous>
+      </field>
+      <field sid="VII_5Comments">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>32</x>
+            <y>935</y>
+            <width>907</width>
+            <height>44</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <border>off</border>
+         <size>
+            <width>89</width>
+            <height>2</height>
+         </size>
+         <scrollvert>fixed</scrollvert>
+         <next>VII_6Comments</next>
+         <previous>FIELD7</previous>
+      </field>
+      <label sid="LABEL39">
+         <itemlocation>
+            <x>342</x>
+            <y>658</y>
+            <width>102</width>
+            <height>21</height>
+         </itemlocation>
+         <value>(Goals should be</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL53">
+         <itemlocation>
+            <x>178</x>
+            <y>680</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(family, financial, fitness, etc.) goals? Would you like to discuss?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL56">
+         <itemlocation>
+            <x>206</x>
+            <y>739</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(assignments, academic and professional education, etc.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL66">
+         <itemlocation>
+            <x>35</x>
+            <y>859</y>
+            <height>21</height>
+         </itemlocation>
+         <value>4.  Do you have Wingmen?  Do you have at least one mentor?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL42">
+         <itemlocation>
+            <x>548</x>
+            <y>658</y>
+            <width>16</width>
+            <height>21</height>
+         </itemlocation>
+         <value>M</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL45">
+         <itemlocation>
+            <x>619</x>
+            <y>658</y>
+            <width>16</width>
+            <height>21</height>
+         </itemlocation>
+         <value>A</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL46">
+         <itemlocation>
+            <x>756</x>
+            <y>658</y>
+            <width>16</width>
+            <height>21</height>
+         </itemlocation>
+         <value>T</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL48">
+         <itemlocation>
+            <x>680</x>
+            <y>658</y>
+            <width>16</width>
+            <height>21</height>
+         </itemlocation>
+         <value>R</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL41">
+         <itemlocation>
+            <x>508</x>
+            <y>658</y>
+            <width>44</width>
+            <height>21</height>
+         </itemlocation>
+         <value>pecific, </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE31">
+         <itemlocation>
+            <x>502</x>
+            <y>675</y>
+            <width>8</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE32">
+         <itemlocation>
+            <x>552</x>
+            <y>675</y>
+            <width>8</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE33">
+         <itemlocation>
+            <x>623</x>
+            <y>675</y>
+            <width>8</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE34">
+         <itemlocation>
+            <x>683</x>
+            <y>675</y>
+            <width>8</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE35">
+         <itemlocation>
+            <x>759</x>
+            <y>675</y>
+            <width>8</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="LABEL43">
+         <itemlocation>
+            <x>558</x>
+            <y>658</y>
+            <width>68</width>
+            <height>21</height>
+         </itemlocation>
+         <value>easurable,</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL44">
+         <itemlocation>
+            <x>628</x>
+            <y>658</y>
+            <width>56</width>
+            <height>21</height>
+         </itemlocation>
+         <value>ttainable,</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL47">
+         <itemlocation>
+            <x>763</x>
+            <y>658</y>
+            <width>81</width>
+            <height>21</height>
+         </itemlocation>
+         <value>ime-bound).</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL50">
+         <itemlocation>
+            <x>732</x>
+            <y>658</y>
+            <width>27</width>
+            <height>21</height>
+         </itemlocation>
+         <value>and</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL49">
+         <itemlocation>
+            <x>688</x>
+            <y>658</y>
+            <width>49</width>
+            <height>21</height>
+         </itemlocation>
+         <value>ealistic,</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL58">
+         <itemlocation>
+            <x>34</x>
+            <y>799</y>
+            <width>602</width>
+            <height>21</height>
+         </itemlocation>
+         <value>3.  Do you have stressors in your life?  If so, what are your goals for reducing them?  How can we help?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>30</x>
+            <y>26</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>30</x>
+            <y>140</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>30</x>
+            <y>256</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>30</x>
+            <y>57</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>30</x>
+            <y>108</y>
+            <width>910</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>30</x>
+            <y>338</y>
+            <width>910</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <field sid="VI_4Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>32</x>
+            <y>172</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>2</height>
+         </size>
+         <next>VI_5NAInitialCHECK</next>
+         <previous>VI_4ClearlyExceedsCHECK</previous>
+      </field>
+      <field sid="VI_3Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>32</x>
+            <y>58</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>2</height>
+         </size>
+         <next>VI_4NAInitialCHECK</next>
+         <previous>VI_3ClearlyExceedsCHECK</previous>
+      </field>
+      <field sid="VI_5Comments">
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <acclabel>Section 3. Primary duties.</acclabel>
+         <itemlocation>
+            <x>32</x>
+            <y>288</y>
+            <width>907</width>
+         </itemlocation>
+         <size>
+            <width>75</width>
+            <height>2</height>
+         </size>
+         <next>VI_6NAInitialCHECK</next>
+         <previous>VI_5ClearlyExceedsCHECK</previous>
+      </field>
+      <label sid="FFText19_2">
+         <itemlocation>
+            <x>34</x>
+            <y>223</y>
+            <height>21</height>
+         </itemlocation>
+         <value>5.  Judgment and Decisions.</value>
+      </label>
+      <label sid="FFText20_1">
+         <itemlocation>
+            <x>197</x>
+            <y>223</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Makes timely and accurate decisions.  Emphasizes logic and decision making.  Retains composure in stressful situations.  Adheres to </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL8">
+         <itemlocation>
+            <x>149</x>
+            <y>464</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Maintains Air Force physical fitness standards.  Discuss current AF Fitness Program and how lifestyle ensures fitness standard goals.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="FFText21_2">
+         <itemlocation>
+            <x>34</x>
+            <y>109</y>
+            <width>141</width>
+            <height>21</height>
+         </itemlocation>
+         <value>4.  Organizational Skills.</value>
+      </label>
+      <label sid="LABEL64">
+         <itemlocation>
+            <x>49</x>
+            <y>122</y>
+            <height>21</height>
+         </itemlocation>
+         <value>effectively.  Anticipates and solves problems.  Develops innovative solutions.</value>
+      </label>
+      <label sid="LABEL65">
+         <itemlocation>
+            <x>49</x>
+            <y>236</y>
+            <height>21</height>
+         </itemlocation>
+         <value>safety and occupational health requirements.  Recognizes and acts to take advantage of opportunities.</value>
+      </label>
+      <label sid="LABEL11">
+         <itemlocation>
+            <x>34</x>
+            <y>8</y>
+            <height>21</height>
+         </itemlocation>
+         <value>3.  Professional Qualities.</value>
+      </label>
+      <label sid="FFText22_1">
+         <itemlocation>
+            <x>171</x>
+            <y>109</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Plans, coordinates, schedules, and uses resources effectively.  Meets suspense's.  Schedules work for self and others equitably and </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL4">
+         <itemlocation>
+            <x>183</x>
+            <y>8</y>
+            <height>21</height>
+         </itemlocation>
+         <value>Exhibits loyalty, discipline, dedication, integrity, and officership.  Adheres to Air Force standards.  Accepts personal responsibility.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL15">
+         <itemlocation>
+            <x>604</x>
+            <y>146</y>
+            <width>100</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL18">
+         <itemlocation>
+            <x>466</x>
+            <y>146</y>
+            <width>91</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <label sid="LABEL19">
+         <itemlocation>
+            <x>241</x>
+            <y>146</y>
+            <width>88</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL16">
+         <itemlocation>
+            <x>241</x>
+            <y>32</y>
+            <width>88</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL20">
+         <itemlocation>
+            <x>376</x>
+            <y>146</y>
+            <width>41</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_4ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>569</x>
+            <y>139</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_4NAInitialCHECK.value', 'off') + set('VI_4DoesNotMeetCHECK.value', 'off')+ set('VI_4MeetsCHECK.value', 'off') + set('VI_4AboveAveCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_4Comments</next>
+         <previous>VI_4AboveAveCHECK</previous>
+      </check>
+      <check sid="VI_4AboveAveCHECK">
+         <itemlocation>
+            <x>431</x>
+            <y>139</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_4NAInitialCHECK.value', 'off') + set('VI_4DoesNotMeetCHECK.value', 'off')+ set('VI_4MeetsCHECK.value', 'off') + set('VI_4ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_4ClearlyExceedsCHECK</next>
+         <previous>VI_4MeetsCHECK</previous>
+      </check>
+      <check sid="VI_4MeetsCHECK">
+         <itemlocation>
+            <x>341</x>
+            <y>139</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_4NAInitialCHECK.value', 'off') + set('VI_4DoesNotMeetCHECK.value', 'off')+ set('VI_4AboveAveCHECK.value', 'off') + set('VI_4ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_4AboveAveCHECK</next>
+         <previous>VI_4DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_4DoesNotMeetCHECK">
+         <itemlocation>
+            <x>206</x>
+            <y>139</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_4NAInitialCHECK.value', 'off') + set('VI_4MeetsCHECK.value', 'off')+ set('VI_4AboveAveCHECK.value', 'off') + set('VI_4ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_4MeetsCHECK</next>
+         <previous>VI_4NAInitialCHECK</previous>
+      </check>
+      <label sid="LABEL21">
+         <itemlocation>
+            <x>604</x>
+            <y>262</y>
+            <width>100</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL24">
+         <itemlocation>
+            <x>466</x>
+            <y>262</y>
+            <width>91</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <label sid="LABEL25">
+         <itemlocation>
+            <x>241</x>
+            <y>262</y>
+            <width>88</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL26">
+         <itemlocation>
+            <x>376</x>
+            <y>262</y>
+            <width>41</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_5ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>569</x>
+            <y>255</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_5NAInitialCHECK.value', 'off') + set('VI_5DoesNotMeetCHECK.value', 'off')+ set('VI_5MeetsCHECK.value', 'off') + set('VI_5AboveAveCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_5Comments</next>
+         <previous>VI_5AboveAveCHECK</previous>
+      </check>
+      <check sid="VI_5AboveAveCHECK">
+         <itemlocation>
+            <x>431</x>
+            <y>255</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_5NAInitialCHECK.value', 'off') + set('VI_5DoesNotMeetCHECK.value', 'off')+ set('VI_5MeetsCHECK.value', 'off') + set('VI_5ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_5ClearlyExceedsCHECK</next>
+         <previous>VI_5MeetsCHECK</previous>
+      </check>
+      <check sid="VI_5MeetsCHECK">
+         <itemlocation>
+            <x>341</x>
+            <y>255</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_5NAInitialCHECK.value', 'off') + set('VI_5DoesNotMeetCHECK.value', 'off')+ set('VI_5AboveAveCHECK.value', 'off') + set('VI_5ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_5AboveAveCHECK</next>
+         <previous>VI_5DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_5DoesNotMeetCHECK">
+         <itemlocation>
+            <x>206</x>
+            <y>255</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_5NAInitialCHECK.value', 'off') + set('VI_5MeetsCHECK.value', 'off')+ set('VI_5AboveAveCHECK.value', 'off') + set('VI_5ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_5MeetsCHECK</next>
+         <previous>VI_5NAInitialCHECK</previous>
+      </check>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>30</x>
+            <y>171</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>30</x>
+            <y>287</y>
+            <width>912</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL5">
+         <itemlocation>
+            <x>75</x>
+            <y>146</y>
+            <width>119</width>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <label sid="LABEL7">
+         <itemlocation>
+            <x>75</x>
+            <y>32</y>
+            <width>119</width>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <check sid="VI_4NAInitialCHECK">
+         <itemlocation>
+            <x>43</x>
+            <y>139</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_4DoesNotMeetCHECK.value', 'off') + set('VI_4MeetsCHECK.value', 'off')+ set('VI_4AboveAveCHECK.value', 'off') + set('VI_4ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_4DoesNotMeetCHECK</next>
+         <previous>VI_3Comments</previous>
+      </check>
+      <label sid="LABEL6">
+         <itemlocation>
+            <x>75</x>
+            <y>262</y>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <check sid="VI_5NAInitialCHECK">
+         <itemlocation>
+            <x>43</x>
+            <y>255</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_5DoesNotMeetCHECK.value', 'off') + set('VI_5MeetsCHECK.value', 'off')+ set('VI_5AboveAveCHECK.value', 'off') + set('VI_5ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_5DoesNotMeetCHECK</next>
+         <previous>VI_4Comments</previous>
+      </check>
+      <label sid="LABEL17">
+         <itemlocation>
+            <x>376</x>
+            <y>32</y>
+            <width>47</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_3MeetsCHECK">
+         <itemlocation>
+            <x>341</x>
+            <y>25</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_3DoesNotMeetCHECK.value', 'off') + set('VI_3NAInitialCHECK.value', 'off')+ set('VI_3AboveAveCHECK.value', 'off')+ set('VI_3ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_3AboveAveCHECK</next>
+         <previous>VI_3DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_3DoesNotMeetCHECK">
+         <itemlocation>
+            <x>206</x>
+            <y>25</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_3NAInitialCHECK.value', 'off') + set('VI_3MeetsCHECK.value', 'off')+ set('VI_3AboveAveCHECK.value', 'off')+ set('VI_3ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_3MeetsCHECK</next>
+         <previous>VI_3NAInitialCHECK</previous>
+      </check>
+      <check sid="VI_3NAInitialCHECK">
+         <itemlocation>
+            <x>43</x>
+            <y>25</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_3DoesNotMeetCHECK.value', 'off') + set('VI_3MeetsCHECK.value', 'off')+ set('VI_3AboveAveCHECK.value', 'off')+ set('VI_3ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_3DoesNotMeetCHECK</next>
+      </check>
+      <line sid="FFText19_BorderTop">
+         <itemlocation>
+            <x>32</x>
+            <y>222</y>
+            <width>910</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL9">
+         <itemlocation>
+            <x>234</x>
+            <y>364</y>
+            <width>93</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Does Not Meet</value>
+      </label>
+      <label sid="LABEL14">
+         <itemlocation>
+            <x>464</x>
+            <y>364</y>
+            <width>93</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <label sid="LABEL23">
+         <itemlocation>
+            <x>596</x>
+            <y>364</y>
+            <width>103</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL12">
+         <itemlocation>
+            <x>369</x>
+            <y>364</y>
+            <width>48</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Meets</value>
+      </label>
+      <check sid="VI_6MeetsCHECK">
+         <itemlocation>
+            <x>339</x>
+            <y>357</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_6DoesNotMeetCHECK.value', 'off') + set('VI_6NAInitialCHECK.value', 'off')+ set('VI_6AboveAveCHECK.value', 'off')+ set('VI_6ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_6AboveAveCHECK</next>
+         <previous>VI_6DoesNotMeetCHECK</previous>
+      </check>
+      <check sid="VI_6AboveAveCHECK">
+         <itemlocation>
+            <x>434</x>
+            <y>357</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_6MeetsCHECK.value', 'off') + set('VI_6DoesNotMeetCHECK.value', 'off')+ set('VI_6NAInitialCHECK.value', 'off')+ set('VI_6ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_6ClearlyExceedsCHECK</next>
+         <previous>VI_6MeetsCHECK</previous>
+      </check>
+      <check sid="VI_6DoesNotMeetCHECK">
+         <itemlocation>
+            <x>204</x>
+            <y>357</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_6MeetsCHECK.value', 'off') + set('VI_6NAInitialCHECK.value', 'off')+ set('VI_6AboveAveCHECK.value', 'off')+ set('VI_6ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_6MeetsCHECK</next>
+         <previous>VI_6NAInitialCHECK</previous>
+      </check>
+      <label sid="LABEL13">
+         <itemlocation>
+            <x>71</x>
+            <y>364</y>
+            <width>124</width>
+            <height>21</height>
+         </itemlocation>
+         <value>N/A Initial Feedback</value>
+      </label>
+      <check sid="VI_6NAInitialCHECK">
+         <itemlocation>
+            <x>41</x>
+            <y>357</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_6MeetsCHECK.value', 'off') + set('VI_6DoesNotMeetCHECK.value', 'off')+ set('VI_6AboveAveCHECK.value', 'off')+ set('VI_6ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_6DoesNotMeetCHECK</next>
+         <previous>VI_5Comments</previous>
+      </check>
+      <check sid="VI_6ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>566</x>
+            <y>357</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_6MeetsCHECK.value', 'off') + set('VI_6DoesNotMeetCHECK.value', 'off')+ set('VI_6NAInitialCHECK.value', 'off')+ set('VI_6AboveAveCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_6Comments</next>
+         <previous>VI_6AboveAveCHECK</previous>
+      </check>
+      <label sid="LABEL22">
+         <itemlocation>
+            <x>604</x>
+            <y>32</y>
+            <width>100</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Clearly Exceeds</value>
+      </label>
+      <label sid="LABEL28">
+         <itemlocation>
+            <x>466</x>
+            <y>32</y>
+            <width>91</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Above Average</value>
+      </label>
+      <check sid="VI_3ClearlyExceedsCHECK">
+         <itemlocation>
+            <x>569</x>
+            <y>25</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_3DoesNotMeetCHECK.value', 'off') + set('VI_3MeetsCHECK.value', 'off')+ set('VI_3AboveAveCHECK.value', 'off')+ set('VI_3NAInitialCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_3Comments</next>
+         <previous>VI_3AboveAveCHECK</previous>
+      </check>
+      <check sid="VI_3AboveAveCHECK">
+         <itemlocation>
+            <x>431</x>
+            <y>25</y>
+         </itemlocation>
+         <value>off</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>14</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:mutually_excl xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('VI_3DoesNotMeetCHECK.value', 'off') + set('VI_3MeetsCHECK.value', 'off')+ set('VI_3NAInitialCHECK.value', 'off')+ set('VI_3ClearlyExceedsCHECK.value', 'off')) : ''"></custom:mutually_excl>
+         <next>VI_3ClearlyExceedsCHECK</next>
+         <previous>VI_3MeetsCHECK</previous>
+      </check>
+      <field sid="VI_7NextFADue">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>543</x>
+            <y>491</y>
+            <width>110</width>
+            <height>21</height>
+         </itemlocation>
+         <value></value>
+         <justify>center</justify>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+            </presentation>
+         </format>
+         <previous>VI_7ExemptCHECK</previous>
+         <next>VI_7Comments</next>
+      </field>
+      <label sid="LABEL63">
+         <itemlocation>
+            <x>469</x>
+            <y>491</y>
+            <width>79</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Next FA Due</value>
+      </label>
+      <label sid="FOUO1">
+         <itemlocation>
+            <x>323</x>
+            <y>1296</y>
+            <width>218</width>
+         </itemlocation>
+         <value>PREVIOUS EDITIONS ARE OBSOLETE</value>
+         <size>
+            <width>52</width>
+         </size>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL57">
+         <itemlocation>
+            <x>218</x>
+            <y>1082</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(Areas for Improvement, strengths and weaknesses; recommendations to improve)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL59">
+         <itemlocation>
+            <x>103</x>
+            <y>1217</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(Ref: AFI 36-2406)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL60">
+         <itemlocation>
+            <x>557</x>
+            <y>739</y>
+            <height>21</height>
+         </itemlocation>
+         <value>(i.e., SOS, ACSC, AWC, Masters Degree)?</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL61">
+         <itemlocation>
+            <x>521</x>
+            <y>739</y>
+            <height>21</height>
+         </itemlocation>
+         <value>goals</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <button sid="SIGNATURE1">
+         <itemlocation>
+            <x>405</x>
+            <y>1262</y>
+            <width>355</width>
+            <height>25</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <designer:design>
+            <designer:designValue key="signatureAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <signature>SIGNATURE1_73225374</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1";delete="off"</signformat>
+         <gradient>
+            <type>none</type>
+         </gradient>
+         <border>off</border>
+         <bgcolor>#808080</bgcolor>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+         </fontinfo>
+         <printbgcolor>#FFFFFF</printbgcolor>
+         <signer></signer>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : &quot;on&quot;">on</printvisible>
+      </button>
+      <label sid="SIGNATURE1_DATE">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <value compute="toggle(SIGNATURE1.signer)=='1' ? SIGNATURE1.signer == '' ? '' : tolower(SIGNATURE1.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <itemlocation>
+            <after>SIGNATURE1</after>
+            <alignb2b>SIGNATURE1</alignb2b>
+            <width>109</width>
+            <x>778</x>
+         </itemlocation>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>11</size>
+         </fontinfo>
+      </label>
+      <button sid="SIGNATURE2">
+         <itemlocation>
+            <x>34</x>
+            <y>1262</y>
+            <width>355</width>
+            <height>25</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE2_134732324</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1";delete="off"</signformat>
+         <gradient>
+            <type>none</type>
+         </gradient>
+         <border>off</border>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+         </fontinfo>
+         <bgcolor>#808080</bgcolor>
+         <printbgcolor>#FFFFFF</printbgcolor>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>Page1.NAME</itemref>
+            <itemref>Page1.GRADE</itemref>
+            <itemref>Page1.Unit</itemref>
+            <itemref>Page1.InitialCHECK</itemref>
+            <itemref>Page1.MidTermCHECK</itemref>
+            <itemref>Page1.RateeReqCHECK</itemref>
+            <itemref>Page1.RaterDirectedCHECK</itemref>
+            <itemref>Page1.III_1</itemref>
+            <itemref>Page1.III_2</itemref>
+            <itemref>Page1.III_3</itemref>
+            <itemref>Page1.III_4</itemref>
+            <itemref>Page1.III_5</itemref>
+            <itemref>Page1.III_6</itemref>
+            <itemref>Page1.III_7</itemref>
+            <itemref>Page1.III_8</itemref>
+            <itemref>Page1.III_9</itemref>
+            <itemref>Page1.III_10</itemref>
+            <itemref>Page1.III_11</itemref>
+            <itemref>Page1.III_12</itemref>
+            <itemref>Page1.III_13</itemref>
+            <itemref>Page1.III_14</itemref>
+            <itemref>Page1.III_15</itemref>
+            <itemref>Page1.III_16</itemref>
+            <itemref>Page1.III_17</itemref>
+            <itemref>Page1.IV_AmnCriticalRole</itemref>
+            <itemref>Page1.V_ReadinessIndex</itemref>
+            <itemref>Page1.AEFIndicator</itemref>
+            <itemref>Page1.V_Comments</itemref>
+            <itemref>Page1.VI_1DoesNotMeetCHECK</itemref>
+            <itemref>Page1.VI_1MeetsCHECK</itemref>
+            <itemref>Page1.VI_1AboveAveCHECK</itemref>
+            <itemref>Page1.VI_1ClearlyExceedsCHECK</itemref>
+            <itemref>Page1.VI_1Comments</itemref>
+            <itemref>Page1.VI_2DoesNotMeetCHECK</itemref>
+            <itemref>Page1.VI_2MeetsCHECK</itemref>
+            <itemref>Page1.VI_2AboveAveCHECK</itemref>
+            <itemref>Page1.VI_2ClearlyExceedsCHECK</itemref>
+            <itemref>Page1.VI_2Comments</itemref>
+            <itemref>Page1.VI_1NAInitialCHECK</itemref>
+            <itemref>Page1.VI_2NAInitialCHECK</itemref>
+            <itemref>Page2.SIGNATURE1</itemref>
+            <itemref>Page2.SIGNATURE1_DATE</itemref>
+            <itemref>Page2.VII_7Comments</itemref>
+            <itemref>Page2.VII_6Comments</itemref>
+            <itemref>Page2.VII_5Comments</itemref>
+            <itemref>Page2.VII_4Comments</itemref>
+            <itemref>Page2.VII_3Comments</itemref>
+            <itemref>Page2.VII_2bComments</itemref>
+            <itemref>Page2.VII_2aComments</itemref>
+            <itemref>Page2.VII_1Comments</itemref>
+            <itemref>Page2.VI_7Comments</itemref>
+            <itemref>Page2.VI_3NAInitialCHECK</itemref>
+            <itemref>Page2.VI_3DoesNotMeetCHECK</itemref>
+            <itemref>Page2.VI_3MeetsCHECK</itemref>
+            <itemref>Page2.VI_3AboveAveCHECK</itemref>
+            <itemref>Page2.VI_3ClearlyExceedsCHECK</itemref>
+            <itemref>Page2.VI_3Comments</itemref>
+            <itemref>Page2.VI_4NAInitialCHECK</itemref>
+            <itemref>Page2.VI_4DoesNotMeetCHECK</itemref>
+            <itemref>Page2.VI_4MeetsCHECK</itemref>
+            <itemref>Page2.VI_4AboveAveCHECK</itemref>
+            <itemref>Page2.VI_4ClearlyExceedsCHECK</itemref>
+            <itemref>Page2.VI_4Comments</itemref>
+            <itemref>Page2.VI_5NAInitialCHECK</itemref>
+            <itemref>Page2.VI_5DoesNotMeetCHECK</itemref>
+            <itemref>Page2.VI_5MeetsCHECK</itemref>
+            <itemref>Page2.VI_5AboveAveCHECK</itemref>
+            <itemref>Page2.VI_5ClearlyExceedsCHECK</itemref>
+            <itemref>Page2.VI_5Comments</itemref>
+            <itemref>Page2.VI_6NAInitialCHECK</itemref>
+            <itemref>Page2.VI_6DoesNotMeetCHECK</itemref>
+            <itemref>Page2.VI_6MeetsCHECK</itemref>
+            <itemref>Page2.VI_6AboveAveCHECK</itemref>
+            <itemref>Page2.VI_6ClearlyExceedsCHECK</itemref>
+            <itemref>Page2.VI_6Comments</itemref>
+            <itemref>Page2.VI_7DoesNotMeetCHECK</itemref>
+            <itemref>Page2.VI_7MeetsCHECK</itemref>
+            <itemref>Page2.VI_7ExemptCHECK</itemref>
+            <itemref>Page2.VI_7NextFADue</itemref>
+            <itemref>SIGNATURE1_73225374</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+         <printvisible compute="(signer == '' and global.global.activated == 'off') ? ('off') : &quot;on&quot;">on</printvisible>
+      </button>
+   </page>
+</XFDL>

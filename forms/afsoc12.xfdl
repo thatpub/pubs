@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>6/1/2003</designer:date>
+         <formid>
+            <serialnumber>C9768063-A74C-4516-B6EA-BDC354E76943</serialnumber>
+            <version>1.8.2</version>
+            <title>AFSOC012, 19951001</title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <printsettings>
+            <border>off</border>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+         </printsettings>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>AFSOC12, 19951001</label>
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>AFSOC</custom:prefix>
+               <custom:number>12</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>19951001</custom:date>
+            <custom:longtitle>Flight Crew Information File</custom:longtitle>
+            <custom:version>1</custom:version>
+            <custom:funccode>1000</custom:funccode>
+            <custom:funcstatement>Information File</custom:funcstatement>
+            <custom:ui>EF</custom:ui>
+            <custom:ur>EA</custom:ur>
+            <custom:prescdir>AFI11-202V2/AFSOCSUP1</custom:prescdir>
+            <custom:opr>AFSOC/A3V</custom:opr>
+            <custom:medium>E</custom:medium>
+            <custom:source>AFPUBS</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst></custom:spinst>
+            <custom:dist>F</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>RK</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede></custom:supercede>
+         </custom:form_metadata>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5">IBM Lotus Forms Designer</editor>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+         
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>E3204AC4-1CB0-46D8-B238-39B36C76A340</serialnumber>
+         </pageid>
+         <next>FROM</next>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>AFSOC FORM 12</label>
+      </global>
+      <toolbar sid="TOOLBAR">
+         <designer:height>78</designer:height>
+      </toolbar>
+      <label sid="LABEL3">
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>0</x>
+            <y>0</y>
+         </itemlocation>
+         <image>DATA1</image>
+         <active>off</active>
+      </label>
+      <button sid="BUTTON8">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>206</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save As</value>
+         <previous>T3</previous>
+      </button>
+      <button sid="BUTTON9">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveform</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>283</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+      </button>
+      <button sid="BUTTON10">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>360</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="BUTTON11">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>437</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="BUTTON12">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>0,0,151</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>129</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+      </button>
+      <button sid="BUTTON13">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>578</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+      </button>
+      <button sid="BUTTON14">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>0,0,151</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            <x>655</x>
+            <y>24</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         <previous>X1</previous>
+      </button>
+      <field sid="PDATE">
+         <itemlocation>
+            <x>462</x>
+            <y>994</y>
+            <width>168</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Enter POSTING DATE as y y y y m m d d and TIME as h h m m.</acclabel>
+         <value></value>
+         <help>PDATE_HELP</help>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>COMBOBOX2</next>
+         <previous>AUTH</previous>
+         <format>
+            <datatype>string</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+                <patterns>
+                    <pattern>(\d{8})/?(\d{4})</pattern>
+                </patterns>
+            </constraints>
+            <presentation>
+                <patternrefs>
+                    <patternref>$1/$2</patternref>
+                </patternrefs>
+            </presentation>
+         </format>
+      </field>
+      <field sid="FROM">
+         <itemlocation>
+            <x>30</x>
+            <y>110</y>
+            <width>157</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>AY F S O C FORM 12, 19 95 10 o 1.  FLIGHT CREW INFORMATION FILE.  FROM:  Enter name.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>TO</next>
+         <previous>FROM</previous>
+         <help>HELP5</help>
+      </field>
+      <field sid="TO">
+         <itemlocation>
+            <x>186</x>
+            <y>110</y>
+            <width>585</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>TO:  Enter name.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>COMBOBOX1</next>
+         <previous>FROM</previous>
+         <help>HELP6</help>
+      </field>
+      <help sid="COMBOBOX2_HELP1">
+         <value>Enter a date as YYYYMMDD</value>
+      </help>
+      <help sid="COMBOBOX1_HELP1">
+         <value>Enter a date as YYYYMMDD</value>
+      </help>
+      <help sid="CALDATE_HELP">
+         <value>Entering date as YYYYMMDD.</value>
+      </help>
+      <field sid="SUBJECT">
+         <itemlocation>
+            <x>98</x>
+            <y>143</y>
+            <width>833</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Enter SUBJECT.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>INFO</next>
+         <previous>COMBOBOX1</previous>
+         <help>HELP8</help>
+      </field>
+      <field sid="INFO">
+         <itemlocation>
+            <x>31</x>
+            <y>179</y>
+            <width>900</width>
+            <height>807</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Enter additional information.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>AUTH</next>
+         <previous>SUBJECT</previous>
+         <help>HELP9</help>
+      </field>
+      <field sid="AUTH">
+         <itemlocation>
+            <x>112</x>
+            <y>994</y>
+            <width>219</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Enter AUTHORITY.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <previous>INFO</previous>
+         <help>HELP13</help>
+         <next>PDATE</next>
+      </field>
+      <help sid="PDATE_HELP">
+         <value>Enter POSTING DATE/TIME as yyyymmdd/hhmm.</value>
+      </help>
+      <help sid="WDATE_HELP">
+         <value>Enter withdrawal date as YYYYMMDD.</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>339</x>
+            <y>54</y>
+         </itemlocation>
+         <value>FLIGHT CREW INFORMATION FILE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <help>HELP1</help>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>34</x>
+            <y>87</y>
+         </itemlocation>
+         <value>FROM:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP2</help>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>190</x>
+            <y>87</y>
+         </itemlocation>
+         <value>TO:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP3</help>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>773</x>
+            <y>87</y>
+         </itemlocation>
+         <value>DATE:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP4</help>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>34</x>
+            <y>145</y>
+         </itemlocation>
+         <value>SUBJECT:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP7</help>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>34</x>
+            <y>996</y>
+         </itemlocation>
+         <value>AUTHORITY:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP10</help>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>334</x>
+            <y>996</y>
+            <width>126</width>
+            <height>21</height>
+         </itemlocation>
+         <value>POSTING DATE/TIME:  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP11</help>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>633</x>
+            <y>996</y>
+         </itemlocation>
+         <value>WITHDRAWAL DATE:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP12</help>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>70</x>
+            <y>1028</y>
+         </itemlocation>
+         <justify>center</justify>
+         <value>SQUADRON
+or MDS</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP14</help>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>225</x>
+            <y>1028</y>
+            <width>58</width>
+            <height>39</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>INDEX
+NUMBER</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP19</help>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>373</x>
+            <y>1028</y>
+            <width>62</width>
+            <height>39</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>CREW
+POSITION</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP24</help>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>522</x>
+            <y>1028</y>
+         </itemlocation>
+         <justify>center</justify>
+         <value>SQUADRON
+or MDS</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP28</help>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>677</x>
+            <y>1028</y>
+            <width>58</width>
+            <height>39</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>INDEX
+NUMBER</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP33</help>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>821</x>
+            <y>1028</y>
+            <width>71</width>
+            <height>39</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>CREW
+POSITION</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP38</help>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>34</x>
+            <y>1233</y>
+         </itemlocation>
+         <value>AFSOC FORM 12, 20120814</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <help>HELP43</help>
+      </label>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <field sid="A">
+         <itemlocation>
+            <x>32</x>
+            <y>1065</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>E</next>
+         <previous>COMBOBOX2</previous>
+         <help>HELP15</help>
+         <size></size>
+      </field>
+      <field sid="E">
+         <itemlocation>
+            <x>175</x>
+            <y>1065</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>I</next>
+         <previous>A</previous>
+         <help>HELP20</help>
+         <size></size>
+      </field>
+      <field sid="I">
+         <itemlocation>
+            <x>331</x>
+            <y>1065</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>M</next>
+         <previous>E</previous>
+         <size></size>
+      </field>
+      <field sid="M">
+         <itemlocation>
+            <x>475</x>
+            <y>1065</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>Q</next>
+         <previous>I</previous>
+         <help>HELP29</help>
+         <size></size>
+      </field>
+      <field sid="Q">
+         <itemlocation>
+            <x>631</x>
+            <y>1065</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>U</next>
+         <previous>M</previous>
+         <help>HELP34</help>
+         <size></size>
+      </field>
+      <field sid="U">
+         <itemlocation>
+            <x>780</x>
+            <y>1065</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 1.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>B</next>
+         <previous>Q</previous>
+         <help>HELP39</help>
+         <size></size>
+      </field>
+      <field sid="B">
+         <itemlocation>
+            <x>32</x>
+            <y>1089</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>F</next>
+         <previous>U</previous>
+         <help>HELP16</help>
+         <size></size>
+      </field>
+      <field sid="F">
+         <itemlocation>
+            <x>175</x>
+            <y>1089</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>J</next>
+         <previous>B</previous>
+         <help>HELP21</help>
+         <size></size>
+      </field>
+      <field sid="J">
+         <itemlocation>
+            <x>331</x>
+            <y>1089</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>N</next>
+         <previous>F</previous>
+         <help>HELP25</help>
+         <size></size>
+      </field>
+      <field sid="N">
+         <itemlocation>
+            <x>475</x>
+            <y>1089</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>R</next>
+         <previous>J</previous>
+         <help>HELP30</help>
+         <size></size>
+      </field>
+      <field sid="R">
+         <itemlocation>
+            <x>631</x>
+            <y>1089</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>V</next>
+         <previous>N</previous>
+         <help>HELP35</help>
+         <size></size>
+      </field>
+      <field sid="V">
+         <itemlocation>
+            <x>780</x>
+            <y>1089</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 2.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>C</next>
+         <previous>R</previous>
+         <help>HELP40</help>
+         <size></size>
+      </field>
+      <field sid="C">
+         <itemlocation>
+            <x>32</x>
+            <y>1113</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>G</next>
+         <previous>V</previous>
+         <help>HELP17</help>
+         <size></size>
+      </field>
+      <field sid="G">
+         <itemlocation>
+            <x>175</x>
+            <y>1113</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>K</next>
+         <previous>C</previous>
+         <help>HELP22</help>
+         <size></size>
+      </field>
+      <field sid="K">
+         <itemlocation>
+            <x>331</x>
+            <y>1113</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>O</next>
+         <previous>G</previous>
+         <help>HELP26</help>
+         <size></size>
+      </field>
+      <field sid="O">
+         <itemlocation>
+            <x>475</x>
+            <y>1113</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>S</next>
+         <previous>K</previous>
+         <help>HELP31</help>
+         <size></size>
+      </field>
+      <field sid="S">
+         <itemlocation>
+            <x>631</x>
+            <y>1113</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>W</next>
+         <previous>O</previous>
+         <help>HELP36</help>
+         <size></size>
+      </field>
+      <field sid="W">
+         <itemlocation>
+            <x>780</x>
+            <y>1113</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>D</next>
+         <previous>S</previous>
+         <help>HELP41</help>
+         <size></size>
+      </field>
+      <field sid="D">
+         <itemlocation>
+            <x>32</x>
+            <y>1137</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>H</next>
+         <previous>W</previous>
+         <help>HELP18</help>
+         <size></size>
+      </field>
+      <field sid="H">
+         <itemlocation>
+            <x>175</x>
+            <y>1137</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>L</next>
+         <previous>D</previous>
+         <help>HELP23</help>
+         <size></size>
+      </field>
+      <field sid="L">
+         <itemlocation>
+            <x>331</x>
+            <y>1137</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>P</next>
+         <previous>H</previous>
+         <help>HELP27</help>
+         <size></size>
+      </field>
+      <field sid="P">
+         <itemlocation>
+            <x>475</x>
+            <y>1137</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>T</next>
+         <previous>L</previous>
+         <help>HELP32</help>
+         <size></size>
+      </field>
+      <field sid="T">
+         <itemlocation>
+            <x>631</x>
+            <y>1137</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>X</next>
+         <previous>P</previous>
+         <help>HELP37</help>
+         <size></size>
+      </field>
+      <field sid="X">
+         <itemlocation>
+            <x>780</x>
+            <y>1137</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <previous>T</previous>
+         <next>C1</next>
+         <help>HELP42</help>
+         <size></size>
+      </field>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>53</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>30</x>
+            <y>78</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>30</x>
+            <y>137</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>30</x>
+            <y>178</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_9">
+         <itemlocation>
+            <x>30</x>
+            <y>1028</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_15">
+         <itemlocation>
+            <x>186</x>
+            <y>78</y>
+            <width>1</width>
+            <height>60</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>770</x>
+            <y>78</y>
+            <width>1</width>
+            <height>60</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>929</x>
+            <y>53</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>30</x>
+            <y>1233</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>53</y>
+            <width>2</width>
+            <height>1182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>30</x>
+            <y>1065</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>30</x>
+            <y>1089</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>30</x>
+            <y>1113</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>30</x>
+            <y>1137</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>174</x>
+            <y>1028</y>
+            <width>1</width>
+            <height>182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>330</x>
+            <y>985</y>
+            <width>1</width>
+            <height>225</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_17">
+         <itemlocation>
+            <x>474</x>
+            <y>1028</y>
+            <width>1</width>
+            <height>182</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>630</x>
+            <y>985</y>
+            <width>1</width>
+            <height>225</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>779</x>
+            <y>1028</y>
+            <width>1</width>
+            <height>182</height>
+         </itemlocation>
+      </line>
+      <help sid="HELP1">
+         <value>AFSOC FORM 12, 19951001.  FLIGHT CREW INFORMATION FILE</value>
+      </help>
+      <help sid="HELP2">
+         <value>FROM:</value>
+      </help>
+      <help sid="HELP3">
+         <value>TO:</value>
+      </help>
+      <help sid="HELP4">
+         <value>DATE:</value>
+      </help>
+      <help sid="HELP5">
+         <value>AFSOC FORM 12, 19951001.  FLIGHT CREW INFORMATION FILE.  FROM:  Enter name.</value>
+      </help>
+      <help sid="HELP6">
+         <value>TO:  Enter name.</value>
+      </help>
+      <help sid="HELP7">
+         <value>SUBJECT:</value>
+      </help>
+      <help sid="HELP8">
+         <value>Enter SUBJECT.</value>
+      </help>
+      <help sid="HELP9">
+         <value>Enter additional information.</value>
+      </help>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>30</x>
+            <y>985</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <help sid="HELP10">
+         <value>AUTHORITY:</value>
+      </help>
+      <help sid="HELP11">
+         <value>POSTING DATE/TIME:  </value>
+      </help>
+      <help sid="HELP12">
+         <value>WITHDRAWAL DATE:</value>
+      </help>
+      <help sid="HELP13">
+         <value>Enter AUTHORITY.</value>
+      </help>
+      <help sid="HELP14">
+         <value>DESIGN AIRCRAFT</value>
+      </help>
+      <help sid="HELP15">
+         <value>Row 1. Enter design aircraft.</value>
+      </help>
+      <help sid="HELP16">
+         <value>Row 2. Enter design aircraft.</value>
+      </help>
+      <help sid="HELP17">
+         <value>Row 3. Enter design aircraft.</value>
+      </help>
+      <help sid="HELP18">
+         <value>Row 4. Enter design aircraft.</value>
+      </help>
+      <help sid="HELP19">
+         <value>INDEX NUMBER</value>
+      </help>
+      <help sid="HELP20">
+         <value>Row 1.  Enter index number.</value>
+      </help>
+      <help sid="HELP21">
+         <value>Row 2.  Enter index number.</value>
+      </help>
+      <help sid="HELP22">
+         <value>Row 3.  Enter index number.</value>
+      </help>
+      <help sid="HELP23">
+         <value>Row 4.  Enter index number.</value>
+      </help>
+      <help sid="HELP24">
+         <value>CREW POSITION</value>
+      </help>
+      <help sid="HELP25">
+         <value>Row 2.  Enter crew position.</value>
+      </help>
+      <help sid="HELP26">
+         <value>Row 3.  Enter crew position.</value>
+      </help>
+      <help sid="HELP27">
+         <value>Row 4.  Enter crew position.</value>
+      </help>
+      <help sid="HELP28">
+         <value>DESIGN AIRCRAFT</value>
+      </help>
+      <help sid="HELP29">
+         <value>Row 1.  Enter design aircraft.</value>
+      </help>
+      <help sid="HELP30">
+         <value>Row 2.  Enter design aircraft.</value>
+      </help>
+      <help sid="HELP31">
+         <value>Row 3.  Enter design aircraft.</value>
+      </help>
+      <help sid="HELP32">
+         <value>Row 4.  Enter design aircraft.</value>
+      </help>
+      <help sid="HELP33">
+         <value>INDEX NUMBER</value>
+      </help>
+      <help sid="HELP34">
+         <value>Row 1.  Enter index number.</value>
+      </help>
+      <help sid="HELP35">
+         <value>Row 2.  Enter index number.</value>
+      </help>
+      <help sid="HELP36">
+         <value>Row 3.  Enter index number.</value>
+      </help>
+      <help sid="HELP37">
+         <value>Row 4.  Enter index number.</value>
+      </help>
+      <help sid="HELP38">
+         <value>CREW POOSITION</value>
+      </help>
+      <help sid="HELP39">
+         <value>Row 1.  Enter crew position.</value>
+      </help>
+      <help sid="HELP40">
+         <value>Row 2.  Enter crew position.</value>
+      </help>
+      <help sid="HELP41">
+         <value>Row 3.  Enter crew position.</value>
+      </help>
+      <help sid="HELP42">
+         <value>Row 4.  Enter crew position.</value>
+      </help>
+      <help sid="HELP43">
+         <value>AFSOC FORM 12, 19951001</value>
+      </help>
+      <data sid="DATA1">
+         <filename>C:\Documents and Settings\Bobbie.Dickerson\Desktop\New Toolbar\newbar_greybackseal.PNG</filename>
+         <mimedata encoding="base64-gzip">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
+P88LAAA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+      </data>
+      <field sid="C1">
+         <itemlocation>
+            <x>32</x>
+            <y>1161</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>G1</next>
+         <previous>X</previous>
+         <help>HELP17</help>
+         <size></size>
+      </field>
+      <field sid="G1">
+         <itemlocation>
+            <x>175</x>
+            <y>1161</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>K1</next>
+         <previous>C1</previous>
+         <help>HELP22</help>
+         <size></size>
+      </field>
+      <field sid="K1">
+         <itemlocation>
+            <x>331</x>
+            <y>1161</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>O1</next>
+         <previous>G1</previous>
+         <help>HELP26</help>
+         <size></size>
+      </field>
+      <field sid="O1">
+         <itemlocation>
+            <x>475</x>
+            <y>1161</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>S1</next>
+         <previous>K1</previous>
+         <help>HELP31</help>
+         <size></size>
+      </field>
+      <field sid="S1">
+         <itemlocation>
+            <x>631</x>
+            <y>1161</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>W1</next>
+         <previous>O1</previous>
+         <help>HELP22</help>
+         <size></size>
+      </field>
+      <field sid="W1">
+         <itemlocation>
+            <x>780</x>
+            <y>1161</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 3.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>D1</next>
+         <previous>S1</previous>
+         <help>HELP26</help>
+         <size></size>
+      </field>
+      <field sid="D1">
+         <itemlocation>
+            <x>32</x>
+            <y>1185</y>
+            <width>142</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4. Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>H1</next>
+         <previous>W1</previous>
+         <help>HELP18</help>
+         <size></size>
+      </field>
+      <field sid="H1">
+         <itemlocation>
+            <x>175</x>
+            <y>1185</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>L1</next>
+         <previous>D1</previous>
+         <help>HELP23</help>
+         <size></size>
+      </field>
+      <field sid="L1">
+         <itemlocation>
+            <x>331</x>
+            <y>1185</y>
+            <width>143</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>P1</next>
+         <previous>H1</previous>
+         <help>HELP27</help>
+         <size></size>
+      </field>
+      <field sid="P1">
+         <itemlocation>
+            <x>475</x>
+            <y>1185</y>
+            <width>155</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter design aircraft.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>T1</next>
+         <previous>L1</previous>
+         <help>HELP32</help>
+         <size></size>
+      </field>
+      <field sid="T1">
+         <itemlocation>
+            <x>631</x>
+            <y>1185</y>
+            <width>148</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>X1</next>
+         <previous>P1</previous>
+         <help>HELP23</help>
+         <size></size>
+      </field>
+      <field sid="X1">
+         <itemlocation>
+            <x>780</x>
+            <y>1185</y>
+            <width>149</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter crew position.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <previous>T1</previous>
+         <next>T2</next>
+         <help>HELP27</help>
+         <size></size>
+      </field>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>30</x>
+            <y>1161</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_22">
+         <itemlocation>
+            <x>30</x>
+            <y>1185</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL82">
+         <itemlocation>
+            <x>374</x>
+            <y>1235</y>
+         </itemlocation>
+         <value>PREVIOUS EDITION IS OBSOLETE.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+         </fontinfo>
+      </label>
+      <combobox sid="COMBOBOX1">
+         <itemlocation>
+            <x>773</x>
+            <y>111</y>
+            <width>156</width>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+            <presentation>
+               <style>numeric</style>
+            </presentation>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+         <border>off</border>
+         <next>SUBJECT</next>
+         <previous>TO</previous>
+         <help>COMBOBOX1_HELP1</help>
+      </combobox>
+      <field sid="T2">
+         <itemlocation>
+            <x>660</x>
+            <y>1209</y>
+            <width>120</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>T3</next>
+         <previous>X1</previous>
+         <help>HELP23</help>
+         <size></size>
+      </field>
+      <field sid="T3">
+         <itemlocation>
+            <x>810</x>
+            <y>1209</y>
+            <width>120</width>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Row 4.  Enter index number.</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+         <justify>left </justify>
+         <next>BUTTON8</next>
+         <previous>T2</previous>
+         <help>HELP23</help>
+         <size></size>
+      </field>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>779</x>
+            <y>1211</y>
+         </itemlocation>
+         <justify>center</justify>
+         <value>FCIF</value>
+         <linespacing>3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <help>HELP19</help>
+      </label>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>30</x>
+            <y>1209</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <combobox sid="COMBOBOX2">
+         <itemlocation>
+            <x>759</x>
+            <y>996</y>
+            <width>156</width>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+            <presentation>
+               <style>numeric</style>
+            </presentation>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+         <border>off</border>
+         <next>A</next>
+         <previous>PDATE</previous>
+         <help>COMBOBOX2_HELP1</help>
+      </combobox>
+   </page>
+</XFDL>

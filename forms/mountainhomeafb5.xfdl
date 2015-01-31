@@ -1,0 +1,5104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.6" xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.6">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>7/1/2003</designer:date>
+         <formid>
+            <serialnumber>16E49EF7-79B4-421C-B420-997726A48164</serialnumber>
+            <version>1.6.7</version>
+            <title>MOUNTAIN HOME AFB IMT 5, 19950101</title>
+         </formid>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <printsettings>
+            <border>off</border>
+            <dialog>
+               <printpages>
+                  <active>on</active>
+               </printpages>
+            </dialog>
+         </printsettings>
+         <transmitformat>application/vnd.xfdl;content-encoding="base64-gzip"</transmitformat>
+         
+         <label>MH0005, 19950101</label>
+         <saveformat>application/vnd.xfdl</saveformat>
+         <custom:submit_url></custom:submit_url>
+         
+         <custom:form_metadata>
+            <custom:shorttitle>
+               <custom:prefix>MHAFB</custom:prefix>
+               <custom:number>5</custom:number>
+               <custom:suffix></custom:suffix>
+            </custom:shorttitle>
+            <custom:secclass>U</custom:secclass>
+            <custom:sphand>NONE</custom:sphand>
+            <custom:date>20060201</custom:date>
+            <custom:longtitle>Saylor Creek Range Daily Range Utilization and Scoring Report</custom:longtitle>
+            <custom:version>4</custom:version>
+            <custom:funccode>1100</custom:funccode>
+            <custom:funcstatement>Used to annotate daily range utilization and scoring reports.</custom:funcstatement>
+            <custom:ui>EF</custom:ui>
+            <custom:ur>EF</custom:ur>
+            <custom:prescdir>AFI13-212V1ACCSUP/MHAFBADDENDUMA</custom:prescdir>
+            <custom:opr>366 OSS/OSR</custom:opr>
+            <custom:medium>PE</custom:medium>
+            <custom:source>AFPUBS</custom:source>
+            <custom:ombnbr></custom:ombnbr>
+            <custom:spinst>Print head-to-head</custom:spinst>
+            <custom:dist>F</custom:dist>
+            <custom:prodcode>F</custom:prodcode>
+            <custom:prodtype>AD</custom:prodtype>
+            <custom:pa></custom:pa>
+            <custom:supercede>MOUNTAIN HOME AFB 5 (V3), 20040101</custom:supercede>
+         </custom:form_metadata>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>1F3FF556-1875-4DAB-92CB-B8B98BB999E7</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>A</next>
+         <label>PAGE 1</label>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'">PAGE1.toolbar_bg_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.toolbar_bg_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'">PAGE1.af_logo_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.af_logo_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <previous>A</previous>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.custom:submit_url != '' ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE2.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE2.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE1.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">on</visible>
+         <next>A</next>
+         <previous>Email_BUTTON</previous>
+      </button>
+      <field sid="A">
+         <itemlocation>
+            <x>734</x>
+            <y>58</y>
+            <width>190</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>M H AY F B FORM 5, 19 95 o 1 o 1. &#xD;
+This form does not contain any fillable fields and is read only.&#xD;
+DAILY RANGE REPORT AND SCORING RECORD.&#xD;
+DATE.&#xD;
+RANGE OFFICER number 1.&#xD;
+TIME ARRIVED.&#xD;
+TIME DEPARTED.&#xD;
+TIME RANGE OPEN.&#xD;
+TENTHS.&#xD;
+RANGE OFFICER number 2.&#xD;
+TIME ARRIVED.&#xD;
+TIME DEPARTED.&#xD;
+TIME RANGE OPEN.&#xD;
+RANGE OFFICER number 3.&#xD;
+TIME ARRIVED.&#xD;
+TIME DEPARTED.&#xD;
+TIME RANGE OPEN.&#xD;
+RANGE OFFICER number 4.&#xD;
+TIME ARRIVED.&#xD;
+TIME DEPARTED.&#xD;
+TIME RANGE OPEN.&#xD;
+SUNRISE.&#xD;
+SUNSET.&#xD;
+TOTAL TIME RANGE OPEN  TENTHS.  UNCONTROL.&#xD;
+TIME RANGE OPEN  CONTROL.&#xD;
+RANGE UTILIZATION.&#xD;
+TIME ON.&#xD;
+TIME SCHEDULED  TENTHS.&#xD;
+TIME ON.&#xD;
+TIME OFF.&#xD;
+TIME USED.&#xD;
+UNIT AND TYPE OF AIRCRAFT.&#xD;
+CALL SIGN.&#xD;
+NUMBER OF AIRCRAFT IN FLIGHT.&#xD;
+SCHEDULED.&#xD;
+ACTUAL.&#xD;
+ACTUAL.&#xD;
+TENTHS.&#xD;
+Ay.  DAY  CONTROLLED.&#xD;
+B.  DAY  UNCONTROLLED.&#xD;
+C.  NIGHT  CONTROLLED.&#xD;
+D.  NIGHT  UNCONTROLLED.&#xD;
+TOTALS.&#xD;
+1.  DAY CONTROL.&#xD;
+TIME SCHEDULED  TENTHS.&#xD;
+TIME USED  TENTHS.&#xD;
+NUMBER OF AIRCRAFT.&#xD;
+TIME LOST  TENTHS or number AY C F T.&#xD;
+2.  NIGHT CONTROL.&#xD;
+3.  DAY NIGHT UNCONTROL.&#xD;
+DAY.&#xD;
+NIGHT.&#xD;
+ESTIMATED TIME USED.&#xD;
+ESTIMATED number AIRCRAFT.&#xD;
+4.  TOTAL.&#xD;
+DAY.&#xD;
+NIGHT.&#xD;
+DAY.&#xD;
+NIGHT.&#xD;
+DAY.&#xD;
+NIGHT.&#xD;
+THIS ENTIRE FORM IS NOT FILLABE.</acclabel>
+         <help>A_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+                <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+                <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <value compute="date()">20100511</value>
+         <previous>A</previous>
+         <next>next_button</next>
+      </field>
+      <help sid="A_HELP">
+         <value>Enter date as YYYYMMDD (Example:  19981230)</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>694</x>
+            <y>37</y>
+         </itemlocation>
+         <value>Date</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>144</x>
+            <y>60</y>
+            <width>422</width>
+            <height>26</height>
+         </itemlocation>
+         <value>DAILY RANGE UTILIZATION AND SCORING REPORT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>31</x>
+            <y>92</y>
+            <width>141</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Range Control Officer #1</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>379</x>
+            <y>93</y>
+         </itemlocation>
+         <value>Time Arrived:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>547</x>
+            <y>91</y>
+         </itemlocation>
+         <value>Time Departed:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>704</x>
+            <y>93</y>
+         </itemlocation>
+         <value>Time Range Controlled:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>30</x>
+            <y>121</y>
+            <width>143</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Range Control Officer #2</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>378</x>
+            <y>123</y>
+         </itemlocation>
+         <value>Time Arrived:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>547</x>
+            <y>124</y>
+         </itemlocation>
+         <value>Time Departed:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>703</x>
+            <y>123</y>
+         </itemlocation>
+         <value>Time Range Controlled:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>30</x>
+            <y>151</y>
+            <width>143</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Range Control Officer #3</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>377</x>
+            <y>153</y>
+         </itemlocation>
+         <value>Time Arrived:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>545</x>
+            <y>154</y>
+         </itemlocation>
+         <value>Time Departed:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>704</x>
+            <y>153</y>
+         </itemlocation>
+         <value>Time Range Controlled:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>378</x>
+            <y>184</y>
+         </itemlocation>
+         <value>Opening Cklst Complete: (Time/Initials)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL4">
+         <itemlocation>
+            <x>704</x>
+            <y>184</y>
+         </itemlocation>
+         <value>Closing Cklst Complete: (Time/Initials)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>31</x>
+            <y>182</y>
+         </itemlocation>
+         <value>Sunrise:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>144</x>
+            <y>182</y>
+         </itemlocation>
+         <value>Sunset:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL3">
+         <itemlocation>
+            <x>244</x>
+            <y>183</y>
+            <width>70</width>
+            <height>21</height>
+         </itemlocation>
+         <value>Fire Class:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>510</x>
+            <y>224</y>
+            <width>421</width>
+            <height>19</height>
+         </itemlocation>
+         <value>Totel Time Range Open - Class A:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>411</x>
+            <y>247</y>
+            <width>176</width>
+            <height>22</height>
+         </itemlocation>
+         <value>RANGE UTILIZATION DATA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>34</x>
+            <y>277</y>
+            <width>134</width>
+            <height>50</height>
+         </itemlocation>
+         <value> AIRSPACE 
+Scheduled 
+(Block Time)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>193</x>
+            <y>278</y>
+            <width>70</width>
+            <height>50</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>TIME
+Scheduled (Tenths)</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>283</x>
+            <y>278</y>
+            <width>62</width>
+            <height>50</height>
+         </itemlocation>
+         <value>TIME Check-On (Actual)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>358</x>
+            <y>277</y>
+            <width>63</width>
+            <height>50</height>
+         </itemlocation>
+         <value>TIME  Check-Off (Actual)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>434</x>
+            <y>277</y>
+            <width>63</width>
+            <height>50</height>
+         </itemlocation>
+         <value>TIME 
+ Used (Tenths)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL5">
+         <itemlocation>
+            <x>595</x>
+            <y>277</y>
+            <width>63</width>
+            <height>50</height>
+         </itemlocation>
+         <value>UNIT 
+or 
+ACFT Type</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>513</x>
+            <y>277</y>
+            <width>63</width>
+            <height>50</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>LASER
+Used
+(Y / N)</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>670</x>
+            <y>277</y>
+            <width>157</width>
+            <height>21</height>
+         </itemlocation>
+         <value>CALL SIGN(s)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>857</x>
+            <y>276</y>
+            <width>70</width>
+            <height>50</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>NUMBER 
+AIRCRAFT (In Flight)</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>30</x>
+            <y>331</y>
+            <width>902</width>
+            <height>21</height>
+         </itemlocation>
+         <value> DAY (Controlled)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <printbgcolor>255,255,255</printbgcolor>
+         <bgcolor>192,192,192</bgcolor>
+         <justify>center</justify>
+         <border>on</border>
+      </label>
+      <label sid="LABEL_39">
+         <value>DAY (Uncontrolled)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>30</x>
+            <y>669</y>
+            <width>902</width>
+            <height>21</height>
+         </itemlocation>
+         <justify>center</justify>
+         <bgcolor>192,192,192</bgcolor>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>34</x>
+            <y>1056</y>
+         </itemlocation>
+         <value>TOTALS:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <bgcolor>192,192,192</bgcolor>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>283</x>
+            <y>1084</y>
+         </itemlocation>
+         <value>Time Scheduled (Tenths)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>445</x>
+            <y>1084</y>
+         </itemlocation>
+         <value>Time Used (Tenths)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>609</x>
+            <y>1083</y>
+         </itemlocation>
+         <value>Number of Aircraft</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>769</x>
+            <y>1084</y>
+         </itemlocation>
+         <value>Time Lost/Number Aircraft</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>33</x>
+            <y>1114</y>
+            <width>149</width>
+            <height>22</height>
+         </itemlocation>
+         <value>1.  Day - Controlled</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>34</x>
+            <y>1167</y>
+         </itemlocation>
+         <value>2.  Day/Night - UnControlled</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL7">
+         <itemlocation>
+            <x>34</x>
+            <y>1211</y>
+            <width>53</width>
+            <height>19</height>
+         </itemlocation>
+         <value>3.  Total</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_61">
+         <value>MOUNTAIN HOME AFB FORM 5, 20060201 (V4)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>34</x>
+            <y>1237</y>
+            <width>391</width>
+            <height>26</height>
+         </itemlocation>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>0</x>
+            <y>0</y>
+            <width>960</width>
+            <height>1260</height>
+         </itemlocation>
+      </spacer>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2ZMWgjVxCGne6qoFLtkSaGFBIcQYZLYcEVMbiIwYUPUhiRwhw5COKKQ1wThAsh
+UhiRwiwpDHvFgVQE5OJAaS4ohUEuDtaFYF2o2MLFFi62UKF8syM/rWRxWp1WMoIbVqDdnTfvf/Pm
+zfvnbX735TcboXzP71t+P/DL8vtqIx0+z/H+36/1dyf+eso64x70A+fcbv9Zbp9Wvct2cOs7f9uD
+/mAQBJ2GxfPOOyvwfe9jh7foe1cOCtoeBb/nuh+a3lWHhmgObgN5TpMbT4xjJGw+kq5DR5h1zutD
+hYYo6x+sSReXbdE5rbr/tfQWI3rpkw3to7b9WN41rOqTlH/tSPf9gfuh1aoUgVt/9bz5uoCCe9HW
+jquZlH20Z/+yU32apkv+gMO/dnlOx62Tkv1zHnegy9ty5hFNhqDRyaWxzxN0sB/c+NVcCsudtzXr
+pyzDxgvoOO/r7kULywBAzTrIu/80ubgd4qZL+zAvffh++btRHziAEdd/3bMOtpyGHXVZ/WiPVs3f
+XzSPi9wa3EC0D3fo3trfUn8rbhSwIw5r2LVnmzhF/BUCRQHcjIEm1m4Wr7WOi9xGuwN37dlj3Mel
+vpuCmxlXbUaMNrcyNcZhoTBu+uAt3URx42/s4hIcho7BjQt5G3ge1phSDOJmBg8O9bfETNfBIGMj
+CJlGCbwbT8wygZUi7pC+rp3AxDdWZOJCB7cqJfWT3N4GrT9KREjzzYsJ3DLa0zIOG46wYTOnWCRC
+aMLVOathTXDf+vpEHob6dIdBzIKJt/TSPimrAtMbhMsD6PVXBUbVPqsSb7gA6HqpO9Y5n6yjfMG9
+WvmCe7WyRNxst2zAusUkLkvBDVaSMdsNu1j9t+fB7BZzyxJw91x2aRCbSzZdJTbJScK4hTD2XPjM
+JO7LNtATjJnEcLM/s3XDPYKQGE/ECYihUMIxQpq6uCSDGyIFzVLvGuYo6/LdcF1C2fUthAm6tniP
+CeAW+pZJmaiAr+pzCJApL6BQ0chhNhbsNAHc8EcYqcEEg4XlQeX01trPQgyjEc8T3P/wuP0wfCGu
+5UxKw0A4d8S7UsV97NTCQKLUUH67oCSZT6TgCJcd/qYUMLi1smLhwtGT6mtZ+6UEfS5N3LdOysuw
+nwTunksGZDmai6qHYJATAa7BoPPWir4lM+q5wEPiJpqJ6Wg0N98UKOpGJdx5nTihqNN0Ply7mVT7
+r+rD4KYuZJFFEcuiPK+T/vjDpQcp1kEexKxafFz7cTOqTzVNpbxS3PTH/hcFAT7cTN06SiMUsD3X
+uFny+rVj8uOQAoTnNqvDPebpzCMCmmRCYh7bXE5KRNEESnKinC7l0mMDXhFuz4OHGM6kPDua+AR0
+pah5mkA3yuODHO1EenS2dNytSmk09V2mvjDp1PCIYyRdZyKo5DjqahRUwreWjVuPxXChLLWLaUvt
+ZspSm7KIc2lyvCzibYmZeaN8btzsIzgvPC8tVyOpjQAgtX2aYZNt7iVNOQmT08OjvSXi1kMz7Wks
+NnY34zrMc+3DsWoIAixeOKveP8pLDDdLzczsyGevC4xnDiP9wQSt1ajTfJ88bjn1PC6Ox2jKMOx5
+ZcraONqJD3wO3MJUo/O7vzXXzN4XUMJVJqYuZtu4uCkZSdWjHEx67idzvkAtZxJ8+LUjVgEaFzfW
+h6a35UDeTa44l1Kf8vQuwZMu47SKhZvI1mqFEIRjMJuG7i0u4JavHV2nGS4eqOLUHWBCYuHWypf0
+LJxuN8uOONfanyng1gJPEzz78cwmsXAr0we31u0LUuf7Aj8ZBsmxbEPQh5kun41bHIutu4pdPvwl
+g3ZMTMEvmzH16CxeHtffJlXJB64lCGs9svtmZyarWLhhqmajWYazfT2Iu2O2ceIwXj7B6IGQisXP
+mT4hLMphHMZY9HHzt9CSJ6nPLgfjCN6Bn8U8t5hvn/9cSHFFz7riaK7t953/ATisIIluIwAA</mimedata>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2dsY4cRRCG10SIABE6dYYlAiytEAgnWCIAyQGWCDiJACEHDvwWhBf6eYh4BF4B
+Ul6Bu927vb3Z7uqq6Z6ump7v029h6q6LPpvr6qt/evrV60/+fbK75aubX5/f/Przo93u25t/Ptk9
+PcT//ufJ7q9Pd4df9/wHAAAAoIa9AwAAAFhw2jv88cXHCKGCvpzos6n2JX39tKyXEz27fvksGdcH
+cxmscW3QMrEHfZdQatT9wNtPeH79vVE/nOtFQq+L+ub6p5R+nuhVQr8cFCqPnKTVVLP68frXqT68
+fYNM8tg7KL5RRpZ/OQolv9pYrCFn6lMiMovl8gvnVL8dlIzrg63iyqBpYnd6c9KHMwl/Jvml9OrD
+u3ud/17Q+3P9nlTnlRnABJ4FAAAAWOi+d/D/WReh+Jp2ZJZpyuSa8y+fpW0FdbBVXBk0TUzuNKWS
+n0bVuBXdDYvzflOoPHKSVlNNNt0yfTd3C2BF8tg73P4f4W0ZxDIsblb3y7Iws5hkKkxljQpb9Po4
+EQ3W/mBOxEW7ftKxP60Qybg+2CquDJomltKDmyCNunMlHg9UmhS4FTAWeBYAAABgoePewb8PHE37
+WT/Yo/Wq2JQpdmT2HToyh6ZM+XPmZbDGm6vUbBIGHttPcqNK37Qqdiq1vSpFoypUHjlJq6laenPu
+RsAq5LF3ODt5s2lNK8mdZ6FwGcpGQMYaqCxlA9fGesOiZu1f3sK1ni+YLhXJuD7YKq4Mmib2SBem
+gzBq6lkY3QqFYdFhNQZoAp4FAAAAWOiyd/DvFccUnsWmtK5HSJNxfbBVXBk0TUxuNiWSn7eiXhS6
+VH0esbV270PlqfUs2j9M7G4HBJfH3uHgVlgMC/m7SnWkqWnOGR/ND5kWk73OZdDUnFwhqixlA9fG
+Tb3oyWpYvBVtBU2wVVwZNE3sQSlbQRj14Fm0P16x6DoM0Bw8CwAAALCw8N7Bv1EcWXgWG5H3i57m
+PEJathXEYKu4MmiamNxpEkYdW07uLwSZ0bQKlafBOYuur0Fxtwwc5bF3OK6asmFx+IRpS3/2R5fI
+af2oPORmOTnVk9vf70sug77m5KpQZSkbuDb6Lv9hj1dsRXnTQRiVfDcUbgVsEjwLAAAAsLBw3wFJ
+wrPYguo7Mn3eeTHpvyTj+mCruDJompjcbBJGyZ5FnxeCzGtahcojJwnYp/NvkznIY+/gv1qvRXvR
+ZTDVnFwhqixlA9dGx+U/8vGKTUi0GISBRwPilKTasGi+9gJ0A88CAAAALNB38O07uM8BLadVXyma
+jOuDreLKoGlicqdJGCV4FjGPV+RsAt88chL/4xUXfTr/TllXeewd/FfrdWmfcRlm1JxcFaosZQPX
+Rqtbsdb3QZWv296cZJdBGPj+5FnUvg+q4aoL4AKeBQAAAFig7+DYdHCfA+qm1TVo9G9bMmWwxpVB
+08Tk3pMwKmlYxHkflNCuCpVHThLneMX2OnQee4fy8+dn30n+C3kE7VPVY17N4TILLrNoftoid+WE
+MtgqrgyaJnanjNEgjHp3VX+8osl6C+AOngUAAABYaLR38P8xfnXCs9iIVvrC7oKtUAq2iiuDponJ
+nSZh1KVn4fM+KHuXKlQeOQmvQfGQx96hfMX2xfeT/3LuIS6ziFUbI5+26OPibmNRTEn0HYSBdddt
+V660AKHAswAAAAAL1XsH95/n1yo8iy1ovS/sTsb1wVZxZdA0MbnZJIw69yziHK/QNKpC5ZGT8BqU
+vvLYO9z+JVuOV9zr+eIL9iq0F10GLrPgMgtc3IVU824o3AqAA3gWAAAAYKFi7+D/o/uqhWcxttb+
+wu70lRPqYKu4MmiamNxpEkadPAuHFlXdY7Wh8hSS8CRxJ3nsHQ5uhfl4xdGwwLO4057LLMK8DyrI
+8YpALq7Yulcpl8Eab66S7yAMlD2LlGFRuTwDhAXPAgAAACzM2jv4/9C+dmFYbFDr6tQk4/pgLoM1
+rg1aJiZ3oIQ/E/e21OzOVKg8chKvZpyrfdBZHnuH4ypYNCz81+ngujUaLqrHzJqTKUSVpWzGF7Wu
+2oiLIbsYybg+2CquDJom9kip+yxyo3Q3VuBWwBbAswAAAAALs/oOqFZ4FltTsSkT5EUY6Qusc7ZC
+PtgqrgyaJiY3mxLJzz+hz5GKWR0ooQkVKo+chCMVS8pj7+C/+o6kO89C4TKUjYCMNVBZyqxf0epq
+Y41h0adc+C6cW7iDO3nmQr6DW2FYNFyeAcKCZwEAAAAW6Du4CM9iU1rjI6TJuD7YKq4MmiYmN5uE
+Uas7XnFpE0TIIyfh5ezLyGPv4L/0jqe9zmXQ1JxcIaosZaYvZ421UWVYDHO8YusL54Uq7uDOGxbN
+l2eAsOBZAAAAgAX6Di7Cs9iI+rzzYtqRuWjKzHiEVLIVFMFWcWXQNDH50VhhVMwOlKYJFSqPnMT9
+KeHh5LF3WOLeislN3JeffP6vpo8ukdP6UeWQqddQc/1ErgpVlrLha2OxhngZFiyci6viDm7cCoAD
+eBYAAABgQdw7+Ld8RxWexRZU35Hp886LZBcmGdcHW8WVQdPE5GaTMGrBF3zMcCssj8yGylP+unhK
+uI089g7HxY97K5bSXnQZTDUnV4gqS9nwtdFqWIQoF90WTu7gTg1MGRaLLs8AYcGzAAAAAAti3wEt
+JTyLsTXSlaKjKtdpkobEOV5hbEKFylN4FLhh3019a+xw8tg7+K+7W9A+4zLMqDm5KlRZyuT5j1Qb
+gxyvcLxuO9nVT8b1wVwGa1wbtExM0Pu8pfIOtwLgATwLAAAAsEDfwUV4FgNrpCtFR5XQbBJGhbg/
+9dWcd3yEyiMnaTVV3Ip+ewf/RXc7SlaMeTWn+N9qnnak2sh129M+f/K4wVXKVhCDreLKoGligmEx
+9SyuHg3ErQC4B88CAAAALNzvHfx/FN+U8CxG1TCPkA4sudM007MIebzi1IQKlUdO0mqq2zMsnPYO
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+      </data>
+      <label sid="LABEL8">
+         <itemlocation>
+            <x>492</x>
+            <y>1235</y>
+            <width>213</width>
+            <height>26</height>
+         </itemlocation>
+         <value>(Previous Editions Obsolete)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>30</x>
+            <y>32</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>930</x>
+            <y>32</y>
+            <width>2</width>
+            <height>1202</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>30</x>
+            <y>1232</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>30</x>
+            <y>32</y>
+            <width>2</width>
+            <height>1202</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>858</x>
+            <y>964</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_6">
+         <itemlocation>
+            <x>595</x>
+            <y>964</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>513</x>
+            <y>964</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>435</x>
+            <y>964</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_9">
+         <itemlocation>
+            <x>358</x>
+            <y>964</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>283</x>
+            <y>964</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_11">
+         <itemlocation>
+            <x>195</x>
+            <y>964</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>858</x>
+            <y>941</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>595</x>
+            <y>941</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_14">
+         <itemlocation>
+            <x>513</x>
+            <y>941</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_15">
+         <itemlocation>
+            <x>435</x>
+            <y>941</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>358</x>
+            <y>941</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_17">
+         <itemlocation>
+            <x>283</x>
+            <y>941</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>195</x>
+            <y>941</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>33</x>
+            <y>964</y>
+            <width>133</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>858</x>
+            <y>919</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>595</x>
+            <y>919</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_22">
+         <itemlocation>
+            <x>513</x>
+            <y>919</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>435</x>
+            <y>919</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_24">
+         <itemlocation>
+            <x>358</x>
+            <y>919</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>283</x>
+            <y>919</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_26">
+         <itemlocation>
+            <x>195</x>
+            <y>919</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>32</x>
+            <y>941</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_28">
+         <itemlocation>
+            <x>858</x>
+            <y>898</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_29">
+         <itemlocation>
+            <x>595</x>
+            <y>898</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_30">
+         <itemlocation>
+            <x>513</x>
+            <y>898</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_31">
+         <itemlocation>
+            <x>435</x>
+            <y>898</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_32">
+         <itemlocation>
+            <x>358</x>
+            <y>898</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_33">
+         <itemlocation>
+            <x>283</x>
+            <y>898</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_34">
+         <itemlocation>
+            <x>195</x>
+            <y>898</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_35">
+         <itemlocation>
+            <x>858</x>
+            <y>991</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_36">
+         <itemlocation>
+            <x>595</x>
+            <y>989</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_37">
+         <itemlocation>
+            <x>513</x>
+            <y>989</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_38">
+         <itemlocation>
+            <x>435</x>
+            <y>989</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_39">
+         <itemlocation>
+            <x>358</x>
+            <y>1013</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_40">
+         <itemlocation>
+            <x>283</x>
+            <y>989</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_41">
+         <itemlocation>
+            <x>195</x>
+            <y>987</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_42">
+         <itemlocation>
+            <x>31</x>
+            <y>919</y>
+            <width>135</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_43">
+         <itemlocation>
+            <x>858</x>
+            <y>1016</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_44">
+         <itemlocation>
+            <x>595</x>
+            <y>1014</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_45">
+         <itemlocation>
+            <x>513</x>
+            <y>1014</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_46">
+         <itemlocation>
+            <x>435</x>
+            <y>1014</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_47">
+         <itemlocation>
+            <x>358</x>
+            <y>1040</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_48">
+         <itemlocation>
+            <x>283</x>
+            <y>1013</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_49">
+         <itemlocation>
+            <x>195</x>
+            <y>1012</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_50">
+         <itemlocation>
+            <x>33</x>
+            <y>898</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_51">
+         <itemlocation>
+            <x>859</x>
+            <y>1041</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_52">
+         <itemlocation>
+            <x>593</x>
+            <y>1040</y>
+            <width>63</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_53">
+         <itemlocation>
+            <x>513</x>
+            <y>1040</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_54">
+         <itemlocation>
+            <x>435</x>
+            <y>1040</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_55">
+         <itemlocation>
+            <x>358</x>
+            <y>989</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE82">
+         <itemlocation>
+            <x>30</x>
+            <y>876</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_56">
+         <itemlocation>
+            <x>283</x>
+            <y>1039</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_57">
+         <itemlocation>
+            <x>195</x>
+            <y>1039</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_58">
+         <itemlocation>
+            <x>34</x>
+            <y>1038</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_59">
+         <itemlocation>
+            <x>858</x>
+            <y>793</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_60">
+         <itemlocation>
+            <x>595</x>
+            <y>793</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_61">
+         <itemlocation>
+            <x>513</x>
+            <y>793</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_62">
+         <itemlocation>
+            <x>435</x>
+            <y>793</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_63">
+         <itemlocation>
+            <x>358</x>
+            <y>793</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_64">
+         <itemlocation>
+            <x>283</x>
+            <y>793</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_65">
+         <itemlocation>
+            <x>195</x>
+            <y>793</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_66">
+         <itemlocation>
+            <x>32</x>
+            <y>1013</y>
+            <width>136</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_67">
+         <itemlocation>
+            <x>858</x>
+            <y>771</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_68">
+         <itemlocation>
+            <x>595</x>
+            <y>771</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_69">
+         <itemlocation>
+            <x>513</x>
+            <y>771</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_70">
+         <itemlocation>
+            <x>435</x>
+            <y>771</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_71">
+         <itemlocation>
+            <x>358</x>
+            <y>771</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_72">
+         <itemlocation>
+            <x>283</x>
+            <y>771</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_73">
+         <itemlocation>
+            <x>195</x>
+            <y>771</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_74">
+         <itemlocation>
+            <x>31</x>
+            <y>987</y>
+            <width>136</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL6">
+         <value>NIGHT (Uncontrolled)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>855</y>
+            <width>900</width>
+            <height>22</height>
+         </itemlocation>
+         <justify>center</justify>
+         <bgcolor>192,192,192</bgcolor>
+      </label>
+      <line sid="LINE_75">
+         <itemlocation>
+            <x>858</x>
+            <y>751</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_76">
+         <itemlocation>
+            <x>595</x>
+            <y>751</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_77">
+         <itemlocation>
+            <x>513</x>
+            <y>751</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_78">
+         <itemlocation>
+            <x>435</x>
+            <y>751</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_79">
+         <itemlocation>
+            <x>358</x>
+            <y>751</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_80">
+         <itemlocation>
+            <x>283</x>
+            <y>751</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_81">
+         <itemlocation>
+            <x>195</x>
+            <y>751</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_82">
+         <itemlocation>
+            <x>32</x>
+            <y>793</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_83">
+         <itemlocation>
+            <x>858</x>
+            <y>729</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_84">
+         <itemlocation>
+            <x>595</x>
+            <y>729</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_85">
+         <itemlocation>
+            <x>513</x>
+            <y>729</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_86">
+         <itemlocation>
+            <x>435</x>
+            <y>729</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_87">
+         <itemlocation>
+            <x>358</x>
+            <y>729</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_88">
+         <itemlocation>
+            <x>283</x>
+            <y>729</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_89">
+         <itemlocation>
+            <x>195</x>
+            <y>729</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_90">
+         <itemlocation>
+            <x>858</x>
+            <y>709</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_91">
+         <itemlocation>
+            <x>595</x>
+            <y>709</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_92">
+         <itemlocation>
+            <x>513</x>
+            <y>709</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_93">
+         <itemlocation>
+            <x>435</x>
+            <y>709</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_94">
+         <itemlocation>
+            <x>358</x>
+            <y>709</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_95">
+         <itemlocation>
+            <x>283</x>
+            <y>709</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_96">
+         <itemlocation>
+            <x>195</x>
+            <y>709</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_98">
+         <itemlocation>
+            <x>859</x>
+            <y>813</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_99">
+         <itemlocation>
+            <x>596</x>
+            <y>814</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_100">
+         <itemlocation>
+            <x>515</x>
+            <y>815</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_101">
+         <itemlocation>
+            <x>435</x>
+            <y>814</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_102">
+         <itemlocation>
+            <x>358</x>
+            <y>815</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_103">
+         <itemlocation>
+            <x>282</x>
+            <y>815</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_104">
+         <itemlocation>
+            <x>195</x>
+            <y>815</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_105">
+         <itemlocation>
+            <x>31</x>
+            <y>835</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE58">
+         <itemlocation>
+            <x>32</x>
+            <y>814</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE59">
+         <itemlocation>
+            <x>33</x>
+            <y>709</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE60">
+         <itemlocation>
+            <x>32</x>
+            <y>729</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE62">
+         <itemlocation>
+            <x>32</x>
+            <y>751</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_106">
+         <itemlocation>
+            <x>860</x>
+            <y>834</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_107">
+         <itemlocation>
+            <x>594</x>
+            <y>834</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_108">
+         <itemlocation>
+            <x>516</x>
+            <y>835</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_109">
+         <itemlocation>
+            <x>437</x>
+            <y>835</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_110">
+         <itemlocation>
+            <x>358</x>
+            <y>836</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_111">
+         <itemlocation>
+            <x>283</x>
+            <y>835</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_112">
+         <itemlocation>
+            <x>195</x>
+            <y>835</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_113">
+         <itemlocation>
+            <x>33</x>
+            <y>771</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_114">
+         <itemlocation>
+            <x>858</x>
+            <y>514</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE38">
+         <itemlocation>
+            <x>858</x>
+            <y>608</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE43">
+         <itemlocation>
+            <x>672</x>
+            <y>648</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE44">
+         <itemlocation>
+            <x>670</x>
+            <y>374</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE45">
+         <itemlocation>
+            <x>670</x>
+            <y>570</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE53">
+         <itemlocation>
+            <x>670</x>
+            <y>590</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE54">
+         <itemlocation>
+            <x>671</x>
+            <y>608</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE46">
+         <itemlocation>
+            <x>670</x>
+            <y>533</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE47">
+         <itemlocation>
+            <x>670</x>
+            <y>393</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE48">
+         <itemlocation>
+            <x>670</x>
+            <y>412</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE49">
+         <itemlocation>
+            <x>671</x>
+            <y>629</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE61">
+         <itemlocation>
+            <x>672</x>
+            <y>833</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE63">
+         <itemlocation>
+            <x>672</x>
+            <y>814</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE64">
+         <itemlocation>
+            <x>671</x>
+            <y>709</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE65">
+         <itemlocation>
+            <x>671</x>
+            <y>729</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE66">
+         <itemlocation>
+            <x>671</x>
+            <y>751</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE67">
+         <itemlocation>
+            <x>671</x>
+            <y>771</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE68">
+         <itemlocation>
+            <x>671</x>
+            <y>793</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE69">
+         <itemlocation>
+            <x>671</x>
+            <y>1040</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE70">
+         <itemlocation>
+            <x>671</x>
+            <y>1014</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE71">
+         <itemlocation>
+            <x>671</x>
+            <y>989</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE72">
+         <itemlocation>
+            <x>671</x>
+            <y>898</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE73">
+         <itemlocation>
+            <x>671</x>
+            <y>919</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE74">
+         <itemlocation>
+            <x>671</x>
+            <y>941</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE75">
+         <itemlocation>
+            <x>671</x>
+            <y>964</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE50">
+         <itemlocation>
+            <x>670</x>
+            <y>431</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE51">
+         <itemlocation>
+            <x>670</x>
+            <y>452</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE52">
+         <itemlocation>
+            <x>670</x>
+            <y>472</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE55">
+         <itemlocation>
+            <x>670</x>
+            <y>492</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE56">
+         <itemlocation>
+            <x>670</x>
+            <y>514</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE57">
+         <itemlocation>
+            <x>670</x>
+            <y>553</y>
+            <width>157</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE39">
+         <itemlocation>
+            <x>858</x>
+            <y>590</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE40">
+         <itemlocation>
+            <x>858</x>
+            <y>570</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE41">
+         <itemlocation>
+            <x>858</x>
+            <y>553</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE42">
+         <itemlocation>
+            <x>858</x>
+            <y>533</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_115">
+         <itemlocation>
+            <x>595</x>
+            <y>629</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_116">
+         <itemlocation>
+            <x>513</x>
+            <y>629</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_117">
+         <itemlocation>
+            <x>435</x>
+            <y>607</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE27">
+         <itemlocation>
+            <x>435</x>
+            <y>629</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_118">
+         <itemlocation>
+            <x>358</x>
+            <y>608</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE22">
+         <itemlocation>
+            <x>358</x>
+            <y>629</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_119">
+         <itemlocation>
+            <x>283</x>
+            <y>629</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_120">
+         <itemlocation>
+            <x>192</x>
+            <y>534</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>192</x>
+            <y>553</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>192</x>
+            <y>570</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>192</x>
+            <y>590</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>192</x>
+            <y>608</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>192</x>
+            <y>629</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_121">
+         <itemlocation>
+            <x>32</x>
+            <y>570</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_122">
+         <itemlocation>
+            <x>858</x>
+            <y>496</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_123">
+         <itemlocation>
+            <x>595</x>
+            <y>607</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_124">
+         <itemlocation>
+            <x>513</x>
+            <y>607</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_125">
+         <itemlocation>
+            <x>435</x>
+            <y>590</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_126">
+         <itemlocation>
+            <x>358</x>
+            <y>590</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_127">
+         <itemlocation>
+            <x>283</x>
+            <y>608</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_128">
+         <itemlocation>
+            <x>192</x>
+            <y>514</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_129">
+         <itemlocation>
+            <x>858</x>
+            <y>629</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_130">
+         <itemlocation>
+            <x>595</x>
+            <y>590</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_131">
+         <itemlocation>
+            <x>513</x>
+            <y>590</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_132">
+         <itemlocation>
+            <x>435</x>
+            <y>570</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_133">
+         <itemlocation>
+            <x>358</x>
+            <y>570</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_134">
+         <itemlocation>
+            <x>283</x>
+            <y>590</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_135">
+         <itemlocation>
+            <x>192</x>
+            <y>492</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_136">
+         <itemlocation>
+            <x>30</x>
+            <y>554</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_137">
+         <itemlocation>
+            <x>858</x>
+            <y>475</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_138">
+         <itemlocation>
+            <x>595</x>
+            <y>570</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_139">
+         <itemlocation>
+            <x>513</x>
+            <y>570</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_140">
+         <itemlocation>
+            <x>435</x>
+            <y>553</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE25">
+         <itemlocation>
+            <x>434</x>
+            <y>452</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE26">
+         <itemlocation>
+            <x>434</x>
+            <y>492</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_141">
+         <itemlocation>
+            <x>358</x>
+            <y>553</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_142">
+         <itemlocation>
+            <x>283</x>
+            <y>472</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>283</x>
+            <y>492</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>283</x>
+            <y>514</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>283</x>
+            <y>534</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE16">
+         <itemlocation>
+            <x>283</x>
+            <y>553</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE17">
+         <itemlocation>
+            <x>283</x>
+            <y>570</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_143">
+         <itemlocation>
+            <x>192</x>
+            <y>472</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_144">
+         <itemlocation>
+            <x>31</x>
+            <y>374</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_145">
+         <itemlocation>
+            <x>858</x>
+            <y>452</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_146">
+         <itemlocation>
+            <x>595</x>
+            <y>553</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_147">
+         <itemlocation>
+            <x>513</x>
+            <y>534</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_148">
+         <itemlocation>
+            <x>435</x>
+            <y>534</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_149">
+         <itemlocation>
+            <x>358</x>
+            <y>534</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_150">
+         <itemlocation>
+            <x>283</x>
+            <y>452</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_151">
+         <itemlocation>
+            <x>192</x>
+            <y>452</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_152">
+         <itemlocation>
+            <x>31</x>
+            <y>512</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_153">
+         <itemlocation>
+            <x>858</x>
+            <y>431</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_154">
+         <itemlocation>
+            <x>595</x>
+            <y>534</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_155">
+         <itemlocation>
+            <x>513</x>
+            <y>492</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_156">
+         <itemlocation>
+            <x>435</x>
+            <y>514</y>
+            <width>60</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_157">
+         <itemlocation>
+            <x>358</x>
+            <y>514</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE21">
+         <itemlocation>
+            <x>358</x>
+            <y>452</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_158">
+         <itemlocation>
+            <x>283</x>
+            <y>431</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_159">
+         <itemlocation>
+            <x>192</x>
+            <y>412</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_160">
+         <itemlocation>
+            <x>31</x>
+            <y>492</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>32</x>
+            <y>591</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>32</x>
+            <y>611</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>33</x>
+            <y>629</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_161">
+         <itemlocation>
+            <x>858</x>
+            <y>412</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_162">
+         <itemlocation>
+            <x>595</x>
+            <y>514</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_163">
+         <itemlocation>
+            <x>513</x>
+            <y>452</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_164">
+         <itemlocation>
+            <x>434</x>
+            <y>472</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_165">
+         <itemlocation>
+            <x>358</x>
+            <y>492</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_166">
+         <itemlocation>
+            <x>283</x>
+            <y>412</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_167">
+         <itemlocation>
+            <x>192</x>
+            <y>431</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_168">
+         <itemlocation>
+            <x>30</x>
+            <y>472</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_169">
+         <itemlocation>
+            <x>858</x>
+            <y>393</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_170">
+         <itemlocation>
+            <x>595</x>
+            <y>393</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE33">
+         <itemlocation>
+            <x>595</x>
+            <y>412</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE34">
+         <itemlocation>
+            <x>595</x>
+            <y>492</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE35">
+         <itemlocation>
+            <x>595</x>
+            <y>431</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE36">
+         <itemlocation>
+            <x>595</x>
+            <y>452</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE37">
+         <itemlocation>
+            <x>595</x>
+            <y>472</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_171">
+         <itemlocation>
+            <x>513</x>
+            <y>431</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_172">
+         <itemlocation>
+            <x>434</x>
+            <y>393</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_173">
+         <itemlocation>
+            <x>358</x>
+            <y>472</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_174">
+         <itemlocation>
+            <x>283</x>
+            <y>393</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_175">
+         <itemlocation>
+            <x>192</x>
+            <y>393</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_176">
+         <itemlocation>
+            <x>31</x>
+            <y>431</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>32</x>
+            <y>452</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_177">
+         <itemlocation>
+            <x>858</x>
+            <y>374</y>
+            <width>72</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_178">
+         <itemlocation>
+            <x>595</x>
+            <y>374</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_179">
+         <itemlocation>
+            <x>513</x>
+            <y>412</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_180">
+         <itemlocation>
+            <x>434</x>
+            <y>374</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE23">
+         <itemlocation>
+            <x>434</x>
+            <y>412</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE24">
+         <itemlocation>
+            <x>434</x>
+            <y>431</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_181">
+         <itemlocation>
+            <x>358</x>
+            <y>431</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_182">
+         <itemlocation>
+            <x>283</x>
+            <y>374</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_183">
+         <itemlocation>
+            <x>192</x>
+            <y>374</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_184">
+         <itemlocation>
+            <x>31</x>
+            <y>412</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_185">
+         <itemlocation>
+            <x>856</x>
+            <y>648</y>
+            <width>75</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_186">
+         <itemlocation>
+            <x>597</x>
+            <y>649</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_187">
+         <itemlocation>
+            <x>515</x>
+            <y>649</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_188">
+         <itemlocation>
+            <x>436</x>
+            <y>648</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_189">
+         <itemlocation>
+            <x>359</x>
+            <y>649</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE18">
+         <itemlocation>
+            <x>358</x>
+            <y>374</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE19">
+         <itemlocation>
+            <x>358</x>
+            <y>393</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE20">
+         <itemlocation>
+            <x>358</x>
+            <y>412</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_190">
+         <itemlocation>
+            <x>283</x>
+            <y>650</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_192">
+         <itemlocation>
+            <x>31</x>
+            <y>393</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>32</x>
+            <y>651</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>32</x>
+            <y>533</y>
+            <width>134</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_199">
+         <itemlocation>
+            <x>192</x>
+            <y>650</y>
+            <width>70</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_200">
+         <itemlocation>
+            <x>30</x>
+            <y>92</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_202">
+         <itemlocation>
+            <x>30</x>
+            <y>122</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_203">
+         <itemlocation>
+            <x>31</x>
+            <y>144</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_204">
+         <itemlocation>
+            <x>30</x>
+            <y>182</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_205">
+         <itemlocation>
+            <x>32</x>
+            <y>224</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </line>
+      <line sid="LINE77">
+         <itemlocation>
+            <x>31</x>
+            <y>350</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE78">
+         <itemlocation>
+            <x>30</x>
+            <y>669</y>
+            <width>900</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE79">
+         <itemlocation>
+            <x>32</x>
+            <y>688</y>
+            <width>900</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE80">
+         <itemlocation>
+            <x>30</x>
+            <y>854</y>
+            <width>900</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE81">
+         <itemlocation>
+            <x>31</x>
+            <y>1081</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_206">
+         <itemlocation>
+            <x>30</x>
+            <y>242</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE76">
+         <itemlocation>
+            <x>31</x>
+            <y>330</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_207">
+         <itemlocation>
+            <x>30</x>
+            <y>272</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_208">
+         <itemlocation>
+            <x>30</x>
+            <y>1052</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_209">
+         <itemlocation>
+            <x>30</x>
+            <y>1082</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_210">
+         <itemlocation>
+            <x>29</x>
+            <y>1137</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_211">
+         <itemlocation>
+            <x>29</x>
+            <y>1190</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_213">
+         <itemlocation>
+            <x>145</x>
+            <y>181</y>
+            <width>1</width>
+            <height>44</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>243</x>
+            <y>182</y>
+            <width>1</width>
+            <height>43</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_214">
+         <itemlocation>
+            <x>282</x>
+            <y>1082</y>
+            <width>1</width>
+            <height>152</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_215">
+         <itemlocation>
+            <x>377</x>
+            <y>92</y>
+            <width>1</width>
+            <height>133</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_216">
+         <itemlocation>
+            <x>444</x>
+            <y>1082</y>
+            <width>1</width>
+            <height>152</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_218">
+         <itemlocation>
+            <x>542</x>
+            <y>91</y>
+            <width>1</width>
+            <height>91</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_219">
+         <itemlocation>
+            <x>606</x>
+            <y>1082</y>
+            <width>1</width>
+            <height>152</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_220">
+         <itemlocation>
+            <x>690</x>
+            <y>32</y>
+            <width>1</width>
+            <height>61</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_221">
+         <itemlocation>
+            <x>703</x>
+            <y>93</y>
+            <width>1</width>
+            <height>132</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_222">
+         <itemlocation>
+            <x>768</x>
+            <y>1082</y>
+            <width>1</width>
+            <height>152</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL2">
+         <itemlocation>
+            <x>254</x>
+            <y>32</y>
+            <width>203</width>
+            <height>26</height>
+         </itemlocation>
+         <value>SAYLOR CREEK RANGE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE28">
+         <itemlocation>
+            <x>513</x>
+            <y>374</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE29">
+         <itemlocation>
+            <x>513</x>
+            <y>393</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE30">
+         <itemlocation>
+            <x>513</x>
+            <y>472</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE31">
+         <itemlocation>
+            <x>513</x>
+            <y>514</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE32">
+         <itemlocation>
+            <x>513</x>
+            <y>553</y>
+            <width>62</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>4BB28352-A826-4B2D-8F6F-748D5B3461EA</serialnumber>
+         </pageid>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <label>Page 2</label>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'">PAGE1.toolbar_bg_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.toolbar_bg_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>66</x>
+            <y>1</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'">PAGE1.af_logo_grey</custom:first_page_logo>
+         <image compute="custom:first_page_logo">PAGE1.af_logo_grey</image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>1</x>
+            <y>7</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>198</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <previous>FIELD1</previous>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>275</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <previous>Close_BUTTON</previous>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>352</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>429</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>121</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.custom:submit_url != '' ? ('on') : 'off'">off</visible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>570</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE1.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">on</visible>
+         <previous>Email_BUTTON</previous>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>647</x>
+            <y>30</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE1.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE2.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">off</visible>
+      </button>
+      <label sid="LABEL_62">
+         <itemlocation>
+            <x>132</x>
+            <y>36</y>
+         </itemlocation>
+         <value>MINUTES TO TENTHS CONVERSIONS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_63">
+         <itemlocation>
+            <x>558</x>
+            <y>36</y>
+         </itemlocation>
+         <value>TIME LOST (TENTHS/NUMBER OF AIRCRAFT)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_64">
+         <itemlocation>
+            <x>526</x>
+            <y>71</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+         <value>WEATHER                     ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_67">
+         <value>POWER FAILURE        ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>100</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_70">
+         <value>RADIOS                          ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>129</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_73">
+         <value>FIRE                                ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>158</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_76">
+         <value>EMERGENCIES           ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>186</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_79">
+         <value>OTHER                          ______________ / ________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>215</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_82">
+         <value>TOTAL:                           _____________ / _________________</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>526</x>
+            <y>273</y>
+            <width>378</width>
+            <height>21</height>
+         </itemlocation>
+      </label>
+      <label sid="LABEL_83">
+         <itemlocation>
+            <x>456</x>
+            <y>312</y>
+         </itemlocation>
+         <value>FOULS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_84">
+         <itemlocation>
+            <x>90</x>
+            <y>341</y>
+            <width>107</width>
+            <height>21</height>
+         </itemlocation>
+         <value>UNIT / CALL SIGN</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_86">
+         <itemlocation>
+            <x>285</x>
+            <y>341</y>
+         </itemlocation>
+         <value>TIME SCH ON / OFF</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>32</x>
+            <y>384</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>32</x>
+            <y>340</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL_87">
+         <itemlocation>
+            <x>435</x>
+            <y>340</y>
+         </itemlocation>
+         <value>TIME ACTUAL ON/OFF</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_88">
+         <itemlocation>
+            <x>709</x>
+            <y>341</y>
+         </itemlocation>
+         <value>REASON</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_94">
+         <itemlocation>
+            <x>32</x>
+            <y>506</y>
+            <width>174</width>
+            <height>49</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>CREW IDENTIFICATION
+CALL SIGN / GUN #</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_95">
+         <itemlocation>
+            <x>480</x>
+            <y>504</y>
+            <width>177</width>
+            <height>49</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>SQUADRON / CALLSIGN</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_96">
+         <itemlocation>
+            <x>278</x>
+            <y>506</y>
+            <width>106</width>
+            <height>21</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>STRAFE SCORES</value>
+         <linespacing>-3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_97">
+         <itemlocation>
+            <x>672</x>
+            <y>510</y>
+            <width>106</width>
+            <height>33</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>TIME ON</value>
+         <linespacing>-3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_98">
+         <itemlocation>
+            <x>224</x>
+            <y>530</y>
+         </itemlocation>
+         <value>1</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_99">
+         <itemlocation>
+            <x>281</x>
+            <y>530</y>
+         </itemlocation>
+         <value>2</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_100">
+         <itemlocation>
+            <x>334</x>
+            <y>530</y>
+         </itemlocation>
+         <value>3</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_101">
+         <itemlocation>
+            <x>392</x>
+            <y>531</y>
+         </itemlocation>
+         <value>4</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_102">
+         <itemlocation>
+            <x>444</x>
+            <y>531</y>
+         </itemlocation>
+         <value>5</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_108">
+         <itemlocation>
+            <x>33</x>
+            <y>1014</y>
+         </itemlocation>
+         <value>NOTES:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_109">
+         <itemlocation>
+            <x>34</x>
+            <y>1236</y>
+         </itemlocation>
+         <value>MOUNTAIN HOME AFB FORM 5,20060201  (V3)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_110">
+         <itemlocation>
+            <x>447</x>
+            <y>1236</y>
+         </itemlocation>
+         <value>(Reverse)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>0</x>
+            <y>0</y>
+            <width>960</width>
+            <height>1260</height>
+         </itemlocation>
+      </spacer>
+      <line sid="LINE_223">
+         <itemlocation>
+            <x>30</x>
+            <y>31</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_224">
+         <itemlocation>
+            <x>930</x>
+            <y>31</y>
+            <width>2</width>
+            <height>1202</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_225">
+         <itemlocation>
+            <x>30</x>
+            <y>1231</y>
+            <width>902</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_226">
+         <itemlocation>
+            <x>30</x>
+            <y>31</y>
+            <width>2</width>
+            <height>1202</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_228">
+         <itemlocation>
+            <x>30</x>
+            <y>61</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_229">
+         <itemlocation>
+            <x>31</x>
+            <y>313</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>30</x>
+            <y>364</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_230">
+         <itemlocation>
+            <x>32</x>
+            <y>406</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>31</x>
+            <y>432</y>
+            <width>900</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_231">
+         <itemlocation>
+            <x>30</x>
+            <y>455</y>
+            <width>902</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_233">
+         <itemlocation>
+            <x>481</x>
+            <y>573</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>481</x>
+            <y>591</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>481</x>
+            <y>612</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>482</x>
+            <y>631</y>
+            <width>450</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>480</x>
+            <y>650</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE20">
+         <itemlocation>
+            <x>481</x>
+            <y>669</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE21">
+         <itemlocation>
+            <x>481</x>
+            <y>690</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE22">
+         <itemlocation>
+            <x>480</x>
+            <y>710</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE23">
+         <itemlocation>
+            <x>480</x>
+            <y>731</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE24">
+         <itemlocation>
+            <x>481</x>
+            <y>752</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE25">
+         <itemlocation>
+            <x>480</x>
+            <y>772</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE26">
+         <itemlocation>
+            <x>480</x>
+            <y>790</y>
+            <width>452</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE27">
+         <itemlocation>
+            <x>481</x>
+            <y>811</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE28">
+         <itemlocation>
+            <x>480</x>
+            <y>830</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE29">
+         <itemlocation>
+            <x>480</x>
+            <y>848</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE30">
+         <itemlocation>
+            <x>481</x>
+            <y>865</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE31">
+         <itemlocation>
+            <x>480</x>
+            <y>883</y>
+            <width>452</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE32">
+         <itemlocation>
+            <x>480</x>
+            <y>902</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE33">
+         <itemlocation>
+            <x>480</x>
+            <y>920</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE34">
+         <itemlocation>
+            <x>480</x>
+            <y>939</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE35">
+         <itemlocation>
+            <x>481</x>
+            <y>957</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>32</x>
+            <y>572</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>31</x>
+            <y>592</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>31</x>
+            <y>612</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE16">
+         <itemlocation>
+            <x>31</x>
+            <y>631</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE17">
+         <itemlocation>
+            <x>31</x>
+            <y>650</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE18">
+         <itemlocation>
+            <x>32</x>
+            <y>669</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE19">
+         <itemlocation>
+            <x>31</x>
+            <y>689</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_234">
+         <itemlocation>
+            <x>480</x>
+            <y>553</y>
+            <width>452</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>31</x>
+            <y>553</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_235">
+         <itemlocation>
+            <x>32</x>
+            <y>710</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_236">
+         <itemlocation>
+            <x>31</x>
+            <y>730</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_237">
+         <itemlocation>
+            <x>30</x>
+            <y>751</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_238">
+         <itemlocation>
+            <x>30</x>
+            <y>771</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_239">
+         <itemlocation>
+            <x>31</x>
+            <y>790</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_240">
+         <itemlocation>
+            <x>31</x>
+            <y>810</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_241">
+         <itemlocation>
+            <x>30</x>
+            <y>829</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_242">
+         <itemlocation>
+            <x>32</x>
+            <y>847</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL26">
+         <itemlocation>
+            <x>31</x>
+            <y>811</y>
+         </itemlocation>
+         <value>14</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL27">
+         <itemlocation>
+            <x>31</x>
+            <y>829</y>
+         </itemlocation>
+         <value>15</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL28">
+         <itemlocation>
+            <x>32</x>
+            <y>846</y>
+         </itemlocation>
+         <value>16</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL29">
+         <itemlocation>
+            <x>31</x>
+            <y>864</y>
+         </itemlocation>
+         <value>17</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_243">
+         <itemlocation>
+            <x>32</x>
+            <y>864</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_244">
+         <itemlocation>
+            <x>32</x>
+            <y>882</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_245">
+         <itemlocation>
+            <x>31</x>
+            <y>901</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_246">
+         <itemlocation>
+            <x>30</x>
+            <y>919</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_247">
+         <itemlocation>
+            <x>30</x>
+            <y>938</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_248">
+         <itemlocation>
+            <x>32</x>
+            <y>956</y>
+            <width>440</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_249">
+         <itemlocation>
+            <x>31</x>
+            <y>976</y>
+            <width>441</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_250">
+         <itemlocation>
+            <x>30</x>
+            <y>992</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_251">
+         <itemlocation>
+            <x>30</x>
+            <y>1011</y>
+            <width>442</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_252">
+         <itemlocation>
+            <x>480</x>
+            <y>1011</y>
+            <width>452</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL11">
+         <itemlocation>
+            <x>32</x>
+            <y>478</y>
+            <width>440</width>
+            <height>27</height>
+         </itemlocation>
+         <value>STRAFE DATA</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <label sid="LABEL12">
+         <itemlocation>
+            <x>479</x>
+            <y>478</y>
+            <width>453</width>
+            <height>26</height>
+         </itemlocation>
+         <value>GROUND PARTY - LASTER USE TRACKING</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <justify>center</justify>
+      </label>
+      <line sid="LINE_256">
+         <itemlocation>
+            <x>205</x>
+            <y>552</y>
+            <width>1</width>
+            <height>460</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_257">
+         <itemlocation>
+            <x>262</x>
+            <y>553</y>
+            <width>1</width>
+            <height>459</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_258">
+         <itemlocation>
+            <x>316</x>
+            <y>553</y>
+            <width>1</width>
+            <height>459</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_259">
+         <itemlocation>
+            <x>371</x>
+            <y>553</y>
+            <width>1</width>
+            <height>459</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_260">
+         <itemlocation>
+            <x>426</x>
+            <y>553</y>
+            <width>1</width>
+            <height>459</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_261">
+         <itemlocation>
+            <x>480</x>
+            <y>31</y>
+            <width>1</width>
+            <height>31</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_262">
+         <itemlocation>
+            <x>480</x>
+            <y>479</y>
+            <width>1</width>
+            <height>533</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_263">
+         <itemlocation>
+            <x>480</x>
+            <y>31</y>
+            <width>1</width>
+            <height>277</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>269</x>
+            <y>338</y>
+            <width>1</width>
+            <height>118</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>415</x>
+            <y>338</y>
+            <width>1</width>
+            <height>118</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>581</x>
+            <y>338</y>
+            <width>1</width>
+            <height>118</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_264">
+         <itemlocation>
+            <x>471</x>
+            <y>479</y>
+            <width>1</width>
+            <height>533</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_266">
+         <itemlocation>
+            <x>656</x>
+            <y>553</y>
+            <width>1</width>
+            <height>459</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_268">
+         <itemlocation>
+            <x>792</x>
+            <y>503</y>
+            <width>1</width>
+            <height>509</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>141</x>
+            <y>63</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>1 - 2 Min                     =                       .0    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL2">
+         <itemlocation>
+            <x>141</x>
+            <y>88</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>3 - 8 Min                      =                      .1    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL3">
+         <itemlocation>
+            <x>141</x>
+            <y>113</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>9 - 14 Min                    =                      .2    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL4">
+         <itemlocation>
+            <x>141</x>
+            <y>138</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>15 - 20 Min                  =                      .3    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL5">
+         <itemlocation>
+            <x>141</x>
+            <y>163</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>21 - 26 Min                  =                      .4    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL6">
+         <itemlocation>
+            <x>141</x>
+            <y>188</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>27 - 33 Min                   =                     .5    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL7">
+         <itemlocation>
+            <x>141</x>
+            <y>213</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>34 - 39 Min                   =                     .6    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL8">
+         <itemlocation>
+            <x>141</x>
+            <y>238</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>40 - 45 Min                    =                    .7    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL9">
+         <itemlocation>
+            <x>141</x>
+            <y>263</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>46 - 51 Min                    =                    .9    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL10">
+         <itemlocation>
+            <x>141</x>
+            <y>288</y>
+            <width>227</width>
+            <height>20</height>
+         </itemlocation>
+         <value>52 - 60 Min                    =                   1.0    Hr.</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>31</x>
+            <y>456</y>
+            <width>900</width>
+            <height>22</height>
+         </itemlocation>
+         <value></value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <printbgcolor>255,255,255</printbgcolor>
+         <bgcolor>192,192,192</bgcolor>
+         <justify>center</justify>
+         <border>on</border>
+      </label>
+      <label sid="LABEL13">
+         <itemlocation>
+            <x>31</x>
+            <y>553</y>
+         </itemlocation>
+         <value>1</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL14">
+         <itemlocation>
+            <x>31</x>
+            <y>576</y>
+         </itemlocation>
+         <value>2</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL15">
+         <itemlocation>
+            <x>31</x>
+            <y>593</y>
+         </itemlocation>
+         <value>3</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL16">
+         <itemlocation>
+            <x>31</x>
+            <y>614</y>
+         </itemlocation>
+         <value>4</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL17">
+         <itemlocation>
+            <x>32</x>
+            <y>632</y>
+         </itemlocation>
+         <value>5</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL18">
+         <itemlocation>
+            <x>33</x>
+            <y>652</y>
+         </itemlocation>
+         <value>6</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL19">
+         <itemlocation>
+            <x>32</x>
+            <y>671</y>
+         </itemlocation>
+         <value>7</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL20">
+         <itemlocation>
+            <x>32</x>
+            <y>691</y>
+         </itemlocation>
+         <value>8</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL21">
+         <itemlocation>
+            <x>33</x>
+            <y>712</y>
+         </itemlocation>
+         <value>9</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL22">
+         <itemlocation>
+            <x>32</x>
+            <y>732</y>
+         </itemlocation>
+         <value>10</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL23">
+         <itemlocation>
+            <x>33</x>
+            <y>752</y>
+         </itemlocation>
+         <value>11</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL24">
+         <itemlocation>
+            <x>32</x>
+            <y>772</y>
+         </itemlocation>
+         <value>12</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL25">
+         <itemlocation>
+            <x>32</x>
+            <y>791</y>
+         </itemlocation>
+         <value>13</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL30">
+         <itemlocation>
+            <x>31</x>
+            <y>884</y>
+         </itemlocation>
+         <value>18</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL31">
+         <itemlocation>
+            <x>33</x>
+            <y>902</y>
+         </itemlocation>
+         <value>19</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL32">
+         <itemlocation>
+            <x>32</x>
+            <y>921</y>
+         </itemlocation>
+         <value>20</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL33">
+         <itemlocation>
+            <x>32</x>
+            <y>939</y>
+         </itemlocation>
+         <value>21</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL34">
+         <itemlocation>
+            <x>31</x>
+            <y>958</y>
+         </itemlocation>
+         <value>22</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL35">
+         <itemlocation>
+            <x>33</x>
+            <y>976</y>
+         </itemlocation>
+         <value>23</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL36">
+         <itemlocation>
+            <x>31</x>
+            <y>994</y>
+         </itemlocation>
+         <value>24</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>6</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL37">
+         <itemlocation>
+            <x>801</x>
+            <y>510</y>
+            <width>106</width>
+            <height>33</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>TIME OFF</value>
+         <linespacing>-3</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE36">
+         <itemlocation>
+            <x>482</x>
+            <y>977</y>
+            <width>450</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE37">
+         <itemlocation>
+            <x>480</x>
+            <y>993</y>
+            <width>451</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE38">
+         <itemlocation>
+            <x>31</x>
+            <y>1012</y>
+            <width>901</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+   </page>
+</XFDL>

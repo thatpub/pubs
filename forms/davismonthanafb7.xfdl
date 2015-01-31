@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7">
+   <globalpage sid="global">
+      <global sid="global">
+         <formid>
+            <serialnumber>BF5A598C-0816-4409-95A5-C3EC6E593600</serialnumber>
+            <version>1.19.0</version>
+         </formid>
+         <designer:date>11/9/2002</designer:date>
+         <ufv_settings>
+            <pagedonewithformaterrors>permit</pagedonewithformaterrors>
+         </ufv_settings>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+            </editors>
+         </history>
+         <designer:design>
+            <designer:designValue key="CellListOfLists" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <CellListOfLists>
+                  <element key="PAGE1.DROPDOWN1_GROUP" value="New Cell List"></element>
+               </CellListOfLists>
+            </designer:designValue>
+         </designer:design>
+         
+      </global>
+   </globalpage>
+   <page sid="PAGE1">
+      <global sid="global">
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <pageid>
+            <serialnumber>98E518AE-64B4-4B15-8C8F-19C82698C42A</serialnumber>
+         </pageid>
+         <label>PAGE1</label>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <next>FIELD1</next>
+      </global>
+   <toolbar sid="TOOLBAR">
+         <designer:height>67</designer:height>
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>135</x>
+            <y>20</y>
+         </itemlocation>
+         
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>70</x>
+            <y>26</y>
+         </itemlocation>
+         
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>266</x>
+            <y>36</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         
+         <previous>Submit_BUTTON</previous>
+         <next>Save_BUTTON</next>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>342</x>
+            <y>36</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         
+         <previous>Close_BUTTON</previous>
+         <next>Print_BUTTON</next>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>418</x>
+            <y>36</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         
+         <previous>Save_BUTTON</previous>
+         <next>Email_BUTTON</next>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>494</x>
+            <y>36</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         
+         <previous>Print_BUTTON</previous>
+         <next>prev_button</next>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>190</x>
+            <y>36</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         
+         <previous>FIELD35</previous>
+         <next>Close_BUTTON</next>
+      </button>
+      <line sid="FFLine6">
+         <itemlocation>
+            <x>31</x>
+            <y>39</y>
+            <width>900</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine7">
+         <itemlocation>
+            <x>30</x>
+            <y>1165</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine8">
+         <itemlocation>
+            <x>931</x>
+            <y>39</y>
+            <width>2</width>
+            <height>58</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine9">
+         <itemlocation>
+            <x>32</x>
+            <y>40</y>
+            <width>2</width>
+            <height>57</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="FFText14">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>31</x>
+            <y>1165</y>
+         </itemlocation>
+         <value>DMAFB Form 7, 20110404</value>
+      </label>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">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</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+         
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">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
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+         <mimetype>application/vnd.xfdl</mimetype>
+         
+      </data>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>32</x>
+            <y>95</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>126</x>
+            <y>40</y>
+            <height>37</height>
+         </itemlocation>
+         <value>RECORD OF AIRFIELD DRIVERS TRAINING AND CERTIFICATION
+   </value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL2">
+         <itemlocation>
+            <x>213</x>
+            <y>65</y>
+         </itemlocation>
+         <value>THIS INFORMATION IS COVERED BY THE PRIVACY ACT 1974</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>31</x>
+            <y>135</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>33</x>
+            <y>275</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>31</x>
+            <y>185</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>33</x>
+            <y>217</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>33</x>
+            <y>625</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>31</x>
+            <y>535</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>33</x>
+            <y>245</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>456</x>
+            <y>105</y>
+            <height>140</height>
+            <width>2</width>
+         </itemlocation>
+      </line>
+      <label sid="LABEL3">
+         <itemlocation>
+            <x>43</x>
+            <y>105</y>
+         </itemlocation>
+         <value>1.  Personal Data</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL4">
+         <itemlocation>
+            <x>466</x>
+            <y>105</y>
+         </itemlocation>
+         <value>EXAMPLE</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+         </fontinfo>
+         <fontcolor>#FF0000</fontcolor>
+      </label>
+      <label sid="LABEL5">
+         <itemlocation>
+            <x>43</x>
+            <y>135</y>
+         </itemlocation>
+         <value>Rank:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL6">
+         <itemlocation>
+            <x>43</x>
+            <y>160</y>
+         </itemlocation>
+         <value>Name:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL7">
+         <itemlocation>
+            <x>466</x>
+            <y>135</y>
+         </itemlocation>
+         <value>Squadron:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL8">
+         <itemlocation>
+            <x>466</x>
+            <y>160</y>
+         </itemlocation>
+         <value>Office Symbol:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL9">
+         <itemlocation>
+            <x>43</x>
+            <y>192</y>
+         </itemlocation>
+         <value>Duty Phone:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL10">
+         <itemlocation>
+            <x>466</x>
+            <y>192</y>
+         </itemlocation>
+         <value>Duty AFSC:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL11">
+         <itemlocation>
+            <x>43</x>
+            <y>217</y>
+         </itemlocation>
+         <value>Civilian Drivers License #:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL12">
+         <itemlocation>
+            <x>464</x>
+            <y>217</y>
+         </itemlocation>
+         <value>State Issued:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <line sid="FFLine1">
+         <itemlocation>
+            <x>32</x>
+            <y>105</y>
+            <width>2</width>
+            <height>171</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>33</x>
+            <y>105</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>33</x>
+            <y>285</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="FFLine2">
+         <itemlocation>
+            <x>32</x>
+            <y>285</y>
+            <width>2</width>
+            <height>381</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="LABEL13">
+         <itemlocation>
+            <x>43</x>
+            <y>250</y>
+         </itemlocation>
+         <value>Restrictions:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <line sid="FFLine3">
+         <itemlocation>
+            <x>931</x>
+            <y>285</y>
+            <width>2</width>
+            <height>381</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine4">
+         <itemlocation>
+            <x>931</x>
+            <y>105</y>
+            <width>2</width>
+            <height>171</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>33</x>
+            <y>315</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>33</x>
+            <y>875</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>32</x>
+            <y>575</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE16">
+         <itemlocation>
+            <x>31</x>
+            <y>335</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE17">
+         <itemlocation>
+            <x>31</x>
+            <y>415</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE18">
+         <itemlocation>
+            <x>33</x>
+            <y>455</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE19">
+         <itemlocation>
+            <x>33</x>
+            <y>495</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE20">
+         <itemlocation>
+            <x>33</x>
+            <y>375</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <label sid="LABEL14">
+         <itemlocation>
+            <x>43</x>
+            <y>287</y>
+         </itemlocation>
+         <value>2.  Training Data</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL15">
+         <itemlocation>
+            <x>146</x>
+            <y>315</y>
+         </itemlocation>
+         <value>ITEM</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL16">
+         <itemlocation>
+            <x>396</x>
+            <y>315</y>
+         </itemlocation>
+         <value>DATE</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL17">
+         <itemlocation>
+            <x>546</x>
+            <y>315</y>
+         </itemlocation>
+         <value>Completed By</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL18">
+         <itemlocation>
+            <x>786</x>
+            <y>315</y>
+         </itemlocation>
+         <value>TRAINEE</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <line sid="FFLine12">
+         <itemlocation>
+            <x>326</x>
+            <y>285</y>
+            <width>2</width>
+            <height>381</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine13">
+         <itemlocation>
+            <x>509</x>
+            <y>285</y>
+            <width>2</width>
+            <height>381</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine14">
+         <itemlocation>
+            <x>706</x>
+            <y>285</y>
+            <width>2</width>
+            <height>381</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine15">
+         <itemlocation>
+            <x>32</x>
+            <y>675</y>
+            <width>2</width>
+            <height>191</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="LABEL19">
+         <itemlocation>
+            <x>43</x>
+            <y>350</y>
+         </itemlocation>
+         <value>Color Vision (Bldg 4820)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL20">
+         <itemlocation>
+            <x>43</x>
+            <y>385</y>
+         </itemlocation>
+         <value>DMAFB Airfield Driving Video</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL21">
+         <itemlocation>
+            <x>40</x>
+            <y>425</y>
+         </itemlocation>
+         <value>Day Orientation ( Practical)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL22">
+         <itemlocation>
+            <x>43</x>
+            <y>463</y>
+         </itemlocation>
+         <value>Night Orientation (Practical)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL23">
+         <itemlocation>
+            <x>40</x>
+            <y>505</y>
+         </itemlocation>
+         <value>Driving Evaluation (Practical)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL24">
+         <itemlocation>
+            <x>43</x>
+            <y>550</y>
+         </itemlocation>
+         <value>Light Gun Signals</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL25">
+         <itemlocation>
+            <x>40</x>
+            <y>575</y>
+         </itemlocation>
+         <value>Pre-Test (written) Score:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL26">
+         <itemlocation>
+            <x>40</x>
+            <y>600</y>
+         </itemlocation>
+         <value>Phraseology Test (written) Score:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL27">
+         <itemlocation>
+            <x>38</x>
+            <y>640</y>
+         </itemlocation>
+         <value>Airfield Diagram Test ( Bldg 4820</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <combobox sid="COMBOBOX1">
+         <itemlocation>
+            <x>339</x>
+            <y>350</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX2">
+         <itemlocation>
+            <x>339</x>
+            <y>387</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX3">
+         <itemlocation>
+            <x>339</x>
+            <y>427</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX4">
+         <itemlocation>
+            <x>339</x>
+            <y>465</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX5">
+         <itemlocation>
+            <x>339</x>
+            <y>507</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX6">
+         <itemlocation>
+            <x>339</x>
+            <y>545</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX7">
+         <itemlocation>
+            <x>339</x>
+            <y>580</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX8">
+         <itemlocation>
+            <x>339</x>
+            <y>602</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <combobox sid="COMBOBOX9">
+         <itemlocation>
+            <x>339</x>
+            <y>635</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <line sid="FFLine16">
+         <itemlocation>
+            <x>931</x>
+            <y>675</y>
+            <width>2</width>
+            <height>191</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine17">
+         <itemlocation>
+            <x>420</x>
+            <y>675</y>
+            <width>2</width>
+            <height>191</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>33</x>
+            <y>675</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE21">
+         <itemlocation>
+            <x>32</x>
+            <y>865</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE23">
+         <itemlocation>
+            <x>32</x>
+            <y>665</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE25">
+         <itemlocation>
+            <x>33</x>
+            <y>985</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="LINE22">
+         <itemlocation>
+            <x>32</x>
+            <y>995</y>
+            <height>1</height>
+            <width>899</width>
+         </itemlocation>
+      </line>
+      <line sid="FFLine18">
+         <itemlocation>
+            <x>32</x>
+            <y>875</y>
+            <width>2</width>
+            <height>111</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine19">
+         <itemlocation>
+            <x>32</x>
+            <y>995</y>
+            <width>2</width>
+            <height>171</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine20">
+         <itemlocation>
+            <x>420</x>
+            <y>875</y>
+            <width>2</width>
+            <height>111</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine21">
+         <itemlocation>
+            <x>420</x>
+            <y>995</y>
+            <width>2</width>
+            <height>172</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine22">
+         <itemlocation>
+            <x>931</x>
+            <y>995</y>
+            <width>2</width>
+            <height>171</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine23">
+         <itemlocation>
+            <x>931</x>
+            <y>875</y>
+            <width>2</width>
+            <height>111</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="LABEL28">
+         <itemlocation>
+            <x>40</x>
+            <y>685</y>
+         </itemlocation>
+         <value>3. Type, Stamp or Print Name and Rank 
+Unit CC or designated representative</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL29">
+         <itemlocation>
+            <x>42</x>
+            <y>827</y>
+         </itemlocation>
+         <value>Date Signed:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <combobox sid="COMBOBOX10">
+         <itemlocation>
+            <x>152</x>
+            <y>827</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <label sid="LABEL30">
+         <itemlocation>
+            <x>433</x>
+            <y>685</y>
+         </itemlocation>
+         <value>Signature</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL31">
+         <itemlocation>
+            <x>433</x>
+            <y>825</y>
+         </itemlocation>
+         <value>Unit Commander or (designated representative)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL32">
+         <itemlocation>
+            <x>41</x>
+            <y>885</y>
+         </itemlocation>
+         <value>4.  Test Results </value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL33">
+         <itemlocation>
+            <x>176</x>
+            <y>887</y>
+         </itemlocation>
+         <value>(Base Ops)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL34">
+         <itemlocation>
+            <x>43</x>
+            <y>1005</y>
+         </itemlocation>
+         <value>5. Approved</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>12</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL35">
+         <itemlocation>
+            <x>43</x>
+            <y>1125</y>
+         </itemlocation>
+         <value>Date signed:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL36">
+         <itemlocation>
+            <x>434</x>
+            <y>889</y>
+         </itemlocation>
+         <value>Certificate Number</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL37">
+         <itemlocation>
+            <x>462</x>
+            <y>905</y>
+         </itemlocation>
+         <value>(Base Ops)</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <label sid="LABEL38">
+         <itemlocation>
+            <x>433</x>
+            <y>1125</y>
+         </itemlocation>
+         <value>Airfield Manager or Assistant Airfield Manager</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL39">
+         <itemlocation>
+            <x>71</x>
+            <y>925</y>
+         </itemlocation>
+         <value>Score:</value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+         </fontinfo>
+      </label>
+      <combobox sid="COMBOBOX11">
+         <itemlocation>
+            <x>152</x>
+            <y>1127</y>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <field sid="FIELD1">
+         <itemlocation>
+            <x>135</x>
+            <y>927</y>
+            <width>42</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <format>
+            <datatype>float</datatype>
+         </format>
+      </field>
+      <field sid="FIELD2">
+         <itemlocation>
+            <x>599</x>
+            <y>891</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD3">
+         <itemlocation>
+            <x>137</x>
+            <y>245</y>
+            <width>794</width>
+            <height>28</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>always</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD4">
+         <itemlocation>
+            <x>599</x>
+            <y>219</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD6">
+         <itemlocation>
+            <x>599</x>
+            <y>162</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD7">
+         <itemlocation>
+            <x>599</x>
+            <y>137</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD8">
+         <itemlocation>
+            <x>109</x>
+            <y>162</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD9">
+         <itemlocation>
+            <x>137</x>
+            <y>194</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+         <format>
+            <datatype>float</datatype>
+         </format>
+      </field>
+      <field sid="FIELD10">
+         <itemlocation>
+            <x>599</x>
+            <y>194</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD5">
+         <itemlocation>
+            <x>232</x>
+            <y>219</y>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <popup sid="DROPDOWN1">
+         <itemlocation>
+            <x>101</x>
+            <y>137</y>
+         </itemlocation>
+         <value></value>
+         <label>Select Your Rank Here</label>
+         <group>DROPDOWN1_GROUP</group>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </popup>
+      <cell sid="CELL1">
+         <value>AB</value>
+         <label>AB</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL2">
+         <value>Amn</value>
+         <label>Amn</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL3">
+         <value>A1C</value>
+         <label>A1C</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL4">
+         <value>SrA</value>
+         <label>SrA</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL5">
+         <value>SSgt</value>
+         <label>SSgt</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL6">
+         <value>TSgt</value>
+         <label>TSgt</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL7">
+         <value>MSgt</value>
+         <label>MSgt</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL8">
+         <value>SMSgt</value>
+         <label>SMSgt</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL9">
+         <value>CMSgt</value>
+         <label>CMSgt</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL10">
+         <value>2LT</value>
+         <label>2LT</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL11">
+         <value>1LT</value>
+         <label>1LT</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL12">
+         <value>CAP</value>
+         <label>CAP</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL13">
+         <value>MAJ</value>
+         <label>MAJ</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL14">
+         <value>LTC</value>
+         <label>LTC</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL15">
+         <value>COL</value>
+         <label>COL</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL16">
+         <value>BG_</value>
+         <label>BG </label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL17">
+         <value>MG</value>
+         <label>MG</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL18">
+         <value>LG</value>
+         <label>LG</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <cell sid="CELL19">
+         <value>GEN</value>
+         <label>GEN</label>
+         <group>DROPDOWN1_GROUP</group>
+      </cell>
+      <field sid="FIELD11">
+         <itemlocation>
+            <x>43</x>
+            <y>745</y>
+            <width>297</width>
+            <height>71</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD12">
+         <itemlocation>
+            <x>40</x>
+            <y>1045</y>
+            <height>72</height>
+            <width>342</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <button sid="SIGNATURE1">
+         <itemlocation>
+            <x>438</x>
+            <y>760</y>
+            <width>320</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE1_840247419</signature>
+         <signer></signer>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>PAGE1.SIGNATURE2</itemref>
+            <itemref>PAGE1.FIELD12</itemref>
+            <itemref>PAGE1.COMBOBOX11</itemref>
+            <itemref>PAGE1.FIELD1</itemref>
+            <itemref>PAGE1.FIELD2</itemref>
+            <itemref>SIGNATURE2_1508149638</itemref>
+         </signitemrefs>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+      </button>
+      <field sid="FIELD13">
+         <itemlocation>
+            <x>516</x>
+            <y>350</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD14">
+         <itemlocation>
+            <x>516</x>
+            <y>387</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD15">
+         <itemlocation>
+            <x>516</x>
+            <y>427</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD16">
+         <itemlocation>
+            <x>516</x>
+            <y>465</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD17">
+         <itemlocation>
+            <x>516</x>
+            <y>507</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD18">
+         <itemlocation>
+            <x>516</x>
+            <y>545</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD19">
+         <itemlocation>
+            <x>516</x>
+            <y>580</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD20">
+         <itemlocation>
+            <x>516</x>
+            <y>602</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD21">
+         <itemlocation>
+            <x>516</x>
+            <y>635</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD22">
+         <itemlocation>
+            <x>716</x>
+            <y>352</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD23">
+         <itemlocation>
+            <x>716</x>
+            <y>387</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD24">
+         <itemlocation>
+            <x>716</x>
+            <y>427</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD25">
+         <itemlocation>
+            <x>716</x>
+            <y>465</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD26">
+         <itemlocation>
+            <x>716</x>
+            <y>507</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD27">
+         <itemlocation>
+            <x>716</x>
+            <y>545</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD28">
+         <itemlocation>
+            <x>716</x>
+            <y>580</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD29">
+         <itemlocation>
+            <x>716</x>
+            <y>602</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <field sid="FIELD30">
+         <itemlocation>
+            <x>716</x>
+            <y>635</y>
+            <width>171</width>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <value></value>
+      </field>
+      <button sid="SIGNATURE2">
+         <itemlocation>
+            <x>442</x>
+            <y>1056</y>
+            <width>320</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE2_249499377</signature>
+         <signer></signer>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <signoptions>
+            <filter>omit</filter>
+            <optiontype>triggeritem</optiontype>
+            <optiontype>coordinates</optiontype>
+         </signoptions>
+      </button>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+   <page sid="PAGE2">
+      <global sid="global">
+         <pageid>
+            <serialnumber>DD3B2CA0-C323-4866-90E2-D0CCCD7162C2</serialnumber>
+         </pageid>
+         <designer:pagesize>960;1260</designer:pagesize>
+         
+         
+         <label>PAGE2</label>
+         <bgcolor>239,239,239</bgcolor>
+         <printbgcolor>255,255,255</printbgcolor>
+         <next>FIELD6</next>
+      </global>
+   <toolbar sid="TOOLBAR">
+      </toolbar>
+      <label sid="toolbar_bg_long">
+         <active>off</active>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'toolbar_bg_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>135</x>
+            <y>20</y>
+         </itemlocation>
+      </label>
+      <label sid="airforce_logo_ok">
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:first_page_logo xfdl:compute="substr(global.global.pagefirst, '0', strlen(global.global.pagefirst) - '7') +. 'af_logo_grey'"></custom:first_page_logo>
+         <image compute="custom:first_page_logo"></image>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>70</x>
+            <y>26</y>
+         </itemlocation>
+      </label>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>267</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <previous>Submit_BUTTON</previous>
+         <next>Save_BUTTON</next>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>344</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <previous>Close_BUTTON</previous>
+         <next>Print_BUTTON</next>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>421</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         <previous>Save_BUTTON</previous>
+         <next>Email_BUTTON</next>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>498</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         <previous>Print_BUTTON</previous>
+         <next>prev_button</next>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>190</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'"></visible>
+         <previous>FIELD18</previous>
+         <next>Close_BUTTON</next>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>639</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious"></custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'"></visible>
+         <previous>Email_BUTTON</previous>
+         <next>next_button</next>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next"></url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <within>TOOLBAR</within>
+            
+            <x>716</x>
+            <y>49</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext"></custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'"></custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'"></custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'"></visible>
+         <previous>prev_button</previous>
+         <next>FIELD6</next>
+      </button>
+      <line sid="FFLine6">
+         <itemlocation>
+            <x>31</x>
+            <y>39</y>
+            <width>900</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine7">
+         <itemlocation>
+            <x>30</x>
+            <y>1210</y>
+            <width>901</width>
+            <height>2</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine8">
+         <itemlocation>
+            <x>930</x>
+            <y>39</y>
+            <width>2</width>
+            <height>1172</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <line sid="FFLine9">
+         <itemlocation>
+            <x>30</x>
+            <y>40</y>
+            <width>2</width>
+            <height>1170</height>
+         </itemlocation>
+         <thickness>2</thickness>
+      </line>
+      <label sid="FFText14">
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>32</x>
+            <y>1208</y>
+         </itemlocation>
+         <value>DMAFB Form XX, Date</value>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+</XFDL>

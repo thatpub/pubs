@@ -1,0 +1,4489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XFDL xmlns:custom="http://www.ibm.com/xmlns/prod/XFDL/Custom" xmlns:designer="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xfdl="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns="http://www.ibm.com/xmlns/prod/XFDL/7.7" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <globalpage sid="global">
+      <global sid="global">
+         <designer:date>20121214</designer:date>
+         <formid>
+            <title></title>
+            <serialnumber>DEE49B64FDB493C5:-7451C826:13B9A28E886:-7FFD</serialnumber>
+            <version>1.0.0</version>
+         </formid>
+         <xformsmodels>
+            <xforms:model>
+               <xforms:instance id="Generated" designer:type="generated" xmlns="">
+                  <data>
+                     <afimt116page1>
+                        <request></request>
+                        <thru></thru>
+                        <to></to>
+                        <from></from>
+                        <refer></refer>
+                        <affect></affect>
+                        <require></require>
+                        <deficien></deficien>
+                        <justif></justif>
+                        <action></action>
+                        <estimate></estimate>
+                        <project></project>
+                        <caldtb></caldtb>
+                        <coord></coord>
+                        <coorda></coorda>
+                        <coorda_2></coorda_2>
+                        <coorda_3></coorda_3>
+                        <coorda_4></coorda_4>
+                        <coorda_5></coorda_5>
+                        <coorda_6></coorda_6>
+                        <rqsintr></rqsintr>
+                        <field1></field1>
+                        <field2></field2>
+                     </afimt116page1>
+                     <afimt116page2>
+                        <toa></toa>
+                        <froma></froma>
+                        <comments></comments>
+                        <coordb></coordb>
+                        <coordc></coordc>
+                        <coordc_2></coordc_2>
+                        <coordc_3></coordc_3>
+                        <coordc_4></coordc_4>
+                        <coordc_5></coordc_5>
+                        <coordc_6></coordc_6>
+                        <revoff></revoff>
+                        <tob></tob>
+                        <fromb></fromb>
+                        <copiesto></copiesto>
+                        <actionb></actionb>
+                        <commentb></commentb>
+                        <coordd></coordd>
+                        <coorde></coorde>
+                        <coorde_2></coorde_2>
+                        <coorde_3></coorde_3>
+                        <coorde_4></coorde_4>
+                        <coorde_5></coorde_5>
+                        <coorde_6></coorde_6>
+                        <caldtf></caldtf>
+                        <apprauth></apprauth>
+                        <field1></field1>
+                        <field2></field2>
+                        <calendar1></calendar1>
+                     </afimt116page2>
+                     <afimt116page3>
+                        <consheet></consheet>
+                     </afimt116page3>
+                  </data>
+               </xforms:instance>
+            </xforms:model>
+         </xformsmodels>
+         <history>
+            <editors>
+               <editor minversion="3.5" version="3.5.1">IBM Lotus Forms Designer</editor>
+               <editor minversion="3.5.1" version="4.0.0">IBM Forms Designer</editor>
+            </editors>
+         </history>
+         <designer:design>
+            <designer:designValue key="ListOfLists" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <ListOfLists>
+                  <element key="instance('Generated')/choice" value="New Choice List"></element>
+               </ListOfLists>
+            </designer:designValue>
+         </designer:design>
+      </global>
+   </globalpage>
+   <page sid="AFIMT116PAGE1">
+      <global sid="global">
+         <label>AF IMT 116 PAGE1</label>
+      </global>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>183</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <next>Save_BUTTON</next>
+         <previous>Submit_BUTTON</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>260</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <next>Print_BUTTON</next>
+         <previous>Close_BUTTON</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>335</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         <next>Email_BUTTON</next>
+         <previous>Save_BUTTON</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>416</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         <next>prev_button</next>
+         <previous>Print_BUTTON</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>96</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+         <next>Close_BUTTON</next>
+         <previous>RqsIntr</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE3.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>553</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE3.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">off</visible>
+         <next>next_button</next>
+         <previous>Email_BUTTON</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>628</x>
+            <y>11</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE2.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE1.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE1.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">on</visible>
+         <next>Request</next>
+         <previous>prev_button</previous>
+         <printvisible>off</printvisible>
+      </button>
+      <field sid="Request">
+         <itemlocation>
+            <x>486</x>
+            <y>89</y>
+            <width>213</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Request for deviation from security criteria.&#xD;
+1. Request number</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <next>CalDtA</next>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/request">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <help sid="CalDtA_HELP">
+         <value>Enter date as YYYYMMDD</value>
+      </help>
+      <field sid="Thru">
+         <itemlocation>
+            <x>19</x>
+            <y>134</y>
+            <width>284</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Thru</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>To</next>
+         <previous>CalDtA</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/thru">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="To">
+         <itemlocation>
+            <x>306</x>
+            <y>134</y>
+            <width>297</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>To</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>From</next>
+         <previous>Thru</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/to">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="From">
+         <itemlocation>
+            <x>606</x>
+            <y>134</y>
+            <width>309</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>From</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Facility</next>
+         <previous>To</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/from">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Refer">
+         <itemlocation>
+            <x>19</x>
+            <y>283</y>
+            <width>896</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>5. References</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Affect</next>
+         <previous>Cancel</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/refer">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Affect">
+         <itemlocation>
+            <x>19</x>
+            <y>347</y>
+            <width>896</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>6. Affected area or function</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Require</next>
+         <previous>Refer</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/affect">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Require">
+         <itemlocation>
+            <x>19</x>
+            <y>413</y>
+            <width>896</width>
+            <height>97</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>7. Brief description of specific Requirement</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Deficien</next>
+         <previous>Affect</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/require">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Deficien">
+         <itemlocation>
+            <x>19</x>
+            <y>534</y>
+            <width>896</width>
+            <height>67</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>8. Brief description of Deficiency</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Justif</next>
+         <previous>Require</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/deficien">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Justif">
+         <itemlocation>
+            <x>19</x>
+            <y>634</y>
+            <width>896</width>
+            <height>235</height>
+         </itemlocation>
+         <acclabel>9. Justification</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <labelfontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>10</size>
+            <effect>plain</effect>
+         </labelfontinfo>
+         <border>off</border>
+         <next>FIELD1</next>
+         <previous>Deficien</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/justif">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Action">
+         <itemlocation>
+            <x>19</x>
+            <y>989</y>
+            <width>896</width>
+            <height>73</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>11. Proposed corrective Action</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>Estimate</next>
+         <previous>FIELD1</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/action">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Estimate">
+         <itemlocation>
+            <x>19</x>
+            <y>1081</y>
+            <width>296</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>12. Estimated cost of correction</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <next>Project</next>
+         <previous>Action</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/estimate">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Project">
+         <itemlocation>
+            <x>318</x>
+            <y>1081</y>
+            <width>297</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>13. Project number and priority</acclabel>
+         <value></value>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <next>CalDtB</next>
+         <previous>Estimate</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/project">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CalDtB">
+         <itemlocation>
+            <x>618</x>
+            <y>1081</y>
+            <width>297</width>
+            <height>25</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>14. Estimated correction date. &#xD;
+Enter date as Y Y Y Y M M D D</acclabel>
+         <value></value>
+         <help>CalDtB_HELP</help>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <format>
+            <datatype>date</datatype>
+            <constraints>
+               <mandatory>off</mandatory>
+            </constraints>
+            <presentation>
+               <style>numeric</style>
+            </presentation>
+         </format>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <justify>center</justify>
+         <next>Coord</next>
+         <previous>Project</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/caldtb">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <help sid="CalDtB_HELP">
+         <value>Enter date as YYYYMMDD</value>
+      </help>
+      <field sid="Coord">
+         <itemlocation>
+            <x>210</x>
+            <y>1109</y>
+            <width>105</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>15. Coordination&#xD;
+Column 1</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA</next>
+         <previous>CalDtB</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coord">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA">
+         <itemlocation>
+            <x>318</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 2</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA_2</next>
+         <previous>Coord</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA_2">
+         <itemlocation>
+            <x>418</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 3</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA_3</next>
+         <previous>CoordA</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda_2">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA_3">
+         <itemlocation>
+            <x>518</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 4</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA_4</next>
+         <previous>CoordA_2</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda_3">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA_4">
+         <itemlocation>
+            <x>618</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 5</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA_5</next>
+         <previous>CoordA_3</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda_4">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA_5">
+         <itemlocation>
+            <x>718</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 6</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CoordA_6</next>
+         <previous>CoordA_4</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda_5">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordA_6">
+         <itemlocation>
+            <x>818</x>
+            <y>1109</y>
+            <width>97</width>
+            <height>42</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 7</acclabel>
+         <value></value>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CalDtC</next>
+         <previous>CoordA_5</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/coorda_6">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <help sid="CalDtC_HELP">
+         <value>Enter the date as shown in this example: 25 Aug 2010</value>
+      </help>
+      <label sid="LABEL_1">
+         <itemlocation>
+            <x>704</x>
+            <y>46</y>
+         </itemlocation>
+         <value>2. EXPIRATION DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_2">
+         <itemlocation>
+            <x>821</x>
+            <y>46</y>
+         </itemlocation>
+         <value> (Complete</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_3">
+         <itemlocation>
+            <x>488</x>
+            <y>47</y>
+         </itemlocation>
+         <value>1. REQUEST NUMBER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_4">
+         <itemlocation>
+            <x>23</x>
+            <y>51</y>
+         </itemlocation>
+         <value>REQUEST FOR DEVIATION FROM SECURITY CRITERIA</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_5">
+         <itemlocation>
+            <x>717</x>
+            <y>58</y>
+         </itemlocation>
+         <value>when Item 27 is filled in.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_6">
+         <itemlocation>
+            <x>24</x>
+            <y>69</y>
+            <width>441</width>
+            <height>36</height>
+         </itemlocation>
+         <justify>center</justify>
+         <value>(If recording deviations for nuclear resources see DOD 5210.41-M/Air Force
+Supplement; for non-nuclear resources see AFI 31-101.)</value>
+         <linespacing>-2</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_7">
+         <itemlocation>
+            <x>6</x>
+            <y>116</y>
+         </itemlocation>
+         <value>THRU:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_8">
+         <itemlocation>
+            <x>53</x>
+            <y>117</y>
+         </itemlocation>
+         <value> (Major Subordinate Command)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_9">
+         <itemlocation>
+            <x>308</x>
+            <y>116</y>
+         </itemlocation>
+         <value>TO:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_10">
+         <itemlocation>
+            <x>330</x>
+            <y>117</y>
+         </itemlocation>
+         <value> (MAJCOM)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_11">
+         <itemlocation>
+            <x>608</x>
+            <y>116</y>
+         </itemlocation>
+         <value>FROM:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_12">
+         <itemlocation>
+            <x>650</x>
+            <y>117</y>
+         </itemlocation>
+         <value> (Requesting orgn, Include ZIP Code/APO No.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_13">
+         <itemlocation>
+            <x>4</x>
+            <y>177</y>
+         </itemlocation>
+         <value>3.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_14">
+         <itemlocation>
+            <x>371</x>
+            <y>176</y>
+         </itemlocation>
+         <value>TYPE OF REQUEST </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_15">
+         <itemlocation>
+            <x>495</x>
+            <y>177</y>
+         </itemlocation>
+         <value>(Check one)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_16">
+         <itemlocation>
+            <x>42</x>
+            <y>197</y>
+         </itemlocation>
+         <value>A. FACILITY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_17">
+         <itemlocation>
+            <x>206</x>
+            <y>197</y>
+         </itemlocation>
+         <value>B. EQUIPMENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_18">
+         <itemlocation>
+            <x>373</x>
+            <y>197</y>
+         </itemlocation>
+         <value>C. PROCEDURAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_19">
+         <itemlocation>
+            <x>541</x>
+            <y>197</y>
+         </itemlocation>
+         <value>D. POST/PATROL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_20">
+         <itemlocation>
+            <x>773</x>
+            <y>197</y>
+         </itemlocation>
+         <value>E. OTHER</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_21">
+         <itemlocation>
+            <x>3</x>
+            <y>217</y>
+         </itemlocation>
+         <value>4.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_22">
+         <itemlocation>
+            <x>376</x>
+            <y>216</y>
+         </itemlocation>
+         <value>TYPE DEVIATION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_23">
+         <itemlocation>
+            <x>487</x>
+            <y>217</y>
+         </itemlocation>
+         <value>(Check)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_24">
+         <itemlocation>
+            <x>42</x>
+            <y>237</y>
+         </itemlocation>
+         <value>A. PERMANENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_25">
+         <itemlocation>
+            <x>206</x>
+            <y>237</y>
+         </itemlocation>
+         <value>B. TEMPORARY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_26">
+         <itemlocation>
+            <x>373</x>
+            <y>237</y>
+         </itemlocation>
+         <value>C. TECHNICAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_27">
+         <itemlocation>
+            <x>541</x>
+            <y>237</y>
+         </itemlocation>
+         <value>D. INITIAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_28">
+         <itemlocation>
+            <x>641</x>
+            <y>237</y>
+         </itemlocation>
+         <value>E. EXTENSION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_29">
+         <itemlocation>
+            <x>773</x>
+            <y>237</y>
+         </itemlocation>
+         <value>F. CANCELLATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_30">
+         <itemlocation>
+            <x>4</x>
+            <y>261</y>
+         </itemlocation>
+         <value>5. REFERENCES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_31">
+         <itemlocation>
+            <x>108</x>
+            <y>261</y>
+         </itemlocation>
+         <value> (Directive and para) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_32">
+         <itemlocation>
+            <x>4</x>
+            <y>328</y>
+         </itemlocation>
+         <value>6. AFFECTED AREA/FUNCTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_33">
+         <itemlocation>
+            <x>186</x>
+            <y>328</y>
+         </itemlocation>
+         <value> (Do not abbreviate) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_34">
+         <itemlocation>
+            <x>4</x>
+            <y>393</y>
+         </itemlocation>
+         <value>7. BRIEF DESCRIPTION OF SPECIFIC REQUIREMENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_35">
+         <itemlocation>
+            <x>312</x>
+            <y>393</y>
+         </itemlocation>
+         <value> (Item 5) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_36">
+         <itemlocation>
+            <x>4</x>
+            <y>513</y>
+         </itemlocation>
+         <value>8. BRIEF DESCRIPTION OF DEFICIENCY </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_37">
+         <itemlocation>
+            <x>243</x>
+            <y>513</y>
+         </itemlocation>
+         <value>(If vulnerability is revealed, classify this form appropriately.) </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_38">
+         <itemlocation>
+            <x>4</x>
+            <y>603</y>
+         </itemlocation>
+         <value>9. JUSTIFICATION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_39">
+         <itemlocation>
+            <x>112</x>
+            <y>603</y>
+         </itemlocation>
+         <value>(Enter detailed justification for this request.  For Post/Patrol, attach Manning and Post Requirements Summary.  If an extension, fully</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_40">
+         <itemlocation>
+            <x>28</x>
+            <y>616</y>
+         </itemlocation>
+         <value>justify and explain reason for delay of corrective action.)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_41">
+         <itemlocation>
+            <x>4</x>
+            <y>869</y>
+         </itemlocation>
+         <value>10. COMPENSATORY MEASURES</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_42">
+         <itemlocation>
+            <x>4</x>
+            <y>970</y>
+         </itemlocation>
+         <value>11. PROPOSED CORRECTIVE ACTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_43">
+         <itemlocation>
+            <x>4</x>
+            <y>1063</y>
+         </itemlocation>
+         <value>12. ESTIMATED COST OF CORRECTION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_44">
+         <itemlocation>
+            <x>320</x>
+            <y>1063</y>
+         </itemlocation>
+         <value>13. PROJECT NUMBER AND PRIORITY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_45">
+         <itemlocation>
+            <x>620</x>
+            <y>1063</y>
+         </itemlocation>
+         <value>14. ESTIMATED CORRECTION DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_46">
+         <itemlocation>
+            <x>4</x>
+            <y>1111</y>
+         </itemlocation>
+         <value>15. COORDINATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_47">
+         <itemlocation>
+            <x>36</x>
+            <y>1127</y>
+         </itemlocation>
+         <value>(Initials and office symbols)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_48">
+         <itemlocation>
+            <x>4</x>
+            <y>1156</y>
+         </itemlocation>
+         <value>16. TYPED/STAMPED NAME AND GRADE OF REQUESTER/
+INITIATOR</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_49">
+         <itemlocation>
+            <x>746</x>
+            <y>1176</y>
+         </itemlocation>
+         <value>18. DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_50">
+         <itemlocation>
+            <x>420</x>
+            <y>1176</y>
+         </itemlocation>
+         <value>17. SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_51">
+         <itemlocation>
+            <x>16</x>
+            <y>1262</y>
+         </itemlocation>
+         <value>AF IMT 116, 20130206, V2</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>10</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_52">
+         <itemlocation>
+            <x>416</x>
+            <y>1261</y>
+         </itemlocation>
+         <value>PREVIOUS EDITIONS ARE OBSOLETE.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>1</x>
+            <y>45</y>
+            <width>959</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_2">
+         <itemlocation>
+            <x>959</x>
+            <y>45</y>
+            <width>2</width>
+            <height>1213</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_3">
+         <itemlocation>
+            <x>1</x>
+            <y>1256</y>
+            <width>959</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_4">
+         <itemlocation>
+            <x>0</x>
+            <y>45</y>
+            <width>2</width>
+            <height>1213</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_5">
+         <itemlocation>
+            <x>1</x>
+            <y>115</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_7">
+         <itemlocation>
+            <x>1</x>
+            <y>177</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_8">
+         <itemlocation>
+            <x>1</x>
+            <y>196</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_10">
+         <itemlocation>
+            <x>1</x>
+            <y>217</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_12">
+         <itemlocation>
+            <x>1</x>
+            <y>236</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_13">
+         <itemlocation>
+            <x>1</x>
+            <y>257</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_16">
+         <itemlocation>
+            <x>1</x>
+            <y>326</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_18">
+         <itemlocation>
+            <x>1</x>
+            <y>390</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_19">
+         <itemlocation>
+            <x>1</x>
+            <y>511</y>
+            <width>960</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_20">
+         <itemlocation>
+            <x>0</x>
+            <y>602</y>
+            <width>961</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_21">
+         <itemlocation>
+            <x>1</x>
+            <y>870</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_23">
+         <itemlocation>
+            <x>1</x>
+            <y>968</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_25">
+         <itemlocation>
+            <x>1</x>
+            <y>1063</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_27">
+         <itemlocation>
+            <x>1</x>
+            <y>1107</y>
+            <width>960</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_28">
+         <itemlocation>
+            <x>1</x>
+            <y>1154</y>
+            <width>959</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_33">
+         <itemlocation>
+            <x>208</x>
+            <y>1107</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_38">
+         <itemlocation>
+            <x>304</x>
+            <y>115</y>
+            <width>1</width>
+            <height>63</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_40">
+         <itemlocation>
+            <x>316</x>
+            <y>1063</y>
+            <width>1</width>
+            <height>90</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_44">
+         <itemlocation>
+            <x>416</x>
+            <y>1107</y>
+            <width>1</width>
+            <height>151</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_45">
+         <itemlocation>
+            <x>484</x>
+            <y>45</y>
+            <width>1</width>
+            <height>71</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_46">
+         <itemlocation>
+            <x>516</x>
+            <y>1107</y>
+            <width>1</width>
+            <height>46</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_51">
+         <itemlocation>
+            <x>604</x>
+            <y>115</y>
+            <width>1</width>
+            <height>63</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_53">
+         <itemlocation>
+            <x>616</x>
+            <y>1063</y>
+            <width>1</width>
+            <height>90</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_55">
+         <itemlocation>
+            <x>700</x>
+            <y>45</y>
+            <width>1</width>
+            <height>71</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_56">
+         <itemlocation>
+            <x>716</x>
+            <y>1107</y>
+            <width>1</width>
+            <height>46</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_59">
+         <itemlocation>
+            <x>816</x>
+            <y>1107</y>
+            <width>1</width>
+            <height>46</height>
+         </itemlocation>
+      </line>
+      <box sid="BOX25360">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>21</x>
+            <y>198</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX243">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>185</x>
+            <y>198</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX90964">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>352</x>
+            <y>198</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX95786">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>520</x>
+            <y>198</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX52507">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>752</x>
+            <y>198</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX17431">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>21</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX26551">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>185</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX45596">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>352</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX74625">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>520</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX14145">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>620</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX71762">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>752</x>
+            <y>238</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <data sid="af_logo_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\grey_logo.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2ZMWgjVxCGne6qoFLtkSaGFBIcQYZLYcEVMbiIwYUPUhiRwhw5COKKQ1wThAsh
+UhiRwiwpDHvFgVQE5OJAaS4ohUEuDtaFYF2o2MLFFi62UKF8syM/rWRxWp1WMoIbVqDdnTfvf/Pm
+zfvnbX735TcboXzP71t+P/DL8vtqIx0+z/H+36/1dyf+eso64x70A+fcbv9Zbp9Wvct2cOs7f9uD
+/mAQBJ2GxfPOOyvwfe9jh7foe1cOCtoeBb/nuh+a3lWHhmgObgN5TpMbT4xjJGw+kq5DR5h1zutD
+hYYo6x+sSReXbdE5rbr/tfQWI3rpkw3to7b9WN41rOqTlH/tSPf9gfuh1aoUgVt/9bz5uoCCe9HW
+jquZlH20Z/+yU32apkv+gMO/dnlOx62Tkv1zHnegy9ty5hFNhqDRyaWxzxN0sB/c+NVcCsudtzXr
+pyzDxgvoOO/r7kULywBAzTrIu/80ubgd4qZL+zAvffh++btRHziAEdd/3bMOtpyGHXVZ/WiPVs3f
+XzSPi9wa3EC0D3fo3trfUn8rbhSwIw5r2LVnmzhF/BUCRQHcjIEm1m4Wr7WOi9xGuwN37dlj3Mel
+vpuCmxlXbUaMNrcyNcZhoTBu+uAt3URx42/s4hIcho7BjQt5G3ge1phSDOJmBg8O9bfETNfBIGMj
+CJlGCbwbT8wygZUi7pC+rp3AxDdWZOJCB7cqJfWT3N4GrT9KREjzzYsJ3DLa0zIOG46wYTOnWCRC
+aMLVOathTXDf+vpEHob6dIdBzIKJt/TSPimrAtMbhMsD6PVXBUbVPqsSb7gA6HqpO9Y5n6yjfMG9
+WvmCe7WyRNxst2zAusUkLkvBDVaSMdsNu1j9t+fB7BZzyxJw91x2aRCbSzZdJTbJScK4hTD2XPjM
+JO7LNtATjJnEcLM/s3XDPYKQGE/ECYihUMIxQpq6uCSDGyIFzVLvGuYo6/LdcF1C2fUthAm6tniP
+CeAW+pZJmaiAr+pzCJApL6BQ0chhNhbsNAHc8EcYqcEEg4XlQeX01trPQgyjEc8T3P/wuP0wfCGu
+5UxKw0A4d8S7UsV97NTCQKLUUH67oCSZT6TgCJcd/qYUMLi1smLhwtGT6mtZ+6UEfS5N3LdOysuw
+nwTunksGZDmai6qHYJATAa7BoPPWir4lM+q5wEPiJpqJ6Wg0N98UKOpGJdx5nTihqNN0Ply7mVT7
+r+rD4KYuZJFFEcuiPK+T/vjDpQcp1kEexKxafFz7cTOqTzVNpbxS3PTH/hcFAT7cTN06SiMUsD3X
+uFny+rVj8uOQAoTnNqvDPebpzCMCmmRCYh7bXE5KRNEESnKinC7l0mMDXhFuz4OHGM6kPDua+AR0
+pah5mkA3yuODHO1EenS2dNytSmk09V2mvjDp1PCIYyRdZyKo5DjqahRUwreWjVuPxXChLLWLaUvt
+ZspSm7KIc2lyvCzibYmZeaN8btzsIzgvPC8tVyOpjQAgtX2aYZNt7iVNOQmT08OjvSXi1kMz7Wks
+NnY34zrMc+3DsWoIAixeOKveP8pLDDdLzczsyGevC4xnDiP9wQSt1ajTfJ88bjn1PC6Ox2jKMOx5
+ZcraONqJD3wO3MJUo/O7vzXXzN4XUMJVJqYuZtu4uCkZSdWjHEx67idzvkAtZxJ8+LUjVgEaFzfW
+h6a35UDeTa44l1Kf8vQuwZMu47SKhZvI1mqFEIRjMJuG7i0u4JavHV2nGS4eqOLUHWBCYuHWypf0
+LJxuN8uOONfanyng1gJPEzz78cwmsXAr0we31u0LUuf7Aj8ZBsmxbEPQh5kun41bHIutu4pdPvwl
+g3ZMTMEvmzH16CxeHtffJlXJB64lCGs9svtmZyarWLhhqmajWYazfT2Iu2O2ceIwXj7B6IGQisXP
+mT4hLMphHMZY9HHzt9CSJ6nPLgfjCN6Bn8U8t5hvn/9cSHFFz7riaK7t953/ATisIIluIwAA</mimedata>
+      </data>
+      <data sid="toolbar_bg_grey">
+         <filename>C:\Documents and Settings\spugh\My Documents\My Pictures\new toolbar\toolbar_bg_long.bmp</filename>
+         <mimedata encoding="base64-gzip">H4sIAAAAAAAAC+2dsY4cRRCG10SIABE6dYYlAiytEAgnWCIAyQGWCDiJACEHDvwWhBf6eYh4BF4B
+Ul6Bu927vb3Z7uqq6Z6ump7v029h6q6LPpvr6qt/evrV60/+fbK75aubX5/f/Przo93u25t/Ptk9
+PcT//ufJ7q9Pd4df9/wHAAAAoIa9AwAAAFhw2jv88cXHCKGCvpzos6n2JX39tKyXEz27fvksGdcH
+cxmscW3QMrEHfZdQatT9wNtPeH79vVE/nOtFQq+L+ub6p5R+nuhVQr8cFCqPnKTVVLP68frXqT68
+fYNM8tg7KL5RRpZ/OQolv9pYrCFn6lMiMovl8gvnVL8dlIzrg63iyqBpYnd6c9KHMwl/Jvml9OrD
+u3ud/17Q+3P9nlTnlRnABJ4FAAAAWOi+d/D/WReh+Jp2ZJZpyuSa8y+fpW0FdbBVXBk0TUzuNKWS
+n0bVuBXdDYvzflOoPHKSVlNNNt0yfTd3C2BF8tg73P4f4W0ZxDIsblb3y7Iws5hkKkxljQpb9Po4
+EQ3W/mBOxEW7ftKxP60Qybg+2CquDJomltKDmyCNunMlHg9UmhS4FTAWeBYAAABgoePewb8PHE37
+WT/Yo/Wq2JQpdmT2HToyh6ZM+XPmZbDGm6vUbBIGHttPcqNK37Qqdiq1vSpFoypUHjlJq6laenPu
+RsAq5LF3ODt5s2lNK8mdZ6FwGcpGQMYaqCxlA9fGesOiZu1f3sK1ni+YLhXJuD7YKq4Mmib2SBem
+gzBq6lkY3QqFYdFhNQZoAp4FAAAAWOiyd/DvFccUnsWmtK5HSJNxfbBVXBk0TUxuNiWSn7eiXhS6
+VH0esbV270PlqfUs2j9M7G4HBJfH3uHgVlgMC/m7SnWkqWnOGR/ND5kWk73OZdDUnFwhqixlA9fG
+Tb3oyWpYvBVtBU2wVVwZNE3sQSlbQRj14Fm0P16x6DoM0Bw8CwAAALCw8N7Bv1EcWXgWG5H3i57m
+PEJathXEYKu4MmiamNxpEkYdW07uLwSZ0bQKlafBOYuur0Fxtwwc5bF3OK6asmFx+IRpS3/2R5fI
+af2oPORmOTnVk9vf70sug77m5KpQZSkbuDb6Lv9hj1dsRXnTQRiVfDcUbgVsEjwLAAAAsLBw3wFJ
+wrPYguo7Mn3eeTHpvyTj+mCruDJompjcbBJGyZ5FnxeCzGtahcojJwnYp/NvkznIY+/gv1qvRXvR
+ZTDVnFwhqixlA9dGx+U/8vGKTUi0GISBRwPilKTasGi+9gJ0A88CAAAALNB38O07uM8BLadVXyma
+jOuDreLKoGlicqdJGCV4FjGPV+RsAt88chL/4xUXfTr/TllXeewd/FfrdWmfcRlm1JxcFaosZQPX
+Rqtbsdb3QZWv296cZJdBGPj+5FnUvg+q4aoL4AKeBQAAAFig7+DYdHCfA+qm1TVo9G9bMmWwxpVB
+08Tk3pMwKmlYxHkflNCuCpVHThLneMX2OnQee4fy8+dn30n+C3kE7VPVY17N4TILLrNoftoid+WE
+MtgqrgyaJnanjNEgjHp3VX+8osl6C+AOngUAAABYaLR38P8xfnXCs9iIVvrC7oKtUAq2iiuDponJ
+nSZh1KVn4fM+KHuXKlQeOQmvQfGQx96hfMX2xfeT/3LuIS6ziFUbI5+26OPibmNRTEn0HYSBdddt
+V660AKHAswAAAAAL1XsH95/n1yo8iy1ovS/sTsb1wVZxZdA0MbnZJIw69yziHK/QNKpC5ZGT8BqU
+vvLYO9z+JVuOV9zr+eIL9iq0F10GLrPgMgtc3IVU824o3AqAA3gWAAAAYKFi7+D/o/uqhWcxttb+
+wu70lRPqYKu4MmiamNxpEkadPAuHFlXdY7Wh8hSS8CRxJ3nsHQ5uhfl4xdGwwLO4057LLMK8DyrI
+8YpALq7Yulcpl8Eab66S7yAMlD2LlGFRuTwDhAXPAgAAACzM2jv4/9C+dmFYbFDr6tQk4/pgLoM1
+rg1aJiZ3oIQ/E/e21OzOVKg8chKvZpyrfdBZHnuH4ypYNCz81+ngujUaLqrHzJqTKUSVpWzGF7Wu
+2oiLIbsYybg+2CquDJom9kip+yxyo3Q3VuBWwBbAswAAAAALs/oOqFZ4FltTsSkT5EUY6Qusc7ZC
+PtgqrgyaJiY3mxLJzz+hz5GKWR0ooQkVKo+chCMVS8pj7+C/+o6kO89C4TKUjYCMNVBZyqxf0epq
+Y41h0adc+C6cW7iDO3nmQr6DW2FYNFyeAcKCZwEAAAAW6Du4CM9iU1rjI6TJuD7YKq4MmiYmN5uE
+Uas7XnFpE0TIIyfh5ezLyGPv4L/0jqe9zmXQ1JxcIaosZaYvZ421UWVYDHO8YusL54Uq7uDOGxbN
+l2eAsOBZAAAAgAX6Di7Cs9iI+rzzYtqRuWjKzHiEVLIVFMFWcWXQNDH50VhhVMwOlKYJFSqPnMT9
+KeHh5LF3WOLeislN3JeffP6vpo8ukdP6UeWQqddQc/1ErgpVlrLha2OxhngZFiyci6viDm7cCoAD
+eBYAAABgQdw7+Ld8RxWexRZU35Hp886LZBcmGdcHW8WVQdPE5GaTMGrBF3zMcCssj8yGylP+unhK
+uI089g7HxY97K5bSXnQZTDUnV4gqS9nwtdFqWIQoF90WTu7gTg1MGRaLLs8AYcGzAAAAAAti3wEt
+JTyLsTXSlaKjKtdpkobEOV5hbEKFylN4FLhh3019a+xw8tg7+K+7W9A+4zLMqDm5KlRZyuT5j1Qb
+gxyvcLxuO9nVT8b1wVwGa1wbtExM0Pu8pfIOtwLgATwLAAAAsEDfwUV4FgNrpCtFR5XQbBJGhbg/
+9dWcd3yEyiMnaTVV3Ip+ewf/RXc7SlaMeTWn+N9qnnak2sh129M+f/K4wVXKVhCDreLKoGligmEx
+9SyuHg3ErQC4B88CAAAALNzvHfx/FN+U8CxG1TCPkA4sudM007MIebzi1IQKlUdO0mqq2zMsnPYO
+AAAAABrYOwAAAICF3e5/xgnXsArmAQA=</mimedata>
+      </data>
+      <check sid="Facility">
+         <itemlocation>
+            <x>22</x>
+            <y>199</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>3. Check if A. Facility.&#xD;
+To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</acclabel>
+         <value>off</value>
+         <help>Facility_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Equip.value','off') + set('Proced.value','off') + set('Post.value','off') + set('Other.value','off')) : ''"></custom:push_value>
+         <next>Equip</next>
+         <previous>From</previous>
+      </check>
+      <help sid="Facility_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="Equip">
+         <itemlocation>
+            <x>186</x>
+            <y>199</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check if B. Equipment.&#xD;
+To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</acclabel>
+         <value>off</value>
+         <help>Equip_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Facility.value','off') + set('Proced.value','off') + set('Post.value','off') + set('Other.value','off')) : ''"></custom:push_value>
+         <next>Proced</next>
+         <previous>Facility</previous>
+      </check>
+      <help sid="Equip_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="Proced">
+         <itemlocation>
+            <x>353</x>
+            <y>199</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check if C. Procedural. &#xD;
+To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</acclabel>
+         <value>off</value>
+         <help>Proced_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Facility.value','off') + set('Equip.value','off') + set('Post.value','off') + set('Other.value','off')) : ''"></custom:push_value>
+         <next>Post</next>
+         <previous>Equip</previous>
+      </check>
+      <help sid="Proced_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="Post">
+         <itemlocation>
+            <x>521</x>
+            <y>199</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check if D. Post or patrol. &#xD;
+To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</acclabel>
+         <value>off</value>
+         <help>Post_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Facility.value','off') + set('Equip.value','off') + set('Proced.value','off') + set('Other.value','off')) : ''"></custom:push_value>
+         <next>Other</next>
+         <previous>Proced</previous>
+      </check>
+      <help sid="Post_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="Other">
+         <itemlocation>
+            <x>753</x>
+            <y>199</y>
+            <width>16</width>
+            <height>16</height>
+         </itemlocation>
+         <acclabel>Check if E. Other. &#xD;
+To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</acclabel>
+         <value>off</value>
+         <help>Other_HELP</help>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>18</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <custom:push_value xfdl:compute="toggle(value, 'off', 'on') == '1' ? (set('Facility.value','off') + set('Equip.value','off') + set('Proced.value','off') + set('Post.value','off')) : ''"></custom:push_value>
+         <next>Permanent</next>
+         <previous>Post</previous>
+      </check>
+      <help sid="Other_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Permanent_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Temp_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Tech_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Initial_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Exten_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="Cancel_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <line sid="LINE_111">
+         <itemlocation>
+            <x>42</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>180</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE12">
+         <itemlocation>
+            <x>347</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE13">
+         <itemlocation>
+            <x>515</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE14">
+         <itemlocation>
+            <x>747</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>42</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>206</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>206</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>373</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>541</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>541</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>773</x>
+            <y>196</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>773</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE15">
+         <itemlocation>
+            <x>747</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE16">
+         <itemlocation>
+            <x>615</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE17">
+         <itemlocation>
+            <x>515</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE18">
+         <itemlocation>
+            <x>347</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE19">
+         <itemlocation>
+            <x>180</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>641</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>373</x>
+            <y>236</y>
+            <width>1</width>
+            <height>22</height>
+         </itemlocation>
+      </line>
+      <field sid="FIELD1">
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <itemlocation>
+            <x>19</x>
+            <y>886</y>
+            <width>896</width>
+            <height>81</height>
+         </itemlocation>
+         <value></value>
+         <border>off</border>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <scrollvert>fixed</scrollvert>
+         <acclabel>Compensatory Measures</acclabel>
+         <next>Action</next>
+         <previous>Justif</previous>
+         <xforms:textarea ref="instance('Generated')/afimt116page1/field1">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <check sid="CHECK1">
+         <itemlocation>
+            <x>22</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK2">
+         <itemlocation>
+            <x>186</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK3">
+         <itemlocation>
+            <x>353</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK4">
+         <itemlocation>
+            <x>521</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK5">
+         <itemlocation>
+            <x>624</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK6">
+         <itemlocation>
+            <x>753</x>
+            <y>234</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <button sid="SIGNATURE1">
+         <itemlocation>
+            <x>426</x>
+            <y>1216</y>
+            <width>283</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE1_113149089</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <designer:design>
+            <designer:designValue key="signatureAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>AFIMT116PAGE1.LABEL1</itemref>
+            <itemref>AFIMT116PAGE2.CHECK1</itemref>
+            <itemref>AFIMT116PAGE2.CHECK2</itemref>
+            <itemref>AFIMT116PAGE2.CHECK4</itemref>
+            <itemref>AFIMT116PAGE2.CHECK5</itemref>
+            <itemref>AFIMT116PAGE2.CHECK6</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE2</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE2_DATE</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE3</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE3_DATE</itemref>
+            <itemref>AFIMT116PAGE2.CHECK10</itemref>
+            <itemref>AFIMT116PAGE2.CHECK9</itemref>
+            <itemref>AFIMT116PAGE2.CHECK8</itemref>
+            <itemref>AFIMT116PAGE2.CHECK7</itemref>
+            <itemref>AFIMT116PAGE2.CHECK3</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE1_1376838578</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE1_1497613389</itemref>
+         </signitemrefs>
+         <signinstance>
+            <filter>omit</filter>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/toa</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/froma</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/comments</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc_2</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc_3</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc_4</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/revoff</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc_5</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordc_6</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/copiesto</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/fromb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/tob</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/actionb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/commentb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordd</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_2</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_3</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_4</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_5</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_6</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/apprauth</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page1/rqsintr</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/field1</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/field2</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/calendar1</ref>
+            </dataref>
+         </signinstance>
+      </button>
+      <label sid="SIGNATURE1_DATE">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <value compute="toggle(SIGNATURE1.signer)=='1' ? SIGNATURE1.signer == '' ? '' : tolower(SIGNATURE1.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <itemlocation>
+            <after>SIGNATURE1</after>
+            <alignb2b>SIGNATURE1</alignb2b>
+            <width>150</width>
+         </itemlocation>
+         <format>
+            <datatype>date</datatype>
+         </format>
+      </label>
+      <field sid="FIELD2">
+         <xforms:textarea ref="instance('Generated')/afimt116page1/field2">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+         <itemlocation>
+            <x>22</x>
+            <y>1196</y>
+            <width>375</width>
+            <height>48</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <border>off</border>
+      </field>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>715</x>
+            <y>89</y>
+            <width>125</width>
+         </itemlocation>
+         <value compute="AFIMT116PAGE2.CALENDAR1.value"></value>
+      </label>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+   <page sid="AFIMT116PAGE2">
+      <global sid="global">
+         <label>AF IMT 116 PAGE2</label>
+      </global>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>182</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>259</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>336</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>413</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>105</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>554</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE1.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">on</visible>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE3.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>631</x>
+            <y>15</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE3.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE2.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE2.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">on</visible>
+         <next>ToA</next>
+         <printvisible>off</printvisible>
+      </button>
+      <field sid="ToA">
+         <itemlocation>
+            <x>17</x>
+            <y>80</y>
+            <width>296</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Reviewing official.&#xD;
+To</acclabel>
+         <value></value>
+         <previous>Close_BUTTON</previous>
+         <next>FromA</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/toa">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="FromA">
+         <itemlocation>
+            <x>316</x>
+            <y>80</y>
+            <width>297</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>From</acclabel>
+         <value></value>
+         <previous>ToA</previous>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>CHECK3</next>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/froma">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="Comments">
+         <itemlocation>
+            <x>17</x>
+            <y>143</y>
+            <width>920</width>
+            <height>151</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>20. Comments</acclabel>
+         <value></value>
+         <previous>VarianA</previous>
+         <next>CoordB</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/comments">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordB">
+         <itemlocation>
+            <x>208</x>
+            <y>297</y>
+            <width>105</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>21. Coordination&#xD;
+Column 1</acclabel>
+         <value></value>
+         <previous>Comments</previous>
+         <next>CoordC</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordb">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC">
+         <itemlocation>
+            <x>316</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 2</acclabel>
+         <value></value>
+         <previous>CoordB</previous>
+         <next>CoordC_2</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC_2">
+         <itemlocation>
+            <x>416</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 3</acclabel>
+         <value></value>
+         <previous>CoordC</previous>
+         <next>CoordC_3</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc_2">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC_3">
+         <itemlocation>
+            <x>516</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 4</acclabel>
+         <value></value>
+         <previous>CoordC_2</previous>
+         <next>CoordC_4</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc_3">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC_4">
+         <itemlocation>
+            <x>616</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 5</acclabel>
+         <value></value>
+         <previous>CoordC_3</previous>
+         <next>CoordC_5</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc_4">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC_5">
+         <itemlocation>
+            <x>715</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 6</acclabel>
+         <value></value>
+         <previous>CoordC_4</previous>
+         <next>CoordC_6</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc_5">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordC_6">
+         <itemlocation>
+            <x>816</x>
+            <y>297</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 7</acclabel>
+         <value></value>
+         <previous>CoordC_5</previous>
+         <next>CalDtD</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordc_6">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <help sid="CalDtD_HELP">
+         <value>Enter date as YYYYMMDD.</value>
+      </help>
+      <field sid="ToB">
+         <itemlocation>
+            <x>17</x>
+            <y>461</y>
+            <width>296</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Approval authority&#xD;
+To</acclabel>
+         <value></value>
+         <previous>RevOff</previous>
+         <next>FromB</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/tob">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="FromB">
+         <itemlocation>
+            <x>316</x>
+            <y>461</y>
+            <width>297</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>From</acclabel>
+         <value></value>
+         <previous>ToB</previous>
+         <next>CopiesTo</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/fromb">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CopiesTo">
+         <itemlocation>
+            <x>616</x>
+            <y>461</y>
+            <width>297</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Copies To</acclabel>
+         <value></value>
+         <previous>FromB</previous>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <next>ApprovB</next>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/copiesto">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="ActionB">
+         <itemlocation>
+            <x>14</x>
+            <y>569</y>
+            <width>548</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>26. Returned for further action</acclabel>
+         <value></value>
+         <previous>VarianB</previous>
+         <next>CalDtE</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/actionb">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <help sid="CalDtE_HELP">
+         <value>Enter date as YYYYMMDD</value>
+      </help>
+      <field sid="CommentB">
+         <itemlocation>
+            <x>17</x>
+            <y>631</y>
+            <width>896</width>
+            <height>109</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>28. Comments</acclabel>
+         <value></value>
+         <previous>CalDtE</previous>
+         <next>CoordD</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/commentb">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordD">
+         <itemlocation>
+            <x>208</x>
+            <y>748</y>
+            <width>105</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>29. Coordination.&#xD;
+Column 1</acclabel>
+         <value></value>
+         <previous>CommentB</previous>
+         <next>CoordE</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coordd">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE">
+         <itemlocation>
+            <x>316</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 2</acclabel>
+         <value></value>
+         <previous>CoordD</previous>
+         <next>CoordE_2</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE_2">
+         <itemlocation>
+            <x>416</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 3</acclabel>
+         <value></value>
+         <previous>CoordE</previous>
+         <next>CoordE_3</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde_2">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE_3">
+         <itemlocation>
+            <x>516</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 4</acclabel>
+         <value></value>
+         <previous>CoordE_2</previous>
+         <next>CoordE_4</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde_3">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE_4">
+         <itemlocation>
+            <x>616</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 5</acclabel>
+         <value></value>
+         <previous>CoordE_3</previous>
+         <next>CoordE_5</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde_4">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE_5">
+         <itemlocation>
+            <x>716</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 6</acclabel>
+         <value></value>
+         <previous>CoordE_4</previous>
+         <next>CoordE_6</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde_5">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CoordE_6">
+         <itemlocation>
+            <x>816</x>
+            <y>748</y>
+            <width>97</width>
+            <height>41</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>Column 7</acclabel>
+         <value></value>
+         <previous>CoordE_5</previous>
+         <next>CalDtF</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/coorde_6">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <field sid="CalDtF">
+         <itemlocation>
+            <x>20</x>
+            <y>929</y>
+            <width>927</width>
+            <height>301</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>30. Date.&#xD;
+Enter date as Y Y Y Y M M D D.</acclabel>
+         <value></value>
+         <help>AFIMT116PAGE1.CalDtC_HELP</help>
+         <previous>CoordE_6</previous>
+         <next>ApprAuth</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <xforms:textarea ref="instance('Generated')/afimt116page2/caldtf">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <label sid="LABEL_53">
+         <itemlocation>
+            <x>393</x>
+            <y>40</y>
+         </itemlocation>
+         <value>REVIEWING OFFICIAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_54">
+         <itemlocation>
+            <x>6</x>
+            <y>59</y>
+         </itemlocation>
+         <value>TO:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_55">
+         <itemlocation>
+            <x>318</x>
+            <y>59</y>
+         </itemlocation>
+         <value>FROM:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_56">
+         <itemlocation>
+            <x>618</x>
+            <y>59</y>
+         </itemlocation>
+         <value>19. RECOMMEND</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_57">
+         <itemlocation>
+            <x>798</x>
+            <y>59</y>
+         </itemlocation>
+         <value>PERMANENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_58">
+         <itemlocation>
+            <x>642</x>
+            <y>81</y>
+         </itemlocation>
+         <value>APPROVAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_59">
+         <itemlocation>
+            <x>798</x>
+            <y>81</y>
+         </itemlocation>
+         <value>TEMPORARY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_60">
+         <itemlocation>
+            <x>642</x>
+            <y>102</y>
+         </itemlocation>
+         <value>DISAPPROVAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_61">
+         <itemlocation>
+            <x>798</x>
+            <y>102</y>
+         </itemlocation>
+         <value>TECHNICAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_62">
+         <itemlocation>
+            <x>6</x>
+            <y>122</y>
+         </itemlocation>
+         <value>20. COMMENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_63">
+         <itemlocation>
+            <x>6</x>
+            <y>298</y>
+         </itemlocation>
+         <value>21. COORDINATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_64">
+         <itemlocation>
+            <x>24</x>
+            <y>311</y>
+         </itemlocation>
+         <value>(Initials and office symbols)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_65">
+         <itemlocation>
+            <x>5</x>
+            <y>342</y>
+         </itemlocation>
+         <value>22.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_66">
+         <itemlocation>
+            <x>31</x>
+            <y>338</y>
+         </itemlocation>
+         <value>TYPED/STAMPED NAME AND GRADE OF REVIEWING
+OFFICIAL</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_67">
+         <itemlocation>
+            <x>720</x>
+            <y>342</y>
+         </itemlocation>
+         <value>24. DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_68">
+         <itemlocation>
+            <x>380</x>
+            <y>342</y>
+         </itemlocation>
+         <value>23. SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_70">
+         <itemlocation>
+            <x>8</x>
+            <y>440</y>
+         </itemlocation>
+         <value>TO:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_71">
+         <itemlocation>
+            <x>318</x>
+            <y>440</y>
+         </itemlocation>
+         <value>FROM:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_72">
+         <itemlocation>
+            <x>618</x>
+            <y>438</y>
+         </itemlocation>
+         <value>COPIES TO:</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_73">
+         <itemlocation>
+            <x>8</x>
+            <y>504</y>
+         </itemlocation>
+         <value>25. I have been briefed and accept the risk associated with the foregoing deviation from security policy.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_74">
+         <itemlocation>
+            <x>41</x>
+            <y>527</y>
+         </itemlocation>
+         <value>APPROVAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_75">
+         <itemlocation>
+            <x>221</x>
+            <y>527</y>
+         </itemlocation>
+         <value>DISAPPROVAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_76">
+         <itemlocation>
+            <x>401</x>
+            <y>527</y>
+         </itemlocation>
+         <value>PERMANENT</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_77">
+         <itemlocation>
+            <x>581</x>
+            <y>527</y>
+         </itemlocation>
+         <value>TEMPORARY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_78">
+         <itemlocation>
+            <x>761</x>
+            <y>527</y>
+         </itemlocation>
+         <value>TECHNICAL</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_79">
+         <itemlocation>
+            <x>8</x>
+            <y>548</y>
+         </itemlocation>
+         <value>26. RETURNED FOR FURTHER ACTION </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_80">
+         <itemlocation>
+            <x>239</x>
+            <y>548</y>
+         </itemlocation>
+         <value>(See comments in Item 28)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_81">
+         <itemlocation>
+            <x>570</x>
+            <y>549</y>
+         </itemlocation>
+         <value>27. EXPIRATION DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_82">
+         <itemlocation>
+            <x>694</x>
+            <y>549</y>
+         </itemlocation>
+         <value> (Complete, fill in Item 2)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_83">
+         <itemlocation>
+            <x>8</x>
+            <y>611</y>
+         </itemlocation>
+         <value>28. COMMENTS</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_84">
+         <itemlocation>
+            <x>8</x>
+            <y>748</y>
+         </itemlocation>
+         <value>29. COORDINATION</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_85">
+         <itemlocation>
+            <x>29</x>
+            <y>760</y>
+         </itemlocation>
+         <value>(Initials and office symbols)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_86">
+         <itemlocation>
+            <x>8</x>
+            <y>794</y>
+         </itemlocation>
+         <value>30.</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_87">
+         <itemlocation>
+            <x>33</x>
+            <y>794</y>
+         </itemlocation>
+         <value>TYPED/STAMPED NAME AND GRADE OF APPROVAL
+AUTHORITY</value>
+         <linespacing>-1</linespacing>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_88">
+         <itemlocation>
+            <x>756</x>
+            <y>796</y>
+         </itemlocation>
+         <value>32. DATE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_89">
+         <itemlocation>
+            <x>417</x>
+            <y>796</y>
+         </itemlocation>
+         <value>31. SIGNATURE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_90">
+         <itemlocation>
+            <x>8</x>
+            <y>894</y>
+         </itemlocation>
+         <value>33. ADDITIONAL INFORMATION, AS REQUIRED</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_91">
+         <itemlocation>
+            <x>275</x>
+            <y>894</y>
+         </itemlocation>
+         <value> (Identify by Item No.)  </value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>7</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_92">
+         <itemlocation>
+            <x>14</x>
+            <y>1260</y>
+         </itemlocation>
+         <value>AF IMT 116, 20130206, V2</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_93">
+         <itemlocation>
+            <x>192</x>
+            <y>1260</y>
+         </itemlocation>
+         <value> REVERSE</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_60">
+         <itemlocation>
+            <x>3</x>
+            <y>39</y>
+            <width>958</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_61">
+         <itemlocation>
+            <x>958</x>
+            <y>39</y>
+            <width>2</width>
+            <height>1219</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_62">
+         <itemlocation>
+            <x>3</x>
+            <y>1257</y>
+            <width>956</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_63">
+         <itemlocation>
+            <x>2</x>
+            <y>39</y>
+            <width>2</width>
+            <height>1220</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_65">
+         <itemlocation>
+            <x>3</x>
+            <y>58</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_68">
+         <itemlocation>
+            <x>614</x>
+            <y>79</y>
+            <width>347</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_71">
+         <itemlocation>
+            <x>614</x>
+            <y>101</y>
+            <width>345</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_72">
+         <itemlocation>
+            <x>3</x>
+            <y>122</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_75">
+         <itemlocation>
+            <x>3</x>
+            <y>295</y>
+            <width>957</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_76">
+         <itemlocation>
+            <x>3</x>
+            <y>339</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_77">
+         <itemlocation>
+            <x>3</x>
+            <y>420</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_79">
+         <itemlocation>
+            <x>3</x>
+            <y>503</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_80">
+         <itemlocation>
+            <x>3</x>
+            <y>525</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_81">
+         <itemlocation>
+            <x>3</x>
+            <y>548</y>
+            <width>957</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_82">
+         <itemlocation>
+            <x>2</x>
+            <y>611</y>
+            <width>957</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_84">
+         <itemlocation>
+            <x>3</x>
+            <y>744</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_85">
+         <itemlocation>
+            <x>3</x>
+            <y>791</y>
+            <width>958</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_86">
+         <itemlocation>
+            <x>3</x>
+            <y>893</y>
+            <width>958</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_90">
+         <itemlocation>
+            <x>206</x>
+            <y>295</y>
+            <width>1</width>
+            <height>44</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_92">
+         <itemlocation>
+            <x>206</x>
+            <y>746</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_93">
+         <itemlocation>
+            <x>314</x>
+            <y>58</y>
+            <width>1</width>
+            <height>65</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_94">
+         <itemlocation>
+            <x>314</x>
+            <y>295</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_95">
+         <itemlocation>
+            <x>314</x>
+            <y>438</y>
+            <width>1</width>
+            <height>66</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_96">
+         <itemlocation>
+            <x>314</x>
+            <y>744</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_97">
+         <itemlocation>
+            <x>414</x>
+            <y>295</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_98">
+         <itemlocation>
+            <x>414</x>
+            <y>745</y>
+            <width>1</width>
+            <height>149</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_99">
+         <itemlocation>
+            <x>514</x>
+            <y>295</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_100">
+         <itemlocation>
+            <x>514</x>
+            <y>744</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_101">
+         <itemlocation>
+            <x>566</x>
+            <y>548</y>
+            <width>1</width>
+            <height>64</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_102">
+         <itemlocation>
+            <x>376</x>
+            <y>339</y>
+            <width>1</width>
+            <height>82</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_104">
+         <itemlocation>
+            <x>614</x>
+            <y>58</y>
+            <width>1</width>
+            <height>65</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_105">
+         <itemlocation>
+            <x>614</x>
+            <y>295</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_106">
+         <itemlocation>
+            <x>614</x>
+            <y>439</y>
+            <width>1</width>
+            <height>65</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_107">
+         <itemlocation>
+            <x>614</x>
+            <y>745</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_108">
+         <itemlocation>
+            <x>638</x>
+            <y>79</y>
+            <width>1</width>
+            <height>44</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE1">
+         <itemlocation>
+            <x>41</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE2">
+         <itemlocation>
+            <x>221</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE3">
+         <itemlocation>
+            <x>401</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE4">
+         <itemlocation>
+            <x>581</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE5">
+         <itemlocation>
+            <x>761</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE6">
+         <itemlocation>
+            <x>735</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE7">
+         <itemlocation>
+            <x>555</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE8">
+         <itemlocation>
+            <x>375</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE9">
+         <itemlocation>
+            <x>195</x>
+            <y>525</y>
+            <width>1</width>
+            <height>24</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_110">
+         <itemlocation>
+            <x>714</x>
+            <y>745</y>
+            <width>1</width>
+            <height>47</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_111">
+         <itemlocation>
+            <x>770</x>
+            <y>58</y>
+            <width>1</width>
+            <height>65</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_112">
+         <itemlocation>
+            <x>794</x>
+            <y>58</y>
+            <width>1</width>
+            <height>65</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_113">
+         <itemlocation>
+            <x>814</x>
+            <y>295</y>
+            <width>1</width>
+            <height>45</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_114">
+         <itemlocation>
+            <x>814</x>
+            <y>744</y>
+            <width>1</width>
+            <height>48</height>
+         </itemlocation>
+      </line>
+      <box sid="BOX56905">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>618</x>
+            <y>82</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX14078">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>618</x>
+            <y>103</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX47322">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>774</x>
+            <y>60</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX94375">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>774</x>
+            <y>82</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX48278">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>774</x>
+            <y>103</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX23232">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>20</x>
+            <y>528</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX24819">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>200</x>
+            <y>528</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX51366">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>380</x>
+            <y>528</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX62268">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>560</x>
+            <y>528</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <box sid="BOX33952">
+         <bgcolor>0,1,2</bgcolor>
+         <itemlocation>
+            <x>740</x>
+            <y>528</y>
+            <width>18</width>
+            <height>18</height>
+         </itemlocation>
+         <border>off</border>
+      </box>
+      <help sid="Approval_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="DisAppr_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="HELP1">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="HELP1_1">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="WaiverA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="ExceptA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="VarianA_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="ApprovB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="DisAppB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="WaiverB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="ExceptB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <help sid="VarianB_HELP">
+         <value>To create a checkmark, either hit the spacebar, "X" key, or use the mouse and click on the box.</value>
+      </help>
+      <check sid="CHECK1">
+         <itemlocation>
+            <x>623</x>
+            <y>79</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK2">
+         <itemlocation>
+            <x>623</x>
+            <y>100</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK4">
+         <itemlocation>
+            <x>778</x>
+            <y>58</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK5">
+         <itemlocation>
+            <x>778</x>
+            <y>79</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK6">
+         <itemlocation>
+            <x>778</x>
+            <y>100</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK3">
+         <itemlocation>
+            <x>25</x>
+            <y>525</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK7">
+         <itemlocation>
+            <x>206</x>
+            <y>525</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK8">
+         <itemlocation>
+            <x>385</x>
+            <y>525</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK9">
+         <itemlocation>
+            <x>565</x>
+            <y>525</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <check sid="CHECK10">
+         <itemlocation>
+            <x>745</x>
+            <y>525</y>
+         </itemlocation>
+         <value>off</value>
+      </check>
+      <button sid="SIGNATURE2">
+         <itemlocation>
+            <x>402</x>
+            <y>379</y>
+            <width>311</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE1_1376838578</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <designer:design>
+            <designer:designValue key="signatureAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <signer></signer>
+         <signitemrefs>
+            <filter>omit</filter>
+            <itemref>AFIMT116PAGE1.LABEL1</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE3</itemref>
+            <itemref>AFIMT116PAGE2.SIGNATURE3_DATE</itemref>
+            <itemref>AFIMT116PAGE2.CHECK3</itemref>
+            <itemref>AFIMT116PAGE2.CHECK7</itemref>
+            <itemref>AFIMT116PAGE2.CHECK8</itemref>
+            <itemref>AFIMT116PAGE2.CHECK9</itemref>
+            <itemref>AFIMT116PAGE2.CHECK10</itemref>
+            <itemref>SIGNATURE1_1497613389</itemref>
+         </signitemrefs>
+         <signinstance>
+            <filter>omit</filter>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/caldtf</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coordd</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_2</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_3</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_4</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_5</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/coorde_6</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/commentb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/actionb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/fromb</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/copiesto</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/tob</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/field1</ref>
+            </dataref>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/calendar1</ref>
+            </dataref>
+         </signinstance>
+      </button>
+      <label sid="SIGNATURE2_DATE">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE1</value>
+            </designer:designValue>
+         </designer:design>
+         <value compute="toggle(SIGNATURE2.signer)=='1' ? SIGNATURE2.signer == '' ? '' : tolower(SIGNATURE2.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <itemlocation>
+            <after>SIGNATURE2</after>
+            <alignb2b>SIGNATURE2</alignb2b>
+            <width>150</width>
+         </itemlocation>
+         <format>
+            <datatype>date</datatype>
+         </format>
+      </label>
+      <line sid="LINE_1">
+         <itemlocation>
+            <x>714</x>
+            <y>295</y>
+            <width>1</width>
+            <height>125</height>
+         </itemlocation>
+      </line>
+      <button sid="SIGNATURE3">
+         <itemlocation>
+            <x>431</x>
+            <y>829</y>
+            <width>310</width>
+            <height>22</height>
+         </itemlocation>
+         <type>signature</type>
+         <value compute="signer=='' ? 'Click to sign' : signer">Click to sign</value>
+         <signature>SIGNATURE1_1497613389</signature>
+         <signformat>application/vnd.xfdl;engine="Generic RSA";hashalg="sha1"</signformat>
+         <designer:design>
+            <designer:designValue key="signatureAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE3</value>
+            </designer:designValue>
+         </designer:design>
+         <signer></signer>
+         <signinstance>
+            <filter>omit</filter>
+            <dataref>
+               <model></model>
+               <ref>instance('Generated')/afimt116page2/calendar1</ref>
+            </dataref>
+         </signinstance>
+      </button>
+      <label sid="SIGNATURE3_DATE">
+         <designer:design>
+            <designer:designValue key="dateAppearance" xmlns="http://www.ibm.com/xmlns/prod/workplace/forms/designer/2.6">
+               <value>SIGNATURE3</value>
+            </designer:designValue>
+         </designer:design>
+         <value compute="toggle(SIGNATURE3.signer)=='1' ? SIGNATURE3.signer == '' ? '' : tolower(SIGNATURE3.signer) != 'invalid' ? date() :  '' : ''"></value>
+         <itemlocation>
+            <after>SIGNATURE3</after>
+            <alignb2b>SIGNATURE3</alignb2b>
+            <width>150</width>
+            <offsetx>16</offsetx>
+         </itemlocation>
+         <format>
+            <datatype>date</datatype>
+         </format>
+      </label>
+      <field sid="FIELD1">
+         <xforms:textarea ref="instance('Generated')/afimt116page2/field1">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+         <itemlocation>
+            <x>33</x>
+            <y>839</y>
+            <width>354</width>
+            <height>44</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <border>off</border>
+      </field>
+      <field sid="FIELD2">
+         <xforms:textarea ref="instance('Generated')/afimt116page2/field2">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+         <itemlocation>
+            <x>34</x>
+            <y>374</y>
+            <width>323</width>
+            <height>46</height>
+         </itemlocation>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <border>off</border>
+      </field>
+      <line sid="LINE10">
+         <itemlocation>
+            <x>754</x>
+            <y>791</y>
+            <width>1</width>
+            <height>103</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE11">
+         <itemlocation>
+            <x>3</x>
+            <y>438</y>
+            <width>956</width>
+            <height>1</height>
+         </itemlocation>
+      </line>
+      <label sid="LABEL1">
+         <itemlocation>
+            <x>380</x>
+            <y>417</y>
+         </itemlocation>
+         <value>APPROVAL AUTHORITY</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>9</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <combobox sid="CALENDAR1">
+         <xforms:input ref="instance('Generated')/afimt116page2/calendar1">
+            <xforms:label></xforms:label>
+            <xforms:help>Enter a date as DD/MM/YYYY</xforms:help>
+         </xforms:input>
+         <itemlocation>
+            <x>591</x>
+            <y>581</y>
+            <width>300</width>
+         </itemlocation>
+         <value></value>
+         <format>
+            <datatype>date</datatype>
+            <presentation>
+               <pattern>dd/MM/yyyy</pattern>
+            </presentation>
+         </format>
+         <size>
+            <width>20</width>
+            <height>1</height>
+         </size>
+      </combobox>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+   <page sid="AFIMT116PAGE3">
+      <global sid="global">
+         <label>AF IMT 116PAGE3</label>
+      </global>
+      <button sid="Close_BUTTON">
+         <acclabel>close button.</acclabel>
+         <custom:short_cut xfdl:compute="(toggle(global.global.keypress, '', 'F7') == '1') or (toggle(global.global.keypress, '', 'ESC') == '1') ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>179</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Close</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Save_BUTTON">
+         <acclabel>save button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F2') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>saveas</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>256</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Save</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Print_BUTTON">
+         <acclabel>print button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F3') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>print</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>333</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Print</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Email_BUTTON">
+         <url>mailto:</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F4') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>email button.</acclabel>
+         <type>submit</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>410</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Email</value>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="Submit_BUTTON">
+         <acclabel>submit button.</acclabel>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F8') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <type>cancel</type>
+         <bgcolor>49,77,140</bgcolor>
+         <justify>center</justify>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>102</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <value>Submit</value>
+         <visible compute="global.global.submit_url != '' ? ('on') : 'off'">off</visible>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="prev_button">
+         <url compute="'#' +. custom:page_prev">#PAGE2.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F5') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>previous button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>551</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_prev xfdl:compute="custom:this_page->pageprevious">PAGE2.global</custom:page_prev>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE3.global</custom:this_page>
+         <value>&lt;&lt; Previous</value>
+         <visible compute="custom:page_prev != custom:this_page and custom:this_page != global.global.pagefirst ? ('on') : 'off'">on</visible>
+         <printvisible>off</printvisible>
+      </button>
+      <button sid="next_button">
+         <url compute="'#' +. custom:page_next">#PAGE1.global</url>
+         <custom:short_cut xfdl:compute="toggle(global.global.keypress, '', 'F6') == '1' ? (set('activated','on')) : ''"></custom:short_cut>
+         <acclabel>next button.</acclabel>
+         <type>pagedone</type>
+         <bgcolor>49,77,140</bgcolor>
+         <fontcolor>255,255,255</fontcolor>
+         <fontinfo>
+            <fontname>Helvetica</fontname>
+            <size>7</size>
+            <effect>bold</effect>
+         </fontinfo>
+         <itemlocation>
+            <x>628</x>
+            <y>25</y>
+            <width>77</width>
+            <height>21</height>
+         </itemlocation>
+         <imagemode>clip</imagemode>
+         <custom:page_next xfdl:compute="custom:this_page->pagenext">PAGE1.global</custom:page_next>
+         <value>Next &gt;&gt;</value>
+         <custom:this_page xfdl:compute="getReference('','','page') +. '.global'">PAGE3.global</custom:this_page>
+         <custom:this_page_last xfdl:compute="custom:this_page +. 'itemlast'">PAGE3.globalitemlast</custom:this_page_last>
+         <visible compute="custom:page_next != custom:this_page and custom:this_page != global.global.pagelast ? ('on') : 'off'">off</visible>
+         <printvisible>off</printvisible>
+      </button>
+      <field sid="ConSheet">
+         <itemlocation>
+            <x>14</x>
+            <y>88</y>
+            <width>923</width>
+            <height>1159</height>
+         </itemlocation>
+         <border>off</border>
+         <acclabel>A F Form 116, 2001 07 01, continuation sheet</acclabel>
+         <value></value>
+         <previous>prev_button</previous>
+         <next>Save_BUTTON</next>
+         <scrollhoriz>wordwrap</scrollhoriz>
+         <scrollvert>fixed</scrollvert>
+         <fontinfo>
+            <fontname>Times New Roman</fontname>
+            <size>9</size>
+            <effect>plain</effect>
+         </fontinfo>
+         <xforms:textarea ref="instance('Generated')/afimt116page3/consheet">
+            <xforms:label></xforms:label>
+         </xforms:textarea>
+      </field>
+      <label sid="LABEL_94">
+         <itemlocation>
+            <x>306</x>
+            <y>50</y>
+         </itemlocation>
+         <value>AF IMT 116, 20130206,V2  CONTINUATION SHEET</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>bold</effect>
+         </fontinfo>
+      </label>
+      <label sid="LABEL_95">
+         <itemlocation>
+            <x>363</x>
+            <y>64</y>
+         </itemlocation>
+         <value>(Use plain bond paper, if needed)</value>
+         <fontinfo>
+            <fontname>Arial</fontname>
+            <size>8</size>
+            <effect>plain</effect>
+            <effect>italic</effect>
+         </fontinfo>
+      </label>
+      <line sid="LINE_115">
+         <itemlocation>
+            <x>1</x>
+            <y>48</y>
+            <width>958</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_116">
+         <itemlocation>
+            <x>957</x>
+            <y>48</y>
+            <width>2</width>
+            <height>1209</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_117">
+         <itemlocation>
+            <x>1</x>
+            <y>1256</y>
+            <width>960</width>
+            <height>2</height>
+         </itemlocation>
+      </line>
+      <line sid="LINE_118">
+         <itemlocation>
+            <x>0</x>
+            <y>48</y>
+            <width>2</width>
+            <height>1208</height>
+         </itemlocation>
+      </line>
+      <spacer sid="vfd_spacer">
+         <itemlocation>
+            <x>960</x>
+            <y>1260</y>
+            <width>1</width>
+            <height>1</height>
+         </itemlocation>
+      </spacer>
+   </page>
+</XFDL>
