@@ -1,0 +1,802 @@
+BY ORDER OF THE                                                                           AIR FORCE INSTRUCTION 32-10112
+SECRETARY OF THE AIR FORCE                                                                                                19 OCTOBER 2007
+
+                                                                                                                Installation and Facilities
+
+                                                                                                   INSTALLATION GEOSPATIAL
+                                                                                                 INFORMATION AND SERVICES
+                                                                                                        (INSTALLATION GI&S)
+
+                   COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY:              Publications and forms are available for downloading or ordering on the
+                            e-Publishing website at www.e-publishing.af.mil.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: HQ AF/A7CIS                                                                                           Certified by: HQ USAF/A7C
+                                                                                                             (Maj Gen Delwyn Eulberg)
+                                                                                                                             Pages: 23
+
+This instruction implements Air Force Policy Directive (AFPD) 32-10, Installations and Facilities, 27
+Mar 95, AFPD 10-5, Basing, 26 Nov 1993, Air Force Instruction (AFI) 10-1401, Modernization Planning
+Documentation, 22 May 95, AFI 32-7062, Air Force Base Comprehensive Planning, 1 Oct 97, Air Force
+Doctrine Document (AFDD) 2-4.4, Bases, Infrastructure, and Facilities, 19 Nov 99, AFI 33-124, Enter-
+prise Information Technology Architectures, 1 May 00, AFI 33-104, Base-Level Planning and Implemen-
+tation, 10 May 01, AFI 10-404, Base Support and Expeditionary Site Planning, 1 April 04. This
+publication applies to Air Force Reserve Command Units. This publication applies to Air National Guard.
+Refer recommended changes and questions about this publication to the Office of Primary Responsibility
+(OPR) using the AF Information Management Tool (IMT) 847, Recommendation for Change of Publica-
+tion; route AF IMT 847 from the field through the appropriate functional’s chain of command. Send
+major command (MAJCOM) proposed supplements and any other related directives to Headquarters Air
+Force, Air Force Civil Engineer, Strategic Initiatives Branch (HQ USAF/A7CIS), 1235 South Clark
+Street, Crystal Gateway 1, Suite 1000, Arlington VA 22202-3276, for approval.
+This is the initial publication of AFI 32-10112.
+
+Chapter 1— AUTHORITY AND SCOPE                                                                                                                   4
+      1.1.    Purpose. ......................................................................................................................    4
+      1.2.    Implementing Authority. ...........................................................................................                4
+      1.3.    Scope. .........................................................................................................................   4
+
+Chapter 2— GEOBASE PROGRAM                                                                                                                       5
+      2.1.    Program Overview. ....................................................................................................             5
+      2.2.    GeoBase Vision. ........................................................................................................           5
+      2.3.    GeoBase Mission. ......................................................................................................            5
+2                                                                                             AFI32-10112 19 OCTOBER 2007
+
+
+      2.4.   GeoBase Service. .......................................................................................................        5
+      2.5.   GeoBase Program Components. ................................................................................                     6
+      2.6.   GeoBase Data. ...........................................................................................................        6
+      2.7.   GeoBase Program Resource Management. ...............................................................                             6
+
+Chapter 3— ROLES AND RESPONSIBILITIES                                                                                                        7
+      3.1.   Geo Integration Office (GIO). ...................................................................................                7
+      3.2.   USAF Responsibilities. ..............................................................................................            7
+      3.3.   Headquarters Air Force Geo Integration Office (HAF GIO) Responsibilities: ........                                               7
+      3.4.   Major Command (MAJCOM) Responsibilities. .......................................................                                 8
+      3.5.   Participating Direct Reporting Unit (DRU) and Field Operating Agencies (FOA)
+             Responsibilities. .........................................................................................................      9
+      3.6.   Installation Responsibilities. ......................................................................................           10
+
+Chapter 4— DATA REQUIREMENTS                                                                                                                 13
+      4.1.   General Requirements. ...............................................................................................           13
+      4.2.   Common Installation Picture. ....................................................................................               13
+      4.3.   Mission Data Layers. .................................................................................................          13
+      4.4.   Mission Data Sets. .....................................................................................................        14
+      4.5.   Regional Installation Picture. .....................................................................................            14
+
+Chapter 5— GOVERNANCE                                                                                                                        16
+      5.1.   Installation GI&S Governing Body. .........................................................................                     16
+      5.2.   Governing Body Responsibilities. .............................................................................                  16
+      5.3.   Governing Body Members Shall: ..............................................................................                    16
+
+Chapter 6— GEOBASE ENTERPRISE ARCHITECTURE                                                                                                   17
+      6.1.   Overview. ...................................................................................................................   17
+      6.2.   Enterprise Architecture. .............................................................................................          17
+Table 6.1.   Core Architecture Products ........................................................................................             17
+Table 6.2.   Optional Architecture Products .................................................................................                18
+      6.3.   EA Governance Representation. ................................................................................                  18
+      6.4.   Net-Centric. ................................................................................................................   18
+      6.5.   Vendor Neutral. .........................................................................................................       18
+      6.6.   Web Content. .............................................................................................................      19
+AFI32-10112 19 OCTOBER 2007                                                                                                               3
+
+
+    6.7.   Expeditionary Site Mapping (ESM). .........................................................................                   19
+    6.8.   Classified CIP. ...........................................................................................................   19
+    6.9.   Architecture Asset. .....................................................................................................     19
+
+Chapter 7— DATA SECURITY                                                                                                                 20
+    7.1.   Security Guidelines. ...................................................................................................      20
+
+Attachment 1— GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                          21
+4                                                                    AFI32-10112 19 OCTOBER 2007
+
+
+                                                Chapter 1
+
+                                      AUTHORITY AND SCOPE
+
+1.1. Purpose. Convey guidance and procedures allowing commanders and Air Force professionals to
+maintain a flow of timely geospatial information with due regard for national security, accuracy, and pri-
+vacy. Describe Geospatial Information and Services (GI&S) support for the installation and facilities mis-
+sion, hereafter referred to as the GeoBase Program or GeoBase. Explain the organization and execution of
+the GeoBase Program for all levels of command. GI&S is the key platform for cross functional integra-
+tion, and to that end this AFI provides guidance for those organizations seeking to integrate with the Geo-
+Base Service. Provide guidance and procedures for all Air Force military and civilian personnel that
+perform or utilize GeoBase functions, products or systems, including those in the Air National Guard and
+U.S. Air Force Reserve. This instruction is not intended to overlap or supersede GI&S guidance found in
+AFI 14-205, Geospatial Information and Services, 4 May 2004. Ensure that all records created as a result
+of processes prescribed in this publication are maintained in accordance with AFMAN 37-123, Manage-
+ment of Records and disposed of in accordance with the Air Force Records Disposition Schedule (RDS)
+located at https://afrims.amc.af.mil/. The use of the name or mark of any specific manufacturer, com-
+mercial product, commodity, or service in this publication does not imply endorsement by the Air Force.
+
+1.2. Implementing Authority. Regulatory authority for this instruction is derived from Executive Order
+12906, Coordinating Geographic Data Acquisition and Access: The National Spatial Data Infrastructure,
+13 April 1994; Executive Order 13011, Federal Information Technology, 16 July 1996; Office of Man-
+agement and Budget (OMB) Circular A-16, Coordination of Geographic Information and Related Spatial
+Data Activities, 19 Aug 2002; Department of Defense Directive (DoDD) 5105.60, National Imagery and
+Mapping Agency, 11 Oct 1996; DoDD 5030.59, National Imagery and Mapping Agency (NIMA) Limited
+Distribution Imagery or Geospatial Information and Data, 13 May 2003; Department of Defense Instruc-
+tion (DoDI) 5000.2,Operation of the Defense Acquisition System, 12 May 2003; DoDD 8320.2, Data
+Sharing in a Net-Centric Department of Defense, 2 December 2004; DoDI 5000.56, Programming
+Unique Mapping Charting, and Geodesy (MC&G) Requirements for Developing Systems, 11 September
+1991; Joint Publication (JP) 2-03, Joint Tactics, Techniques, and Procedures for Geospatial Information
+and Services to Support Joint Operations, 31 March 1999; JP 3-34, Engineer Doctrine for Joint Opera-
+tions, 5 July 2000.
+
+
+1.3. Scope. Responsibility for the GeoBase Program resides at all levels of the USAF. This instruction is
+applicable under the purview of Air Force guidelines. If conflicts arise between the content of this publi-
+cation and those of Department of Defense (DoD) Directives, the DoD Directives take precedence unless
+the Secretary of Defense or the Chairman of the Joint Chiefs of Staff has provided more current and spe-
+cific guidance.
+AFI32-10112 19 OCTOBER 2007                                                                                5
+
+
+                                                Chapter 2
+
+                                         GEOBASE PROGRAM
+
+2.1. Program Overview. The GeoBase Program is implemented at each USAF installation and echelon
+through a corresponding Geo Integration Office (GIO). GeoBase ensures the provision of and access to
+common, accurate and current geospatial information for all Air Force installations, ranges and property.
+Geospatial services are the combination of Information Technology (IT) infrastructure, services, and
+architectures that enable access to geospatial information. Geospatial information, or geodata, constitutes
+georeferenced imagery and vector data that represent real-world features and conditions. USAF installa-
+tion geospatial information shall consist of the Common Installation Picture (CIP) and mission specific
+geospatial data: Mission Data Layers (MDL), Mission Data Sets (MDS) and Regional Installation Pic-
+tures (RIP). The combination of geospatial information and services to support installation and facilities’
+missions forms the “GeoBase Service” and facilitates the geo-integration of information cross-function-
+ally. The GeoBase Service allows cross-functional users to enable their information geospatially by link-
+ing their Automated Information Systems (AIS) data to geographic locations, also known as
+geo-enabling. The GeoBase Service is the system component of the GeoBase Program. The combination
+of the GIO and the GeoBase Service provides commanders, planners, and personnel across the combat
+support spectrum a near real time operational picture of the installation and facilities required for mission
+success.
+   2.1.1. Installations represent the underlying platform for the Air Force mission. Just as mission suc-
+   cess in the battlespace relies on information superiority and agile combat support, installation mis-
+   sions also require disciplined creation, management and sharing of critical georeferenced information
+   through modern geospatial processes. The USAF GeoBase Mission satisfies this critical need across
+   the installation mission spectrum.
+   2.1.2. The GeoBase Program includes the people, processes, and resources used in the collection,
+   analysis, dissemination and display of georeferenced information to support installation missions.
+   2.1.3. GeoBase functions as a program in addition to the GeoBase Service. It focuses on information
+   resource management rather than IT acquisition. IT components are necessary to attain, serve, and
+   exploit capabilities, however the aim of GeoBase is to exploit existing communications network
+   assets and IT resources where possible to avoid redundancies. GeoBase capabilities are served via
+   existing communication networks such as the Global Combat Support System Air Force (GCSS-AF)
+   and are exploited in a net-centric fashion, thereby enhancing mission systems and processes by visu-
+   alizing installations and facilities across the Air Force enterprise.
+
+2.2. GeoBase Vision. Enable decision makers with an enterprise capability for installation mapping the
+visualization of fused, analyzed, and multi-functional data. Succinctly put “One Air Force, One Map.”
+
+2.3. GeoBase Mission. Provide enterprise installation visualization services for the USAF to be shared
+throughout the DoD. The mission for the program is to attain and sustain a capability enabling a shared,
+efficient use of trusted, integrated, and georeferenced information delivering global situational awareness.
+
+2.4. GeoBase Service.
+6                                                                     AFI32-10112 19 OCTOBER 2007
+
+
+    2.4.1. Provides geodata through a network of hardware and software over established USAF IT and
+    communications infrastructure for simultaneous access and exploitation by any number of Headquar-
+    ters (HQ) and base organizations with a requirement to visualize installations and facilities.
+    2.4.2. Provides a single point of access for installation geospatial information for visualization, map-
+    ping, analysis and integration into business processes of installation and facilities.
+    2.4.3. May be linked with functional AIS and other IT solutions providing the ability to view func-
+    tional information assets via the base map.
+
+2.5. GeoBase Program Components. GeoBase is comprised of four unique decision support environ-
+ments known as Strategic GeoBase, Garrison GeoBase, GeoReach, and Expeditionary GeoBase.
+    2.5.1. Strategic GeoBase. Strategic GeoBase is comprised of all geospatial data produced in the
+    USAF and aggregated at the HQ USAF (HAF) level. It offers the enhanced means to visualize Air
+    Force installation data through links with other HAF level databases combined with detailed imagery
+    at the HAF. The view can then be expanded by adding data from, or pushing installation data stored at
+    HAF level to, the Secretary of the Air Force, the Office of the Secretary of Defense, other DoD ser-
+    vices, US Northern Command, the Defense Threat Reduction Agency, and other Federal agencies
+    such as the Federal Emergency Management Agency.
+    2.5.2. Garrison GeoBase. Garrison GeoBase provides the foundation for the Strategic GeoBase Pro-
+    gram. Garrison GeoBase enhances the many overlapping mapping efforts across major and minor
+    installations with a single, coherent approach to geospatial information stewardship, providing the
+    structure for Base Operational Support. Garrison GeoBase provides the training environment for
+    warfighters executing the Expeditionary GeoBase operations at Forward Operating Locations (FOL).
+    2.5.3. GeoReach. GeoReach is the process to enable selection and analysis of FOL by serving
+    geospatial libraries of potential forward ‘sites’ across the Air Force network. It provides planners and
+    Airmen with situational awareness enabling improved FOL selection, Time-Phased Force and
+    Deployment Data planning, and accelerated bed-down, in support of the Air Force Global Mobility
+    Concept of Operations (CONOPS) and the Expeditionary Site Survey Process.
+    2.5.4. Expeditionary GeoBase. Expeditionary GeoBase is enabled via GeoReach, and it is sustained
+    using processes developed at home stations via the Garrison GeoBase Program. It is a forward
+    deployed version of Garrison GeoBase capabilities, affording provisional commanders and airmen
+    enhanced situational awareness of the expeditionary base.
+
+2.6. GeoBase Data. Installation geospatial data is thematically organized within the GeoBase Service
+into layers such as buildings, roads, and airfield surfaces known as MDL. MDL are further organized into
+the CIP, MDS, and RIP as described in Chapter 4.
+
+2.7. GeoBase Program Resource Management. Resource requirements for GeoBase are programmed
+for using the established Program Objective Memorandum (POM) process at MAJCOMs and HAF. Geo-
+Base Resources are currently programmed in PE31025F and tracked in RC/CC XXff43. Beginning with
+the FY10 POM, GeoBase resources at the MAJCOMs sould be programmed using their respective Facil-
+ities Operation program element (***79F).
+AFI32-10112 19 OCTOBER 2007                                                                              7
+
+
+                                               Chapter 3
+
+                                 ROLES AND RESPONSIBILITIES
+
+3.1. Geo Integration Office (GIO). A GIO is the single point of contact for GeoBase at any given
+USAF level. The standards and procedures for the GeoBase Program are established at the HAF GIO and
+implemented via MAJCOM and Base GIOs. The GIO serves as the focal point for GI&S to support the
+installation and facilities missions. The GIO is responsible for ensuring that installation and facilities
+stakeholders have access to timely, relevant, available and authoritative geospatial information.
+   3.1.1. GIO at all levels shall:
+       3.1.1.1. Implement, manage and provide support for the GeoBase Program. Provide cross-func-
+       tional integration support at each USAF installation and echelon. Maintain consistent geospatial
+       data visualization, analysis, and integration capabilities in association with HAF GIO approved
+       data strategies and associated standards.
+       3.1.1.2. Support data and application stewards across mission domains to assure quality and safe-
+       guarding of data. Promote awareness and establish GeoBase capabilities in accordance with
+       DoDD 8320.2, Data Sharing in a Net-Centric Department of Defense, 2 December 2004.
+       3.1.1.3. Sustain the GeoBase Program in accordance with Federal, DoD, Air Force Enterprise
+       Architecture (EA), and Portfolio Management (PfM) strategies in accordance with policy and
+       guidance.
+       3.1.1.4. Serve as the geospatial Subject Matter Expert (SME) for installations and facilities at any
+       given USAF level.
+       3.1.1.5. Maintain a current, less than two years old, strategic plan and associated documentation
+       as an effective method for determining how best to envision, characterize, and acquire the
+       resources necessary to successfully implement GeoBase. The plan will address future require-
+       ments and be consistence with higher headquarters strategic plans; establish sustainment strategies
+       and coordinate GeoBase planning and resource decisions across their respective organizations.
+       3.1.1.6. Designate at least one primary government (civilian or military) official as the GeoBase
+       Program Manager to coordinate GeoBase activities and requirements with their respective stake-
+       holders.
+       3.1.1.7. Facilitate the identification of and access to those geospatial data that are maintained
+       through the GeoBase Service.
+
+3.2. USAF Responsibilities.
+   3.2.1. HQ AF/A4/7 as lead for Installations, Logistics, and Mission Support shall establish the HQ
+   Air Force Geo Integration Office (HAF GIO) to guide the Air Force wide implementation of the Geo-
+   Base Program.
+
+3.3. Headquarters Air Force Geo Integration Office (HAF GIO) Responsibilities:
+   3.3.1. Coordinate all aspects of GeoBase for USAF installations and facilities.
+8                                                                    AFI32-10112 19 OCTOBER 2007
+
+
+    3.3.2. Provide leadership, advocacy, and promulgate policy for EA, PfM, data (standards, metadata,
+    and cartography) and program oversight.
+    3.3.3. Act as the primary liaison with DoD and other government agencies relative to Installation
+    GI&S capabilities, standards and specifications.
+    3.3.4. Represent Installation GI&S data, application requirements, and program responsibilities to
+    DoD and other Federal agencies.
+    3.3.5. Serve as the proponent for GeoBase programs, training, systems, and requirements.
+    3.3.6. Establish a governance process for GeoBase as described in Chapter 5.
+    3.3.7. Establish the process and method for coordination and distribution of Air Force installation
+    geospatial data to other DoD, Federal, and non-governmental agencies. Provide standardized, docu-
+    mented and validated Installation GI&S data via established USAF communication networks. Provide
+    access to select CIP, MDL, and MDS supporting Federal, DoD, and USAF requirements.
+    3.3.8. Establish mechanisms for the coordination of Air Force GeoBase requirements with other Air
+    Force staff elements, MAJCOM, Direct Reporting Unit (DRU) and Field Operating Agencies (FOA).
+    3.3.9. Establish processes that will analyze current and proposed Air Force GeoBase applications,
+    functions, and requirements to determine possible overlaps, data or cost sharing opportunities and
+    avoid redundancies.
+    3.3.10. Develop effective and efficient Air Force GeoBase architectures for the organization.
+    3.3.11. Serve as the proponent for the HAF, MAJCOM and DRU/FOA Program Objective Memoran-
+    dum (POM) submissions. HAF GIO is the Program Element Monitor (PEM) for the GeoBase PE in
+    accordance with Program Element Code 31025F. GeoBase is a decentralized funding program, MAJ-
+    COMs, DRUs, and FOAs must develop POM submissions for their program development and sus-
+    tainment. HAF GIO, as Air Staff level PEM will advocate for program support to the Air Force
+    Corporate Structure (AFCS) through the Installation Support Panel. HAF GIO articulates total Geo-
+    Base program requirements to the AFCS in the Planning, Programming, Budgeting and Execution
+    process, and validates MAJCOM budget and execution year unfunded requirements.
+    3.3.12. Certify the CIP minimum content requirements on an annual basis based upon recommenda-
+    tions from the governing body described in Chapter 5. Work with HQ level functional managers to
+    document MDS requirements and work with them to provide resources for creation and sustainment.
+    3.3.13. Maintain and publish minimum update requirements in the CIP Quality Assurance Plan
+    (QAP) titled USAF GeoBase Common Installation Picture Data Quality Assurance Plan. All USAF
+    CIPs shall conform to the requirements established within the QAP.
+    3.3.14. Identify the technology, procedures, and processes that will allow seamless data integration of
+    installation to DoD level within the Air Force IT domain.
+
+3.4. Major Command (MAJCOM) Responsibilities.
+    3.4.1. The MAJCOM Commander shall establish a GIO to guide exploitation of GeoBase capabilities
+    across their respective MAJCOM as well as to promulgate and oversee policy for the GeoBase Pro-
+    gram.
+    3.4.2. MAJCOM GIO shall:
+AFI32-10112 19 OCTOBER 2007                                                                              9
+
+
+      3.4.2.1. Identify and prioritize functional installation mapping, visualization, analysis, and inte-
+      gration into business requirements in coordination with installation and FOA GIOs and their A
+      Staff Directorate.
+      3.4.2.2. Assist in establishing Air Force wide enterprise solutions for functional mission IT sys-
+      tems. Establish processes to exploit GeoBase installation visualization, analysis, and integration
+      capabilities, in accordance with Air Force policy, architectural guidance, and in coordination with
+      relevant FOA elements and System Program Office (SPO)s.
+      3.4.2.3. Coordinate relevant MDS and MDL acquisition and sustainment across installations.
+      3.4.2.4. Develop policy and perform program management of the GeoBase Program at the head-
+      quarters and installation level and oversee subordinate installation GIOs.
+      3.4.2.5. Guide the acquisition and sustainment of the GeoBase Service across the MAJCOM and
+      its installations, in accordance with HAF GIO policy and guidance.
+      3.4.2.6. Provide representatives to the existing governance structure as described in Chapter 5.
+      3.4.2.7. Program for the necessary resources to sustain the MAJCOM/Installation GeoBase Pro-
+      gram. Coordinate POM submissions with the HAF GeoBase PEM.
+      3.4.2.8. Centrally manage, track, inventory, and coordinate the geospatial software used to sup-
+      port the GeoBase program in their functional community. Ensure optimal use of software licenses
+      and report software use numbers as requested to include deployable Unit Type Code required
+      geospatial equipment.
+      3.4.2.9. Create and update all required EA products including Technical, Operational, and System
+      Views to support the GeoBase program and report on products as requested by the HAF (see para-
+      graph 6.2.).
+      3.4.2.10. Define the requirements of the RIP including any additional minimum requirements,
+      and define minimum RIP documentation criteria (see paragraph 4.5.).
+      3.4.2.11. Initiate a geospatial working group to coordinate MAJCOM geospatial activities and
+      requirements. Participation in a MAJCOM geospatial working group shall be a requirement of any
+      organization leveraging the GeoBase Service.
+      3.4.2.12. Provide education and outreach support on the use of the GeoBase Service. Refer inter-
+      ested users or potential users to appropriate forums and geospatial education and training sources
+      within the established training or GeoBase community.
+
+3.5. Participating Direct Reporting Unit (DRU) and Field Operating Agencies
+(FOA) Responsibilities.
+   3.5.1. The participating DRU or FOA Commander shall establish a GIO to guide the exploitation of
+   GeoBase capabilities across their respective business areas, promulgate appropriate policy for the
+   GeoBase Program in their functional community, and implement a GeoBase training/education strat-
+   egy.
+   3.5.2. DRU/FOA GIO shall:
+      3.5.2.1. Identify and prioritize functional installation visualization, analysis, requirements and
+      integration opportunities in coordination with GIOs and functional executive process owners.
+10                                                                     AFI32-10112 19 OCTOBER 2007
+
+
+        3.5.2.2. Assist in establishing Air Force wide enterprise solutions for functional IT systems and
+        processes to exploit GeoBase Service, in accordance with Air Force policy and architectural guid-
+        ance and in coordination with relevant FOA elements and SPOs.
+        3.5.2.3. Develop policy and manage the GeoBase Program throughout the DRU/FOA organiza-
+        tion. The DRU/FOA GIO shall execute the GeoBase Program at their Headquarters and within
+        their functional community.
+        3.5.2.4. Guide the acquisition and sustainment of the GeoBase Service in their community, in
+        accordance with policy and guidance.
+        3.5.2.5. Provide a representative to the governance structure described in Chapter 5.
+        3.5.2.6. Where applicable, be responsible for programming the necessary resources to sustain
+        DRU/FOA GeoBase Program implementation. Coordinate POM submission with the HAF Geo-
+        Base PEM. Develop, commensurate with available resources, the budget for their program.
+        3.5.2.7. Centrally manage, track, inventory, and coordinate the geospatial software used to sup-
+        port the GeoBase program. Ensure optimal use of software licenses and report software use num-
+        bers as requested.
+        3.5.2.8. Create and update all required EA documents; Technical, Operational, and System Views
+        to support the GeoBase program and report on EA as requested by HAF.
+        3.5.2.9. Develop and implement a training/education strategy to support GeoBase development
+        and implementation. Exploit available training and guide the development of training products to
+        support the GeoBase program. Coordinate development and implementation of training strategies
+        and products across the GeoBase Enterprise to minimize duplication and with HAF oversight.
+
+3.6. Installation Responsibilities.
+     3.6.1. The Installation Commander shall:
+        3.6.1.1. Establish a GIO at USAF Main Operating Bases.
+        3.6.1.2. Guide the determination of the installation’s RIP, which is defined as: the collection of
+        geospatial data depicting features outside of the installation boundary to support multiple mission
+        requirements excluding intelligence gathering, targeting, or combat operations (see paragraph
+        4.5.).
+        3.6.1.3. Ensure that their installation’s GeoBase Program is appropriately supported, staffed and
+        utilized to optimize investments in support of their installations’ mission requirements.
+        3.6.1.4. Oversee execution of the GeoBase Program at their respective installations.
+     3.6.2. The Installation GIO shall:
+        3.6.2.1. Be responsible for executing the GeoBase Program at the installation, and any Geograph-
+        ically Separate Unit, in accordance with guidance provided in this Instruction and any applicable
+        Federal, DoD, USAF, or MAJCOM policies
+        3.6.2.2. Administer, promote, support, and integrate the GeoBase Service as the recognized Air
+        Force geospatial solution within their respective installation. The installation GIO shall be the pri-
+        mary point of contact to coordinate base-level GeoBase activities and to coordinate requirements
+        with the MAJCOM.
+AFI32-10112 19 OCTOBER 2007                                                                            11
+
+
+     3.6.2.3. Initiate a geospatial working group to coordinate installation geospatial activities and
+     requirements. Participation in an installation geospatial working group shall be a requirement of
+     any organization leveraging the GeoBase Service.
+     3.6.2.4. Be responsible for executing the GeoBase Program at the installation in accordance with
+     guidance provided by HAF and MAJCOM GIOs. Implement GeoBase in accordance with appli-
+     cable data, metadata, IT, EA, and PfM standards. If no Engineering Assistant is present, ensure
+     that the CIP and GeoBase Service are maintained, and provide guidance to installation level cus-
+     tomers regarding the GeoBase Service.
+     3.6.2.5. Provide education and outreach support on use of the GeoBase Service. Refer interested
+     users or potential users to appropriate forums and geospatial education and training sources within
+     the established GeoBase community. The installation GIO will provide the appropriate form of
+     technical or procedural support to ensure successful use of the GeoBase Service.
+     3.6.2.6. Define content, refresh rate, and geographic extent of RIP in concert with stakeholders.
+     The installation GIO will also identify and maintain a list of local applicable spatial data sources,
+     establish access procedures, provide RIP access to MAJCOM/DRU, and maintain RIP documen-
+     tation (see paragraph 4.5.).
+     3.6.2.7. Be the authoritative source and have primary responsibility for all CIP layers. Work with
+     Engineer Assistants (3E5X1) to develop CIP data layers and functional data stewards as applica-
+     ble for appropriate data. The installation GIO will make accessible functional data via the Geo-
+     Base Service. Functional communities are responsible for identification of their information
+     requirements and develop strategies for their collection and sustainment DoDD 8320.2, Data
+     Sharing in a Net-Centric Department of Defense, 2 December 2004.
+     3.6.2.8. Shall ensure that the CIP is captured, maintained, stored and made accessible in accor-
+     dance with USAF information and data policies.
+  3.6.3. The Base Civil Engineer shall:
+     3.6.3.1. Provide functional guidance to the Installation GIO.
+     3.6.3.2. Be responsible for the QA/QC procedure of the CIP, Civil Engraining (CE) MDS, CE
+     MDL, and metadata according to guidance provided by HAF GIO. Ensure that data published via
+     the GeoBase Service is consistent with standards in place for geospatial data, metadata, and attri-
+     bution.
+  3.6.4. Engineering Assistant, 3E5X1, or equivalent in Garrison shall:
+     3.6.4.1. Develop and maintain the CIP and metadata through field mapping, Global Positioning
+     System (GPS) surveying, topographic surveying, conversion of digital construction as-built draw-
+     ings, digitizing or any industry accepted data development technique.
+     3.6.4.2. Coordinate with MAJCOM GIOs, Installation GIOs, MAJCOM, FOA 3E5X1 career field
+     functional manager on policy and guidance as well as standard operating procedures to enhance
+     the data and data maintenance workflow process from field surveys to the GeoBase Service.
+     3.6.4.3. Assist the Installation GIO in providing education and outreach support on the use of the
+     GeoBase Service across the installation.
+12                                                                    AFI32-10112 19 OCTOBER 2007
+
+
+        3.6.4.4. Maintain training skills according to the Career Field Education and Training Plan or sim-
+        ilar guidance for civilian and contracted positions.
+     3.6.5. Engineering Assistant, 3E5X1, when Deployed shall:
+        3.6.5.1. Establish CIP and MDL capabilities in FOL, to include the ability to request necessary
+        equipment, implement USAF GeoBase concepts, goals, and business processes. Regularly publish
+        FOL geodata back to Combatant Command for inclusion into GeoBase data repositories.
+        3.6.5.2. Develop and maintain the CIP and appropriate MDLs through field mapping, GPS sur-
+        veying, topographic surveying, conversion of construction as-built drawings, digitizing or any
+        industry accepted data development technique. Coordinate data management and requirements
+        with the respective Combatant Command GIO.
+        3.6.5.3. Provide geospatial data visualization, analysis, and integration into business requirements
+        in support of the deployed mission through map production and dissemination.
+        3.6.5.4. Be knowledgeable in the operation of CE geospatial applications.
+AFI32-10112 19 OCTOBER 2007                                                                             13
+
+
+                                               Chapter 4
+
+                                      DATA REQUIREMENTS
+
+4.1. General Requirements.
+   4.1.1. All data provided through the GeoBase Service shall comply with the following requirements:
+      4.1.1.1. To the maximum extent possible all data shall be organized by DoD IT Standards Regis-
+      try standards for data, metadata, and services.
+      4.1.1.2. All data shall have associated metadata in accordance with OMB Circular A-16, reflect
+      metadata standards in International Standards Organization 19115, and be in compliance with the
+      Defense Installation Spatial Data Infrastructure Group for Metadata.
+      4.1.1.3. All data shall be managed in accordance with DoDD 8320.2, Data Sharing in a Net-Cen-
+      tric Department of Defense, 2 December 2004, AFPD 33-3, Information Management, 28 March
+      2006.
+      4.1.1.4. All geodata will be protected and classified in accordance with AFI 31-401 Information
+      Security Program Management, 1 November 2005 Attachment 2 and DoDD 5030.59 National
+      Imagery and Mapping Agency (NIMA) Limited Distribution Imagery or Geospatial Information
+      and Data, 13 May 2003.
+      4.1.1.5. All data made available via the GeoBase Service will comply with USAF Information
+      Security (INFOSEC) policies in accordance with, The Freedom of Information Act (FOIA) and
+      AFI 31-401, Information Security Program Management, 1 November 2005.
+
+4.2. Common Installation Picture.
+   4.2.1. The CIP is the standard USAF geospatial data set that depicts facilities and physical features on
+   an installation. The CIP is comprised of georeferenced vector layers in a digital format with related
+   attribute information and a georeferenced imagery layer.
+      4.2.1.1. CIP vector layers shall include those features that generally depict installation facilities
+      and physical features including, but not limited to: structures, paved surfaces, improved surfaces,
+      hydrography, and boundaries.
+      4.2.1.2. Imagery shall represent ground conditions of the installation and shall be refreshed at a
+      minimum of every five years (USAF GeoBase Imagery Data Architecture, Sept 2003).
+      4.2.1.3. The CIP shall be made readily available to all USAF mission areas as well as external
+      stakeholders within US Federal, state, local, and tribal governments for official use only. The HAF
+      GIO will interpret policy, gather requirements, and provide avenues for GIOs to facilitate sharing
+      of the CIP with external (non-USAF) organizations, including providing INFOSEC guidance and
+      data to requesting organizations in coordination with their installations.
+      4.2.1.4. The geospatial data and metadata content specifications, data submission procedures, and
+      validation methodology for the CIP implemented under the GeoBase Program are documented
+      within the QAP.
+
+4.3. Mission Data Layers.
+14                                                                    AFI32-10112 19 OCTOBER 2007
+
+
+     4.3.1. MDL geo-enable mission data. The data layer development and resourcing is the responsibility
+     of the functional, host, or tenet community. MDL are vector and raster layers that support specific
+     missions in the Warfighting and Business Mission Areas.
+     4.3.2. MDL shall be consistent with the functional organization’s data architecture, specifically those
+     data architectures that support AIS.
+     4.3.3. MDL shall be stored and made available through existing USAF systems and networks as
+     required based on access permissions and existing policy.
+     4.3.4. MDL that support the installation and facilities mission shall be stored and disseminated
+     through the GeoBase Service, based on official agreements between the data owner and GIO.
+     4.3.5. MDL will be classified in association with guidance from the Original Classification Authority
+     as described in AFI 31-401, Information Security Program Management, 1 November 2005.
+
+4.4. Mission Data Sets.
+     4.4.1. MDS geo-enable mission systems or processes. MDS are comprised of individual MDLs, CIP
+     or RIP layers.
+     4.4.2. The MDS development and resourcing is the responsibility of the functional community. The
+     relevant and applicable GIO will assist functionals in identification of, and providing access to, the
+     functional geospatial data that are maintained as part of the GeoBase Service.
+     4.4.3. Non-geospatial components of an MDS shall be identified, captured, maintained and made
+     available by the appropriate information owners and data producers.
+     4.4.4. The combination of geospatial and non-geospatial data that geo-enable a system or process
+     shall be documented using USAF standard data modeling processes and languages e.g., Unified
+     Markup Language.
+     4.4.5. Formal Memorandums of Understanding and or Memorandums of Agreement shall define the
+     roles and responsibilities of organizations and agencies contributing information to MDS and Geo-
+     Base Service.
+
+4.5. Regional Installation Picture.
+     4.5.1. The RIP is the collection of geospatial information, including imagery, that depicts features
+     outside the boundary to support mission requirements excluding targeting and combat operations.
+        4.5.1.1. The content and extent of the RIP is determined by the information needs of all stakehold-
+        ers on an installation, at a MAJCOM, or at HQ.
+        4.5.1.2. The RIP does not include Geospatial Information and Services described in AFI 14-205,
+        Geospatial Information & Services (GI&S), 4 May 2005.
+        4.5.1.3. RIP data requirements, organization roles, and responsibilities shall be formally docu-
+        mented and agreed to by all participating installation organizations under the direction of the
+        Installation Commander (see paragraph 3.6.1.2.).
+     4.5.2. RIP geospatial layers shall be obtained from authoritative sources in accordance with OMB
+     Circular A-16. This includes non-DoD sources such as Federal, state, and local and tribal agencies.
+     4.5.3. The GIO will support the RIP through the following activities:
+AFI32-10112 19 OCTOBER 2007                                                                    15
+
+
+     4.5.3.1. Provide access to the RIP through the GeoBase Service.
+     4.5.3.2. Advise installation communities on Federal, DoD, and USAF geospatial policies, prac-
+     tices and procedures.
+16                                                                    AFI32-10112 19 OCTOBER 2007
+
+
+                                                 Chapter 5
+
+                                             GOVERNANCE
+
+5.1. Installation GI&S Governing Body.
+     5.1.1. Representatives of this body shall be the only interface to higher level information governing
+     bodies as outlined in AFPD 33-3, Information Management, 28 March 2006.
+     5.1.2. Shall be the authoritative forum for GeoBase within the Air Force. Membership shall include
+     relevant stakeholders that produce or consume geospatial information from the GeoBase Program.
+     5.1.3. Shall provide a forum for building consensus for Air Force GeoBase program direction, and
+     standards for GeoBase.
+     5.1.4. Shall have an approved charter signed by AF/A4/7 Installations Logistics and Mission Support.
+     5.1.5. Shall meet a specified number of times per year as outlined in the governance charter.
+
+5.2. Governing Body Responsibilities.
+     5.2.1. The Chair shall be the Chief of the HAF/GIO. The Chair Shall:
+        5.2.1.1. Oversee activities toward achieving GeoBase goals and objectives.
+        5.2.1.2. Ensure that governing body is aligned with Federal, DoD, and AF policies and guidance.
+        5.2.1.3. Provide administrative and managerial support regarding governing body meetings.
+
+5.3. Governing Body Members Shall:
+     5.3.1. Participate in activities necessary to execute program direction and activities that affect Geo-
+     Base standards.
+     5.3.2. Execute action items assigned by the governing body.
+     5.3.3. Keep the governing body apprised of relevant issues and matters regarding GeoBase.
+     5.3.4. Provide SMEs to working groups established and approved by the governing body.
+     5.3.5. Include relevant stakeholders that participate in GeoBase and produce or consume the GeoBase
+     Service for installations and facilities. They will be identified in the governing charter as voting or
+     non-voting.
+AFI32-10112 19 OCTOBER 2007                                                                           17
+
+
+                                               Chapter 6
+
+                           GEOBASE ENTERPRISE ARCHITECTURE
+
+6.1. Overview. The GeoBase Service will be supported and maintained by EA guidelines (Business
+Transformation Agency, Business Enterprise Architecture, 15 March 2007, DoDD 8320.2 Data sharing
+in a Net-centric Department of Defense, 2 December 2002, and DoDD 8100.1 Global Information Grid
+(GIG) Overarching Policy). EA guidelines establish the road map to guide development of the GeoBase
+Service. Efficient use of the EA will facilitate Air Force missions through the use of modeled business
+processes paired with the efficient use of IT.
+
+6.2. Enterprise Architecture. The GeoBase EA is documented using the DoD Architecture Framework
+(DoDAF) thereby ensuring GeoBase architectures are compatible and interoperable with other USAF and
+DoD information architectures. All GIOs will maintain compliance with DoDAF in accordance with the
+current DoDAF publication. The use of a GeoBase EA framework ensures uniformity and standardization
+when migrating and integrating information systems from legacy systems that are in place now toward a
+more standardized architecture. Frameworks include concepts that drive the types of architectural prod-
+ucts being created. The products, both graphical and textual, capture information on system configuration
+and design. These products will enable more efficient system management.
+   6.2.1. Table 6.1. shows the core architectural products. All GIOs must develop and publish the archi-
+   tectural products in Table 6.1. and are encouraged to develop and publish the products shown in Table
+   6.2.
+
+Table 6.1. Core Architecture Products
+Product Name                                         Architectural Product
+All View (AV)-1:                                     Overview and Summary Information
+AV-2                                                 Integrated Dictionary Information
+Operational View (OV)-2                              Operational Node Connectivity Description
+OV-3                                                 Operational Information Exchange Matrix
+OV-5                                                 Operational Activity Model
+Systems View (SV)-1                                  System Interface description
+Techincal Standards View (TV)-1                      Technical Architecture Profile
+18                                                                     AFI32-10112 19 OCTOBER 2007
+
+
+Table 6.2. Optional Architecture Products
+Product Name                                           Architectural Product
+OV-1                                                   High Level Operational Concept Description
+OV-4                                                   Organizational Relationships Chart
+OV-6                                                   Operational Activity Sequence and Timing
+OV-7                                                   Logical Data Model
+SV-2                                                   System Communications Description
+SV-3                                                   Systems-Systems Matrix
+SV-4                                                   Systems Functionality Description
+SV-5                                                   Operational Activity to Systems Functions
+                                                       Traceability Matrix
+SV-6                                                   Systems Data Exchange Matrix
+SV-7                                                   Systems Performance Parameters Matrix
+SV-8                                                   Systems Evolution Description
+SV-9                                                   Systems Technology Forecast
+SV-10                                                  Systems Functionality Sequence and Timing
+                                                       Descriptions
+SV-11                                                  Physical Security
+TV-2                                                   Techinical Standards Forecase
+
+6.3. EA Governance Representation. HAF GIO manages, controls, and monitors its PfM and EA activ-
+ities through the Air Force Enterprise Information Technology Data Repository. GeoBase representatives
+will participate in EA and PfM governing councils.
+
+6.4. Net-Centric. All GIOs will maintain compliance with DoDD 8320.2, Data Sharing in a Net-Centric
+Department of Defense, 2 December 2004, and make data available in a Net-Centric environment. Within
+the limits of Information Assurance policy and appropriate data stewardship, CIP, MDL, MDS, and RIP
+data will be provided via the Air Force network to the maximum extent practicable. Employ centralized
+storage for their transactional data stores to improve data integrity authority, access, and system perfor-
+mance. Data migrations performed to effect these consolidations will include routines to validate the data
+before moving it into the new data store. The HAF GIO in cooperation with all GIOs must ensure that this
+data will be timely, accurate, trusted, secure, and that the data is universally available anywhere in the Air
+Force network. Once data is available in a Net-Centric environment it should be integrated, where possi-
+ble, with other authoritative systems.
+
+6.5. Vendor Neutral. The GeoBase Service includes geospatial data and associated metadata and is
+served in a protected fashion using open, vendor-neutral standards as defined in the GeoBase Enterprise
+Architecture.
+AFI32-10112 19 OCTOBER 2007                                                                            19
+
+
+6.6. Web Content. GeoBase Strategic Services will be hosted on the GCSS-AF network. These services
+will be Air Force enterprise wide and will be net-centric and EA compliant.
+
+6.7. Expeditionary Site Mapping (ESM). The CIP layers for FOLs are hosted as described in the most
+recent ESM CONOPS.
+
+6.8. Classified CIP. The Combat Air Force responsible for serving FOL CIPs on the Secret Internet Pro-
+tocol Router Network as per the ESM CONOPS may also serve CIPs using similar means for access by
+external (non-USAF) organizations in a classified fashion as required.
+
+6.9. Architecture Asset. The HAF GIO maintains the GeoBase architecture with assistance from the Air
+Force Chief Information Officer. The EA developed at all levels of the Air Force is a corporate asset that
+will be managed as a formal program.
+20                                                                  AFI32-10112 19 OCTOBER 2007
+
+
+                                               Chapter 7
+
+                                          DATA SECURITY
+
+7.1. Security Guidelines. Data can only be classified by the Operational Control Authority (OCA) AFI
+31-401, Information Security Program Management, November 2005. The OCA for the GeoBase pro-
+gram is the Air Force Civil Engineer A7C. At date of publication none of the standard CE data sets have
+been classified. Additionally data can only be “For Official Use Only” if it meets the exemptions of FOIA
+as outlined in AFI 31-401, Information Security Program Management, November 2005.
+
+
+
+                                              DEL EULBERG, Maj Gen, USAF
+                                              The Civil Engineer, DCS/Logistics, Installations &
+                                              Mission Support
+AFI32-10112 19 OCTOBER 2007                                                                    21
+
+
+                                            Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+EO 12906, Coordinating Geographic Data Acquisition and Access: The National Spatial Data Infra-
+structure, 13 April 1994.
+EO 13011, Federal Information Technology, 16 July 1996.
+
+OMB Circular No. A-16, Coordination of Geographic Information and Related Spatial Data Activities,
+19 August 2002.
+
+JP2-03, Joint Tactics Techniques and Procedures for Geospatial Information and Services to Support
+Joint Operations, 31 March 1999.
+JP3-34, Engineer Doctrine for Joint Operations, 5 July 2000.
+
+FGDC-STD-001-1998, Federal Geographic Data Committee Metadata Content Standard Version 2,
+http://fgdc.gov/metadata.constant.html.
+
+DoD Directive 5030.59, National Imagery and Mapping Agency (NIMA) Limited Distribution of Imagery
+or Geospatial Information and Data, 13 May 2003.
+DoD Directive 5105.60, National Imagery and Mapping Agency, 11 October 1996.
+DoD Directive 5200.1, Information Security Program, 24 November 2003.
+DoD Directive 8320.2, Data Sharing in a Net-Centric Department of Defense, 2 December 2004.
+
+DoD Instruction 5000.2, Operation of the Defense Acquisition System, 12 May 2003
+DoD Instruction 5000.56, Programming Unique Mapping Charting and Geodesy (MC&G) requirements
+for Developing Systems, 11 September 1991.
+
+DoD Policy, Department of Defense Architecture Framework (DoDAF) February 2004
+
+AFPD 32-10, Installations and Facilities, 27 March 1995.
+AFPD 10-5, Basing, 26 November 1993.
+AFDD 2-1.4, Bases, Infrastructures and Facilities, 19 November 1999.
+AFPD 33-3, Information Management, 28 March 2006
+
+AFI 10-404, Base Support and Expeditionary Site Planning, 1 April 2004.
+AFI 10-1401, Modernization Planning Documentation, 22 May 1995.
+22                                                                 AFI32-10112 19 OCTOBER 2007
+
+
+AFI 14-205, Geospatial Information and Services, 4 May 2004.
+AFI 31-401, Information Security Program Management, 1 November 2005.
+AFI 32-7062, Air Force Base Comprehensive Planning, 1 October 1997.
+AFI 33-104, Base-Level Planning and Implementation, 10 May 2001.
+AFI 33-124, Enterprise information Technology Architectures, 1 May 2000.
+AFI 37-123, Management of Records, 31 August 1994.
+
+Air Force Installation Mapping and Visualization (IM&V) Council Charter, June 2005.
+
+USAF, GeoBase Common Installation Picture Data Quality Assurance Plan Version 1.0, April 2006.
+USAF, GeoBase Enterprise Architecture Version, 1.0 January 2003.
+USAF, Expeditionary Site Mapping CONOPS Strategic, 1 April 2004.
+
+Abbreviations and Acronyms
+A4/7—USAF Deputy Chief of Staff, Logistics, Installations and Mission Support
+A7C—USAF Deputy Chief of Staff, Logistics, Installations, and Mission Support– The Civil Engineer
+A7CI—USAF Deputy Chief of Staff, Logistics, Installations, and Mission Support– Planning Division
+AFCS—Air Force Corporate Structure
+AFDD—Air Force Doctrine Document
+AFI—Air Force Instruction
+AFPD—Air Force Policy Directive
+AIS—Automated Information Systems
+CE—Civil Engineering
+CIP—Common Installation Picture
+CONOPS—Concept of Operations
+DoD—Department of Defense
+DoDAF—Department of Defense Architecture Framework
+DoDD—Department of Defense Directive
+DoDI—Department of Defense Instruction
+DRU—Direct Reporting Unit
+EA—Enterprise Architecture
+ESM—Expeditionary Site Mapping
+FOIA—Freedom of Information Act
+FOA—Field Operating Agency
+AFI32-10112 19 OCTOBER 2007                               23
+
+
+FOL—Forward Operating Location
+GCSS-AF—Global Combat Support Service Air Force
+GIO—Geo Integration Office
+GI&S—Geographic Information and Services
+GPS—Global Positioning System
+HAF—Headquarters Air Force
+HAF GIO—Headquarter Air Force Geo Integration Office
+HQ—Headquarters
+IGI&S—Installations Geospatial Information and Services
+IMT—Information Management Tool
+INFOSEC—Information Security
+IT—Information Technology
+JP—Joint Publication
+MAJCOM—Major Command
+MC&G—Mapping Charting and Geodesy
+MDL—Mission Data Layers
+MDS—Mission Data Set
+NIMA—National Imagery and Mapping Agency
+OCA—Operational Control Authority
+OMB—Office of Management and Budget
+OPR—Office of Primary Responsibility
+PE—Program Element
+PEM—Program Element Monitor
+PfM—Portfolio Management
+POM—Program Objective Memorandum
+QAP—Quality Assurance Plan
+QA/QC—Quality Assurance/Quality Control
+RDS—Records Disposition Schedule
+RIP—Regional Installation Picture
+SME—Subject Matter Expert
+SPO—System Program Office

@@ -1,0 +1,667 @@
+                             Template modified:     27 May 1997 14:30
+BY ORDER OF THE                                                  AIR FORCE INSTRUCTION 16-1001
+SECRETARY OF THE AIR FORCE                                                                 1 JUNE 1996
+
+                                                                                     Operations Support
+
+                                                                VERIFICATION, VALIDATION AND
+                                                                       ACCREDITATION (VV&A)
+
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE: This publication is available digitally on the SAF/AAD WWW site at: http://afpubs.hq.af.mil.
+If you lack access, contact your Publishing Distribution Office (PDO).
+
+
+OPR: HQ USAF/XOMT                                                         Certified by: HQ USAF/XOM
+     (Mr Raymond Miller)                                                        (Brig Gen Thomas Case)
+                                                                                              Pages: 18
+                                                                                         Distribution: F
+
+This instruction implements AFPD 16-10, Modeling and Simulation Management,by establishing policy,
+procedures, and responsibilities for the VV&A of Air Force- owned or -managed M&S. Forward pro-
+posed revisions to the M&S office of primary responsibility (OPR) for your command, who will in turn
+consolidate and forward them to HQ USAF/XOMT, Technical Support Division, Directorate of Model-
+ing, Simulation, and Analysis, 1510 Air Force Pentagon, Washington D.C. 20330-1510. Major command
+(MAJCOM) OPRs must send their consolidations to HQ USAF/XOMT by 15 March of each year. A
+conference of MAJCOM OPRs will coordinate changes that require major alterations to the AFI. Terms
+and concepts, as defined by DoDD 5000.59-M, Glossary of Modeling and Simulation (M&S) Terms, are
+used in this instruction (see Attachment 1). Additional information on M&S VV&A standards and prac-
+tices can be found in the Defense Modeling and Simulation Office’s (DMSO) guide, Introduction to
+VV&A Standards and Practices for DoD M&S.
+
+Section A—General
+
+1. Applicability. This instruction applies to all Air Force-owned or -managed M&S that qualify as feder-
+ation elements, common use, general use, joint use, or major M&S as defined in Attachment 1, section
+C. MAJCOMs, field operating agencies (FOAs), and direct reporting units (DRUs) will establish VV&A
+requirements and procedures for command-owned M&S that do not fit into one of these model use cate-
+gories.
+
+2. Background. Digital models and simulations (M&S) are becoming more numerous, complex, and
+capable. Current trends indicate that the results of M&S will play a larger role in supporting operational
+and acquisition decisions made by senior Air Force leaders. However, before decision makers vest the
+confidence in M&S results required to make decisions involving large costs or human lives, the model
+proponents must ensure that such confidence is justified. Verification, validation, and accreditation are
+processes by which M&S content and quality are investigated, documented, and authenticated. This
+instruction is based on the concept that verification and validation (V&V) will be a continuous process
+throughout a model’s life cycle. Air Force model V&V plans will emphasize an incremental "building
+block" approach where different V&V activities are sponsored by individual users to support their spe-
+cific accreditation needs. These V&V results are maintained in a centralized location available, via the
+M&S Resource Repository (MSRR), to all model users. This approach, over time, produces an in-depth
+examination of the model, with the V&V costs being shared across the model’s entire user community.
+   2.1. A systematic V&V plan will be an integral part of any Air Force M&S development, enhance-
+   ment, maintenance, or upgrade activity. V&V will also be accomplished in concert with, and as part
+   of, overall M&S configuration management actions according to AFI 16-1002.
+   2.2. Air Force M&S applications supporting either the major DoD decision making organizations or
+   processes specified in DoD 5000.59 (paragraph D.8), Air Force input to these DoD organizations or
+   processes, joint training, and joint exercises, will be accredited for their intended purpose. All exe-
+   cuted V&V activities will support the model acceptance/accreditation requirements defined by the
+   accreditation authority.
+   2.3. All Air Force-owned M&S will meet V&V requirements of the MAJCOM, FOA, or DRU exer-
+   cising model management responsibility.
+   2.4. Air Force agencies using M&S owned by other DoD components will adhere to the terms and
+   conditions specified in any memorandum of agreement (MOA) releasing the model for Air Force use.
+   Unless otherwise specified, the Air Force using agency will be responsible for accomplishing model
+   V&V activities according to model owner, MAJCOM, or (if applicable) Air Force guidance, which-
+   ever is the most appropriate for the intended model use.
+   2.5. The Air Force agency that is responsible for a contractor- or Federally Funded Research and
+   Development Center (FFRDC)-developed M&S (either new major model development or enhance-
+   ments) will ensure that V&V requirements are accomplished.
+   2.6. Model managers and developers are responsible for executing a practical transition plan to
+   ensure compliance with the appropriate V&V requirements when an M&S classification changes (i.e.,
+   change in model usage requires it to be treated as a major model).
+   2.7. If applicable, V&V activities will include assessments of the representations of concepts, tactics,
+   forces, processes, and doctrine from all protagonists’ perspectives. Coordination with HQ USAF/INX
+   is required to ensure that threat portrayals conform to current assessments.
+
+Section B—Responsibilities for V&V Management
+
+3. HQ USAF Responsibilities.
+   3.1. The Assistant Vice Chief of the Air Force (HQ USAF/CVA) is the approval authority for M&S
+   VV&A policy.
+   3.2. The Directorate of Modeling, Simulation, and Analysis (HQ USAF/XOM) is designated as the
+   single point of contact for M&S VV&A issues and activities within the Air Force and represents the
+   Air Force in joint, multi-service, and multi-agency M&S efforts. In conjunction with all Air Force
+   M&S user communities, HQ USAF/XOM leads development of Air Force M&S policy for HQ
+   USAF/CVA approval.
+
+
+
+                                                2
+   3.3. The appropriate HQ USAF Deputy Chief of Staff or Assistant Chief of Staff will approve the
+   V&V report that accompanies the release of Air Force models and databases within their functional
+   areas which meets two conditions:
+       • M&S will be used to support joint exercise or training activities.
+       • Portray Air Force capabilities, force structure, doctrine, or tactics when used in these activi-
+          ties.
+
+4. MAJCOM/FOA/DRU Responsibilities.
+   4.1. Establishes detailed guidance that identifies and manages the VV&A requirements for command
+   owned and operated models that do not qualify as common use, general use, joint use, or major M&S
+   as defined in Attachment 1, section C. This will include the "threshold" criteria that require "proto-
+   type" computer code be treated as a model for V&V purposes.
+   4.2. Establish a command point of contact responsible for V&V issues and activities.
+   4.3. Establish a V&V manager for each command-owned or managed M&S.
+   4.4. Provide resources to meet V&V management requirements within the command.
+   4.5. Establish and maintain a list of command personnel that can serve on Technical Review Working
+   Group (TRWG) teams as subject matter, problem domain, or technical experts (including model
+   development, operation, and maintenance.)
+   4.6. Identify personnel that can serve as Air Force focal points for joint distributed interactive simu-
+   lation (DIS) exercises.
+
+5. V&V Manager Responsibilities.
+   5.1. Provides expertise on current and previous V&V efforts to HQ Air Force or MAJCOM, FOA, or
+   DRU technical review committees.
+   5.2. Establishes, in conjunction with the model manager and user community, baseline V&V status
+   (for legacy models). It is expected that the V&V baseline will be refined using the incremental
+   approach paradigm mentioned in Section A, paragraph 2.
+   5.3. Develops, in conjunction with the model manager, a long-range plan that prioritizes V&V activ-
+   ities for known model deficiencies and upcoming model enhancements/upgrades.
+   5.4. Coordinates on the V&V requirements related to proposed model maintenance, upgrade, and
+   configuration changes.
+   5.5. Establishes, operates, or maintains a repository of all current and historic V&V information on
+   the particular M&S and provides M&S V&V status updates.
+   Users will be able to access the information via the DoD MSRR system.
+   5.6. (DIS V&V managers) Guidance for DIS V&V is contained in the Institute of Electrical and Elec-
+   tronic Engineers (IEEE) document, The IEEE Recommended Practices Guide for the Verification,
+   Validation, and Accreditation of Distributed Interactive Simulations, 5 Mar 96 (Draft).
+
+
+
+
+                                                3
+   5.7. Advocate for resources needed to carry out the previously described M&S V&V management
+   responsibilities. This could include some "cost sharing" arrangements with the model’s user commu-
+   nity.
+
+6. Accreditation Authority Responsibilities.
+   6.1. Identifies pertinent parameters and constraints that impact the V&V planning and implementa-
+   tion process, including M&S acceptance and accreditation measures of effectiveness/measures of per-
+   formance (MOEs/MOPs).
+   6.2. Determines the need to form a TRWG for review of V&V plan and results.
+   6.3. Selects or approves personnel that are involved in the M&S VV&A activities; i.e., verification,
+   validation, or accreditation agents, optional TRWG members, other subject matter experts (SME), etc.
+   6.4. Approves, funds, and monitors the implementation of all V&V activities that directly support the
+   upcoming accreditation decision.
+   6.5. Documents M&S application accreditation decisions after review of supporting accreditation
+   reports.
+   6.6. Ensures completion and dissemination of appropriate V&V or accreditation reports.
+
+7. Accreditation Agent Responsibilities.
+   7.1. Serves as a source of advice and expertise to the accreditation authority concerning VV&A
+   issues.
+   7.2. Assists accreditation authority in the identifying M&S acceptance and accreditation MOEs/
+   MOPs.
+   7.3. Performs M&S accreditation assessment and determines any deficiencies between documented
+   M&S capabilities and accreditation requirements which require further V&V.
+   7.4. Assists accreditation authority in determining the need to form a TRWG and, as the accreditation
+   authority’s representative, chairing subsequent TRWG proceedings.
+   7.5. Ensures, as the accreditation authority’s representative during the verification and validation
+   planning and implementation process, that the approved plan will provide sufficient V&V to support
+   the accreditation decision while remaining within accreditation authority-established constraints.
+   7.6. Prepares accreditation report documentation for accreditation decision, and afterwards dissemi-
+   nates the completed accreditation report.
+
+8. Verification Agent or Validation Agent Responsibilities.
+   8.1. Serves as a source of advice and expertise to the accreditation authority and accreditation agent
+   concerning V&V issues.
+   8.2. Develops a plan, including resource requirements, that addresses the V&V deficiencies identi-
+   fied by the accreditation agent while remaining within the accreditation authority-identified con-
+   straints. If this is not possible, the agent(s) will work with the accreditation agent to develop risk
+   reduction and V&V plans that together will meet accreditation authority M&S acceptance criteria and
+   constraints.
+
+                                               4
+   8.3. Provides a suggested list of TRWG members to accreditation authority and accreditation agent,
+   and actively participates in any subsequent TRWG meetings.
+   8.4. Performs all V&V activities and prepares the final V&V report for submission to the accredita-
+   tion agent and the M&S’ V&V manager.
+
+Section C—V&V Management, Processes, and Tools
+
+9. Verification. Verification is the process of determining that M&S accurately represent the devel-
+oper’s conceptual description and specifications. This is accomplished by identifying and eliminating
+mistakes in logic, mathematics, or programming. This process establishes that the M&S code and logic
+correctly perform the intended functions, and to what extent M&S development activities conform to
+state-of-the-practice software engineering techniques.
+
+10. Valadation. The process of determining the degree to which a model is an accurate representation
+of the real-world from the perspective of the intended uses of the model. Validation process can be used
+to identify model improvements, where necessary. It has two main components: structural validation,
+which includes an internal examination of M&S assumptions, architecture, and algorithms in the context
+of the intended use; and output validation, which determines how well the M&S results compare with the
+perceived "real world."
+
+11. V&V Report. The V&V report, submitted by the verification or validation agent(s), formally docu-
+ments V&V activities, their results, and recommendations for major Air Force M&S. This document,
+maintained by the V&V manager as part of the M&S’ V&V history, is used to support current and future
+accreditation decisions, feasibility assessments, and future enhancements using this particular M&S. The
+report, at a minimum, will:
+    • Specify M&S reference version number, plus all hardware and software identification or version
+        numbers used in supplying model inputs.
+    • Identify model input data suppliers.
+    • Identify key V&V planning, technical review, and implementation participants or organizations,
+        and their V&V responsibilities.
+    • Describe V&V methodologies, implementations, and their results.
+    • Describe verification, validation, and certification (VV&C) activities performed on input data sets
+        used in V&V activities.
+    • Identify V&V criteria (MOEs/MOPs).
+    • Describe any additional model strengths, weaknesses, or limitations identified as a result of the
+        V&V activity, with recommended remedial actions.
+
+12. Accreditation. Accreditation is the official determination by the accreditation authority that the
+M&S is acceptable for a specific purpose. This determination considers the V&V status of a specific
+model version, its data support (source, quality, and VV&C) and the analysts/users that operate the model
+and interpret its results. The accreditation authority is the individual who is responsible and accountable
+for decisions or actions based upon the specific M&S usage. The decision to accredit a model or simula-
+tor rests solely with the accreditation authority. Likewise, determining the level of effort supporting a
+particular accreditation, whether conducting additional V&V activities or simply reviewing the existing
+                                                5
+M&S documentation and past VV&A history, rests solely with the accreditation authority. The following
+accreditation requirements listed in the following paragraph are not all-inclusive but reflect those items
+considered to be of greatest importance. The validation documentation of M&S application results corre-
+lating M&S results with test or other data describing behavior of the subject being modeled will be
+reviewed during the M&S accreditation assessment.
+   12.1. Accreditation Requirements. The following are the minimum requirements that must be
+   assessed by the accreditation authority (or the designated accreditation agent) each time the model is
+   accredited for a particular application:
+       • Review the M&S's development history, summarize past application(s), and define its appli-
+          cation domain based upon a description of capabilities by the M&S developer.
+       • Review the adequacy of the model's configuration version control; and complete an accept-
+          able face validation examination, if appropriate.
+       • Compare the M&S's capabilities and credibility, based on V&V status, to the application cri-
+          teria. Assess risk of accepting M&S capabilties if they do not meet application criteria thresh-
+          olds, or have not had sufficient V&V.
+       • Ensure that model documentation exists and is current/sufficient for the intended use. This
+          documentation will normally include the M&S conceptual model, user's guide, programmer's
+          and analyst's manual(s).
+       • Ensure that data sources have been identified and both producer and user data VV&C activi-
+          ties were accomplished.
+   12.2. Accreditation Report. This report summarizes the evidence used to support the accreditation
+   decision. The report contains the information outlined in the draft DoDI 5000.XX, 6 Feb 96, para-
+   graph F.6.
+
+13. VV&A Process. The following key actions/elements, shown in Figure 1., constitute a flexible pro-
+cess that accommodates VV&A activities throughout the M&S' life cycle--initial model development,
+model enhancement, or problem domain expansion. (The DIS VV&A process is discussed in the next
+paragraph.) The accreditation authority is responsible for funding and implementing the assessment and
+V&V activities supporting his/her specific model (application) accreditation. V&V activities will be
+coordinated with the model and V&V managers.
+
+
+
+
+                                                6
+Figure 1. Air Force Verification, Validation, and Accreditation Process.
+
+
+
+
+                                             7
+13.1. M&S Requirements Identification. The accreditation authority and accreditation agent (usually
+the responsible study/project team lead) first establish guidance impacting M&S support for a given
+project, including (but not limited to) available manpower and funding resources; project constraints
+(cost, schedule, performance); requirements that will be supported using M&S; and acceptability/
+accreditation criteria including pertinent MOEs/MOPs. The accreditation agent then identifies the
+particular model(s)--including requisite modifications or enhancements--from available Air Force/
+DoD M&S repositories that appears to meet these parameters.
+13.2. M&S Assessment. The accreditation agent will assess the M&S to determine if its proposed
+usage falls within a previously V&V’d application domain. Accreditation agent will identify any
+V&V deficiencies that must be corrected for the M&S to meet the accreditation authority’s acceptabil-
+ity criteria.
+   13.2.1. Proposed application may be accredited if documented V&V history sufficiently supports
+   specified acceptance and accreditation MOEs/MOPs. (See paragraph 12.1. for accreditation
+   requirements).
+13.3. V&V Plan Development. Verification and validation agent(s), based on V&V deficiencies
+identified during the accreditation agent’s M&S assessment, will develop a plan that ensures suffi-
+cient, documented model V&V to support accreditation acceptance criteria.
+   13.3.1. Executive Agent will be consulted if V&V activities will be performed on portions of the
+   M&S that lie with the EA’s problem domain.
+   13.3.2. V&V plan will identify data sources to obtain verified, validated, and certified input data.
+   Scenario data--reflecting current threat representations--will be obtained from or coordinated with
+   appropriate intelligence source. HQ USAF/INX will be consulted on questions concerning appro-
+   priate intelligence sources.
+   13.3.3. For non-government owned models or for new model starts, plan must include establish-
+   ment and operation of V&V management mechanisms and responsibilities by the accreditation
+   sponsor.
+   13.3.4. Plan will identify and source estimated planning and implementation manpower/funding.
+13.4. V&V Technical Review Working Group Review. This working group review is intended to
+develop a community consensus that, within identified constraints, an approved V&V methodology,
+with associated risk mitigation strategies, will be adequate to support proposed model accreditation
+decision. This group, whose membership is tailored to the model and proposed application, is formed
+on an as-needed basis. Working group composition includes:
+    • Accreditation Agent
+    • Verification and Validation Agent(s)
+    • Model manager
+    • V&V manager (if different from model manager)
+    • Executive Agent (if V&V activities directly involve the EA's problem domain)
+    • User's group chair (if applicable)*
+    • Other technical cognizance (organizational) representatives*
+    • Independent Technical Review representative*
+
+                                            8
+       •   Data Source(s) VV&C representative*
+       •   HQ USAF/XOM and other Service representatives**
+       •   Other OSD representatives**
+   *Membership optional
+   **When multi-Service participation required
+   13.5. V&V Technical Review Working Group Final Review. Upon completion of V&V activities,
+   the committee can be reconvened to review actual versus planned V&V implementation and results;
+   review or perform a risk assessment (for any unaccomplished V&V activities), and provide a written
+   summary of their findings and recommendations to the V&V agents. The V&V agents will then pre-
+   pare the V&V report that summarizes overall findings and recommendations.
+   13.6. V&V agents will forward the V&V report and supporting documentation to the accreditation
+   agent for inclusion into the accreditation report. A copy of this report and documentation is forwarded
+   to the appropriate M&S V&V manager for update and archiving purposes.
+   13.7. Accreditation agent, based on the accreditation assessment, along with any additional V&V and
+   IV&V activities, and independent endorsements from bodies with appropriate technical/domain
+   expertise, will prepare an accreditation report.
+   The accreditation authority will make and document the model accreditation decision. The accredita-
+   tion agent will forward a copy of the accreditation report to the appropriate M&S V&V manager for
+   update and archiving purposes.
+
+14. Distributed Interactive Simulation (DIS) V&V. Distributed systems of M&S include DIS appli-
+cations, M&S linked by aggregate level simulation protocol (ALSP), and other M&S architecture which
+contain distributed components that make up an overall M&S. In general, each component M&S for
+inclusion in the distributed architecture would be identified and separately V&V'd for intended DIS
+usage. The entire distributed architecture is then assembled and V&V'd as a single entity, with the V&V
+level of effort tailored to support acceptability criteria given accreditation authority-identified constraints.
+   14.1. Models that are individual components in a DIS architecture will be V&V'd for the specified
+   use. Accreditation sponsor is responsible for implementing and funding those VV&A activities
+   required to prepare and subsequently integrate the stand-alone model into the DIS exercise.
+       14.1.1. For joint DIS exercises, Air Force constructive models portraying force structure, doc-
+       trine, and tactics representations will be V&V'd for use in the particular exercise according para-
+       graph 5. of this section, and approved for use by the appropriate HQ USAF DCS or ACS (or
+       designated representative). All other models--whether being submitted for first time DIS use, or
+       reuse of a model currently residing in a DIS repository--would be V&V'd and approved for use via
+       MAJCOM, FOA, or DRU procedures.
+   14.2. When the Air Force is the DIS accreditation sponsor, The IEEE Recommended Practices Guide
+   for the Verification, Validation, and Accreditation of Distributed Interactive Simulations, 5 Mar 96
+   (DRAFT) should be referenced for the tailoring and constructing of the DIS exercise. This document
+   identifies specific points for development of both the V&V plan and report.
+   14.3. An Air Force V&V focal point, normally a member of the Air Component Commander's staff,
+   will be designated for joint ALSP exercises that use models portraying Air Force force structure, doc-
+
+                                                   9
+   trine, and tactics representations. Otherwise, the focal points for a joint DIS exercises will be identi-
+   fied by the participating Air Force agencies and approved by HQ USAF/XOM.
+
+15. V&V Manager. Every major Air Force model will have a single V&V manager throughout its life
+cycle. Depending on model size and complexity, this function will be assigned to the model manager or
+to the agency with model management responsibility. For new models, the V&V manager will be identi-
+fied at the start of model development activities. Otherwise, for existing models, V&V manager will
+develop a time-phased plan to comply with these V&V responsibilities within 2 years of the effective date
+of this instruction. A fuller explanation of V&V manager responsibilities were outlined in Section B.
+   15.1. At any one point in time there can be only one clearly designated V&V manager for a given
+   model; however, there is no restriction to the transfer of V&V management responsibility between
+   organizations. For example, the developing agency could simultaneously transfer both model man-
+   agement and V&V management responsibility to the model manager when delivering the completed
+   model.
+   15.2. The following guidelines will be used to identify the Air Force organization with V&V man-
+   agement responsibility for a particular M&S.
+       15.2.1. For M&S under development, either in-house or under contract by a sponsoring Air Force
+       agency, the sponsoring Air Force agency is responsible.
+       15.2.2. For M&S which do not have a designated model manager, and are operated and main-
+       tained by a single Air Force agency, that agency is responsible.
+       15.2.3. For M&S which do not have an designated model manager, and have multiple users or
+       separate users and maintainers:
+          • If a configuration management or users group exists, the agency chairing this group is
+              responsible.
+          • If a configuration management or users group does not exist, the predominant Air Force
+              user is responsible (XOM will be the final authority for determining predominant Air
+              Force user).
+       15.2.4. V&V manager for threat M&S will normally be the appropriate Air Force intelligence
+       agency, as determined by HQ USAF/INX.
+       15.2.5. Distributed interactive simulation (DIS) or Aggregate Level Simulation Protocol (ALSP)
+       V&V focal point (manager):
+           • For a DIS or ALSP environment owned by the Air Force, the Air Force accreditation
+               sponsor is responsible for overall management responsibilities (component model,
+               VV&A, and configuration management).
+           • For a joint DIS or ALSP environment, and Air Force is not designated as the accreditation
+               sponsor, the Air Force exercise POC (or his designated representative) will represent the
+               Air Force on issues concerning the DIS or ALSP environment and Air Force models
+               within the DIS or ALSP confederation. This Air Force (DIS or ALSP) focal point will
+               coordinate the VV&A requirements with the joint DIS or ALSP manager.
+
+16. V&V Repository. In conjunction with the model manager, the V&V manager will establish, operate,
+or maintain a repository accessible via the DoD Modeling and Simulation Resource Repository (MSRR)
+
+                                                10
+system. The V&V manager will ensure his/her repository is consistent and compatible to the DoD
+MSRR. Repository operations must facilitate M&S community queries and data access to establish the
+current model version’s baseline V&V status and model VV&A and usage history. Additionally, the
+repository will contains pointers to documentation on all ongoing and completed VV&A (stand-alone and
+DIS-related) activities, such items as test input data sets, V&V plans, and documented conceptual and
+data models, that will allow potential users to evaluate the model’s capabilities against their M&S require-
+ments.
+
+17. Waivers. In extenuating circumstances, HQ USAF/XOM may approve requests for waivers to the
+requirements of this document. Under such conditions, a simple request for waiver letter, with rationale,
+must be forwarded through the appropriate chain of command to HQ USAF/XOM. Unless specifically
+exempted for particular applications or periods of time, the waiver must be submitted, reviewed, and
+approved on an annual basis.
+
+
+
+
+                                          RALPH E. EBERHART, Lt General, USAF
+                                          DCS/Plans and Operations
+
+
+
+
+                                                11
+                                          Attachment 1
+       GLOSSARY OF REFERENCES, ABBREVIATIONS, ACRONYMS, AND TERMS
+
+References
+DoD Directive 5000.59, DoD Modeling and Simulation (M&S) Management, 4 January 1994
+DoD Directive 5000.59-M, Glossary of Modeling and Simulation (M&S) Terms, 29 August 1995
+(DRAFT)
+DoD Instruction 5000.XX, DoD Modeling and Simulation (M&S) Verification, Validation, and Accredi-
+tation (VV&A), 6 February 1996 (DRAFT)
+AFPD 16-10, Modeling and Simulation Management, 30 January 1995
+AFI 16-1002, Modeling and Simulation Management, 26 July 1995 (DRAFT)
+IEEE 1278.4, The IEEE Recommended Practices Guide for the Verification, Validation, and Accredita-
+tion of Distributed Interactive Simulations, 5 March 1996 (DRAFT)
+Defense Modeling and Simulation Office Guide, Introduction to VV&A Standards and Practices for DoD
+M&S, 30 September 95 (DRAFT)
+
+Abbreviations and Acronyms
+ACAT—Acquisition Category
+ACS—Assistant Chief of Staff
+ADS—Advanced Distributed Simulation
+AFI—Air Force Instruction
+AFPD—Air Force Policy Directive
+AI—Artificial Intelligence
+AIS—Automated Information System
+ALSP—Aggregate Level Simulation Protocol
+C3I—Command, Control, Communications, and Intelligence
+C4I Intelligence—Command, Control, Communications, Computers, and
+CASE—Computer Aided Software Engineering (development tools)
+CAX—Computer Aided Exercise
+DCS—Deputy Chief of Staff
+DoDD—Department of Defense Directive
+DoDI—Department of Defense Instruction
+DIA—Defense Intelligence Agency
+DIS—Distributed Interactive Simulations
+DMSO—Defense Modeling and Simulation Office
+
+                                            12
+DRU—Direct Reporting Unit
+FFRDC—Federally Funded Research and Development Centers
+FOA—Field Operating Agency
+I/DB—Information/Database
+IDEF—Integrated Computer-Aided Manufacturing Definition
+IEEE—Institute of Electrical and Electronic Engineers
+IV&V—Independent Verification and Validation
+LCC—Life Cycle Cost
+M&S—Modeling and Simulation
+MS&A—Modeling, Simulation, and Analysis
+MAJCOM—Major Command
+ModSAF—Modular Semi-Automated Forces
+MOA—Memorandum of Agreement
+MOE—Measure of Effectiveness
+MOO—Measure of Outcome
+MOP—Measure of Performance
+MORS—Military Operations Research Society
+MSMP—M&S Master Plan
+MSRR—Modeling and Simulation Resource Repository
+SAFOR—Semi-Automated Forces
+SMART—Susceptibility Model Assessment and Range Test
+SME—Subject Matter Experts
+T&E—Test and Evaluation
+TRWG—Technical Review Working Group
+V&V—Verification and Validation
+VV&A—Verification, Validation, and Accreditation
+VV&C—Verification, Validation, and Certification
+WAN—Wide Area Network
+
+Terms
+Accreditation—The official determination that a model or simulation is acceptable for use for a specific
+purpose.
+Accreditation Agent—The organization designated by the accreditation sponsor to conduct an
+accreditation assessment for an M&S application.
+                                               13
+Accreditation Authority—An individual occupying a position with the appropriate responsibility or
+authority to accredit a model, simulation, or federation of models or simulations for a particular purpose
+or purposes.
+Accreditation Sponsor—The DoD Component or other organization with the responsibility for
+accrediting a model, simulation, or federation of models or simulations for a specific use or series of uses
+(e.g., for joint training or a Defense Acquisition Board milestone review.)
+Advanced Distributed Simulation (ADS)—A set of disparate models or simulations operating in a
+common synthetic environment in accordance with the Distributed Interactive Simulation standards. The
+ADS may be composed of three modes of simulation: live, virtual, and constructive, which can be
+seamlessly integrated within a single exercise. See also: live simulation; virtual simulation; constructive
+simulation.
+Aerospace M&S Hierarchy—The level or levels of resolution at which a model is operating. The four
+levels related to simulation of aerospace power are:
+    • Campaign. Simulations that attempt to emulate all elements of aerospace power over the duration
+        of a conflict and across the theater or theaters of operations. Time scale normally in days to
+        weeks. Represents the strategic and operational levels of warfare.
+    • Mission. Simulations of one or more interacting elements of aerospace power across all or part of
+        the theater of operations. Time scale normally in hours. May represent the operational and tacti-
+        cal levels of warfare.
+    • Engagement/Sub-mission. Simulations of weapon system and/or support system performance in
+        a limited environment. Engagements ranging from one on one to many on many, or a portion of
+        full system capability. Time scale normally in seconds to minutes. Represents the tactical level
+        of warfare.
+    • System/Subsystem/Component. Detailed engineering or scientific simulation of a single system,
+        subsystems, and components across ranges of operations and environments. Time scales range
+        from micro-seconds to minutes or more. May represent the tactical level of warfare.
+Aggregate Level Simulation Protocol (ALSP)—A family of simulation interface protocols and
+supporting infrastructure software that permit the integration of distinct simulations and war games.
+Combined, the interface protocols and software enable large-scale, distributed simulations and war games
+of different domains to interact at the combat object and event level. The most widely known example of
+an ALSP confederation is the Joint/Service Training Confederation (CBS, AWSIM, JECEWSI, RESA,
+MTWS, TACSIM, CSSTSS) which has provided the backbone to many large, distributed,
+simulation-supported exercises. Other examples of ALSP confederations include confederations of
+analytical models that have been formed to support US Air Force, US Army, and US TRANSCOM
+studies.
+Analytical Model—A model consisting of a set of solvable equations; for example, a system of solvable
+equations that represents the laws of supply and demand in the world market.
+Architecture—The structure of components in a program/system, their interrelationships, and the
+principles and guidelines governing their design and evolution over time.
+Behavior—For a given object, how attribute value changes effect (or are effected by) the object value
+changes of the same or other objects.
+
+
+                                                14
+Benchmarking—The comparison between a model’s output and the outputs of other models or
+simulations, all of which represent the same input and environmental conditions.
+Business Rule—A statement or fact that defines the constraints and relationships between data elements.
+Classes of Simulation—See Live, Virtual, and Constructive Simulation.
+Common-Use M&S—M&S applications, services, or materials provided by a DoD Component to two or
+more DoD Components.
+Conceptual Model—A statement of the content and internal representations which are the user’s and
+developer’s combined concept of the model. It includes the logic and algorithms and explicitly recognizes
+assumptions and limitations.
+Configuration Management—The application of technical and administrative direction and
+surveillance to identify and document the functional and physical characteristics of a model or simulation,
+control changes, and record and report change processing and implementation status.
+Data—Representation of facts, concepts, or instructions in a formalized manner suitable for
+communication, interpretation, or processing by humans or by automatic means.
+Data Certification—The determination that data have been verified and validated. Data user certification
+is the determination by the application sponsor or designated agent that data have been verified and
+validated as appropriate for the specific M&S usage. Data producer certification is the determination by
+the data producer that data have been verified and validated against documented standards or criteria.
+Data Validation—The documented assessment of data by subject area experts and its comparison to
+known values. Data user validation is an assessment as appropriate for use in an intended model. Data
+producer validation is an assessment within stated criteria and assumptions.
+Data Verification—Data producer verification is the use of techniques and procedures to ensure that data
+meets constraints defined by data standards and business rules derived from process and data modeling.
+Data user verification is the use of techniques and procedures to ensure that data meets user specified
+constraints defined by data standards and business rules derived from process and data modeling, and that
+data are transformed and formatted properly.
+Data Verification, Validation, and Certification (VV&C)—The process of verifying the internal
+consistency and correctness of data, validating that it represents real world entities appropriate for its
+intended purpose or an expected range of purposes, and certifying it as having a specified level of quality
+or as being appropriate for a specified use, type of use, or range of uses. The process has two
+perspectives: producer and user processes.
+Distributed Interactive Simulation (DIS)—(1) Program to electronically link organizations operating
+in the four domains: advanced concepts and requirements; military operations; research, development,
+and acquisition; and training. (2) A synthetic environment within which humans may interact through
+simulation(s) at multiple sites networked using compliant architecture, modeling, protocols, standards,
+and data bases.
+DoD Components—The office of the Secretary of Defense (OSD), the Military Departments, the
+Chairman of the Joint Chiefs of Staff, the Combatant commands, the Inspector General of the Department
+of Defense, the Defense Agencies; and the DoD Field Activities.
+DoD Executive Agent—A DoD Component to whom the USD (A&T) has assigned responsibility and
+
+                                                15
+delegated authority for the development and maintenance of a specific area of M&S application,
+including relevant standards and databases, used by or common to many models and simulations.
+Entity—A distinguishable person, place, thing, event, or concept about which information is kept.
+Federation—A system of interacting models and/or simulations, with supporting infrastructure, based on
+a common understanding of the objects portrayed n the system.
+Federation Element—Term applied to an individual model and/or simulation that is part of a federation
+of models and simulations.
+Fidelity—(1) The similarity, both physical and functional, between the simulation and that which it
+simulates. (2) A measure of the realism of a simulation. (3) The degree to which the representation within
+a simulation is similar to a real world object, feature, or condition in a measurable or perceivable manner.
+See also: model/simulation validation.
+General-Use M&S Applications—Specifi c represent ati ons of the physi cal envi ronm ent or
+environmental effects used by, or common to, many models and simulations; e.g., terrain, atmospheric, or
+hydrographic effects.
+Independent Verification and Validation (IV&V)—The conduct of V&V of M&S by individuals or
+agencies that did not develop the model or simulation.
+Joint M&S—Representations of joint and Service forces, capabilities, equipment, materiel, and services
+used by the Joint community or by two, or more, Military Services.
+Legacy Model—A model developed in the past which is still in use that was not implemented using
+today’s standards (e.g., software, communication, DIS, ALSP, etc.). Some legacy models have been
+modified with interfaces to some of the current standards extending their usefulness and interoperability
+with newer, standards based models.
+Live, Virtual, and Constructive Simulation—The categorization of simulation into live, virtual, and
+constructive is problematic, because there is no clear division between these categories. The degree of
+human participation in the simulation is infinitely variable, as is the degree of equipment realism. This
+categorization of simulations also suffers by excluding a category for simulated people working real
+equipment (e.g., smart vehicles).
+    • Live Simulation. A simulation involving real people operating real systems.
+    • Virtual Simulation. A simulation involving real people operating simulated systems. Virtual
+       simulations inject human-in-the-loop (HITL) in a central role by exercising motor control skills
+       (e.g., flying an airplane), decision skills (e.g., committing fire control resources to action), or
+       communications skills (e.g., as members of a C4I team).
+    • Constructive Model or Simulation. Models and simulations that involve real people making
+       inputs into a simulation that carries out those inputs by simulated people operating simulated sys-
+       tems.
+Logical Verification—The identification of a set of assumptions and interactions for which the M&S
+correctly produces intended results. It determines the appropriateness of the M&S for a particular
+application and ensures that all assumptions and algorithms are consistent with the conceptual M&S.
+Major Model and Simulation(M&S)—Includes, but not limited to M&S: whose intended application
+will require accreditation by DoD or Component policy; that will be elements of a federation of models
+
+                                                16
+and simulation; that are intended for reuse; whose application involves safety of life; and, whose
+development will involve the commitment of significant DoD resources. (DoDI 5000.XX)
+Measure of Effectiveness (MOE)—A qualitative or quantitative measure of a M&S’s performance or a
+characteristic that indicates the degree to which it performs the task or meets a requirement under
+specified conditions.
+Measure of Outcome (MOO)—Metrics that define how operational requirements contribute to end
+results at higher levels, such as campaign or national strategic outcomes.
+Measure of Performance (MOP)—A quantitative measure of the lowest level of physical performance
+(i.e., range, velocity, throughput, payload, etc.).
+Model—A physical, mathematical, or otherwise logical representation of a system entity, phenomenon,
+or process.
+Object—Physical or logical structures (models) that keep their characteristics and behavior together.
+Open System—A system in which the components and their composition are specified in a
+non-proprietary environment, enabling competing organizations to use these standard components to
+build competitive systems. There are three perspectives on open systems: portability - the degree to
+which a system component can be used in various environments, interoperability - the ability of
+individual components to exchange information, and integration - the consistency of the various
+human-machine interfaces between an individual and all hardware and software in the system.
+Protocol—A set of rules used to control/regulate the interaction between entities in a system (e.g.,
+computers communicating on a network). Often implemented as hierarchy of "layers" in which each level
+provides a defined set of services to the layer above.
+Real-Time System—A system that computes its results as quickly as they are needed by a real-world
+system. Such a system responds quickly enough that there is no perceptible delay to the human observer.
+In general use, the term is often perverted to mean within the patience and tolerance of a human user.
+Reference Version—The most recent version of a model or simulation which has been released by, and
+under configuration management of an approval authority.
+Resolution—The level of detail or smallest unit considered as the basic element, smallest dimension of
+time and space employed, or most basic intermediate variable in a computer model. High resolution has
+a lot of detail.
+Requirement—An established need that justifies the timely allocation of resources to achieve a
+capability to accomplish approved military objectives, missions, or tasks.
+Scenario—The entire spectrum of environmental considerations that have interaction with system(s)
+under analysis or those of interest for training purposes. The spectrum includes physical environment,
+threat conditions, rules of engagements, and systems performance and effectiveness.
+Simulation—A method for implementing a model over time. Also a technique for testing, analysis, or
+training in which real-world systems are used, or where real-world and conceptual systems are
+reproduced by a model.
+Synthetic Environments—Representations of present or future, factory-to-battlefield, environments
+generated by models, simulations, simulators, and wargames. May include a mix of real and simulated
+objects accessible from widely dispersed locations. One of the Science and Technology Thrust areas.
+
+                                               17
+Validation—Validation is the rigorous and structured process of determining the extent to which an
+M&S accurately represents the intended "real world" phenomena from the perspective of the intended
+M&S use.
+Verification—Verification is the process of determining that M&S accurately represent the developer’s
+conceptual description and specifications.
+
+
+
+
+                                             18

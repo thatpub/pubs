@@ -1,0 +1,1052 @@
+BY ORDER OF THE COMMANDER                              HILL AIR FORCE BASE INSTRUCTION 33-402
+HILL AIR FORCE BASE                                                                           31 JULY 2008
+
+                                                                        Communications and Information
+
+                                                            ELEVATED PRIVILEGES FOR USERS ON
+                                                             NETWORKED INFORMATION SYSTEMS
+
+
+
+                  COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY:          Publications and forms are available for downloading or ordering on the
+                        e-Publishing website at www.epublishing.af.mil.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: 75CS/SCBS                                           Certified by: OO-ALC/IT (ESSYE B. MILLER)
+                                                                                           Pages: 30
+
+This instruction implements elevated privilege on the network for information and information systems at
+Hill AFB according to AFMAN 33-223 Identification and Authentication paragraph 5.4.3., DoD
+8570.01-M Information Assurance Workforce Improvement Program, AFI 33-202 Network and Com-
+puter Security, and HQ AFMC/A6 AFMC Policy on Elevated Privileges to Information systems and
+Applications policy letter dated 10 July 2006. It defines roles, responsibilities, training, and certification
+requirements for all users requiring elevated privileges (aka administrative rights). It also provides policy
+for appointing, training, evaluating, tracking, and certifying elevated privileged users. It provides com-
+manders and supervisors with information and guidance to grant/deny elevated privileges to the fewest
+number of individuals necessary to complete the organizational mission. It applies to all Government Fur-
+nished Equipment (GFE) and information on the HAFB network. It is applicable to all users connected to
+a GFE and operated networks, to include Air National Guard (ANG), Air Force Reserve Command
+(AFRC), Air Combat Command (ACC), and other tenant units. This instruction applies only to military,
+contractor personnel under contract by Department of Defense (DoD) and non-bargaining unit civilians
+who develop, acquire, deliver, use, operate, or manage AF information systems (IS) requesting elevated
+privileges. It will be updated when bargaining unit civilians are to be included. It applies to all devices on
+the HAFB network, inclusive of Windows, Non-Windows, Non-Secure Internet Protocol Router Network
+(NIPRNET), and Secret Internet Protocol Router Network (SIPRNET) on which elevated privileges may
+be used. Ensure that all records created as a result of processes prescribed in this publication are main-
+tained in accordance with AFMAN 37-123 (will convert to AFMAN 33-363), Management of Records,
+and disposed of in accordance with the AF Records Disposition Schedule (RDS) located at https://
+afrims.amc.af.mil/. Refer recommended changes and questions about this publication to the Office of
+Primary Responsibility (OPR) using the AF Form 847, Recommendation for Change of Publication; route
+AF Form 847s from the field through the appropriate functional chain of command. This instruction also
+prescribes the use of Hill AFB Forms Elevated Privilege Request/Agreement (HAFB Form 547) and Ele-
+vated Privilege Approval (HAFB Form 548).
+OVERVIEW
+2                                                                                                 HILLAFBI33-402 31 JULY 2008
+
+
+The implementation of Standard Desktop Configuration (SDC) has brought about the changes in our way
+of maintaining and using GFE. Limited User Access (LUA) was implemented as a result of SDC. LUA
+procedures sharply reduce the use of elevated workstation rights as we progress closer to the completion
+of the AF SDC. LUA is a key element in providing greater network security as part of the overall goal.
+Reducing elevated privileges and standardizing AF clients could dramatically reduce the long-term
+administrative workloads and reduce possible compromises (per TCNO 2006-248-301, Implementation
+of Limited User Access on NIPRNET Clients). Elevated privileges (sometimes referred to as administra-
+tive rights) to an information system are to be restricted to the fewest number of individuals necessary to
+complete the organizational mission. In most cases, these privileges will be restricted to Client Support
+Administrators (CSA), Functional System Administrators (FSA), or network administrators. A few
+instances exist where some elevated privileges must be granted to an individual computer user to run
+applications or perform functions in support of the organizational mission. Throughout this instruction,
+Information System Security Officer (ISSO) will be referred to as Information Assurance Officer (IAO).
+
+Chapter 1— INFORMATION TECHNOLOGY (IT) LEVEL POSITIONS DEFINED                                                                                    5
+      1.1.    Information Technology (IT) Level Positions. ..........................................................                             5
+      1.2.    Level Position IT-I. ....................................................................................................           5
+      1.3.    Level Position IT-II Category A. ...............................................................................                    5
+      1.4.    Level Position IT-II Category B. .................................................................................                  5
+
+Chapter 2— ALTERNATE ACCOUNTS                                                                                                                    7
+      2.1.    Alternate Accounts. ...................................................................................................             7
+      2.2.    .ADM .........................................................................................................................      7
+      2.3.    .CSA ...........................................................................................................................    7
+Table 2.1.    Cross Reference IT Level Positions. .........................................................................                       8
+
+Chapter 3— POLICY                                                                                                                                 9
+      3.1.    Personnel Filling IT-I and IT-II Positions. ................................................................                        9
+      3.2.    GFE Laptops that are Used Off the Network. ...........................................................                              9
+      3.3.    Local Groups on a Machine. ......................................................................................                   9
+      3.4.    Server Administration. ...............................................................................................              9
+      3.5.    Elevated Privilege Request Forms. ............................................................................                      9
+      3.6.    Newly Appointed .......................................................................................................            10
+      3.7.    Currently Appointed Personnel. ................................................................................                    10
+
+Chapter 4— ROLES AND RESPONSIBILITIES                                                                                                            11
+      4.1.    Appointed Personnel with Elevated Privileges. .........................................................                            11
+      4.2.    Wing/Tenant Lead IAO. ............................................................................................                 11
+HILLAFBI33-402 31 JULY 2008                                                                                                                     3
+
+
+    4.3.    FSA. ...........................................................................................................................   12
+    4.4.    Supervisor. .................................................................................................................      12
+    4.5.    Organizational Training Monitors/Managers. ...........................................................                             13
+    4.6.    Base 3A0X1 Functional Manager (75 CS/SCSI). .....................................................                                  13
+    4.7.    Organizational Security Manager. .............................................................................                     13
+    4.8.    DOR. ..........................................................................................................................    13
+    4.9.    Communication Squadron Commander (75 CS/CC). ................................................                                      14
+    4.10.   BIAO. (75 CS/SCBS): ...............................................................................................                14
+    4.11.   Hill Help Desk. (75 CS/SCXH): ................................................................................                     14
+
+Chapter 5— ELEVATED PRIVILEGE REQUEST PROCESS                                                                                                  16
+    5.1.    Request Process. ........................................................................................................          16
+    5.2.    Routing of HAFB Form 547 and 548. .......................................................................                          16
+    5.3.    Training Time Extension. ..........................................................................................                17
+
+Chapter 6— TRAINING REQUIREMENTS                                                                                                               18
+    6.1.    Training Guidance. ....................................................................................................            18
+    6.2.    Minimum Training Requirement. ..............................................................................                       18
+    6.3.    Training for Personnel Filling IT-I Positions. ...........................................................                         18
+    6.4.    Training for ................................................................................................................      18
+    6.5.    Training for Personnel Filling IT-II Category B Positions. .......................................                                 19
+    6.6.    Training Sourced. .......................................................................................................          19
+
+Chapter 7— DOD 8570.01-M REQUIREMENTS.                                                                                                         20
+    7.1.    DoD 8570.01-M Program. .........................................................................................                   20
+    7.2.    Certification Vouchers. ..............................................................................................             20
+
+Chapter 8— OTHER TYPES OF ACCOUNTS                                                                                                             21
+    8.1.    Service Accounts. ......................................................................................................           21
+    8.2.    Organizational/Group User Accounts. .......................................................................                        21
+
+Chapter 9— CAUSES FOR REMOVAL OF ELEVATED PRIVILEGES                                                                                           22
+    9.1.    Actions. ......................................................................................................................    22
+    9.2.    Training. .....................................................................................................................    22
+    9.3.    Background Investigation. .........................................................................................                22
+4                                                                                           HILLAFBI33-402 31 JULY 2008
+
+
+     9.4.   Suspension or Removal of Privileges. .......................................................................                  22
+     9.5.   Reinstatement. ............................................................................................................   22
+
+Chapter 10— PRESCRIBED FORMS                                                                                                              23
+    10.1.   HAFB Forms. .............................................................................................................     23
+
+Attachment 1— GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                           24
+
+Attachment 2— ELEVATED PRIVILEGES REQUIREMENTS                                                                                            29
+HILLAFBI33-402 31 JULY 2008                                                                                5
+
+
+                                                Chapter 1
+
+              INFORMATION TECHNOLOGY (IT) LEVEL POSITIONS DEFINED
+
+1.1. Information Technology (IT) Level Positions. All users with elevated privileges fill either; Infor-
+mation Technology (IT) position I (privileged) or position II (limited privileged) according to DoDI
+8500.2, Information Assurance (IA) Implementation, Table E3.T1. Anyone filling IT-I or IT-II positions
+must meet the minimum background investigation requirements listed in DoDI 8500.2. NOTE: Foreign
+Nationals (FN) are eligible to hold one of these IT positions and may be granted elevated privileges. How-
+ever, within these IT positions there are specific job roles that FN cannot perform. FN must be under the
+immediate supervision at all times of a citizen of the United States (U.S.). For all FN stipulations refer-
+ence DoDI 8500.2 before granting elevated privileges to these individuals.
+
+1.2. Level Position IT-I. These individual(s) request elevated privileges on multiple systems and admin-
+ister IA devices which affect all users accounts base wide such as boundary devices, Intrusion Detection
+System (IDS), routers and switches.
+   1.2.1. An .ADM alternate account is used to perform elevated privilege tasks.
+   1.2.2. If applicable, they have full/extended privileges in Active Directory (AD) to administer their
+   area of responsibility.
+   1.2.3. All personnel in this position are required to have a Single Scope Background Investigation
+   (SSBI) investigation. Refer to DoDI 8500.2 Table E3.T1.
+   1.2.4. Individuals will be assigned to the Communications Squadron/Group.
+   1.2.5. Job role examples include but not limited to the Domain Administration Team, Network
+   Administration Team, Enterprise System Management (ESM) Administration Team, Boundary Pro-
+   tection (job roles that are assigned to the NCC only).
+   1.2.6. DoD 8570.1-M requirements apply to this IT level position.
+
+1.3. Level Position IT-II Category A. These individual(s) request elevated privileges on a single work-
+station only (i.e. their own workstation).
+   1.3.1. A .CSA alternate account is used to perform elevated privilege tasks.
+   1.3.2. Civilians are required to have a National Agency Check Plus Written Inquiries (NACI) investi-
+   gation. Military and contractors are required to have a National Agency Check – Local Agency
+   Checks (NACLC) investigation. Refer to DoDI 8500.2 Table E3.T1.
+   1.3.3. Individuals will not have the capability (rights) to access, administer, or affect another user’s
+   account or machine. If an individual has this capability they are either a level IT-I or IT-II Category B.
+   1.3.4. Job role examples include but not limited to the Developers and Database Administrators
+   (DBA).
+   1.3.5. DoD 8570.1-M requirements do not apply to this IT level position.
+
+1.4. Level Position IT-II Category B. These individual(s) request elevated privileges on multiple sys-
+tems (e.g. workstations, servers, etc.).
+6                                                                       HILLAFBI33-402 31 JULY 2008
+
+
+    1.4.1. An .ADM alternate account is used to perform elevated privilege tasks.
+    1.4.2. Individuals have the capability (rights) to access, administer, or affect another user’s account or
+    computer within their area of responsibility. If applicable, they have limited or extended privileges in
+    AD to only administer within their Organizational Unit (OU).
+    1.4.3. Civilians in this position are required to have a NACI investigation. Military and contractors
+    are required to have a NACLC investigation. All are required to be U.S. Citizens. Refer to DoDI
+    8500.2 Table E3.T1.
+    1.4.4. Job role examples include but not limited to FSA, CSA, server administrators, and service
+    accounts.
+    1.4.5. DoD 8570.1-M requirements apply to this IT level position.
+HILLAFBI33-402 31 JULY 2008                                                                              7
+
+
+                                               Chapter 2
+
+                                     ALTERNATE ACCOUNTS
+
+2.1. Alternate Accounts. All network accounts will be given the “least privilege” necessary to accom-
+plish the mission requirements. Alternate Accounts are accounts that are used by individuals that require
+more privileges to execute their duties than a standard user. These accounts are sometimes referred to as
+secondary accounts. Individuals may not use personal accounts for administrative duties. Two network
+accounts will be maintained In Accordance With (IAW) AFMAN 33-223 paragraph 5.4.3 and AFI 33-202
+V1C5 paragraph 4.2.1.7.1. One account to do their daily work (i.e. emailing) and the second account to do
+their elevated privilege duties. The two authorized extensions for these alternate accounts are .ADM and
+.CSA. Alternate accounts are required to have an alternate token card to log into the network to perform
+their administrative tasks.
+
+2.2. .ADM Extension Alternate Account. One or all of the following must be met to use this type of
+account:
+   2.2.1. The individual administers, maintains, and manages server(s) or applications.
+   2.2.2. Individuals using this type of account have a greater responsibility. With their elevated rights,
+   these individuals also have a greater possibility of affecting more users. Due to this, more training is
+   required to attain this type of alternate account.
+   2.2.3. IT-I and IT-II Cat B level positions use .ADM alternate accounts.
+   2.2.4. If applicable, FSAs with .ADM alternate accounts are given rights in AD to create, add, mod-
+   ify, delete, and modify security settings of all objects within their area of responsibility in AD. FSAs
+   grant access to CSAs and normal user accounts.
+   2.2.5. An alternate token card must be used with this account.
+   2.2.6. Refer to AFMAN 33-223, paragraphs 3.4.2. and 3.6. for password expiration guidance. Pass-
+   words will not be set to “Password never expires”.
+
+2.3. .CSA Extension Alternate Account. One or all of the following must be met to use this type of
+account:
+   2.3.1. IT-Cat A use .CSA alternate accounts.
+   2.3.2. The individual provides client support administration, maintain and manage workstations,
+   peripherals, and/or applications.
+   2.3.3. Currently .CSA account rights are not managed by the Domain Administration team. They are
+   managed by the organizational FSA, which brings about the importance of these individuals being
+   properly trained and certified.
+   2.3.4. An alternate token card must be used with this account.
+   2.3.5. Refer to AFMAN 33-223, paragraphs 3.4.2. and 3.6. for password expiration guidance. Pass-
+   words will not be set to “Password never expires”.
+NOTE: The IT positions referred to in this instruction are not to be confused with the training require-
+ments of the IT positions referred to in DoD 5200.2-R Information Security Program, DoD 8570.01-M,
+8                                                                     HILLAFBI33-402 31 JULY 2008
+
+
+and DoDI 8500.2. Refer to Table 2.1. below for cross reference. For further certification guidance to be
+appointed as one of these other IT level positions refer to the appropriate publications listed previously.
+
+Table 2.1. Cross Reference IT Level Positions.
+       HAFBI 33-xxx         DOD 8500.02                 DOD 8570.01 -M               DOD 5200.2-R
+IT-II Cat A               IT-II               IAT-I            IAM-I             ADP-II
+IT-II Cat B               IT-II               IAT-II           IAM-II            ADP-II
+IT-I                      IT-I                IAT-III          IAM-III           ADP-I
+HILLAFBI33-402 31 JULY 2008                                                                              9
+
+
+                                                Chapter 3
+
+                                                POLICY
+
+3.1. Personnel Filling IT-I and IT-II Positions. Which require elevated privileges will complete speci-
+fied training; meet background investigation requirement, and documentation as specified in this instruc-
+tion without exception.
+   3.1.1. Any user requiring elevated privileges on any NIPRNET/SIPRNET GFE, inclusive of servers
+   that are on the HAFB network will be required to have an alternate account.
+
+3.2. GFE Laptops that are Used Off the Network. (e.g. TDY, Deployment, home). FSAs/CSAs are
+responsible to put user’s account into the laptop’s local power users group before using the laptop off the
+HAFB network.
+   3.2.1. Once user’s account has been put into the power users group the laptop must be disconnected
+   from the HAFB network, otherwise, the user will be removed from the group by a Group Policy
+   (GPO).
+   3.2.2. Properly sanitize, document, authorize, and encrypt GFE laptops when they are to be used Out-
+   side the Contiguous United States (OCONUS). For further guidance reference policy dated 17
+   November 2006, Transportation of U.S. Government Information in Temporary Duty Status signed by
+   AFSAC/XPD Nancy Hudson, Chief of Foreign Disclosure and Policy Office and AFI 33-202 V1, Net-
+   work and Computer Security. In the Contiguous United States (CONUS) encryption is required.
+   3.2.3. If user’s primary workstation is a laptop, a separate laptop should be made available to users to
+   take while they are TDY.
+   3.2.4. GFE laptops that are connected to the HAFB network are to be treated as any other IS and are
+   to follow the guidance in this instruction for elevated privileges.
+
+3.3. Local Groups on a Machine. A GPO is currently setup to empty local machine groups, such as
+power users group and local administrators group when they are connected to the HAFB network. Power
+users group will be maintained empty. Local administrator group are to be populated with only authorized
+AD administrator groups, no individual user accounts are permitted in this group. This is to enforce LUA
+per TCNO 2006-248-301.
+   3.3.1. Accounts that are found in the computer’s local groups will be impounded and disabled.
+
+3.4. Server Administration. An individual administering a server(s) must be minimally appointed as an
+IT-II Cat B level position. IT-II Cat A level personnel will not administer a server(s).
+   3.4.1. IT-II Cat A are not permitted to have elevated privileges in AD. Any individual requiring ele-
+   vated privilege usage of AD is either an IT-I or IT-II Cat B. Their appointment needs to be resubmitted
+   at a minimum of IT-II Cat B and the additional training must be accomplished.
+
+3.5. Elevated Privilege Request Forms. All personnel requesting elevated privileges are required to
+complete HAFB Form 547 and attain Designated Organizational Representative (DOR) approval (by dig-
+ital signature) on HAFB Form 548. DOR are the Organizational Commanders.
+10                                                                    HILLAFBI33-402 31 JULY 2008
+
+
+     3.5.1. All forms have been created electronically. The forms must be submitted electronically and
+     filed using ERM. No paper forms will be accepted.
+     3.5.2. This process ensures all personnel with elevated privileges are trained and aware of the basic
+     principles of network security and their role in IA.
+
+3.6. Newly Appointed Personnel. All personnel newly appointed with elevated privileges must com-
+plete training within six months of being approved and appointed by their DOR (six months from the
+date the HAFB Form 548 is signed). These individuals will be granted supervised elevated privileges on
+the network until training is completed.
+     3.6.1. Individuals must complete the required training in order to be granted unsupervised elevated
+     privileges. However, if training is not completed within six months their elevated privileges will be
+     removed. DoD 8570.01-M paragraph C3.2.4.5.
+     3.6.2. Refer to paragraph 6.1. for training specifics.
+
+3.7. Currently Appointed Personnel. All individuals currently with elevated privileges must complete
+training six months from the date of this publication. In order to ensure compliance and minimize disrup-
+tion in the use of elevated privileges, further guidance will be provided. These individuals will be granted
+unsupervised elevated privileges on the network. Refer to DoD 8570.01-M, paragraphs C3.2.4.1,
+C3.2.4.5. and C3.2.4.6.
+     3.7.1. To prevent disabling of alternate account with elevated privileges, training must be completed
+     in the time frame referred above, see paragraph 3.7.
+     3.7.2. Refer to paragraph 6.1. for training specifics.
+HILLAFBI33-402 31 JULY 2008                                                                              11
+
+
+                                               Chapter 4
+
+                                 ROLES AND RESPONSIBILITIES
+
+4.1. Appointed Personnel with Elevated Privileges.
+   4.1.1. Successfully complete training in order to be granted (supervised/unsupervised) elevated priv-
+   ileges; refer to paragraphs 3.5. and 3.6.
+   4.1.2. Read section I, fill out section II and digitally sign section III on HAFB Form 547. Have secu-
+   rity manager verify background investigation and digitally sign this form. Contact Base 3A0X1 Func-
+   tional Manager and request for training verification section to be completed on the form. Send form to
+   supervisor to digitally sign with concurrence. Finally, route form to wing/tenant lead IAO to concur by
+   digitally signing.
+   4.1.3. Abide by the agreement signed (HAFB Form 547) in order to maintain elevated privileges and
+   at the direction of their supporting NCC. Failure to do so will result in removal of elevated privileges.
+   4.1.4. Maintain their certification IAW AFI 33-115 V2 Licensing Network Users and Certifying Net-
+   work Professionals, paragraph 6.3. and DoD 8570.01-M paragraphs C3.2.3.3., C3.2.4.5., C3.2.4.6.,
+   C3.2.4.7. This is applicable to both IT-I and IT-II Cat B positions which perform IA functions. Refer
+   to Table 2.1. for IT level position cross reference.
+   4.1.5. Notify wing/tenant lead IAO and FSA if elevated privileges are no longer required, so that
+   alternate account may be deleted from AD. Return alternate token card to the Hill Help Desk.
+   4.1.6. Civilians: Completion of training certificates must be submitted to civilian personnel to be
+   reflected in the individual’s training record.
+   4.1.7. Military: Completion of training certificates must be kept in the individual’s On-the-Job-Train-
+   ing (OJT) training record. (AF Form 623).
+   4.1.8. Contractors: Completion of training certificates must be provided to the individual’s contract
+   assigned Quality Assurance Evaluator (QAE).
+
+4.2. Wing/Tenant Lead IAO.
+   4.2.1. Ensure any individual requesting elevated privileges on the network fills out HAFB Forms 547
+   and 548. Individuals who refuse to sign the agreement (HAFB Form 547) will not be granted elevated
+   privileges or for currently appointed individuals, elevated privileges will be removed.
+   4.2.2. Digitally sign HAFB Form 547 section VIII as validating accuracy of both HAFB Forms 547
+   and 548 before submission is sent to the Hill Help Desk. Fill out HAFB Form 548, except for the sig-
+   nature block. All signature blocks must be completed on HAFB Form 547. Otherwise, elevated privi-
+   leges will not be granted.
+   4.2.3. Maintain digital copy of any documentation in ERM for all elevated privilege users within area
+   of responsibility.
+   4.2.4. Notify FSA of individual requesting elevated privileges of request. Once forms have been
+   signed, training validated, and background investigation verified then request FSA to create alternate
+   account for the individual. (See FSA roles and responsibilities for further instructions.)
+12                                                                     HILLAFBI33-402 31 JULY 2008
+
+
+     4.2.5. Ensure Hill Help Desk is notified when an individual does not need elevated rights anymore.
+     Have user return their alternate token card to the Hill Help Desk. Ensure FSA deletes alternate
+     account in AD immediately.
+     4.2.6. Notify supervisor of any event or condition that may result in an individual losing their ele-
+     vated privileges.
+     4.2.7. Submit training extension request to DOR. DOR will submit training extension request to Des-
+     ignated Approving Authority Representative (DAAR).
+
+4.3. FSA.
+     4.3.1. Create user’s alternate account (.CSA and/or .ADM) in AD. Account will be created only after
+     notification from wing/tenant lead IAO that user has met the requirements to attain an elevated privi-
+     lege account.
+     4.3.2. Create user’s alternate account in corresponding Organizational Unit (OU) in AD and applica-
+     ble elevated privileges.
+        4.3.2.1. Individuals newly appointed (supervised elevated privileges), move the newly created
+        alternate account into the “XFER” container in AD. Help Desk will place the user’s alternate
+        account into the appropriate OU until the individual has completed the required training. Once
+        training has been completed and help desk has been notified, the Help Desk will return the user’s
+        alternate account into the “XFER” container and FSA is then authorized to move it back into their
+        corresponding OU.
+        4.3.2.2. Individuals currently appointed (unsupervised elevated privileges) alternate accounts will
+        already be in the corresponding OU. After Help Desk receives HAFB Forms 547 and 548 they
+        will add alternate accounts into the corresponding security groups.
+     4.3.3. If applicable, contact the Hill Help Desk for any changes required on newly created (super-
+     vised) alternate accounts.
+     4.3.4. When requested, immediately delete or disable the alternate account in AD.
+     4.3.5. Be responsible for the creation and administration of elevated privilege service accounts. See
+     Chapter 8 for further instructions.
+
+4.4. Supervisor.
+     4.4.1. Allocate sufficient time for personnel requesting elevated privileges to attend and meet training
+     requirements.
+     4.4.2. Notify the Base Information Assurance Office (BIAO), Hill Help desk, wing/tenant lead IAO,
+     and user, of any event or condition that may result in an individual losing their elevated privileges.
+     4.4.3. Coordinate all training actions with the applicable personnel/agencies outlined in this instruc-
+     tion. Although training and certification is a community effort and may involve multiple entities, the
+     supervisor is still ultimately responsible for all training needs of their subordinates.
+     4.4.4. Determine appropriate additional training needs based on the trainee’s position and duties in
+     accordance with DoD 8570.01-M for certification requirements.
+HILLAFBI33-402 31 JULY 2008                                                                             13
+
+
+   4.4.5. Maintain training records on all individuals assigned to any of these IT level positions. Use
+   Training Scheduling System (TSS) to track user’s training (civilian, military, and contractors).
+   4.4.6. Digitally sign HAFB Form 547 on section V. This is stating that you are aware of the responsi-
+   bilities for the individual requesting elevated privileges. You are also ensuring they will comply
+   according to the statements in the agreement and this instruction, which encompasses AFI 33-202,
+   AFI 33-115 V2, DoDI 8500.2 and DoD 8570.01-M.
+   4.4.7. Notify DOR of any circumstances that requires a user’s elevated privilege to be removed.
+
+4.5. Organizational Training Monitors/Managers.
+   4.5.1. Input courses required for training in TSS which is for tracking the training for civilian, mili-
+   tary and contractor personnel.
+   4.5.2. Allow creation of certificate of completion when entire training track has been accomplished
+   for any individual and/or supervisor that request this documentation.
+   4.5.3. Maintain required training information updated in TSS.
+
+4.6. Base 3A0X1 Functional Manager (75 CS/SCSI).
+   4.6.1. Approval authority for any command-wide modifications to the CSA (in-residence) course.
+   Ensure CSA course available to all eligible students within the installation or support area, to include
+   tenant units. This excludes contractors.
+   4.6.2. Monitor enlisted 3A0X1 CSA training and certification by reviewing training updates.
+   4.6.3. Use IT E-Learning Skill Port for tracking/verifying completion of Computer Based Training
+   (CBT) training for all individuals requesting elevated privileges. Or they may request a copy of the
+   training certificates to validate completion of training from the individual.
+   4.6.4. Verify training for all individuals appointed with elevated privileges. Ensure to certify that
+   training has been completed within prescribed timelines prior to being granted unsupervised elevated
+   privileges. DoD 8570.01-M paragraph C3.2.4.5.
+   4.6.5. Training verification authority for all individuals seeking elevated privileges. They must digi-
+   tally sign the HAFB Form 547 on the training section VII.
+   4.6.6. Notify user of updates for required training.
+
+4.7. Organizational Security Manager.
+   4.7.1. Digitally sign HAFB Form 547 section VI validating user’s background security investigation.
+   This is to ensure the individual seeking elevated privilege is IAW DoDI 8500.2, Table E3.T1.
+
+4.8. DOR.
+   4.8.1. Final approving authority for elevated privileges. They must be aware of the individual’s
+   responsibilities and are validating that the individual has satisfactorily met the requirements to be
+   granted elevated privileges. Digitally sign HAFB Form 548.
+   4.8.2. Support supervisor’s actions to allocate sufficient time and resources to meet training require-
+   ments.
+14                                                                      HILLAFBI33-402 31 JULY 2008
+
+
+     4.8.3. Submit training extension request to DAAR.
+     4.8.4. DOR prepares a waiver of pre-employment investigation requirements when such action is
+     necessary and in the national interest. DOR may authorize an interim until favorable investigation is
+     complete. IAW AFI 31-501 Personnel Security Program Management.
+     4.8.5. If there is cause for removal of elevated privileges, DOR must notify BIAO of decision to have
+     this take effect.
+
+4.9. Communication Squadron Commander (75 CS/CC).
+     4.9.1. Ensure the required resources are available to the Base 3A0X1 Functional Manager. Instructors
+     for the proper training and initial evaluation of personnel with elevated privileges.
+     4.9.2. Approving authority for all elevated privileges training extension requests and will not exceed
+     30 days. This may be delegated to the Information Systems Flight (SCB) Flight Chief.
+
+4.10. BIAO. (75 CS/SCBS):
+     4.10.1. Enforce and expand on the local policy for personnel with elevated privileges.
+     4.10.2. Administer the process of attaining network elevated privileges to only documented individu-
+     als once they have met the requirements outlined in this instruction. Individuals certified at a previous
+     duty location will be granted these privileges upon successful validation of background investigation
+     and training.
+     4.10.3. Notify supervisor, Hill Help Desk, wing/tenant lead IAO, and user of any event or condition
+     that may result in an individual losing their elevated privileges.
+     4.10.4. Monitor and perform annual inspections to validate the policy herein is enforced and followed
+     accordingly. Use inspection specifications IAW Information Assurance, Awareness, and Assistance
+     Program, AFI 33-230 and Information Assurance, Awareness, and Assistance Program Criteria, AF
+     Form 4160.
+
+4.11. Hill Help Desk. (75 CS/SCXH):
+     4.11.1. Maintain a copy of HAFB Forms 547 and 548, using Electronic Records Management (ERM)
+     and are susceptible to being inspected IAW AFI 33-230 using AF Form 4160.
+     4.11.2. Annually review HAFB Forms 547 and 548 for all personnel with elevated privileges.
+        4.11.2.1. Ensure both HAFB Forms 547 and 548 are accurately completed and digitally signed by
+        each individual requesting elevated privilege.
+        4.11.2.2. Ensure background investigation and training are all up to date.
+        4.11.2.3. This annual review is to verify that elevated privileges are still required by requesting
+        individuals. Any that are not accounted for will be deleted.
+     4.11.3. Maintain a current list of fully-qualified and certified individuals to perform specific adminis-
+     trative duties for their coverage area. Distinguish and segregate users with elevated privileges that are
+     appointed to perform duties such as FSA and CSA to be easily identified and reduce confusion.
+HILLAFBI33-402 31 JULY 2008                                                                           15
+
+
+  4.11.4. After authorization is verified, place users in appropriate corresponding AD groups to be
+  granted elevated privileges. Submit alternate token card request to Air Force Public Key Infrastructure
+  System Program Office (AF PKI SPO) for that alternate account.
+  4.11.5. Maintain accuracy of elevated privileges groups in AD. Ensure there are no normal user
+  accounts placed in these groups. Only .CSA or .ADM alternate accounts are authorized in these
+  groups.
+16                                                                      HILLAFBI33-402 31 JULY 2008
+
+
+                                                 Chapter 5
+
+                            ELEVATED PRIVILEGE REQUEST PROCESS
+
+5.1. Request Process. Initiation of request for elevated privileges is done by the individual requesting it
+through their wing/tenant lead IAO.
+     5.1.1. Wing/tenant lead IAO will inform user of requirements. Provides them with HAFB Form 547,
+     has them read and digitally sign the form once they understand the stipulations.
+     5.1.2. User sends form to their organizational security manager and has them digitally sign the back-
+     ground investigation section.
+     5.1.3. User seeks training requirement through Base 3A0X1 Functional Manager. Training is either
+     completed or in progress. User sends form to the Base 3A0X1 Functional Manager to validate train-
+     ing. Base 3A0X1 Functional Manager recommends either supervised or unsupervised elevated privi-
+     leges according to the user’s training status on HAFB Form 547.
+     5.1.4. User routes HAFB Form 547 to their supervisor for their digital signature.
+     5.1.5. After all signature blocks are completed user sends HAFB Form 547 to wing/tenant lead IAO.
+     Wing/tenant lead IAO digitally signs the form.
+     5.1.6. Wing/tenant lead IAO fills out the first section of HAFB Form 548 (e.g. name, elevated privi-
+     lege level from HAFB Form 547). If there are multiple HAFB Forms 547 consolidate the names on
+     HAFB Form 548. Electronically send both HAFB Forms 547 and 548 to the DOR. They request DOR
+     to digitally sign HAFB Form 548 for final approval of elevated privileges.
+     5.1.7. DOR digitally signs HAFB Form 548 and electronically sends the documents back to the wing/
+     tenant lead IAO.
+     5.1.8. Once forms have been completed FSA is now authorized to create the user’s alternate account
+     (e.g. .CSA or .ADM). Wing/tenant lead IAO is responsible of informing the FSA to create new alter-
+     nate account for the individual.
+     5.1.9. Wing/tenant lead IAO maintains these electronic forms within ERM.
+     5.1.10. Forms must be electronically sent to the Hill Help Desk for completion of process.
+     Hill Help Desk will ensure accuracy of forms.
+     5.1.11. Hill Help Desk will add alternate account in corresponding AD group. Only documented users
+     will be granted elevated privileges.
+     5.1.12. This process is annually inspected per AFI 33-230 using AF Form 4160.
+
+5.2. Routing of HAFB Form 547 and 548.
+     5.2.1. Step 1: Initiation of request – User requesting elevated privileges.
+     5.2.2. Step 2: User’s Supervisor
+     5.2.3. Step 3: User’s Unit Security Manager
+     5.2.4. Step 4: Base 3A0X1 Functional Manager (75 CS/SCSI)
+HILLAFBI33-402 31 JULY 2008                                                                                17
+
+
+   5.2.5. Step 5: Wing/tenant lead ISSO
+   5.2.6. Step 6: User’s DOR
+   5.2.7. Step 7: Wing/tenant lead ISSO
+   5.2.8. Step 8: Finalization of request – Hill Help Desk (75 CS/SCXH)
+
+5.3. Training Time Extension. If there are circumstances (i.e. wartime) that do not meet any of the cri-
+terias or allotted time stated per this instruction these instances will be evaluated on a case by case basis.
+An extension can be granted depending on the circumstances and only at the direction of the DAAR. All
+requests must come from the DOR to the DAAR for approval.
+18                                                                       HILLAFBI33-402 31 JULY 2008
+
+
+                                                  Chapter 6
+
+                                      TRAINING REQUIREMENTS
+
+6.1. Training Guidance. IAW AFMC policy letter, Elevated Privileges to IS and Applications policy let-
+ter , DoD 8570.1-M and AFI 33-115 V2, the 75 CS has made the decision to combine the training require-
+ments in AFI 33-115 V2 for elevated privileges with the training requirements stated in DoD 8570.01-M.
+This decision was to minimize the redundancy and extensive training requirements for individuals that are
+performing IA functions in their currently assigned positions. AFI 33-115 V2, requires individuals to
+complete the Network Professional Certification Program depending on the job duties or positions where
+they are assigned.
+     6.1.1. Ensure individuals requesting elevated privileges obtain specified training that corresponds to
+     the highest level function(s) they perform required by their position.
+
+6.2. Minimum Training Requirement. For any personnel to be granted elevated privileges, they must
+follow the procedures stated herein. The training requirement is illustrated in Attachment 2.
+     6.2.1. As a baseline all personnel with elevated privileges must complete Network User License (IA
+     CBT). At a minimum the lowest level of elevated privileges requires the CSA CBT.
+
+6.3. Training for Personnel Filling IT-I Positions. They are required to complete one of the following:
+Certified Information Systems Auditor (CISA), Certified Information Systems Security Professional
+(CISSP), Global Information Assurance Security Expert (GSE), or Security Certified Network Architect
+(SCNA). The recommended training track is the CISSP certification. These certifications require recerti-
+fication.
+     6.3.1. Virtual Training Environment (VTE) via www.cert.org, commercial classroom courses, and IT
+     E-Learning Skill Port all have made the required training materials and courses available to become
+     proficient on the subject matter. This training is also beneficial in preparation for testing to attain the
+     Global Information Assurance Security Essentials Certification (GSEC) and CISSP certifications in
+     order to meet the DoDD 8570.01 Information Assurance Training, Certification, and Workforce Man-
+     agement, requirements.
+     6.3.2. IT-I personnel which are contractors must have the required training prior to being granted ele-
+     vated privileges. Training requirement and background investigation must be reflected on the Perfor-
+     mance Work Statement (PWS) as a stipulation for employment. Current contracts must be updated to
+     include this requirement within the next three years (no later than end of 2010).
+     6.3.3. List “NCC Administrator” (assigned only to the NCC, this is not inclusive of FSAs) instead of
+     listing individual systems on Form 547.
+
+6.4. Training for Personnel filling an IT-II Category A Positions. They are required to take the CSA
+CBT. Recertification of this CBT will only occur if the CBT is updated.
+     6.4.1. Contractors do have access to this CSA CBT through IT E-Learning Skill Port.
+     6.4.2. List the system information requested on HAFB Form 547. Training is a “one-time” require-
+     ment unless this CSA CBT is updated and a retake will be required at that time.
+NOTE: These personnel will only be granted elevated privileges to a single workstation.
+HILLAFBI33-402 31 JULY 2008                                                                                 19
+
+
+6.5. Training for Personnel Filling IT-II Category B Positions. They are required to complete either:
+A+, Network +, Security+, GSEC, SCNP, or Systems Security Certified Practitioner (SSCP). The recom-
+mended training tracks are A+ certification for individuals performing CSA duties and Security + for
+individuals performing FSA duties. See Attachment 1 “Terms/Glossary” for defined duties for FSAs and
+CSAs. Recertification is required to maintain the previously listed certifications. However, recertification
+does not apply to A+, Network+ and Security+ Computing Technology Industry Association (CompTIA)
+certifications.
+   6.5.1. The CSA course taught by the Base Functional 3A0X1 Functional Manager, VTE via
+   www.cert.org, commercial classroom courses, and IT E-Learning Skill Port all have made the
+   required training materials and courses available to become proficient on the subject matter. This
+   training is also beneficial in preparation for testing to attain the A+ or Security + certification in order
+   to meet the DoD 8570.01-M requirements.
+   6.5.2. IT-II Cat B personnel which are contractors must have the required training prior to being
+   granted elevated privileges. Training requirement and background investigation must be reflected on
+   the PWS as a stipulation for employment. Current contracts must be updated to include this require-
+   ment within the next three years (no later than end of 2010).
+   6.5.3. On the HAFB Form 547, list “FSA”, “CSA” or “Multiple Systems” instead of listing individual
+   systems.
+
+6.6. Training Sourced. This training may be sourced for civilians and military personnel, but are not
+limited to the following:
+   6.6.1. Formal CSA Course, taught by the Base 3A0X1 Functional Manager is available to meet the
+   IT-II Cat B training requirements to grant elevated privileges.
+   6.6.2. Commercial classroom courses (i.e., New Horizons).
+   6.6.3. Computer-Based Training (CBT) Track, for A+, Security +, and CISSP are available for civil-
+   ians and military through IT E-Learning Skill Port.
+   6.6.4. VTE via www.cert.org.
+20                                                                       HILLAFBI33-402 31 JULY 2008
+
+
+                                                  Chapter 7
+
+                                   DOD 8570.01-M REQUIREMENTS.
+
+7.1. DoD 8570.01-M Program. This program requires individuals to attain formal certifications that are
+assigned to positions that perform IA functions. In order to meet this requirement, Air Force Communica-
+tion Agency (AFCA) will be funding for vouchers so that individuals will be able to comply with the cer-
+tification requirement. Ensure IA personnel performing IA functions obtain/maintain a certification
+corresponding to the highest level function(s) required by their position.
+
+7.2. Certification Vouchers. To apply for a voucher for certification testing individuals must complete
+the training, for A+, Security +, and/or CISSP through VTE via www.cert.org, commercial classroom
+courses, CSA Course, or IT e-Learning.
+     7.2.1. Individuals must request voucher through AFCA fill out the request for voucher online at:
+     https://private.afca.af.mil/optn/topic_view.cfm?topic_n=DoD%20Directive%208570%20Imp
+     lamentation.
+     7.2.2. Once the request is submitted, individual’s supervisor is notified. If supervisor approves your
+     request, it will be forwarded to your training manager. If training manager approves the request, the
+     MAJCOM Information Assurance Manager (IAM) is the last in the chain to make the final decision.
+     7.2.3. After online request has gone through the approval process, individual will receive an email
+     with instructions on how to access the Transcender study materials. Individual must pass Transcender
+     pre-test with a score of 90% or better 30 days after email notification has been received.
+     7.2.4. After passing the pre-test individual will receive another e-mail from Transcender with their
+     voucher number and instructions on how to schedule the certification exam.
+        7.2.4.1. If you pass the certification exam the results are to be kept for personal tracking purposes.
+        7.2.4.2. If you do not pass your certification exam your unit will be responsible for the fees asso-
+        ciated with your next exam. NOTE: The program will only allow for one certification per posi-
+        tion. If a new position requires a different cert you may apply for that voucher. Vouchers that are
+        funded by AFCA will only be granted for the A+, Security+, or CISSP certifications. If individu-
+        als choose to do one of the other types of certifications as listed herein, they must be funded by the
+        individual or the individual’s unit.
+     7.2.5. In an attempt to centrally manage the DoD 8570 training/certification requirements the Hill
+     AFB civilian training office (OO-ALC/DP-CTO) has budgeted and contracted A+, Security+, and
+     CISSP classes from local course providers. OO-ALC/DP-CTO will be responsible to contact the indi-
+     vidual's supervisor who is affected by the 8570 to schedule them to take the corresponding class. Cer-
+     tification exams will be administered thereafter. The classes will be offered until the 8570 certification
+     requirements have been met. If funding falls through the individual requiring certification may use the
+     alternative training and certifying path stated herein Chapter 6.
+HILLAFBI33-402 31 JULY 2008                                                                               21
+
+
+                                                Chapter 8
+
+                                   OTHER TYPES OF ACCOUNTS
+
+8.1. Service Accounts. These accounts are defined as accounts that are used by system services for
+authentication. Individuals shall not log on interactively to service accounts. A fully qualified administra-
+tor (FSA/CSA) will be responsible for the service account and its usage, management, and/or administra-
+tion.
+   8.1.1. A service account with elevated privileges requires formal approval using HAFB Forms 547
+   and 548. FSA must create the service account after being notified by IAO.
+   8.1.2. The elevated privilege service account will be added into the corresponding AD authorized
+   security groups by the Hill Help Desk. These accounts will not have any elevated privileges in the AD
+   structure, but only on the systems where they are used.
+       8.1.2.1. Refer to AFMAN 33-223, paragraphs 3.4.2. and 3.6. for password expiration guidance.
+       Passwords will not be set to “Password never expires”.
+   8.1.3. All accounts and passwords will be monitored to enforce password composition, expiration and
+   disabling of accounts.
+   8.1.4. IAW AFMAN 33-223 paragraph 5.4.1., disabling of accounts will take affect with inactivity
+   exceeding 45 days. Disabled accounts will be deleted 90 days from the date they were disabled. If
+   account is deleted, formal approval request must be resubmitted.
+   8.1.5. Non documented elevated privilege service accounts will be impounded and disabled.
+   8.1.6. Non-elevated privilege service account will be handled IAW AFMAN 33-223 like any other
+   user account by the FSA/CSA.
+
+8.2. Organizational/Group User Accounts. These accounts are defined as accounts that are used by
+multiple people. Occasionally, concerns about mission accomplishment necessitate using group user-
+names and passwords. FSA/CSA allowing group accounts and passwords must maintain individual
+accountability. A manual solution is to require account users to note access date and time on a log sheet.
+The process must be fully documented in the System Security Authorization Agreement (SSAA) and the
+risk must be accepted by the Designated Approving Authority (DAA). IAW AFMAN 33-223, paragraph
+3.7.4.
+   8.2.1. Elevated privileges on these accounts are not authorized and will result in the account being
+   disabled and impounded.
+22                                                                      HILLAFBI33-402 31 JULY 2008
+
+
+                                                 Chapter 9
+
+                      CAUSES FOR REMOVAL OF ELEVATED PRIVILEGES
+
+9.1. Actions. Any actions which go against policies, procedures, or guidance on network usage would be
+grounds for removal of elevated privileges. (e.g. unauthorized installation of software, unauthorized hard-
+ware on the network, failure to complete training herein, not able to attain background investigation, etc.)
+     9.1.1. Individual requesting elevated privileges fails or declines to sign HAFB Form 547.
+     9.1.2. Incomplete HAFB Forms 547 and 548 (i.e. missing signatures).
+
+9.2. Training. If training is not completed within the specified time frame (See paragraphs 3.5. and 3.6.)
+elevated privileges retention will be reviewed by BIAO.
+
+9.3. Background Investigation. Background investigation must be favorably granted and up to date.
+
+9.4. Suspension or Removal of Privileges. On discovery of an action inconsistent with the terms on
+HAFB Form 547 or listed herein, the wing/tenant lead IAO will recommend to the user’s supervisor that
+the user’s elevated privilege be suspended. Wing/tenant lead IAO notifies FSA to disable user’s alternate
+account.
+     9.4.1. The supervisor will notify the user immediately, in writing, of the pending elevated privilege
+     suspension, including the specific reason for the suspension and the steps the user must take to have
+     access reinstated.
+     9.4.2. If there is cause for removal of elevated privileges supervisor must notify DOR. DOR must
+     notify BIAO of decision to have this take affect. It is up to the DAAR to make the final decision if ele-
+     vated privileges will be removed permanently.
+
+9.5. Reinstatement. Ordinarily, a suspended user will be required to participate in remedial training.
+Upon satisfactorily completing retraining, the wing/tenant lead IAO authorizes the FSA to reinstate the
+user’s alternate account. However, there may be situations that indicate to the wing/tenant lead IAO and
+the user’s supervisor that even with remedial training the user would pose a threat to the security of the
+system or operations. Under such circumstances, the DAAR, following full review of the case file and all
+associated documents, may remove a user’s elevated privileges indefinitely.
+HILLAFBI33-402 31 JULY 2008                                                   23
+
+
+                                         Chapter 10
+
+                                   PRESCRIBED FORMS
+
+10.1. HAFB Forms.
+HAFB Form 547, Hill AFB Elevated Privilege Request/Agreement
+HAFB Form 548, Elevated Privilege Approval
+
+
+
+                                             LINDA R. MEDLER, Colonel, USAF
+                                             Commander, 75th Air Base Wing
+24                                                              HILLAFBI33-402 31 JULY 2008
+
+
+                                          Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 31-501, Personnel Security Program Management
+AFI 33-115 Volume 1, Network Operations
+AFI 33-115 Volume 2, Licensing Network Users and Certifying Network Professionals
+AFI 33-202 Volume 1, Incorporating Through Change 5, 18 May 2007 Network and Computer Security
+AFMAN 33-223, Identification and Authentication
+AFMC Elevated Privileges Guidance
+HQ AFMC/A6 Policy Letter Signed by Jon Ogg, Chief Information Officer, dated 10 July 2006, “AFMC
+Policy on Elevated Privileges to Information Systems and Applications.”
+AFSAC/SPD Policy Letter Signed by Nancy Hudson, Chief, Foreign Disclosure & Policy Officer, dated
+17 November 2006, “Transportation of U.S. Government Information in Temporary Duty Status.”
+DoD 5200.2-R, Information Security Program
+DoD 8570.01-M, Information Assurance Workforce Improvement Program
+DoDD 8570.01, Information Assurance Training, Certification, and Workforce Management
+DoDI 8500.2, Information Assurance (IA) Implementation
+
+Abbreviations and Acronyms
+ACC—Air Combat Command
+AD—Active Directory
+AF—Air Force
+AFCA—Air Force Communication Agency
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFMC—Air Force Materiel Command
+AF PKI SPO—Air Force Public Key Infrastructure System Program Office
+AFRC—Air Force Reserve Command
+ANG—Air National Guard
+BIAO—Base Information Assurance Office
+CBT—Computer Based Training
+CISA—Certified Information Systems Auditor
+CISSP—Certified Information Systems Security Professional
+HILLAFBI33-402 31 JULY 2008                                      25
+
+
+CompTIA—Computing Technology Industry Association
+CS—Communication Squadron
+CSA—Client Support Administrator
+DAA—Designated Approving Authority
+DAAR—DAA Representative
+DBA—Database Administrator
+DoD—Department of Defense
+DoDD—Department of Defense Directive
+DoDI—Department of Defense Instruction
+DOR—Designated Organizational Representative
+ERM—Electronic Records Management
+ESM—Enterprise System Management
+FN—Foreign National
+FSA—Functional System Administrator
+GIAC—Global Information Assurance Certification
+GFE—Government Furnished Equipment
+GPO—Group Policy
+GSE—GIAC Security Expert
+GSEC—GIAC Security Essentials Certification
+HAFB—Hill Air Force Base
+IA—Information Assurance
+IAM—Information Assurance Manager
+IAO—Information Assurance Officer (formerly known as ISSO)
+IAW—In Accordance With
+IDS—Intrusion Detection System
+ISSO—Information System Security Officer (Also known as IAO)
+IT—Information Technology
+LUA—Limited User Access (also known as Least Privilege Access)
+NACI-N—ational Agency Check Plus Written Inquiries
+NACLC—National Agency Check – Local Agency Checks
+NCC—Network Control Center
+NIPRNET—Non-Secure Internet Protocol Router Network
+26                                                                 HILLAFBI33-402 31 JULY 2008
+
+
+OJT—On-the-Job-Training
+OPR—Office of Primary Responsibility
+OU—Organizational Unit
+PWS—Performance Work Statement
+QAE—Quality Assurance Evaluator
+RDS—Records Disposition Schedule
+SCNA—Security Certified Network Architect
+SCNP—Security Certified Network Professional
+SDC—Standard Desktop Configuration
+SIPRNET—Secret Internet Protocol Router Network
+SSAA—System Security Authorization Agreement
+SSBI—Single Scope Background Investigation
+SSCP—Systems Security Certified Practitioner
+TCNO—Technical Compliance Network Order
+TSS—Training Scheduling System
+U.S.—United States
+USAF—United States Air Force
+
+Terms
+.ADM—Account is for system administrators that maintain and manage servers or applications and
+require more privileges to execute their duties than a standard user.
+FSAs use .ADM accounts and are given rights in AD to create, add, modify, delete, and modify security
+settings of all objects within their area of responsibility in AD. They grant access to CSAs and normal
+user accounts. CSAs use .ADM accounts and are given rights in AD to do account administration (i.e.
+update user info in AD), change passwords, and join workstations onto the domain.
+.CSA—Account is for users that maintain and manage a single workstation which require limited
+elevated privileges.
+Alternate Token Cards—DoD issued PKI certificates that are embedded in this type of card.
+Appointment—Signed elevated privileges statement/request by elevated privileged user, signed approval
+letter by DOR, up to date background investigation and completed training requirement for elevated
+privilege.
+Authorization—Training validated, received statement/request, received signed approval from the DOR
+and after all has been validated they are placed in the appropriate groups in AD by the Hill Help Desk.
+Client Support Administrator (CSA)—CSAs serve as the first line of help to resolve customers’
+administrative and technical problems. CSAs take direction from the NCC and FSA. NCC direction takes
+HILLAFBI33-402 31 JULY 2008                                                                                27
+
+
+precedence over FSA direction. CSAs install, configure, and operate client/server devices. Also known as
+workgroup manager (WM).
+Designated Approving Authority (DAA)—An official with the authority to formally assume
+responsibility for operating an information system or network within a specified environment at an
+acceptable level of risk.
+Designated Approving Authority Representative (DAAR)—An official that acts on behalf of the
+DAA on an installation.
+Devices—Workstations, servers, peripherals, switches, routers, etc.
+Documented—HAFB Form 547 and 548 forms fully filled out. This is to identify ownership and
+approval sought to obtain the elevated privilege account.
+DOR—Designated Organizational Representative. Also known as the organizational/Unit Commander.
+Electronic Records Management (ERM)—Method of ensuring electronic records (e-records) are
+available and protected in order to support business operations, as well as meet statutory requirements to
+provide appropriate access throughout the lifecycle of the record.
+Elevated Privilege—The administrative rights that are granted to a user who has access to system
+control, monitoring, administration, criminal investigation, or compliance functions. Elevated Privileges
+typically provides access to the following system controls: Access to the control functions of the
+information system/network, administration of user accounts, etc. Access to change control parameters
+(e.g., routing tables, path priorities, addresses) of routers, multiplexers, and other key information system/
+network equipment or software. Ability and authority to control and change program files and other users’
+access to data. Direct access to operating system level functions (also called unmediated access) that
+would permit system controls to be bypassed or changed. Access and authority for installing, configuring,
+monitoring, or troubleshooting the security monitoring functions of information systems/networks (e.g.,
+network/system analyzers; intrusion detection software; firewalls) or in performance of cyber/network
+defense operations.
+Foreign National (FN)—Individuals who are non-U.S. citizens including U.S. military personnel, DoD
+Civilian employees, and contractors.
+Functional System Administrator (FSA)—FSAs ensure functional communities of interest systems,
+servers, workstations, peripherals, communications devices, and software are on-line and supported.
+Their responsibilities extend from the user's terminal to the server, but do not normally include the
+network backbone infrastructure. FSAs are considered part of the NCC. FSA not assigned to the NCC are
+a logical extension of NCC functionality.
+Information Assurance (IA)—Measures that protect and defend information and ISs by ensuring their
+availability, integrity, authentication, confidentiality, and non-repudiation. These measures include
+providing for restoration of IS by incorporating protection, detection, and reaction capabilities.
+Information Assurance Officer (IAO)—Also know as, Information System Security Officer (ISSO).
+Information Systems—(IS) – Anything that process’s information. Examples are but are not limited to:
+Workstations, laptops, servers.
+IT-I—Information Technology Level I position. See paragraph 1.2. for further information.
+28                                                                  HILLAFBI33-402 31 JULY 2008
+
+
+IT-II Cat A—Information Technology Level II position category A. See paragraph 1.3. for further
+information.
+IT-II Cat B—Information Technology Level II position category B. See paragraph 1.4. for further
+information.
+Network—Collection of CE connected by one or more internal networks under the control of a single
+authority and security policy, including personnel and physical security. Enclaves provide standard IA
+capabilities such as boundary defense, incident detection and response, and key management, and also
+deliver common applications such as office automation and electronic mail.
+Network Control Center (NCC)—The NCC oversees network operations, helps achieve information
+assurance, and generates visibility into the base network. The NCC is the central focal point on base for
+the operation, maintenance, and management of all aspects of the base network to include wireless LANs.
+Using network administration, network management, and information protection tools, the NCC
+technicians provide core services to FSAs, CSAs, and users.
+Fully Qualified—An individual that has been trained, appointed in writing (HAFB Forms 547 and 548),
+and has a current and favorable background investigation.
+Supervised Elevated Privilege—Elevated privilege that is granted to an individual but is monitored by
+an unsupervised administrator or supervisor to perform their administrative duties.
+Unsupervised Elevated Privilege—Elevated privilege that is granted to an individual without being
+monitored. They are fully qualified to have their elevated privileges and to perform their administrative
+duties without oversight.
+HILLAFBI33-402 31 JULY 2008                                                                                                           29
+
+
+                                                              Attachment 2
+
+                                     ELEVATED PRIVILEGES REQUIREMENTS
+                                           (Correlated with DoD 8570 requirements)
+IT – I: (Full Elevated Privileges) DoD 8570.01 applicable
+
+Definition:            Administrators with IA Administrative privileges. Administrators of IA devices (e.g. boundary devices, IDS, routers
+                       and switches) maintenance of Core Services.
+Elevated Privileges Request/Agreement Required: Yes
+   Job Roles (e.g.):   Alt. Account:                             Training:                                 Background Investigation:
+-Boundary Protection   .ADM           Civilian              Military              Contractor             Civilian Military Contractor
+-Domain Admins.         ADM           -Network user         -Network user         -Network user        SSBI       SSBI        SSBI
+-Network Admins.       .ADM           license (IA CBT)      license (IA CBT)      license (IA CBT)
+-ESM Admin.            .ADM
+                                      Choose one of the Choose one of the Choose one of the
+                                      following:            following:            following:
+                                           -CSSIP certification* -CSSIP certification* -CSSIP
+                                                                                       certification
+                                           (Recommended)         (Recommended)
+                                                                                       -CISA certification
+                                           -CISA certification -CISA certification
+                                                                                       -GSEC
+                                           -GSEC                 -GSEC
+                                                                                       certification
+                                           certification**       certification**
+                                                                                       -SCNA               Equivalent Security Clearance:
+                                           -SCNA certification -SCNA certification
+                                                                                       certification       (Not Required)
+                                           -CISM certification -CISM certification                         TS        TS         TS
+                                                                                       -CISM
+                                           -GSLC certification -GSLC certification certification
+                                                                                           -GSLC
+                                                                                           certification
+
+         *AF Portal = IT E-Learning (SkillPort): Catalog >> My Assignment >> IT Professional Certifications >> (ISC)2
+         **AF Portal = IT E-Learning (SkillPort): Catalog >> My Assignment >> IT Professional Certifications >> GIAC >>
+
+
+
+IT – II Cat A: (Limited Elevated Privileges) DoD 8570.01 non-applicable
+
+Definition:          Administrators without IA Administrative privileges. AIS administration and administration of applications of one or
+                     more applications on a single workstation.
+Elevated Privileges Request/Agreement Required: Yes; list network system administrator by name instead of system name
+  Job Roles (e.g.): Alt. Account:                               Training:                               Background Investigation:
+- Developers         .CSA           Civilian            Military               Contractor           Civilian Military Contractor
+- DBA                .CSA           -Network user       -Network user          -Network user        NACI         NACLC NACLC
+                                    license (IA CBT) license (IA CBT)          license (IA CBT)
+                                    -Client Support     -Client Support        -Client Support
+                                    Administrator       Administrator CBT* Administrator CBT*
+                                                                                                    Equivalent Security Clearance:
+                                    CBT*                -“One-Time”            -Required to have
+                                                                                                    (Not Required)
+                                    -“One-Time”         training               equivalent training
+                                                                                                    Secret       Secret      Secret
+                                    training                                   prior to being
+                                                                               granted elevated
+                                                                               privileges.
+                                                                               “One-Time” training
+
+         *AF Portal = IT E-Learning (SkillPort): Catalog >> My Assignment >> USAF Custom Courses >> Information Assurance Courses
+30                                                                                                      HILLAFBI33-402 31 JULY 2008
+
+
+                                                               Attachment 2 (Cont.)
+           IT – II Cat B: (Extended Elevated Privileges) DoD 8570.01 applicable
+
+Definition:                 Administrators without IA Administrative privileges. End-user administration, administration of applications,
+                            maintaining multiple systems and/or act as functional system administrators or client system administrators.
+Elevated Privileges Request/Agreement Required: Yes; list FSA/CSA by name or multiple systems
+     Job Roles (e.g.):       Alt. Account:                                   Training:                                    Background Investigation:
+-CSA                        .ADM               Civilian                  Military              Contractor             Civilian      Military    Contractor
+-FSA                        .ADM               -Network user             -Network user         -Network user          NACI          NACLC NACLC
+-Help Desk                  .ADM               license (IA CBT)          license (IA CBT)      license (IA CBT)
+-IA Admins.                 .ADM               Choose one of the         Choose one of the     Choose one of the
+-Exchange Admins.           .ADM               following:                following:            following:
+-SAV Admins.                .ADM                -A+ Certification*       -A+ Certification*    -A+ Certification
+-Network Admins.            .ADM               (Recommended for          (Recommended for      (Recommended for
+-Server Administrators      .ADM               CSA duties)               CSA duties)           CSA duties)            Equivalent Security Clearance:
+                                               -Security+                -Security+            -Security+             (Not Required)
+                                               certification*            certification*        certification          Secret        Secret      Secret
+                                               (Recommended for          (Recommended for      (Recommended for
+                                               FSA duties)               FSA duties)           FSA duties)
+                                               -Network+                 -Network+             -Network+
+                                               Certification             Certification         Certification
+                                               -SSCP Certification       -SSCP                 -SSCP
+                                               -GSEC                     Certification         Certification
+                                               certification**           -GSEC                 -GSEC
+                                               -SCNP certification       certification**       certification
+                                               -GISF                     -SCNP                 -SCNP
+                                               -GSLC                     certification         certification
+                                               -CSA Course hosted        -CSA Course           -Required to have
+                                               by 75 CS/SCSI             hosted by 75 CS/      equivalent training
+                                                                         SCSI                  prior to being
+                                                                                               granted elevated
+                                                                                               privileges.
+
+           *AF Portal = IT E-Learning (SkillPort): Catalog >> My Assignment >> IT Professional Certifications >> CompTIA >>
+           **AF Portal = IT E-Learning (SkillPort): Catalog >> My Assignment >> IT Professional Certifications >> GIAC >>
+
+
+
+Resources to attain training requirements for elevated privileges are but not limited to:
+
+
+
+                                                                     -VTE (Virtual Training Environment) via www.cert.org
+
+                                                                     -IT E-Learning Skill Port (CBTs as stated above with *)
+
+                                                                     -CSA Course hosted by 75 CS/SCSI
+
+                                                                     -Commercial classroom courses (i.e. New Horizons)
+
+
+
+
+NOTE: In order to meet DoD 8570.01 certification requirements individual must complete some type of training prior to requesting a voucher from AFCA,
+voucher is granted after pre-test is taken through Transcender with passing score of 90% and above, certification exam will only be taken through a certified
+proctoring testing center, and thereafter maintain certification accordingly.

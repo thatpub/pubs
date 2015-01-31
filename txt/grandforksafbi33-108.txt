@@ -1,0 +1,928 @@
+BY ORDER OF THE COMMANDER                                                       GRAND FORKS AIR FORCE BASE
+GRAND FORKS AIR FORCE BASE                                                               INSTRUCTION 33-108
+                                                                                                         15 AUGUST 2008
+
+                                                                                    Communications and Information
+
+                                                                                  NETWORK MANAGEMENT AND
+                                                                                           SECURITY POLICY
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY:          Publications and forms are available for downloading or ordering on the
+                        e-Publishing website at www.e-Publishing.af.mil.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: 319 CS/SCB                                                  Certified by: 319 CS/CC (Lt Col Daniel Liggins)
+Supersedes GRANDFORKSAFBI 33-108,                                                                     Pages: 25
+           1 August 2000
+
+This instruction establishes policy and procedures to meet operational and security requirements for the
+319th Air Refueling Wing Metropolitan Area Network (319 ARW MAN). It applies to all organizations,
+including tenant units that administer and use the 319 ARW MAN. This instruction implements policy
+established in AFI 33-115V1, Network Operations (NETOPS); AFI 33-115V2, Licensing Network Users
+and Certifying Network Professionals; AFI 33-119, Air Force Messaging; AFI 33-129, Web Management
+and Internet Use; AFI 33-204, Information Assurance(IA) Awareness Program and AFI 33-202V1, Net-
+work and Computer Security.
+Ensure that all records created as a result of processes prescribed in this publication are maintained in
+accordance with Air Force Manual (AFMAN) 33-363, Management of Records, and disposed of in accor-
+dance with (IAW) Air Force Records Information Management System (AFRIMS) Records Disposition
+Schedule (RDS) located at https://www.my.af.mil/gcss-af61a/afrims/afrims/.
+Refer recommended changes and questions about this publication to the Office of Primary Responsibility
+(OPR) using the AF Information Management Tool (IMT) 847, Recommendation for Change of Publica-
+tion; route AF IMT 847s from the field through the appropriate functional chain of command.
+
+SUMMARY OF CHANGES
+This document has been substantially revised and must be completely reviewed. The roles and responsi-
+bilities of the Designated Approval Authority (DAA) has been updated, and added Attachment 1, Glos-
+sary of References and Supporting Information.
+      1.     ROLES AND RESPONSIBILITIES .........................................................................          3
+      2.     ACCESS PROCEDURES .........................................................................................   5
+      3.     SOFTWARE MANAGEMENT ................................................................................          7
+      4.     CERTIFICATION AND ACCREDITATION (C&A) ..............................................                          8
+2                                                             GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+    5.   NETWORK OPERATIONS SECURITY CENTER (NOSC) NOTICE TO
+         AIRMEN (NOTAM) MANAGEMENT ...................................................................                         9
+    6.   VIRUS SCANNING AND INCIDENT PROCEDURES .........................................                                     10
+    7.   SECURITY REQUIREMENTS ................................................................................               10
+    8.   MAINTENANCE ......................................................................................................   13
+    9.   WIRELESS PDAs (Blackberry, etc.) ........................................................................            13
+
+Attachment 1— GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                               15
+
+Attachment 2— CATEGORIES OF SENSITIVE INFORMATION                                                                             21
+
+Attachment 3— AMC BUSINESS RULES                                                                                              22
+
+Attachment 4— EXAMPLE E-MAIL SIGNATURE BLOCKS                                                                                 24
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                      3
+
+
+1. ROLES AND RESPONSIBILITIES
+  1.1. Designated Approval Authority (DAA). The DAA is the official who assumes responsibility for
+  operating the Air Mobility Command (AMC) Enterprise Network. The DAA determines the accept-
+  able level of risk at which the system will operate, and has the authority to allocate resources to
+  achieve an acceptable level of security. It is the DAA’s responsibility to provide authorization for con-
+  nection of systems and networks to the AMC Enterprise Network. The DAA is the only person who
+  has the authority to accredit the system. The DAA for the 319 ARW MAN is the HQ AMC/A6.
+     1.1.1. Designated Approval Authority Representative (DAAR). The DAAR is the official who
+     assumes local decision making authority to reduce the time required to get routine actions com-
+     pleted. The 319 CS/CC is the DAAR. The delegated responsibilities of the DAAR are:
+         1.1.1.1. Authorize US citizens (including contractors, summer hires) access to the NIPRNET
+         and SIRPNET provided requirements of AFSSI-5027, Network Security Policy; AFI 31-501,
+         Personnel Security Program Management; and other applicable security directives are met.
+         1.1.1.2. Withdraw access to networks identified in 1.1.1.1. should circumstances dictate.
+         1.1.1.3. Approval authority for all low-risk applications software and all software on network
+         Windows-based workstations, after the following steps have been completed.
+             1.1.1.3.1. Verify the software does not impact or implement server or remote access func-
+             tionality.
+             1.1.1.3.2. Verify the software does not have an Air Force or Air Mobility Command mor-
+             atorium or sundown clause on its use.
+             1.1.1.3.3. Check the AMC approved list of software. If the product is not listed, then it
+             should not be approved. If the software does not fit in one of the current categories, then
+             approval is left to the DAAR.
+             1.1.1.3.4. If the software meets the above conditions and is still eligible for approval, have
+             the base Network Control Center load the software on a stand-alone computer and run an
+             Internet Security Scanner (ISS) scan to ensure the new software does not introduce a vul-
+             nerability (e.g. virus, worm, etc.) to the network. Evaluate and mitigate any Medium and
+             High vulnerabilities.
+             1.1.1.3.5. Approve for use and appropriately document when all of the above require-
+             ments are met.
+  1.2. Commanders. Each commander has overall responsibility for proper management of the 319
+  ARW MAN resources under their control as outlined in this instruction. Commanders ensure imple-
+  mentation of security procedures, compliance with Air Force Computer Emergency Response Team
+  (AFCERT), HQ AMC, and AMC MAJCOM/COMAFFOR C2/C4 Coordination Center (AMC M/
+  ACCC) messages to meet Air Force level security requirements and completion of all accreditation
+  requirements. Commanders are also responsible for ensuring proper accountability is maintained on
+  all hardware IAW AFI 33-112, Information Technology Hardware Asset Management and software
+  IAW AFI 33-114, Software Management under their control.
+  1.3. The Network Control Center (NCC). The Network Control Center is the central focal point on
+  base for the operation, maintenance, and management of all aspects of the base network to include
+  wireless LANs. The NCC provides an on-site technical capability to implement physical network
+4                                                    GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+    changes and modifications and restoration of faulty network transmission equipment and circuits
+    when directed by the AMC M/ACCC or AFNOSC. Using network administration, network manage-
+    ment, and information protection tools, the NCC technicians provide core services to functional sys-
+    tem administrators and users. When responding to Remedy tickets received from customers, NCC
+    technicians have the following time frames to respond to the applicable priority as follows: HIGH – 4
+    hours; MEDIUM – 3 calendar days; LOW – 8 calendar days. NCC technicians are trained and certi-
+    fied according to the Network Crew Position that meets their position requirements or as outlined in
+    their contract.
+       1.3.1. Network Management (NM). Network Management monitors and controls the network,
+       available bandwidth, hardware and overall configuration management. NM responds to network
+       faults (errors) and user reported outages. Their area of responsibility is from the base service
+       delivery point to the user’s network wall jack. This includes all base backbone infrastructure com-
+       ponents, inside and outside the firewall.
+       1.3.2. Information Protection. Information Protection installs, monitors and directs proactive and
+       reactive information protection defensive measures to ensure the availability, integrity and confi-
+       dentiality of base networked information resources. The AMC M/ACCC and Information Protec-
+       tion are the only agencies authorized by the DAA to install and use intrusive software applications
+       on the 319 ARW MAN. They manage the base firewall system, to include firewall configuration
+       to support base computer systems. They respond to all network security incidents. Additionally,
+       Information Protection is the focal point for obtaining access to web sites and opening firewall
+       ports. Web site and port access are requested by completing an IMT Form 1186, Engineering
+       Change Request/Authorization.
+       1.3.3. Network Administration (NA). Network Administration provides oversight and manage-
+       ment of the 319 ARW MAN server systems. NA duties include configuration management of the
+       servers. NA also provides core-messaging services such as Automated Message Handling System
+       (AMHS) and e-mail, Windows Domain Management, and Remote Access to base customers.
+       They set network and messaging operational policy. Network administrators are responsible for
+       implementing security procedures on all local network servers, including requirements dissemi-
+       nated by AMC M/ACCC security messages.
+       1.3.4. Call Center. The Call Center is the focal point for user issues and the creation of trouble
+       tickets. The Call Center can be reached at DSN 362-2666 / Commercial 701-747-2666 option 1.
+       The call center operates 24/7 in place during duty hours and on stand-by phone after duty hours.
+       After duty hour trouble tickets due to mission outage will result in on-call personnel response.
+       Non mission outage trouble tickets will be addressed on the next duty day.
+       1.3.5. Client Support Administration (CSA). The CSA office resolves the day-to-day administra-
+       tive and technical system problems users experience. CSAs typically perform duties at the compo-
+       nent (workstation) level. CSAs provide oversight and management of user accounts. They work
+       directly with individual users from initial set up through final disposition of each account.
+    1.4. Functional System Administrator (FSA). The FSAs are responsible for the administration, con-
+    figuration and licensing of functional systems under their control. They will possess an appropriate
+    level of training and experience and thoroughly understand the customer's mission. Their area of
+    responsibility is from the user's terminal to the server, but does not include the network backbone
+    infrastructure. FSAs are not normally assigned to the NCC, but are a logical extension of NCC func-
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                    5
+
+
+  tionality. FSAs take direction from the NCC. FSAs are trained and certified according to the appropri-
+  ate crew position in regards to their duties or as outlined in their contract.
+  1.5. Unit Information Systems Security Officer (ISSO). The ISSO establishes unit standardization
+  and reporting controls as specified by the Wing IA office. The ISSO, along with unit FSAs, will serve
+  as the unit point of contact for the Wing IA office. The ISSO will perform duties in accordance with
+  NCC and IA direction. Normal duties include Telecommunications Monitoring and Assessment Pro-
+  gram (TMAP), IA Awareness, and Computer Security (COMPUSEC). The ISSO normally resides in
+  the group Knowledge Operations office. Complete ISSO duties are listed in AFI 33-202V1, section
+  2.17.
+  1.6. All Users. All network users must have a favorable background investigation and be trained and
+  licensed in accordance with AFI 33-115V2, section 5. Each customer of the 319 ARW MAN is
+  responsible for following established security directives and procedures. Customers must safeguard
+  sensitive information (Attachment 2) and critical resources, and mark output products appropriately
+  (i.e., FOUO, Privacy Act, etc.). Customers will report security problems or incidents to their ISSO or
+  the NCC as soon as possible after detection. Customers are also required to notify their chain of com-
+  mand.
+
+2. ACCESS PROCEDURES
+  2.1. NIPRNET Unclassified User Accounts. The NIPRNET account creation process is as follows:
+     2.1.1. The member’s supervisor initiates the DD Form 2875, System Authorization Access
+     Request (SAAR). After completing the SAAR, the supervisor digitally signs the SAAR and for-
+     wards it to the Unit Security Manager for clearance verification and background check.
+     2.1.2. The Unit Security Manager verifies the security clearance and background check, digitally
+     signs the SAAR and forwards it to the member’s respective ISSO at the Group Knowledge Oper-
+     ations office.
+     2.1.3. The ISSO reviews the information, and if the clearance and background check is favorable,
+     forwards the SAAR to the NCC CSA office. If the clearance and background check are not favor-
+     able, the user is notified and the account is not created.
+     2.1.4. The CSA office creates the user account and then notifies the ISSO.
+     2.1.5. The ISSO contacts the user and requests they report to the Group Knowledge Operations
+     office at which time the user will sign the SAAR and will be issued an account. The user must
+     complete the mandatory Information Protection computer based training. Once completed, the
+     user will turn in the training completion certificate to the ISSO. If training is not completed, the
+     account will be administratively locked.
+     2.1.6. The Information Protection computer based training via Advanced Distributed Learning
+     Service is valid for 1 year and completion is an annual requirement to retain network access.
+  2.2. SIPRNET User Accounts. The SIPRNET account creation process is as follows:
+     2.2.1. The member initiates the DD Form 2875, SAAR, digitally signs it and forwards to their
+     supervisor.
+     2.2.2. The supervisor completes their portion of the SAAR, digitally signs it, and forwards the
+     request to the Unit Security Manager.
+6                                                     GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+       2.2.3. The Unit Security Manager verifies the security clearance and background check, digitally
+       signs the SAAR and forwards it the member’s respective ISSO at the Group Knowledge Opera-
+       tions office.
+       2.2.4. The ISSO reviews the information. If the clearance and background check is favorable and
+       the member’s training is current, the ISSO forwards the SAAR to the NCC CSA office. If the
+       clearance and background check or training is not favorable, the user is notified and the account is
+       not created.
+       2.2.5. The CSA office creates the user account and notifies the Group Knowledge Operations
+       office.
+       2.2.6. The Group Knowledge Operations office contacts the user and requests they report to the
+       CSA office. Upon arrival and identification card verification, the user account is issued.
+    2.3. New Network Connections. All new network connection requests, including multi-port devices
+    used to extend network service (i.e. switches and wireless access points), will be coordinated through
+    a Project Workflow Requirements Resource (PWRR) request via 319 CS/SCX Plans and Programs
+    Flight. For new SIPRNET connections, the requests must include an Emission Security (EMSEC)
+    assessment conducted by the Wing EMSEC monitor located in the 319 CS Information Assurance
+    Office. If not already appointed, the requesting unit must designate an EMSEC monitor. The EMSEC
+    monitor must receive appropriate training from the IA office.
+    2.4. Shared Network Connections. Shared network connections are prohibited. Printers or scanners
+    will not be shared through workstation network connections; all devices will have a dedicated net-
+    work connection.
+    2.5. External Network Connections. All external connections to the network will only be accom-
+    plished within the immediate control of the NCC. Organizations that do not comply with this policy
+    will be disconnected from the base infrastructure.
+    2.6. Firewall Exception Request. Outside agencies may require access through the base firewall to
+    Grand Forks AFB resources in order to conduct their mission requirements. Submit all requests by
+    completing an IMT Form 1186, Engineering Change Request/Authorization for access to the 319
+    ARW MAN.
+    2.7. Access by off-base contractors. Access by off-base contractors will be granted to the unclassified
+    and classified networks for system maintenance and will be suspended when not in use.
+    2.8. Internet Protocol (IP) Addresses. The 319th Communications Squadron will control and issue all
+    IP address segments for the 319 ARW MAN. Users are not allowed to assign an IP address to any
+    computer system without the coordination of the ISSOs and approval by the NCC.
+    2.9. Modem Connections. Any modem connections to the 319 ARW MAN are strictly prohibited.
+    The 319th Communications Squadron will confiscate unauthorized modems immediately.
+    2.10. Base E-mail. Per AMC Business Rules, Tier III standard organization and user accounts are lim-
+    ited to 50MB/75MB send/receive limits. Tier I and Tier II support is defined in Reference
+    A6-2004-03, AMC Business Rules, for MAJCOM, Wing, and Squadron leadership (see Attachment
+    3). Each user is required to archive/back-up their e-mail to a local personal folder or other storage
+    device as needed. E-mail personal folders are not authorized to be stored on network file storage
+    devices. Users will be notified when their server mailbox has reached maximum capacity. When
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                     7
+
+
+  capacity is exceeded, the server mailbox may not accept incoming mail and sending privileges will be
+  revoked.
+
+3. SOFTWARE MANAGEMENT
+  3.1. Enterprise Software. Enterprise software loaded on the 319 ARW MAN is known as the Standard
+  Desktop Configuration (SDC). The SDC consists of a software baseline including the Microsoft oper-
+  ating system and office production applications.
+  3.2. User Required Software. Any software required by users not included with the SDC fall into two
+  categories: Program Management Office (PMO) or user specific. PMO software is handled through
+  the specific program office unique to the application. Examples of PMO software are Theater Battle
+  Management Core Systems, GeoBase, Global Command and Control System. User specific software
+  would be any other software title not PMO or SDC. Examples of user specific software are Microsoft
+  Visio, Adobe Photoshop Creative Suite, and ActiveState Perl Development Kit.
+  3.3. Software Management Process. In order to maintain accountability and licensing of software, the
+  following process details the approval, acquisition, loading and accounting of user specific software
+  loaded on the 319 ARW MAN.
+     3.3.1. User Responsibilities:
+         3.3.1.1. Users will not load or attempt to load software on systems.
+         3.3.1.2. Users will submit a PWRR request to the 319 CS/SCX flight. The request will list the
+         specific software to include version number along with justification. If the request is approved,
+         the user will contact the NCC Call Center at DSN 362-2666 / Commercial 701-747-2666 to
+         open a trouble ticket to have the software loaded. The user must provide the PWRR request
+         number and proof of software license.
+     3.3.2. 319 CS Responsibilities:
+         3.3.2.1. The 319 CS/SCX flight will receive, track, and route PWRR requests through com-
+         pletion in addition to maintaining a history of software PWRR requests.
+         3.3.2.2. The Information Assurance work center will review PWRR requests and verify if the
+         requested software is approved by AMC. If approved, the PWRR request will be routed back
+         to the 319 CS/SCX flight. If not approved, Information Assurance will contact the user on spe-
+         cific requirements to submit the software for AMC approval.
+         3.3.2.3. The NCC and CSA office will respond to trouble tickets requiring software installa-
+         tion. The CSA office will contact the user to obtain the software along with proof of license.
+         The CSA office will validate software licensing compliance and will then load the software on
+         the requested system after proper virus scanning is completed. During the software loading
+         process, the CSA office will register the software to the appropriate organizational unit. The
+         CSA office will track each software title, version, system name, and unit ownership. On all
+         systems turned into the Base Automatic Data Processing Equipment (ADPE) office that are
+         identified for reuse on the 319 ARW MAN, the CSA office will completely wipe and reload
+         the system to ensure software licenses are not inadvertently duplicated. The CSA office will
+         maintain a software library containing all user specific software and licensing documentation.
+8                                                       GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+           3.3.2.4. The NCC Network Administration office will complete System Management Server
+           scans to generate system software reports for annual inventories.
+           3.3.2.5. The base ADPE office will provide a list of systems turned in for reuse or destined for
+           the Defense Reutilization Management Office to the CSA office for software tracking update
+           purposes.
+           3.3.2.6. During the month of March each year, the 319 CS will initiate a base wide software
+           inventory verification. Units will be notified of unlicensed software detected and must provide
+           proof of license or the software will be uninstalled.
+
+4. CERTIFICATION AND ACCREDITATION (C&A)
+    4.1. Purpose of C&A Process. The C&A process enforces the standardization of all software, hard-
+    ware, networked and stand alone systems (including wireless devices) encompassed under the 319
+    ARW MAN. Certification is a comprehensive evaluation of the technical and non-technical security
+    features of an information system and other safeguards made in support of the accreditation process,
+    to establish the extent to which a particular design and implementation meets a set of specified secu-
+    rity requirements. Accreditation is the formal declaration by a DAA that an information system is
+    approved to operate in a particular security mode using a prescribed set of safeguards at an acceptable
+    level of risk. AMC policy dictates that all networked and stand-alone systems will be certified and
+    accredited.
+    4.2. Roles and Responsibilities. Key roles and responsibilities in the C&A process include the DAA,
+    Certifier, Program Manager and the User Representative. These key roles are explained in Chapter 8
+    of DOD 8510.1-M, DoD Information Assurance Certification and Accreditation Process (DIACAP).
+    There are numerous other personnel and agencies that support the C&A tasks. The number of partic-
+    ipants will differ between programs based on the guidance set forth by the DAA and local security
+    requirements, as well as the sensitivity and criticality of the system. It is equally important to identify
+    responsible agencies to obtain the needed information for your System Security Authorization Agree-
+    ment (SSAA).
+    4.3. System Security Authorization Agreement. The SSAA is the depository of evidence document-
+    ing that the system meets Air Force and local security policies. SSAA documents should consist of
+    configuration of the system to meet security requirements, a checklist that all certification tasks are
+    properly completed, that the system is approved to operate and a plan for maintaining the accredita-
+    tion exists.
+    4.4. Accreditation of Network and Stand Alone Systems.
+       4.4.1. Software. Software requires a platform (hardware) in order to operate. Certify the environ-
+       ment in which the software is operating. The software and hardware are accredited together as a
+       system.
+       4.4.2. Network Systems. When accrediting a network system, you must have a completed SSAA
+       and AMC Certificate to Operate (CTO) on hand prior to connecting to the 319 ARW MAN. This
+       is to ensure that proper installation and configuration is done at the time of connection. The SSAA
+       will outline vulnerabilities that may need to be assessed prior to connection. The CTO is your doc-
+       umentation that shows Air Force or MAJCOM approval for this system to operate. Once any vul-
+       nerabilities are eliminated or deemed within acceptable levels of risk (IAW the SSAA
+       documentation) then, and only then, can the connectivity process begin.
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                       9
+
+
+     4.4.3. Stand Alone Systems. For this purpose, a stand alone system can be defined as an informa-
+     tion system that is used for a specific task with specific software and the system is not physically
+     connected into the 319 ARW MAN. A stand-alone system can be as small as a workstation or as
+     large as a complete network, with servers, router, hubs, workstations, etc. The accreditation for a
+     stand-alone is provided by the program manager and a completed SSAA and CTO letter should be
+     on station prior to operation of the system.
+  4.5. Accreditation Procedures. The IA office serves as the focal point for all C&A requirements. The
+  IA office provides guidance on the procedures needed to accredit the 319 ARW MAN and information
+  systems connected to the 319 ARW MAN. The IA office will review all documentation to ensure
+  physical, personnel, and information security requirements are met. The NCC will conduct vulnera-
+  bility testing of all systems to ensure hardware and software security requirements are met. The IA
+  office will present the DAA with all documentation and recommend approval/disapproval for final
+  accreditation. Failure to satisfactorily complete all security requirements will result in disapproval of
+  the accreditation request.
+  4.6. Accreditation Documentation Policy. The IA office will protect certification and accreditation
+  information from disclosure to unauthorized persons. Disclosure could cause the information to be
+  exploited and may impact the function of the system or allow security features to be bypassed. Certi-
+  fication and accreditation information must be marked, handled, and controlled consistently with the
+  sensitivity of the information it contains.
+  4.7. Re-accreditation Policy. The IA Office will evaluate changes to system architecture on a continu-
+  ing basis to maintain system accreditation and ensure system modifications do not create new vulner-
+  abilities to existing threats that would create more risk. The IA Office will reinitiate the accreditation
+  process whenever system modification warrants re-accreditation or when 3 years have passed since
+  the last accreditation.
+
+5. NETWORK OPERATIONS SECURITY CENTER (NOSC) NOTICE TO AIRMEN (NOTAM)
+MANAGEMENT
+  5.1. NOSC NOTAM Management. Compliance with NOSC NOTAMs is mandatory. The NOSC
+  NOTAM process is used to inform responsible agencies of network and system vulnerabilities and to
+  track implementation of countermeasures. NOSC NOTAMs contain acknowledgment, dissemination,
+  implementation, tracking, and compliance reporting instructions for network/system personnel. Each
+  Air Force network enterprise, organization, and professional performs a subset of procedures to gen-
+  erate, disseminate, acknowledge, implement, track, and report on NOSC NOTAMs.
+  5.2. NOTAM Process Responsibilities.
+     5.2.1. NCC. The NCC will receive, track, and disseminate all NOTAMs downward directed from
+     the AMC M/ACCC.
+     5.2.2. FSA. FSAs will take direction from, and comply with guidance and directives received
+     from the NCC. Compliance will be reported to the NCC as directed.
+     5.2.3. Users. Users will take direction from their ISSO/FSA when required to satisfy the NOTAM
+     guidance.
+10                                                     GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+     5.3. Non-compliance with NOTAM Messages. Vulnerabilities identified in NOSC NOTAM mes-
+     sages pose a serious security risk to the network. Failure to complete actions specified in NOSC
+     NOTAM messages will result in disconnection of the affected workstations from the network.
+
+6. VIRUS SCANNING AND INCIDENT PROCEDURES
+     6.1. Virus Scanning. The NCC and FSAs will run a continuous virus-scanning program on each sys-
+     tem server and workstation to check for known viruses. Users will perform a virus scan of ALL
+     removable storage media (to include USB Memory devices—i.e. thumb/flash drives) or files down-
+     loaded from the Internet prior to use on any workstation.
+     6.2. Incident Reporting. 319 ARW MAN users will immediately report vulnerabilities, security inci-
+     dents, or unauthorized access to a computer system to the ISSO, unit security manager, and
+     supervisors. Unit personnel are responsible for notifying their chain of command. The ISSO will
+     immediately consult with the NCC prior to taking any actions. The NCC is responsible for additional
+     reporting requirements to outside agencies and notifying Wing IA. Formal reporting of security inci-
+     dents is accomplished in accordance with AFI 33-138, Enterprise Network Operations Notification
+     and Tracking.
+
+7. SECURITY REQUIREMENTS
+     7.1. Security Requirements. It is the responsibility of all personnel to know and ensure the personnel
+     under their control are knowledgeable of the security requirements described in this document. Use all
+     resources available, to include technical and administrative resources, to enforce this policy.
+        7.1.1. Notice and Consent for Telecommunications Monitoring. All systems, stand alone or con-
+        nected to the 319 ARW MAN, are subject to monitoring. By accessing the AMC Enterprise Net-
+        work, all users are consenting to monitoring of all network related activities. In the event of fraud,
+        misuse, or "malicious intent,” Security Forces or the Office of Special Investigations (OSI)
+        reserve the right to inspect a user’s account within the guidelines of the Legal Rules of Engage-
+        ment (ROE) policy. Warning banners are required in accordance with AFI 33-219, Telecommuni-
+        cations Monitoring and Assessment Program (TMAP), on all telecommunication and automated
+        information systems.
+        7.1.2. Internet Policy. 319 ARW MAN users are permitted access to the Internet in performance
+        of official duties. Using the Internet for unofficial purposes is unauthorized and may result in
+        administrative, non-judicial, or judicial punishment. Commanders and supervisors are responsible
+        for ensuring that assigned personnel use government equipment and services for official or autho-
+        rized purposes only. Follow provisions outlined in AFI 33-129.
+        7.1.3. Personally Owned Computing Devices. Computers personally owned by Air Force mem-
+        bers, government employees, or contractor personnel cannot be used to process classified
+        information. Personally owned computers will never be directly connected to the 319 ARW
+        MAN. Personally-owned personal digital assistants (PDAs - including wireless PDAs [Black-
+        berry, etc.]) and similar devices may not be directly connected to any government computer.
+     7.2. Personnel Security. Access to the 319 ARW MAN is based on the key concepts of "authoriza-
+     tion” and “need-to-know." Authorization is validated via the SAAR. Authorization will be granted
+     IAW the requirements in AFI 33-115V2. Each user is responsible for determining a person's
+     need-to-know before disclosing information under his or her control.
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                     11
+
+
+     7.2.1. Privileged Access. Privileged access is granted via rights, passwords, or administrative
+     accounts that give a user control over the 319 ARW MAN’s hardware or software. All users with
+     privileged access will be a Certified Network Professional (CNP) as directed in AFI 33-115V2.
+     Users can not be granted privileged access to the 319 ARW MAN without the proper training and
+     certification.
+     7.2.2. Government Contractors. Units request approval for contractor access through the appro-
+     priate contracting officer when required to satisfy the terms of the contract. The contracting office
+     is responsible for obtaining appropriate nondisclosure agreements and ensuring requirements of
+     the Privacy Act of 1974 are enforced.
+  7.3. Physical Security. Physical security involves protection of equipment from unauthorized local
+  access.
+     7.3.1. Resource Protection. The first line of defense for protecting valuable assets is resource
+     protection. All personnel are responsible for positive identification of persons attempting to
+     access 319 ARW MAN assets. They will verify the status of the individual and challenge any indi-
+     viduals they cannot positively identify.
+     7.3.2. Unattended Terminals. Do not leave terminals logged into the 319 ARW MAN unattended.
+     Users must pull their Common Access Card (CAC) from the reader when stepping away from
+     their terminal. If the terminal does not automatically lock, the user must log off or lock the termi-
+     nal.
+     7.3.3. Hardware Inventory. Each unit Automated Data Processing Equipment (ADPE) custodian
+     will ensure all network hardware assets (i.e., workstations, printers, etc.) assigned to their account
+     are listed in the ADPE tracking database as directed in AFI 33-112. All ADPE assets will be
+     tracked under this database.
+     7.3.4. Software Inventory. Each unit ISSO will be responsible for ensuring that each program
+     loaded on a computer is licensed and each license is available as directed in AFI 33-114, Software
+     Management.
+  7.4. Software Security. Users are to follow guidelines for software security as dictated in AFI 33-112.
+  Additionally, access to programs and utilities that perform maintenance of the network and secu-
+  rity-related software will be restricted to use by authorized NCC personnel.
+     7.4.1. Software Certification. All software purchase requests will be routed through 319 CS/SCX
+     Plans and Programs Flight utilizing PWRR.
+     7.4.2. Unauthorized Software. Only government or DAA approved software is authorized on the
+     319 ARW MAN.
+  7.5. Remanence Security. Remanence security is the control of residual information that remains on
+  magnetic computer storage media after erasure by standard program utilities. Unclassified systems/
+  media turned in as excess or for vendor maintenance must be DoD wiped or degaussed by the Wing
+  ADPE office. ISSOs and FSAs will comply with local/MAJCOM instructions regarding sanitizing of
+  media. Contact the Wing IA Office or call the base COMSEC Office for information regarding the
+  handling of classified media.
+  7.6. Authentication. The use of a CAC is required to authenticate all AMC Enterprise Network user
+  login attempts.
+12                                                    GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+        7.6.1. Password Protection. Individual users are responsible for maintaining the integrity of their
+        CAC PIN and/or password. DO NOT WRITE YOUR PIN or PASSWORD DOWN. Do not dis-
+        close or share them with other personnel, regardless of rank or position of the requester. If a PIN
+        or password is compromised, report the disclosure to your Group Knowledge Operations office
+        immediately and have your PIN and/or password changed.
+        7.6.2. Password Generation. Users will select their CAC PIN when the CAC card is issued or
+        updated at the 319 FSS. A system administrator generates the initial password for a new user.
+        Users will then generate their own passwords after the initial password assignment.
+     7.7. Account Management.
+        7.7.1. Two Accounts for Personnel with Administrator Privileges. Each person (FSA, network
+        administrator, etc.) who has an AMC Enterprise Network account with administrator privileges
+        assigned to the account will have a second account without administrator privileges. Personnel
+        will log in with administrator privileges ONLY when performing administrative tasks. At all other
+        times, personnel must log in as a regular AMC user.
+        7.7.2. Local Administration of Windows Workstations. Neither users nor Administrators will be
+        part of the local administrators group on the machine. All administrative rights will be granted by
+        the NCC and authenticated through the AMC Active Directory.
+        7.7.3. Closing User Accounts. All accounts are deleted 60 days after departure. All users are
+        required to notify the Group Knowledge Operations office per the base out-processing checklist.
+        The Group Knowledge Operations offices report the departure date to the CSA office. The CSA
+        office loads the deletion date into e-mail account management and deletes the account at the
+        60-day point.
+     7.8. Marking/Labeling Magnetic Media.
+        7.8.1. Labeling Removable Storage Media. Apply labels to all removable storage media (floppy
+        diskettes, tapes, CDs, hard drives, and USB Memory devices—i.e. thumb/flash drives). Utilize
+        Standard Form 711, ADP Media Data Descriptor Label, for this purpose. Additionally, all media
+        must be labeled to indicate appropriate level of classification. Use the Standard Form 701 (green
+        label) for unclassified and Standard Form 707 (red label) for secret.
+        7.8.2. Marking/Labeling System Output Products. Mark/label sensitive but unclassified output
+        products (such as FOUO, Privacy Act Information, or Source Selection Sensitive Information) in
+        accordance with the appropriate governing directives. Anything attached to the SIPRNET must be
+        labeled by using SF 707. Consult the Base Records Management office if further guidance is
+        required.
+     7.9. Inadvertent Entry of Classified Information (Incident Reporting). Any classified information
+     introduced into the AMC Enterprise Network requires immediate reporting through secure means to
+     your unit security manager, ISSO, or NCC. The security manager will report the incident to security
+     forces and open an investigation. The ISSO is responsible for providing the necessary information to
+     the NCC and work with the NCC to sanitize affected systems. The ISSO will work with the NCC to
+     document all findings in accordance with AFI 33-138, Enterprise Network Operations Notification
+     and Tracking. Unit personnel are responsible for notifying their chain of command.
+     7.10. Electronic Messaging. Transmission of base wide e-mail is limited to only the 319 ARW/PA
+     function and wing leadership. Blanketing of electronic messages to a large number of recipients may
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                   13
+
+
+   delay other traffic and overload the electronic messaging system. Electronic messaging will be limited
+   to only the minimum addresses required.
+      7.10.1. Each office will designate an individual to monitor the organization’s mailbox regularly to
+      ensure messages requiring action are promptly acted upon. Documents should be placed on file
+      servers or public folders whenever possible. Hyperlinks will be used to indicate where the docu-
+      ments can be accessed on the network in lieu of large attachments whenever possible/feasible. AFI
+      33-119 details these requirements.
+      7.10.2. Senders will include a signature block on all official electronic messaging in accordance
+      with AFI 33-119 paragraph 4.2. Examples provided in Attachment 8.
+   7.11. Commercial Web-based E-mail Services. All web based commercial email services, such as
+   HOTMAIL, YAHOO, and EXCITE will not be accessed via the AMC Enterprise Domain. https://
+   www.gimail.af.mil/login.asp can be use for personal mail.
+   7.12. Subscriptions to Newsgroups. Use of newsgroups will be limited to official use only.
+
+8. MAINTENANCE
+   8.1. Hardware Maintenance.
+      8.1.1. Infrastructure Maintenance. Only Network Infrastructure technicians will perform mainte-
+      nance on 319 ARW MAN equipment. Systems covered under maintenance contract will be main-
+      tained according to the contract specifications.
+      8.1.2. Workstation/Server Maintenance. All workstation/server maintenance must be done in
+      accordance with applicable warranties. Under no circumstances should personnel perform work-
+      station/server maintenance without prior approval from the ADPE office. Additionally, do not
+      give vendor maintenance personnel unrestricted access to sensitive but unclassified storage media
+      or products at any time. The ADPE office is authorized to perform the cannibalization of unser-
+      viceable computer systems for spare parts as required when cost analysis clearly determines it is
+      economically feasible to use the parts.
+   8.2. Software Maintenance.
+      8.2.1. Archiving (Backup) of File Servers. Network Administrators (including FSAs) will make a
+      daily incremental tape backup and weekly full backup of the files on each of their respective file
+      servers.
+      8.2.2. Archiving (Backup) of User Files. Users are required to backup any personal files they
+      deem critical to longevity or mission accomplishment. Workstations are NOT encompassed under
+      any NCC backup processes.
+
+9. WIRELESS PDAs (Blackberry, etc.)
+   9.1. Responsibilities.
+      9.1.1. Information System Security Officers.
+          9.1.1.1. Ensure C&A is completed as well as the PDA Certification Checklist. Contact the
+          Wing IA office for documents and questions.
+14                                                   GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+            9.1.1.2. Ensure users sign a wireless PDA User Agreement from Base Radio and maintain a
+            copy of the user agreement.
+            9.1.1.3. Contact 319 CS/SCBS IA for wiping/sanitizing wireless PDAs.
+        9.1.2. NCCs.
+            9.1.2.1. Be the first-level help for PDA e-mail problems.
+            9.1.2.2. Install PDA software on user's desktop.
+            9.1.2.3. If unable to resolve wireless PDA problem, contact AMC M/ACCC help desk and
+            open a trouble ticket.
+     9.2. Use While Operating a Motor Vehicle. DOD policy prohibits the use of cell phones while driving
+     unless used with a hands-free device. Personnel using hybrid PDAs may only use wired headsets (sin-
+     gle earphone only).
+     9.3. Prescribed Forms/IMT’s: No Forms or IMT’s prescribed by this publication.
+     9.4. Adopted Forms/IMT’s: AF IMT 847, Recommendation for Change of Publication
+
+
+
+                                               JOHN E. MICHEL, Colonel, USAF
+                                               Commander, 319th Air Refueling Wing
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                       15
+
+
+                                          Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 31-501, Personnel Security Management Program
+AFI 33-103, Requirements Development and Processing
+AFI 33-112, Information Technology Hardware Asset Management
+AFI 33-114, Software Management
+AFI 33-115V1, Network Operations (NETOPS)
+AFI 33-115V2, Licensing Network Users and Certifying Network Professionals
+AFI 33-119, Air Force Messaging
+AFI 33-129, Web Management and Internet Use
+AFI 33-138, Enterprise Network Operations Notification and Tracking
+AFI 33-202V1, Network and Computer Security
+AFI 33-204, Information Assurance (IA) Awareness Program
+AFI 33-219, Telecommunications Monitoring and Assessment Program (TMAP)
+AFMAN 33-270, Command, Control, Communications, and Computer (C4) Systems Security Glossary
+AFMAN 33-363, Management of Records
+A6-2004-03, 24 May 04, AMC Data Storage Management Policy (AMC Business Rules)
+
+Abbreviations and Acronyms
+319 ARW MAN—319th Air Refueling Wing Metropolitan Area Network
+319 CS/SCX—319 CS/SCX Plans and Programs Flight
+319 FSS—319 Force Support Squadron
+618 TACC—618 Tanker Airlift Control Center
+ADPE—Automated Data Processing Equipment
+ADPE—Automatic Data Processing Equipment
+AF—Air Force
+AFB—Air Force Base
+AFCERT—Air Force Computer Emergency Response Team
+AFNOSC—Air Force Network Operations Security Center
+AMC—Air Mobility Command
+AMCI—Air Mobility Command Instruction
+16                                             GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+AMHS—Automated Message Handling System
+C & A—Certification and Accreditation
+CNP—Certified Network Professional
+COMPUSEC—Computer Security
+CSA—Client Support Administration
+CTO—Certificate to Operate
+DAA—Designated Approval Authority
+DAAR—Designated Approval Authority Representative
+DIACAP—DoD Information Assurance Certification and Accreditation Process
+EMSEC—Emission Security
+FOUO—For Official Use Only
+FSA—Functional System Administrator
+IA—Information Assurance
+IMT—Information Management Tool
+IP—Internet Protocol
+ISS—Internet Security Scanner
+ISSO—Information Systems Security Officer
+LAN—Local Area Network
+M/ACCC—MAJCOM/COMAFFOR C2/C4 Coordination Center
+MAJCOM—Major Command
+NA—Network Administration
+NCC—Network Control Center
+NM—Network Management
+NOSC—Network Operations Security Center
+NOTAM—Notice to Airmen Management
+OPR—Office of Primary Responsibility
+OSI—Office of Special Investigations
+PDA—Personal Digital Assistant
+PMO—Program Management Office
+PWRR—Project Workflow Requirements Resource
+RDS—Records Disposition Schedule
+ROE—Rules of Engagement
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                        17
+
+
+SAAR—System Authorization Access Request
+SDC—Standard Desktop Configuration
+SSAA—System Security Authorization Agreement
+TMAP—Telecommunications Monitoring and Assessment Program
+USB—Universal Serial Bus
+
+Terms
+Access—1. (COMSEC) Capability and opportunity to gain knowledge or alter information or material. 2.
+(AIS) Ability and means to communicate with (input to or receive output from), or otherwise make use of
+any information, resource, or component in an Automated Information System (AIS). NOTE: An
+individual does not have “access” if the proper authority or a physical, technical, or procedural measure
+prevents them from obtaining knowledge or having an opportunity to alter information, material,
+resources, or components.
+Access Control—Process of limiting access to the resources of an AIS only to authorized users,
+programs, processes, or other systems.
+Accreditation—Formal declaration by a DAA that an AIS is approved to operate in a particular security
+mode using a prescribed set of safeguards. See “Approval to Operate” and “Interim Approval to Operate.”
+Application Software—Mission support or mission-specific software programs designed by, or for,
+system users and customers. By using available computer system equipment and operating system
+software, application software completes specific, mission-oriented tasks, jobs, or functions. It can be
+either general-purpose packages, such as demand deposit accounting, payroll, machine tool control, or
+specific application programs tailored to complete a single or limited number of user functions.
+Assurance—Measure of confidence that the security features and architecture of an AIS accurately
+mediate and enforce the security policy.
+Audit—Independent review and examination of records and activities to assess the adequacy of system
+controls, to ensure compliance with established policies and operational procedures, and to recommend
+necessary changes in controls, policies, or procedures.
+Authentication—Security measure designed to establish the validity of a transmission, message, or
+originator, or a means of verifying an individual’s eligibility to receive specific categories of information.
+Automated Information System (AIS)—Any equipment or interconnected system or subsystems of
+equipment that is used in the automatic acquisition, storage, manipulation, management, movement,
+control, display, switching, interchange, transmission, or reception of data and includes software,
+firmware, and hardware. NOTE: Included are computers, word processing systems, networks, or other
+electronic information handling systems, and associated equipment. See “Network.”
+Availability—The property of being accessible and usable upon demand by an authorized entity.
+Certification—Comprehensive evaluation of the technical and non-technical security features of an AIS
+and other safeguards, made in support of the accreditation process, to establish the extent to which a
+particular design and implementation meets a set of specified security requirements.
+18                                                    GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+Certification and Accreditation Program—Program designed to ensure critical decisions regarding the
+adequacy of AIS security safeguards are made by authorized managers using reliable technical
+information.
+Classified Information—National security information that has been classified pursuant to Executive
+Order 12356.
+Component—Hardware device with its required firmware or software that performs a specific AIS
+function. Components include modems, printers, communications controllers, tape drives, message
+switches, computers, gateways, peripheral controllers, et cetera.
+Computer—See “Automated Information System.”
+Computer Network—See “Network.”
+Computer Security (INFORMATION ASSURANCE)—M e a s u r e s a n d c o n t r o l s t h a t e n s u r e
+confidentiality, integrity, and availability of the information processed and sorted by a computer.
+Configuration Control—Process of controlling modifications to a telecommunications or automated
+information system’s hardware, firmware, software, and documentation to ensure the system is protected
+against improper modifications prior to, during, and after system implementation. See “Configuration
+Management.”
+Configuration Management—Management of features and assurances through control of changes made
+to hardware, software, firmware, documentation, test, test fixtures, and test documentation of an AIS,
+throughout the development and operational life of a system.
+Data—Representation of facts, concepts, or instructions in a manner suitable for communication and
+interpretation. Data provides the building blocks for information processing. See “Information.”
+Designated Approving Authority—(DAA)-Official with the authority to formally assume responsibility
+for operating an AIS or network at an acceptable level of risk.
+EMSEC—Short name referring to the investigation, study, and control of compromising emanations
+from telecommunications and automated information systems equipment.
+File Security—Means by which access to computer files is limited to authorized users only.
+Functional System Administrator (FSA)—System administrators, other than NCC personnel, that
+maintain functional servers such as leave web.
+Hardware—Electric, electronic, and mechanical devices that make up a computer system.
+Identification—Process that enables recognition of an entity by an AIS. NOTE: This is generally
+accomplished by the use of unique machine-readable user names.
+Information—Knowledge such as facts, data, or opinions, including numerical, graphic, or narrative
+forms, whether oral or maintained in media. See “Data.”
+Integrity—Computer security characteristic ensuring computer resources operate correctly and data in
+the system is accurate. This characteristic is applicable to hardware, software, firmware, and the databases
+used by the computer system. See also “Integrity” and “System Integrity.”
+Internet—An informal collection of government, military, commercial, and educational computer
+networks using the transmission control protocol/internet protocol (TCP/IP) to transmit information. The
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                   19
+
+
+global collection of interconnected local, mid-level and wide-area networks that use IP as the network
+layer protocol.
+Information Systems Security Officer (ISSO)—Individual formally appointed by the commander to
+ensure the provisions of all applicable directives are implemented throughout the life cycle of an
+automated information system network.
+Local Area Network—Computer network that services a small area. LANs typically have a diameter of
+not more than a few miles and are owned by a single organization. See “Network” and “Metropolitan
+Area Network.”
+Logoff/Log Off—Procedure used to terminate connections.
+Logon/Log On—Procedure used to establish the identity of the user, and the levels of authorization and
+access permitted.
+Metropolitan Area Network (MAN)—Computer network that services a large area. MANs typically
+span large areas (states, countries, continents) and are owned by multiple organizations. See “Local Area
+Network” and “Network.”
+MODEM (Modulator/Demodulator)—In the computer world, modems are primarily used for
+converting digital signals into quasi-analog signals for transmission and reconverting back to digital
+signals at the destination.
+Network—An interconnected collection of autonomous computers.
+Network Security—Protection of networks and their services from unauthorized modification,
+destruction, or disclosure, and provision of assurance that the network performs its critical functions
+correctly and there are no harmful side effects. NOTE: Network security includes providing for data
+integrity.
+Password—Protected or private character string used to authenticate an identity or to authorize access to
+data.
+Personnel Security—Procedures established to ensure all personnel who have access to sensitive
+information have the required authority, as well as appropriate clearances, and the need-to-know for the
+information.
+Physical Security—1. (COMSEC) Component of COMSEC that results from all physical measures
+necessary to safeguard classified equipment, material, and information from access or observation by
+unauthorized persons. 2. (AIS) Use of physical barriers and control procedures as preventive measures or
+countermeasures against threats to resources and sensitive information.
+Residual Risk—.-Portion of risk that remains after security measures have been applied.
+Risk—Probability that a particular threat will exploit a particular vulnerability of the system.
+Risk Assessment—Process of analyzing threats to and vulnerabilities of an information system, and the
+potential impact that the loss of information or capabilities of a system would have on national security
+and using the analysis as a basis for identifying appropriate and cost-effective measures.
+Security Features—Security-relevant functions, mechanisms, and characteristics of system hardware
+and software. Security features are a subset of system security safeguards.
+20                                                    GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+Security Directive—Set of laws, rules, and practices that regulate how an organization manages,
+protects, and distributes sensitive information.
+Security Requirements—Types and levels of protection necessary for equipment, data, information,
+applications, and facilities to meet security policy.
+System—See “Automated Information System.”
+Telecommunications—Preparation, transmission, communications, or related processing of information
+(writing, images, sounds, or other data) by electrical, electromagnetic, electromechanical, electro-optical,
+or electronic means.
+Threat—Capabilities, intentions, and attack methods of adversaries to exploit, or any circumstance or
+event with the potential to cause harm to information or an information system.
+Unclassified—Information that has not been determined, pursuant to E.O. 12356 or any predecessor
+order, to require protection against unauthorized disclosure and that is not designated as classified.
+User—Person or process accessing an AIS by direct connections (via terminals) or indirect connections.
+NOTE: “Indirect connection” relates to persons who prepare input data or receive output data that is not
+reviewed for content or classification by a responsible individual.
+Vulnerability—Weakness in an information system, or cryptographic system, or components (system
+security procedures, hardware design, internal controls) that could be exploited.
+Wing Information Assurance (IA) Office—Office charged with the responsibility for managing and
+executing the IA program for a base or wing. The office reports to the MAJCOM IA and provides security
+guidance to organization IP security offices or appropriate unit officials.
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                      21
+
+
+                                              Attachment 2
+
+                          CATEGORIES OF SENSITIVE INFORMATION
+
+A2.1. Sensitive Information. Sensitive but unclassified is the highest data sensitivity level authorized
+for processing on the 319 ARW MAN. As defined by AFMAN 33-270, Command, Control, Communica-
+tions, and Computer (C4) Systems Security Glossary, dated 1 August 1994, sensitive information is infor-
+mation that "the loss, misuse, unauthorized access to, or modification of could adversely affect the
+national interest, the conduct of federal programs, or the privacy to which individuals are entitled under 5
+U.S.C. Section 552a (the Privacy Act), but has not been specifically authorized under the criteria estab-
+lished by an Executive Order or an Act of Congress to be kept secret in the interest of national defense or
+foreign policy."
+
+A2.2. Privacy Act Data. Examples of Privacy Act data are medical records, individual financial infor-
+mation, recall rosters, manpower and personnel records, training records, marital status, number and sex
+of dependents, gross salary of military personnel, civilian educational degrees and major areas of study,
+school and year of graduation, home of record, home address, home phone number, age and date of birth,
+present or future assignments for overseas or for routinely deployable or sensitive units, and office and
+unit address and duty phone for overseas or for routinely deployable or sensitive units.
+
+A2.3. Privileged Data. Examples of privileged data are chaplain records, staff judge advocate records,
+safety records, and internal organizational management records (such as quality assurance data or creden-
+tials committee records).
+
+A2.4. Proprietary Data. Examples of proprietary data are copyright material and patented material and
+information.
+
+A2.5. Other Types of Sensitive But Unclassified Information. Other types of sensitive but unclassi-
+fied information are logistics records, procurement data, financial data, source selection sensitive data,
+investigative data, automated decision-making aids, maintenance records, audit records, essential ele-
+ments of friendly information, for official use only (FOUO) data, critical technology data, scientific and
+technical data (which has national security related implications), unit mobility or deployment informa-
+tion, and war reserve materiel data.
+
+A2.6. Aggregated Data. Information that would individually be unclassified may require protection as
+sensitive information when combined or associated with other unclassified information. Users of the 319
+ARW MAN are cautioned and required to take appropriate steps to minimize the potential for aggregated
+information. The functional manager will determine when aggregated data exists in or is being processed
+by the 319 ARW MAN. The potential for creating classified information from aggregated data stored
+within the network is low. In no case will aggregated data in excess of sensitive but unclassified be autho-
+rized on the 319 ARW MAN.
+22                                                    GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+                                              Attachment 3
+
+                                        AMC BUSINESS RULES
+Tier I: VIPs
+Organizational Tier I
+Limits: No Storage Limit
+Organizational mailboxes in group: MAJCOM/NAF Directors (2 Letter Directors), HQ Staff Agency
+Lead (2 Letter) to include the Director of Staff (DS), the Inspector General (IG), the Surgeon General
+(SG), etc and Wing Commanders, Vice Wing Commanders, Group Commanders, Deputy Group Com-
+manders, Executive Officer organizational boxes for the Commanders listed above, Command Chief
+Master Sergeant organizational accounts.
+Examples: AMC/CC, AMC/CV, AMC CG/CC, AMC/IG, AMC/PA, 375 AW/CC, 375 AW/CV, 375 AW/
+CCE, 375 AW/CCM, AMC/A4, AMC/A6, AMC/A6E, AMC/A7E, AFCA/CC, AFCA/EV, AFCA/EA,
+AFCA/CCE
+Personal Tier I
+Limits: No Storage Limit
+Personal mailboxes in group: All O-6 and above, MAJCOM/NAF Directors (2 Letter Directors), HQ Staff
+Agency Lead (2 Letter) to include the Director of Staff the Inspector General (IG), the Surgeon General
+(SG), etc and, Wing Commanders, Vice Wing Commanders, Group Commanders, Deputy Group Com-
+manders, All Chief Master Sergeants
+NOTE: This does NOT include personal mailboxes for secretaries, execs and superintendents that fall
+under the front office staff. Their personal email accounts will be classified as “Standard Users.”
+Tier II: Power Users & Power Organizational Accounts
+Organizational Tier II
+Limits: 250MB send / 300MB receive
+Organizational mailboxes in group: MAJCOM/NAF 3-letters, Squadron Commanders, Squadron First
+Sergeants, Squadron Executive Officers, Wing Staff Agency Lead (2 letter) to include the Director of
+Staff (DS), the Inspector General (IG), the Comptroller (FM), the Staff Judge Advocate (JA), the Chief of
+Wing Plans (XP), etc and 24x7 Mission Critical Organizational mailboxes (Command Post, Help desk,
+618 TACC, etc), Organizational mailboxes monitored 24x7 by on-call personnel
+Examples: 868 CS/CC, 375 CE/CC, 375 AW/CP, 375 AW/JA, 375 AW/CCP, AMC/A67, AMC/A44,
+AMC/A3R, AMC/A43E, AFCA/EAC, AFCA/EVP
+Personal Tier II
+Limits: 250MB send / 300MB receive
+Personal mailboxes in group: MAJCOM/NAF 3-letters, Squadron Commanders, Squadron First Ser-
+geants, Wing Staff Agency Lead (2 letter) to include the Director of Staff (DS), the Inspector General
+(IG), the Comptroller (FM), the Staff Judge Advocate (JA), the Chief of Wing Plans (XP), etc.
+NOTE: This does NOT include personal mailboxes for secretaries, executive officers and superinten-
+dents that fall under the front office staff. This does not include personal mailboxes for personnel who are
+GRANDFORKSAFBI33-108 15 AUGUST 2008                                                                    23
+
+
+the primary owners of organizational mailboxes listed in the power user category. Their personal email
+accounts will be classified as “Standard Users.”
+Tier III: Standard Users & Standard Organizational Accounts
+Limits: 50MB send / 75MB receive
+Users in group: All organizational and personal mailboxes not listed in the VIP or Power User categories.
+Examples: Scott Conf Rm 868 CS 859, 6 MDG/RMO Conference Room, 22 OG/CONFRM, 41 AS/Con-
+ference Room Bldg 753 Room 122, 868 CS/SCBN Scheduling, Calendar CSS AB 5 MSS/CSS
+24                                            GRANDFORKSAFBI33-108 15 AUGUST 2008
+
+
+                                        Attachment 4
+
+                              EXAMPLE E-MAIL SIGNATURE BLOCKS
+Active Duty:
+//SIGNED//
+RAINY DAYS, Maj, USAF
+Branch Chief, Messaging Services
+DSN 555-5555 Comm (555)555-5555
+
+
+Military Reservist:
+//SIGNED//
+Robert Osprey, Lt Col, USAFR
+Branch Chief, Employee Services
+DSN 555-5555 Comm (555)555-5555
+
+
+National Guard:
+//SIGNED//
+Joseph A. Chinook, SMSgt, NG
+Superintendent, Life Skills
+DSN 555-5555 Comm (555)555-5555
+
+
+Active Duty Coast Guard:
+//SIGNED//
+Harold S. Skywarrior, CWO, CG
+OIC, Transportation Flight
+DSN 555-5555 Comm (555)555-5555
+
+
+DoD Civilian Signature Block:
+//SIGNED//
+Raptor Dominance, GS-12, DAF
+Branch Chief, Field Support
+DSN 555-5555 Comm (555)555-5555
+GRANDFORKSAFBI33-108 15 AUGUST 2008    25
+
+
+Contractor Signature Block:
+//SIGNED//
+Kitty Hawk, Contractor, HQ AFCA/ECFP
+DSN 555-5555 Comm (555)555-5555

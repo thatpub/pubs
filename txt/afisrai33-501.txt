@@ -1,0 +1,873 @@
+BY ORDER OF THE COMMANDER                                                     AIR FORCE ISR AGENCY
+AIR FORCE INTELLIGENCE,                                                          INSTRUCTION 33-501
+SURVEILLANCE AND RECONNAISSANCE                                                        2 JANUARY 2008
+AGENCY
+                                                                  Communication and Information Systems
+
+                                                              AF ISR AGENCY ELECTROMAGNETIC
+                                                                  ENVIRONMENTAL EFFECTS (E3)
+                                                                        MANAGEMENT PROGRAM
+
+
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY:         This publication is available digitally.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: AF ISR AGENCY/A4MY                                              Certified by: AF ISR AGENCY/A4M
+                                                                                  (Lt Col Laurel A. Smyth)
+Supersedes AIAI33-110, 5 September 1997                                                          Pages: 27
+
+This instruction prescribes policy and defines action for Air Force (AF) Intelligence, Surveillance, and
+Reconnaissance (ISR) Agency Electromagnetic Environmental Effects (E3) Program. It implements Air
+Force Service Cryptologic Element (SCE) E3 responsibilities delineated in NSA/CSS Policy 2-5, NSA/
+CSS E3 Management Program for Signals Intelligence Sites, and Department of Defense (DoD) Directive
+3222.3_AFPD33-5, DoD Electromagnetic Environmental Effects (E3) Program. It applies to AF ISR
+Agency and subordinate units, and defines the technical guidance and procedure for the control, reporting,
+and elimination of electromagnetic interference and radio frequency interference (EMI/RFI). This instruc-
+tion does not address occupational, health and safety standards. For E3 health hazard assistance contact
+the 311th Human Systems Wing, or see AFOSH STD 48-9, Radio Frequency Radiation (RFR) Safety
+Program, (August 1, 1997). For non-SIGINT AF ISR Agency subordinate units and all AF ISR Agency
+reserve units, this instruction levies no additional requirements to AFI 10-707 or DoD Directive
+3222.3_AFPD 33-5. Any organizational level may supplement this instruction and will send one copy of
+the supplement to the AF ISR Agency Maintenance Division (AFISRA.A4M2@lackland.af.mil) for
+review prior to certification and approval. Ensure that all records created as a result of processes pre-
+scribed in this publication are maintained in accordance with AFMAN 37-123 (to be replaced by AFMAN
+33-363) and are disposed of in accordance with the Air Force Records Disposition Schedule (RDS)
+located at https://afrims.amc.af.mil. Contact supporting records managers as required.
+
+SUMMARY OF CHANGES
+This document is substantially revised and must be completely reviewed. This revision re-titled and
+renumbered Air Intelligence Agency Instruction 33-110 to AF ISR Agency 33-501; deleted requirement
+for ESC Form 232, vehicular RFI Decal; added qualification and training requirements for Unit EMI/RFI
+team member; added environmental impact coordination requirement for new transmitter installation;
+added E3 technical guidelines; added sample E3/EMC Certification Memorandum.
+2                                                                                          AFISRAI33-501 2 JANUARY 2008
+
+
+Chapter 1— INTRODUCTION                                                                                                                       4
+    1.1.   The DoD Electromagnetic Environmental Effects (E3) Program. ............................                                            4
+    1.2.   The AF ISR Agency EMC Philosophy. .....................................................................                             4
+    1.3.   Definitions. ................................................................................................................       4
+
+Chapter 2— AF ISR AGENCY FUNCTIONS                                                                                                            6
+    2.1.   Role of Logistics. .......................................................................................................          6
+    2.2.   Role of Civil Engineering. .........................................................................................                6
+    2.3.   Role of Operations. ....................................................................................................            7
+
+Chapter 3— AF ISR AGENCY UNIT RESPONSIBILITIES                                                                                                8
+    3.1.   Wing. ..........................................................................................................................    8
+    3.2.   AF ISR Agency Fixed Ground Units. ........................................................................                          8
+    3.3.   AF ISR Agency Airborne Units .................................................................................                      9
+    3.4.   AF ISR Agency Expeditionary Units .........................................................................                        10
+
+Chapter 4— THE EMC COMMITTEE                                                                                                                  11
+    4.1.   Role and Organization. ..............................................................................................              11
+    4.2.   Responsibilities. .........................................................................................................        11
+
+Chapter 5— THE EMI/RFI TEAM                                                                                                                   13
+    5.1.   Role and Organization. ..............................................................................................              13
+    5.2.   Responsibilities. .........................................................................................................        13
+
+Chapter 6— REPORTING                                                                                                                          14
+    6.1.   Transmitters. ..............................................................................................................       14
+    6.2.   Civil and Industrial Development. .............................................................................                    14
+    6.3.   Electromagnetic and Radio Interference. ...................................................................                        14
+
+Chapter 7— PREVENTIVE ACTION                                                                                                                  15
+    7.1.   General .......................................................................................................................    15
+    7.2.   Transmitters. ..............................................................................................................       15
+    7.3.   Vehicle Control. .........................................................................................................         16
+    7.4.   Base Power System Control. .....................................................................................                   17
+
+Chapter 8— CORRECTIVE ACTIONS                                                                                                                 18
+    8.1.   Locating and Identifying EMI/RFI. ...........................................................................                      18
+AFISRAI33-501 2 JANUARY 2008                                                                                                            3
+
+
+    8.2.   Mitigation of EMI/RFI. ..............................................................................................       18
+
+Chapter 9— FORM PRESCRIBED                                                                                                             20
+    9.1.   Form Prescribed. ........................................................................................................   20
+
+Attachment 1— GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                        21
+
+Attachment 2— E3 TECHNICAL GUIDELINES                                                                                                  22
+
+Attachment 3— SAMPLE MINUTES                                                                                                           25
+
+Attachment 4— SAMPLE REQUEST FOR E3/EMC CERTIFICATION                                                                                  27
+4                                                                     AFISRAI33-501 2 JANUARY 2008
+
+
+                                                 Chapter 1
+
+                                            INTRODUCTION
+
+1.1. The DoD Electromagnetic Environmental Effects (E3) Program. DoDD 3222.3 contains the
+policy and responsibilities for management and implementation of the DoD E3 Program to ensure mutual
+electromagnetic compatibility (EMC) and effective E3 control among ground, air, sea, and space-based
+electronic and electrical systems, subsystems, and equipment, and with the existing natural and man-made
+electromagnetic environment (EME). It assigns the Under Secretary for Intelligence to require the
+National Security Agency (NSA) Director to be the focal point for E3 control with respect to (ISR sites
+and platforms. DoD Directive 3222.5 provides policy and guidelines for implementing EMC management
+program at SIGINT sites, and AF Supplement 1 to DoD 3222.3 assigns AF ISR Agency as the Service
+Cryptologic Element to implement E3 policies, technical guidelines, and mitigation efforts for Air Force
+ISR sites and platforms.
+    1.1.1. NSA/CSS Policy 2-5 provides guidance on the responsibilities of United States SIGINT Sys-
+    tem elements, and technical guidance for the control of electromagnetic interference (EMI). NSA
+    Spectrum Assurance Services, S33152, provides policy, plans, reporting process, advice and technical
+    guidance concerning EMC relative to SIGINT sites and electronics equipment. NSA/CSS Policy 2-5
+    directs the SCEs to establish and maintain EMC point of contact. Within the AF, this responsibility is
+    assigned to AF ISR Agency/A4MY.
+    1.1.2. For AF non-SIGINT activities and systems, DoDD 3222.3_AFPD 33-5 applies. For guidance
+    on AF spectrum management issues reference AFI 33-118. AF ISR Agency Spectrum Management is
+    assigned to the Operations Branch (AF ISR Agency/A6NO). For guidance on Meaconning, Intrusion,
+    Jamming, and Interference (MIJI), spectrum management, and resolution of frequency conflicts, AFI
+    10-707 applies. For E3 health hazard assistance contact the 311th Human Systems Wing, or see
+    AFOSH STD 48-9, Radio Frequency Radiation (RFR) Safety Program, (August 1, 1997). All AF ISR
+    Agency unit EMC personnel are required to have the applicable E3 documents cited above.
+
+1.2. The AF ISR Agency EMC Philosophy. The AF ISR Agency E3 program concentrates on preven-
+tative actions to maintain EMC. The cost and effort in preventative measures are much less than the effort
+to eliminate the EMC problem after it occurs. The effort to reduce EMI/RFI problems often takes years
+and most often result in the inability to completely eliminate the problem. Initially, field sites are selected
+in areas that have low noise levels. Over the years, the noise levels rise due to encroachment from indus-
+trial and residential development in the surrounding areas, and the proliferation of transmitting devices in
+both the civil sector and government and military organizations. Once this encroachment is allowed to
+take place, the site can never be restored to its original low noise levels. The EMC personnel at the sites
+are crucial to the overall E3 program to provide early information on projects that encroach on the sites
+hearability. In the case of airborne sensors, the immediate electromagnetic environment travels with the
+platform and must be controlled if the low noise sensors are to operate effectively. Every unit person is
+tasked to be vigilant and report activity, development plans, and possible sources of interference.
+
+1.3. Definitions.
+    1.3.1. EME. The resulting product of the power and time distribution, in various frequency ranges, of
+    the radiated or conducted electromagnetic emission levels that may be encountered by a military
+AFISRAI33-501 2 JANUARY 2008                                                                           5
+
+
+  force, system, or platform when performing its assigned mission in its intended operational environ-
+  ment.
+  1.3.2. E3. The impact of the EME on the operational capability of military forces, equipment, sys-
+  tems, and platforms. It encompasses all electromagnetic disciplines, including EMC and electromag-
+  netic interference (EMI); electromagnetic vulnerability (EMV); electromagnetic pulse (EMP);
+  electrostatic discharge (ESD); hazards of electromagnetic radiation to personnel (HERP), ordnance
+  (HERO), and fuels (volatile materials) (HERF); and natural phenomena effects of lightning and pre-
+  cipitation static.
+  1.3.3. EMC. The ability of systems, equipment, and devices that utilize the electromagnetic spectrum
+  to operate in their intended operational environments without suffering unacceptable degradation or
+  causing unintentional degradation because of electromagnetic radiation or response. It involves the
+  application of sound electromagnetic spectrum management; system, equipment, and device design
+  configuration that ensures interference-free operation; and clear concepts and doctrines that maximize
+  operational effectiveness.
+  1.3.4. EMI. Any electromagnetic disturbance that interrupts, obstructs, or otherwise degrades or lim-
+  its the effective performance of electronics and electrical equipment. It can be induced intentionally,
+  as in some forms of electronic warfare, or unintentionally, as a result of spurious emissions and
+  responses, intermodulation products, and the like.
+  1.3.5. Sensitive Antenna Sites. Antenna sites that have functions requiring a very low noise environ-
+  ment.
+6                                                                   AFISRAI33-501 2 JANUARY 2008
+
+
+                                                Chapter 2
+
+                                    AF ISR AGENCY FUNCTIONS
+
+2.1. Role of Logistics.
+    2.1.1. AF ISR Agency/A4MY is the focal point for command E3 matters and is responsible for man-
+    aging the command E3 program, and guiding the AF ISR Agency staff and subordinate elements.
+    2.1.2. Resolve problems reported by AF ISR Agency units that cannot be resolved locally.
+    2.1.3. Provide E3 engineering services.
+    2.1.4. Keep a master file of command EMI/RFI material, including:
+       2.1.4.1. Parent and subordinate unit EMI/RFI committee meeting minutes.
+       2.1.4.2. Documentation of all reported EMI/RFI problems.
+       2.1.4.3. General correspondence and EMI/RFI material essential to efficient management.
+    2.1.5. Provide a quick fix interference reduction capability.
+    2.1.6. Request assistance from other AF and DoD agencies to assist in resolving EMI/RFI problems.
+    2.1.7. Maintain a team of E3 technical experts who can provide technical support to resolve interfer-
+    ence problems at AF ISR Agency sites.
+    2.1.8. Monitor the EME of AF ISR Agency sites and platforms to ensure they are operating in a
+    noise-free environment as possible. Ensure that field operations and other activities are conducted in
+    accordance with approved EMC practices, and that these operations conform to DoDD 3222.3 poli-
+    cies and NSA/CSS Policy 2-5 recommended technical guidelines.
+    2.1.9. Provide an assessment of the impact of existing or potential EMI/RFI on AF ISR Agency mis-
+    sions. Coordinate with A6NO in resolving EMI/RFI spectrum issues.
+    2.1.10. Coordinate and implement E3 training requirements established by the DoD E3 IPT and NSA/
+    CSS Associate Director for Education and Training National Cryptologic School. Develop E3 educa-
+    tion and awareness training standards for maintaining E3 control on AF ISR Agency sensors and plat-
+    forms.
+    2.1.11. Identify requirements for the E3 control of future AF ISR Agency sensors and their platforms.
+    Review acquisition documents such as Capability Development Document, Capability Production
+    Documents, equipment specifications, and Test and Evaluation Master Plans to ensure E3 control
+    requirements are defined, established, verified and implemented during the SIGINT system life cycle.
+    2.1.12. Support the NSA/CSS E3 Program Manager in the EMC certification process (Attachment
+    4).
+
+2.2. Role of Civil Engineering.
+    2.2.1. Provide guidance to construction agents for construction projects at AF ISR Agency sites to
+    effect compliance of the E3 policies and responsibilities of DoDD 3222.3 and NSA/CSS Policy 2-5,
+    and technical guidelines in Attachment 1.
+AFISRAI33-501 2 JANUARY 2008                                                                         7
+
+
+   2.2.2. Provide engineering assistance to A4M in matters of the design of buildings, power systems
+   and other base facilities to achieve EMC.
+
+2.3. Role of Operations.
+   2.3.1. Provide spectrum management of frequencies assigned to AF ISR Agency field sites and reso-
+   lution of any frequency assignments that interfere with AF ISR Agency missions.
+   2.3.2. Manage AF ISR Agency’s MIJI program.
+   2.3.3. Provide prompt reporting to the Director of Logistics, Installations, and Mission Support (AF
+   ISR Agency A4/7) of any interference to AF ISR Agency missions.
+   2.3.4. Provide operational impact statements to AF ISR Agency/A4MY to support EMC engineering
+   mitigation efforts.
+8                                                                  AFISRAI33-501 2 JANUARY 2008
+
+
+                                                Chapter 3
+
+                           AF ISR AGENCY UNIT RESPONSIBILITIES
+
+3.1. Wing.
+    3.1.1. Wing Logistics functions will:
+       3.1.1.1. Act as Wing focal point concerning E3 incidents for subordinate units.
+       3.1.1.2. Consolidate funding requests needed to resolve E3 issues beyond the capabilities of the
+       field sites. Forward consolidated requirements to AF ISR Agency/A4MY.
+       3.1.1.3. Ensure field units comply with E3 programs during staff assistance visits/ inspections;
+       provide guidance and training as needed.
+
+3.2. AF ISR Agency Fixed Ground Units.
+    3.2.1. Electromagnetic emissions at or near AF ISR Agency designated sensitive antenna sites can
+    have an especially significant impact on the missions conducted at these locations. As such, effective
+    control measures must be in place to monitor, identify and mitigate the detrimental impact of these
+    emissions. Ground units collocated at these sites must be kept abreast of changes occurring or planned
+    which impact the electromagnetic environment.
+       3.2.1.1. Communications and real property facilities and assets are a primary source of interfer-
+       ence due to power lines, electronic and radio equipment, and other emitters associated with these
+       types of operations. AF ISR Agency field units must take steps to acquaint themselves with Base
+       Civil Engineering and communications projects that impact the electromagnetic environment near
+       their site. Methods to accomplish this may include participation in base facilities utilization and
+       planning meetings, base communications planning and requirements meetings and through inclu-
+       sion of field unit needs in applicable service support agreements. Projects which may have a detri-
+       mental effect on the SIGINT mission shall be reported to AF ISR Agency/A4MY
+       (AFISRA.A4M2@lackland.af.mil) in a timely manner so action can be taken to ensure EMC in
+       the early stage of the project.
+       3.2.1.2. Most EMI/RFI problems are caused by on-base or nearby emitters or noise sources. The
+       unit EMC committee and the EMI/RFI team at each AF ISR Agency field station serve as the
+       unit’s first line of defense in identifying and resolving sources of interference. All unit personnel
+       shall report EMC problems to the EMC committee for investigation and verification prior to
+       requesting action by higher headquarter.
+       3.2.1.3. Reporting of EMC threats is vital to the AF ISR Agency E3 program. The E3 program is
+       designed to resolve EMC threats before they become EMC problems that cause loss of mission.
+       The E3 community has a very formal structure to deal with EMC-related problems. The E3 single
+       point of contact provides a rapid means of providing immediate support to the resolution of prob-
+       lems.
+    3.2.2. All major AF ISR Agency Fixed Ground Unit designated sensitive antenna site shall provide an
+    effective EMC program comprised of the following functions:
+       3.2.2.1. Appoint a formal EMC committee. See Chapter 4.
+AFISRAI33-501 2 JANUARY 2008                                                                             9
+
+
+      3.2.2.2. Establish an EMI/RFI team. See Chapter 5.
+   3.2.3. All major AF ISR Agency Fixed Ground Units shall ensure compliance to NSA/CSS Policy
+   2-5 and Attachment 2 E3 technical guidance for the installation and operation of systems and equip-
+   ment at designated sites. Existing facility not in compliance shall be modified to meet the mission of
+   the facility.
+
+3.3. AF ISR Agency Airborne Units
+   3.3.1. AF ISR Agency airborne mission systems have become diverse and quite complex. In most
+   cases, AF ISR Agency does not own or maintain the airborne sensors which are often far removed
+   from the airborne-related ground stations they serve. AF ISR Agency, as the user of the system, is in
+   the unique position of being able to evaluate the mission capability of the overall system and, there-
+   fore, has the EMC monitoring responsibility for the entire system.
+   3.3.2. Airborne SIGINT sensors detection range is based on Es > En where Es (electric field in dB?V/
+   m) is the signal from the distant transmitter and En is the local environmental noise measured from the
+   sensor’s antenna. A more sensitive sensor is not necessarily more effective or has greater radio range
+   if the environmental noise of the platform is much greater than the target signal. For an airborne plat-
+   form, system noise floor is generated by emissions from electromechanical and electronic devices
+   within the platform, and natural sources. A high noise floor reduces its radio range or “hearability” to
+   a few kilometers.
+   3.3.3. EMI/RFI problems arise when new aircraft and/or mission equipment are incompatible with
+   the operational EME. High-speed digital systems in close proximity with low noise RF systems, cou-
+   pled with aircraft weight restrictions, create unique EMC design problems. EMI/RFI problems usually
+   manifest themselves as a rise in system noise coupled with a loss of system sensitivity. Digital signals
+   with rapid-rise times often produce large discrete signals that mimic results that nearby transmitters
+   produce at ground sites. Common and differential mode conducted noise can leach into SIGINT
+   antennas, receivers and processors through aircraft power ground and airframe. Systems engineering
+   is critical in ensuring EMC is achieved when new or modified equipment are integrated into the air-
+   borne platform. Airborne ground station shall report EMI/RFI incidents to AF ISR Agency/A4MY
+   and the platform and sensor custodians for resolution. Prompt reporting of early symptoms of EMI,
+   and reporting during the mitigation effort are essential.
+   3.3.4. To maintain EMC at airborne-related ground stations, AF ISR Agency units must develop a
+   local EMC committee much like the EMC committees for the larger AF ISR Agency fixed ground
+   field sites. The committee is chaired by the highest-ranking maintenance officer with representatives
+   from unit operations and representatives from other organizations performing sensor maintenance,
+   modifications and testing. The EMC group will meet at least on a quarterly basis with more frequent
+   meetings during periods of EMI/RFI mitigation efforts and provide field data to the headquarters to
+   support higher-level mitigation efforts. The base frequency manager will be an "Ad Hoc" member to
+   this committee.
+   3.3.5. Establish and maintain a program to enable operators to quickly report EMI/RFI.
+   3.3.6. Units assigned to the 55 WG have only an EMC reporting responsibility. Units will identify a
+   unit POC to AF ISR Agency/A4MY who is responsible for reporting interference problems.
+10                                                                AFISRAI33-501 2 JANUARY 2008
+
+
+3.4. AF ISR Agency Expeditionary Units (does not include ground stations linked to airborne sen-
+sors).
+     3.4.1. Expeditionary units shall have personnel knowledgeable in EMC/EMI/RFI matters, and a com-
+     plement of basic measurement equipment to assist in the selection of deployment sites, or manage
+     noise problems during deployments.
+     3.4.2. Expeditionary units, if garrisoned with or near a larger AF ISR Agency fixed-ground station,
+     may participate in the EMC/RFI/EMI activities of the large fixed unit.
+     3.4.3. Formal EMC committee is not required, but a reporting authority within the unit staff is
+     required to file EMI/RFI interference reports during deployments.
+AFISRAI33-501 2 JANUARY 2008                                                                            11
+
+
+                                               Chapter 4
+
+                                      THE EMC COMMITTEE
+
+4.1. Role and Organization.
+   4.1.1. The committee is established as an aid to the unit commander. It provides technical advice, acts
+   on all EMI/RFI matters, and immediately reports any serious problems to AF ISR Agency/A4MY that
+   adversely impact the unit's mission. The committee functions as a local working group to investigate
+   and work EMC problems or threats, and provides a single source of reporting to the headquarters.
+   4.1.2. The committee consists of an appointed presiding officer, recorder, site projects office and
+   other members from the staff elements who can help identify on going mission or infrastructure
+   projects and resolve EMI/RFI problems (include key representatives from appropriate host-tenant
+   units, base frequency manager, and unit civil engineering liaison). The presiding officer is normally
+   the highest ranking individual from the maintenance or logistics function. The vice presiding officer is
+   from the maintenance, logistics, or operations function, and the recorder is normally the person with
+   the ability to conduct meetings, brief problems and progress, and prepare accurate minutes of the
+   meetings. The recorder also prepares other EMI/RFI correspondence and reports.
+
+4.2. Responsibilities.
+   4.2.1. Meets at least once each quarter. Meetings are also scheduled as needed to review base plan-
+   ning construction progress, budget, or on-going incidents.
+   4.2.2. Forwards a copy of the minutes to AF ISR Agency/A4MY, within 5 working days after the
+   EMC meeting, with information copies to each parent unit and to NSA/CSS S33152. Attachment 3
+   shows the suggested format for the minutes and sample items covered by the discussions.
+   4.2.3. Sets up local procedures for detecting, reporting and correcting EMI/RFI issues. Use AF ISR
+   Agency Form 78, Electromagnetic Interference Log, to record EMI/RFI data identified by the EMI/
+   RFI locator team.
+   4.2.4. Sets up local preventive actions (see Chapter 7).
+   4.2.5. Assists AF ISR Agency/A4MY E3 technical-survey teams. An EMI/RFI team member will be
+   available during surveys to provide access to antenna and equipment areas, and arrange other logistics
+   support.
+   4.2.6. Prepares and reviews plans for corrective actions (see Chapter 7).
+   4.2.7. Reviews and responds to reports of harmful interference or initiate reports as required.
+   4.2.8. Reviews reports of the unit EMI/RFI team.
+   4.2.9. Responsible for maintaining EMC trained EMI/RFI team members. Develop EMC training
+   plan to maintain unit’s EMI/RFI team EMC proficiency and continuity.
+   4.2.10. Maintain an EMC/EMI continuity book to include at a minimum the following:
+       4.2.10.1. EMC/EMI NCOIC Appointment Letter
+       4.2.10.2. EMI/RFI TEAM training LOG to include names, training title and completion date
+       4.2.10.3. EMC Directives, Policy, and Instructions referenced in this instruction
+12                                                           AFISRAI33-501 2 JANUARY 2008
+
+
+     4.2.10.4. Copies of EMC Quarterly Meeting Minutes
+     4.2.10.5. EMI Noise Search Quarterly Results and Mitigation efforts
+     4.2.10.6. AF ISR Agency Form 78, Electromagnetic Interference Log
+AFISRAI33-501 2 JANUARY 2008                                                                             13
+
+
+                                               Chapter 5
+
+                                         THE EMI/RFI TEAM
+
+5.1. Role and Organization.
+   5.1.1. AF ISR Agency fixed ground units will organize, equip, train, and maintain an EMI/RFI team
+   to detect, locate, and eliminate sources of interference. The team will be available on very short notice
+   through established procedures to respond to EMI/RFI problems. Procedures must provide for imme-
+   diate reaction on a 24-hours basis.
+   5.1.2. The team consists of a minimum of two (preferably three at larger sites) qualified electronics
+   journeyman technicians who are familiar with the measurement equipment to be used. Members will
+   have a background in radio maintenance having an AFSC 2E1X3 or equivalent. One member of the
+   team will have a valid driver’s license, and a vehicle will be available for team use.
+       5.1.2.1. EMI/RFI Team members shall be proficient in identifying and locating power line noise
+       using RFI noise locating equipment.
+       5.1.2.2. EMI/RFI Team shall ensure a noise survey is conducted quarterly to verify environmental
+       noise levels, team member noise locating equipment proficiency, and training of new EMI/RFI
+       Team members. A training log should be kept listing names of qualified technicians and training
+       dates.
+   5.1.3. The EMI/RFI team provides valuable EMI/RFI expertise to the EMC committee and the com-
+   mander. Specialized training in RF direction finding (DF) is provided to the EMI/RFI team in order to
+   provide a high degree of expertise. Careful selection of personnel who are interested in EMI/RFI work
+   is essential to a successful EMC program.
+
+5.2. Responsibilities.
+   5.2.1. Conducts surveys to locate and determine the extent and probable cause of EMI/RFI problems.
+   Use AF ISR Agency Form 78, Electromagnetic Interference Log, to record EMI/RFI data identified.
+   5.2.2. Applies the proper corrective action within team capability and authority. Forwards action
+   beyond the team’s capability or authority to AF ISR Agency/A4MY.
+   5.2.3. Checks the degree of effectiveness of corrective actions.
+   5.2.4. Performs other actions deemed necessary or as directed by management.
+   5.2.5. Reports all interference and corrective actions to the EMC committee.
+   5.2.6. Participates in AF ISR Agency sponsored EMC technical surveys and other related EMC sup-
+   port and assistance.
+   5.2.7. Establishes a training program supported by AF ISR Agency/A4MY to ensure that the EMI/
+   RFI team is proficient in using RF DF measuring and locating equipment. Schedules Power Line
+   Noise Locating and EMI Training from 85 EIS/SCYM, Keesler AFB, MS when required.
+   5.2.8. Maintains the RF DF measuring and locating equipment in a state of readiness.
+14                                                                     AFISRAI33-501 2 JANUARY 2008
+
+
+                                                  Chapter 6
+
+                                                REPORTING
+
+6.1. Transmitters.
+     6.1.1. Report existing or planned transmitters as follows:
+     6.1.2. All HF and below transmitters.
+     6.1.3. All transmitters above HF within LOS.
+     6.1.4. In the report, provide the following information concerning the transmitters: Planned or exist-
+     ing transmitter, frequency, location, power (ERP), height above ground, type of antenna, and sponsor.
+
+6.2. Civil and Industrial Development.
+     6.2.1. Report all development within LOS and include the following information: Distance and azi-
+     muth from site, type of development (hospital, housing, etcetera), area (acreage, shape and orientation
+     relative to site, etcetera.), height of building/structure, density (number of buildings/structures); iden-
+     tify electric devices and power requirements (identify if power is overhead or underground), name of
+     developer or authority in charge of project, and type of building materials.
+
+6.3. Electromagnetic and Radio Interference.
+     6.3.1. Characteristics: Frequency, time noted, modulation characteristics, duty cycle, temporal char-
+     acteristics, azimuth and elevation of interference, distance, systems interfered with, and severity of
+     interference, operational impact.
+     6.3.2. Resolution: Discuss attempts to locate and mitigate the interference, the equipment used, the
+     cause of interference, actions taken to mitigate or request for assistance to mitigate.
+     6.3.3. Report Format: EMI/RFI Checklist Format is provided in NSA/CSS Policy 2-5, Appendix B.
+     Comply with this report format when submitting EMI/RFI incidents.
+AFISRAI33-501 2 JANUARY 2008                                                                             15
+
+
+                                               Chapter 7
+
+                                       PREVENTIVE ACTION
+
+7.1. General
+   7.1.1. EMI/RFI problems, such as strong signals or severe noise, usually originate from local sources
+   and require local actions. AF ISR Agency/A4MY provides an EMC technical survey of all major AF
+   ISR Agency ground sites at least every 2 years. This survey provides data to assess the operational
+   capability of the site. Major impacts to mission capability are usually the result of manmade noise,
+   very often a poorly maintained base power system. The monitoring of the manmade noise at the site is
+   the responsibility of the EMI/RFI team. AF ISR Agency unit responsibility is not limited to protecting
+   current missions but to the protection of total-mission capability. Signal hearability only provides use-
+   ful assessment of current missions and does not provide data to assess mission requirements of a site.
+   This can only be achieved through an engineering assessment based on the data collected on the site
+   systems and the environment. Unit vigilance and timely reaction can usually prevent potentially seri-
+   ous losses of mission capability.
+   7.1.2. Proper master planning is required for control of electronics interference. All AF ISR Agency
+   fixed ground units shall be represented on the base installation planning boards and related functions
+   that could possibly impact (cause EMI/RFI, signal degradation or noise) AF ISR systems. Some con-
+   siderations are: zoning; EMI/RFI-suppressed lighting and power-distribution systems; proper separa-
+   tion and frequency assignments for government radio transmitters; Armed Forces Radio and
+   Television Service (AFRTS), Military Affiliated Radio System (MARS), and amateur radio stations;
+   proper antenna clearance criteria (from obstruction and noise sources); base facilities projects such as
+   power systems, construction and demolition of buildings, construction of pipelines and water towers,
+   etcetera.
+   7.1.3. All additions and relocations of equipment at designated sensitive sites shall be evaluated for
+   EMC impact according to Attachment 1 technical guidelines. As a minimum this evaluation is per-
+   formed by the local EMI/RFI team and approved by the unit EMC committee. When addition or relo-
+   cation of equipment does not meet the separation distance requirement of Attachment 1, waiver
+   procedure is required (Attachment 3).
+
+7.2. Transmitters.
+   7.2.1. Because on-base or nearby transmitters significantly threaten the AF ISR ground missions,
+   each AF ISR Agency ground station must protect the local-frequency spectrum and explore every
+   source of information about proposed transmitter facilities (new), or changes to existing transmitters.
+   7.2.2. Transmitting facilities often operate on frequencies that could interfere with receiving signals
+   essential to the AF ISR Agency mission. Installing the transmitting facility in another equally suitable
+   location, operating in another band (“S” instead of “X,” “UHF” instead of VHF), or operating on
+   slightly different frequencies can avoid or reduce interference. Early reporting makes such changes
+   much easier in the planning stage. An AF ISR field station does not have national or international pro-
+   tection from interfering signals produced by authorized transmitting facilities. However, when the
+   mission of the AF ISR field station is more important to the national interest than the mission of the
+   interfering transmitting facility, the appropriate actions may be to move, change the frequency, or shut
+   down the interfering transmitter.
+16                                                                   AFISRAI33-501 2 JANUARY 2008
+
+
+     7.2.3. When a transmitting facility is under the control of an AF ISR Agency unit, the AF ISR unit
+     ensures that the transmitters cause the least possible interference to the assigned missions. When a
+     new transmitting facility is requested, the unit will:
+        7.2.3.1. Specify that only minimum-power output is used.
+        7.2.3.2. Avoid the frequencies (or frequency bands) critical to mission assignments. Consider the
+        frequency bandpass of the RF preamplifiers and multicouplers and the effect of intermodulation
+        and harmonics of the proposed transmitting frequency.
+        7.2.3.3. Forward technical data to AF ISR Agency/A4MY for detailed engineering analysis and
+        coordination.
+        7.2.3.4. Proposals to build new transmitter should also be coordinated with the base civil engineer
+        and the environmental protection committee AFI 32-7061 for evaluation for its environmental
+        impact and the issuance of a CATEX (categorical exclusion) or draft environmental impact state-
+        ment.
+     7.2.4. When an AF ISR Agency unit learns of a proposed change in construction of a transmitting
+     facility under US control that may cause interference to assigned missions, the AF ISR unit will
+     immediately notify AF ISR Agency/A4MY and send copies of the notification to intermediate organi-
+     zations and NSACSS/S33152. Include the known frequency bands threatened and the problems
+     expected. Establish working-level liaison with the agencies concerned to protect the AF ISR mission.
+     If the liaison established by the threatened AF ISR unit is unsuccessful in resolving the frequency allo-
+     cation of interference problem, AF ISR Agency/A4MY will negotiate with the other appropriate US
+     agencies.
+     7.2.5. Potential or actual problems caused by transmitting facilities under foreign control must be
+     handled at the diplomatic level or as directed by international agreement with the host country. When
+     directed by AF ISR Agency, local AF ISR unit responsibilities are usually limited to providing techni-
+     cal information and assistance to US representatives negotiating with the foreign government.
+     7.2.6. The AF ISR Agency unit:
+        7.2.6.1. Closely monitors and controls the activities of other nearby tenants, operations such as
+        AFRTS, MARS, base contracts, and inter-base radio, and stays informed of plans for new trans-
+        mitting facilities in the local area.
+        7.2.6.2. Stay current on frequency authorizations for the local base area to learn of new transmit-
+        ting systems. Coordinate in advance with AF ISR Agency/A4MY and AF ISR Agency/A6NO on
+        any frequency request for local transmitters (tactical or non-tactical).
+        7.2.6.3. Compile a list of the local on base and nearby transmitters with associated contact points
+        of personnel to permit quicker resolution of EMC/EMI/RFI problems will transmitters malfunc-
+        tion and produce interference. This list will include operating frequency, power output, location,
+        type of modulation, and other data applying to the facility. A plot of these transmitters on a con-
+        tour map of the area would help to locate offending emitters.
+
+7.3. Vehicle Control.
+     7.3.1. Automobiles and other vehicles (both private and government owned) can be sources of EMI/
+     RFI if not properly controlled. Vehicle interference often originates in the ignition system but is not
+AFISRAI33-501 2 JANUARY 2008                                                                                 17
+
+
+   necessarily limited to this source. The entire electrical system is a potential threat, and control is a pre-
+   ventive measure.
+   7.3.2. Fixed ground stations will establish “no vehicle zones” in areas where it is necessary to control
+   EMI/RFI. Only emergency vehicles would normally be allowed in the prohibited zone. Construction
+   and maintenance vehicles (and machinery) will also be controlled to limit access to essential tasks,
+   and even then, special restrictions may be necessary.
+   7.3.3. At Circular Disposed Antenna Array (CDAA) sites, control of vehicle traffic around the
+   antenna is essential. Vehicle traffic causes damage to the buried cables in addition to the EMI threat.
+   7.3.4. When permitted by the base layout and host tenant agreement, establish a vehicle-testing pro-
+   gram to prevent defective vehicles from operating on base near the antennas.
+
+7.4. Base Power System Control.
+   7.4.1. Faulty hardware in the base power system results in the generation of manmade noise which is
+   generally broadband in nature. This is the primary source of interference in the 2-30 megahertz (MHz)
+   frequency range. This EMI relates to a reduction of the system's mission capability throughout the
+   high frequency (HF) range because it affects the system noise figure. Frequencies from the power sys-
+   tem have been documented well beyond 2 GHZ. These highly impulsive signals can disrupt systems
+   such as Ultra High Frequency Satellite Communications (UHF SATCOM) links by competing with
+   low power satellite signals.
+   7.4.2. The EMI/RFI team schedules regular EMI sweeps of the power system and takes action to get
+   defective hardware replaced. This involves getting BCE to provide a line crew to assist in locating the
+   specific hardware that is defective, with actions to correct the problem. The base-support agreement
+   for power-line maintenance is reviewed at least every 2 years to ensure timely response to power-sys-
+   tem faults.
+   7.4.3. Problems in the base-power system that the EMI/RFI team cannot correct will be elevated to
+   the headquarters immediately as the continuing deterioration of the system results in more time con-
+   suming efforts to mitigate.
+18                                                                   AFISRAI33-501 2 JANUARY 2008
+
+
+                                                 Chapter 8
+
+                                        CORRECTIVE ACTIONS
+
+8.1. Locating and Identifying EMI/RFI.
+     8.1.1. When interference occurs even though all apparent preventive measures have been taken, pos-
+     itive and immediate actions are necessary to identify the offender. Detecting unwanted interference is
+     normally simple but is often ignored because no reporting procedures exist. Each unit will implement
+     adequate procedures to ensure that interference is reported promptly to the unit EMI/RFI focal point.
+     8.1.2. When unwanted interference is reported, it will be identified without delay. This identification
+     will usually involve the EMI/RFI team. Operating under local procedures, the EMI/RFI team will
+     identify the source of interference and take steps to mitigate the problem. A periodic report on the res-
+     olution or the progress to correct the problem will be made to the unit EMC committee. Resolution
+     and progress to higher authority will be documented in the published EMC committee minutes.
+
+8.2. Mitigation of EMI/RFI.
+     8.2.1. Corrective action of EMC problems with airborne sensors not owned or maintained by AF ISR
+     Agency is handled differently than AF ISR Agency-owned mission systems. AF ISR Agency must
+     approach the problem as the user of a service and must depend on the servicing Agency to provide
+     corrective action. The AF ISR Agency role is to provide the servicing Agency an evaluation of the
+     impact to the AF ISR mission and the effectiveness of any mitigation process to correct EMC prob-
+     lems. This is usually quite complex and requires AF ISR Agency to report on the ability of the system
+     to perform a particular mission and the long-term goal to evaluate the system’s ability to meet an oper-
+     ational requirement. The reporting of the ability of the system to perform a day-to-day mission is the
+     responsibility of the AF ISR field unit and can be evaluated by hearability tests. The evaluation of the
+     system to meet an operational requirement entails system testing and evaluation by professional EMC
+     engineers and is the responsibility of the headquarters staff.
+     8.2.2. Protection of critical AF ISR Agency missions requires that procedures be set up for emergency
+     actions to correct interference caused by local transmitters in the area. This is especially important
+     when an AF ISR unit operates on a host air base that includes radar, navigational aids, and etcetera.
+     AF ISR units will usually detect faulty or unintended transmitter operation that causes adverse EMI/
+     RFI that result in AF ISR mission degradation. For example, emergency action will be initiated when
+     a transmitter malfunctions and causes spurious radiation (such as overmodulation), spurious
+     responses, or excessive harmonic radiation, or when a mission is assigned on or near the legal operat-
+     ing frequency of a local transmitter. If possible, specify emergency action procedures and keep them
+     on file. Procedures will include POCs and their telephone numbers, technical factors (frequency,
+     power, etc.), geographical data (location, distance, etc.), responsible Agency and their mission, etcet-
+     era. Keep this data for each local US transmitter in the area that could interfere with mission accom-
+     plishment. Try local contacts first. Report unsuccessful corrective emergency actions to AF ISR
+     Agency/A4MY for further investigation.
+     8.2.3. Corrective actions requiring civil engineering support (such as power-line hardware) will be
+     initiated through the unit civil engineering representative on the EMC committee. Form 332, Base
+     Civil Engineering Work Request, is filled and submitted to initiate the corrective action.
+AFISRAI33-501 2 JANUARY 2008                                                                   19
+
+
+  8.2.4. Corrective actions requiring frequency changes or transmitter relocations will be worked
+  through the base frequency manager on the EMC committee. An exception is the Armed Forces
+  Broadcast Services. Their frequency approvals are not obtained through normal military frequency
+  approval sources. Problems with AFBS facilities will be forwarded to AF ISR Agency/A4MY for res-
+  olution.
+20                                                          AFISRAI33-501 2 JANUARY 2008
+
+
+                                          Chapter 9
+
+                                    FORM PRESCRIBED
+
+9.1. Form Prescribed. AF ISR Agency Form 78. Electromagnetic Interference Log
+
+
+
+                                          JOHN C. KOZIOL, Maj Gen, USAF
+                                          Commander
+AFISRAI33-501 2 JANUARY 2008                                                                     21
+
+
+                                         Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+DoD Directive 3222.3, DoD Electromagnetic Environmental Effects (E3) Program, 8 September 2004
+DoD Directive (C)3222.5, Electromagnetic Compatibility (EMC) Management Program for SIGINT
+Sites, 22 April 1987
+DoD Directive 3222.3_AFPD 33-5, Department of Defense E3 Program (Air Force E3 Program), 26
+September 2006
+NSA/CSS Policy 2-5, NSA/CSS Electromagnetic Environmental Effects Management Program for Sig-
+nals Intelligence Sites, 20 July 2005
+AFI 10-707, Spectrum Management Resolution Program, 22 June 2005
+AFI 32-7061, The Environmental Impact Analysis Process, 12 March 2003
+AFI 33-118, Electromagnetic Spectrum Management, 18 July 2005
+22                                                                AFISRAI33-501 2 JANUARY 2008
+
+
+                                             Attachment 2
+
+                      E3 TECHNICAL GUIDELINES
+                                FOR
+     ELECTROMAGNETIC COMPATIBILITY (EMC) OF DEVICES AND FACILITIES1
+Scope: This Attachment 1 provides criteria for the installation and operation of systems and equipment in
+the vicinity of designated sites.
+
+
+Unintentional Emission Limits: Systems and equipment installed and operated near designated sites
+shall meet the limits for electric field noise shown in Figure A2.1. and conducted noise in Figure A2.2.
+The requirement is met when electric field emissions at the receiver antenna(s) are at or below the limit
+shown in Figure A2.1., and the conducted noise emission is below the limit shown in Figure A2.2. Com-
+pliance shall be verified by measured data when the system and equipment are operated in normal operat-
+ing modes.
+
+Figure A2.1. Electric Field Noise Limit for Designated
+Sites
+
+
+
+
+Figure A2.1. shows the noise electric field limit in dB?V/m at 3 kHz bandwidth, which must be main-
+tained to not degrade the performance of equipment using sensitive antennas. The curve represents a limit
+at or below which noise would not be measurable or detectable using a zero decibels isotropic (dBi)
+
+1. NSA/CSS POLICY 2-5, NSA/CS Electromagnetic Environmental Effects Management Program for
+Signals Intelligence Sites, 20 Jul 2005, Annex A, pages A-1 thru A-2.
+AFISRAI33-501 2 JANUARY 2008                                                                           23
+
+
+antenna gain. Figure A2.1. is based on a sensor (land based, mobile, airborne or sea based) operating in a
+quiet site.2
+
+Figure A2.2. Conducted Noise Limit vs. Separation Distance
+
+
+
+
+Separation Distances: Electronic and electrical systems and equipment normally are designed to meet
+some commercial or military standard or specification, which limits unintentional electromagnetic emis-
+sions. These standards usually state the maximum allowable electric field in µV/m when measured at spe-
+cific distances from the equipment or device in question. Table A2.1. indicates typical safe distances at
+which compatibility with designated sites can be achieved for the standards listed.
+
+
+
+
+2. Arafiles, V.P. and Sanchez, M.J., “Impact of Radiated Emission Standards on Receiver Sensitivity and
+the Ambient Electromagnetic Noise Environment,” 1995 IEEE International Symposium on
+Electromagnetic Compatibility Records, page 191.
+24                                                                 AFISRAI33-501 2 JANUARY 2008
+
+
+Table A2.1. Safe EMC Distances from Designated Sites
+Design Criteria for Radiated Emissions                               Safe Distance
+MIL-STD-461 RE102 (Radiated Emissions, Electric Field, 10kHz 430 meters
+to 18 GHz) Requirements, for Electrical and Electronic equipment
+Federal Communications Commission (FCC) Part 15 of the Code 2.3 km
+of Federal Regulations (CFR), Class A Requirements for Digital
+Devices
+FCC Part 15 of CFR, Class B Requirements for Digital Devices         700 meters
+FCC Part 15 of CFR, Subpart C Requirements for Digital Devices 2.2 km (below 30 MHz); 6.4
+                                                               km (above 30 MHz)
+FCC Part 18 of CFR Requirements for High-Power Industrial,           Line of sight
+Scientific, Medical (ISM) Devices
+European Norm (EN) 55022, Class A and Low-Power ISM                  500 meters
+Requirements for Information Technology Equipment (ITE)
+EN 55022, Class B Requirements for ITE                               300 meters
+FCC Part 18 requirements for Radio Frequency (RF) excited lights 700 meters
+(consumer use)
+
+When these separation distances are not possible and systems and equipment are operated closer to the
+designated sites, the unintentional radiated and conducted emissions shall be controlled to acceptable lev-
+els by using shielding techniques, filtering, and other appropriate EMI control design measures. This
+instruction does not address occupational, health and safety standards. See AFOSH STD 48-9, Radio Fre-
+quency Radiation (RFR) Safety Program, (August 1, 1997)
+AFISRAI33-501 2 JANUARY 2008                                                                              25
+
+
+                                               Attachment 3
+
+                                          SAMPLE MINUTES
+Date
+
+
+MEMORANDUM FOR AF ISR Agency
+                          102 Hall Blvd, Ste 258
+                          San Antonio TX 78243-7091
+
+
+FROM: 381 IS/CC
+         4170 Loop Road
+         Elmendorf AFB AK 99506
+
+
+SUBJECT: Electromagnetic Compatibility Committee Meeting Minutes
+
+
+1. The Electromagnetic Compatibility Committee held its quarterly meeting on (Date) at (Time) in the
+unit conference room.
+
+
+2. Members Present:
+
+
+RANK/NAME                              OFFICE SYMBOL/PHONE
+
+
+Maj XXXX                                      DO/3931
+Capt XXX                                      SC/1558
+SMSgt XX                                      LG1/1381
+MSgt XXX                                      LGMV/4086
+TSgt XXX                                      LGMV/4086
+TSgt XXX                                      DOM/2442
+
+
+3. Old Business:
+
+
+        a. Port Developments: Port activity will increase for the next 18 months. Oil drilling structures are
+scheduled for construction. The rigs are for shipment to various drilling sites in Alaska. Interference from
+industrial equipment such as welders and plasma cutters may be observed during construction.
+26                                                               AFISRAI33-501 2 JANUARY 2008
+
+
+
+     b. HAARP: Dates and times for scheduled HAARP test transmissions have been distributed by
+NSA/CSS 33152 for coordination.
+
+
+       c. UPS Testing: 85 EIS/SCYM UPS Test Report indicated that conducted emission measured on
+the power mains showed outages at the lower frequency band. Report analysis indicated that the spurious
+emission may have been noise reflected back to the power mains from mission equipment.
+
+
+        d. Powerline Noise Search: EMI/RFI Team conducted a powerline noise search on (Date). EMI/
+RFI team has identified powerline noise emanating from Ft Richardson. Form 332 has been filled request-
+ing corrective action from Base Civil Engineer.
+
+
+       e. Noise Survey: 85 EIS/SCYM Keesler AFB, MS engineers are currently performing a noise sur-
+vey. SSgt (Name) has been assigned to assist during the survey.
+
+
+        f. EMI/RFI Training: Received EMI/RFI training from 85 EIS/SCYM engineers. RF DF of pow-
+erline noise was provided to new personnel from the LGNR shop.
+
+
+4. New Business:
+
+
+       a. Capt XXX, 381 IS/SC, is the new EMC Committee Chairperson. He presided at the September
+meeting.
+
+
+        b. Maj XXX, 381 IS/DO, received in-depth updates on squadron EMC program issues, the origin,
+and offices of responsibility.
+
+
+5. Meeting adjourned at (Time).
+
+
+6. Next meeting is planned for (Date), (Time), (Place).
+
+
+
+
+                                             (Name), (Rank), USAF
+                                             Duty Title
+AFISRAI33-501 2 JANUARY 2008                                                                                27
+
+
+                                               Attachment 4
+
+                        SAMPLE REQUEST FOR E3/EMC CERTIFICATION
+To:      Department of Defense
+         ATTN: Antenna and Spectrum Engineering
+         9800 Savage Road, Suite 6548
+         Ft. Meade, MD 20755-6548
+
+
+
+
+SUBJECT: Request for E3/EMC Certification of DoD Directive C-3222.3 “DoD
+         Electromagnetic Environmental Effects (E3) Management Program” Criteria.
+
+
+PURPOSE:        Describe the purpose of the system or project.
+
+
+TECHNICAL DETAILS:
+
+
+This section shall provide technical rationale why the radiated emission levels and/or separation distances
+in the instruction cannot be followed. Technical parameters including proposed distance relative to the
+designated EMC site, operating frequencies, signal modulation types, power output, antenna types, build-
+ing structure, and other electronic components shall be reported. Electronic components include comput-
+ers, electric motors, electronic switches, and RF controlled. Describe the impact of not being able to
+proceed with the installation.
+
+
+SYSTEM/PROJECT TRADEOFFS:
+
+
+Provide a plan of action to minimize the impact at the designated site if the installation and/or operation
+to the system, subsystem, or equipment are permitted.
+
+
+SIGNATURE
+
+
+Notes:
+         Enclosures required for the certification decision include maps, blueprints (including elevation
+         plan), design specifications, and environmental impact statements, to help provide more of the
+         project’s visual details.
+
+
+         Classify appropriately and transmit via secure means as required.

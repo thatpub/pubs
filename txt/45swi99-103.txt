@@ -1,0 +1,234 @@
+BY ORDER OF THE COMMANDER                                  45TH SPACE WING INSTRUCTION 99-103
+45TH SPACE WING                                                                          1 AUGUST 2005
+
+                                                                                      Test and Evaluation
+
+                                                            TIME DIVISION MULTIPLEXED DATA
+                                                         INFORMATION REQUIRED FOR EASTERN
+                                                                  RANGE TELEMETRY SUPPORT
+
+                  COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE:        This publication is available digitally on the AFDPO WWW site at:
+               http://www.e-publishing.af.mil.
+
+OPR: 45 RMS/RMRA (Mr. Leon J. Lattery)                                          Certified by: 45 RMS/CC
+                                                                               (Lt Col Andrew W. Lester)
+Supersedes 45SWI99-103, 22 December 2000                                                          Pages: 8
+                                                                                           Distribution: F
+
+This instruction prescribes the format and lead times for the Range Users submission of telemetry (TLM)
+Time Division Multiplexed (TDM) data. The format and lead times are necessary for the Eastern Range
+(ER) to prepare, verify and distribute required software and firmware. It applies to all Range users at the
+ER, to all personnel associated with or assigned to the ER, and to all contractors and subcontractors on the
+ER needing or providing TDM data.
+
+SUMMARY OF REVISIONS
+This publication deletes obsolete Pulse Amplitude Modulation and Pulse Duration Modulation formats
+and clarifies lead times for the Range Users submission of TDM format data. A bar (|) indicates a revision
+from the previous edition.
+
+
+1. Terms Explained. For the purpose of this instruction the following terms apply:
+   1.1. Range User. Any DoD organization, other US government agency, state or local government;
+   civic, private, or commercial organization; or foreign government program approved by the 45 SW
+   Commander or designated representative, to use range facilities or resources.
+   1.2. Program. A system test, operation, or other activity conducted by a Range User on the ER or
+   requiring ER support.
+
+2. Duties and Responsibilities.
+   2.1. The Program Support Manager (PSM), 1 Range Operations Squadron (1 ROPS), will determine
+   if a meeting between the Range User and ER personnel is necessary to resolve any discrepancies
+   between the Range User's requirements and ER capabilities and further, to avoid any misconceptions
+   or misinterpretations. This meeting should be held a minimum of ten months prior to the first sched-
+2                                                                       45SWI99-103 1 AUGUST 2005
+
+
+    uled use of the TLM time division multiplexed data and will be called and chaired by the PSM and
+    supported by appropriate wing personnel.
+    2.2. The Range User will provide the telemetry format information described in the following attach-
+    ments (including computer entry tape formatting and data reduction needs) in the Program Require-
+    ments Document (PRD); or in a separate document or documents referred to in the PRD. Refer to the
+    manuals applicable to the PRD for instructions concerning the information required and the specified
+    lead times, as well as to the information and lead times contained in this instruction.
+    2.3. Range Users will, in combination with the requirements in paragraph 2.2., be prepared to discuss
+    the operations of their internal guidance systems and the manner in which their data is processed and
+    telemetered. The Eastern Range uses this data to compute the instantaneous position and predicted
+    impact point of the flight hardware and to display them in real time for the Mission Flight Control
+    Officer (MFCO).
+    2.4. The 45 Range Management Squadron (45 RMS) will manage range operation and maintenance
+    contract or range system support issues as agreed to between the Range User and the PSM. RMS will
+    appoint project personnel as required to initiate, monitor, and verify modifications or enhancements to
+    range contracts and/or range systems to meet validated Range User requirements.
+
+3. Procedures. The ER telemetry data format information requirements for TDM data are shown in
+Attachment 1. The Range User must uniquely identify each parameter within the TDM format. The
+range user must supply six copies of the format document and two copies of serial magnetic tapes or dig-
+ital recording in Eastern Range compatible format to 1 ROPS.
+    3.1. Data Submission Timelines. The time required for TDM format submission depends on pro-
+    gram requirements. New range users or programs requiring range modification must supply TDM for-
+    mat documentation with the PRD. The PRD timeline enables depot level acquisition and test of TLM
+    resources supporting Range User requirements. Existing programs having minor operation and main-
+    tenance format changes must supply TDM format documentation at least 210 working days prior to
+    first scheduled use of range telemetry systems. Programs having TDM format changes affecting only
+    Decommutators must supply TDM documentation at least 90 working days prior to first scheduled
+    use.
+
+
+
+                                               GREGORY M. BILLMAN, Colonel, USAF
+                                               Vice Commander
+45SWI99-103 1 AUGUST 2005                                                                              3
+
+
+                                               Attachment 1
+
+      ER TELEMETRY FORMAT INFORMATION REQUIREMENTS FOR TDM DATA
+
+A1.1. General. The following apply to all TDM data:
+   A1.1.1. Format description. A complete graph, wheel, or chart description must be provided. In
+   addition, a written description is desired.
+   A1.1.2. Magnetic Tape or Digital Recording. A serial magnetic tape or digital recording containing
+   a true sample of the formats to be decommutated is required. A magnetic tape with unique, non-zero
+   data values in each analog channel is required; dynamic values which actually simulate true launch
+   values is preferred. Discrete measurements should transition as they would during an actual launch.
+   A1.1.3. Transmission Peculiarities. For example, identify each interruption or recycle of the format.
+   A1.1.4. Dynamic Format Changes. For example, identify each change from one format to another
+   and each dynamic change in the given format.
+   A1.1.5. Data Translation. Specify any computer formatter tape requirements and real time retrans-
+   mission requirements.
+   A1.1.6. Calibrations required: Pre- and post-mission.
+
+A1.2. Detailed Format Description.
+   A1.2.1. PCM. Data is expected to conform with all standards specified in IRIG 106-XX, chapter 4.
+   Complete format information for decommutation purposes includes:
+       A1.2.1.1. Bit rate, associated bit rate stability, and bit rate changes during test.
+       A1.2.1.2. Bit Jitter.
+       A1.2.1.3. Type code - NRZ-L, NRZ-S, Bi-phase, etc., (Attachment 2).
+       A1.2.1.4. Sync patterns and location of each:
+           A1.2.1.4.1. Words and fragmented words (if any).
+           A1.2.1.4.2. Mainframe.
+           A1.2.1.4.3. Subframe.
+           A1.2.1.4.4. Sub-subframe.
+           A1.2.1.4.5. Multi-commutation frame.
+           A1.2.1.4.6. Any change in sync patterns during test.
+           A1.2.1.4.7. Maximum count and reset count for incrementing sync patterns.
+       A1.2.1.5. Bits per word.
+       A1.2.1.6. Words per frame.
+       A1.2.1.7. Words per subframe and location of each in the mainframe or subframe respectively.
+       A1.2.1.8. Multi-commutation (cross-strapping).
+4                                                                         45SWI99-103 1 AUGUST 2005
+
+
+       A1.2.1.9. Ratio of subframe and sub-subframe cycle and whether they are synchronous or asyn-
+       chronous.
+       A1.2.1.10. Data parity.
+       A1.2.1.11. In groups of bi-level bits, identify how the bits are numbered relative to their order of
+       transmission. For example, in an eight-bit bi-level word, are the bits numbered 1 through 8, 8
+       through 1, 0 through 7, 7 through 0, etc.
+       A1.2.1.12. Bit significance. A description of the method by which a single data sample is encoded
+       into a series of bits. Detailed information regarding noise immunity schemes (such as parity, etc.)
+       must be included.
+       A1.2.1.13. MSB or LSB transmitted first for real time.
+       A1.2.1.14. MSB or LSB transmitted first for dump.
+       A1.2.1.15. A copy of a pre-detected or FM magnetic tape recording or digital recording of the
+       actual formats to be decommutated. Information accompanying the tape will contain the following
+       as a minimum; carrier frequency, tape speed, channel location and appropriate program/test iden-
+       tifiers.
+       A1.2.1.16. Polarity of RZ, NRZ-L or bi-phase-L signal. Example: Higher carrier or subcarrier
+       limit = binary one. Lower carrier or subcarrier limit = binary zero.
+    A1.2.2. Other. Other types of TDM data should be supplied with information using the preceding
+    description as a guide.
+
+A1.3. Computer Formatted Tapes System Requirements.
+    A1.3.1. Detailed TDM format description as outlined in paragraph A1.2.
+    A1.3.2. A detailed description of the computer entry tape containing the following:
+       A1.3.2.1. Definition of the time word format.
+           A1.3.2.1.1. Code format - binary, BCD, etc.
+           A1.3.2.1.2. Position definition of time bits in time words.
+           A1.3.2.1.3. Number and position of time words in record.
+       A1.3.2.2. Definition of data word format.
+           A1.3.2.2.1. Data type - RAW PCM, ASCII Encoded, etc.
+           A1.3.2.2.2. Position definition of data bits in data word.
+           A1.3.2.2.3. Number of data words per frame.
+           A1.3.2.2.4. Number of frames per record.
+       A1.3.2.3. Definition of unique words format.
+           A1.3.2.3.1. Content description - status bits, flag bits, ID bits, etc.
+           A1.3.2.3.2. Position definition of bits in unique word.
+           A1.3.2.3.3. Number and position of unique words in record.
+45SWI99-103 1 AUGUST 2005                                                                              5
+
+
+      A1.3.2.4. Total words or bytes per record.
+      A1.3.2.5. Number of records per file.
+      A1.3.2.6. Number of files per computer tape.
+      A1.3.2.7. Deletion or inclusion of data during decommutator out-of-sync. If inclusion, does trun-
+      cation from return to sync produce?
+          A1.3.2.7.1. A fixed length record? A variable length record?
+          A1.3.2.7.2. Description of data editing requirements.
+      A1.3.2.8. Computer tape bit packing densities of 800, 1600 and 6250 bits per inch are available.
+      A1.3.2.9. IBM or DEC Mode selection for first byte to tape.
+      A1.3.2.10. Definition of computer entry tape labeling requirements.
+      A1.3.2.11. Delivery schedule to ensure optimum programming concept development.
+   A1.3.3. If off-range raw data tapes are to be formatted by the ER, a complete description of tape con-
+   tent (track definition, time code used, etc.) must be furnished and the tape be compatible with ER
+   facilities.
+   A1.3.4. What tape labeling information is required? Example: Reel number, start and stop times, raw
+   data source, link identification, etc.
+
+A1.4. Real Time Retransmission Requirements - Edited Data (Range Safety and Range User).
+   A1.4.1. Bit rate of transmitted data.
+   A1.4.2. Extracted parameters selected, including measurement numbers and/or word, frame and
+   channel locations.
+   A1.4.3. Sample rates per parameters.
+   A1.4.4. Parameter priority.
+   A1.4.5. Time word requirements.
+      A1.4.5.1. Code format - binary, BCD, etc.
+      A1.4.5.2. Position definition of time bits in time words.
+      A1.4.5.3. Number and position of time words in retransmission frame.
+   A1.4.6. Unique word requirements.
+      A1.4.6.1. Content description - status bits, flag bits, ID bits, etc.
+      A1.4.6.2. Position definition of bits in unique words.
+      A1.4.6.3. Number and position of unique words in retransmission.
+   A1.4.7. Check sum requirements.
+6                                              45SWI99-103 1 AUGUST 2005
+
+
+                                Attachment 2
+
+                              PCM WAVEFORMS
+
+Figure A2.1. PCM Waveforms.
+45SWI99-103 1 AUGUST 2005                                                                                 7
+
+
+                                              Attachment 3
+
+                       ER GUIDANCE INFORMATION REQUIREMENTS
+
+A3.1. General. The following information is required as a prerequisite to software development and
+modification. Because each guidance system is unique, the requirements listed in this attachment are
+guidelines to help the range user prepare for meeting the requirements in the basic instruction.
+
+A3.2. Details.
+   A3.2.1. Bit weights, register sizes, floating or fixed point number systems, scale factors, etc.
+   A3.2.2. Algorithms needed to convert the vehicle guidance coordinate system to the Earth-fixed EFG
+   system used at the Eastern Range in which E is positive through Greenwich Meridian, G is positive
+   through the North Pole and F completes a right-handed coordinate system. The algorithms must
+   account for the need to use telemetered guidance times, and define whether or not they are homoge-
+   neous with the vectors. They must take into account the Earth model used, the reference spheroid, etc.
+   A3.2.3. Define the delays associated with time-tagging; i.e., time is initially at some value and begins
+   to increment some specific time before or after the guidance system goes inertial.
+   A3.2.4. Define the alignment of the vehicle coordinate system axes relative to the launch complex.
+   A3.2.5. Provide a magnetic tape or digital recording containing the telemetered guidance data inter-
+   laced, as on launch day, with other telemetry information. On this tape, the guidance system must be
+   made to go inertial, and the inertial conditions provided in an accompanying description. This tape is
+   required as a consequence of early testing of the guidance interface with the telemetry system. In addi-
+   tion, the Eastern Range must be notified of all tests conducted on the launch complex in which the
+   guidance system is commanded to the inertial mode, so the range may make a magnetic tape of the
+   resulting telemetry data. This last minute tape will serve as a final validation of our configuration and
+   is not a substitute for the earlier tape.
+8                                                    45SWI99-103 1 AUGUST 2005
+
+
+Figure A3.1. ER Guidance Information Requirements.

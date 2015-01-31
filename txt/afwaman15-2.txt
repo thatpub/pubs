@@ -1,0 +1,2714 @@
+BY ORDER OF THE COMMANDER                     AIR FORCE WEATHER AGENCY MANUAL
+AIR FORCE WEATHER AGENCY                                                  15-2
+
+                                                                       13 NOVEMBER 2013
+                                                         Incorporating Change 1, 6 May 2014
+
+                                                                                    Weather
+
+                                             SPACE ENVIRONMENTAL OBSERVATIONS
+                                              SOLAR RADIO OBSERVING TECHNIQUES
+
+            COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+               publishing website at http://www.e-publishing.af.mil.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: HQ AFWA/A3N                                                 Certified by: HQ AFWA/A3
+                                                                          (Col David Andrus)
+                                                                                   Pages: 72
+
+
+This manual is applicable to all Radio Solar Telescope Network (RSTN) observatories. It
+provides solar radio telescope equipment descriptions, calibration procedures, operational
+procedures, and data collection and analysis guidance. RSTN observatories gather discrete
+frequency data using Radio Interference Measuring Sets (RIMS) and swept frequency data using
+the Solar Radio Spectrograph Radiometer (SRS). Use this manual in conjunction with Air Force
+Weather Agency Instruction (AFWAI) 15-2, Solar Optical and Radio Observing, all applicable
+Technical Orders (TOs), and the RIMS Analysis Software Users Manual. Send comments,
+suggested changes, or improvements through channels to Headquarters Air Force Weather
+Agency Scientific Services, Training, and Standards Division, HQ AFWA/A3N, 101 Nelson Dr,
+Offutt AFB NE 68113-1023. Ensure that all records created as a result of processes prescribed
+in this publication are maintained in accordance with Air Force Manual (AFMAN) 33-363,
+Management of Records, and disposed of in accordance with the Air Force Records Disposition
+Schedule (RDS) located at https://www.my.af.mil/gcss-af61a/afrims/afrims/rims.cfm. Refer
+recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the AF Form 847, Recommendation for Change of Publication; route
+AF Forms 847 from the field through the appropriate functional’s chain of command. This
+publication does not apply to the Air National Guard or Air Force Reserve commands. The
+reporting requirements in this publication are exempt from licensing in accordance with Air
+Force Instruction (AFI) 33-324, The Information Collections and Reports Management Program;
+Controlling Internal Public and Interagency Air Force Information Collections, paragraph
+2.11.12.
+ 2                                                                             AFWAMAN15-2 13 NOVEMBER 2013
+
+
+SUMMARY OF CHANGES
+
+This interim change revises AFWAMAN 15-2 by (1) adding the sentence “Also, appended
+PLAIN EVENT threshold messages are optional but highly recommended, time permitting.” to
+paragraph 3.4.3.2. A margin bar (ǀ) indicates newly revised material.
+
+Chapter 1—RIMS / SRS EQUIPMENT DESCRIPTION                                                                                                   5
+       1.1.   General: ..................................................................................................................    5
+       1.2.   RIMS Antennas. .....................................................................................................           5
+Figure 1.1.   Antenna Beam Pattern. ..........................................................................................               7
+Figure 1.2.   Approximate Size of the Radio Sun in Solar Radii. ..............................................                               7
+       1.3.   Radiometers. ..........................................................................................................        8
+       1.4.   SRS Antennas. .......................................................................................................          9
+
+Chapter 2—RIMS/SRS POWER-UP AND SHUTDOWN PROCEDURES                                                                                         10
+       2.1.   General. ..................................................................................................................   10
+       2.2.   Normal Power-Up Procedures. ..............................................................................                    10
+       2.3.   Renormalization and Stabilization Procedures. .....................................................                           11
+       2.4.   Normal Shutdown Procedures. ..............................................................................                    12
+       2.5.   Complete Shutdown Procedures. ...........................................................................                     12
+       2.6.   Complete Power-Up Procedures. ...........................................................................                     13
+       2.7.   Emergency Shutdown/Power-Up Procedures. .......................................................                               13
+
+Chapter 3—SOLAR RADIO OBSERVING                                                                                                             14
+       3.1.   Opening Procedures. ..............................................................................................            14
+       3.2.   Patrol Procedures. ..................................................................................................         15
+       3.3.   Closing Procedures. ...............................................................................................           19
+       3.4.   Event-level Activity. ..............................................................................................          20
+       3.5.   IFLUX Standardization Procedures. ......................................................................                      21
+Table 3.1.    Solar Quiet or Baseline Values. .............................................................................                 24
+Figure 3.1.   Graph of Solar Quiet Flux. .....................................................................................              25
+       3.6.   Short Wave Fade reporting Procedures. ................................................................                        25
+       3.7.   Common Event Procedures. ...................................................................................                  26
+
+Chapter 4—RIMS AUTOMATED CALIBRATIONS                                                                                                       29
+       4.1.   General. ..................................................................................................................   29
+       4.2.   Daily System Calibration. ......................................................................................              29
+AFWAMAN15-2 13 NOVEMBER 2013                                                                                                                3
+
+
+       4.3.   Noise Tube (NT) Adjustments and Absolute Calibrations. ...................................                                    32
+       4.4.   Linearity Calibration. .............................................................................................          33
+Table 4.1.    Standards and Ranges for Master and Slave Lock-In Amplifiers. .........................                                       35
+Figure 4.1.   Worksheet with Noise Tube-Signal Generator Match Values. ..............................                                       37
+Figure 4.2.   Sample Linearity Calculation. ...............................................................................                 37
+Table 4.2.    Power Ratio for Change in Decibels. .....................................................................                     38
+Figure 4.3.   Sample Portion of Worksheet with Slave Lock-In Amplifier Values. ...................                                          38
+
+Chapter 5—RIMS IFLUX MEASUREMENTS                                                                                                           41
+       5.1.   Theory. ...................................................................................................................   41
+Table 5.1.    Variation of the Solar Radio Spectrum with Altitude. ...........................................                              42
+       5.2.   IFLUX Measurement Procedures. .........................................................................                       43
+
+Chapter 6—RIMS DISCRETE FREQUENCY BURST ANALYSIS                                                                                            46
+       6.1.   Theory. ...................................................................................................................   46
+       6.2.   Microwave Burst Classifications. ..........................................................................                   46
+Figure 6.1.   Complex Burst. ......................................................................................................         47
+Figure 6.2.   Spectral Group Identification. ................................................................................               48
+Figure 6.3.   Castelli-U Spectral Burst. ......................................................................................             48
+Figure 6.4.   Gradual Rise and Fall Burst. ..................................................................................               49
+Figure 6.5.   Noise Storm on 245 MHz. .....................................................................................                 50
+       6.3.   Tolerance and Burst Analysis. ...............................................................................                 50
+       6.4.   Impulsive and GRF Burst Parameters. ...................................................................                       51
+Figure 6.6.   Integrated Flux “Mean Flux” Method. ...................................................................                       54
+       6.5.   Noise Storm Burst Parameters. ..............................................................................                  54
+       6.6.   Superimposed Bursts. ............................................................................................             55
+Figure 6.7.   Superimposed Burst on a Noise Storm. .................................................................                        56
+       6.7.   Burst Attenuation Corrections. ..............................................................................                 56
+       6.8.   Burst Linearity Corrections. ...................................................................................              57
+       6.9.   Radio Frequency Interference (RFI). .....................................................................                     57
+
+Chapter 7—SRS SWEEP BURST ANALYSIS                                                                                                          60
+       7.1.   Swept Frequency Burst Classifications. ................................................................                       60
+       7.2.   Sweep Intensities. ..................................................................................................         62
+       7.3.   Type IV and Type 8 Continuums. ..........................................................................                     64
+ 4                                                                          AFWAMAN15-2 13 NOVEMBER 2013
+
+
+       7.4.   Radio Frequency Interference and SRS Data. .......................................................                       64
+Figure 7.1.   Typical Spectrum Produced by a Large Flare (Sensitive to the range from 10 to
+              30,000 MHz). .........................................................................................................   65
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                         67
+
+Attachment 2—TIMELINESS CRITERIA                                                                                                       71
+
+Attachment 3—SAMPLE AFWA IMT 18, RSTN DAILY ACTIVITY LOG                                                                               72
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    5
+
+
+
+                                           Chapter 1
+
+                        RIMS / SRS EQUIPMENT DESCRIPTION
+
+1.1. General: The RIMS are designed to monitor eight discrete frequencies in the microwave
+range from 245 Megahertz (MHz) to 15,400 MHz. Detailed RIMS instrumentation and
+operational theory information is contained in TO 31M3-4-5-1, and other applicable RSTN
+technical manuals.      The SRS differs from discrete frequency (RIMS) radiometers in
+instrumentation, theory of operation, and type of activity observed. The SRS detects solar radio
+frequency emissions in the 25 to 180 MHz range. This range falls within the meter and
+decameter (tens of meters) region of the radio spectrum, which corresponds to wavelengths of 1
+to 100 meters and frequencies of 3 to 300 MHz. Details of the SRS instrumentation and
+operational theory, swept frequency burst types, and data reduction and interpretation, are
+contained in the SRS Operations Manual. Analysts should review the manual before assuming
+SRS patrol responsibilities.
+1.2. RIMS Antennas.
+   1.2.1. The RIMS antenna systems consist of three parabolic reflectors (commonly known as
+   “dishes”), antenna feed systems, transmission lines to the receivers (or radiometers), and
+   tracking systems. Each parabolic dish collects radio waves from the sun and reflects them to
+   a point of convergence, known as the antenna focus. Either a log periodic feed, dipole feed,
+   or waveguide feed horn is located at the focus to receive the radio signal. Each feed is
+   designed to be sensitive specifically to the range of frequencies to be observed by the
+   antenna. To transfer the energy from the feed to the receiver system, special transmission
+   lines must be used. Shielded coaxial cable is used for frequencies lower than 8800 MHz.
+   For 8800 MHz and higher frequencies, coaxial cable attenuation is too great, so waveguides
+   are used.
+   1.2.2. The antennas are mounted on pedestals which track in azimuth and elevation
+   coordinates. The angle which sweeps the horizon in a clockwise direction from north
+   looking down on the antenna is the azimuth, ranging from 0 to 359 degrees. Therefore, east
+   is 90 degrees azimuth, south is 180 degrees, and west is 270 degrees. The angle between the
+   local horizontal plane and a point above the horizon is the elevation, measured from 0
+   degrees at the horizon to 90 degrees at zenith. Computer controls in the operations rack and
+   mounted on the antenna riser maintain the track of celestial objects such as the sun, moon,
+   and Cassiopeia-A. Additional objects can be tracked if the ephemeris data for that source are
+   entered into the operations center computer. A Global Positioning System (GPS) receiver
+   maintains accurate clock time to assist the solar tracking.
+   1.2.3. Two sets of drive motors (two in azimuth, two in elevation) are installed in the
+   antenna pedestals to drive the antennas. There is no solar optical or radio signal feedback or
+   guider system provided to ensure tracking accuracy; that is provided by the GPS clock and
+   operations room antenna control unit. Antenna control unit (ACU) equipment (ViaSat®
+   model 3883) in the operations center for each antenna system are identical, but the system
+   control units (SCU) at the antenna risers are unique to their specific pedestal model (3415 for
+   3'/8', 3425 for 28'). For manual procedures refer to applicable TO and/or operator manual.
+6                                                  AFWAMAN15-2 13 NOVEMBER 2013
+
+
+    1.2.3.1. The “Standby” switch on the operations center ACU controls AC power to the
+    antenna drive motors and servos. Switching the console to standby mode removes power
+    and locks the internal brake assemblies in the drive motors. NOTE: Ensure that the
+    antennas have come to a complete stop before switching to standby mode. Sudden
+    removal of power from drive motors when the antenna is moving locks the brakes and
+    can cause motor or gearbox failure.
+    1.2.3.2. The “Solar Track” switch applies power to the track drive motors and associated
+    circuitry, so that the antennas move according to antenna position commands issued by
+    the operations center ACU console. Due the high accuracy of the GPS time standard,
+    periodic re-peaking of the antennas is not required at any time through the day. The solar
+    ephemeris coordinates maintain highly accurate tracking.
+    1.2.3.3. The “Cold Sky” switch commands the ACU to position the antenna 30 degrees
+    azimuth toward the pole (northward in the northern hemisphere; southward if in the
+    southern hemisphere) of its current position and then to stop tracking. The power
+    remains applied to both motors and servos in the pedestals, ready for moving to a new
+    location (does not switch to standby).
+    1.2.3.4. The “3-min Drift” switch commands the ACU to position the antenna three
+    minutes of time ahead in its solar track, and then to stop tracking. This position allows
+    the sun to drift across the antenna to perform the integrated flux measurement (IFLUX).
+    The antenna will hold at this position until told to move elsewhere (such as solar track)
+    (does not switch to standby).
+    1.2.3.5. The “Night Stow” switch moves the antenna to 180 degrees azimuth, 90 degrees
+    elevation, vertically stowed, the normal nighttime position. When the antenna stops, the
+    ACU commands change to standby mode, AC power is removed from the motors and
+    servos, and the internal brakes are applied to the motor shafts.
+    1.2.3.6. The “Storm Stow” switch moves the antenna to a prescribed location which
+    affords the antenna system the greatest survival potential in times of strong winds, heavy
+    snow or icing. This position is unique to each observatory, and its position must be
+    entered manually into the configuration tables in the ACU for each antenna. Default
+    position is the same as Night Stow. After the antenna has stopped, the ACU commands
+    the pedestal to switch to standby mode, AC power is removed from the motors and
+    servos, and the internal brakes are applied to the motor shafts.
+    1.2.3.7. The “Abort Track” switch halts routine solar tracking, stopping wherever it is
+    currently pointing. It does not turn AC power off at the SCU. It can be used at any time
+    so maintenance can examine antenna systems or whenever patrol must be disrupted for a
+    short period.
+    1.2.3.8. The “HALT ABORT” octagonal stop sign switch in the upper right corner
+    provides an immediate halt to all antenna operations, switches the pedestal to standby
+    mode, removes AC power from the motors and servos, and engages the brake assemblies
+    in the motors. This is an emergency stop switch for all antenna operations, equivalent to
+    pressing the red emergency shutdown button on the outside SCU. NOTE: When the
+    antenna is slewing, this may cause damage to the antenna motors or gearboxes. It will
+    not cause damage if the antenna is in track mode.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    7
+
+
+   1.2.4. The existing radio antennas cannot resolve radio emissions from individual regions on
+   the sun. Instead, at any given frequency they detect the solar radio output integrated over the
+   full area of the sun.
+      1.2.4.1. Each antenna has a half power beamwidth (HPBW) roughly five times the
+      optical solar diameter, or about two and a half degrees (Figure 1.1). This HPBW allows
+      an antenna to see the entire solar disk at one time, without differentiating the sun’s limb
+      from its center. This ability is necessary to meet the requirement that each antenna’s
+      sensitivity be constant across the solar disk. NOTE: As explained in Chapter 5, the
+      higher the frequency of solar radio energy, the lower it is produced in the sun’s
+      atmosphere. Thus the apparent diameter of the sun depends on the radio frequency in
+      which it is observed. For example, the radio sun is approximately the size of the optical
+      sun at 30,000 MHz (Figure 1.2), and it increases to nearly twice that diameter at 150
+      MHz.
+
+Figure 1.1. Antenna Beam Pattern.
+
+
+
+
+Figure 1.2. Approximate Size of the Radio Sun in Solar Radii.
+
+
+
+
+      1.2.4.2. Each antenna is highly directional. They are very effective in receiving signals
+      when aimed directly at the source. When the antenna is moved away from the source, the
+      received power drops off sharply. This characteristic reduces the impact of local radio
+      frequency interference (RFI) on solar observations.
+      1.2.4.3. Nearly all of the collected energy is concentrated in the main beam of the
+      antenna. The maximum gain is 20 to 200 times less in the side lobes than in the main
+ 8                                                      AFWAMAN15-2 13 NOVEMBER 2013
+
+
+        beam. However, since the side lobes occupy a large portion of the space surrounding
+        each antenna, strong signals in the side lobes (due to reflected solar emissions or external
+        non-solar interference) can sometimes simulate solar activity in the main lobe.
+        1.2.4.4. The parabolic dishes used in solar radio patrol have different diameters, chosen
+        so the combination of frequency (or frequency range) desired and diameter yields
+        approximately a fixed resolution. The relationship between resolution (R in radians),
+        wavelength (L in feet or meters), and antenna diameter (D in feet or meters) is: R = L/D
+        (where L and D are in the same units). Thus small diameter dishes (3 and 8 feet) are
+        required for short wavelengths (i.e., high frequencies), while a larger dish (28 feet) is
+        required for longer wavelengths (i.e., lower frequencies).
+1.3. Radiometers.
+     1.3.1. The sun is a strong source of radio energy emission. However, the solar radio power
+     received at earth is very small compared to that received from terrestrial sources, such as
+     radio and television stations. Therefore, the receivers (radiometers) used to detect and
+     measure solar radio emissions must be very sensitive, with minimal internal sources of
+     sensitivity (or gain) variability.
+     1.3.2. The radiometers used in the RIMS telescopes are designed to minimize equipment
+     gain changes. Controlling room temperature and humidity can minimize large gain changes
+     caused by the environment. The sensitivity of the radiometer can be varied through the use
+     of several gain channels for each discrete frequency, so that a wide dynamic range of solar
+     emissions can be recorded. A short explanation of the radiometer equipment follows:
+        1.3.2.1. Broadband radio frequency (RF) signals from the sun initially arrive at the
+        antenna. The antenna feed converts the radio energy into an electrical signal, which is
+        fed through a waveguide or coaxial cable to the radiometer.
+        1.3.2.2. A calibration signal can also be fed into a radiometer through a directional
+        coupler. The calibration signal is produced by a solid-state device (commonly called a
+        noise tube (NT), even though it is no longer physically a “tube”). When energized, it
+        generates RF noise at a known and constant output. The NT signal, or some other
+        calibrated synthetic signal, is necessary to accurately calibrate a radiometer and
+        compensate for long term gain instability. The NT output should always remain stable.
+        1.3.2.3. In the next stage, the RF signals arrive at a Dickie switch (an electronic switch
+        nominally switching at a 500 Hertz (Hz) rate) located between the antenna signal and the
+        matched load (a 50 ohm precision resistor source). The Dickie switch is activated by a
+        switch driver that is synchronized by a reference signal generated in a Lock-In Amplifier.
+        1.3.2.4. The RF signal, modulated by action of the Dickie switch, now passes to a
+        mixer/pre-amp where it (i.e., the antenna signal at the designated frequency for the
+        particular radiometer) is “beat” against a local oscillator signal. The usable output from
+        the mixer is a 30 MHz intermediate frequency (IF) signal fed to the IF amplifier stage.
+        The lower frequencies (245 through 1415 MHz) have double IF amplifiers to provide
+        approximately 55 decibels (dB) gain for the Medium and Low gain channels, and 90 dB
+        gain for the Very High and High gain channels. This double IF system is necessary for
+        the low frequency systems, since the sun’s output at low frequencies can change by a
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    9
+
+
+      factor of up to 100,000. At high frequencies, the largest change in solar radio flux is
+      normally only one hundredfold.
+      1.3.2.5. The IF amplifiers further demodulate the signal and extract a square wave with a
+      frequency equal to the switching frequency of the Dickie switch. The amplitude of the
+      square wave is proportional to the varying signal received by the system from the sun.
+      This signal is then fed to the 5207 Lock-In Amplifiers (LIA).
+      1.3.2.6. The output of the LIA is a DC voltage proportional to the sun’s signal. Other
+      signals may be injected into the radiometer for tests and calibrations, but all signal
+      measurements, whether solar or man-made, are measured at the output of the LIA. A
+      very low signal may appear on the LIA meter or digital readout as a positive voltage, but
+      most measurable signals will be of a more negative value.
+      1.3.2.7. The sensitivity of a slave radiometer may be operated in either a “Track” or
+      “Calibrate” mode. The “Track” position is used for normal radio patrol operation, while
+      the “Calibrate” position is used (only on slave amplifiers) for calibrating the equipment.
+      All master LIAs remain in the “Track” setting at all times.
+1.4. SRS Antennas.
+   1.4.1. The SRS system uses two antennas to monitor the entire frequency range of
+   operations. The fixed semi-bicone antenna monitors from 25-75 MHz (low band) and the
+   directional tracking antenna monitors from 75-180 MHz (high band). The relatively low
+   frequencies (25 to 180 MHz) detected by the SRS correspond to disturbances high in the
+   solar atmosphere, specifically in the corona (Table 5.1). At sunrise, coronal radio emission is
+   detectable before the RIMS radiometers begin to detect solar signals, and at sunset, it is
+   detectable even after the RIMS radiometers cease to detect solar signals. However, both the
+   SRS and RIMS radiometers use the same three-degree definition for official radio sunrise
+   and sunset for two reasons. First, both types of observations are subject to the same
+   unreliability near sunrise and sunset caused by constructive and destructive interference of
+   the radio waves. Second, the whole corona is actually the last portion of the sun to clear the
+   horizon at sunrise, and the first portion of the sun to go below the horizon at sunset.
+ 10                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+                                          Chapter 2
+
+                RIMS/SRS POWER-UP AND SHUTDOWN PROCEDURES
+
+2.1. General.
+   2.1.1. Types of equipment, equipment configuration, and power sources may vary with each
+   observatory. Consult all applicable TOs, Computer Operations Manuals (COMs), and the
+   RIMS Analysis Software Users Manual when writing local procedures. Use guidance
+   provided in this chapter to develop local equipment and computer procedures to cover the
+   following situations:
+      2.1.1.1. Normal Power-Up and Shutdown (e.g., sunrise and sunset).
+      2.1.1.2. Complete Power-Up and Complete Shutdown during the observing day (e.g.,
+      during severe weather such as lightning within 5 nautical miles; or when room
+      environmental limits exceed safe/proper thresholds for computer or telescope equipment).
+      2.1.1.3. Emergency Power-Up and Emergency Shutdown during the observing day (e.g.,
+      during severe weather and/or when hazardous conditions exist or are imminent such as
+      flood, fire, electrocution, etc).
+2.2. Normal Power-Up Procedures.
+   2.2.1. Vary the following listed actions, and their order, as needed to meet local
+   requirements:
+      2.2.1.1. Turn on the SRS monitor.
+      2.2.1.2. Ensure the SRS system time is accurate to within plus or minus one second of a
+      calibrated coordinated universal time (UTC) source. NOTE: UTC, Zulu (Z), and
+      Greenwich Mean Time (GMT) are used interchangeably.
+      2.2.1.3. Ensure SRS applications are operational and the HP spectrum analyzers are
+      functioning properly. The SRS Solar Control (SOLACON) program will indicate On,
+      Track and DATA during normal operations.
+      2.2.1.4. Turn on the communication equipment (if necessary).
+      2.2.1.5. Turn on the RIMS computer and boot up, using appropriate guidance.
+      2.2.1.6. Ensure the RIMS Analysis parameters, status and burst threshold are correct.
+      NOTE: The burst threshold determines burst start and end times, and thus mean and
+      integrated flux computations. In the absence of RFI or noise storm activity, the burst
+      threshold will be routinely set at 100 solar flux units (SFUs) burst peak report ability
+      threshold to ensure consistency in reported burst times and fluxes within the radio
+      network. Ensure the 2695MHz burst threshold is changed to match the current base line
+      setting or 100 SFUs, whichever is lower.
+      2.2.1.7. Turn on the antenna controls.
+          2.2.1.7.1. Place all RF input switches in the “ANTENNA” position. Calibration
+          switches will remain in the “LOAD” position.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                  11
+
+
+          2.2.1.7.2. Ensure all sixteen “normalize” lights are lit on the 5207 LIAs. If any are
+          unlit, follow the detailed guidance in paragraph 2.3.
+      2.2.1.8. Turn on the remote Solar Observing Optical Network (SOON) television (TV)
+      monitor (if applicable).
+   2.2.2. Ensure the RIMS Analysis system clock is accurate to within plus or minus one
+   second of a calibrated UTC source.
+   2.2.3. Perform morning calibration in accordance with (IAW) Chapter 3, then position the
+   antennas to acquire patrol at sunrise IAW guidance from applicable TO.
+   2.2.4. The correct Azimuth and Elevation can be obtained automatically by the ACU.
+   Additionally, the Azimuth and Elevation can be retrieved manually from AFWA IMT 18,
+   RSTN Daily Activity Log which should already be prepared or run the RIMS Analysis solar
+   ephemeris program.
+2.3. Renormalization and Stabilization Procedures.
+   2.3.1. Notify maintenance of all power outages (regardless of duration), so they can
+   renormalize the 5207 LIAs, if needed. NOTE: Uninterruptible Power Systems (UPS)
+   should provide the observatories with a smooth continuous power transfer to backup
+   generators. However, extenuating circumstances may still cause total power outages.
+   2.3.2. Log all affected discrete frequencies out on the AFWA Form 20, Equipment/
+   Communications Outage Log as MINIMAL (or Yellow if applicable) outages, but do not
+   transmit a patrol status code (STATS) message to take the frequencies off patrol, since data
+   can still be collected and analyzed.
+   2.3.3. If the power outage lasted less than 10 minutes, the following restrictions apply until
+   the amplifiers are renormalized.
+      2.3.3.1. Power outages, brownouts, and surges are the most likely cause for loss of
+      amplifier normalization. While it is possible to perform a daily system calibration and
+      IFLUX measurement, analysts should make every effort to have radios renormalized
+      before any calibrations are attempted. Any power interruption can cause switch settings
+      to be scrambled on 5207 LIAs, and erroneous calibration values are a likely result. If
+      erratic values are accidentally accepted, additional calibrations (once the LIA is
+      renormalized) may be required to bring the affected radio back to acceptable calibration
+      values and baseline. It is not necessary to qualify IFLUX values just because of the lack
+      of normalization, since only the slave amplifier is likely to be doubtful.
+      2.3.3.2. Qualify any burst on the upper four frequencies (2695 to 15400 MHz) that enters
+      the slave amplifier range as uncertain due to equipment problem (report status code q=2),
+      until the amplifiers are renormalized. Other bursts do not need to be qualified just
+      because of the lack of normalization.
+   2.3.4. If the power outage lasted (or is suspected to have lasted) 10 minutes or more, the
+   radiometers also need a 1-hour stabilization period. More than one hour may be needed
+   during winter months at high latitude sites. During this period:
+      2.3.4.1. Do not perform any calibrations or IFLUX measurements.
+ 12                                                  AFWAMAN15-2 13 NOVEMBER 2013
+
+
+       2.3.4.2. Qualify all bursts observed on all the discrete frequencies as uncertain due to
+       equipment problem or when reported burst flux values exceed slave amplifier range per
+       Table 4.1 (20% RANGE column), (report status code q=2).
+   2.3.5. Once normalization is restored, a new system calibration is required only if a
+   calibration was done during the non-normalized period, or if a stabilization period was
+   necessary. If doubtful of the current calibration, a new calibration is suggested.
+   2.3.6. Log the frequencies back in service on the AFWA Form 20 when all corrective
+   actions have been taken.
+2.4. Normal Shutdown Procedures.
+   2.4.1. Transmit the STATS messages before shutting down the RSTN equipment and/or
+   computer. NOTE: RIMS Analysis program automatically archives data.
+   2.4.2. Stow the antennas per TO and local procedures. EXCEPTION: Protection of the
+   antennas against snow/ice accumulation takes priority over wind protection. Whenever there
+   is the slightest chance of snow/ice accumulation, “winter-stow” the antennas IAW guidance
+   in TO 31M3-4-6-1.
+   2.4.3. Vary the listed actions, and their order, as needed to meet local requirements and
+   follow established SRS/RIMS shutdown procedures.
+       2.4.3.1. Turn off the remote SOON TV monitor (if applicable).
+       2.4.3.2. Turn off the RIMS computer.
+       2.4.3.3. Place all RF Input Switches to the “LOAD” position.
+       2.4.3.4. Ensure all Calibration Switches are in the “LOAD” position.
+       2.4.3.5. Turn off the communications equipment (if applicable), and any personal
+       computers (PC).
+       2.4.3.6. Turn off the SRS monitor.
+2.5. Complete Shutdown Procedures. If, during the observing day, thunderstorms or lightning
+are within 5 nautical miles (NM) of the site, or if room environmental limits are exceeded, take
+the actions listed below. These actions won’t guarantee safety from lightning strikes; however,
+they should provide a reasonable degree of protection. If environmental limits are exceeded in
+the RSTN operations room or computer room only, it is not necessary to do a shutdown of the
+equipment in the other room. The radio racks themselves are only powered down in emergency
+situations (e.g., fire, flood, electrocution, etc).
+   2.5.1. If time permits, transmit the STATS messages before shutting down the RSTN
+   equipment and/or computer. If a patrol message isn’t sent, log the shutdown time on the
+   RSTN Daily Activity Log and call the 2 WS/Space Weather Operations Center
+   (SPACEWOC) to advise them on site status. NOTE: If conditions (thunderstorms,
+   environmental, etc) prevent running data archival, inform the Non-Commissioned Officer in
+   Charge (NCOIC).
+   2.5.2. Vary the listed actions, and their order, as needed to meet local requirements and
+   follow established SRS/RIMS shutdown procedures.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 13
+
+
+       2.5.2.1. If appropriate, storm-stow or winter-stow the antennas.
+       2.5.2.2. Place all RF Input Switches to the “LOAD” position.
+       2.5.2.3. Ensure all Calibration Switches are in the “LOAD” position.
+       2.5.2.4. Turn off the antenna control units.
+       2.5.2.5. Turn off the remote SOON TV monitor (if applicable).
+       2.5.2.6. Turn off all small computers (e.g., PCs).
+       2.5.2.7. Turn off the communications equipment (if appropriate).
+       2.5.2.8. Ensure the downtime is logged on the AFWA Form 20 for inclusion in the End
+       of Day Summary (NWXX60) message and the unit’s Monthly Outage Report.
+2.6. Complete Power-Up Procedures. These procedures are the same as Normal Power-Up
+procedures in paragraph 2.2, with only two exceptions listed below.
+   2.6.1. Issue a patrol (STATS) message to “up” the equipment and call the SPACEWOC to
+   inform them of status.
+   2.6.2. Calibration of the radios before resuming patrol is not required unless the downtime
+   happens to occur at sunrise, or during the NOON IFLUX time.
+2.7. Emergency Shutdown/Power-Up Procedures. Due to site and configuration differences,
+emergency procedures will vary at each observatory. Local procedures, however, will specify
+what actions are to be taken in case of severe weather, flooding, fire, electrocution, etc. The
+procedures will highlight which buildings, power sources, and circuit panels will be affected by
+each shutdown action. The procedures will also include step-by-step directions on how to
+restore power and re-establish patrol after the emergency is over.
+ 14                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+                                          Chapter 3
+
+                                 SOLAR RADIO OBSERVING
+
+3.1. Opening Procedures.
+   3.1.1. Arrival on Site.
+      3.1.1.1. Arrive early enough to accomplish all opening procedures before sunrise. For
+      RSTN (both discrete frequency and SRS) operations local radio sunrise and sunset are
+      defined as the time when the sun center is three degrees above the apparent horizon
+      (based on a smooth, spherical earth adjusted to reflect permanent local obstructions, such
+      as ridgelines or buildings). Both discrete frequency and SRS solar radio energy can be
+      detected prior to "official radio sunrise"; however, the data collected may be unreliable
+      due to radio wave constructive and destructive interference.
+      3.1.1.2. Review any notes from the previous shift, latest End of Day Summary
+      (NWXX60) message, and outage logs.
+      3.1.1.3. Perform an environmental check. Check the hygrothermograph or its equivalent
+      (and do so periodically throughout the observing day). When either the room
+      temperature or relative humidity is exceeding the environmental limits listed below for
+      more than 30 minutes, perform a "Complete Shutdown" of the radio (discrete frequency
+      and SRS) equipment. Use local "Complete Shutdown" procedures developed from
+      guidance in Chapter 2 and IAW applicable TO.
+          3.1.1.3.1. Temperature: 50 to 90 degrees Fahrenheit.
+          3.1.1.3.2. Relative Humidity: 25 to 75 percent.
+   3.1.2. Power up. Power up equipment using locally developed procedures (with the aid of
+   guidance in all applicable TOs and AFWAMAN 15-2, Chapter 2).
+   3.1.3. Calibrations. Calibrate the discrete frequency radiometers as required in Chapter 4.
+   3.1.4. Antenna Positioning.
+      3.1.4.1. Check the wind equipment before moving the antennas out of their nightly stow
+      position. If winds are above operational limits (45 knots/~55 mph sustained or gusts), the
+      antennas should be left in (or moved to) the storm-stow position (unless local
+      maintenance advises that motion under these circumstances could cause more damage
+      than leaving the antennas where they are). NOTE: At certain sites, maintenance may
+      occasionally lock the 28-foot antenna pedestal. If locked, request maintenance assistance
+      in bringing the antenna to the sunrise position.
+      3.1.4.2. Position the antenna on the sun using the Solar Track function in the antenna
+      graphic user interface (Model 3883 Antenna Controller). If the antenna fails to
+      automatically acquire and track the sun, immediately contact Maintenance. Do not
+      attempt to manually position the antenna without authorization from Maintenance.
+   3.1.5. Discrete frequency or SRS activity in progress when patrol is acquired (either at
+   sunrise or after a break in patrol).
+AFWAMAN15-2 13 NOVEMBER 2013                                                                        15
+
+
+      3.1.5.1. If possible, prepare a Discrete Solar Radio Burst (BURST) or SWEEP message
+      IAW AFMAN 15-124, Meteorological Codes.
+          3.1.5.1.1. Use the start time of patrol as the burst or sweep start time.
+          3.1.5.1.2. Apply any required attenuation corrections to discrete bursts.
+          3.1.5.1.3. Use the appropriate data qualifiers and time qualifier for a discrete burst.
+      3.1.5.2. If enough reliable data could not be collected for a meaningful BURST or
+      SWEEP message, send a PLAIN message instead. This PLAIN will at least alert the
+      forecast centers that some activity occurred.
+      3.1.5.3. If the activity is event-level, the analyst has two options:
+          3.1.5.3.1. If it is known that the activity has already been reported and is over 15
+          minutes old, do not send an event-level preliminary message; instead, use routine
+          (AXXX71) MANOP headers for the BURST or SWEEP message. A common
+          example is a long duration Type IV sweep.
+          3.1.5.3.2. If it is not known that the activity has already been reported and is over 15
+          minutes old, respond as if it were a new event (i.e., send an event-level preliminary
+          message and use event (SXXX61) MANOP headers for the BURST or SWEEP
+          message). Also append a PLAIN indicating site just acquired the sun and the event
+          may or may not be new activity.
+3.2. Patrol Procedures.
+   3.2.1. Position antennas to acquire the sun as soon as practical but not later than 5 minutes
+   before radio sunrise. Once the solar signal is acquired adjust the baseline values through the
+   RIMS Analysis Graph Settings window, ensure the 2695 MHz burst threshold is changed to
+   match the current base line setting or 100 SFUs, whichever is lower. The IFLUX function
+   can also be used to collect a small data sample after the sun has cleared any local
+   obstructions and has risen high enough to limit atmospheric attenuation. By saving the data
+   sample through the IFLUX function, the baseline values will be reset to the latest radio
+   background output of the sun.
+   3.2.2. Patrol (STATS) Reports.
+      3.2.2.1. Transmit an initial STATS message at radio sunrise, whether or not patrol is
+      acquired. During the day, issue a STATS message when any frequency or the SRS is
+      down, or expected to be down, for more than 5 minutes, and again when it is restored to
+      service. Transmit a final STATS message at radio sunset after the end of the observing
+      day.
+      3.2.2.2. The opening time is when any functioning frequency or the SRS acquires the sun
+      and displays a reasonable solar signal. A reasonable signal is one in which the analyst
+      can collect and analyze burst or sweep data, whether qualified as good or uncertain. The
+      opening time can be no earlier than "official radio sunrise". Maintain patrol on each
+      discrete frequency and the SRS as long as a reasonable solar signal is available. Closing
+      time can be no later than "official radio sunset".
+      3.2.2.3. If some frequencies are attenuated or blocked by obstructions at sunrise, do not
+      delay transmitting the opening STATS message. The opening message should include
+16                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     the status (up or down) of each frequency monitored by the site, plus the SRS. Transmit
+     additional STATS messages as other frequencies or the SRS becomes operational and
+     acquires the sun. If unable to transmit messages, telephone SPACEWOC and advise
+     them of the nature of the problem and when patrol is expected to be acquired. If
+     appropriate, ask SPACEWOC to inform the Space Weather Prediction Center (SWPC)
+     and other RSTN observatories.
+     3.2.2.4. All patrol times reported should represent actual times patrol was lost or
+     regained, which may not necessarily be the current or transmission time, or the time
+     equipment is logged out for maintenance.
+     3.2.2.5. If the reported expected outage time is later exceeded, transmit a new STATS
+     message for the additional downtime.
+     3.2.2.6. When performing weekly Preventative Maintenance Inspections (PMIs), it is not
+     necessary to transmit a STATS message each time a frequency is taken off the air or
+     restored to patrol. Instead:
+         3.2.2.6.1. Call the SPACEWOC and request downtime for the PMIs. Inform
+         SPACEWOC that each frequency will be off the air for approximately 5-10 minutes,
+         and that they will be notified once maintenance is complete.
+         3.2.2.6.2. Include the type of outage, initial start time, and final end time of the PMIs
+         in the NWXX60 end of day message. Log outages and times on AFWA Form 20.
+  3.2.3. Observing Routine.
+     3.2.3.1. Check the screen displays for the discrete frequencies at least once every two
+     minutes. These checks are needed to detect drifting baselines and spiky or gradual rise
+     and fall bursts. Check the SRS display for activity at least every two minutes.
+     3.2.3.2. If continuous, severe RFI makes patrol impossible on a particular frequency,
+     take that frequency off patrol (e.g., change its status to "Down"). Issue the appropriate
+     STATS message. It is not necessary to take an antenna off the sun due to RFI. See
+     paragraph 3.2.11. for further instructions.
+     3.2.3.3. Copies. It is recommended that analysts make electronic copies of all event-
+     level burst activity for post analysis, quality assurance, training, and intersite data
+     comparisons. Hard copies are mandatory at contractor-operated sites and will be
+     forwarded monthly to 2WS/DOZ.
+  3.2.4. Forms and Data Reporting.
+     3.2.4.1. Use the AFWA IMT 18 to record burst, sweep, IFLUX, and patrol data.
+     3.2.4.2. Transmit data reports as soon as possible, but not to exceed the timeliness limits
+     stated in this chapter and summarized in Attachment 2.
+     3.2.4.3. Transmit plain language (PLAIN) messages as needed to clarify information in
+     coded data reports or to report information not reported by any other message. These
+     PLAIN messages may be appended to another coded data message or sent separately
+     using an AXXX70 MANOP header. Avoid using program names or other terms in a
+     PLAIN, which may not be known or clear to all recipients.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                17
+
+
+  3.2.5. BURST Reports.
+     3.2.5.1. Encode and transmit all bursts with peak flux of 100 SFUs or greater. Do not
+     report a burst with peak flux less than 100 SFUs unless:
+        3.2.5.1.1. It is a gradual rise and fall burst.
+        3.2.5.1.2. It is part of a spectral group (defined in this guidance) and at least one
+        frequency in the group has a peak flux of 100 SFUs or greater.
+        3.2.5.1.3. In the analyst's judgment, the burst is significant and contributes to
+        understanding what occurred or supports activity reported by another site.
+        3.2.5.1.4. RAD00 EVENT is reached, even if the peak is under 100 SFU.
+     3.2.5.2. Noise storms are reportable only during that period when they are producing
+     peaks of 100 SFUs or greater, relative to the pre-storm baseline. Refer to Chapter 6 for
+     guidance on analysis and reporting of noise storms.
+     3.2.5.3. For non-event discrete (fixed) frequency bursts, transmit final reports within 15
+     minutes after burst end (45 minutes if the burst is a noise storm). Use an AXXX71
+     MANOP header for all non-event BURST reports. Preliminary non-event reports are
+     optional, but are encouraged if producing them would not interfere with other operations.
+     Exception: For noise storms, transmit a preliminary within 30 minutes after storm start
+     time.
+     3.2.5.4. When a computer generated BURST message appears to be incorrect, the analyst
+     must evaluate the data and change the message as necessary. The analyst can use the
+     burst reanalysis program, and the observation should still be qualified as automatic data
+     reduction.
+     3.2.5.5. Superimposed Bursts. Report a superimposed burst separately from a noise
+     storm, gradual rise and fall burst, or the tail end of another impulsive burst. Guidelines
+     for identification of superimposed bursts are contained in this manual. Analyze
+     superimposed bursts relative to the current, enhanced background, since such a burst
+     represents radio energy output over and above both the normal background solar output
+     and the enhanced output from the other burst. When appropriate, qualify the
+     superimposed burst as uncertain data due to interference.
+     3.2.5.6. Burst Corrections.
+        3.2.5.6.1. Attenuation Corrections. Burst attenuation may occur near sunrise, sunset,
+        during heavy cloud cover, or precipitation. An attenuation correction is required for
+        all bursts on discrete frequencies where the current baseline has dropped more than
+        10 percent below either the most recent IFLUX value (for sunrise or sunset bursts) or
+        the pre-attenuation baseline (for weather attenuation).
+        3.2.5.6.2. Linearity Corrections. During large discrete frequency bursts, flux values
+        may require a linearity correction for a non-linear response in the slave LIA. The
+        computer will automatically apply any required linearity corrections (if needed) to the
+        peak, mean, and integrated flux values using data stored in the program from the
+        linearity calibration.
+18                                                  AFWAMAN15-2 13 NOVEMBER 2013
+
+
+        3.2.5.6.3. Use the guidance in Chapter 4, Section 4.4 when performing linearity
+        calibrations. Use procedures in Chapter 6, Section 6.7 to compute and apply
+        attenuation corrections.
+     3.2.5.7. Spectral Bursts. Spectral (multiple frequency) bursts are defined in chapter 6.
+     Normally, all the discrete frequencies involved should be reported in a single message,
+     with the same local burst serial number. However, if a spectral burst starts very close to
+     the end of the GMT day, the start time on some frequencies may be just before 2400Z,
+     while on other frequencies it may be just after 0000Z. In such a case, prepare and
+     transmit separate BURST code messages, since the BURST code does not allow
+     inclusion of data for more than one GMT day in a single message.
+  3.2.6. SWEEP Reports.
+     3.2.6.1. For non-event sweeps, transmit final reports within 45 minutes after sweep end
+     time data availability. Use an AXXX71 MANOP header for all non-event SWEEP
+     reports. For long-duration (e.g., Type 6, 7, or 8) sweeps, transmit a preliminary within 30
+     minutes after data availability (i.e., type identification).
+     3.2.6.2. When a long duration sweep increases in intensity, issue an updated preliminary.
+     Use an AXXX71 MANOP header for the update, even if the sweep is a Type II or Type
+     IV, since there are no intensity-related event thresholds for sweeps. If the intensity
+     category later decreases, do not issue another preliminary, or end that sweep and start a
+     new sweep. (The situation is similar to a discrete frequency burst slowly returning to
+     background; once a peak intensity is reached, that intensity is always assigned to the
+     burst). If desired, a PLAIN message can be issued to advise the field of the decline in
+     intensity.
+     3.2.6.3. Assume any continuum sweep which immediately follows a significant radio,
+     optical, or X-ray event is a Type IV continuum (vice a Type 8 continuum), even if no
+     Type II sweep was observed. Consult Chapter 7, for additional guidance on Type IV and
+     Type 8 continuums.
+     3.2.6.4. Whenever possible, determine a Type II’s shock wave speed and encode IAW
+     AFMAN 15-124. The shock speed will be used in various models to forecast the onset of
+     delayed geophysical effects and their impacts on Department of Defense (DoD) radar,
+     communications, and space systems.
+     3.2.6.5. Report individual Type III and Type V sweeps when they are distinctly separate
+     from other, underlying SRS activity and/or their start times coincide exactly with a
+     discrete frequency burst or optical activity. For example, an isolated intensity 2 Type III
+     should be reported separately from an ongoing intensity 1 Type 8 continuum.
+     3.2.6.6. Classify and report all non-Type IV continuums as Type 8 continuums.
+  3.2.7. Adverse Weather.
+     3.2.7.1. For strong winds equal or exceeding 45 knots/~55 miles per hour (mph)
+     (sustained or gusts), storm-stow all antennas at 90 Deg in elevation and 0 Deg in azimuth.
+     Straight up corresponds to 90 Deg in elevation and provides the least cross-section for
+     wind loading. Furthermore, the antennas may be stowed at a lower wind speed threshold
+     at the discretion of the local Detachment Commander for older, more worn antennas or
+AFWAMAN15-2 13 NOVEMBER 2013                                                                   19
+
+
+      when the patrol position is particularly vulnerable to wind loading. NOTE: High winds
+      will not affect the low band antenna during SRS patrol.
+      3.2.7.2. For protection against potential snow and/or ice accumulation, "winter-stow" all
+      antennas IAW guidance in TO 31M3-4-6-1. Coordinate with maintenance on the
+      removal of accumulated snow and/or ice.
+      3.2.7.3. When both strong winds and snow/ice accumulation are forecast or occurring,
+      protection of the antennas against snow/ice accumulation takes priority.
+      3.2.7.4. If thunderstorms or lightning are within 5 NM of the site, perform a computer
+      and telescope "Complete Shutdown" using local procedures developed IAW applicable
+      TO and/or operator manual and chapter 2 of this publication.
+   3.2.8. Emergency Shutdown. When severe weather, fire, flooding, electrocution, etc.,
+   immediately threaten the facility, equipment, or personnel, use local "Emergency Shutdown"
+   procedures, developed IAW applicable TO and/or operator manual and chapter 2 of this
+   publication.
+   3.2.9. Power Up Procedures. After a "Complete Shutdown" of the computer and/or
+   telescope systems (e.g., due to thunderstorms or exceeding room environmental limits), or an
+   "Emergency Shutdown", power up using local procedures developed IAW applicable TO
+   and/or operator manual and chapter 2 of this publication.
+   3.2.10. Non-Solar Radio Interference. When unexplained, strong, recurring interference
+   occurs on any frequencies (including the SRS), notify the NCOIC and/or the Detachment
+   Commander, and have them contact Host Base Interference Spectrum Manager to coordinate
+   isolation.
+   3.2.11. Shift-Change Briefings. As a minimum, include:
+      3.2.11.1. Recent and/or current solar activity (both optical and radio), and RFI problems
+      observed locally or at another site. If applicable, mention significant active regions due
+      to return in the near future.
+      3.2.11.2. Equipment and/or computer outages,            communication       problems,   plus
+      anticipated PMIs, power outages, or other problems.
+      3.2.11.3. Status of other sites.
+      3.2.11.4. Any shift duties not accomplished.
+      3.2.11.5. Any special support requirements.
+3.3. Closing Procedures.
+   3.3.1. Discrete frequency or SRS activity in progress at radio sunset.
+      3.3.1.1. If possible, prepare a final BURST or SWEEP code message IAW AFMAN 15-
+      124.
+          3.3.1.1.1. Use the end time of patrol as the burst or sweep end time.
+          3.3.1.1.2. Apply any required attenuation corrections.
+          3.3.1.1.3. Use the appropriate data qualifiers.
+ 20                                                     AFWAMAN15-2 13 NOVEMBER 2013
+
+
+       3.3.1.2. If enough reliable data could not be collected for a meaningful BURST or
+       SWEEP message, send a PLAIN message instead. This PLAIN will at least advise
+       SPACEWOC and SWPC that some activity occurred.
+       3.3.1.3. Append these BURST, SWEEP, and/or PLAIN messages to the final STATS
+       message to ensure a complete report describing solar and observatory status at the end of
+       the observing day. NOTE: If these messages are transmitted separately, the data will
+       still be accepted by SPACEWOC and SWPC databases, but only the last transmitted
+       message can be recalled by Winds Information Display System (WINDS) message
+       viewer.
+   3.3.2. Termination of Patrol.
+       3.3.2.1. Transmit a final STATS message and the End of Day Summary (NWXX60)
+       message at radio sunset. The NWXX60 may be issued up to 30 minutes prior to radio
+       sunset if appropriate. NOTE: RIMS Analysis program automatically archives data.
+   3.3.3. Normal Shutdown.
+       3.3.3.1. Turn off equipment using locally developed "Normal Shutdown" procedures,
+       and guidance in Chapter 2. If thunderstorms are forecast overnight or observed nearby at
+       sunset, follow the computer and telescope "Complete Shutdown" procedures instead.
+3.4. Event-level Activity.
+   3.4.1. Radio Event Definitions.
+       3.4.1.1. Multiple discrete (i.e., fixed) frequency bursts meeting Castelli-U criteria as
+       defined in Chapter 6. NOTE: Use caution when performing maintenance on the 1415-
+       4995 MHz radiometers. If a large burst occurs, the computer may falsely recognize a
+       downed radio for the pronounced “dip” and generate a false Castelli U.
+       3.4.1.2. Radio bursts, which equal or exceed 5,000, 10,000 or 50,000 SFUs above
+       background on any discrete frequency. NOTE: One SFU = 10 -22 Watts per meter
+       squared per Hertz.
+       3.4.1.3. Radio bursts on 2695 MHz, which are 100 percent or more above the pre-burst
+       baseline (also known as a “tenflare” because of its approximation with the 10 cm
+       wavelength).
+       3.4.1.4. Type II or IV swept frequency bursts.
+   3.4.2. Reports. Send all required data reports as soon as possible, but not to exceed the
+   timeliness limits specified below and summarized in Attachment 2.
+   3.4.3. Event-level Bursts.
+       3.4.3.1. Transmit an event-level preliminary BURST message within 2 minutes after
+       event start, or within 2 minutes after first peak over 5,000 SFUs for a noise storm. If a
+       final BURST code message can be ready for transmission before the preliminary is due,
+       transmit the final instead.
+       3.4.3.2. SPACEWOC is required to issue warnings at various thresholds based on RSTN
+       data. Notify them by transmitting an event-level preliminary BURST message within
+       two minutes when any of the following thresholds are met: NOTE: Extra preliminary
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 21
+
+
+      BURST messages are optional, but may be useful to SPACEWOC and SWPC. Also,
+      appended PLAIN EVENT threshold messages are optional but highly recommended,
+      time permitting.
+          3.4.3.2.1. Each frequency initially crosses 5000 SFU. Append a PLAIN indicating
+          EVENT RAD05 for the first frequency that crosses this threshold.
+          3.4.3.2.2. The first frequency initially crosses 10,000 SFU.      Append a PLAIN
+          message indicating EVENT RAD11.
+          3.4.3.2.3. The first frequency initially crosses 50,000 SFU.      Append a PLAIN
+          message indicating EVENT RAD55.
+          3.4.3.2.4. Whenever one of the listed thresholds are met or exceeded (unless
+          transmitted previously with the RAD11). If time allows, append a PLAIN indicating
+          which frequency and threshold was met.
+                410 MHz - 10,000 SFU
+               1415 MHz - 10,000 SFU; 50,000 SFU
+               2695 MHz - 10,000 SFU
+               8800 MHz - 50,000 SFU
+             15,400 MHz - 50,000 SFU
+          3.4.3.2.5. The 2695 MHz frequency flux crosses 100 percent above the pre-burst
+          baseline. Append a PLAIN message indicating EVENT RAD00.
+          3.4.3.2.6. Multiple discrete (i.e. fixed) frequency bursts meet Castelli-U criteria as
+          defined in Chapter 6. Append a PLAIN message indicating EVENT RADCU.
+      3.4.3.3. Transmit an event-level preliminary BURST message within 5 minutes of the
+      burst peak. This may result in multiple peak messages should the radio activity continue.
+      Ensure the peaks for all the frequencies involved in the burst are included in the peak
+      message.
+      3.4.3.4. Transmit a final BURST code message within 10 minutes of burst end on all
+      frequencies involved. EXCEPTION: For noise storms, transmit the final BURST
+      message within 45 minutes of noise storm end.
+      3.4.3.5. Transmit bursts uncorrected for attenuation effects (if necessary) to meet
+      required timeliness limits. Qualify the data as uncertain and send corrected data as soon
+      as possible.
+   3.4.4. Event-level Sweeps.
+      3.4.4.1. Transmit an event-level preliminary SWEEP message within 2 minutes after
+      sweep type identification as a Type II or IV.
+      3.4.4.2. Transmit a final SWEEP message within 30 minutes after sweep end time data is
+      available.
+3.5. IFLUX Standardization Procedures. The following procedures are designed to ensure
+consistency in discrete frequency IFLUX and burst data within the radio network.
+   3.5.1. Responsibilities of all RSTN Sites.
+22                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     3.5.1.1. The NCOIC or RSTN Section Chief must closely monitor the IFLUX values and
+     qualifiers reported.
+     3.5.1.2. Each site will compare its IFLUX values against the standard observatory
+     (Kaena Point), based on only unqualified IFLUX values. The standard observatory will
+     reference the values in Table 3.1 for baseline comparison. Each site will also compare its
+     2695 MHz IFLUX value against the Penticton 2800 MHz, 2000 universal time (UT)
+     value. The 2695 MHz value should be approximately 2.5 percent below the 2800 MHz
+     value, and is a relative measurement.
+         3.5.1.2.1. If a site's unqualified IFLUX values (on any frequency) differ by more than
+         10 percent from the standard observatory’s values for 5-days, qualify the IFLUX
+         value on that frequency.
+         3.5.1.2.2. If a site's unqualified IFLUX values (on any frequency) differ by more than
+         10 percent from the standard observatory’s values for more than 5 days, qualify the
+         IFLUX value on that frequency and proceed with the following requirements:
+             3.5.1.2.2.1. Log the frequency in the End of Day Summary; indicate the
+             frequency has been out of tolerance for 5 days in the Outage section. Notify local
+             maintenance personnel, and have them troubleshoot as needed. If maintenance is
+             unable to find a cause for the problem, request further guidance from Lead
+             Command Representative through AFWA Operations Center. Change NT values
+             only as a last resort. Expend every effort to correct the problem by other means
+             before changing a NT value.
+             3.5.1.2.2.2. If the outage was logged in the End of Day Summary (NWXX60)
+             message, update the log to show the outage was fixed and briefly note what action
+             was taken (if a detailed fix-action explanation is required, send in a separate email
+             correspondence to Lead Command Representative through AFWA Operations
+             Center and 2WS/DO).
+     3.5.1.3. If a change to equipment or NT values is accomplished that could affect a
+     frequency's IFLUX value:
+         3.5.1.3.1. Ensure the adjusted IFLUX value is correct by monitoring the value for
+         three days before removing the data qualifiers.
+     3.5.1.4. Each site will keep a record of all comparisons that indicate a problem may
+     exist, NT changes, and equipment problems relevant to the intersite IFLUX
+     standardization program.
+  3.5.2. RSTN Absolute Flux Calibration Requirement. Over the course of a solar cycle due
+  to unavoidable drift, the flux values at the RSTN observatories become widely divergent
+  between observatories and from any sense of a standard calibration. To baseline the network,
+  RSTN telescopes must be calibrated to an absolute standard once every 10-11 years
+  coinciding with the solar minimum.
+     3.5.2.1. The 2 WS/CC will serve as the moderator for all absolute flux calibration efforts
+     to ensure seamless coordination and simultaneous action between all observatories. 2
+     WS/CC will manage the overall process as follows:
+AFWAMAN15-2 13 NOVEMBER 2013                                                               23
+
+
+       3.5.2.1.1. Gather and review recommendations from the observatories, 2
+       WS/SPACEWOC and AFWA/A8F to determine after-the-fact the best three-week
+       window for quiet solar flux.
+           3.5.2.1.1.1. Designate a three-week window from which the observatories will
+           select seven days of quiet solar flux. These days must be free of interference from
+           terrestrial weather. The designation of both the window and individual days will
+           be after-the-fact.
+           3.5.2.1.1.2. All observatories must successfully observe seven days of quiet sun
+           within the designated three-week window. The selected days are not required to
+           be consecutive as long as all seven days fall within the same designated three-
+           week window. Additionally, the seven days chosen by one observatory may
+           differ from the seven days chosen by another due to atmospheric conditions (i.e.
+           weather), equipment anomalies, maintenance, etc.
+       3.5.2.1.2. After all RSTN observatories have calculated their new “baseline” NT
+       values and prior to the switch to the new values, users of the data must be notified of
+       the impending switch so they can prepare for potential effects on their respective
+       systems. 2 WS/CC will ensure notifications are sent to all users of the RSTN data
+       and other appropriate organizations to include (but not limited to):
+           3.5.2.1.2.1. The Space Environment Center in Boulder, Colorado.
+           3.5.2.1.2.2. Air Force Space Command.
+           3.5.2.1.2.3. The Australian Ionospheric Prediction Service Radio and Space
+           Services in Sydney, Australia.
+       3.5.2.1.3. Once notifications are made to all appropriate organizations, 2 WS/CC will
+       direct the observatories to switch to the new values in unison or as close as possible
+       considering the time zone differences between the observatories e.g., San Vito,
+       Sagamore Hill, and Kaena Point could be directed by 2 WS/CC at 1800 UTC and
+       Learmonth would switch prior to their next “opening” and conducting operations.
+    3.5.2.2. RSTN observatories will adhere to the following technical procedures:
+       3.5.2.2.1. Determine seven individual days of quiet solar flux (as directed by 2
+       WS/CC) during which the solar radio fluxes are as near minimum value using the
+       following four required conditions:
+           3.5.2.2.1.1. The seven days must be within a few months of sunspot minimum
+           and fall within the 2 WS/CC directed three-week period.
+           3.5.2.2.1.2. No sun spots are observed on the solar disc for the chosen seven
+           days.
+           3.5.2.2.1.3. No plage is observed in H-alpha images of the sun for the chosen
+           seven days.
+           3.5.2.2.1.4. No radio burst or sweep activity detected from the sun for the chosen
+           seven days.
+           3.5.2.2.1.5. The days selected must be free of inclement weather and other types
+ 24                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+              of interference and/or variances from normal (e.g., thunderstorms, precipitation,
+              cloud cover interference, power outages, tracking problems, signal strength issues
+              etc.). Upon direction of the 2 WS/CC, the observatories will begin keeping a log
+              of days affected by terrestrial weather and other forms of interference that would
+              downgrade the quality of NT data. The observatories will be extra vigilant in this
+              regard so as to ensure the best possible days are ultimately selected when the three
+              week window is established.
+          3.5.2.2.2. Average the IFLUX values for each frequency over the determined quiet
+          seven days.
+          3.5.2.2.3. Adjust the NT values on each frequency so that the flux with the new NT
+          reading would have been the specified minimum value (listed in Table 3.1.).
+
+Table 3.1. Solar Quiet or Baseline Values.
+
+ Frequency (MHz)               Minimum Flux (SFU)
+            245                             12
+            410                             24
+            610                             34
+           1415                             52
+           2695                             69
+           4995                            115
+           8800                            215
+           15400                           520
+
+          3.5.2.2.4. Use the graph depicted in Figure 3.1. to interpolate quiet values for other
+          frequencies if required. The graph incorporates a smooth curve through the plotted
+          points listed in Table 3.1.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                25
+
+
+Figure 3.1. Graph of Solar Quiet Flux.
+
+
+
+
+          3.5.2.2.5. Use   the    formula     (New_NT_Value       =   Old_NT_Value x
+          Baseline_IFLUX_Value / 7-Day Average_IFLUX_Value) to compute new
+          uncorrected NT values. Reference the following example computation:
+              3.5.2.2.5.1. Assume that during the seven quiet days the average IFLUX for 1415
+              MHz is determined to be 55 SFU.
+              3.5.2.2.5.2. Also assume that the current uncorrected NT value for 1415 MHz is
+              47.2 SFU.
+              3.5.2.2.5.3. Note that the correct IFLUX for 1415 MHz at solar minimum should
+              be 52 SFU (from Table 3.1.).
+              3.5.2.2.5.4. The new uncorrected NT value would then be 47.2 x 52 / 55 = 44.6
+              SFU.
+3.6. Short Wave Fade reporting Procedures.
+   3.6.1. The SRS has the ability to show short wave fades from strong x-ray flares (usually an
+   M1 or higher). This information is extremely useful to 2 WS/SPACEWOC for verification
+   of short wave fade (SWF) advisories and can be used for possible scientific studies. To take
+   advantage of this information, a message will be transmitted to 2 WS/SPACEWOC by all
+   observatories possessing an operational SRS whenever 2 WS/SPACEWOC issues a
+   WOXX50 KGWC SWF advisory for a flare that reaches the M1 or greater level.
+ 26                                                 AFWAMAN15-2 13 NOVEMBER 2013
+
+
+   3.6.2. Use the following format (PLAIN report; see AFMAN 15-124, para 7.3) to submit this
+   information when observed. NOTE: Since the AXXX70 is not programmed into any of the
+   RSTN software, the analyst must manually enter the appropriate MANOP header.
+      3.6.2.1. AXXX70 XXXX DDHHMM
+       PLAIN
+       SWF XXMHz Begin DDHHMM End DDHHMM or SWF NO
+       Comments (optional)
+       99999
+      3.6.2.2. First line will contain the header (AXXX70), four-letter station identifier, and
+      date time group (DTG) the message was issued.
+      3.6.2.3. Second line will state this is a PLAIN message.
+      3.6.2.4. Third line will identify this PLAIN as a SWF message, the maximum MHz
+      absorption (i.e. 30MHz), DTG for begin time of SWF, and DTG for end of SWF. If 2
+      WS/SPACEWOC issues a SWF advisory (X1 or higher) and no SWF is observed, the
+      body of the message will be SWF NO. Because this is a relatively new method of
+      observing short wave fades, begin and end times will be subjective. We can determine
+      more objective criteria after a larger number of observations have been made and are
+      available for study.
+      3.6.2.5. Fourth line is optional and may contain any plain language comments that help
+      explain the characteristics of the fade.
+      3.6.2.6. A SWF PLAIN observation must be submitted to 2WS/SPACEWOC within 30
+      minutes of receipt of the WOXX50 initial message only if SWF is being observed. A
+      SWF PLAIN observation, whether SWF is observed or not, must be submitted to
+      2WS/SPACEWOC within 30 minutes of receipt of the WOXX55 preliminary message. If
+      SWF is still ongoing 30 min after receipt of either the WOXX50 initial message or the
+      WOXX55 preliminary message, a final SWF PLAIN message must be issued within 30
+      min of observed end of SWF.
+   3.6.3. To ensure this requirement is met, all observatories must be on requirements to
+   receive the WOXX50 KGWC SWF advisory, WOXX55 KGWC, and other RSTN
+   observatories’ AXXX70. This can be received via the Weather Product Management and
+   Distribution System (WPMDS), e-mail, phone, facsimile, or alphanumeric pager. See Air
+   Force Weather WEB Services (AFW-WEBS) or contact the 2 WS/SPACEWOC for
+   additional information.
+   3.6.4. The observatory will forward an electronic copy (GIF format) to 2 WS/SPACEWOC
+   spaceweather@offutt.af.mil of all SRS observed SWF’s no later than (NLT) the following
+   day. This information will provide 2 WS/SPACEWOC examples that can be used to develop
+   possible “rule of thumb” and training material.
+3.7. Common Event Procedures.
+   3.7.1. MANOP Headers. Select the appropriate event (SXXX60 EVENT or SXXX61
+   prelim) or routine (AXXX61 optical or AXXX71 radio) MANOP header IAW guidance
+   provided in this manual, AFMAN 15-124, and AFWAI 15-2. For event-level activity in
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 27
+
+
+  progress when patrol is acquired (either at sunrise or after a break in patrol), consult
+  paragraph 3.1.5.
+  3.7.2. Event-Level Messages. Between sunrise and sunset, transmit an event-level
+  preliminary message within timeliness criteria when:
+     3.7.2.1. Any event threshold is reached at the observatory.
+     3.7.2.2. Another observatory sends an initial (SXXX61) event-level FLARE, DALAS,
+     BURST or SWEEP message and event thresholds are currently being met. If no
+     thresholds are met, respond with the appropriate EVENT code message (see paragraph
+     2.5.3., AFI 15-124, Meteorological Codes).
+     3.7.2.3. An event is in progress and another event threshold is reached at the observatory
+     or at another site.
+  3.7.3. Optional Event-Level Messages. Although not mandatory, sites are encouraged to
+  send an event-level preliminary message before local sunrise and after sunset, if doing so
+  would not hinder the process of opening or closing the site.
+  3.7.4. Event Message Acknowledgment. SPACEWOC decodes all BURST, SWEEP,
+  DALAS, FLARE, EVENT SXXX60, NWXX53, NWXX54, and SXXX61 prelim MANOP
+  header messages in real-time.
+     3.7.4.1. If the solar event exceeds customer established criteria (optical flare 2B or
+     greater or radio burst greater than 5,000 SFUs), SPACEWOC will issue a warning.
+         3.7.4.1.1. A WOXX51 KGWC bulletin will be issued for optical flares equal to or
+         greater than 3B.
+         3.7.4.1.2. A WOXX50 KGWC bulletin will be issued for x-ray equal to or greater
+         than M1 or, when x-ray data is unavailable, an optical flare equal to or greater than
+         2B.
+         3.7.4.1.3. A WOXX52 KGWC bulletin will be issued for radio bursts equal to or
+         greater than 5,000 SFUs.
+         3.7.4.1.4. A NWXX53 KGWC bulletin will be issued for radio bursts equal to or
+         greater than 10,000 SFU on 410 MHz, 1415 MHz, and 2695 MHz.
+         3.7.4.1.5. A NWXX54 KGWC bulletin will be issued for radio bursts equal to or
+         greater than 50,000 SFU on 1415 MHz, 8800 MHz, and 15,400 MHz.
+     3.7.4.2. If a warning is not received by the observatory within three minutes of event
+     transmission, call SPACEWOC and retransmit the event message.
+     3.7.4.3. If transmission of an event-level message is precluded for any reason, phone
+     SPACEWOC immediately.
+     3.7.4.4. Continue attempts to make rapid event notifications until a warning is received,
+     a phone call is completed, or 15 minutes have elapsed from the time when event criteria
+     or maximum was reached.
+     3.7.4.5. At contract sites, retransmit any activity messages issued but not included in the
+     summary reports. Include a PLAIN remark stating the reason for the retransmission.
+28                                              AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     3.7.4.6. Review summary bulletins throughout the day and at least once per observing
+     shift.
+  3.7.5. REQST Message. When responding to a REQST message (TXXX50) from the 2WS
+  SPACEWOC, observatories will respond with observed data within two minutes using the
+  appropriate EVENT code IAW guidance in AFMAN 15-124, Chapter 6.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                   29
+
+
+                                           Chapter 4
+
+                           RIMS AUTOMATED CALIBRATIONS
+
+4.1. General. To accurately measure solar emissions, radio telescopes must be calibrated to
+compensate for internal equipment variations in the antennas, cabling, and radiometers. This
+chapter describes how various calibrations can be performed during automatic (i.e., computer
+assisted) operations using the radio calibration (RCAL) program. Refer to the RIMS Analysis
+Software Users Manual for program descriptions.
+4.2. Daily System Calibration. This calibration establishes the SFU per volt conversion factors
+and baselines for the computer. The daily system calibration is typically performed before
+sunrise, at noon, and at other times specified in paragraph 4.2.1. The pre-sunrise, noon, and
+unscheduled system calibrations differ only in a few steps, and in whether an IFLUX
+measurement will be made. A SRS self-test will be automatically performed prior to sunrise and
+may be performed during the noon discrete frequency system calibrations. The SRS self-test
+procedures are described in Chapter 7, paragraph 7.2.3.4.1. NOTE: One SFU = 10-22 Watts per
+meter squared per Hertz.
+   4.2.1. Perform the Daily System Calibration at the following times:
+       4.2.1.1. Prior to sunrise.
+       4.2.1.2. At local noon, within plus or minus 1 hour of Central Meridian Passage (CMP).
+       This calibration will normally include an IFLUX measurement. Accomplish IAW
+       Chapter 5.
+       4.2.1.3. After a NT value is changed, or after maintenance adjusts, replaces, or aligns any
+       equipment component that alters the sensitivity settings or gain factors of the 5207 lock-
+       in amplifiers (e.g., a rack alignment). NOTE: A new linearity calibration will also be
+       required.
+       4.2.1.4. Immediately before and after a linearity calibration is performed. These system
+       calibrations are specially tailored, and are described as part of the linearity calibration
+       procedures in paragraph 4.4.
+       4.2.1.5. When the RSTN operation room temperature changes by more than five degrees
+       (up or down) since the last system calibration. NOTE: Significant outside temperature
+       changes of more than 30 degrees since the last calibration could affect the accuracy of the
+       equipment and may require a new calibration.
+   4.2.2. Delay performing calibrations when:
+       4.2.2.1. No other radio site on patrol. NOTE: Make every effort to perform calibrations
+       while another site is on patrol. Either start the IFLUX calibration early while another
+       radio site is on patrol, or wait until another site starts patrol. If unable to perform the
+       noon calibration while another site is on patrol, a split IFLUX procedure is mandatory
+       IAW 5.1.1.4 and 5.2.2.
+       4.2.2.2. Radiometers are in their 1-hour stabilization period after a power outage.
+       NOTE: One hour may not be enough time in some cases. Consult with maintenance
+       first if in doubt.
+30                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     4.2.2.3. Solar radio burst activity is high, and it's very likely that any calibration attempts
+     would be futile and might result in failing to observe significant burst activity.
+     4.2.2.4. Continuous RFI is in progress. Wait for the RFI to end before performing the
+     calibration. Alternatively, a LOAD/LOAD system calibration as described in paragraph
+     4.4.5., may be appropriate.
+  4.2.3. When a NT is inoperative, all IFLUX values and bursts on the affected frequency
+  should be qualified until the NT is replaced and a system calibration can be performed. For
+  an extended outage, maintenance personnel may be able to operate the signal generator as an
+  alternative noise source for any of the eight discrete frequencies, allowing for a normal daily
+  system calibration.
+  4.2.4. Ensure calibration data is within tolerance by comparing the maximum Master and
+  Slave 5207 LIA values. The values must be within the values listed in Table 4.1.
+  4.2.5. If event-level activity occurs while any system calibration or IFLUX measurement is
+  in progress, the analyst should (if appropriate to the circumstances):
+     4.2.5.1. Stop the calibration or IFLUX measurement and return the antenna or antennae
+     to the sun as soon as possible.
+     4.2.5.2. Qualify the transmitted burst data as uncertain.
+  4.2.6. During the noon system calibration, perform an IFLUX IAW Chapter 5.                    For
+  (timeliness) guidance on when to perform IFLUX, refer to Chapter 3.
+  4.2.7. Setup.
+     4.2.7.1. For Pre-sunrise calibrations: Ensure the antennas are off the sun (i.e., leave in
+     stow position). NOTE: If snow stowed, move the antenna(s) 30 degrees toward the sky
+     to avoid Earth-induced RFI.
+     4.2.7.2. For Noon, or Unscheduled, Calibrations :
+         4.2.7.2.1. Transmit a STATS message for all frequencies that will be off patrol
+         during the calibration. NOTE: Normally it will not be necessary to include the SRS,
+         since it will be off patrol for less than five minutes.
+         4.2.7.2.2. Slew antenna(s) being calibrated approximately 30 degrees pole-ward of
+         the sun for calibration by pressing the Cold Sky button on that antenna’s ACU.
+         4.2.7.2.3. Check to see if RFI is evident. If it is, a minor adjustment in the east/west
+         position may reduce it, or the antennas could be put 30 degrees east (behind) of the
+         sun. If RFI still exists and time permits, wait for it to end before proceeding with the
+         calibration.
+  4.2.8. Running the RCAL Program (up to the drift).
+     4.2.8.1. Select the RCAL option from the Calibration pull down menu.
+         4.2.8.1.1. Select the frequencies to be calibrated.         NOTE:       Do not calibrate
+         frequencies with excessive RFI in progress.
+         4.2.8.1.2. Select astronomical correction (default).
+     4.2.8.2. Select the Start RCAL button and follow the directions displayed on the screen.
+AFWAMAN15-2 13 NOVEMBER 2013                                                               31
+
+
+       4.2.8.2.1. Cold Sky “Calibrate” Reading.
+       4.2.8.2.2. Leave all Calibration Switches in the “LOAD” position, and all RF Input
+       Switches in the “ANTENNA” position. NOTE: If RFI exists, wait for the RFI to
+       end if time permits before proceeding with the calibration on the affected frequencies.
+       Alternatively, the analyst can place the corresponding RF Input switch(es) in the
+       “LOAD” position and proceed with the calibration, this is known as a “LOAD/LOAD
+       System Calibration”. In a LOAD/LOAD calibration the phrase “cold sky calibrate
+       reading” is misleading, but the value obtained is used exactly as if it were a cold sky
+       reading.
+    4.2.8.3. The system will collect approximately 10 seconds worth of cold sky (or
+    load/load) data and then average the results.
+    4.2.8.4. The following process is completed for the noise tubes.
+       4.2.8.4.1. Turn all Calibration Switches to the “NOISE GEN” position. Ensure all
+       noise sources are stable before continuing with the calibration.
+       4.2.8.4.2. Allow the RIMS Analysis computer to take an approximate 10 second
+       reading of the noise sources. Meanwhile, verify the presence of a noise source trace
+       on graphic displays, (i.e., a deflection to the right of the cold sky trace).
+    4.2.8.5. Upon completion of the sampling/averaging phase, the system will display the
+    master maximum and slave uncorrected and corrected maximum SFU values.
+       4.2.8.5.1. Caution: Accepting any seriously erroneous calibration values, such as
+       4995MHz values outside the 10% tolerance, may necessitate additional calibrations to
+       return the radio to acceptable cal values and baseline.
+       4.2.8.5.2. The “MASTER” readouts are the maximum SFU values for the Master
+       5207 LIAs.
+       4.2.8.5.3. The “U SLV” (Uncorrected Slave) readouts are the maximum SFU values
+       for the Slave 5207 LIAs before a linearity correction is applied.
+       4.2.8.5.4. The “C SLV” (Corrected Slave) readouts are the maximum SFU values for
+       the Slave 5207 LIAs after a linearity correction is applied. For any linear radios, the
+       U SLV and C SLV values will be the same, since a linearity correction is not applied.
+       4.2.8.5.5. For each discrete frequency, verify the Master and C SLV maximum
+       values are within tolerance values listed in Table 4.1. NOTE: If a recalibration does
+       not bring the value(s) into tolerance, log out equipment and notify maintenance unless
+       RFI is the cause. Once the values are accepted they will be loaded for operational
+       use, and the analyst should proceed with the calibration.
+    4.2.8.6. Check the boxes to indicate which frequencies to accept or if performing a
+    complete RCAL (all eight frequencies) the boxes are automatically checked.
+    4.2.8.7. Select “Yes” when asked if Track Sky values need to be collected.
+       4.2.8.7.1. Cold Sky “Track” Reading. This reading establishes the zero SFU level
+       for each discrete frequency, and is also used in conjunction with the drift reading to
+       determine IFLUX values.
+ 32                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+              4.2.8.7.1.1. Place all calibration switches to the “LOAD” position.
+              4.2.8.7.1.2. Leave all RF Input switches in the “ANTENNA” position, or return
+              them to the “ANTENNA” position if a “LOAD/LOAD System Calibration” is
+              being done.
+              4.2.8.7.1.3. The RIMS Analysis computer will automatically set the sensitivity of
+              the Slave LIAs to the “Track” setting. If necessary, manually adjust the
+              “UP/DOWN SET” keys on the amplifiers.
+          4.2.8.7.2. Allow the computer to take an approximate 10 second reading of the cold
+          sky. NOTE: Check the RIMS Analysis display to ensure no RFI was in progress
+          during this reading. If RFI did occur, re-accomplish the calibration, since RFI here
+          can cause low IFLUX values and baselines.
+       4.2.8.8. Upon completion, close the RCAL window.
+   4.2.9. Post-RCAL Program Procedures.
+       4.2.9.1. For a pre-sunrise system calibration: Position the antennas to acquire the sun at
+       radio sunrise.
+       4.2.9.2. For a noon, or unscheduled, system calibration.
+          4.2.9.2.1. Position the antenna on the sun and resume normal patrol. Transmit a
+          STATS message showing the antenna(s) are on patrol.
+4.3. Noise Tube (NT) Adjustments and Absolute Calibrations. The NT value is used during
+daily system calibrations, and its accuracy is essential for consistent burst and IFLUX data
+throughout the network. A new NT value (in SFU) is calculated after a correction factor is
+derived from comparing several days’ worth of data from the reference observatory and the
+entire network, to the IFLUX data from the site.
+   4.3.1. Absolute NT Calibration. The Absolute NT Calibration requires continuously quiet
+   solar conditions (same sun) and comparison with a reference observatory. This calibration
+   requires comparing solar radio flux (IFLUX) readings from the observatory that needs to be
+   calibrated, with readings from a reference observatory. The reference observatory must have
+   previously been either calibrated directly against an absolute standard (e.g., stellar) radio
+   source, or against another site, which was calibrated against an absolute standard. Typically,
+   absolute calibrations will be performed during, or shortly after, solar minimum.
+   4.3.2. NT Adjustments.
+       4.3.2.1. Perform a NT adjustment as needed, or when any of the following occur:
+          4.3.2.1.1. A noise source generator is replaced (and the output has changed). NOTE:
+          This is a solid-state internal noise source generator, which is no longer physically a
+          tube. However, the term NT is still in common use.
+          4.3.2.1.2. Components from the Dickie switch to the antenna are replaced (causing
+          the output readings to change).
+          4.3.2.1.3. Burst and IFLUX data consistently differ from other radio sites'
+          unqualified data by more than 10 percent. NOTE: NT values should only be
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    33
+
+
+           adjusted as a last resort. Make every effort to ensure all other avenues are
+           investigated and/or exhausted, and a NT adjustment is necessary, before proceeding.
+       4.3.2.2. Procedure.
+           4.3.2.2.1. Pick a 3-5 day period with a minimum of solar activity. Average the
+           unqualified IFLUX values from the standard observatory for each day. Example for
+           410 MHz: (43 + 47 + 49)/3 = 46.33 SFUs. CAUTION: Large active regions
+           appearing on the east limb, or rotating past the west limb, can cause significant
+           differences in the IFLUX values. In the averaging process, use only IFLUX values
+           that represent observations of the “same” sun.
+           4.3.2.2.2. Find the ratio of the standard observatory’s averaged IFLUX value (e.g.,
+           46.33) to the observatory’s IFLUX value (e.g., 38). EXAMPLE: 46.33/38 = 1.2192
+           SFUs.
+           4.3.2.2.3. Repeat the steps above for the other quiet days selected, and calculate an
+           average ratio. EXAMPLE: (1.2192 + 1.3210 + 1.1156 + 1.4555)/4 = 1.2778 SFUs.
+           NOTE: Look over all the values for the last several days’ data to ensure there is
+           logical continuity. The key is to use stable (at each site) data, and data of the “same”
+           sun. Do not try to hit a moving target (fluctuating due to changing solar conditions).
+           The analyst should have a very good idea where the IFLUX should be at the present
+           moment.
+           4.3.2.2.4. Multiply the averaged ratio (e.g., 1.2778) times the current NT value
+           (without an astronomical correction; e.g., 19.30 SFUs) to get an uncorrected NT value
+           for use in daily system calibrations. EXAMPLE: 1.2778 x 19.30 = 24.66 SFUs (the
+           new NT value).
+       4.3.2.3. When a new NT value is determined:
+           4.3.2.3.1. Ask maintenance to do a rack alignment on the affected radiometer, and
+           then perform a system calibration with the new NT value input into the RIMS
+           Analysis program. A new linearity calibration will also be required if the new NT
+           value was cause for any adjustment on the IF Amplifier, the 5207 LIA, or the
+           mixer/pre-amplifier.
+           4.3.2.3.2. Update the RSTN calibration (RCAL) program with the new NT value.
+           Maintain a permanent local record of all NT value changes (to include new value,
+           date changed, and reason for change).
+           4.3.2.3.3. Report the NT value change in at least three successive End of Day
+           Summary (NWXX60) messages to ensure receipt by SPACEWOC and all other
+           RSTN sites.
+4.4. Linearity Calibration. This calibration corrects for inherent deficiencies found in the
+radiometers (in particular, in the 5207 LIAs and IF Amplifiers). Normally, only large bursts,
+which enter the range of a Slave 5207 LIA, will display distortions due to equipment limitations.
+At times, problems can be detected within the range of a Master LIA, but these are normally
+caused by alignment problems or malfunctioning equipment, and should be corrected by means
+other than a linearity correction. The desired result from an automated linearity calibration are
+the input values (Min Flux, Max Flux, A, and B) for entry into the non-linearity correction
+ 34                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+values table. These values allow the computer to automatically apply any required linearity
+corrections to automated bursts.
+   4.4.1. Perform a linearity calibration at the following times:
+       4.4.1.1. Anytime a radiometer rack alignment is accomplished. A rack alignment should
+       be done when:
+          4.4.1.1.1. A NT value is established that results in any change being made to the IF
+          amplifier.
+          4.4.1.1.2. Equipment, which could alter the sensitivity settings or gain factors of the
+          LIAs, is adjusted or replaced. EXAMPLES: Replaced a Dickie switch or mixer pre-
+          amp, replaced or readjusted an IF amplifier.
+   4.4.2. When a linearity calibration is needed on a frequency, qualify bursts which enter the
+   slave amplifier range as uncertain due to equipment until the linearity calibration can be
+   performed. IFLUX values and bursts that remain in the master amplifier range will not
+   normally be affected by the need for a linearity calibration. NOTE: If non-linearity occurs
+   within the range of a master amplifier, or if a slave amplifier is non-linear throughout most or
+   all of its range, an equipment problem exists and maintenance should be notified.
+   4.4.3. Preliminary Setup.
+       4.4.3.1. A maintenance technician must be present during the entire calibration. Request
+       maintenance assistance to operate the signal generator throughout the calibration. Ensure
+       the radio about to be calibrated has been stable for at least 48 hours. If not, postpone the
+       linearity calibration.
+          4.4.3.1.1. Make any last minute adjustments to the frequency’s radiometer before
+          starting the calibration.
+   4.4.4. Transmit a STATS message to take the frequency to be calibrated off patrol. NOTE:
+   It will not be necessary to take the associated antenna off the sun during the pre-linearity
+   system calibration or the linearity calibration. However, it will normally be necessary to take
+   the antenna off the sun for the post-linearity system calibration’s track sky reading.
+   4.4.5. Pre-Linearity System Calibration. This pre-linearity system calibration is a unique
+   type of calibration, which can be referred to as a “LOAD/LOAD System Calibration”. It
+   does not require the antenna to be moved off the sun. It is necessary to perform 2
+   LOAD/LOAD RCALs before attempting the LINCAL. This will ensure that the Cold Sky
+   RCALs are completely cleared out of the system.
+       4.4.5.1. Load/Load RCAL.
+          4.4.5.1.1. Select the Linearity Calibration (LINCAL) option from the Calibration pull
+          down menu.
+          4.4.5.1.2. Select the frequency requiring the LINCAL from the pull down box.
+          4.4.5.1.3. Place both the Calibration switch and the RF Input switch in the “LOAD”
+          positions. Perform a Load/Load RCAL, making sure to deselect the “astronomical
+          correction” check box before starting the calibration.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 35
+
+
+          4.4.5.1.4. Allow the computer signal to settle before taking a reading (takes
+          approximately 10-15 seconds).
+      4.4.5.2. Calibration Source Reading.
+          4.4.5.2.1. Turn the Calibration switch to the “NOISE GEN” position.
+          4.4.5.2.2. Leave the RF Input switch in the “LOAD” position setting (RIMS Analysis
+          automatically switches the settings).
+          4.4.5.2.3. Allow the computer to take an approximate 10 second reading of the Noise
+          Tube (NT).
+          4.4.5.2.4. The “MASTER”, “U SLV" and “C SLV” readouts are the maximum SFU
+          values for the Master and Slave 5207 LIAs.
+          4.4.5.2.5. Verify the Master and U SLV/C SLV maximum values are within the
+          tolerance ranges set in Table 4.1. If a value isn’t within tolerance, do not proceed
+          further. Ask maintenance to thoroughly check the equipment, and then re-accomplish
+          the pre-linearity system calibration.
+
+Table 4.1. Standards and Ranges for Master and Slave Lock-In Amplifiers.
+
+                                   10%           (U SLV or C
+FREQUENCY MASTER                 RANGE              SLV)            20% RANGE
+    245    1100                  990-1210          500,000         400,000-600,000
+    410    1100                  990-1210          500,000         400,000-600,000
+    610    1100                  990-1210          500,000         400,000-600,000
+   1415    1000                  900-1100          100,000          80,000-100,000
+   2695    3000                 2700-3300           50,000           40,000-60,000
+   4995    3000                 2700-3300           50,000           40,000-60,000
+   8800    3000                 2700-3300           50,000           40,000-60,000
+   15400   3000                 2700-3300           50,000           40,000-60,000
+
+      4.4.5.3. Cold Sky “Track” Reading.
+          4.4.5.3.1. Place the Calibration switch to the “LOAD” position.
+          4.4.5.3.2. Leave the RF Input switch in the “LOAD” position. The reason for
+          leaving the radiometer in “LOAD” during cold sky track (not the normal procedure)
+          is to zero out the baseline in the RIMS Analysis computer before beginning the
+          linearity.
+          4.4.5.3.3. Ensure the absence of all NT traces on the RIMS Analysis display.
+          4.4.5.3.4. Allow the computer to take a 10 second reading.
+          4.4.5.3.5. If any discrepancies are noticed during the RCAL (e.g., a switch was
+          discovered in the wrong position during a reading, or a calibration value was bad), as
+          appropriate, investigate the reason for the problem and re-run the system calibration.
+36                                                  AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     4.4.5.4. After the pre-linearity system calibration is completed, leave the RF Input switch
+     in the “LOAD” position, and ensure the RIMS Analysis is properly adjusted and running
+     during the linearity calibration.
+  4.4.6. Linearity Calibration Worksheet. Prepare a worksheet, computer printout or use a
+  computer-based spreadsheet as shown in Figure 4.1 to record the linearity calibration data for
+  completing LINCALS. The column headings for the automated linearity calibration
+  worksheet are:
+     4.4.6.1. “dB LEVEL” - This is the decibel level recorded from the signal generator.
+     4.4.6.2. “TRUE (Y)” - This is the “True” SFU value calculated for each dB level by a
+     routine described in paragraph 4.4.8.1. EXCEPTION: The very first “TRUE (Y)” value
+     on the worksheet will be the current Uncorrected NT value.
+     4.4.6.3. “MEAS (X)” - This is the “Measured” SFU value obtained directly off the
+     analyst’s system terminal for each dB level.
+     4.4.6.4. “DIV%” - This value (deviation) is obtained by dividing the “MEAS (X)” SFU
+     value by the “TRUE (Y)” SFU value for each dB level.
+  4.4.7. Performing the Linearity Calibration.
+     4.4.7.1. Setup.
+         4.4.7.1.1. Leave the antenna on the sun.
+         4.4.7.1.2. Leave the RF Input Switch in the “LOAD” position. It should remain in
+         this position throughout the linearity calibration.
+         4.4.7.1.3. RIMS Analysis should be on, set properly, and running from the previous
+         pre-linearity system calibration.
+         4.4.7.1.4. Maintenance will connect a signal generator to the radiometer associated
+         with the frequency requiring the LINCAL.
+         4.4.7.1.5. Start the LINCAL spreadsheet program on a separate computer or have the
+         printout ready if no spreadsheet program is available.
+     4.4.7.2. Have maintenance obtain a noise tube-signal generator match.
+         4.4.7.2.1. Ensure the Calibration Switch is in the “NOISE GEN” position.
+         4.4.7.2.2. Place the Calibration Switch to the “CW CAL GEN” position, and leave it
+         there throughout the remainder of the linearity calibration. Have maintenance adjust
+         the dB setting on the signal generator until it matches the NT value.
+         4.4.7.2.3. Record the dB setting on the first line of the spreadsheet under the heading
+         “dB LEVEL” where match occurs.
+         4.4.7.2.4. Read the current SFU value from the RIMS terminal. A good NT match
+         value is critical to accomplishing a successful linearity. For the larger Slave LIA
+         values it may be necessary to use an average of the readings, if the values fluctuate.
+         Enter the value on the first line, under “MEAS” column of the worksheet. In Figure
+         4.1, a sample value of 35 is entered for the measured SFU value.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 37
+
+
+          4.4.7.2.5. Place the current Uncorrected NT value (in SFUs) on the first line under
+          the “TRUE (Y)” column. In Figure 4.1, a sample Uncorrected NT value of 35.0
+          SFUs is entered. NOTE: The “TRUE” and “MEAS” columns should be within 5
+          percent of each other. If not, have maintenance check the radiometer and the signal
+          generator. In Figure 4.1, the sample “TRUE” and “MEAS” columns are within 5
+          percent of each other, so the calibration can continue.
+          4.4.7.2.6. Calculate the “DIV%” (deviation value) for the noise tube-signal generator
+          match, and log the result on the first data line. In Figure 4.1, the “DIV%” equaled
+          1.00 (i.e., “MEAS (X)” = 35 divided by “TRUE (Y)” = 35.0).
+
+Figure 4.1. Worksheet with Noise Tube-Signal Generator Match Values.
+
+   dB LEVEL         TRUE (Y)(SFU)      MEAS (X)(SFU)        DIV% (MEAS/TRUE)
+      86.7              35.0                35                     1.00
+
+      4.4.7.3. Have maintenance step the signal generator down in 2 dB increments for the
+      Master LIA’s readings, and 1 dB increments for just before, during, and just after the
+      crossover from the Master to the Slave LIA’s readings. Have maintenance continue with
+      the 2 dB increments until the Slave LIA begins to go non-linear. Data points should be
+      computed at 1dB intervals anytime a curve fit calculation is being performed. Straight-
+      line data (linear) does not necessitate any extra data points. At each dB increment,
+      record:
+          4.4.7.3.1. The dB value from the signal generator in the “DB LEVEL” column.
+          4.4.7.3.2. The measured SFU value from the analyst’s terminal in the “MEAS (X)”
+          column.
+      4.4.7.4. Identify the point of change over from the Master LIA to the Slave LIA, and
+      mark it on the worksheet for future reference.
+   4.4.8. Linearity Calculations.
+      4.4.8.1. Calculate the “TRUE (Y)” SFU value at each dB level by multiplying the
+      previous “TRUE (Y)” value by the appropriate Power Ratio (from Table 4.2), and log the
+      result in the “TRUE (Y)” column. (This is usually done automatically by the
+      spreadsheet.)
+
+Figure 4.2. Sample Linearity Calculation.
+
+CALCULATION: Initial dB setting from the noise tube-signal generator match           =86.7
+Next dB level                                                                        =85.0
+Change in dB’s                                                    =1.7 (i.e., 86.7 - 85.0)
+Power ratio for a 1.7 dB change (from Table 4.2)                                 =1.4793
+“TRUE (Y)” SFU value at 86.7 dB                                                     =35.0
+“TRUE (Y)” SFU value at 85.0 dB                               =51.8 (i.e., 35.0 x 1.4793)
+ 38                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+        4.4.8.2. Calculate the deviation at each dB level by dividing the “MEAS (X)” value by
+        the “TRUE (Y)” value, and record the results in the “DIV%” column (the spreadsheet
+        will perform these computations).
+
+Table 4.2. Power Ratio for Change in Decibels.
+
+       CHANGE IN                 POWER                CHANGE IN                 POWER
+       DECIBELS                  RATIO                DECIBELS                  RATIO
+          0.0                     1.0000                  1.5                    1.4127
+          0.1                     1.0233                  1.6                    1.4456
+          0.2                     1.0471                  1.7                    1.4793
+          0.3                     1.0715                  1.8                    1.5137
+          0.4                     1.0965                  1.9                    1.5490
+          0.5                     1.1221                  2.0                    1.5851
+          0.6                     1.1482                  2.5                    1.7780
+          0.7                     1.1749                  3.0                    1.9950
+          0.8                     1.2023                  4.0                    2.5120
+          0.9                     1.2303                  5.0                    3.1620
+          1.0                     1.2590                  6.0                    3.9810
+          1.1                     1.2883                  7.0                    5.0120
+          1.2                     1.3184                  8.0                    6.3100
+          1.3                     1.3491                  9.0                    7.9430
+          1.4                     1.3805                 10.0                   10.0000
+
+   4.4.9. The Non-Linearity Point.
+        4.4.9.1. A linearity correction should never be required for a Master LIA. In fact, if the
+        master amplifier is non-linear, notify maintenance immediately since an equipment
+        problem exists. The Slave LIA may go non-linear towards the end of its range, although
+        it is not uncommon for a slave amplifier to remain linear throughout its range. A slave
+        amplifier should not be entirely non-linear, or become non-linear after just a couple of
+        readings. If this occurs, have maintenance verify the alignment of the radiometer.
+        4.4.9.2. Determine where the Slave LIA starts to go non-linear. An indication of non-
+        linearity is a sudden and continuous drop in the “DIV%” values. For example, in Figure
+        4.3, the point of non-linearity begins at 47 dB. Since the point of non-linearity may not
+        be obvious from the “DIV%” values on the worksheet, the plots must be graphed and the
+        point of non-linearity must be determined from the graph.
+
+Figure 4.3. Sample Portion of Worksheet with Slave Lock-In Amplifier Values.
+
+      dB LEVEL          TRUE (Y)             MEAS(X)            DIV% (MEAS/TRUE)
+          61              93,327               92,788                 0.99
+          59             105,898              105,096                 0.99
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    39
+
+
+      57                117,219               115,227                    0.98
+      55                134,359               132,050                    0.98
+      53                169,159               162,744                    0.98
+      51                212,971               209,767                    0.98
+      49                268,130               260,762                    0.97
+      47                297,576               281,520                    0.95
+      45                323,008               301,188                    0.93
+      43                393,612               357,222                     0.9
+      41                401,122               458,076                    0.87
+
+     4.4.9.3. Compute averages of the “DIV%” deviation values for both the Master LIA and
+     the linear portion of the Slave LIA. If either of these averages vary by more than 5
+     percent notify maintenance immediately since excessive deviations may indicate a
+     possible equipment malfunction. NOTE: Do not attempt to adjust either the Master or
+     Slave LIAs’ sensitivity factors.
+  4.4.10. Non-Linear Corrections for the Computer.
+     4.4.10.1. Using the last 3 data points (but no more than 9) past the point of non-linearity,
+     enter the reported and theoretical SFU values into the RIMS LINCAL window as X-Y
+     pairs. Enter a carriage return after each pair and then zero, zero (0,0) for the last X-Y
+     pair. NOTE: Must have at least 3 data points. If the radiometer goes non-linear at last
+     two readings it is considered linear. Trying to add a third with a linear data point will
+     make the U SLV value higher than the corrected.
+  4.4.11. Post-Linearity Calibration Tasks.
+     4.4.11.1. Place the RF Input Switch in the “ANTENNA” position, and the Calibration
+     switch in the “LOAD” position.
+     4.4.11.2. Type in the frequency’s baseline before the linearity calibration was performed.
+     4.4.11.3. Reset the burst threshold for normal burst patrol (e.g., about 100 SFUs).
+     Ensure the 2695MHz burst threshold is changed to match the current base line setting.
+     4.4.11.4. Post-Linearity System Calibration: Perform two Cold Sky RCALs on the
+     frequency, using the procedures from paragraph 4.2. This is necessary in order to clear
+     the LOAD/LOAD RCAL values from the system. Take care to verify the accuracy of
+     this calibration at each step. It is particularly important to ensure the Calibration Source
+     Readings (“MASTER”, and “C SLV”) for both the Master and Slave LIAs are within the
+     tolerance ranges set in Table 4.1. Record these values, since they may be for reference
+     during future troubleshooting. NOTE: When determining comparison standards, U SLV
+     should be used if radiometer is non-linear and a correction is added.
+     4.4.11.5. Transmit a STATS message bringing the frequency back on the sun.
+     4.4.11.6. Place all the paperwork from the linearity calibration (i.e., printouts, forms, etc)
+     in a safe location for after-the-fact quality assurance (QA) and future reference.
+     4.4.11.7. Some items to QA.
+40                                             AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     4.4.11.7.1. The “TRUE (Y)” and “MEAS (X)” SFU values for the noise source-
+     signal generator match were within 5 percent.
+     4.4.11.7.2. The point where the Slave LIA went non-linear was analyzed correctly.
+     4.4.11.7.3. The data points entered into the RIMS LINCAL program were correct.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                      41
+
+
+                                           Chapter 5
+
+                             RIMS IFLUX MEASUREMENTS
+
+5.1. Theory.
+   5.1.1. Noontime IFLUX measurements.
+      5.1.1.1. IFLUX measurements will determine the quiet sun’s background output at radio
+      wavelengths. This background radio emission, produced by the thermal motion of
+      charged particles, is dependent on the sun’s temperature and density at the levels where it
+      is produced. Measurements are made as close as practical to local noon to minimize the
+      effect of atmospheric attenuation. Noontime measurements also provide a degree of
+      standardization that permits meaningful comparison of IFLUX values over time at a
+      given observatory, or between observatories. The noon IFLUX value measured on any
+      particular frequency will vary with time due to atmospheric conditions, equipment
+      performance, and changes in solar output. Flux values will increase or decrease over a
+      time scale of several hours (e.g., large areas rotating on or off the Solar Disk), weeks
+      (Slowly Varying Component), and months or years (11-year Solar Cycle).
+      5.1.1.2. The noontime IFLUX measurement also represents a baseline against which
+      solar radio bursts are measured. Of course, the baseline will need adjustments
+      periodically throughout the observing day to allow for atmospheric attenuation and
+      increasing or decreasing slowly varying component. Radio bursts are caused by
+      transitory non-thermal radio energy released during solar flares or other disturbances in
+      the solar atmosphere. Bursts represent radio output over-and-above the normal thermal
+      background (or baseline) solar radio output at the time of the burst.
+      5.1.1.3. IFLUX Reports. Make integrated radio flux measurements within plus or minus
+      one hour of CMP, and as close as possible to CMP, IAW the procedures in this guidance.
+      If unable to perform IFLUX while another site is on patrol, a split IFLUX is mandatory.
+      When performing a split IFLUX, calibrate the 3 and 8 foot antennas together, and the 28
+      foot antenna subsequently.
+          5.1.1.3.1. Delay or perform the noon calibration early (within plus or minus 1 hour of
+          CMP) when:
+          5.1.1.3.2. No other radio site is on patrol (a split IFLUX is required).
+          5.1.1.3.3. Normalize lights are out. Recommend not performing calibration if
+          normalize lights are out and delaying IFLUX measurement until radio has been re-
+          normalized. Performing calibration in this situation gives extremely erroneous
+          readings. (Unless an IFLUX is imminent and maintenance has not yet arrived. In
+          such a situation, proceed with caution).
+          5.1.1.3.4. Radiometers are in their 1-hour stabilization period after a power outage.
+          5.1.1.3.5. Solar radio burst activity is in progress, and fluctuating amplifier values
+          indicate it's very unlikely that any representative baseline values will be produced.
+          Baselines may fluctuate considerably and/or remain “superheated” for hours
+          following very large bursts.
+ 42                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+           5.1.1.3.6. When weather (i.e. heavy rain, thunderstorms, snow) is expected at CMP
+           and attenuation would be minimized by delaying it or performing it early.
+        5.1.1.4. If circumstance delays measurement beyond 1 hour after CMP, complete the
+        IFLUX as soon as possible. Qualify any attenuated IFLUX values as uncertain due to
+        weather (meaning atmospheric attenuation in this case). If the delay extends more than 3
+        hours after CMP, do not perform an IFLUX measurement.
+        5.1.1.5. To ensure data consistency, compare observed IFLUX values against the
+        unqualified network average values IAW procedures in Chapter 3, Section 3.5.
+   5.1.2. Magnitude of IFLUX values vary by frequency.
+        5.1.2.1. The quiet sun (i.e., background) thermal radio output depends on the density of
+        the portion of the solar atmosphere where it is produced. As altitude increases from the
+        solar surface (photosphere), through the solar atmosphere (the chromosphere and corona),
+        the density of particles undergoes a nearly steady decrease.
+        5.1.2.2. The decrease in density with increasing altitude has two effects. First, it causes
+        the frequency of radio energy produced at each level in the atmosphere (known as the
+        “characteristic” frequency) to decrease as altitude increases. For example, the density
+        near the sun’s surface produces radio energy near 35,000 MHz, while the density in the
+        outer corona produces radio energy of a few MHz. Second, the decrease in density with
+        altitude causes a decrease in the amount of radio energy produced, despite the general
+        rise in temperature with altitude. Thus, measured IFLUX (or background) values
+        decrease as altitude increases and frequency decreases. Table 5.1 shows the relationship
+        between increasing altitude and decreasing “characteristic” frequency and IFLUX values.
+
+Table 5.1. Variation of the Solar Radio Spectrum with Altitude.
+
+                                                   Typical IFLUX Value       Typical IFLUX Value
+      Level of     Frequency
+                                  Wavelength         (SFUs) at Solar           (SFUs) at Solar
+                     (MHz)
+      Origin                                            Minimum                   Maximum
+     lower           15400            1.9 cm                525                       590
+ chromosphere         8800            3.4 cm                230                       300
+    middle            4995            6.0 cm                110                       265
+ chromosphere         2695           11.1 cm                 70                       215
+                      1415           21.2 cm                 55                       135
+     upper
+                       610           49.2 cm                 35                        80
+ chromosphere
+                       410           73.2 cm                 20                        45
+  lower corona         245            1.2 m                  10                        20
+  upper corona      75 to 25     4.0 m to 12.0 m            N/A                       N/A
+
+   5.1.3. IFLUX values change slowly over time.
+        5.1.3.1. Background Component. The majority of the energy that contributes to IFLUX
+        values comes from the Background Component of solar radio emission. This component,
+        produced by the thermal motion of free electrons throughout the solar atmosphere is
+        fairly steady in quantity, but will vary during the course of the 11-year solar cycle. In
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    43
+
+
+      fact, its intensity is roughly 25 to 60 percent greater at sunspot maximum than at
+      minimum.
+      5.1.3.2. Slowly Varying Component (SVC). The SVC also contributes to the size of
+      IFLUX values. Produced by the same thermal mechanism as the Background
+      Component, SVC represents the extra thermal energy produced by active regions. These
+      active regions, at any given level in the solar atmosphere, are hotter and (more
+      importantly) denser than the general background sun outside active regions. So these
+      active regions produce extra radio energy, adding to the Background Component’s
+      contribution to measured IFLUX values. The SVC varies over a time scale of days-to-
+      weeks as active regions grow and decay, or move across the visible face of the sun.
+      Since these active regions are concentrated in the chromosphere, their contribution is
+      most noticeable near 2800 MHz, but may be detectable in the range from about 600 to
+      8000 MHz. Since the SVC is due to active regions, it is a greater contributor of energy
+      near solar cycle maximum than near solar minimum. In fact, near solar maximum the
+      intensity of the SVC contribution can equal that of the Background Component near 2800
+      MHz. The baseline on 2695 MHz can actually become slightly higher than the baseline
+      observed on 4995 MHz. Similarly, the baseline on 4995 MHz can approach, and
+      sometimes even exceed, that observed on 8800 MHz.
+5.2. IFLUX Measurement Procedures.
+   5.2.1. Separate calibration of the 8 and 28 foot antennas is mandatory if no other radio site is
+   on patrol. If a separate calibration (split IFLUX) is done, the 3 and 8-foot antennas should be
+   calibrated together, and the 28-foot calibrated at another time.
+   5.2.2. When conditions exist (e.g., site equipment problems, the site is the only one on
+   patrol, solar activity is occurring or may occur) that delay the IFLUX measurement beyond
+   one hour after CMP, complete the measurement as soon as possible. Qualify the IFLUX
+   values as uncertain due to weather (meaning atmospheric attenuation in this case). If the
+   delay extends more than 3 hours after CMP, do not perform an IFLUX measurement, and
+   send out a PLAIN explaining the situation.
+   5.2.3. If equipment problems or weather prevent acquiring IFLUX data on any frequency,
+   omit that frequency from the IFLUX message. Append a PLAIN, if necessary, to explain the
+   missing data. If no IFLUX data is obtainable on any frequency, send out a PLAIN
+   explaining the situation.
+   5.2.4. Use IFLUX qualifiers to identify uncertain data. If there is clearly no doubt that an
+   IFLUX value is bad or useless, omit that frequency from the IFLUX message (e.g., a
+   severely depressed value due to moisture in an antenna feed, or a highly elevated value due
+   to RFI or a large burst.) As a rough guideline, a “bad” IFLUX value is one that differs by
+   about 75 percent from its typical value. EXCEPTION: If the elevated IFLUX value is due
+   to the enhanced continuous emission associated with a noise storm, transmit the measured
+   IFLUX value qualified as uncertain due to a burst in progress.
+   5.2.5. If there is doubt as to the accuracy of an IFLUX value, qualify it as unknown. Do not
+   qualify an IFLUX value only because it differs from another site’s value. NOTE: The other
+   site could be incorrect, or solar output may have undergone a significant change since the
+   earlier measurement. Qualify an IFLUX value whenever:
+44                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     5.2.5.1. A noise storm is in progress on that frequency (regardless of how weak the noise
+     storm peaks are).
+     5.2.5.2. The baseline on that frequency is elevated (e.g., a gradual rise and fall burst).
+     5.2.5.3. An impulsive solar burst, an equipment problem, RFI, or clouds may have
+     affected the IFLUX measurement.
+     5.2.5.4. Outside of 10% of network average for more than five days.
+  5.2.6. “Standard IFLUX Drift”. Use this method as the primary means for acquiring an
+  IFLUX reading.
+     5.2.6.1. Move the antenna(s) being calibrated back on the sun.
+     5.2.6.2. Select the IFLUX option from the Calibration pull down menu.
+     5.2.6.3. Select the frequencies to be calibrated. NOTE: The IFLUX window displays
+     the current baseline values in the column labeled Old Values.
+     5.2.6.4. Select the “3 min drift” function on the Antenna Control Unit.
+     5.2.6.5. Select the Start Collection button on the IFLUX window and allow the RIMS to
+     read the sun’s output as it drifts across the antenna(s). Either minimize the IFLUX
+     window or move it out of the way in order to see the signal strength rise on each of the
+     frequencies.
+     5.2.6.6. After the sun’s output passes its peak value on all frequencies, select the Finish
+     Collection button on the IFLUX window. NOTE: Starting the drift with an excessively
+     weak signal, or allowing the drift to run excessively beyond the maximum signal
+     attained, only increases the chances of collecting RFI. The system will now display the
+     peak value seen on each frequency in the column labeled New Values.
+     5.2.6.7. If acceptable, all of the new IFLUX values can be selected by using the Select
+     All button or individual values by placing a check under the appropriate frequencies.
+     NOTE: The RIMS automatically selects all frequencies used in the drift.
+     5.2.6.8. Use either the Save and Exit or Cancel button to close the IFLUX window
+     without generating a message. Select Generate Message and Exit to bring up the IFLUX
+     Message window. Select the quality of the IFLUX and issue the message.
+  5.2.7. “Peak-IFLUX Drift”. Use this alternate method only when frequent RFI or solar radio
+  burst activity makes it unlikely that accurate IFLUX values are attainable by the primary
+  “Standard IFLUX Drift” reading method.
+     5.2.7.1. Select the IFLUX option from the Calibration pull down menu.
+     5.2.7.2. Select the frequencies to be calibrated.
+     5.2.7.3. Move the antenna(s) being calibrated back onto the sun.
+     5.2.7.4. Select the Start Collection button on the IFLUX window and allow the computer
+     to take a one-minute sample reading.
+     5.2.7.5. Select the Finish Collection button on the IFLUX window. The system will now
+     display the peak value seen on each frequency in the column labeled New Values.
+AFWAMAN15-2 13 NOVEMBER 2013                                                               45
+
+
+    5.2.7.6. Check if the IFLUX values obtained are reasonable by comparing them to the
+    most recent IFLUX values available, acquired locally and from other sites. NOTE: A
+    more detailed trend comparison against the network’s average values is required IAW the
+    IFLUX standardization program in Chapter 3.
+    5.2.7.7. If values appear too high or low by more than 10% against the network average,
+    take another IFLUX reading. Use caution (especially at lower frequencies) as the sun
+    may have increased or decreased output by more than 10% since the last IFLUX. Repeat
+    the previous steps to accomplish another IFLUX measurement. NOTE: DO NOT take
+    another measurement if continuous RFI, a noise storm, or weather was the cause of the
+    high or low reading; just qualify the data appropriately. If, after another IFLUX reading,
+    values are still out of tolerance, qualify the data as “unknown” and notify maintenance.
+    5.2.7.8. If acceptable, all of the new IFLUX values can be selected by using the Select
+    All button or individual values by placing a check under the appropriate frequencies.
+    Values for all eight frequencies will already be selected if performing a complete IFLUX.
+    5.2.7.9. Use the Generate Message and Exit button to bring up the IFLUX message
+    screen. Ensure all values are correctly qualified. Once all items are acceptable issue
+    message. There are two other options available to the analyst. Save the new IFLUX
+    values without generating a message by using the Save button or use the Cancel button to
+    close the IFLUX window not saving any of the values.
+    5.2.7.10. When performing a split IFLUX, save the IFLUX values from the first part of
+    the calibration without transmitting the message. After performing the second part,
+    transmit a message containing all the IFLUX values.
+    5.2.7.11. Put ACU on Solar track.
+    5.2.7.12. Transmit STATS message bringing all applicable frequencies back on to the
+    sun.
+ 46                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+                                           Chapter 6
+
+                  RIMS DISCRETE FREQUENCY BURST ANALYSIS
+
+6.1. Theory.
+   6.1.1. A disturbance in the solar atmosphere (such as a flare) produces radio burst energy by
+   non-thermal mechanisms (e.g., high speed electrons spiraling around magnetic field lines).
+   This transitory, non-thermal radio energy is detected by radiometers as extra solar output,
+   over-and-above the background thermal (or baseline) radio output. Thus, to determine the
+   amount of radio energy caused by a burst alone, it must be measured relative to the sun’s
+   current background (or baseline) emission. An absolute flux measurement relative to zero
+   SFUs (i.e., the background cold sky) is not wanted since it would include both the burst
+   output and the solar background output.
+   6.1.2. The frequency of radio energy produced by a disturbance in the solar atmosphere
+   depends on the density of free electrons at that altitude. Since density generally decreases
+   with increasing altitude, the frequency produced (known as the “characteristic” frequency)
+   will also decrease (Table 5.1). By selecting a wide range of frequencies to monitor, the
+   entire solar atmosphere from its base to the outer corona can be sampled. This sampling
+   effectively produces a vertical sounding through the solar atmosphere, which assists
+   forecasters and scientists in determining the nature of the causative disturbance.
+   6.1.3. The density of free electrons at any given altitude in the solar atmosphere determines
+   more than just what radio frequency is produced by a disturbance at that altitude. It also
+   determines the range of frequencies to which that level is transparent. Each level reflects all
+   radio energy at frequencies less than its “characteristic” frequency, and is transparent to all
+   radio energy at higher frequencies. EXAMPLE: The density in the mid chromosphere
+   produces radio energy near 4000 MHz. All radio energy produced below the mid
+   chromosphere at greater than 4000 MHz can escape through the mid chromosphere, but all
+   radio energy produced at less than 4000 MHz will be reflected back toward the sun’s surface.
+6.2. Microwave Burst Classifications. Microwave (300 to 30,000 MHz) bursts are observed
+using single (fixed) frequency RIMS radiometers. Microwave bursts vary considerably in
+duration (from a fraction of a minute to over an hour), intensity (from a few SFUs to a quarter
+million SFUs), and profile (from simple to complex). However, microwave bursts are grouped
+in three broad classes: Impulsive, Gradual Rise and Fall, and Noise Storm.
+   6.2.1. Impulsive Bursts.
+       6.2.1.1. Impulsive bursts are further divided into four types according to intensity and
+       profile.
+          6.2.1.1.1. “IMPULSIVE” = Intensity less than 500 SFUs; only one peak. (BURST
+          code type U=3.)
+          6.2.1.1.2. “COMPLEX” = Intensity less than 500 SFUs; one or more secondary
+          peaks. (BURST Code type U=4).
+          6.2.1.1.3. “GREAT BURST” = Intensity 500 SFUs or greater; only one peak.
+          (BURST Code type U=5).
+AFWAMAN15-2 13 NOVEMBER 2013                                                                47
+
+
+         6.2.1.1.4. “COMPLEX GREAT” = Intensity 500 SFUs or greater; one or more
+         secondary peaks. (BURST Code type U=6).
+      6.2.1.2. Definitions. A “complex” burst profile displays a primary (highest) peak and
+      one or more secondary peak(s). A “secondary” peak has an amplitude of at least 10%
+      (but not less than 100 SFUs) of the highest peak and is separated from the highest peak
+      by at least two minutes (Figure 6.1).
+      6.2.1.3. Characteristics.
+         6.2.1.3.1. Impulsive bursts are normally associated with the sudden flash phase of a
+         flare. The radio energy is produced by flare-accelerated electrons spiraling about
+         magnetic field lines in a field of several thousand gauss. This non-thermal
+         mechanism can produce very intense, but generally brief, releases of radio energy.
+         Complex bursts will typically be associated with the larger flares, often those with
+         multiple eruptive centers.
+         6.2.1.3.2. The rise to maximum intensity normally occurs in about a minute or less,
+         and peaks at different frequencies almost simultaneously. The decay to pre-flare
+         intensity is more gradual than the rise, and may take a few tens of minutes, or even
+         hours. Complex bursts tend to have longer durations and be more intense, but less
+         common, than simple profile bursts.
+      6.2.1.4. Spectral Group definition. Multiple frequency bursts form a “spectral group” if
+      peaks on each frequency fall within a two minute window beginning with the first peak in
+      the group (Figure 6.2). The first peak in the group does not have to be the largest peak,
+      nor do the peaks used to group the frequencies have to be the largest peaks on each
+      frequency. All bursts in a spectral group should be reported, even those with peaks of
+      less than 100 SFUs. Normally all the discrete frequencies involved should be reported in
+      a single message, with the same local burst serial number. However, if a spectral burst
+      starts very close to the end of the Zulu day, the start time on some frequencies may be
+      just before 2400Z, while on other frequencies it may be just after 0000Z. In such a case,
+      prepare and transmit separate BURST code messages, since the BURST code does not
+      allow inclusion of data for more than one Zulu day in a single message.
+
+Figure 6.1. Complex Burst.
+ 48                                                    AFWAMAN15-2 13 NOVEMBER 2013
+
+
+Figure 6.2. Spectral Group Identification.
+
+
+
+
+       6.2.1.5. Castelli U definition: If a “spectral group” of bursts meets the criteria below, it
+       is labeled a Castelli U (BURST code type T=9). Figure 6.3 shows a Castelli U burst
+       group. A Castelli U signature is believed to be indicative of a proton producing flare.
+
+Figure 6.3. Castelli-U Spectral Burst.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                  49
+
+
+          6.2.1.5.1. A peak of 1000 SFUs or greater on one of the upper three frequencies
+          (4995 through 15,400 MHz).
+          6.2.1.5.2. A peak of 1000 SFUs or greater on one of the lower three frequencies (245
+          through 610 MHz).
+          6.2.1.5.3. A pronounced dip in the middle frequency peaks.
+          6.2.1.5.4. A start-to-peak integrated flux of 100,000 SFU-seconds or greater at 8800
+          MHz.
+          6.2.1.5.5. All peaks used in defining the Castelli-U must fall within a two-minute
+          window.
+   6.2.2. Gradual Rise and Fall Bursts (GRF).
+      6.2.2.1. A GRF burst (BURST code type U=2) is the only type of radio burst produced
+      by a thermal mechanism, which explains why GRFs tend not to be very intense, but can
+      last for hours. During a GRF, magnetic fields in an active region distort, compressing
+      and heating charged particles. These particles increase their thermal radio output (the
+      gradual rise). As the magnetic fields later relax and release the compressed particles, the
+      thermal output declines (the gradual fall). Thus a GRF differs from the SVC only in its
+      shorter time scale (a few tens of minutes to several hours for a GRF, compared to days to
+      weeks for the SVC).
+      6.2.2.2. Characteristics.
+          6.2.2.2.1. GRF bursts rise at a slow (non-impulsive) rate, then decline slowly to the
+          normal quiet sun (baseline) level. Their profiles are generally very smooth (Figure
+          6.4).
+
+Figure 6.4. Gradual Rise and Fall Burst.
+
+
+
+
+          6.2.2.2.2. The peak flux is normally less than 100 SFUs. GRF bursts should be
+          reported even when their peaks are less than 100 SFUs, since they are positively
+          correlated with soft X-rays and disappearing filaments. The onset of a GRF is often
+          difficult to detect. Analysis of a suspected GRF burst will frequently require re-
+          analysis of data over a wide time period.
+          6.2.2.2.3. GRF bursts often occur on several adjacent frequencies simultaneously,
+          producing a “spectral group”.
+          6.2.2.2.4. Due to the long duration of a GRF burst, it is not uncommon for other
+          microwave bursts to be superimposed on a GRF. Analyze superimposed bursts
+          relative to the GRF output, not the pre-GRF baseline, since a superimposed burst
+ 50                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+           represents radio energy output over and above both the normal background solar
+           output and the enhanced GRF output.
+   6.2.3. Noise Storms.
+       6.2.3.1. Noise storms (BURST code type U=1) originate in the upper portions of the
+       solar atmosphere, where disturbances produce low frequency radio energy (Table 5.1).
+       On discrete frequency RIMS radiometers, noise storms are detected at 245 and 410 MHz,
+       and sometimes as high as 610 MHz. On a SRS, they would be detected as a Continuum.
+       6.2.3.2. Characteristics.
+           6.2.3.2.1. Noise storms normally have two components. The first is a slowly
+           varying, enhanced continuous emission over and above the usual quiet sun baseline
+           for a frequency. The second is an irregular series of numerous, closely spaced, spiked
+           peaks (Figure 6.5). Noise storm peaks are measured relative to the pre-storm
+           baseline, so that they will include both the enhanced continuous emission and the
+           spiked components.
+
+Figure 6.5. Noise Storm on 245 MHz.
+
+
+
+
+(The dashed line indicates a flux level several times that of the quiet sun.)
+           6.2.3.2.2. In the frequency range from 30 to 300 MHz, the intensity of the enhanced
+           noise storm continuous emission can occasionally be many times the normal
+           background (or baseline) on a discrete frequency. The intensity of noise storm spiked
+           peaks rarely exceeds about 1000 to 1200 SFUs, as measured relative to the pre-storm
+           baseline. For this reason, a noise storm peak related RAD05 and RAD11 options of
+           the EVENT code are likely to never apply. For that rare noise storm that does have
+           peaks, which reach or exceed 5000 SFUs, report every occurrence of 5000 SFUs or
+           more by a preliminary burst message.
+           6.2.3.2.3. Noise storms can last from several hours to several days. Due to their long
+           duration, it is common for other microwave bursts to be superimposed on a noise
+           storm. Analyze superimposed bursts relative to the noise storm enhanced baseline,
+           since a superimposed burst represents radio energy output over and above both the
+           normal background solar output and the enhanced noise storm continuous output.
+6.3. Tolerance and Burst Analysis.
+   6.3.1. The burst start and end times and the mean and integrated flux computations, depend
+   strongly on the burst threshold. (They also depend on site-to-site differences in equipment
+AFWAMAN15-2 13 NOVEMBER 2013                                                                     51
+
+
+   performance and observing conditions). A burst threshold setting of about 100 SFUs is
+   strongly recommended to ensure consistency between observatories in reported burst times
+   and fluxes, set threshold at 100 percent over baseline for 2695 MHz.
+   6.3.2. An analyst may need to temporarily set the burst threshold higher than the
+   recommended 100 SFUs to maintain effective radio patrol. Some circumstances under which
+   this may be true include:
+       6.3.2.1. When RFI or noise storm activity is in progress, an analyst should set the burst
+       threshold at a value that will avoid frequent false or unneeded computer generated
+       BURST code messages.
+       6.3.2.2. When a burst is taking a long time to decline back to the pre-burst baseline,
+       raising the burst threshold temporarily to force the computer to end the burst will free the
+       analysis program for detection of subsequent bursts. During periods of frequent solar
+       radio activity, keeping the analysis program free can save an analyst considerable time
+       running burst reanalysis programs.
+           6.3.2.2.1. If a new burst occurs on a frequency where the analysis program is still
+           analyzing the tail end of an earlier burst, the analysis program will assume the second
+           burst is part of the first burst. The computer generated BURST message that results
+           will be unusable, and the analyst will need to reanalyze both bursts.
+           6.3.2.2.2. During a multi-frequency burst, the analysis program can end the burst on
+           each frequency separately. If the analyst has declared a noise storm, any peaks
+           generated will show up as noise storm peaks. However, when activity on the
+           frequency in question has been elevated for an extended period of time, the RIMS
+           analysis software would then determine that a super-imposed burst is occurring. It
+           will then suspend the Noise Storm program and generate a burst. When activity on
+           the frequency subsides, the Noise Storm is automatically reinstated and only noise
+           storm activity is reported.
+6.4. Impulsive and GRF Burst Parameters. The parameters below are used to describe
+impulsive and gradual rise and fall bursts. Because of the character, duration, and intensity of
+noise storms, some of their parameters must be defined differently from other microwave bursts
+in paragraph 6.5.
+   6.4.1. Start Time.
+       6.4.1.1. The time, to the nearest tenth of a minute, when the burst first meets or exceeds
+       the burst threshold level. For example, if the burst threshold is set at 100 SFUs, start time
+       will be when the trace (activity) meets or exceeds 100 SFUs.
+       6.4.1.2. See paragraph 6.3 for a discussion of the role played by burst threshold in the
+       burst analysis program.
+       6.4.1.3. The analysis program collects raw data from eight of the system’s sixteen
+       amplifiers every one second. To initially detect a burst, the analysis program examines
+       the 1-second flux data values within a sampling, and selects the minimum value from the
+       block. It then compares the minimum value against the burst threshold. If the minimum
+       value is above the burst threshold, and the minimum value from the sampling was also
+       above the burst threshold, the analysis program declares a burst start. NOTE: The
+52                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     analysis program filters out RFI spikes by requiring the minimum values exceed the burst
+     threshold in two successive samplings. Use extreme caution as the analysis program may
+     filter out event level bursts that are extremely spikey. This will normally occur on the
+     lower frequencies. Burst start time is set as the start of the sampling, even if the analysis
+     program used the last of the sampling to declare the burst.
+  6.4.2. Peak Time. The time, to the nearest tenth of a minute, when the burst reaches its
+  maximum deflection or intensity.
+  6.4.3. End Time.
+     6.4.3.1. The time, to the nearest tenth of a minute, when the enhancement falls below the
+     burst threshold and remains below that level for 2 minutes.
+         6.4.3.1.1. To end a burst, the analysis program examines the 1-second flux data
+         values within a sampling, and selects the minimum value from the block. It then
+         compares the minimum value against the burst threshold. If the minimum value is
+         below the burst threshold plus 4 SFUs, and the minimum values from the last 20
+         consecutive samplings were also below this value, the analysis program declares an
+         end to the burst. The end time of the burst is set at 120 seconds before the start of the
+         20th sampling of data. The analysis program will end the burst independently on
+         each frequency involved. Be careful not to miss activity that re-develops on certain
+         (normally lower) frequencies. The analysis program may end the burst on particular
+         frequencies, while burst activity is still in progress on other frequencies.
+         6.4.3.1.2. When the enhancement doesn’t return to the pre-burst level, the analyst
+         will need to make a judgment call as to when to end the burst on each frequency
+         involved (see the guidelines below for manual end time). A burst can be manually
+         ended, on one or more frequencies, by using the Generate and Clear button in the
+         Graph Dialog Box, which will generate a BURST code message for all affected
+         frequencies. The Clear button located under each frequency in the Graph Dialog
+         Box, will automatically end the burst and generate a BURST code message for the
+         selected frequency(ies). To clear out all data without generating a BURST code
+         message use the Clear All Bursts button located in the Graph Dialog Box.
+     6.4.3.2. Manual End Time.
+         6.4.3.2.1. The time, to the nearest tenth of a minute, when the burst enhancement
+         returns to the pre-burst (background) level for a minimum of 12 seconds. When the
+         enhancement doesn’t return to the pre-burst level, the analyst will need to make a
+         judgment call as to when to end the burst on each frequency involved. Some
+         guidelines include:
+            6.4.3.2.1.1. End the burst when the enhancement does not fluctuate by more than
+            about 5 SFUs within any 2-minute period, or by more than about 5% of its
+            maximum peak value for a 5-minute period. NOTE: This guideline can’t be
+            applied on a frequency that has a noise storm in progress.
+            6.4.3.2.1.2. End the current burst (on all the frequencies involved) if the
+            enhancements have decreased to a level of about 10% of their maximum peaks
+            and a clearly new, significant burst occurs on any of the frequencies involved.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                   53
+
+
+             CAUTION: Exercise care in distinguishing between a single complex burst and
+             several separate bursts. The end time of the preceding burst and the start time of
+             the following burst will be the same, i.e., the time when the rise of the second
+             burst was first discernible.
+  6.4.4. Burst Peak.
+     6.4.4.1. Identification. Only the largest, or maximum, peak for a burst is reported.
+     Secondary peaks, as defined in paragraph 6.2, are only used to determine burst
+     classification, i.e., whether the burst has a simple or complex profile. The maximum
+     peak will not be known for certain until a burst has ended, so preliminary BURST code
+     reports contain the highest peak observed on each frequency up to the time the report was
+     prepared.
+     6.4.4.2. Analysis.
+         6.4.4.2.1. After a burst start is declared, the analysis program monitors the 1-second
+         flux data values within each sampling, and selects the largest value from the
+         sampling. It then compares the largest value against the previously stored largest
+         value. If the new value is higher, a new maximum peak is established. The peak time
+         is set at the start of the applicable sampling. The analysis program also analyzes for
+         secondary peaks to identify complex versus simple bursts.
+  6.4.5. Mean Flux. The mean flux is the average burst intensity (in SFU) for the duration of
+  the burst.
+     6.4.5.1. The mean flux is computed by the analysis program based on its measurements
+     of flux readings, and its determination of burst start and end times. NOTE: If an analyst
+     manually alters the burst times or peak flux, it will be necessary to manually re-compute
+     the mean flux.
+  6.4.6. Integrated Flux. Integrated flux is the total burst radio energy (expressed as solar flux
+  units seconds, SFU-sec) received on a particular discrete frequency. It is equal to the area
+  under the burst time-intensity profile (Figure 6.6). However, all analysts must be capable of
+  calculating integrated fluxes in order to evaluate bursts for Castelli-U criteria or to meet
+  requests from forecast centers for this data during large bursts.
+     6.4.6.1. Manual “Mean Flux” Method. Manually determine start-to-end integrated flux
+     by multiplying the mean flux (in SFUs) by the burst duration (in seconds). (See Figure
+     6.6.)
+ 54                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+Figure 6.6. Integrated Flux “Mean Flux” Method.
+
+
+
+
+(Integrated flux, shaded area, in SFU-sec equals mean flux in SFUs multiplied by the burst
+duration in seconds.)
+       6.4.6.2. The start-to-peak and start-to-end integrated fluxes are computed by the analysis
+       program based on its measurements of flux readings, and its determination of burst start,
+       peak, and end times.
+          6.4.6.2.1. The values computed by the analysis program strongly depend on the burst
+          threshold. They can also differ significantly from manually computed values due to
+          the inaccuracies involved in manual methods and the manner in which the analysis
+          program determines the start and end times for bursts.
+          6.4.6.2.2. If an analyst manually alters the burst times or peak flux, depending on
+          what data was changed, it may be necessary to encode the integrated flux groups as
+          7//// and 9////, or to re-compute these fluxes.
+6.5. Noise Storm Burst Parameters. Because of the character, duration, and intensity of noise
+storms, some of their parameters must be defined differently than for other microwave bursts.
+Noise storms are reportable only during that period when they are producing peaks of 100 SFUs
+or more, relative to the pre-storm baseline.
+   6.5.1. Start Time. The time when rough, spikey activity first reached or exceeded 100 SFUs.
+   If a noise storm was found to be in progress at sunrise, the start time will be the time patrol
+   was started. The first few spikes may also be confused with RFI, but as the storm persists
+   and increases in intensity, identification will become easier. After identification, backdate
+   the start time to include the earliest activity that reached 100 SFUs.
+   6.5.2. Peak Time. The time, to the nearest tenth of a minute, when the noise storm’s
+   maximum peak intensity was reached. Noise storm peaks are measured relative to the pre-
+   storm baseline, so that they will include both the enhanced continuous emission and the
+   spiked components. The RSTN Daily Activity Log provides a location to log the pre-storm
+   baseline value for ready reference. If a noise storm began overnight, use the previous day’s
+   IFLUX value for a pre-storm baseline value. EXAMPLE: On day one, a noise storm began
+   on 245 MHz. The quiet sun (pre-storm) baseline was 15 SFUs. By day two, the baseline on
+   245 MHz has become elevated to 240 SFUs. A 600 SFU peak just occurred.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    55
+
+
+       6.5.2.1. If the peak is determined to be a noise storm peak, it would be a 585 SFU burst.
+       The reason is the peak value (600 SFUs) minus the pre-storm baseline (15 SFUs) equals
+       585 SFUs.
+       6.5.2.2. If the peak is determined to be a superimposed burst (e.g., not typical of recent
+       noise storm peaks, or coincides with peaks on other frequencies, see paragraph 6.6.) it
+       would be a 360 SFU burst. The peak value (600 SFUs) minus the elevated pre-burst
+       background (240 SFUs) equals 360 SFUs. NOTE: Superimposed bursts are analyzed
+       relative to the noise storm enhanced baseline, since they represent radio energy output
+       over and above both the normal background solar output and the enhanced noise storm
+       continuous output.
+   6.5.3. Successively higher noise storm peaks should be reported as they occur, using an
+   updated preliminary BURST code message.
+   6.5.4. Noise storm peaks rarely exceed 1200 SFUs relative to the pre-storm baseline. For
+   this reason a noise storm related EVENT code RAD05 and RAD11 options are likely to
+   never apply. For that rare noise storm, which does have peaks that reach or exceed 5000
+   SFUs, report every peak that does so with an event level SXXX MANOP header preliminary
+   BURST code message. When a noise storm peak reaches 5000 SFUs and it is less than an
+   earlier peak, it is inappropriate to transmit an updated preliminary noise storm BURST code
+   message.
+   6.5.5. End Time. The time when rough, spiky activity last reached or exceeded 100 SFUs.
+   If a noise storm is still in progress at sunset, the end time will be the time patrol was ended.
+   Towards its end, a noise storm will normally fade out gradually. Avoid ending a noise storm
+   prematurely. Monitor the activity for about 30 to 45 minutes to ensure it doesn’t re-intensify.
+   If peaks remain below 100 SFUs, end the storm using the last time a peak reached 100 SFUs
+   or more.
+   6.5.6. If a noise storm is observed on more than one discrete frequency (e.g., 245 and 410
+   MHz), report them as separate noise storms, with separate burst numbers. This will make it
+   possible to end the noise storm on one frequency while it is still in progress on another.
+   6.5.7. Do not report mean flux or integrated fluxes for noise storms. Instead, encode the
+   mean flux as “000” and the integrated fluxes as “////”.
+6.6. Superimposed Bursts. Report a superimposed burst separately from a noise storm, a
+gradual rise and fall burst, or the tail end of another impulsive burst. Guidance on analyzing
+solar radio bursts that occur simultaneously with a satellite RFI elevated baseline is provided in
+paragraph 6.9.1.4.
+   6.6.1. Identification Guidelines. Assume a burst peak is part of a superimposed burst if:
+       6.6.1.1. The peak corresponds exactly in time (to the nearest tenth of a minute) with one
+       or more other discrete frequency burst peaks, or with the onset of sweep activity.
+       6.6.1.2. The peak’s intensity is more than twice that of the average noise storm peaks
+       during the preceding 10 minutes and it remains so for 30 seconds or more. The intensity
+       of the peak is not typical of recent noise storm peaks. Also, noise storm peaks have very
+       narrow time duration, normally less than 5 to 10 seconds, so a longer duration peak
+       implies a non-noise storm origin. (Figure 6.7.)
+ 56                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+   6.6.2. Superimposed Burst Parameters. Analyze superimposed bursts relative to the current,
+   enhanced background, since such bursts represent solar radio energy output over and above
+   both the normal background solar output and the enhanced output from the other burst.
+   Superimposed burst detection and analysis is very difficult for the computer, so most data
+   will require some manual analysis. If appropriate, qualify the superimposed burst as
+   uncertain data due to interference.
+       6.6.2.1. Start Time. The time, to the nearest tenth of a minute, when the burst can first
+       be differentiated from the underlying burst or surrounding noise storm peaks.
+       6.6.2.2. Peak Flux. The maximum peak flux observed during the superimposed burst,
+       minus the current, enhanced background output due to both the quiet sun and the other
+       burst.
+       6.6.2.3. End Time. The time, to the nearest tenth of a minute, when the burst returns to
+       the (enhanced) background level for a minimum of 12 seconds. When the burst doesn’t
+       return to the background level, end the burst IAW guidance provided in paragraph 6.4.3.
+
+Figure 6.7. Superimposed Burst on a Noise Storm.
+
+
+
+
+6.7. Burst Attenuation Corrections. Discrete frequency bursts observed near sunrise or
+sunset, or during thick clouds or precipitation, may require correction for the amount of radio
+signal that was attenuated. An attenuation correction is required for all bursts on discrete
+frequencies where the current baseline has dropped to more than 10 percent below either the
+most recent IFLUX value (for sunrise or sunset bursts) or the pre-attenuation baseline (for
+weather attenuation).
+   6.7.1. The reanalysis program can give good results when used to analyze bursts when the
+   attenuated baseline is within 10% of the previous good baseline. This is accomplished by
+   adjusting the baseline on the reanalysis program to the current (attenuated) baseline, and
+   analyzing normally. This method will correct for peak, mean, and integrated flux.
+   6.7.2. If the baseline is off from the pre-attenuated baseline by more than 10%, follow the
+   steps outlined in 6.7.2.1 below to perform a manual attenuation correction.
+       6.7.2.1. Steps to manually apply an attenuation correction.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    57
+
+
+           6.7.2.1.1. Determine pre-attenuations baseline. This will either be the last good
+           IFLUX or pre-attenuation baseline.
+           6.7.2.1.2. Divide current baseline into pre-attenuation baseline to obtain a flux ratio.
+           If the attenuation has affected the frequency since sunrise, use the previous day’s flux
+           value. The ratio will be greater than 1.00.
+           6.7.2.1.3. Multiply the burst’s observed peak by the flux ratio to get the corrected
+           peak flux.
+           6.7.2.1.4. Use the corrected peak flux to compute the mean and integrated flux.
+           6.7.2.1.5. Qualify the burst appropriately.
+   6.7.3. Apply attenuation corrections to all burst peak and mean flux values. If time permits,
+   also apply corrections to integrated flux values. Otherwise, report these groups as “7////” and
+   “9////”, since these values can be computed later from start, peak, and end times and mean
+   flux data in the BURST message.
+6.8. Burst Linearity Corrections. During large discrete frequency bursts, flux values may
+require a correction if they lie within the non-linear response portion of the radiometers. The
+RIMS analysis software will automatically apply any required linearity correction to peak, mean,
+and integrated flux values. The same is true for the reanalysis program.
+6.9. Radio Frequency Interference (RFI).
+   6.9.1. RFI is usually a short-lived, narrow-band phenomenon. The more common forms of
+   RFI are:
+       6.9.1.1. Radar Interference. Very narrow high intensity spikes, often in regulated time
+       intervals showing a dominant periodicity are usually due to radar. This form of RFI is
+       usually confined to a single frequency (typically, although not always at 8800 MHz).
+       Likely sources are ships and planes.
+       6.9.1.2. Television Interference. TV interference occurs when a television station
+       broadcasts at a frequency adjacent to a radiometer frequency, and “leaks over” into the
+       radiometer band. This type of RFI signal is very similar to solar fluctuations in
+       appearance. Television interference is most likely on the lower RSTN frequencies,
+       because TV transmissions are in the VHF band (channels 2-6, 54 to 88 MHz; and
+       channels 7-13, 174 to 216 MHz) and UHF band (channels 14-83, 470 to 980 MHz).
+       6.9.1.3. Thunderstorms. Random discharges of electricity within a thunderstorm can
+       cause spiked, broadband RFI, usually at the lower frequencies. Sudden power
+       fluctuations resulting from nearby lightning strikes sometimes cause broadband effects,
+       which can resemble solar radio bursts. Antenna pointing direction can make a dramatic
+       difference as to whether or not lightning is even detected.
+       6.9.1.4. Satellite Interference.
+           6.9.1.4.1. Geosynchronous satellite transponders can raise the baseline by as much as
+           several hundred-flux units for some tens of minutes to hours. This type of RFI will
+           usually occur during roughly the same time period each day. Geostationary
+           interference will normally change seasonally, and may show up at the same time on
+           the same frequency year after year. The RFI will often resemble a gradual rise and
+58                                                     AFWAMAN15-2 13 NOVEMBER 2013
+
+
+         fall burst, and any solar radio bursts will be seen superimposed on top of the elevated
+         baseline caused by the interference.
+         6.9.1.4.2. Polar Orbiting satellites will show a distinctly different RFI signature.
+         They normally pass between the dish and the sun for only a short time (typically 1-3
+         minutes) and will display a perfectly symmetrical RFI pattern. Any simultaneous
+         solar radio bursts will be superimposed on top of the elevated symmetrical baseline
+         trace.
+         6.9.1.4.3. Solar radio bursts which occur simultaneously with satellite RFI should be
+         analyzed relative to the current, enhanced baseline, i.e., in the same manner as an
+         impulsive burst that is superimposed on a solar radio noise storm, a gradual rise and
+         fall burst, or the tail end of another impulsive burst described in paragraph 6.6. The
+         reason is that a radiometer cannot distinguish between signals of solar and non-solar
+         origin. In both cases, all the radio energy received, regardless of its origin, will be
+         added. The superimposed solar burst will represent radio energy from the satellite.
+         The solar burst should be qualified uncertain data due to interference.
+     6.9.1.5. Local Interference.
+         6.9.1.5.1. RFI generated within the observatory complex can be broadband and very
+         difficult to diagnose. Historically, the leading causes have been electric motors with
+         bad brushes and dirty switches or solenoids. There are electric motors running all the
+         cooling fans in the RSTN equipment, as well as the air compressor.
+         6.9.1.5.2. Citizen band radio transmissions may cause exceptionally erratic RFI if a
+         mike is keyed anywhere in the vicinity of the receiving dishes. Arc welding or metal
+         grinding are also prime causes of RFI. Aircraft avionics (radar altimeters, weather
+         radar, etc) and shipboard systems, as well as automobile/motorcycle ignition systems,
+         may also cause RFI, which may last several minutes and then disappear.
+  6.9.2. If in doubt as to the origin of any burst activity, treat it as solar and qualify the report
+  appropriately. Distinguishing RFI from solar activity can be difficult. The following
+  suggestions are offered:
+     6.9.2.1. Adjacent RSTN site confirmation (if possible, during overlap patrol) is the
+     primary means of distinguishing suspicious solar activity from RFI. Any burst of
+     significance (>100sfu) will normally be received at another observatory unless
+     attenuation or RFI is causing problems.
+     6.9.2.2. Know the frequency and broadcasting times of local radio, television and radar
+     transmitters in the area. Information on many radio and television transmitters is
+     contained in the World Radio TV Handbook, an annual publication of Billboard
+     Publications, Inc.
+     6.9.2.3. RFI is usually narrow-band and extremely spikey. It will rarely be spectral (i.e.,
+     multi-frequency) in appearance.
+     6.9.2.4. May be able to correlate genuine bursts with optical or x-ray activity.
+     6.9.2.5. Determine if thunderstorms are in the local area, or whether electrical
+     equipment, poorly running vehicles, CB radios, etc., are being operated nearby.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                    59
+
+
+  6.9.3. Data archive correction for RFI-induced bursts.
+     6.9.3.1. If a significant radio burst is reported as solar activity but later determined to be
+     RFI, and it is too late to COR the burst message, a correction must be made to the
+     National Geophysical Data Center (NGDC) database. Per AFWAI 15-2, section 3.2,
+     RIMS data is archived monthly at RSTN sites and sent to NGDC no later than 30 days
+     following the last day of the record month.
+     6.9.3.2. Authorization must be given by 2 WS/DO before contacting NGDC to request a
+     formal change to solar data archives. NOTE: do not send any correction requests to
+     NGDC unless they have had adequate time to receive and process the monthly data
+     archive package.
+     6.9.3.3. The detachment commander or NCOIC will contact NGDC Solar and Terrestrial
+     Physics Division via email at solar@noaa.gov and request the RFI burst to be stricken
+     from the data archives. Include the AXXX71 or SXXX61 burst message. Identify the
+     date, time (GMT), and frequencies affected. It is especially important to specify the
+     entire duration of the burst, not just peak time.
+     6.9.3.4. Detachment leadership will continue to work with NGDC Solar and Terrestrial
+     Physics Division until the data archives have been satisfactorily adjusted.
+ 60                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+                                          Chapter 7
+
+                             SRS SWEEP BURST ANALYSIS
+
+7.1. Swept Frequency Burst Classifications.
+   7.1.1. Figure 7.1 shows a typical swept frequency spectrum for a large flare, as it would
+   appear on a SRS sensitive to the 10 to 30,000 MHz frequency range. Individual flares will
+   produce many variations to this typical spectrum. All swept frequency burst types originate
+   from non-thermal radio energy production mechanisms. In Figure 7.1, the Type II, Type III,
+   and Type IV sweeps show a time-frequency slope or “forward drift”, i.e., frequency
+   decreases with passing time. The forward drift is caused by charged particles ejected by a
+   flare into the solar atmosphere. As the particles move upward, they produce radio emission
+   at (or above) the frequency characteristic of the altitude where they are located at a given
+   instant. As shown in Table 5.1, this characteristic frequency decreases with increasing
+   altitude. The result: as time passes, the altitude of the flare ejection increases and the
+   (excited) frequency emitted decreases, causing the forward drift.
+   7.1.2. Type III Sweeps.
+      7.1.2.1. Type III sweeps are caused by packets of free electrons, which are ejected at
+      high speed (0.2 to 0.8 times the speed of light) into the corona. These packets are usually
+      produced during the flash (or impulsive) phase of a flare, and tend to move outward along
+      open magnetic field lines. As these packets move upward, they produce radio energy at
+      the successively lower frequencies characteristic of the altitudes through which they pass.
+      However, the forward drift nature of these bursts is not noticeable on the SRS because of
+      the extremely high speed at which the packets pass through the solar atmosphere. Thus
+      Type III sweeps appear to have a simultaneous onset at all frequencies detected by the
+      SRS.
+      7.1.2.2. Individual Type III bursts normally only last a short duration, but they normally
+      occur in closely packed groups that may continue for several minutes. In addition, these
+      groups may form series of Type III sweeps extending over tens of minutes. For reporting
+      purposes, one or more bursts over a period of less than 10 minutes constitutes a single
+      Type III sweep.
+   7.1.3. Type V Sweeps.
+      7.1.3.1. Type V emission appears as a broadband, brief continuum lasting about 1 to 3
+      minutes after a Type III sweep. When packets of free electrons are ejected upward into
+      the corona, most of the electrons move outward along open magnetic field lines causing
+      Type III bursts. Occasionally, some electrons are injected into closed magnetic field loop
+      structures where they are temporarily trapped. These electrons have a relatively wide
+      spatial distribution, and so produce broad frequency band continuum emission until they
+      lose their energy and dissipate into the rest of the solar atmosphere.
+      7.1.3.2. Less than 20 percent of Type III sweeps are followed by Type V emission. For
+      reporting purposes, we define a Type V sweep as one or more bursts over a period of less
+      than 10 minutes (may include some pure Type III bursts).
+   7.1.4. Type II Sweeps.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 61
+
+
+     7.1.4.1. After the flash phase (which causes Type III, Type V, and impulsive microwave
+     bursts), a large flare may eject a cloud of charged particles (protons and electrons)
+     outward through the corona. Since this “plasma” cloud is more massive than the packets
+     of free electrons that cause Type III bursts, it moves outward more slowly (typically at
+     about 500 to 2000 kilometers per second). This speed is still nearly ten times that of
+     sound in the corona, so the moving plasma cloud generates a supersonic shockwave. As
+     this shockwave moves outward, it produces radio energy at the successively lower
+     frequencies characteristic of the altitudes through which it passes. The result is a slow,
+     forward drift Type II swept frequency burst.
+     7.1.4.2. Roughly half of Type II sweeps are observed to have a second harmonic, i.e., the
+     shockwave produces radio energy emission at the characteristic frequency (primary) and
+     at roughly twice that frequency (harmonic).
+     7.1.4.3. Determine shock speed and encode IAW AFMAN 15-124. Append a PLAIN to
+     indicate the degree of variability. EXAMPLE: “REPORTED SHOCK SPEED PLUS
+     OR MINUS XXX KM/S”, where XXX is the accuracy of the encoded shock speed. This
+     operation is performed automatically by SRS. The shock speed will be used to forecast
+     the onset of delayed effects on radar, communications, and space systems.
+  7.1.5. Type IV Continuum Sweeps.
+     7.1.5.1. A Type IV sweep is broadband, long-duration continuum emission, normally
+     associated with a large flare. The same plasma cloud whose shockwave may cause a
+     Type II sweep produces it. However, the source of a Type IV sweep is the plasma in the
+     cloud itself. The highly ionized plasma cloud drags along with it a portion of the
+     magnetic field from the immediate vicinity of the flare. This field prevents free electrons
+     (which are moving at an appreciable fraction of the speed of light) from quickly diffusing
+     away. These high-energy electrons spiral about the magnetic field lines in the cloud and
+     produce broadband radio frequency emissions.
+     7.1.5.2. Not all Type IV continuums are preceded by a Type II, nor are all Type II
+     sweeps followed by a Type IV. However, there is a close correlation between the two.
+     NOTE: When they occur together, a Type II will occur before, or coincide with the start
+     of, a Type IV. The Type IV will not precede the Type II unless two plasma clouds were
+     emitted and the Type II was associated with the second cloud. Although such complex or
+     double events are rare, they do occur.
+     7.1.5.3. Type IV sweeps have a forward drift frequency-time slope, with about the same
+     drift rate as the associated Type II sweep (Figure 7.1). The plasma cloud produces radio
+     energy over a very wide band of frequencies simultaneously. However, which
+     frequencies are able to escape (to be observed at the earth) depends on the characteristic
+     frequency at each altitude in the solar atmosphere. As the cloud moves outward through
+     the corona, the escape (or characteristic) frequency gets lower. Any radio energy with a
+     frequency at or higher than the characteristic frequency will escape, accounting for the
+     broadband continuum emission. Any radio energy with a frequency lower than the
+     characteristic frequency is reflected back into the cloud. NOTE: This situation is
+     significantly different from Type II and Type III bursts, where only disturbing the
+     surrounding corona produces the characteristic frequency, or its harmonic.
+ 62                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+       7.1.5.4. The intensity maximum for a Type IV is generally reached about 10 to 30
+       minutes after the beginning of the event. The initial plasma cloud that causes a Type IV
+       sweep normally lasts only ten minutes to about two hours. However, the Type IV
+       Continuum may last for several hours to several days. The long duration is caused by
+       particles, which are lost through diffusion by the outward moving cloud or which fall
+       back to the lower corona. These particles, trapped in closed magnetic field structures and
+       spread over a wide range of altitudes, continue to produce radio energy over a wide range
+       of frequencies, resulting in a broadband, long-duration continuum.
+       7.1.5.5. Statistically, the larger the source flares, the more likely a Type IV sweep will
+       occur and the longer it will last. In fact, about 60 percent of Type IV sweeps are
+       associated with flares of Importance 3 or greater.
+   7.1.6. Type 8 Continuum Sweeps.
+       7.1.6.1. Type 8 (decameter) continuums are caused by stationary storm centers found in
+       the corona and occur in the frequency range of the SRS. They can also be detected as
+       “noise storms” on the lower discrete frequency RIMS radiometers.
+       7.1.6.2. Type 8 continuum storms can last from several hours to several days. Due to
+       their long duration, it is common for other burst activity to be superimposed on the storm
+       continuums. In the case of the Type 8 Continuum, flare related Type II, Type IV, Type
+       III, and/or Type V sweeps are often superimposed. NOTE: Flare Type III and Type V
+       sweeps will typically be more intense, and cover a wider frequency range, than the Type
+       8’s decameter Type III sweeps. The flare Type III and Type V sweeps should be
+       analyzed and reported separately from the Type 8 sweep.
+       7.1.6.3. Type 8 continuum storms are positively correlated with large sunspot groups and
+       active surge regions, because the intense magnetic fields associated with large sunspots
+       extend outward into the corona and produce conditions favorable to continuum storms.
+       Near solar cycle maximum, continuum storms may be in progress roughly 10 percent of
+       the time.
+   7.1.7. Type 6 Sweeps. A series of Type III bursts over a period of 10 minutes or more, with
+   no period longer than 30 minutes without activity.
+   7.1.8. Type 7 Sweeps. A series of Type III and Type V bursts over a period of 10 minutes or
+   more, with no period longer than 30 minutes without activity.
+7.2. Sweep Intensities.
+   7.2.1. The intensity of swept frequency bursts (“importance”) depend as much on local
+   equipment performance and observing conditions (weather, sun elevation, etc), as on the
+   intrinsic strength of the solar activity. Therefore, SRS intensity measurements are useful for
+   comparison between sweeps only at a single observatory, and even then not over more than a
+   period of a few hours. Sweep intensity comparisons between observatories have many
+   complications currently rendering them unreliable. It is common for reports from different
+   observatories on the same sweep to indicate different intensities, and possibly different start
+   and end times, since these times (especially for continuums) depend on the measured
+   intensity.
+AFWAMAN15-2 13 NOVEMBER 2013                                                                  63
+
+
+  7.2.2. The intensity recorded by the SRS antennas are subject to many factors of non-solar
+  origin. Some of these factors are: atmospheric weather conditions, solar elevation angle,
+  ionospheric attenuation, antenna polar response, local interference, and equipment
+  calibrations.
+  7.2.3. The intensity for continuum sweeps should be reported as an updated preliminary
+  whenever intensity or frequency range increases. A continuum sweep will always remain
+  encoded at the highest intensity reached at any time of the continuum. Type 3 or 5 sweeps
+  embedded in a continuum only need be reported separately if they have a higher intensity
+  than the continuum itself or are reported in conjunction with associated discrete burst
+  activity.
+     7.2.3.1. Ionospheric Attenuation.
+         7.2.3.1.1. At sunrise and sunset, solar radio signals strike the earth’s ionosphere at a
+         grazing angle. Much of the signal strength in the SRS frequency range can be
+         reflected off the ionosphere back into space. As a result, the received signal intensity
+         (which equates to sweep importance) is lower than if it were observed near local
+         noon. For example, when the Kaena Point Solar Observatory reports an importance 3
+         sweep near local noon, the Learmonth Solar Observatory (at local sunrise) might
+         report the same sweep as importance 1 (or even no sweep at all). The magnitude of
+         this affect is greatest when the degree of ionization in the ionosphere is high, as
+         occurs near solar cycle maximum.
+         7.2.3.1.2. Ionospheric irregularities can also produce radio wave focusing or
+         defocusing. Solar radio signals may then undergo severe ionospheric refraction,
+         possibly even reflection off the earth’s surface, before they are received by the SRS
+         antennas. The observed sweep intensity would be drastically different (usually
+         smaller, but occasionally larger) than if the signal were received directly.
+     7.2.3.2. Antenna Polar Response. The SRS low band antenna is designed to have an
+     omni directional sensitivity with a broad bandwidth. However, the antenna response
+     pattern may contain nulls at various positions. Observed sweep intensities will then
+     depend on the sun’s position in the sky. This effect is independent of any positional
+     effects due to ionospheric attenuation.
+     7.2.3.3. Local Interference. Each observatory is subject to widely different RFI
+     environments, which can vary over time, due to terrestrial broadcasters like television
+     stations. This RFI can also make equipment calibration efforts difficult. The result can
+     be variations in sweep intensities reported by different observatories.
+     7.2.3.4. Equipment Calibration. No attempt has ever been made to perform intersite
+     calibrations of SRS equipment. Such a task is not practical due to the nature of the
+     equipment (omni directional, wideband), differences in monitored frequency range, and
+     the varying RFI environments at and between the observatories.
+         7.2.3.4.1. Self Test. The SRS initiates an automatic self-test request one-minute after
+         sunrise start-up. The self-test sequence consists of five successive levels where the
+         tracking generator is set to four output levels. The Minimum Discernible Signal
+         (MDS) is site specific and determined at installation and should be validated yearly
+         by maintenance.
+ 64                                                   AFWAMAN15-2 13 NOVEMBER 2013
+
+
+          7.2.3.4.2. The self test can also be performed manually at the analyst’s discretion by
+          clicking on the SELF TEST button on the SRS Display window or the SOLACON
+          Display window.
+          7.2.3.4.3. If either the low band or high band, or both, fails the self test will provide
+          the operator with a notification. The data should be qualified until maintenance
+          personnel have resolved the problem.
+7.3. Type IV and Type 8 Continuums.
+   7.3.1. Both a Type IV and Type 8 continuum has virtually the same appearance on a SRS
+   plot.
+      7.3.1.1. The only reliable way to distinguish between a Type IV and Type 8 is by
+      knowledge of what is happening on the sun. Radio analysts should keep abreast on all
+      recent solar activity by reading any available optical plains, summaries, imagery, and
+      forecasts.
+      7.3.1.2. If a continuum is preceded by a significant (not necessarily event-level) flare,
+      solar disk and limb activity summary code (DALAS), discrete frequency radio burst,
+      Type II sweep, or intense Type III or Type V sweep(s), it is reasonable to assume the
+      continuum is a Type IV. If not preceded by such activity, assume it is a Type 8
+      continuum.
+      7.3.1.3. If a continuum is found to be in progress at sunrise, a decision on the
+      identification (Type IV or Type 8) will be necessary. Consult teletype bulletins,
+      SPACEWOC, or another observatory to learn if the current continuum is being carried as
+      a Type IV or Type 8. NOTE: If it is decided to be a Type IV, Event message (SXXX_
+      _) reporting is not appropriate as the onset of the event would have occurred more than
+      15 minutes earlier.
+   7.3.2. Not all Type IV continuums are preceded by a Type II, however, there is a close
+   correlation between the two types of sweeps. On the other hand, Type 8 continuums and
+   Type IIs are unrelated, and will occur together only by coincidence.
+   7.3.3. A Type IV continuum will typically last from several hours to several days, and will
+   normally decline in intensity as time passes. The absolute minimum duration for a Type IV
+   (for coding purposes) is ten minutes. Long duration Type IV continuums will eventually
+   degenerate into Type 8 continuums, but there is no way for an analyst to easily detect when
+   that change occurs. As a rule of thumb, an analyst may choose to change a Type IV to a
+   Type 8 continuum after roughly 36 to 48 hours.
+7.4. Radio Frequency Interference and SRS Data.
+   7.4.1. On the SRS, solar bursts are relatively easy to distinguish from RFI. The
+   unambiguous nature of SRS data (i.e., whether solar or RFI) can indicate the origin of data
+   on other instruments. For example, solar noise storms are common on the 245 and 410 MHz
+   RIMS radiometers. Anytime a strong continuum sweep is in progress, the 245 MHz
+   radiometer will be active. It may not reach noise storm criteria, but it will not be flatline.
+   Unfortunately, noise storms observed on single frequency radiometers are often
+   indistinguishable from long duration RFI. A strong noise storm on 245 or 410 MHz is often
+   accompanied by series of Type III and/or Type V sweeps, or a Type 8 (decameter)
+AFWAMAN15-2 13 NOVEMBER 2013                                                                 65
+
+
+   Continuum. Thus, the presence of the sweep activity supports the solar nature of the activity
+   observed on the RIMS radiometer(s). Continuums are evidence of interference on VHF
+   systems.
+   7.4.2. Solar radio interference on ionospheric monitoring equipment or systems.
+      7.4.2.1. Type 8 or Type IV decameter continuums, as well as strong Type II and/or Type
+      III/V sweeps, can sometimes be detected as spikes on HF frequency monitoring
+      equipment.
+   7.4.3. RFI on the SRS.
+      7.4.3.1. A major geomagnetic storm can drastically alter the degree of ionization in
+      portions of the earth’s ionosphere (referred to as an “ionospheric storm”), and change the
+      transmission characteristics of the ionosphere. The base of the ionosphere becomes more
+      reflective, and ground transmissions in the SRS frequency range can be reflected into the
+      SRS antenna system.
+
+Figure 7.1. Typical Spectrum Produced by a Large Flare (Sensitive to the range from 10 to
+30,000 MHz).
+
+
+
+
+                                           LOUIS V. ZUCCARELLO, Colonel, USAF
+66         AFWAMAN15-2 13 NOVEMBER 2013
+
+
+     Commander
+AFWAMAN15-2 13 NOVEMBER 2013                                                           67
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 33-324, The Air Force Information Collections and Reports Management Program, 6
+March 2013
+AFI 10-707, Spectrum Interference Resolution Program, 20 June 2005
+AFMAN 15-124, Meteorological Codes, 28 February 2013
+AFWAI 15-2, Space Environmental Observations Solar Optical and Radio Observing, 20 April
+2010
+AFWAMAN 15-1, Space Environmental Observations Solar Optical Observing Techniques, 6
+November 2013
+AFMAN 33-363, Management of Records, 1 March 2008
+T.O. 31M1-2FMQ7-1, Operation and Maintenance Instruction Solar Observing Optical
+Network (SOON) AN/FMQ-7, 22 October 2008
+T.O. 31M3-4-5-1, Operations and Maintenance Instruction for the Radiometer Receiver
+Subsystem of the Radio Interference Measuring System (RIMS), 6 February 2012
+T.O. 31M3-4-6-1, Operations and Maintenance Instruction for the Radio Interference
+Measuring System Antenna Groups, 7 August 2006
+T.O. 31M3-4-24-1, Operations Manual for the Solar Radio Spectrograph (SRS), 21 September
+2011
+T.O. 31M3-4-24-2, Maintenance Manual for the Solar Radio Spectrograph (SRS), 27 September
+2011
+T.O. 31M3-4FRR95-1, Operation and Maintenance Manual for Elevation/Azimuth Pedestal
+(Model 3415), 1 July 2009 Rev. 004
+T.O. 31M3-4FRR95-11, Operation and Maintenance Manual for Antenna Control Products
+(Model 3880), 1 April 2008
+T.O. 31M3-4FRR95-21, Operation and Maintenance Manual for Elevation/Azimuth Pedestal
+(Model 3425), 28 February 2008
+
+Abbreviations and Acronyms
+AC—Alternating Current
+ACU—Antenna Control Unit
+AF—Air Force
+AFB—Air Force Base
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+ 68                                                AFWAMAN15-2 13 NOVEMBER 2013
+
+
+AFWA—Air Force Weather Agency
+AFWAI—Air Force Weather Agency Instruction
+AFWAMAN—Air Force Weather Agency Manual
+AFW-WEBS——Air Force Weather - WEB Services
+BURST—Discrete Solar Radio Burst
+CB—Citizen’s Band (radio)
+cm—Centimeters
+CMP—Central Meridian Passage
+COM—Computer Operations Manual
+D—Diameter
+DALAS—Solar Disk and Limb Activity Summary Code
+dB—Decibel (10 times the logarithm of power rations)
+DC—Direct Current
+Deg—Degrees
+DIV—Deviation
+DoD—Department of Defense
+DTG—Date Time Group
+EVENT—Event Code
+GIF—Graphics Interchange Format
+GMT—Greenwich Mean Time
+GPS—Global Positioning System
+GRF—Gradual Rise and Fall Bursts
+HF—High Frequency
+HP—Hewlett Packard
+HPBW—Half Power Beamwidth
+HQ—Headquarters
+Hz—Hertz
+IAW—In Accordance With
+IF—Intermediate Frequency
+IFLUX—Integrated Solar Radio Flux Code
+KM/S—Kilometers per second
+L—Length
+AFWAMAN15-2 13 NOVEMBER 2013                                      69
+
+
+LIA—Lock-In Amplifier
+LINCAL—Linearity Calibration
+MANOP—Manual Operations
+MDS—Minimum Discernible Signal
+MEAS—“Measured” SFU Value
+MHz—Megahertz
+mph—Miles Per Hour
+NCOIC—Non Commissioned Officer in Charge
+NGDC—National Geophysical Data Center
+NLT—No Later Than
+NM—Nautical Mile
+NT—Noise Tube
+OPR—Office of Primary Responsibility
+PC—Personal Computer
+PLAIN—Plain Language
+PMI—Preventive Maintenance Inspections
+QA—Quality Assurance
+R—Resolution
+RCAL—Radio Calibration
+RDS—Records Disposition Schedule
+RF—Radio Frequency
+RFI—Radio Frequency Interference
+RIMS—Radio Interference Measuring Sets
+REQST—Request
+RSTN—Radio Solar Telescope Network
+SCU—System Control Unit
+SFU—Solar Flux Units (10 -22 Watts per meter squared per Hertz)
+SLV—Slave Lock-In Amplifier
+SOLACON—Solar Control
+SOON—Solar Observing Optical Network
+SPACEWOC—Space Weather Operations Center, 2d WS/WXZ
+SRS—Solar Radio Spectrograph
+ 70                                          AFWAMAN15-2 13 NOVEMBER 2013
+
+
+STATS—Patrol Status Code
+SVC—Slowly Varying Component
+SWEEP—Spectral Solar Radio Burst Code
+SWF—Short Wave Fade
+SWPC—Space Weather Prediction Center
+TRUE—True Solar Flux Units
+TO—Technical Orders
+TV—Television
+UHF—Ultra High Frequency (300 – 3000 MHz)
+UPS—Uninterruptible Power Systems
+UTC—Coordinated Universal Time
+VHF—Very High Frequency (30 – 300 MHz)
+WINDS—Winds Information Display System
+WPMDS—Weather Product Management and Distribution System
+Z—Zulu
+AFWAMAN15-2 13 NOVEMBER 2013                                                                            71
+
+
+                                            Attachment 2
+                                    TIMELINESS CRITERIA
+
+1. Automatic Operations: (Transmit as soon as possible, but not to exceed these limits.)
+CODE TYPE                EVENT LEVEL                         NON-EVENT LEVEL
+
+EVENT           2 min after event start or notification           Not Applicable
+FLARE
+ -Preliminary   2 min after meeting, or increasing to a higher    Optional
+                (area or brightness), event threshold
+ -Final         10 min after end                                  15 min after end
+DALAS
+ -Preliminary   10 min after event identification                 Optional
+ -Final         20 min after end                                  NLT end of day (AXXX72)
+                                                                  message
+BURST
+ -Preliminary   2 min after meeting event threshold               Optional (30 min after start for
+                2 min after crossing reportable threshold         an NSM)
+                5 min after peak on each frequency (may be
+                combined for near simultaneous peaks)
+ -Final         10 min after end                                  15 min after end (45 min for an
+                                                                  NSM)
+SWEEP
+ -Preliminary   2 min after type identification                   Optional. (EXCEPTION: 30
+                                                                  min after type identification for a
+                                                                  Type 6, 7, or 8)
+ -Final         30 min after end data availability                45 min after end data availability
+NOTE: NSM = Noise Storm
+
+2. Semiautomatic Operations: (Transmit as soon as possible, but not to exceed these limits.)
+ CODE TYPE               EVENT LEVEL                       NON-EVENT LEVEL
+
+EVENT            5 min after event start or notification         Not Applicable
+FLARE
+ -Preliminary    15 min after meeting, or increasing to a        Optional
+                 higher (area or brightness), event threshold
+ -Final          20 min after end                                30 min after end
+DALAS
+ -Preliminary    Same as automatic operations                    Same as automatic operations
+ -Final          Same as automatic operations                    Same as automatic operations
+72                             AFWAMAN15-2 13 NOVEMBER 2013
+
+
+                     Attachment 3
+     SAMPLE AFWA IMT 18, RSTN DAILY ACTIVITY LOG

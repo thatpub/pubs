@@ -1,0 +1,154 @@
+              PIDP KEYBOARD COMMANDS                              INHIBIT/DISPLAY         TIME:                  OP T                   FD CD? (CODE) ∆ or (ACID) ∆ or (ACID) ENTER or (ACID) TRK
+           *******************************************                                    BAROMETER:             OP B                      ID? (ACID) ∆ or (ACID) ENTER or (ACID) TRK
+                                                                                          ALTITUDE LIMITS:       OP L                      AD? (A/D/E) ∆ or (A/D/E) ENTER or ∆ or ENTER or (A/D/E) TRK or
+                                                                                          SELECT CODES:          OP F                          TRK
+                                                                                          MESSAGE:               OP MSG ENTER              TP? (AAAA) ∆ or ∆ or (AAAA) ENTER or ENTER or (AAAA) TRK or
+                                                                                          A/D LIST:              A ENTER                       TRK
+                                                                                          D/S LIST:              D ENTER                   CL? (B/F/H/L/T/U/V/W) ∆ or (B/F/H/L/T/U/V/W) ENTER or ∆ or
+                                                                                          TRAIL DOTS (ALL):      OP D                          ENTER or (B/F/H/L/T/U/V/W) TRK OR TRK
+                                                                                          TRAIL DOTS (TRACKS):   TRK D                     TM? (HH ∆ MM) ∆ or (HH ∆ MM) ENTER or ∆ or ENTER
+                                                                                          NEXT CODE LIST:        OP N                          or (HH ∆ MM) TRK or TRK
+                                                                  (OD-153/T ONLY)         CURSOR READOUT:        OP C                      F1? (AAA) ∆ or ∆ or (AAA) ENTER or ENTER or (AAA) TRK
+                                                                  (OD-153/T ONLY)         STROBE READOUT:        OP S                          or TRK
+                                                                                                                                           F2? (AAA) ∆ or ∆ or (AAA) ENTER or ENTER or (AAA)
+                                                                                                                                               TRK or TRK
+                                                                                              DISPLAY FUNCTIONS                            MS? (AAA...A) ENTER OR ENTER OR (AAA...A) TRK OR TRK
+                                  LEGEND
+                                                                  RELOCATE OP AREA:                    MOV <PEM> OP                     MODIFY FLIGHT PLAN (LOCAL FP ONLY):
+                                                                  A/D LIST:                            MOV <PEM> A                        (DEF) includes A/D letter but does not include <PEM> HOOK.
+∆           MANDATORY SPACE                                       D/S LIST:                            MOV <PEM> D
+                                                                  PREVIEW AREA:                        MOV <PEM> P                    TYPE:        (DEF) (A/D/E) ENTER
+____        SPECIFIC KEYSTROKE REQUIRED; E.G. TRK                 OFFSET CURSOR:                       <PEM> HK C                     TIME:        (DEF) HH ∆ MM ENTER
+                                                                  OFFSET SWEEP:                        <PEM> HK S                     CODE:        (DEF) (CODE) ENTER or NXT ENTER or (1, 2, 3) NXT ENTER
+N           NUMBER                                                CENTER SWEEP:                        S ENTER                        CLASS:       (DEF) CLS (B/F/H/L/T/U/V/W) (∆) ENTER
+                                                                  CENTER CURSOR:                       C ENTER                        MSG:         (DEF) MSG (AAA...A) (∆ ∆) ENTER
+A           ALPHANUMERIC                                          CENTER PEM:                          P ENTER                        ACID:        (DEF) (NEW ACID) ENTER
+(ACID)      AIRCRAFT CALLSIGN. 2-7 CHARACTERS                                                                                         A/C:         (DEF) SP2 (AAAA) (∆)) ENTER
+                                                                  KEYBOARD DUMP:                    OP X
+                                                                                                                                      FIX1:        (DEF) ACID SPACE (AAA ∆) ENTER
+<PEM>       MOVE PEM SYMBOL TO DESIRED AREA OR TARGET                                                                                 FIX2:        (DEF) SP3 (AAA ∆) ENTER
+                                                                  OVERRIDE ALTITUDE FILTER:         AA
+(CAT)       TARGET CATEGORY (SEL/NSL/TRK)                                                                                             ENTER VFR FLIGHT PLAN:
+                                                                  ENTER QUICK LOOK:                 QL (DISPLAY ID TO QL)
+                                                                  DROP QUICK LOOK:                  QL DROP
+(ELEM)      TARGET FORMAT ELEMENT (ID/CLS/GSP/ALT/C/MSG                                                                               V FD   ID?   (ACID) ∆
+                                                                  INDIV TRACK QUICK LOOK:           (DEF) QL
+                          SP2/ACID SPACE/SP3/ LDR/LDR N)                                                                                     TP?   (AAAA) ∆
+                                                                  ENTER QUICK LOOK INHIBIT:         QL I (DISPLAY ID)
+                                                                                                                                             ES?   (A) ∆
+                                                                  DROP QUICK LOOK INHIBIT:          QL I DROP
+(DEF)       METHODS OF DEFINING A TARGET TO SYSTEM                                                                                           F1?   (AAA) ∆
+                                                                  PLACE THIS DISPLAY IN TEST:       SPEC T ENTER                             F2?   (AAA) ∆ or (AAA) ENTER or (AAA)I ∆ or (AAA)I ENTER
+            (ACID) RD, or (TRACK OWNER ID), RD or (DISCRETE       TAKE DISPLAY OUT OF TEST:         DISENGAGE/ENGAGE DISPLAY                 AL?   (NN5) ∆ or (NN5) ENTER or ∆
+            CODE) RD, or <PEM> HOOK                                                                                                          CL?   (B/F/H/L/T ENTER
+                                                                  CLEAR ADJACENT KEYBOARD:          SPEC (1 or 2) ENTER
+ES          EQUIPMENT SUFFIX ON AIRCRAFT TYPE                                                                                         READ FLIGHT PLAN AND RETAIN:                     (DEF) CLEAR
+                                                                  INHIBIT TARGETS OUTSIDE AUTO ACQUIRE AREA: SPEC AA
+AL          ALTITUDE (MUST END WITH A 5)                                                                                              DELETE FLIGHT PLAN:                              (DEF) DROP
+                                                                  DISPLAY BEARING/RANGE/TIME:       <PEM> SP1 <PEM> SP1 or
+                           INDICATOR INITIALIZATION                                                 <PEM> SP1 ENTER                   FLIGHT PLAN SCROLL:                              START - RD
+                                                                                                                                                                                       NEXT FP - ∆
+RESTORE INHIBITS (A/D list, D/S list, OP list, Target Elements)   TRAINING DISPLAY ON:              SPEC G                                                                             STOP - CLEAR
+                                                    OP ENTER      TRAINING DISPLAY OFF:             DISENGAGE/ENGAGE DISPLAY
+                                                                                                                                      SATELLITE A/P HOLD:                  <PEM> HK F ENTER or DROP
+SET AUTO-ACQUIRE LEADER DIRECTION:                 SPEC LDR N                                                                         DISPLAY/INHIBIT:                     OP A
+                                                                                          TARGET FORMAT CONTROL
+SET ALTITUDE FILTER:                  OP NNN ∆ NNN ENTER                                                                                                              TRACK CONTROL
+                                                                  INHIBIT/DISPLAY NONSELECT TARGETS:             NSL ENTER
+ENTER/DELETE SELECT CODE/CODE BLOCK:                              SELECT TARGETS:                                SEL ENTER              TRACK INITIATE/MODIFY:
+                             OP NNNN ENTER/DROP or                DATA BLOCK ELEMENT:                            (CAT) (ELEM) ENTER                       (DEF) (ACID) ENTER
+                             OP NN ENTER/DROP                     ROTATE LEADER 45° CLOCKWISE:                   (CAT) LDR ENTER        (optional)
+                                                                  POSITION LEADER:                               (CAT) LDR N ENTER                        CLS (B/F/H/L/T/U/V/W/∆) ENTER and/or
+ENTER CODE BLOCK FOR NEXT CODE ASSIGNMENT:                                                                                                                SP2 (AAAA/∆) ENTER and/or
+                   SPEC NNNN ∆ NNNN ENTER                         ROTATE ALL TRACK LEADERS 45° CLOCKWISE: LDR                                             MSG (AA...A/∆ ∆) ENTER and/or
+                   1 SPEC NNNN ∆ NNNN ENTER                                                                                                               ACID SPACE (FIX1) / ∆ ENTER and/or
+                   2 SPEC NNNN ∆ NNNN ENTER                       ACCEPT/RECALL HANDOFF:                   (DEF)                                          SP3 (FIX2) / ∆ ENTER
+                   3 SPEC NNNN ∆ NNNN ENTER                       TAKE TRACK CONTROL:                      (DEF)
+                                                                  SILENCE AUDIBLE ALARM:                   (DEF)                        NONDISCRETE TRACK INITIATE:
+ENTER DISPLAY MESSAGE:                OP MSG (AAA...A) ENTER      CLEAR DM FLAG:                           (DEF)                                        <PEM> HK (A/D letter, <ACID>) ENTER
+                                                                  CLEAR FP FLAG:                           (DEF)
+DELETE DISPLAY MESSAGE:           OP MSG DROP                     CLEAR IF FLAG:                           (DEF)                        ACKNOWLEDGE SYSTEM EMERGENCY TRACK START:
+DELETE SELECT CODES AND OP AREA MESSAGE                           FULL TRACK READOUT:                      (DEF) ENTER                                  <PEM> HK (ACID) ENTER
+RESET ALTITUDE LIMITS TO 000-999:          OP DROP                ROTATE LEADER 45°:                       (DEF) LDR ENTER
+READ LOAD NUMBER                           OP V                   POSITION LEADER:                         (DEF) LDR N ENTER            DELETE TRACK:          (DEF) DROP or (D/S LIST NUMBER) DROP
+READ INDICATOR ID:                         OP I                   INHIBIT/DISPLAY ELEMENTS:                (DEF) (ELEM) ENTER
+READ MSAW VALUE:                           OP M                                                                                         SUSPEND TRACK:         (DEF) SUS
+
+                                                                                              FLIGHT PLAN DATA                          REPOSITION FROM D/S LIST:
+                                                                                                                                           SUSPENDED TRACK:                (D/S LIST NUMBER) RPOS or,
+                              TAB AREA CONTROL                    ENTER LOCAL FLIGHT PLAN:                                                                                 (ACID or CODE) RD RPOS or,
+                                   <PEM> HK RPOS                   DISABLE/ENABLE AUTO CODE CHANGE:
+                                                                                     SPEC X DROP/ENTER
+   DROPPED TRACK:                  ACID or CODE) RD RPOS or,
+                                   D/S LIST NUMBER) RPOS or,       ACTIVATE SIMULATION MODE:        SPEC S ENTER
+                                   <PEM> HK
+        (non-discrete)             <PEM> HK (D/S LIST NUMBER)      DELETE SIMULATION MODE:          SPEC S DROP
+                                   RPOS
+                                                                   INITIALIZE BAROMETER:            NN ∆ NN ENTER
+TRACK CONFLICT ALERT INHIBIT:                    (DEF) Y ENTER     INITIALIZE SYSTEM TIME:          YY ∆ MM ∆ DD ∆ HH ∆ MM ENTER
+TRACK CONFLICT ALERT STOP INHIBIT:               (DEF) Y DROP
+                                                                   ENTER MSAW EXEMPT CODE:                      SPEC M NNNN ENTER
+MODE SELECT
+  HOLD:              (DEF) H (ENTER/ DROP)                         ENTER MSAW EXEMPT CODE BLOCK:                SPEC M NNNN ∆ NNNN
+                                                                                                                ENTER
+   MSAW EXEMPT:          (DEF) X (ENTER/ DROP)
+                                                                   DELETE MSAW EXEMPTION:                       SPEC M DROP
+   ENTER ASSIGNED ALTITUDE AT:
+       CURRENT ALTITUDE:    (DEF) A ENTER                          ACTIVATE/DELETE AUTO-TRACK:                  SPEC Z (ENTER/DROP)
+       SPECIFIED ALTITUDE: (DEF) NNN A ENTER
+                                                                   AUTO TRACK CODE/ID SPECIFICATION:
+   DELETE ASSIGNED ALTITUDE:         (DEF) A DROP                                              SPEC ID (1, 2, 3, 4, 5, 6, 7, 8)
+                                                                                               (code start) ∆ (code end)
+ACKNOWLEDGE CODE CHANGE:                                                                       (acid) (options) ENTER
+   ACCEPT CHANGE:        (DEF) ENTER                                                (OPTIONS: (ARR DISP ID) (DEP DISP ID) or
+   REJECT CHANGE:        (DEF) DROP                                                            (ARR DISP ID) ∆ or ∆
+                                                                                               (DEP DISP ID) or (ARR/DEP DISP
+DISPLAY NEXT CODE:                 NXT CLEAR or (1,2,3)NXT CLEAR                               ID)
+
+INITIATE HANDOFF TO:                                               CLEAR AUTO TRACK CODE/ID SPEC ENTRY:
+    ANOTHER DISPLAY:          (DEF) (DISPLAY ID) HND                                 SPEC ID (1, 2, 3, 4, 5, 6, 7, 8) DROP
+    ARTCC (HOST/NON-HOST):    (DEF) HND
+    SPECIFIC ARTCC SECTOR:    (DEF) NN HND                         PLACE ANOTHER DISPLAY IN TEST:
+    SPECIFIC (NO HOST SEC.):  (DEF) NNA HND                                         SPEC T (DISPLAY ID) ENTER
+    ARTS/PIDP:                (DEF) N HND
+    ARTS/PIDP via ARSA:       (DEF) NA HND                         INHIBIT EMERGENCY TRACK STARTS: SPEC E
+    ARTS DIRECTED (KS = ARTS SECTER ID)
+         (HOST/NON-HOST):     (DEF) KSN HND                        ACTIVATE CENRAP:                 SPEC K ENTER
+    ARTS DIRECTED via ARSA                                         DE-ACTIVATE CENRAP:              SPEC K DROP
+         (HOST ONLY)          (DEF) KSNA HND
+                                                                   ENTER MASTER MESSAGE: SPEC MSG (AA...A) ENTER
+INITIATE POINT OUT TO:      JAPANESE ONLY                          DELETE MASTER MESSAGE: SPEC MSG DROP
+
+   JAPANESE ACC                    (DEF) P HND                     CONFLICT ALERT MASTER COMMANDS:
+   SPECIFIC SECTOR                 (DEF) NNP HND
+   RECALL                          (DEF)                           CA EXEMPT CODE:                  SP3 C NNNN ENTER
+   ACCEPT                          (DEF)                           CA EXEMPT CODE BLOCK:            SP3 B NNNN ∆ NNNN ENTER
+                                                                   DELETE CA CODE EXEMPTION:        SP3 C DROP
+RE SEND DEPARTURE MESSAGE: (JAPANESE ONLY)                         DELETE CA CODE
+                                                                   BLOCK EXEMPTION:                 SP3 B DROP
+                                   (DEF) D ENTER                   CA RANGE LIMIT:                  SP3 R (DROP or NN) ENTER
+                                                                   CA ALTITUDE LIMIT:               SP3 A (DROP or NN ENTER
+                   MASTER DISPLAY ONLY COMMANDS                    CA SWEEP LIMIT:                  SP3 S (DROP or NN) ENTER
+
+CHANGE SYSTEM CONFIGURATION:
+   SPEC C                                                                                 SPECIAL FLIPS MESSAGES:
+       M=? (DISPLAY ID) ∆ or ∆
+       A=? (DISPLAY IDS) ∆ or ∆                                    RESTORE DATA BASE (MASTER ONLY):             SPEC R
+       D=? (DISPLAY IDS) ∆ or ∆                                    FLIGHT PLAN REQUEST:                         F OP (DEF) ENTER
+       E=? (DISPLAY IDS) ENTER or ENTER                            STRIP REQUEST:                               S OP (DEF) ENTER              For questions pertaining to PIDP please contact
+                                                                   ENABLE/DISABLE FLIPS MESSAGES:               SPEC F                        ESC OL-D/E (Air Traffic Systems Division)
+CHANGE BAROMETER:                  SPEC NN ∆ NN ENTER                   (MASTER ONLY)                                                         DSN 884-2722
+                                                                   EMERGENCY RUNWAY DATA:                       E OP                          Commercial (405) 734-2722
+CHANGE TIME:                       SPEC DD ∆ HH ∆ MM ENTER         1000-9000 FEET RUNWAY DATA:                  (1-9) OP                      1 SEP 2000&HUWLILHG&XUUHQW'HFHPEHU 6XSHUVHGHV$7-3$0D\
+                                                                   RUNWAY DATA BY AIRPORT:                      I OP (Airport/Fix ID) ENTER
+DELETE ALL NAS FLIGHT PLANS:                     SPEC P ENTER      CLEAR AIRPORT DATA:                          C OP
+                                                                   POSITION SIGN ON/OFF                         OP P (TIME)/\(INIT)/\(POS)
+REASSIGN TRACKS FROM A DOWN DISPLAY                                                                             ENTER
+   TO MASTER DISPLAY:
+       SPEC TRK (DOWN DISPLAY ID) ENTER
+   TO ANOTHER DISPLAY:                                                                         MSAW CHECKER
+       SPEC TRK (DOWN DISPLAY ID) (NEW DISPLAY ID)
+                                                                   <PEM> HOOK NNN ENTER (enter ALT greater than MSAW value)
+CHANGE NAS/PIDP IDS:        SPEC N (NAS ID) ∆ (PIDP ID) ENTER
+
+CHANGE A/D ENTRY TIME:        SPEC A (N/NN) ENTER

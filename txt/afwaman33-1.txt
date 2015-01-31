@@ -1,0 +1,1326 @@
+BY ORDER OF THE COMMANDER                       AIR FORCE WEATHER AGENCY MANUAL
+AIR FORCE WEATHER AGENCY                                                    33-1
+
+                                                                                13 APRIL 2010
+                                                           Certified Current 10 September 2013
+                                                             Communications and Information
+
+                                                CONSOLIDATED NETWORK OPERATIONS
+                                                                        MANUAL
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-publishing.af.mil.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: 2 SYOS/SYOM                                                       Certified by: 2 WXG/CC
+Supersedes: AFWAMAN33-1, 10 June                                      (Col John M. Egentowich)
+            2003                                                                       Pages: 32
+
+
+This manual establishes policies, procedures and responsibilities for operating Headquarters Air
+Force Weather Agency (HQ AFWA) communications assets. All HQ AFWA internal data
+communications assets and networks are operated as components of the AFWA Consolidated
+Network (ACN) and this manual is applicable to HQ AFWA internal data communications. The
+ACN provides internal data communications for HQ AFWA automation systems and links these
+systems to external users and suppliers. The ACN is a data transport utility; it does not control
+data content or format and provides no classification or declassification services. This manual
+implements Air Force Manual (AFMAN) 33-223, Identification and Authentication; Air Force
+Instruction (AFI) 33-200, Information Assurance (IA) Management; AFI 33-115V1, Network
+Operations; and Air Force Weather Agency Manual (AFWAMAN) 33-2, AFWA Consolidated
+Network (ACN) Configuration Management (CM) Plan. Ensure that all records created as a
+result of processes prescribed in this publication are maintained in accordance with Air Force
+Manual (AFMAN) 33-363, Management of Records, and disposed of in accordance with Air
+Force Records Information Management System (AFRIMS) Records Disposition Schedule
+(RDS) located at https://www.my.af.mil/gcss-af61a/afrims/afrims.                  The reporting
+requirements in this publication are exempt from licensing in accordance with AFI 33-324, The
+Information Collections and Reports Management Program: Controlling Internal, Public and
+Interagency Air Force Information Collections. Paragraph 2.11.5 applies. Refer recommended
+changes and questions about this publication to the Office of Primary Responsibility (OPR)
+using the AF Form 847, Recommendation for Change of Publication; route AF Form 847s from
+the field through the appropriate functional’s chain of command. This publication does not
+apply to the Air National Guard or the Air Force Reserve Command.
+2                                                                                      AFWAMAN33-1 13 APRIL 2010
+
+
+SUMMARY OF CHANGES
+
+This publication has been substantially revised and must be completely reviewed. Major
+changes include Air Force Network Operations (AFNETOPs) policy changes, roles and
+responsibilities as a result of the AFWA reorganization as well as changes to the AFWA
+configuration management (CM) process.
+
+       1.      ROLES AND RESPONSIBILITIES .....................................................................                        2
+       2.      NETWORK OPERATIONS POLICY ..................................................................                            8
+       3.      NETWORK OPERATIONS PROCEDURES .......................................................                                  12
+       4.      TEST BED OPERATIONS ...................................................................................                17
+       5.      TRAINING AND DOCUMENTATION ..............................................................                              19
+       6.      PLANNING AND CONTINGENCY ....................................................................                          22
+       7.      Prescribed Forms: ..................................................................................................   26
+       8.      Adopted Forms: .....................................................................................................   26
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                        27
+
+Attachment 2—ACN TECHNICAL INTERCHANGE MEETING (TIM)                                                                                  31
+
+
+1. ROLES AND RESPONSIBILITIES
+    1.1. Network Alignment. The AFWA Consolidated Network (ACN) is a data transport
+    utility providing internal communications for HQ AFWA including United States
+    Government and Coalition communications and provides the interface to all external, non-
+    voice communications. The ACN consists of network appliances, switches, routers, hubs, all
+    associated cabling and those components necessary for the secure, reliable and efficient
+    transfer of data. All servers and operational assets are connected to and use the ACN devices
+    to communicate to internal and external networks supporting AFWA operations worldwide.
+    The ACN does not control data content or format and provides no classification or
+    declassification services. The 2d System Operations Squadron (2 SYOS) commander
+    operates the ACN using Department of Defense (DoD) and contracted personnel. The
+    Director, Strategic Plans, Requirements, and Programs (A5/8) is responsible for contract
+    management and resource acquisition.
+       1.1.1. The ACN Test Environment is an additional component of the ACN. It is
+       configured with isolated resources sufficient to emulate overall ACN capabilities. The
+       ACN Test Environment is utilized to evaluate new technologies and changes to the
+       network architecture without impact to the operational network. In the context of
+       enterprise testing, it is approved as the core of a virtual, distributed enterprise test bed
+       permitting individual system test beds to be interconnected as required for enterprise-
+       wide tests. The permanent test bed hardware and software set includes at least one copy
+       of each network component, or equivalent, and can be configured to mimic the ACN.
+       The test bed also contains equipment required to simulate the loading of network
+       components and systems and collect associated metrics.
+AFWAMAN33-1 13 APRIL 2010                                                                  3
+
+
+  1.2. Staff Functions. The DoD component of the ACN management team is assigned to the
+  Mission Support Center (MSC). Systems Engineering, Management, and Sustainment
+  (SEMS) contractors provide the permanent contractor element of the ACN team. Other
+  personnel may be involved with ACN on a temporary basis as new or legacy systems are
+  integrated into ACN or whenever deemed necessary by the permanent ACN management
+  team. AFWAMAN 33-2 defines CM procedures and responsibilities and are not repeated in
+  detail here.
+  1.3. Staff Responsibilities. The 2 SYOS Commander controls the ACN and delegates ACN
+  operational authority to the MSC. The MSC is responsible for Network Operations, Network
+  Security, and contractor support. ACN fiscal and contractual matters are handled by the
+  ACN Project Manager (PM) assigned to the AFWA A-Staff.
+     1.3.1. The ACN management team is comprised of the following personnel:
+         1.3.1.1. Chief, Mission Support Center.
+         1.3.1.2. Noncommissioned Officer In Charge (NCOIC), MSC.
+         1.3.1.3. Network Operations Section.
+         1.3.1.4. Systems Engineering, Management, and Sustainment (SEMS) contractors
+     1.3.2. The Mission Support Center Chief is responsible for the following:
+         1.3.2.1. Lead the ACN operations and management team.
+         1.3.2.2. Direct ACN SEMS contractor activities and assess performance.
+         1.3.2.3. Establish ACN policies and procedures.
+         1.3.2.4. Assess and ensure compliance with operational policy and adjudicate
+         network operating, maintenance, troubleshooting, and problem escalation procedures
+         and policies.
+         1.3.2.5. Direct the development of network troubleshooting guides.
+         1.3.2.6. Direct and review periodic physical network audits.
+         1.3.2.7. Identify and integrate AFWA communications requirements.
+         1.3.2.8. Review and approve user communications requirements and possible
+         solutions for adequacy and compliance with ACN architecture policy.
+         1.3.2.9. Evaluate and plan connection of devices or networks to the ACN in concert
+         with AFWAMAN 33-2 and the Information Assurance office (A6OS).
+         1.3.2.10. Review and provide guidance for test bed operations and reports.
+         1.3.2.11. Ensure ACN operational security.
+         1.3.2.12. Review and direct any needed updates to the Network Infrastructure section
+         of the AFWA Unclassified Production Enclave (AUPE), System Security
+         Authorization Agreements (SSAA) and Configuration Change Requests (CCR) to
+         ensure currency and adequacy.
+         1.3.2.13. Establish and review compliance with policies for auditing, logging and
+         tracking network activity.
+4                                                         AFWAMAN33-1 13 APRIL 2010
+
+
+       1.3.2.14. Establish procedures for network performance monitoring and review
+       network performance.
+       1.3.2.15. Review ACN maintenance records and ensure satisfactory problem
+       resolution and documentation.
+       1.3.2.16. Develop and coordinate a prioritized list of critical system functions for use
+       in network reconfiguration and service restoration.
+       1.3.2.17. Develop plans for alternate communications and off-site storage of key
+       configuration information to support service restoration.
+       1.3.2.18. Provide technical guidance and requirements to the Strategic Plans,
+       Requirements, and Programs Directorate (A5/8) and Communications and
+       Information Directorate (A6) in coordinating communications policies and Service
+       Level Agreements (SLA).
+       1.3.2.19. Conduct periodic Technical Interchange Meetings (TIM) in accordance
+       with attachment 2 of this AFWAMAN.
+       1.3.2.20. Develop maintenance and implementation plans to include any needed
+       testing, site preparation and expected impacts.
+       1.3.2.21. Coordinate ACN security policies and classified network requirements with
+       A6OS.
+    1.3.3. The MSC NCOIC’s responsibilities include:
+       1.3.3.1. Provide military guidance for enlisted personnel.
+       1.3.3.2. Devise and monitor formal and on-the-job training (OJT) programs for MSC
+       personnel.
+       1.3.3.3. Consolidate SEMS contractor and MSC troubleshooting procedures in ACN
+       troubleshooting guides.
+       1.3.3.4. Draft and maintain OJT materials.
+       1.3.3.5. Review assignments and performance of enlisted personnel assigned to the
+       ACN and assist the MSC Chief in their training and evaluation.
+    1.3.4. Network Operations Section is responsible for the following:
+       1.3.4.1. Assess network performance and report on network capabilities.
+       1.3.4.2. Identify performance variations; devise and direct corrective actions.
+       1.3.4.3. Maintain Air Combat Command (ACC) standard naming conventions for
+       ACN equipment.
+       1.3.4.4. Consolidate system performance metrics into required reports, highlight
+       variations, and identify causes and potential solutions to evolving problems.
+       1.3.4.5. Maintain plan for assigning Internet Protocol (IP) addresses for all ACN and
+       connecting systems consistent with network architecture and virtual local area
+       network (VLAN) management.
+AFWAMAN33-1 13 APRIL 2010                                                                     5
+
+
+        1.3.4.6. Maintain and configure management tools employed by ACN in compliance
+        with AFWA policy and procedures.
+        1.3.4.7. Analyze network capacity. Review known and anticipated communications
+        requirements and advise the MSC Chief of expected network shortfalls.
+        1.3.4.8. Ensure routine and annual audits of network configuration, maintenance, log,
+        and performance records are being conducted and report on same to the MSC Chief.
+        1.3.4.9. Develop and implement ACN security for both the unclassified and
+        classified networks.
+        1.3.4.10. Review and assess the security implications of all network changes
+        including security accreditation materials for systems requesting network connectivity
+        and advise the MSC Chief and A6OS regarding anticipated security impacts.
+        1.3.4.11. Form and direct an ACN security response team when needed to investigate
+        possible network security issues.
+        1.3.4.12. Review Public Key Enabled (PKE) functionality, and the Enterprise
+        Storage Solution (ESS) as well as any associated system activity logs and investigate
+        all potential security issues relating to these and any new Enterprise systems.
+        1.3.4.13. Review connectivity requests as part of the CCR process (e.g. interface
+        tables) and validate all port, protocol and service connections to the ACN with
+        appropriate DoD and Air Force (AF) documentation.
+        1.3.4.14. Investigate undocumented connections to the ACN or between ACN users
+        and other systems and recommend disposition to the MSC Chief.
+        1.3.4.15. Perform the initial evaluation of vulnerabilities or incidents to include
+        classified message incidents occurring at the user level; coordinate response activities
+        between MSC staff and A6OS. Initiate corrective or protective measures and report
+        according to AFI 33-138.
+        1.3.4.16. Evaluate network performance in coordination with SEMS and recommend
+        options for improving network performance and manageability.
+        1.3.4.17. Manage ACN Domain Name Server (DNS) and router tables.
+        1.3.4.18. Identify, acquire, and guide SEMS testing and installation of appropriate
+        versions of firmware and software in accordance with vendor specifications. Ensure
+        accurate documentation of same.
+        1.3.4.19. Assist SEMS contractors in performing and documenting ACN security
+        audits and tests. Conduct and document informal audits in conjunction with SEMS
+        inspections.
+        1.3.4.20. Develop and manage access lists for ACN platforms employing such lists.
+        1.3.4.21. Maintain and configure ACN authentication devices
+     1.3.5. SEMS contractor functions are implemented in accordance with associated
+     contracts. This section provides the basis for developing appropriate contracts or task
+     orders. SEMS contractor responsibilities include:
+6                                                    AFWAMAN33-1 13 APRIL 2010
+
+
+    1.3.5.1. Maintain network resources, hardware and software, in operating order in
+    compliance with current manufacturer recommendations and AFWA policy.
+    1.3.5.2. Track the revision status of network components and assist MSC technicians
+    as required in updating ACN components and documenting same.
+    1.3.5.3. Advise the MSC Chief of needed revisions, enhancements, or updates to
+    network components and the impact of installing and not installing.
+    1.3.5.4. Develop and annually update maintenance, upgrade, life cycle replacement,
+    and sparing plans to achieve a specified level of service.
+    1.3.5.5. Perform preventative maintenance in accordance with the maintenance plan
+    and manufacturer recommendations and log results for all ACN assets.
+    1.3.5.6. Provide on-call response for emergency ACN support as directed by the
+    MSC Chief or Systems Duty Officer (SDO) 7 days per week, 24 hours per day with a
+    1-hour response time. Coordinate needed configuration changes with the MSC staff
+    and initiate calls to vendors as required for troubleshooting component problems.
+    1.3.5.7. Install and/or align hardware, firmware, and software as directed by the MSC
+    Chief and document configurations in accordance with AFWAMAN 33-2.
+    1.3.5.8. Install enhancements (e.g., new or replacement hardware, software, cabling,
+    and interfaces) as directed by the MSC Chief.
+    1.3.5.9. Prepare implementation plans for all ACN configuration changes. Draft
+    outage requests and provide as a package to the MSC Chief in accordance with
+    AFWA policy.
+    1.3.5.10. Configure, maintain, and operate the ACN test bed as directed by the MSC
+    Chief.
+    1.3.5.11. Receive, inventory, and warehouse in AFWA spaces, and ship as required
+    all ACN and test bed components. Obtain return authorizations as needed for test
+    failed components being returned to the vendor.
+    1.3.5.12. Test all new hardware and software elements, and document results for
+    MSC Chief approval prior to ACN installation.
+    1.3.5.13. Assist MSC in identifying more effective and efficient means of ACN
+    operation.
+    1.3.5.14. Measure and document component maintenance and performance histories;
+    suggest needed revisions to ACN troubleshooting guides and plans.
+    1.3.5.15. Configure, deploy, employ, and recommend action in response to findings
+    from network analysis tools (e.g., protocol analyzers and sniffers).
+    1.3.5.16. Conduct periodic physical security audits and tests of ACN procedures and
+    brief the MSC Chief on results and recommendations.
+    1.3.5.17. Document and assist in reconciliation of documentation of ACN activities.
+    1.3.5.18. Maintain ACN Enterprise asset database in coordination with MSC
+    technicians.
+AFWAMAN33-1 13 APRIL 2010                                                                    7
+
+
+         1.3.5.19. Develop drawings, listings, and apply appropriate labels to new and legacy
+         components integrated into the ACN as detailed in AFWAMAN 33-2.
+         1.3.5.20. Reconcile and document the network management model with the installed
+         network configuration at least once per month. Provide documentation to the MSC
+         Chief.
+         1.3.5.21. Summarize ACN component revisions and changes to software and
+         firmware configurations in a monthly report to the MSC Chief. Reconcile these
+         summaries with the ACN Enterprise asset database.
+         1.3.5.22. Document cost analyses for new connectivity requests, results of needed
+         troubleshooting, and other relevant tasks in the work order and Enterprise asset
+         database.
+     1.3.6. The ACN PM responsibilities include:
+         1.3.6.1. Manage ACN life cycle budgeting.
+         1.3.6.2. Maintain the ACN Air Force Weather Annual Programming Plan (A2P2)
+         and develop associated funding and contractual documents.
+         1.3.6.3. Review proposed ACN configuration changes and assess related cost and
+         contractual issues. Develop funding and contractual options for review by the MSC
+         Chief.
+         1.3.6.4. Manage ACN support contracts to ensure necessary contractual support.
+         1.3.6.5. Coordinate vendor loan agreements with the Offutt Air Force Base (AFB)
+         Contracting Office, suppliers, SEMS, and other offices as needed.
+         1.3.6.6. Develop and exploit relationships with AFWA suppliers to most effectively
+         employ AFWA resources while ensuring support adequacy and continuity.
+         1.3.6.7. Support AFWA acquisition planning; identify options and strategies.
+         1.3.6.8. Advise AFWA on viability of plans; assist in coordinating and evaluating
+         supplier performance.
+  1.4. Additional Staff Functions. While 2SYOS System Operations (SYOO), A6 and A6OS
+  are not formally part of the ACN management staff, these offices provide support and their
+  responsibilities include:
+     1.4.1. SYOO oversees the duties and responsibilities of the SDO and GDO; however,
+     there are SDO/GDO duties specific to the operation of the ACN. These include:
+         1.4.1.1. Receive, filter, and direct problem reports/change requests to the MSC Chief
+         and MSC technicians as appropriate using help desk software.
+         1.4.1.2. Provide on-site guidance and task prioritization using established procedures
+         for the ACN SEMS contractors in the absence of ACN staff in mission critical
+         situations.
+         1.4.1.3. Monitor ACN performance using appropriate network management software
+         (e.g. Ironview, Open View, and Tivoli) as documented in the ACN SSAA and CCRs.
+8                                                          AFWAMAN33-1 13 APRIL 2010
+
+
+           1.4.1.4. Monitor activity logging for situations exceeding predefined thresholds and
+           alert the ACN staff to such deviations and/or act in accordance with established ACN
+           procedures.
+       1.4.2. A6 is the program management of external communications systems connecting to
+       the ACN.
+       1.4.3. A6OS is the proponent for all AFWA certification and accreditation efforts.
+       A6OS works closely with the MSC Chief to ensure all applicable accreditation
+       documentation (e.g. CCRs, SSAAs) are submitted and processed in a timely manner
+       ensuring continued approval to connect.
+    1.4.4. The MSC Chief, A6, and A8P work together in order to develop the strategic plan for
+    how the ACN needs to adjust to meet new Air Force requirements.
+2. NETWORK OPERATIONS POLICY
+    2.1. Process Control. 2SYOS disseminates ACN policies which control the first four layers
+    (i.e., physical, link, network, and transport) of the Open Systems Interconnect (OSI)
+    networking protocol stack for systems connected to ACN. ACN control of end nodes
+    includes the interface to the network interface card (NIC) and the NIC configuration. The
+    MSC develops procedures necessary to implement ACN policies and monitors user
+    compliance.
+       2.1.1. The MSC coordinates policies and procedures with the Offutt AFB Network
+       Control Center (NCC) in accordance with the established service level agreement to
+       ensure consistency and permit full integration of the two networks. ACN policies govern
+       all data communications using the ACN architecture and infrastructure. All ACN users
+       comply with these policies and procedures unless granted explicit authorization in
+       accordance with AFWAMAN 33-2.
+       2.1.2. Individuals or system managers requiring data communications support submit an
+       Internal Help Desk work ticket via the Remedy system as well as the associated
+       accreditation documentation to include an SSAA and/or CCR as required by A6OS.
+       2.1.3. All ACN systems will be accredited in accordance with AFI 33-202v1. Changes
+       to the accreditation will be documented using the CCR process created by A6OS.
+       2.1.4. CCRs will include verification of the connecting system’s current security
+       accreditation and identify the following: individual responsible for that system’s
+       communications; request and justification; mission impact; risk analysis; software,
+       hardware and interface tables as applicable.
+       2.1.5. The MSC Chief and A6OS will review all accreditation documents to ensure only
+       approved interfaces and accredited connections are identified and pursued.
+       2.1.6. Where appropriate A6 provides program management for external connections.
+       2.1.7. AFWA acquisition programs obtain AFWA Chief Engineer (A5/8CE) approval
+       prior to acquiring any communications assets or obligating AFWA to provide
+       communications support. These programs specify timelines and procedures for
+       integrating these assets into the ACN.
+AFWAMAN33-1 13 APRIL 2010                                                                    9
+
+
+  2.2. System Interfaces. AFWAMAN 33-2 categorizes systems connecting with the ACN in
+  terms of the level of trust given to those systems by the MSC and A6OS. Level of trust
+  differs from the system’s classification. Recognized levels include trusted, Demilitarized
+  Zone (DMZ), and untrusted and are determined by the MSC based on each system’s
+  connectivity. Sensitive Compartmented Information (SCI) Facilities (SCIF) and AFWA
+  tenants are subsets of these categories based on the manner of their connection and are not
+  automatically assigned any particular level of trust.
+     2.2.1. Trusted systems connect only to other trusted systems and to the ACN behind the
+     AFWA firewall and DMZ. Trusted systems have no other external connections and will
+     comply with the following guidelines as a minimum. User systems will not embed
+     switching or routing capability without explicit, prior approval by the ACN TIM.
+         2.2.1.1. Trusted systems connect to ACN via Ethernet, Gigabit Ethernet (GE/c) over
+         copper, Gigabit Ethernet (GE/f) over fiber, or Fiber Channel (FC). New trusted
+         systems must support Transmission Control Protocol (TCP) /Internet Protocol (IP)
+         over Ethernet. ACN will not support new Fiber Distributed Data Interface (FDDI),
+         Asynchronous Transfer Mode (ATM), or other protocol connections without explicit
+         A6OS approval. Classified systems will connect to ACN using fiber interfaces unless
+         the A5/8CE grants explicit, prior approval for copper interfaces.
+         2.2.1.2. Trusted systems interface via the ACN cable infrastructure. The MSC must
+         approve the electrical and physical location of all such connections and these
+         connections will be labeled and recorded in accordance with AFWAMAN 33-2.
+         Trusted system users will not alter ACN interfaces or NIC configurations without
+         explicit MSC approval.
+         2.2.1.3. New AFWA trusted systems will be compatible with ACN network
+         management, Virtual Private Network (VPN), and VLAN architecture. Each
+         system’s interface definition as identified in its Connectivity Request specifies the
+         network privileges and operating constraints associated with that system.
+         2.2.1.4. Trusted systems will not deploy modems for any purpose without explicit
+         approval of A6OS.
+         2.2.1.5. The MSC explicitly assigns all network addresses for trusted and DMZ
+         systems, and no trusted or DMZ system will employ an IP address for any purpose
+         without explicit MSC approval.
+         2.2.1.6. Trusted systems are aligned according to their primary function-- production,
+         development or administration in order to optimize service levels.
+         2.2.1.7. The ACN Enterprise Test bed will remain routinely isolated from both the
+         ACN and external networks. Temporary connectivity (e.g. unclassified ACN,
+         enclaves, DMZ) can be requested as part of a test but must be briefed at both the
+         ACN TIM and the Weekly Implementation and Maintenance Meeting (WIMM).
+         Only the WIMM has authority to approve temporary connections with either the ACN
+         or external networks for testing. A6OS will identify any issues warranting additional
+         approval actions. An exception to this procedure will be those assets that are part of
+         the permanent ACN test bed hardware/software or the Enterprise Management
+         Branch. These are used for troubleshooting and upgrade testing of network
+10                                                             AFWAMAN33-1 13 APRIL 2010
+
+
+            components and systems. Operational impacts requiring immediate testing of
+            hardware/software/patch upgrades may necessitate the connection of this equipment
+            to a DMZ interface to facilitate testing. In these instances, the approval authority will
+            be the MSC Chief.
+        2.2.2. Untrusted systems connect to the ACN only through the ACN firewall and edge
+        device. Untrusted systems will:
+            2.2.2.1. Interface with ACN using Ethernet, GE/c, GE/f, FC, or wide area interfaces
+            (e.g., T-carrier 1 (T1) or Gigabit Ethernet (GE)).
+            2.2.2.2. Have no secondary connections to internal, trusted systems.
+            2.2.2.3. Operate in accordance with their interface definition which specifies the
+            connecting system’s network privileges and operating constraints.
+            2.2.2.4. Identify and coordinate the IP addresses of directly connected devices with
+            the MSC before beginning operations.
+        2.2.3. The DMZ is defined by those systems connected between the edge device and the
+        firewall. The MSC Chief regulates DMZ interfaces. All DMZ connections meet the
+        same requirements as untrusted systems but also define the level of access required to
+        trusted systems and specify access controls required from untrusted networks. The
+        interface definition is documented as part of the accreditation process within an SSAA or
+        CCR. Requests for interface connectivity are submitted via an Internal Help Desk ticket
+        Connectivity Request which details network privileges and operating constraints
+        associated with each DMZ system.
+     2.3. Compatibility Standards. ACN incorporates, manages, and operates all HQ AFWA
+     internal data communications assets (as defined in AFWAMAN 33-2). The ACN TIM
+     ensures any system acquisition delivers components and a design compatible with ACN
+     standards.
+        2.3.1. ACN management systems employ a single set of integrated, commercial-off-the-
+        shelf (COTS) tools to manage all AFWA data communications assets through a common
+        user interface. New and existing AFWA systems will not duplicate these capabilities or
+        acquire tools which are incompatible with the baseline tools. The MSC Chief ensures the
+        baseline tools are maintained. Specific baseline tools are described in Attachment 3.
+     2.4. Formats and Protocols. System developers and others responsible for building and
+     modifying information systems that cross Air Force enclave boundaries shall comply with
+     the AF Ports, Protocols and Services Matrix in accordance with AFI 33-137, Air Force Ports,
+     Protocols, and Services Management. ACN policy does not address data formats in general;
+     however, ACN policies do address those aspects of data format and handling which impact
+     data transport and network security specific to AFWA systems. These policies ensure
+     interface compatibility and consistent delivery of defined support levels.
+        2.4.1. Several methods exist for exchanging data. Network efficiency and security limit
+        ACN users to the following methodologies:
+            2.4.1.1. Trusted users may exchange data using Secure File Transfer Protocol
+            (SFTP). Trusted systems may also transfer data and files to DMZ and untrusted
+            systems using SFTP. Conversely, untrusted and DMZ systems may not transfer data
+AFWAMAN33-1 13 APRIL 2010                                                                   11
+
+
+         and files to trusted systems using SFTP unless explicitly authorized by A6OS.
+         Trusted systems may pull data and files from DMZ systems.
+         2.4.1.2. File and data shipments associated with electronic mail (e-mail) between
+         trusted users use SFTP whenever the file or data set to be transferred exceeds 50
+         megabytes (MB).
+         2.4.1.3. Network File System (NFS) mounts degrade network performance for many
+         users and are strongly discouraged. Users requesting new or modified connections
+         with the ACN will identify any requirements for new NFS mounts before
+         development of a system is pursued. NFS mounts within subnets are evaluated on a
+         case-by-case basis and will be permitted only when there is no other viable technical
+         solution and then only for a specified period during which the petitioner will develop
+         an acceptable standard solution. ACN cannot guarantee continuity of new NFS
+         mounts established. NFS mounts are expressly forbidden between trusted and
+         untrusted systems.
+     2.4.2. ACN management and interface standards dictate connected systems meet a small
+     set of protocols regarding data exchange.
+         2.4.2.1. Trusted and DMZ automation and communications devices connected to the
+         ACN must support and provide ACN access to Simple Network Management
+         Protocol (SNMP) and Internet Monitor (INMON) protocol. All DMZ and trusted
+         users must comply with this constraint regardless of the date their system or
+         equipment is incorporated into the ACN.
+         2.4.2.2. Trusted systems exchange data using TCP/IP, TCP, FC, or User Datagram
+         Protocol (UDP), and systems connecting to ACN must be compatible with one or
+         more of these protocols. All system interfaces must be documented through the
+         accreditation process. Any ports, protocols and services that cross the AF boundary
+         which are not listed in the current AF ports and protocols matrix must be registered
+         through the MSC and in accordance with AFI 33-137.
+     2.4.3. Trusted ACN users will limit maximum transfer unit (MTU) size for packets
+     introduced into the ACN as directed by the MSC.
+  2.5. Access Control. Access to ACN and its physical components is controlled. The MSC
+  employ a variety of controls including passwords, access limited addresses, VLANs, VPNs,
+  firewalls, and locked cabinets/closets.
+     2.5.1. Physical Access Policy. SEMS contractors will receive and inventory all ACN
+     components before they are allocated to operations or bench stock. Communications
+     assets incorporated into the ACN as part of a connecting system will be inventoried by
+     SEMS contractors before connection approval. The connection approval specifies the
+     process for complying with ACN access policies.
+         2.5.1.1. All operational ACN networking components will be located in ACN closets
+         or racks. All ACN wiring closets and free-standing equipment racks will be locked at
+         all times except when work is being done to components in that facility. The MSC
+         Chief controls key distribution in coordination with the AFWA Facility Manager.
+         2.5.1.2. ACN bench stock will be stored only in controlled access spaces by SEMS.
+12                                                           AFWAMAN33-1 13 APRIL 2010
+
+
+           2.5.1.3. Only SEMS contractors or MSC technicians are authorized to modify or
+           reconfigure ACN assets and then only as directed by the MSC Chief or SDO.
+           Realigning cables or jumpers and connecting or disconnecting end user equipment are
+           considered modification or reconfiguration of ACN assets.
+           2.5.1.4. ACN patch panels, Fiber Distribution Centers, patch or jump cables, FC
+           cabling, and backbone cable runs are handled in a manner similar to networking
+           hardware. While ACN junction boxes, grid boxes, and wall panels may sometimes
+           exist in user space, only MSC technicians or SEMS contractors are authorized to
+           modify or realign connectivity. These points and the associated cables are part of the
+           ACN and are managed accordingly.
+           2.5.1.5. Port locking is established to deter users from attaching unapproved systems
+           to the ACN as well as to discourage moving equipment without authorization.
+        2.5.2. The MSC implements VLANs, VPNs, and password control to further limit access
+        to the ACN and its component configurations. A6OS tracks these procedures to ensure
+        they comply with relevant AF and DoD directives while meeting ACN operational and
+        security requirements.
+     2.6. Maintenance and Problem Resolution. ACN maintenance consists of preventative,
+     corrective, and adaptive maintenance. Maintenance actions may require WIMM approval.
+     Adaptive maintenance changes ACN configuration and must comply with AFWAMAN 33-2.
+        2.6.1. SEMS contractors accomplish preventative maintenance in accordance with
+        procedures described herein and governing contractual provisions. This effort includes
+        all ACN components and requires WIMM approval. SEMS contractors develop
+        preventative maintenance schedules to increase network component life span and
+        minimize outages due to component failure. MSC technicians develop similar schedules
+        for ACN equipment involved in SCIF and Secret Internet Protocol Routed Network
+        (SIPRNET) operations.
+        2.6.2. Corrective maintenance may result from discoveries made during preventative
+        maintenance or from component failures. The MSC monitors the network for signs of
+        errors or problems in network functions and generates work orders to correct such
+        problems when identified. WIMM approval, when applicable, will be sought when
+        scheduled maintenance is determined to cause service interruptions.
+        2.6.3. Adaptive maintenance includes any efforts which modify the configuration or
+        capabilities of the ACN or its components, including associated documents. This
+        includes updates and upgrades of network components, the incorporation of new
+        components or protocols, and the connection of new systems. AFWAMAN 33-2 governs
+        adaptive maintenance in conjunction with applicable SEMS contract provisions.
+     2.7. Performance Monitoring. The MSC Chief defines and tracks specified ACN
+     performance metrics to define system service levels and quantify the impact of system
+     changes. These reports are maintained in accordance with AFMAN 33-322, Records
+     Management Program and AFMAN 33-363, Management of Records.
+3. NETWORK OPERATIONS PROCEDURES
+AFWAMAN33-1 13 APRIL 2010                                                                   13
+
+
+  3.1. Procedure Definition. The MSC Chief develops procedures to implement ACN
+  policies. ACN users can recommend changes to these procedures using work tickets within
+  the Remedy system to document the recommendations, and these changes are adjudicated in
+  accordance with AFWAMAN 33-2. The MSC Chief and A6 periodically hold a TIM to
+  develop and review detailed plans and procedures supporting ACN operations. The TIM
+  directly supports ACN activities and is described in Attachment 2. This chapter summarizes
+  ACN operational procedures and associated documents.
+  3.2. System Management. The MSC Chief defines and develops procedures to assess ACN
+  service levels. Metrics may include network load, errors, broadcasts and protocols present.
+  These procedures employ network Enterprise Management Software tools (e.g. OpenView,
+  Netview, InMon, Tivoli) to track the status and performance of all network equipment and
+  produce alarms when failures occur.
+     3.2.1. The SDO will employ OpenView, Netview, and Tivoli to monitor ACN
+     operational status and localize potential problems. The MSC and SEMS technicians use
+     OpenView, InMon, and IronView, in conjunction with sniffers to assess the ACN
+     operations and identify or project potential capability shortfalls.
+     3.2.2. ACN employs SNMP and INMON facilities and packet analyzers. Analysis of
+     network protocols supports trend analysis and troubleshooting. The MSC Chief directs
+     the use of sniffers to track network performance, project requirements, and isolate
+     problem areas.
+     3.2.3. Active directory, policy routes, proxy systems and access controls will also be
+     used to facilitate ACN system management in accordance with applicable AF and AFWA
+     policies.
+  3.3. Connection Procedures. The following connection procedures apply to all new and
+  existing systems resident on the AFWA ACN:
+     3.3.1. The PM or System Administrator (SA) for the connecting system is the focal point
+     for submitting all applicable accreditation documentation in accordance with A6OS
+     guidance as well as Internal Help Desk tickets to include all technical requirements for
+     connectivity. The PM and SA are also responsible for ensuring that the TIM is met when
+     applicable. To assist in this process, the MSC reviews requirements, connectivity, and
+     components of users and systems requesting ACN connectivity and makes
+     recommendations on this process. The PM and/or SA will brief the TIM on their
+     proposal. The MSC Chief may bypass this procedure in an emergency.
+     3.3.2. The SA, for an operational system, confirms the functional system’s accreditation
+     status and approval to operate in the configuration proposed for ACN connection. The
+     SA provides this information on and delivers a copy of any needed certification
+     documentation as required for the ACN TIM to ascertain the connection’s viability.
+         3.3.2.1. The SA, A6 and MSC review system accreditation, interim accreditation,
+         external agency approval, or other form of certification for a connecting system prior
+         to assigning a level of trust. A6 must certify compliance with applicable DoD, AF,
+         and AFWA security regulations regarding data communications prior to connectivity.
+14                                                        AFWAMAN33-1 13 APRIL 2010
+
+
+        3.3.2.2. All interfaces to the connecting system must be declared and their level of
+        trust determined. A6 and MSC personnel review all system interfaces to assess the
+        impact of such connectivity and determine the appropriate level of trust for the
+        system.
+     3.3.3. The MSC Chief must review and certify all proposed ACN interfaces in terms of
+     their standards compliance. The ACN TIM designs and sizes all connections to the ACN
+     in concert with SAs. The A5/8CE and/or WIMM must approve all new, permanent ACN
+     interfaces from the perspective of their impact on ACN performance and accreditation
+     before their implementation by the MSC technicians and SEMS contractors.
+        3.3.3.1. SAs must provide system level diagrams, major network component lists,
+        and intra-network and inter-network connectivity to the ACN TIM prior to
+        connectivity. They must also provide packet flow analyses and usage predictions.
+        The MSC assesses the impact on ACN service levels and advises the A5/8CE and/or
+        WIMM accordingly.
+        3.3.3.2. The MSC assists SAs with scheduling of any system tests. System tests
+        evaluate unique protocol, interface, or system requirements and test
+        hardware/software functionality and identify and mitigate any potential network risks
+        and vulnerabilities prior to operational connection to ACN. The SA develops a test
+        plan and reports results to the ACN TIM. A mutually acceptable implementation plan
+        defining expected impacts and mitigation techniques should be the end product. This
+        plan, risk analysis and the connecting system’s accreditation documentation are
+        prerequisites for operational connectivity with the ACN.
+        3.3.3.3. The PM, Lead Command Manager or SA briefs the A5/8CE and/or WIMM
+        on the system’s interface definition and a summary of its expected impact on ACN,
+        including:
+           3.3.3.3.1. Packet flow analysis.
+           3.3.3.3.2. Current and expected future bandwidth requirements.
+           3.3.3.3.3. Possible impacts of connectivity.
+           3.3.3.3.4. Secondary network interfaces.
+           3.3.3.3.5. Network ports, protocol, and service requirements.
+           3.3.3.3.6. VLAN/VPN compatibility.
+           3.3.3.3.7. Management system compatibility.
+           3.3.3.3.8. Risk analysis.
+           3.3.3.3.9. Test bed report.
+     3.3.4. The MSC controls IP address and standard naming conventions for ACN systems
+     and for interfacing systems not using Dynamic Host Control Protocol (DHCP). Systems
+     interfacing with ACN will not use an IP address without MSC approval. IP address
+     requests follow established AFWA procedures and are normally included in the
+     accreditation and CCR process. Requests for IP addresses are submitted through the
+     Internal Help Desk ticket system and will be issued upon MSC review and approval.
+AFWAMAN33-1 13 APRIL 2010                                                                    15
+
+
+     Requests for address changes or other interface changes are handled in accordance with
+     AFWAMAN 33-2.
+         3.3.4.1. The MSC implements the Integrated Network Operations and Security
+         Center, East (INOSC-E)’s network standard naming convention plan, and the ACN
+         TIM, or MSC assigns individual IP addresses in compliance with this plan
+         3.3.4.2. MSC technicians use a database or commercial address management system
+         to track all ACN assigned addresses. The database includes all systems connected to
+         ACN and their associated equipment addresses. All changes to node locations,
+         network interfaces, physical addresses, points of contact, and associated functions are
+         tracked with the assigned addresses.
+         3.3.4.3. IP addresses are correlated to the VLAN/VPN management system.
+     3.3.5. The MSC directs development of DNS management procedures, and the MSC
+     technicians establish, implement, and maintain these procedures on all ACN DNS
+     platforms. Such use will generally be limited to approved static routing on clearly
+     delineated subnets or for limited periods.
+  3.4. Component and System Access. MSC personnel coordinate all ACN access controls
+  with the Offutt AFB NCC in accordance with the established Memorandum of Agreement
+  (MOA). Certain address spaces are not permitted access to other systems based upon the
+  relative levels of trust. These controls are implemented using VLAN/VPN technologies,
+  network topology, router filters, firewall policy, Access Control Lists (ACLs), and reverse
+  proxy. The SA implements an ACL for each component capable of implementing an access
+  control list in order to limit access by all but ACN management systems.
+     3.4.1. Physical Security. 2SYOS and SEMS confirm compliance with ACN security
+     procedures through periodic physical system audits. SEMS closet inspections conducted
+     as part of the preventative maintenance program constitute part of the informal audit
+     process. Additionally, computer rooms and communication closets are controlled using a
+     combination of key locks, cipher locks, monitoring of door alarms, and/or proximity
+     access cards. SDOs provide 24/7 physical control of equipment within the computer
+     rooms.
+     3.4.2. Password Control. The MSC and SAs ensure that all passwords and control
+     procedures for all ACN components are developed in accordance with AFMAN 33-223,
+     Identification and Authentication.
+     3.4.3. Network Filters. The A6 and MSC guide the technicians and SAs in devising and
+     installing appropriate security perimeters to include firewall and DMZ filters. ACN may
+     also employ filters as part of the VLAN/VPN implementation to better manage network
+     access. Filters limit access between subnets within the network as well as manage packet
+     flow. The accreditation process documents the specific protocols allowed through the
+     network filters and the SAs periodically confirm this by protocol analysis on a system by
+     system basis.
+     3.4.4. The 55th Communications Squadron (55CS) employs proxy systems, anti-IP
+     spoofing filters, firewalls, and address translation to prevent external systems from
+     determining the addresses of internal, trusted network devices. Additional security
+16                                                              AFWAMAN33-1 13 APRIL 2010
+
+
+        measures run on a local host and limit certain functions to specific addresses or address
+        spaces to ensure only authorized users or hosts perform specific functions.
+     3.5. Intrusion Detection. INOSC-E and 55CS ensure activity monitoring and logging using
+     ACN firewalls and an Intrusion Detection System (IDS). The SA alerts network operations
+     personnel of unauthorized access attempts and submits all applicable incident reports in
+     accordance with AFI 33-138, Enterprise Network Operations Notification and Tracking. A6
+     may periodically request activity monitoring to evaluate ACN security. A6 may employ
+     outside agents for this effort. The MSC coordinates ACN efforts with Offutt AFB NCC
+     activities in accordance with established MOA.
+        3.5.1. The SA ensures all audits and activity monitoring results are stored and reviewed
+        in accordance with AFI 33-202v1. The MSC ensures the review of all log entries for
+        trouble shooting and isolating unauthorized access attempts.
+     3.6. System Maintenance. SEMS develops a maintenance plan for ACN TIM review and
+     approval and performs ACN preventative maintenance in accordance with the plan. SEMS
+     documents maintenance actions in an inspection report for MSC Chief and A6 review and
+     inclusion in the Enterprise Asset database.
+        3.6.1. Unauthorized and undocumented connections. SEMS and MSC personnel inspect
+        all cable runs for proper documentation. If an undocumented run is found, it is brought to
+        the immediate attention of the MSC Chief. The MSC Chief determines if the cable is a
+        valid portion of the network. If it is, the MSC Chief ensures the run is properly
+        documented and labeled in accordance with AFWAMAN 33-2. If the connection cannot
+        be confirmed to be a valid part of the network the MSC Chief directs its immediate
+        removal. Such connections may be reinstalled only upon delivery of the associated
+        documentation.
+        3.6.2. Observable equipment errors or faults. All cable terminations in ACN equipment
+        are inspected for link, traffic, and errors or faults. If there is no indication of link, SEMS
+        identifies the cause for lack of link. If equipment is no longer attached to the cable
+        SEMS disconnects the cable and documents the removal in accordance with AFWAMAN
+        33-2.
+        3.6.3. Unusual equipment behavior or indications. The MSC Chief identifies and directs
+        investigation of ports with unusually high traffic indications to validate the traffic.
+        Significant increases in traffic are reviewed by the MSC and SEMS to determine the
+        appropriate response.
+        3.6.4. Annual Maintenance Records Review. The MSC review all maintenance records
+        for equipment, closets, and cabinets annually. The annual review looks for recurring
+        events, problems, or trends that could lead to future problems.
+        3.6.5. SEMS employs automated and manual tools to inspect all connections for
+        indications of failures and errors. Protocol analysis is performed as required.
+        Technicians document all steps and resolutions. The MSC Chief reviews and validates
+        any corrective actions in the aforementioned maintenance logs.
+     3.7. Component Management. SEMS develops and periodically updates a plan to assure
+     adequate sparing, upgrades, updates, and life cycle replacement for ACN components. The
+AFWAMAN33-1 13 APRIL 2010                                                                     17
+
+
+  plan considers warranty information, component firmware and software currency, sparing,
+  and life cycle replacement. SEMS uses automated tools to conduct this asset management
+  process and link it with the Enterprise asset database. The ACN management system will be
+  integrated into the enterprise asset data base and is reviewed periodically by the technicians.
+     3.7.1. Managed components include all configuration items identified in AFWAMAN
+     33-2.
+     3.7.2. The database tracks the following metrics for all managed components:
+         3.7.2.1. Physical description.
+         3.7.2.2. Functional/logical description.
+         3.7.2.3. Warranty information.
+         3.7.2.4. Configuration.
+         3.7.2.5. Age.
+         3.7.2.6. Firmware revision/version level.
+         3.7.2.7. Maintenance points of contact.
+         3.7.2.8. Physical location.
+         3.7.2.9. Logical location.
+         3.7.2.10. All associated addresses.
+         3.7.2.11. Access information.
+         3.7.2.12. Maintenance records.
+     3.7.3. SEMS routinely updates the database using either automated or manual processes.
+     SEMS provides regular reports and an annual documentation review corresponding to the
+     maintenance records review to the MSC Chief for approval or further action.
+     3.7.4. Troubleshooting. The MSC Chief documents troubleshooting procedures in
+     coordination with MSC technicians and SEMS.                ACN management roles and
+     administrative structure are clearly defined in the troubleshooting documentation. The
+     MSC Chief ensures MSC technicians and SEMS contractors are thoroughly trained in the
+     appropriate aspects of the troubleshooting procedures outlined in the documentation. The
+     MSC Chief updates the troubleshooting guides annually and as changes are made to the
+     ACN. MSC technicians and SEMS contractors analyze previous problem reports for
+     trends and recurring problems to integrate into the troubleshooting documentation.
+4. TEST BED OPERATIONS
+  4.1. Configuration and Purpose. The ACN test bed environment provides isolated
+  communications resources sufficient to emulate overall ACN capabilities as necessary to
+  evaluate new technologies and changes to the network architecture without impact to the
+  operational network. As a minimum, the test bed includes at least one copy of each network
+  component and can be configured to mimic the ACN. The test bed also contains equipment
+  required to test network components and systems. The test bed is managed as an integral
+  part of the ACN for maintenance and configuration. The test bed also serves as the core
+  enterprise test bed for AFWA.
+18                                                             AFWAMAN33-1 13 APRIL 2010
+
+
+     4.2. Test bed Functions. 2SYOS directs employment of the test bed to evaluate component
+     compatibility; assess new designs and firmware and software upgrades; develop improved
+     configurations, and determine potential impacts of new connectivity.
+        4.2.1. The test bed will support three general types of testing:
+           4.2.1.1. Type 1 - Permanent ACN component test and configuration prior to
+           deployment or following possible failures.
+           4.2.1.2. Type 2 - Extended tests of proposed new ACN equipment configurations
+           using both permanent and temporary assets. Temporary assets may include vendor
+           loan or government-owned materials.
+           4.2.1.3. Type 3 - Extended tests of end user equipment requiring ACN connectivity
+           using both permanent and temporary assets. Temporary assets may include vendor
+           loan or government-owned materials.
+        4.2.2. Permanent Component Updates. As vendor updates to permanent components are
+        made available, the MSC and SEMS track and test the updates for compatibility and
+        applicability to the ACN. SEMS uses the test bed to document all findings related to
+        vendor updates and the MSC reviews for possible implementation and incorporation in
+        the Equipment Updates and Upgrades Survey Document. Recommendations for updates
+        to be implemented, procedures on how to best perform the updates, and time frames to
+        include estimated downtime and proposed dates for implementation are given to the
+        MSC. Once the MSC Chief has approved, the proposal for implementation will proceed
+        in accordance with all applicable briefings. If an important update is identified, it can be
+        installed prior to full documentation in accordance with AFWAMAN 33-2.
+        Documentation for preinstalled updates is still completed as scheduled for historical
+        reference.
+        4.2.3. Permanent Component Upgrades. New technologies and improvements in ACN
+        component design are fully tested and documented in the test bed. The MSC actively
+        tracks and researches new technologies and improvements in the components used in
+        ACN and possible replacements.
+        4.2.4. The MSC Chief guides SEMS use of the test bed to assess proposed ACN
+        interfaces and evaluate industry trends for applicability to AFWA and ACN.
+           4.2.4.1. The MSC evaluates findings regarding proposed interface configurations for
+           permanent equipment as part of the interface approval process.
+               4.2.4.1.1. Findings regarding new technologies are published in the Equipment
+               Updates and Upgrades Survey Document to include a cost-benefit analysis.
+               4.2.4.1.2. The SAs consult A6OS to ensure continued network certification and
+               to identify potential new security capabilities.
+               4.2.4.1.3. A6 and MSC personnel review security-related systems testing and the
+               security aspects of all new interfaces and components.
+        4.2.5. Expansion Requirements and Alternatives. A6 and MSC personnel submit plans
+        for test bed use in evaluating ACN expansion requirements and alternatives.
+AFWAMAN33-1 13 APRIL 2010                                                                   19
+
+
+         4.2.5.1. MSC and SEMS personnel develop sound expansion strategies. Significant
+         changes are closely coordinated with A6, A5/8CE, and A8Pto determine the impact to
+         AFWA automation architecture.
+         4.2.5.2. The ACN PM coordinates these results with the ACN management team and
+         documents these strategies annually in the ACN A2P2. This plan presents the best
+         strategies for keeping the ACN both current and appropriately scaled.
+     4.2.6. Non-permanent Equipment Evaluation. The test bed environment may also be
+     used by AFWA system owners and users as a facility to evaluate non-permanent
+     equipment and to evaluate component compatibility; assess new designs and firmware
+     and software upgrades; develop improved configurations, and determine potential
+     impacts of new connectivity.
+         4.2.6.1. Test bed petitioners outside the MSC staff must be prepared to complete all
+         required documents to include test plans and results, CCRs, and provide risk analysis
+         results as required. Additionally, any actions necessary to bring test systems into
+         compliance with applicable vendor or AF-mandated software patches must be
+         coordinated by the petitioner and accomplished prior to the final test. A6, MSC or
+         SEMS personnel may assist with technical questions or problems associated
+         therewith, but the petitioner remains the proponent for ensuring the documents are
+         completed and submitted appropriately.
+         4.2.6.2. The ACN TIM reviews proposed Test bed projects and test plans for
+         technical viability. The TIM documents any additional resources required to the
+         ACN PM or the PM for the associated systems undergoing the test. The PMs are
+         responsible for acquiring the appropriate assets.
+         4.2.6.3. Once the test is approved, the MSC Chief adjudicates the priority of Test bed
+         operations and the deployment of Test bed resources.
+  4.3. Component Use. The MSC monitors ACN component use in the test bed and directs
+  the addition of new components and the deletion of old components in accordance with
+  AFWAMAN 33-2 and PM acquisition activities. Hardware and software provided under a
+  vendor loan agreement or other, no-cost arrangement will not be employed outside the test
+  bed without the explicit, prior approval of the A5/8CE and then only in a manner consistent
+  with the relevant loan agreement.
+     4.3.1. Component Acquisition. Test bed components may be acquired through direct
+     purchase or under loan or demonstration arrangements. Only the 2SYOS Operations
+     Flight Director (SYO) or the MSC Chief with subsequent SYO approval can authorize a
+     request for evaluation or demonstration components. The MSC Chief will not authorize
+     the acquisition of evaluation or demonstration components without reviewing a test plan
+     outlining the planned deployment and evaluation criteria for the components. SEMS
+     manages vendor loan equipment in the same manner as other ACN components and
+     arranges packing and return shipment of the components following testing.
+5. TRAINING AND DOCUMENTATION
+  5.1. Overview. Training and documentation provide the critical continuity and procedural
+  definition needed to operate the ACN in a dependable manner and ensure the system’s ability
+20                                                           AFWAMAN33-1 13 APRIL 2010
+
+
+     to respond to short-notice changes in requirements. This chapter summarizes ACN training
+     activities and required ACN documentation.
+     5.2. Training. Adequate training is essential to exploit the full capabilities of the ACN
+     while simultaneously ensuring its reliability. Training includes vendor training on
+     maintenance and operation of hardware and software components, and OJT on individual
+     ACN component functions. The MSC Chief and MSC NCOIC establish training
+     requirements for both DoD and contractor staff.
+        5.2.1. In-House Training. The MSC Chief directs development of an OJT program and
+        may employ in-house training aids to support it. The MSC NCOIC develops individual
+        training programs in concert with the Manpower, Organization, and Resources Division
+        (DPB) and maintains any ACN-unique in-house training materials. Training material is
+        kept on-site in the MSC and is accessible to MSC technicians. The materials are updated
+        as on an as needed basis to include when new systems are introduced, new routines are
+        implemented in the maintenance of the network, new components are added to the
+        architecture, and additions to the infrastructure are made.
+        5.2.2. Vendor Training. Vendor provided training on specific hardware and software
+        components and concepts is critical to sustaining ACN service levels. The MSC Chief
+        and PM coordinate funds for necessary formal training for the ACN in concert with
+        A1M.
+     5.3. Basic System Documents. Four documents constitute the basis for ACN operations
+     and define the production baseline. These same four documents identify all underlying
+     documentation required to support and operate the ACN and are routinely updated to reflect
+     the production system:
+        5.3.1. The ACN PM develops Program Readiness Review and Program Management
+        Review briefings based on the A2P2 and coordinate these with ACN management. The
+        PM also prepares the annual A2P2 using inputs from the ACN management team. The
+        A2P2 provides a basis for planning future ACN funding while guiding evolution of the
+        current production baseline. The A2P2 identifies future requirements, current and
+        expected future capability shortfalls, performance trends, and mitigation strategies.
+        Where appropriate, it refers to detailed parts lists and design details to expedite
+        acquisition and implementation planning.
+        5.3.2. The MSC Chief coordinates with AFWA CM personnel to maintain and update
+        AFWAMAN 33-2 and recommends new or modified CM processes as appropriate.
+        Updates also incorporate details on the use of various automated tools as these tools are
+        delivered. AFWAMAN 33-2 provides the basis for selecting and configuring or
+        developing the configuration and asset management tools and processes employed by the
+        ACN staff.
+        5.3.3. AFWAMAN 33-1 provides the basis for the MSC to construct detailed operating
+        guidelines and instructions in compliance with AFWA policies and procedures.
+        AFWAMAN 33-1 prescribes the operational documents used in managing the ACN and
+        explains their use and development process.
+        5.3.4. The ACN SSAA is the focus of A6OS analyses needed to sustain ACN approval
+        to operate. A6 updates it in conjunction with the ACN Certifier or DAA, as required, to
+AFWAMAN33-1 13 APRIL 2010                                                                      21
+
+
+     retain operating accreditation at all times. The document is a part of the ACN CM
+     baseline.
+  5.4. Drawings. The review and approval process outlined in AFWAMAN 33-2 identifies
+  the need for complete baseline documentation. This includes cable run, rack elevations, and
+  backplane elevations for all ACN assets. SEMS develops engineering drawings in
+  accordance with AFWAMAN 33-2 and procedures outlined by the MSC Chief. These
+  drawings are readily available to the SDO, SEMS and MSC personnel and may be stored in
+  soft or hardcopy as appropriate. SEMS prepares redlines to these drawings to support
+  proposed changes in configuration and incorporates alterations to the drawings as soon as the
+  alterations are completed. The drawings are closely correlated with the ACN assets stored in
+  the Enterprise asset database.
+     5.4.1. Component Diagrams. A6, in concert with SEMS, maintains ACN component
+     drawings documenting the current ACN configuration. These identify used and unused
+     ports for each interface at the component level. All configuration changes are
+     incorporated in the component diagrams. Backplane drawings and rack elevations are
+     created and maintained by SEMS for all configurable ACN components and equipment
+     racks.
+     5.4.2. Infrastructure Drawings. SEMS maintains an ACN cable plant drawing on to-
+     scale floor plans showing endpoints and physical routes of all cables. The drawings
+     depict the actual media installation as well as patch panels, light trays, and other major
+     interface points. The drawings are tracked according to the AFWAMAN 33-2.
+  5.5. Interface Listings. SEMS maintains an accurate and complete description of ACN port
+  utilization and availability in accordance with AFWAMAN 33-2. SEMS maintains the
+  interface listings consistent with component and interconnection documentation. The
+  interface listings incorporate a port-by-port description of all connectivity in and to the ACN.
+  The interface listings support the system drawings and are updated by SEMS whenever
+  architectural changes are made to ACN and related systems. These listings are consistent
+  with the system model maintained by the MSC using network management tools. MSC and
+  SEMS technicians periodically review and compare interface listings with the physical
+  installation in order to verify the representations are consistent. The MSC technicians in
+  conjunction with SEMS document this verification as part of an annual CM audit.
+  5.6. Line Listings. SEMS maintains a connection list with routing information,
+  documenting the endpoints of all installed media and the media path between endpoints as
+  part of the infrastructure documentation. The endpoints are identified by their label, room,
+  and location within the room. The line listings include optical time domain reflectometry
+  (OTDR) trace references and other media condition indications including power loss
+  measurements. All Unshielded Twisted Pair (UTP) connections are classified as Category
+  (CAT) 5 compliant, CAT 5E compliant, CAT 6 compliant, or non-compliant. The effective
+  length of all lines is recorded. MSC technicians review these lists periodically. All changes
+  and additions to the infrastructure are recorded in the line listings with appropriate test
+  results. SEMS maintains line listings in a database correlated with hardware and interface
+  definitions and infrastructure drawings.
+  5.7. Address Tracking. MSC technicians maintain all network addresses using a database
+  or commercial address management product. The address listings are updated as addresses
+22                                                               AFWAMAN33-1 13 APRIL 2010
+
+
+     are assigned, changed, or removed from the network. The MSC Chief conducts a semi-
+     annual review of all addresses assigned to ensure database and documentation accuracy. The
+     address database is available to MSC, SEMS and A6 personnel.
+     5.8. Maintenance and Sparing Plans. SEMS develops maintenance and sparing plans to
+     support ACN operations. These plans are reviewed annually or when the network
+     configuration is changed and must be approved by the A5/8CE.
+6. PLANNING AND CONTINGENCY
+     6.1. Advance Preparation. Contingencies may take the form of new requirements
+     generated by external or internal customers or result from the failure of network components
+     or external interfaces. The ACN A2P2 details long-term plans for system response to new
+     requirements, exploiting new technologies, and operational availability. This section
+     establishes the AFWA policies guiding both the acquisition and implementation of new
+     technologies and the use of existing resources to respond to near-term contingencies.
+     6.2. Critical Functions. The MSC Chief identifies ACN functions essential to sustain
+     minimum service levels to highest priority AFWA requirements. The MSC develops a
+     contingency plan for network recovery embodying a rank-ordered list of critical ACN
+     functions predicated on policy and AFWA operational availability requirements.
+        6.2.1. The MSC Chief and TIM regularly review and approve or request modifications to
+        this list. The list forms the basis for prioritizing repair and recovery operations as well as
+        permitting rapid realignment of available resources if necessary.
+        6.2.2. The ACN is designed to meet a system-wide operational availability of 99.9% as
+        specified in the 12 March 2001 Centralized Aerospace Weather Capability Operational
+        Requirements Document (CAWC ORD).
+        6.2.3. Operational availability (Ao) is a function of mean time between critical failure
+        (MTBCF) and mean time to restore functions (MTTRF) and will be determined using the
+        following:
+            6.2.3.1. Ao = MTBCF / (MTBCF + MTTRF)
+            6.2.3.2. Where MTBCF = (operating time) / (number of critical failures)
+            6.2.3.3. MTTRF = (total time down from critical failures) / (number of critical
+            failures)
+        6.2.4. A "critical failure" will be defined as an interruption that:
+            6.2.4.1. Prevents a warning product from being sent within 1 minute of the required
+            time limits
+            6.2.4.2. Prevents a scheduled product from being sent within 30 minutes of its
+            scheduled time.
+     6.3. Disaster Recovery. ACN incorporates both hardware and architectural redundancies
+     and reserve bandwidth and connectivity to minimize denial of service to ACN customers.
+     This reserve capacity is crucial to disaster recovery and ensures ACN responsiveness to
+     changing DoD requirements. It will be maintained at levels in accordance with AFWA
+AFWAMAN33-1 13 APRIL 2010                                                                  23
+
+
+  standard information systems requirements. This section provides guidance in the use of
+  ACN assets for recovery from a denial of service or catastrophic network failures.
+     6.3.1. Sparing. Sparing ensures an on-site supply of line-replaceable-units (LRU) to
+     permit equipment swap-out in case of component failure. SEMS develops and updates a
+     sparing plan predicated on the list of critical support functions and consistent with
+     AFWA requirements for information systems operational availability. Accordingly, the
+     plan will consider the operational availability of individual hardware components and the
+     availability of replacement hardware through manufacturer maintenance contracts. The
+     MSC Chief reviews this plan at least annually and recommends acceptance or rework to
+     the TIM. Moreover, SEMS provides a quarterly report on spares consumption and
+     identifies planned changes in the sparing plan for concurrence from the MSC Chief.
+     ACN design will emphasize vendor and component commonality in order to minimize
+     required spares.
+        6.3.1.1. Core components will be configured in highly available or redundant
+        configurations to minimize probability of losing communications and be configured
+        with redundant power and management resources. All network closets are linked by
+        two or more physically disparate cable paths.
+        6.3.1.2. Major ACN components have hot-swappable interface cards to maintain
+        connectivity while cards are swapped.
+        6.3.1.3. Smaller switches, interface modules and power supplies, and subcomponents
+        are spared in accordance with the SEMS maintenance plan.
+        6.3.1.4. SEMS maintains a limited number of tested patch, drop cables and
+        associated fabrication and test capabilities, allowing faster troubleshooting, failure
+        recovery, and reconfiguration. The majority of circuits have alternate routes and
+        spare media to provide limited service.
+        6.3.1.5. AFWA owned test bed equipment can be used, in an emergency, to
+        temporarily restore service. Vendor-owned equipment assigned to the test bed for
+        test and evaluation may not be diverted from its contractual purposes. Any
+        reconfiguration will be accomplished in accordance with AFWAMAN 33-2.
+        6.3.1.6. The ACN PM maintains manufacturer support agreements for ACN
+        components which provide effective offsite sparing via replacement, usually within
+        24 hours, of failed ACN components. SEMS employs these agreements and the
+        associated exchange of components in conjunction with the PM.
+        6.3.1.7. Non-like sparing using older components provides limited additional backup
+        in the event of catastrophic failures. SEMS incorporates use of this equipment in the
+        sparing plan, specifying spares available and how they may be used to recover from
+        different disaster scenarios.
+     6.3.2. Backups. The MSC identifies configuration files and settings for which backup is
+     required. Some configurations may be stored electronically both on and off-site.
+     Electronic copies can be stored on various media and may be made over a network in an
+     automated fashion. SEMS maintains backups in accordance with the sparing plan.
+24                                                          AFWAMAN33-1 13 APRIL 2010
+
+
+        6.3.2.1. Backups are performed whenever configuration changes are made. MSC
+        technicians check configurations and ensure monthly backups are performed. System
+        management software may be used to automatically accomplish these updates.
+        6.3.2.2. A series of configuration versions is kept in on-site storage using automated
+        CM tools to provide quick recovery from improper configuration changes and assist
+        in trouble shooting. A minimum of two previous configurations is stored on site, and
+        1 year of past configurations is maintained according to AFI 33-322 and AFMAN 33-
+        363.
+     6.3.3. Reconfigurations. Denial of service to some users may be necessary to provide
+     service to the critical systems following significant failures. The list of critical support
+     functions in the contingency plan is the key to determining when and to what extent the
+     network will be reconfigured. The Superintendent ensures the reconfiguration process is
+     incorporated in troubleshooting guides using the following guidelines.
+        6.3.3.1. The MSC or SEMS technicians first compare the installation in question
+        with the Enterprise asset database and baseline drawings to confirm the installation
+        has not been inadvertently reconfigured. If variations are found, the installation is
+        immediately realigned to baseline configuration and A6 is alerted to a potential
+        compromise of network integrity.
+        6.3.3.2. Down interfaces are checked for cable faults. A power loss measurement or
+        OTDR reading can be used to report cable status. The circuit may be moved to
+        alternate links if repair is not immediate. The critical support functions list specifies
+        timing for such decisions.
+        6.3.3.3. For failures unrelated to the cable, the interface port is checked next. If one
+        end is a NIC, replacement of the NIC may be required to determine if it is the cause
+        of the problem. This is only attempted after the cable, port, NIC configuration, and
+        switch are eliminated as possible causes. If there are no available, open like-ports, a
+        non-critical system may—with prior coordination—be temporarily swapped to the
+        suspect port in order to test the functional port.
+        6.3.3.4. Critical systems on a down interface card are given priority over non-critical
+        systems. If an appropriate interface card supports only non-critical systems, a swap
+        of the failed board for the one supporting the non-critical systems is performed—with
+        prior coordination—if appropriate spares are not available.
+        6.3.3.5. When the port, cable, and NIC are eliminated as possible problems, the
+        network component chassis interface card is tested next. Moving the card to another
+        slot in the chassis can identify back plane problems. If an interface card or switch is
+        determined to be at fault, and no spare is available, workarounds with patching and/or
+        multi-port repeaters may be employed for limited support.
+        6.3.3.6. Widespread component failures may require a combination of approaches.
+        Accurate prioritization of systems’ criticality is essential in recovering from such
+        events. If the infrastructure is damaged beyond immediate repair, alternate means of
+        communications may be needed.
+AFWAMAN33-1 13 APRIL 2010                                                                   25
+
+
+     6.3.4. Alternate Communications Technologies.           Several alternate means of
+     communication are available for recovery from disaster. In such a scenario, it is critical
+     to identify an alternate means of conducting critical communications. The MSC Chief
+     and A6 coordinate the inclusion of such planning in the ACN A2P2, and ensure details
+     are identified in the troubleshooting guidelines. They address specific alternative
+     communication technologies or resources (e.g., Offutt AFB networks) to assist
+     production and dissemination of critical products.
+  6.4. System Expansion and Upgrading. The ACN design provides integral expansion and
+  upgrade paths. These support network response to new requirements while focusing system
+  evolution. This section provides insight into the ACN design philosophy in order to fully
+  inculcate these design parameters in both planned and unplanned changes.
+     6.4.1. Philosophy. The ACN design minimizes the number of devices between packet
+     origin and destination by grouping like users in zones or VLANs predicated on their
+     functions. Newer technology is inserted into the backbone, and older technology is
+     migrated outward. The infrastructure provides reserve capability to exploit higher data
+     rates once the technologies required become available in standard configurations. The
+     ACN provides for increased capability in three ways:
+         6.4.1.1. Ease of extension through connections with central or secondary
+         components.
+         6.4.1.2. Upgrade existing components to employ newer, more capable protocols.
+         6.4.1.3. Inserting additional or higher capacity components at key points such as the
+         routers, switches, cable plant, or firewall.
+     6.4.2. Infrastructure Expansion. ACN infrastructure employs intermediate transfer nodes
+     (ITN) and End Broadcast Nodes (EBN) linked with single and multi-mode fiber optic
+     cable. Secondary, single and multi-mode fiber cabling connects the EBNs and some
+     ITNs via alternate physical routes. Those rooms supporting, or expected to house, high
+     concentrations of end node/user platforms are gridded to simplify network and
+     production system growth. All cables terminate in patch panels or drop boxes. Patch
+     cables are limited to connecting end equipment with infrastructure termination points.
+     ACN cable installations within closets may provide all or part of the following types of
+     connectivity: administrative, development, production, DMZ and external. VLANs are
+     employed to separate administrative, development and production networks.
+         6.4.2.1. New Infrastructure Requirements. The ACN design simplifies incorporating
+         new systems or expanding the network’s scope to encompass external networks.
+         Such new requirements are handled by installing additional media from the ACN
+         primary transfer node (PTNs) to a central location in the expansion area or by
+         connecting to ITNs for smaller systems. New external centers or systems involving a
+         large number of users in a small area will be supported by cable grids.
+         6.4.2.2. New cable is installed in accordance with ACN standards, labeled, and
+         documented according to AFWAMAN 33-2. New networks to be built and
+         incorporated into ACN will comply with ACN standards, while legacy networks are
+         brought into compliance or replaced as resources permit.
+26                                                          AFWAMAN33-1 13 APRIL 2010
+
+
+       6.4.3. Architecture Expansion and Upgrade. The ACN provides a high speed network
+       integrating data communications for all current and future HQ AFWA systems.
+       Production and data handling functions are separated from the administrative users to
+       minimize broadcast interference. This design maximizes throughput by minimizing the
+       number of subnets, network devices, and the data handling required. The MSC Chief
+       coordinates architectural changes with the A6 during the planning phase and with the
+       Offutt AFB NCC to ensure interoperability with the NCC. The ACN management suite
+       is sized and configured to permit automated management of a large, dispersed network.
+       This minimizes additional resources required to manage and maintain an expanded
+       network.
+          6.4.3.1. Vendors periodically release updated and improved software and firmware
+          which may alter ACN architecture. These updates are validated in the test bed and
+          approved in accordance with AFWAMAN 33-2 prior to implementation.
+          6.4.3.2. As the need for new technologies is identified and validated by the TIM,
+          cost-benefit analyses of implementing the technology are done at MSC Chief’s
+          direction. A6, SEMS, and MSC personnel evaluate the viability and potential
+          benefits. If the analyses are favorable, the MSC Chief directs an engineering analysis
+          and development of an implementation plan in accordance with ACN test bed
+          procedures.
+       6.4.4. Planned System Upgrades. ACN planning is predicated on anticipated changes in
+       requirements and technology. Planning includes expanded use of 40 gigabit or better and
+       fiber channel technologies, improved network security and protection technologies and
+       architectures, and the elimination of outdated and incompatible network hardware
+       whenever possible. Near-term planning must focus on improved network security
+       consistent with throughput requirements and the functional consolidation of
+       communications capabilities delivered by various independent programs such as
+       centralized management.
+7. Prescribed Forms: There are no prescribed forms in this publication.
+
+8. Adopted Forms:
+
+AF Form 847, Recommendation for Change of Publication
+
+
+
+
+                                           JOHN D. MURPHY, Colonel, USAF
+                                           Commander
+AFWAMAN33-1 13 APRIL 2010                                                               27
+
+
+                                      Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 33-115V1, Network Operations, 24 May 2006
+AFI 33-138, Enterprise Network Operations Notification and Tracking, 28 November 2005
+AFI 33-200, Information Assurance (IA) Management, 23 December 2008
+AFI 33-324, The Information Collections and Reports Management Program: Controlling
+Internal, Public and Interagency Air Force Information Collections, 1 June 2000
+AFMAN 33-223, Identification and Authentication, 29 July 2005
+AFMAN 33-363, Management of Records, 1 March 2008
+AFWAMAN 33-2, AFWA Consolidated Network Configuration Management Plan, 8 February
+2010
+
+Abbreviations and Acronyms
+CS—55th Communications Squadron
+A2P2—Air Force Weather Annual Programming Plan
+A5/8—Strategic Plans, Requirements, and Programs Directorate
+A6—Communications and Information Directorate
+A6OS—Information Assurance office
+A5/8CE—Air Force Weather Agency Chief Engineer
+ACL—Access Control List
+ACN—Air Force Weather Agency Consolidated Network
+AF—Air Force
+AFB—Air Force Base
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFNETOPs—Air Force Network Operations
+AFRIMS—Air Force Records Information Management System
+AFWA—Air Force Weather Agency
+AFWAMAN—Air Force Weather Agency Manual
+Ao—Operational Availability
+ATM—Asynchronous Transfer Mode
+AUPE—Air Force Weather Agency Unclassified Production Environment
+28                                                    AFWAMAN33-1 13 APRIL 2010
+
+
+CAT—Category
+CAWC ORD—Centralized Aerospace Weather Capability Operational Requirements
+Documents
+CCR—Configuration Change Request
+CM—Configuration Management
+COTS—Commercial-Off-The-Shelf
+DAA—Designated Approval Authority
+DHCP—Dynamic Host Control Protocol
+DMZ—Demilitarized Zone
+DNS—Domain Name Server
+DoD—Department of Defense
+DPB—Air Force Weather Agency Manpower, Organization and Training Division
+EBN—End Broadcast Nodes
+E-mail——Electronic Mail
+ESS—Enterprise Storage Solution
+FC—Fiber Channel
+FDDI—Fiber Distributed Data Interface
+FE—Fast Ethernet
+FE/c—Fast Ethernet over copper
+FE/f—Fast Ethernet over fiber
+FTP—File Transfer Protocol
+GE—Gigabit Ethernet
+GE/c—Gigabit Ethernet over copper
+GE/f—Gigabit Ethernet over fiber
+HOI—Headquarters Operating Instruction
+HQ AFWA—Headquarters Air Force Weather Agency
+IDS—Intrusion Detection System
+INMON—Internet Monitoring
+INOSC—E—Integrated Network Operations and Security Center, East
+IP—Internet Protocol
+ITN—Intermediate Transfer Node
+LAN—Local Area Network
+LRU—Line Replaceable Units
+AFWAMAN33-1 13 APRIL 2010                                       29
+
+
+MB—Megabyte
+MOA—Memorandum of Agreement
+MSC—Mission Support Center
+MTBCF—Mean Time Between Critical Failures
+MTTRF—Mean Time To Restore Function
+MTU—Maximum Transfer Unit
+NCC—Network Control Center
+NCOIC—Non-Commissioned Officer In Charge
+NFS—Network File System
+NIC—Network Interface Card
+OJT—On-the-job Training
+OSI—Open Systems Interconnect
+OTDR—Optical Time Domain Reflectometry
+PKE—Public Key Enabling
+PM—Project Manager
+POC—Point of Contact
+PTN—Primary Transfer Node
+RAS—Remote Access Servers
+RDS—Records Disposition Schedule
+SA—System Administrator
+SCI—Sensitive Compartmented Information
+SCIF—SCI Facility
+SDO—Systems Duty Officer
+SEMS—Systems Engineering, Management, and Sustainment
+SFTP—Secure File Transfer Protocol
+SIPRNET—Secure Internet Protocol Routed Network
+SLA—Service Level Agreement
+SNMP—Simple Network Management Protocol
+SSAA—System Security Authorization Agreement
+SYO—2d Systems Operations Squadron Operations Flight Director
+SYOO—2d Systems Operations Squadron System Operations Branch
+T-1——T-carrier 1
+30                                                       AFWAMAN33-1 13 APRIL 2010
+
+
+TCP—Transmission Control Protocol
+TCP/IP—Transmission Control Protocol/Internet Protocol
+TIM—Technical Interchange Meeting
+UASE—Unclassified Security Enclave
+UDP—User Datagram Protocol
+UTP—Unshielded Twisted Pair
+VLAN—Virtual LAN
+VPN—Virtual Private Network
+WIMM—Weekly Implementation Maintenance Meeting
+AFWAMAN33-1 13 APRIL 2010                                                                      31
+
+
+                                         Attachment 2
+                  ACN TECHNICAL INTERCHANGE MEETING (TIM)
+
+A2.1. Procedure Definition. A6 and MSC personnel conduct a periodic TIM to address issues
+reviews or proposed changes to the ACN. This attachment summarizes current TIM procedures
+and documents.
+   A2.1.1. TIM Agenda. The MSC Chief publicizes the meeting via e-mail. The chief collects
+   agenda items from the regular membership no later than close of business the Thursday prior
+   to the meeting. The TIM Agenda maintains a standard item that allows open floor
+   discussions allowing AFWA personnel the opportunity to address network related issues. In
+   addition, the TIM Agenda always concludes with a review of the open TIM Action Items.
+   AFWA personnel are encouraged to attend the meetings to address the membership during
+   the open floor discussions regarding new topics or topics on which the TIM membership
+   requires additional insight or expertise.
+       A2.1.1.1. The TIM Agenda will be distributed at least 24 hours preceding the scheduled
+       meeting.
+       A2.1.1.2. The TIM Agenda lists the time and place of the scheduled meeting. In
+       addition, the agenda lists the major topics for discussion along with supporting details
+       and documentation references. As appropriate, the topics will reference open work
+       tickets via the work order number. All topics are identified as new or tabled. Tabled
+       topics list relevant information from previous meetings. The agenda is arranged to allow
+       non-ACN personnel the opportunity to discuss their concerns at the beginning of the
+       meeting. The agenda lists open action items with suspense date and personnel tasked.
+A2.2. Topic Discussions. The new topics proposed to the TIM will be introduced and all
+relevant questions/documentation will be addressed. The point of contact (POC) introducing the
+topic will provide at least a draft of relevant documentation, including a work ticket and CCR, if
+required, to the TIM chairperson prior to the meeting. Time permitting, a topic will be tabled for
+one week to allow members time to review the topic, research the topic, and prepare
+answers/questions.
+A2.3. Topic Documentation. Topics for discussion will usually be accompanied by relevant
+documentation. When appropriate, the recorder will collect soft copy documents and save those
+to the shared storage area on the administration Local Area Network (LAN). The location of all
+documents for a particular topic will be listed in the TIM Agenda. Specific examples of
+documentation are:
+   A2.3.1. Work Ticket. AFWA personnel requiring data communications support complete a
+   work ticket and submit it through the requesting system’s SA to the MSC for approval.
+   A2.3.2. Implementation Plan. The MSC Chief will direct MSC technicians or the SEMS
+   contractor to develop formal plans for those efforts involving significant effort or which may
+   result in support outages. For major new designs, SEMS will coordinate with the A6
+   Engineers in developing this package. SEMS will provide these plans for formal review by
+   the MSC Chief and subsequent TIM approval. Each plan includes the following sections:
+32                                                          AFWAMAN33-1 13 APRIL 2010
+
+
+       A2.3.2.1. Project Identification. Lists the CCR and work ticket numbers, as appropriate.
+       Provides a verbal description of the project to include the required operational date.
+       A2.3.2.2. Approval Block. Provides a blank for each of the following: SEMS Team
+       Leader, MSC Chief, and approval date.
+       A2.3.2.3. Design Description. Generic description of the work to be performed.
+       A2.3.2.4. Design Steps. Lists the specific steps to accomplish the work.
+       A2.3.2.5. Component Listing. Documents all components needed to complete the work.
+       Components not maintained in bench stock are identified by cost and suggested supplier.
+       A2.3.2.6. Coordination Steps. Lists the offices that need to be contacted prior to
+       performing the work. This includes preparation of outage notification letters.
+       A2.3.2.7. Government Work. Lists the work to be accomplished by the Government
+       (e.g., IP address assignment—list actual IPs to be used, DNS configuration, etc).
+       A2.3.2.8. Configuration Diagrams. Applicable before and after redline diagrams.
+A2.4. TIM Documentation. The MSC Chief provides minutes of each meeting to include any
+documentation supporting the meeting’s discussions. The MSC Chief publishes the minutes in
+draft to the shared storage area on the administration LAN to attendees for review. TIM
+members provide corrections to the TIM minutes as required prior to the next TIM at which time
+the previous meeting’s minutes are reviewed and approved with any needed changes.
+A2.5. Drawing Review. The MSC Chief convenes periodic meetings to review changes to
+ACN baseline drawings in accordance with AFWAMAN 33-2. SEMS documents the results of
+these meetings and forwards them to the next regular TIM for review. The TIM, in turn,
+identifies needed changes and makes recommendations for the MSC Chief’s approval. The
+recorder ensures all drawings are available for TIM review and, are available to MSC personnel.

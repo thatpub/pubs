@@ -1,0 +1,1217 @@
+BY ORDER OF THE COMMANDER                                  AIR FORCE WEATHER AGENCY
+AIR FORCE WEATHER AGENCY                                             INSTRUCTION 15-2
+
+                                                                        13 NOVEMBER 2013
+                                                      Incorporating Change 1, 16 October 2014
+
+                                                                                       Weather
+
+                                              SPACE ENVIRONMENTAL OBSERVATIONS
+                                               SOLAR OPTICAL AND RADIO OBSERVING
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the
+               e-publishing website at http://www.e-publishing.af.mil.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: AFWA/A3N                                                          Certified by: AFWA/A3
+                                                                           (Col David Andrus)
+                                                                                      Pages: 31
+
+
+This instruction implements Air Force Policy Directive (AFPD) 15-1, Atmospheric and Space
+Environment Support, and prescribes responsibilities and provides operational guidance for Solar
+Electro-Optical Network (SEON) detachments to observe, analyze, and report solar activity
+using the solar optical telescope (AN/FMQ-7) and radio telescope (AN/FRR-95). The acronym
+SEON collectively refers to the Solar Observing Optical Network (SOON) and Radio Solar
+Telescope Network (RSTN). This instruction is to be used in conjunction with Air Force
+Weather Agency Manual (AFWAMAN) 15-1, Space Environmental Observations, Solar Optical
+Observing Techniques; AFWAMAN 15-2, Space Environmental Observations, Solar Radio
+Observing Techniques; Air Force Manual (AFMAN) 15-124, Meteorological Codes; all
+applicable Technical Orders (TOs); and the SOON and RSTN Computer Operation Manuals
+(COMs).      Send comments, suggested changes, or improvements through channels to
+Headquarters Air Force Weather Agency Scientific Services, Training, and Standards Division,
+AFWA/A3N, 101 Nelson Dr, Offutt AFB NE 68113-1023. Ensure that all records created as a
+result of processes prescribed in this publication are maintained in accordance with AFMAN 33-
+363, Management of Records, and disposed of in accordance with the Air Force Records
+Disposition Schedule (RDS) located at https://www.my.af.mil/gcss-af61a/afrims/afrims/rims.
+Refer recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the AF Form 847, Recommendation for Change of Publication; route
+AF Forms 847 from the field through the appropriate functional’s chain of command. This
+publication does not apply to the Air National Guard or Air Force Reserve commands. The
+reporting requirements in this publication are exempt from licensing in accordance with Air
+Force Instruction (AFI) 33-324, The Information Collections and Reports Management Program;
+ 2                                                                                     AFWAI15-2 13 NOVEMBER 2013
+
+
+Controlling Internal, Public, and Interagency Air Force Information Collections, paragraph
+2.11.12.
+
+SUMMARY OF CHANGES
+
+This interim change revises AFWAI 15-2 by (1) deleting Space Environment Sensor Suite
+(SESS) in paragraph 4.4.1., (2) rewording paragraph 4.4.2.2., (3) replacing (except SOON
+Operational Effectiveness) with (Total FRR-95 or FMQ-7), (4) replacing Attachment 7 with an
+updated Attachment 7, (5) deleting AFI 15-180 reference, and (6) updating the publication dates
+of AFWAMAN 15-1 and AFWAMAN 15-2 in the glossary of references and supporting
+information. A margin bar (ǀ) indicates newly revised material.
+
+Chapter 1—SEON OPERATIONS/RESPONSIBILITIES                                                                                                   4
+       1.1.   Introduction. ...........................................................................................................      4
+       1.2.   HQ AFWA Responsibilities. .................................................................................                    4
+       1.3.   Solar Observatory Responsibilities. .......................................................................                    6
+
+Chapter 2—COMMON ACTIVITIES/TASKS                                                                                                            9
+       2.1.   Patrol Coverage. .....................................................................................................         9
+       2.2.   Intersite Data Discrepancies. .................................................................................                9
+       2.3.   Quality Assurance and Metrics. .............................................................................                  10
+
+Chapter 3—DATA DISSEMINATION                                                                                                                12
+       3.1.   Service Messages. ..................................................................................................          12
+Table 3.1.    Message Key Fields. ..............................................................................................            13
+       3.2.   Data Archival. ........................................................................................................       13
+
+Chapter 4—CONTINUITY OF OPERATIONS                                                                                                          15
+       4.1.   General. ..................................................................................................................   15
+       4.2.   Outage Procedures. ................................................................................................           15
+       4.3.   End of Day Summary Messages. ...........................................................................                      18
+       4.4.   Monthly Outage Report. ........................................................................................               19
+       4.5.   Operational Reports (OPREP). ..............................................................................                   20
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                              21
+
+Attachment 2—DUTY PRIORITIES                                                                                                                25
+
+Attachment 3—TIMELINESS CRITERIA                                                                                                            27
+
+Attachment 4—EQUIPMENT OUTAGE IMPACTS                                                                                                       28
+
+Attachment 5—END OF DAY SUMMARY MESSAGE EXAMPLES                                                                                            29
+AFWAI15-2 13 NOVEMBER 2013         3
+
+
+Attachment 6—EQUIPMENT BREAKDOWN   30
+
+Attachment 7—DET X, 2 WS           31
+ 4                                                          AFWAI15-2 13 NOVEMBER 2013
+
+
+
+                                            Chapter 1
+
+                         SEON OPERATIONS/RESPONSIBILITIES
+
+1.1. Introduction.
+     1.1.1. The Solar Electro-Optical Network (SEON) is a real-time solar optical and radio
+     observing and analysis network.
+        1.1.1.1. The Solar Observing Optical Network (SOON) telescope gathers standardized
+        solar photospheric, chromospheric, and coronal data in either computer assisted
+        ("automatic") or non-computer ("semiautomatic") mode.
+            1.1.1.1.1. There are a total of 3 sites that operate SOON telescopes around the world:
+            1.1.1.1.2. San Vito, Italy (LISS), Holloman, New Mexico (KHMN), and Learmonth,
+            Australia (APLM).
+        1.1.1.2. The Radio Solar Telescope Network (RSTN) telescopes gather standardized
+        solar radio data in computer assisted (“automatic”) mode. The RSTN system produces
+        discrete frequency radio observations using Radio Interference Measuring Sets (RIMS),
+        and wideband (spectral) radio observations using the Solar Radio Spectrograph (SRS).
+            1.1.1.2.1. There are a total of 4 sites that operate RSTN telescopes around the world:
+            1.1.1.2.2. San Vito, Italy (LISS), Kaena Point, Hawaii (PHFF), Learmonth, Australia
+            (APLM), and Sagamore Hill, Massachusetts (K7OL).
+     1.1.2. The network provides timely, accurate solar alerts and analyses to the Space Weather
+     Operations Center (SPACEWOC), 2d Weather Squadron at Offutt AFB, NE, and the
+     National Oceanic and Atmospheric Administration (NOAA) Space Weather Prediction
+     Center (SWPC) at Boulder, CO.
+1.2. HQ AFWA Responsibilities.
+     1.2.1. SEON-related responsibilities of the offices at HQ Air Force Weather Agency
+     (AFWA) that deal directly with the solar observatories are listed below.
+        1.2.1.1. 2d Weather Squadron (2 WS).
+            1.2.1.1.1. Specifies special SEON and geophysical data collection requirements and
+            requests observational data such as all preliminary, final, and observatory messages.
+            1.2.1.1.2. Resolves, or makes the appropriate referrals for any problem (other than
+            circuit related) that impacts an observatory’s ability to perform its mission.
+            1.2.1.1.3. Reports on and provides guidance concerning trend information, system
+            improvements, training problems, or other related issues.
+            1.2.1.1.4. Primary point of contact (POC) for recommendations or suggestions to
+            improve data observing, analysis, or dissemination techniques or procedures.
+            Benchmarks and cross-feeds innovative methods to accomplish the mission.
+AFWAI15-2 13 NOVEMBER 2013                                                                   5
+
+
+        1.2.1.1.5. Manages the intersite Integrated Solar Radio Flux (IFLUX)
+        Standardization Program and monitors quality control efforts and equipment up-time
+        information.
+        1.2.1.1.6. Manages observatory operations and performs quality assurance of
+        contractor performance.
+        1.2.1.1.7. Manages telescope maintenance contracts and monitors contractor
+        performance.
+     1.2.1.2. Space Weather Operations Center (SPACEWOC).
+        1.2.1.2.1. Shares space environmental data and coordinates space forecast products
+        with the Department of Commerce’s NOAA SWPC.
+        1.2.1.2.2. Monitors, in real-time, the equipment/operational status of the solar and
+        geophysical sensor networks, and the quality of the data they provide.
+        1.2.1.2.3. Issues Alerts and Warnings to allow operators to mitigate space weather
+        effects.
+     1.2.1.3. Operations Center (AFWA/A3O).
+        1.2.1.3.1. Serves as the AFWA Commander’s representative by providing 24-hour
+        single point of contact. The AFWA Operations Center provides services for
+        reporting, tracking, and resolving problems.
+        1.2.1.3.2. Tracks daily ops status of production and communication systems for
+        AFWA computer complex.
+        1.2.1.3.3. Monitors status of data flow and products coming into and going out of
+        AFWA. When an issue is reported, AFWA Operations Center will contact
+        appropriate office of primary responsibility and assist in resolving problems with data
+        flow (circuit-related problems) and products coming into and going out of AFWA.
+     1.2.1.4. Strategic Plans, Requirements, and Programs Directorate (AFWA/A5/8).
+        1.2.1.4.1. Oversees configuration management of observing software and hardware,
+        including inventories, via system program office (SMC/SLWA).
+        1.2.1.4.2. Assists in the development and acquisition of new computer software
+        and/or hardware systems, or observing techniques and software.
+     1.2.1.5. Operational Capabilities Requirements Division (AFWA/A5C) & Operations
+     Requirements (AFWA/A3O).
+        1.2.1.5.1. A5C collects and prioritizes validated requirements for new operational
+        capabilities.
+        1.2.1.5.2. AFWA/A3O Coordinates operational needs/requirements within existing
+        capabilities.
+     1.2.1.6. Space Weather Communications (AFWA/A6O).
+        1.2.1.6.1. Focal point for all external communication/computer systems-related
+        issues. Responsibilities include the following:
+ 6                                                          AFWAI15-2 13 NOVEMBER 2013
+
+
+               1.2.1.6.1.1. Long-haul communications.
+               1.2.1.6.1.2. Certification and accreditation (C&A) issues for each site.
+               1.2.1.6.1.3. Technical solutions and support.
+        1.2.1.7. Scientific Services, Training, and Standards Division (AFWA/A3N).
+           1.2.1.7.1. Develops and publishes operational observing guidance based on
+           supported unit requirements.
+           1.2.1.7.2. Acts as the primary office for science and technology related issues for
+           space weather.
+        1.2.1.8. Space Weather Integration Team (16 WS/WXN).
+           1.2.1.8.1. Develops new techniques to exploit space weather data (to include
+           integration into space weather models as well as situational awareness products).
+1.3. Solar Observatory Responsibilities.
+     1.3.1. All SOON and RSTN detachments.
+        1.3.1.1. Collects and analyzes solar optical and radio observations, and collects data
+        related to the ionosphere IAW the duty priorities in Attachment 2 and IAW the timeliness
+        criteria in Attachment 3. Contacts the SPACEWOC for guidance when an observing
+        situation occurs where written guidance is inadequate.
+        1.3.1.2. Submits suggested new or improved data observing, analysis, or dissemination
+        techniques or procedures to 2 WS/DO.
+        1.3.1.3. Identifies and reports SEON software problems and/or proposals for software
+        changes or development to 2 WS/DO.
+        1.3.1.4. Will conduct position qualification of all personnel and other key training
+        responsibilities. Reference AFI 36-2201, Air Force Training Program and AFI 15-127,
+        Air Force Weather Qualification Training for specific responsibilities and key concepts
+        and terminology.
+        1.3.1.5. Reports all equipment and communication outages to the servicing maintenance
+        agency using guidance in Chapter 4. Coordinates scheduled downtime for maintenance
+        or training with the 2 WS/DO, and reports actual outages to AFWA Operations Center,
+        IAW Chapter 4.
+        1.3.1.6. Detachment leadership will:
+           1.3.1.6.1. Develop a Master Training Plan (MTP) to define qualification
+           requirements for assigned personnel, contingency plans, wartime requirements,
+           special operating instructions, or publications governing the duties. Leadership will
+           divide and assign work center tasks to individual positions to ensure 100 percent task
+           coverage.
+           1.3.1.6.2. Ensure seminars on solar theory and observing techniques for assigned
+           analysts are conducted and documented in the Air Force Training Record (AFTR)
+           IAW AFI 15-127, on a quarterly basis.
+AFWAI15-2 13 NOVEMBER 2013                                                                   7
+
+
+         1.3.1.6.3. Report on the quality of formal training received at the SOON Operators
+         course using the appropriate forms or methods prescribed by the lead trainer at the
+         SOON Operators course. Leadership will forward a copy of the reports to
+         Detachment 4 and 2WS/DO who will forward to AFWA/A3N if necessary.
+         1.3.1.6.4. Be position qualified within 180 days of arrival on station. Detachment
+         Commanders will be qualified on either the RSTN or SOON system (if both systems
+         are available, they will qualify on both). The Noncommissioned Officer in Charge
+         (NCOIC) of Solar Observatory Operations (NSOO) will be position qualified on all
+         solar analyst duties performed at their unit (both RSTN and SOON if available). To
+         maintain position qualification, the commander and NSOO must work as many shifts
+         as needed.
+         1.3.1.6.5. Use guidance provided in AFWAMAN 15-1, AFWAMAN 15-2, all
+         applicable TOs, and COMs to develop local equipment and computer procedures to
+         cover the following situations:
+            1.3.1.6.5.1. Normal Power-Up and Shutdown (e.g., sunrise and sunset).
+            1.3.1.6.5.2. Complete Power-Up and Complete Shutdown during the observing
+            day (e.g., during severe weather such as lightning within 5 nautical miles; or when
+            room environmental limits exceed safe/proper thresholds for computer or
+            telescope equipment).
+            1.3.1.6.5.3. Emergency Power-Up and Emergency Shutdown during the
+            observing day (e.g., during severe weather and/or when hazardous conditions
+            exist or are imminent such as flood, fire, electrocution, etc).
+  1.3.2. The Kaena Point Observatory.
+     1.3.2.1. Maintains patrol coverage IAW paragraph 2.1.
+     1.3.2.2. Monitors all IFLUX values from each site in the network.
+         1.3.2.2.1. Will be considered the standard observatory for IFLUX values. Each site
+         will compare its IFLUX values against the standard observatory, based on only
+         unqualified IFLUX values. If a site's unqualified IFLUX values (on any frequency)
+         differ by more than 10 percent from the standard observatory’s values for more than
+         5-days, qualify the IFLUX value on that frequency.
+         1.3.2.2.2. If Kaena Point finds their own values to be unreliable/unavailable, they
+         will notify SPACEWOC and 2 WS/DO who will either determine an alternate
+         temporary standard observatory or authorize temporary use of the network average.
+     1.3.2.3. When requested, provides RSTN data to the Air Force Research Laboratory
+     Battlespace Environment Division (AFRL/RVB).
+     1.3.2.4. Performs Centralized Repair Activity actions IAW MOA between AFWA and
+     Space and Missile Center, Weather Sustainment Division.
+  1.3.3. The Holloman Observatory.
+     1.3.3.1. Maintains patrol coverage IAW paragraph 2.1.
+8                                                           AFWAI15-2 13 NOVEMBER 2013
+
+
+       1.3.3.2. Maintains and conducts the SOON Operator’s and Maintainer’s courses.
+       Operations will take priority when the site is the only SOON site on patrol, especially
+       when the manned space operations are in orbit, special data collection is in progress, or
+       event-level activity is very likely. Routine operations, especially when another SOON
+       site is on patrol, are secondary to the unit's hands-on training mission for SOON
+       operators and SOON Consolidated Repair Activity (CRA) technicians.
+    1.3.4. The Learmonth Observatory.
+       1.3.4.1. Maintains patrol coverage IAW paragraph 2.1.
+       1.3.4.2. Provides support and data on a non-interference basis to the Australian IPS
+       Radio and Space Services IAW existing inter-government support agreements. With 2
+       WS/DO coordination, the multiple site duty priority list in Attachment 2 may be modified
+       locally to meet this requirement.
+       1.3.4.3. Coordinates with IPS Radio and Space Services Co-Manager for all equipment
+       upgrades/modifications.
+    1.3.5. The San Vito Solar Observatory.
+       1.3.5.1. Maintains patrol coverage IAW paragraph 2.1.
+       1.3.5.2. For variances between AFWAI 15-2, AFWAMAN 15-1, AFWAMAN 15-2 and
+       the contract Statement of Work requirements, the contract will take precedence pending
+       final determination by Contracting Officer’s Representative (COR).
+    1.3.6. Sagamore Hill Solar Observatory.
+       1.3.6.1. Maintains patrol coverage IAW paragraph 2.1.
+       1.3.6.2. Provides RSTN equipment access to maintenance technicians in Formal RSTN
+       CRA training courses. Operations are primary when the site is the only RSTN site on
+       patrol, especially when the manned space operations are in orbit, special data collection is
+       in progress, or event-level activity is very likely. Routine operations, especially when
+       another RSTN site is on patrol, are secondary to the unit's training mission for CRA
+       technicians.
+AFWAI15-2 13 NOVEMBER 2013                                                                      9
+
+
+                                            Chapter 2
+
+                               COMMON ACTIVITIES/TASKS
+
+2.1. Patrol Coverage.
+   2.1.1. Make every effort to both maximize patrol coverage and allow time for analyst and
+   maintenance training or repair activities (including urgent preventative maintenance). A
+   special effort should be made to accommodate temporary duty personnel from CRA or
+   Mobile Depot Maintenance (MDM) teams. Whenever possible, provide continuous patrol
+   when:
+       2.1.1.1. Manned space flight is in orbit or a spacewalk is planned or in progress.
+       2.1.1.2. No other observatory of the same type (i.e., SOON or RSTN) will be on patrol
+       during the period.
+       2.1.1.3. Special data collection (requested by the SPACEWOC or SWPC) is in progress.
+       2.1.1.4. Event-level activity is very likely.
+   2.1.2. Notify the SPACEWOC as soon as possible by telephone before sending coded patrol
+   (STATS) message when the following situations occur, or normal service is restored:
+       2.1.2.1. A SOON or RSTN sensor outage results, or is expected to result in, a data loss of
+       30 minutes or more. NOTE: The type of outage reporting or coordination required here
+       is different from the requirement to report patrol breaks exceeding 5 minutes by a STATS
+       message. Report outage times of 30 minutes or more on the End of Day Summary
+       (NWXX60). Use language understandable by non-analyst personnel (avoid jargon).
+       2.1.2.2. A communications outage that causes send or receive capability to be
+       completely lost or has lasted, or is expected to last, 30 minutes or more. Ensure the
+       SPACEWOC is aware of the problem and ask them to inform the other SEON
+       observatories and the SWPC.
+       2.1.2.3. A geophysical sensor outage results, or is expected to result in a data loss of 90
+       minutes or more.
+   2.1.3. Request scheduled downtimes for maintenance activities or training from the 2
+   WS/DO before releasing equipment. Provide an estimate of the duration of the outage or
+   training. Give advance notice in Section 3 of the End of Day Summary (NWXX60) message
+   and the 3-hour plain language code (PLAIN) messages for SOON sites. The 2 WS/DO will
+   make every effort to approve requests from the Holloman and Sagamore Hill Observatories
+   to provide hands-on training for students in formal courses, subject to the criteria in
+   paragraph 2.1.1.
+   2.1.4. If postponement of maintenance work could result in equipment damage, the
+   detachment commander has final responsibility to decide on the downtime after considering
+   all operational and equipment impacts.
+2.2. Intersite Data Discrepancies.
+ 10                                                          AFWAI15-2 13 NOVEMBER 2013
+
+
+   2.2.1. Once intersite data discrepancy thresholds are observed or when “bad” or erroneous
+   data collection is identified by either SPACEWOC or the observatory currently situated on
+   the sun, initiate an intersite data discrepancy review for the following:
+      2.2.1.1. Flares that differ by one or more categories in either importance or brightness.
+      2.2.1.2. Event-level radio bursts that differ by more than 20 percent in peak intensity.
+      2.2.1.3. Significant Disappearing Solar Filaments (DSF’s) that differ by more than 5
+      degrees in length.
+      2.2.1.4. Non-confirmation from another observatory (on-patrol) of a Type II or IV
+      sweep, Loop Prominence System (LPS), an Eruptive Prominence on the Limb (EPL),
+      Bright Surge on Limb (BSL) or a DSF. NOTE: A significant DSF is defined as 10
+      heliographic degrees.
+   2.2.2. Upon determination or suspected occurrence, the SPACEWOC will report intersite
+   data discrepancies immediately to the applicable observatories in an attempt to resolve the
+   differences. Analysts at the observatories will respond quickly and thoroughly to appropriate
+   requests for data reviews.
+   2.2.3. Analysts will be aware of phenomena being reported by other observatories since
+   analysts may be the first to detect an intersite discrepancy. Upon determination or suspected
+   occurrence, analysts will initiate an intersite data discrepancy review themselves by notifying
+   the           SPACEWOC to notify other observatories involved.
+   2.2.4. Analysts should not adjust their data messages just to achieve agreement with another
+   site's reports. Discrepancies should be resolved near real-time, so the SPACEWOC can
+   transmit the proper products/data to their supported units.
+   2.2.5. Respond to notification of an intersite data discrepancy from the SPACEWOC by
+   investigating the items listed below, as well as any other factors an analyst believes might be
+   relevant to the discrepancy. Call the SPACEWOC and indicate the results of the
+   investigation. Use the following procedure to check for intersite discrepancies with
+   SPACEWOC acting as the final arbitrator:
+      2.2.5.1. Check site's messages and forms for accuracy.
+      2.2.5.2. Check to see if all equipment is configured and operating properly then check
+      calibrations.
+      2.2.5.3. Check to see if the relevant software is operating properly.
+      2.2.5.4. Check recent equipment, computer, and communications performance outage
+      logs to see if there is a reason to doubt the data.
+      2.2.5.5. Evaluate the analysis techniques used.
+      2.2.5.6. Consider solar elevation effects (e.g., close to sunrise, sunset).
+      2.2.5.7. Consider possible weather influences (e.g., high winds, clouds, etc).
+      2.2.5.8. Consult local maintenance technicians when appropriate.
+2.3. Quality Assurance and Metrics.
+AFWAI15-2 13 NOVEMBER 2013                                                                     11
+
+
+  2.3.1. General. The main objective of the Quality Assurance (QA) and Metrics programs are
+  to ensure supported units consistently receive the highest quality products and services
+  possible and to promote improvement of processes used to support operations.
+     2.3.1.1. Implement Quality Assurance principles and metrics IAW AFI 15-114,
+     Functional Resource and Weather Technical Performance Evaluation.
+     2.3.1.2. Units may use AF Form 3811, Quality Control Register, or an automated
+     program with similar utility to help manage a local quality assurance program.
+     2.3.1.3. Include Error-Free Rates (EFRs) for all event code (EVENT) (SXXX60 and
+     SXXX61) header coded messages and all non-event level flares, bursts, and sweeps into
+     the units QA program. QA will be conducted on 100 percent of all event messages.
+     2.3.1.4. QA program will be broken down into two categories: technical and
+     administrative. Count technical errors (including timeliness errors) in the EFR, but omit
+     administrative errors in end of month totals. For example, no initials on the data circuit
+     hardcopy is an administrative error. Technical errors occur when the supported unit does
+     not receive an accurate message within the required timeframe.
+     2.3.1.5. Count no more than one error for each message, no matter how many encoding
+     errors are noted within the message. Therefore, no message will ever have more than one
+     error, and thus, internal error total may differ from that reported.
+  2.3.2. Methods of Quality Assurance.
+     2.3.2.1. On-the-Spot (OTS) QA. OTS QA is the most important tool for detachment
+     leaders to ensure supported units receive accurate and timely support. Detachment
+     leaders will implement OTS QA processes for all support provided to units. Ideally, OTS
+     QA should be performed on all products before they are issued. A successful OTS QA
+     program will identify and correct support deficiencies before delivery to the user.
+     Detachment leaders should place the most emphasis of the QA program on OTS QA.
+     2.3.2.2. After-the Fact (ATF) QA. Detachment leaders will use ATF QA to evaluate the
+     quality of support provided to units to identify areas that might require additional training
+     or better procedures. This may be done on a smaller scale than OTS QA. Detachment
+     leaders will focus most ATF QA on the end products and support received by users, with
+     less focus on the internal processes and tools used to develop the support.
+     2.3.2.3. Horizontal QA. Detachment leaders will use this method to check all products
+     on a given day for basic horizontal consistency. Horizontal QA is the process of ensuring
+     multiple products/information produced within the same operations center, valid for the
+     same time period, are consistent when they are disseminated to the supported unit.
+     Product consistency prevents supported units from receiving conflicting information.
+     Consider developing checklists that evaluate the horizontal consistency of all support
+     received by supported unit.
+  2.3.3. Metrics. Detachments will track specific metrics as assigned and forward to 2 WS
+  electronically.
+ 12                                                       AFWAI15-2 13 NOVEMBER 2013
+
+
+                                          Chapter 3
+
+                                 DATA DISSEMINATION
+
+3.1. Service Messages.
+   3.1.1. Transmit service messages only for the following purposes:
+      3.1.1.1. To resolve data receipt or other communications problems affecting current
+      support operations and requiring immediate attention (e.g., interference verification,
+      discrepancies, etc).
+      3.1.1.2. To provide notification of actual or anticipated changes in operating hours (e.g.,
+      to report or coordinate equipment or circuit outages).
+      3.1.1.3. To transmit mission related products or information to a small number of
+      supported units or agencies.
+   3.1.2. Keep service messages brief and professional.
+   3.1.3. Manual Operations (MANOP) Headings. These alphanumeric designators identify
+   message types based on their data content, source of origin, and transmission or file time
+   (e.g., "AXXX61 APLM DDGGgg").
+      3.1.3.1. Use SXXX60 headers for all EVENT code reports. SXXX61 headers flag
+      urgent, event-level data reports, also for all preliminary event-level coded data reports
+      (e.g., solar flare code (FLARE), solar disk and limb activity summary code (DALAS),
+      discrete solar radio burst (BURST), and spectral solar radio burst code (SWEEP)
+      transmitted in 15 minutes or less after meeting event criteria or event maximum.
+      3.1.3.2. Use routine reporting headers (AXXX61 – optical and AXXX71 - radio) for all
+      non-event activity reports, final event level reports, and for event-level activity reports
+      transmitted more than 15 minutes after meeting event criteria or event.
+      3.1.3.3. The Amendment (AMD) modifier is appended to MANOP headers to flag
+      reports which may require special attention. This modifier ensures the messages won't be
+      rejected as duplicate messages by weather communication computers.
+   3.1.4. Corrected Messages.
+      3.1.4.1. Add the modifier "AMD" to the MANOP heading (along with the original
+      transmission time or fixed file time) to flag a corrected message. EXAMPLE:
+      AXXX61 APLM DDGGgg AMD. Add a remark at the end of the message listing the
+      corrected time (i.e. Correction to a Previously Disseminated Report (COR) 1445). For
+      successive corrections of the same message do not number the AMD modifier (i.e.
+      AMD02, AMD03, etc.). Use the "AMD" modifier to flag messages containing the
+      following erroneous data:
+          3.1.4.1.1. A message retransmitted because the comeback copy was either garbled or
+          not received by the transmitting site.
+          3.1.4.1.2. A final or previously corrected message retransmitted to change or correct
+          data in the message.
+AFWAI15-2 13 NOVEMBER 2013                                                                        13
+
+
+           3.1.4.1.3. If information in the first two lines of a message (i.e., MANOP header and
+           code type) is to be corrected, the analyst need only retransmit the message with the
+           correct information and a "COR" modifier. If data in the body of the message (Line
+           3, 4, etc.) is to be corrected, the analyst should also use the report status code (S = 3)
+           for corrected data, unless the code type in question doesn't have this option (e.g.,
+           PLAIN and EVENT).
+
+Table 3.1. Message Key Fields.
+Code                          JJ or FF or                                           EE, FF,
+      IIiii       YMMDD                        GGgg      EE NNNN            TT
+Type                          JJJ    FFFFF                                          or HH
+BURST X           X           X      X
+SWEEP X           X           X
+IFLUX X           X                  X         X
+FLARE X           X           X
+DALAS X           X           X                          X
+SPOTS X           X           X                                 NOTE 3
+PLAIN NOTE 1 NOTE 2                            NOTE 2
+EVENT X           NOTE 2                       NOTE 2
+STATS X           X                            X                            X       NOTE 4
+LEGEND: IIiii = World Meteorological Organization (WMO) block and station number
+        YMMDD = Year/Month/Day
+        JJ/JJJ = Local sunspot group number (for SPOTS), or local activity serial (or
+        sequence) number (for other codes)
+        FF/FFFFF = Frequency (FF for BURST, FFFFF for IFLUX)
+        GGgg = Time (hours and minutes)
+        EE = Type of DALAS activity
+        NNNN = SWPC region number
+        TT = STATS type of sensor system (optical, radio, or geophysical)
+        EE/FF/HH = STATS system, frequency, or equipment indicator
+
+NOTES:
+1. Since the PLAIN code doesn't contain an IIiii group, the decoders use the station identifier
+(e.g., APLM, KHMN, etc.) in the MANOP header as a key field.
+
+2. Since the PLAIN and EVENT codes don't contain either the YMMDD or GGgg groups in the
+body of the message, the decoders use the date/time groups (DDGGgg) in the MANOP header as
+key fields.
+
+3. A change in the SWPC region number, to include a change from //// to a number (or vice
+versa), requires a deletion of the old data line.
+
+4. To change EE, FF, or HH, the analyst adjusts the item’s status/frequency effective at the same
+time it was originally mistakenly reported.
+3.2. Data Archival.
+ 14                                                          AFWAI15-2 13 NOVEMBER 2013
+
+
+   3.2.1. Dispose of SOON, RSTN, and geophysical data records IAW the AFWA/National
+   Environmental Satellite, Data, and Information Service (NESDIS)/National Geophysical
+   Data Center (NGDC) Support Agreement and AFMAN 33-363, Management of Records.
+   3.2.2. Use Standard Form 135, Records Transmittal and Receipt when physical products are
+   shipped to NGDC. If data normally archived is not available detail on the records transmittal
+   form what data is missing or lost and explain the reasons.
+   3.2.3. Forward the following products and worksheets to the NGDC not later than 30 days
+   following the last day of the record month. EXCEPTION: Through an agreement with the
+   Australian IPS Space and Radio Services, the Learmonth Solar Observatory will provide all
+   observatory data to Australian Radio and Space Services first. Following archival at Sydney,
+   Australia, Australian Radio and Space Services will then provide the data to NGDC. NGDC
+   prefers transmittal of archive data via ftp directly to their server. Each unit will develop local
+   procedures to transmit this data to NGDC.
+      3.2.3.1. AFWA Form 17, Solar Optical Worksheet; AFWA Form 18, RSTN Daily
+      Activity Log; and AFWA Form 21, Sunspot Analysis Worksheet. The logs are used in
+      conjunction with archived data to help identify periods of significant activity.
+      3.2.3.2. RIMS archive data. Archive RIMS data monthly from each RSTN site which
+      will be sent to NOAA/NESDIS/NGDC.
+      3.2.3.3. SRS archive data. Archive SRS data monthly from each RSTN site. Data will
+      be sent to NOAA/NESDIS/NGDC monthly utilizing either read only compact discs, or
+      via ftp.
+   3.2.4. Use the following address for NGDC:
+Electronic: ftp://incoming.ngdc.noaa.gov/pub/incoming/site-specific_location
+
+Mail: NOAA/NGDC/STP
+(E/GC2) Attn: Solar Group
+325 Broadway
+Boulder, CO 80305-3328
+   3.2.5. Save event-level Type II and Type IV hard or electronic copies for in-house training.
+   3.2.6. Contractor operated sites will forward the following items monthly to the contract
+   COR, who will forward selected items to NGDC.
+      3.2.6.1. Complete AFWA Forms 17, 18, 20, and 21 for all periods of operations.
+      3.2.6.2. Time vs. flux hardcopy plots for any period of discrete frequency burst activity.
+      These plots should not exceed 120 minutes, should include all burst peaks, and cover all
+      eight discrete frequencies.
+AFWAI15-2 13 NOVEMBER 2013                                                                    15
+
+
+                                          Chapter 4
+
+                             CONTINUITY OF OPERATIONS
+
+4.1. General. Each unit must develop local procedures for documenting and reporting SEON
+observing/support equipment outages, and communications equipment/circuit outages. Also
+consult AFI 21-103, Equipment Inventory, Status, and Utilization Reporting, for more guidance.
+Report all outages and mission impacts to the appropriate servicing maintenance agency and
+Fielded System Support Center IAW locally developed guidance. Notify the above maintenance
+agency again when equipment is restored to service.
+4.2. Outage Procedures.
+   4.2.1. Mission Impact Statements. A mission impact statement reports the impact an outage
+   has on mission capability of either an AFWA unit or an agency supported by AFWA.
+   Determine mission impacts for SEON equipment using Attachment 4. Contact the
+   Detachment Commander when in doubt as to an outage's impact.
+       4.2.1.1. A Minimum (MIN) outage is a reduction or limitation of equipment or circuit
+       capability, but not to the degree that the equipment or circuit is operationally unusable.
+       4.2.1.2. A Significant (SIG) outage is a reduction or limitation of equipment or circuit
+       capability to the point where the equipment or circuit is operationally unusable.
+   4.2.2. Outage Logs. Log SEON, Automated Data Process Equipment (ADPE) and
+   communications equipment or circuit outages on AFWA Form 20 using the instructions
+   below.
+       4.2.2.1. A unit may either use a separate AFWA Form 20 for each piece of equipment or
+       communications circuit, or may combine items on a single form. Copies of AFWA Form
+       20 for SEON equipment and circuit outages must be sent monthly to the 2 WS/DOZ. At
+       contractor-operated sites, all AFWA Form 20s must be sent monthly to Contracting
+       Officer’s Representative (COR).
+       4.2.2.2. The AFWA Form 20 will be cut off at the end of the Greenwich Mean Time
+       (GMT) month. If an item is still out-of-service, close the outage on the old AFWA Form
+       20, and indicate in the Remarks column that the outage was carried forward to a new
+       month's AFWA Form 20. At the same time, reopen the outage on the new month's
+       AFWA Form 20, and record in the remarks column the original Month/Date Time Group
+       (DTG) that the problem occurred.
+       4.2.2.3. All times on the AFWA Form 20 are to be GMT (GMT or Universal Time
+       Coordinated (UTC). For any AFWA Form 20 that includes ADPE outages, indicate the
+       GMT to Local time conversion, and whether it changed during the month. NOTE: Use
+       local times only on AF Form 597 ADPE Maintenance.
+       4.2.2.4. Use the remarks column of the AFWA Form 20 to describe the reason for the
+       outage, if known. It can also be used to log Job Control Numbers (JCN), follow-up
+       actions, or other clarifying remarks.
+       4.2.2.5. If the mission impact statement changes, record the date/time of the change in
+       the remarks column.
+16                                                       AFWAI15-2 13 NOVEMBER 2013
+
+
+     4.2.2.6. Compute the "TOTAL OUTAGE TIME" by subtracting the "DTG PROBLEM
+     OCCURRED" from the "DTG REPAIR COMPLETED." However, do not count as
+     outage time any period when the observatory was closed (except for geophysical sensors,
+     which operate 24 hours per day). In other words, total outage time is the time the
+     equipment or system was out-of-service, but could have been used if it were functional.
+     NOTE: To compute the total outage date/time for AF Form 597, subtract the time from
+     when maintenance is called from the date/time the repair was completed.
+        4.2.2.6.1. For SEON and communications equipment/circuits, these times are
+        normally from sunrise to sunset.
+        4.2.2.6.2. For geophysical sensors (ionosondes, etc.), and (if applicable) their
+        communications equipment/circuits, these times are normally based on a 24-hour
+        observing day.
+     4.2.2.7. For Preventative Maintenance Inspections (PMI), the "DTG PROBLEM
+     OCCURRED" and "DTG MAINTENANCE NOTIFIED" may not apply. For such cases,
+     use the "DTG MAINTENANCE ARRIVED" to compute "TOTAL OUTAGE TIME.”
+     4.2.2.8. Actual out-of-service time ("DTG PROBLEM OCCURRED") is relevant to
+     operations. Use the actual out-of-service time when preparing STATS messages and the
+     End of Day Summary (NWXX60) message. Use the "TOTAL OUTAGE TIME" when
+     preparing the Monthly Outage Report.
+     4.2.2.9. If equipment is repaired, but it is being monitored to ensure the repair corrected
+     the problem, the item should normally be logged back in service or, at most, continued as
+     a minimum outage.
+     4.2.2.10. Use of an AFWA Form 20 is not limited to equipment/circuit malfunctions. It
+     may also be used to document downtime for any reason (e.g., weather, power outage, or
+     Radio Frequency Interference (RFI).
+     4.2.2.11. Archive AFWA Forms 20 IAW AFMAN 33-363, Management of Records.
+  4.2.3. STATS Messages.
+     4.2.3.1. Detailed guidance on optical and radio patrol-related STATS messages is
+     contained in AFWAMAN 15-1, AFWAMAN 15-2, and AFMAN 15-124.
+     4.2.3.2. Once an item is reported as being in or out of service, it is not necessary to
+     repeat the item in subsequent STATS messages if its status remains unchanged.
+     4.2.3.3. Only STATS messages that affect on/off patrol, and type of patrol (automatic vs.
+     semi-automatic), need to be logged on the AFWA Forms 17 and 18. If desired, a site
+     may locally decide to log all STATS messages, including dedicated communication line,
+     phones, etc.
+     4.2.3.4. The GGggM group contains the actual time the item became inoperative (or
+     operable), not the time the change was discovered or reported to maintenance, nor the
+     time the STATS message was transmitted.
+     4.2.3.5. Going on/off patrol due to clouds, high winds, or other types of weather will not
+     normally affect a site's computer (except for thunderstorms), dedicated communication
+     line, Defense Switched Network (DSN), commercial, or VOIP phones. Also, high winds
+AFWAI15-2 13 NOVEMBER 2013                                                                    17
+
+
+     don't affect SRS low band antenna patrol.            As a result, the "//" option ("all
+     systems/equipment") has limited usefulness.
+     4.2.3.6. A STATS reportable commercial phone, DSN, VOIP, or dedicated
+     communication line outage is intended to reflect a site-wide outage in send, receive, or
+     both. The fact that a single phone instrument, phone line, or data circuit printer is out of
+     service is not reportable by STATS. The SPACEWOC and SWPC are only interested
+     when the ability to communicate with the site, in one or both directions, is lost. (For
+     example: At a dual site, if RSTN has no dedicated communication line capability, but
+     SOON does, do not report the outage via a STATS message.)
+     4.2.3.7. At a dual SOON/RSTN site, the SOON and RSTN analysts should not both
+     report a site-wide commercial phone, DSN, or dedicated communication line outage.
+     The same isn't true for computers: treat the SOON and RSTN computers separately. For
+     this reason, a computer outage that affects both SOON and RSTN must be reported in
+     both a SOON and a RSTN STATS message. NOTE: Although commercial phone,
+     DSN, VOIP, and dedicated communication line outages must be reported in a SOON
+     STATS message at dual sites, the RSTN analyst can send that message if the site prefers
+     to assign this duty to the RSTN analyst.
+  4.2.4. SEON Communications Outage.
+     4.2.4.1. The SPACEWOC requires rapid reporting of event level solar activity. When
+     normal communications methods are inoperative, use the following procedures to report
+     the outage:
+        4.2.4.1.1. The solar analyst will call SPACEWOC DSN 312-271-4317(analyst) /
+        312-272-8087 (forecaster) or Commercial 402-294-4317 / 402-232-8087 to inform
+        them of the communications outage and expected duration. The SPACEWOC will
+        provide guidance on special support requirements, either in the form of telephone
+        support or special message support.
+        4.2.4.1.2. The solar analyst will call the AFWA Operations Center (DSN 312-271-
+        2586 or Commercial (402-294-2586) and open a ticket.
+     4.2.4.2. During the outage:
+        4.2.4.2.1. SPACEWOC requests all significant events be called in as soon as
+        possible. Significant radio events are any radio burst greater than 5,000 solar flux
+        units (SFUs), Type II or Type IV sweeps. Significant optical events are any flare, or
+        any DALAS.
+        4.2.4.2.2. If possible, use Air Force Weather WEB Services (AFW - WEBS) or
+        Weather Subscription Service (WSS) to transmit all messages.
+        4.2.4.2.3. If unable to transmit the messages via AFW - WEBS, send finals,
+        NWXX60, and closing STATS message via e-mail or fax to the SPACEWOC at close
+        of business. The e-mail address is spaceweather@offutt.af.mil, and the fax number
+        is DSN 312-272-7770, Comm (402) 232-7770.
+     4.2.4.3. After the outage:
+ 18                                                        AFWAI15-2 13 NOVEMBER 2013
+
+
+          4.2.4.3.1. Notify the SPACEWOC and AFWA Operations Center when the outage is
+          over.
+          4.2.4.3.2. Transmit all significant messages. Attach a PLAIN message at the end of
+          the bulletin stating “TRANSMITTING TO UPDATE DATABASE ONLY.”
+          Messages are stored in AFW - WEBS database for reference.
+      4.2.4.4. Procedures for Requesting Support During Extended Communications Outages.
+          4.2.4.4.1. An extended total communications outage could degrade SEON
+          operations. If fax line or e-mail is available, ask the SPACEWOC to send pertinent
+          bulletins as they become available. Suggested bulletins are:
+  AXXX01 KWNP (JOINT USAF/NOAA SOLAR & GEOPHYSICAL ACTIVITY
+  SUMMARY) AXXX02 KWNP (JOINT USAF/ NOAA SOLAR REGION SUMMARY)
+  AXXX05 KWNP (JOINT USAF/NOAA DATA ACQUISITION REPORT OR SVC MSG)
+  NWXX52 KGWC (6HR SOLAR FLARE SUMMARY)
+  SXXX56 KGWC (FIXED-FREQUENCY SOLAR RADIO BURST SUMMARY)
+  SXXX55 KGWC (SOLAR RADIO FLUX SUMMARY)
+  SXXX57 KGWC (SWEEP-FREQUENCY SOLAR RADIO BURST SUMMARY)
+  SXXX51 KGWC (SOLAR DISK & LIMB ACTIVITY SUMMARY)
+  FXXX01 KWNP (REPORT OF SOLAR AND GEOPHYSICAL ACTIVITY)
+  TXXX51 KGWC (GOES X-RAY EVENT SUMMARY)
+  Other observatory bulletins, as required (e.g. BOXOUT, SPOTS)
+4.3. End of Day Summary Messages.
+   4.3.1. Send a plain language End of Day Summary (NWXX60) message, using the format in
+   Attachment 5, at the end of each observing day no earlier than 30 minutes before sunset.
+   Whenever practical, first coordinate the message with maintenance to verify its accuracy.
+   Avoid site-specific jargon and remember to plainly outline impacts to patrol. Use NWXX60
+   for optical sites and radio sites. Multisensor sites (SOON, RSTN, ionosonde, etc.) will
+   combine all Space Environment Sensor Suite (SESS) sensors into one NWXX60 message.
+   4.3.2. Section 1. Include all SEON, geophysical, and communication (both equipment and
+   circuit) outages with a cumulative daily outage time of 30 minutes or more, or still out at the
+   end of the day. EXAMPLE: Include the data circuit if it was logged out three times during
+   the observing day for 10 minutes each time.
+      4.3.2.1. Specify inoperative equipment or circuits.    Use the SEON Equipment
+      Breakdown table in Attachment 6, or consult local maintenance personnel, to identify
+      equipment items. Include outages due to PMIs, power or air conditioning, high winds,
+      etc.
+      4.3.2.2. Mission impact. Use Attachment 4 for guidance.
+      4.3.2.3. Date/time of equipment outage in GMT. Use actual out-of service time, which
+      may differ from the time that maintenance was notified.
+      4.3.2.4. Estimated Time In Commission (ETIC), if not operational by the end of the
+      observing day. Only an ETIC date (not time) is required. Avoid, when possible, the use
+      of "UNKNOWN" for an ETIC, instead give best estimate. Continually review and
+      update this estimate until the equipment is back in service.
+AFWAI15-2 13 NOVEMBER 2013                                                                    19
+
+
+      4.3.2.5. Date/time equipment was back in operation, in GMT.
+   4.3.3. Section 2. Include:
+      4.3.3.1. A detailed account of each outage.
+          4.3.3.1.1. The cause of the outage.
+          4.3.3.1.2. Its impact on patrol. EXAMPLES: Caused semiautomatic patrol, no
+          effect on patrol, frequency usable, but data qualified.
+          4.3.3.1.3. Repairs or efforts taken to correct the problem.
+      4.3.3.2. Any noise tube value change; include the new value, date changed, and reason
+      for the change.
+      4.3.3.3. Use of "No Change in Status" to describe an outage is only acceptable when a
+      communications problem makes it difficult to transmit a long message. Due to long-term
+      outages or lost messages, recipients can lose track of what status this phrase is referring
+      to.
+      4.3.3.4. Section 3. Include a 3-day patrol outlook based on weather, equipment, or other
+      circumstances, which might significantly, impact patrol. SPACEWOC will use this
+      information to evaluate the networks status. EXAMPLES: Planned major equipment
+      downtime, scheduled communications outages, or anticipated periods of extended
+      semiautomatic operations. All maintenance must be forecast three days in advance and
+      noted on the NWXX60 message. When maintenance forecasts a change or requirements
+      arise less than three days from implementation, plainly describe the reasons in the
+      message or call the SPACEWOC directly to explain the change. It is necessary to
+      include date/time of these anticipated impacts on operations. However, it is not
+      necessary to include a weather outlook if no significant weather (e.g., wind storm,
+      thunderstorms, hurricane, etc) is expected.
+4.4. Monthly Outage Report.
+   4.4.1. Transmit the Monthly Outage or Effectiveness/Outage Report using applicable format
+   in Attachment 7 to 2 WS/DOZ for non-contract and contract sites via e-mail no later than 5
+   working days after the end of the month. Include a courtesy copy to 2 WS/DO. Use the
+   Equipment Breakdown table in Attachment 6 as an aid in preparing the report. Base outages
+   reported on the GMT month. Name the file with the detachment number, month, year and
+   out.doc (i.e. Det4Mar12out.doc).
+   4.4.2. Report.
+      4.4.2.1. Total monthly patrol hours possible for both SOON and RSTN operations (as
+      applicable). SUGGESTION: Use local sunrise/sunset tables, or ephemeris program
+      data. NOTE: The difference in definitions for optical and radio sunrise/sunset will
+      typically cause RSTN patrol to be about 20 minutes shorter per day than potential SOON
+      patrol, or about 10 hours less per month.
+      4.4.2.2. Monthly uptime percentage for all SEON, geophysical, and communications
+      equipment outages that occurred during the month.
+ 20                                                     AFWAI15-2 13 NOVEMBER 2013
+
+
+      4.4.2.3. Monthly operational effectiveness       percentages   for   all   sensor   and
+      communications systems at the site.
+      4.4.2.4. Explain all percentages (Total FRR-95 or FMQ-7) that are less than 100%.
+      4.4.2.5. Changes to noise tube values required during the month, to include the new
+      value, date changed, and reason for the change.
+4.5. Operational Reports (OPREP). Refer to AFWAI 10-3, Operational Reporting, (and
+applicable supplements) for guidance on Operational Reports. When in doubt an incident may
+be OPREP reportable, call the AFWA Operations Center IAW AFWAI 10-3.
+
+
+
+
+                                          LOUIS V. ZUCCARELLO, Colonel, USAF
+                                          Commander
+AFWAI15-2 13 NOVEMBER 2013                                                             21
+
+
+                                        Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFPD 15-1, Atmospheric and Space Environment Support, 8 January 2001
+AFI 15-114, Functional Resource and Weather Technical Performance Evaluation, 7 December
+2001
+AFI 15-127, Air Force Weather Qualification Training, 14 March 2012
+AFI 15-128, Air Force Weather Roles and Responsibilities, 07 February 2011
+AFI 21-103, Equipment Inventory, Status, and Utilization Reporting, 26 January 2012
+AFI 33-324, Air Force Information Collections and Reports Management System, 06 Mar 2013
+AFI 36-2201, Air Force Training Program, 15 September 2010
+AFMAN 15-124, Meteorological Codes, 28 October 2009
+AFMAN 33-363, Management of Records, 1 March 2008
+AFWAI 10-3, Operational Reporting, 1 May 2008
+AFWAMAN 15-1, Space Environmental Observations, Solar Optical Observing Techniques, 5
+Dec 2013
+AFWAMAN 15-2, Space Environmental Observations, Solar Radio Observing Techniques, 13
+Nov 2013
+CFETP15W, Career Field Education and Training Plan, 15 March 2012
+CFETP1W0XX, Career Field Education and Training Plan, 01 December 2011
+Prescribed Forms
+AFWA IMT 17, Solar Optical Worksheet
+AFWA IMT 18, RSTN Daily Activity Log
+AFWA IMT 20, Equipment/Communications Outage Log
+AFWA IMT 21, Sunspot Analysis Worksheet
+Adopted Forms
+SF Form 135, Records Transmittal and Receipt
+AF Form 847, Recommendation for Change of Publication
+AF IMT 597, ADPE Maintenance Record
+AF IMT 3811, Quality Control Register
+
+Abbreviations and Acronyms
+ADPE—Automated Data Process Equipment
+AFI—Air Force Instruction
+ 22                                                  AFWAI15-2 13 NOVEMBER 2013
+
+
+AFMAN—Air Force Manual
+AFPD—Air Force Policy Directive
+AFRL—Air Force Research Laboratory
+AFWA—Headquarters Air Force Weather Agency
+AFWA/CC—Headquarters Air Force Weather Agency Commander
+AFWAMAN—Air Force Weather Agency Manual
+AFW—WEBS—Air Force Weather - WEB Services
+AFTR—Air Force Training Record
+AMD—Amendment
+AN/FMQ—7—Solar Optical Telescope
+AN/FRR—95—Radio Telescope
+ATF—After the Fact
+BSL—Bright Surge on Limb
+BURST—Discrete Solar Radio Burst
+CFETP—Career Field Education and Training Plan
+COM—Computer Operations Manual
+COR—Correction to a Previously Disseminated Report
+COR—Contracting Officer’s Representative
+CPC—Compliance Performance Checklists
+CRA—Centralized Repair Activity
+DALAS—Solar Disk and Limb Activity Summary Code
+DEC—Declination
+DSF—Disappearing Solar Filament
+DSN—Defense Switched Network
+DTG—Date Time Group
+EFR—Error-Free Rate
+EPL—Eruptive Prominence on Limb
+ETIC—Estimated Time In Commission
+EVENT—Event Code
+FLARE—Solar Flare Code
+GMT—Greenwich Mean Time
+GPS—Global Positioning System
+AFWAI15-2 13 NOVEMBER 2013                                                         23
+
+
+IAW—In Accordance With
+IFLUX—Integrated Solar Radio Flux
+IMT—Information Management Tool
+JCN—Job Control Number
+LPS—Loop Prominence System
+MANOP—Manual Operations
+MDM—Mobile Depot Maintenance
+MIN—Minimum
+MOA—Memorandum of Agreement
+MTP—Master Training Plan
+NCOIC—Non Commissioned Officer in Charge
+NESDIS—National Environmental Satellite, Data, and Information Service
+NGDC—National Geophysical Data Center
+NOAA—National Oceanic and Atmospheric Administration
+NSM—Noise Storm
+NSOO—Non Commissioned Officer in Charge of Solar Observatory Operations
+OPR—Office of Primary Responsibility
+OPREP—Operational Reports
+OTS—On the Spot
+PLAIN—Plain Language Code
+PMI—Preventative Maintenance Inspection
+POC—Point of Contact
+QA—Quality Assurance
+RA—Right Ascension
+RDS—Records Disposition Schedule
+RF—Radio Frequency
+RFI—Radio Frequency Interference
+RIMS—Radio Interference Measuring Sets
+RSTN—Radio Solar Telescope Network
+SEON—Solar Electro-Optical Network
+SESS—Space Environment Sensor Suite
+SFU—Solar Flux Units (1 sfu = 10-22 Watts per meter squared per Hertz [W/m2/Hz])
+ 24                                               AFWAI15-2 13 NOVEMBER 2013
+
+
+SIG—Significant
+SOON—Solar Observing Optical Network
+SOSS—SEON Operations Secure Server
+SPACEWOC—Space Weather Operations Center, 2d WS/WXZ
+SPOTS—Sunspot Code
+SRS—Solar Radio Spectrograph
+STATS—Patrol Status Code
+SWEEP—Spectral Solar Radio Burst Code
+SWPC—Space Weather Prediction Center
+TO—Technical Order
+UPS—Uninterruptible Power Supply
+UTC—Universal Time Coordinated
+VOIP—Voice-over Internet Protocol
+WINDS—Weather Information Network Distribution System
+WMO—World Meteorological Organization
+WSS—Weather Subscription Service
+AFWAI15-2 13 NOVEMBER 2013                                                                     25
+
+
+                                          Attachment 2
+                                      DUTY PRIORITIES
+
+SOON-only Site Duty Priorities:
+
+1. Analyze and report event-level flares and DALAS activity, in that order.
+
+2. Respond to SPACEWOC and SWPC special data requests.
+
+3. Analyze and report routine flare and DALAS activity, in that order.
+
+4. Analyze and report photospheric (white light) activity.
+
+5. Transmit other routine messages.
+
+6. Load and update images as required by the AXXX05 KWNP.
+
+7. Archive and store data.
+
+8. Support technical applications studies.
+
+9. Perform routine station and additional duties.
+
+RSTN-only Site Duty Priorities:
+
+1. Analyze and report event-level discrete frequency bursts and SRS activity, in that order.
+
+2. Respond to SPACEWOC and SWPC special data requests.
+
+3. Analyze and report routine discrete frequency bursts and SRS activity, in that order.
+
+4. Transmit other routine messages.
+
+5. Archive and store data.
+
+6. Support technical applications studies.
+
+7. Perform routine station and additional duties.
+
+Multiple Sensor Site Duty Priorities. Multiple sensor (SOON, RSTN, ionosonde) sites will use
+the following priorities:
+
+1. Analyze and report event-level discrete frequency bursts, flare, SRS activity, and DALAS
+activity, in that order.
+ 26                                                          AFWAI15-2 13 NOVEMBER 2013
+
+
+2. Report optical and radio events to Australian IPS Radio and Space Weather Services
+(Learmonth only).
+
+3. Analyze and report routine discrete frequency bursts, flares, SRS activity, and DALAS
+activity, in that order.
+
+4. Relay ionosonde data to SWPC.
+
+5. Analyze and report photospheric (white light) activity.
+
+6. Transmit other routine messages.
+
+7. Load and update images as required by the AXXX05 KWNP.
+
+8. Report to Australian Radio and Space Weather Services: (Learmonth only)
+
+       - Routine discrete frequency and SRS activity.
+
+       - Routine flare and DALAS activity.
+
+       - Other routine messages, in that order.
+
+9. Archive and store data.
+
+10. Support technical applications studies.
+
+11. Perform routine station and additional duties.
+AFWAI15-2 13 NOVEMBER 2013                                                                          27
+
+
+                                         Attachment 3
+                                  TIMELINESS CRITERIA
+
+1. Automatic Operations: (Transmit as soon as possible, but not to exceed these limits.).
+CODE TYPE       EVENT LEVEL                         NON-EVENT LEVEL
+
+EVENT             2 min after event start or                Not Applicable
+                  notification
+FLARE
+ -Preliminary     2 min after meeting, or increasing        Optional
+                  to a higher (area or brightness),
+                  event threshold
+ -Final           10 min after end                          15 min after end
+DALAS
+ -Preliminary     10 min after event identification         Optional
+ -Final           20 min after end                          NLT end of day (AXXX72) message
+BURST
+ -Preliminary     2 min after meeting event threshold Optional (30 min after start for an
+                  2 min after crossing reportable     NSM)
+                  threshold
+                  5 min after peak on each frequency
+                  (may be combined for near
+                  simultaneous peaks)
+ -Final           10 min after end                    15 min after end (45 min for an NSM)
+SWEEP
+ -Preliminary     2 min after type identification           Optional. (EXCEPTION: 30 min after
+                                                            type identification for a Type 6, 7, or 8)
+ -Final       30 min after end data availability            45 min after end data availability
+NOTE: NSM = Noise Storm
+
+
+2. Semiautomatic Operations: (Transmit as soon as possible, but not to exceed these limits.).
+CODE TYPE       EVENT LEVEL                            NON-EVENT LEVEL
+
+EVENT             5 min after event start or notification      Not Applicable
+FLARE
+ -Preliminary     15 min after meeting, or increasing to       Optional
+                  a higher (area or brightness), event
+                  threshold
+ -Final           20 min after end                             30 min after end
+DALAS
+ -Preliminary     Same as automatic operations                 Same as automatic operations
+ -Final           Same as automatic operations                 Same as automatic operations
+ 28                                                       AFWAI15-2 13 NOVEMBER 2013
+
+
+                                       Attachment 4
+                           EQUIPMENT OUTAGE IMPACTS
+
+EQUIPMENT                   MISSION IMPACT
+
+Radio (RIMS):               An outage is SIG if data cannot be gathered or analyzed on:
+
+                            - 245 MHz
+                            - 410 MHz
+                            - 2695 MHz
+                            - 8800 MHz
+                            - Two or More Adjacent Frequencies
+                            - Three or More Frequencies
+
+Radio (SRS):                An outage is SIG if the sweep type cannot be determined.
+
+Optical (SOON):             An outage is SIG if you cannot accurately locate and analyze a
+                            flare.
+
+SOON Rehost                 An outage is SIG if SOON client cannot perform DSF or FLARE
+                            analysis.
+
+SEON Computer System:       An outage is SIG if SOON or RSTN operations cannot be done in
+                            automatic mode.
+
+Communications:             A data circuit outage is SIG if both send and receive capability are
+                            down.
+
+                            A DSN or commercial outage is SIG if these circuits are down
+                            while the data circuit is also down, leaving no functioning means
+                            of communications.
+
+NOTES:
+1. All other outages not specified above are MIN, unless declared SIG by the Detachment
+Commander, AFWA/CC/CV, or their designated representative.
+
+2. An outage is normally MIN if data is degraded due to minor equipment problems, but can
+still be collected and analyzed.
+AFWAI15-2 13 NOVEMBER 2013                                           29
+
+
+                              Attachment 5
+                END OF DAY SUMMARY MESSAGE EXAMPLES
+
+EXAMPLE 1:
+
+NWXX60 APLM 061200
+PLAIN
+
+1. OUTAGES       IMPACT          OUT              IN/ETIC
+
+A. 4995 MHZ      MIN             09APR/0145Z      10MAY/0000Z
+
+B. FMQ-7         SIG             06MAY/0908Z      07MAY/0000Z
+
+2. COMMENTS:
+
+A. 4995 MHZ IS INOP DUE TO BAD NOISE TUBE. MAINTENANCE IS AWAITING
+PARTS.
+
+B. THE DECLINATION MOTOR WILL NOT OPERATE PROPERLY AND IS UNABLE TO
+TRACK THE SUN. MAINTENANCE IS TROUBLESHOOTING.
+
+3. THREE-DAY OUTLOOK (07 MAY - 09 MAY):
+
+DATE/TIME        EQUIPMENT       IMPACT/REMARKS
+
+07               ALL             NONE
+
+08/0100-0400Z    15.4MHZ         SIG/LINCALS
+
+08/0500-0800Z    8800MHZ         SIG/LINCALS
+
+09               ALL             NONE
+
+99999
+
+EXAMPLE 2:
+
+NWXX60 APLM 261200
+PLAIN
+
+NO REPORTABLE OUTAGES TODAY. NO SIGNIFICANT IMPACTS/PROBLEMS
+EXPECTED NEXT THREE DAYS.
+
+99999
+ 30                                                  AFWAI15-2 13 NOVEMBER 2013
+
+
+                                      Attachment 6
+                               EQUIPMENT BREAKDOWN
+
+SRS                                     SOON
+
+Data Acquisition Computer               Telescope tube assembly
+Data Processing Computer                Guider assembly (with control module)
+Low band semi-bicone antenna            Power distribution assembly
+High band tracking antenna              Manual switcher(s)
+Spectrum analyzer                       RA or DEC drives (with servos)
+Antenna control unit                    Video amplifier(s)
+Switch view                             Objective lens heater
+Printer                                 Uninterruptible Power System (UPS)
+                                        Vacuum pump
+
+RIMS
+
+28 foot Antenna                         Optical relay bench
+8 foot Antenna                          TV camera (with its filter wheel)
+3 foot Antenna                          9 or 23-inch TV monitors
+Antenna control unit                    Collimator
+Compressor-Dehydrator                   Slit assembly
+Time-code generator                     Eyepiece assembly
+8 channel amplifier                     Spectrograph assembly
+Calibration switch                      Central Processing Unit
+Lock-in amplifier (Master or Slave)     GPS time server
+RF Section                              Pre-filter
+RF Input switch                         1/4 Wave assembly (with drive, cables,
+IF Section                              servo, computer interchange)
+RIMS Analysis Computer                  Polaroid Stack (AGC 1, ½, ¼ Angstroms, or
+                                        birefringent filter)
+
+
+
+Embedded Controller                     Communications
+PXI Chassis                             Commercial phone (equipment or circuit)
+Circuit Boards                          DSN phone (equipment or circuit)
+A/D Converter                           SEON Operations Secure Server (SOSS)*
+D/A Converter                           Voice Over Internet Protocol (VOIP) phones
+                                        SOON REHOST client computer*
+                                        SEON WINDS Server*
+                                        Solar Observing Optical Network (SOON) server*
+*Primary and backup
+AFWAI15-2 13 NOVEMBER 2013                                                                           31
+
+
+                                            Attachment 7
+                                            DET X, 2 WS
+
+                     RSTN/SOON EFFECTIVENESS/OUTAGE REPORT
+                                     Feb 2014
+
+                                                                                         Date
+
+1. RSTN Total monthly patrol hours possible: 355 hours and 41 minutes.
+
+2. SOON Total monthly patrol hours possible: 365 hours and 17 minutes.
+
+3. RSTN Operational Effectiveness:
+
+  a. TOTAL FRR-95 (PERCENT UP):                                89.54%
+  b. PMI’s (PERCENT DOWN):                                      0.09%
+  c. WEATHER (PERCENT DOWN):                                    0.72%
+  d. EQUIPMENT (PERCENT DOWN):                                  9.65%
+  e. REMARKS: As necessary. Explain reason for outages less than 100% from paragraph (d)
+  above. i.e. extended PMI, significant weather, equipment outages. Also, changes to noise tube
+  values required during the month.
+
+4. SOON Operational Effectiveness:
+
+  a. TOTAL FMQ-7 (PERCENT UP):                            82.30%
+  b. PMI’s (PERCENT DOWN):                                  0.22%
+  c. WEATHER (PERCENT DOWN):                               12.16%
+  d. EQUIPMENT (PERCENT DOWN):                              5.32%
+  e. REMARKS: As necessary. Explain reason for outages less than 100% from paragraph (d)
+  above. i.e. extended PMI, equipment outages.
+
+5. Communication Outages:
+
+  a. REMARKS: As necessary. Explain reason for outages to data circuit, DSN phone, VOIP,
+  and commercial phones.
+
+NOTE:
+To calculate the percent up for "RSTN Operational Effectiveness or SOON Operational Effectiveness,"
+find the total time available for each system and subtract all Equipment downtime (e.g. outages, RFI),
+Weather downtime (e.g., storm-stow, clouds), and PMIs.
+"Total Percent Up" plus all down-percentages must equal exactly “100.0” percent. Do not include daily
+system calibration downtimes, or minimum outages during which data could be collected and analyzed,
+even if data may be degraded.
+
+                                                //SIGNED//
+                                                AIRMAN R. SHIPMATE, TSgt, USAF
+                                                NCOIC, Observatory Operations

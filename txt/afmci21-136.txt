@@ -1,0 +1,1319 @@
+BY ORDER OF THE COMMANDER                                                                             AFMC INSTRUCTION 21-136
+AIR FORCE MATERIEL COMMAND                                                                                              6 FEBRUARY 2003
+
+                                                                                                                                   Maintenance
+
+                                                                                    DEPOT MAINTENANCE PRODUCTION
+                                                                                                     LABOR ENTRY
+
+
+
+                  COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE:       This publication is available digitally on the AFDPO WWW site at:
+              http://www.e-publishing.af.mil.
+
+OPR: HQ AFMC/LGPP                                                           Certified by: HQ AFMC/LGP (Ms. Sue Dryden)
+     (Ms. Marty DeWoody-Rowell)                                                                              Pages: 35
+                                                                                                        Distribution: F
+
+This instruction defines responsibilities and provides procedures for entering labor production transac-
+tions in the Time and Attendance (TAA) portion of the Depot Maintenance Accounting and Production
+System. The goal for data entry is accurate and properly formatted data through extensive on-line valida-
+tion at the field element level such as Employee or Shop Number, Job Order Number, Work Order and
+Operation Number, Environmental Hazard Codes, proper leave and overtime authorizations, etc.
+
+Chapter 1—APPLICABILITY                                                                                                                         4
+      1.1.   Phase I. .......................................................................................................................   4
+      1.2.   Phase 2. ......................................................................................................................    4
+      1.3.   Time and Attendance Standards. ...............................................................................                     5
+
+Chapter 2—TAA SYSTEM MANAGEMENT                                                                                                                 6
+      2.1.   System User Access. ..................................................................................................             6
+      2.2.   System Administration. .............................................................................................               6
+      2.3.   Contingency Procedures. ...........................................................................................                7
+
+Chapter 3—SYSTEM PROCESSING                                                                                                                     8
+      3.1.   Reports. ......................................................................................................................    8
+      3.2.   Records. .....................................................................................................................     8
+      3.3.   Labor Review and Correction. ...................................................................................                   8
+      3.4.   Employee Master Maintenance. ................................................................................                      9
+      3.5.   Alternates. ..................................................................................................................     9
+      3.6.   Bridge Run. ................................................................................................................       9
+2                                                                                           AFMCI21-136 6 FEBRUARY 2003
+
+
+    3.7.    System Deployment. ..................................................................................................               9
+    3.8.    Reconciliation. ...........................................................................................................         9
+    3.9.    Help desk and SPR. ...................................................................................................             10
+
+Chapter 4—PRODUCTION PROCESSING                                                                                                                11
+    4.1.    Production Delay. ......................................................................................................           11
+    4.2.    Production Start Procedure. .......................................................................................                11
+    4.3.    Group and Bulk Processing. ......................................................................................                  12
+    4.4.    Temporary Workloads. ..............................................................................................                12
+    4.5.    Standing JONs. ..........................................................................................................          12
+    4.6.    Re-work time charge for PDMSS. .............................................................................                       12
+    4.7.    Indirect JONs. ............................................................................................................        12
+    4.8.    Loans. .........................................................................................................................   13
+
+Chapter 5—DATA ENTRY                                                                                                                           14
+    5.1.    Labor. .........................................................................................................................   14
+    5.2.    Standing JON. ............................................................................................................         14
+    5.3.    Error Corrections. ......................................................................................................          14
+    5.4.    Hours Worked Outside of Schedule. .........................................................................                        14
+    5.5.    Certification. ..............................................................................................................      15
+    5.6.    Deletion. .....................................................................................................................    16
+    5.7.    Holiday Work. ...........................................................................................................          16
+    5.8.    Temporary Duty. ........................................................................................................           16
+    5.9.    Leave. .........................................................................................................................   16
+    5.10.   Environmental and Hazardous Duty. .........................................................................                        17
+    5.11.   Alternate Work Schedule. ..........................................................................................                17
+    5.12.   Injury Documentation. ...............................................................................................              17
+    5.13.   Attendance. ................................................................................................................       18
+
+Chapter 6—INTER DIVISIONAL SUPPORT                                                                                                             19
+    6.1.    Overall. ......................................................................................................................    19
+    6.2.    Level for Labor Collection. .......................................................................................                19
+    6.3.    Inventory Tracking System (ITS) G337. ...................................................................                          19
+    6.4.    Temporary (Non-Programmed) Workloads. ..............................................................                               21
+AFMCI21-136 6 FEBRUARY 2003                                                                                                                  3
+
+
+    6.5.   G097 and G037E. ......................................................................................................           23
+    6.6.   Facility Equipment Maintenance System (D130/FEM): PMEL Workload Only. .....                                                      24
+    6.7.   Job Order Production Master System (G004L). ........................................................                             25
+
+Chapter 7—PLANNING FOR PROGRAMMED PRODUCTION (DMAPS PHASE II)                                                                               26
+    7.1.   AREP. ........................................................................................................................   26
+    7.2.   DREP. ........................................................................................................................   26
+    7.3.   Facility and Equipment Maintenance. .......................................................................                      27
+
+Chapter 8—PLANNING FOR NON PROGRAMMED PRODUCTION (DMAPS PHASE II)                                                                           29
+    8.1.   Production labor planning - AREP non-programmed workload ...............................                                         29
+    8.2.   Production labor planning - DREP non-programmed workload. ..............................                                         30
+    8.3.   Planning for non programmed production - software. ...............................................                               31
+    8.4.   Production labor planning - D012 Make-It workload. ..............................................                                31
+
+Chapter 9—ADDITIONAL DMAPS PHASE II PROCESSING                                                                                              33
+    9.1.   Overhead Application Rates. .....................................................................................                33
+    9.2.   Group Labor Processing. ...........................................................................................              33
+    9.3.   Reversal of Complete. ................................................................................................           33
+    9.4.   Production Count. ......................................................................................................         33
+    9.5.   Workload Status. ........................................................................................................        34
+    9.6.   Payroll Reconciliation. ...............................................................................................          34
+4                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+                                                Chapter 1
+
+                                           APPLICABILITY
+
+The DMAPS Time and Attendance System (DMAPS-TAA) is an information system that processes
+Labor and Attendance. The development and evolution of TAA has been predicated on the idea of having
+a standard means of entering labor transactions with a minimal effort from the affected employee. The
+goal for production labor data entry is accurate and properly formatted data through extensive on-line val-
+idation at the field element level such as Employee or RCC, Job Order Number (JON), Work Order and
+Operation Number, Environmental Hazard Codes, proper leave and overtime authorizations, etc. This is
+accomplished through the use of extensive validation files and tables. DMAPS TAA is an application of
+hours available: (1) direct hours worked by cost center on each job order. (2) indirect hours worked by
+cost center; and (3) nonproductive (annual, sick, etc.) hours by cost center. The TAA system is being
+implemented in two phases, over several months, at each Air Logistics Center (ALC). Until Phase 2 is
+fully implemented, users will apply applicable portions of the user manual (e.g., section 2 of this AFMCI)
+based on DMAPS training provided at each site.
+
+1.1. Phase I. The first phase involves deployment of the TAA component of the DMAPS suite to allow
+users to become familiar with TAA and its capability before we leave current legacy systems and rely
+strictly on TAA for time and attendance. During this phase, current legacy system for labor distribution
+will continue to operate (i.e., G037G). Current legacy systems will continue to provide financial informa-
+tion and payroll to labor reconciliation data.
+    1.1.1. Data needed to initialize TAA tables with Employee Master Record information will be pro-
+    vided by MSG Programmer/OC-ALCupon request from the ALC Site OPR. NAVAIR will then load
+    the information (referred to as a “Slice” file) into TAA for the selected employees for that pay period
+    implementation. See Tour of Duty Initialization Procedures for specifics.
+    1.1.2. To load TAA tables and for Phase I production, utilize the current Master Employee Record
+    (MER) files that DCPS sends to the IBM platform after each pay period processes. The weekly file
+    includes such employee data as pay plans, status of certain ‘type hour codes’; the biweekly file pro-
+    vides leave balances. The leave balances provided by the MER during Phase I Production will be very
+    important. TAA does not restrict transactions for leave if the employee does not have enough leave.
+    1.1.3. New Employees. TAA should be entered first, as the employee ID number is generated IAW
+    procedures established in “Tour of Duty Initiation Procedures”.
+    1.1.4. To load RCCs into TAA, the RCC Master Structure file from G037G will be used to provide
+    valid RCCs for implementation. During Phase I production, the TAA OPR will add/delete any RCCs
+    using the ‘Shop Table Maintenance’. RCCs must be in both TASYS and TAA.
+    1.1.5. When TAA is implemented, Traumatic Injury numbers must be entered into the Traumatic
+    Injury Table using the instructions below. Once TAA is in use, traumatic injury numbers will be estab-
+    lished by TAA using the LU and LT type leave transactions (see paragraph 5.12. below and Part
+    Two, Users Manual, section 5.3.1.).
+
+1.2. Phase 2. The second phase involves full implementation of the DMAPS suite where TAA continues
+to be the sole input mechanism for labor and the Defense Industrial Financial Management System
+(DIFMS) will be the source for financial information, including reconciliation with DCPS.
+AFMCI21-136 6 FEBRUARY 2003                                                                               5
+
+
+1.3. Time and Attendance Standards. Management will assure the following standards are achieved
+through implementation of DMAPS-TAA.
+   1.3.1. Collect data on employees who work temporarily in other or multiple pay classifications.
+   1.3.2. Collect actual hours or days worked, and other pay related data, e.g., piecework, fee basis units/
+   dollars, and differentials for each employee.
+   1.3.3. Determine premium pay entitlements based on schedule tour, actual hours worked and leave
+   data.
+   1.3.4. Receive electronic or other appropriately documented approvals from authorized approving
+   officials, and then release data for further system processing.
+   1.3.5. Capture data in hours, fractions of hours, or other units of measure as required.
+   1.3.6. Support the correction of current- and prior-pay period time and attendance records.
+   1.3.7. Accept time and attendance data through various processing modes e.g., automated time entry
+   (such as bar code) or internet.
+   1.3.8. Calculate and adjust weekly, biweekly, prior pay period hours based on Fair Labor Standards
+   Act (FLSA), Title 5, and other statutory and regulatory requirements.
+   1.3.9. Collect time and attendance data on a pay period basis, as a minimum daily, weekly, and
+   biweekly.
+   1.3.10. Collect work and leave hours based upon an established tour of duty, including alternative
+   work schedule/flextime hours information. This requires pre-approved or positive acknowledgment
+   from the approving official that the employee worked the established tour and that time and atten-
+   dance data is approved.
+   1.3.11. Use reports generated by DMAPS TAA to monitor T&A data.
+   1.3.12. Collect labor distribution hours based on the required classification code structure to include
+   Customer Order Number (CON), Job Order Number (JON), and task.
+   1.3.13. Approvals shall be made individually for each employee, and a handwritten or an automated
+   signature shall be provided for each time and attendance report.
+   1.3.14. For approval, supervisors use system data contained in a computer file and displayed on a ter-
+   minal. Supervisors enter a single automated code to approve the information contained in the file.
+   1.3.15. Protect data from unauthorized changes to completed time and attendance reports, regardless
+   of where they are retained.
+   1.3.16. Review and correct T&A data at the earliest time to ensure that the data are complete, accu-
+   rate, and in accordance with legal requirements.
+   1.3.17. Record and report the number of hours of leave (by type), credit hours, and compensating time
+   used.
+6                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+                                                Chapter 2
+
+                                   TAA SYSTEM MANAGEMENT
+
+The TAA system requires a management role at each operating location for user access, system adminis-
+tration, and contingency operations. TAA functional OPR should be assigned for the site and/or PD. Func-
+tional OPR must be able to write and execute queries to research problems. For some individuals,
+obtaining this capability will require training.
+
+2.1. System User Access.
+    2.1.1. Use DISA Form 41 for obtaining authority to access the TAA system. Initiate the Form 41 in
+    the user’s work area. Send the Form 41 through the supervisor to the TAA functional OPR to get user
+    identification established. TAA functional OPR will maintain copy. User will then process the form 41
+    for TAA and other systems as required through the appropriate OPRs and DISA.
+    2.1.2. Assign transaction code access per request on DISA Form 41. Cannot assign until employee
+    has logged onto TAA and set their password. Assign DLCP Access. Change transaction code access
+    upon request. For access problems, the user calls the site OPR. An example of an access problem is a
+    user not being able to transact because the person is in TAA as GS and should be WG. The system
+    OPR also resets passwords, as needed.
+    2.1.3. Once the new employee has been entered into the Employee Master Record in TAA, they will
+    have default capability in TAA. Should an employee need more access than default capability to per-
+    form their duties, the new user must log into TAA and update the system default password. After that
+    logon has been performed, the TAA OPR can then assign other access. System access problems
+    should be directed to the TAA OPR.
+    2.1.4. The TAA logon window provides user access to the system based on entry of the employee
+    identification number and password. Sites assign the employee identification number using the
+    Employee Identification Generator (EIG), a part of the AFIE. Use the TAA user manual (Part Two,
+    User Manual, sections 4.0 and 5.3.9.4.) for password conventions.
+
+2.2. System Administration.
+    2.2.1. Provide customer support. Answer user questions. For example, notify users concerning “In
+    Lieu of” holiday transactions. Provide system access and DLCP messages to notify users instantly.
+    2.2.2. Employee Identification. Until the below steps are done, employees cannot wand labor. A new
+    employee check in packet can take care of a lot of these issues. (i.e., DISA Form 41 for PDMSS, TAA,
+    badge forms, etc.). For Phase I, ID’s and badges will be issued during training. Sites should implement
+    an on-going procedure for ID’s and badges.
+       2.2.2.1. Create Employee ID using the EIG module of the AFIE. This ID will be used throughout
+       TAA instead of the employee’s SSAN. Before creating the ID, employees must have an approved
+       DISA Form 41 granting access. The EIG enables an operator to enter the name, SSN, and organi-
+       zation for new employees and will assign a unique employee number. The ID will be created by
+       the TAA OPR using the Employee ID Generator (EIG) application which will randomly produce
+       a 6 digit alphanumeric ID (first position alpha, followed by 5 numbers). The name, SSN, organi-
+       zation and employee ID will be stored in a database table. The operator can view the list of all
+AFMCI21-136 6 FEBRUARY 2003                                                                                7
+
+
+       assigned employee numbers and can specify a subset for printing or saving to a file. The operator
+       will be able to mark an Employee ID as no longer used which will result in it being removed from
+       the system and thus available for reuse.
+       2.2.2.2. Create an employee badge, using equipment purchased for DMAPS. All employees in
+       TAA will be supplied with an employee badge that will contain their EMPLOYEE ID in bar coded
+       format. Employee badges will also have a message on back with instructions on how to return a
+       lost badge.
+       2.2.2.3. For PDMSS users, employee will not be input to TAA until notification is received from
+       PDMSS that user has been established in PDMSS. This notification needs to occur early on the
+       employee's first day.
+   2.2.3. Table Maintenance Transactions. Responsible for Agency Tour of Duty Table. Responsible for
+   creating/deleting/changing Pattern Table. Maintain RCC Table. Establish Holiday/Mass Leave Table.
+       2.2.3.1. Agency Tour of Duty Table sets the earliest and latest time that labor can be performed.
+       2.2.3.2. Pattern Table sets a 14-day pay period schedule with shift times, lunch times, including
+       work and non-workdays to make employee schedule changes easier. For temporary changes use
+       the current schedule. For permanent changes, use the future schedule.
+       2.2.3.3. Holiday/Mass Leave Table establishes scheduled holidays and mass leave as needed.
+       ‘In-lieu of Holiday’ transactions will be made by Supervisors/Timekeepers (see paragraph 5.7.).
+       2.2.3.4. RCC Table links an RCC with a schedule (shift start, shift duration, lunch start, lunch
+       duration). If the RCC does not reside in the TA_DIFMS_SHOP_TBL in TAA, then the OPR will
+       not be able to establish an RCC and shift. The TA_DIFMS_SHOP_TBL is updated with an inter-
+       face from DIFMS, which is the system of record for establishing RCCs.
+   2.2.4. RCCs and skill codes will be linked using the RSC (RCC/Skill Code Application) which
+   resides as part of the AFIE. This item is not a part of TAA and is included here only for informational
+   purposes.
+   2.2.5. Determine processing dates. Ensure batch reports needed for research and documentation are
+   retained. For batch reporting, review ZH104R01 (PEF Update Actions) each day, ZH145R01 (Daily
+   Labor Report) and ZH104D03 Suspended Transaction File. This last file allows viewing of future
+   transactions or transactions suspended due to time processing. These are all processed using the NT
+   Batch Server. The site OPR puts batch audit on CD each pay period and performs needed research.
+   2.2.6. Record Retention. As long as the labor charges by employee are archived and can be easily
+   accessed, an electronic version is acceptable for record retention.
+   2.2.7. Perform periodic audit checks to see how corrections are being input through the DLCP. OPR
+   will store the Facility Wide Pay Period Audit Report as an audit trail.
+
+2.3. Contingency Procedures. Establish a site contingency operation when the system, or segments of
+the system, are temporarily not operating. Refer to the user manual (User Manual, section 5.6) for system
+procedures and site contingency operations for site-specific requirements.
+8                                                                   AFMCI21-136 6 FEBRUARY 2003
+
+
+                                                Chapter 3
+
+                                        SYSTEM PROCESSING
+
+3.1. Reports. Report printing, use, distribution and so forth is a local responsibility. The Daily Labor
+Report and Facility Wide Pay period Audit Report (User Manual, section 5.3) are potentially several thou-
+sand pages and should not be printed; instead store information on compact disk for research. Use on-line
+capability as much as possible instead of printing reports or other information.
+
+3.2. Records. As long as the labor charges by employee are archived and can be easily accessed, an elec-
+tronic version is acceptable for record retention. Once DMAPS is fully implemented, records will be
+retained through the DMAPS data store.
+
+3.3. Labor Review and Correction.
+    3.3.1. Daily labor batch processing calculates, accumulates and reports labor for each of the DMAG
+    employees at the Air Logistics Center (ALC). Batch processing provides for the accumulation of each
+    employee’s labor at the daily level for the entire pay period and reports to responsible supervisors any
+    condition causing an employee’s reported labor to be out of balance with his scheduled Tour of Duty.
+    TAA is the collection system that provides data to the financial module of DMAPS referred to as
+    DIFMS (Defense Industrial Financial Management System).
+       3.3.1.1. DIFMS, implemented as part of DMAPS Phase 2, provides the following capabilities.
+       Computes and extends labor for civilian/military employees. Establishes acceleration rates and
+       computes accelerated labor. Applies predetermined overhead rates and computes overhead costs.
+       Reconciles civilian labor to payroll. Updates shop cost data, calculates stabilized costs, and issues
+       labor cost data. Adjusts leave and fringe benefits to general ledger at the end of the fiscal year.
+       Provides reports for labor controls, unallocated, leave, labor distribution and Civilian Personnel
+       Resource Reporting System.
+    3.3.2. Access to the Daily Labor Correction Process (DLCP) and related screens is for supervisors
+    only, following the approach outlined in paragraph 2. Supervisors will be granted access to only those
+    aspects of DLCP required to research and correct errors. System administration should handle update
+    to user access, audit trail and TOD processes.
+    3.3.3. Supervisors and/or timekeepers change work schedules, workdays, and other employee sched-
+    ule transactions. Many of these transactions are based on the personnel action (e.g., SF50).
+    3.3.4. Daily, supervisors review TAA status for assigned employees. Note that some payroll-related
+    information, such as pay rate, may be one pay period in arrears based on when the updates from DCPS
+    are processed.
+    3.3.5. Site OPR checks DLCP to see who might be entering their own records and does the DLCP
+    on-line audit. Within the DLCP are screens that allow the site OPR to review as an audit trail of who
+    made changes to what employee. Facility Wide Pay period DLCP Audit Report is another avenue for
+    auditing. This report tracks all changes made to employees time & attendance via the DLCP. This
+    shows who made the correction, what was made and when correction was made. This report MUST be
+    written to CD.
+AFMCI21-136 6 FEBRUARY 2003                                                                               9
+
+
+3.4. Employee Master Maintenance. Each site decides to give the access for adding, changing, and
+deleting employees from the Employee Master. This also involves the access for the workday change
+transaction where employees are set to 'pending separation' or deleted employees are reactivated. See
+User Manual section 5.3.7.1.
+   3.4.1. Site OPR Access. The Site OPR handles changes to tables, such as permanent shop (or RCC),
+   through the Employee Master Maintenance Screen. Site OPR handles updates to the Agency Tour of
+   Duty, Pattern table, and RCC table.
+   3.4.2. Supervisory access. There is a Supervisory Employee Master Maintenance screen that a super-
+   visor will be granted access. New employees can not be added and changes are limited. Also the
+   SSAN field is blanked out. This is a good query for supervisors and timekeepers. Use this screen to
+   enter employee personnel actions that result in changes to pay plans.
+   3.4.3. Use the Employee Master Record window for employee personnel actions that result in perma-
+   nent changes to the employee’s RCC.
+   3.4.4. Adding and Removing Employee Records. Either the TAA OPR or a Product Directorate TAA
+   OPR enter new employees to TAA using the Employee Master Record window. Obtain information
+   needed to make transaction from the paperwork Personnel gives the employee and information perti-
+   nent to the RCC where employee has been assigned. Do not expect SF50 to be part of the paperwork;
+   SF50 tends to trail by several weeks. The site should decide the best approach for entering and remov-
+   ing employee records to assure information is complete and correct. This function can be centralized
+   for efficiency but should not be performed by the personnel function. The TAA site OPR should
+   remove or delete erroneous employee additions.
+
+3.5. Alternates. Backup approach for each function will be determined by each ALC. This will be some-
+one from each PD, on most instances. Do not give alternate supervisors access to employee information
+since these alternates generally rotate in and out. Instead, have another supervisor or PD POC substitute.
+Should a supervisor be on extended absence, the Site OPR can give access to someone to fill in. In some
+PDs, supervisors and timekeepers enter time and a PD POC will have access to their entire PD for
+absences.
+
+3.6. Bridge Run. These functions should reside with the Site OPR and backup (User Manual, section
+5.3.9.2).
+
+3.7. System Deployment. Should there be a problem, users will contact the OPR. The OPR will also use
+the system broadcast message feature to advise the workforce that a new deplhe labor operations, material
+operations, and other direct costs. G004L Sends JON Data to DIFMS (JON Opening). (Finance Require-
+ment). DIFMS Sends Valid JON Listing to TAA. G004L sends L3A "WCD" to Planner.
+
+3.8. Reconciliation. The source documents used to record the hours worked by each employee on each
+job order shall be reconciled to the total payroll hours. Differences between labor hours recorded for pay-
+roll purposes, payroll costs incurred and the labor hours and costs distributed to job orders and indirect
+cost centers though the labor distribution system shall be reconciled and corrected each pay period. For
+discrepancies that cannot be reconciled between job order records and payroll records without a major
+expenditure of resources, the job order records shall be corrected to equal the payroll records. Differences
+due to the use of average cost center labor rates shall be charged to general and administrative expenses.
+10                                                                 AFMCI21-136 6 FEBRUARY 2003
+
+
+For Phase I, reconciliation process will occur as it does today between TASYS/G037G and DCPS. Phase
+II, reconciliation process is outside of TAA. Reconciliation is run in DIFMS and a Cost Analyst (or some-
+one similar) that has access to DIFMS corrects. They may need to work with TAA personnel to determine
+how to correct TAA.
+
+3.9. Help desk and SPR. DISA will be using TIVOLI for help desk processing. The Ultimate Help Desk
+Concept requires all trouble calls not resolved on-site by Defense Information System Agency (DISA)
+Help Desk personnel or on-site System Analysts (SA) be forwarded to VIC for resolution. If the VIC is
+unable to resolve the problem, then VIC personnel will then forward the trouble ticket to the appropriate
+CDA/CMA for resolution. If CDA/CMA programmers have questions regarding the Trouble Ticket (TT),
+the programmers will call the VIC and the VIC, in turn, will call local site for further clarification. See
+DMAPS help desk process guide for more information.
+AFMCI21-136 6 FEBRUARY 2003                                                                               11
+
+
+                                                Chapter 4
+
+                                    PRODUCTION PROCESSING
+
+Processing is in one of four categories: Job Order Number (JON) labor, Inventory Tracking System (ITS/
+G337), Programmed Depot Maintenance Scheduling System (PDMSS/G097), and Facility and Equip-
+ment Management (FEM/D130). Enter transactions per section 5.3.2 of the User Manual. Additional
+instructions follow.
+
+4.1. Production Delay. Production delay codes are the same used within the current Air Force produc-
+tion systems: ITS, PDMSS and FEM. HQ AFMC/LGN will establish a process to add and delete delay
+codes from TAA when they are added or deleted from the legacy systems.
+   4.1.1. Production delay code 'R00' is the exception for ITS users. ‘R00’ delay code is used for a TAA
+   Labor Stop. Two specific purposes are listed below:
+       4.1.1.1. Use this code when more than one person works on a specific ITS track point. The last
+       person working on the track point uses the normal delay or completion code, while the other
+       works perform a TAA labor stop utilizing delay code ‘R00’.
+       4.1.1.2. Another use of the 'R00' code is when a mechanic performs work on a second item while
+       the first item is also in work, such as on an automated machine or tester (process time). If the labor
+       standard includes observation time, the first item is delay coded using the 'R00' code allowing the
+       mechanic to log work on the second item and continuing the flow time in ITS for the first item. If
+       the labor standard for the first item does not include direct labor time for observation, use the nor-
+       mal production delay code (R09 – processing time).
+
+4.2. Production Start Procedure. AF Production Systems, ITS and PDMSS, require Start transactions
+be performed. TAA has been designed with a START transaction that provides the status transaction back
+to the Production Systems.
+   4.2.1. ITS. This transaction is strictly a requirement for AF to send status transactions back to ITS.
+   ITS is only interested in flow days and does not receive information from TAA by individuals. Busi-
+   ness rules to begin labor:
+       4.2.1.1. The 1st mechanic to wand labor to an operation on an ITS WCD will also wand a START.
+       4.2.1.2. Using a bar coded ITS WCD, mechanic will wand a DELAY or COMPLETE for ending
+       operation.
+       4.2.1.3. Subsequent mechanics working the same operation will wand a DELAY (select delay rea-
+       son from drop down menu) when ready to stop labor.
+       4.2.1.4. Using a bar-coded ITS WCD with subsequent mechanics, only one mechanic can wand a
+       COMPLETE; the other mechanics must FIRST wand DELAY. If a COMPLETE is transacted
+       first, then the other mechanics will not be able to stop their labor with a DELAY.
+   4.2.2. PDMSS. PDMSS labor transactions are statused by individual employee. PDMSS does allow
+   rework authorizations. Business Rules to begin Labor:
+       4.2.2.1. Using a bar-coded PDMSS WCD, mechanics will wand a START.
+12                                                                   AFMCI21-136 6 FEBRUARY 2003
+
+
+        4.2.2.2. Using a bar-coded PDMSS WCD, subsequent mechanic(s) will receive message that
+        operation is already started and TAA will initiate LOGON to PDMSS.
+     4.2.3. FEM. FEM does not get any status transactions from TAA. Due to the software used to build
+     FEM, OPRs for FEM decided to accept dual inputs. Inputs required by FEM will be made to maintain
+     FEM and labor will be entered in TAA with FEM data to get labor costs to proper JONs. Business
+     Rules to Begin Labor:
+        4.2.3.1. Using a bar-coded FEM Work Order, mechanic will wand a STOP.
+        4.2.3.2. Using a bar-coded FEM Work Order, subsequent mechanics working the same work order
+        will wand STOP.
+        4.2.3.3. Using a bar-coded FEM Work Order with subsequent mechanics, only one mechanic can
+        wand a COMPLETE.
+
+4.3. Group and Bulk Processing.
+     4.3.1. Supervisors use the RCC Mode transactions to input data covering all eligible employees
+     within the RCC, such as holiday work, blanket transactions, and overtime.
+     4.3.2. Group processing should also be used for repetitive type tasks and these tasks generally have
+     small labor standards of 15 minutes or less. But, if group processing is used, a group processing trans-
+     action must be made once an hour.
+     4.3.3. Bulk should not be considered unless group processing can not be utilized, i.e. more than 300
+     transactions per person per day.
+
+4.4. Temporary Workloads. Except for ITS, temporary workload (User Manual, section 5.3.2.5) will be
+transacted at the JON level in TAA. Direct employees will enter their own labor at the JON level using the
+JON Labor button in TAA. Most Temporary Direct Labor will be input using the JON Labor screen in
+TAA. These include Aircraft Temporary Workload JONs, Software JONs, Manufacturing JONs, and
+Hourly A-JONs. The exception to those listed above: Temporary 206's which utilize ITS will continue to
+have WCD steps that match operations in G004L and will be handled through the ITS Labor Window.
+
+4.5. Standing JONs. Currently, indirect JONs will be used as standing JONs for production overhead
+and G&A support personnel (User Manual, section 5.3.2.5). Should a direct person need a standing JON,
+it will be identified when needed by the Supervisor of the direct employee. A direct employee that per-
+forms work on the same JON on a continuous basis can be assigned to a standing direct JON in the
+Employee Master record. There won’t be changes to Standing JONs at the end of the FY if only have
+employees assigned to standing indirect JONs. Should a direct person be on direct JON at the end of the
+FY, it will be the responsibility of the supervisor to make the change. This would be done via the Supervi-
+sory Employee Master. This will be a rare occurrence.
+
+4.6. Re-work time charge for PDMSS. Employees authorized to perform PDMSS rework (User Man-
+ual, section 5.3.3.1) will be identified by their supervisors and Form 41 will request this access which is
+given through the transaction code access identified in the user profiles.
+
+4.7. Indirect JONs. The ALCs have set up indirect JONs to accommodate duty code/shred code combi-
+nations that people are accustomed to seeing in H117 and G037G. The number of indirect JONs preclude
+AFMCI21-136 6 FEBRUARY 2003                                                                            13
+
+
+them from being listed in a ‘drop’ down menu format in TAA. However, the listing of indirect JONs will
+be made available during training just as the duty code/shred code combination list is available in TASYS.
+
+4.8. Loans. RCC loans will be made by Supervisors/Timekeepers, which will change the current RCC in
+the employee’s master record. Receiving supervisor will input the loan (User Manual, section 5.3.7.1.6).
+The receiving supervisor will need to obtain the EMPLOYEE ID of the loaned employee to make the
+transaction. Both the losing and gaining supervisors, as well as the employee, must communicate on this
+transaction, especially involving shift change or flex shift. Length of loans is 999 hours maximum.
+14                                                                   AFMCI21-136 6 FEBRUARY 2003
+
+
+                                                 Chapter 5
+
+                                              DATA ENTRY
+
+5.1. Labor. Employees required to enter labor transactions must perform, at a minimum, a labor stop
+within the last 15 minutes of their workday.
+
+5.2. Standing JON. Employees on production overhead and general & administrative positions will be
+placed on a “STANDING” Indirect JON. A ‘standing’ JON assumes the employee is at work, unless an
+exception is input to the system. Labor will be charged to DIRECT or INDIRECT JONs.
+     5.2.1. Direct JONs begin with 0-9 or A-T.
+     5.2.2. Indirect JONs begin with X, Y or Z (in position 1) and were built using duty code/shred code
+     combinations (in positions 6,7, and 8,9 or 10,11) from H117 to make the JONs more recognizable.
+     Positions 2-5 represents the old general ledger code used to record labor such as 5110 for GS, 5111 for
+     WG. Note: Accounting Organization Codes (AOCs) begin with the alpha M and end with alphas X, Y,
+     and Z for overhead organizations.
+
+5.3. Error Corrections. Known errors will appear after labor processing in the Daily Labor Correction
+Process (DLCP). These errors should be corrected on a daily basis. The DLCP also allows labor records
+to be input such as an employee taking leave and the supervisor forgets to make input. After labor has pro-
+cessed, the supervisor/timekeeper must use the DLCP to add a labor record to account for the leave taken.
+Corrections after the information for the pay period has been processed will be made to DCPS since TAA
+does not allow prior-period corrections at this time.
+
+5.4. Hours Worked Outside of Schedule. TAA covers several categories of overtime, compensatory
+time and holiday worked. See section 5.3.5 of the User Manual.
+     5.4.1. Supervisor is responsible for authorizing overtime worked, compensatory time worked, and
+     holiday worked. Details will have to be worked out at each site based on existing labor agreements.
+     The costs of overtime premium pay (that is, the amount paid for working overtime that is above the
+     normal labor hour rate) shall not be charged directly to the applicable job order except when the over-
+     time is clearly caused by the unique conditions of the job order.
+     5.4.2. If an employee wands labor before their scheduled shift, past the end of their scheduled shift or
+     on a non-workday, TAA will require an authorization transaction for that employee.
+     5.4.3. Scheduled overtime on a normal workday must be put in before the start of the normal work-
+     week, or use unscheduled overtime.
+     5.4.4. If the employee works overtime/ comp time/ holidays and the supervisor never inputs the
+     authorization, the employee will NOT receive compensation for the time worked.
+     5.4.5. Overtime/ comp time/ holidays worked will be recorded in hundredth hour increments, but paid
+     in quarter hour increments.
+     5.4.6. An employee who works on a Holiday must receive Holiday Premium Pay for those hours
+     worked during the employee’s normal scheduled day. Any hours worked outside the employee’s nor-
+     mal tour of duty can be as compensatory time or overtime.
+AFMCI21-136 6 FEBRUARY 2003                                                                              15
+
+
+   5.4.7. An employee may not be given unscheduled overtime on a non-workday. For a non-workday,
+   schedule an employee for overtime rather than using unscheduled overtime.
+   5.4.8. Supervisors review employee work schedules for overtime. The work schedule should only
+   show the employee’s regular tour of duty including any shift or night differential. Get help from the
+   customer service representative and civilian pay liaison in the Financial Services Office for samples of
+   work schedules and the proper coding of time worked. Proper coding of work hours (regular duty
+   hours plus additional overtime hours) will assure employees receive the correct entitlements for time
+   worked. Improper or incomplete coding can adversely affect employee entitlements causing a debt or
+   underpayment. Regulatory guidance is Title 5 C. F. R. and DOD Financial Management Regulation,
+   Volume 8. Various overtime codes are part of DCPS and TAA for use by depot employees.
+       5.4.8.1. Overtime Scheduled (OS). Overtime that has been scheduled prior to the start of an
+       administrative workweek and is regularly and consistently worked by an employee.
+       5.4.8.2. Overtime Unscheduled (OU). Overtime which has not been scheduled prior to the start of
+       an administrative workweek and is not known at time of need.
+       5.4.8.3. Overtime Callback (OC). Overtime worked by an employee when they have completed
+       the end of their duty day and have been called back to the work location.
+       5.4.8.4. Overtime Unscheduled Exception (OX). This code typically involves job share or
+       part-time employees who work non-scheduled days. DCPS determines if the hours worked should
+       be coded as regular hours or overtime.
+       5.4.8.5. Overtime Scheduled Not Worked (ON). This code records overtime that, through no fault
+       of the employee, could not be worked as scheduled. These situations result primarily from court
+       leave, military leave, and traumatic injury on the job.
+   5.4.9. ALL overtime authorizations should be transacted on the same day the overtime is worked.
+   First shift employees transactions are processed in the evening of the day that is worked. Second and
+   third shift employees transactions are suspended until the evening of the day following their shift start
+   with the exception of Saturday's 2nd and 3rd shift (end of week, end of pay period) which is processed
+   Sunday morning.
+   5.4.10. In NO case can overtime authorizations be made for a workday after processing for that work-
+   day has begun. These can only be entered via the DLCP as a correction or addition to the existing
+   record(s).
+
+5.5. Certification. Supervisors are responsible for the validity of timekeeping records. Employees are
+responsible for certifying that the time charged to job orders is correct. To cover payroll certification
+requirements use the report from the Labor Attest/Verify screen that will allow a hard copy for signature
+by supervisor and employee.
+   5.5.1. Use the labor attest/verify report for payroll certification. The report can be viewed on-line for
+   correctness and then printed. The report reflects the employee’s day by type hour code for the current
+   pay period. Details for each day’s entry can be reviewed by selecting the DETAILS button.
+   5.5.2. Any employee with errors that have not been corrected will have a message, written in blue,
+   appear on the screen that indicates there are errors that still need correcting. The message will stay on
+   the report until corrections have been made.
+16                                                                   AFMCI21-136 6 FEBRUARY 2003
+
+
+     5.5.3. Currently, previous pay period adjustments are done ONLY in DCPS. If corrections are made
+     in DCPS, a print screen must be performed to capture the changes for the employee to initial. File this
+     DCPS print with the current certification.
+     5.5.4. The report will list each employee belonging to the requesting supervisor on a separate page.
+     As the report is viewed on-line, each employee is also listed separately. Employees must sign the cer-
+     tification statement on the report indicating their concurrence with the time as reported. The supervi-
+     sor must sign this report, which becomes the certification.
+     5.5.5. Payroll records must be kept for 6 years. The DCPS Customer Service Representative (CSR)
+     must file certain documentation such as military leave documentation, jury duty and may not be avail-
+     able for the timekeeper to maintain.
+
+5.6. Deletion. Transaction data deletions should be very strictly controlled as this allows access to the
+entire database (User Manual, section 5.3.7.2.2). There is a transaction data deletion access that is granted
+as part of the default access that any employee receives; however, this deletion access is only for the trans-
+actions performed by that employee. Transaction data deletion access that the OPR assigns gives access to
+all employees and will be very restrictive in its application.
+
+5.7. Holiday Work.
+     5.7.1. Holiday work transactions for scheduled workdays must be made on a valid holiday. Normally,
+     supervisors authorize premium pay for holiday callback. The work must be during a scheduled work-
+     day that falls on a holiday and must be within the employees' regularly scheduled shift.
+     5.7.2. If a holiday falls on a full-time employee's nonscheduled workday, that employee is entitled to
+     an ‘in lieu of’ holiday (User Manual, section 5.3.5.1.3). Supervisors must determine the appropriate
+     'in lieu of' holiday for each employee and make the appropriate leave transaction for holiday leave for
+     each affected employee.
+     5.7.3. Holiday work transactions are not authorized for intermittent employees.
+
+5.8. Temporary Duty.
+     5.8.1. Enter temporary duty for JON, ITS, PDMSS, and FEM using the TAA TDY screens.
+     5.8.2. Temporary Duty for Non Workday. In TAA (Users Manual, section 5.3.5.1.2). A supervisor/
+     timekeeper performs an overtime (or comp earned) authorization for the non-workday travel and then
+     TDY transaction for the time employee is gone. An FWS (W*) employee who travels on a non-work-
+     day is entitled to compensation and will require the following transactions be performed:
+        5.8.2.1. Overtime or Compensatory Time Authorization for the day of travel.
+        5.8.2.2. JON labor transacted against the travel JON for the day of travel.
+        5.8.2.3. TDY would be transacted for the first workday following the travel day.
+
+5.9. Leave. Supervisors and/or timekeepers are to enter. Supervisors can input leave to TAA and the
+employee must certify their indirect charges.
+     5.9.1. Supervisors must approve leave and review what is recorded in the system. Leave transactions
+     input after labor has processed must be input using the DLCP.
+AFMCI21-136 6 FEBRUARY 2003                                                                              17
+
+
+   5.9.2. Mechanics should not be inputting their own leave. Each site will have to set up the system
+   accordingly by providing access through transaction codes (see paragraph 2).
+   5.9.3. Employee certification can be by printing the report from the Labor Attest/Verify screen or
+   some other means. Indirect JONs for leave have been established and are linked to the DCPS code that
+   applies. Leave JONs for DMAPS Phase 1 and Phase 2 will be the same. The only time a leave JON
+   might change is if a pay policy change is made that requires a new JON or a leave category is taken
+   away.
+   5.9.4. The TAA user manual (Section 5.3.6) covers entries for other types of absences to include reli-
+   gious time, credit hours, and military.
+
+5.10. Environmental and Hazardous Duty. Eligibility is built through personnel action. The type of
+duty requires entry of appropriate codes in the labor transactions (User Manual, section 5.3.7.1).
+
+5.11. Alternate Work Schedule. Where authorized and used, enter AWS changes, including pattern
+codes, at the beginning of the pay period (User Manual, section 5.3.7.1.5).
+
+5.12. Injury Documentation. Traumatic injury transactions are similar to transactions for other types of
+leave. However, the transactions require the date of traumatic injury transaction to be processed on a prior
+day. Supervisors must assure documentation is received from personnel before entering transactions. Fol-
+lowing are procedures for entering information in TAA (User Manual, section 5.3.7.1.10).
+   5.12.1. After employee master record has been initialized in TAA.
+       5.12.1.1. At main menu of TAA, select table maintenance. Select forward. Select traumatic injury.
+       Hit OK.
+       5.12.1.2. Enter employee ID of person updating table. Enter password. Hit OK.
+       5.12.1.3. Type employee ID of person to be updated or search tour of duty by typing full or partial
+       (at least one character). Enter employee name (last first mi). Hit OK.
+   5.12.2. If searched by name, select a record by clicking on the applicable row to receive the empty
+   maintenance window or to retrieve any existing injury records. If employee ID was entered, cursor
+   will be positioned in the injury date text box.
+       5.12.2.1. Input injury date, actual date injured in MMDDYYYY format (e.g., LU code in DCPS).
+       5.12.2.2. System will derive injury number based on injury date entry.
+       5.12.2.3. Input injury time (best guess if not documented on CA-1)
+       5.12.2.4. Input first LT transaction date in MMDDYYYY format, if traumatic leave was used.
+       5.12.2.5. System will calculate injury not-to-exceed date (based on DCPS policy). For this infor-
+       mation the user has two options: (1) check I25’s from H117 or (2) use DCPS looking for LU code
+       and first entry of LT code tied to that injury number)
+       5.12.2.6. Hit OK
+   5.12.3. You will receive message “Transaction Accepted”. Hit RESTART to enter the next
+   employee’s ID number or name and traumatic information.
+18                                                             AFMCI21-136 6 FEBRUARY 2003
+
+
+5.13. Attendance. The Air Force will not use the attendance functionality available in the TAA system
+(reference TAA User Manual Section 5.3.4, Attendance). The site will assure the employees' assignment
+codes in TAA do not allow for usage of that capability.
+AFMCI21-136 6 FEBRUARY 2003                                                                            19
+
+
+                                               Chapter 6
+
+                                  INTER DIVISIONAL SUPPORT
+
+6.1. Overall. The "only" approved Air Force legacy systems that will interface to DMAPS TAA are the
+following: Aircraft/Missile (Programmed) Workloads- G037E/G097 (PDMSS); Temporary (Non-Pro-
+grammed) Workloads- G004L/G337 (ITS); Equipment "PMEL Only" Workloads- E046B/D130 (FEM)
+and Commodity (Programmed) Workloads- E046B/G337 (ITS). When process work is required outside
+of the owning directorate/division requesting support, the Interdivisional Support Form is filled out and
+routed to the performing directorate/division accompanied with discreet technical data required IAW
+AFMCI 21-110. The performing directorate/division completes their portion of the form identifying the
+flow days, labor standards, and material requirements. The performing directorate/division then creates
+the WCD's, establishes the labor standards, and waits to receive the asset through the CRITS receiving
+area. All non-AREP shops shall use E046B and G337 for labor and shop floor tracking. Performing PDs
+shall be responsible for Labor Standard and WCD development for their own RCCs, using E046B/
+G337.Performing PDs shall be responsible for Material Standard development for their own RCCs, using
+G005M. Performing PDs will take their own production count. Aircraft sales price shall be computed
+using the performing RCC/Rates/Standards in lieu of the current Aircraft composite rate. Assumptions:
+Owning and performing divisions will use same Production Number/JONs. WCDs for routed items will
+be discontinued in PDMSS and generated in ITS.PDMSS WCD shall contain an informational step for
+routed items. CRITS receiving area shall be established to receive all routed items for tracking purposes.
+
+6.2. Level for Labor Collection. The "level" at which labor will be clocked/collected within these sys-
+tems in terms of the respective Work Control Documents (WCD's) /Routing operations/ sub-operations or
+tasks will be determined via the Planning Team concept through the joint efforts of the Production Plan-
+ner, Production Supervisor, Scheduler and the Workloader. The knowledgeable Production Planners
+within each Product Directorate, in coordination with the Supervisor and the Workloader, will perform
+this review and decide upon the appropriate level of labor tracking and materiel standard development and
+linking. The Production Planners, Production Supervisors, Schedulers and Workloaders have the knowl-
+edge and training required for this effort. Judicial judgement is required for the performance of these
+tasks.
+
+6.3. Inventory Tracking System (ITS) G337. The Inventory Tracking System will be used for multiple
+types of workload that include the following:
+   6.3.1. Commodity/Exchangeable/MISTR (Programmed) Workloads. (Production Number (PDN)
+   example 14759A). Production Numbers (PDN's), end item and repair component part numbers and
+   the corresponding Work Control Documents (WCD's) must be established within G337/ITS. Note:
+   Structure list, PDN by Planning Organization/Planner Technician Code (PO/PTC) report can be uti-
+   lized from ITS to determine if all PDN's have been input.
+   6.3.2. The ITS WCD numbers must be input into the last six (6) positions of the Labor Standard
+   Mechanization System (E046B) operation description line, for all operations whose work content is
+   covered by the ITS WCD. Note: ITS will receive a daily interface from E046B that updates the labor
+   standards within ITS at the sub-operation level.
+   6.3.3. The selected track level for a WCD will determine how the labor will be associated between the
+   E046B and the sub-operation level on the ITS WCD. If the WCD is set at track level "A" every
+20                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+     sub-operation on the WCD, that is coded as tracked, must have an associated labor sub-operation
+     within E046B. The sub-operation numbers within E046B must be the same as the sub-operation num-
+     bers on the ITS WCD to allow for the association of labor. If the WCD is set at a track level ‘B’, only
+     those sub-operations ending in ‘0’ will be tracked and have an associated labor sub-operation within
+     E046B. The sub-operation numbers within E046B must be the same as the sub-operation numbers on
+     the ITS WCD to allow for the association of labor. The WCD sub-operation numbers ending in other
+     than ‘0’ will be non-tracked and will not have E046B labor associated. Labor for non-tracked
+     sub-operations will be accounted for in the preceding tracked sub-operation.
+     6.3.4. Following the daily interface from E046B to ITS, a Mismatch report (screen QN2157) should
+     be run by the Production Planner for each PDN. The report will be compared to the PDN/WCD's
+     established within ITS to verify that all ITS sub-operations (tasks) on the report have a matching
+     sub-operation (task) on the ITS WCD. E046B, ITS (G337) must be corrected to verify there is a "com-
+     plete" match between both systems, where direct labor applies. Under this concept, there will be no
+     sub-operations (tasks) resident within ITS that does not have corresponding sub-operations (tasks)
+     resident within E046B (direct labor), additionally, there should be no sub-operations (tasks) resident
+     within E046B that does not have corresponding sub-operations (tasks) resident within ITS (direct
+     labor).
+        6.3.4.1. ITS has sub-operations that are coded as "informational only" and as the name implies,
+        are used to display information (i.e. hazardous material warnings, special instructions etc.) on the
+        WCD. These sub-operations will not have a matching E046B sub-operation.
+        6.3.4.2. The E046B system also has supplemental information listed using a sub-operation num-
+        ber and these will "not" have a matching sub-operation number in the ITS. If the WCD is coded as
+        a Track Level 'B' document, then only those sub-operations ending in a '0' will have a matching
+        labor sub-operation in the E046B system and all others will be "non-tracked" and will not have a
+        labor sub-operation associated.
+        6.3.4.3. The E046B system has the ability to accommodate "X" labor operations. Currently, "X"
+        operations are generally utilized for crediting direct labor hours to back shops for miscellaneous
+        support items such as plating miscellaneous parts. "X" operations are always automatic count
+        regardless of the "M" or "A" Production Count Indicator (PCI) within G004L. These parts may or
+        may not have a legacy system WCD/routing document. Currently, this means that the back shops
+        will receive production count "Not" tied to a specific routing task. However, under DMAPS TAA
+        implementation, this process will change. Under DMAPS, Production Planners will be required to
+        include Miscellaneous part repairs in existing ITS WCD's/routings (supported by corresponding
+        sub-operations within E046B) or develop separate ITS WCD's/routings specifically for miscella-
+        neous parts that were previously supported by "X" labor operations. In other words, RCCs that uti-
+        lize “X” labor standard s will not be utilized in support of DMAPS. All WCDs and labor standards
+        will be developed to the task level.
+        6.3.4.4. Direct Labor within E046B needs to be examined with special emphasis to the impact on
+        the employees having to "clock" time. Currently, there may be indirect personnel counted as
+        direct. If maintained in E046B, a WCD will have to be generated in order to clock their time, or
+        the workers will be assigned to an indirect JON. For example, Production Planners, Schedulers,
+        Expeditors and Forklift Operators fall into this category. New MISTR workload must first be
+        established within E046B.
+AFMCI21-136 6 FEBRUARY 2003                                                                             21
+
+
+6.4. Temporary (Non-Programmed) Workloads. Temporary (Non-Programmed) Workloads will be
+broken down by Production Number prefix): T prefix for repair (PDN example: T1479A). M prefix for
+new manufacture (PDN example: M5455K).
+   6.4.1. These temporary workloads will continue to be planned and input into the Job Order Produc-
+   tion Master System (G336/G004L) as is accomplished today. Detailed planning will be required to
+   identify each operation (task) that a Mechanic/Technician will be required to perform to "manufac-
+   ture" or "repair" that part and will be manually linked to a specific RCC/Work Center within the
+   Inventory Tracking System (ITS) at the sub-operation (task) level. For job order batching needs, Pro-
+   duction Planners will establish labor standards based upon the batch quantity instead of the typical
+   labor standard for a discrete job order quantity of one.
+   6.4.2. Those operations (tasks) as defined within G336/G004L must "also" be manually input into
+   ITS as sub-operations (tasks). In order to generate the required G337 (ITS) WCD, the responsible Pro-
+   duction Planner must input a complete planning package into the G337 system. The G336/G004L
+   operation (tasks) numbers must match the ITS sub-operation (task) numbers, therefore, G336/G004L
+   operations (tasks) equate to ITS sub-operations (tasks). The WCD number must be placed on the
+   G004L operation description line in the last 6 positions of the field. An interface will bring the labor
+   hours at the operation level from G336/G004L to the sub-operational level within G337/ITS.
+      6.4.2.1. Production Planners must link the material to be consumed to specific sub-operations
+      (tasks) within ITS by linking the material on the G336/G004L temporary labor plan to the appli-
+      cable operation (task) number.
+   6.4.3. Interdivisional Support Aircraft/Missile Routed Items Type Workload Procedure. Interdivi-
+   sional Support for Aircraft/Missile Routed Item Workload will be accomplished in the following man-
+   ner. (Example: An item is removed from an Aircraft (LA) or a missile (LM) and is routed to a shop
+   within another Product Directorate (LI).
+      6.4.3.1. All non-Aircraft Repair Enhancement Program (AREP) shops shall utilize E046B and
+      ITS/G337for labor and shop floor tracking purposes.
+      6.4.3.2. To assist in the development of the necessary WCD's for ITS, the "Owning" AREP Pro-
+      duction Planners will use the G037E Routed Item Listing (A-G037E-D20-D1-M65) to identify all
+      the routed item part numbers to the "performing" Directorate Production Planners. This report will
+      list each routed item component identified to a remove operation. This list will be used to deter-
+      mine if an item has a planned route.
+      6.4.3.3. The AREP Production Planner will interrogate the Routed Items Listing by Weapon Sys-
+      tem Design Code (WSDC). The AREP PDMSS "Owning" Production Planner will work closely
+      with the "Performing" Product Directorate Production Planner to identify all routed items requir-
+      ing ITS WCD, labor standard (E046B) and material standard (G005M) data development.
+      6.4.3.4. The "Performing" Product Directorate Production Planners are responsible for the ITS
+      WCD, E046B labor standard and G005M material standard data development.
+      6.4.3.5. The development of Work Control Documents (WCD's) for routed items will be discon-
+      tinued within G037E/PDMSS and will be developed and generated within ITS by the "Perform-
+      ing" Production Planner.
+      6.4.3.6. The G037E/PDMSS WCD/card shall only contain an informational step for routed items.
+      The WCD/card will also be used for scheduling purposes.
+22                                                                 AFMCI21-136 6 FEBRUARY 2003
+
+
+        6.4.3.7. The "Owning" and "Performing" Product Directorates will utilize the same Production
+        Numbers (PDN's) and Job Order Number (JON’s). This concept will allow all costs to be rolled up
+        to the aircraft/missile etc. for that PDN/JON. The "Performing" Product Directorate Production
+        Planners are responsible for labor standard development and WCD development for their own
+        RCC's/shops utilizing E046B and ITS/G337 for those routed items.
+           6.4.3.7.1. The same aircraft or missile production number/control number will be used within
+           ITS/G337, E046B and G005M.
+           6.4.3.7.2. Production count will be taken the same way it is today during DMAPS Phase I.
+           However, in DMAPS Phase II, production count will be taken automatically within AF
+           DMAPS TAA as work is transacted by mechanics/technicians. The aircraft sales price for
+           these routed items shall be computed using the performing RCC rates and standards in lieu of
+           the current aircraft composite rate. Since repair hours for routed items will no longer be resi-
+           dent within G037E/G097 (PDMSS), it will become necessary to perform two separate hour
+           roll-ups; i.e. total hours by Production Number (PDN), Job Order Number (JON) in G037E/
+           G097 (PDMSS) as is accomplished today, as well as an hour roll-up for the same PDN, JON
+           resident within the E046B/G337 (ITS) system. The labor hours would then be manually com-
+           bined from both systems to obtain the correct total labor hours/costs required for the aircraft.
+           6.4.3.7.3. The "Performing" Product Directorate Production Planners shall also be responsible
+           for the material standard development for those routed items for their own RCC's utilizing
+           G005M. The G005M/Production System G030 Mismatch Report could indicate the material is
+           consumed within a valid operation, production number, and RCC combination. However, it
+           might not be the correct operation. This type of condition will appear as a match on the report
+           even though it’s incorrect. The Production Planner is required to validate that every part num-
+           ber is being consumed at the correct operation number for a specific G005M BOM.
+           6.4.3.7.4. Upon the completion of this data development activity for routed items, the "Per-
+           forming" Product Directorate Production Planners will notify the "Owning" AREP Production
+           Planner, at which time the WCD's/routes will be removed from G037E/G097 (PDMSS). At
+           this time, the "Owning" AREP Production Planner will then run the Routed Items Listing
+           (A-G037E-D20-D1-M65) against each WSDC and will manually remove those routed items
+           from this list. This removal of the routed items from this Routed Items List and the removal of
+           the operations from G037E/G097 (PDMSS) is a manual process for these Interdivisional Sup-
+           port of Routed Workload items.
+           6.4.3.7.5. To ensure that the WCD's/routes are resident within ITS for PDMSS routes from
+           other directorates: The G037E routed item listing will be reviewed for interdivisional routed
+           items by the "Owning" AREP Production Planner.
+     6.4.4. Transacting at the JON Level. When transacting at the JON level within DMAPS TAA the
+     "Workload Competition Flag" must be changed to "N" for No.
+        6.4.4.1. "T" prefix Quarterly Support Workloads: (PDN Example: T2579I). With this type of
+        workload, a specific number of man-hours are provided to specific shops on a quarterly basis to
+        perform miscellaneous types of support. Specifics as to the exact type of support are normally
+        "not" known in advance.
+AFMCI21-136 6 FEBRUARY 2003                                                                              23
+
+
+      6.4.4.2. "A" prefix Field Team or TDY Support Workloads: (PDN Example: A2525N). With this
+      type of workload, a specific number of man-hours are provided to perform support at a specific
+      geographical location
+      6.4.4.3. These temporary workloads will continue to be planned and input into the Job Order Pro-
+      duction Master System (G336/G004L) as is accomplished today. Since the tasks are not normally
+      known in advance, the mechanic/technician will keep track of the labor hours expended on each
+      JON and will transact at the JON level within DMAPS TAA. The mechanic/technician will be pro-
+      vided a paper product (AFMC Form 237 or G004L L3A), that they will use to know which JON
+      that they will transact labor upon.
+      6.4.4.4. OO-ALC TIS Software Division. Since this division currently uses a Lotus Notes/Access
+      system to track all software workload at the task level by person, this area will also transact within
+      TAA at the JON level. Under this concept, as each Software Engineer performs work on various
+      JON's throughout the course of the day, each Software Engineer will keep track of the hours
+      expended on each JON and these hours will be input directly into DMAPS TAA by that Software
+      Engineer. Lotus Notes/Access paper will be provided to the Software Engineers so they are aware
+      of which JON's to transact their time upon by task The development of Work Control Documents
+      (WCD's) for routed items will be discontinued within G037E/PDMSS and will be developed and
+      generated within ITS by the "Performing" Production Planner.
+      6.4.4.5. The development of Work Control Documents (WCD's) for routed items will be discon-
+      tinued within G037E/PDMSS and will be developed and generated within ITS by the "Perform-
+      ing" Production Planner. The development of Work Control Documents (WCD's) for routed items
+      will be discontinued within G037E/PDMSS and will be developed and generated within ITS by
+      the "Performing" Production Planner.
+   6.4.5. Temporary (Non-Programmed) Workloads within the Aircraft/Missiles and PDMSS. When
+   transacting at the JON level within DMAPS TAA the "Workload Competition Flag" must be changed
+   to "N" for No. These temporary workloads will continue to be planned and input into the Job Order
+   Production Master System (G336/G004L) as is accomplished today. Since the tasks are not normally
+   known in advance, the mechanic/technician will keep track of the labor hours expended on each JON
+   and will transact at the JON level within DMAPS TAA. The mechanic/technician will be provided a
+   paper product (AFMC Form 237 or G004L L3A etc.), that they will use to know which JON that they
+   will transact labor upon. As soon as the capability is provided to process temporary (Non-Pro-
+   grammed) workloads within G097/PDMSS this solution will be discontinued.
+   6.4.6. Cost Class Four Workloads. "S" prefix Cost Class Four Support (a specific number of hours are
+   provided on a monthly basis and are used for the repair of a particular shops own equipment) (Exam-
+   ple: S1459I): "S" JON's will become "X" JON's in the future. Each shop requiring this type of Cost
+   Class Four support will establish the required indirect JON's. All labor hour transacting for this type
+   of support will be transacted at the Indirect JON level within DMAPS TAA.
+
+6.5. G097 and G037E.
+   6.5.1. PDMSS produces the barcode on the WCD at the operation level, which will be the level where
+   labor will be clocked/collected and where that shop will automatically earn hours (upon operation
+   completion) beginning in DMAPS Phase II. To ensure the WCD’s for aircraft/missile labor operations
+24                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+     are correct, the WCD’s will be reviewed to ensure a match with the labor operations in G037E/G097
+     (PDMSS). The on-line PDMSS Users Manual is used as a reference for updating the WCD.
+     6.5.2. Special emphasis must be placed upon reviewing direct labor, which may be indirect. A Pro-
+     duction Planner, Scheduler, Forklift Operator or Expeditor are examples of where they are being con-
+     sidered direct, but no WCD’s are currently being generated. Under DMAPS, if the Forklift Operator
+     or Expeditor etc. is considered direct, a WCD will have to be generated and the time will have to be
+     clocked by that function. An alternative could be to identify that function as production overhead.
+     6.5.3. All Interdivisional Support Shop routed items must have a WCD established in PDMSS or ITS
+     by the performing Production Planner. The Interdivisional Support of Routed Item procedures is iden-
+     tified above.
+     6.5.4. Materiel standards are to be linked to the operation where the materiel will be consumed. The
+     G005M BOM parts list should be compared to the WCD to verify the materiel is assigned to the cor-
+     rect G037E/G097 (PDMSS) operation where the materiel will be consumed. The G072A-G01 report
+     lists labor standards without materiel and can be used for an additional check to ensure materiel stan-
+     dards are linked to all appropriate operations.G037E and PDMSS are always in sync due to the daily
+     interfaces between these two systems. All workload is currently being planned/worked in PDMSS at
+     the operation/task level. These procedures will be updated when the Temporary Workload capability
+     is provided within G037E/G097 (PDMSS).
+     6.5.5. Criteria: Production Number validation of the WCD with Labor Standard and Materiel Stan-
+     dards. (Pseudo PDN’s are valid non matches (P job designator). G005M/Production System G030
+     Mismatch Report will be used to report on the Materiel Effort.
+
+6.6. Facility Equipment Maintenance System (D130/FEM): PMEL Workload Only. There is noth-
+ing unique for FEM to do in order to prepare for DMAPS implementation. From the onset of FEM, they
+have been required to ensure the operation level in FEM agrees with the labor E046B at the operation
+level. To prepare for DMAPS implementation, the Production Planner will review and/or revise the FEM
+WCD and labor standard within E046B to the appropriate operation level.
+     6.6.1. Currently, in terms of data development for PMEL workload labor hours, the required base
+     hours will already be available within E046B for the passing of these hours to the applicable Produc-
+     tion Number (PDN), Resource Control Center (RCC), operation number (task) and work order resi-
+     dent within FEM/D130 via an interface. Through the use of the AF DMAPS TAA System, actual
+     hours will be collected for operations (tasks) performed. For FEM/PMEL workloads, Mechanics/
+     Technicians "will" wand barcodes for the collection of actual labor hours and will be provided
+     labor-input screens for the addition of this actual labor hour data. For job order batching needs, when
+     applicable, Production
+     6.6.2. Planners will establish labor standards based upon the batch quantity instead of the typical
+     labor standard for a discrete job order quantity of one.
+     6.6.3. For "Temporary Workloads" the labor plan will continue to be manually added to the G336/
+     G004L system as is accomplished today, however, a more detailed planning effort may be required to
+     identify each operation (task) that will be required for the repair. Additionally, each of the G336/
+     G004L operations (tasks) will be linked and "manually added" to the FEM system. Both G336/G004L
+     and FEM work orders must match in terms of operation (task) numbers. PMEL/ FEM workload
+     requirements will be generated within the FEM system.
+AFMCI21-136 6 FEBRUARY 2003                                                                               25
+
+
+       6.6.3.1. All "Temporary/FEM Workload" material requirements will be loaded into the G336/
+       G004L system and are to be linked to the operation (task) number where the material will be con-
+       sumed within FEM. The operation (task) numbers within G336/G004L and FEM are to be the
+       same.
+       6.6.3.2. New workloads must first be established within E046B for FEM/PMEL workloads and
+       G336/G004L for Temporary workloads.
+       6.6.3.3. Direct Labor within E046B/FEM needs to be examined. Currently there "may" be indi-
+       rect personnel counted as direct. If maintained in E046B/FEM, a WCD will have to be generated
+       in order to clock their time, or the workers will be assigned to an indirect JON. For example, Pro-
+       duction Planners, Schedulers, Expeditors and Forklift Operators fall into this category.
+       6.6.3.4. New G030 "Mismatch Reports" have been developed that will assist the Production Plan-
+       ners in systematically identifying those mismatches that require correction.
+   6.6.4. Routed items are not applicable to FEM.
+   6.6.5. Criteria. FEM Production Number validation of the WCD’s with Labor and Materiel Standards.
+
+6.7. Job Order Production Master System (G004L). The goal is to load only valid JON's into TAA.
+The Funds Manager within the Product Directorates will review the current G004L Permanent Job Master
+(PJM) and Temporary Job Master (TJM) for open JON's. These are JON's with a JON status of 0. JON's,
+that are no longer required, will be closed (use of the EPS overawed JON product will assist in this effort).
+G004L L2B and L3B error lists will be reviewed and appropriate actions taken (PON/PCN match). The
+G004L G1A Validation Tables will be reviewed to ensure the PON and PCN match. Appropriate action(s)
+will be taken to correct mismatches. All materiel backorders against closed JON's will be cancelled. Reg-
+ulations used in this area are: AFMC R 66-60 (Draft), AFMC R 66-61, and AFMC R 66-62. No Status
+Code 3 (cancelled) JON’s are to be initialized into DMAPS. Criteria: Validation of JON’s by the Product
+Directorates.
+26                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+                                                Chapter 7
+
+              PLANNING FOR PROGRAMMED PRODUCTION (DMAPS PHASE II)
+
+7.1. AREP.
+     7.1.1. Plan for PDMSS JOQ. Planners shall establish the labor hours based on the batch quantity
+     (instead of for the typical JOQ of one) to facilitate batch processing.
+     7.1.2. Create Master Plan in G037E. Planner uses G037E to plan and control the modification and
+     repair of aircraft and other project type workloads. Planner develops and maintains labor standards in
+     E046B (LSMSM) as required. The planner manually inputs base hours into G037E using either
+     E046B computed base hours or his manually developed base hours. G037E validates input using the
+     new RCC/Skill code file.
+     7.1.3. Pass Detail Plan to G097. When the planner selects operation to be included in a given over-
+     haul, G097 extracts base hours from G037E for detail plan.
+     7.1.4. G097 System Triggers. The activity which will trigger the submission of tasks to DDS and
+     TAA. Triggered when scheduler changes status code to 0.
+        7.1.4.1. G097 to DDS. Automatically extract from G097 (PDMSS) the following information:
+        Weapon System Design Code, Operation Number, Weapon ID, (TAA Item Tracking Number 1),
+        Operation Number, (TAA Item Tracking Number 2). Upon electronic notification from G097,
+        DMAPS Data Store shall automatically read this table and add data.
+        7.1.4.2. G097 to TAA. Automatically extract, from PDMSS, the following information: System
+        Designator (PDMSS), Weapon System Design Code, Operation Number, Weapon ID (TAA Item
+        Tracking Number), Operation Number, (TAA Item Tracking Number 2), Control Number, Job
+        Designator, RCC, Base Hours. Automatically read this file and add data to TAA.
+
+7.2. DREP.
+     7.2.1. Build WCDs in G337. Planners build Labor Standards to support sub-operation level (to sup-
+     port production count). Planners compare Labor Standards structure to WCD structure to insure that
+     production count is collected correctly. Planners may need to give special consideration regarding
+     JOQ, Occurrence Factors, Natural Breakpoints, WCD Structure, and Operation/ Sub-operation Struc-
+     tures when planning labor and material for DMAPS process.
+        7.2.1.1. E046B to G337. E046B (LSMSM) sends base hours, at Sub Operation level on a daily
+        basis to G337.
+        7.2.1.2. Modify Base Hours (Permanent Workloads). On a daily basis E046B will send to G337
+        base hours for permanent workloads. G337 receive base hours using an existing feed from E046B.
+        G337 will calculate PF&D value using base hours times PF&D. G337 will calculate total base
+        hours, summing PF&D value plus base hours. G337 will not perform a calculation using the sub
+        operation occurrence factor provided by E046B. In addition, the QN2140 screen and reports need
+        to be updated to reflect the above changes (e.g., base hours, PF&D and total hours).
+     7.2.2. Develop and Maintain Labor Standard in E046B. Planners develop and maintain labor stan-
+     dards in E046B (LSMSM) at the sub-operation level. This activity identifies if the labor standard is
+     engineered or non-engineered. These values are used to determine the direct labor costs for EISP.
+AFMCI21-136 6 FEBRUARY 2003                                                                            27
+
+
+   Changes to Base Hours in Legacy systems shall implement an effective business rule. Base hour
+   changes shall be applied only to newly (future) inducted work. Base hours shall not be changed in
+   DMAPS Data Store or TAA.
+   7.2.3. Plan for ITS JOQ. Planners establish the labor hours based on the batch quantity (instead of for
+   the typical JOQ of one) to facilitate batch processing.
+   7.2.4. G337 System Trigger.
+      7.2.4.1. Generate Mismatch Report. G337 (or a report writer) provides a new Labor Mismatch
+      Report meeting the following requirements: automated, user selectable frequency contains only
+      exceptions (mismatches). G337 will contain an edit that will not allow a WCD to be printed that
+      has any mismatches between E046B and G337 tasks.
+      7.2.4.2. Mechanic requests the printing of a WCD via a G337 screen.
+      7.2.4.3. G337 to DDS. Automatically extract from G337 (ITS) the following information: Inven-
+      tory Tracking Number (TAA Item Tracking Number 1), Track Point (TAA Item Tracking Number
+      2).
+      7.2.4.4. G337 to TAA. New interface: "near real time" and event driven. Automatically extract,
+      from ITS, the following information: Inventory Tracking Number (TAA Item Tracking Number
+      #1), Track Point (TAA Item Tracking Number #2), Operation Number, Sub Operation Number,
+      Prod Number/JON, RCC, Base Hours. Automatically read this file and add data to TAA.
+
+7.3. Facility and Equipment Maintenance.
+   7.3.1. Plan for FEM JOQ. Planners establish the labor hours based on the batch quantity (instead of
+   for the typical JOQ of one) to facilitate batch processing.
+   7.3.2. Build WCDs in D130. Planners build PMEL WCD tasks in FEM.
+   7.3.3. Develop Main Labor Std in E046B. FEM only supports PMEL workloads. Planners develop
+   and maintain labor standards in E046B (LSMSM) at the operation level. This activity identifies if the
+   labor standard is engineered or non-engineered. These values are used to determine the direct labor
+   costs for EISP.
+      7.3.3.1. D130 Uses E046B Base Hours. On a daily basis, extract base hours, at the operation level,
+      from E046B. On a daily basis, read this file and update D130.
+      7.3.3.2. Provide Data to TAA/DDS. Source Input for Legacy/TAA shared data FEM. Modif FEM
+      to provide data to TAA and DMAPS/DDS (via Conversion Application). Create 'FEM to CAPP'
+      table and store data to send to TAA. Table will contain the following data elements: System Des-
+      ignator (FEM), Work Order Number, Control Number, Job Designator, JON Suffix, Performing
+      RCC, Base Hours, Skill Code, and Change Date/Time. Modify FEM to accept/process data from
+      TAA. Create 'TAA to FEM' table to receive and store data from TAA. Table will contain the fol-
+      lowing data elements: Employee Number, RCC, and Expended Hours, Status (Stop, Complete
+      Transaction), Date/Time. Modify FEM to accept/utilize TAA Employee Id's assigned all DMAG
+      employees.
+      7.3.3.3. D130 (FEM) to CE (Inductions). Automatically extract from D130 (FEM) the following
+      information: Work Order Number (TAA Item Tracking Number 1), Operation Number, (TAA
+      Item Tracking Number #2), Prod Number, RCC, Equip Id, Base Hours, Date. Upon electronic
+28                                                              AFMCI21-136 6 FEBRUARY 2003
+
+
+     notification from D130, the Conversion Application automatically reads this file and generates
+     new input file for DIFMS TAA and DIFMS Data Store.
+     7.3.3.4. D130 (FEM) to CE (Completions). On a daily basis FEM will provide both Direct and
+     indirect completion data to G004L via CE. These records will identify closed Work Orders. Trig-
+     gered when the FEM Work Order Status is changed to CLOSE. CE will add the value for JON
+     Suffix, merge with Induction data, and forward the FEM records to G004L in a compatible format
+     that FEM currently uses to pass the information to G004L.
+     7.3.3.5. Process Prod No./JON Data. On a NRT basis, automatically process FEM Work Order
+     Induction input file and set values for JON Suffix. On a NRT basis, insert complete record into
+     TAA temp table. On a NRT basis, insert complete record into DDS temp table. On a Daily basis,
+     process FEM Direct CJob JON Completion input file and set value for JON Suffix. On a Daily
+     basis, merge NRT and Daily input into an output file for G004L.
+     7.3.3.6. CE to TAA. On a daily basis, automatically reads G004L (JOPMS) 'Temp Job Order
+     Number Master ' file and FEM TAA input file. On a daily basis, creates TAA input file with com-
+     plete record data (as defined in Business Rules).
+     7.3.3.7. CE to DDS. On a daily basis, automatically reads G004L (JOPMS) 'Temp Job Order
+     Number Master ' file and FEM DMAPS Data Store input file. On a daily basis, creates DMAPS
+     Data Store input file with complete record data (as defined in Business Rules).
+     7.3.3.8. CE to G004L (Inducts & Comps). On a daily basis, CE will generate and FTP, to G004L,
+     a file identifying FEM Direct PMEL CJON data. G004L will use this data to update FEM JONs
+     with the JON Suffix value, validate JON funding, and create/update induction quantities. This file
+     transfer must occur no later than to 6:00 PM, local time.
+AFMCI21-136 6 FEBRUARY 2003                                                                         29
+
+
+                                             Chapter 8
+
+        PLANNING FOR NON PROGRAMMED PRODUCTION (DMAPS PHASE II)
+
+8.1. Production labor planning - AREP non-programmed workload .
+   8.1.1. Receive Electronic Notification of Temporary Workloads via G336. AREP Temporary Work-
+   loads start with the planner receiving electronic notification via G336.
+   8.1.2. Hold Pre-Planning Meeting as Required. Planner has pre-planning meeting (as required) with
+   Scheduling and Production to discuss the work to be accomplished.
+   8.1.3. Develop Labor & Material Operations. Planner plans labor and material operations in G004L.
+   8.1.4. Estimate Labor Hours (JOQ) & other direct Costs (ODC). For A-Jobs (hourly temporary work-
+   loads), the JOQ represents hours to be worked and ODC (Other Direct Costs) pertain to estimated
+   transportation, lodging, and per diem.
+   8.1.5. Planner Sets SOPI to "C" for Complete. When all planning has been completed, the planner
+   changes the SOPI (Status of Planning Indicator) from an "I" (Incomplete) to a "C" (Complete). That
+   triggers the transmission of data to G004L. G004L Receives Planning Data. G004L Establishes Pro-
+   duction Number & EISP based on the labor operations, material operations, and other direct costs.
+   G004L Sends JON Data to DIFMS (JON Opening - Finance Requirement). DIFMS sends valid JON
+   listing to TAA. G004L sends BOM data to ABOM. G004L sends L3A "WCD" to Planner.
+   8.1.6. Planner Reviews L3A. Planner Reviews L3A for accuracy and completeness. If errors are
+   found, then amendments to G004L are made.
+   8.1.7. Planner Prepares & Forwards Handwritten WCD. Planner Prepares/Forwards Handwritten
+   WCD to scheduler and Production supervisor. Suggested forms are 958/959, 173 card, or Form 137.
+      8.1.7.1. Scheduler Receives L3A and/or Handwritten WCD. Scheduler Receives L3A and/or
+      Handwritten WCD for information.
+      8.1.7.2. Supervisor Receives Handwritten WCD. Supervisor receives handwritten WCD. Uses to
+      determine required skills.
+      8.1.7.3. Supervisor Assigns Work & Provides WCD to Mechanic. Supervisor assigns work and
+      provides WCD to mechanic for labor collection and material operations. Using the WCD, the
+      mechanic will know what Production Number JONs to charge his labor to and which operations to
+      order material against.
+   8.1.8. Scheduler/Mechanic Buys Material via ABOM.
+   8.1.9. Planner Provides JON Data to Supervisor. Planner provides JON Data to Supervisor. Since no
+   WCD is produced for A-Jobs, the proper production number JON must be communicated very clearly.
+   8.1.10. Supervisor/Mechanic Uses Production Number JON for Exceptions in TAA. Supervisor/
+   Mechanic Uses Production Number JON for Exceptions in TAA. Normally A-Jobs supports CLSS
+   TDY type workloads. Since the mechanic is usually TDY, the supervisor will be responsible for enter-
+   ing the employee's labor hours against the proper Production Number JON in TAA.
+      8.1.10.1. Labor is keyed in TAA at the JON Level. Supervisors and/or mechanics key in labor in
+      TAA at the JON level.
+30                                                                AFMCI21-136 6 FEBRUARY 2003
+
+
+        8.1.10.2. ABOM/NIMMS Sends Material Cost to DIFMS.
+        8.1.10.3. TAA Sends Labor Hours to DIFMS.
+        8.1.10.4. DIFMS Sends Labor Hours and Labor/Material Cost to DDS.
+        8.1.10.5. DDS Processes Labor & Material Data. For all JONs with no associated tasks, earned
+        hours will equal actual hours accumulated during a given reporting period; i.e. daily, weekly,
+        monthly, quarterly since inception.
+
+8.2. Production labor planning - DREP non-programmed workload.
+     8.2.1. Receive Electronic Notification of Temporary Workloads via G336. AREP Temporary Work-
+     loads start with the planner receiving electronic notification via G336.
+     8.2.2. Hold Pre-Planning Meeting as Required. Planner has pre-planning meeting (as required) with
+     Scheduling and Production to discuss the work to be accomplished.
+     8.2.3. Planner Develops Labor & material in G004L. Planners develop labor and material operations
+     for Temporary Non-programmed Workloads and match operations in G004L with the Sub-Operations
+     in G337 (ITS). This activity results in G004L calculating EISP (planned cost).
+     8.2.4. Estimate Labor Hours (JOQ) & other direct Costs (ODC). For A-Jobs (hourly temporary work-
+     loads), the JOQ represents hours to be worked and ODC (Other Direct Costs) pertain to estimated
+     transportation, lodging, and per diem.
+     8.2.5. Planner Sets SOPI to "C" for Complete. When all planning has been completed, the planner
+     changes the SOPI (Status of Planning Indicator) from an "I" (Incomplete) to a "C" (Complete). That
+     triggers the transmission of data to G004L. G004L Receives Planning Data. G004L Establishes Pro-
+     duction Number & EISP based on the labor operations, material operations, and other direct costs.
+     G004L Sends JON Data to DIFMS (JON Opening - Finance Requirement). DIFMS sends valid JON
+     listing to TAA. G004L sends BOM data to ABOM - (Material Requirement). G004L sends L3A
+     "WCD" to Planner.
+     8.2.6. Planner Reviews L3A. Planner Reviews L3A for accuracy and completeness. If errors are
+     found, then amendments to G004L are made.
+     8.2.7. Planner Prepares ITS WCD. Planner Prepares ITS WCD matching labor operations in G004L
+     to sub op steps on WCD. WCD identifies Production Number JON ITN12 for each task. G004L
+     Passes Base Hours to G337. On a daily basis, extract base hours for TJobs from G004L (JOPMS). On
+     a daily basis, read this file and update G337 (ITS). G004L operations equate to ITS sub operations.
+     G337 Modifies Base Hours. This requirement will provide base hours for temporary work loads from
+     G004L to ITS. ITS will accept and process data from G004L. ITS Prints Bar-coded WCDs (ITN1/
+     ITN2). ITS Passes WCD Data to DDS & TAA.
+     8.2.8. Scheduler/Mechanic Buys Material via ABOM.
+     8.2.9. Mechanic Wands Labor at Task Level (ITN 1-2).
+     8.2.10. Planner Provides JON Data to Supervisor. Planner provides JON Data to Supervisor. Since no
+     WCD is, produced for A-Jobs, the proper production number JON must be communicated very
+     clearly.
+        8.2.10.1. Supervisor/Mechanic Uses Production Number JON for Exceptions in TAA.
+AFMCI21-136 6 FEBRUARY 2003                                                                          31
+
+
+      8.2.10.2. Labor is keyed in TAA at the JON Level. Supervisors and/or mechanics key in labor in
+      TAA at the JON level.
+      8.2.10.3. ABOM/NIMMS Sends Material Cost to DIFMS.
+      8.2.10.4. DIFMS Sends Labor Hours and Labor/Material Cost to DDS. DIFMS Sends Labor
+      Hours and Labor/Material Cost to DDS.
+      8.2.10.5. DDS Processes Labor & Material Data. DDS Processes Labor/Material Data. Rule: For
+      all JONs with no associated tasks, earned hours will equal actual hours accumulated during a
+      given reporting period; i.e. daily, weekly, monthly, quarterly since inception.
+
+8.3. Planning for non programmed production - software.
+   8.3.1. Receive Electronic Notification of Temporary Workloads via G336. AREP Temporary Work-
+   loads start with the planner receiving electronic notification via G336.
+   8.3.2. Estimate Labor Hours (JOQ) & other direct Costs (ODC). For A-Jobs (hourly temporary work-
+   loads), the JOQ represents hours to be worked and ODC (Other Direct Costs) pertain to estimated
+   transportation, lodging, and per diem.
+   8.3.3. Planner Sets SOPI to "C" for Complete. When all planning has been completed, the planner
+   changes the SOPI (Status of Planning Indicator) from an "I" (Incomplete) to a "C" (Complete). That
+   triggers the transmission of data to G004L. G004L Receives Planning Data. G004L Establishes
+   Production Number & EISP based on the labor operations, material operations, and other direct costs.
+   G004L Sends JON Data to DIFMS (JON Opening). (Finance Requirement). DIFMS Sends Valid JON
+   Listing to TAA. G004L sends L3A "WCD" to Planner.
+   8.3.4. Planner Reviews L3A. Planner Reviews L3A for accuracy and completeness. If errors are
+   found, then amendments to G004L are made.
+   8.3.5. Planner Provides JON Data to Supervisor. Planner provides JON Data to Supervisor. Since no
+   WCD is produced for A-Jobs, the proper Production Number JON must be communicated very
+   clearly.
+   8.3.6. Supervisor/Programmer Uses Production Number JON for Exceptions in TAA.
+   8.3.7. Labor is keyed in TAA at the JON Level. Supervisors and/or mechanics key in labor in TAA at
+   the JON level. TAA Sends Labor Hours to DIFMS. DIFMS Sends Labor Hours and Labor/Material
+   Cost to DDS. DDS Processes Labor/Material Data. Rule: For all JONs with no associated tasks,
+   earned hours will equal actual hours accumulated during a given reporting period; i.e. daily, weekly,
+   monthly, quarterly since inception. All labor tasks have been completed.
+   8.3.8. Planner/Workloader Reviews Other Direct Costs (ODC) & JOQ Hours to assure that all costs
+   have been accurately collected.
+
+8.4. Production labor planning - D012 Make-It workload.
+   8.4.1. Plan Manufacturing Workloads in D012. D012 Passes Planning Data to G004L. G004L
+   Receives Planning Data. G004L Establishes Production Number & EISP based on the labor opera-
+   tions, material operations, and other direct costs. G004L Sends JON Data to DIFMS (JON Opening -
+32                                                                 AFMCI21-136 6 FEBRUARY 2003
+
+
+     Finance Requirement). DIFMS sends valid JON listing to TAA. G004L sends L3A "WCD" to Plan-
+     ner.
+     8.4.2. Planner Reviews L3A. Planner Reviews L3A for accuracy and completeness. If errors are
+     found, then amendments to G004L are made. D012 Produces WCD.
+     8.4.3. Mechanic Performs Work. Mechanic Keys labor at JON Level in TAA. TAA Sends Labor
+     Hours to DIFMS. DIFMS sends labor hours and labor/material cost to DDS. DDS processes labor/
+     material data. Rule: For all JONs with no associated tasks, earned hours will equal actual hours accu-
+     mulated during a given reporting period; i.e. daily, weekly, monthly, quarterly since inception. Work
+     Completed in D012. JON Closes in G004L. JON Closes in DIFMS.
+AFMCI21-136 6 FEBRUARY 2003                                                                              33
+
+
+                                                Chapter 9
+
+                          ADDITIONAL DMAPS PHASE II PROCESSING
+
+9.1. Overhead Application Rates. TAA will provide the information to produce a report of the average
+unaccelerated direct and indirect labor rates by RCC (Production Cost Center) and Indirect Cost Centers
+(AOC) for manual input into H033. Indirect rates will be calculated for all shops. Results will use a simple
+average of the total hourly rates for a given RCC divided by the number of employees within that Shop.
+Although SSN is used as a key field to tie the Shop to the employee, it will not be portrayed on the report.
+Enter actual direct and indirect labor rates from report generated in TAA into H033. Entered will be a sim-
+ple average of the total hourly rates for a given RCC (Shop) divided by the number of employees within
+that shop.
+
+9.2. Group Labor Processing.
+   9.2.1. ITS will be Near Real Time. TAA creates and forwards operation starts, delays and completes
+   as required.
+   9.2.2. G097 is a batch process. TAA creates and forwards over night batch operation starts, delays,
+   completes along with employee logon/logoffs as required. Same business rules as other transactions.
+
+9.3. Reversal of Complete. TAA will accommodate current pay period reversals utilizing the DLCP
+process.
+   9.3.1. For ITS, TAA will have the ability to reverse a completed task and re-open. Utilizing a new
+   screen, a new track point type code of "U" will be passed from TAA to ITS. ITS will then change the
+   print flag from a "Y" to a "N", remove the ship date and complete flag on the document ID.
+   9.3.2. For G097, upon receipt of "X" transaction, TAA will uncomplete the task and allow hours to be
+   collected. No status required back to G097 if after the DLCP process there are hours left on the oper-
+   ation. If all hours are removed via the DLCP process, TAA will remove the original start and require
+   a new start, logon, and logoff. TAA will pass to the DDS the "X" to identify those completed task flags
+   that should be removed. TAA will add date/time stamp and sort using the date/time stamp before send-
+   ing to DDS to preclude a transaction from being undeleted before it is completed. “Uncompletes” to a
+   completed task will ONLY be allowed in conjunction with a reversal, nothing else.
+   9.3.3. Deletions, Reversals and Co-operations for G097.
+       9.3.3.1. TAA flags operations for deletion upon receipt of an “8” OP_STAT_CD from G097. TAA
+       creates an error report if necessary containing JON, RCC, tail number, ITN1 and ITN2, skill code,
+       work cat code, work spec code and base hours.
+       9.3.3.2. “C” Operations will be accommodated in TAA. G097 will convert the status code from a
+       "C" to a "0" and TAA will process as it does all other workloads.
+
+9.4. Production Count.
+   9.4.1. Production count (earned hours) is collected in DMAPS Data Store when a labor "complete"
+   transaction is processed in TAA. Base hours are earned upon "complete" transactions.
+34                                                                  AFMCI21-136 6 FEBRUARY 2003
+
+
+     9.4.2. Planners build Labor Standards to support sub-operation level (to support production count).
+     Planners compare Labor Standards structure to WCD structure to insure that production count is col-
+     lected correctly. Planners may need to give special consideration regarding JOQ, Occurrence Factors,
+     Natural Breakpoints, WCD Structure, and Operation/Sub-operation Structures when planning labor
+     and material for DMAPS process.
+     9.4.3. Batch processing for production count.
+        9.4.3.1. Plan for PDMSS JOQ. Planners shall establish the labor hours based on the batch quantity
+        (instead of for the typical JOQ of one) to facilitate batch processing.
+        9.4.3.2. Build WCDs in G337. Planners build Labor Standards to support sub-operation level (to
+        support production count). Planners compare Labor Standards structure to WCD structure to
+        insure that production count is collected correctly. Planners may need to give special consideration
+        regarding JOQ, Occurrence Factors, Natural Breakpoints, WCD Structure, and Operation/
+        Sub-operation Structures when planning labor and material for DMAPS process.
+        9.4.3.3. Plan for ITS JOQ. Planners establish the labor hours based on the batch quantity (instead
+        of for the typical JOQ of one) to facilitate batch processing.
+
+9.5. Workload Status.
+     9.5.1. Process/Update Data (ITS).
+        9.5.1.1. TAA to G337. TAA automatically extracts status transactions (TAA start/stop/complete)
+        and generates file for ITS. ITS automatically reads (real time) and processes status transactions
+        (TAA start/stop/complete) from TAA.
+        9.5.1.2. ITS receives and processes data from TAA to update workload status. PDMSS provides
+        data to TAA and DMAPS Data Store. ITS accepts/processes data from TAA. ITS accepts/utilizes
+        TAA Employee Id's assigned all DMAG employees.
+     9.5.2. TAA to G097. TAA automatically extracts status transactions (TAA start/stop/complete) and
+     generates file for PDMSS. PDMSS automatically reads (real time) and processes status transactions
+     (TAA start/stop/complete) from TAA.
+     9.5.3. Process/Update Data (PDMSS). PDMSS receives and processes data from TAA to update
+     workload status. PDMSS provides data to TAA and DMAPS Data Store. PDMSS accepts/processes
+     data from TAA. PDMSS accepts/utilizes TAA Employee Id's assigned all DMAG employees.
+
+9.6. Payroll Reconciliation.
+     9.6.1. End of bi-weekly pay period, TAA sends time and attendance data to DCPS for all employees
+     per pay period. End of bi-weekly pay period, payroll reconciliation data shall be passed from DCPS to
+     DIFMS.
+     9.6.2. Supervisors shall use TAA online Daily Labor Correction Process (DLCP) to identify errone-
+     ous employee transactions (errors / authorization not made for leave or overtime).
+        9.6.2.1. Supervisors use TAA online Daily Labor Correction Process (DLCP) to correct erroneous
+        employee transactions. Changes may be made anytime within a pay period.
+AFMCI21-136 6 FEBRUARY 2003                                                                         35
+
+
+     9.6.2.2. Changes must be made prior to the end of the pay period and prior to passing payroll data
+     to DCPS.
+  9.6.3. Prior pay period adjustments will be handled using
+  9.6.4. Refer to TAA User's Manual: Section 63.
+
+
+
+                                             DEBRA K. WALKER,
+                                             DEPUTY DIRECTOR FOR DEPOT MAINTENANCE,
+                                             DIRECTORATE OF LOGISTICS

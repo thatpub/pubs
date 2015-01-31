@@ -1,0 +1,603 @@
+                              Template modified:     27 May 1997 14:30
+BY ORDER OF THE                                                     AIR FORCE INSTRUCTION 33-108
+SECRETARY OF THE AIR FORCE                                                                  14 JULY 1994
+
+                                                                                         Communications
+
+                                                      COMPATIBILITY, INTEROPERABILITY, AND
+                                                        INTEGRATION OF COMMAND, CONTROL,
+                                                       COMMUNICATIONS, AND COMPUTER (C4)
+                                                                                  SYSTEMS
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE: This publication is available digitally on the SAF/AAD WWW site at: http://afpubs.hq.af.mil.
+If you lack access, contact your Publishing Distribution Office (PDO).
+
+
+OPR: HQ AFC4A/TNA (Mr Wayne Wilson)                                            Certified by: HQ USAF/SC
+                                                                              (Lt General Carl G. O’Berry)
+Supersedes AFR 700-52, 31 May 1988.                                                              Pages: 16
+                                                                                            Distribution: F
+
+This instruction implements Air Force Policy Directive (AFPD) 33-1, Command, Control, Communica-
+tions, and Computer (C4) Systems, and portions of Department of Defense Directive (DoDD) 4630.5,
+Compatibility, Interoperability, and Integration of Command, Control, Communications, and Intelligence
+(C3I) Systems, November 12, 1992; Department of Defense Instruction (DoDI) 4630.8, Procedures for
+Compatibility, Interoperability, and Integration of Command, Control, Communications, and Intelligence
+(C3I) Systems, November 18, 1992; DoDD 8120.1 Life-Cycle Management (LCM) of Automated Infor-
+mation Systems (AISs), January 14, 1993; Chairman, Joint Chiefs of Staff Instruction (CJCSI) 6212.01,
+Compatibility, Interoperability, and Integration of Command, Control, Communications, Computer, and
+Intelligence (C4I) Systems, 30 July 1993; and Joint Tactical Command, Control, and Communications
+Agency (JTC3A) (Joint Interoperability Engineering Organization [JIEO]) Circular 9002, Requirements
+Assessment and Interoperability Certification of C4 Information and Automated Information Systems and
+Equipment. It establishes Air Force guidance and responsibilities to ensure compatibility, interoperability,
+and integration for new and modified command, control, communications, computer and intelligence
+(C4I) systems, including automated information systems (AIS). Refer technical questions to Headquarters
+Air Force Command, Control, Communications, and Computer (C4) Agency, Interoperability and Tech-
+nology Division, C4 Systems Standards and Validation Branch (HQ AFC4A/TNA), 203 W. Losey St.,
+Room 1020, Scott AFB IL 62225-5233. Send an information copy to Headquarters United States Air
+Force, DCS/Command, Control, Communications, & Computers, Interoperability and Integration Divi-
+sion (HQ USAF/SCTI), 1250 Air Force Pentagon, Washington DC 20330-1250. Refer recommended
+changes and conflicts between this and other instructions to HQ AFC4A, Plans and Analysis Division,
+Policy and Procedures Branch (HQ AFC4A/XPXP), 203 West Losey St., Room 1065, Scott AFB IL
+62225-5224 using AF Form 847, Recommendation for Change of Publication, with an information
+copy to HQ USAF/SC, Plans and Policy Division (HQ USAF/SCXX), 1250 Air Force Pentagon, Wash-
+ington DC 20330-1250. See Attachment 1 for references, abbreviations, acronyms, and terms used in
+this instruction.
+SUMMARY OF REVISIONS
+This is the initial publication of Air Force Instruction (AFI) 33-108, revising Air Force Regulation (AFR)
+700-52.
+
+
+
+1. Objectives:
+   • Ensure Air Force C4I system works with other Air Force, DoD, and Allied systems without creat-
+      ing interference or interface problems.
+   • Supply fighting forces with flexible C4 systems that support worldwide operations.
+   • Enable Air Force customers to use the DoD C4 system at any time or place, and for any mission.
+   • Get C4I and AIS acquisition programs certified to interoperate in the joint arena (JTC3A [JIEO]
+      Circular 9002).
+   • Provide guidance for bringing new C4I technology into the Air Force (technology insertion) and
+      for getting C4 systems without an acquisition program.
+
+2. Managing at the Air Force Level.
+   2.1. HQ USAF/SC:
+       2.1.1. Guides Air Force issues by:
+           • Developing and approving C4I systems policy, standards, and architecture with the goal
+              of making all elements compatible, interoperable, and integrated.
+           • Overseeing the Air Force program for all C4I and AIS systems.
+           • Creating long-term plans.
+           • Chairing the C4I Interoperability Steering Group (ISG) and providing a forum to discuss
+              issues and share information (see Attachment 2).
+       2.1.2. Cooperates within the joint arena by:
+           • Being the Air Force focal point for systems affecting joint technical interfaces.
+           • Checking and coordinating joint C4 architectures along with HQ USAF, DCS, Plans and
+              Operations (HQ USAF/XO)
+       2.1.3. Represents the Air Force to other government organizations by:
+           • Serving as the Air Force point of contact to the Defense Information Systems Agency
+              (DISA/JIEO).
+           • Working with the Military Communications-Electronics Board (MCEB) according to
+              CJCSI 6212.01 and sitting on MCEB panels and working groups, including the Interoper-
+              ability Improvement Program (IIP) and the Interoperability Test Panel (ITP), according to
+              MCEB Publication (PUB) 1, MCEB Organization, Mission, and Functions Manual.
+       2.1.4. Manages the Five-Year Interoperability Assurance Plan (FYIAP) by:
+           • Developing the FYIAP according to JTC3A (JIEO) Circular 9002.
+
+
+                                                2
+       •   Identifying and scheduling security requirements for C4 systems in the FYIAP.
+2.2. HQ USAF/XO:
+   2.2.1. Manages mission need statements (MNS) and operational requirements documents (ORD)
+   by:
+       • Ensuring MNSs and ORDs include C4I requirements. (AFI 10-601, Mission Needs and
+          Operational Requirements Guidance and Procedures [formerly AFR 57-1])
+       • Staffing MNSs and ORDs within the Air Force, throughout the other services, the Joint
+          Staff, DISA and the Office of the Secretary of Defense (OSD).
+   2.2.2. Works joint issues by:
+       • Directing Air Force efforts to develop and implement joint standards and joint procedures
+          for managing system configurations (JTC3A [JIEO] Circulars 9000, Tactical C3I Config-
+          uration Management, and 9001, Tactical C3I Configuration Management Documents
+          List).
+       • Serving as the focal point for the Air Force Joint Interoperability of Tactical Command
+          and Control Systems (JINTACCS) Program.
+       • Supplying inputs from the Air Force operations functional area to joint configurations.
+          EXCEPTION: While HQ USAF/XO is the Air Force approval authority, major com-
+          mands (MAJCOM) may provide inputs to joint architectural documents and coordinate
+          these documents withinin the Air Force.
+2.3. Assistant Secretary of the Air Force for Acquisition (SAF/AQ):
+    • Ensures implementation of interoperability requirements defined in MNSs and ORDs in Air
+       Force acquisitions. (DoDD 5000.1, Defense Acquisition, February 23, 1991, and the Air Force
+       supplement to DoDI 5000.2, Defense Acquisition Management Policies and Procedures, Feb-
+       ruary 23, 1991, with Change 1.)
+    • Ensures implementation of policy, standards, and architectures in Air Force acquisitions.
+2.4. HQ USAF Director of Test and Evaluation (HQ USAF/TE):
+    • Ensures interoperability requirements defined in MNSs and ORDs for Air Force acquisition
+      are evaluated. (AFPD 99-1, Test and Evaluation Process; AFI 99-101, Developmental Test
+      and Evaluation [formerly AFRs 80-14 and 80-19]; AFI 99-102, Operational Test and Evalua-
+      tion [formerly AFRs 55-43 and 80-14]; AFI 99-103, The Air Force Test and Evaluation Pro-
+      cess; and Air Force Manual (AFMAN) 99-111, Command, Control, Communications,
+      Computers, and Intelligence Test and Evaluation Process.)
+    • Ensures test and evaluation master plans, developmental test and evaluation (DT&E), and
+      operational test and evaluation (OT&E) plans and reports are forwarded to the DISA/Joint
+      Interoperability Test Center (JITC) to support joint interoperability certification. (JTC3A
+      [JIEO] 9002).
+    • Tests according to JTC3A (JIEO) Circular 9002. JITC will use service DT&E and OT&E
+      reports for joint interoperability certification. If the Air Force cannot accommodate JITC
+      needs, HQ USAF/TE asks JITC to conduct a separate interoperability test.
+
+
+
+                                           3
+      •   Ensures systems program offices, Air Force Materiel Command, responsible test organiza-
+          tions, and the Air Force Operational Test and Evaluation Center (AFOTEC) perform interop-
+          erability testing.
+      •   Serves as the Air Force point of contact for all OSD & DISA test and evaluation policies and
+          issues.
+   2.5. Air Force C4I ISG: See Attachment 2.
+
+3. Managing at the Major Command and Field Operating Agency (FOA) Level.
+   3.1. All MAJCOMs and FOAs:
+      3.1.1. Define interoperability needs in their MNSs, ORDs and C4 systems requirements docu-
+      ments.
+      3.1.2. Advise HQ USAF/SCTI of their points of contact for actions covered in this instruction.
+      3.1.3. Prevent duplicate and nonstandard C4 system development by identifying those mission
+      needs having similar C4 requirements or which existing C4 systems can meet. Consider:
+          • Mission deficiencies.
+          • Required functionality.
+          • Security requirements.
+          • Need for electromagnetic compatible, interoperable, and integrated Air Force, DoD, and
+             Allied C4 systems.
+      3.1.4. Identify mission deficiencies, user needs, and security requirements so C4I systems can
+      fully operate across all Air Force, DoD and Allied mission environments.
+      3.1.5. Prepare documents to manage system configurations (standards, specifications, and inter-
+      face control documents) when acquisition activities request them.
+      3.1.6. Document interfaces to intelligence systems in the configuration management process.
+      3.1.7. Identify technical requirements to properly interface systems including:
+          • C4 systems and facilities that need or can support interoperability testing for inclusion in
+              the FYIAP.
+          • Interoperability issues affecting the MAJCOM's ability to meet mission requirements.
+              Include joint or combined environments. Send these issues to the IIP.
+          • Data pertinent to joint architecture documents and other joint architectural efforts.
+      3.1.8. Help HQ USAF/XO in configurations' management by proposing, implementing, and eval-
+      uating changes to JINTACCS procedural interface standards, including the interface for intelli-
+      gence systems.
+      3.1.9. Identify requirements to create procedures that assure proper interfaces for C4 systems
+      employing joint tactical data links. Send these requirements to HQ Air Combat Command (ACC)/
+      DRI for inclusion in the FYIAP.
+   3.2. HQ ACC:
+      3.2.1. Represents the Air Force in the Joint Chiefs of Staff (JCS)-managed JINTACCS program.
+
+                                              4
+      3.2.2. Develops and maintains message text format (MTF), tactical digital information links
+      (TADIL), and other data link architectures and standards.
+      3.2.3. Manages the Air Force Participating Test Unit (AF PTU) by:
+          • Testing and participating in Air Force joint and combined compatibility and interoperabil-
+             ity (C&I) testing of C4I systems that use MTFs and TADILs according to DoDD 4630.5
+             and DoDI 4630.8.
+          • Programming, planning, and budgeting for operations and maintenance resources to sup-
+             port U.S. MTFs and TADILs combat data link standards configuration management and
+             testing.
+   3.3. HQ AFC4A:
+      3.3.1. Programs resources and provides personnel to operate and maintain the Air Force C4
+      interoperability facility.
+      3.3.2. Serves as executive agent for the Air Force C4I ISG.
+      3.3.3. Develops and executes plans and procedures to evaluate Air Force C4 systems.
+      3.3.4. Identifies, assesses, applies, and validates (collectively known as technology insertion) new
+      and emerging technologies, products, and services that have the potential to satisfy Air Force
+      requirements.
+      3.3.5. Advises the Air Staff and MAJCOMs on applicability of these technologies, products, and
+      services.
+      3.3.6. Coordinates appropriate activities with the USAF Technology Transition Office and other
+      applicable USAF, DoD, and U.S. Government entities.
+   3.4. Air Intelligence Agency (AIA): Acts as the Air Force Service Cryptologic Element and inter-
+   face with the National Security Agency.
+   3.5. Air Force Cryptologic Support Center: Identifies and programs C4 system security require-
+   ments to ensure C&I of C4 systems, with the support of the operating commands and acquisition
+   activities.
+   3.6. Air National Guard and United States Air Force Reserve:
+       • Identify and solve C4 system C&I issues through their gaining MAJCOMs.
+       • Work reserve issues through HQ Air Force Reserves.
+
+4. Managing Acquisition.
+   4.1. Acquisition Activities:
+       • Follow the guidance in DoDI 5000.2 and the Air Force supplement; AFI 33-103, Require-
+          ments Development and Processing (formerly AFR 700-3); and AFI 33-104, Base Level Plan-
+          ning and Implementation (formerly AFR 700-4, Volumes 1 and 2) to promote C4 systems
+          C&I throughout the life cycle of each system by identifying requirements and testing interop-
+          erability.
+       • Ensure that C4, C4I, and AIS systems acquired following DoDD 5000.1 are certified by
+          DISA/JITC (JTC3A [JIEO] Circular 9002).
+
+                                               5
+      •   Inform operating commands of incompatibilities and scheduled corrective actions.
+      •   Provide C&I throughout the life-cycle of each centrally managed C4I system using configura-
+          tion management procedures (DoDI 5000.2/AF Sup 1).
+      •   Inform HQ USAF/SC of test schedules for programmed (FYIAP) C4 systems.
+      •   Use C4 architectures and standards to design or modify C4 systems.
+
+5. Managing Other Activities.
+   5.1. All Air Force Activities, Planners, and Managers that Procure, Plan, or Operate C4I Sys-
+   tems:
+      5.1.1. Ensure existing and planned C4I systems conform to DoD and Joint Staff C4I interopera-
+      bility guidelines by:
+           • Verifying system conformance using Joint Staff and other services' planning and require-
+              ments documents.
+          •   Coordinating with the Joint Staff and lead service to integrate Air Force requirements if
+              another service's existing or planned system will satisfy Air Force needs.
+          •   Working with other services, MCEB, and JITC to develop or modify programs to include
+              joint compatibility, interoperability, flexibility, and integration according to DoDD
+              4630.5, DoDI 4630.8, CJCSI 6212.01, JTC3A (JIEO) Circular 9002, and AFPD 10-6,
+              Mission Needs and Operational Requirements (formerly AFR 57-1).
+      5.1.2. Ensure that C4 systems embedded within weapon systems and stand-alone C4 systems
+      receive the same considerations.
+      5.1.3. Implement joint standards and configuration management procedures.
+      5.1.4. Coordinate recommended changes to existing standards and requirements for new stan-
+      dards through MAJCOM headquarters to HQ AFC4A/TNAB. Coordinate follow-up actions with
+      the appropriate standardization and interoperability organizations.
+      5.1.5. Comply with international or alliance standardization and interoperability agreements per
+      AFI 60-103, International Military Standardization Programs(formerly AFR 73-6) for Air Force
+      C4 programs/systems supporting Allied operations.
+      5.1.6. Evaluate all C4 systems throughout their program life cycle (to include system develop-
+      ment and, or modification phases).
+      5.1.7. For developmental and C4I AIS systems acquisitions:
+          • Identify C&I and logistical support requirements in mission area plans (MAP), functional
+             area plans (FAP), MNSs, ORDs, program management directives, systems engineering
+             master plans, and TEMPs, when appropriate, and coordinate these documents through
+             appropriate channels.
+          •   Identify and schedule technical feasibility, functionality, and operational testing.
+          •   Schedule testing for procedural interface certification with the AF PTU and a technical
+              interface assessment with AFC4A, if needed.
+          •   Verify interoperability by testing, and get JITC certification before making a purchase
+              decision (Milestone III decision).
+
+                                              6
+5.1.8. For commercial off-the-shelf C&I systems procurements:
+    • Identify C&I and logistics support requirements during the requirements definition phase.
+       Address these requirements during the solution development and implementation phases.
+    • Verify C&I before deciding to purchase.
+5.1.9. Request service from the Air Force interoperability facility by sending a message request to
+HQ AFC4A/TNA, Scott AFB IL or mailing to HQ AFC4A/TNA, 301 Pierce St., Room 301, Scott
+AFB IL 62225-5421. HQ AFC4A will contact the requester and evaluate the proposed tasking.
+
+
+
+
+                                  CARL G. O'BERRY, Lt General, USAF
+                                  DCS/Command, Control, Communications, and Computers
+
+
+
+
+                                         7
+                                           Attachment 1
+
+       GLOSSARY OF REFERENCES, ABBREVIATIONS, ACRONYMS, AND TERMS
+
+References
+DoD Directive 3222.3/AF Supplement 1, AF Electromagnetic Compatibility Program (EMCP)
+DoD Directive 4630.5, Compatibility, Interoperability, and Integration of Command, Control, Communi-
+cations, and Intelligence (C3I) Systems, November 12, 1992
+DoD Directive 5000.1, Defense Acquisition, February 23, 1991
+DoD Directive 8120.1, Life-Cycle Management (LCM) of Automated Information Systems (AISs), Janu-
+ary 14, 1993
+DoD Instruction 4630.8, Procedures for Compatibility, Interoperability, and Integration of Command,
+Control, Communications, and Intelligence (C3I) Systems, November 18, 1992
+DoD Instruction 5000.2/AF SUP 1, Defense Acquisition Management Policies and Procedures, February
+23, 1991, with Change 1
+Joint Pub 1-02, Department of Defense Dictionary of Military and Associated Terms
+CJCSI 6212.01, Compatibility, Interoperability, and Integration of Command, Control, Communications,
+Computers and Intelligence (C4I) Systems, 30 July 1993.
+JTC3A (JIEO) Circular 3101, Tactical C3I Interoperability Improvement Program
+JTC3A (JIEO) Circular 9000, Tactical C3I Configuration Management
+JTC3A (JIEO) Circular 9001, Tactical C3I Configuration Management Documents List
+JTC3A (JIEO) Circular 9002, Requirements Assessment and Interoperability Certification of C4 Informa-
+tion and Automated Information Systems and Equipment
+JTC3A (JIEO) Circular 9005, Preparation of Technical Interface Specifications
+MCEB PUB 1, MCEB Organization, Mission, and Functions Manual
+MCEB PUB 2, MCEB Administrative Procedures Manual
+AFDD 100, Air Force Glossary of Standard Terms (formerly AFM 11-1)
+AFPD 10-6, Mission Needs and Operational Requirements (formerly AFR 57-1)
+AFPD 33-1, Command, Control, Communications, and Computer (C4) Systems
+AFPD 63-1, Acquisition System
+AFPD 99-1, Test and Evaluation Process
+AFI 10-601, Mission Needs and Operational Requirements Guidance and Procedures (formerly AFR
+57-1)
+AFI 33-102, C4I Capabilities Planning Process (formerly AFR 700-2)
+AFI 33-103, Requirements Development and Processing (formerly AFR 700-3)
+AFI 33-104, Base Level Planning and Implementation (formerly AFR 700-4, Volumes 1 and 2)
+
+                                              8
+AFI 33-112, Automatic Data Processing Equipment (ADPE) Management (formerly AFRs 700-6 and
+700-26)
+AFI 60-103, International Military Standardization Programs (formerly AFR 73-6)
+AFI 62-201, Systems Survivability (formerly AFR 80-38)
+AFI 99-101, Developmental Test and Evaluation (formerly AFRs 80-14 and 80-19)
+AFI 99-102, Operational Test and Evaluation (formerly AFRs 55-43 and 80-14)
+AFI 99-103, The Air Force Test and Evaluation Process
+AFMAN 99-111, Command, Control, Communications, Computers, and Intelligence Test and Evaluation
+Process
+
+Abbreviations and Acronyms
+ACC—Air Combat Command
+AFC4A —Air Force Command, Control, Communications, and Computer Agency
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFOTEC—Air Force Operational Test and Evaluation Center
+AFPD—Air Force Policy Directive
+AF PTU—Air Force Participating Test Unit
+AFR—Air Force Regulation
+AIA—Air Intelligence Agency
+AIS—Automated Information System
+C&I—Compatibility and Interoperability
+CJCSI—Chairman, Joint Chiefs of Staff Instruction
+COTS—Commercial-Off-The-Shelf
+C3I—Command, Control, Communications, and Intelligence
+C4—Command, Control, Communications, and Computer
+C4I —Command, Control, Communications, Computer, and Intelligence
+C4I ISG—Command, Control, Communications, Computer and Intelligence Interoperability Steering
+Group
+DISA—Defense Information Systems Agency
+DoD—Department of Defense
+DoDD—Department of Defense Directive
+DoDI—Department of Defense Instruction
+DT&E—Developmental Test and Evaluation
+
+                                             9
+EMC—Electromagnetic Compatibility
+FAP—Functional Area Plan
+FOA—Field Operating Agency
+FYIAP—Five-Year Interoperability Assurance Plan
+IIP—Interoperability Improvement Program
+ITP—Interoperability Test Panel
+JCS—Joint Chiefs of Staff
+JIEO—Joint Interoperability Engineering Organization
+JINTACCS —Joint Interoperability of Tactical Command and Control Systems
+JITC—Joint Interoperability Test Center
+JTC3A —Joint Tactical Command, Control, and Communications Agency
+MAJCOM—Major Command
+MAP—Mission Area Plan
+MCEB—Military Communications-Electronics Board
+MTF—Message Text Format
+MNS—Mission Need Statement
+ORD—Operational Requirements Document
+OSD—Office of the Secretary of Defense
+OT&E—Operational Test and Evaluation
+TADIL—Tactical Digital Information Link
+TEMP—Test and Evaluation Master Plan
+
+Terms
+C4 Systems—Integrated systems of doctrine, procedures, organizational structures, personnel,
+equipment, facilities, and communications designed to support a commander’s exercise of command and
+control through all phases of the operational continuum. C4 systems include base visual information
+support systems. (Joint Pub 1-02, Department of Defense Dictionary of Military and Associated Terms)
+Compatibility—Capability of two or more items or components of equipment or material to exist or
+function in the same system or environment without mutual interference. (Joint Pub 1-02)
+Configuration Management—A discipline applying technical and administrative direction and
+surveillance to: (a) identify and document the functional and physical characteristics of a system, (b) to
+control changes of those characteristics and, (c) record and report changes to processing and
+implementation status.
+Electromagnetic Compatibility (EMC)—The ability of systems, equipment, and devices that utilize the
+electromagnetic spectrum to operate in their intended operational environments without suffering
+unacceptable degradation or causing unintentional degradation because of electromagnetic radiation or
+
+                                               10
+response. It involves the application of sound electromagnetic spectrum management; system. equipment,
+and device design configuration that ensures interference-free operation; and clear concepts and doctrines
+that maximize operational effectiveness. Also called EMC. See also electromagnetic spectrum; electronic
+warfare; spectrum management.
+Five-Year Interoperability Assurance Plan (FYIAP)—A Joint Chiefs of Staff (JCS) program
+managed by Joint Interoperability Test Center (JITC) that documents requirements for interoperability
+certification, recertification, requalification, and revalidation testing. The FYIAP, published annually in
+January, establishes the C4 interoperability testing and certification program:
+    • FYIAP preparation is tied to the planning, programming, and budgeting system cycle.
+    • DoD components identify requirements for testing.
+    • JITC consolidates and sends the requirements to the JCS for validation approval.
+    • The FYIAP identifies the resources required to support testing during the acquisition process and
+        thereafter, as needed.
+Flexibility—Modular C4I packages consisting of hardware, software, and data base modules and
+appliqués for transportable and fixed use.
+Functional Area Plan (FAP)—A Functional Area Plan outlines an investment strategy that influences
+the programming, requirements, laboratory, and independent research and development processes to
+support a specific functional area or necessary subset.
+Interface—1. A boundary or point common to two or more similar or dissimilar communications
+systems, subsystems, or other entities against which or at which necessary information flow takes place.
+2. A boundary or point common to two or more systems or other entities across which useful information
+exchange takes place. 3. A concept involving the definition of the interconnection between two systems
+or items of equipment. The definition includes type, quantity, and function of the interconnecting circuits
+and the type and form of signals to be interchanged via those circuits. Mechanical details of plugs,
+sockets, pin numbers, etc., may be included within the context of the definition. 4. The process of
+interrelating two or more dissimilar circuits or systems. 5. A connecting link between two or more
+systems. In the OSI reference model, it is the boundary between adjacent layers.
+Interference—The effect of unwanted energy due to one or a combination of emissions, radiations, or
+inductions on reception in a radio communications system, manifested by any loss of information which
+could be extracted in the absence of such unwanted energy.
+Interoperability—1. The ability of systems, units, or forces to provide services to and accept services
+from other systems, units, or forces and to use the services so exchanged to enable them to operate
+effectively together. 2. The condition achieved among communications-electronics equipment when
+information or services can be exchanged directly and satisfactorily between them and/or their uses. The
+degree of interoperability should be defined when referring to specific cases. (Joint Pub 1-02)
+C4I Interoperability Improvement Program (IIP)—A            panel       under       the      Military
+Communications-Electronics Board (MCEB). Panel promotes, enhances, and maintains compatibility and
+interoperability of C4I systems (to include interface between tactical and strategic C4I systems as
+appropriate) to meet mission-essential needs of the operational commanders. The panel seeks to
+accomplish these goals by identification and resolution of critical C4I interoperability issues brought
+forward by the participants. The panel consists of one member and alternate from each Joint Command/
+Service/Agency represented on the MCEB. The Joint Staff (J6I) will chair the panel. The Joint
+
+                                                11
+Interoperability Engineering Organization (JIEO) acts as executive agent for the panel.
+C4I Interoperability Test Panel (ITP)—A panel under the Military Communications-Electronics
+Board (MCEB). Panel reviews, develops, recommends, and coordinates studies, reports, and DoD
+positions for MCEB consideration in the areas of interoperability testing for all DoD information
+exchange systems destined for combined use. The panel consists of one member and alternate from each
+Service/Agency represented on the MCEB. Panel members are responsible for processing actions within
+their respective mission areas of expertise.
+Mission Area Plan (MAP)—A Mission Area Plan outlines an investment strategy that influences the
+programming, requirements, laboratory, and independent research and development processes to support
+a specific mission area or necessary subset.
+Mission Need Statement (MNS)—A document, prepared by the respective using command or HQ
+USAF, that identifies an operational deficiency that can’t be satisfied through changes in tactics,
+strategies, doctrine, or training. A correction of the deficiency normally entails research and development,
+production, and procurement of a new system or modification of an existing system. (AFPD 10-6 and AFI
+10-601)
+Operational Testing—
+Procedural Interface Standards—Specifications for exchanging information across an interface. The
+standards define format, language, syntax, vocabulary and interface operating procedures. Information
+exchanged among C4 systems using a TADIL, MTF, and other combat data links.
+Requirements Document—As used in this instruction, a requirements document is normally one of the
+following:
+    • An MNS.
+    • An ORD.
+    • A joint-service operational requirement.
+    • An outline North American Treaty Organization (NATO) staff target document as discussed in
+       AFPD 10-6 or AFI 10-601. (A C4 requirement covered by AFI 33-103.)
+Technical Interface—The functional, electrical, and physical characteristics necessary for exchanging
+information across an interface between different C4I systems or equipment. Includes technical interface
+standards.
+Technical Interface Standard—Specifications for functional, electrical, and physical characteristics
+necessary for exchanging information across an interface between different tactical C4 systems or
+equipment.
+
+
+
+
+                                                12
+                                               Attachment 2
+
+COMMAND, CONTROL, COMMUNICATIONS, COMPUTERS, AND INTELLIGENCE (C4I)
+                INTEROPERABILITY STEERING GROUP
+
+                                   ORGANIZATIONAL CHARTER
+
+                                                March 1994
+1. PURPOSE: This charter formally establishes the Air Force C4I Interoperability Steering Group. The
+Steering Group is assigned the following specific duties and responsibilities:
+    a. Providing a forum for the coordination of member agencies’ views on interoperability testing issues
+to facilitate staffing of Air Force positions.
+    b. Clarifying, coordinating, and publicizing Air Force C4I systems testing missions among the mem-
+ber agencies.
+   c. Serving as technical consultant to aid in establishing funding priorities for existing and new C4I test
+facilities requirements and advocating sharing of C4I testing capabilities.
+
+2. AUTHORITY:
+   a. HQ AFCC/DOV Message, 121400Z Jan 90, AFCC Testbeds.
+   b. AFCC Testbeds Meeting, 7 Feb 90, at 1842d Electronics Engineering Group.
+   c. Department of Defense Directive (DODD) 4630.5, 12 Nov 92, Compatibility, Interoperability, and
+Integration of Command, Control, Communications, and Intelligence (C3I) Systems.
+    d. Department of Defense Instruction (DODI) 4630.8, 18 Nov 92, Procedures for Compatibility,
+Interoperability, and Integration of Command, Control, Communications, and Intelligence (C3I) Sys-
+tems.
+    e. Chairman of the Joint Chiefs of Staff Instruction (CJCSI) 6212.01, 30 Jul 93, Compatibility,
+Interoperability and Integration of Command, Control, Communications, Computers, and Intelligence
+Systems.
+
+3. OBJECTIVES:
+   a. Develop an operational concept for coordinating resource sharing among all Air Force C4I interop-
+erability testbeds.
+   b. Promote effective and efficient use of C4I interoperability test resources.
+   c. Create an Air Force C4I interoperability testing environment (excluding DT&E and OT&E) which
+supports interoperability policy, procedures, and certification.
+    d. Assist the Air Staff in developing corporate Air Force positions on C4I interoperability testing
+issues.
+
+4. DEFINITIONS:
+
+                                                 13
+   a. Steering Group: An action group, composed of designees from concerned activities within the Air
+Force, tasked with developing strategy to implement the objectives stated in paragraph 3.
+   b. Executive Member: Organization within the Air Force which has a C4I interoperability testing
+mission.
+  c. POC Working Group: A working-level action group, established by the Steering Group to take pri-
+mary responsibility for a project.
+    d. Lead Activity: The organization recommended by the Steering Group to take primary responsibil-
+ity for a project.
+    e. Participating Activity: An organization represented on the Steering Group in an advisory capacity
+on issues pertaining to the participating organization.
+   f. Host Activity: The organization tasked to host a scheduled Steering Group meeting.
+   g. Chairman: HQ USAF/SC. The organization that officially endorses the Steering Group, provides
+representation on the Steering Group, and oversees the Steering Group’s operations.
+   h. Executive Agent for HQ USAF/SC: Air Force C4 Agency (AFC4A). The organization tasked to
+operate and maintain the Steering Group. This includes management and administrative tasks.
+
+5. RELATIONSHIP: The relationship among executive members and participating activities is equal on
+matters of policy implementation recommended by the Steering Group.
+
+6. RESPONSIBILITIES AND PROCEDURES:
+    a. The Air Force C4I Interoperability Steering Group is established with executive representation
+(executive members) from the following organizations:
+   (1) HQ USAF Deputy Chief of Staff, Plans and Operations (USAF/XO).
+   (2) Office of the Assistant Secretary of the Air Force, Acquisition (SAF/AQ).
+   (3) HQ USAF Assistant Chief of Staff, Intelligence (USAF/IN).
+   (4) HQ USAF Directorate of Test and Evaluation (USAF/TE).
+   (5) Air Combat Command (ACC).
+   (6) Air Mobility Command (AMC).
+   (7) Air Force Space Command (AFSPC).
+   (8) Air Force Special Operations Command (AFSOC).
+   (9) Air Force Materiel Command (AFMC).
+   (10) Air Force C4 Agency (AFC4A).
+   (11) Air Force Operational Test and Evaluation Center (AFOTEC).
+   (12) Air Intelligence Agency (AIA).
+   (13) Electronic Systems Center (ESC).
+   (14) Air Force Information Warfare Center (AFIWC).
+
+                                               14
+   (15) 1912th Computer Systems Group (1912 CSG).
+   (16) Standard Systems Center (SSC).
+   (17) Communications Systems Center (CSC).
+   b. The Steering Group will be chaired by HQ USAF/SC or his designee.
+   c. The Steering Group is responsible for:
+   (1) Developing an AF C4I interoperability testing environment (excluding DT&E and OT&E).
+    (2) Recommending C4I interoperability testing tasks (excluding DT&E and OT&E) to responsible
+lead activities.
+    (3) Reviewing C4I interoperability test facilities capabilities and utilization to avoid undue duplica-
+tion of efforts and the wasting of critical resources.
+   (4) Advocating and defending requests for existing and new C4I test facility funds.
+   (5) Identifying needs and long-range plans for Air Force C4I interoperability testing facilities.
+   (6) Identifying new technologies and standards that could impact C4I interoperability testing.
+   (7) Identifying new test objectives, as appropriate, to integrate existing and future C4I systems as
+specified by Air Force architectures.
+   (8) Coordinating Air Force position on C4I interoperability test issues with the Joint Interoperability
+Test Center and the Department of Defense (excluding DT&E and OT&E).
+    (9) Resolve schedule conflicts for planned Air Force and Joint Service C4I interoperability testing
+projects (excluding DT&E and OT&E) with the Joint Interoperability Test Center and the Department of
+Defense.
+
+
+
+   (10) Coordinating the interchange of completed or planned testing information within the Air Force
+C4I test community.
+7. GENERAL:
+   a. The Steering Group will meet at least triannually (once every four months), or as mutually agreed.
+A special meeting may be called by the Chairman at any time.
+   b. Each executive member will assign an organizational POC to serve on POC working groups as
+required.
+   c. The Executive Agent will prepare the agenda with inputs from all Steering Group members.
+    d. Formal minutes will be prepared and distributed by the Executive Agent. Action items recorded in
+the minutes will be staffed by the members of the Steering Group through their respective activities as
+required.
+
+8. EFFECTIVE DATE AND REVIEW: Terms of this charter will become effective upon signature of
+the HQ USAF/SC and will remain in effect until rescinded or changed by mutual consent, provided such
+
+
+                                                15
+changes are accomplished as written amendments hereto. Provisions of this charter will be reviewed
+annually, 60 days prior to the anniversary of signature.
+
+
+
+
+Sponsor:
+
+
+
+_______________________________________            DATE: 4 Mar 94
+CARL G. O’BERRY, Lt General, USAF
+DCS/Command, Control, Communications, and Computers
+Heaquarters United States Air Force
+
+
+
+
+                                              16

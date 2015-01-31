@@ -1,0 +1,1842 @@
+BY ORDER OF THE COMMANDER                          AIR FORCE ISR AGENCY INSTRUCTION
+AIR FORCE INTELLIGENCE                                                        14-122
+SURVEILLANCE AND
+RECONNAISSANCE AGENCY                                                          31 AUGUST 2010
+
+                                                                                      Intelligence
+
+                                                        AIRBORNE SYNTHETIC APERTURE
+                                                        RADAR (SAR) IMAGERY ARTIFACTS
+                                                                  RESOLUTION PROCESS
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-Publishing.af.mil for downloading or ordering.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: AFISRA/A3O                                                         Certified by: AFISRA/A3
+                                                                         (Col Joseph T. Dinuovo)
+                                                                                        Pages: 61
+
+
+This instruction implements Air Force Policy Directive (AFPD) 14-1, Air Force Intelligence
+Planning and Operations dated 2 April 2004. This instruction defines and establishes a
+formalized and standardized process for the resolution of artifacts affecting the quality and
+exploitability of all Air Force Airborne Synthetic Aperture Radar (SAR) imagery products
+collected and processed through the AF Distributed Common Ground System (DCGS)
+enterprise, and sets policy and guidance concerning its implementation and incorporation into
+existing quality assurance processes implemented for those products. It also establishes the roles
+and responsibilities required of all units and organizations subordinate to Air Force Intelligence,
+Surveillance and Reconnaissance Agency (AFISRA) that are necessary to implement, execute,
+and support this process. This instruction is applicable to all AFISRA units and personnel
+responsible for the Quality Assurance (QA) of Airborne SAR imagery products and any of its
+subordinate units and personnel assigned to or supporting the DCGS enterprise to include
+AFISRA-gained Air National Guard (ANG) and AF Reserve Command (AFRC) units. This
+instruction is applicable to all units and personnel at or subordinate to the 480th Intelligence,
+Surveillance and Reconnaissance Wing (ISRW) assigned to perform Imagery
+Intelligence/Geospatial       Intelligence/Measurements         and       Signals      Intelligence
+(IMINT/GEOINT/MASINT) exploitation of Airborne SAR imagery products obtained from the
+DCGS enterprise, and to the National Air and Space Intelligence Center (NASIC). Since this
+instruction provides only general guidance, supplemental guidance is required to be published
+and maintained by all units affected by this instruction IAW publishing requirements outlined in
+AFI 33-360, Publications and Forms Management. You must forward one copy of your
+publication to the AFISRA OPR. Refer recommended changes and questions about this
+ 2                                                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+publication to the Office of Primary Responsibility (OPR) using the AF Form 847,
+Recommendation for Change of Publication; route AF Forms 847 from the field through the
+appropriate functional’s chain of command. Ensure that all records created as a result of
+processes prescribed in this publication are maintained in accordance with Air Force Manual
+(AFMAN) 33-363, Management of Records, and disposed of in accordance with Air Force
+Records Information Management System (AFRIMS) Records Disposition Schedule (RDS)
+located at https://www.my.af.mil/gcss-af61a/afrims/afrims/. Contact supporting records
+managers as requi
+
+ed.
+
+
+       1.     Purpose. ..................................................................................................................    3
+       2.     Background. ...........................................................................................................        3
+       3.     Objectives. .............................................................................................................      4
+       4.     Expected Results. ...................................................................................................          4
+       5.     Responsibilities. .....................................................................................................        5
+       6.     Airborne SAR Artifacts Resolution Process. .........................................................                           7
+Figure 6.1.   Airborne SAR Process Internal and External Interfaces. .......................................                                12
+Figure 6.2.   Airborne SAR Artifacts Reporting Process. ..........................................................                          16
+Figure 6.3.   Airborne SAR Artifacts Resolution & Mitigation Process. ...................................                                   20
+       7.     Airborne SAR Artifacts Reporting Procedures. .....................................................                            24
+Figure 7.1.   Airborne SAR Artifacts Reporting Procedure. ......................................................                            26
+Figure 7.2.   Exploitation Mitigation (Detected) Procedure. ......................................................                          27
+Figure 7.3.   Artifact Identification (Detected) Procedure. .........................................................                       28
+Figure 7.4.   Local Artifact Resolution (Detected) Procedure. ...................................................                           29
+Figure 7.5.   Exploitation Mitigation (Complex) Procedure. .....................................................                            30
+Figure 7.6.   Artifact Identification (Complex) Procedure. ........................................................                         31
+Figure 7.7.   Local Artifact Resolution (Complex) Procedure. ..................................................                             32
+       8.     Airborne SAR Artifacts Resolution & Mitigation Procedures. .............................                                      32
+Figure 8.1.   Airborne SAR Artifacts Resolution and Mitigation Procedure. ............................                                      34
+Figure 8.2.   Artifact Causality Analysis Procedure. ..................................................................                     35
+Figure 8.3.   Artifact Root Cause Analysis Procedure. ..............................................................                        36
+Figure 8.4.   Artifact Data Trend Analysis Procedure. ...............................................................                       37
+       9.     Airborne SAR Process Reports and Messages. .....................................................                              37
+Figure 9.1.   Artifact Occurrence Report Template. ...................................................................                      38
+AFISRAI 14-122 31 AUGUST 2010                                                                                                          3
+
+
+Figure 9.2.    Artifact Occurrence Report Instructions. ...............................................................                39
+Figure 9.3.    Artifact Resolution Report Template. ....................................................................               40
+Figure 9.4.    Artifact Resolution Report Instructions. ................................................................               41
+Figure 9.5.    Artifact RFI Message Template. ............................................................................             42
+Figure 9.6.    Artifact RFI Message Instructions. ........................................................................             43
+       10.     Airborne SAR Process Analysis Data Worksheets. ...............................................                          43
+Figure 10.1.   Collection Data Worksheet. ...................................................................................          44
+Figure 10.2.   Target Data Worksheet. .........................................................................................        44
+Figure 10.3.   Mission Data Worksheet. .......................................................................................         44
+Figure 10.4.   ELINT Data Worksheet. ........................................................................................          44
+Figure 10.5.   Sensor Configuration Data Worksheet. .................................................................                  45
+       11.     Airborne SAR Process Subject Matter Experts (SME) List. .................................                               45
+Table 11.1.    Airborne SAR Artifact Process Subject Matter Experts (SME) List. ....................                                   45
+       12.     Adopted Form: .......................................................................................................   46
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                         47
+
+Attachment 2—SAR PHENOMENOLOGY AND CAUSALITY OF ARTIFACTS                                                                              49
+
+
+1. Purpose. The purpose of this instruction is to define and establish a process for the resolution
+of artifacts and anomalies affecting the quality and exploitability of all Air Force Airborne SAR
+imagery products collected and processed through the AF DCGS enterprise, and to set policy and
+guidance concerning its implementation and incorporation into existing image quality assurance
+and exploitation processes implemented for those products. For the purposes of this instruction,
+this process shall be referred to as the Airborne SAR Artifacts Resolution Process.
+2. Background. The exploitability of any IMINT image product is generally governed by its
+overall Image Quality (IQ). The IQ associated with Airborne SAR IMINT/GEOINT/MASINT
+products is generally governed by their artifact content. The regular and repeated appearance of
+artifacts within current AF Airborne SAR imagery products hampers or prohibits Image Analysts
+from performing exploitation by degrading and/or masking the intelligence content available
+within those products. As a result, the presence of artifacts within SAR imagery products
+impedes the satisfaction of the intelligence requirements on which their exploitation depends and
+hinders overall mission accomplishment. Current efforts within the Air Force focus on
+attempting to control the IQ associated with Airborne SAR imagery products strictly from a
+sensor perspective—ensuring the health, status, and performance of the sensor architecture.
+Such efforts manage Airborne SAR IQ by taking a classic sample-and-evaluate Quality
+Assurance (QA) approach—sampling image products on a time interval basis, analyzing and
+assigning qualitative and quantitative metrics, and utilizing those metrics to assess long-term
+trends in the degradation of sensor architecture performance as well as evaluate the performance
+of maintenance processes executed on the sensor architecture in the field. While this approach
+may be suitable for managing IQ from the sensor architecture perspective, it does not address
+ 4                                                           AFISRAI 14-122 31 AUGUST 2010
+
+
+degradations in IQ resulting from sources or causes other than the sensor architecture
+performance, nor is it effective for identifying issues in sensor architecture performance that are
+of an intermittent or causal nature that do not happen to get sampled with that QA approach.
+Artifacts affecting SAR IQ can also be present due to numerous other causes, but in particular
+are due to irregularities in the motion or attitude of the airborne platform during collection, use
+of extreme or out-of-tolerance collection geometries, and occurrences of intentional or
+unintentional EMI events in the environment during collection. However, it is possible for a
+number of these particular artifacts to be mitigated, compensated, or eliminated through
+corrective or mitigating action, provided that these artifacts can be identified and attributed to
+their particular causality. This can only be accomplished through a process of artifact resolution.
+3. Objectives. The overall objective of the Airborne SAR Process is NOT to attempt to resolve
+all the artifacts that can possibly occur within AF Airborne SAR imagery products, but to
+improve the overall IQ and resultant exploitability of SAR imagery products through reduction
+of only those artifacts that are able to be resolved to causalities that are within Air Force ability
+to eliminate, compensate, or mitigate. To this end, the specific objectives of this process are to
+identify those artifacts that can be attributed to causalities in which specific courses of action
+may be taken to: (1) avoid the causal conditions associated with, (2) initiate a process of
+mitigation that results in compensation for, or (3) initiate a process of correction that results in
+elimination of their occurrence from future SAR imagery product collections. As such, the
+specific artifact causalities of interest to this process are those due to: (1) deficiencies in sensor
+collection processes, (2) effects of intentional or unintentional EMI, or (3) those intermittent or
+selectively causal anomalies in sensor architecture, to include anomalies that are detected
+through current existing sensor architecture sample-and-evaluate QA processes and are deemed
+necessary to report and investigate.
+4. Expected Results. As a result of implementation of this instruction, it is expected that
+incorporation of this Airborne SAR Process into existing image quality assurance and
+exploitation processes for Air Force Airborne SAR imagery products will:
+     4.1. Facilitate a comprehensive Quality Management approach to controlling image quality
+     that complements and expands constrained areas of the current sensor architecture Quality
+     Assurance approaches.
+     4.2. Provide a vehicle for incorporating advanced exploitation techniques to mitigate
+     artifact-affected image products (when possible) to enable product exploitation without re-
+     tasking and re-collection.
+     4.3. Use advanced exploitation techniques to develop advanced signatures of artifacts
+     characteristic of prior resolved EMI and sensor architecture anomalies that will enable image
+     analysts to readily identify and report occurrence of such events for immediate action.
+     4.4. Facilitate identification and resolution of artifacts attributable to specific sensor
+     architecture operational limitations not evident to sensor collection planners that cause or
+     contribute to artifact occurrence so that such limitations and operational practices may be
+     avoided, thus reducing artifact occurrence.
+     4.5. Enable identification and resolution of artifacts due to causalities resulting from
+     unintentional practices in existing TCPED and/or CM processes and the subsequent
+     correction of those practices.
+AFISRAI 14-122 31 AUGUST 2010                                                                     5
+
+
+   4.6. Augment sensor anomaly resolution processes by performing causality analyses to
+   eliminate likelihood of EMI and other causalities which always have to be done in order to
+   rule out external causes.
+   4.7. Provide a conduit for the identification and migration of tools and techniques developed
+   and used in the NTM community to facilitate better product exploitation and artifact
+   mitigation from affected products.
+   4.8. Enable identification of intermittent and causal sensor architecture anomalies that are
+   not reliably identified by current sensor architecture quality assurance processes.
+   4.9. Incorporate the collection of detailed metrics that enable analysis and evaluation of the
+   impacts that integration of this process has on overall image quality and reduction of artifacts
+   in products.
+   4.10. The enclosed attachments encompassing the Airborne SAR Artifact Recognition and
+   Reporting procedures and processes are intended to provide the minimum standards and form
+   the baselines for unit specific operating instructions and checklists. They may be refined and
+   modified based on real-world mission execution results to improve process efficiency and
+   mission effectiveness.
+5. Responsibilities.
+   5.1. AFISRA/A3 will:
+       5.1.1. Maintain overall responsibility for AFISRA subordinate unit implementation of
+       this instruction by providing policy and guidance.
+       5.1.2. Appoint a lead office (OPR) for oversight and management of the implementation
+       of this instruction (AFISRA/A3O).
+       5.1.3. Approve instruction revisions and updates as required.
+   5.2. AFISRA/A3O will:
+       5.2.1. Provide oversight and guidance for integration of the Airborne SAR Artifacts
+       Resolution Process into existing image quality assurance processes at the
+       Wing/Center/Group/unit level.
+       5.2.2. Coordinate participation by all associated image quality assurance process entities
+       at the Wing/Center/Group/unit level in any forum to create, update, or amend HQ USAF
+       operational or intelligence policy or doctrine as a result of executing the processes of this
+       instruction; such as Air Force Instructions or Tactics, Techniques and Procedures.
+       5.2.3. Review Wing/Center supplemental publications to verify compliance with this
+       instruction. Publications should be received no later than 30 days after date of publication
+       or revision.
+       5.2.4. Initiate, coordinate, and conduct headquarters staff actions to organize, man, and
+       train forces as necessary to execute the processes of this instruction.
+       5.2.5. Coordinate on Memorandums of Agreement, Memorandums of Understanding,
+       and other support agreements between all associated image quality assurance process
+       entities at the Wing/Center/Group/unit level and the external organizations necessary to
+       execute the processes of this instruction.
+6                                                         AFISRAI 14-122 31 AUGUST 2010
+
+
+       5.2.6. Review this instruction annually and revise/update as required.
+    5.3. 480 ISRW will:
+       5.3.1. Establish a Wing OPR to work with the AFISRA OPR. Provide name and contact
+       information to the AFISRA OPR and update as needed.
+       5.3.2. Apprise the AFISRA OPR of all issues requiring AFISRA attention. The AFISRA
+       OPR is the AFISRA entry point for all issues pertaining to the implementation and
+       execution of this instruction to ensure that all issues are addressed and resolved.
+       5.3.3. Identify, develop, and consolidate requirements for manpower, systems, facilities,
+       and resources to implement and execute the processes of this instruction and forward to
+       the AFISRA OPR.
+       5.3.4. Publish and maintain supplemental policy and guidance for the implementation
+       and execution of this instruction for subordinate units consistent with AFISRA policy and
+       guidance. Forward a copy of all supplemental publications to the AFISRA OPR no later
+       than 30 days from date of publication and/or revision.
+       5.3.5. Review Wing supplemental publications policy and guidance annually, and
+       revise/update as required.
+       5.3.6. Ensure subordinate units publish and maintain local supplemental publications as
+       required for implementation and execution of this instruction. Forward a copy of all local
+       publications to the AFISRA OPR no later than 30 days from date of publication and/or
+       revision.
+       5.3.7. Review subordinate unit local publications annually and direct revisions as
+       required.
+       5.3.8. Develop and coordinate support agreements with relevant associated image quality
+       assurance process entities at the Wing, Group and Unit level, and the Direct Liaison
+       Authorized (DIRLAUTH) to external organizations necessary to execute the processes of
+       this instruction.
+       5.3.9. Identify, develop, and consolidate requirements for training necessary to
+       implement and execute this instruction and forward to the AFISRA OPR.
+       5.3.10. Develop training specific to mission support requirements and ensure required
+       personnel are fully trained to execute the processes of this instruction.
+       5.3.11. Implement a training program to ensure forces are capable of executing the
+       processes of this instruction.
+       5.3.12. Monitor the effectiveness of the 480 ISRW quality assurance processes executed
+       from this instruction and provide feedback to the AFISRA/A3O.
+       5.3.13. Review this instruction annually and recommend revisions as required.
+    5.4. NASIC will:
+       5.4.1. Establish a Center OPR to work with the AFISRA OPR. Provide name and contact
+       information to the AFISRA OPR and update as needed.
+AFISRAI 14-122 31 AUGUST 2010                                                                    7
+
+
+      5.4.2. Apprise the AFISRA OPR of all issues requiring AFISRA attention. The AFISRA
+      OPR is the AFISRA entry point for all issues pertaining to the implementation and
+      execution of this instruction to ensure that all issues are addressed and resolved.
+      5.4.3. Publish and maintain supplemental policy and guidance, for the implementation
+      and execution of this instruction for subordinate units consistent with AFISRA policy and
+      guidance. Forward a copy of all supplemental publications to the AFISRA OPR no later
+      than 30 days from date of publication and/or revision.
+      5.4.4. Develop and coordinate agreements for analytical support with the Direct Liaison
+      Authorized (DIRLAUTH) to external organizations necessary to execute the processes of
+      this instruction.
+      5.4.5. Monitor the effectiveness of the NASIC quality assurance processes executed
+      from this instruction and provide feedback to the AFISRA/A3O.
+      5.4.6. Provide analytical support to any image quality assurance process entities’
+      executing the processes of this instruction in regards to identification and analysis of
+      artifacts within Airborne SAR imagery products.
+      5.4.7. Review this instruction annually and recommend revisions as required.
+      5.4.8. Identify, develop, and consolidate requirements for manpower, systems, facilities,
+      and resources to implement and execute the processes of this instruction and forward to
+      the AFISRA OPR.
+6. Airborne SAR Artifacts Resolution Process.
+   6.1. Introduction. This section begins with a background statement discussing the current
+   QA processes that are presently in place for Airborne SAR imagery sensors and why these
+   QA processes are inadequate toward improving the overall IQ of Airborne SAR imagery
+   products. Following this, a brief discussion is presented to describe the phenomenology
+   associated with artifacts within SAR imagery products. This discussion defines terminology
+   and identifies some key characteristics of artifacts and the associated causes of artifacts that
+   can be used as a basis for an artifact resolution process. Following this, the Airborne SAR
+   Process is presented in detail.
+   6.2. Background. The exploitability of any IMINT image product is generally governed by
+   its overall IQ. The IQ associated with SAR imagery products is generally governed by their
+   artifact content. The regular and repeated appearance of artifacts within current AF Airborne
+   SAR imagery products represents a significant concern to both product IQ and sensor
+   architecture performance. Current efforts employed to control the IQ associated with
+   Airborne SAR imagery products are only being performed from a sensor architecture
+   perspective—ensuring the health, status, and performance of the sensor architecture. Such
+   efforts manage SAR IQ by utilizing a classic sample-and-evaluate Quality Assurance (QA)
+   approach—sampling image products on a time interval basis, analyzing and assigning
+   qualitative and quantitative metrics, and utilizing those metrics to primarily determine long-
+   term trends in the degradation of sensor architecture performance as well as evaluate the
+   performance of maintenance processes executed on the sensor architecture in the field. This
+   approach is used primarily because the quality to which the sensor architecture produces
+   images is a key indicator of sensor architecture performance and is generally the first
+8                                                           AFISRAI 14-122 31 AUGUST 2010
+
+
+    indication of sensor architecture anomaly. This approach is also reflective of the fact that IQ
+    first and foremost depends on a sensor architecture that is fully functional and operational.
+    However, much of the focus of this QA approach is on detecting anomalous behavior within
+    the sensor architecture as a means to maintain the overall IQ performance. While this
+    approach may be suitable for managing IQ only from the sensor architecture perspective, it
+    does not adequately address degradations in IQ resulting from sources or causes other than
+    the sensor architecture. What is necessary for comprehensive management and control of IQ
+    is an approach that focuses on IQ factors beyond the limits of sensor architecture
+    performance—one that focuses on IQ factors from all causalities and one that is not limited
+    by the narrow sampling constraints of the classic sample-and-evaluate QA approach. This
+    necessitates an approach that seeks to manage and control Airborne SAR IQ from an artifacts
+    perspective.
+    6.3. Artifact Phenomenology. Although this concept is not defined in technical literature,
+    artifacts have their own distinct phenomena in terms of the characteristics of their visual
+    appearance in SAR imagery products as well as in terms of their causality. Unfortunately, no
+    uniform or standardized terminology exists to describe the phenomena associated with
+    artifacts. For the purposes of this instruction, the following sections attempt to define some
+    terminology and concepts for artifacts in particular, two important concepts: artifact signature
+    and artifact causality. Their relevance will become apparent when these concepts are used in
+    the context of artifact resolution.
+       6.3.1. Artifact Signature. In general, the term artifact is used to describe a broad scope
+       of visual effects in SAR imagery that do not represent the true target scene content.
+       These effects are categorized by their appearance and/or cause. The appearance of the
+       artifact may be entities that are located discretely within the image such as points, lines or
+       shapes, or the artifact appearance can be an overall visual affect such as defocus or lack
+       of contrast. In terms of range of effect, an artifact may have uniform effect or repeated
+       occurrence over the entire image or only over a portion of the image with a definite or
+       distinctive boundary between its affected and non-affected portions. It also may only
+       occur as a singular entity located anywhere within the image. Artifact signature refers to
+       the visually observable characteristics and attributes that an artifact exhibits that serve to
+       distinguish it from other artifacts within a SAR imagery product. In the case of non-
+       unique artifact signatures, an artifact signature may become mistakenly attributed to only
+       one of the known possible causes, may be actually attributable to a cause which has yet to
+       be known or understood, or may not be resolvable at all from all the known possible
+       causes with the information available. A prime example of this is artifact signatures
+       produced from EMI events being indistinguishable from potential sensor architecture
+       anomalies. Given the existence of these ambiguities, it is clear that artifact signatures
+       cannot always be attributed to their associated cause solely from their visual
+       characteristics observable from a detected SAR imagery product alone. However, artifact
+       signatures may be characterized by more than the properties observed from the viewable
+       images of both detected and complex SAR imagery products. In exploiting radar
+       imagery, one must be able to distinguish between artifacts and phenomenology. Radar
+       phenomenology is important to note, because they are not problems with the system, just
+       effects that are intrinsic to radar systems. Phenomenology content examples would
+       include glint, layover, motion blur (movers), or wind/wave smear.
+AFISRAI 14-122 31 AUGUST 2010                                                                 9
+
+
+        6.3.1.1. Artifact Static Signature. All discussion to this point regarding artifact
+        signatures has been limited to signatures as observable in the viewable images of both
+        detected and complex SAR imagery products. In general, the viewable image of a
+        SAR imagery product presents only a static representation of its associated contents.
+        As such, a given artifact signature observed from the viewable image of a SAR
+        imagery product only presents the static representation of that artifact signature. For
+        the purposes of this instruction, this static representation of artifact signature, as
+        observed from the contents of a viewable image of a detected or complex SAR
+        imaging product, shall be referred to as the Artifact Static Signature.
+        6.3.1.2. Artifact Dynamic Signature. In reality, all of the contents of the viewable
+        image of a SAR imaging product, both its target and artifacts content, actually
+        represent the culmination of all the radar imaging data collected during a SAR
+        imaging collection scenario. Given that a SAR image collection actually occurs over
+        an extended time period as the SAR platform flies through its collection aperture, the
+        final SAR image product can be impacted by effects that have a time-varying or
+        dynamic nature. As such, some artifact signatures may have a dynamic character in
+        affected SAR imagery products.           This dynamic character is an important
+        characteristic of the artifact that can potentially be used as an identifying or
+        discriminating characteristic. However, this dynamic character is generally masked
+        from view because the viewable image of a SAR imagery product only presents the
+        static representation of that artifact signature—the Artifact Static Signature. The
+        dynamic representation of artifact signatures, if it exists, can be viewed from a SAR
+        Dynamic Imaging (DI) product. Viewing of the dynamic representation of an artifact
+        signature, however, may be hampered by the fact that DI products can only be
+        generated from complex SAR product sources—detected SAR imagery products are
+        not capable of being used to generate DI products. As such, observing this dynamic
+        character of an artifact signature from detected SAR imagery products is not possible.
+        The lack of the ability to even determine whether or not an artifact signature has a
+        dynamic character can be a severely limiting factor in artifact resolution. For the
+        purposes of this instruction, the dynamic representation of an artifact signature (if it
+        exists), as observed from a SAR Dynamic Imaging (DI) product, shall be generally
+        referred to as the Artifact Dynamic Signature.
+        6.3.1.3. Artifact Frequency-Phase Domain Signatures. In addition to the dynamic
+        characteristics that an artifact signature may exhibit, frequency and phase domain
+        characteristics may also appear in artifact signatures. In other words, artifact
+        signatures may have frequency and phase domain representations which are not
+        detectable from the viewable image of a SAR imagery product. This representation
+        can only be viewed with the aid of an image analysis tool, such as CASE Executive.
+        Furthermore, the frequency and phase domain representations of a SAR image
+        product can only be generated from complex SAR imagery product sources (i.e.,
+        detected SAR imagery products are not capable of being used to view the frequency
+        and phase domain representations of a SAR image). As such, artifact frequency and
+        phase domain signature characterization from detected SAR imagery products is not
+        possible. The lack of the ability to even determine whether or not an artifact
+        signature has a frequency and phase domain characteristic can also be a severely
+10                                                          AFISRAI 14-122 31 AUGUST 2010
+
+
+         limiting factor in artifact resolution. For the purposes of this instruction, the
+         frequency and phase domain representations of an artifact signature, as observed from
+         the Frequency Domain Magnitude Component and Frequency Domain Phase
+         Component image representations of the SAR imagery product, shall be referred to as
+         the Artifact Frequency and Phase Signatures, respectively.
+     6.3.2. Artifact Causality. Artifact causality refers to the one or more causal factors
+     involved in the appearance of an artifact within the final image product. Artifacts within
+     SAR imagery products are inherent to SAR imagery due to the utilization of radar as a
+     basis for image collection. Artifacts occur within SAR imagery products due to
+     numerous interrelated factors both internal and external to the sensor platform, which
+     include but are not limited to: naturally occurring topography within the imaged scene,
+     presence of severe weather and/or atmospheric effects, presence of motion within and in
+     the vicinity of the imaged scene, irregularities in the motion and/or attitude of the
+     airborne platform during the collection process, collection geometries and constraints,
+     problems or limitations in the algorithms within the image formation processes used to
+     produce the final image product, presence of electromagnetic interference (EMI) within
+     the vicinity of the image target or airborne platform, and/or anomalies experienced in the
+     imaging sensor architecture (i.e., hardware and software). This may be further
+     complicated by the fact that two or more of any of these factors may be operating
+     simultaneously producing multiple and convoluted effects. The inherent complexity
+     associated with SAR imagery makes the process of attributing an observed artifact to a
+     definitive cause an extremely difficult task—one that sometimes cannot be performed
+     without detailed radar engineering and image science analysis, and in some instances,
+     experimental verification. Similar to that of artifact signatures, artifact causalities also
+     have characteristics in terms of their ability to specifically effect or limit certain static and
+     dynamic aspects of the artifact signatures they produce in imagery products. Although
+     these discriminating effects cannot be used for causality identification, they can be used
+     in many instances to rule out or discriminate between specific causalities of an artifact
+     signature based on the probability of whether or not the artifact signature exhibits these
+     characterizing effects. As such, these effects can be used as part of a process of
+     elimination, and together with other information, may serve to rule out enough of the
+     potential causalities to provide a sufficient basis for a specific artifact causality
+     attribution.
+     6.3.3. Non-Image Derived Information. At this point, it should be clear that causality
+     cannot always be attributed to an artifact or phenomenology solely on the basis of the
+     characteristics and attributes of the signature alone. As such, additional information is
+     required to be able to attribute an artifact signature to its particular causality. As learned
+     from the discussion of artifact causality, some artifact causalities may also be
+     characterized by the circumstances associated with their occurrence or the lack of any
+     circumstances attributable to their occurrence. It is these circumstances of occurrence
+     that form the basis of the additional information that needs to be collected in association
+     with an occurrence of an artifact signature in a specifically collected image product. In
+     general, this information can be characterized into the following categories: image
+     collection data, target history data, collection mission data, and sensor configuration data.
+AFISRAI 14-122 31 AUGUST 2010                                                                   11
+
+
+     6.3.4. Artifact Resolution. Artifact resolution is defined, for the purposes of this
+     instruction, as the analytical process undertaken to attribute an artifact to a particular
+     causality. As learned from the discussions concerning artifact signatures and artifact
+     causality, the ambiguities that exist between and amongst signatures and their potential
+     causalities impede the attribution of certain artifacts that may appear in SAR imagery
+     products to their true causality, in particular to the causalities that are of primary concern
+     in this instruction—collection process factors, intentional or unintentional EMI, and
+     sensor architecture anomaly. In cases where an artifact signature is distinctive amongst
+     other artifact signatures AND unique to one and only one causality, attribution to that
+     causality is straightforward and done with little risk of error from the detected SAR
+     imagery product alone. However, in light of the ambiguities possible amongst artifact
+     signatures, it is clear that using an artifact signature observed from detected SAR imagery
+     products cannot always and reliably be the sole basis for identification and attribution to
+     its causality—other methods must be used to determine artifact causality. One such
+     method is to utilize the characteristics and attributes of artifact signatures and the
+     discriminating characteristics of artifact causalities, in conjunction with the use of non-
+     image derived information (e.g., collection meta-data) and deductive reasoning to
+     perform a process of elimination of potential artifact causalities progressively toward a
+     path of complete resolution. It is this process that is to be employed for artifact resolution
+     in this instruction.
+  6.4. Airborne SAR Process. The Airborne SAR Process is a comprehensive process for the
+  identification, characterization, resolution, and mitigation of artifacts in AF Airborne SAR
+  imagery products. Given that this process is to be incorporated into existing image quality
+  assurance and exploitation processes implemented for those products, this necessitates the
+  overall Airborne SAR Process to be decomposed into distinctive quality assurance and
+  exploitation components as well. As such, the Airborne SAR Process is comprised of two
+  component processes: an Artifacts Reporting (AR) Process, to be incorporated into existing
+  image product exploitation processes, and an Artifacts Resolution & Mitigation Process
+  (AR&M), to be incorporated into existing image quality assurance processes. The primary
+  objective of the Airborne SAR Artifacts Reporting Process is to identify artifacts from SAR
+  imagery products requiring further resolution that cannot be performed by image analysts
+  without affecting production requirements associated with current imagery exploitation
+  processes. Such artifacts are reported to image quality assurance personnel engaged in the
+  Airborne SAR AR&M Process. The primary objective of the Airborne SAR AR&M Process
+  is to obtain reports of artifacts from image exploitation personnel engaged in the AR Process
+  and take actions as required to resolve the artifact to its associated causality and, if possible
+  to either mitigate or correct its occurrence in future product collections.
+     6.4.1. Airborne SAR Process Internal and External Interfaces. The relationship between
+     the Artifacts Reporting Process and the Artifacts Resolution & Mitigation Process is
+     primarily one of information flow, as depicted in Figure 6.1. As well as information flow
+     between these component processes, the figure also depicts the information interfaces
+     between the component processes and external entities outside the overall Airborne SAR
+     Process.
+ 12                                                      AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 6.1. Airborne SAR Process Internal and External Interfaces.
+
+
+
+
+          6.4.1.1. Airborne SAR Process Internal Interfaces.         The following internal
+          information interfaces within the Airborne SAR Process are defined:
+             6.4.1.1.1. Artifact Reporting Requirements. Artifact Reporting Requirements
+             establish requirements for the repeated and continued reporting of both currently
+             unresolved and prior resolved artifacts from the AR Process to the AR&M
+             Process. In general, Artifact Reporting Requirements reflect the relative priorities
+             and reporting needs of artifact resolution activities in the AR&M Process.
+             6.4.1.1.2. Artifact Occurrence Reports. Artifact Occurrence Reports are the
+             means by which artifacts are reported from the AR Process to the AR&M Process.
+             Artifact Occurrence Reports are generated based on the Artifact Reporting
+             Requirements established by the AR&M Process. In general, Artifact Occurrence
+             Reports will be required to be generated as a result of first time observance of all
+             newly unresolved artifacts identified in the AR Process. Subsequent reporting of
+AFISRAI 14-122 31 AUGUST 2010                                                                 13
+
+
+           repeated occurrences of prior observed unresolved artifacts is then governed by
+           Artifact Reporting Requirements from the AR&M Process based on whether or
+           not the unresolved artifact is in the process of resolution or is determined to be
+           ignored as a result of priorities or other factors. Artifact Occurrence Reports
+           document all of the characteristics of the artifact being reported, to include but not
+           limited to: a general description of the artifact, the imagery product in which the
+           artifact was observed (annotated if necessary), any supporting DI image products
+           identifying potential artifact dynamic signature, any supporting Frequency/Phase
+           Domain images identifying potential artifact frequency and phase signatures,
+           image collection parameters, rationale for reporting the artifact (if first time
+           observance), and any other supporting information used to identify and
+           characterize the artifact.
+           6.4.1.1.3. Artifact Resolution Reports. Artifact Resolution Reports are the means
+           by which the results of artifact resolution activities are reported from the AR&M
+           Process to the AR Process. Artifact Resolution Reports document all the
+           information relevant to the AR Process for the resolution of the artifact, or for an
+           artifact that is in the process of resolution. Artifact Resolution Reports may take
+           the form of either final reports or interim reports. Final Reports identify artifacts
+           that have completed the resolution process. Conversely, Interim Reports are used
+           to document artifacts that are in the process of resolution, and in some cases, this
+           process may take a long duration of time as many factors are examined as
+           possible causes of the anomaly. Interim Reports also are used to support the need
+           to communicate artifact resolution progress and other relevant information to the
+           AR &M Process, and facilitates the initiation of performing increasingly refined
+           artifact signature identification and verification, performing specific local artifact
+           resolution, and supporting requirements for further reporting and/or potential
+           artifact exploitation mitigation techniques. Artifact Resolution Reports may also
+           be generated for artifacts which are unresolved and are expected to remain
+           unresolved in the foreseeable future, as well as fully resolved artifacts, in order to
+           communicate the same relevant information as conveyed by interim reports.
+           6.4.1.1.4. Metrics Collection Requirements. Metrics Collection Requirements
+           establish requirements for the repeated and continued recording of both image
+           quality and artifact occurrence metrics collected from the AR Process and
+           reported to the AR&M Process. In general, Metrics Collection Requirements
+           support the ability to perform unresolved artifact impact assessment and to assign
+           or modify the relative priorities to be assigned to artifact resolution activities in
+           the AR&M Process. They also support the ability to evaluate the overall
+           effectiveness of the Airborne SAR Process in affecting SAR image product
+           quality.
+           6.4.1.1.5. Image Quality / Artifact Metrics. Image Quality/Artifact Metrics are
+           collected by the AR Process and reported to the AR&M Process to evaluate the
+           overall effectiveness of the Airborne SAR Process in affecting SAR image
+           product quality. They are also used as a basis for the assessment of the impacts
+           that artifact occurrences have on image exploitation processes as well as a basis
+           for the assignment or modification of the relative priorities to be assigned to
+14                                                   AFISRAI 14-122 31 AUGUST 2010
+
+
+        artifact resolution activities in the AR&M Process.
+     6.4.1.2. Airborne SAR Process External Interfaces.           The following external
+     information interfaces are defined:
+        6.4.1.2.1. Collection Tasking.         Collection Tasking refers to specific
+        IMINT/GEOINT/MASINT tasking for Airborne SAR imagery sensors.
+        Collection Tasking takes different forms depending on whether it is from the
+        Airborne SAR AR Process or the Airborne SAR AR&M Process. When it is from
+        the Airborne SAR AR Process, it takes the form of tasking to re-collect a SAR
+        imagery product that cannot satisfy exploitation requirements. This tasking may
+        be modified from the tasking of the original collection so as to mitigate artifact
+        occurrence in subsequent collection. When it is from the Airborne SAR AR&M
+        Process, it may take the form of either tasking to generate imagery products with
+        repeated artifact occurrence in order to verify a particular artifact causality or as
+        part of a coordinated collection plan in conjunction with ELINT Tasking in order
+        to confirm EMI causality or disprove sensor anomaly causality associated with a
+        particular artifact.
+        6.4.1.2.2. ELINT Tasking. ELINT Tasking is created from the Airborne SAR
+        AR&M Process. ELINT Tasking is generally used as part of a coordinated
+        collection plan in conjunction with specific Collection Tasking
+        (IMINT/GEOINT/MASINT) for Airborne SAR imagery sensors in order to
+        confirm EMI causality or disprove sensor anomaly causality associated with a
+        particular artifact.
+        6.4.1.2.3. Artifact Request for Information (RFI) / Response. The Artifact
+        RFI/Response interface refers to the specific requesting and obtaining artifact
+        identification and characterization support from NASIC. Support from NASIC
+        Subject Matter Experts may be used in both Airborne SAR AR and AR&M
+        Processes.
+        6.4.1.2.4. EMI RFI / Response. The EMI RFI/Response interface refers to the
+        specific requesting and obtaining EMI verification support from the ELINT
+        Community.
+        6.4.1.2.5. Air Force Spectrum Interference Resolution (AFSIR) Reporting.
+        AFSIR Reporting is a general term for the reporting of EMI events in accordance
+        with the reporting procedures of AFI 10-707, Spectrum Interference Resolution
+        Program. The EMI Report specified by AFI 10-707 is used for this purpose.
+        6.4.1.2.6. Anomaly Request for Information (RFI) / Response. The Anomaly
+        RFI/Response interface refers to the specific requesting and receiving of anomaly
+        verification support from the Sensor Program for the particular sensor involved.
+        This interface should allow for the transfer of anomaly metrics, and any other
+        pertinent requirements or data requests from the Sensor/Sustainment Program to
+        aid in troubleshooting and/or investigation efforts of artifact/anomaly events.
+        6.4.1.2.7. Sensor Deficiency Report (DR). A DR is the general mechanism for
+        the reporting of sensor anomalies in accordance with the reporting procedures of
+        the Sensor Program for the particular sensor involved. Sensor Deficiency Reports
+AFISRAI 14-122 31 AUGUST 2010                                                            15
+
+
+            may be generated from either of the Airborne SAR AR or AR&M Processes.
+            6.4.1.2.8. Sensor Report. Reporting generated from the sustainment support out
+            of AFMC/WR – Senior Year Quality Assurance Program (SYQAP) focusing on
+            ASARS-2A Image Quality within the DCGS enterprise. The Sensor Reporting
+            effort, the AR, and the AR&M processes should have the ability to feed each
+            other in support of information and data flow for image quality/artifact metrics
+            collection, along with artifact/anomaly resolution or mitigation.
+     6.4.2. Airborne SAR Artifacts Reporting Process. The Airborne SAR Artifacts
+     Reporting Process is shown in Figure 6.2. The overall objective of this process is to
+     identify SAR imagery artifacts requiring further resolution, attempting to resolve them
+     through locally available information and resources, and reporting those locally
+     unresolveable artifacts to personnel implementing the Airborne SAR Artifacts Resolution
+     & Mitigation Process. The process begins with Airborne SAR imagery products that are
+     affected by artifact content—for those SAR imagery products that have no artifact
+     content, normal exploitation processes will be performed.
+ 16                                                     AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 6.2. Airborne SAR Artifacts Reporting Process.
+AFISRAI 14-122 31 AUGUST 2010                                                                17
+
+
+        6.4.2.1. Product Exploitation Assessment. The objective of Product Exploitation
+        Assessment is to assess the overall exploitability of the artifact-affected SAR imagery
+        product with respect to the Exploitation Requirements (ERs) and Collection
+        Requirement (CR) Essential Element of Information (EEI) set for the collected
+        product. If the product can be exploited as is with its artifact content present—
+        artifacts that do not interfere with the specific exploitation requirements associated
+        with the collected product, it is referred directly to Product Exploitation. However, if
+        the artifact content does interfere with product exploitation but appears to be
+        potentially exploitable if the artifact content were able to be mitigated in some
+        fashion, the product is referred to Exploitation Mitigation. If the imagery product is
+        so marred by artifact content that it is not exploitable at all or cannot be improved
+        with Artifact Mitigation, the product is directly referred to Collection Mitigation.
+        6.4.2.2. Exploitation Mitigation. The objective of Exploitation Mitigation is to
+        attempt to use locally available tools and/or advanced exploitation techniques to
+        mitigate the artifact content affecting the imagery product specific to its associated
+        exploitation requirements. However, such tools and techniques are generally limited
+        to certain types of artifact content as well as the specific type of SAR imagery
+        product involved—detected or complex. In the case of a detected imagery product,
+        mitigation is limited to using tools (if available) that manipulate the final detected
+        image directly, affecting the overall content of the image product, both artifact and
+        intelligence content. When such tools are able to be utilized, the resulting mitigated
+        product must be further assessed to determine the severity to which the intelligence
+        content of the product was affected, and whether or not the effects degraded the
+        associated intelligence content sufficiently to impede satisfaction of exploitation
+        requirements. In the case of a complex imagery product, the imagery analyst may
+        have access to both tools and advanced exploitation techniques depending on the type
+        of artifact content present. If such tools or techniques can be applied, the resultant
+        artifact mitigated product must also be assessed as to whether or not it was effective
+        in mitigating the specific artifact content that was interfering with exploitation. In
+        either case, if the artifact mitigation was effective in mitigating the artifact content
+        affecting exploitation and was able to provide a resultant product that preserves the
+        intelligence content sufficiently to meet exploitation requirements, the resultant
+        mitigated product is referred to Product Exploitation. However, if the artifact
+        mitigation was not effective at all or was not able to provide a resultant product
+        acceptable for exploitation, Collection Mitigation is required to be performed.
+        6.4.2.3. Product Exploitation. The objective of Product Exploitation is to perform
+        exploitation of either the original image product with its artifact content present or
+        with the mitigated product(s) obtained from Exploitation Mitigation. If exploitation
+        is performed successfully and completely, the product(s) is (are) referred to Artifact
+        Identification for the handling of its residual artifact content—artifacts that did not
+        affect exploitation of the original product. However, if the original or mitigated
+        imagery products are still unable to be exploited to the extent necessary to fully meet
+        exploitation requirements, Collection Mitigation will also still be required.
+        6.4.2.4. Collection Mitigation. The objective of Collection Mitigation is to
+        determine whether or not modification of specific aspects of the original collection
+18                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+     tasking is required to be changed in order to mitigate the artifact content from
+     subsequent collection. If the artifact content within the affected imagery product is
+     assessed as most likely a result of unfortunate or coincidental circumstances, the
+     product may be referred for re-collection with no modification of collection
+     parameters. If, however, the artifact content in the affected imagery product is
+     assessed to be due to collection geometry issues, then the image product must be
+     analyzed to determine the appropriate or optimal imaging azimuth and/or collection
+     geometry that should be used in subsequent collection to eliminate or mitigate artifact
+     occurrence. Other artifact causalities may be attributed to the sensor architecture
+     operating at or beyond its capabilities or limitations for acceptable and reliable image
+     quality, which could be a direct result of deficiencies in Air Force TPED, Collection
+     Management, and/or sensor operational collection processes. Collection Mitigation
+     requires direct coordination with the Collection Manager for the particular sensor
+     involved to mitigate collection tasking parameters.
+     6.4.2.5. Artifact Identification. The objective of Artifact Identification is to identify
+     all artifact content within affected imagery products as required for the Local Artifact
+     Resolution and Metric Collection process elements. Artifact identification is to be
+     performed to the level that is required according to the requirements established for
+     artifacts metrics collection from the AR&M Process. To facilitate this, image
+     analysts will utilize local information resources, exploitation techniques, and/or the
+     support of NASIC Subject Matter Experts to discriminate between and identify the
+     specific artifact contents within the affected product. Support from NASIC Subject
+     Matter Experts is accomplished through the exchange of Artifact RFI / Response
+     Messages.
+     6.4.2.6. Local Artifact Resolution. The objective of Local Artifact Resolution within
+     this AR Process is to perform artifact resolution at the lowest possible level within the
+     constraints and limitations of personnel performing image exploitation processes.
+     The purpose of artifact resolution in this context is NOT to perform artifact causality
+     analysis to resolve artifacts to their associated causality (as performed in the AR&M
+     Process), but to use the results of the AR&M Process, in the form of Artifact
+     Resolution Reports, as a basis for the identification and reporting of repeated or
+     continuing occurrences of artifacts that either have been resolved prior to or are in the
+     process of resolution. Artifact Resolution Reports will also be used as the basis for
+     distinguishing new artifacts that have not been observed during previous observations
+     of resolved or unresolved artifacts. The chief function of Local Artifact Resolution in
+     the AR Process is to distinguish between resolved and unresolved artifacts in imagery
+     products to be used as a basis for the generation of Artifact Occurrence Reports in
+     Artifact Reporting and for the collection of artifact metrics in Metrics Collection. Its
+     function is also to use the Artifact Resolution Reports of artifacts resolved to prior
+     EMI events and sensor anomalies as a basis for their identification and direct and
+     immediate reporting of occurrences of such events and anomalies solely from the
+     observance of their distinctive artifact signatures in current imagery product.
+     6.4.2.7. Artifact Reporting. The objective of Artifact Reporting is to generate
+     Artifact Occurrence Reports according to the Artifact Reporting Requirements
+     established from the AR&M Process. Artifact Reporting Requirements establishes
+AFISRAI 14-122 31 AUGUST 2010                                                                  19
+
+
+        the reporting requirements for unidentified, ambiguous, and unresolved artifacts
+        observed in current imagery products.
+        6.4.2.8. EMI Reporting. The objective of EMI Reporting is to conduct reporting of
+        EMI events in accordance with the reporting procedures of AFI 10-707. Only those
+        artifacts observed in current imagery product with sufficiently distinct artifact
+        signature and prior verified EMI resolution shall be used as the basis for initiation of
+        this reporting.
+        6.4.2.9. Anomaly Reporting. The objective of Anomaly Reporting is to conduct
+        reporting of sensor anomaly events in accordance with the anomaly reporting
+        procedures associated with the sensor involved. The function of Anomaly Reporting
+        is to produce a Sensor Deficiency Report (DR) only for those artifacts observed in
+        current imagery products with sufficiently distinct artifact signatures, and resolution
+        processes indicate the cause is related to the sensor architecture.
+        6.4.2.10. Metrics Collection. The objective of Metrics Collection is to collect
+        metrics on overall image quality with respect to artifact occurrence and metrics on
+        specific artifact occurrence rates. Metrics are to be collected in accordance with the
+        Metrics Collection Requirements established from the AR&M Process. Image
+        Quality/Artifact Metrics form the basis for determining the relative priorities that
+        specific artifact resolution activities within the AR&M Process are to be conducted.
+        These metrics also determine the overall effectiveness of the Airborne SAR Process
+        in improving Image Quality, as well as determining the overall utility of artifact-
+        riddled SAR imagery products.
+     6.4.3. Artifacts Resolution & Mitigation Process. The Airborne SAR Artifacts
+     Resolution & Mitigation Process is shown in Figure 6.3. The overall objective of this
+     process is to obtain reports of unresolved artifacts from the Airborne SAR Artifacts
+     Reporting Process, assess the unresolved artifact for its validity, assess its overall impact
+     to image exploitation and assign resolution priority, perform whatever analysis activities
+     are required to resolve the artifact, and initiate or perform whatever mitigation activities
+     are necessary to eliminate the artifact from future occurrence or mitigate its impact on
+     current image exploitation processes. The process begins with the reporting of an
+     unresolved artifact affecting SAR imagery products from the Airborne SAR Artifacts
+     Reporting Process. As stated previously, the process is primarily one of information flow
+     and should include AFISRA, NASIC and the Sensor Program in the circulation of all
+     reports, even if for informational purposes.
+ 20                                                       AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 6.3. Airborne SAR Artifacts Resolution & Mitigation Process.
+
+
+
+
+          6.4.3.1. Unresolved Artifact Verification. The objective of Unresolved Artifact
+          Verification is to verify the artifacts reported in Artifact Occurrence Reports from the
+          Airborne SAR AR Process as being truly unresolved artifacts (either new or currently
+          existing). To facilitate this, image quality assurance personnel may utilize local
+          information resources, exploitation techniques, and/or the support of NASIC Subject
+AFISRAI 14-122 31 AUGUST 2010                                                                  21
+
+
+        Matter Experts. Support from NASIC Subject Matter Experts is accomplished
+        through the generation of Artifact RFI / Response Messages. Once the unresolved
+        artifact has been verified, the process proceeds to Artifact Impact Assessment &
+        Resolution Prioritization. At times there is a fine line discerning between an artifact
+        and an anomaly, therefore it is recommended to include the Sensor Program,
+        especially during an event of troubleshooting or resolution.
+        6.4.3.2. Artifact Impact Assessment & Resolution Prioritization. The objective of
+        Artifact Impact Assessment & Resolution Prioritization is to assess the overall
+        impacts of the unresolved artifact with respect to imagery exploitation processes,
+        determine if its impacts warrant resolution, and to assign a relative priority to its
+        resolution so that ongoing resolution activities can be conducted according to mission
+        priorities. This assessment generally involves an evaluation of the overall effect the
+        artifact has to image product exploitation production versus its occurrence rate as
+        observed in repeatedly collected imagery products. Factors for consideration in this
+        assessment include, but are not limited to: the degree to which the artifact affects
+        exploitation when it occurs in imagery products, the degree to which collection
+        production is affected as a result of repeated collection, the degree to which the
+        artifact affects overall intelligence production and/or impacts mission requirements,
+        and whether or not exploitation mitigation techniques can be used to mitigate imagery
+        product exploitation. If the occurrence rate as observed in imagery products is
+        exceedingly low, the artifact may not be cost effective for resolution. If the artifact is
+        new, as in a first time observance, this assessment and prioritization will have to be
+        postponed until its occurrence in more imagery products can be observed. Metrics
+        collected from the Airborne SAR AR Process (IQ/Artifact Metrics) are necessary for
+        this assessment and prioritization. Should the impact to exploitation or collection
+        processes be assessed as high or exceeding a certain threshold, the artifact is to be
+        assigned a resolution priority. The 480 ISRW supports an activity for anomalies by
+        submitting mission data into the Sensor Program to measure items such as anomaly
+        occurrence rates in their Sensor Reports. This information should also be leveraged
+        as part of the resolution prioritization effort determining what impacts warrant
+        resolution (which includes deciding when to engage the Sensor Program on a
+        Suspected Anomaly). Should the artifact not be of sufficient impact to warrant
+        resolution, it is referred directly to Artifact Exploitation Mitigation. As a result of
+        this impact assessment, the Metrics Collection Requirements may also need to be
+        updated to include or exclude the artifact in/from Airborne SAR AR Process metrics
+        collection. This assessment and prioritization may be repeated as often as necessary
+        if occurrence rates of the artifact in imagery product appreciably change, as reflected
+        in collected IQ/Artifact Metrics.
+        6.4.3.3. Artifact Impact Assessment & Resolution Prioritization. The objective of
+        Artifact Impact Assessment & Resolution Prioritization is to assess the overall
+        impacts of the unresolved artifact with respect to imagery exploitation processes,
+        determine if its impacts warrant resolution, and to assign a relative priority to its
+        resolution so that ongoing resolution activities can be conducted according to mission
+        priorities. This assessment generally involves an evaluation of the overall effect the
+        artifact has to image product exploitation production versus its occurrence rate as
+22                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+     observed in repeatedly collected imagery products. Factors for consideration in this
+     assessment include, but are not limited to: the degree to which the artifact affects
+     exploitation when it occurs in imagery products, the degree to which collection
+     production is affected as a result of repeated collection, the degree to which the
+     artifact affects overall intelligence production and/or impacts mission requirements,
+     and whether or not exploitation mitigation techniques can be used to mitigate imagery
+     product exploitation. If the occurrence rate as observed in imagery products is
+     exceedingly low, the artifact may not be cost effective for resolution. If the artifact is
+     new, as in a first time observance, this assessment and prioritization will have to be
+     postponed until its occurrence in more imagery products can be observed. Metrics
+     collected from the Airborne SAR AR Process (IQ/Artifact Metrics) are necessary for
+     this assessment and prioritization. Should the impact to exploitation or collection
+     processes be assessed as high or exceeding a certain threshold, the artifact is to be
+     assigned a resolution priority. The 480 ISRW supports an activity for anomalies by
+     submitting mission data into the Sensor Program to measure items such as anomaly
+     occurrence rates in their Sensor Reports. This information should also be leveraged
+     as part of the resolution prioritization effort determining what impacts warrant
+     resolution (which includes deciding when to engage the Sensor Program on a
+     Suspected Anomaly). Should the artifact not be of sufficient impact to warrant
+     resolution, it is referred directly to Artifact Exploitation Mitigation. As a result of
+     this impact assessment, the Metrics Collection Requirements may also need to be
+     updated to include or exclude the artifact in/from Airborne SAR AR Process metrics
+     collection. This assessment and prioritization may be repeated as often as necessary
+     if occurrence rates of the artifact in imagery product appreciably change, as reflected
+     in collected IQ/Artifact Metrics.
+     6.4.3.4. Artifact Causality Analysis. The objective of Artifact Causality Analysis is
+     to perform trend and root cause analyses to attribute an unresolved artifact to its
+     associated causality. Artifact causality analyses are conducted according to the
+     priorities set for the unresolved artifact relative to all other ongoing resolution
+     activities. If specific collection is required to support causality analysis, conduct
+     Collection Planning. If causality analysis results in suspected EMI, perform EMI
+     Verification & Reporting. If causality analysis results in suspected sensor anomaly,
+     perform Anomaly Verification & Reporting. Resolved artifacts resulting from
+     causality analysis are referred to Causality Impact Assessment. Unresolved artifacts
+     for ongoing, long term analyses are referred to Artifact Exploitation Mitigation.
+     6.4.3.5. Collection Planning. The objective of Collection Planning is to support
+     Artifact Causality Analysis with the development and preparation of Collection
+     Tasking and/or ELINT Tasking where additional IMINT/GEOINT/MASINT
+     collection or coordinated IMINT/GEOINT/MASINT and ELINT collection is
+     required to verify or disprove artifact causality hypotheses in support of artifact
+     resolution.
+     6.4.3.6. EMI Verification & Reporting. The objective of EMI Verification &
+     Reporting is to support Artifact Causality Analysis with obtaining ELINT data from
+     the ELINT Community that may be required to test (verify or disprove) artifact EMI
+     causality hypotheses in support of artifact resolution. Should EMI causality be
+AFISRAI 14-122 31 AUGUST 2010                                                                 23
+
+
+        proven, this process element will also conduct reporting of the verified EMI event(s)
+        in accordance with the reporting procedures of AFI 10-707.
+        6.4.3.7. Anomaly Verification & Reporting. The objective of Anomaly Verification
+        & Reporting is to support Artifact Causality Analysis by coordinating with the Sensor
+        Program to obtain data that may be required to test or verify artifact sensor anomaly
+        causality hypotheses in support of artifact resolution. In cases where sensor anomaly
+        is suspected or highly probable, this process element is responsible with coordinating
+        with the Sensor Program on its activities to verify that an anomaly actually exists in
+        the sensor architecture. This process element is also responsible for sharing with the
+        Sensor Program the supporting evidence obtained from Artifact Causality Analysis
+        that led to the reasons to suspect that a sensor anomaly may exist as well as
+        supporting the Sensor Program in examining and testing specific sensor architecture
+        anomaly causality hypotheses against that supporting evidence through further
+        iterations of Artifact Causality Analysis. This process element may also directly
+        generate a Sensor DR based solely on the supporting evidence obtained from Artifact
+        Causality Analysis and the information obtained from the Sensor Program when that
+        evidence is conclusive.
+        6.4.3.8. Causality Impact Assessment.           The objective of Causality Impact
+        Assessment is to assess the overall impacts of the resolved artifact causality with
+        respect to future imagery collection and imagery exploitation processes. This
+        generally depends on whether or not the artifact causality itself is correctable, and if
+        not correctable, whether or not collection and/or exploitation processes can be
+        mitigated to address and/or minimize its repeated occurrence in future collection.
+        Factors for consideration in this assessment include, but are not limited to: is the
+        causality correctable; if the causality is correctable, will it actually be corrected and
+        how long will it take for the corrective action to be accomplished; if the causality is
+        not correctable or will not be corrected, is there some operational causality mitigation
+        that can be employed to minimize its occurrence; and will an exploitation mitigation
+        be required to be developed and employed on an interim or permanent basis. The
+        results of this assessment shall be used as a basis for determining whether or not
+        exploitation mitigation and/or operational causality mitigation will be required to be
+        developed.
+        6.4.3.9. Artifact Exploitation Mitigation. The objective of Artifact Exploitation
+        Mitigation is to identify any possible tools or advanced exploitation techniques that
+        may be used in the Airborne SAR AR Process to facilitate exploitation of imagery
+        products with the subject artifact present. Such mitigation may be required due to the
+        artifact being not of sufficient impact to warrant artifact resolution, being not
+        resolvable at this point in time, being resolved but not correctable, or being resolved
+        and correctable but not in sufficient time to mitigate its impact to current exploitation
+        and collection processes. The artifact mitigation strategy that is developed as a result
+        of this process element is to be referred to Artifact Resolution Reporting for
+        incorporation into the subsequent Artifact Resolution Report to be generated for the
+        artifact.
+        6.4.3.10. Artifact Resolution Reporting. The objective of Artifact Resolution
+        Reporting is to produce an Artifact Resolution Report which documents the
+ 24                                                          AFISRAI 14-122 31 AUGUST 2010
+
+
+          resolution activity performed on the subject artifact. The Artifact Resolution Report
+          documents all the information relevant to the AR Process for the resolution of the
+          artifact, or for an artifact that is still in the process of resolution. Artifact Resolution
+          Reports may take the form of either final reports, for artifacts that have completed the
+          resolution process, or interim reports, for artifacts that are in the process of resolution.
+          The use of interim reports are for unresolved artifacts that require a long period of
+          time to resolve and support the need to communicate artifact resolution progress and
+          other relevant information to the AR Process, especially with respect to information
+          that the AR process may need to perform more refined artifact signature identification
+          and verification, perform specific local artifact resolution, and any specific
+          requirements for further reporting, and/or potential artifact exploitation mitigation
+          techniques. Artifact Resolution Reports may also be generated for artifacts that are
+          not able to be resolved at the present time or foreseeable future, as well as for fully
+          resolved artifacts, to communicate the same relevant information as for interim
+          reports.
+7. Airborne SAR Artifacts Reporting Procedures.
+   7.1. General. This attachment defines procedures and identifies techniques for the resolution
+   and reporting of artifacts affecting the exploitability of electronic soft-copy imagery products
+   collected and produced by Air Force Airborne SAR platforms. It provides detailed guidance
+   for the implementation of standardized technical and management processes for artifact
+   reporting and resolution actions for affected airborne ISR imagery products. The procedures
+   and techniques are provided as baseline tools to assist image exploitation personnel in the
+   Airborne SAR Artifacts Reporting Process performing artifact resolution and reporting in a
+   timely and efficient manner.
+   7.2. Airborne SAR Artifacts Reporting Process. The overall objective of the Airborne SAR
+   Artifacts Reporting Process is to identify artifacts within SAR imagery products requiring
+   further resolution, attempting to resolve them with locally available information and
+   resources, and reporting the artifacts that cannot be resolved locally to personnel
+   implementing the Airborne SAR Artifacts Resolution & Mitigation Process. The process
+   begins with Airborne SAR imagery products affected by artifact content—for those SAR
+   imagery products that have no artifact content, normal exploitation processes will be
+   performed.
+   7.3. Assumptions and Constraints. The following assumptions and constraints affect
+   implementation of the procedures set forth in this attachment into existing SAR imagery
+   exploitation and reporting processes.
+      7.3.1. Assumptions:
+          7.3.1.1. Existing SAR Exploitation Processes. This instruction does not circumvent
+          existing techniques and procedures for exploitation of SAR imagery products.
+          7.3.1.2. AFI 10-707 AFSIR Implementation. This instruction assumes that processes
+          for AFSIR are implemented IAW AFI 10-707.
+      7.3.2. Constraints: Availability of Complex SAR Imagery Product. Not all Air Force
+      Airborne SAR imagery sensors have the ability to produce complex SAR imagery
+      products. Use of detected imagery products exclusively for these processes represents a
+AFISRAI 14-122 31 AUGUST 2010                                                               25
+
+
+     severe constraint on the effectiveness to which identification, reporting, resolution, and
+     mitigation can be performed.
+  7.4. Airborne SAR Artifacts Reporting Procedures. The Airborne SAR Artifacts Reporting
+  Procedure is presented in Figure 7.1. The procedure presented in the figure represents a
+  generalized procedure for both detected and complex imagery products. However, individual
+  procedures for detected and complex imagery products differ in terms of availability of
+  artifact signatures that each product has and how they can be employed in various stages of
+  the process. As such, separate procedures are required for each detected and complex
+  imagery product. The following sections present the detailed procedures for each, detected
+  and complex imagery product.
+ 26                                                 AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 7.1. Airborne SAR Artifacts Reporting Procedure.
+AFISRAI 14-122 31 AUGUST 2010                                                       27
+
+
+      7.4.1. Detected SAR Imagery Product Procedures. The following figures depict the
+      specific procedures for Artifact Reporting specific to detected imagery products.
+
+Figure 7.2. Exploitation Mitigation (Detected) Procedure.
+ 28                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 7.3. Artifact Identification (Detected) Procedure.
+AFISRAI 14-122 31 AUGUST 2010                                                       29
+
+
+Figure 7.4. Local Artifact Resolution (Detected) Procedure.
+
+
+
+
+      7.4.2. Complex SAR Imagery Product Procedures. The following figures depict the
+      specific procedures for Artifacts Reporting specific to complex imagery products.
+ 30                                                  AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 7.5. Exploitation Mitigation (Complex) Procedure.
+AFISRAI 14-122 31 AUGUST 2010                              31
+
+
+Figure 7.6. Artifact Identification (Complex) Procedure.
+ 32                                                         AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 7.7. Local Artifact Resolution (Complex) Procedure.
+
+
+
+
+8. Airborne SAR Artifacts Resolution & Mitigation Procedures.
+   8.1. General. This section defines procedures and identifies techniques for the resolution
+   and mitigation of artifacts affecting the exploitability of electronic soft-copy imagery
+   products collected and produced by Air Force Airborne SAR platforms. It also provides
+   detailed guidance for the implementation of standardized technical and management
+   processes for artifact reporting, resolution, and mitigation actions for affected airborne ISR
+   imagery products. The procedures and techniques are provided as baseline tools to assist
+   image quality assurance personnel in the Airborne SAR Artifacts Resolution and Mitigation
+   Process performing artifact resolution and mitigation in a timely and efficient manner.
+   8.2. Airborne SAR Artifacts Resolution & Mitigation Process. The overall objective of the
+   Airborne SAR Artifacts Resolution and Mitigation Process is to obtain reports of unresolved
+   artifacts from the Airborne SAR Artifacts Reporting Process, assess the unresolved artifact
+   for its validity, assess its overall impact to image exploitation and assign resolution priority,
+   perform whatever analysis activities are required to resolve the artifact, and initiate or
+   perform whatever mitigation activities are necessary to eliminate the artifact from future
+   occurrence or mitigate its impact on current image exploitation processes. More generally,
+   the objective of this process is to NOT necessarily resolve artifacts to the actual technical
+   cause per se, but to resolve artifacts to the circumstances of their associated causalities that
+   may be verified either by confirmation with the sensor program involved or by experimental
+   evidence observed through continuing collected imagery products.
+AFISRAI 14-122 31 AUGUST 2010                                                                    33
+
+
+  8.3. Assumptions and Constraints. The following assumptions and constraints affect
+  implementation of the procedures set forth in this section into existing SAR imagery quality
+  assurance processes.
+     8.3.1. Assumptions: AFI 10-707 AFSIR Implementation. This instruction assumes that
+     processes for AFSIR are implemented IAW AFI 10-707.
+     8.3.2. Constraints: Resolvability of Artifacts. Not all artifacts are resolvable, nor will this
+     process attempt to resolve all artifacts observed in SAR imagery product.
+  8.4. Airborne SAR Artifacts Resolution & Mitigation Procedures. The Airborne SAR
+  Artifacts Resolution & Mitigation Procedure is presented in Figure 8.1. The following figures
+  represent a step-by-step process for artifact resolution and mitigation. These procedures
+  represent a generalized procedure for both detected and complex imagery products.
+ 34                                                  AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 8.1. Airborne SAR Artifacts Resolution and Mitigation Procedure.
+AFISRAI 14-122 31 AUGUST 2010                        35
+
+
+Figure 8.2. Artifact Causality Analysis Procedure.
+ 36                                                   AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 8.3. Artifact Root Cause Analysis Procedure.
+AFISRAI 14-122 31 AUGUST 2010                                                             37
+
+
+Figure 8.4. Artifact Data Trend Analysis Procedure.
+
+
+
+
+9. Airborne SAR Process Reports and Messages.
+   9.1. Artifact Occurrence Report. The template for the Artifact Occurrence Report is
+   presented in Figure 9.1, and the report template instructions are presented in Figure 9.2.
+ 38                                                AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 9.1. Artifact Occurrence Report Template.
+AFISRAI 14-122 31 AUGUST 2010                                                                39
+
+
+Figure 9.2. Artifact Occurrence Report Instructions.
+
+
+
+
+   9.2. Artifact Resolution Report. The template for the Artifact Resolution Report is presented
+   in Figure 9.3, and the report instructions are presented in Figure 9.4.
+ 40                                                AFISRAI 14-122 31 AUGUST 2010
+
+
+Figure 9.3. Artifact Resolution Report Template.
+AFISRAI 14-122 31 AUGUST 2010                          41
+
+
+Figure 9.4. Artifact Resolution Report Instructions.
+ 42                                                     AFISRAI 14-122 31 AUGUST 2010
+
+
+   9.3. Artifact RFI Message. The template for the Artifact RFI Message is presented in Figure
+   9.5, and the message template instructions are presented in Figure 9.6.
+
+Figure 9.5. Artifact RFI Message Template.
+AFISRAI 14-122 31 AUGUST 2010                                                          43
+
+
+Figure 9.6. Artifact RFI Message Instructions.
+
+
+
+
+10. Airborne SAR Process Analysis Data Worksheets.
+   10.1. The worksheets referenced in this document were intended to be embedded objects
+   (Microsoft Excel files) to be used for data collection and analysis. Due to AF document
+   publishing guidelines, the embedded files/objects are not accepted or allowed at this
+   publication. A copy of the Data Collection worksheets with Field Definitions (Microsoft
+   Excel files) will be provided to the 480 ISRW and NASIC/DAG for use and storage. Copies
+ 44                                                       AFISRAI 14-122 31 AUGUST 2010
+
+
+   can also be obtained from AFISRA/A3O. A sample portion of each worksheet is presented
+   below. Not all fields in the worksheet are shown due to document page size.
+
+Figure 10.1. Collection Data Worksheet.
+
+
+
+
+Note: Not all fields in the worksheet are shown due to document page size limitations.
+
+Figure 10.2. Target Data Worksheet.
+
+
+
+
+Note: Not all fields in the worksheet are shown due to document page size limitations.
+
+Figure 10.3. Mission Data Worksheet.
+
+
+
+
+Note: Not all fields in the worksheet are shown due to document page size limitations.
+
+Figure 10.4. ELINT Data Worksheet.
+AFISRAI 14-122 31 AUGUST 2010                                                                 45
+
+
+Figure 10.5. Sensor Configuration Data Worksheet.
+
+
+
+
+11. Airborne SAR Process Subject Matter Experts (SME) List.
+   11.1. Organizations for Subject Matter Experts and points of contact (POC’s) needed to
+   support the Airborne SAR artifact reporting, resolution and mitigation process is presented in
+   Table 11.1. Note: This table is provided as a template only, with primary SME/POC
+   organizations listed. A detailed/populated SME/POC list will be provided separate from this
+   document to the AFISRA OPR and shall be distributed as deemed appropriate keeping
+   security and classification in mind.
+   11.2. The SME/POC list should be updated on a routine basis and distributed accordingly.
+
+Table 11.1. Airborne SAR Artifact Process Subject Matter Experts (SME) List.
+   Contact           Org             Phone                             Email
+                 AFISRA/A3O       DSN:              SIPR:
+                                  COM:              JWICS:
+                                                    JWICS:
+                 480 ISRW         DSN:              SIPR:
+                                  COM:              JWICS:
+                                                    JWICS:
+                 NASIC/DAM        DSN:              SIPR:
+                                  COM:              JWICS:
+                                                    JWICS:
+                 480              DSN:              SIPR:
+                 ISRW/TDA         COM:              JWICS:
+                 (SYQAP)                            JWICS:
+                 AFMC 560         DSN:              SIPR:
+                 ACSG/CCO         COM:              JWICS:
+                                                    JWICS:
+                 NASIC/DAI        DSN:              SIPR:
+                                  COM:              JWICS:
+                                                    JWICS:
+                 NASIC/DASE DSN:                    SIPR:
+                            COM:                    JWICS:
+                                                    JWICS:
+                 NSA/CCS          DSN:              SIPR:
+                                  COM:              JWICS:
+                                                    JWICS:
+ 46                                                AFISRAI 14-122 31 AUGUST 2010
+
+
+12. Adopted Form: AF Form 847, Recommendation for Change of Publication.
+
+
+
+
+                                       BRADLEY A. HEITHOLD, Maj Gen, USAF
+                                       Commander
+AFISRAI 14-122 31 AUGUST 2010                                                              47
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFISRAI 14-121, Geospatial Intelligence Exploitation and Dissemination Quality Control
+Program Management, 30 October 2009
+AFPD 14-1, Intelligence, Surveillance, and Reconnaissance (ISR) Planning, Resources, and
+Operations, 2 April 2004
+CJCSI 3320.02B1, Classified Supplement to the Joint Spectrum Interference Resolution (JSIR)
+Instruction, 27 Jan 2006
+CJCSM 3320.02A, Joint Spectrum Interference Resolution (JSIR) Procedures, 16 Feb 2006
+AFI 10-707, Spectrum Interference Resolution Program, 20 June 2005
+AFTTP 3-1.6, Tactical Employment – Distributed Common Ground System, 22 June 2006
+Sensor Report: ASARS-2A monthly SYQAP performance report
+Airborne Product Exploitation Artifacts Handbook, U2 ASARS-2A Artifacts and Phenomenology,
+This softcopy/CD handbook presents information and samples of known SAR image artifacts, to
+include causation and in some cases a recommended course of action. Initially, the handbook
+will be hosted on the 480 ISRW/DO/ImageQuality website.
+
+Abbreviations and Acronyms
+AFISRA—Air Force Intelligence Surveillance and Reconnaissance Agency
+AFSIR—Air Force Spectrum Interference Resolution
+AR—Artifacts Reporting
+AR&M—Artifacts Resolution and Mitigation
+ASAR—Advanced Synthetic Aperture Radar
+BE—Basic Encyclopedia
+CDP—Collection Data Period
+CM—Counter-measures
+CR—Collection Requirement
+DCGS—Distributed Common Ground Station
+DGS—Distributed Ground Station
+DR—(Sensor) Deficiency Report
+EEI—Essential Element of Information
+ELINT—Electronic Intelligence
+EMI—Electromagnetic Interference
+ER—Exploitation Requirement
+ 48                                                   AFISRAI 14-122 31 AUGUST 2010
+
+
+GEOINT—Geospatial Intelligence
+GRP—Ground Reference Point
+IAW—In Accordance With
+IFP—Image Formation Processor
+IID—Image ID, Image Identifier
+IMINT—Imagery Intelligence
+IQ—Image Quality
+JSIR—Joint Spectrum Interference Resolution
+MASINT—Measurement and Signature Intelligence
+NASIC—National Air and Space Intelligence Center
+QA—Quality Assurance
+SAR—Synthetic Aperture Radar
+RFI—Request for Information, Radio Frequency Interference
+RWAC—Rapid Worldwide Area Collection
+TCPED—Tasking, Collection, Processing, Exploitation, and Dissemination
+AFISRAI 14-122 31 AUGUST 2010                                                                   49
+
+
+                                         Attachment 2
+             SAR PHENOMENOLOGY AND CAUSALITY OF ARTIFACTS
+
+A2.1. Fundamentals of Synthetic Aperture Radar.
+   A2.1.1. Synthetic Aperture Radar (SAR) is capable of producing high quality images of the
+   earth’s surface that avoid the daylight and weather limitations of traditional electro-optical
+   imaging systems. SAR imaging systems belong to the class of active sensors in that it
+   produces its own source of energy for scene illumination. Electro-optical imaging systems,
+   on the other hand, belong to the class of passive sensors that are all commonly limited based
+   upon their reliance on the use of external sources of scene illumination—the sun as a source
+   of reflected electromagnetic energy or the energy of heat that is stored and dissipated from
+   imaged materials. Such systems are also subject to the occluding and/or distorting effects of
+   rain and cloud-cover in the atmosphere that interfere with airborne collection in virtually all
+   optical-based systems. SAR circumvents these limitations primarily due to the operating
+   wavelengths from which they typically operate.
+   A2.1.2. Aside from providing its own source of scene illumination, SAR systems exhibit one
+   further advantage over all passive imaging systems in its ability to take advantage of coherent
+   illumination in its image formation process. Coherent illumination enables an imaged scene
+   to be illuminated by a single point source of radiation using a limited band of frequencies and
+   aligned in phase. This is distinct from non-coherent or incoherent sources of illumination,
+   such as the sun, which in reality consists of a virtually infinite quantity of independent point
+   sources of radiation representing a full spectrum of frequencies. Coherent illumination
+   enables SAR systems to utilize standard signal processing techniques in its image formation
+   process as well as use the principals of interferometry to produce some unique derivative
+   imagery products that incoherent imaging systems cannot—such as digital terrain elevation
+   maps (DTED), coherent change detection (CCD) images, and the like.
+   A2.1.3. SAR Collection Modes.
+      A2.1.3.1. Modern SAR systems are capable of producing images from a variety of
+      collection modes. Although each SAR system uses its own naming conventions,
+      fundamentally the operable collection modes come down to variations of two basic
+      modes: Strip Map and Spot-Light. A further third collection mode of SAR often also
+      exists which combines the properties of both Strip Map and Spot-Light modes, generally
+      referred to as Scan mode. Strip Map mode consists of the SAR imaging sensor pointing
+      its antenna at a constant orientation and illuminating a patch of ground as the sensor
+      platform traverses in a straight line direction such that the illuminated patch traces out a
+      long linear strip parallel to the flight path of the platform for as long as the radar is
+      engaged. Spot-Light mode consists of the SAR imaging sensor pointing its antenna at a
+      fixed ground location as the sensor platform traverses its flight path requiring the SAR
+      antenna to be constantly slewed to maintain illumination on the fixed ground patch for as
+      long as the radar is engaged. Strip Map mode images suffer from one distinct
+      disadvantage from virtually all other modes of SAR collection in that they are of limited
+      resolution, determined by the azimuth beam width of the SAR antenna; a particular point
+      on the ground within the imaged strip is illuminated by the SAR antenna beam for only as
+      long as the point remains in the antenna azimuth beam width while the SAR platform
+50                                                          AFISRAI 14-122 31 AUGUST 2010
+
+
+     traverses the strip. Spot-Light mode images, on the other hand, are capable of much
+     greater resolution due to the fact that the antenna continually slews to keep the targeted
+     patch of ground illuminated as the SAR platform traverses its flight path. Spot-Light
+     mode image azimuth resolutions are only limited by the length of the synthetic aperture
+     flown by the SAR platform during collection. Although the range resolution of both
+     Strip Map and Spot-Light mode collections are tied to the band width of the SAR sensor,
+     they are not dependent on antenna beam width or length of the synthetic aperture flown
+     by the SAR platform. Modern Spot-Light mode images are capable of producing
+     imagery with spatial resolutions that begin to approach that of remote optical imagery.
+     A2.1.3.2. Scan mode combines the ability of the SAR system to capture an image in the
+     form of a strip but avoids the limitations of Strip Map mode that only collects in a fixed
+     orientation with respect to the SAR platform (i.e., image strips parallel to platform flight
+     path) and with constrained azimuth resolution. Scan mode utilizes the slewing abilities of
+     the SAR antenna like that of Spot-Light mode to enable the SAR system to collect
+     images of ground patch strips of arbitrary orientation with respect to the flight path of the
+     SAR platform as well as to allow the SAR antenna beam to utilize longer dwell times
+     traversing through the targeted ground patch strip to increase the azimuth resolution of
+     the collected image. Scan mode overcomes the dependence of azimuth resolution on
+     azimuth beam width and SAR platform motion of conventional Strip Map mode,
+     however, at the expense of much greater complexity in the image formation process. In
+     general, Scan mode collections produce images of arbitrary geographic areas and in
+     greater resolution than Strip Map mode but at resolutions still below that of Spot-Light
+     mode.
+     A2.1.3.3. Modern SAR systems generally contain collection modes in one form or
+     another from the fundamental Strip Map, Spot-Light, and Scan modes. Each of these
+     modes has common as well as unique characteristics, advantages, and limitations, each
+     worth detailed discussion in their own right. Although the scientific and technical
+     principles that are used to form images from these individual collection modes have some
+     commonality in principle, the specific techniques that are utilized in each case are
+     distinctly different and the elaboration of the specific techniques involved in each mode
+     is beyond the scope of this document. Spot-Light mode, however, is normally the
+     dominant mode used in virtually all military imaging applications. As such, all further
+     discussions here shall be limited to the Spot-Light Mode of collection using airborne
+     platforms.
+  A2.1.4. SAR Collection Process. The typical geometry of an Airborne SAR Spot-Light
+  mode collection consists of the antenna beam of the radar looking out of either side of the
+  SAR aircraft platform, in a direction that is nominally pointed orthogonal to its flight path.
+  This direction of radiation propagation is generally referred to as the range direction, whereas
+  the direction that is nominally parallel to the flight path is referred to as the azimuth or cross-
+  range direction. In a typical airborne platform collection, the SAR system periodically
+  transmits a modulated pulse of microwave energy toward a targeted ground patch as the
+  aircraft traverses along its flight path. As the transmitted microwave energy impinges upon
+  the targeted ground patch, the reflective materials illuminated within the patch reflect the
+  transmitted pulse back to the SAR where the aggregated pulse returns are received,
+  demodulated, and stored. The typical Airborne SAR transmits only one pulse at a time and
+AFISRAI 14-122 31 AUGUST 2010                                                                  51
+
+
+  waits for reception of the aggregated pulse returns from all the electromagnetically reflective
+  materials within the illuminated ground patch before the transmission of the next subsequent
+  pulse in the collection. As the SAR platform proceeds along its flight path trajectory, the
+  SAR antenna continually slews its antenna beam maintaining its orientation on the same
+  targeted ground patch. The flight path through which the SAR platform traverses while
+  transmitting and collecting SAR pulse data is referred to as the synthetic aperture of the
+  collection. The assemblage of the received and demodulated pulse data collected is
+  commonly referred to as the Phase History Data. Once the collection is complete, this phase
+  history data is then forwarded to an Image Formation Processor (IFP) for the SAR system for
+  image construction. Based on the storage and processing capabilities of the particular SAR
+  platform collecting, the image formation processor may be on board the platform itself or be
+  located on the ground, in which case the collected phase history data must be down linked to
+  a mission ground station processing facility. At completion, the image formation processor
+  produces as output a reconstruction of the electromagnetic reflectivity of all the geographic
+  points contained within the illuminated ground patch in the form of a two-dimensional non-
+  literal image corresponding to the range and azimuth dimensions of the collection. The
+  detailed process by which this collected SAR pulse data is transformed into this non-literal
+  image representation of the targeted scene electromagnetic reflectivity is the result of
+  complex signal processing techniques.
+  A2.1.5. SAR Phenomenology. The theoretical means by which images may be constructed
+  from a pulsed radar system is enabled by virtue of three principal factors: the
+  electromagnetic phenomenology of natural and man-made materials to reflect incident
+  electromagnetic radiation, the principles of radar in utilizing complex modulated pulsed
+  signals to capture and preserve range and Doppler information within reflected pulsed signal
+  returns, and the ability of the SAR system to use advanced signal processing techniques and
+  algorithms to process the pulsed signal returns reflected from such materials in a manner that
+  preserves their spatial distribution from the targeted ground patch and interpret them to fine
+  resolution. In essence, a SAR image is a two-dimensional representation of the spatially
+  distributed electromagnetic reflectivity of the reflective materials contained within the three-
+  dimensional scene imaged by the radar.
+     A2.1.5.1. Reflectivity of Electromagnetic Radiation. The phenomenon which enables
+     imaging to be performed with a SAR system is the physical property of materials in the
+     imaged environment to reflect electromagnetic radiation. Electromagnetic radiation is
+     generally characterized by its frequency content, energy intensity, and electromagnetic
+     polarization. From a technical point of view, the operating principles by which radiation
+     reflects from materials are generally consistent across the electromagnetic spectrum.
+     When electromagnetic radiation encounters a material in the environment, either through
+     the medium in which it is traversing or its incidence upon the surface of a distinct
+     physical object, it undergoes one or more of the processes of reflection, penetration, or
+     absorption. When absorbed into an encountered material, electromagnetic radiation is
+     generally transformed into heat energy within the material. When penetrating through
+     the surface of an encountered material, the direction in which the electromagnetic
+     radiation travels is generally altered by process known as diffraction. When reflected
+     from a surface of an encountered material, the same operating principles that are
+     commonly understood about visible light generally also apply to all radiation across the
+52                                                        AFISRAI 14-122 31 AUGUST 2010
+
+
+     electromagnetic spectrum—angle of incidence equals angle of reflection. The specific
+     manner in which radiation reflects from the surface of an encountered material, as may be
+     observed in reflected energy, depends on the reflectivity property of the material itself, as
+     well as the physical size of, the contours within, and the orientation of the surface of the
+     material it impinges upon with respect to the wavelength and direction of the incident
+     radiation.
+        A2.1.5.1.1. Electromagnetic Reflectivity of Materials.            The electromagnetic
+        reflectivity of a given material governs the relative amounts of energy reflected from,
+        penetrated through, and/or absorbed into the material from incident radiation. The
+        reflectivity of a material is a fundamental property of matter and generally depends
+        upon its molecular composition as well as the physical state of the matter.
+        Electromagnetic reflectivity is also frequency dependent—the relative amounts of
+        energy reflected, penetrated, and/or absorbed varies based on the frequency content of
+        the incident radiation upon the material. Consequently, a material that happens to be
+        a good reflector in one frequency range may be a poor reflector in another frequency
+        range. In general, the frequency content and polarization of radiation undergoes no
+        alteration in the reflection process due to the reflectivity of the material. However,
+        the intensity of the energy reflected from that of the incident radiation is typically
+        affected by the processes of penetration and/or absorption as a function of the
+        reflectivity of the material.
+        A2.1.5.1.2. Physical Surface Size. Aside from the reflectivity of the material itself,
+        the most important factor in determining whether or not a material will reflect energy
+        at all is the size of its surface compared to the wavelength of the incident direction of
+        the radiation. The incident surface of the material must be at near the same size or
+        larger than the wavelength of the radiation impinging upon it in order for energy to be
+        reflected. Surfaces or objects of size less than this threshold will not reflect any
+        incident radiation at all regardless of how good of an electromagnetic reflector its
+        material composition may be. In general, the polarization of incident radiation has no
+        affect on the reflection of energy from reflective materials with respect to the physical
+        size of the material surface. The only exception where polarization does affect
+        reflection is when the surfaces of special linearly-oriented surface geometries happen
+        to precisely align orthogonal to the polarization orientation of the incident radiation.
+        In such cases, little or no energy reflects from such material surfaces. As a rule,
+        vertically polarized radiation tends to reflect more from surfaces with more vertically
+        oriented geometry and less from surfaces with more horizontally oriented geometry
+        relative to the direction of the radiation. The converse tends to be true for
+        horizontally polarized radiation with respect to surfaces with horizontally and
+        vertically oriented geometries respectively.
+        A2.1.5.1.3. Surface Contour Relief. Once the electromagnetic reflectivity and
+        surface physical size criteria of a material have been met, the specific manner in
+        which radiation reflects from a surface of a reflective material is mostly governed by
+        the contour relief present on the surface of the material incident to the radiation.
+        When the wavelength of the incident radiation is large compared to the relative height
+        differences of the contour features within the surface, the surface acts as a mirror-like
+        reflector and creates what is referred to as a specular reflection. When its wavelength
+AFISRAI 14-122 31 AUGUST 2010                                                                   53
+
+
+        is small compared to such contour feature height differences, the surface causes the
+        reflected energy to be scattered and create what is referred to as a diffuse reflection.
+        The amount of scattering present in a diffuse reflection is governed by the relative
+        distribution and severity of the contour relief present in the surface. As such, it is
+        possible for a surface to exhibit relative amounts of both specular and diffuse
+        reflection. A specular reflection typically results in the reflected energy retaining its
+        polarized nature intact from the original incident radiation. A diffuse reflection
+        typically results in the reflected energy being depolarized as well as being scattered,
+        the degree to which is governed by the severity of the contour relief features present
+        in the surface. Surfaces with extreme and densely distributed contour feature content
+        typically result in complete depolarization whereas surfaces with less extreme or
+        dense contour feature content cause only partial depolarization of the reflected energy
+        (i.e., some polarization of the incident radiation retained). Diffuse reflection is
+        generally referred to as backscatter.
+     A2.1.5.2. Principles of Radar Applied to Imaging.
+        A2.1.5.2.1. The basic principles of radar underlie all of the phenomenology
+        associated with SAR and have implications in all phases of collection, processing,
+        and interpreting of the images producible by a SAR system. In fundamental terms, a
+        SAR system is a radar system at its core and is governed by the basic principles of
+        radar. Radar systems detect objects by transmitting signals and listening for their
+        echoed returns. Radar determines the distance to which an object is located by
+        measuring the time the signal takes to reach, reflect, and return from the object back
+        to the radar. In radar terminology, this is referred to as radar range. Radar
+        determines the velocity or the range rate to which an object is moving by measuring
+        the difference between the transmitted and received signal frequencies and calculating
+        object velocity based on the Doppler Effect. In radar terminology, this is referred to
+        as radar Doppler. Although velocity and range rate in essence refer to the same
+        phenomenon, the use of which term in a given situation is governed by the specific
+        application of radar. When the radar is stationary with respect to a target that is in
+        motion, the term velocity generally applies. In applications were the radar is moving
+        with respect to a target that is stationary, as in the case of airborne radar imaging, then
+        the term range rate generally applies. In order for radar to simultaneously determine
+        target range and velocity or range rate, the radar signal waveform must embed both
+        timing information—for range determination, and frequency information in order to
+        detect Doppler frequencies.
+        A2.1.5.2.2. In order for radar to be employed for imaging, there must be some means
+        employed by the radar to enable the mapping of each radar signal return reflected
+        from a material at a specific geographic location on the ground to a relative position
+        within the produced image such that the spatial relationships to all of the remaining
+        geographic locations on the ground within the illuminated scene are preserved in their
+        resultant positions in the image. This is generally accomplished in SAR by exploiting
+        the unique geometry associated with radar signal phase and Doppler as it applies to
+        radar.
+        A2.1.5.2.3. Phase and Doppler Geometry. A key enabling principle by which radar
+        can be used for imaging within a SAR system is how the individual geometries
+54                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+     associated with the phase and Doppler of a radar signal are exploited to transform the
+     data collected by the radar into a non-literal SAR image. The geometry associated
+     with radar signal phase is somewhat different than that associated with radar signal
+     Doppler. The combined geometries associated with phase and Doppler is typically
+     referred to in radar terminology as the phase and Doppler space. It is these
+     geometries which a SAR must exploit in order to transform the data collected by the
+     radar into a two-dimensional image.
+     A2.1.5.2.4. Geometry of Radar Signal Phase. If an airborne radar was capable of
+     generating its signal in all directions surrounding its location without obstruction, the
+     phase of the radar signal would radiate out uniformly spherical from its point of
+     origin such that any distance from the platform at any given instant of time would be
+     represented by sphere with its center at the platform location itself. If one were to
+     imagine a three-dimensional geometrical grid of radar signal phase surrounding the
+     platform at a fixed instant of time, it would consist of a series of concentric spheres
+     surrounding the platform, all centered at the airborne position of the platform.
+     Furthermore, if this three-dimensional grid was to intersect with the ground,
+     represented by a simple geometric plane, it would be transformed into a two-
+     dimensional grid in the form of a series of concentric circles all centered at the nadir
+     point of the platform position on the ground. In such a scenario, each individual circle
+     in the grid would represent a particular distance from the airborne platform and
+     subsequently a particular phase of the radar signal. This is the general geometry
+     associated with radar signal phase.
+     A2.1.5.2.5. Geometry of Radar Signal Doppler.
+        A2.1.5.2.5.1. The geometry associated with radar signal Doppler is somewhat
+        different from that associated with radar signal phase. If an airborne radar
+        platform was capable of generating its signal in all directions surrounding its
+        location without obstruction and from a stationary point in space without motion,
+        the frequency of the radar signal would also radiate outward in a uniformly
+        spherical pattern like that for radar signal phase—constant in all directions.
+        However, airborne radar platforms are not stationary, and the specific manner in
+        which the frequency of a radar signal radiates out in any specific angular direction
+        relative to the direction of the moving platform behaves according to the Doppler
+        Effect. For a given radar signal radiating out in a particular angular direction
+        relative to the direction of platform motion, its frequency will exhibit a
+        determinably fixed Doppler shift based on the relative velocity of the platform as
+        would be observed along that angular direction. Such would also be true for any
+        orientation of that angular direction around the axis of platform flight trajectory.
+        As such, if that same angular direction were to be orthogonally rotated around the
+        platform along the axis of its flight trajectory, it would form the geometric shape
+        of a cone with the apex of the cone located at the platform position. This is what
+        is generally referred to in radar terminology as the Doppler cone, with the angle
+        used to form the cone at the apex being referred to as the Doppler cone angle.
+        Just as in radar signal phase with values of constant phase being observable on
+        every point on the surface of a sphere, all points on the surface of a particular
+        Doppler cone will exhibit the same Doppler shift in frequency for a radar signal
+AFISRAI 14-122 31 AUGUST 2010                                                                55
+
+
+           observed to be radiating in the direction that follows along the surface of that cone
+           directed from its apex.
+           A2.1.5.2.5.2. In general, the lesser the Doppler cone angle with respect to the
+           direction of platform motion, the smaller the Doppler cone becomes and the more
+           positive the Doppler shift will be as experienced by a radar signal observed at any
+           point on the surface of that cone, until reaching zero degrees where the Doppler
+           cone becomes transformed into a line directly aligned with the direction of
+           platform motion and the Doppler shift experienced by the radar signal becomes at
+           its positive maximum. As the Doppler cone angle increases up to 90 degrees, the
+           larger the Doppler cone becomes and correspondingly the smaller the positive
+           Doppler shift will become as experienced by a radar signal observed at any point
+           on the surface of that cone. When the Doppler cone angle reaches 90 degrees, a
+           direction that is perpendicular to the direction of platform motion, the Doppler
+           cone ceases to be a cone and becomes transformed into a flat plane centered at the
+           platform location and the Doppler shift experienced by the radar signal becomes
+           zero. When the Doppler cone angle increases beyond 90 degrees relative to the
+           direction of platform motion, the Doppler cone becomes large again, but in the
+           direction opposite to the flight direction of the platform, and the Doppler
+           experienced by the radar signal begins to shift in the negative direction because
+           the platform is observed to be moving away from that angular direction. As the
+           Doppler cone angle increases from beyond 90 degrees up to 180 degrees, the
+           Doppler cone becomes decreasingly smaller and the corresponding Doppler shift
+           experienced by the radar signal observed at any point on the surface of that cone
+           continues to get more negative until reaching exactly 180 degrees, where the
+           Doppler cone again becomes transformed into a line directly aligned away from
+           the direction of platform motion and the Doppler shift experienced by the radar
+           signal becomes at its negative maximum.
+           A2.1.5.2.5.3. If one were to imagine a three-dimensional geometric grid of
+           Doppler surrounding the platform at a fixed instant of time, it would consist of a
+           series of concentric Doppler cones surrounding the platform along its forward and
+           reverse directions of travel, each with its apex at the airborne position of the
+           platform. Furthermore, if this three-dimensional grid was to intersect with the
+           ground, represented by a simple geometric plane, it would be transformed into a
+           two-dimensional grid in the form of a series of concentric hyperbolas fanning out
+           in both directions from nadir point of the platform position on the ground. In such
+           a scenario, each individual hyperbola in the grid would represent a particular
+           value of relative range rate from the airborne platform, and subsequently a
+           particular value of Doppler shift as would be observed in a radar signal anywhere
+           along that grid line. This is the general geometry associated with radar signal
+           Doppler.
+        A2.1.5.2.6. Phase and Doppler Geometry in Space. If the individual geometries
+        associated with radar signal phase and Doppler are overlaid into the same volume of
+        geometric space surrounding the position of an airborne radar platform, the combined
+        three-dimensional geometric space would consist of concentric spheres interlaced
+        with concentric cones centered at the position of the airborne radar platform in that
+56                                                    AFISRAI 14-122 31 AUGUST 2010
+
+
+     space. Attempting to use this combined phase and Doppler geometry in three-
+     dimensional space, however, can produce some unusual affects in terms of radar
+     signal interpretation. For example, when the geometry associated with a particular
+     radar signal phase—the sphere representing points of equidistant phase, intersects
+     with the geometry associated with a particular radar signal Doppler—the Doppler
+     cone representing the points of equal Doppler shift, the net intersection is a circle
+     with its center and orientation located along and perpendicular to the path of travel of
+     the airborne platform. As such, all of the points on this circle represent a possible
+     instance of a radar signal with the exact same phase and Doppler shift characteristics.
+     If a radar signal were to intercept with and reflect from an object located at any point
+     on this circle, the reflected radar signal would have the exact same signal phase and
+     Doppler-shifted frequency characteristics. This makes it impossible for a reflected
+     radar signal having a particular combination of signal phase and Doppler-shifted
+     frequency characteristics to be attributable to a unique spatial position. This is
+     generally known in radar terminology as ambiguity. Ambiguity represents problems
+     in any radar application because it prevents a specific radar signal return to be
+     uniquely attributed to whatever physical quantity the radar is measuring (i.e., range,
+     velocity, location, etc.). All applications of radar inherently have ambiguities. In
+     SAR, the ambiguity scenario described above generally explains the presence of
+     signatures within SAR imagery such as the layover effect from elevated targets and
+     the affects of objects in motion within or near the target imaged area. The challenge
+     of using radar in any application generally requires the radar to be used in a manner
+     which reduces or at least limits its inherent ambiguities.
+     A2.1.5.2.7. Phase and Doppler Geometry in the Ground Plane. Although the
+     combined geometry associated with radar signal phase and Doppler is entirely
+     unsuitable when applied to the three-dimensional space surrounding an airborne radar
+     platform due to the nature of the radar ambiguities it presents, it becomes more
+     suitable when it is limited to applying to the intersecting two-dimensional ground
+     plane of the earth. Such an intersection produces onto the ground plane a grid of
+     concentric circles interlaced with concentric hyperbolas, all centered at the nadir point
+     of the airborne radar platform projected onto the ground. This grid can in effect be
+     used to represent a two-dimensional coordinate system of radar signal phase and
+     Doppler on the ground plane. This limited geometry of radar signal phase and
+     Doppler applied to the ground plane in effect enables every point in the ground plane
+     relative to the airborne radar position to have an almost unique radar signal phase and
+     Doppler associated with it. The reason why radar signal phase and Doppler is not
+     entirely unique, however, is due to a residual radar ambiguity produced by the
+     curvature of the phase and Doppler lines within the composite phase and Doppler
+     grid. This grid curvature results in exactly two spatial points on the phase and
+     Doppler grid for every unique coordinate value of signal phase and Doppler,
+     positioned symmetrically equidistant on each side of the nadir line the path and
+     motion that the airborne platform makes onto the ground plane. This is not
+     detrimental if the radar onboard the airborne platform is employed to collect from
+     only either side of the platform at a time with respect to the nadir line associated with
+     its path of motion. In doing so, the ground plane is essentially split into two parts, one
+     on each side of the airborne platform, and thus eliminating the radar ambiguity. This
+AFISRAI 14-122 31 AUGUST 2010                                                                 57
+
+
+        is the fundamental reason which SAR collections are only performed from the
+        perpendicular sides of collection platforms relative to its direction of travel. Doing so
+        allows for each unique coordinate value of radar signal phase and Doppler to be
+        attributable to one and only one unique spatial point in each half plane. As a result,
+        the limited geometry of radar signal phase and Doppler applied to each ground half
+        plane in effect enables every point in each half plane relative to the airborne radar
+        position to have an unambiguously unique radar signal phase and Doppler associated
+        with it.
+     A2.1.5.3. Phase and Doppler Content of Radar Signal Returns.
+        A2.1.5.3.1. Radar Signal Phase and Doppler Content Preservation. Another key
+        enabling principle by which radar can be used for imaging within a SAR system is
+        how complex modulated pulsed signals incorporate and preserve the range and
+        Doppler information within reflected pulsed signal returns. In the typical air-to-
+        ground airborne radar collection scenario, as a radar signal generated from the
+        platform radiates toward a particular geographic position on the ground, the position
+        and motion of the platform relative to that ground position at the exact instant the
+        signal was generated causes the frequency content of the radar signal to be shifted in
+        frequency according to the Doppler Effect. As such, when the radar signal reflects
+        from a material surface at that particular ground position and returns back to the
+        platform, it does so retaining its distinctive Doppler-shifted frequency content.
+        Together with the amount of the time necessary for a generated radar signal to
+        propagate to and return from a particular ground position, the specific phase and
+        Doppler information embedded and retained within a reflected radar signal facilitates
+        its direct attribution to that specific geographic position on the ground relative to the
+        exact position, velocity, and direction of travel at the exact time the radar signal was
+        generated.
+        A2.1.5.3.2. Radar Signal Segregation. Aside from the preservation of the spatial
+        relationships amongst imaged scene content, the detection of embedded phase and
+        Doppler information content from reflected radar signal returns is also critical to SAR
+        for radar signal return segregation. In the typical SAR collection scenario, a SAR
+        generates a single pulsed signal and collects the aggregated signal returns reflected
+        from materials in the illuminated target area. Because most of the materials within
+        the illuminated target area are collocated, the signal returns reflected from those
+        materials are overlapping with respect to both time and frequency. Without any
+        ability to segregate the overlapping radar signals returned from such a collection,
+        image formation would be impossible. Since the geometry of radar signal phase and
+        Doppler on the ground plane causes each distinct geographic position with the ground
+        plane to have a unique and unambiguous signal phase and Doppler characteristic in
+        the reflected radar signal return, each of the reflected signal returns in the aggregated
+        return have unique and unambiguous embedded signal phase and Doppler
+        information content. This unique and unambiguous embedded phase and Doppler
+        information content enables the radar to distinguish each individual return from each
+        other with the use of signal processing techniques.
+        A2.1.5.3.3. Imaging Radar Signal Waveform. Radar is capable of detecting both
+        phase and Doppler information from reflected radar signal returns provided that
+58                                                      AFISRAI 14-122 31 AUGUST 2010
+
+
+        sufficient phase and frequency content is encoded into the signal used by the radar.
+        The choice of the signal waveform to be used in a radar system is perhaps the single
+        most governing property in determining its resolution capabilities and limitations.
+        The typical modern SAR system utilizes a specially modulated pulse, called the
+        Linear FM Chirp, as its transmitted pulse waveform. The Linear FM Chirp is
+        characterized as a signal waveform where the frequency starts at some starting value
+        and increases in a linear fashion until reaching an end value. The rate with respect to
+        time to which frequency increases is referred to as the Chirp Rate of the signal. The
+        Linear FM Chirp signal belongs to the class of Coded Waveforms in Signal
+        Processing that have their own associated set of signal processing techniques. The
+        Linear FM Chirp represents one kind of coded waveform known as a Dispersed
+        Waveform and its associated signal processing technique known as Pulse
+        Compression. The Linear FM Chirp represents one way to encode a radar signal with
+        greater effective bandwidth that can be effectively used to achieve high range
+        resolution without the negative radar system consequences of attempting to use CW
+        burst pulse waveforms. The utility of using the Linear FM Chirp waveform,
+        especially in imaging radars, comes about because the duration of this signal can be
+        made long compared to that of a CW burst pulse signal, yet have the same effective
+        bandwidth. The Linear FM Chirp is perhaps the most utilized of large time-
+        bandwidth product waveforms in imaging radars. Given that the range resolution of a
+        radar is determined by the bandwidth of the transmitted waveform, use of the Linear
+        FM Chirp waveform in place of the CW burst pulse achieves the same effective
+        resolution, but with more energy per pulse, which translates to a corresponding
+        increase in signal-to-noise ratio in the captured radar image and a corresponding
+        increase in image quality such as contrast.
+     A2.1.5.4. Image Formation Process.
+        A2.1.5.4.1. Fundamentally, the content within a SAR image is controlled by how the
+        SAR image formation processor interprets the demodulated pulse data returned to the
+        radar during the collection process. As such, the quality and accuracy of that SAR
+        image content in representing the true electromagnetic reflectivity of the targeted
+        scene being imaged is dependent upon the quality and accuracy to which the pulse
+        data returned to the radar is preserved in all of the processes in the image processing
+        chain starting from pulse signal reception at the antenna all the way through to
+        production of the final image. A SAR imaging system is fundamentally a radar
+        system, and as such, is subject to the same imperfections as most electronic systems
+        are, to which the disciplines of engineering and manufacturing attempt to manage and
+        control. Given the current state-of-the-art, such imperfections are unavoidable, but
+        are managed within the context of the system design to be within limits that are
+        acceptable such not to impact performance of the overall system so long as the
+        operating constraints for which the imperfections were mitigated to are observed and
+        adhered. Some imperfections are static in nature and are only mitigated through the
+        static design of the system. Other imperfections are dynamic in nature and have to be
+        managed through special one-time or continuing calibration to control and
+        compensate for the imperfections to keep them within the tolerable limits necessary
+        for proper and expected system operation. Those imperfections which cannot be
+AFISRAI 14-122 31 AUGUST 2010                                                                  59
+
+
+         mitigated through static design or dynamic management are generally mitigated only
+         by direct manipulation of the actual collected data through the means of algorithmic
+         compensation (i.e., performed in the image formation processor). Nonetheless, even
+         with proper system design and calibration, system imperfections may still arise from
+         time to time to levels that impact operation of the system due to fatigue and/or failure
+         of system components, calibration drift, or unforeseen conditions for which designed
+         mitigations cannot manage or control. Note: All of these factors have the potential to
+         affect the quality and accuracy of the contents of the final image product from a SAR
+         imaging system.
+         A2.1.5.4.2. Beyond these aforementioned issues associated with SAR imaging
+         system hardware, there are also potential issues associated with the image formation
+         process—the term that is generally used to represent the set of complex algorithms
+         utilized to transform returned radar pulse data into SAR images—that also must be
+         addressed.
+         A2.1.5.4.3. In addition to transforming the collected radar pulse data into the final
+         SAR image product, these algorithms must also perform tasks such as manipulate the
+         collected pulse data into a form that facilitates its processing with conventional signal
+         processing techniques, compensate for the errors in collected radar pulse data induced
+         from SAR system hardware imperfections (as mentioned previously), compensate for
+         the residual signal processing errors resulting from demodulation of collected radar
+         pulses, compensate for effects on collected radar pulse data induced from
+         imperfections in SAR platform flight path trajectory encountered during collection,
+         compensate for imperfections inherent in the specific image formation algorithm
+         chosen for image formation processing, compensate for the resultant geometric
+         distortion present as a result of collection geometry, and perform transformation
+         processes designed to negate the defocusing effects of collection geometry and
+         improve the overall focus and/or quality of the final image product.
+  A2.1.6. SAR Image Interpretation.
+     A2.1.6.1. Radar images have properties that are distinctly different from those of optical-
+     based images. Proper interpretation and information extraction from SAR images
+     requires a fundamental understanding and appreciation of at least some of these
+     properties. SAR image properties fundamentally fall into two types or categories:
+     extrinsic—where properties of the scene being imaged produce effects in the resultant
+     image independent of the radar system, and intrinsic—properties that are generated
+     purely by the radar system itself and the signal processing involved in the image
+     processing chain.
+     A2.1.6.2. All properties have some effect in the quality of the resultant image product,
+     some more than others. System intrinsic properties are significant in their ability to affect
+     the extrinsic image properties generated by the external world. The SAR system can
+     modify, distort, or produce uncertainties in the extrinsic properties of the scene being
+     imaged. Further distinction must also be made between intrinsic properties of the SAR
+     imaging system, which cannot be overcome, and artifacts produced by errors or
+     inadequacies in the behavior of the imaging system and its associated signal processing.
+60                                                       AFISRAI 14-122 31 AUGUST 2010
+
+
+     A2.1.6.3. In terms of SAR systems, only reflections from specular surfaces with
+     orientations perpendicular to the pulsed signal generated by the radar return to the radar.
+     Such reflections appear as light areas within a SAR image—the stronger the return, the
+     whiter the area in the image. Given that electromagnetic energy reflections from all other
+     specular surface orientations relative to the radar is reflected away from the radar, such
+     reflections appear as completely dark areas within a SAR image. Diffuse surfaces with
+     all but extreme surface orientations away from the radar all provide some backscatter
+     signal energy returned to the radar. Diffuse reflections are usually appear as various
+     tones of gray in SAR images, with darker tones representing weak signal returns and
+     lighter tones representing stronger signal returns. Not much exploitation value can be
+     gained from interpreting the specific shade or tone of gray represented in an image as the
+     electromagnetic reflectivity, surface texture, and surface orientation all play a part in
+     determining the amount of backscatter energy returned in a reflection from a diffuse
+     surface, and these factors cannot be distinguished from one another without a priori
+     knowledge of the content of the imaged scene. In general, the diffuse reflections
+     represented in a SAR image generally bring context to the specular reflections
+     represented in an imaged scene. As for surfaces or objects with surfaces that are small
+     compared to the wavelength of the SAR system, such surfaces do not reflect
+     electromagnetic energy, regardless of electromagnetic reflectivity of the material
+     involved. The consequences for a SAR imaging system are that surfaces of such size
+     would not be visibly apparent in SAR imagery products because they are not discernable
+     to the radar.
+     A2.1.6.4. In regards to polarization, specular reflections from surfaces which happen to
+     alter the polarization orientation of the returning electromagnetic energy, either from
+     direct or multi-path reflection, may negate the ability of the SAR system to collect the
+     returned pulse by the fact that the polarization of the antenna prevents or attenuates its
+     detection based on how the polarization was modified in the reflection process. Such
+     surfaces may in effect appear as an absorber or diffuser of electromagnetic energy to the
+     SAR system rather than the true specular reflector that it actually is. As a result, some
+     SAR systems are designed with the ability to generate both vertically and horizontally
+     polarized radar signals, as well as the ability to collect in cross-polarized configurations
+     (i.e., transmit in one polarization and receive in the other) in order to enhance collection
+     capability. Typically, Airborne SAR systems possess the capability to operate in one
+     polarization only, and that polarization tends to be vertical.
+     A2.1.6.5. In general, SAR systems are designed to operate in the radio frequency (RF)
+     portion of the electromagnetic spectrum, most predominantly in the X-Band frequency
+     range (8.5-10.6 GHz) with wavelengths near 3 cm (actual 2.8-3.5 cm). In terms of
+     electromagnetic reflectivity at these wavelengths, man-made surfaces and structures
+     made from metal and masonry are good specular reflectors. Surfaces such as roads or
+     runways turn out to be highly specular reflective surfaces due to their surface textures
+     being smooth in comparison to a 3 cm wavelength. This is contrasted to the appearance
+     of roads and runways as diffuse reflections in EO systems which operate in the regions
+     around the visible light portion of the electromagnetic spectrum with wavelengths at
+     around 0.4 to 0.7 micrometers. Water in its liquid form as in bodies of water is also a
+     highly specular reflector. This is contrasted with water in vapor form (as in clouds) or in
+AFISRAI 14-122 31 AUGUST 2010                                                              61
+
+
+     light to moderate rain, which is for all practical purposes reflectively invisible at RF
+     wavelengths. Wavelength is the primary reason that enables SAR systems to penetrate or
+     look through cloud cover and forms of moderate weather. Wood, if extremely dry, as
+     well as other dry materials such as canvas and netting, are poor reflectors and generally
+     transparent to SAR. However, should structures or surfaces of poor reflectors should
+     become wet or subjected to a film of dirt, oil or debris, they can become excellent
+     reflectors.

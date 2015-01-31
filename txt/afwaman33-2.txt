@@ -1,0 +1,1020 @@
+BY ORDER OF THE COMMANDER                       AIR FORCE WEATHER AGENCY MANUAL
+AIR FORCE WEATHER AGENCY                                                    33-2
+
+                                                                                 8 APRIL 2010
+                                                           Certified Current 10 September 2013
+                                                             Communications and Information
+
+                                                           CONSOLIDATED NETWORK
+                                                  CONFIGURATION MANAGEMENT PLAN
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: This publication and forms are available for downloading or ordering on
+               the e-Publishing website at www.e-Publishing.af.mil.
+
+RELEASABILITY: There are no restrictions on the release of this publication.
+
+OPR: 2 SYOS/SYOM                                                       Certified by: 2 WXG/CC
+Supersedes: AFWAMAN33-2, 10 June                                      (Col John M. Egentowich)
+            2003                                                                       Pages: 26
+
+
+This manual establishes policies, procedures, and responsibilities for documenting and
+modifying Headquarters Air Force Weather Agency (HQ AFWA) Consolidated Network (ACN)
+processes, hardware, and software component configurations. Attachments to this manual define
+ACN configuration standards. AFWA manages the ACN configuration to ensure required levels
+of service for ACN users and to guarantee AFWA data availability, integrity, confidentiality, and
+accountability. The ACN provides internal data communications for HQ AFWA automation
+systems and links these systems to external users and suppliers. This manual implements Air
+Force Instruction (AFI) 33-115, Volume 1, Network Operations; AFI 33-202V1, Network and
+Computer Security; AFWA Manual (AFWAMAN) 33-1, Air Force Weather Agency
+Consolidated Network Operations Manual. Ensure that all records created as a result of
+processes prescribed in this publication are maintained in accordance with Air Force Manual
+(AFMAN) 33-363, Management of Records, and disposed of in accordance with Air Force
+Records Information Management System (AFRIMS) Records Disposition Schedule (RDS)
+located at https://www.my.af.mil/gcss-af61a/afrims/afrims. The reporting requirements in
+this publication are exempt from licensing in accordance with AFI 333-324, The Information
+Collections and Reports Management Program; Controlling Internal, Public and Interagency
+Air Force Information Collections. Paragraphs 2.11.4 & 2.11.5 apply. Refer recommended
+changes and questions about this publication to the Office of Primary Responsibility (OPR)
+using the AF Form 847, Recommendation for Change of Publication; route AF Form 847s from
+the field through the appropriate functional’s chain of command. This publication does not
+apply to the Air National Guard or the Air Force Reserve Command.
+2                                                                                       AFWAMAN33-2 8 APRIL 2010
+
+
+SUMMARY OF CHANGES
+
+This publication has been substantially revised and must be completely reviewed. Major
+changes include a new organization structure after an AFWA reorganization and it also reflects
+new responsibilities post-AFNETOps.
+
+       1.     ROLES AND RESPONSIBILITIES. ....................................................................                        2
+       2.     PROCESS OVERVIEW. .......................................................................................               2
+       3.     CONFIGURATION IDENTIFICATION ..............................................................                             5
+       4.     INTERFACE MANAGEMENT ............................................................................                      5
+       5.     CONFIGURATION CONTROL ...........................................................................                       7
+       6.     CHANGES TO THE PLAN ..................................................................................                 13
+       7.     Prescribed Forms. ..................................................................................................   13
+       8.     Adopted Forms. .....................................................................................................   13
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                       14
+
+Attachment 2—CHANGE APPROVAL                                                                                                         17
+
+Attachment 3—ACN INFRASTRUCTURE MARKING STANDARD                                                                                     19
+
+Attachment 4—NETWORK DEVICE NAMING STANDARD                                                                                          24
+
+Attachment 5—ACCESS CONTROL LIST MANAGEMENT PROCESS                                                                                  26
+
+
+1. ROLES AND RESPONSIBILITIES.
+    1.1. Management Resources. The 2d System Operations Squadron (2 SYOS) commander
+    operates the AFWA Consolidated Network (ACN). AFWA Department of Defense (DoD)
+    and contractor personnel manage the ACN configuration. DoD personnel direct ACN
+    employment and configuration, while contractor personnel provide technical support for
+    ACN operation and maintain network components.
+    1.2. System Organization. ACN DoD personnel are assigned to the 2d System Operations
+    Squadron (2 SYOS) System Operations Flight, Mission Support Center (SYOM). DoD
+    personnel from SYOM represent users and operators on the Weekly Implementation and
+    Maintenance Meeting (WIMM). Support and Services (S&S) contractors augment the ACN
+    team under AFWA direction.
+    1.3. Configuration Management (CM) Responsibility and Authority. 2 SYOS operates the
+    ACN, directs configuration management and delegates authority for routine ACN operations
+    to SYOM. Specific responsibilities of the ACN Management Team are detailed in
+    AFWAMAN 33-1, ACN Operations Manual.
+2. PROCESS OVERVIEW.
+AFWAMAN33-2 8 APRIL 2010                                                                    3
+
+
+  2.1. Background. AFWA automation systems depend on fast, reliable communications both
+  internally and with external users and suppliers. The ACN provides data communications
+  between HQ AFWA automation platforms and between HQ AFWA systems and external
+  interfaces. ACN integrates and manages all internal HQ AFWA data communication assets
+  as a single, strategic system. Stable ACN service levels are critical to AFWA operational
+  continuity and data security.
+  2.2. Purpose. This ACN CM plan defines the process for documenting and modifying ACN
+  procedures and component configurations and specifies accepted methods of identification,
+  control, status accounting, and audit. The CM Plan defines a process for identifying,
+  collecting, validating, storing, and updating configuration data. CM data includes the
+  attributes of each Configuration Item (CI), interface and performance documentation, and the
+  current status of each CI. This CM Plan identifies the CM organization and specifies
+  responsibilities and authority of CM team members.
+  2.3. Scope. This plan guides the MSC Chief in managing HQ AFWA data communications
+  assets. The plan is directive for all personnel using or connecting to ACN assets. ACN
+  includes all HQ AFWA production communications assets except Network Interface Cards
+  (NIC) installed in end nodes. The ACN does not include administrative communications
+  assets. All ACN connections with end user nodes or non-ACN systems are documented
+  using an ACN Connectivity Request and are categorized based on the level of trust—which
+  differs from the level of classification—accorded various assets and users.
+  2.3.1. Trusted systems are those topologically connected inside the ACN security perimeter
+  and controlled by AFWA. Trusted systems connect directly only with other trusted systems.
+  Any electronic exchange with other than trusted systems is conducted exclusively through
+  the base firewall.
+     2.3.2. Demilitarized Zone (DMZ) systems connect to ACN firewall or DMZ components
+     and may lack other external connections. They connect to trusted components only via
+     the base firewall and maintain controlled external connectivity as defined by the AFWA
+     Unclassified Production Environment accreditation documentation (e.g. SSAA, CCR).
+     2.3.3. Untrusted users are connected to the base edge device and DMZ and may have one
+     or more connections to other systems or networks outside AFWA control. These systems
+     have no direct connectivity with trusted systems and only well-defined connectivity with
+     DMZ systems via the edge device.
+     2.3.4. Communications within Sensitive Compartmented Information (SCI) Facilities
+     (SCIF) and all aspects of the secure (multi-level security) guards associated with SCIF
+     interfaces to non-SCIF activities are subject to the constraints of both this Plan and
+     separate SCI procedures.
+     2.3.5. AFWA Tenants. AFWAMAN 33-2 is binding on untrusted networks and external
+     users connected directly to or supported by ACN resources (these users are considered
+     tenant networks). Untrusted networks and users include AFWA tenants who, while
+     located within AFWA physical boundaries, are not connected to the trusted network or
+     DMZ and may maintain independent, untrusted connections.
+  2.4. System Description. ACN includes all internal, intersystem HQ AFWA data
+  communications capabilities, associated firewalls, DMZ, edge devices, management systems,
+4                                                            AFWAMAN33-2 8 APRIL 2010
+
+
+    Domain Name Servers (DNS), management performance (i.e., defined service levels), and
+    configuration information. ACN integrates a backbone infrastructure and centralized routing,
+    switching, and management capability with legacy communications assets and specialized
+    communications networks delivered by other programs. ACN does not incorporate the end
+    node NIC or other user communications interface devices but does specify the configuration,
+    network addresses, and ports, services and protocols to be employed across ACN interfaces
+    by connected systems.
+       2.4.1. ACN is the top-level CI and is part of the Infrastructure Services group in the
+       current Common Operating Environment (COE) taxonomy.
+       2.4.2. ACN consists of several component, lower level CI’s.         The component CIs
+       include:
+           2.4.2.1. The Cable Plant consists of unshielded twisted pair (UTP) and fiber-optic
+           cable, patch panels and termination points, equipment cabinets/racks, and the room
+           cable grids.
+           2.4.2.2. The Network Security consists of the Security Scanner and Reverse Proxies.
+           2.4.2.3. Network Management includes internal DNS, monitoring and management
+           platforms, associated operating systems and installed devices, and the hosted network
+           management, customer service, and configuration management software.
+           2.4.2.4. Networking Elements include switch and router hardware, firmware, installed
+           devices (boards) and interfaces, and port configuration data for the Unclassified
+           Production Network, Development Network, and Administrative Network, the
+           Collateral Classified Network, the SCI and Joint Worldwide Intelligence
+           Communications Systems (JWICS) networks, and the Defense Research and
+           Engineering Network (DREN).
+           2.4.2.5. The Long-Haul or Wide Area Network (WAN) Interface consists of network
+           edge devices such as routers, multiplexers, and cryptographic equipment which
+           defines the edge of the ACN at its interface to Common User Communications and
+           other dedicated circuits.
+           2.4.2.6. Network/Interface Protocols and Specifications include communications,
+           ports, protocols, services, cables, associated users and management protocols
+           specified for ACN operations and are documented in the accreditation documentation
+           (e.g. SSAA, CCR).
+           2.4.2.7. Network Data includes ACN performance, address, and configuration
+           information. This data is a separate CI from the databases in which it is stored and
+           the tools that generate it.
+           2.4.2.8. The Test Bed consists of dedicated test equipment and associated network
+           equipment assigned permanently to test functions and recommended changes to the
+           ACN environment prior to implementation of changes to the live network. Vendor
+           loan materials may be included in the Test Bed on a temporary basis as directed by
+           the ACN TIM. Additionally, the test bed contains a separate Enterprise Management
+           Bench managed by SYO used to test and evaluate various management software tools
+           prior to implementation on the AFWA network.
+AFWAMAN33-2 8 APRIL 2010                                                                        5
+
+
+  2.5. Data Management. S&S correlates and maintains all change management, asset
+  management, and associated customer service records using COTS tools as defined herein
+  and in AFWAMAN 33-1. Configuration data will be available in hard or softcopy to the
+  MSC Chief, and A8P as well as system users. The MSC ensures ACN CM records are
+  archived to off-line storage regularly. This includes applicable audit and action logs. On-
+  line CM records will be accessible to the MSC Chief or A8P via standard queries. The S&S
+  contractor and MSC technicians will maintain a data management plan specifying storage
+  formats and access procedures for CM materials.
+3. CONFIGURATION IDENTIFICATION
+  3.1. Approach.      Configuration identification entails defining ACN in terms of its
+  components—hardware, software, data, and interfaces—and ensuring the resulting
+  definitions continuously reflect the operational ACN. The identification process establishes
+  both a hierarchical structure and a labeling/naming system. The resulting documents include
+  manufacturers’ product version descriptions and version number/date or source code listings
+  for the computer software CIs (CSCI); interface specifications, and drawings and part and
+  serial number listings for the hardware CIs (HWCI). HWCIs are marked and tracked using
+  unique, barcode identifiers compliant with DoD directives for automation systems. Network
+  data, protocols, and interface data are identified by CI type, document or database date,
+  and/or recorded version.
+  3.2. Establishing Baselines. The MSC Chief periodically directs a physical audit of the
+  ACN to document the production baseline. The MSC Chief reviews and resolves variations
+  between the baseline and existing inventories following the physical audit in order to certify
+  the new baseline. The baseline documents hardware, software, cable plant locations,
+  versions, and configurations at a specific point in time. Subsequent audits confirm that the
+  baseline found at the audit is equal to the previous baseline plus the sum of the documented
+  and approved changes. Deviations are highlighted and addressed in terms of their
+  operational and security ramifications and corrected as required.
+  3.3. Assigning and Applying Identifiers. All ACN software, hardware, and documentation
+  are marked in accordance with identification schema outlined in attachments to this plan.
+  Legacy components and those elements delivered by connecting systems and integrated into
+  the ACN will retain their original identifications to the extent feasible. These identifications
+  are updated using ACN schema when the element is modified. Hardware, board layout
+  within hardware frames, cable plant, and terminations are tracked using system drawings in
+  conjunction with applied bar code and name labels and associated CM databases.
+4. INTERFACE MANAGEMENT
+  4.1. Overview. An interface is the connection between ACN and a user system or network.
+  The MSC Chief works with the connecting systems system administrator to design an
+  interface and ensure accreditation documentation is completed accurately. The A6
+  Configuration Change Request (CCR) is required to update all changes to the accreditation
+  document (i.e. SSAA) of a system. Documentation includes expected performance,
+  accreditation impacts of the connection, hardware/software, and ports, protocols and services.
+  The WIMM reviews proposed interfaces and changes to existing interfaces in light of
+  impacts on ACN system accreditation and performance resulting from the actions. Interface
+  actions are handled in the same manner as other configuration changes.
+6                                                             AFWAMAN33-2 8 APRIL 2010
+
+
+    4.2. Connectivity Request. The ACN Connectivity Request is a part of the Internal Help
+    Desk software used to define and document all ACN interface work tickets. Help desk
+    software documents the detailed change process and work flow. The end user must also
+    submit the applicable accreditation documentation or CCR. The Configuration Control
+    Board (CCB) must approve a CCR for any new system or network connected directly to any
+    ACN components. Before such a connection becomes operational and/or permanent,
+    appropriate approval must be obtained. Users must also submit, for A8P adjudication, a
+    CCR for any change (e.g., additional or reduced connectivity, use of different media or
+    protocols, moving connection points) to an existing connection. The MSC and A6 assists
+    users in preparing CCRs and works with S&S to evaluate expected impacts. Connectivity
+    requests and their associated work orders are maintained in the Internal Help Desk software
+    database and off-line. The MSC Chief, SYOO, SYO Chief, and 2 SYOS/DO can approve
+    temporary or emergency interface changes subject to WIMM ratification.
+       4.2.1. Process.     Changes to ACN interfaces are managed like other network
+       configuration changes. An ACN help desk work ticket and CCR must be generated to
+       initiate any interface action. The help desk software provides the Connectivity Request
+       to document essential aspects of each change to ACN interfaces. The CCR provides a
+       signed record showing approval of the connection and is the mechanism for updating the
+       formal accreditation of a system (i.e. SSAA). Accordingly, a work ticket requesting
+       connectivity cannot be processed until the associated CCR is completed and approved.
+       Additional documentation may be required, as outlined in Section 5, depending on the
+       magnitude and duration of the change. MSC technicians use the Connectivity Request
+       work ticket to assign IP addresses for the connecting systems and document potential
+       accreditation impacts for FSA review.
+       4.2.2. Required Information.
+           4.2.2.1. Connectivity Request. The Connectivity Request guides the requester in
+           completing those fields required for the specific connectivity actions requested within
+           the work ticket. In-line instructions are available for each entry. In general,
+           requesters must specify the interface users and their restoral priority, points of
+           contact, communications and network management protocols, connection points, IP
+           addresses assigned, the accreditation level of the system(s) to be connected, and
+           communications media employed. The ACN interface specifications do not address
+           the types or formats of data to be exchanged. Connectivity Requests correlate each
+           interface with relevant network drawings and networking hardware to ensure current,
+           accurate configuration information.
+           4.2.2.2. System Accreditation Change Request. The CCR is submitted any time
+           changes in software (COTS, GOTS, and Open-source), hardware, connectivity, and
+           other items that may affect the enclave’s security or accreditation. The system user
+           submits a CCR form to the AFWA Information Assurance Office (A6O) that includes
+           a clear request, justification, impact statement, risk mitigation, applicable software,
+           hardware, and interface table. The interface table should include all IPs, ports,
+           protocols, and services the connection will require. CCRs affecting the ACN should
+           be coordinated with the ACN FSA at a minimum before being submitted to A6 for
+           review. Connectivity is also dependent upon the CCR receiving AUPE CCB
+           approval
+AFWAMAN33-2 8 APRIL 2010                                                                    7
+
+
+  4.3. Virtual Local Area Network (VLAN) Plan. The MSC and S&S develop, implement,
+  and update VLAN plans with WIMM approval. ACN employs VLANs for traffic and
+  configuration control. VLANs constitute implied interfaces between ACN and users. The
+  MSC Chief evaluates proposed modifications to these plans and may authorize temporary
+  changes necessary for emergency support, sustainment of essential operations, or testing.
+  4.4. Control. Only the 2 SYOS/DO, SYO Chief, SDO, SYOO, or MSC Chief may approve
+  interim, emergency access or access modification for high-volume, time-critical, or one-time
+  users. The MSC and S&S document these interim interfaces in the same manner as
+  permanent interfaces. Only the WIMM, SYO Chief or MSC Chief may approve the addition
+  of new, low-volume administrative users and direct assignment of IP addresses. All
+  assignments are in accordance with the ACN address plan and MSC technicians make and
+  document such assignments as directed for subsequent MSC Chief review.
+     4.4.1. Users proposing or requesting an ACN interface provide the MSC Chief a
+     projection of interface load (preferably in the form of packet flow for production or
+     development connections) on the Connectivity Request. The MSC Chief assesses the
+     impacts of this loading on ACN performance.
+     4.4.2. The MSC and S&S monitor actual load resulting from each interface change and
+     provide this data for regular review by the MSC Chief.
+     4.4.3. The MSC Chief addresses deviations in actual loading from expectations and
+     directs and/or approves appropriate action regarding the associated interfaces. MSC
+     technicians annotate these changes on the appropriate Internal Help Desk work ticket,
+     Connectivity Request.
+5. CONFIGURATION CONTROL
+  5.1. Change Process. This section specifies the change process business rules. ACN work
+  orders initiate and document changes—regardless of magnitude—to the ACN. Help desk
+  software documents the detailed change process and work flow. Depending on the
+  magnitude of a change, different levels of documentation and approval are necessary.
+  Extensive or costly changes require a waiver and/or deviation approval. New or altered
+  connections require an Internal Help Desk work ticket, Connectivity Request. AF Forms
+  3215, IT/NSS Requirements Document, document processes external to the ACN CM process
+  and are incorporated, when necessary, into ACN CM documentation. ACN work tickets,
+  supporting documentation, and AF IMTs 3215 pertaining to ACN are retained in accordance
+  with AFMAN 33-363.
+  5.2. Classifying Change. System changes may be corrective or adaptive and are prioritized.
+  Preventative maintenance is performed in accordance with the S&S plan and AFWAMAN
+  33-1 and is not classified as a change. Accordingly, it does not require a work order but is
+  documented by S&S in the component’s work log. System Engineering Maintenance and
+  Sustainment System Change Requests (SCRs), Engineering Change Proposals (ECPs), and
+  AF IMTs 3215 provide supporting documentation and a vehicle to document approval for
+  major changes. Any actions involving ACN components (e.g., hardware or software) and/or
+  ACN policies and procedures are subject to the ACN CM process.
+     5.2.1. System Change Request. SCRs are required for all adaptive changes to the ACN
+     but are not used for corrective change or preventative maintenance. The individual
+8                                                             AFWAMAN33-2 8 APRIL 2010
+
+
+       requesting a change uses help desk software to create a work order. The MSC Chief
+       generates SCRs, when required.
+       5.2.2. AF IMT 3215. ACN changes may require AF IMTs 3215 in accordance with
+       AFWA and Offutt AFB policies. The MSC Chief ensures compliance with appropriate
+       AFWA and host base directives.
+       5.2.3. Priority Designation. The user defines the priority of a work order when it is
+       submitted. The priority of an ACN work order must be approved by the appropriate
+       authority as defined in Remedy business rules before the work order is addressed by the
+       ACN support staff.
+    5.3. Deviations and Waivers. Operational or economic considerations may necessitate
+    operating or employing certain ACN elements in a non-standard manner (i.e., one that does
+    not comply with standard ACN design specifications or operational policy). Deviations and
+    waivers provide the means of approving and tracking such operations. Any user requesting a
+    non-standard communications configuration must submit a deviation or waiver, as
+    appropriate, in conjunction with the work order for such a change as well as submit
+    appropriate accreditation documents to A6OS (e.g. Configuration Change Request).
+       5.3.1. Definitions. Deviations provide interim approval (less than 30 days) for operation
+       or implementation of non-standard elements or procedures, while waivers provide longer-
+       term or permanent authority for non-standard elements or practices.
+           5.3.1.1. The 2 SYOS/DO, SYO Chief, SYOO, and MSC Chief are authorized to
+           approve deviations for mission critical (e.g. emergency) ACN work orders. The
+           SDO cannot approve deviations for routine ACN work orders. Deviations shall be
+           processed using the procedure outlined in AFWAMAN 33-1.
+       5.3.2. A deviation will not extend beyond 30 days. A new deviation will not be issued or
+       approved for the same or essentially similar situations for which an earlier deviation has
+       expired. The WIMM is the final authority regarding the terms “same” and “essentially
+       similar.”
+           5.3.2.1. Deviations and waivers will be attached to, adjudicated, and tracked in the
+           same manner as the SCR for which they are requested.
+           5.3.2.2. The ACN work ticket format provides space for relevant information for a
+           waiver or deviation request.
+           5.3.2.3. S&S CM tracks the status of waivers and deviations applicable to the
+           operational system.
+           5.3.2.4. ACN baseline changes made under a deviation are removed at or before the
+           end of the 30-day period unless the user takes action to initiate and gain approval for
+           an ACN waiver for the change. Waivers for periods less than permanent are managed
+           in a similar manner.
+    5.4. Process Initiation. AFWA users utilize help desk tools to initiate work orders for ACN
+    connectivity, maintenance, or modification. Network management tools generate alarms
+    through the alarm notification manager’s display to the SDO based on thresholds set by the
+    MSC Chief.
+AFWAMAN33-2 8 APRIL 2010                                                                   9
+
+
+     5.4.1. Associated Documentation. The individual submitting the requirement for change
+     must also complete the associated documentation needed to support an ACN work order.
+     The help desk software provides the tools needed to complete the required work ticket
+     documentation on line, and the MSC may assist the user in completing these forms.
+     Additionally, required paperwork should include all associated accreditation
+     documentation (e.g. SSAA, CCR). The user should provide as much of the information
+     as possible to expedite the process.
+     5.4.2. Initial Review. The help desk software assigns routine ACN work orders to the
+     MSC Chief. Other work orders are first assigned to an approval authority—who may
+     also be the SDO under certain conditions—and then to the MSC Chief. The SDO is
+     notified of all emergency work orders and may assign these work orders for work during
+     non-duty hours. The SDO or MSC Chief may also refer a work order to the ACN TIM
+     process (see AFWAMAN 33-1), S&S, A6 or the MSC staff for cost estimates and design
+     analysis before approving the work. The MSC Chief refers work orders requiring new
+     equipment to A8P and the Senior Network Engineer in A6C. The Senior Network
+     Engineer provides design integration, detailed parts list, and cost estimates. The MSC
+     Chief may also contact the user in order to complete portions of the additional
+     documentation or to resolve uncertainties in the requirement.
+        5.4.2.1. The MSC Chief, MSC, A8P, A6C, and/or S&S personnel, as needed,
+        perform cost and impact analyses on the work order and annotate their findings on the
+        primary or any child work orders and record time spent on the work order. They
+        handle required inputs on any supporting documentation in a similar fashion.
+        5.4.2.2. The ACN and connecting system functional system administrator or project
+        manager must inform A6O of the expected changes and work with A6O to determine
+        impacts to both the ACN and the connecting system(s). This change is done in a
+        CCR or by means of existing accreditation packages and permits A6O to assess
+        potential risks/impacts and advise the AUPE CCB if the requested changes will
+        require significant changes to the ACN and/or DAA review or approval for
+        reaccreditation of the system.
+        5.4.2.3. MSC technicians will assign needed IP addresses for each system as part of
+        the work ticket Connectivity Request. DHCP will be used as applicable. The help
+        desk software correlates these addresses with the asset database and provides
+        associated IP address management tools for the MSC staff.
+     5.4.3. Change Approval. Once preliminary analysis and initial review are complete, a
+     work order is assigned to the ACN MSC Chief for review and adjudication. Depending
+     on the parameters of the work order, the MSC Chief may approve the work.
+     5.4.4. Documentation. The ACN TIM secretariat ensures all decisions on ACN work
+     orders are documented. Management software automatically documents many change
+     actions, but network management software documentation is after the fact and is intended
+     to provide only interim documentation and audit support. The help desk software is the
+     ACN formal review and approval process for all work orders and ACN change actions.
+        5.4.4.1. The ACN TIM secretariat —with S&S CM support—ensures summaries of
+        ACN work order actions are made available, via the TIM Minutes, as necessary.
+10                                                           AFWAMAN33-2 8 APRIL 2010
+
+
+           5.4.4.2. The S&S Logistician and MSC personnel use help desk software to associate
+           all approved work orders with the relevant network components in the asset database.
+           S&S technicians document all connectivity changes in the switch configuration
+           database, and they provide redlines to ACN drawings which are incorporated by S&S
+           draftsmen and subsequently reviewed and adjudicated by the ACN TIM. CCRs are
+           used to update ACN accreditation documents as required. Together, these records
+           constitute the official record of changes to the network configuration. The help desk
+           asset database is maintained in accordance with AFMAN 33-363 in order to
+           document configuration changes and track repair histories.
+           5.4.4.3. Some major changes or waivers may be adjudicated by the ACN TIM prior
+           to initiating a work order. Such actions usually require SCR as well. The S&S CM
+           staff documents such decisions in the appropriate meeting minutes and subsequently
+           coordinates with the ACN TIM Chair for entry of these decisions as help desk work
+           orders. TIM minutes documenting details of actions are maintained in accordance
+           with AFMAN 33-363.
+     5.5. Change Execution. Once a configuration change is approved for work, help desk work
+     flow guides execution of the change.
+        5.5.1. Approval of the primary work order for a required change initiates the actual
+        change.
+           5.5.1.1. The MSC Chief prioritizes the work order in a rank-order work list of
+           outstanding ACN work orders for the MSC and S&S teams. S&S and MSC
+           technicians input implementation requests as required and accomplish the associated
+           coordination to reach the WIMM at least 1 week prior to implementation for all but
+           emergency implementations.
+           5.5.1.2. The MSC staff and S&S periodically record their progress on each work
+           order using help desk software, and the ACN TIM reviews this progress to identify
+           and adjudicate any concerns.
+           5.5.1.3. The support staffs may reassign work orders and generate child work orders
+           as necessary to complete the effort as required.
+           5.5.1.4. MSC technicians review work completed to confirm it is responsive to the
+           work order.
+           5.5.1.5. S&S develops appropriate redlines for all relevant baseline drawings, and A6
+           personnel and MSC staff review these drawings to ensure their accuracy. The
+           WIMM must adjudicate their incorporation into the ACN baseline.
+        5.5.2. Closure. When the ACN support staff reports a work order is complete, the help
+        desk software queries the user to ensure concurrence. The MSC Chief reviews user
+        responses and staff comments on the work and closes. The MSC Chief —or the MSC
+        staff—documents this action on the associated work order.
+        5.5.3. Component Management. ACN periodically acquires new equipment, retires
+        older equipment, and realigns equipment between bench stock, repair, and operational
+        status. These actions are also initiated and tracked using work orders, and S&S tracks
+        equipment movement using the help desk asset database.
+AFWAMAN33-2 8 APRIL 2010                                                                    11
+
+
+         5.5.3.1. A8P initiates the cycle by ordering equipment in response to work order
+         requirements. The MSC Chief or Senior Network Engineer enters the parts list on the
+         work order and advises the S&S personnel and the AFWA Equipment Custodian’s
+         office of the parts and associated project.
+         5.5.3.2. S&S receives all incoming ACN operational and spare components and
+         identifies any discrepancies between ordered and received lists. The S&S personnel
+         also mark all new components in accordance with ACN standards, enters these
+         components in the asset management database, and tracks their deployment. Those
+         items considered expendables are neither labeled nor entered into the asset
+         configuration database. The S&S personnel track component levels and expenditure
+         rates for these items as part of their bench stock process and update the sparing plan
+         accordingly.
+         5.5.3.3. S&S tracks changes in status as components are realigned between
+         operations, maintenance, and bench stock and indicates final disposition for those
+         components permanently removed from service. The S&S personnel ensures these
+         changes are logged in the ACN asset database and routinely cross-checked
+         automatically by system management and help desk software.
+  5.6. Configuration Status Accounting. The help desk software and its associated asset
+  management database are the primary ACN configuration status accounting tools. The
+  baseline drawing set is maintained in accordance with AFMAN 33-363, the network models,
+  and proceedings of the ACN TIM meetings supplement the help desk database. While the
+  MSC Chief has overall responsibility for ACN CM, the individual components are populated
+  and maintained by S&S and MSC technicians. The MSC ensure no changes are
+  implemented unless appropriately documented using CM tools, and then monitors these
+  activities. S&S updates the CM databases and drawings to reflect current ACN configuration
+  in accordance with contractual requirements and MSC Chief’s direction.
+     5.6.1. ACN employs the Remedy Action Request System help desk software for primary
+     hardware configuration status accounting.
+     5.6.2. The MSC guides S&S in developing a CM data management plan for relevant CM
+     parameters.
+         5.6.2.1. The MSC Chief, in coordination with A6 defines documentation standards
+         for databases, interface documents and definitions, and drawings.
+         5.6.2.2. S&S personnel maintain the ACN data management plan and populates and
+         updates the underlying databases including both configuration and performance data.
+         5.6.2.3. ACN CM data accurately reflects the operational system configuration at all
+         times. Superseded data is annotated according to its effective dates and retained as
+         appropriate following recession.
+         5.6.2.4. S&S technicians configure network metrics collection software to
+         periodically collect operational performance parameters.
+         5.6.2.5. The help desk databases are designed and configured to cross reference
+         configuration changes as tracked by work orders with associated drawings, part
+12                                                             AFWAMAN33-2 8 APRIL 2010
+
+
+            numbers, version number tables, etc. The tools are accessible to authorized ACN
+            staff and AFWA managers with read-only or read and write privileges, as appropriate.
+            5.6.2.6. S&S personnel maintain a connectivity database for each asset supporting
+            connections documenting end users connected to that asset’s ports. This database is
+            correlated with IP and Media Access Control (MAC) addresses as appropriate.
+     5.7. Configuration Reports. The MSC Chief coordinates with S&S to produce periodic
+     reports of ACN configuration and component status. Reports are generated for the MSC
+     Chief to validate and identify the operational system configuration and performance and
+     proposed or enacted configuration changes to provide a vehicle for MSC Chief decision
+     making.
+     5.8. Configuration Audits. The MSC Chief direct CM audits using the work order process to
+     confirm the accuracy and currency of CM databases, documents, drawings, and reports.
+     These audits entail a physical review of the ACN components and the configurations of
+     operational hardware and software. The auditor compares collected data with current
+     databases and records exceptions in the audit report. The MSC Chief periodically certifies
+     the currency of existing CM databases and their correspondence with recent reports, this
+     Plan, and the operational system. Corrective actions are tasked and documented using child
+     work orders associated with the original work order tasking the audit. The MSC Chief
+     ensures these audits and any resulting corrective actions are documented on SharePoint.
+        5.8.1. Functional and Physical Audits. The MSC Chief directs functional and physical
+        audits annually or whenever a new MSC Chief is assigned. The direction is issued as an
+        ACN work order identifying the purpose, scope, and duration of the audit. These audits
+        compare existing procedures, performance, and configuration with those documented in
+        AFWAMANs 33-1, 33-2, and current CM databases and reports and are retained in
+        accordance with AFMAN 33-363. The technicians correlate the functional and physical
+        audits and merge the findings with the CM database.
+        5.8.2. Interim Audits. The MSC develops an interim audit plan in conjunction with the
+        FSAs, technicians, and S&S to ensure routine review of all aspects of ACN
+        configuration. The technicians and S&S conduct and document interim audits and ensure
+        routine network changes are thoroughly documented and validated or removed from the
+        operational system. These limited audits also ensure compliance with the time
+        constraints of temporary installations and assess system security and performance.
+        5.8.3. Security Audits. A6OS initiates periodic, unannounced audits to assess ACN
+        physical and functional security and compliance with established risk management plans
+        and procedures. The S&S assists in these audits and document the results and any
+        corrective actions using work orders as appropriate for the security level of the results.
+        A6OS reviews proposed corrective actions and recommends actions to the MSC Chief
+        regarding closure or additional corrective actions.
+        5.8.4. Audit Reports. The FSA initiates the child work orders for corrective actions
+        identified during audits. Work orders resulting from an audit will not generally be the
+        source of a CCR but may result in modification of existing ACN accreditation
+        documentation. Work orders generated in response to an audit may also result in
+        restoring the actual system configuration to the authorized configuration by removing
+AFWAMAN33-2 8 APRIL 2010                                                                  13
+
+
+      unauthorized or expired interfaces or configurations. The FSA summarizes actions taken
+      in response to an audit on the associated work orders and reports them to the MSC Chief
+      for review and approval of related work orders. WIMM approval, including approval of
+      relevant ACN TIM Minutes, validates adjustments made to the system configuration
+      and/or CM records in response to an audit. The MSC Chief documents closure of the
+      associated work orders and WIMM actions in the CM database and ensures all associated
+      CCRs or accreditation documentation has been completed.
+6. CHANGES TO THE PLAN
+   6.1. Automated Change. Formal requests for changes to this document should be initiated
+   through the POC. Other requests for change can be submitted to the POC through the SYO.
+7. Prescribed Forms. None.
+8. Adopted Forms. AF Form 847, Recommendation for Change of Publication
+
+
+
+
+                                          JOHN D. MURPHY, Colonel, USAF
+                                          Commander
+14                                                       AFWAMAN33-2 8 APRIL 2010
+
+
+                                     Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+CSC-STD 002-85, DoD Password Management Guideline, 12 April 1985
+MIL-HDBK-61, Configuration Management Guidance, 7 February 2001
+AFI 33-115V1, Network Operations, 24 May 2006
+AFI 33-200, Information Assurance (IA) Management, 23 December 2008
+AFI 333-324, The Information Collections and Reports Management Program; Controlling
+Internal, Public and Interagency Air Force Information Collections, 1 June 2000
+AFMAN 33-363, Management of Records, 1 March 2008
+AFWAMAN 33-1, AFWA Consolidated Network Operations Manual, 8 February 2010
+
+Abbreviations and Acronyms
+SYOS—2nd Systems Operations Squadron
+ACL—Access Control List
+ACN—AFWA Consolidated Network
+ACNIR—ACN Innerduct Run
+AFB—Air Force Base
+AFEMS—Air Force Equipment Systems
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFRIMS—Air Force Records Information Management System
+AFWA—Air Force Weather Agency
+AFWAMAN—Air Force Weather Agency Manual
+AIMS—Asset Inventory Management System
+C4—Command, Control, Communications, and Computer Systems
+CAD—Computer Aided Drafting/Drawing
+CCB—Configuration Control Board
+CCR—Configuration Change Request
+CI—Configuration Item
+CM—Configuration Management
+COE—Common Operating Environment
+COTS—Commercial Off the Shelf
+AFWAMAN33-2 8 APRIL 2010                                    15
+
+
+CP—Connection Panels
+CSCI—Computer Software CI
+DAA—Designated Approval Authority
+DHCP—Dynamic Host Configuration Protocol
+DMZ—Demilitarized Zone
+DNS—Domain Name Server
+DoD—Department of Defense
+EC—Equipment Custodian
+ECP—Engineering Change Proposal
+FDC—Fiber Distribution Center
+FSA—Functional System Administrator
+HOI—Headquarters Operating Instruction
+HQ—Headquarters
+HWCI—Hardware CI
+IP—Internet Protocol
+IPS—Intrusion Protection System
+ITAMS—Integrated Technology Asset Management System
+JWICS—Joint Worldwide Intelligence Communications Systems
+LAN—Local Area Network
+MAC—Media Access Control
+MIL STD—Military Standard
+MOA—Memorandum of Agreement
+MSC—Mission Support Center
+NCC—Network Control Center
+NCOIC—Noncommissioned Officer in Charge
+NIC—Network Interface Card
+OA—Operations Analysis
+PIM—Port Interface Module
+S&S—Support and Services
+SCI—Sensitive Compartmented Information
+SCIF—SCI Facility
+SCR—System Change Request
+16                                                   AFWAMAN33-2 8 APRIL 2010
+
+
+SDO—Systems Duty Officer
+SLA—Service Level Agreement
+SSAA—System Security Authorization Agreement
+TIM—Technical Interchange Meeting
+UTP—Unshielded Twisted Pair
+VLAN—Virtual Local Area Network
+WAN—Wide Area Network
+WBOX—Wall Box
+WCC—Wall-mountable Connector Center
+WIMM—Weekly Implementation and Maintenance Meeting
+AFWAMAN33-2 8 APRIL 2010                                                                         17
+
+
+                                        Attachment 2
+                                   CHANGE APPROVAL
+
+A2.1. Introduction. This attachment summarizes ACN business rules for change approval.
+These rules are embedded in and documented by help desk software and regulate the CM work
+flow described in AFWAMAN 33-2.
+A2.2. Priority Approval. All ACN work orders are initially categorized based on their
+operational impact and their impact on ACN configuration. These parameters determine the
+approval a work order requires. This summary is not directly applicable to underlying
+documentation such as SCRs and Connectivity Requests but assumes such documentation has
+been approved by the appropriate agency.
+   A2.2.1. Rank-Order List. The MSC Chief develops a rank order for execution of approved
+   work orders, and the WIMM may review and adjudicate that ordering. That ordering process
+   considers but is not a direct function of the approval process. Approved rank-order lists are
+   incorporated in the proceedings of the associated TIM or WIMM.
+   A2.2.2. Priority Approval Authorities. The following positions are authorized to approve
+   the designation of an ACN work order as mission critical within the constraints identified in
+   AFWAMAN 33-2:
+       A2.2.2.1. 2 SYOS/DO.
+       A2.2.2.2. 2 SYOS/SYO.
+       A2.2.2.3. SYOO.
+   A2.2.2.4. MSC Chief.
+
+Table A2.1. Approval Requirements for ACN Work Orders.
+ Work Order            Routine                               All Others
+ Type/Urgency
+ Corrective            1. Requires no approval for           1. Require approval for priority.
+                       priority.                             2. May require approval for cost.
+                       2. May require approval for cost.
+ Adaptive              1. Requires no approval for           1. Requires approval for priority.
+                       priority.                             2. Requires approval for change.
+                       2. Requires approval for change.      Change approval authority
+                       Change approval authority depends     depends on cost and change
+                       on cost and duration of change        duration.
+
+A2.3. Change Approval. Change approval authority is a function of the magnitude and impact
+of a change as measured by the duration and life cycle cost of that change. Change approval
+requires prior approval for priority and prior approval of associated documents such as an SCR.
+18                                                                AFWAMAN33-2 8 APRIL 2010
+
+
+     A2.3.1. The MSC Chief may delegate change approval authority with approval of the
+     WIMM Chairperson. The SDO may not delegate SDO change approval authority. Such
+     delegation will be managed as a deviation and tracked through a work order.
+     A2.3.2. The WIMM retains final authority for ACN changes but delegates this authority as
+     appropriate to support AFWA operational tempo while ensuring adequate CM. The WIMM
+     and ACN TIM chairpersons coordinate closely to ensure appropriate review for ACN
+     changes while pushing approval authority to the lowest level consistent with maintaining the
+     AFWA automation architecture. AFWAMANs 33-1 and 33-2 delineate WIMM guidelines to
+     permit decision-making at the lowest possible levels consistent with architectural stability.
+     The WIMM may designate additional ACN change approval authorities on an interim basis.
+     Such delegation is documented in advance and may not be incorporated into help desk
+     business rules unless the designation is for an extended period of time. In this case, it will be
+     managed as a waiver. In either case, it is managed as a work order.
+
+Table A2.2. Approval Authority for ACN Work Orders.
+AFWAMAN33-2 8 APRIL 2010                                                                           19
+
+
+                                          Attachment 3
+                    ACN INFRASTRUCTURE MARKING STANDARD
+
+A3.1. Purpose. This attachment defines ACN infrastructure labeling standards for all ACN
+installations. ACN infrastructure, for purposes of this attachment, includes all ACN fiber optic
+and UTP cable, fiber channel, innerduct, racks, and cable terminations (e.g., connectors, fiber
+distribution centers/light panels, patch panels, and wall boxes). These standards apply to all
+communications components and installations incorporated into ACN. Legacy systems are
+retrofitted accordingly.
+A3.2. Background. This standard defines a numbering system which identifies both
+components and connectivity. Cable numbers (i.e., backbone, fiber optic cables) are
+incorporated into appropriate baseline drawings as are labels for major patch panels and
+equipment racks. ACN backbone cables are all fiber optic bundles and—except for associated
+patch cables—run through innerduct which is also labeled. Premise wiring may be UTP or fiber.
+Patch panels are color coded as to the trust and/or level of security associated with the cables
+terminated in each panel—classified, trusted, and untrusted/DMZ. Patch cables are not labeled.
+S&S ensures all infrastructure components are labeled in accordance with this attachment, and
+MSC technicians periodically audit ACN infrastructure installations to ensure proper labels
+remain in place.
+A3.3. Cable Labeling. The ACN labeling standards ensure a unique label for each cable.
+Classified ACN networks will employ unique connector types, device and cable colors, and rack
+configurations to preclude mixed classification data flows.
+   A3.3.1. Label Elements. The ACN fiber optic cable label consists of three distinct parts: an
+   assigned cable number and two end designations. UTP cable labels use only parts 2 and 3 of
+   the label system (i.e., the end designators).
+       A3.3.1.1. Part 1. The first line of the label is applicable only to fiber optic cables. This
+       line is a number assigned to each fiber optic cable or strand. For ACN, cables are
+       numbered: “ACN” with a suffix of “M” for multi-mode, “S” for single mode, and “H” for
+       hybrid cables containing both multi and single mode fibers.
+       A3.3.1.2. Part 2. The second line of the label provides information about the left end of
+       the cable (determined by reading the label upright with the lines of the label applied to
+       the cable parallel to the strand runs). The line starts with a dash (or left arrow if the cable
+       labeling machine permits) followed by the location and information about the
+       termination. This information includes the assigned unit, rack, or cabinet number, if any,
+       the equipment identifier, and the connection point as appropriate. The information is
+       delineated by commas and wraps to the next line if necessary.
+       A3.3.1.3. Part 3. Line 3 is similar to line 2 except it designates the right cable end. It
+       begins on the next line of the label and ends in a dash (as if it points to the right end of
+       the cable).
+       A3.3.1.4. For multi-strand cables separated inside a box and connecting to a patch panel,
+       only the box designation and sub-module (or connection points, if any) are shown. The
+       AT&T color code is used to identify the order of connections and is not shown on the
+20                                                             AFWAMAN33-2 8 APRIL 2010
+
+
+        label. If the box is within a rack, cabinet, or unit, the proper designation appears before
+        the box identifier.
+        A3.3.1.5. An ACN fiber optic cable label would be constructed as shown in Figure A3.1.
+            A3.3.1.5.1. Part 1: This is an ACN, multi-mode fiber optic cable numbered 103.
+            A3.3.1.5.2. Part 2: The dash shows the end to the reader’s left will be described on
+            this line. It shows the end is in Room 10-6, connects to Wall Mountable Connector
+            Center (WCC) number 01, and connects to 24 connectors, numbered 1 through 24,
+            within the WCC. The blue fiber connects to location 1, and the aqua with stripe
+            connects to location 24 per the AT&T color scheme.
+            A3.3.1.5.3. Part 3: The other end of the cable goes to Room L30, cabinet number 2,
+            and Fiber Distribution Center (FDC) number 3. The FDC may contain up to 12
+            Connection Panels (CP) with 6 or 8 connections each. This cable connects to panels
+            7 through 10, with the blue fiber connecting to location 1 of CP 7, etc.
+
+Figure A3.1. Sample Fiber Optic Cable Label.
+Part 1 ACN/M 103
+Part 2 -10-6,WCC01,C1-24
+Part 3 L30,Cab2,FDC03
+          CP7-10-
+
+        A3.3.1.6. An ACN UTP cable label is constructed as shown in Figure The second line of
+        the UTP cable label is similar to line 3 of the fiber optic label.
+
+Figure A3.2. Sample UTP Cable Label.
+Part 1 -6-6, UTP Patch 3, C5
+Part 2 WBOX 9-18/1,C4-
+
+     A3.3.2. Label Placement. Full, or three part, labels are placed at each end of ACN fiber
+     optic cables. This tells the maintainer how to reconnect the cable should it be disconnected
+     for repair work and identifies the end points for troubleshooting purposes. Labels containing
+     only part 1 are placed every 3 feet of exposed cable (not in innerduct) and at each junction
+     box. Using only the cable number during the cable run makes label management easier since
+     only the end labels will need to be re-accomplished should the cable be moved to another
+     piece of equipment or patch panel. Box and connection designations used in this example are
+     for Siecor type equipment. For other types of equipment, box and connection designations
+     are commensurate with the manufacturer’s identification scheme. Each box, rack, cabinet,
+     etc. is also labeled.
+     A3.3.3. Classified Network Management. Single and multi-mode fiber will be used for all
+     new installations in ACN classified support. Legacy copper installations will be retained
+     under explicit WIMM waivers but will be replaced when upgraded. Whenever used, media
+     converters will be installed in the racks. Whenever possible, equipment and patch panel
+     racks will contain only one classification level. They will be configured within wiring
+AFWAMAN33-2 8 APRIL 2010                                                                        21
+
+
+   closets to preclude inadvertent cross patching of different classification levels. To this end,
+   standards follow for connector types and cable colors to be employed inside and outside the
+   SCIF.
+
+Table A3.1. Classified Connector Standards.
+
+Table A3.2. Classified Patch Cable Color Standards.
+Classification           Stripe   Connectors
+Secret                   Red      MT-RJ
+SCI                      Yellow SC
+Admin (Unclassified) Green        ST
+JWICS                    Black    SC
+
+A3.4. Innerduct Labeling. Innerduct is a protective sheath which may contain numerous fiber
+optic cables and simplifies pulling additional cables after the initial installation. ACN uses only
+plenum type innerduct to protect the environment from hazardous fumes in case of an overheat
+condition. The labeling scheme is similar to that for cables. The term ACN Innerduct Run
+(ACNIR) will be used for all innerduct runs associated with ACN. Full, 3-part labels will be
+placed at the ends of each innerduct. Labels with part one only will be placed every 10 feet
+along the run. If the run terminates in a unit or cabinet, the unit/cabinet designation will be
+included. Figure A3.3. provides an example of an innerduct label.
+
+Figure A3.3. Sample Innerduct Label.
+A3.5. Connection Labeling. ACN fiber optic termination box connections are numbered in a
+consistent manner. Termination panels and boxes are also color coded to reflect the
+classification and level of trust of the connections in that panel.
+   A3.5.1. Connection Numbering. Connections (designated as “C”) are either preloaded in the
+   respective box or come in CPs. In all cases, the numbering scheme is in the order from Top,
+   Left, Back to Bottom, Right, Front.
+   A3.5.2. Connection Panel Color Code. All CPs, FDCs, WCCs, and wall plates terminating
+   ACN cables are color coded to reflect the classification and trust of the connections
+   terminated in that component.
+         A3.5.2.1. Classified terminations—including patch cables associated with classified
+         cables—are red.
+         A3.5.2.2. Panels or boxes terminating cables connecting to or located in the DMZ or
+         untrusted portions of the ACN are yellow.
+         A3.5.2.3. Trusted connections terminate in buff or natural colored panels and boxes.
+   A3.5.3. WCC Example. The typical ACN WCC has 48 connections, preloaded as 8 sets of 6
+   connections. Connections from 1 through 48 are as follows: Top Left Back to Bottom Left
+   Back (connections 1 through 12); Top Left Front to Bottom Left Front (connections 13
+   through 24); Top Right Back to Bottom Right Back (connections 25 through 36), and Top
+22                                                              AFWAMAN33-2 8 APRIL 2010
+
+
+     Right Front to Bottom Right Front (connections 37 through 48). If a row of 12 connections
+     can be made, even by spanning several CPs, it will be done to be consistent with the industry.
+     A3.5.4. FDC Example. For FDCs with 12 CPs, each with 6 connections, the numbering is
+     from Top Left (number 1) and Bottom Right (number 72). A special case exists for ACN in
+     that several FDCs have 8 CPs. In this case, connections 7 and 8 of each CP are ignored in
+     assigning colored fiber to ports. The red fiber (number 7 on the AT&T color code), for
+     example, is connected to the top connection of the next CP instead of the 7th connection.
+     This scheme will maintain consistency within ACN. The two extra connections will be
+     considered expansion.
+     A3.5.5. UTP Example. UTP outlet boxes (wall boxes designated WBOX) in each office or
+     room contain a varied number of connections.
+        A3.5.5.1. The boxes are numbered from 1 to n as the room is circumnavigated in a
+        counter-clockwise manner beginning at the main door to the room. This consecutive
+        number is prefixed with the room number. WBOX 9-18/1, for example, is the first UTP
+        box to the right of the primary door to Room 9-18.
+        A3.5.5.2. Normally, connections within the box are numbered on the box faceplate.
+        Connections are numbered beginning with the top left connection and moving to the top
+        right. The count continues beginning at the left side of the second row and continues in a
+        similar fashion. Left, right, and top are with respect to a viewer facing the box front
+        plate.
+     A3.5.6. End Node Identification. ACN premise wiring is marked to identify the end user
+     nodes terminated in each connection on the panel (CPs, WCCs, and FDCs). Premise wiring
+     extends from an outlet or WBOX in each room to termination panels in an ACN wiring
+     closet. Each port on a premise termination panel in a wiring closet is labeled with either the
+     name of the end node connection (e.g., WBOX 9-18/1) or the actual end user platform (e.g.,
+     OA6-198), depending on what is hard-wired into the panel. This is critical to ensure ready
+     identification of end users connected to the ACN subnet in question and expedite
+     troubleshooting and network realignment. Labels are attached to the front of each panel or
+     may be attached to the rack or cabinet and reference ports on the panel via port number. In
+     either arrangement, labeling is applied to be readily accessible to technicians working with
+     jumpers and mounted electronics.
+A3.6. AT&T Color Code. In multi-strand, fiber optic cables, each strand has a unique color.
+To be consistent, the standard AT&T color code provided in Table A3.3. is used. The fibers, if
+grouped, will be annotated by some other marking such as a stripe, band, or spiral. The total
+color code will be the primary color as depicted in Table A3.3., followed by the sub-code
+annotated by the group, band, etc. For example, a green fiber with a stripe would be number 15
+in the color code scheme.
+
+Table A3.4. ACN Basic Fiber Optic Cable Strand Color Code.
+Strand Color       Strand Color           Strand Color
+1         Blue     5        Slate (gray) 9         Yellow
+2         Orange 6          White         10       Violet
+AFWAMAN33-2 8 APRIL 2010                                                                     23
+
+
+3       Green     7       Red           11       Rose
+4       Brown     8       Black         12       Aqua
+
+A3.7. Acceptable Label Terms for ACN. Table A3.4. specifies terminology unique to ACN
+cable, innerduct, and connection/termination labeling. These are not handled as normal
+acronyms, although some are also acronyms, but are here considered part of the label definition.
+
+Table A3.5. ACN Labeling Terminology.
+Code   Meaning
+C      Connection (socket for either single mode or multi-mode, SC or ST type connectors)
+
+CP     Connection Panel (building block containing either 6 or 8 connections--used in FDCs
+       etc.)
+FDC    Fiber Distribution Center (incorporates one or more CPs)
+FI     Fastiron
+HUB    Fiber Optic or UTP Hub
+IR     Innerduct Run
+PIC    Premises Interconnect Center
+SC     Type of connector normally used for single mode fiber
+SS     Smart Switch
+ST     Type of connector normally used for multi- mode fiber
+WDC Wall-Mountable Distribution Center (used in Room L30 for gridding)
+WCC Wall-Mountable Connection Center
+24                                                             AFWAMAN33-2 8 APRIL 2010
+
+
+                                          Attachment 4
+                        NETWORK DEVICE NAMING STANDARD
+
+A4.1. Purpose. This document specifies the standard for identifying and labeling ACN devices
+in the firewall, management servers, networking elements, and network management suite
+component CIs. This includes switches, routers, hubs, computers, and certain subassemblies of
+such devices. Names and barcodes provide unique identification for each device. All devices
+except expendables are bar-coded, and primary devices are also name labeled. ACN labels will
+not obliterate or cause removal of manufacturers’ labels, serial numbers, etc.
+A4.2. Background. A standard naming process is essential to ensure ready, unique
+identification of ACN devices, simplify correlation with work orders, and track performance and
+maintenance history. A two-part name provides a unique, human-friendly identifier, and a
+barcode simplifies database identification and correlation of ACN devices. S&S CM personnel
+produce and apply barcodes and name labels and enter the information for each device in the
+asset database on initial receipt of the device. S&S updates the database as necessary when
+devices are realigned. The MSC Chief proposes new names as required, and the WIMM
+adjudicates such changes to ACN naming conventions. Additionally, common names unrelated
+to the type/location of the device may be employed for key network components to simplify
+references and provide added network security. Such names will be employed with explicit
+MSC Chief approval for each instance and are subject to WIMM review.
+A4.3. Network Device Names and Labels. Network device names are assigned by S&S in
+accordance with naming conventions established by the WIMM and documented in AFWAMAN
+33-2 and the asset management software. All ACN devices are assigned and marked with
+unique, Air Force Equipment Management System/Integrated Technology Asset Management
+System (AFEMS/ITAMS) barcodes for tracking on work orders and in the asset database. ACN-
+unique barcodes may be employed as directed by the MSC Chief but will be managed in a
+consistent manner compatible with the asset database. Primary devices (e.g., a switch or router
+chassis) may contain one or more subassemblies (e.g., boards or power supplies). Primary
+devices are labeled with their ACN name in addition to the barcode(s). Subassemblies do not
+generally require name labels. Expendable devices (e.g., a port interface module (PIM)) are
+neither labeled nor barcoded and are not recorded in the asset database.
+     A4.3.1. Name Assignment. The WIMM defines ACN device names. Device names (and
+     barcodes) remain associated with specific pieces of hardware regardless of where in the ACN
+     that hardware is located. Device names are not reused when a specific device is removed
+     from the ACN inventory. S&S records model numbers, part numbers, and similar
+     information associated with each ACN device in the asset database, but this information is
+     not generally repeated on name labels. The S&S Logistician updates the database as required
+     to reflect asset alignment.
+        A4.3.1.1. Device names consist of two elements, a primary and a secondary name.
+            A4.3.1.1.1. The primary name is a defined sequence of alpha-numeric characters
+            providing generic identification of the device and often related to the manufacturer’s
+            nomenclature for the device. It is not the same as the device model number.
+AFWAMAN33-2 8 APRIL 2010                                                                     25
+
+
+          A4.3.1.1.2. The secondary name is a three-digit sequential number applied by the
+          data base incrementally to newly entered devices. On name labels, it is separated
+          from the primary name by a hyphen and is filled, as needed, to 3 digits using leading
+          zeros.
+      A4.3.1.2. Primary names for primary devices are identified as needed by the MSC Chief
+      and adjudicated by the WIMM.
+   A4.3.2. Label Placement. ACN S&S Logistician constructs and applies ACN name labels
+   and barcodes in accordance with AFWAMAN 33-2 and as directed by the MSC Chief. ACN
+   technicians, in conjunction with S&S, confirm and document labeling and correct entry of
+   the information into the asset database. Labels are placed on each device so as to be readily
+   visible from the front and rear of devices mounted in equipment racks. Devices not visible
+   from outside a chassis may be marked in only one location. Labels are placed so as not to
+   obscure any manufacturer or operational information marked on the device or interface with
+   normal device operation or its insertion or removal. This action is coordinated with the
+   AFWA Equipment Custodian (EC) for AIMS entry.
+A4.4. Manufacturer Labels. ACN labels neither replace nor obliterate manufacturer labels.
+Manufacturer labels are not removed.
+26                                                            AFWAMAN33-2 8 APRIL 2010
+
+
+                                         Attachment 5
+                   ACCESS CONTROL LIST MANAGEMENT PROCESS
+
+A5.1. Purpose. This attachment prescribes the process for managing the configuration of ACN
+Access Control Lists (ACL). ACLs define ACN business rules for routing traffic and limiting
+access to the trusted portion of the ACN. The process supports ACN management and is more
+tightly controlled than the overall ACN change process to limit access to potentially sensitive
+information.
+A5.2. Routine Changes. Routine ACL changes are submitted to the MSC by the SDO/GDO
+for approval with the actual changes implemented on the next Wednesday following the date of
+ticket submission. MSC technicians complete the implementation plan in Microsoft Word
+format and incorporate the plan in ACN CM databases. MSC personnel make all routine ACL
+changes.
+A5.3. Emergency Changes. Emergency ACL changes may be made by both MSC and S&S
+personnel. The 2 SYOS/DO or SYO Chief may grant emergency approval on an interim basis
+pending WIMM review. Interim approval for emergency changes is documented at the earliest
+possible time following change and presented at the next scheduled WIMM for final
+adjudication. MSC technicians ensure proper documentation of these actions.
+A5.4. Documentation. MSC technicians maintain all ACL change documentation on the
+SysLogServer and Ironview systems. The documentation is in the following format:
+     A5.4.1. Change Number: ACL-### (where ### is the sequential change number assigned by
+     the MSC).
+     A5.4.2. Implementation Date: Date MSC or S&S actually enters the ACL change on an
+     ACN device; formatted as ddmmmyyyy (where dd is the numeric day; mmm is the shortened
+     alphabetic month, and yyyy is the 4-digit year).
+     A5.4.3. High-level Description: A brief, alpha-numeric statement of the change (e.g.,
+     Implement AFCERT99-001, Delete ACL-001, Modify Port fi0/0).
+     A5.4.4. POC: Name of the individual actually making the change to the ACL.
+     A5.4.5. Detailed Description: Specify the design impact of the change and the actual script
+     for the change.
+     A5.4.6. Interim Approval Authority: Name of the approving authority.
+     A5.4.7. Interim Approval Date: Date of interim approval in same format as implementation
+     date.
+     A5.4.8. Final Approval Date: Date of WIMM approval in same format as implementation
+     date.
+     A5.4.9. Documentation.    MSC technicians maintain an electronic record of the ACL
+     configuration.

@@ -1,0 +1,2280 @@
+BY ORDER OF THE COMMANDER                                                                              AFMC INSTRUCTION 23-106
+AIR FORCE MATERIEL COMMAND                                                                                               3 FEBRUARY 1997
+
+                                                                                                                                                 Supply
+
+                                                                          INITIAL REQUIREMENTS DETERMINATION
+
+
+
+
+                   COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE : This publication is available digitally on the HQ AFMC WWW site at: https://
+www.afmc-mil.wpafb.af.mil/pdl/pubs.htm
+
+
+OPR: HQ AFMC/LGI (Mr Steven A. Semple)                                                                     Certified by: HQ AFMC/LGI
+                                                                                                             (Col William E. Robinson)
+Supersedes AFMCR 57-27, 15 May 1991                                                                                           Pages: 58
+                                                                                                                         Distribution: F
+
+This instruction provides policy and procedures for selection and quantitative computation of spare part
+requirements for new weapon systems. It implements DoD 4140.1-R, as it applies to the provisioning and
+item requirements determination processes. This instruction does not apply to the Air National Guard or
+US Air Force Reserve units and members.
+
+SUMMARY OF REVISIONS
+This is a new instruction, developed from procedures formerly covered in AFMCR 57-27 and aligns
+AFMC policy with Air Force Policy Directive 23-1. It includes the latest Air Force automated data pro-
+cessing procedures and reflects the most recent Air Force organizational changes.
+
+Chapter 1— INITIAL REQUIREMENTS POLICY                                                                                                               3
+       1.1.   Purpose. ......................................................................................................................        3
+       1.2.   Applicability. .............................................................................................................           3
+       1.3.   Terms and Abbreviations. ..........................................................................................                    3
+       1.4.   Responsibility. ...........................................................................................................            3
+       1.5.   Program Data. ............................................................................................................             3
+       1.6.   Policy. ........................................................................................................................       3
+       1.7.   Program Data. ............................................................................................................             7
+       1.8.   Stockage and Retention. ............................................................................................                   7
+       1.9.   Usage and Demand Rates. .........................................................................................                      8
+Table 1.1.    Review Cycle Determination. ....................................................................................                       9
+2                                                                                              AFMCI23-106 3 FEBRUARY 1997
+
+       1.10. Special Item Categories. ............................................................................................                 9
+
+Chapter 2— D200H INITIAL REQUIREMENTS DETERMINATION (IRD) SYSTEM                                                                                  14
+       2.1.    System Description. ...................................................................................................            14
+       2.2.    System Inputs. ............................................................................................................        14
+       2.3.    System Operation. ......................................................................................................           14
+       2.4.    System Users. .............................................................................................................        14
+
+Chapter 3— PROGRAMMING CHECKLIST                                                                                                                  16
+       3.1.    General. ......................................................................................................................    16
+       3.2.    Source of the PCL. .....................................................................................................           16
+       3.3.    Data from Interfaces. .................................................................................................            16
+       3.4.    Types of PCLs. ..........................................................................................................          17
+       3.5.    PCL Elements. ...........................................................................................................          18
+       3.6.    Other PCL Screens. ....................................................................................................            21
+Table 3.1.     Application for Input Format. ....................................................................................                 22
+Figure 3.1.    AFMC Form 27 .........................................................................................................             23
+Figure 3.2.    Reverse of AFMC Form 27 .........................................................................................                  24
+
+Chapter 4— INITIAL REQUIREMENTS COMPUTATION FOR CONSUMABLE ITEMS
+          (ERRC XF3 OR XB3)                                                                                                                       25
+       4.1.    Purpose. ......................................................................................................................    25
+       4.2.    Consumable Items. .....................................................................................................            25
+       4.3.    Policy. ........................................................................................................................   25
+       4.4.    Computation Methodology. .......................................................................................                   25
+
+Chapter 5— INITIAL REQUIREMENTS DETERMINATION FOR RECOVERABLE ITEMS
+          (ERRC XD2 OR XD3)                                        34
+       5.1.    Purpose. ......................................................................................................................    34
+       5.2.    Recoverable Items. .....................................................................................................           34
+       5.3.    Policy. ........................................................................................................................   34
+       5.4.    Computation Methodology. .......................................................................................                   35
+
+Attachment 1— GLOSSARY OF ABBREVIATIONS, ACRONYMNS, AND TERMS                                                                                     44
+
+Attachment 2— REQUIREMENTS FORMULAS                                                                                                               52
+AFMCI23-106 3 FEBRUARY 1997                                                                             3
+
+                                               Chapter 1
+                                INITIAL REQUIREMENTS POLICY
+
+1.1. Purpose. This instruction outlines Air Force and Department of Defense (DoD) policy for determin-
+ing initial stock levels of items that support new or modified weapon systems.
+
+1.2. Applicability. This instruction applies to all Air Force Materiel Command (AFMC) personnel who
+determine initial spare part requirements.
+
+1.3. Terms and Abbreviations. Attachment 1 is a list of terms used in this instruction and their defini-
+tions. Attachment 3 lists abbreviations.
+
+1.4. Responsibility. HQ AFMC/LGI will implement the policies and procedures established in this
+instruction. The inventory management specialist (IMS) will apply the procedures in this instruction to
+determine quantitative requirements for new items. The Air Logistics Center financial management func-
+tion (ALC/FM) will approve deviations from the policies in this instruction.
+
+1.5. Program Data. Data used to compute new requirements must be in approved Air Force documents.
+The D200F Requirements Data Bank (RDB) Applications, Programs, and Indentures (API) segment is the
+approved source of program data. The IMS, using the procedures in this instruction, applies the basic item
+data to the approved program to determine new item requirements.
+
+1.6. Policy.
+   1.6.1. General Policy.
+       1.6.1.1. The D200H Requirements Data Bank (RDB) Initial Requirements Determination (IRD)
+       subsystem is the approved automated tool for computing recoverable and consumable item
+       requirements. The D200H is an interactive, on line system that builds and displays system and
+       sub-system level programming checklists (PCL) and item worksheets.
+       1.6.1.2. D200H is the preferred method for initial spares computation since it accommodates mul-
+       tiple weapon systems and includes a simulation capability.
+           1.6.1.2.1. If direct access to the RDB is not available the IMS may use the manual methodol-
+           ogy on AFMC Form 27, Programming Checklist and either AFMC Form 614, Recoverable
+           Item Initial Requirements Computation Worksheet, (recoverable items) or AFMC Form 997,
+           EOQ Item Initial Requirements Worksheet (consumable items) for the item computations.
+           These forms include instructions for calculating each data element. Attachment 1 provides the
+           mathematical formulas that the IRD model employs.
+       1.6.1.3. Use of mathematical models such as MOD-METRICÆ and the AMDAHL automated
+       computation are encouraged. There are other models currently in use that are also appropriate for
+       initial requirements determination. All mathematical models must follow the guidelines in this
+       instruction. Mathematical models that recommend different wholesale-retail distribution (but not
+       different quantities) of inventory than what this instruction directs may be used to compute
+       requirements if the model conforms to the following criteria:
+4                                                               AFMCI23-106 3 FEBRUARY 1997
+
+       1.6.1.3.1. The model computes funding constraints by computing the pipeline stock quantity
+       for each item using the average month flying hour program. The resulting dollar value is the
+       funding constraint.
+       1.6.1.3.2. The model includes an optimization technique to minimize system down time or
+       reduce backorders. This optimization technique would use the funding constraint as its budget
+       goal when computing the optimal mix of items.
+       1.6.1.3.3. DLM requirements are computed according to this instruction if not included in the
+       model's methodology. The optimized results should include the additional stock and cost.
+       1.6.1.3.4. No lower limits are placed on the model that will cause an item to be stocked as
+       demand-based if the item would not have been stocked without the lower limit.
+       1.6.1.3.5. Assumptions used in the computation are realistic and documented.
+       1.6.1.3.6. Requirements quantities computed by the model are not adjusted outside of the
+       model environment.
+       1.6.1.3.7. The model computes requirements for all components of an end item. This is neces-
+       sary to obtain consistency of support among all subsystems.
+       1.6.1.3.8. If changes are made to factors for any items within a computational group, the
+       entire group of items will recompute to obtain new quantities.
+       1.6.1.3.9. The ALC Resources Management Division (ALC/FM) approves use of mathemati-
+       cal models. The IMS forwards a request to use a mathematical model to the ALC/FM, who
+       determines if the model is already in use. If so, the model’s assumptions (such as two levels of
+       repair instead of three) are validated. If the model passes this review, no further action is
+       required and the model can be implemented. If it is a new mathematical model, the ALC/FM
+       determines that it meets the above criteria, and forwards the request and supporting documen-
+       tation to HQ AFMC/LGI. The package includes a full description of the model, proposed strat-
+       egy for its use, an example of the computation printout, and any other pertinent information.
+    1.6.1.4. Initial spare parts include peculiar repairable and consumable components, assemblies,
+    and subassemblies that must be available for issue at all levels of supply in time to support newly
+    fielded end items during their entire production run. Whole spare engines will be classified as ini-
+    tial spare parts through the life of the system. End items include major items of inventory such as
+    aircraft, missiles, vehicles, and pieces of support equipment.
+    1.6.1.5. The demand development period (DDP) starts on the end item’s preliminary operating
+    capability (POC) date and ends when the accumulated demand or usage history is sufficient to pre-
+    dict future demands. The DDP is not less than 12 months or more than 24 months long. POC is the
+    date the first operational user receives the first end item. If an item only supports depot level
+    repair, the DDP begins on the date the first end item is scheduled for overhaul.
+    1.6.1.6. Program dataform the basis for requirements computations and budget estimates. There
+    are two types of programs, operational and overhaul. Operational programs are normally
+    expressed as operational (flying) hours or as the monthly average number of end items in the
+    inventory (inventory months). Overhaul programs are expressed as the number of end items or
+    higher assemblies in scheduled to undergo repair or overhaul. In either case monthly flying hour
+    projections, the end item delivery schedule, the number of end items at each site, the overhaul
+AFMCI23-106 3 FEBRUARY 1997                                                                              5
+
+     schedule, and the Program Forecast Period (PFP), determine how the IRD system time-phases
+     program data.
+     1.6.1.7. The PFP is peculiar to each item. It begins on the POC date and ends three months after
+     the last day of acquisition lead time (AQLT ). The PFP is at least 12 months, even if the AQLT
+     plus 3 months is less.
+         1.6.1.7.1. Acquisition lead time includes two segments, administrative lead time (ALT) and
+         production lead time (PLT).
+         1.6.1.7.2. Administrative lead time begins when an item’s wholesale asset level is reduced to
+         the reorder point, or the time at which a purchase request must be initiated to ensure that, at
+         least in theory, the new stock arrives just as the assets on hand reach the safety level. ALT ends
+         on the date the contractual instrument is executed. ALT includes the time required to identify
+         a requirement and to buy; review, approve and document a purchase request; review technical
+         data; and to process and execute the contractual instrument.
+         1.6.1.7.3. Production lead time begins on the date that the contractual instrument is executed.
+         PLT ends when a significant quantity (10% of the ordered quantity) of the materiel is received.
+     1.6.1.8. The required item quantity relates to a demand forecast or to the item’s essentiality. The
+     demand forecast is derived from predicted failures, projected programs, and maintenance factors.
+     Acquisition quantities computed outside of the IRD process are permitted if quantity discounts or
+     other acquisition techniques make them more economical. Any decision to buy a larger quantity
+     must consider the risks of overstockage and obsolescence. The item manager must document the
+     reasons for the different buy quantity.
+     1.6.1.9. Acquisition programs must consider design stability, logistics costs and risks, and the
+     system’s acquisition and delivery schedule.
+     1.6.1.10. Generally, the initial requirements determination process does not apply to items
+     already in the Air Force inventory, i. e. assigned a National Stock Number (NSN). The replenish-
+     ment systems ( D041 for recoverable items, D062 for consumable items) compute requirements
+     for these items.
+         1.6.1.10.1. Some stock listed items may have experienced usage and developed demand rates
+         with other system applications. When computing demand rates for initial requirements deter-
+         mination, the equipment specialist considers these computed rates with the factors received
+         from the provisioning documents and, if necessary, develops a weighted factor. Consumable
+         item managers should enter an additive requirement in the D062 system to support new appli-
+         cations.
+     1.6.1.11. Program data should reflect a realistic production schedule and include only quantities
+     of end articles that are reflected in approved DoD appropriations. Effective support planning for
+     any new program includes anticipation of potential technical and production problems.
+  1.6.2. Initial Requirements Policy.
+     1.6.2.1. The RDB IRD produces a detailed computation for each new spare and repair part autho-
+     rized for acquisition as an initial spare, using methods covered in this instruction. The IMS consid-
+     ers all DoD assets before initiating a new acquisition.
+6                                                                AFMCI23-106 3 FEBRUARY 1997
+
+    1.6.2.2. The IMS may compute other services’ requirements using the guidance in this instruc-
+    tion, or through the Supply Support Request System (D169). Either a consumable supply support
+    request (SSR) or a non-consumable materiel support request (NMSR) may identify new require-
+    ments for non-Air Force managed items.
+    1.6.2.3. The purpose of the initial requirements determination process is to provide spares sup-
+    port just prior to or in conjunction with the delivery of the weapon system. Initial spares and repair
+    parts requirements provide support for anticipated end article deliveries through a program fore-
+    cast (PFP).
+    1.6.2.4. The IMS may defer initial requirements computation if an item is under warranty or cov-
+    ered by interim contract support (ICS). This deferral is valid until the warranty expires or when
+    organic repair capability is available. Requirements for these items must be computed with IRD
+    methodology if they are not stock-listed.
+       1.6.2.4.1. When Interim Contractor Support (ICS) supports a newly fielded weapon system,
+       contractual arrangements must ensure that the contractor collects spare and repair parts usage
+       data and delivers them in a format compatible with AFMC systems. Where possible and prac-
+       tical the contractor's usage data, rather than engineering estimates, should forecast spare and
+       repair parts requirements. Under ICS, the contractor will repair an item until organic repair is
+       established.
+    1.6.2.5. Stockage criteria are determined during the provisioning process. This involves decisions
+    whether or not each item will be stocked and, if stocked, how it is to be managed. All items that
+    pass from D220 to the IRD are stocked items. The IRD edits the Source, Maintenance, and Recov-
+    ery (SMR) code and the Total Organizational Maintenance Demand Rate (TOIMDR, see 1.9.3
+    below) to determine if an item will be a demand-based or an insurance item. The D220 Provision-
+    ing system passes both of these elements.
+       1.6.2.5.1. Insurance items are not expected to fail through normal usage, but are considered
+       critical for system operation. Therefore, wholesale stockage of minimal quantities is autho-
+       rized in the event of losses through abnormal equipment failure, accidents, natural disasters, or
+       other unforeseen events. An insurance item is catalogued as such during the provisioning pro-
+       cess by assigning an Acquisition Advice Code (AAC) D; an insurance item can change to a
+       demand based item only through a catalog change. The IRD system assigns item category
+       code I to the following items:
+           1.6.2.5.1.1. Items with both TOIMDR and Overhaul Replacement Percents of 0.
+           1.6.2.5.1.2. Items with “PB” or “PG” in the first two positions of the SMR Code.
+       1.6.2.5.2. Demand based items include failure rates and maintenance factors and compute
+       requirements according to projected operational or inventory programs.
+       1.6.2.5.3. The ALC may elect to manage some items as non-demand based numeric stockage
+       objective (NSO) items. An NSO item is an essential, non-demand-based stocked item for
+       which some failure is expected, but so infrequently or sporadically that it is not possible to pre-
+       dict any meaningful demand rates. NSO items do not qualify for stockage on the basis of
+       demand. But since the lack of a replacement item would hamper the operational capability of
+       a weapon system, the item is stocked as an essential, non-demand-based item.
+AFMCI23-106 3 FEBRUARY 1997                                                                              7
+
+       1.6.2.6. When first-year production quantities are less than ten percent of total production quanti-
+       ties, a request for waiver for an additional two years of provisioning support may be submitted.
+       The waiver, if granted, would apply to a particular program and may cover all or part of the new,
+       peculiar items applicable to that program. The waiver request should include complete justifica-
+       tion and a statement of the anticipated impact on funds. It should also include a statement about
+       the type of procurement proposed e.g., competitive on a purchase request (PR), noncompetitive on
+       a PR, or provisioning item order (PIO) and will be submitted for approval to the ALC/FM.
+       1.6.2.7. Security Assistance (SA) Program. SA initial requirements are unprogrammed and there-
+       fore not included in the Air Force initial requirements computation process. However, they may
+       be included as an additive when computing a consolidated requirement. AFM 67-1, Vol 9, Secu-
+       rity Assistance Program Procedures, provides guidance for SA requirements. If Provisioning Item
+       Orders are used to procure the requirement, the SA requirement and the Air Force requirement
+       cannot be consolidated on a single PIO because the fund cites are different and a PIO relates to a
+       single contract line item.
+
+1.7. Program Data.
+   1.7.1. End item program data must be consistent with program data used for replenishment spares
+   program.
+   1.7.2. Programs must consider requirements for the depot and base and will be developed in 3-month
+   increments, beginning with the month that includes POC as month 1.
+       1.7.2.1. To support depot overhaul requirements the system develops an Adjusted Month Pro-
+       gram (AMP) over the program time base (PTB). The PTB begins with a period of time equal to a
+       review cycle and is measured with each review. The PTB expands until it equals the item’s Pro-
+       gram Forecast Period (PFP). For example, an item with a review cycle of 6 would have PTBs of 6,
+       12, 18, etc., until the PFP has been reached. See chapter 5 for details on AMP development.
+       1.7.2.2. For base level requirements, the adjusted month program is developed according to the
+       contracted end item delivery schedule to sites being activated during the PFP.
+       1.7.2.3. After considering the total costs involved in ordering initial requirements, the develop-
+       ment of item program data should be tailored to indicate the manner in which orders are to be pro-
+       cessed. A decision to deviate from the incremental release of orders policy should be made on an
+       item-by-item basis. The ALC/FM must grant approval.
+       1.7.2.4. A programming checklist (PCL) contains segmented programs applicable to the weapon
+       system or end article on a production or modification contract. Chapter 3 provides a complete
+       description of the programming checklist. When the item's lead time, plus 3 months, is larger than
+       the highest program time base shown on the provisioning checklist, the largest program time base
+       on the provisioning checklist applies. If no program time base coincides with the required pro-
+       gram period, the next higher program time base applies instead.
+       1.7.2.5. The assigned provisioning office will notify the lateral support ALCs of changes to the
+       PCL by issuing a revised checklist. The responsible provisioning office is usually the ALC/SPM
+       or the ALC/EAIM.
+
+1.8. Stockage and Retention. The ALC/FM (or an assigned counterpart) maintains a 3-year history of
+part-numbered and stock-numbered non-stocked item requisitions received at the wholesale level. The
+8                                                                   AFMCI23-106 3 FEBRUARY 1997
+
+purpose is to identify for procurement (and possibly stockage) items that later may meet the DoD inven-
+tory control point (ICP) stockage criteria.
+    1.8.1. Items with high reliability may receive little or no demand during the demand development
+    period (DDP). To avoid disposal of an item that may be needed later, the item manager should contact
+    the local disposal office to determine how soon after the preliminary operational capability an item
+    can be a disposal candidate. HQ AFMC/LGI must approve any calculations prior to use. Retention
+    levels shall then be set in accordance with DoD 4140.1-R, Chapter 4. When scheduled end item deliv-
+    eries extend beyond the PFP, initial spares support is limited to the projected end item deliveries dur-
+    ing the PFP.
+
+1.9. Usage and Demand Rates.
+    1.9.1. The D220 system provides all failure, maintenance, wear-out, replacement, and condemnation
+    rates.
+    1.9.2. The primary contractor furnishes rates and factors. The ES approves or changes these rates and
+    then provides the factors to the IMS, who uses them to develop initial support requirements. Rates and
+    factors should represent the latest information available (for example, test data, design change infor-
+    mation, or experience with a similar item). The ES must notify the end article system manager of their
+    intent to deviate significantly (plus or minus 10 percent) from contractor estimated failure rates on
+    major systems or subsystems being provisioned. The ES should not change contractor furnished data
+    if they were developed as part of a reliability and maintainability program, unless the mission or the
+    maintenance concept changed after the data were developed. The ES retains supporting documenta-
+    tion to justify file maintained factors for at least 3 years.
+    1.9.3. The maintenance repair rates (MRRs derive from the total OIM demand rate (TOIMDR),
+    which is an indication of the number of failures to occur for every unit of program (flying hours x 100
+    or per installed unit). MRRs include base repair rates and depot demand rates as well as the TOIMDR.
+    The base repair rate determines the number of failures that will be repaired at the base maintenance
+    facility. The depot demand rate determines the number of units to be repaired at a depot repair facility.
+    MRRs are expressed as a one-position whole number and a four-position decimal.
+    1.9.4. Actual experience may determine the appropriate MRRs when at least 3 months of usage his-
+    tory is available. For example, when 3 months of usage data are available, a new MRR should be
+    developed. The actual data should be weighted 25 percent and the estimated MRR should be weighted
+    75 percent. When 12 months of data are available, the new MRR should be developed by weighting
+    the actual MRR at 50 percent and the estimated MRR at 50 percent. When 18 months of data are avail-
+    able, the weighting for the actual MRR should be 75 percent and the estimated MRR 25 percent. After
+    2 years of experience is available, the maintenance replacement rate is based entirely on actual data.
+    In some cases, actual experience may not be indicative of future demands. The ES reviews these items
+    and determines the appropriate MRRs. The ES may select 1 year of usage history to indicate future
+    demands.
+    1.9.5. Review Cycles (RC). The IRD system determines an item’s review cycle (RC) according to the
+    dollar value of annual demands (DVAD). The DVAD is the unit repair cost multiplied by the number
+    of base level failures and depot level replacements expected to occur over twelve months during the
+    program forecast period.
+AFMCI23-106 3 FEBRUARY 1997                                                                                9
+
+       1.9.5.1. The purpose of the review cycle is to provide a guide for initiating procurement actions
+       and to determine which program to use for each procurement action. The number of months in the
+       review cycle is the increment in which acquisition actions will be made. Each incremental quan-
+       tity is the difference between the quantity in the current PTB and the quantity in the prior PTB.
+       Different quantities are authorized if they are more economical. The ALC/FM approves these
+       deviations. The value of buy quantities may not exceed available fiscal year initial spares funds
+       without approval from HQ AFMC/FM and LG.
+       1.9.5.2. Table 1.1 is an example of the review cycles and their associated dollar values. The val-
+       ues in this table are those that were in effect on the implementation date of this instruction. The
+       HQ AFMC OPR changes this table as required. All users with access to the on-line IRD system
+       can view this table (see Chapter 3).
+          1.9.5.2.1. The frequency of the SAIP “window” determines the review cycle for spares acqui-
+          sition integrated with production (SAIP) items. If the SAIP window opens once a year, the
+          review cycle is 12 months. If the SAIP review cycle is greater than the program forecast
+          period, the SAIP quantity purchased with initial spares funds will be limited to the program
+          forecast period. The remainder should be funded with replenishment funds. See 1.10.5 below
+          for the definition of SAIP.
+
+Table 1.1. Review Cycle Determination.
+          Dollar Value of Annual Demands                 Review Cycle
+                               $0 to 50,000      Program Forecast Period
+                       $50,001 to 1,000,000      Quarterly
+                    $1,000,001 to 2,500,000      Semiannually
+                       $2,500,001 or greater     Annually
+
+1.10. Special Item Categories.
+   1.10.1. Insurance Items. Insurance item quantities consider item application, quantity per end item,
+   expected distribution of the end item, and criticality of the item to the operation of the end item. Based
+   on the item essentiality, wholesale stockage of insurance items is limited to: items that apply to high
+   priority weapon system or end items, technically critical items necessary to insure weapon system
+   availability, and items necessary for safety.
+       1.10.1.1. An insurance level equal to one per wholesale storage activity should be sufficient for
+       most programs. The IMS determines the quantity needed to maintain support. The ALC/FM ana-
+       lyst approves larger insurance levels. The ES may provide the IMS with recommended quantities
+       and their rationale.
+       1.10.1.2. Insurance items are normally stocked only at the depot. An exception would be if the
+       item supported an end item repair located at only one installation. The major command (MAJ-
+       COM), IMS, and SPM make this determination.
+       1.10.1.3. Procurement of insurance items with a very high cost (over $10,000 unit cost) are
+       deferred until lead time prior to production phase-out of the end item. The insurance category
+       must be revalidated prior to all contracting actions.
+10                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+        1.10.1.4. The item manager may initiate immediate acquisition action for an insurance item if a
+        demand occurs, regardless of unit cost. At the same time, however, the equipment specialist
+        should review the item to determine if the insurance code should be removed.
+     1.10.2. Numeric Stockage Objective (NSO). Items are essential to program support because of a lack
+     of the item prevents mission accomplishment or causes a safety hazard. The IMS determines the NSO
+     level. The ES documents the rationale used to designate the item NSO. NSO items can be stocked at
+     the base levels part of the retail stock level. Since NSO items have demand rates, justification for
+     additional quantities can be based on end item distribution. Only recoverable items can be NSO items.
+     1.10.3. Initial Spares Support List. An Initial Spares Support List (ISSL) supports new system activa-
+     tions. The ISSL identify items that must be available to fill retail stock levels on the POC date.
+        1.10.3.1. Retail stock levels support the base order and ship time (O & ST) requirement and the
+        base repair cycle requirement. AFM 67-1, Volume I, Part One, Chapter 12, Section A, Basic Air
+        Force Suppy Procedures and AFM 67-1, Volume II, Part Two, Chapter 19, Standard Base Supply
+        System, provide policy and detailed procedures for ISSLs.
+        1.10.3.2. The ES and MAJCOMs select the range of items for the ISSL. Since the D200H com-
+        putes retail stock levels, no additional quantities are normally needed to support new activations.
+        Instead, the ISSL identifies items that should be stocked at base level. Placement of these items
+        involves determination of how to distribute stock rather than determination of an additional quan-
+        tity. The system program manager, the IMS, and the major command users decide how retail stock
+        should be distributed. The safety level computation in the recoverable item replenishment system
+        (D041 Aircraft Availability Model) considers all new activation user SRANs with ISSL authoriza-
+        tions to be users with computed demand levels. AFMCM 23-1 provides detailed procedures.
+        Exceptions to this policy are items that apply to low density systems, normally Communication &
+        Electronic networks. The IMS may input to the D200H an adjusted stock level equal to the num-
+        ber of SRAN users if the item meets the following criteria:
+            1.10.3.2.1. The item is not stock listed.
+            1.10.3.2.2. The item applies to a low density system. A low density system is one that has four
+            or fewer end items per SRAN.
+            1.10.3.2.3. The item is critical to the system operation; lack of the item means that the system
+            would not be available.
+     1.10.4. Interim Contractor Support (ICS).
+        1.10.4.1. The system program manager determines if a system should be supported through ICS
+        until organic maintenance support is available. The contractor provides maintenance support over
+        a specified time period, during which the system gradually migrates to organic support.
+        1.10.4.2. During the provisioning conference the contractor assigns to each item a transition date
+        for organic support. As this transition occurs, the contractor or vendor acquires assets in the
+        required configuration to fill support requirements.
+        1.10.4.3. The contractor provides recoverable item breakdowns (RIB) for items to be repaired
+        under ICS. The item manager will not buy items in the RIB that do not have stable design until
+        acquisition lead time before the transition date from ICS to organic support. The item’s POC date
+        is the same as the transition date, and the item’s demand development period starts at this point.
+AFMCI23-106 3 FEBRUARY 1997                                                                              11
+
+  1.10.5. Spares Acquisition Integrated With Production (SAIP). The SAIP concept gives price bene-
+  fits by releasing spares orders concurrently with the release of the contractor's production orders to the
+  vendors. Changes to spare parts requirements must coincide with changes to the end article. Order
+  quantities are stable unless a major program change occurs.
+  1.10.6. Training Equipment (Mobile Training Sets, Resident Training Equipment, and Support Sim-
+  ulators). The IMS, SPM or EAIM should rely upon Aerospace Education and Training Command
+  (AETC) guidance and apply factors derived from AETC’s command experience and peculiar usage of
+  items used for training. Initial quantities of spares and repair parts that support training equipment are
+  determined using programs and assigned factors as follows:
+     1.10.6.1. Initial spare and repair parts of items that apply only to training equipment are deter-
+     mined according to chapters 2 and 3 of this instruction.
+     1.10.6.2. The IMS may develop an increased requirement to support items common to both the
+     training equipment and the end item for which training is provided. This quantity supports the
+     requirement for training equipment and is determined by considering the stock levels established
+     for the end item. The IMS should also consider the training schedule. If the training effort starts
+     before end item delivery, procurement should be initiated in time to support the training.
+     1.10.6.3. ISSLs that support training equipment will include items peculiar to the training equip-
+     ment, the end item for which training is being provided, and items common to other Air Force sys-
+     tems. However, the IMS procures only items that may be acquired through initial provisioning.
+  1.10.7. Life-of-Type (LOT Items.
+     1.10.7.1. DoD 4140.1-R authorizes life-of-type buys when items will not be produced after pro-
+     duction of the major end item is completed; therefore, the total issues anticipated during the life of
+     the end item are forecasted and procured. In some cases a contractor may choose to phase out pro-
+     duction of an end item and it may not be practical estblish capability to produce spare parts. Under
+     these circumstances the system program manager may elect to request authority to initiate a life of
+     type buy.
+     1.10.7.2. LOT item buys are not normally authorized while the end item is in production.
+     Approval to buy LOT spares requirements depends on an analysis and evaluation of support
+     implications, costs, benefits, and alternatives.
+     1.10.7.3. An economic analysis must validate the feasibility of this procedure. The analysis must
+     consider the total cost to procure LOT requirements, including the cost of hardware, data and
+     administration, and the total cost to retain production tooling and test equipment, production
+     start-up costs, and spares costs.
+     1.10.7.4. The item is not a candidate for a life-of-type buy under any of the following conditions:
+         1.10.7.4.1. The item is subject to design change or technical obsolescence.
+         1.10.7.4.2. The item can be acquired through competitive procurement.
+         1.10.7.4.3. The item has shelf life restrictions.
+         1.10.7.4.4. The item does not have a firm end item program life, including projected use by
+         other services or FMS customers.
+         1.10.7.4.5. Assets are available from reclamation.
+12                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+        1.10.7.5. The ALC/FM prepares (for ALC approval) a summary of the evaluation and recommen-
+        dations and includes the total costs of each option. This summary becomes part of the item history
+        file and serves as an audit trail.
+            1.10.7.5.1. If the value of the LOT buy is $1 million or greater, the ALC/FM forwards the
+            complete summary indicating ALC approval to HQ AFMC/LGI for evaluation and approval.
+            1.10.7.5.2. Life of type buys valued at less than $1 million dollars can be approved in the Sys-
+            tem Program Manager or Inventory Management division, with the ALC/FM concurrence at
+            division level.
+     1.10.8. SPRAM. Special Purpose Recoverables Authorized to Maintenance (SPRAM) items support
+     base level maintenance activities. AFM 67-1, Volume I, Part one, Chapter 11, Section AG authorizes
+     the use of SPRAM.
+        1.10.8.1. The SPM and EAIM equipment specialist, in conjunction with the MAJCOM represen-
+        tative, select logical SPRAM items and quantities during the provisioning process.
+        1.10.8.2. The provisioning technical documentation (PTD) displays the SPRAM quantity. The
+        IMS enters the quantity in the requirements computation as an additive quantity
+     1.10.9. Weapons Training Detachments Operating Spares (WTDOS) Program.
+        1.10.9.1. The WTDOS program provides spare parts support to units that participate in opera-
+        tional training exercises away from their home bases. The system program manager selects items
+        and identifies the requirement to the IMS.
+        1.10.9.2. The IMS enters the quantity in the requirements computation as an additive quantity, if
+        possible. See AFM 67-1, Volume 1, Part One, Chapter 11.
+     1.10.10. War Reserve Materiel (WRM).
+        1.10.10.1. The EAIM and equipment specialist, and the MAJCOM representative, select WRM
+        items and quantities required to support the system or equipment. The IMS may acquire WRM
+        assets at the same time peacetime assets are bought. WRM is procured using replenishment funds.
+        For further information, refer to AFM 67-1, volume 1, part one, chapter 14.
+     1.10.11. Requirements Computation.
+        1.10.11.1. Stockage Requirements. Requirements for items that meet the DoD stockage criteria
+        are computed according to guidelines provided in this instruction unless HQ AFMC/LGI approves
+        an alternative procedure
+        1.10.11.2. Rounding Computed Quantities. D200H computes requirements in several segments,
+        which include operational, pipeline, and additive segments. It rounds the results of each segment
+        to one decimal place, using normal rounding procedures, and adds the results to obtain a total
+        requirement. If the total requirement results in a decimal quantity, the system rounds the quantity
+        up to the next higher integer.
+        1.10.11.3. Application of Asset and Usage Data. The contractor may provide data lists to AFMC
+        that detail asset and usage data accumulated during pre-operational phase of system development.
+        The equipment specialist determines if the usage data should be used to calculate maintenance
+        rates to be used in the requirements computation. The IMS must apply to the computed quantities
+        any pre-operational assets that the contractor offers.
+AFMCI23-106 3 FEBRUARY 1997                                                                            13
+
+     1.10.11.4. Program Adjustments. If an item is to be installed in only a portion of the end item
+     population, the equipment specialist adjusts the end item program accordingly. Design change
+     notices (DCN) are instances when this can occur. The ES should prorate the published program
+     based on the proportion of the number of end items which the item applies, to the number of end
+     items that the item does not apply. This is the application percent. The on-line item worksheets
+     include a free text area to document adjustments to the published program.
+     1.10.11.5. Additive Requirements (AR). ARs support special projects or particular, non-recurring
+     programs. Justification for ARs is required and should include identification of the program they
+     support, including any applicable project codes and nicknames. Normally, ARs should not support
+     recurring OIM or depot level maintenance demands. These requirements should be stated through
+     demand and maintenance rates. WRM requirements may be identified and acquired as an additive
+     requirement and positioned with an end item when the end item is assigned to a major military
+     mission.
+     1.10.11.6. Material Improvement Programs (MIP) and Engineering Change Proposals (ECP).
+     When the service life of a spare or repair part is expected to increase through a component
+     improvement program or changes in design or manufacture of the item, the requirements compu-
+     tation must anticipate the projected increase in service life.
+     1.10.11.7. Changes to Computed Requirements. One feature of the D200H system is the capabil-
+     ity to file maintain data elements on line and instantly see the results. The purpose of this feature
+     is to minimize manual adjustments to computed buy requirements. Normally, a computed buy
+     quantity changes when a computational element, such as demand rate or a logistics pipeline seg-
+     ment, has changed. When a change in buy quantity cannot be attributed to a change in a computa-
+     tional element within the D200H system, the change must be documented on the requirements
+     worksheet and approved by the appropriate level of management according to the value of the
+     change.
+     1.10.11.8. Interim release of items with long lead times. The contractor may release items with
+     long lead times incrementally and concurrently with production of the end item. When the con-
+     tractor has interim release authority, the IMS determines item quantities according to this instruc-
+     tion using the average month and adjusted month program that corresponds to the six month
+     program time base on the programming checklist. This is due to the restriction that limits interim
+     release buys to six months. Upon receipt of provisioning documentation, items are recomputed in
+     a normal fashion using the program in the PTB that corresponds to the item's review cycle.
+     1.10.11.9. Contractor Recommended Quantities. Although the D220 input includes contractor
+     recommended buy quantities, the IMS must compute item requirement according to the guidelines
+     specified in this instruction. This ensures that the contractor has provided accurate estimates and
+     that the necessary data are available to establish of items in the Air Force inventory. The quantity
+     computed in the D200H is the quantity bought.
+14                                                                   AFMCI23-106 3 FEBRUARY 1997
+
+                                                 Chapter 2
+              D200H INITIAL REQUIREMENTS DETERMINATION (IRD) SYSTEM
+
+2.1. System Description. The D200H IRD is a subsystem of the AFMC Requirements Data Bank. It is
+an automated version of a previously manual computation process. It provides on-line support for man-
+agement data retrieval, factors update, and assessment of changes In factor and logistics data. Users may
+view and change system data, and generate reports of applicable requirements data.
+
+2.2. System Inputs. IRD receives input from other systems via electronic file transfer in batch mode.
+The IRD receives data from the D220 Provisioning Data System, the K004 Past/Projected Programs Sys-
+tem, and from user file maintenance.
+     2.2.1. Chapter 3 includes a list of elements that each system provides to the IRD. The IRD receives
+     file maintenance transactions daily from each of the ALCs. Chapters 3, 4, and 5 indicate which ele-
+     ments can be file maintained and under what circumstances.
+
+2.3. System Operation. The IRD system operates centrally at Wright Patterson AFB OH on the
+AMDAHL mainframe computer. Users gain access to the system via local area network (LAN) terminals
+and generate reports at applicable area printers. The system includes two functions, batch processing and
+on-line processing. Batch functions are grouped by frequency and on-line functions are grouped by user
+view.
+     2.3.1. When IRD receives data it builds a programming check list (see Chapter 3) for the system or
+     subsystem. Each or system or subsystem is identified by a Provisioning Contract Control Number
+     (PCCN. Each PCL has a unique PCCN. Each item that is a component of the system or subsystem is
+     identified with a Provisioning Line Item Sequence Number (PLISN). The system builds a require-
+     ments worksheet for each PLISN.
+
+2.4. System Users. Individuals who require on-line access to the D200H complete DISA Form 41 and
+submit it to the HQ AFMC OPR. The HQ AFMC OPR approves the system access request and submits
+it to the Requirements Data Bank data system administrator. There are eight categories of users in the IRD
+system.
+     2.4.1. HQ OPR. This is the HQ AFMC system OPR. This user can view all screens and file maintain
+     the Standard Data Tables.
+     2.4.2. ALC Master. This is the ALC OPR. This user can view all screens and file maintain data that
+     originates at the user’s ALC.
+     2.4.3. Inventory Management Specialist (IMS). This is the ALC item manager. This user can view all
+     screens and file maintain data that applies to items assigned to the user.
+     2.4.4. IMS Supervisor. This user can view all screens and file maintain items in the user’s area of
+     responsibility. This user also uses the on-line capability to assign items to item managers that the user
+     supervises.
+     2.4.5. System Program Manager (SPM). This is normally a program manager. This user can create
+     and file maintain programming checklists (PCL).
+AFMCI23-106 3 FEBRUARY 1997                                                                            15
+
+  2.4.6. End Article Item Manager (EAIM). This user can view the same screens and file maintain the
+  same data as the IMS and the SPM.
+  2.4.7. Provisioning Specialist. This user can view all screens and file maintain the PCL/PCCN Cross
+  Reference Table in the PCL.
+  2.4.8. Data User. This is a user who does not fit any of the above user profiles but may be authorized
+  access by the HQ AFMC OPR. This user has “read only” capability and cannot file maintain any data.
+  2.4.9. Query Capabilities. Users can locate, retrieve, sort, and display almost any data element or
+  group of elements in the D200H with the system ad hoc query capability. The CA/DATAQUERY
+  User Reference and the CA/DATAQUERY User Guide provide complete descriptions and instruc-
+  tions of the RDB query system.
+  2.4.10. System Screens. Each of the following screens allow authorized users to change global data
+  within the IRD.
+     2.4.10.1. Stockage Table Screen. This screen displays the four stockage tables by holding and
+     procurement cost categories described in Chapter 1. The HQ AFMC OPR file maintains this table
+     with values that determine the Item Category Code for each item applicable to the system. All
+     users can view this screen.
+     2.4.10.2. ERRC Standard Data Screens. his is a series of four screens, one each for ERRCs T, C,
+     P, and N. The HQ AFMC OPR enters default lead time, retail pipeline, and repair cycle data. All
+     users can view this screen.
+     2.4.10.3. Review Cycle Table. This screen allows the HQ AFMC OPR to enter the values that
+     will determine if items are to be reviewed quarterly, semi-annually, or annually. All users can
+     view this screen.
+  2.4.11. User Screens. Each of the following screens allow authorized users to change or view system
+  or item data:
+     2.4.11.1. Change Printer ID Screen. This screen displays the printer to which output products will
+     be routed and allows any user to change the printer ID.
+     2.4.11.2. PIIN Requirements Determination Screen. This screen displays the “Usable On” codes
+     and associated application percents, by PTB, for a requested Procurement Instrumentation Identi-
+     fication Number (PIIN, a contracting instrument for a system or sub-system). Authorized users
+     (SPM, EAIM ALC OPR) can changed the “Usable On” codes and application percents. All users
+     can view this screen.
+     2.4.11.3. User Maintenance Screen. The ALC OPR can select this screen through the User Main-
+     tenance Menu Screen. It allows the ALC OPR to enter or change user profile information.
+     2.4.11.4. Item Worksheet Listing Screen. This screen allows all users to view a list of all items, in
+     PLISN order, within a PCCN.
+     2.4.11.5. Item Add Screen. This screen allows authorized users (IMS, IMS Supervisor, EAIM,
+     ALC OPR) to create a new item worksheet by filling in the applicable data fields.
+     2.4.11.6. Invalid User Screen. This screen appears when a user attempts to log on with a User ID
+     or password that the system does not recognize.
+16                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+                                               Chapter 3
+                                     PROGRAMMING CHECKLIST
+
+3.1. General. The programming checklist (PCL) is a source document for the program, logistical, and
+catalog data to be applied across a range of items. The purpose of the PCL is to support spare part compu-
+tations with consistent, current , and accurate data. The Development contractor may use the PCL to sup-
+port interim release of items with long lead times. The provisioning function may use the PCL as a guide
+in Source, Maintenance, and Recoverability (SMR) coding and othe rrelated logistical functions.
+
+3.2. Source of the PCL. The Requirements Data Bank D200H IRD subsystem is the preferred source of
+the PCL. If the RDB is not available or its use is not feasible, the provisioning functiion may develop a
+manual PCL on AFMC Form 27.
+
+3.3. Data from Interfaces. The PCL derives data from interfaces with D220 Provisioning system and
+K004 Past/Projected Programs system.
+     3.3.1. The D220 system provides the following logistical and catalog data system.
+        3.3.1.1. Provisioning list item sequence number (PLISN).
+        3.3.1.2. Commercial and Government Entity (CAGE) code (formerly FSCM).
+        3.3.1.3. Manufacturer’s Part Number.
+        3.3.1.4. Item Name (Noun).
+        3.3.1.5. Quantity Per Application (QPA).
+        3.3.1.6. Quantity Per End Item (QPEI).
+        3.3.1.7. Source, Maintainability, Recoverability (SMR) code.
+        3.3.1.8. National Stock Number (NSN), with separate fields for the Federal Supply Class (FSC),
+        and the National Item Identification Number (NIIN).
+        3.3.1.9. Use On code.
+        3.3.1.10. Maintenance Factor. This is the Total Organizational Intermediate Demand Rate
+        (TOIMDR).
+        3.3.1.11. Materiel Management Aggregation Code (MMAC).
+        3.3.1.12. Item Management Code (IMC).
+        3.3.1.13. Production Lead Time (PLT).
+        3.3.1.14. Unit price.
+        3.3.1.15. Quantity per Unit Pack (QUP).
+        3.3.1.16. Shelf Life code.
+        3.3.1.17. Type of Provisioning Technical Document.
+        3.3.1.18. Production Lead Time (PLT).
+        3.3.1.19. Unit price.
+AFMCI23-106 3 FEBRUARY 1997                                                                          17
+
+       3.3.1.20. Quantity per Unit Pack (QUP).
+       3.3.1.21. Shelf Life code.
+       3.3.1.22. Type of Provisioning Technical Document.
+       3.3.1.23. Prior Item PLISN.
+       3.3.1.24. Next Higher Assembly (NHA) PLISN.
+       3.3.1.25. Overhaul Replacement Percent.
+       3.3.1.26. Base Condemnation Percent.
+       3.3.1.27. Base Not Reparable This Station (NRTS) Percent.
+       3.3.1.28. Depot Overhaul Condemnation Percent.
+       3.3.1.29. Replaced or Superseded PLISN.
+       3.3.1.30. Quantity of assets shipped.
+       3.3.1.31. Quantity of assets procured.
+   3.3.2. The K004 system passes the following elements on the last day of each calendar quarter on file
+   D200.PA:
+       3.3.2.1. Application Program Designator (APD).
+       3.3.2.2. Program Type.
+       3.3.2.3. Service Code.
+       3.3.2.4. Projected program quantity by quarter (36 occurrences).
+       3.3.2.5. Past program quantity by month (up to 36 occurrences).
+
+3.4. Types of PCLs. The D200H displays active programming checklists in the on-line system and pro-
+duces hard copy PCLs at the user’s request. D200H includes two types of PCLs, the standard PCL and
+the Line Replaceable Unit/Shop Replacement Unit (LRU/SRU) PCL.
+   3.4.1. Standard PCL. Develops application program data for aircraft, engines, airborne, electronics,
+   armament, support and vehicular equipment, missiles, drones, and communications equipment.
+   3.4.2. LRU/SRU PCL. Develops application program data for items that normally replaced as a sin-
+   gle unit. These items have distinctive stock number for which spares are authorized to support
+   replacements. As such, computed programs from the related applications are used to develop com-
+   puted programs in the LRU/SRU PCL.
+   3.4.3. Program Time Base (PTB). The IRD system projects accumulated program data and require-
+   ments across sixteen program time bases. Each PTB is assigned a number from 3 to 48 divisible by
+   three (i.e., 3, 6, 9, 12 . . . 48). Thus, each PTB represents a quarter of accumulated data.
+   3.4.4. Program Development. For purpose of initial requirements determination, the IRD system
+   applies an Adjusted Month Program (ADMP). The IRD system performs the following steps to com-
+   pute the ADMP.
+18                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+        3.4.4.1. Compute the adjusted month schedule for each quarter. This is the quarterly program
+        (operating, inventory, or overhaul) that passed from the D220 system divided by three. Any
+        remainder is distributed in the first and second months.
+        3.4.4.2. Compute the average month schedule. This is the average monthly inventory through the
+        48 months (16 quarters) of the (PTB). In the first month it is the adjusted month schedule com-
+        puted in the preceding paragraph divided by 2. In the 2nd through 48th months, it is the adjusted
+        month schedule, plus the adjusted month schedule from the preceding month, divided by two.
+        3.4.4.3. Average Month Program. The average month program is the average month schedule
+        from the preceding paragraph accumulated through the program time base (PTB), divided by the
+        number of months in the PTB.
+
+3.5. PCL Elements. The following explains each PCL element in the sequence it appears on the five
+on-line screen pages. The abbreviated element appears in parentheses as it is displayed on the screen. The
+D200H User’s Manual indicates which elements may be file maintained by certain users.
+     3.5.1. Page 1 Elements.
+        3.5.1.1. Application Program Designator (APPL PRGM DES) (APD). This is the official desig-
+        nation of the program being supported. It can appear as an aircraft mission-design-series (MDS),
+        an engine type-mission-series (TMS), a missile or vehicle designator, a program or network ele-
+        ment code, a support equipment designator, or a national stock number. Certain users can update
+        or enter the APD when adding a PCL. When file maintaining this element, the APD must conform
+        to a specific format, as illustrated in Figure 3.1.
+        3.5.1.2. End Item Type Code (EI TYP CD). “E” in this element indicates an engine application.
+        3.5.1.3. Weapon System Application (WPN SYS APPL). This is the end item’s mission category
+        (e.g., fighter, cargo, attack).
+        3.5.1.4. End Item Name (End Item Name). This is the specific designation of the end item. It can
+        be identical to the Application Program Designator, or a further breakdown of the APD. For exam-
+        ple APD F16 can display End Item Name “F16” or “F16A,” F16B,” etc.
+        3.5.1.5. National Stock Number (NSN). If the end item has an assigned national stock number, it
+        is displayed in this field.
+        3.5.1.6. Creation Date (Creation Date). This is the date that the IRD system first built the PCL.
+        3.5.1.7. Revision Date (Revision Date). If the PCL had been revised, the date of the latest revision
+        appears in this field.
+        3.5.1.8. Revision Number (Revision #). The number of times the PCL had been revised. If the
+        PCL had not been revised, this field is blank. The revision date and number change only if data
+        that affects the computation changes.
+        3.5.1.9. Originator (Originator). The user fills in this field with the name of the individual who
+        originally created the PCL.
+        3.5.1.10. Office Symbol (Off Sym). This is the user’s organization.
+        3.5.1.11. Air Logistics Center (ALC). This is the Air Force inventory control point to which the
+        user is assigned.
+AFMCI23-106 3 FEBRUARY 1997                                                                            19
+
+     3.5.1.12. Procurement Instrument Identification Number (PIIN). This is usually the system acqui-
+     sition or modification contract number.
+     3.5.1.13. Purchase Request or Military Interdepartmental Purchase Request (PR/MIPR). This
+     field applies if the end item is being acquired on a purchase request.
+     3.5.1.14. Contractor (Contractor Name). Self-explanatory.
+     3.5.1.15. Contractor’s Address (Location). The contractor’s city and state (or country).
+     3.5.1.16. Operational Need Date (Operational Need Date). This is the date the end item will
+     require operational support. It is used to select raw program data that will be the basis of stock
+     level computations.
+     3.5.1.17. End Item Life Expectancy (EI Life Exp). This is the number of years that the end item is
+     expected to remain in the Air Force inventory. The user fills in this field.
+     3.5.1.18. Initial Spares Support List (ISSL Req’d). This field contains either “Y” or “N” and indi-
+     cates if the end item is authorized spares support through an ISSL.
+     3.5.1.19. Job Routed (Job Routed). This field contains either “Y” or “N” and indicates if spares
+     will be removed from the end item and repaired during depot overhaul of the end item or repair of
+     the next higher assembly.
+     3.5.1.20. Line Replaceable Unit/Shop Replaceable Unit (LRU/SRU). This is “N” on standard
+     PCLs, “Y” on LRU/SRU PCLs.
+     3.5.1.21. Recommended Recomputation Indicator (Recomputation). An authorized user enters
+     “Y” in this field to update the system after changing other data on the screen.
+  3.5.2. Page 2 Elements.
+     3.5.2.1. Program (Program). This field includes separate columns for fiscal year (FY) and pro-
+     gram units (QTY). Each column has five lines.
+     3.5.2.2. Operational And Maintenance Locations. The following fields each include separate col-
+     umns to indicate continental United States (CONUS) and overseas (OS) locations.
+         3.5.2.2.1. Number of Operational Bases (Number of Bases). The number of bases that will
+         field the system.
+         3.5.2.2.2. Number of Aerospace Educational and Training Command (AETC) Bases (Num-
+         ber of ATC Bases). The number of AETC bases that will be users of the system for training
+         purposes.
+         3.5.2.2.3. Organic Depot Maintenance Facilities (SOR Facilities: Depot). The number of
+         depot level overhaul facilities that will service the end item.
+         3.5.2.2.4. Organizational and Industrial facilities (O&I). Because of Air Force maintenance
+         practices, this field is normally blank.
+         3.5.2.2.5. Contract Repair Facilities (CONTR). The number of contractor facilities that will
+         overhaul the end item.
+         3.5.2.2.6. Order and Ship Time (O&ST) Days For Consumable Items (EOQ O&ST Days).
+         This is the calculated order and ship time value for consumable items. It is based on the data in
+20                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+            the NUMBER OF BASES field above and the O&ST value on the standard data table. The
+            value in this field applies to the calculation of levels for consumable items (see Chapter 4).
+        3.5.2.3. Reference Documents (Applicable Contractual Acquisition Documents). This section
+        notes relevant program documents, and their amendments, that provided data to prepare the PCL.
+     3.5.3. Page 3 Elements. Each element on this page appear as a projection through eighteen Program
+     Time Bases (PTB).
+        3.5.3.1. Operational Need Date. This is the OPERATIONAL NEED DATE on Page 1.
+        3.5.3.2. Program Projections. Each of the following elements displays 16 values, one in each
+        quarterly projection across two lines. Each value corresponds to the Program Time Base (PTB)
+        displayed across the top of the page. The number assigned to each PTB is the number of months
+        after the operational need date that the particular PTB ends. Each PTB number is divisible by
+        three. Thus, PTB 3 ends three months after the operational need date and represents the first quar-
+        ter’s data; PTB 6 ends six months after operational need date and represents the first and second
+        quarters’ data, etc. The K004 system is the source of program data, but the user may file maintain
+        any of the data. However, the IRD overrides any file maintained values with data from subsequent
+        interfaces.
+            3.5.3.2.1. Operating Program (Operating Program). This is normally the flying hour program
+            for aircraft applications through each program time base. The values are expressed in hun-
+            dreds. For example, an entry of 912 represents 91,200 flying hours.
+            3.5.3.2.2. Inventory Installation Program (Inventory Program). This is the number of end
+            items to be deployed through each program time base.
+            3.5.3.2.3. Engine Overhaul/Programmed Depot Maintenance Program (EOH/PDM Program).
+            This is the projection of scheduled engine or aircraft overhauls through each PTB.
+     3.5.4. Page 4 Elements. Each of the following elements also displays separate values through sixteen
+     program time base periods:
+        3.5.4.1. Average Month Operating Program (Average Month Operating Program). This is the
+        projected operating (flying hour) program within each month of the program time base.
+        3.5.4.2. Adjusted Month Operating Program (Adjusted Month Operating Program). This is the
+        adjusted monthly operating (flying hour) program within each month of the program time base.
+        3.5.4.3. Average Month Inventory Program (Average Month Inventory Program). This is the pro-
+        jected inventory program within each month of the program time base.
+        3.5.4.4. Adjusted Month Inventory Program (Adjusted Month Inventory Program). This is the
+        adjusted monthly inventory (flying hour) program within each month of the program time base.
+        3.5.4.5. Average Month Engine Overhaul/Programmed Depot Maintenance Program (Average
+        Month EOH/PDM Program). This is the projected aircraft or engine overhaul program within each
+        month of the program time base.
+     3.5.5. Page 5 Remarks Screen. Page 5 is a free text area for the user to include any remarks or expla-
+     nations. This may include reasons for changing elements through file maintenance, source documents,
+     or any other information peculiar to the system.
+AFMCI23-106 3 FEBRUARY 1997                                                                            21
+
+3.6. Other PCL Screens. Each of the following screens allows users to view data included in the PCL
+and for authorized users to change or add data:
+   3.6.1. Develop Program Screen. Authorized SPM users may create or modify inventory or operating
+   program data on the Develop Program Screen. Though the RDB transmits most program data during
+   the quarterly processing cycle, the data occasionally may not be available. This screen allows the user
+   to enter known PCL schedules, deliveries, command support schedules, projected end item attrition,
+   utilization rates, and overhaul schedules. The system subtracts the command support and projected
+   attrition from the delivery schedule to compute the inventory program, and multiplies the inventory
+   program by the utilization rates to compute the operating program. The inventory program must be a
+   positive value.
+   3.6.2. PCL History Screen. This screen is available to all users and displays a history of actions that
+   resulted from changes to the PCL. The system automatically generates data on this screen when it
+   identifies changes that affect the PCL computation. This includes three types of data: modifications,
+   deletions, and changes to originator data.
+   3.6.3. Change PCL Originator Screen. This screen allows the SPM user to change the identification
+   of the PCL originator.
+   3.6.4. ISSL Assignment Screen. This screen allows authorized users (SPM, EAIM, or ALC OPR) to
+   enter Initial Spares Support List (ISSL) authorizations. The screen identifies each base with a number,
+   up to 112, based on the number of bases that appears on Page 1 of the PCL. The user enters the autho-
+   rized ISSL quantity for each base. IRD uses the ISSL quantities to determine the item adjusted stock
+   levels. Only the SPM, End Article Item Manager, and ALC OPR can file maintain this screen. All
+   uses can view this screen.
+   3.6.5. PCL/PCCN Cross Reference Screen. This screen allows authorized users (SPM, EAIM, Provi-
+   sioning Specialist, ALC OPR) to change relationships between an application program designator
+   (APD) and a PCCN. All users can view this screen and see the PCCNs that apply to an APD.
+   3.6.6. PCL Modification Notice Screen. This screen displays all Program Checklists that have been
+   modified and recomputed during the previous six months, and where the program manager recom-
+   mended that associated items also be recomputed. All users can view this screen.
+   3.6.7. PCCN/PLISN to IMS Assignment Screen. This screen allows authorized users (ALC OPR,
+   IMS Supervisor, IMS, EAIM) to assign an item manager code to all PLISNs that apply to a PCCN. All
+   users can view this screen.
+   3.6.8. PCL/PCCN Summary Information Screen. This screen allows all users to view the buy value
+   of all items within a PCL, given specific selection criteria. Users can select the data by choosing any
+   of the following elements or combinations of elements:
+       3.6.8.1. PCCN, PCCN/ERRC Code, PCCN/Item Management Code, or PCCN/ERRC Code/Item
+       Management Code.
+       3.6.8.2. IIN.
+       3.6.8.3. PCL/APD.
+   3.6.9. PCL Deletion Notice Screen. This screen allows authorized users (SPM, EAIM, ALC OPR) to
+   delete or save from deletion any PCL that is eligible for deletion from the data base. All users can
+   view this screen. A PCL is eligible for deletion under the following conditions:
+22                                                               AFMCI23-106 3 FEBRUARY 1997
+
+       3.6.9.1. More than two years have passed since the last revision.
+       3.6.9.2. The PCL no longer has any associated items in the data base.
+
+Table 3.1. Application for Input Format.
+Position             1   2   3   4    5   6   7    8   9   10   11    12   13   14   15
+Aircraft MDS                 B   0    5   2   E
+Aircraft MDS           K     C   1    3   5   A
+Aircraft MDS         H K     C   1    3   5   A
+Aircraft MDS                 C   H    0   0   3    E
+Engine TMS                   J   0    0   5   7    0   5   5    A
+Engine TMS               G   R   0    0   8   5    1   8   0
+Engine TMS           F   X   J   0    0   7   9    0   1   1    A
+Engine TMS           G   S   O   0    4   8   0    B   1   0    A     6
+Missile MDS          A   I   M   0    2   5   B
+Drone MDS                Q   F   1    0   2   A
+Trainer              3   E   F   0    0   0
+Trainer              1   A   D   0    0   0   A
+National Stock No.   4   9   2   0    0   0   1 7      6   9    2     0    0    D    Q
+PEC                  5   6   0   1    2
+PEC                  1   0   0   3    C
+CEM                  A   N   A   T    Q   1
+CEM                  A   N   A   L    1   1   T    4
+FMS                          F   1    0   4   C                                 A    T
+FMS                      T   F   0    0       1    4   0   0                    G    R
+GUN                  M   6   1                0
+GUN                  G   A   U   8            1    5
+C-E NETWORK          4   0   7   L
+C-E NETWORK          8   0   2   L
+SYSTEM               A   P   N   8    2
+SYSTEM               A   R   C   9    0
+SUPPORT EQPT                 B   0    5   2                                O
+SUPPORT EQPT                 F   0    0   5                                O
+AFMCI23-106 3 FEBRUARY 1997                                                                                                                                                                         23
+
+Figure 3.1. AFMC FORM 27
+
+
+                                                                             P R O G R A M M IN G C H E C K LIS T
+
+       1.                                                                                       IT E M D A T A
+       A . D A T E O F IN IT IA T IO N                B . REV ISIO N N U M BER                     C . D A T E O F REV IS I O N                  D . N A T IO N A L S T O C K N U M B ER
+       31 Oct 96                                      Basic
+       E. N A M E A N D L O C A T I O N O F C O N T R A C T O R
+
+
+       Berkley-Bedell Equipment Co., Lake Okoboji IA
+       F. SIG N A T U RE O F IN IT IA T O R                                                                                                     O FFICE SYM B O L          PH O N E
+
+
+       George Metesky                                                                                                                           SAALC/LABDB 945-0002
+       2.                                                                          A C Q U I S I T ION D O C U M EN T
+
+       IN O R D E R F O R T H E C O N T R A C T O R T O C O M PL Y W I T H T H E A PPL I C A B L E A C Q U IS I T I O N D O C U M E N T S A N D T H E R E L A T E D D A T A IT E M
+       D E S C R I P T I O N S IN T H E D O D A U T H O R I Z ED D A T A L IS T , A N D T O FO R E C A S T S P A R E / R E P A I R P A R T S A N D S U P PO R T E Q U I P M E N T ( S E ) , T H E
+       IN F O R M A T IO N O N T H IS F O R M A N D A T T A C H M EN T S T H E R E T O A R E F U R N I S H E D F O R U S E W IT H T H E P R O C U R EM E N T IN S T RU M E N T( S ),
+       E . G . , L E T T E R CO N T R A CT , D EFIN IT IV E C O N T R A C T , E T C . T H E C O N T R A C T U A L A CQ U IS I T I O N D O C U M E N T ( S) S P E C IF I E D B E L O W W IL L
+       G O V E R N T H E T E R M S , C O N D I T I O N S , P R O C E D U R E S , A N D D A T A IT EM S F O R T H E S E L E C T IO N O F I N IT IA L S U PPO R T R EQ U I R E M E N T S .
+
+            M I L S T D 1 3 8 8 -2            M IL STD 1 5 6 1
+       X                                X
+       DATE                             DATE                           DATE                             DATE                           DATE                             DATE
+       11 Nov 86                        29 Mar 84
+       A M EN D                         A M EN D                       A M EN D                         A M EN D                       A M EN D                         A M EN D
+       B                                A
+       DATE                             DATE                           DATE                             DATE                           DATE                             DATE
+       12 Mar 88                        25 May 90
+       3.                                                                         A S S IG N M E N T O F EN D A R T I C L E
+       A . N U M B E R O F C O N U S B A S ES B . N U M B E R O F O S B A S ES                          C . R E C E I V I N G C O M M A N D S F O R O P E R A T I O N A L PR O G R A M
+       2                                              4                                                 AMC, PACAF
+       D . EN D A R T I C L E P R O C U RED           E.Q T Y          F. F Y P R O G R A M             G .R/M IPR O R C O N T R A C T A N D I T E M N U M B ER H .D A T E
+
+       Wright "B" Flyer                               269              97-98                            F088635-95-1783                                                      15 Aug 96
+
+
+
+
+       I . O PERA T IO N A L N EED D A T E                                                              J . O T H ER
+
+       19 Oct 96
+       4.
+       A . A V ER A G E                                                B . EN D A R T I C L E L I F E EX PECT A N C Y                  C. ISSL REQUIRED
+
+       Monthly Utilization Rate: 2.4                                   44 years                                                             X     Y ES                          NO
+       5.                                                                                         EN D IT EM
+       A . D EPO T                               B . I F Y E S , C O M P L E T E T H E F O L L O W I N GC . C O N T R A C T O R                  D . T O T A L N U M B ER O F FA CILIT IES
+                                                 N O C O N U S D EPO T S N O O S D EPO T S
+       X      Y ES                       NO      1                          0                               Y ES                   X      NO                        1
+       6.
+       A . B A S E R EPA IR                               B . O R G A N IZ A T IO N M A IN T            C . I N T ERM ED I A T E M A I N T               D . C O N T R C T O R F I EL D M A I N T
+
+       X      Y ES                          NO                  X   Y ES                        NO               X     Y ES                      NO          Y ES                X    NO
+       A F M C F O R M 2 7 , J U L 9 2 (E F )                               R E P L A C E S A FL C F O RM 2 7 , J A N 9 1 W H I C H I S O B S O L E T E
+24                                                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+Figure 3.2. Reverse of AFMC Form 27
+
+
+         7.                                                  S O U R C E D A T A D OCU M E N T S
+
+
+
+         Generic Schedule from Maj de Coverly, ASC/YM Sep 96
+
+
+         PAS 87-TAF 069 (11) Dec 95
+
+
+         USAF/LG, AFMC/LG, PACAF/LF Apr 96
+
+
+
+         8.                                                     A D D I T IO N A L R E M A R K S
+         Budgeting, funding, requirements determination and acquisition responsibilities between the AFMC/SPO and AFMC/SPM for
+         support equipment development and standardization will be exercised according to applicable command guidance.
+
+         The AFMC Requirements Data Bank Application, Program, and Indentures (API) reflects the Wright "B" Flyer flying hour
+         projections in quarterly increments from FY97 through FY99 and includes the operational readiness assessment hours.
+
+         The SPM will provide the contractor with instructions for forecasting recommended initial support requirements.
+
+
+
+
+         A F M C FO R M 2 7 , JU L 9 2 ( R e v e r s e )
+AFMCI23-106 3 FEBRUARY 1997                                                                           25
+
+                                               Chapter 4
+ INITIAL REQUIREMENTS COMPUTATION FOR CONSUMABLE ITEMS (ERRC XF3 OR
+                                XB3)
+
+4.1. Purpose. This chapter provides policy and instructions for computing Air Force initial requirements
+for consumable (ERRC XF3 and XB3) items. These items are also known as “EOQ” or “expense” items.
+It applies to all ALC IMSs who determine initial requirements.
+
+4.2. Consumable Items. Consumable items are components that are not repaired or condemned higher
+than the base level after removal from an end item.
+
+4.3. Policy.
+   4.3.1. The ES provides the necessary rates and factors for initial computation of all consumable items
+   within a weapon system that have been identified as logical spares to support that system.
+   4.3.2. Net requirements for new items not previously acquired include levels to support the wholesale
+   stock objective (procurement cycle plus acquisition lead time) and the retail stock objective (base
+   order and ship time plus base repair cycle).
+       4.3.2.1. Chapter 1, paragraph 1.6.1.7 defines acquisition lead time.
+       4.3.2.2. Base Order and Ship time is the time required for a retail (base level) customer to place
+       an order for an asset and to receive that asset from the wholesale source (depot supply).
+       4.3.2.3. Base Repair Cycle time is the time required to induct an unserviceable asset into a base
+       repair facility and restore it to a serviceable condition. Only ERRC XF3 items are repaired at the
+       base.
+   4.3.3. The IMS and ES validate ISSL requirements for stock listed items and process them according
+   to the current policy for replenishment consumable items.
+   4.3.4. The IMS submits requirements for Defense Logistics Agency (DLA) and other service-man-
+   aged items on a supply support request (SSR) through the D169 system.
+   4.3.5. System program managers (SPM) and IMSs use the D200H system to compute requirements
+   for each item unless the D200H is not available or, in the SPM’s judgment, use of the IRD not feasible
+   when only a small number of items are involved. If the SPM chooses not to use the D200H, an
+   approved alternative automated computation or the manual methodology (AFMC Form 997) may be
+   used. The HQ AFMC OPR approves any automated computation, which must provide a record of the
+   computation. The manual worksheet or alternate computation record must be kept in the item folder
+   for 3 years.
+   4.3.6. The wholesale stock requirement supports the program forecast period (lead time plus 3
+   months), which will be at least 12 months.
+
+4.4. Computation Methodology. The following paragraphs explain each element that appears on the
+RDB on-line screens andhow the D200H derives or computes each data element.
+   4.4.1. Header Information. The following elements appear at the top of each of the 11 screens that
+   make up the on-line requriements computation worksheet.
+26                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+        4.4.1.1. Date. The IRD screens include three dates. Date are not file maintainable.
+            4.4.1.1.1. The date and time the user calls up the screen or requests the product appears in the
+            upper right of the screen or product.
+            4.4.1.1.2. The creation date is the date the programming checklist was established.
+            4.4.1.1.3. The revision date is the date the programming check list was last revised.
+     4.4.2. Provisioning Contract Control Number (PCCN). The D220 system passes this element, which
+     identifies the specific system or sub-system.
+     4.4.3. Provisioning List Item Sequence Number (PLISN). The item’s unique identifier within a
+     PCCN.
+     4.4.4. Item Data. The following elements include the information necessary to establish an item
+     record in D200H. They appear in Section 1 on the D200H screens and products.
+        4.4.4.1. Non-Catalogued National Stock Number (NC/NSN). Provided by the D220 system. This
+        is a temporary NSN, identifiable with “NC” in the first two positions of the NIIN, that identifies
+        the item until the Federal Logistics Information System assigns a permanent NSN.
+        4.4.4.2. Part Number. The manufacturer's part number from the D220 system.
+        4.4.4.3. Noun. The item name from the D220 system.
+        4.4.4.4. Unit Price. The unit price recommended by the contractor or developed under current
+        pricing policy. Provided by the D220 system.
+        4.4.4.5. Unit of Issue. The unit of issue (“EA (each)” in the majority of cases) from the D220 sys-
+        tem.
+        4.4.4.6. QUP. The quantity unit pack (QUP) (1 in the majority of cases) from the D220 system.
+        4.4.4.7. Base Data. The input data for the retail stock requirements computation. There is no entry
+        in this segment for items coded for depot use only ("D" in the third position of the SMR code).
+        This element includes the order and ship time and base repair cycle.
+            4.4.4.7.1. Base Order and Ship Time (O & ST). See 4.3.2.2 above
+            4.4.4.7.2. Base Repair. See 4.3.2.3 above.
+        4.4.4.8. Type Provisioning Technical Documentation (TYPE PTD). The D220 system passes this
+        single position code that identifies the type of PTD submitted by the contractor during the provi-
+        sioning process. Valid values are I, R, C, F, T, P, G, B, D, X, L, E, and H. This element is not file
+        maintainable.
+        4.4.4.9. Type of Change Code (TYPE CHG CD). The D220 system passes this single position
+        code that is present when the Type PTD code is D (design change notice or notice of change
+        action). Valid values are D, L, A, Q, M and T. This element is not file maintainable.
+        4.4.4.10. Program Calculation Type (PRGM CALC TYP). The D220 system passes this single
+        position code that indicates the type of activity that form the basis for requirements computation.
+        Valid values are I (inventory) or O (operating).
+        4.4.4.11. ERRC. This is N for XB3 items (not repaired, removed or replaced at any level of main-
+        tenance), or P for XF3 items (repaired and condemned at the base maintenance facility).
+AFMCI23-106 3 FEBRUARY 1997                                                                           27
+
+     4.4.4.12. High Hold. This is an item with a high holding cost. The item manager enters “X” if the
+     item is subject to obsolescence or requires special storage.
+     4.4.4.13. ISSL. The item manager enters “X” if the item is on an approved Initial Spares Support
+     List.
+     4.4.4.14. Non-AF Item. The item manager enters “X” if another DoD component is the item’s pri-
+     mary inventory control agency (PICA).
+     4.4.4.15. Item Contingency. The D220 system passes this element. The only valid value is “I,”
+     which indicates an insurance item. This element is not file maintainable.
+     4.4.4.16. IMC. The item management code that passes from the D220 system. This code indicates
+     that the item is approved for interservice management.
+     4.4.4.17. Budget. This is “1” (System Support Division) for most consumable items.
+     4.4.4.18. Source, Maintenance, Recoverability (SMR) Code. This is the 6-position code that indi-
+     cates approved levels of acquisition, removal, maintenance, and condemnation. See AFMCI
+     23-101, Attachment 6.
+     4.4.4.19. Basing. A constant “B.”
+     4.4.4.20. MIEC. The three-position Mission Item Essentiality code. The equipment specialist
+     assigns this code according to Air Force support priorities and the subsystem and item essentiality.
+     4.4.4.21. Acquisition Method Code (AMC). This is a three-position code that indicates the con-
+     tracting methods that apply when procuring the item, e .g., sole source, competitive bids, direct
+     purchase, advertisement, etc.
+     4.4.4.22. Useable On (USE ON) Code. The D220 system passes this nine-position code.
+  4.4.5. Section 2, Programming Checklist (PCL) Data. This section identifies contract and end item
+  program data derived from the PCL.
+     4.4.5.1. APD. Identifies the Application Program Designator. The K004 system passes this ele-
+     ment.
+     4.4.5.2. End Item Name. This identifies the highest level assembly (aircraft, vehicle, equipment,
+     missile, engine, etc.) that the item supports.
+     4.4.5.3. End Item Type Code (EI TYP CD). This identifies an end item as an aircraft (A) or an
+     engine (E).
+     4.4.5.4. PIIN. The Procurement Instrument Identification Number. This is usually the system
+     acquisition or modification contract number.
+     4.4.5.5. Contractor Name. Self explanatory.
+     4.4.5.6. Location. The contractor’s address (city and state).
+     4.4.5.7. Revision Date. The date of the last revision, if applicable.
+     4.4.5.8. Revision Number. Indicates the number of times the programming checklist has been
+     revised.
+28                                                             AFMCI23-106 3 FEBRUARY 1997
+
+     4.4.5.9. Number of Users. The number of bases at which the system is to be activated during the
+     program forecast period.
+     4.4.5.10. Date. The date of the basic programming checklist and any revision.
+     4.4.5.11. Average Month Operating Program. The average month operating or equipment pro-
+     grams that passes from the programming checklist. The average month operating program is used
+     to compute wholesale stock requirements. The worksheet displays the data in sixteen increments,
+     one for each quarterly program time base (PTB).
+     4.4.5.12. Adjusted Month Operating Program. Adjusted month operating program that passes
+     from the programming checklist. The adjusted month program is used to compute the item’s retail
+     stock requirements. The worksheet displays the data in sixteen increments, one for each quarterly
+     program time base (PTB).
+     4.4.5.13. Average Month EOH/PDM Program. The average month programmed depot mainte-
+     nance (PDM) or engine overhaul (EOH) program from the programming checklist. The worksheet
+     displays the data in sixteen increments, one for each quarterly program time base (PTB).
+     4.4.5.14. Twelve Month Program Time Base (PTB). The average monthly OIM program for the
+     12 month program time base. This value is derived from the programming checklist.
+     4.4.5.15. Review Cycle Program Time Base. The average monthly OIM program at the review
+     cycle (RC) PTB from the programming checklist.
+     4.4.5.16. OIM Program. The adjusted month OIM program over the item’s program forecast
+     period. This value can be derived from the PCL.
+     4.4.5.17. PDM/Engine Overhaul. The item’s average monthly programmed depot maintenance or
+     engine. This value can be derived from the programming checklist.
+     4.4.5.18. NHRA/DLM Repair Program. This is the number of the item’s next higher recoverable
+     assembly units expected to undergo depot level maintenance or repair. This block applies if a
+     NHRA computes a repair requirement and the item is assigned a depot replacement percent. This
+     information must be obtained from the NHRA computation.
+     4.4.5.19. NHRA/Maintenance Item. The identity of the NHRA or maintenance item (NSN or
+     Noun/Part Number) from 4.4.5.18 above.
+     4.4.5.20. NHRA OIM Rate. The OIM demand rate of the NHRA (see 4.4.7.5 below).
+     4.4.5.21. NRTS. The not reparable this station (NRTS) percent of the NHRA (see 4.4.7.4 below).
+     Normally, this element does not apply to consumable items.
+     4.4.5.22. Overhaul Recovery Percent. The overhaul recovery percent (ORP) of the NHRA (1
+     minus the depot overhaul condemnation percent).
+     4.4.5.23. QPEI. The NHRA’s quantity per end item.
+     4.4.5.24. Average Month Depot Maintenance Program. This is the result of the NHRA QPEI
+     (3.3.3..8 above), times the review cycle program time base (3.3.3.7 above).
+     4.4.5.25. Adjusted Month Depot Maintenance Program. This is the result of the NHRA OIM Rate
+     (4.4.5.20 above) times the NHRA NRTS (4.4.5.21 above), times the NHRA overhaul recovery
+     percent (4.4.5.22 above), times the OIM program (4.4.5.16 above).
+AFMCI23-106 3 FEBRUARY 1997                                                                           29
+
+  4.4.6. Part 2. Programming Checklist (PCL) Data. The following data elements are derived directly
+  from the programming checklist:
+     4.4.6.1. Application Program Designator (APD). This is the designator of the system being sup-
+     ported.
+     4.4.6.2. Procurement Instrument Identification Number (PIIN). The PIIN assigned to the pro-
+     gramming checklist.
+     4.4.6.3. Contractor. The contractor's name from the D220 system.
+     4.4.6.4. Contract Number. The procurement instrument identification number (PIIN) from the
+     provisioning document.
+     4.4.6.5. PLISN. The provisioning list item sequence number (PLISN) from the D220 system.
+     4.4.6.6. Stockage Table. The applicable stockage table after the dollar value of annual demand
+     has been computed. This element has no application in the D200H system.
+     4.4.6.7. Item Category. Displays "INS" if the item is an insurance item. Derived from the D220
+     system.
+     4.4.6.8. Review Cycle. Computed according to the dollar value of annual demand (see Table 1-1).
+     4.4.6.9. Administrative Lead Time. This is the standard or estimated ALT in months.
+     4.4.6.10. Production Lead Time. This is the standard or estimated PLT in months.
+     4.4.6.11. Acquisition Method Code. The IMS enters the AMC, if available. See 4.4.4.21.
+     4.4.6.12. Next Higher Reparable Assembly. The NSN, part number or PLISN of the next higher
+     recoverable assembly (NHRA) from the D220 input file.
+     4.4.6.13. QPNHRA. The quantity per next higher recoverable assembly from the D220 input file.
+     4.4.6.14. End Item. The noun and aircraft mission, design, and series (MDS), or engine type
+     model and series (TMS) of the end item. Derived from the D220 input file.
+     4.4.6.15. QPEI. The quantity per end item from the D220 input file.
+  4.4.7. Section 3. Rates and Percentages.
+     4.4.7.1. Base Condemnation Percent. This is the percentage of units inducted into base level
+     repair that will be beyond technical or economic repair.
+     4.4.7.2. Depot Condemnation Percentage. This is the number of units inducted into depot level
+     repair that will be beyond technical or economic repair.
+     4.4.7.3. Base Processing Percent. This is the percentage of failures that are expected to be
+     inducted into base level repair facilities. For most consumable items this is 100 percent, expressed
+     as 1.00.
+     4.4.7.4. Base Not Reparable This Station (NRTS) Percent. The is the percentage of units failing in
+     the field that will need to be evacuated to a depot repair facility. For most consumable items this
+     is 0 percent, expressed as .00.
+     4.4.7.5. Total Organizational Intermediate Demand Rate (TOIMDR). The projected number of
+     failures per one hundred flying hours, or per unit installed in the end item population.
+30                                                                   AFMCI23-106 3 FEBRUARY 1997
+
+        4.4.7.6. Organizational Intermediate Maintenance Depot Demand Rate (OIMDDR). This is the
+        projected number of failures per program unit (hundreds of flying hours or installations) that will
+        be returned to a depot repair facility. For most consumable items , this element is 0 percent,
+        expressed as .00.
+        4.4.7.7. Base Repair Rate. This is the projected number of failures per program unit (hundreds of
+        flying hours or installations) that will be repaired at the base level. For most consumable items this
+        element is 100%, expressed as 1.00.
+        4.4.7.8. Wearout Rate. This is the percentage of units inducted into base or depot level repair that
+        will be condemned. The consumable item computation normally does not use this element.
+        4.4.7.9. Wearout Percent. This is the percentage of assets expected to fail in the field that will be
+        condemned. It is the Total OIM Demand Rate times the Wearout Rate.
+        4.4.7.10. Overhaul Recovery Percent. This is one minus the depot overhaul condemnation per-
+        cent.
+        4.4.7.11. Overhaul Replacement Percent. This is equal to the Job Routed Condemnation rate plus
+        the Non-job Routed Replacement percent below. This should be 100%, expressed as 1.00, for con-
+        sumable items
+        4.4.7.12. Non-Job Routed (NJR) Program Percent. This is the portion of the components installed
+        in a next higher assembly that will be subject to removal and replacement with assets requisitioned
+        from depot supply. The value of this element can apply to Engine Overhaul (EOH), Program
+        Depot Maintenance (PDM), or Management of Items Subject to Repair (MISTR) programs.
+        4.4.7.13. NJR Replacement Percent. This is the percentage of items installed in end items that
+        will be removed and sent to a depot repair line for repair, and therefore will levy the wholesale
+        supply system for replacement units. The value of this element can apply to Engine Overhaul
+        (EOH), Program Depot Maintenance (PDM), or Management of Items Subject to Repair (MISTR)
+        programs. This should be 0%, expressed as .00, for consumable items.
+        4.4.7.14. Job Routed Condemnation Percent. This is the percentage of components installed on
+        the end item population scheduled for overhaul that will be removed and condemned during over-
+        haul.
+        4.4.7.15. Application Percent. This is the percentage of the end item population that has the item
+        installed.
+        4.4.7.16. Next Higher Reparable Assembly (NHRA) Average Month MISTR Program. This is
+        the average month program derived from the repair schedule of a NHRA.
+     4.4.8. Section 4. Additive Requirements and Assets.
+        4.4.8.1. Additives. The following elements describe requirements that cannot be expressed
+        through normal maintenance and demand rates. The values are independently calculated.
+            4.4.8.1.1. ATC ISSL. This supports an Initial Spares Support List developed for use by the
+            Aerospace Education and Training Command. See AFM 67-1, Volume I, Part One, Chapter
+            12, paragraph 4c.
+            4.4.8.1.2. Floating Stock Level. This is a retail requirement that supports the Depot Level
+            Maintenance process. This requirement does not apply to consumable items.
+AFMCI23-106 3 FEBRUARY 1997                                                                             31
+
+        4.4.8.1.3. War Reserve Materiel (WRM). This supports wartime missions, as defined in cur-
+        rent USAF mobilization documents. The item manager, system program manager, and major
+        command representatives select the depth and range of WRM spares during the provisioning
+        process.
+        4.4.8.1.4. Special Purpose Recoverables Authorized to Maintenance (SPRAM). This is a
+        retail requirement that supports base maintenance activities. The system program manager and
+        the major commands select the depth and range of items for this requirement. This require-
+        ment does not apply to consumable items.
+        4.4.8.1.5. Weapon System Training Detachment Operating Spares (WTDOS). This supports
+        operational training exercises that a unit cannot perform at the home location. The system pro-
+        gram manager selects the depth and range of items for this requirement. This requirement does
+        not apply to consumable items.
+        4.4.8.1.6. Other. This is any special project or requirement not identified above. The item
+        manager, equipment specialist, system program manager, or major command can provide
+        input to develop this requirement.
+     4.4.8.2. Assets. The following elements identify assets that are available to support initial require-
+     ments.
+        4.4.8.2.1. Serviceable. The number of assets ready for issue.
+        4.4.8.2.2. Net Unserviceable. The number of assets that require repair before they can be
+        issued, after deducting expected condemnations.
+        4.4.8.2.3. War Reserve Materiel (WRM). The number of assets set aside to support wartime
+        contingencies. For consumable items, this represents assets stored in the depot wholesale
+        account.
+        4.4.8.2.4. On Order (POS). This is the number of assets on contract, but not yet delivered, that
+        will support peacetime operations.
+        4.4.8.2.5. On Order (WRM). This is the number of assets on contract, but no yet delivered,
+        that will support wartime contingencies.
+        4.4.8.2.6. In Process. This is the number of assets placed on a purchase request or a provision-
+        ing item order (PIO), but not yet on contract.
+        4.4.8.2.7. Due in from Overhaul. This is the number of assets undergoing depot repair. This
+        element does not apply to consumable items.
+        4.4.8.2.8. Total. The sum of all asset categories described above.
+        4.4.8.2.9. D220 Assets. The following two elements pass from the D220 system if the system
+        has undergone modification or design change. They identify assets that the item manager and
+        equipment specialist should review to determine if modification, disposal, or termination
+        action should be initiated.
+            4.4.8.2.9.1. Quantity Procured. This is the number of assets that have been placed on a
+            Provisioning Item Order.
+            4.4.8.2.9.2. Quantity Shipped. This is the quantity of procured assets that the vendor has
+            shipped to the Air Force.
+32                                                                    AFMCI23-106 3 FEBRUARY 1997
+
+     4.4.9. Section 5. Dollar Value of Annual Demands (DVAD) Computation. This is a display of the
+     requirements and the associated dollar value. It includes the following elements:
+        4.4.9.1. OIM. The wholesale and retail requirements needed to meet operational needs.
+        4.4.9.2. DLM. The requirement needed to support depot level maintenance programs.
+        4.4.9.3. Total. The sum of the OIM and DLM requirements.
+        4.4.9.4. Dollar Value. The value of the total requirement above multiplied by the unit price.
+        4.4.9.5. DLM Annual Demand Computation. This appears in Section 5 on hard copy products and
+        Section 6 on the screens in the RDB on-line system. It includes the following requirements seg-
+        ments:
+            4.4.9.5.1. Engine Overhaul/Program Depot Maintenance Non-job Routed (EOH/PDM NJR)
+            Requirement. This is the requirement for EOH or PDM Non-job routed replacements and con-
+            demnations. See paragraphs 4.4.7.12 and 4.4.7.13 above.
+            4.4.9.5.2. Engine Overhaul/Program Depot Maintenance Job Routed (EOH/PDM JR)
+            Requirement. This is the requirement for job routed condemnations. See paragraph 4.4.7.14
+            above.
+            4.4.9.5.3. Management of Items Subject to Repair Non-Job Routed (MISTR NJR) Require-
+            ment. This is the requirement for MISTR non-job routed replacements and condemnations.
+            See paragraphs 4.4.7.12 and 4.4.7.13 above.
+            4.4.9.5.4. Management of Items Subject to Repair Job Routed (MISTR JR) Requirement.
+            This is the requirement for MISTR job routed condemnations. See paragraph 4.4.7.14 above.
+     4.4.10. Section 6. Operating (OIM) Requirements Computation. This is a projection through sixteen
+     program time base (PTB) periods (four years) of each of the following requirements segments:
+        4.4.10.1. Procurement Cycle. This is three months’ of OIM base and depot condemnations. Lead
+        time. This the OIM base and depot condemnations expected to accrue through administrative and
+        production lead times, plus one month.
+        4.4.10.2. Depot Repair. This is the level that supports the pipeline time required to evacuate an
+        unserviceable asset to a depot repair facility, restore it to a serviceable condition, and return it to
+        wholesale stock. This requirement does not normally apply to consumable items.
+        4.4.10.3. Base Order and Ship Time (O & ST). See paragraph 4.4.4.7.1 above.
+        4.4.10.4. Base Repair Cycle. See paragraph 4.4.4.7.2. above.
+        4.4.10.5. Base Stock Level. This is the sum of the Base O & ST and Base Repair Cycle require-
+        ments.
+     4.4.11. Section 7. Depot Level Maintenance (DLM) Requirements Computation. This is a projection
+     of sixteen program time base (PTB) periods (four years) of requirements that support depot mainte-
+     nance programs. A three position alpha code identifies each program and requirement segment on the
+     hard copy worksheets. The on-line screens spell out the requirements segments and do not display the
+     codes. These codes are:
+        4.4.11.1. MPN. MISTR non-job routed procurement cycle.
+AFMCI23-106 3 FEBRUARY 1997                                                                         33
+
+     4.4.11.2. MPJ. MISTR job routed procurement cycle.
+     4.4.11.3. EPN. Engine overhaul or PDM non-job routed procurement cycle.
+     4.4.11.4. EPJ. Engine overhaul or PDM job routed procurement cycle.
+     4.4.11.5. MLN. MISTR non-job routed lead time.
+     4.4.11.6. MLJ. MISTR job routed lead time.
+     4.4.11.7. ELN. Engine overhaul or PDM non-job routed lead time.
+     4.4.11.8. ELJ. Engine overhaul or PDM job routed lead time.
+     4.4.11.9. MSN. MISTR non-job routed stock level.
+     4.4.11.10. MSJ. MISTR job routed stock level.
+     4.4.11.11. ESN. Engine overhaul or PDM non-job routed stock level.
+     4.4.11.12. ESJ. Engine overhaul or PDM job routed stock level.
+     4.4.11.13. DRC. The wholesale depot repair cycle pipeline requirement.
+  4.4.12. Section 8. Requirements Summary. This is a projection through sixteen program time base
+  (PTB) period (four years) of each of the following:
+     4.4.12.1. Gross (GRS) Requirement. This is the sum of all requirements in sections 6 and 7.
+     4.4.12.2. Net Requirement (NET). This is the gross requirement minus the total assets in section
+     4.
+     4.4.12.3. Dollar Value Net Requirement. This is the net requirement multiplied by the unit cost.
+     4.4.12.4. Recommended Buy Quantity. This is the net requirement computed in the PTB quarter
+     that corresponds to the lead time, plus procurement cycle (three months), plus one month, from the
+     start date.
+     4.4.12.5. Dollar Value. This is the recommended buy quantity times the unit price.
+     4.4.12.6. Review Cycle. This is the interval, in months, of the item’s review cycle, as determined
+     in Table 1.1. This appears in Section 5 on hard copy products and Section 6 on the screens in the
+     RDB on-line system.
+     4.4.12.7. Program Forecast Period. The number of months in the PFP. See Chapter 1, paragraph
+     1.6.2.3. This appears in Section 5 on hard copy products and Section 6 on the screens in the RDB
+     on-line system.
+34                                                                   AFMCI23-106 3 FEBRUARY 1997
+
+                                                 Chapter 5
+ INITIAL REQUIREMENTS DETERMINATION FOR RECOVERABLE ITEMS (ERRC XD2
+                              OR XD3)
+
+5.1. Purpose. This chapter provides policy and instructions for computing Air Force initial requirements
+for recoverable (ERRC XD1 and XD2) items. These items are also known as “reparable” or “investment”
+items. It applies to all ALC IMSs who determine initial requirements.
+
+5.2. Recoverable Items. Recoverable items are components that are removed from and end item,
+repaired, and returned to the supply system for re-issue. Base and depot maintenance facilities may per-
+form repair, but condemnation authority is normally at the depot level.
+
+5.3. Policy.
+     5.3.1. Logical Spares. The ES provides the necessary rates and factors for initial computation of all
+     consumable items within a weapon system that have been identified as logical spares to support that
+     system.
+     5.3.2. Net Requirements. Net requirements for new items not previously acquired include levels to
+     support the wholesale stock objective (procurement cycle plus acquisition lead time) and the retail
+     stock objective (base order and ship time plus base repair cycle).
+        5.3.2.1. Lead Time. Chapter 1, paragraph 1.6.1.7 defines acquisition lead time.
+        5.3.2.2. Base Order and Ship Time. Is the time required for a retail (base level) customer to place
+        an order for an asset and to receive that asset from the wholesale source (depot supply). Base
+        O&ST days enter the system via the standard data tables or through user file maintenance.
+        5.3.2.3. Base Repair Cycle Time. Is the time required to induct an unserviceable asset into a base
+        repair facility and restore it to a serviceable condition. Base repair cycle days enter the system via
+        the standard data tables or through user file maintenance.
+     5.3.3. Validation. The IMS and ES validate ISSL requirements for stock listed items and process
+     them according to the current policy for replenishment consumable items.
+     5.3.4. Submitting Requirements. The IMS submits requirements for Defense Logistics Agency
+     (DLA) and other service-managed items on a supply support request (SSR) through the D169 system.
+     5.3.5. SPM and IMSs. System program managers (SPM) and IMSs use the D200H system to com-
+     pute requirements for each item unless the D200H is not available or, in the SPM’s judgment, use of
+     the IRD is not feasible when only a small number of items are involved. If the SPM chooses not to use
+     the D200H, an approved alternative automated computation or the manual methodology (AFMC
+     Form 614) may be used. The HQ AFMC OPR approves any automated computation, which must pro-
+     vide a record of the computation. The manual worksheet or alternate computation record must be kept
+     in the item folder for 3 years.
+     5.3.6. Stock Requirement. The wholesale stock requirement supports the program forecast period
+     (lead time plus 3 months), which will be at least 12 months.
+AFMCI23-106 3 FEBRUARY 1997                                                                               35
+
+5.4. Computation Methodology. The following paragraphs explain how the D200H derives or com-
+putes each data element:
+   5.4.1. Header Information. The following elements appear at the top of each of the 11 screens that
+   make up the on-line requirements computation worksheet:
+      5.4.1.1. Date. The IRD screens include three dates. Dates are not file maintainable:
+          5.4.1.1.1. The date and time the user calls up the screen or requests the product appears in the
+          upper right of the screen or product.
+          5.4.1.1.2. The creation date is the date the programming checklist was established.
+          5.4.1.1.3. The revision date is the date the programming check list was last revised.
+   5.4.2. Provisioning Contract Control Number (PCCN). The D220 system passes this element, which
+   identifies the specific system or sub-system.
+   5.4.3. Provisioning List Item Sequence Number (PLISN). The item’s unique identifier within a
+   PCCN.
+   5.4.4. Item Data. The following elements include the information necessary to establish an item
+   record in D200H. They appear in Section 1 on the D200H screens and products:
+      5.4.4.1. Non-Catalogued National Stock Number (NC/NSN). Provided by the D220 system. This
+      is a temporary NSN, identifiable with “NC” in the first two positions of the NIIN, that identifies
+      the item until the Federal Logistics Information System assigns a permanent NSN.
+      5.4.4.2. Part Number. The manufacturer's part number from theD220 system.
+      5.4.4.3. Noun. The item name from the D220 system.
+      5.4.4.4. Unit Price. The unit price recommended by the contractor or developed under current
+      pricing policy. Provided by the D220 system.
+      5.4.4.5. Unit of Issue. The unit of issue (“EA (each)” in the majority of cases) from the D220 sys-
+      tem.
+      5.4.4.6. QUP. The quantity unit pack (QUP) (1 in the majority of cases) from the D220 system.
+      5.4.4.7. Base Data. The base data to compute the retail stock requirement. There is no entry in this
+      segment for items coded for depot use only( "D" in the third position of the SMR code). This ele-
+      ment includes the order and ship time and base repair cycle
+          5.4.4.7.1. Base Order and Ship Time (O & ST). See paragraph 5.3.2.2 above.
+          5.4.4.7.2. Base Repair. See paragraph 5.3.2.3 above.
+          5.4.4.7.3. Depot Repair. The number of days for an unserviceable assets to be evacuated from
+          a base, inducted into a depot repair facility, restored to a serviceable condition, and returned to
+          the Air Force inventory. Depot repair cycle days enter the system via the standard data tables
+          or through user file maintenance.
+          5.4.4.7.4. Job Routed (JR) Stock Level. The number of days’ of stock that must be maintained
+          to support condemnations expected to occur during overhaul of the end item or next higher
+          assembly.
+36                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+            5.4.4.7.5. Non-Job Routed (NJR) Stock Level. The number of stock the must be maintained to
+            support removals during the overhaul of the end item or next higher assembly.
+        5.4.4.8. Type Provisioning Technical Documentation (TYPE PTD). The D220 system passes this
+        single position code that identifies the type of PTD submitted by the contractor during the provi-
+        sioning process. alid values are I, R, C, F, T, P, G, B, D, X, L, E, and H. This element is not file
+        maintainable.
+        5.4.4.9. Type of Change Code (TYPE CHG CD). The D220 system passes this single position
+        code that is present when the Type PTD code is D (design change notice or notice of change
+        action). Valid values are D, L, A, Q, M and T. This element is not file maintainable.
+        5.4.4.10. Program Calculation Type (PRGM CALC TYP). The D220 system passes this single
+        position code that indicates the type of activity that form the basis for requirements computation.
+        Valid values are I (inventory) or O (operating).
+        5.4.4.11. ERRC. This is T for XD2 items (repaired and condemned at a depot maintenance facil-
+        ity), or C for XD1 items (managed in the Serialized Control and Reporting System).
+        5.4.4.12. High Hold. This is an item with a high holding cost. The item manager enters “X” if the
+        item is subject to obsolescence or requires special storage.
+        5.4.4.13. ISSL. The item manager enters “X” if the item is on an approved Initial Spares Support
+        List.
+        5.4.4.14. Non-AF Item. The item manager enters “X” if another DoD component is the item’s pri-
+        mary inventory control agency (PICA).
+        5.4.4.15. Item Contingency. The D220 system passes this element. The only valid value is “I,”
+        which indicates an insurance item. This element is not file maintainable.
+        5.4.4.16. IMC. The item management code that passes from the D220 system. This code indicates
+        that the item is approved for interservice management.
+        5.4.4.17. Budget. This is “8” (Reparable Support Division) for most recoverable items.
+        5.4.4.18. Source, Maintenance, Recoverability (SMR) Code. This is the 6-position code that indi-
+        cates approved levels of acquisition, removal, maintenance, and condemnation. See AFMCI
+        23-101, Attachment 6.
+        5.4.4.19. Basing. A constant “B.”
+        5.4.4.20. MIEC. The three-position Mission Item Essentiality code. The equipment specialist
+        assigns this code according to Air Force support priorities and the subsystem and item essentiality.
+        5.4.4.21. Acquisition Method Code (AMC). This is a three-position code that indicates the con-
+        tracting methods that apply when procuring the item, e .g., sole source, competitive bids, direct
+        purchase, advertisement, etc. DOD 4100.39M, Volume 12 lists valid AMCs.
+        5.4.4.22. Useable On (USE ON) Code. The D220 system passes this nine-position code.
+     5.4.5. Section 2, Programming Checklist (PCL) Data. This section identifies contract and end item
+     program data derived from the PCL.
+        5.4.5.1. APD. Identifies the Application Program Designator. The K004 system passes this ele-
+        ment.
+AFMCI23-106 3 FEBRUARY 1997                                                                        37
+
+     5.4.5.2. End Item Name. This identifies the highest level assembly (aircraft, vehicle, equipment,
+     missile, engine, etc.) that the item directly supports.
+     5.4.5.3. End Item Type Code (EI TYP CD). This identifies an end as an aircraft (A) or an engine
+     (E).
+     5.4.5.4. PIIN. The Procurement Instrument Identification Number. This is usually the system
+     acquisition or modification contract number.
+     5.4.5.5. Contractor Name. Self explanatory.
+     5.4.5.6. Location. The contractor’s address (city and state).
+     5.4.5.7. Revision Date. The date of the last revision, if applicable.
+     5.4.5.8. Revision Number. Indicates the number of times the programming checklist has been.
+     5.4.5.9. Number of Users. he number of bases to be activated during the program forecast period.
+     5.4.5.10. Date. The date of the basic programming checklist and any revision.
+     5.4.5.11. Average Month Operating Program. The average month operating or equipment pro-
+     grams that passes from the programming checklist. The average month operating program is used
+     to compute wholesale stock requirements. The worksheet displays the data in sixteen increments,
+     one for each quarterly program time base (PTB).
+     5.4.5.12. Adjusted Month Operating Program. Adjusted month operating program that passes
+     from the programming checklist. The adjusted month program is used to compute the item’s retail
+     stock requirements. The worksheet displays the data in sixteen increments, one for each quarterly
+     program time base (PTB).
+     5.4.5.13. Average Month EOH/PDM Program. The average month programmed depot mainte-
+     nance (PDM) or engine overhaul (EOH) program from the programming checklist. The worksheet
+     displays the data in sixteen increments, one for each quarterly program time base (PTB).
+     5.4.5.14. Twelve Month Program Time Base (PTB). The average monthly OIM program for the
+     12 month program time base. This value is derived from the programming checklist.
+     5.4.5.15. Review Cycle Program Time Base. The average monthly OIM program at the review
+     cycle (RC) PTB from the programming checklist.
+     5.4.5.16. OIM Program. The adjusted month OIM program over the item’s program forecast
+     period. This value can be derived from the PCL.
+     5.4.5.17. PDM/Engine Overhaul. The item’s average monthly programmed depot maintenance or
+     engine. This value can be derived from the programming checklist.
+     5.4.5.18. NHRA/DLM Repair Program. This is the number of the item’s next higher recoverable
+     assembly units expected to undergo depot level maintenance or repair. This block applies if a
+     NHRA computes a repair requirement and the item is assigned a depot replacement percent. This
+     information must be obtained from the NHRA computation.
+     5.4.5.19. NHRA/Maintenance Item. The identity of the NHRA or maintenance item (NSN or
+     Noun/Part Number) from paragraph 5.4.5.18 above.
+     5.4.5.20. NHRA OIM Rate. The OIM demand rate of the NHRA (see 5.4.7.4 below).
+38                                                               AFMCI23-106 3 FEBRUARY 1997
+
+        5.4.5.21. NRTS. The not reparable this station (NRTS) percent of the NHRA (see paragraph
+        5.4.7.5.below).
+        5.4.5.22. Overhaul Recovery Percent. The overhaul recovery percent (ORP) of the NHRA (1
+        minus the depot overhaul condemnation percent).
+        5.4.5.23. QPEI. The NHRA’s quantity per end item.
+        5.4.5.24. Average Month Depot Maintenance Program. This is the result of the NHRA QPEI
+        (paragraph 5.4.5.23 above), times the review cycle program time base (paragraph 5.4.5.15 above).
+        5.4.5.25. Adjusted Month Depot Maintenance Program. This is the result of the NHRA OIM Rate
+        (paragraph 5.4.5.20 above) times the NHRA NRTS (paragraph 5.4.5.21 above), times the NHRA
+        overhaul recovery percent (paragraph 5.4.5.22 above), times the OIM program (paragraph
+        5.4.5.16 above).
+     5.4.6. Part 2. Programming Checklist (PCL) Data. The following data elements are derived directly
+     from the programming checklist:
+        5.4.6.1. Application Program Designator (APD). his is the designator of the system being sup-
+        ported.
+        5.4.6.2. Procurement Item Identification Number (PIIN). The PIIN assigned to the programming
+        checklist.
+        5.4.6.3. Contractor. The contractor's name from the D220 system.
+        5.4.6.4. Contract Number. The procurement instrument identification number (PIIN) from the
+        provisioning document.
+        5.4.6.5. PLISN. The provisioning list item sequence number (PLISN) from the D220 system.
+        5.4.6.6. Stockage Table. The applicable stockage table after the dollar value of annual demand
+        has been computed. This element has no application in the D200H system.
+        5.4.6.7. Item Category. Displays "INS" if the item is an insurance item. Derived from the D220
+        system.
+        5.4.6.8. Review Cycle. Computed according to the dollar value of annual demand (see Table 1.1).
+        5.4.6.9. Administrative Lead Time. This is the standard or estimated ALT in months.
+        5.4.6.10. Production Lead Time. This is the standard or estimated PLT in months.
+        5.4.6.11. Acquisition Method Code. The IMS enters the AMC, if available. See paragraph
+        4.4.4.21.
+        5.4.6.12. Next Higher Reparable Assembly. The NSN, part number or PLISN of the next higher
+        recoverable assembly (NHRA) from the D220 input file.
+        5.4.6.13. QPNHRA. The quantity per next higher recoverable assembly from the D220 input file.
+        5.4.6.14. End Item. The noun and aircraft mission, design, and series (MDS), or engine type
+        model and series (TMS) of the end item. Derived from the D220 input file.
+        5.4.6.15. QPEI. The quantity per end item from the D220 input file.
+     5.4.7. Section 3. Rates and Percentages.
+AFMCI23-106 3 FEBRUARY 1997                                                                             39
+
+     5.4.7.1. Base Condemnation Percent. This is the percentage of units inducted into base level
+     repair that will be beyond any technical or economic repair.
+     5.4.7.2. Depot Condemnation Percentage. This is the number of units inducted into depot level
+     repair that will be beyond technical or economic repair.
+     5.4.7.3. Base Processing Percent. This is the percentage of failures that are expected to be
+     inducted into base level repair facilities. For most consumable items this is 100 percent, expressed
+     as 1.00.
+     5.4.7.4. Base Not Reparable This Station (NRTS) Percent. The is the percentage of units failing in
+     the field that will need to be evacuated to a depot repair facility. For most consumable items this is
+     0 percent, expressed as .00.
+     5.4.7.5. Total Organizational Intermediate Demand Rate (TOIMDR). The projected number of
+     failures per one hundred flying hours, or per unit installed in the end item population.
+     5.4.7.6. Organizational Intermediate Maintenance Depot Demand Rate (OIMDDR). This is the
+     projected number of failures per program unit (hundreds of flying hours or installations) that will
+     be returned to a depot repair facility.
+     5.4.7.7. Base Repair Rate. This is the projected number of failures per program unit (hundreds of
+     flying hours or installations) that will be repaired at the base level.
+     5.4.7.8. Wearout Rate. This is the percentage of inducted into base or depot level repair that will
+     be condemned. The consumable item computation normally does not use this element.
+     5.4.7.9. Wearout Percent. This is the percentage of assets expected to fail in the field that will be
+     condemned. It is the Total OIM Demand Rate times the Wearout Rate.
+     5.4.7.10. Overhaul Recovery Percent. This is one minus the depot overhaul condemnation per-
+     cent.
+     5.4.7.11. Overhaul Replacement Percent. This is equal to the Job Routed Condemnation rate plus
+     the Non-job Routed Replacement percent below.
+     5.4.7.12. Non-Job Routed (NJR) Program Percent. This is the percentage of the components
+     installed in next higher assembly that will be subject to removal and replacement with assets req-
+     uisitioned from depot supply. The value of this element can apply to Engine Overhaul (EOH), Pro-
+     gram Depot Maintenance (PDM), or Management of Items Subject to Repair (MISTR) programs.
+     5.4.7.13. NJR Replacement Percent. This is the percentage of items installed in end items that
+     will be removed and sent to a depot repair line for repair, and therefore will levy the wholesale
+     supply system for replacement units. The value of this element can apply to Engine Overhaul
+     (EOH), Program Depot Maintenance (PDM), or Management of Items Subject to Repair (MISTR)
+     programs.
+     5.4.7.14. Job Routed Condemnation Percent. This is the percentage of components installed on
+     the end item population scheduled for overhaul that will be removed and condemned during over-
+     haul.
+     5.4.7.15. Application Percent. This is the percentage of the end item population that has the item
+     installed.
+40                                                                   AFMCI23-106 3 FEBRUARY 1997
+
+        5.4.7.16. Next Higher Reparable Assembly (NHRA) Average Month MISTR Program. This is
+        the average month program derived from the repair schedule of a NHRA.
+     5.4.8. Section 4. Additive Requirements and Assets.
+        5.4.8.1. Additives. The following elements describe requirements that cannot be expressed
+        through normal maintenance and demand rates. The values are independently calculated.
+            5.4.8.1.1. ATC ISSL. This supports an Initial Spares Support List developed for use by the
+            Aerospace Education and Training Command. See AFM 67-1, Volume I, Part One, Chapter
+            12, paragraph 4c.
+            5.4.8.1.2. Floating Stock Level. This is a retail requirement that supports the Depot Level
+            Maintenance process. This requirement does not apply to consumable items.
+            5.4.8.1.3. War Reserve Materiel (WRM). This supports wartime missions, as defined in cur-
+            rent USAF mobilization documents. The item manager, system program manager, and major
+            command representatives select the depth and range of WRM spares during the provisioning
+            process.
+            5.4.8.1.4. Special Purpose Recoverables Authorized to Maintenance (SPRAM). This is a
+            retail requirement that supports base maintenance activities. The system program manager and
+            the major commands select the depth and range of items for this requirement. This require-
+            ment does not apply to consumable items.
+            5.4.8.1.5. Weapon System Training Detachment Operating Spares (WTDOS). This supports
+            operational training exercises that a unit cannot perform at the home location. The system pro-
+            gram manager selects the depth and range of items for this requirement. This requirement does
+            not apply to consumable items.
+            5.4.8.1.6. Other. This is any special project or requirement not identified above. The item
+            manager, equipment specialist, system program manager, or major command can provide
+            input to develop this requirement.
+        5.4.8.2. Assets. The following elements identify assets that are available to support initial require-
+        ments.
+            5.4.8.2.1. Serviceable. The number of assets ready for issue.
+            5.4.8.2.2. Net Unserviceable. The number of assets that require repair before they can be
+            issued, after deducting expected condemnations.
+            5.4.8.2.3. War Reserve Materiel (WRM). The number of assets set aside to support wartime
+            contingencies. For consumable items, this represents assets stored in the depot wholesale
+            account.
+            5.4.8.2.4. On Order (POS). This is the number of assets on contract, but not yet delivered, that
+            will support peacetime operations.
+            5.4.8.2.5. On Order (WRM). This is the number of assets on contract, but not yet delivered,
+            that will support wartime contingencies.
+            5.4.8.2.6. In Process. This is the number of assets placed on a purchase request or a provision-
+            ing item order (PIO), but not yet on contract.
+AFMCI23-106 3 FEBRUARY 1997                                                                              41
+
+         5.4.8.2.7. Due in from Overhaul. This is the number of assets undergoing depot repair. This
+         element does not apply to consumable items.
+         5.4.8.2.8. Total. The sum of all asset categories described above.
+         5.4.8.2.9. D220 Assets. The following two elements pass from the D220 system if the system
+         has undergone modification or design change. They identify assets that the item manager and
+         equipment specialist should review to determine if modification, disposal, or termination
+         action should be initiated.
+            5.4.8.2.9.1. Quantity Procured. This is the number of assets that have been placed on a
+            Provisioning Item Order.
+            5.4.8.2.9.2. Quantity Shipped. This is the quantity of procured assets that the vendor has
+            shipped to the Air Force.
+  5.4.9. Section 5. Dollar Value of Annual Demands (DVAD) Computation. This is a display of the
+  requirements and the associated dollar value. It includes the following elements:
+     5.4.9.1. OIM. The wholesale and retail requirements needed to meet operational needs.
+     5.4.9.2. The requirement needed to support depot level maintenance programs.
+     5.4.9.3. Total. The sum of the OIM and DLM requirements.
+     5.4.9.4. Dollar Value. The value of the total requirement above multiplied by the unit price.
+     5.4.9.5. DLM Annual Demand Computation. This appears in Section 5 on hard copy products
+     and Section 6 on the screens in the RDB on-line system. It includes the following requirements
+     segments:
+         5.4.9.5.1. Engine Overhaul/Program Depot Maintenance Non-Job Routed (EOH/PDM NJR)
+         Requirement. This is the requirement for EOH or PDM Non-job routed replacements and con-
+         demnations. See paragraph 5.4.7 above.
+         5.4.9.5.2. Engine Overhaul/Program Depot Maintenance Job Routed (EOH/PDM JR)
+         Requirement. This is the requirement for job routed condemnations. See paragraph 5.4.7.14
+         above.
+         5.4.9.5.3. Management of Items Subject to Repair Non-Job Routed (MISTR NJR) Require-
+         ment. This is the requirement for MISTR non-job routed replacements and condemnations.
+         See paragraphs 5.4.7.12 and 13 above.
+         5.4.9.5.4. Management of Items Subject to Repair Job Routed (MISTR JR) Requirement.
+         This is the requirement for MISTR job routed condemnations. See paragraph 5.4.7.14 above.
+  5.4.10. Section 6. Operating (OIM) Requirements Computation. This is a projection through sixteen
+  program time base (PTB) periods (four years) of each of the following requirements segments:
+     5.4.10.1. Procurement. This is three months of OIM base and depot condemnations. Lead time.
+     This the OIM base and depot condemnations expected to accrue through administrative and pro-
+     duction lead times, plus one month.
+     5.4.10.2. Depot Repair Cycle. This is the level that supports the pipeline time required to evacuate
+     an unserviceable asset to a depot repair facility, restore it to a serviceable condition, and return it
+     to wholesale stock.
+42                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+        5.4.10.3. Base Order and Ship Time (O & ST). See paragraph 5.3.2.2 above.
+        5.4.10.4. Base Repair Cycle. See paragraph 5.3.2.3 above.
+        5.4.10.5. Base Stock Level. This is the sum of the Base O & ST and Base Repair Cycle require-
+        ments.
+     5.4.11. Section 7. Depot Repair (DLM) Requirements Computation. This is a projection of sixteen
+     program time base (PTB) periods (four years) of requirements that support depot maintenance pro-
+     grams. A three position alpha code identifies each program and requirement segment on the hard copy
+     worksheets. The on-line screens spell out the requirements segments and do not display the codes.
+     These codes are:
+        5.4.11.1. MPN. MISTR non-job routed procurement cycle.
+        5.4.11.2. MPJ. MISTR job routed procurement cycle.
+        5.4.11.3. EPN. Engine overhaul or PDM non-job routed procurement cycle.
+        5.4.11.4. EPJ. Engine overhaul or PDM job routed procurement cycle.
+        5.4.11.5. MLN. MISTR non-job routed lead time.
+        5.4.11.6. MLJ. MISTR job routed lead time.
+        5.4.11.7. ELN. Engine overhaul or PDM non-job routed lead time.
+        5.4.11.8. ELJ. Engine overhaul or PDM job routed lead time.
+        5.4.11.9. MSN. MISTR non-job routed stock level.
+        5.4.11.10. MSJ. MISTR job routed stock level.
+        5.4.11.11. ESN. Engine overhaul or PDM non-job routed stock level.
+        5.4.11.12. ESJ. Engine overhaul or PDM job routed stock level.
+        5.4.11.13. DRC. The wholesale depot repair cycle pipeline requirement.
+     5.4.12. Section 8. Requirements Summary. This is a projection through sixteen program time base
+     (PTB) period (four years) of each of the following:
+        5.4.12.1. Gross (GRS) Requirement. This is the sum of all requirements in sections 6 and 7.
+        5.4.12.2. Net Requirement (NET). This is the gross requirement minus the total assets in section
+        4.
+        5.4.12.3. Dollar Value Net Requirement. This is the net requirement multiplied by the unit cost.
+        5.4.12.4. Recommended Buy Quantity. This is the net requirement computed in the PTB quarter
+        that corresponds to the lead time, plus procurement cycle (three months), plus one month, from the
+        start date.
+        5.4.12.5. Dollar Value. This is the recommended buy quantity times the unit price.
+        5.4.12.6. Review Cycle. This is the interval, in months, of the item’s review cycle, as determined
+        in Table 1.1. This appears in Section 5 on hard copy products and Section 6 on the screens in the
+        RDB on-line system.
+AFMCI23-106 3 FEBRUARY 1997                                                                       43
+
+     5.4.12.7. Program Forecast Period. The number of months in the PFP. See Chapter 1, paragraph
+     1.6.2.3. This appears in Section 5 on hard copy products and Section 6 on the screens in the RDB
+     on-line system.
+
+
+
+                                      JOSEPH R. CORCORAN JR., Col, USAF
+                                      Deputy Director, Directorate of Logistics
+44                                                      AFMCI23-106 3 FEBRUARY 1997
+
+                                         Attachment 1
+              GLOSSARY OF ABBREVIATIONS, ACRONYMNS, AND TERMS
+
+Abbreviations and Acronyms
+ACO—Administrative Contracting Officer
+AD—Annual Demand
+ADMP—Adjusted Month Program
+AFPRO—Air Force plant representative office
+AGCPD—ALC Ground CE Program Directive
+ALC—Air Logistics Center
+AMC—Acquisitions Method Code
+AMP—Average Month Program
+AOA—Average Operating Active
+ASC—Authorization Source Code
+ASC—Aeronautical Systems Center
+AETC—Aerospace Education and Training Command
+BPAC—Budget Program Activity Code
+BRC—Base Repair Cycle
+C-E—Communications-Electronics
+CAGE—Commercial And Government Entity Code
+CCN—Command Control Number
+CFE—Contractor Furnished Equipment
+CONUS—Continental United States
+CSEL—Consolidated Support Equipment List
+DCN—Design Change Notice
+DDP—Demand Development Period
+DID—Data Item Description
+DIFM—Due-In From Maintenance
+DIOH—Due-In From Overhaul
+DLA—Defense Logistics Agency
+DLM—depot level maintenance
+DoD—Department of Defense
+DVAD—Dollar Value Of Annual Demand
+AFMCI23-106 3 FEBRUARY 1997                                  45
+
+EAIM—End Article Item Manager
+ECP—Engineering Change Proposal
+EI—Engineering Installation
+EMD—Engineering And Manufacturing Development
+EOH—Engine Overhaul
+EOQ—Economic Order Quantity
+ERRC—Expendability, Recoverability, Reparability, Category
+ES—Equipment Specialist
+ESC—Electronics Systems Center
+FMS—Foreign Military Sales
+GA—Grant Aid
+GFAE—Government-Furnished Aeronautical Equipment
+GFE—Government-Furnished Equipment
+ICS—Interim Contractor Support
+IEC—Item Essentiality Code
+IM—Inventory Manager
+IMS—Item Management Specialist
+IOC—Initial Operational Capability
+IOL—Initial Operating Level
+IRD—Initial Requirements Determination
+ISSL—Initial Spares Support List
+JR—Job-Routed
+LOT—Life-Of-Type
+LRU—Line Replaceable Unit
+MAJCOM—Major Command
+MDM—Mobile Depot Maintenance
+MDS—Mission, Design, Series
+MEI—Month End Inventory
+MIEC—Mission Item Essentiality Code
+MIP—Material Improvement Program
+MISTR—Management of Items Subject to Repair
+MTBD—Mean Time Between Demand
+46                                                  AFMCI23-106 3 FEBRUARY 1997
+
+MTS—Mobile Training Set
+MUCO—Material Utilization Control Office
+NC—Non-Cataloged
+NHA—Next Higher Assembly
+NHRA—Next Higher Recoverable Assembly
+NJR—Non-Job-Routed
+NMCS—Not Mission Capable Supply
+NMSR—Non-Consumable Materiel Support Request
+NOA—Non-Operating Active
+NRTS—Not Repairable This Station
+NSN—National Stock Number
+NSO—Numerical Stockage Objective
+O&ST—Order And Ship Time
+OA—Operating Active
+OIM—Organizational Or Intermediate Maintenance
+ORP—Overhaul Recovery Percent
+OS—Overseas
+PC—Procurement Cycle
+PCL—Programming Checklist
+PCSP—Programmed Communication Support Program
+PDM—Programmed Depot Maintenance
+PFP—Program Forecast Period
+PG—Program Guidance
+PIIN—Procurement Instrument Identification Number
+PLISN—Procurement List Item Sequence Number
+PM—Program Manager
+PO—Program Officer
+POC—Preliminary Operational Capability
+POS—Peacetime Operating Stock
+PTB—Program Time Base
+PTD—Provisioning Technical Documentation
+QPA—Quantity Per Application
+AFMCI23-106 3 FEBRUARY 1997                                     47
+
+QPEI—Quantity Per End Item
+QPNHRA—Quantity Per Next Higher Recoverable Assembly
+QR—Quantitative Requirement
+QUP—Quantity Unit Pack
+RC—Review Cycle
+RIB—Recoverable Item Breakout
+RPT—Resident Provisioning Team
+RSO—Retail Stock Objective
+RSP—Readiness Spares Kit
+RTE—Resident Training Equipment
+SA—Security Assistance
+SAIP—Spares Acquisition Integrated With Production
+SCARS—Serialized Control And Accounting Reporting System
+SE—Support Equipment
+SEC—System Essentiality Code
+SERD—Support Equipment Recommendation Data
+SIASCN—Standard Interservice Agency Serialized Control Number
+SL—Safety Level
+SMR—Source, Maintenance, And Recoverability
+SPM—System Program Manager
+SPRAM—Special Purpose Recoverables Authorized To Maintenance
+SRU—Shop Replaceable Unit
+SSR—Supply Support Request
+SUBSEC—Subsystem Essentiality Code
+TA—Table Of Allowance
+TMS—Type, Model, Series
+TOC—Technical Order Compliance
+TRC—Technical Repair Center
+UC—Unit Cost
+UE—Unit Equipment
+UI—Unit Of Issue
+UR—Utilization Rate
+48                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+WIMM—Weapons Integrated Materiel Manager
+WRM—War Reserve Materiel
+WTDOS—Weapons Training Detachments Operating Spares
+
+Terms
+Acquisition Advice Codes—These codes indicate how (as distinguished from "where") and under what
+restriction an item is acquired. For currently authorized codes see the Federal Manual for Supply,
+Cataloging MI-7.
+Common Item—An item that supports several systems, subsystems, or primary items.
+Consumption Items—Items which are consumed in use or which lose their identity through
+incorporation in, or attachment to, another assembly. These are also known as “secondary” items and are
+further classified as consumable items or recoverable items.
+Demand or Demands—Supply actions, including issues, repairable generations, retail requisitions, or
+any other action that levies a requirement on the wholesale supply system to issue a serviceable asset to a
+customer.
+Demand Development Period (DDP)—The period of time extending from the preliminary operational
+capability date to a point in time when requirements forecasts are entirely based on actual demands or
+other empirical data that indicate the need for spare and repair parts.
+End Article/Item—The end article or item to be delivered under the contract, including (but not limited
+to) aircraft, missiles, or support equipment.
+Expendability, Recoverability, Reparability, Category (ERRC) Code—Either a single digit or three
+digit supply code used to classify Air Force items of supply into various categories for management
+purposes. Initially assigned ERRC codes are derived directly from the maintenance repair level codes
+authorized for use by source codes in TO-00-195.
+Consumable Items—Expendable, non-recoverable repair parts with ERRC designator XB and
+expendable repair parts that have minor reparability with ERRC designator XF. Also known as Expense
+Items.
+Floating Stock Level—The stock level required by the Directorate of Maintenance (D/MA) to support
+the job routed overhaul repair or contractor to keep a production line moving. When the repair time of a
+component exceeds the repair time of an end item, the D/MA is authorized to maintain a floating stock
+level. This level must be of sufficient serviceable components to allow minimum repair flow time of the
+primary end item as negotiated with the item manager. For contractor repair of another recoverable
+assembly, the government must furnish a minimum quantity of serviceable assets to provide immediate
+replacements while the removed item is being repaired.
+Initial Operational Capability (IOC)—The first attainment of the capability to employ effectively a
+weapon, item of equipment, or system of approved specific characteristics and that is manned or operated
+by an adequately trained, equipped, and supported military unit or force.
+Initial Provisioning—The process of determining the range of quantity of items required to support and
+maintain an end item or article of materiel for an initial period of operation. The phases include
+identifying item of supply, establishing data needed to prepare catalogs, technical manuals and tables of
+AFMCI23-106 3 FEBRUARY 1997                                                                              49
+
+allowances; and preparing instructions that ensure delivery of necessary support items with related end
+articles.
+Initial Spares Support List (ISSL)—A list of spares and repair parts and quantities required for
+organizational and field maintenance initial support of an end item for a given period of time. Quantities
+established for ISSLs must be equal to the initial base stockage objective.
+Initial Support Period—The initial period of operation during which spare and repair parts are procured
+for an end item.
+Inventory Control Point (ICP)—An organizational unit or activity within a Department of Defense
+supply system that is assigned the primary responsibility for the materiel management of a group of items
+either for a particular Military Service or for the Department of Defense as a whole. Materiel inventory
+management includes cataloging direction, requirements computation, procurement direction,
+distribution management, disposal direction, and generally, rebuild direction.
+Insurance Items—Items that are not subject to periodic replacement or wear-out. Replacements
+resulting from accidents or other unpredictable occurrences, are required so infrequently that only limited
+quantities are acquired and held at a central point.
+Item Support Period—See program forecast period.
+Mission Design & Series (MDS)-(Aircraft, Missile, or End Item)—S t a n d a r d            nomenclature
+designations for aircraft, missiles, and end items to indicate the prime intended function, the sequence
+number of each design and the series letter indicating significant changes to the logistic support.
+Numeric Stockage Objective Item (NSO)—A non-demand based, stocked, essential item that has a
+predicted failure rate, but the probability of demand is so low that it does not meet the stockage criteria,
+and as a demand based item would not be stocked. Since the lack of a replacement item would seriously
+hamper the operational capability of a weapon or weapon system, the item is stocked, but as a
+non-demand based item.
+Overhaul Stock Level—This stock level represents the amount of stock required to replace
+condemnations of job-routed items projected to accrue during the planned overhaul program. The
+number of support days required is based upon the time required to receive a serviceable replacement in
+the technological repair center from the time requested. This will not exceed 14 days for XD2 items, or 5
+days for XD1 items.
+Peculiar Item—Items of supply that apply to only weapon system or end item.
+Preliminary Operational Capability (POC)—The attainment of the capability for equipment or
+systems to be used by operational units and to function in a manner that is preliminary to, but in support
+of, the achievement of an initial operational capability (IOC).
+Procurement Cycle (PC)—The length of time between procurement actions. In terms of quantities, the
+requirement that represents the forecast demands between procurement actions.
+Procurement Lead Time (PCLT)—The sum of administrative lead time (ALT) and production lead
+time (PLT) as defined in DoD Instruction 4140.24.
+Program Forecast Period (PFP)—Represents the number of months to be used in the development of
+initial budget, apportionment, and item requirements for spare and repair parts. The PFP is equal to the
+PCLT plus 3 months following the date of the preliminary operational capability.
+50                                                                 AFMCI23-106 3 FEBRUARY 1997
+
+Program Time Base (PTB)—A selected portion of the operational program beginning with the date of
+the preliminary operational capability and extending to the next procurement cycle or program forecast
+period, as appropriate, developed for the purpose of computing all requirements program data.
+Programming Checklist (PCL)—A document that contains all programming data necessary to compute
+initial spares requirements. The programming checklist can be in hard copy form (AFMC Form 27) or
+on-line in the D200H Initial Requirements Determination (IRD) subsystem of the Requirements Data
+Bank.
+Provisioning—The management process of determining and acquiring the range and quantity of support
+items necessary to operate and maintain an end item of materiel for an initial period of service.
+Provisioning Lists—Lists of data developed and used for provisioning purposes.
+Additive Requirement—A requirement not normally expressed through historical demand rates or
+program projections. Additive requirements support activity outside of normal peacetime operations.
+Examples are support for special projects, modification programs, initial installations, and forward supply
+levels. Also known as quantitative requirements.
+Recoverable Items—Items of a durable nature that are normally subject to periodic replacement through
+fair wear and tear, and when unserviceable, can be economically repaired by either a field or depot
+maintenance activity. Also known as reparable items.
+Repair Cycle—All the stages through which an unserviceable reparable type item passes from the time
+of its removal from the end item until its restoration to a serviceable condition and return to the supply
+system.
+Repair Parts—Consumable “bits and pieces”; i.e., individual parts or consumable assemblies required to
+repair components of major end items.
+Replacement Items—Primary items that are not consumed in use and retain their original identity
+during use. These items have an ERRC designation of ND2 or NF2. They are issued on the basis of
+approved allowance documents, with the receiving using unit or activity maintaining accountability. Also
+known as Equipment Items.
+Retail Level—In the Air Force supply system, the level of supply that issues an item directly to the
+customer.
+Review Cycle (RC)—The time between the mandatory review of item requirements.
+Safety Level—The quantity of materiel required to be on hand to permit continued operation in the event
+of interruptions of normal replenishment or unpredictable fluctuation in issue demands.
+Security Assistance (SA) Program—The Air Force program that administers the Grant Aid and Foreign
+Military Sales (FMS) functions.
+Serialized Control & Reporting System (SCARS)—A technique applied to high unit cost recoverable
+items that provides the item manager (IM) with responsive access to the precise location, condition and
+installed item status of all assets.
+Spare Parts—Repairable components or assemblies used for maintenance replacement purposes in
+major end items or equipment.
+SPM or EAIM ALC—An ALC that has system program management or item management
+responsibility for the weapon system or end article procured on contract.
+AFMCI23-106 3 FEBRUARY 1997                                                                       51
+
+Support Equipment—Equipment required to make a weapon system, command and control system,
+subsystem, or end item of equipment operational in its intended environment.
+Technical Data—The drawings, sketches, catalogs, specifications and other data required to completely
+identify the item.
+Time-Weighted Average Month's Program (TWAMP)—The cumulative monthly operational units of
+program during the program time base divided by the number of months in the program time base.
+War Reserve Materiel (WRM)—Materiel required to augment peacetime assets to completely support
+forces, missions, and activities reflected in the United States Air Force War Plans.
+Wholesale Level—The echelon of the supply system under the direct control of the ICP that maintains
+quantities of stocks to satisfy requisitions from the retail level.
+52                                                                  AFMCI23-106 3 FEBRUARY 1997
+
+                                               Attachment 2
+                                    REQUIREMENTS FORMULAS
+
+A2.1. The D200H Initial Requirements Determination (IRD) system uses the following formulas to com-
+pute each requirements segment for initial spares. These formulas are part of the approved methodology
+for computing Air Force initial spares requirements and should be used when computing requirements
+outside of the IRD. The ALC OPR may approve deviations from these formulas after reviewing justifying
+documentation.
+
+A2.2. Programming Checklist Elements.
+     A2.2.1. Adjusted Month Schedule.
+     A2.2.2. The adjusted month schedule is used to develop the average and adjusted month inventory,
+     operating (flying hour), and overhaul program for the programming checklist (PCL) computations.
+     Overhaul programs are depot level maintenance (DLM) programs, and include program depot main-
+     tenance (PDM), engine overhaul (EOH), and Management of Items Subject to Repair (MISTR) pro-
+     grams.
+        A2.2.2.1. For any quarter the adjusted month schedule is the quarterly program divided by three:
+                  ADJ MO SCHED = QTLY PROG/3.
+        A2.2.2.2. Any remainder is evenly distributed between the first and second months of the quarter.
+        If the remainder is 2, one additional unit of program is added to the first and second months; if the
+        remainder is 1, one additional unit of program is added to the first month only.
+     A2.2.3. Average Month Schedule.
+        A2.2.3.1. The average month schedule is the current adjusted monthly schedule plus the previous
+        adjusted monthly schedule, divided by two.
+            A2.2.3.1.1. For the first month:
+                       AVG MO SCHED = ADJ MO SCHED/2.
+            A2.2.3.1.2. For subsequent months:
+        AVG MO SCHED = (ADJ MO SCHED (current month) + ADJ MO SCHED (previous month))/2.
+
+A2.3. Item Requirements .
+     A2.3.1. OIM Annual Demands.
+        A2.3.1.1. This is the number of annual demands expected to be placed on organizational and
+        intermediate maintenance (i.e., base level) maintenance activities. The first step is to determine
+        the program time base (PTB) that contains the Adjusted Month Program (1a above) that will apply
+        to the OIM demand projection. Each PTB is numbered in threes from 3 to 48 (3, 6, 9, . . . 48). To
+        select the appropriate PFP, add the number of months in the administrative and production lead
+        times, plus the number of months in the procurement cycle (3), plus 1 one month.
+         PFP = ALT MO + PLT MO + PROC CYC MO (3) + 1.
+AFMCI23-106 3 FEBRUARY 1997                                                                            53
+
+     A2.3.1.2. If there is a remainder, the result is rounded up to a multiple of three. For example, if
+     the result is 16, the selected PFP is 18. If the result is less than 12, or if the item is managed by
+     another service, the PFP is 12.
+     A2.3.1.3. The projected annual demands equals the total OIM demand rate, times the application
+     percent, times the quantity per end item, times the accumulated operating program (flying hours or
+     inventory) at the selected PFP.
+    OIM ANN DEM = TOIMDR X APPL PCT X (OIM PROG at PFP).
+  A2.3.2. OIM Pipeline Requirements.
+     A2.3.2.1. OIM Procurement Cycle. The 3- month procurement cycle requirement within each
+     program time base (PTB) is the number of months in the procurement cycle (3) times the average
+     month program in the PTB , times the quantity per end item, times the item application percent,
+     times the TOIMDR, times product of the base NRTS percent times the depot overhaul condemna-
+     tion percent, plus the remainder of the 1 minus the base NRTS percent multiplied by the base con-
+     demnation percent.
+     OIM PROC CYC = 3 X AVG MO PROG (PTB n) X QPEI X ITM APPL PCT X TOIMDR X
+     ((BASE NRTS PCT X DEP OVHL CONDMN PCT) + ((1 - BASE NRTS PCT) X BASE
+     CONDMN PCT)).
+     A2.3.2.2. OIM Lead Time. This requirement covers demands expected to occur during the item’s
+     acquisition lead time and is computed within each program time base. It is the number of months
+     in the administrative lead time and the production lead time, plus one additional month, times the
+     average month program in the PTB , times the quantity per end item, times the item application
+     percent, times the TOIMDR, times the product of the base NRTS percent times the depot overhaul
+     condemnation percent, plus the remainder of the 1 minus the base NRTS percent multiplied by the
+     base condemnation percent.
+     OIM LT = (ALT MO + PLT MO + 1) X AVG MO PROG (PTB n) X QPEI X ITM APPL PCT X
+     TOIMDR X ((BASE NRTS PCT X DEP OVHL CONDMN PCT) + ((1 - BASE NRTS PCT) X
+     BASE CONDMN PCT)).
+     A2.3.2.3. Base Order and Ship Time. This determines the number of assets required to support
+     demands expected to occur during the base order and ship time (O & ST). It is the number of days
+     in the O & ST divided by 30, times the adjusted month program at the item’s PFP, times the quan-
+     tity per end item, times the item application percent, the total OIM demand rate, times the base
+     NRTS percent plus the remainder of the 1 minus the base NRTS percent multiplied by the base
+     condemnation percent.
+     BASE O&ST = (BASE O&ST DA/30) X AVG MO PROG (PTB n) X QPEI X ITM APPL PCT
+     X TOIMDR X (BASE NRTS PCT + (1 - BASE NRTS PCT) X BASE CONDMN PCT).
+     A2.3.2.4. Base Repair Cycle. This determines the number of assets required to support demands
+     expected to occur during the base repair cycle (BRC) time. It is the number of days in the BRC
+     divided by 30, times the adjusted month program at the item’s PFP, times the quantity per end
+     item, times the item application percent, times the total OIM demand rate, times the base NRTS
+     percent plus the remainder of the 1 minus the base NRTS percent multiplied by the base condem-
+     nation percent.
+54                                                                AFMCI23-106 3 FEBRUARY 1997
+
+        BRC = (BRC DA/30) X AVG MO PROG (PTB n) X QPEI X ITM APPL PCT X TOIMDR X
+        (BASE NRTS PCT + (1 - BASE NRTS PCT) X BASE CONDMN PCT).
+        A2.3.2.5. Depot Repair Cycle. This determines the number of assets required to support demands
+        expected to occur during the depot repair cycle (DRC) time. It is the number of days in the DRC
+        divided by 30, times the adjusted month program at the item’s PFP, times the quantity per end
+        item, times the item application percent, times the total OIM demand rate, times the base NRTS
+        percent.
+        DRC = (DRC DA/30) X AVG MO PROG (PTB n) X QPEI X ITM APPL PCT X TOIMDR X
+        BASE NRTS PCT.
+        A2.3.2.6. Base Stock Level. The base stock level is the sum of the base order and ship time
+        requirement and the base repair cycle requirement.
+        BASE SL= BASE O&ST + BRC.
+     A2.3.3. DLM Annual Demands.
+        A2.3.3.1. The DLM annual demands are a projection of expected requirements to support depot
+        level maintenance (DLM) programs that are associated with the overhaul of aircraft, engines,
+        equipment, or recoverable secondary items. The programming checklist includes separate pro-
+        grammed depot maintenance (PDM) programs for aircraft, engine overhaul (EOH) programs, and
+        Management of Items Subject to Repair (MISTR) programs for equipment and recoverable sec-
+        ondary items. The demand projection includes separate forecasts for job routed and non-job routed
+        requirements.
+        A2.3.3.2. The DLM demand projection for items with job routed programs equals the total DLM
+        program minus the item non-job routed program, times the job routed condemnation percent:
+        JR ANN DMD = (TOT DLM PROG - NJR ITEM PROG) X JR CONDM PCT.
+        A2.3.3.3. The DLM demand projection for items with non-job routed programs equals the total
+        DLM program times the item non-job routed program percent, times the non-job routed replace-
+        ment percent:
+        NJR ANN DMD = (TOT DLM PROG X NJR PROG PCT) X NJR REPL PCT.
+        A2.3.3.4. Each of the above formulas should be applied separately for each type of DLM program
+        (PDM, EOH, or MISTR). The results are added to derive the total DLM annual demand projec-
+        tion.
+     A2.3.4. DLM Item Requirements.
+        A2.3.4.1. MISTR Program.
+           A2.3.4.1.1. The first step in computing depot level maintenance (DLM) item requirements is
+           a determination of the average month Management Item of Items Subject to Repair (MISTR)
+           program. This is the sum of projected DLM reparable generations and OIM reparable genera-
+           tions within any PTB.
+           A2.3.4.1.2. Within any PTB, the projected DLM reparable generations are the average month
+           MISTR program for the next higher reparable assembly (NHRA) in the PTB, identified on the
+           programming checklist provisioning list item sequence number (PLISN) for the NHRA, times
+           the quantity per NHRA, times the MISTR non-job routed program percent, times the MISTR
+AFMCI23-106 3 FEBRUARY 1997                                                                            55
+
+        non-job routed replacement percent, times the item application percent in the PTB, plus the
+        product of the average month PDM and EOH programs times the quantity per end item, times
+        the EOH or PDM non-job routed program percent, time the EOH or PDM non-job routed
+        replacement percent, times the item application percent in the PTB.
+        DLM REP GEN = AVG MO MISTR PROG (from NHRA PLISN (PTB N) X QPNHRA X
+        MISTR NJR PROG PCT X MISTR NJR REPL PCT X ITM APPL PCT (PTB n) + (AVG EOH
+        + PDM PROG (PTB n) X QPEI X EOH/PDM NJR PROG PCT X EOH/PDM NJR REPL PCT
+        X ITM APPL PCT (PTB n)).
+        A2.3.4.1.3. The OIM reparable generations are the average month OIM (flying hours or
+        inventory) program in the PTB, times the quantity per end item, times the total OIM demand
+        rate, times the base not repairable at this station percent, times the item application percent in
+        the PTB.
+        OIM REP GEN = AVG MO OIM PROG (PTB n) X QPEI X TOIMDR X BASE NRTS PCT
+        X ITM APPL PCT (PTB n).
+        A2.3.4.1.4. The average month MISTR program within any PTB is the OIM reparable gener-
+        ations plus the DLM reparable generations, times the remainder of 1 minus the depot overhaul
+        condemnation percent.
+       AVG MO MISTR PROG (PTB n) = (OIM REP GEN (PTB n) + DLM REP GEN (PTB n)) X
+       (1 - DEP OVHL CONDMN PCT).
+     A2.3.4.2. DLM Procurement Cycle (ERRC “C” and “T” items only).
+        A2.3.4.2.1. This process computes the depot level maintenance (DLM) procurement cycle
+        requirements for all job routed and non-job routed DLM programs. This process involves two
+        steps. Step 1 is computation of the MISTR job routed and non-job routed procurement cycles
+        in each PTB.
+        A2.3.4.2.2. The MISTR job routed procurement cycle equals the job routed condemnations
+        times the remainder of 1 minus the MISTR non-job routed program percent, times the average
+        month MISTR program in the PTB , times the quantity per next higher reparable assembly,
+        times the item application percent at the PTB, times 3.
+       MISTR JR PROC CYC = (JR PROG X MISTR JR CONDMN PCT) X ((1 - MISTR NJR PR
+       OG PCT) X AVG MO MISTR PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X 3).
+        A2.3.4.2.3. The MISTR non-job routed procurement cycle equals the non-job routed replace-
+        ments and depot overhaul condemnations times the remainder of 1 minus the MISTR non-job
+        routed program percent, times the average month MISTR program in the PTB, times the quan-
+        tity per next higher reparable assembly, times the item application percent at the PTB, times 3.
+        MISTR NJR PROC CYC = (NJR JR PROG X MISTR NJR REPL PCT X DEP OH CONDMN
+        PCT) X ((1 - MISTR NJR PROG PCT) X AVG MO MISTR PROG (PTB n) X QPNHRA X
+        ITM APPL PCT (PTB n) X 3).
+        A2.3.4.2.4. Step 2 is computation of the job routed and non-job routed engine overhaul and
+        program depot maintenance (EOH/PDM) procurement cycles.
+56                                                             AFMCI23-106 3 FEBRUARY 1997
+
+           A2.3.4.2.4.1. The EOH/PDM job routed procurement cycle equals the job routed condem-
+           nations times the remainder of 1 minus the EOH/PDM non-job routed program percent,
+           times the average month EOH/PDM program in the PTB , times the quantity per next
+           higher reparable assembly, times the item application percent at the PTB, times 3.
+  EOH/PDM JR PROC CYC = (JR PROG X EOH/PDM JR CONDMN PCT) X ((1 - EOH/PDM NJR
+PROG PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X 3).
+           A2.3.4.2.4.2. The EOH/PDM non-job routed procurement cycle equals the non-job routed
+           replacements and depot overhaul condemnations times the remainder of 1 minus the EOH/
+           PDM non-job routed program percent, times the average month EOH/PDM program in the
+           PTB, times the quantity per next higher reparable assembly, times the item application per-
+           cent at the PTB, times 3.
+  EOH/PDM NJR PROC CYC = (NJR JR PROG X EOH/PDM NJR REPL PCT X DEP OH CONDMN
+PCT) X ((1 - EOH/PDM NJR PROG PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM
+APPL PCT (PTB n) X 3).
+     A2.3.4.3. DLM Lead Time Requirement (ERRC “C” and “T” items only).
+        A2.3.4.3.1. This process computes the depot level maintenance (DLM) lead time require-
+        ments for all job routed and non-job routed DLM programs. This process involves two steps.
+        Step 1 is computation of the MISTR job routed and non-job routed lead time requirements in
+        each PTB.
+        A2.3.4.3.2. The MISTR job routed lead time requirement equals the job routed condemna-
+        tions times the remainder of 1 minus the MISTR non-job routed program percent, times the
+        average month MISTR program in the PTB , times the quantity per next higher reparable
+        assembly, times the item application percent at the PTB, times the number of months in the
+        acquisition lead time plus 1.
+  MISTR JR LT = (JR PROG X MISTR JR CONDMN PCT) X ((1 - MISTR NJR PROG PCT) X AVG
+MO MISTR PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X (ALT MO + PLT MO + 1)).
+        A2.3.4.3.3. The MISTR non-job routed lead time requirement equals the non-job routed
+        replacements and depot overhaul condemnations times the remainder of 1 minus the MISTR
+        non-job routed program percent, times the average month MISTR program in the PTB, times
+        the quantity per next higher reparable assembly, times the item application percent at the PTB,
+        times the number of months in the acquisition lead time plus 1.
+   MISTR JR LT = (NJR JR PROG X MISTR NJR REPL PCT X DEP OH CONDMN PCT) X ((1 -
+MISTR NJR PROG PCT) X AVG MO MISTR PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n)
+X (ALT MO + PLT MO + 1)).
+        A2.3.4.3.4. Step 2 is computation of the job routed and non-job routed engine overhaul and
+        program depot maintenance (EOH/PDM) lead time requirements.
+           A2.3.4.3.4.1. The EOH/PDM job routed lead time requirement equals the job routed con-
+           demnations times the remainder of 1 minus the EOH/PDM non-job routed program per-
+           cent, times the average month EOH/PDM program in the PTB , times the quantity per next
+           higher reparable assembly, times the item application percent at the PTB, times the num-
+           ber of months in the acquisition lead time plus 1.
+AFMCI23-106 3 FEBRUARY 1997                                                                      57
+
+   EOH/PDM JR LT = (JR PROG X EOH/PDM JR CONDMN PCT) X ((1 - EOH/PDM NJR PROG
+PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X (ALT MO +
+PLT MO + 1)).
+           A2.3.4.3.4.2. The EOH/PDM non-job routed lead time requirement equals the non-job
+           routed replacements and depot overhaul condemnations times the remainder of 1 minus
+           the EOH/PDM non-job routed program percent, times the average month EOH/PDM pro-
+           gram in the PTB, times the quantity per next higher reparable assembly, times the item
+           application percent at the PTB, times the number of months in the acquisition lead time
+           plus 1.
+    EOH/PDM NJR LT = (NJR JR PROG X EOH/PDM NJR REPL PCT X DEP OH CONDMN PCT) X
+((1 - EOH/PDM NJR PROG PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM APPL
+PCT (PTB n) X (ALT MO + PLT MO + 1)).
+     A2.3.4.4. DLM Depot Repair Cycle (ERRC “C” and “T” items only).
+        A2.3.4.4.1. This process computes the depot level maintenance (DLM) depot repair cycle
+        requirements for all job routed and non-job routed DLM programs. This process involves two
+        steps. Step 1 is computation of the MISTR depot repair cycle requirement.
+        A2.3.4.4.2. The MISTR depot repair cycle requirement equals the depot repair cycle days
+        divided by 30, times the average month MISTR program in the PTB, times the MISTR
+        non-job routed program percent, times the quantity per next higher reparable assembly, times
+        the item application percent at the PTB, times the MISTR non-job routed replacement percent.
+  MISTR DEP REP CYC = (DRC DAY/30 X AVG MO MISTR PROG (PTB n)) X MISTR NJR PROG
+PCT) X QPNHRA X ITM APPL PCT (PTB n) X MISTR NJR REPL PCT.
+        A2.3.4.4.3. Step 2 is computation of the job routed and non-job routed engine overhaul and
+        program depot maintenance (EOH/PDM) depot repair cycle requirements.
+           A2.3.4.4.3.1. The EOH/PDM depot repair cycle requirement equals the depot repair cycle
+           days divided by 30, times the average month EOH/PDM program in the PTB, times the
+           EOH/PDM non-job routed program percent, times the quantity per next higher reparable
+           assembly, times the item application percent at the PTB, times the EOH/PDM non-job
+           routed replacement percent.
+  EOH/PDM DEP REP CYC = (DRC DAY/30 X AVG MO EOH/PDM PROG (PTB n)) X EOH/PDM
+NJR PROG PCT) X QPNHRA X ITM APPL PCT (PTB n) X EOH/PDM NJR REPL PCT.
+     A2.3.4.5. DLM Stock Level (ERRC “C” and “T” items only).
+        A2.3.4.5.1. This process computes the depot level maintenance (DLM) stock levels for all job
+        routed and non-job routed DLM programs. This process involves two steps. Step 1 is compu-
+        tation of the MISTR job routed and non-job routed stock levels in each PTB.
+        A2.3.4.5.2. The MISTR job routed stock level equals the job routed condemnations times the
+        remainder of 1 minus the MISTR non-job routed program percent, times the average month
+        MISTR program in the PTB , times the quantity per next higher reparable assembly, times the
+        item application percent at the PTB, times the number of JR stock level days.
+58                                                            AFMCI23-106 3 FEBRUARY 1997
+
+  MISTR JR LT = (JR PROG X MISTR JR CONDMN PCT) X ((1 - MISTR NJR PROG PCT) X AVG
+MO MISTR PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X JR SL DA).
+        A2.3.4.5.3. The MISTR non-job routed stock level equals the non-job routed replacements
+        and depot overhaul condemnations times the remainder of 1 minus the MISTR non-job routed
+        program percent, times the average month MISTR program in the PTB, times the quantity per
+        next higher reparable assembly, times the item application percent at the PTB, times the NJR
+        stock level days.
+   MISTR JR LT = (NJR JR PROG X MISTR NJR REPL PCT X DEP OH CONDMN PCT) X ((1 -
+MISTR NJR PROG PCT) X AVG MO MISTR PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n)
+X NJR SL DA).
+        A2.3.4.5.4. Step 2 is computation of the job routed and non-job routed engine overhaul and
+        program depot maintenance (EOH/PDM) stock levels.
+           A2.3.4.5.4.1. The EOH/PDM job routed stock level equals the job routed condemnations
+           times the remainder of 1 minus the EOH/PDM non-job routed program percent, times the
+           average month EOH/PDM program in the PTB , times the quantity per next higher repara-
+           ble assembly, times the item application percent at the PTB, times the JR stock level days.
+  EOH/PDM JR LT = (JR PROG X EOH/PDM JR CONDMN PCT) X ((1 - EOH/PDM NJR PROG
+PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM APPL PCT (PTB n) X JR SL DA).
+           A2.3.4.5.4.2. The EOH/PDM non-job routed stock level equals the non-job routed
+           replacements and depot overhaul condemnations times the remainder of 1 minus the EOH/
+           PDM non-job routed program percent, times the average month EOH/PDM program in the
+           PTB, times the quantity per next higher reparable assembly, times the item application per-
+           cent at the PTB, times the NJR stock level days.
+    EOH/PDM NJR LT = (NJR JR PROG X EOH/PDM NJR REPL PCT X DEP OH CONDMN PCT) X
+((1 - EOH/PDM NJR PROG PCT) X AVG MO EOH/PDM PROG (PTB n) X QPNHRA X ITM APPL
+PCT (PTB n) X NJR SL DA).

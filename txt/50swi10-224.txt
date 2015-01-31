@@ -1,0 +1,1424 @@
+BY ORDER OF THE COMMANDER                         50TH SPACE WING INSTRUCTION 10-224
+50TH SPACE WING
+                                                                                  24 JUNE 2013
+
+                                                                                     Operations
+
+                                                    AFSCN OUTAGE REPORTING SYSTEM
+
+
+
+
+              COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the
+               epublishing website at www.e-publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication
+
+
+OPR: 22 SOPS/DOK                                                      Certified by: 22 SOPS/CC
+                                                                    (Lt Col W. Scott Angerman)
+                                                                                       Pages: 43
+Supersedes:   50 SWI 10224, 1 Oct 2003
+
+
+This instruction implements AFPD 10-2, Air Force Readiness Program, and provides guidance
+for outage reporting for the Air Force Satellite Control Network (AFSCN). It applies to all
+AFSCN activities at tenant organizations, Schriever AFB (SAFB), Vandenberg AFB (VAFB),
+Remote Tracking Stations (RTS), AFSCN External Users, and all contractors tasked by this
+instruction, as stipulated by contract.
+
+Each squadron, detachment, organization, section, or operational area may develop supplements
+to this instruction. Send one copy of each to 22 SOPS/DOK, 401 O'Malley Ave, Suite 51,
+Schriever AFB, CO 80912-3051. Refer recommended changes and questions about this
+publication to the Office of Primary Responsibility (OPR) using the AF Form 847,
+Recommendation for Change of Publication; route AF Forms 847 from the field through the
+appropriate functional chain of command. Requests for waivers must be submitted through chain
+of command to the OPR listed above for consideration and approval. Ensure that all records
+created as a result of processes prescribed in this publication are maintained in accordance with
+(IAW) Air Force Manual (AFMAN) 33-363, Management of Records, and disposed of IAW Air
+Force Records Disposition Schedule (RDS). The use of the name or mark of any specific
+manufacturer, commercial product, commodity, or service in this publication does not imply
+endorsement by the Air Force.
+
+SUMMARY OF CHANGES
+
+This document has been completely revised and must be reviewed in its entirety.
+2                                                                                                50SWI10-224 24 JUNE 2013
+
+
+
+
+Chapter 1—PURPOSE                                                                                                                           4
+     1.1.    Purpose. ..................................................................................................................    4
+
+Chapter 2—DESCRIPTION                                                                                                                       5
+     2.1.    Outage Condition. ..................................................................................................           5
+     2.2.    Outage Report. .......................................................................................................         5
+     2.3.    Communications Outage. .......................................................................................                 5
+     2.4.    Range Outage. ........................................................................................................         5
+     2.5.    System Outage. ......................................................................................................          5
+     2.6.    Facility Outage. ......................................................................................................        5
+     2.7.    Reporting Work Centers. .......................................................................................                5
+     2.8.    Electronic Scheduling/Status Dissemination (ESD). .............................................                                6
+
+Chapter 3—RESPONSIBILITIES                                                                                                                  8
+     3.1.    NCMDR/NCCH will: ............................................................................................                  8
+     3.2.    Comm Control will: ...............................................................................................             8
+     3.3.    RGFs will: ..............................................................................................................      8
+     3.4.    AFSCN users will: .................................................................................................            8
+
+Chapter 4—OUTAGE REPORT                                                                                                                     9
+     4.1.    Distribution. ...........................................................................................................      9
+     4.2.    Date Time Grouping (DTG). .................................................................................                    9
+     4.3.    Outage Control Number (OCN). ............................................................................                      9
+     4.4.    Outage Categories. .................................................................................................           9
+     4.5.    Safety Outage. ........................................................................................................        9
+     4.6.    Estimated Time In Commission (ETIC). ...............................................................                           9
+     4.7.    System Name (SYSTEM). .....................................................................................                   10
+     4.8.    Equipment Name (EQUIP). ...................................................................................                   11
+     4.9.    ASTRO Names. .....................................................................................................            11
+     4.10.   Site-Sides. ..............................................................................................................    11
+     4.11.   Work Center (WC). ................................................................................................            11
+     4.12.   Symptom. ...............................................................................................................      11
+     4.13.   Impact. ...................................................................................................................   11
+     4.14.   Remarks. ................................................................................................................     12
+50SWI10-224 24 JUNE 2013                                                                                                               3
+
+
+     4.15.   Affected IRONs / WANIU. ...................................................................................               12
+     4.16.   OPSCAP. ...............................................................................................................   12
+
+Chapter 5—PROCEDURES                                                                                                                   13
+     5.1.    Outage Entry. .........................................................................................................   13
+     5.2.    Outage Reporting Requirements. ...........................................................................                13
+     5.3.    Opening an Outage. ...............................................................................................        13
+     5.4.    Upgrading an Outage. ............................................................................................         14
+     5.5.    Downgrading an Outage. .......................................................................................            14
+     5.6.    Updating an Outage. ..............................................................................................        15
+     5.7.    Closing an Outage. .................................................................................................      15
+     5.8.    Outage Reporting Process. .....................................................................................           15
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                         17
+
+Attachment 2—COMMUNICATIONS OUTAGE REPORTING GUIDANCE                                                                                  23
+
+Attachment 3—SYSTEM OUTAGE REPORTING GUIDANCE                                                                                          41
+
+Attachment 4—FACILITY OUTAGE REPORTING                                                                                                 42
+
+Attachment 5—OUTAGE REPORTING WITHOUT ESD                                                                                              43
+ 4                                                                50SWI10-224 24 JUNE 2013
+
+
+                                           Chapter 1
+
+                                           PURPOSE
+
+1.1. Purpose. The Air Force Satellite Control Network (AFSCN) Outage Reporting System is
+used to report lost or degraded AFSCN capabilities. Reported systems, subsystems, and
+equipment include those resources scheduled by 22 SOPS IAW 50 SWI 10217, Air Force
+Satellite Control Network (AFSCN) Users’ Operations, and any other system which would
+impact AFSCN operations.
+     1.1.1. The information is disseminated to key operations personnel: Satellite Operations
+     Centers (SOCs), Space Operations Squadrons (SOPS), 22 SOPS Network Crew
+     Commander/Network Crew Chief (NCMDR/NCCH), 22 SOPS Network Scheduling,
+     AFSCN External Users, Remote Tracking Stations (RTSs), and other Remote Ground
+     Facilities (RGFs).
+     1.1.2. The information is used to ensure all problems impacting current or future operations
+     can be effectively managed through the immediate rescheduling of resources, program
+     support (future operations), and/or the implementation of contingency plans.
+     1.1.3. Timely reporting is essential. All work centers will immediately report problems IAW
+     50 SWI 10217 and this instruction, and provide information necessary to fully convey an
+     operational impact.
+50SWI10-224 24 JUNE 2013                                                                        5
+
+
+                                           Chapter 2
+
+                                       DESCRIPTION
+
+2.1. Outage Condition. An outage condition is any loss or degradation of mission capability.
+2.2. Outage Report. An outage report is the information about an outage condition collected
+and disseminated to the rest of the AFSCN. Note: The term outage is commonly used to refer
+interchangeably to either an outage condition or an outage report.
+2.3. Communications Outage. A communications outage is an outage condition, or the report
+for an outage condition, on those systems, subsystems, and equipment identified as part of the
+AFSCN communications network and voice systems.
+   2.3.1. A list of reportable communications assets and guidance on reporting communications
+   outages is provided in Attachment 2.
+   2.3.2. A communications outage is not required for those assets impacted by a facility
+   outage, described below.
+2.4. Range Outage. A range outage is an outage condition, or the report for an outage
+condition, on those systems, subsystems, and equipment at an RGF supporting AFSCN
+operations not already identified as a communications asset.
+   2.4.1. A list of reportable range assets and guidance on reporting range outages is provided
+   in the 22 SOPS ESD Mnemonic Listing which is generated by the 22 SOPS Database
+   Manager.
+   2.4.2. A range outage is not required for those assets impacted by a facility outage, described
+   below.
+2.5. System Outage. A system outage is an outage condition, or the report for an outage
+condition, on an AFSCN mission capability that cannot be identified as a communications or
+range asset, or attributed to a facility failure.
+   2.5.1. A system outage is opened anytime the area of a problem or failure cannot be
+   determined, but a definite AFSCN impact has been identified.
+   2.5.2. A system outage report does not become a communications or range outage report
+   when an exact cause is determined; instead, a new outage report is initiated with the newly
+   identified information.
+   2.5.3. A list of possible systems and guidance on reporting system outages is provided in
+   Attachment 4.
+2.6. Facility Outage. A facility outage is an outage condition, or the report for an outage
+condition, caused by a facility-level failure or degradation, such as loss of power, HVAC, and so
+on.
+   2.6.1. A list of possible facility outages and guidance on reporting facility outages is
+   provided in Attachment 4.
+2.7. Reporting Work Centers. Those work centers responsible for reporting outage conditions.
+ 6                                                                 50SWI10-224 24 JUNE 2013
+
+
+     2.7.1. 21 SOPS Network Operations Center, referred to using their call-sign Comm Control,
+     located at the Ellison Onizuka Satellite Operations Center (EOSOF) on Vandenberg AFB,
+     California, is responsible for reporting communications outages.
+     2.7.2. 21 SOPS Vandenberg Tracking Station (VTS), call-sign COOK, on Vandenberg AFB,
+     California, is responsible for reporting range outages at VTS.
+     2.7.3. 21 SOPS Det 1, Diego Garcia Tracking Station (DGS), call-sign REEF, located on
+     Diego Garcia, Indian Ocean, is responsible for reporting range outages at DGS.
+     2.7.4. 21 SOPS Det 2, Guam Tracking Station (GTS), call-sign GUAM, located at Northwest
+     Field on Andersen AFB, Guam, is responsible for reporting range outages at GTS.
+     2.7.5. 21 SOPS Det 3, Hawaii Tracking Station (HTS), call-sign HULA, located at Kaena
+     Point on Oahu, Hawaii, is responsible for reporting range outages at HTS.
+     2.7.6. 22 SOPS Colorado Tracking Station (CTS), call-sign PIKE, on Schriever AFB,
+     Colorado, is responsible for reporting range outages at CTS. CTS has been removed as an
+     operational RTS and has future potential as a testing location for transportable/hybridization
+     operations.
+     2.7.7. 22 SOPS Network Crew Commander/Network Crew Chief (NCMDR/NCCH), located
+     at Schriever AFB, Colorado, is responsible for reporting system outages.
+     2.7.8. 23 SOPS New Hampshire Tracking Station (NHS), call-sign BOSS, located on New
+     Boston AFS, New Hampshire, is responsible for reporting range outages at NHS.
+     2.7.9. 23 SOPS Det 1, Thule Tracking Station (TTS), call-sign POGO, located on Thule AB,
+     Greenland, is responsible for reporting range outages at TTS.
+     2.7.10. 23 OL-AE, Telemetry and Command Station (TCS), call-sign LION, located at
+     Oakhanger, England, is responsible for reporting range outages at TCS.
+     2.7.11. 23 SOPS Eastern Vehicle Checkout Facility (EVCF), call-sign BEACH, located at
+     Cape Canaveral, Florida, is responsible for reporting range outages at EVCF.
+2.8. Electronic Scheduling/Status Dissemination (ESD). The ESD system is used for
+disseminating outage reports. Refer to ESD operator manuals for specifics on using ESD for
+reporting outage conditions. Section 4 describes the contents entered into an ESD outage report
+form. Section 5 describes the different outage reporting activities.
+     2.8.1. Outages reports entered into ESD by the reporting work center are pending until
+     reviewed and broadcast by the 22 SOPS NCMDR/NCCH.
+        2.8.1.1. Once broadcast, an outage report immediately becomes visible to all AFSCN
+        operators/users with access to ESD.
+        2.8.1.2. Should an outage report include proper ASTRO names and site-sides (see
+        Section 4), outage information will appear on ASTRO, the AFSCN Network Scheduling
+        system, so 22 SOPS Network Scheduling can implement contingencies as described in
+        50 SWI 10-217.
+     2.8.1.3. ESD is the official reporting database of the AFSCN. Any supplementary outage
+     reports will be considered subordinate to ESD. All ancillary AFSCN outage report data must
+     be accurate and comparable to the information reported in ESD.
+50SWI10-224 24 JUNE 2013                                                                       7
+
+
+  2.8.1.4. ESD is a transient reporting system. The latest status in ESD should include all
+  relevant information and not assume knowledge of previous entries. Any corrections entered
+  into ESD should include all the same information provided in the last update.
+  2.8.1.5. When an outage report has been closed in ESD, the last entry should provide all the
+  latest information known at the time of closure. Any new information discovered after an
+  outage has been closed cannot be captured in ESD, given its nature, but the new information
+  should still be forwarded to the reporting work center for capture in any peripheral archive or
+  record.
+  2.8.2. If ESD is not available, contingency procedures are detailed in Attachment 5.
+ 8                                                                  50SWI10-224 24 JUNE 2013
+
+
+                                             Chapter 3
+
+                                       RESPONSIBILITIES
+
+3.1. NCMDR/NCCH will:
+     3.1.1. Report all outage conditions not attributed to a communications or range asset, or to a
+     facility failure.
+     3.1.2. Report facility outages for SAFB.
+     3.1.3. Review and broadcast outage reports entered into ESD.
+     3.1.4. Inform the appropriate RGF of any unreported range conditions.
+     3.1.5. Inform Comm Control of any unreported communications outages.
+3.2. Comm Control will:
+     3.2.1. Report all communications outages.
+     3.2.2. Inform the appropriate RGF of any unreported range conditions.
+     3.2.3. Inform the NCMDR/NCCH of any outage conditions detected that cannot be
+     attributed to a communications or range asset, or to a facility failure.
+3.3. RGFs will:
+     3.3.1. Report range and facility outages for their location.
+     3.3.2. Inform Comm Control of any unreported communications outages.
+     3.3.3. Inform NCMDR/NCCH of any unreported outage conditions detected that cannot be
+     attributed a communications or range asset, or to a facility failure.
+3.4. AFSCN users will:
+     3.4.1. Inform the NCMDR/NCCH of any unreported outage conditions.
+     3.4.2. Advise 22 SOPS when unable to access ESD for outage information.
+50SWI10-224 24 JUNE 2013                                                                     9
+
+
+                                          Chapter 4
+
+                                    OUTAGE REPORT
+
+4.1. Distribution. AFSCN outage information is distributed using ESD.           The following
+paragraphs detail the content of an outage report.
+4.2. Date Time Grouping (DTG). DTG format is used for all times in an outage report. The
+format is YJJJHHMM, detailed as follows:
+   4.2.1. Y—last digit of the year. For example, 9 is used for 2009, 0 is used for 2010, and so
+   on.
+   4.2.2. JJJ—day of the year, also known as the Julian day. For example, 015 represents
+   January 15, 035 represents February 4, and so on. Dates after February 28 vary between leap
+   and non-leap years.
+   4.2.3. HHMM—24-hour time of day using no punctuation and excluding seconds.
+4.3. Outage Control Number (OCN). The OCN is the time an outage report is open and the
+tracking number used to reference the outage. Note: The OCN described here is not the same as
+the OCN described in 50 SWI 10-217 for an Operational Control Node.
+   4.3.1. The OCN is entered using the DTG format described above.
+   4.3.2. The open time can be when the outage condition actually begins, when the outage
+   condition is first detected, or when the outage condition is determined to be reportable.
+4.4. Outage Categories. Outage conditions are categorized at either Amber or Red. Note:
+Green may be used informally as a category referring to a non-outage condition.
+   4.4.1. Category Amber (CAT A)—An outage condition limiting or putting at risk AFSCN
+   operational capability.
+   4.4.2. Category Red (CAT R)—An outage condition preventing, or severely degrading
+   AFSCN operational capability.
+   4.4.3. Reporting work centers should develop local procedures detailing when a reportable
+   system, subsystem, or equipment is CAT A or CAT R. Essentially, if a schedulable asset is
+   unavailable for operations, it should be reported as CAT R.
+4.5. Safety Outage. An outage can also be categorized as a safety outage.
+   4.5.1. An outage will be categorized as a safety outage whenever the outage condition
+   involves risk to either personnel or equipment.
+   4.5.2. A safety outage is reported by prefacing the OCN with an “S”.
+   4.5.3. The category of a safety outage is referenced by adding “/S”, as CAT A/S or CAT
+   R/S.
+   4.5.4. Reporting work centers should develop local procedures detailing when an outage
+   condition should be reported as a safety outage.
+4.6. Estimated Time In Commission (ETIC). An estimated time when the outage condition is
+expected to be resolved, or when the next change in status is expected.
+ 10                                                              50SWI10-224 24 JUNE 2013
+
+
+   4.6.1. An ETIC is entered using the DTG format described above, or using one of the delay
+   codes described below.
+   4.6.2. When it is not possible to estimate when an outage will be resolved, and no other
+   specific time for a status update is available, enter the current time plus two hours as the
+   ETIC. There may be a reason to delay further than the default two hours. The following
+   paragraphs provide some guidance.
+      4.6.2.1. When troubleshooting is slowed for some reason, an ETIC of the current time
+      plus four hours may be entered instead. This is common for outages being troubleshot by
+      outside agencies.
+      4.6.2.2. When mission capability is impacted only intermittently, an ETIC of the current
+      time plus eight hours may be entered instead. This is a common for CAT A outages that
+      are still being troubleshot.
+      4.6.2.3. When mission capability has been restored and the restoration dictates a monitor
+      period for possible recurrence, an ETIC of the current time plus 24 hours may be entered
+      instead.
+   4.6.3. When parts are on order, and no delivery or installation date is available, enter AWP
+   (Awaiting Parts) as the ETIC. If a delivery or installation date is available, an ETIC
+   reflecting the end of that date should be entered instead.
+   4.6.4. When awaiting depot-level support, and no arrival date available, enter AWDLM
+   (Awaiting Depot Level Maintenance) as the ETIC. If an arrival date is available, an ETIC
+   reflecting the end of that date should be entered instead.
+   4.6.5. When awaiting a release of mission resources (or downtime), requested for the
+   purpose of troubleshooting, and no time has been scheduled, enter AWDT (Awaiting
+   Downtime) as the ETIC. If a downtime has been scheduled, an ETIC reflecting the end of
+   the downtime plus one hour should be entered instead.
+   4.6.6. Enter OTHER as the ETIC when there is an extended delay with no impending
+   resolution, no other reasonable date or time is available for when there may be a new status,
+   and no other applicable delay code applies. An ETIC of OTHER should be justified in the
+   outage remarks.
+4.7. System Name (SYSTEM). A system name reflects the culpable system, subsystem, or
+equipment. Refer to the appropriate reporting attachment for guidance.
+   4.7.1. Communications outages use system names describing the location and/or usage of
+   the communications system impacted. Guidance is found in Attachment 2.
+   4.7.2. Range outages use system names identifying the subsystem or equipment impacted.
+   This information is contained within the 22 SOPS ESD Mnemonic Listing which is
+   generated by the 22 SOPS Database Manager.
+   4.7.3. System outages use system names that indicate the mission system, mission capability,
+   or user impacted. Guidance is found in Attachment 3.
+   4.7.4. Facility outages use the system name FAC. Guidance is found in Attachment 4.
+50SWI10-224 24 JUNE 2013                                                                       11
+
+
+4.8. Equipment Name (EQUIP). An equipment name further delineates the subsystem or
+equipment to which the outage condition has been isolated.
+   4.8.1. Outage conditions not isolated to a specific subsystem or equipment are reported using
+   the equipment name SYSTEM. This does not make the outage a system outage as described
+   above; it just indicates the cause of the outage condition has not been identified beyond the
+   reported system. Range and facility outages do not use the equipment name SYSTEM.
+4.9. ASTRO Names. ASTRO names are based on the outage category entered into ESD by the
+reporting work center and are used in combination with the reported site-sides to help 22 SOPS
+identify the impact an outage condition has on scheduled activities. Refer to the appropriate
+reporting attachment for guidance.
+   4.9.1. Reporting work centers should develop local procedures with assistance from
+   22 SOPS detailing when an ASTRO name should be included in an outage report. An outage
+   report must include ASTRO names and site-sides that match the scheduled resources
+   impacted.
+4.10. Site-Sides. Site-sides are based on the outage category entered into ESD and are used in
+combination with the reported ASTRO names to help identify the impact an outage condition has
+on scheduled activities. Refer to the appropriate reporting attachment for guidance.
+   4.10.1. Reporting work centers should develop local procedures with assistance from
+   22 SOPS detailing when a site-side should be included in an outage report. An outage report
+   must include ASTRO names and site-sides which match the resources impacted.
+   4.10.2. The ESD outage report form has two locations for site-sides. The primary site-side
+   at the top of the form, and further fields for affected site-sides. All entered site-sides have
+   the same effect in ESD and ASTRO.
+4.11. Work Center (WC). The work center responsible for reporting and resolving the outage
+condition. Refer to the appropriate reporting attachment for assigned work center codes.
+4.12. Symptom. The symptom should include all relevant details of the outage condition, even
+where other fields of the report may provide the same or similar information.
+   4.12.1. A complete symptom description helps provide a readable display of information on
+   ESD. A symptom description should identify the culpable asset (specific system, subsystem,
+   and/or equipment), the frequency of the failure or degradation (constant, excessively,
+   intermittently, etc.), the type of failure or degradation (in-op, unpowered, alarmed, dropping,
+   errored, etc.), and the locations where the failure or degradation has been detected.
+   4.12.2. The symptom may be changed when there are any changes in an outage condition.
+4.13. Impact. The impact should include a comprehensive description of the impact to AFSCN
+operations.
+   4.13.1. A complete impact description helps provide a readable display of information on
+   ESD. An impact description should include the severity of the impact (unable to, possibly
+   unable to, possible loss of, etc.) and the specific mission capability impacted (voice, primary
+   communications, command capability, telemetry, etc.).
+   4.13.2. The impact may use ASTRO names and commonly recognized abbreviations. The
+   impact must be understandable to all operational areas impacted by the outage condition.
+ 12                                                                50SWI10-224 24 JUNE 2013
+
+
+   4.13.3. The impact may be changed when there are any changes to the impact from an
+   outage condition.
+4.14. Remarks. The remarks portion of an outage report should include the following:
+   4.14.1. The reporting action as described in section 5, and the time of the reporting action.
+   4.14.2. The reason for the current reporting action.
+   4.14.3. The current action being taken to resolve the outage condition and by whom. If
+   awaiting an action, detail the reasons for the delay. For outage conditions where the cause
+   has not yet been isolated, it is acceptable to report troubleshooting in progress (TSIP) as the
+   action.
+   4.14.4. When closing an outage report, the reason for the outage (RFO). If the RFO was
+   never identified, enter an RFO of UNKNOWN. Note: An outage report should not include
+   speculation.
+   4.14.5. When closing an outage report, the action or actions taken to resolve the outage
+   (FIX). If no fix action is identified, enter that the problem cleared before isolation (CBI).
+   Note: An outage report should not detail actions taken to isolate the problem unless the
+   action is deemed that which resolved the outage condition.
+   4.14.6. Reporting work centers may develop local procedures detailing additional
+   requirements for outage report remarks.
+4.15. Affected IRONs / WANIU. ESD includes a field for reporting affected IRONs and/or
+WANIUs.
+   4.15.1. Enter ALL as the Affected IRONs/WANIU for an outage condition that impacts all
+   or most users. This is common for most communications and facility outages.
+   4.15.2. Enter =WANxx=, where xx is the absolute index for that WANIU, when an outage
+   condition impacts traffic on a single WANIU. When used, ESD can bring up a description of
+   the traffic on that WANIU. 22 SOPS provides the traffic descriptions in ESD for each
+   WANIU.
+   4.15.3. Enter an IRON or mission name when the outage condition exclusively impacts that
+   vehicle or mission.
+4.16. OPSCAP. ESD includes a field for OPSCAP color. Please refer to the appropriate
+AFI10206 supplements and local procedures for direction on OPSCAP reporting.
+50SWI10-224 24 JUNE 2013                                                                   13
+
+
+                                           Chapter 5
+
+                                       PROCEDURES
+
+5.1. Outage Entry. AFSCN outage information is entered using ESD.              The following
+paragraphs detail the specific activities for reporting an outage condition.
+   5.1.1. Open an outage—when first reporting an outage condition.
+   5.1.2. Upgrade an outage—when changing an outage condition from a CAT A status to a
+   CAT R status.
+   5.1.3. Downgrade an outage—when changing an outage condition from a CAT R status to a
+   CAT A status.
+   5.1.4. Update an outage—when adding new remarks and changing the ETIC of an outage
+   report.
+   5.1.5. Close an outage—when reporting the resolution of an outage condition.
+5.2. Outage Reporting Requirements. Timely reporting of outage conditions is required to
+ensure impact to operations is minimized using contingency procedures as described in
+50 SWI 10-217. The reporting work center will:
+   5.2.1. Open an outage no more than 15 minutes after determining an outage condition meets
+   reporting requirements.
+   5.2.2. Upgrade (U/G) an outage to CAT R no later than 15 minutes after determining the
+   outage condition meets CAT R reporting requirements.
+   5.2.3. Downgrade (D/G) an outage to CAT A no later than 15 minutes after determining the
+   outage condition meets CAT A reporting requirements.
+   5.2.4. Update an outage whenever the action being taken to resolve the outage condition
+   changes, whenever there is new information available for dissemination, or 30 minutes prior
+   to the expiration of the latest ETIC.
+   5.2.5. Close an outage no later than 15 minutes after determining the outage condition has
+   been resolved or no longer exists.
+5.3. Opening an Outage. The reporting work center will:
+   5.3.1. Determine if a viable outage condition exists.
+   5.3.2. Determine the appropriate system name, equipment name, category, symptom, impact,
+   affected site-sides, ASTRO names, and affected IRONs/WANIU for the outage condition.
+   5.3.3. Determine an appropriate open time for the outage report. This will provide an OCN
+   for the outage report. The open time may be based on:
+       5.3.3.1. When the actual symptom began, from investigated equipment logs or other
+       sources,
+       5.3.3.2. When the outage condition was first detected based on personal observation or
+       work center notification, or
+ 14                                                              50SWI10-224 24 JUNE 2013
+
+
+      5.3.3.3. When the work center determines an outage condition meets reporting
+      requirements.
+   5.3.4. If two outage conditions are determined to have the same open time, it is acceptable to
+   increment the open time of one of the outages by a minute to provide each outage report with
+   a unique OCN.
+   5.3.5. Determine the appropriate action for resolving the outage condition and an appropriate
+   ETIC. NOTE: Reporting the outage takes precedence over initiating any action to resolve
+   the outage condition. Timely reporting is essential therefore telephonic notification to
+   22SOPS/NCMDR of the outage should take precedence to entering into ESD if it has an
+   immediate impact to scheduled operations.
+   5.3.6. Create and submit a new outage report in ESD with all the gathered information.
+   Include remarks with the open time and detailing the action being taken to resolve the outage
+   condition.
+5.4. Upgrading an Outage. The reporting work center will:
+   5.4.1. Determine if an outage condition has degraded enough for an outage report to change
+   from CAT A to CAT R.
+   5.4.2. Determine the more severe symptom and impact. The system name, equipment name,
+   affected site-sides, ASTRO names, and affected IRONs/WANIU typically remain
+   unchanged.
+   5.4.3. Determine the appropriate action for resolving the upgraded outage condition and an
+   appropriate ETIC. NOTE: Reporting the upgraded outage takes precedence over initiating
+   any new action to resolve the outage condition. Timely reporting is essential.
+   5.4.4. Determine the upgrade time for the outage. The upgrade time may be based on:
+      5.4.4.1. When the actual symptom changed, from investigated equipment logs,
+      5.4.4.2. When the change in outage condition was first detected, from personal
+      observation or work center notification,
+      5.4.4.3. When the work center determines a change in the outage condition meets CAT R
+      reporting requirements.
+   5.4.5. Update the outage report in ESD with all the gathered information. Include remarks
+   with the upgrade time and detailing the action being taken to resolve the outage condition.
+5.5. Downgrading an Outage. The reporting work center will:
+   5.5.1. Determine if an outage condition has improved enough for an outage report to change
+   from CAT R to CAT A.
+   5.5.2. Determine the less severe symptom and impact. The system name, equipment name,
+   affected site-sides, ASTRO names, and affected IRONs/WANIU typically remain
+   unchanged.
+   5.5.3. Determine the appropriate action for resolving the downgraded outage condition and
+   an appropriate ETIC. NOTE: Reporting the downgraded outage takes precedence over
+   initiating any new action to resolve the outage condition. Timely reporting is essential.
+50SWI10-224 24 JUNE 2013                                                                     15
+
+
+   5.5.4. Determine the downgrade time for the outage. The downgrade time may be based on:
+       5.5.4.1. When the actual symptom changed, from investigated equipment logs,
+       5.5.4.2. When the change in outage condition was first detected, from personal
+       observation or work center notification, or
+       5.5.4.3. When the work center determines a change in the outage condition meets
+       CAT A reporting requirements.
+   5.5.5. Update the outage report in ESD with all the gathered information. Include remarks
+   with the downgrade time and detailing the action being taken to resolve the outage condition.
+5.6. Updating an Outage. The reporting work center will:
+   5.6.1. Determine the appropriate action for continuing to resolve the outage condition, the
+   new ETIC, and the update time for the outage. The system name, equipment name, category,
+   symptom, impact, affected site-sides, ASTRO names, and affected IRONs/WANIU typically
+   remain unchanged.
+   5.6.2. Update the outage report in ESD with all the gathered information. Include remarks
+   with the update time and detailing the action being taken to continue resolving the outage
+   condition.
+5.7. Closing an Outage. The reporting work center will:
+   5.7.1. Determine if the outage condition has cleared.
+   5.7.2. Determine an appropriate RFO and FIX. Note: The reporting work center may instead
+   downgrade, if a CAT R, or update, if a CAT A, an outage with a cleared outage condition,
+   and add a period to monitor for a recurrence of the outage condition, if deemed appropriate.
+   5.7.3. Determine the close time for the outage report.
+   5.7.4. Close the outage report in ESD. Include remarks with the close time and detailing the
+   RFO and FIX.
+5.8. Outage Reporting Process. The following paragraphs detail the steps involved in
+processing an outage report.
+   5.8.1. The reporting work center will enter and submit outage information in ESD. The
+   outage report will enter a pending state. If ESD is not available, refer to Attachment 5 for
+   contingency procedures.
+   5.8.2. The NCMDR/NCCH will review the pending outage information. If ESD is not
+   available, refer to Attachment 5 for contingency procedures.
+       5.8.2.1. If the NCMDR/NCCH discovers any errors or inconsistencies, the
+       NCMDR/NCCH will contact the reporting work center and describe the errors or
+       inconsistencies. The NCMDR/NCCH can:
+          5.8.2.1.1. Reject the outage report submission so the reporting work center can
+          resubmit, or
+          5.8.2.1.2. Make any corrections as provided by the reporting work center.
+16                                                         50SWI10-224 24 JUNE 2013
+
+
+     5.8.2.2. If the NCMDR/NCCH discovers no errors or inconsistencies,              the
+     NCMDR/NCCH will broadcast the outage report to the rest of the AFSCN.
+  5.8.3. AFSCN work centers will acknowledge reception of the outage information. If ESD
+  is not available, refer to Attachment 5 for contingency procedures.
+
+
+
+
+                                       JAMES P. ROSS, Colonel, USAF
+                                       Commander
+50SWI10-224 24 JUNE 2013                                                              17
+
+
+                                         Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFPD 10-2, Readiness, 6 Nov 2012
+AFI 10-206, Operational Reporting, 6 Sep 2011
+AFI 10-206, AFSPC Supplement, Operational Reporting, 1 Apr 2009
+AFMAN 33363, Management of Records, 01 Mar 2008
+50 SWI 10-217, Air Force Satellite Control Network (AFSCN) Users’ Operations, <TBD>
+TO A1-31R2-26548AG-1, AFSCN Operational Switch Replacement (OSR)
+Adopted Forms
+AF Form 847, Recommendation for Change of Publication
+
+Abbreviations and Acronyms
+The following abbreviations are acceptable for use in an outage report.
+
+2960—CISCO 2960 Compact Switch (outage report abbreviation)
+3640—CISCO 3640 Multifunction Platform (outage report abbreviation)
+3845—CISCO 3845 Router (outage report abbreviation)
+7606—CISCO 7606 Router (outage report abbreviation)
+ADD—Additional Communications (AFSCN term)
+ADDS— —Additional Communications with SAFB OCN (AFSCN term)
+ADD-S S—Additional Communications with SAFB OCN (AFSCN term)
+ADDV——Additional Communications with VAFB OCN (AFSCN term)
+ADD-V—Additional Communications with VAFB OCN (AFSCN term)
+AF—Air Force
+AFB—Air Force Base
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFS—Air Force Station
+AFSCN—Air Force Satellite Control Network
+AFSPC—Air Force Space Command
+AFSPCI—Air Force Space Command Instruction
+AOS—AFSCN Operational Signals (AFSCN term)
+ 18                                                           50SWI10-224 24 JUNE 2013
+
+
+ARS—Archival Recording System (AFSCN term)
+ARTS—Automated Remote Tracking Station (AFSCN term)
+ASYNC—Asynchronous (WANIU port configuration)
+ASTRO—AFSCN Network Scheduling system (AFSCN term)
+ATM—Asynchronous Transfer Mode
+BOSS—Call-sign for New Hampshire Tracking Station (AFSCN location)
+C&M—Control and Monitor (AFSCN term)
+CAT—Category (outage report abbreviation)
+CAT A—Category Amber (outage report abbreviation)
+CAT R—Category Red (outage report abbreviation)
+CFP—50 SCS Comm Focal Point (AFSCN location)
+COMM—Communications
+COMM CONTROL—Call sign for 21 SOPS Network Operations Center (AFSCN location)
+COMSEC—Communications Security
+CONUS—Continental United States
+COOK—Call-sign for Vandenberg Tracking Station (AFSCN location)
+CRYPTO—Encryption Gear
+CTS—Colorado Tracking Station (AFSCN location)
+CUE—Common User Elements (AFSCN term)
+CX—Carrier (outage report abbreviation)
+DAF—Department of the Air Force
+DATMS—Defense ATM Service
+D/C—Down Converter (outage report abbreviation)
+D/G—Downgrade (outage report abbreviation)
+DCC—Distributed Communications Control (AFSCN term)
+DEMOD—Demodulator (outage report abbreviation)
+DEMUX—Demultiplexer (outage report abbreviation)
+DGS—Diego Garcia Tracking Station (AFSCN location)
+DICE—Call-sign for Ellison Onizuka Satellite Operations Facility (AFSCN location)
+DISA—Defense Information System Agency
+DISN—Defense Information System Network
+DISAC—DISA Circular
+50SWI10-224 24 JUNE 2013                                                    19
+
+
+DoD—Department of Defense
+DRSN—Defense Red Switch Network
+DSCS—Defense Satellite Communications System
+DSN—Defense Switch Network
+DTG—Date-and-Time Grouping (outage report abbreviation)
+EDD—Estimated Delivery Date
+EOSOF—Ellison Onizuka Satellite Operations Facility (AFSCN location)
+ESD—Electronic Schedule Dissemination (AFSCN term)
+ESD—S —Electronic Schedule Dissemination routed through SAFB (AFSCN term)
+ESD—V —Electronic Schedule Dissemination routed through VAFB (AFSCN term)
+ETIC—Estimated Time In Commission (outage report abbreviation)
+ETRO—Estimated Time Return to Operation
+EVCF—Eastern Vehicle Checkout Facility (AFSCN location)
+EXU—AFSCN External User (AFSCN term)
+F/O—Fiber Optic
+FOM—Fiber Optic Modem
+GMT—Greenwich Mean Time
+GTS—Guam Tracking Station (AFSCN location)
+GUAM—Call-sign for Guam Tracking Station (AFSCN location)
+HAWK—Call-sign for AFSCN work centers at Schriever Air Force Base
+HTS—Hawaii Tracking Station (AFSCN location)
+HULA—Call-sign for Hawaii Tracking Station (AFSCN location)
+HVAC—Heating, Ventilation, and Air Conditioning
+IAW—In Accordance With
+INC—Internodal Communications (AFSCN term)
+INT—Intermittent (outage report abbreviation)
+IRON—Inter-Range Operational Number (AFSCN term)
+ISOC—Isochronous (WANIU port configuration)
+IST—Integrated Sources Telephone (AFSCN term)
+JCN—Job Control Number
+KG—Encryption Gear, specific series (outage report abbreviation)
+KIV—Encryption Gear, specific series (outage report abbreviation)
+ 20                                                          50SWI10-224 24 JUNE 2013
+
+
+LION—Call-sign for Telemetry & Command Station, RAF Oakhanger (AFSCN term)
+MESA—Call-sign for RTD&E Satellite Center, Kirkland AFB (external AFSCN user)
+MIP—Maintenance In Progress (outage report abbreviation)
+MIR—Mission Impact Report (AFSCN term)
+MOA—Memorandum of Agreement
+MOD—Modulator (outage report abbreviation)
+MODEM—Modulator/Demodulator
+MUE—Mission Unique Equipment (AFSCN term)
+MUX—Multiplexer or Multiplexer/De-multiplexer
+NAF—Numbered Air Force
+NCMDR—Network Crew Commander (AFSCN term)
+NCCH—Network Crew Chief (AFSCN term)
+NEDS—NORAD Element Data Sets (AFSCN term)
+NHS—New Hampshire Tracking Station (AFSCN location)
+NIB—Non-interference Basis (outage report abbreviation)
+NORAD—North American Air Defense
+NOC—Network Operations Center
+NOPS—NRO Operations Squadron (external AFSCN user)
+NRO—National Reconnaissance Office
+NSV—Non-Secure Voice (outage report abbreviation)
+NTO—Network Tasking Order (AFSCN term)
+OA—Orbital Analysis
+OCN—Operational Control Node (AFSCN term)
+OCN—Outage Control Number (outage report abbreviation)
+OPSEC—Operations Security
+OSR—Operational Switch Replacement (obsolete AFSCN term)
+POC—Point of Contact
+REEF—Call-sign for Thule Tracking Station (AFSCN location)
+OSS—Possible (outage report abbreviation)
+PRI—Primary Communications (AFSCN term)
+PRI—S - Primary Communications with SAFB OCN (AFSCN term)
+PRIS—Primary Communications with SAFB OCN (AFSCN term)
+50SWI10-224 24 JUNE 2013                                                   21
+
+
+PRI—V - Primary Communications with VAFB OCN (AFSCN term)
+PRIV—Primary Communications with VAFB OCN (AFSCN term)
+PSV—Secure Voice over Primary Communications (obsolete AFSCN term)
+PSVS—Secure Voice over Primary Communications with SAFB OCN (AFSCN term)
+PSVV—Secure Voice over Primary Communications with VAFB OCN (AFSCN term)
+PTF—Patch and Test Facility
+PVC—Permanent Virtual Circuit (ATM term)
+PVP—Permanent Virtual Path (ATM term)
+RAF—Royal Air Force
+RBC—RTS Block Change (AFSCN term)
+REEF—Call Sign – Diego Garcia Tracking Station (AFSCN location)
+RGF—Remote Ground Facility (AFSCN term)
+RFI—Radio Frequency Interference
+RSC—RTD&E Satellite Center, Kirkland AFB (external AFSCN user)
+RTD&E—Research, Testing, Development, and Evaluation
+RTS—Remote Tracking Station (AFSCN term)
+RX—Receive (outage report abbreviation)
+SAFB—Schriever Air Force Base
+SAFB OCN—Operational Control Node at SAFB (AFSCN term)
+SOC—Satellite Operations Center
+Soft-PVC—Permanent Virtual Circuit, dynamically routed (ATM term)
+Soft-PVP—Permanent Virtual Path, dynamically routed (ATM term)
+SOPS—Space Operations Squadron
+STE—Secure Telephone Equipment
+SV—Secure Voice
+SVC—Switched Virtual Circuit (ATM term)
+SWI—Space Wing Instruction
+SYNC—Synchronous (WANIU port configuration)
+TBR—To Be Resolved
+TCF—Tech Control Facility
+TCS—Telemetry & Command Station, RAF Oakhanger
+TSIP—Troubleshooting In Progress (outage report abbreviation
+ 22                                                           50SWI10-224 24 JUNE 2013
+
+
+TTS—Thule Tracking Station (AFSCN location)
+TLM—Telemetry (AFSCN term)
+TX—Transmit (outage report abbreviation)
+U/C—Up Converter (outage report abbreviation)
+U/G—Upgrade (outage report abbreviation)
+UTC—Coordinated Universal Time
+UMUX—Universal Multiplexer (AFSCN term)
+VAFB—Vandenberg Air Force Station
+VAFB OCN—Operational Control Node at VAFB (AFSCN term)
+VOX—Voice (outage report abbreviation)
+VTS—Vandenberg Tracking Station (AFSCN location)
+WANIU—Wide Area Network Interface Unit (AFSCN term)
+Z—Zulu time, equivalent to UTC (outage report abbreviation)
+50SWI10-224 24 JUNE 2013                                                                    23
+
+
+                                        Attachment 2
+               COMMUNICATIONS OUTAGE REPORTING GUIDANCE
+
+A2.1. Comm Control reports communications outages.
+A2.2. Tables A2.1 thru A2.13 describe the reportable system names. The table entries include a
+selection of acceptable equipment names that go with a system. The tables also include the
+ASTRO names and site-sides normally reported with the system, with optional entries, which
+should be included as applicable, and are shown in brackets.
+   A2.2.1. Should none of the system names apply to the current outage condition, then the
+   issue should be passed to the NCMDR/NCCH for consideration as a possible system outage.
+A2.3. Equipment names are described in more detail in Table A2.14.
+   A2.3.1. Problems affecting DCC workstations, even though an integral part of
+   communications being used to operate WANIUs and as the end-equipment of the C&M
+   layer, are not reported under a communications outage. If a DCC problem is limited to one
+   or a few DCCs, the impacted work center should open a maintenance job. If a DCC problem
+   affects a majority of DCCs AFSCN-wide, the NCMDR/NCCH should open a system outage.
+A2.4. ASTRO names and site-sides match the outage category in ESD and assist 22 SOPS
+Network Schedulers in quickly assessing the impact of an outage condition. Should a
+combination of ASTRO names and site-sides conflict or introduce a misleading impact, submit
+multiple outage reports for the same outage condition, so as to ensure the Network Schedulers
+have the best representation of the impact.
+A2.5. RTS sides included on a communications outage report are typically –X for all sides, as
+communications usually impact all sides of an RTS. Outage conditions that could impact only
+one side of an RTS are those that involve specific WANIU ports. Specific RTS sides should
+only appear on outage reports where the equipment code is WANIU.
+A2.6. Comm Control enters the work center (WC) code SCF.
+
+Table A2.1. System and Equipment Names for OCN Communication Outages
+   System                 Equip                   ASTRO Name(s)             Site-side(s)
+OSR            SYSTEM                                                 HAWK-A, DICE-A
+INC            SYSTEM, PATH                 INC                       DICE-A, HAWK-A
+SAFB OSR       SYSTEM, WANIU, 7606,                                   HAWK-A
+               3640, 3845
+               SYSTEM, PATH, 3845,          [PRIS], [ADDS], [PSVS]    HAWK-A, [impacted
+               CRYPTO                                                 sites]
+PSVS           SYSTEM, CRYPTO, UMUX         PSVS                      HAWK-A, [impacted
+                                                                      sites]
+VAFB OSR       SYSTEM, WANIU, 7606,                                   DICE-A
+               3845
+               SYSTEM, PATH, 3845,          [PRIV], [ADDV],[PSVV]     DICE-A, [impacted sites]
+               CRYPTO
+PSVV           SYSTEM, CRYPTO, UMUX         PSVV                      DICE-A, [impacted sites]
+OSR—an outage condition impacting communications for all or a majority of the AFSCN. This
+ 24                                                                50SWI10-224 24 JUNE 2013
+
+
+can include outage conditions that impact C&M for the entire AFSCN, AOS for all or many of
+the users, or circuits and equipment for both SAFB OCN and VAFB OCN. If there is no
+identifiable communications symptom, it may be more appropriate for the NCMDR/NCCH to
+open a system outage.
+INC—an outage condition impacting communications between SAFB OCN and VAFB OCN.
+Report such outages with only DICE-A and HAWK-A since any impacts to range locations will
+be captured by any outage conditions reported for primary or additional communications. Open
+a separate outage for any impact to secure voice between CTS and VAFB, since this resource is
+reported with a different site-side and ASTRO name combination.
+SAFB OSR—an outage condition impacting communications with SAFB OCN or users at
+SAFB. This can include outage conditions that impact SAFB C&M, AOS with SAFB users, or
+SAFB OCN circuits or equipment. If there is a failure that impacts one or more primary or
+additional comm systems, the outage should include PRI-S or ADD-S and the sites impacted.
+All other SAFB OSR outages should include only HAWK-A as the site, and separate outages
+open for impact to other resources. Include PSVS only when the impact includes the
+corresponding PRI-S. Reference TO A1-31R2-26548AG-1, AFSCN Operational Switch
+Replacement (OSR).
+PSVS—outage conditions impacting operational secure voice with SAFB, users at SAFB, or
+multiple remote locations through SAFB. This system can be incorporated into an outage open
+on SAFB OSR. If the latter, add the PSVS equipment code to the outage report. If there is a
+failure that impacts one or more remote location, include all the sites impacted, otherwise include
+only HAWK-A as the site. If there is an impact to a specific RGF, open another outage for the
+affected site.
+VAFB OSR—outage conditions impacting communications with VAFB OCN or users at
+VAFB. This can include outage conditions that impact VAFB C&M, AOS with VAFB users, or
+VAFB OCN circuits and equipment. If there is a failure that impacts one or more primary or
+additional comm systems, the outage should include PRI-V or ADDV and the sites impacted.
+All other VAFB OSR outages should include only DICE-A as the site, and separate outages open
+for any impact to other resources. Include PSVV only when the impact includes the
+corresponding PRI-V. Reference TO A1-31R2-26548AG-1, AFSCN Operational Switch
+Replacement (OSR).
+PSVV—outage conditions impacting operational secure voice with VAFB, users at VAFB, or
+multiple remote locations through VAFB. This system can be incorporated into an outage open
+on VAFB OSR. If the latter, add the PSVV equipment code to the outage report. If there is a
+failure that impacts one or more remote locations, include all the sites impacted, otherwise
+include only DICE-A as the site.
+50SWI10-224 24 JUNE 2013                                                        25
+
+
+Table A2.2. System and Equipment Names for CTS Communication Outages
+  System              Equip              ASTRO Name(s)           Site-side(s)
+             SYSTEM                  PRIS, ADDS, [PSVS],    DICE-A, HAWK-A,
+                                     [PSVV]                 PIKE-X
+CTS OSR
+
+CTS PRI      SYSTEM, 3845, WANIU     PRIS, [PSVS], [PSVV]   DICE-A, HAWK-A,
+                                                            PIKE-X
+CTS PRIS     PATH , 3845             PRIS, PSVS, PSVV       DICE-A, HAWK-A,
+                                                            PIKE-X
+CTS PSV      SYSTEM, CRYPTO, UMUX    PSVS, PSVV             DICE-A, HAWK-A,
+                                                            PIKE-X
+CTS PSVS     SYSTEM, CRYPTO,         PSVS                   HAWK-A, PIKE-X
+             WANIU
+CTS PSVV     SYSTEM, CRYPTO,         PSVV                   DICE-A, PIKE-X
+             WANIU
+CTS ADD      SYSTEM, 3845, WANIU     ADDS                   DICE-A, HAWK-A,
+                                                            PIKE-X
+CTS ADDS     PATH, 3845              ADDS                   DICE-A, HAWK-A,
+                                                            PIKE-X
+ 26                                                             50SWI10-224 24 JUNE 2013
+
+
+   System                 Equip                 ASTRO Name(s)                Site-side(s)
+CTS OSR—outage conditions impacting all communications with CTS. This can include C&M,
+timing, or other problems impacting both primary and additional communications at CTS. This
+does not include facility outages impacting more than just communications. If the latter, CTS
+should report a facility outage. Include PSVV and PSVS as appropriate.
+CTS PRI—outage conditions impacting primary communications with CTS not isolated to the
+fiber path at SAFB. These outages should be limited to either unknown SYSTEM problems or
+WANIU problems. Include PSVV and PSVS as appropriate.
+CTS PRIS—outage conditions impacting the fiber-optic trunk between SAFB OCN and CTS
+primary equipment. There is no corresponding CTS PRI-V; VAFB connects to CTS primary
+equipment via INC. Both VAFB and SAFB secure voice with CTS are dependent on CTS PRIS.
+If a problem is not isolated to the fiber path, open a CTS PRI SYSTEM outage instead.
+CTS PSV—outage conditions impacting operational secure voice at CTS. This system can be
+incorporated into an outage open on CTS PRI or CTS PRIS. If the latter, add the PSVS and
+PSVV equipment codes to the outage report.
+CTS PSVS—outage conditions impacting operational secure voice between CTS and SAFB.
+This system can be incorporated into an outage open on CTS PRI or CTS PRIS. If the latter, add
+the PSVS equipment code to the CTS PRI or CTS PRIS outage report.
+CTS PSVV—outage conditions impacting operational secure voice between CTS and VAFB.
+This system can be incorporated into an outage open on CTS PRI or CTS PRIS. If the latter, add
+the PSVV equipment code to the CTS PRI or CTS PRIS outage report. Do not incorporate CTS
+PSVV outage conditions into an INC outage; open a separate CTS PSVV outage.
+CTS ADD—outage conditions impacting additional communications with CTS not isolated to
+the fiber path at SAFB. These outages should be limited to either unknown SYSTEM problems
+or WANIU problems.
+CTS ADDS—outage conditions impacting the fiber-optic trunk between SAFB OCN and CTS
+additional equipment. There is no corresponding CTS ADDV; VAFB connects to CTS
+additional equipment via INC. If a problem is not isolated to the fiber path, open a CTS ADD
+SYSTEM outage instead.
+50SWI10-224 24 JUNE 2013                                                     27
+
+
+
+Table A2.3. System and Equipment Names for DGS Communication Outages
+
+System       Equip                   ASTRO Name(s)         Site-side(s)
+             SYSTEM                  PRIS, PRIV, ADDS,     DICE-A, HAWK-A,
+DGS OSR                              ADDV, [PSVS],         REEF-X
+                                     [PSVV]
+             SYSTEM, PATH,           PRIS, PRIV, [PSVS],   DICE-A, HAWK-A,
+DGS PRI      CRYPTO, 3845, WANIU     [PSVV]                REEF-X
+DGS PRIS     PATH, CRYPTO, 3845      PRIS, [PSVS]          DICE-A, HAWK-A,
+                                                           REEF-X
+DGS PRIV     PATH, CRYPTO, 3845      PRIV, [PSVV]          DICE-A, HAWK-A,
+                                                           REEF-X
+DGS PSV      SYSTEM, UMUX            PSVS, PSVV            HAWK-A, DICE-A,
+                                                           REEF-X
+DGS PSVS     SYSTEM, CRYPTO,         PSVS                  HAWK-A, REEF-X
+             WANIU
+DGS PSVV     SYSTEM, CRYPTO,         PSVV                  DICE-A, REEF-X
+             WANIU
+DGS ADD      SYSTEM, CRYPTO, 3845,   ADDS                  DICE-A, HAWK-A,
+             WANIU                                         REEF-X
+DGS ADDS     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           REEF-X
+DGS ADDV     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           REEF-X
+ 28                                                           50SWI10-224 24 JUNE 2013
+
+
+System         Equip                           ASTRO Name(s)           Site-side(s)
+DGS OSR—outage conditions impacting all communications with DGS. This can include
+C&M, timing, or other problems impacting both primary and additional communications at
+DGS. This does not include facility outages impacting more than just communications. If the
+latter, DGS should report a facility outage. Include PSVV and PSVS as appropriate.
+DGS PRI—outage conditions impacting primary communications with DGS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+DGS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+DGS. Include PSVS only when INC is at risk or down.
+DGS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and DGS. Include PSVV only when INC is at risk or down.
+DGS PSV—outage conditions impacting operational secure voice at DGS.
+DGS PSVS—outage conditions impacting operational secure voice between DGS and SAFB.
+This system can be incorporated into an outage open on DGS PRI. If the latter, add the PSVS
+equipment code to the DGS PRI outage report.
+DGS PSVV—outage conditions impacting operational secure voice between DGS and VAFB.
+This system can be incorporated into an outage open on DGS PRI. If the latter, add the PSVV
+equipment code to the DGS PRI outage report.
+DGS ADD—outage conditions impacting additional communications with DGS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+DGS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and DGS.
+DGS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and DGS.
+50SWI10-224 24 JUNE 2013                                                     29
+
+
+
+Table A2.4. System and Equipment Names for GTS Communication Outages
+
+System       Equip                   ASTRO Name(s)         Site-side(s)
+             SYSTEM                  PRIS, PRIV, ADDS,     DICE-A, HAWK-A,
+GTS OSR                              ADDV, [PSVS],         GUAM-X
+                                     [PSVV]
+             SYSTEM, PATH,           PRIS, PRIV, [PSVS],   DICE-A, HAWK-A,
+GTS PRI      CRYPTO, 3845, WANIU     [PSVV]                GUAM-X
+GTS PRIS     PATH, CRYPTO, 3845      PRIS, [PSVS]          DICE-A, HAWK-A,
+                                                           GUAM-X
+GTS PRIV     PATH, CRYPTO, 3845      PRIV, [PSVV]          DICE-A, HAWK-A,
+                                                           GUAM-X
+GTS PSV      SYSTEM, UMUX            PSVS, PSVV            HAWK-A, DICE-A,
+                                                           GUAM-X
+GTS PSVS     SYSTEM, CRYPTO,         PSVS                  HAWK-A, GUAM-X
+             WANIU
+GTS PSVV     SYSTEM, CRYPTO,         PSVV                  DICE-A, GUAM-X
+             WANIU
+GTS ADD      SYSTEM, 3845, WANIU     ADDS                  DICE-A, HAWK-A,
+                                                           GUAM-X
+GTS ADDS     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           GUAM-X
+GTS ADDV     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           GUAM-X
+ 30                                                             50SWI10-224 24 JUNE 2013
+
+
+System          Equip                         ASTRO Name(s)            Site-side(s)
+GTS OSR—outage conditions impacting all communications with GTS. This can include
+C&M, timing, or other problems impacting both primary and additional communications at GTS.
+This does not include facility outages impacting more than just communications. If the latter,
+GTS should report a facility outage. Include PSVV and PSVS as appropriate.
+GTS PRI—outage conditions impacting primary communications with GTS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+GTS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+GTS. Include PSVS only when INC is at risk or down.
+GTS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and GTS. Include PSVV only when INC is at risk or down.
+GTS PSV—outage conditions impacting all operational secure voice at GTS.
+GTS PSVS—outage conditions impacting operational secure voice between GTS and SAFB.
+This system can be incorporated into an outage open on GTS PRI. If the latter, add the PSVS
+equipment code to the GTS PRI outage report.
+GTS PSVV—outage conditions impacting operational secure voice between GTS and VAFB.
+This system can be incorporated into an outage open on GTS PRI. If the latter, add the PSVV
+equipment code to the GTS PRI outage report.
+GTS ADD—outage conditions impacting additional communications with GTS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+GTS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and GTS.
+GTS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and GTS.
+50SWI10-224 24 JUNE 2013                                                     31
+
+
+
+Table A2.5. System and Equipment Names for HTS Communication Outages
+
+System       Equip                   ASTRO Name(s)         Site-side(s)
+             SYSTEM                  PRIS, PRIV, ADDS,     DICE-A, HAWK-A,
+HTS OSR                              ADDV, [PSVS],         HULA-X
+                                     [PSVV]
+             SYSTEM, PATH,           PRIS, PRIV, [PSVS],   DICE-A, HAWK-A,
+HTS PRI      CRYPTO, 3845, WANIU     [PSVV]                HULA-X
+HTS PRIS     PATH, CRYPTO, 3845      PRIS, [PSVS]          DICE-A, HAWK-A,
+                                                           HULA-X
+HTS PRIV     PATH, CRYPTO, 3845      PRIV, [PSVV]          DICE-A, HAWK-A,
+                                                           HULA-X
+HTS PSV      SYSTEM, UMUX            PSVS, PSVV            HAWK-A, DICE-A,
+                                                           HULA-X
+HTS PSVS     SYSTEM, CRYPTO,         PSVS                  HAWK-A, HULA-X
+             WANIU
+HTS PSVV     SYSTEM, CRYPTO,         PSVV                  DICE-A, HULA-X
+             WANIU
+HTS ADD      SYSTEM, 3845, WANIU     ADDS                  DICE-A, HAWK-A,
+                                                           HULA-X
+HTS ADDS     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           HULA-X
+HTS ADDV     PATH, CRYPTO, 3845      ADDS                  DICE-A, HAWK-A,
+                                                           HULA-X
+ 32                                                            50SWI10-224 24 JUNE 2013
+
+
+System           Equip                       ASTRO Name(s)             Site-side(s)
+HTS OSR—outage conditions impacting all communications with HTS. This can include C&M,
+timing, or other problems impacting both primary and additional communications at HTS. This
+does not include facility outages impacting more than just communications. If the latter, HTS
+should report a facility outage. Include PSVV and PSVS as appropriate.
+HTS PRI—outage conditions impacting primary communications with HTS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+HTS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+HTS. Include PSVS only when INC is at risk or down.
+HTS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and HTS. Include PSVV only when INC is at risk or down.
+HTS PSV—outage conditions impacting all operational secure voice at HTS.
+HTS PSVS—outage conditions impacting operational secure voice between HTS and SAFB.
+This system can be incorporated into an outage open on HTS PRI. If the latter, add the PSVS
+equipment code to the HTS PRI outage report.
+HTS PSVV—outage conditions impacting operational secure voice between HTS and VAFB.
+This system can be incorporated into an outage open on HTS PRI. If the latter, add the PSVV
+equipment code to the HTS PRI outage report.
+HTS ADD—outage conditions impacting additional communications with HTS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+HTS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and HTS.
+HTS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and HTS.
+50SWI10-224 24 JUNE 2013                                                         33
+
+
+Table A2.6. System and Equipment Names for NHS Communication Outages
+  System              Equip             ASTRO Name(s)             Site-side(s)
+             SYSTEM                  PRIS, PRIV, ADDS,      DICE-A, HAWK-A,
+NHS OSR                              ADDV, [PSVS], [PSVV]   BOSS-X
+             SYSTEM, PATH, CRYPTO,   PRIS, PRIV, [PSVS],    DICE-A, HAWK-A,
+NHS PRI      3845, WANIU             [PSVV]                 BOSS-X
+NHS PRIS     PATH, CRYPTO, 3845      PRIS, [PSVS]           DICE-A, HAWK-A,
+                                                            BOSS-X
+NHS PRIV     PATH, CRYPTO, 3845      PRIV, [PSVV]           DICE-A, HAWK-A,
+                                                            BOSS-X
+NHS PSV      SYSTEM, UMUX            PSVS, PSVV             HAWK-A, DICE-A,
+                                                            BOSS-X
+NHS PSVS     SYSTEM, CRYPTO,         PSVS                   HAWK-A, BOSS-X
+             WANIU
+NHS PSVV     SYSTEM, CRYPTO,         PSVV                   DICE-A, BOSS-X
+             WANIU
+NHS ADD      SYSTEM, 3845, WANIU     ADDS                   DICE-A, HAWK-A,
+                                                            BOSS-X
+NHS ADDS     PATH, CRYPTO, 3845      ADDS                   DICE-A, HAWK-A,
+                                                            BOSS-X
+NHS ADDV     PATH, CRYPTO, 3845      ADDS                   DICE-A, HAWK-A,
+                                                            BOSS-X
+ 34                                                              50SWI10-224 24 JUNE 2013
+
+
+   System                 Equip                  ASTRO Name(s)                Site-side(s)
+NHS OSR—outage conditions impacting all communications with NHS. This can include
+C&M, timing, or other problems impacting both primary and additional communications at
+NHS. This does not include facility outages impacting more than just communications. If the
+latter, NHS should report a facility outage. Include PSVV and PSVS as appropriate.
+NHS PRI—outage conditions impacting primary communications with NHS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+NHS PRIS—outage conditions impacting the primary communications between SAFB OCN
+and NHS. Include PSVS only when INC is at risk or down.
+NHS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and NHS. Include PSVV only when INC is at risk or down.
+NHS PSV—outage conditions impacting all operational secure voice at NHS.
+NHS PSVS—outage conditions impacting operational secure voice between NHS and SAFB.
+This system can be incorporated into an outage open on NHS PRI. If the latter, simply add the
+PSVS equipment code to the NHS PRI outage report.
+NHS PSVV—outage conditions impacting operational secure voice between NHS and VAFB.
+This system can be incorporated into an outage open on NHS PRI. If the latter, simply add the
+PSVV equipment code to the NHS PRI outage report.
+NHS ADD—outage conditions impacting additional communications with NHS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+NHS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and NHS.
+NHS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and NHS.
+50SWI10-224 24 JUNE 2013                                                         35
+
+
+Table A2.7. System and Equipment Names for TCS Communication Outages
+  System              Equip             ASTRO Name(s)             Site-side(s)
+             SYSTEM                  PRIS, PRIV, ADDS,      DICE-A, HAWK-A,
+TCS OSR                              ADDV, [PSVS], [PSVV]   LION-X
+             SYSTEM, PATH, CRYPTO,   PRIS, PRIV, [PSVS],    DICE-A, HAWK-A,
+TCS PRI      3845, WANIU             [PSVV]                 LION-X
+TCS PRIS     PATH, CRYPTO, 3845      PRIS, [PSVS]           DICE-A, HAWK-A,
+                                                            LION-X
+TCS PRIV     PATH, CRYPTO, 3845      PRIV, [PSVV]           DICE-A, HAWK-A,
+                                                            LION-X
+TCS PSV      SYSTEM, UMUX            PSVS, PSVV             HAWK-A, DICE-A,
+                                                            LION-X
+TCS PSVS     SYSTEM, CRYPTO,         PSVS                   HAWK-A, LION-X
+             WANIU
+TCS PSVV     SYSTEM, CRYPTO,         PSVV                   DICE-A, LION-X
+             WANIU
+TCS ADD      SYSTEM, CRYPTO, 3845,   ADDS                   DICE-A, HAWK-A,
+             WANIU                                          LION-X
+TCS ADDS     PATH, CRYPTO, 3845      ADDS                   DICE-A, HAWK-A,
+                                                            LION-X
+TCS ADDV     PATH, CRYPTO, 3845      ADDS                   DICE-A, HAWK-A,
+                                                            LION-X
+ 36                                                             50SWI10-224 24 JUNE 2013
+
+
+   System                 Equip                 ASTRO Name(s)                Site-side(s)
+TCS OSR—outage conditions impacting all communications with TCS. This can include C&M,
+timing, or other problems impacting both primary and additional communications at TCS. This
+does not include facility outages impacting more than just communications. If the latter, TCS
+should report a facility outage. Include PSVV and/or PSVS as appropriate.
+TCS PRI—outage conditions impacting primary communications with TCS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+TCS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+TCS. Include PSVS only when INC is at risk or down.
+TCS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and TCS. Include PSVV only when INC is at risk or down.
+TCS PSV—outage conditions impacting all operational secure voice at TCS.
+TCS PSVS—outage conditions impacting operational secure voice between TCS and SAFB.
+This system can be incorporated into an outage open on TCS PRI. If the latter, add the PSVS
+equipment code to the TCS PRI outage report.
+TCS PSVV—outage conditions impacting operational secure voice between TCS and VAFB.
+This system can be incorporated into an outage open on TCS PRI. If the latter, add the PSVV
+equipment code to the TCS PRI outage report.
+TCS ADD—outage conditions impacting additional communications with TCS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+TCS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and TCS.
+TCS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and TCS.
+50SWI10-224 24 JUNE 2013                                                                      37
+
+
+Table A2.8. System and Equipment Names for TTS Communication Outages
+   System                 Equip                ASTRO Name(s)                 Site-side(s)
+               SYSTEM                       PRIS, PRIV, ADDS,          DICE-A, HAWK-A,
+TTS OSR                                     ADDV, [PSVS], [PSVV]       POGO-X
+               SYSTEM, PATH, CRYPTO,        PRIS, PRIV, [PSVS],        DICE-A, HAWK-A,
+TTS PRI        3845, WANIU                  [PSVV]                     POGO-X
+TTS PRIS       PATH, CRYPTO, 3845           PRIS, [PSVS]               DICE-A, HAWK-A,
+                                                                       POGO-X
+TTS PRIV       PATH, CRYPTO, 3845           PRIV, [PSVV]               DICE-A, HAWK-A,
+                                                                       POGO-X
+TTS PSV        SYSTEM, UMUX                 PSVS, PSVV                 HAWK-A, DICE-A,
+                                                                       POGO-X
+TTS PSVS       SYSTEM, CRYPTO,              PSVS                       HAWK-A, POGO-X
+               WANIU
+TTS PSVV       SYSTEM, CRYPTO,              PSVV                       DICE-A, POGO-X
+               WANIU
+TTS ADD        SYSTEM, 3845, WANIU          ADDS                       DICE-A, HAWK-A,
+                                                                       POGO-X
+TTS ADDS       PATH, CRYPTO, 3845           ADDS                       DICE-A, HAWK-A,
+                                                                       POGO-X
+TTS OSR—outage conditions impacting all communications with TTS. This can include C&M,
+timing, or other problems impacting both primary and additional communications at TTS. This
+does not include facility outages impacting more than just communications. If the latter, TTS
+should report a facility outage. Include PSVV and/or PSVS as appropriate.
+TTS PRI—outage conditions impacting primary communications with TTS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+TTS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+TTS. Include PSVS only when INC is at risk or down.
+TTS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and TTS. Include PSVV only when INC is at risk or down.
+TTS PSV—outage conditions impacting all operational secure voice at TTS.
+TTS PSVS—outage conditions impacting operational secure voice between TTS and SAFB.
+This system can be incorporated into an outage open on TTS PRI. If the latter, add the PSVS
+equipment code to the TTS PRI outage report.
+TTS PSVV—outage conditions impacting operational secure voice between TTS and VAFB.
+This system can be incorporated into an outage open on TTS PRI. If the latter, add the PSVV
+equipment code to the TTS PRI outage report.
+TTS ADD—outage conditions impacting additional communications with TTS not isolated to
+the communications path. This can include C&M, AOS, WANIU, or path problems impacting
+communications with both OCNs.
+TTS ADDS—outage conditions impacting the additional communications path between SAFB
+OCN and TTS. There is no corresponding TTS ADDV; VAFB connects to TTS additional
+ 38                                                             50SWI10-224 24 JUNE 2013
+
+
+equipment via INC. If a problem is not isolated to the communications path, open a TTS ADD
+SYSTEM outage instead.
+
+
+Table A2.9. System and Equipment Names for VTS Communication Outages
+   System              Equip                   ASTRO Name(s)                Site-side(s)
+               SYSTEM, WANIU                PRIS, PRIV, ADDS,         DICE-A, HAWK-A,
+VTS OSR                                     ADDV, [PSVS], [PSVV]      COOK-X
+               SYSTEM, PATH, CRYPTO,        PRIS, PRIV, [PSVS],       DICE-A, HAWK-A,
+VTS PRI        3845, WANIU                  [PSVV]                    COOK-X
+VTS PRIS       PATH, CRYPTO, 3845           PRIS, [PSVS]              DICE-A, HAWK-A,
+                                                                      COOK-X
+VTS PRIV       PATH, CRYPTO, 3845           PRIV, [PSVV]              DICE-A, HAWK-A,
+                                                                      COOK-X
+VTS PSV        SYSTEM, UMUX                 PSVS, PSVV                HAWK-A, DICE-A,
+                                                                      COOK-X
+VTS PSVS       SYSTEM, CRYPTO,              PSVS                      HAWK-A, COOK-X
+               WANIU
+VTS PSVV       SYSTEM, CRYPTO,              PSVV                      DICE-A, COOK-X
+               WANIU
+VTS ADD        SYSTEM, 3845, WANIU          ADDS                      DICE-A, HAWK-A,
+                                                                      COOK-X
+VTS ADDS       PATH, CRYPTO, 3845           ADDS                      DICE-A, HAWK-A,
+                                                                      COOK-X
+VTS ADDV       PATH, CRYPTO, 3845           ADDS                      DICE-A, HAWK-A,
+                                                                      COOK-X
+VTS OSR—outage conditions impacting all communications with VTS. This can include
+C&M, timing, or other problems impacting both primary and additional communications at VTS.
+This does not include facility outages impacting more than just communications. If the latter,
+VTS should report a facility outage. Include PSVV and PSVS as appropriate.
+VTS OSR also covers communications with the B-SOC and B-NOC located at VTS, and any
+problems involving the ancillary WANIUs #3 and #4. Always include DICE-A, HAWK-A, and
+COOK-X as site-sides to provide visibility to those work centers involved.
+VTS PRI—outage conditions impacting primary communications with VTS. This can include
+C&M, AOS, WANIU, or path problems impacting communications with both OCNs. Include
+PSVV and PSVS as appropriate.
+VTS PRIS—outage conditions impacting the primary communications between SAFB OCN and
+VTS. Include PSVS only when INC is at risk or down.
+VTS PRIV—outage conditions impacting the primary communications between VAFB OCN
+and VTS. Include PSVV only when INC is at risk or down.
+VTS PSV—outage conditions impacting all operational secure voice at VTS.
+VTS PSVS—outage conditions impacting operational secure voice between VTS and SAFB.
+This system can be incorporated into an outage open on VTS PRI. If the latter, add the PSVS
+equipment code to the VTS PRI outage report.
+50SWI10-224 24 JUNE 2013                                                                      39
+
+
+VTS PSVV—outage conditions impacting operational secure voice between VTS and VAFB.
+This system can be incorporated into an outage open on VTS PRI. If the latter, add the PSVV
+equipment code to the VTS PRI outage report.
+VTS ADD—outage conditions impacting additional communications with VTS. This can
+include C&M, AOS, WANIU, or path problems impacting communications with both OCNs.
+VTS ADDS—outage conditions impacting the additional communications between SAFB OCN
+and VTS.
+VTS ADDV—outage conditions impacting the additional communications between VAFB OCN
+and VTS.
+
+
+Table A2.10. System and Equipment Names for EVCF Communication Outages
+   System               Equip                   ASTRO Name(s)               Site-side(s)
+               SYSTEM, PATH, CRYPTO,        [PRIS], [PRIV]            DICE-A, HAWK-A,
+EVCF OSR       3845, WANIU                                            EVCF-X
+EVCF PRI—outage conditions impacting communications with EVCF. This can include C&M,
+AOS, WANIU, or path problems impacting communications with one or both OCNs. Always
+include both DICE-A and HAWK-A, but only include the appropriate PRIS and/or PRIV. EVCF
+is reported this way because loss or degradation of communications with either OCN puts the
+other at risk.
+
+
+Table A2.11. System and Equipment Names for NOPS Communication Outages
+  System                Equip                   ASTRO Name(s)               Site-side(s)
+NOPS OSR       SYSTEM, 2960, WANIU                                    DICE-A, HAWK-A
+NOPS—outage conditions impacting communications with NOPS. Communications with
+NOPS is technically a user asset and not an AFSCN communications asset. Failures with NOPS
+communications are only reported when AFSCN work centers are involved in resolving the
+problem. Use PATH when the problem is isolated to either or both fiber optic trunks between
+NOPS and SAFB OCN equipment.
+
+
+Table A2.12. System and Equipment Names for RSC Communication Outages
+  System                Equip                   ASTRO Name(s)               Site-side(s)
+MESA OSR       SYSTEM, PATH, CRYPTO,                                  DICE-A, HAWK-A
+               3845, UMUX, WANIU
+MESA—outage conditions impacting communications with RSC. Communications with RSC is
+technically a user asset and not an AFSCN communications asset. Failures with RSC
+communications are only reported when AFSCN work centers are involved in resolving the
+problem.
+ 40                                                                50SWI10-224 24 JUNE 2013
+
+
+Table A2.13. Equipment Names for Communication Outages
+      Equip                     Description (The outage condition is isolated to…)
+               Portion of telecommunications inclusively between encryption gear.
+PATH
+CRYPTO    Encryption gear.
+WANIU     Wide Area Network Interface Unit equipment, software, or configuration
+UMUX      Universal Multiplexer equipment, software, or configuration
+2960      CISCO 2960 equipment, software, or configuration.
+3640      CISCO 3640 equipment, software, or configuration.
+3845      CISCO 3845 equipment, software, or configuration.
+7606      CISCO 7606 equipment, software, or configuration.
+SYSTEM—not isolated to any specific equipment or subsystem.
+PATH—isolated to the path, which includes the portion between encryption gear, and includes
+the encryption gear itself and where the encryption gear terminates, the interfaces on the CISCO
+or other end devices. This equipment name is not used for secure voice service carried over a
+WANIU connection. Isolation to the path is usually quickly provided by the status of the
+interfaces on the CISCO or other end devices.
+CRYPTO—isolated to the encryption gear.
+WANIU—isolated to Wide Area Network Interface Unit equipment, software, and/or
+configuration.
+UMUX— isolated to Universal Multiplexer equipment, software, and/or configuration. This
+equipment is primarily used for secure voice.
+2960—isolated to CISCO 2960 equipment, software, and/or configuration.
+3640—isolated to CISCO 3640 equipment, software, and/or configuration.
+3845—isolated to CISCO 3845 equipment, software, and/or configuration.
+7606—isolated to CISCO 7606 equipment, software, and/or configuration.
+50SWI10-224 24 JUNE 2013                                                                     41
+
+
+                                        Attachment 3
+                      SYSTEM OUTAGE REPORTING GUIDANCE
+
+A3.1. The NCMDR/NCCH reports system outages. A system outage should capture non-
+communications and non-range problems that impact AFSCN operations and require
+community-wide notification. If an outage condition is limited to a single SOC or external user,
+it may not be necessary to report it.
+A3.2. All possible reportable systems cannot be represented because system outages may
+capture unusual or unexpected outage conditions. System outages can include outage conditions
+on:
+   A3.2.1. Software/firmware releases—problems affecting the same subsystem or equipment
+   at a majority of AFSCN locations. The system name should match the affected support
+   system, e.g. ARS, ARTS, CCS, DCC, RBC, etc.
+   A3.2.2. MUE equipment—problems affecting a specific mission. The system name should
+   match the impacted mission, e.g., DMSP, DSCS, GPS, etc.
+   A3.2.3. User interfaces—problems affecting access to the AFSCN or operational capability
+   of a specific user. The system name should match the impacted user, e.g. KING, MESA,
+   NOPS, etc.
+A3.3. The equipment name for system outages is typically SYSTEM. A specific equipment
+name can be used for outage conditions that apply to specific equipment, such as
+software/firmware issues.
+   A3.3.1. A system-level outage condition, such as a software/firmware issue, specifically
+   affecting communications equipment, as appear in Table A2.14, should be reported as a
+   communications outage.
+A3.4. The site-sides HAWKA and DICEA should be included on all system outages, as well as
+any other sites impacted. Using the site-side ALL, which is available in ESD, should be limited
+to problems that definitively impact all reportable locations.
+A3.5. NCMDR/NCCH enters the work center (WC) code 22SOPS.
+ 42                                                                   50SWI10-224 24 JUNE 2013
+
+
+                                           Attachment 4
+                              FACILITY OUTAGE REPORTING
+
+A4.1. NCMDR/NCCH, Comm Control, and RGF will report facility outages for their respective
+locations.
+A4.2. The system name for a facility outage is always FAC.
+A4.3. Table A5.1 describes the equipment names used when reporting facility outages.
+A4.4. The site-side for a facility outage should match the location.
+A4.5. The work center code for a facility outage should match the reporting work center.
+
+Table A4.1. System and Equipment Names for Facility Outages
+   Equip                                       Description
+ECU             Environmental heating and cooling units. (EVCF)
+EVAC            Evacuation of site personnel. (Should be a safety outage.)
+GND             Site grounding.
+HVAC            Air conditioning, air handling, humidity, and environmental controls.
+PWR-A           Primary utility power (site feed equipment, AC switching equipment,
+                circuit breaker panels, and power monitor panels).
+PWR-B           Back-up utility power (generator and AC switching equipment).
+SURGE           Equipment for arresting lightning or power surges.
+TECHPWR         Technical power (UPS, batteries, bypass equipment, circuit breaker
+                panels, and power monitor panels).
+50SWI10-224 24 JUNE 2013                                                                     43
+
+
+                                        Attachment 5
+                         OUTAGE REPORTING WITHOUT ESD
+
+A5.1. The 50 SCS Comm Focal Point (CFP) at SAFB manages maintenance jobs, collects
+mission impact reports, and archives AFSCN outage information. The 50 SCS CFP maintains an
+up-to-date view of AFSCN problems at all levels. The 50 SCS CFP also have access to ESD
+similar to the NCMDR/NCCH, where they can review and broadcast pending outage reports.
+This places the 50 SCS in the unique position of providing the perfect focal point for ESD-out
+contingency procedures.
+A5.2. The following paragraphs detail procedures for a work center that has lost access to ESD.
+   A5.2.1. AFSCN User-if an AFSCN user has lost all access to outage information in ESD,
+   they may:
+       A5.2.1.1. Query an RGF, with whom they are in support at the time of the outage, for
+       information about outages impacting their site.
+       A5.2.1.2. Contact the 50 SCS CFP for outage information that may impact them or for
+       any specific site.
+   A5.2.2. Reporting Work Center-if a reporting work center has lost all access to ESD, they
+   may:
+       A5.2.2.1. Contact the 50 SCS CFP for the latest outage information.
+       A5.2.2.2. Contact the 50 SCS CFP and verbally provide outage information for opening
+       a new, updating an existing, or closing an existing outage report. The 50 SCS CFP will
+       collect the verbally provided outage information and enter it into ESD as would the
+       reporting work center.
+       A5.2.2.3. Contact the NCMDR/NCCH and verbally provide outage information for
+       opening a new, updating an existing, or closing an existing outage report. The
+       NCMDR/NCCH will collect the verbally provided outage information and enter it into
+       ESD as would the reporting work center.
+   A5.2.2.4. NCMDR/NCCH—if the NCMDR/NCCH has lost the ability to review and
+   broadcast outage reports in ESD, they may:
+       A5.2.2.5. Contact the 50 SCS CFP to manage that portion of the NCMDR/NCCH
+       responsibilities.
+A5.3. Should ESD degrade or fail such that a majority of the ESD users and the 50 SCS CFP
+itself have lost access ESD:
+   A5.3.1. The 50 SCS CFP will maintain outage information in an independent database, and
+   use this database for verbal inquiries and verbally provided outage information.
+   A5.3.2. When ESD has recovered sufficiently for normal use, the reporting work centers or
+   the 50 SCS CFP, as worked out between them, will update ESD with the outage information
+   that had not been entered into ESD during the loss.

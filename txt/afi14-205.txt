@@ -1,0 +1,765 @@
+BY ORDER OF THE SECRETARY                               AIR FORCE INSTRUCTION 14-205
+OF THE AIR FORCE
+                                                                                 5 MAY 2010
+
+                                                                                  Intelligence
+
+                                                             GEOSPATIAL INFORMATION
+                                                                  AND SERVICES (GI&S
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: This publication is available digitally on the AFDPO website at
+               http://www.e-publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication
+
+OPR: AF/A2CG                                                     Certified by: HQ USAF/A2C
+Supersedes: AFI14-205, 4 May 2004                                         (Mr. Robert Marlin)
+                                                                                   Pages: 18
+
+
+This instruction implements the Geospatial Information & Services (GI&S) subset of Geospatial
+Intelligence (GEOINT) as defined in Title 10 U.S. Code 467. In addition, this instruction
+implements Air Force Policy Directive (AFPD) 14-1, Intelligence, Surveillance, Reconnaissance
+(ISR) Planning Resources and Operations, 2 April 2004. It provides procedures for identifying
+functional and area requirements for GI&S as well as the provision and use of GI&S data and
+products. This instruction also implements AFI 10-301, Responsibilities of Air Reserve
+Component (ARC) Forces, 16 Aug 2006, to ensure provision of GI&S support to all gained Air
+reserve Components (ARC) Air National Guard (ANG) and USAF Reserve; Department of
+Defense (DoD) Instruction 5000.56, Programming Unique Mapping, Charting and Geodesy
+(MC&G) Requirements for Developing Systems, 11 September 1991; DoD Instruction 5030.59,
+National Geospatial-Intelligence Agency (NGA) LIMITED DISTRIBUTION Geospatial
+Intelligence, 7 Dec 2006; DoD Directive 5105.60, National Geospatial-Intelligence Agency
+(NGA), 29 July 2009; Chairman Joint Chiefs of Staff Instruction (CJCSI) 3901.01B,
+Requirements for Geospatial Information & Services, 15 Jul 2004; CJCSI 3900.01C, Position
+(Point and Area) Reference Procedures, 30 June 2007. The AFI serves the standardization of
+requirements under AFI 63-101, Acquisition and Sustainment Life Cycle Management, 17 April
+2009, and AFI 14-111, Intelligence in Force Modernization, 10 Jan 2005, as applicable to
+developing systems requiring GI&S. The term GI&S, formerly known as Mapping, Charting
+and Geodesy (MC&G), continues to include orthorectified imagery based geospatial products,
+[e.g. Controlled Image Base, (CIB®)], but not imagery intelligence and other intelligence. The
+Air Force GI&S discipline is addressed in this instruction. GEOINT and other GEOINT
+components are addressed separately. GEOINT will be the subject of a forthcoming AFI.
+Ensure that all records created as a result of processes prescribed in this publication are
+maintained in accordance with AFMAN 33-363, Management of Records, and disposed of in
+ 2                                                                     AFI14-205 5 MAY 2010
+
+
+accordance with the Air Force Records Disposition                Schedule    (RDS)    located   at
+https://www.my.af.mil/afrims/afrims/afrims/rims.cfm
+
+Refer recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the AF IMT 847, Recommendation for Change of Publication; route
+AF IMT 847s from the field through the appropriate functional’s chain of command. Field
+activities must send implementing publications to the higher headquarters functional OPR for
+review and coordination before publishing.
+
+SUMMARY OF CHANGES
+
+This document is substantially revised and must be completely reviewed
+
+This AFI incorporates changes resulting from reorganization and implementation of a
+capabilities-based A-Staff structure for Deputy Chief of Staff for Intelligence, Surveillance and
+Reconnaissance, HAF/A2 and the tasking of the Air Force Intelligence, Surveillance and
+Reconnaissance Agency (AFISRA) with the integration of USAF GEOINT capabilities into the
+National System for Geospatial Intelligence (NSG), the deactivation of the Air Force Command,
+Control, Intelligence, Surveillance & Reconnaissance Center (AFC2ISRC), as well as the change
+of the ACC Combat Targeting and Intelligence Group (CTIG) to the Air Force Targeting Center
+(AFTC). It reflects the organization of a Geospatial Community of Interest (COI). It cross-
+references a specific checklist for the proper application and standardization of GI&S
+requirements to developing systems. It prescribes a waiver system to ensure use of standard
+products data and tools, and procedures to gain approval for substitute products if standard
+products are not available. This instruction provides revised and expanded guidance on GI&S
+functional requirements analysis, documentation and validation in the system development
+process; driven by integration with AFI 14-111, Intelligence in Force Modernization, and recent
+changes in intelligence roles, responsibilities and activities in the recently revised AFI 63-101,
+Acquisition and Life Cycle Sustainment Management. In overall terms, the revision establishes
+closer rapport with targeting and other primary users of GI&S, as well as all end users regardless
+of command. This instruction does not provide authoritative guidance on the following because
+they are not within AF/A2CG functional purview: DoD Flight Information Publications (FLIP),
+Digital Aeronautical Flight Information File (DAFIF), and other materials for which Air Force
+Flight Standards Agency (AFFSA) has functional responsibility; or Evasion Charts for which
+Joint Personnel Recovery Activity (JPRA) is responsible, and the USAF Installation GI&S
+(IGI&S) program, formerly known as GeoBase, for which AF/A7C has policy authority. This
+AFI supersedes AFI 14-205, Geospatial Information and Services, (GI&S), 4 May 2004.
+AFI14-205 5 MAY 2010                                                                           3
+
+
+Section A—GI&S Responsibilities.
+
+1. National Geospatial-Intelligence Agency (NGA). DoD Directive 5105.60 establishes the
+Director, NGA as the DoD GEOINT Manager with authority to provide GEOINT functional
+guidance to the NSG. This is further articulated in NSG Directive FM 1100 Roles and
+Responsibilities of the Functional Manager of the National System for Geospatial Intelligence
+(NSG) and the Establishment of the NSG. More information on NGA is located on their home
+pages at: NGA Internet Homepage: http://www.nga.mil/ SIPRNET: http://www.nga.smil.mil/
+JWICS: http://www.nga.ic.gov/ and; NGA Geospatial Intelligence (GEOINT) Basic Doctrine,
+Publication 1-0, September 2006.
+2. HQ USAF/A2, D eputy Chief of Staff, Intelligence, Surveillance, and Reconnaissance.
+AF/A2 is the Air Force GEOINT Functional Manager (FM) and designates the Air Force
+Intelligence, Surveillance and Reconnaissance Capabilities Directorate, GEOINT Capabilities
+Division, AF/A2CG, as the Air Force GI&S FM. The AF/A2CG GI&S FM validates all GI&S
+requirements as identified in this instruction to ensure Air Force coordinated GI&S requirements
+are pursued through technical and funding channels when they cannot immediately be made
+available by NGA.
+   2.1. AF/A2CG. As the Air Force GI&S FM, AF/A2CG is the focal point for Air Force
+   geospatial policy planning and provides top level guidance to the Air Force geospatial
+   enterprise consisting of AFISRA, the Air Force GEOINT Office (AFGO) and HQ ACC/A2
+   geospatial components. AF/A2CG is responsible to organize, train and equip Air Force
+   personnel in the GI&S function. AF/A2CG is the primary Air Force interface with NGA, the
+   Combatant Commands, Under Secretary of Defense for Intelligence, (USD(I)) and the other
+   services on all GI&S matters of policy.
+       2.1.1. AF/A2CG maintains overall validation authority for all Air Force GI&S functional
+       and CONUS area requirements. AF/A2CG is the focal point for all Air Staff, Major
+       Command (MAJCOM), Field Operating Agency (FOA) and Direct Reporting Unit
+       (DRU) customers needing routine assistance in any GI&S discipline. As part of
+       AF/A2CG, the Targeting Branch is the USAF FM for Air Force targeting and is a major
+       focus for geospatial data and activity application. GI&S generally serves as the
+       foundation of targeting operations. AFI 14-117, Air Force Targeting, 13 May 2009, lists
+       the responsibilities of the Targeting FM.
+       2.1.2. AF/A2CG will chair the Air Force Geospatial Community of Interest (COI), to
+       facilitate the exchange of information and to increase quality of geospatial processes and
+       levels of proficiency. The COI will identify data, create a shared understanding and
+       eliminate duplicative data. In addition to the COI, AF/A2CG will establish a Community
+       of Practice (COP) web page in the Air Force Knowledge Now (AFKN) to post products,
+       general information, minutes and related geospatial information for the widest Air Force
+       dissemination. MAJCOM/FOA/DRU and other subordinates are encouraged to produce
+       and maintain a COI web site for MAJCOM level portrayal of geospatial information.
+       The purpose of this site is to provide information for all command users of GI&S to
+       better understand related doctrine, directives, procedures and provide a general
+       background concerning the GI&S functional area. A major aspect of these pages will be
+       the many links that will permit the user to gather information at a greater depth if so
+       desired. In addition, these web pages will provide a link to a number of GI&S
+ 4                                                                       AFI14-205 5 MAY 2010
+
+
+        requirement areas for examination of existing requirements and formulation of new
+        requirements.
+        https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11
+     2.2. AF/A2R. The ISR Resources organization represents AF/A2 at the DoD level for the
+     development, coordination and implementation of fiscal and information support plans and
+     programs. AF/A2C advises AF/A2R concerning plans, programs, resources, support
+     initiatives, and technical advancements that affect GI&S.
+     2.3. AF/A2D. The Director for ISR Strategy, Integration & Doctrine is responsible
+     for GI&S personnel resource utilization and training issues.
+     2.4. AF/A2Q. The Director for ISR Innovations & Unmanned Aircraft System (UAS) Task
+     Force is responsible for the Innovation Program which includes use of imagery and mission
+     planning data to facilitate selected operations. AF/A2Q shall provide close coordination and
+     support to AF/A2CG concerning lessons learned from operational uses of geospatial data in
+     crisis situations.
+     2.5. AF/A7C. This organization is responsible for GI&S support for the installation and
+     facilities mission known as the IGI&S Program. The IGI&S Program is implemented at each
+     USAF installation and echelon through a corresponding Geo Integration Office (GIO).
+     IGI&S ensures the provision of and access to common, accurate and current geospatial
+     information for all Air Force installations, ranges and property. Geospatial services are the
+     combination of Information Technology (IT) infrastructure, services, and architectures that
+     enable access to geospatial information. AFI 32-10112, Installation Geospatial Information
+     and Services, (Installation GI&S), 19 Oct 2007, is the applicable instruction.
+3. Air Force Intelligence, Surveillance, and Reconnaissance Agency (AFISRA). Air Force
+Intelligence, Surveillance and Reconnaissance Agency as the Air Force GEOINT Element
+(AFGE) is the lead agency for integrating Air Force GEOINT capabilities into the NSG. The
+AFGE following AF/A2CG policy guidance will ensure Air Force GEOINT assets are properly
+integrated and tailored to fit within the NSG resulting in maximum Air Force mission
+effectiveness. The AFGE implements HQ USAF policy on all Air Force GI&S planning,
+training, equipping, programming, and budgeting matters.
+4. Air Combat Command (ACC), Air Force Targeting Center (AFTC). Assigned to ACC,
+the AFTC produces and delivers timely, tailored targeting and geospatial intelligence, combat
+identification products, strategic analysis, and unit support enabling the full spectrum of military
+operations. It is comprised of three active duty units (15 Intelligence Squadron (IS), 20 IS and
+36 IS) with additional Air Force Reserve and Air National Guard forces providing combat
+capability. The AFTC conducts the Air Force precise Point Positioning certification and training
+program; produces Controlled Imagery Base (CIB) products; and maintains and distributes the
+Geospatial-Intelligence Product Library (GPL) for HQ USAF. The AFTC meets operational
+requirements by producing tailored intelligence fused from all-source data and made available
+on-line or delivered in the most expedient manner to ensure on-time delivery.
+5. HQ Air Force Flight Standards Agency (AFFSA. ) As outlined in AFI 11-201, Flight
+Information Publication, 31 March 09, the Aeronautical Information Branch (HQ AFFSA/A3IF)
+investigates, defines, consolidates, assembles, validates and lists, in order of priority, Air Force
+operational requirements for Flight Information Publications (FLIP), Digital Aeronautical Flight
+AFI14-205 5 MAY 2010                                                                            5
+
+
+Information File (DAFIF), and related aeronautical information. AFFSA/A3IF is the Air Force
+point of contact with NGA on FLIP and DAFIF matters to include nonprocedural discrepancies.
+AFFSA/A3IF is also the point of contact to the Federal Aviation Administration (FAA), National
+Aeronautical Charting Office, (NACO) for NACO aeronautical products.
+6. HQ Air Force Materiel Command (AFMC/A2). HQ AFMC/A2 and subordinate
+organizations analyze weapon system performance requirements, Tactics, Techniques and
+Procedures, Concepts of Employment, threat environments and existing and planned GI&S
+technology for the purpose of designing and developing the most appropriate GI&S solutions for
+weapon systems and Automated Information Systems (AIS), in basic development or undergoing
+block or spiral upgrades. These solutions will address, but are not limited to, data requirements,
+data storage requirements, training requirements, facilities, and funding requirements. HQ
+AFMC/A2O/X, ISR Operations, responsibilities center upon those requirements that relate to
+weapon system research, development, modification, test and sustainment operations within the
+AFMC management structure. AF Space Command (AFSPC) has oversight and support of
+space programs outside of AFMC management. However, because AFMC programs are the
+biggest users of GI&S, AFMC will have central management for obtaining GI&S for all AF
+programs.
+   6.1. Assures Air Force Joint Capabilities Integration and Development System (JCIDS)
+   documents reflect potential GI&S requirements as prescribed by this AFI and CL-1, CJCSI
+   3312.01A, Joint Military Intelligence Requirements Certification, AFI 14-111, Intelligence
+   in Force Modernization, AFI 63-101, Acquisition and Life Cycle Sustainment Management,
+   AFI 10-601, Mission Needs and Operational Requirements Guidance and Procedures, and
+   local command GI&S requirements guidance. The final validation action for all GI&S
+   requirements rests with AF/A2CG. AF/A2CG will undertake any policy level coordination
+   as may be required with NGA. Non policy level coordination by AFMC/A2O/X with NGA
+   and any command NGA Liaison Officer is encouraged.
+   6.2. The AFMC/A2O/X GI&S role is to ensure comprehensive analysis and documentation
+   of GI&S functional requirements and provision of GI&S support to research, development,
+   test and sustainment activities under AFMC management; executed in conformance with AFI
+   14-205, CL-1, and command procedures. AFMC/A2O/X is also responsible for managing
+   and directing command GI&S system-of-systems analysis to minimize system-specific,
+   stove-piped GI&S solutions for the Air Force weapon system portfolio. AFMC/A2O/X will
+   manage and direct the development and sustainment of an on-line database to track
+   functional GI&S requirements of weapon systems under AFMC management. GI&S
+   requirements identified through AFMC processes will be managed by AFMC/A2O/X or their
+   subordinate offices and not directly by NGA personnel. AFMC will submit area
+   requirements IAW paragraph 8.2.and participate in requirements calls as necessary.
+   6.3. The AFMC Intelligence Squadron will maintain a database of GI&S functional
+   requirements and shortfalls for all Air Force research, development, test and sustainment
+   programs and projects. The database will maintain sufficient information to support
+   development and execution of the AF GI&S strategy development; to include research
+   proposals, budgeting and planning activities supporting current and future GI&S dependent
+   technologies. It will enable users to understand potential operational impacts caused by
+   transitioning to future NGA data, format and programs in a changing all-digital GI&S
+   environment. This living database will be kept current as new systems enter the preliminary
+ 6                                                                      AFI14-205 5 MAY 2010
+
+
+     planning phases and legacy systems are retired. Any required releasability caveats will be
+     maintained and followed.
+     6.4. The AFMC intelligence community is periodically involved in Foreign Military Sales
+     (FMS) programs. These programs are of high importance to US-Allied cooperation.
+     Because each case is based on a wide variety of circumstances, each must be negotiated by
+     NGA through AF/A2CG.
+        6.4.1. AFMC/A2O/X and/or subordinate AFMC organizations will request release of
+        NGA products to FMS programs by memorandum to AF/A2CG, a minimum of 90 days
+        prior to need. The memorandum will contain, at a minimum, the following information
+        elements: (1) FMS Program name, (2) FMS program contract number, (3) Receiving
+        country, (4) NGA products required (series, stock numbers), (5) Intended product usage,
+        (6) Date products required, (7) Impact if products are not released, and (8) Date products
+        are required. The memorandum will be coordinated with the AFMC NGA liaison prior
+        to submission.
+7. Air Force Components of Combatant Commands, MAJCOMs, FOAs,
+DRUs. Commanders of these organizations will establish a GI&S Point of Contact (POC). The
+GI&S POC will consist of personnel trained sufficiently to conduct the assigned responsibilities
+of this paragraph. AF/A2CG is endeavoring to increase the understanding of the geospatial
+function and the need to further integrate GI&S with the other GEOINT and targeting functions.
+Failure to have a basic foundation of GI&S understanding among key personnel can impact
+operations and degrade mission effectiveness. The USAF GI&S Smart Book, available on the
+Geospatial               Community                  of              Interest            (COI),
+https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11 is a supporting
+tool to the GI&S function. The GI&S Smart Book contains instructions to obtain Computer
+Based Training disks. Completion of this training should be considered as a minimum if other
+courses cannot be taken in residence. In addition, AF/A2CG has published AFI 14-205,
+Checklist 1, as mandatory for implementation of GI&S requirements. Use of the Smart Book
+and AFI 14-205, Checklist 1, will help fill the void of not having experienced GI&S personnel.
+Each organization will:
+     7.1. If required by parent command, issue supplemental instructions to this instruction within
+     six months of its publication. Implementing publications will be forwarded to the higher
+     headquarters functional OPR for review and coordination before publishing.
+     7.2. Each organization will supply the name of a POC to AF/A2CG, and AFMC/A2O, to
+     receive emails for alerts or tasking in reference to GI&S requirements management. This
+     POC will be responsible for coordination of responses from the organizations. This POC can
+     be additional to the primary GI&S POC according to command needs.
+     7.3. Ensure GI&S points of contact establish and maintain GI&S distribution accounts and
+     submit routine and Automatic Distribution (AD) requests to Defense Logistics Agency, as
+     necessary. Manage all life-cycle needs of the Geospatial Product Library-Air Force (GPL-
+     AF) to ensure readiness of latest data and products.
+     7.4. As required, prepare GI&S Annexes (Annex M) to Combatant Command Operation
+     Plans (OPLANs) and Concept Plans (CONPLANs) according to AFMAN 10-401, Operation
+     Plan and Concept Plan Development and Implementation, 1 May 1998, and supported
+AFI14-205 5 MAY 2010                                                                               7
+
+
+  command directives. Ensure dissemination of digital materials via the GPL-AF supersede
+  and replace traditional bulk hardcopy materials currently in War Reserve Stock (WRS).
+  Remember, hard copy charts from WRS will not have Chart Updating Manual (CHUM)
+  updates unless the updates are manually plotted or the chart is created using a system that
+  applies the updates.
+     7.4.1. Identify, request and maintain on GPL-AF, appropriate GI&S stocks/data to
+     support Combatant Command OPLAN, or CONPLAN tasking.
+     7.4.2. Conduct War Reserve Stocks (WRS) planning. The criticality of traditional WRS
+     planning is decreasing because of increased use of digital data on GPL-AF. However, the
+     following still applies to Combatant Commands WRS planning. Where applicable,
+     identify WRS requirements for movement in the Time Phased Force Deployment
+     Documentation Listing (TPFDDL) and the OPLAN or CONPLAN Logistics Annex. Use
+     AFMAN 10-401 when developing and reviewing Annex M to OPLAN, CONPLAN.
+     AFMAN 10-401 provides air components preparing plans for an OPLAN with guidance,
+     formats and procedures consistent with the Joint Operation Planning and Execution
+     System. AFMAN 10-401 also guides MAJCOMs when preparing plans to support Air
+     Force unilateral plans. Generic procedures for estimating WRS quantities are available
+     from                       the                      Geospatial                   COI:
+     https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11. If GPL-
+     AF and reproduction resources exist, reduce WRS quantities to reconciled MAJCOM
+     required levels. Quantities should diminish as GPL-AF and reproduction resources
+     continue to increase.
+  7.5. Establish procedures to ensure sufficient GI&S items are available to sustain routine
+  operations and ensure adequate re-supply. Issue maps, charts, digital GI&S data and related
+  items when required. Maintain accessibility to pertinent NGA instructions, manuals and
+  catalogs.
+  7.6. Actively coordinate with command operations, plans, training, logistics, requirements,
+  inspection, and intelligence staffs to ensure doctrine, strategy, tactics, logistics, and Research,
+  Development, Test, and Evaluation (RDT&E) efforts adequately address GI&S functional
+  requirements.
+  7.7. Assist in the origination and fielding of new procedures and techniques to facilitate Air
+  Force generated changes such as the GPL-AF development.
+  7.8. Ensure GI&S programs are funded as applicable.
+  7.9. Ensure data/product reviews are accomplished and responses to all NGA GI&S product
+  reviews are routed through the chain of command to AF/A2CG for Air Force position.
+  7.10. Participate in annual Air Force GEOINT conferences, periodic special GI&S meetings
+  and the Air Force GI&S COI, to address critical GI&S matters of mutual concern.
+  7.11. Ensure subordinate units are aware of, and comply with Air Force and Joint Chiefs of
+  Staff (JCS) policy regarding use of World Geodetic System (WGS) and other datums as
+  prescribed in CL-1, relating to this instruction. All organizations will use the most current
+  WGS84 for all GI&S support to operations, unless otherwise directed by the cognizant joint
+ 8                                                                     AFI14-205 5 MAY 2010
+
+
+     combat commander, and will only use NGA validated software for datum transformations.
+     This is an item for inspection.
+     7.12. Provide GI&S support to all gained Air Reserve Components (ARC) [Air National
+     Guard (ANG) and USAF Reserve] IAW AFI 10-301, Responsibilities of Air Reserve
+     Component (ARC) Forces, 16 August 2006.
+     7.13. Coordinate GPL-AF installation, maintenance and information requests with HQ
+     ACC/A2YS, and AF/A2CG.
+
+Section B—Identifying Requirements for Geospatial Information.
+
+8. GI&S Requirements Flow and Definitions: There are three major classes of GI&S
+requirements. The NSG Needs List, Area Requirements and Functional Requirements for
+developing systems and operational capabilities. MAJCOMs, FOAs, and DRUs will identify
+new geospatial capability needs in the NSG Needs List. These requirements will be prioritized
+and validated by AF/A2CG. Area Requirements are requests for production of standard NGA
+products and data over specific geographic areas. Functional Requirements, managed by HQ
+AFMC/A2O/X, are for existing, modified and new GI&S information in support of Air Force
+research, development, test and sustainment activities under AFMC management. CJCSI
+3901.01B and AFMAN 10-401 prescribe GI&S functional and area requirements identification
+processes for DoD. AFI 14-111, prescribes the integration of intelligence into the Air Force’s
+modernization processes. Air Force CL-1 related to AFI 14-205, and AFMC guidance provides
+the means for writing new GI&S requirements or checking the validity of existing requirements.
+AF/A2CG maintains validation authority and authority to negotiate policy between Air Force
+and NGA.
+     8.1. Functional GI&S requirements originate in the system development community as an
+     output of AFMC systems engineering-level analysis conducted on combat system
+     performance requirements provided by the operational community. These requirements
+     serve as the foundation for developing and maintaining the appropriate GI&S materials and
+     support to the entire weapon system life cycle, starting with developmental planning through
+     weapon system retirement, using relationships identified in Section A. New functional
+     requirements are forwarded from the identifying AFMC intelligence office (or AFSPC
+     intelligence office for space programs) through AFMC/A2O/X to AF/A2CG. AF/A2CG
+     validates and forwards all fully processed functional requirements to NGA for adoption,
+     development and production. Some of these requirements and those of the NSG Needs List
+     are coordinated for adoption by other services to increase interoperability.
+     8.2. Area requirements are requests for standard products and data over specific geographic
+     areas. AF/A2CG will manage the Air Force area requirements process for CONUS training
+     areas including Alaska. COCOMS manage area requirements for operational areas in
+     OCONUS.
+     8.3. System-level requirements are those GI&S requirements derived from engineering-level
+     analysis of combat performance requirements conducted in collaboration with Program
+     Offices.    They represent the translation of specified operational capabilities into
+     specifications for software, hardware, data and all components that comprise the finished
+     system.
+AFI14-205 5 MAY 2010                                                                           9
+
+
+   8.4. AFMC/A2O/X, and Program Development Offices coordinate new or modified
+   systems’ GI&S data needs to ensure interoperability and compatibility of NGA and other
+   GI&S data sources. It is of utmost importance that this be done as early as possible in the
+   development cycle.
+   8.5. All computer software designed to use GI&S data must use NGA authorized data,
+   information, and NGA or AF/A2CG certified formats to the extent possible without
+   intervening transformations. The goal is to eliminate need for transformations that can impact
+   interoperability, and data fidelity or incur unnecessary developmental or operational costs.
+   The use of unauthorized proprietary formats is strictly prohibited and an area of concern for
+   inspection.
+   8.6. Feature data in support of Feature Based Operations (FBO) falls under the NGA
+   Topographic Feature Data Management (TFDM) program to provide feature data at various
+   resolution levels, designed to support specific missions. AF/A2CG will identify feature
+   requirements for transmission to NGA ensuring future aeronautical data is available to fulfill
+   all Air Force mission needs.
+   8.7. Identifying Personnel Training Requirements. NGA’s National Geospatial-Intelligence
+   College (NGIC) provides both basic and advanced, specialized GI&S training.
+   Organizations at all levels having key GI&S positions will ensure incumbents have or receive
+   the formal NGIC training needed to perform assigned responsibilities. The 17th Training
+   Wing, Goodfellow AFB, TX, provides broad GI&S training as needed to supplement
+   intelligence skills courses.
+   8.8. Functional requirements programs will be managed to the maximum extent possible
+   using web-based requirements tools. These tools should provide an edit-change capability of
+   GI&S requirement categories, and enable review of existing requirements or formulation of
+   new requirements. The tools should also have tracking capabilities and require the user to
+   have an approved account to access the tool.
+9. Air Force Geospatial Programs
+   9.1. Geopositioning and Common Geopositioning Services (CGS). AF/A2CG serves as the
+   FM for Air Force targeting IAW AFI 14-117. AF/A2DF, Force Management and Readiness
+   Division oversees development of USAF intelligence programs IAW NGA certification
+   standards for precise point positioning training and certification. AF/A2DF, coordinates with
+   AF/A2CG on matters requiring target coordinate mensuration expertise. HQ ACC/A2 acts as
+   the lead MAJCOM for matters related to training and certification of personnel performing
+   target coordinate mensuration. The Air Force Targeting Center has responsibility under HQ
+   ACC/A2. AF/A2CG will work with the MAJCOMS to transition new technologies that
+   satisfy operational geopositioning requirements.
+   9.2. Geospatial Product Library Air Force (GPL-AF). HQ ACC/A2YS has responsibility for
+   management of the GPL-AF. See HQ ACC COI for a detailed program description:
+   https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=AC-IN-00-07 The Air Force
+   Targeting Center maintains and disseminates GPL-AF products to Air Force units. The
+   GPL-AF is a product server designed to store and disseminate GI&S data for use at all Air
+   Force levels. HQ ACC/A2YS develops GPL-AF modernization strategies to meet Air Force
+ 10                                                                 AFI14-205 5 MAY 2010
+
+
+   data storage and data distribution requirements, and ensures all GPL-AF functions are
+   compatible with current and future Air Force systems.
+   9.3. AF/A2CG will provide specific requirements management of Government-Off-the-
+   Shelf/Commercial-Off-the-Shelf (GOTS/COTS) software packages being considered for
+   standard use by Air Force C4ISR organizations and systems. GIS software packages are the
+   primary means to manipulate standard NGA authorized information. AF/A2CG will provide
+   Air Force representation to the NGA MCG&I ESG and be the focus of related requirement
+   collection for Air Force. NGA Instruction 8400.1R7, 29 Jan 07, covers acquisition of
+   information technology products and software validation. The NGA certification ensures
+   both COTS and GOTS meet accuracy requirements when used with NGA products, data or
+   adopted standards. This certification is the formal acknowledgement of acceptability. AFI
+   33-114, Software Management, identifies overall responsibilities for management of COTS
+   and GOTS.
+
+Section C—Obtaining Geospatial Information
+
+10. GI&S Products.
+   10.1. Data Access. Air Force GPL (GPL-AF) is the main source for NGA standard digital
+   GI&S data. GPL-AF’s are deployed to the MAJCOM and squadron level. The master GPL-
+   AF contains worldwide geospatial product coverage (maps, charts, elevation data, and
+   imagery based geospatial products such as CIB), and is maintained at AFTC, Langley AFB,
+   VA. When digital products are not available from GPL-AF, customers can obtain existing
+   NGA products for standard and crisis or contingency support using sources or procedures
+   listed below.
+      10.1.1. The NGA Gateway and Softcopy Distribution facility provides additional means
+      for on-line product distribution, and some software tools for manipulation of products
+      and data.
+      10.1.2. Defense Logistics Agency (DLA), NGA Catalogs of Maps, Charts and Related
+      Products provide guidance for ordering standard NGA products available from DLA.
+      10.1.3. In areas where standard NGA products are not produced or available through
+      normal channels, identify requirements for substitute, non-standard products through the
+      supported command’s GI&S chain of command as appropriate.
+      10.1.4. Special attention is required regarding distribution caveats. NGA uses a
+      "LIMITED DISTRIBUTION" marking to indicate that distribution of certain unclassified
+      imagery and geospatial information is limited to DoD and authorized DoD contractors in
+      accordance with the Defense Federal Acquisition Regulations Supplement. Air Force
+      organizations at all levels having responsibilities to produce or disseminate LIMITED
+      DISTRIBUTION NGA data, must ensure this data remains in official channels prescribed
+      by DODD 5030.59.
+      10.1.5. Air Force GI&S Ordering Guidance. When products are not available via the
+      GPL, use the latest versions of the following publications or web sites for guidance on
+      ordering and stocking GI&S products.
+          10.1.5.1. NGA, DLA Catalogs of Maps, Charts and Related Products, all volumes.
+AFI14-205 5 MAY 2010                                                                        11
+
+
+         10.1.5.2. AFMAN 10-401, Operation Plan and Concept Plan Development
+         Implementation.
+         10.1.5.3. AFI 11-201, Instruction for Flight Information Publications (FLIP).
+         10.1.5.4. AFI 11-230, Instrument Procedures.
+         10.1.5.5. Defense Logistics Agency Internet Homepage (http://www.dla.mil/)
+         10.1.5.6. Defense    Supply        Center      Richmond       Internet     Homepage
+         (http://www.dscr.dla.mil/)
+         10.1.5.7. NGA Gateway, www.nga.mil (NIPRNet server), osis.nima.mil (SBU/OSIS
+         Server), www.nga.smil.mil (SIPRNet Server), www.nga.ic.gov (JWICS Server).
+         Intelink-U, https://www.intelink.gov/nga (NIPRNet server)
+  10.2. Obtaining Precise Points
+     10.2.1. Units having geopositioning software capability and associated Digital Point
+     Positioning Data Base (DPPDB) can perform geopositioning IAW para. 2.3.2.1. AFI 14-
+     117, 13 May 2009. Identify new DPPDB coverage needs IAW Section B, this AFI.
+     DPPDB should be the preferred source for precise point generation. If DPPDB alone
+     cannot be used, users employing imagery registration techniques should use source, in the
+     following order: National Technical Means, commercial, tactical or other mission
+     imagery tied to DPPDB.
+     10.2.2. In areas where no DPPDB coverage exists, or where point requirements exceed
+     local geopositioning capabilities, units can obtain geopositioning support from the AFTC
+     or NGA. Information concerning NGA’s program can be found on the SIPRNet at:
+     http://sps.stl.nima.smil.mil/products/nimapoints/index.html. Information concerning
+     AFTC products can be found on the SIPRNet at: http://ctig.langley.af.smil.mil. Each
+     year AF/A2CG tasks the MAJCOMs, FOAs and DRUs to estimate their 6-month to 1-
+     year points requirements and geopositioning priorities. The resultant level-of-effort
+     estimates are forwarded to NGA, in a consolidated Air Force requirement. Throughout
+     the year, as geopositioning data is needed for individual points, users will send requests
+     directly via electronic means to “NGA ST LOUIS AFS MO//PRTC//.” Commercial:
+     (314) 676-5764 or DSN: 693-5764. Include: accuracy required in feet/meters for
+     Circular Error and Linear Error values, imagery, with a description of the point desired,
+     required datum (e.g. World Geodetic System), type of coordinates desired (e.g.,
+     geographic or Military Grid Reference System (MGRS), IAW CJCSI 3900.01, Position
+     Reference Procedures; as well as priority and justification. Coordinate the turn-around
+     time for completing routine requests and include information copies to the appropriate
+     higher command, and the Air Force NGA Support Team.
+     10.2.3. Crisis Support. Quick response support for geopositioning will be submitted
+     through the responsible Unified Command to the appropriate NGA Support Team.
+     Additionally, the AFTC can provide geopositioning for crisis support. Pre-arrange the
+     turn-around time in number of hours per point according to mission need and NGA or
+     AFTC resource availability.
+  10.3. Obtaining Geodetic Survey Support. Send requirements for geodetic survey support to
+  AF/A2CG through the responsible MAJCOM, FOA or DRU GI&S POCs. See Geospatial
+ 12                                                                    AFI14-205 5 MAY 2010
+
+
+   COI for instructions concerning the format of the Geodetic Support Worksheet and the guide
+   for establishing Geodetic and Geophysical (G&G) accuracy standards for generic surveys:
+   https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11
+   10.4. GI&S Products for Contractors. Contractors needing standard GI&S product support
+   will submit requests through their program’s Primary Contract Officer (PCO). The PCO then
+   forwards requests to the appropriate command GI&S office. Compliance with AFI 31-601,
+   Industrial Security Program Management, 29 January 05, is required. System Engineering
+   Technical Assistance (SETA) contractors, with a non-disclosure statement, are exempt from
+   access restrictions pertaining to other contractors. Systems are to use NGA data in standard
+   format with no format or data conversions to any proprietary format. Command GI&S
+   offices will review and validate contractor requests and forward requisitions to the Defense
+   Supply Center Richmond-JN (DSCR-JN).
+   10.5. System developers under Air Force jurisdiction must coordinate with the AFMC/A2 or
+   their appropriate MAJCOM GI&S office on planned designs, new system development or
+   existing system modifications that call for GI&S data to facilitate and ensure interoperability
+   and compatibility with NGA databases. All computer software that will use NGA data must
+   be directly compatible with the NGA databases and the NGA formats. The goal is to
+   eliminate the need for translations or transformations that may impact NGA data fidelity,
+   interoperability, accuracy and cost.
+11. Non-NGA GI&S Products. MAJCOMs, FOAs and DRUs will make every effort to ensure
+only NGA or AF/A2CG authorized information is used. Therefore, only request non-NGA
+products or contract production support when AF/A2CG or the appropriate Combatant
+Command GI&S office confirms the required support cannot be obtained from NGA.
+   11.1. Requesting non-NGA Products. With the exception of United States Geological
+   Survey (USGS) and Central Intelligence Agency (CIA) products, submit requests for existing
+   GI&S products not produced by NGA or specifically addressed in this instruction (e.g.,
+   native edition maps) to the AF/A2CG or the GI&S point of contact of the Combatant
+   Command responsible for the area covered by the products. Specific instructions for
+   ordering non-NGA products, NGA Instructions, Manuals, Catalogs and FLIP products, are
+   covered               in                the              Geospatial                  COI:
+   https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11
+
+Section D—Using Geospatial Information & Services (GI&S)
+
+12. General. GI&S serves as the foundation for operations and provides basic interoperability
+for systems and forces. GI&S is critical to operations. Basic understanding of key GI&S
+fundamentals is necessary to prevent adverse or deadly mission impact through introduction of
+errors. The following paragraphs highlight principal GI&S areas where detailed understanding
+and application is paramount.
+   12.1. Datums, Coordinates and Reference Systems, and World Geodetic System (WGS84).
+   An in-depth understanding of datums is critical to modern operations. WGS84 is the
+   standard DoD reference system (datum) for all DoD GI&S products and services. Where
+   feasible, Air Force organizations will use the most current WGS84 for all activities requiring
+   GI&S data. When necessary to convert to or from WGS84 and local or regional datums, Air
+AFI14-205 5 MAY 2010                                                                           13
+
+
+   Force organizations will use NGA validated datum transformation software. CJCSI
+   3900.01C, Position (Point and Area) Reference Procedures, 30 Jun 07, requires selection of
+   a standard datum, as prescribed by the Combatant Commander, in areas where operation on
+   WGS84 is not possible. In addition to NGA references below, see Appendix 1 of the USAF
+   GI&S Smart Book for the required critical understanding of Datums, Coordinate Systems
+   and product accuracy. The USAF Smart Book is available on the Geospatial COI:
+   https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11.
+   12.2. Reference Systems. Coordinate reference systems are the means of communicating
+   locations. It is critical that all joint/combined participants communicate in the same terms.
+   Defense Mapping Agency Technical Manual 8358.1, Datums, Ellipsoids, Grids, and Grid
+   Reference Systems, gives current authoritative guidance for the use and portrayal of grids
+   and grid reference systems information as applicable to maps and charts.                 See:
+   http://www.nga.mil/GandG/.
+   12.3. Vertical Datums. With reference to Height Above Ellipsoid (HAE) and Mean Sea
+   Level (MSL), understand your requirement prior to submission and ensure mensuration
+   needs according to weapon or Automated Information System (AIS) requirements. Ensure
+   conversion of dissimilar vertical datum as necessary.
+   12.4. Transformations. GEOTRANS or NGA certified transformation algorithms will be
+   used for all transformations related to the three paragraphs above. Errors are induced each
+   time a transformation is made, but use of the NGA approved software will limit the error.
+   Transformation      software    information     is   on-line   in   NGA      G&G      pages
+   http://www.nga.mil/GandG/.
+13. Geopositioning and Accuracies. Geopositioning is critical to the employment of Precision
+Guided Munitions (PGM). Paragraph 9.1 describes the means and methods used to obtain
+precise points. NGA’s DPPDB is currently the only product available to users capable of
+providing accuracies adequate for coordinate seeking weapons. All Air Force users must use
+NGA validated software for targeting, unless AF/A2CG authorizes otherwise.
+   13.1. Coordinates for Targeting and Related Precise Points. Maps, charts and related GI&S
+   data and imagery derived products such as Controlled Image Base (CIB®) are unsuitable for
+   coordinate extraction for precision targeting purposes. Digital Point Positioning Database
+   (DPPDB), IAW AFI 14-117, 13 May, 2009, is the key to generation of all target coordinates
+   and related precise points for navigation and offset aimpoints. If you do not have DPPDB,
+   NGA or AFTC support can be requested through organizational channels.
+   13.2. Photocopied or reproduced digitized maps and charts. Producing map copies may
+   introduce distortions and errors to the original product. Although making copies may be the
+   most expeditious method for preparing strip charts and mission packages, Air Force
+   discourages using these copies to derive coordinates or measure distances. Mission Planning
+   System (MPS) and Commercial Joint Mapping Tool Kit (CJMTK), negates “Strip Chart”
+   printing distortion concerns because mission planning software and CJMTK route
+   calculations are performed internal to the software; not on potentially distorted paper copies.
+   13.3. Many commercially produced maps and charts are copyrighted, as are many of the
+   foreign produced maps and charts available through NGA. Users of these products should be
+   aware of any potential copyright infringements.
+ 14                                                                     AFI14-205 5 MAY 2010
+
+
+14. Updating and Disposing of Material. Use the following documents to update aeronautical
+charts and FLIP before using them. Users are responsible for annotating the corrections to NGA
+publications or products prior to use.
+   14.1. NGA Electronic Chart Updating Manual (ECHUM) contains a list of published
+   aeronautical charts by series with a list of known corrections. ECHUM is available on all the
+   Aeronautical web sites:
+https://aero.geointel.nga.mil/products/webchum/index.cfm     (NIPRNet)
+http://aero.geoint.nga.smil.mil/products/webchum/index.cfm (SIPRNet)
+http://aero.geoint.nga.ic.gov/products/webchum/               (JWICS)
+       14.1.1. Report changes to FLIP as directed in AFI 11-201 and in FLIP, General
+       Planning. Process changes qualifying as Notice to Airman (NOTAM) material according
+       to AFI 11-230, Instrument Procedures. Consult AFFSA/A3IF for guidance.
+   14.2. Processing Obsolete, Superseded and Excess GI&S Stocks. Dispose of classified
+   maps, charts and related materials as specified in AFI 31-401, Information Security Program
+   Management, 1 Nov 05. Dispose of unclassified maps and charts as instructed in the
+   applicable         NGA            Catalog           or        from          DLA          at:
+   http://www.dscr.dla.mil/PC9/G_info/Destruction.htm.
+   14.3. Units with surplus current GI&S stocks should contact Defense Supply Center
+   Richmond-JN, for disposition instructions.
+15. GI&S Software Policy. Users who wish to use GI&S software other than that certified by
+NGA must contact AF/A2CG. NGA works to assure that testing for certification will be applied
+to any software exploiting NGA products. This gives assurance software adheres to the
+standards and accuracy requirements, (See Para 9.3).
+16. Participating in NGA and Command GI&S Related Reviews. AF/A2CG tasks
+MAJCOMs, FOAs and DRUs to participate in periodic NGA product and prototype reviews. In
+addition, HQ AFMC/A2 organizations monitor developing systems under incremental
+development techniques, and periodically asks Air Force organizations to evaluate standard and
+prototype GI&S products and systems requiring GI&S. This activity will be in coordination with
+AF/A2CG. The purpose is to find out: if existing products still meet user needs; to identify any
+necessary changes; to determine if requirements still exist; or to determine if new products meet
+the needs for which they are designed. HQ AFMC/A2X also selects random user groups to test
+functional aspects of systems under development. HQ AFMC/A2X acts as the technical agent
+for development activity and consolidates Air Force positions. Air Force component commands
+tasked by Combatant Commands should also respond through AFMC/A2X so inputs can be
+reflected in consolidated Air Force positions for AF/A2CG approval.
+
+
+
+
+                                            DAVID A. DEPTULA, Lt Gen, USAF
+                                            Deputy Chief of Staff, Intelligence, Surveillance,
+                                            and Reconnaissance
+AFI14-205 5 MAY 2010                                                                              15
+
+
+                                         Attachment 1
+          GLOSSARY OF REFERENCE AND SUPPORTING INFORMATION
+
+References
+Note: When multiple computer links to single references are given, they are listed in the order
+of: NIPRNet; SIPRNet; and JWICS.
+Title 10 U.S. Code 467
+DoD Instruction 5000.56, Programming Unique Mapping, Charting and Geodesy (MC&G)
+Requirements for Developing Systems, 11 September 1991.
+DoD Instruction 5030.59, National Geospatial-Intelligence Agency (NGA) LIMITED
+DISTRIBUTION Imagery or Geospatial Information and Data, 7 Dec 2006.
+DoD Directive 5105.60, National Geospatial-Intelligence Agency (NGA), 29 July 2009.
+MIL-STD-2408, Mapping, Charting & Geodesy, Glossary of Feature and Attribute Definitions,
+31 March 2004.
+MIL-STD-600001, Mapping Charting and Geodesy Accuracy, 31 March 2004.
+Chairman Joint Chiefs of Staff Instruction (CJCSI) 3505.01A, target Coordinate Mensuration
+Certification and Program Accreditation, 11 March 2009.
+Chairman Joint Chiefs of Staff Instruction (CJCSI) 3901.01B, Requirements for Geospatial
+Information & Services, 15 July 2004, ( current as of) 22 Aug 2007.
+Chairman Joint Chiefs of Staff Instruction (CJCSI) 3900.01C, Position (Point and Area)
+Reference Procedures, 8 July 08.
+Joint Pub 2-03, Geospatial Intelligence Support to Joint Operations, 22 March 2007.
+NGA GEOINT Basic Doctrine, Publication 1.0, September 2006
+NGA Reference Materials for Military Support.
+http://www.nga.mil/mil/cda/article/0,2311,3104_116913_117196,00.html
+NGA Catalog of Maps, Charts and Related Products, Parts 1-7.
+http://www.geoint.nga.ic.gov/publications/catalog.html
+National Geospatial-Intelligence College Catalog and Course Descriptions.
+http://college.nga.ic.gov/htbin/Td/dbma&/db.cgi?db=Td&uid=default&view_search=1&catreg=
+on
+NGA Instruction 8660.10, Procedures for Request, Release, Handling and Distribution of
+NGA MC&G Digital Products.
+http://policy.nga.smil.mil/DR_Main/policyGuidance.cfm#DCIDS
+NGA Geodesy for the Layman.
+http://164.214.2.59/GandG/pubs.html
+ 16                                                                   AFI14-205 5 MAY 2010
+
+
+http://sps.stl.ngaa.smil.mil/products.gandg/index.html
+http://www.geoint.nga.ic.gov/products/gandg/publications/geolay/toc.html
+NGA Datums, Ellipsoids, Grids and Grid Reference Systems
+http://www.nga.mil/GandG/
+http://sps.stl.ngaa.smil.mil/products.gandg/index.html
+NGA Instruction 8400.1R7, NGA Instruction for Acquiring Information Technology Products,
+29 Jan 2007.
+AFPD 14-1, Intelligence, Surveillance, and Reconnaissance (ISR) Planning, Resources and
+Operations, 2 April 2004.
+AFI 10-301, Responsibilities of Air Reserve Component (ARC) Forces, 16 August 2006.
+AFI 10-601, Capabilities-Based Requirements Development, 31 July 2006
+AFI 11-201, Flight Information Publications, 31 March 2009.
+AFI 11-230, Instrument Procedures, 6 April 2006.
+AFI 14-105, Unit Intelligence Mission and Responsibilities, 3 June 2002.
+AFI 14-111, Intelligence in Force Modernization, 10 January 2005.
+AFI 14-117, Air Force Targeting, 13 May 2009.
+AFI 14-201, Intelligence Production and Applications, 1 December 2002.
+AFI 14-205, CL-1, Geospatial Information and Services (GI&S) Checklist, 28 March 2008.
+AFI 10-601, Capabilities Based Requirements Development, 31 July 2006.
+AFI 31-401, Information Security Program Management, 1 November 2005.
+AFI 31-601, Industrial Security Program Management, 29 June 2005.
+AFI 32-10112, Installation Geospatial Information and Services (Installation GI&S), 19 October
+2007
+AFI 63-101, Acquisition and Sustainment Life Cycle Management, 17 April 2009
+AFMAN 10-401V2, Planning formats and Guidance, 1 May 1998.
+Air Force/A2CG GI&S Smart Book, January 2006
+https://afkm.wpafb.af.mil/ASPs/CoP/OpenCoP.asp?Filter=OO-IN-AF-11
+Abbreviations and Acronyms
+AFKN - Air Force Knowledge Now
+AIS - Automated Information System
+CIB® - Controlled Image Base
+CGS - Common Geopositioning Services
+COI - Community of Interest
+AFI14-205 5 MAY 2010                                                                           17
+
+
+DAFIF - Digital Aeronautical Flight Information File
+DI - Director of Intelligence
+DPPDB - Digital Point Positioning Data Base
+ECHUM - Electronic Chart Updating Manual
+FLIP - Flight Information Publication
+FMS - Foreign Military Sales
+GEOINT - Geospatial Intelligence
+GIO - Geo Integration Office
+GI&S - Geospatial Information & Services
+GPL-AF - Geospatial Product Library- Air Force
+HAE - Height Above Ellipsoid
+ISR - Intelligence, Surveillance & Reconnaissance
+IT - Information Technology
+JMPS - Joint Mission Planning System
+MSL - Mean Sea Level
+NSG - National System for Geospatial Intelligence
+PCO - Primary Contract Officer
+PFPS - Portable Flight Planning System
+PGM - Precision Guided Munitions
+TPFDL - Time Phased Force Deployment Listing
+WGS - World Geodetic System
+WRS - War Reserve Stock
+Terms
+Geopositioning - Also known as precise positioning, point mensuration, geolocation.
+Geospatial Information & Services - Covers all aspects of Air Force geospatial (formerly
+known as Mapping, Charting and Geodesy). It excludes imagery intelligence, FLIP, DAFIF and
+related aeronautical information, Joint Personnel Recovery Activity, and Air Target Materials
+based programs.
+Geospatial Intelligence - The exploitation and analysis of imagery, imagery intelligence and
+geospatial information to describe, assess, and visually depict physical features and
+geographically referenced activities on the Earth.
+ 18                                       AFI14-205 5 MAY 2010
+
+
+Addresses
+HQ AF/A2CG
+Targeting and GEOINT Division, Room 180
+110 Luke Ave, Bldg 5681
+Bolling AFB DC 20032-6400
+202-767-7412, DSN 297
+
+Defense Supply Center, Richmond-JN
+8000 Jefferson Davis Highway
+Richmond VA 23297-6545
+
+National Geospatial-Intelligence Agency
+AF NST, Office of Military Support
+12310 Sunrise Valley Drive
+Reston VA 20191-3449
+703-264-3003

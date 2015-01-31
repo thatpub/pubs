@@ -1,0 +1,755 @@
+BY ORDER OF THE COMMANDER                                                                                       AFMC MANUAL 10-101
+AIR FORCE MATERIEL COMMAND                                                                                                     24 APRIL 1996
+
+                                                                                                                                       Operations
+
+                                                                            OTHER SERVICE OTHER WAR RESERVE
+                                                                           MATERIAL COMPUTATION SYSTEM (D072)
+
+
+
+NOTICE:      This publication is available digitally on the AFDPO WWW site at:
+             http://www.e-publishing.af.mil.
+
+OPR: HQ AFMC/LGII (Mr. James E. Johnson)                               Certified by: HQ AFMC/LGI (Mr. Robert H. Brant)
+Supersedes AFMCM 57-67, 11 Jan 84                                                                           Pages: 39
+                                                                                                       Distribution: F
+
+This manual tells how to use the Other Service Other War Reserve Material (OWRM) Computation Sys-
+tem (D072). This manual does not apply to the Air National Guard or US Air Force Reserve units and
+members.
+
+SUMMARY OF REVISIONS
+These revisions condense and combine directions from the previous AFMCM 57-67. It also changes/
+updates the output products file IDs.
+
+Chapter 1—GENERAL                                                                                                                               4
+     1.1.   Purpose of the Users Manual. ....................................................................................                   4
+     1.2.   Project References: ....................................................................................................            4
+     1.3.   Project Directive. .......................................................................................................          4
+     1.4.   References: .................................................................................................................       4
+     1.5.   Responsibilities. .........................................................................................................         4
+     1.6.   Operating Center. .......................................................................................................           4
+     1.7.   TA: .............................................................................................................................   4
+     1.8.   Security and Privacy. .................................................................................................             5
+
+Chapter 2—SYSTEM SUMMARY                                                                                                                        6
+     2.1.   System Application. ...................................................................................................             6
+     2.2.   System Operation. ......................................................................................................            6
+     2.3.   System Configuration. ...............................................................................................               6
+     2.4.   System Organization. .................................................................................................              6
+2                                                                                              AFMCMAN10-101 24 APRIL 1996
+
+
+        2.5.     Performance. ..............................................................................................................      7
+        2.6.     Data Base. ..................................................................................................................    7
+        2.7.     General Description of Inputs, Processing, Outputs. .................................................                            7
+
+Chapter 3—STAFF FUNCTIONS RELATED TO TECHNICAL OPERATIONS                                                                                        10
+        3.1.     Initiation Procedures. .................................................................................................        10
+        3.2.     Staff Input Transactions: ............................................................................................          10
+        3.3.     Input Formats: ............................................................................................................     10
+        3.4.     Composition Rules: ....................................................................................................         11
+        3.5.     Input Vocabulary. ......................................................................................................        11
+        3.6.     Output Requirements: ................................................................................................           11
+        3.7.     Output Formats: .........................................................................................................       11
+        3.8.     Sample Outputs: .........................................................................................................       12
+        3.9.     Utilization of System Outputs: ..................................................................................               13
+Figure 3.1.      Flying Hours/Operating Program Record. ................................................................                         14
+Figure 3.2.      Source of Supply Interrogation Record. ...................................................................                      15
+Figure 3.3.      Application Interrogation Record. ............................................................................                  16
+Figure 3.4.      Stock Number Interrogation Record. ........................................................................                     17
+Figure 3.5.      Acquisition Advice Interrogation Record. ................................................................                       18
+Figure 3.6.      Manual Change Record. ...........................................................................................               19
+Figure 3.7.      Batch Control-Product Routing-Disposition. ...........................................................                          20
+Figure 3.8.      Stock Number Interrogation Reply. ..........................................................................                    20
+Figure 3.9.      Source of Supply Interrogation Reply. .....................................................................                     22
+Figure 3.10. Application Interrogation Reply. ..............................................................................                     23
+Figure 3.11. AAC Interrogation Reply. .........................................................................................                  24
+Figure 3.12. Interrogation Data for Review. .................................................................................                    25
+Figure 3.13. Computation Data for Review. .................................................................................                      26
+
+Chapter 4—FILE QUERY PROCEDURES                                                                                                                  31
+        4.1.     System Query Capabilities. ........................................................................................             31
+Table 4.1.                                                                                                                                       31
+        4.2.     Data Base Format. ......................................................................................................        31
+AFMCMAN10-101 24 APRIL 1996                                                                                                            3
+
+
+    4.3.   Query Preparation. .....................................................................................................   31
+    4.4.   Control Instructions. ..................................................................................................   31
+
+Attachment 1—FORMAT OF MANUAL CHANGE RECORD                                                                                           32
+
+Attachment 2—FORMAT OF FLYING HOUR PROGRAM INPUTS                                                                                     33
+
+Attachment 3—FORMAT OF INTERROGATION FOR SOURCE OF SUPPLY RECORD                                                                      34
+
+Attachment 4—FORMAT OF INTERROGATION FOR APPLICATION RECORD                                                                           35
+
+Attachment 5—FORMAT OF INTERROGATION FOR STOCK NUMBER RECORD                                                                          36
+
+Attachment 6—FORMAT OF INTERROGATION FOR ACQUISITION ADVICE CODE
+             RECORD (AAC-F, H, I, J, K, L, V, X, AND Y)                                                                               37
+
+Attachment 7—FORMAT OF DM_ TRANSACTIONS                                                                                               38
+
+Attachment 8—OUTPUT PRODUCTS LIST                                                                                                     39
+4                                                               AFMCMAN10-101 24 APRIL 1996
+
+
+                                              Chapter 1
+
+                                             GENERAL
+
+1.1. Purpose of the Users Manual. This users manual is designed to provide nonautomatic data pro-
+cessing equipment (ADPE) personnel users with the information needed to effectively use the D072 sys-
+tem.
+
+1.2. Project References:
+
+1.3. Project Directive. Non-Air Force Managed EOQ OWRM Computation System, data Project Direc-
+tive LOGR-LOR1-D81-134 (D072, 10 March 1982).
+
+1.4. References:
+    1.4.1. DoDI 3110.6, War Reserve Materiel Policy.
+    1.4.2. AFM 67-1, USAF Base Supply, Vol 1, Part one.
+    1.4.3. AFI 25-101, War Reserve Materiel (WRM) Program Guidance and Procedures (formerly AFR
+    400-24, War Reserve Materiel Policy).
+
+1.5. Responsibilities. AFMC/LGI, the office of primary responsibility (OPR), is responsible for the Air
+Force logistics function for this system. Other responsibilities are:
+    1.5.1. Systems Development and Maintenance. HQ AFMC/LGI, MSG/SMR.
+
+1.6. Operating Center. The D072 is operating at a single site, HQ AFMC.
+
+1.7. TA:
+    1.7.1. AAC. Acquisition advice code.
+    1.7.2. AMD. Average monthly demand.
+    1.7.3. Budget Code 9. Air Force-used stock fund items that are managed by the Defense Logistics
+    Agency (DLA), General Services Administration (GSA), Army, Navy, and Marine Corps.
+    1.7.4. C001. (AFEMS) Air Force equipment management system.
+    1.7.5. DAAS. Defense automatic addressing system (provides demand information to the D072 sys-
+    tem).
+    1.7.6. DLA. Defense Logistics Agency.
+    1.7.7. DMA. MILSTRAP document identifier for SS submissions between users and wholesalers. It
+    contains 6 months of requirements from the using service.
+    1.7.8. DMB. Same as DMA except it contains nonrecurring US requirements.
+    1.7.9. DMC. Same as DMA except it contains nonrecurring allies requirements.
+    1.7.10. DMD. Same as DMA except it contains return data for repairable items only.
+    1.7.11. DME. Same as DMA except it contains prepositioned war reserve material.
+AFMCMAN10-101 24 APRIL 1996                                                                        5
+
+
+   1.7.12. DO40. War reserve materiel (WRM)/requirements spares support list (readiness support pack-
+   ages (RSP) and other WRM requirements).
+   1.7.13. DO43. Master item identification control system (catalog data).
+   1.7.14. GSA. General Services Administration.
+   1.7.15. ICP. Inventory control point.
+   1.7.16. MDS. Mission design series (aircraft).
+   1.7.17. MILSTRIP. Military standard requisition and issue procedures.
+   1.7.18. MO24. AUTODIN and on base data transmission interface with data processing systems.
+   Transmits WRM transactions from HQ AFMC to managing ICPs.
+   1.7.19. NSN. National stock number.
+   1.7.20. OWRM. Other war reserve materiel items, stocked in anticipation of a war; a 180-day war-
+   time supply of material to be requisitioned when war is declared.
+   1.7.21. OWRMRP. Other war reserve materiel requirement predictable.
+   1.7.22. OWRMR. Other war reserve materiel requirement (prestocked).
+   1.7.23. POWRMRP. Prepositioned other war reserve materiel requirements protectable.
+   1.7.24. TA. Table of Allowance - two types WRM and non-WRM.
+   1.7.25. WCDO. War consumable distribution objective (data system designator AFC2S).
+   1.7.26. WMR. War materiel tequirement (includes prepositioned and prestocked).
+       1.7.26.1. WRM. War reserve materiel. Materiel required to augment peacetime assets to com-
+       pletely support forces, missions, and activities reflected in the USAF war plans.
+
+1.8. Security and Privacy. The D072 system contains no classified information or processes.
+6                                                                   AFMCMAN10-101 24 APRIL 1996
+
+
+                                                Chapter 2
+
+                                          SYSTEM SUMMARY
+
+2.1. System Application. The function of D072 is to compute OWRMRs for budget code "9" items.
+These represent items used by the Air Force but are managed by other DoD services/agencies. Computed
+Air Force requirements are provided to the non-Air Force ICPs of their DoD services/agencies to include
+in their budgetary requirements. Items are individually computed by dividing 2 years of peacetime
+demand by 24 to obtain an AMD. Factors are obtained by comparing six months of peacetime flying
+hours to six months of wartime flying hours from the budget year (three years in the future). The AMD is
+multiplied by six wartime factors to provide six monthly figures for the first six months of wartime. After
+arriving at the six-month figures, subtract prepositioned quantity from the first two months. Upon com-
+pletion of the computation, the transactions are transmitted to the managing ICP. These transactions must
+reach the managing ICP by 15 February each year.
+
+2.2. System Operation. The system receives stocklist change data from the D043 system (monthly) to
+update NSN records. The monthly operation also receives D062 demands and applications. D040 does
+not supply TA data - only WRM prepositioned quantity and RSP (which includes HMPSK) for each
+application. The M024B system is used for transmission of requirements to the Army, Navy, Marine
+Corps, and GSA. DLA receives a tape at each applicable site. The system operates quarterly to process
+Air Force demands received on items managed by the DLA, Army, Navy, Marines, and the GSA. These
+demands are provided each quarter by the DAAS (on magnetic tape). Prepositioned WRM requirements
+are received from the D040 system each quarter. The records contain NSN, prepositioned quantity, appli-
+cation data, MDS, TA, and Communication Electronics (CE). C001 produces a file semiannually (end of
+March/September) of In-Use/Authorized quantities for WRM and non-WRM budget code 9 equipment
+items. Requirements are computed annually (in January). Individual requirements for each NSN are trans-
+mitted by the M024 system to the managing ICPs. The transactions must be received by 15 February
+annually. A microfiche copy of the completed transactions is sent to HQ AFMC/LGI.
+
+2.3. System Configuration. D072 is processed on the Amdahl computer.
+
+2.4. System Organization. The system contains five master files and eight work unit codes. The system
+is organized into five files as listed below:
+    2.4.1. The active item master file contains NSNs with associated stock control data, prepositioned
+    WRM requirements, eight quarters of demand, and three years of DM_transactions. The item applica-
+    tion master file contains NSNs linked to all types of application data such as aircraft MDS, CE, and
+    TAs. The exception master file contains NSNs with associated data from all interfacing systems
+    (except D043) that don't match the existing active or inactive master file. The inactive item master file
+    contains NSNs received as a result of stocklist changes from the D043 system that don't match any
+    other system inputs (i.e., demands, application, prepositioned quantities, etc.). The cross-reference
+    master file contains outdated NSNs linked to current NSNs.
+    2.4.2. The work units are Major Production (MA, AP, OC, JJ, CO, AN), Major Utility, (IT), and
+    Minor Production (RS, QT, TC). The last are used for polished outputs used in major production work
+    units. Work units consist of seven types of transactions for file maintenance which include loading of
+    information from all of the interfacing systems. The computation work unit includes processing all of
+AFMCMAN10-101 24 APRIL 1996                                                                               7
+
+
+   the information received from the interfacing systems in order to arrive at the output of transactions to
+   the wholesale managers. The actual computation is accomplished by dividing the 8 quarters of
+   demand (by 24) to arrive at an AMD. The AMD is multiplied by six wartime program factors which
+   results in six months of gross OWRMRs. The interrogation work unit processes inquiries by NSN
+   which include stock control information, item requirements, demand history, allocation information,
+   and miscellaneous data. It processes inquiries by application and by AAC. This work unit also pro-
+   cesses ICP inquiries containing NSNs and applications.
+
+2.5. Performance. The system produces OWRMRs computations once a year (January) to provide bud-
+geting information to DLA, GSA, and the other services to support the needs of the Air Force. The system
+also produces four types of interrogations for management information and error correction.
+
+2.6. Data Base. The system has five master files. The most important files are the active item master and
+the item application master:
+   2.6.1. The item application master file relates NSNs to application and in turn to the wartime factor in
+   the computation work unit. The application master receives its information from the D043 system for
+   NSN, interchangeability and substitution (I&S) master NSN, and D040/D062 application data.
+   2.6.2. The active item master file contains most of the systems information. The interfacing systems
+   and what information they provide are as follows:
+       2.6.2.1. The NSN and stock control data are provided by the D043 system.
+       2.6.2.2. The master NSN is provided by the D043 system.
+       2.6.2.3. RSP requirements are received from the D040 system.
+       2.6.2.4. TA information is received from the C001 system.
+       2.6.2.5. Demand history information is received from DAAS.
+       2.6.2.6. The DMA transactions are computed within the D072 system and then posted to the sys-
+       tem.
+       2.6.2.7. The WCDO data comes from AFC2S.
+       2.6.2.8. The inactive item master file contains NSNs that don't match on application, demands, or
+       prepositioned WRM quantities.
+       2.6.2.9. The exception master file contains NSNs that are not matched by any other master file in
+       D072.
+       2.6.2.10. The cross-reference master file contains obsolete NSNs that are related to current NSNs.
+       This information is built from monthly stocklist changes received from the D043 system.
+
+2.7. General Description of Inputs, Processing, Outputs. The system OPR, located in HQ AFMC/
+LGI, is responsible for manual file maintenance and interrogation transactions.
+   2.7.1. Inputs. Manual input transactions are used to change elements of data in the active item master
+   file, for input of the flying hour program data and for interrogating the active item master file and the
+   item application master file.
+8                                                                  AFMCMAN10-101 24 APRIL 1996
+
+
+       2.7.1.1. File maintenance to the active item master file (Attachment 1) consists of changing the
+       quantities in the transactions. The first and second quarter WRMR quantities and the sustained
+       monthly demand rate can be changed. This transaction is used to correct known errors that are
+       detected during the computation cycle or by the item manager (IM) at the controlling ICP. It cor-
+       rects only the active item master file. To input these transactions, the system OPR must send them
+       to DISA/WED22 (Keyplus) to be keyed in within 24 hours of the processing date.
+       2.7.1.2. The flying hour program data (Attachment 2) is identified by record code PGM in col-
+       umns 78-80. The program data contains an MDS and its average monthly peacetime flying hours
+       and six months of wartime flying hours as well as an average of monthly peacetime hours to arrive
+       at a multiplier factor. If the wartime hours are higher than the peacetime hours, i.e., wartime hours
+       500, peacetime hours 100, the factor (5) is used in the computation. The peacetime demands (24
+       months) contained in the active item master file are used to obtain an AMD. The AMD is multi-
+       plied by each of the six monthly multiplier factors to produce six months of gross wartime require-
+       ments. This data is prepared annually in January. To prepare the data, the system OPR must obtain
+       a copy of the wartime and peacetime flying hour program from HQ AFMC/LGI to input the data.
+       2.7.1.3. Four types of interrogations (Attachment 4-Attachment 7 ) are processed in this system;
+       stock number, source of supply (SOS), application, and acquisition advice code (AAC). All of the
+       interrogations are processed against the active item master file and the application master file. The
+       stock number reply contains stock control information, requirements data, ICP allocation,
+       demands, miscellaneous information, and applications. It is produced as a listing. The SOS reply
+       contains all items that have requirements (by SOS in NSN sequence). This product contains stock
+       control data, average demands, and application information. It is produced on microfiche. The
+       application reply is in NSN sequence. It contains application, NSN, stock control information, and
+       average demands. The AAC reply contains the AAC, NSN, stock control data, average demands
+       and application data. This reply is produced on microfiche in NSN sequence within AAC. These
+       products are used in error correction, for information purposes or to provide the information
+       needed for higher headquarters, other agencies, or for congressional inquiries. To obtain this prod-
+       uct, the system OPR must prepare the proper interrogation format and data input identification and
+       request special processing from DISA/WED22 (Keyplus).
+       2.7.1.4. Manual change records (Attachment 8) are used to change the first quarter, second quar-
+       ter, and sustained monthly demand periods for the current DMA, first previous DMA, or second
+       previous DMA. One transaction must be prepared for each DMA record to be changed. To process
+       these transactions, the system OPR must prepare the proper format (on an 80-column worksheet)
+       and ask for special processing from DISA/WED22 (Keyplus) before processing the interroga-
+       tions.
+    2.7.2. Processing. The system has been set up to run as required monthly, quarterly, semiannually, and
+    annually in order to accept information from interfacing systems and to produce the specified prod-
+    ucts. When unscheduled products such as interrogations are required, schedule the operation of the
+    system by product control number (PCN) and notify DISA/WED22 (Keyplus) before the processing
+    date.
+    2.7.3. Outputs:
+       2.7.3.1. The results of the annual computation are output in DMA and DME format (attachment
+       l). To compute a requirement on a given NSN, a flying hour program transaction that matches that
+AFMCMAN10-101 24 APRIL 1996                                                                       9
+
+
+     NSNs application must be loaded into the system (Attachment 2). These transactions (file label
+     PCIC201CPU) are transmitted to the SOS by the M024 system.
+     2.7.3.2. Stock Number Replies, PCN: Q-D072-003-IT-2IT (Figure 3.9.). These replies have
+     detailed information at the NSN level, and are produced as listings.
+     2.7.3.3. Source of Supply Replies, PCN: Q-D072-003-IT-MIT, part 1 (Figure 3.10.). The replies
+     are in NSN sequence within SOS; for example, S9C, NSN 1, NSN 2 and NSN 3; S9E, NSN 2,
+     NSN 3. These replies are produced on microfiche.
+     2.7.3.4. Application Replies, PCN: Q-D072-003-IT-MIT, part 2 (Figure 3.11.). Replies are listed
+     in NSN sequence within application (for example, B052, NSN 1, NSN 2, and NSN 3, which are
+     produced on microfiche).
+     2.7.3.5. Acquisition Advice Replies, PCN: Q-D072-001-IT-VIT, part 3 (Figure 3.12.). Replies
+     are in NSN sequence within AAC (for example, AAC-Y, NSN 2, NSN 4, and NSN 5 which are
+     produced on microfiche).
+     2.7.3.6. These output products will be used by the mission OPR (LGI).
+     2.7.3.7. An output product list is shown in attachment 9.
+10                                                                    AFMCMAN10-101 24 APRIL 1996
+
+
+                                                  Chapter 3
+
+                  STAFF FUNCTIONS RELATED TO TECHNICAL OPERATIONS
+
+3.1. Initiation Procedures. The system is run on a scheduled basis to receive inputs from interfacing
+systems monthly, quarterly, semiannually, and annually. Only the annual process requires input from the
+system OPR to produce the required transactions. (See paragraphs 2.7.1.2. and 2.7.1.3..) The four interro-
+gation processes (stock number, SOS, application, and acquisition advice) require manual input transac-
+tions and notice to the DISA/WED22 (Keyplus) work group supervisor. Figure 3.3. through Figure 3.5.
+illustrate the information needed to perform interrogations.
+
+3.2. Staff Input Transactions:
+     3.2.1. Deliver the flying hour program data for each application (Figure 3.1.) to DISA/WED22 (Key-
+     plus) within 24 hours of the annual computation process (January). Interrogation transactions are
+     caused by known errors which need corrections or that are requested from higher headquarters and
+     other agencies.
+     3.2.2. Notify DISA/WED22 (Keyplus) to request for special processing (interrogations). Interroga-
+     tions are processed as the need arises.
+     3.2.3. The system OPR in the General Support Division of the Air Force Stock Fund originates the
+     input transaction and interrogations.
+
+3.3. Input Formats:
+     3.3.1. The Flying Hour/Operating Program Record (Figure 3.1.) has the following types of applica-
+     tion information: aircraft, missiles, CE equipment, engines, guns, support equipment, and WRM TAs.
+     The system currently uses flying hour by mission design (MD) in the actual computation. The appli-
+     cation for aircraft consists of seven positions - the first position is an alpha code or blank for modified
+     mission. The second and third positions are alpha codes to identify the mission. Positions four through
+     six are numerical denoting the design. The seventh position is an alpha or blank denoting the series.
+     The first line in Figure 3.1. illustrates the current configuration of the system which accepts only MD
+     (e.g., BO52) for computational purposes.
+     3.3.2. The SOS interrogation record (Figure 3.2.) contains a record code (constant 1) and SOS which
+     is a three-position MILSTRIP routing identifier code.
+     3.3.3. The application interrogation record (Figure 3.3.) contains a record code (constant 2) and an
+     application number. Aircraft and missiles application numbers begin in column 2 and end in column
+     8. Column 5 through column 7 are for design (zero filled numerics). Column 8 contains series (alpha).
+     Other applications (such as NSN) begin in column 2 extending to column 13.
+     3.3.4. The stock number interrogation record (Figure 3.4.) contains a record code (constant 3) and a
+     national item identification number (NIIN).
+     3.3.5. The acquisition advice interrogation record (Figure 3.5.) contains a record code (constant 4).
+     3.3.6. The manual change record (Figure 3.6.) contains a record code, DMA quantities, month/year,
+     and unit of issue. It returns a microfiche report of nearly every entry in the active master (approxi-
+     mately one million items).
+AFMCMAN10-101 24 APRIL 1996                                                                              11
+
+
+3.4. Composition Rules:
+   3.4.1. The four types of interrogations can't exceed 200 lines.
+   3.4.2. Each input line can have a maximum of 80 characters.
+   3.4.3. All items must be right justified.
+
+3.5. Input Vocabulary. Prepare all input transaction on an 80-column worksheet (AF Form 1530, Punch
+Card Transcript). Send it to the DISA/WED22 (Keyplus) work group supervisor. The transactions must
+have an AFMC Form 381, Batch Control - Product Routing - Disposition (Figure 3.7.), attached. All
+of the interrogations are input as work unit IT, PCN Q-D072-003-lT-2IT. The flying hour operating pro-
+gram record is input 15 January each year using PCN Q-D072.C02-ZCl.
+
+3.6. Output Requirements:
+   3.6.1. Purpose. The DM_ Transaction Report PCN Q-D072.002-CO-VC1 contains a record of the
+   OWRMRs transactions that are transmitted to the managing ICP of the Army, Navy, Marine Corps,
+   DLA, and GSA. The interrogation transactions are processed when there are questions requiring
+   detailed information concerning NSN, application, and SOS. Requests can originate from the other
+   services, agencies, or higher headquarters.
+   3.6.2. Time. The DM_Transactions Report is produced each year in January. The interrogation
+   reports are produced randomly, when required.
+   3.6.3. Medium. All of the output products are produced on microfiche except for the stock number
+   interrogation which is a printed listing.
+   3.6.4. Location. Output products are received from the Operations Center, I/O Distribution (DMC/
+   WED21).
+
+3.7. Output Formats:
+   3.7.1. PCN Q-D072-002-IT-VIT (Figure 3.8.). The stock number interrogation reply is formatted as
+   follows:
+       3.7.1.1. Header. The header contains the PCN, the title of the report, the date, and page number.
+   3.7.2. Body:
+       3.7.2.1. Line One. Contains stock control data including actual stock number, master stock num-
+       ber, SOS, AAC, ERRC code, budget code, unit of issue, unit price decimal locator, unit price,
+       shelf life code, security code, procurement method code, mission essentiality code, and I&S code.
+       3.7.2.2. Line Two. Contains item requirements and includes current DMA requirements for the
+       first and second quarter as well as the sustained monthly demand. It also has the same information
+       for the first and second previous years.
+       3.7.2.3. Line Three. Contains prepositioned WRMRs and includes RSP, TA, and WCDO.
+       3.7.2.4. Line Four. Contains WCDO requirements in 30 day increments (1-30, 31-60, 61-90),
+       D-day 1-4 quantities. The D-day 1 quantity relates to the current year; D-day 2-4 relates to the sec-
+       ond through fourth out-year quantities.
+12                                                                  AFMCMAN10-101 24 APRIL 1996
+
+
+        3.7.2.5. Line Five. Contains the ICP allocations, the total WMR for the current year, and the total
+        OWRMR and the deficiency (all in dollars). It also has the same information for the previous allo-
+        cation report. It contains WCDO requirements in 30 day increments (1-30, 31-60, 61-90), D-Day
+        1-4 quarters. The D-Day 1 quantity relates to the current year. D-Day 2-4 relates to second through
+        fourth year quantities.
+        3.7.2.6. Line Six. Contains demand history, and includes total Air Force demands from the current
+        quarter through eight previous quarters. It also contains the date of the most current demand post-
+        ing and the date of the oldest demand by year and quarter.
+        3.7.2.7. Line Seven. Contains miscellaneous data and TA quantities that aren't WRM, the
+        one-digit ALC for the residual item management activity, and the date the record was established
+        (year/month). This line also contains application data including application numbers, quantity per
+        aircraft, freeze code, mission essentiality code, next higher assembly code, substitution code, type
+        code, and site code. The report is in NIIN sequence and produced as a printed listing.
+     3.7.3. PCN Q-D072-003-IT-2IT, Part 1 (Figure 3.9.). The SOS interrogation reply is formatted as fol-
+     lows:
+        3.7.3.1. Header. The header contains the PCN, "Interrogation Replies," the date, and page number
+        on the first line "Part 1 SOS" and a three digit routing identifier code on the second line.
+        3.7.3.2. Body. The body contains item data which include the actual stock number master stock
+        number, SOS, AAC, ERRC code, unit of issue, and AMD. It also contains application data includ-
+        ing application numbers per aircraft, freeze code, mission essentiality code, next higher assembly
+        code, substitution code, type code, and site code. The report is in stock number sequence with SOS
+        and is produced on microfiche.
+     3.7.4. PCN Q-D072-003-IT-MIT, Part 2 (Figure 3.10.). The application interrogation reply is format-
+     ted as follows:
+        3.7.4.1. Header. The header contains the PCN, "Interrogation Replies" date and page number.
+        3.7.4.2. Body. The body contains item data which include the actual stock number, master stock
+        number, SOS, AAC, ERRC, unit of issue, and AMDs. The report is produced on microfiche and is
+        in stock number sequence within application.
+     3.7.5. PCN Q-D072-003-IT-MIT, Part 3 (Figure 3.11.). The AAC Interrogation Reply contains
+     AACs, F<H<IMJ<K<V<X< and Y and it's formatted as follows:
+        3.7.5.1. Header. The header contains the PCN "Interrogation Replies" the date and page number.
+        Line two contains "part three" and AAC.
+        3.7.5.2. Body. The body contains item data and application data. Within the item field are the
+        actual stock number, the master stock number, SOS, AAC ERRC code, unit of issue, preposition
+        quantities (PPQ), application numbers, quantity per aircraft, freeze code, mission essentiality
+        code, next higher assembly code, substitutability code, type code, and site code. The report is
+        stock number sequence within AAC and is produced on microfiche.
+
+3.8. Sample Outputs:
+     3.8.1. PCN Q-D072-002-IT-VIT (Figure 3.8.). The stock number reply contains information
+     extracted from the active item master file and the application master file. The output contains an
+AFMCMAN10-101 24 APRIL 1996                                                                             13
+
+
+   image of the information in these master records. If data are missing in the master records, the missing
+   data are shown under the applicable heading as blanks. This output product relates to the stock num-
+   ber interrogation input shown in Figure 3.4..
+   3.8.2. PCN Q-D072-003-IT-2IT, Part 1 (Figure 3.9.). The SOS interrogation reply contains applica-
+   tion information from the application master file and stock control information from the active item
+   master file. Missing data are shown as blanks. The product relates to the SOS input transactions
+   shown in Figure 3.2.
+   3.8.3. PCN Q-D072-003-IT-MIT, Part 2 (Figure 3.10.). The application interrogation reply contains
+   information from the application master file and the active item master file. Missing data are shown as
+   blanks. This product relates to the application interrogation input transaction, Figure 3.3..
+   3.8.4. PCN Q-D072-003-IT-MIT, Part 3 (Figure 3.11.). The AAC interrogation officially contains
+   information extracted from the application master file. Missing data are shown as blanks. This product
+   relates to the AAC interrogation input as shown in Figure 3.5..
+   3.8.5. An Interrogation Data For Review (PCN Q-D072-001-IT-VIT (Figure 3.12.). This product is
+   output each time interrogations are processed. For each interrogation it produces an item count or a
+   zero if no match occurs.
+
+3.9. Utilization of System Outputs:
+   3.9.1. Data for Review Notices. Three distinct data for review notices are automatically output during
+   DO72 runs. These notices provide statistical information and help find errors within various process-
+   ing cycles.
+   3.9.2. Interrogation Outputs. The interrogation output products provide specific information to the
+   system OPR. They are used for budget information, general stock control information, and item appli-
+   cation information, when required locally, for higher headquarters, or by other agencies.
+   3.9.3. Production Products. The DM_Transactions are transmitted each year in January to the manag-
+   ing ICPs. These transactions provide Air Force requirements to non-Air Force managing activities.
+   3.9.4. Recovery and Error Correction Procedures. The computation data for review (Figure 3.13.)
+   and the file maintenance data for review (figure 3.14) notices are used for statistical purposes and
+   detecting errors during processing cycles. The computation data review notices give counts on the
+   various types of items loaded into the system such as, the number of applications with matching flying
+   hour programs (by MDS) and a count of items with demand, flying hour programs, and prepositioned
+   WRM. The file maintenance data for review provides counts on the items input from interfacing sys-
+   tems and by manual file maintenance. These counts include WRM application (WAP from D040),
+   demands from D062 demands from DAAS (DAS), WCDO, and miscellaneous application (MAP).
+   Corrections will be made after the computation by file maintaining requirement quantities (see
+   Attachment 8 and Figure 3.6.) or by rerunning the system.
+14                                                   AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.1. Flying Hours/Operating Program Record.
+AFMCMAN10-101 24 APRIL 1996                          15
+
+
+Figure 3.2. Source of Supply Interrogation Record.
+16                                              AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.3. Application Interrogation Record.
+AFMCMAN10-101 24 APRIL 1996                      17
+
+
+Figure 3.4. Stock Number Interrogation Record.
+18                                                     AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.5. Acquisition Advice Interrogation Record.
+AFMCMAN10-101 24 APRIL 1996         19
+
+
+Figure 3.6. Manual Change Record.
+20                                                       AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.7. Batch Control-Product Routing-Disposition.
+
+
+
+
+Figure 3.8. Stock Number Interrogation Reply.
+AFMCMAN10-101 24 APRIL 1996   21
+22                                                  AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.9. Source of Supply Interrogation Reply.
+AFMCMAN10-101 24 APRIL 1996                     23
+
+
+Figure 3.10. Application Interrogation Reply.
+24                                      AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.11. AAC Interrogation Reply.
+AFMCMAN10-101 24 APRIL 1996                   25
+
+
+Figure 3.12. Interrogation Data for Review.
+26                                          AFMCMAN10-101 24 APRIL 1996
+
+
+Figure 3.13. Computation Data for Review.
+AFMCMAN10-101 24 APRIL 1996   27
+28   AFMCMAN10-101 24 APRIL 1996
+AFMCMAN10-101 24 APRIL 1996   29
+30   AFMCMAN10-101 24 APRIL 1996
+AFMCMAN10-101 24 APRIL 1996                                                                          31
+
+
+                                              Chapter 4
+
+                                   FILE QUERY PROCEDURES
+
+4.1. System Query Capabilities. The query capabilities for this system are as follows:
+
+Table 4.1.
+                                    Query                                       Format
+ Stock numbers of items and SS quantities by SOS                                   1
+ Number of items by NSN within a specific application code (e.g., B52)             2
+ Listing by individual stock number includes stock control information,            3
+ application data
+ Stock numbers, stock control information, and application data in AAC             4
+ sequence (for AACs, F, H, I, J, L, V, X,and Y only)
+
+4.2. Data Base Format. The content of the four types of queries is in paragraphs 3.3.1. through 3.3.6.
+Examples of the formats of query responses are in Figure 3.8. through Figure 3.11.
+
+4.3. Query Preparation. Instructions for preparation of the various inquiries are in Attachment 3
+through Attachment 6. Examples of the completed AF Form 1530 are in Figure 3.2.through Figure 3.5.
+
+4.4. Control Instructions. The system operation for control purposes depends on the PCN. Complete
+and submit the AFMC Form 381 (Figure 3.7.) with the input transactions (contains the PCN). A list of the
+inquiry PCNs is in paragraph 3.7., Output Formats.
+
+
+
+                                                    THOMAS W. BATTERMAN
+                                                    Deputy Director, Directorate of Logistics
+32                                                       AFMCMAN10-101 24 APRIL 1996
+
+
+                                       Attachment 1
+
+                       FORMAT OF MANUAL CHANGE RECORD
+
+Table A1.1. Manual Change Record.
+            Item Name          Record Positions         Kind of Data
+Record Code                   1-3               Alpha Numeric (current
+                                                quarter = MMC, first
+                                                previous quarter = MMI,
+                                                second previous quarter =
+                                                MM2
+NSN                           4-18              Numeric
+Filler                        19-22             Blank
+Year (of input)               23-24             Numeric
+Month (of input)               25-26              Numeric
+First Quarter DMA Quantity     27-34              Numeric
+Second Quarter DMA Quantity    35-42              Numeric
+Sustained Monthly Demand       43-50              Numeric
+Filler                         51-52              Blank
+Unit of Issue                  53-54              Alpha
+Filler                         55-80              Blank
+AFMCMAN10-101 24 APRIL 1996                                                        33
+
+
+                                       Attachment 2
+
+                    FORMAT OF FLYING HOUR PROGRAM INPUTS
+
+Table A2.1. Flying Hour Program Inputs.
+            Item Name              Record Positions          Kind of Data
+Application Codes                 1-13              Alpha Numeric (Aircraft MDS,
+                                                    Missile Codes, Communication
+                                                    Equipment, etc.)
+Average Monthly Peacetime Hours 14-20               Numeric
+First Month Wartime Hours         21-27             Blank
+Second Month Wartime Hours        28-34             Numeric
+Third Month Wartime Hours         35-41             Numeric
+Fourth Month Wartime Hours        42-48             Numeric
+Fifth Month Wartime Hours         49-55             Numeric
+Sixth Month Wartime Hours         56-62             Numeric
+Average Monthly Wartime Hours     63-69             Blank
+Filler                            70-77             Alpha
+Record Code                       78-80             Blank
+34                                                         AFMCMAN10-101 24 APRIL 1996
+
+
+                                        Attachment 3
+
+           FORMAT OF INTERROGATION FOR SOURCE OF SUPPLY RECORD
+
+Table A3.1. Interrogation for Source of Supply Record.
+           Item Name               Record Positions           Kind of Data
+Record Codes                     1                   Numeric (Constant 1)
+Routing Identifier Code          2-4                 Alpha-Numeric
+AFMCMAN10-101 24 APRIL 1996                                                 35
+
+
+                                        Attachment 4
+
+              FORMAT OF INTERROGATION FOR APPLICATION RECORD
+
+Table A4.1. Interrogation for Application Record.
+           Item Name               Record Positions          Kind of Data
+Record Codes                     1                  Numeric (Constant 2)
+Application Code                 2-16               Alpha-Numeric
+36                                                        AFMCMAN10-101 24 APRIL 1996
+
+
+                                        Attachment 5
+
+             FORMAT OF INTERROGATION FOR STOCK NUMBER RECORD
+
+Table A5.1. Interrogation for Stock Number Record.
+                 Item Name                  Record Positions     Kind of Data
+Record Codes                                       1         Numeric (Constant 3)
+National Item Identification Number (NIIN)       2-10        Numeric
+AFMCMAN10-101 24 APRIL 1996                                                 37
+
+
+                                        Attachment 6
+
+      FORMAT OF INTERROGATION FOR ACQUISITION ADVICE CODE RECORD
+                      (AAC-F, H, I, J, K, L, V, X, AND Y)
+
+Table A6.1. Interrogation For Acquisition Advice Code Record.
+           Item Name             Record Positions            Kind of Data
+Record Codes                              1         Numeric (Constant 4)
+38                                                               AFMCMAN10-101 24 APRIL 1996
+
+
+                                            Attachment 7
+
+                               FORMAT OF DM_ TRANSACTIONS
+
+Table A7.1. DM_Transactions.
+               Item Name                   Record Positions         Kind of Data
+Document Identifier                              1-3        Alpha DM____*
+Routing Identifier                               4-6        Alpha-Numeric
+Transaction Serial Number, Number of              7         Numeric
+Transmissions Applicable to This NSN
+and Document Identifier (Normally 1)
+NSN                                              8-20          Numeric
+Unit Of Issue                                    21-22         Alpha
+First Month Requirement                          23-30         Numeric
+Second Month Requirement                         31-38         Numeric
+Third Month Requirement                          39-46         Numeric
+Fourth Month Requirement                         47-54         Numeric
+Fifth Month Requirement                          55-62         Numeric
+Sixth Month Requirement                          63-70         Numeric
+Filler                                            71           Blank
+Total Transactions (All DICs) for this           72-73         Numeric
+NSN
+Routing Identifier From                          74-76         Alpha (Constant FNW)
+Julian Date                                      77-80         Numeric (year and Julian Day)
+ *DMA
+   DMB
+   DMC
+   DMD
+**DME
+
+
+*DMA = Recurring U.S. Requirements (reflect monthly quantitative data cc 23-70).
+DMB = Non-Recurring U.S. Requirements (reflect monthly quantitative data cc 23-70).
+DMC = Non-Recurring Allies Requirements (reflect monthly quantitative data cc 23-70).
+DMD = Return data, applicable to reparable items only (reflect quantitative data cc 23-70).
+**DME = Prepositioned visibility date (reflect requirement in cc 23-30; on hand/on order in cc 31-38).
+AFMCMAN10-101 24 APRIL 1996                                                                         39
+
+
+                                               Attachment 8
+
+                                      OUTPUT PRODUCTS LIST
+
+Table A8.1. Output Products List.
+File ID/PCN/    Full Title              Media Class Freq As of         Due Copies On/Offbase
+RCS                                                      Date          Date       Recipients
+Q-D072-002-     Stock Number            List  U     AR N/A             2WD 1      HQ
+IT-VIT          Replies                                                           AFMC/LGII
+                                        List    U     AR N/A           2WD 2
+Q-D072-001IT-      Interrogation Data                                              HQ
+VIT                Review                                                          AFMC/LGII
+                                                                                   &
+                                                                                   MSG/SMRR
+Q-D072-003-        Interrogation        Fiche U       AR N/A           15WD 1      HQ
+IT-2IT             Replies                                                         AFMC/LGII
+                                        Fiche U       A       15 Oct 15WD 1
+Q-D072-001-        POM Report                                                      HQ
+                                        List    U     A       15 Jan 15WD 1
+PM-MP1                                                                             AFMC/LGII
+                   ICP Transactions     List    U     A       15 Jan 2WD 2
+Q-D072-002-        Report                                                          HQ
+PM-VC1                                                                             AFMC/LGII
+                   COMP Data for
+Q-D072-001-        Review                                                          HQ
+CO-VC1                                                                             AFMC/LGII
+                                                                                   &
+                                                                                   MSG/SMRR
+Q-D072-001-        FM Data for          List     U    M       15th     2WD 2       HQ
+JJ*-VFJ**          Review                                                          AFMC/LGII
+                                                              monthl
+                                                                                   &
+                                                              y
+                                                                                   MSG/SMRR
+PIC201CPU          DMA for ICP File Tape         U    A       15 Jan 15WD 9        Via
+                                                                                   AUTODIN
+                                                                                   (1) GSA
+                                                                                   (1) ARMY
+                                                                                   (1) NAVY
+                                                                                   (1) MARINES
+                                                                                   (5) DLA
+*Work unit depends on the procedure run. The different work units are JJ, OC, MA, AP, AR, AS, and
+AN.
+**Job relationship for above work units is FJ, FC, FA, FS, and FN, respectively.

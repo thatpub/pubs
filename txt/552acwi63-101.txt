@@ -1,0 +1,1671 @@
+BY ORDER OF THE COMMANDER                         552D AIR CONTROL WING INSTRUCTION
+552D AIR CONTROL WING                                                         63-101
+
+                                                                              31 OCTOBER 2011
+
+                                                                                      Acquisitions
+
+                                                      E-3 OPERATIONS DATA SOFTWARE
+                                                   REQUIREMENTS AND ENHANCEMENTS
+
+              COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               http://www.e-publishing.af.mil/ for downloading or ordering.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: 552 ACW/XPR                                                      Certified by: 552 ACW/CC
+                                                                    (Colonel Patricia D. Hoffman)
+Supersedes:    552 ACWI 63-101, 31 March                                                 Pages: 45
+               2007
+
+
+This instruction prescribes policies, responsibilities and procedures for reporting and processing
+suspected errors and requesting changes/enhancements by 552 ACW personnel to organic and
+sustained E-3 Airborne Warning and Control System (AWACS) mission critical computer
+system software programs, data, databases and associated documentation. Organic software is
+defined as mission critical computer software maintained by the 552 ACW and Oklahoma City
+Air Logistics Center/557 ACSS (OC-ALC/557 ACSS). Sustained software is defined as mission
+critical computer software maintained by agencies and contractors outside of the 552 ACW and
+OC-ALC/557 ACSS. It also defines wing processes and procedures for prioritization of change
+requests and the 552d ACW Software Configuration Control Board (SCCB). It is derived from
+the guidance in Operational/Support Configuration Management Procedures (O/S CMP) and E-3
+System Program Director (SPD) Single Manager Memorandum of Agreement (MOA) with the
+552 ACW and OC-ALC/557 ACSS. It is applicable to all 552 ACW personnel and all other
+users of U.S. E-3 AWACS Mission Critical software. It does not apply to Air Force Reserve
+Command (AFRC) and Air National Guard (ANG) units, except where noted otherwise. This
+instruction does not apply to the following contractor managed software facilities: AWACS
+Mission Training Center (MTC), Surveillance Radar Trainer Set (SRTS) or E-3 flight simulator
+software. Refer recommended changes and questions about this publication to the Office of
+Primary Responsibility (OPR) using the AF Information Management Tool (IMT) 847,
+Recommendation for Change of Publication; route AF IMT 847s from the field through Major
+Command (MAJCOM) publications/forms managers. Ensure that all records created as a result
+of processes in this publication are maintained in accordance with AFPD 33-3, Information
+Management, and AFMAN 33-363, Management of Records, and disposed of in accordance with
+the      Air     Force      Records       Disposition       Schedule     (RDS)       located     at
+ 2                                                                             552ACWI63-101 31OCTOBER 2011
+
+
+https://www.my.af.mil/afrims/afrims/afrims/rims.cfm. Contact supporting records managers
+as required.
+
+SUMMARY OF CHANGES
+
+Major changes include the reorganization of the 552d Communications Group to the 552d Air
+Control Group (552 ACG). Attachment 9 provides instructions to complete Database Change
+Request Deployed Form.
+
+      1.     GENERAL: ............................................................................................................    3
+      2.     RELEASABILITY STATEMENT: .......................................................................                         3
+      3.     SOFTWARE REQUIREMENTS PROCESSING: ................................................                                       3
+      4.     RESPONSIBILITIES: ...........................................................................................            4
+      5.     PROCEDURES: ....................................................................................................        14
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                       18
+
+Attachment 2—MISSION CRITICAL COMPUTER SOFTWARE TABLE                                                                                22
+
+Attachment 3—COMPUTER SOFTWARE CHANGE REQUEST CATEGORY SCHEME                                                                        26
+
+Attachment 4—COMPUTER SOFTWARE CHANGE REQUEST PRIORITY SCHEME                                                                        27
+
+Attachment 5—PROGRAM INCIDENT REPORT (PIR)                                                                                           28
+
+Attachment 6—COMPUTER SOFTWARE CHANGE REQUEST (CSCR)                                                                                 31
+
+Attachment 7—DOCUMENT ERROR REPORT (DER)                                                                                             34
+
+Attachment 8—DATABASE CHANGE REQUEST (DBCR)                                                                                          36
+
+Attachment 9—DATABASE CHANGE REQUEST (DBCR) - DEPLOYED                                                                               38
+
+Attachment 10—TROUBLE INCIDENT REPORT (TIR)                                                                                          39
+
+Attachment 11—COMPUTER SOFTWARE CHANGE REQUEST NUMBERS                                                                               41
+
+Attachment 12—USER PROJECT/WORK REQUEST (UPWR) TEMPLATE                                                                              43
+552ACWI63-101 31 OCTOBER 2011                                                                3
+
+
+1. GENERAL: Organic and sustained E-3 mission critical computer software and databases,
+used by the 552 ACW to accomplish the mission, must be accurate and current to ensure
+worldwide capability and flight safety. The 552 ACW, in concert with other E-3 operational
+software OPRs, must maintain a capability to expeditiously create or update the operations
+software and databases to comply with mission requirements, military procedures and Letters of
+Agreement (LOA). The timely identification, expeditious processing and appropriate feedback
+of software deficiencies and software changes are essential for accomplishment of the 552
+ACW’s mission. Users of this instruction should refer to Attachment 2 for a listing of mission
+critical computer software, configuration manager, engineering OPR, wing focal point and
+deficiency reporting methods.
+2. RELEASABILITY STATEMENT: Release authority, for organic and sustained software,
+will be coordinated/approved through the appropriate foreign disclosure office within 552d
+Operational Support Squadron (552 OSS)/IN, HQ ACC/A8CA, and/or HQ ESC/AEW&C for
+release to other agencies or countries. E-3 operational software and databases managed by other
+organizations (OC-ALC, WR-ALC, 53 Wing/68 EWS Eglin, Contractors, etc.) will be released
+through their release authorities.
+3. SOFTWARE REQUIREMENTS PROCESSING:
+   3.1. Requirements: For 552 ACW and OC-ALC/557 ACSS managed software the software
+   user initiates the appropriate Computer Software Change Request (CSCR). There are six
+   types of CSCRs: Document Error Report (DER), Program Error Report (PER), Program
+   Incident Report (PIR), Database Change Request (DBCR), Trouble Incident Report (TIR)
+   and a System Design Request (SDR). The initiator submits the CSCR to the appropriate
+   wing agency based upon guidelines provided in this instruction. The receiving wing agency
+   office will subsequently process each CSCR as required within this instruction. Attachment
+   2 contains the appropriate configuration management OPRs, engineering OPRs, 552 ACW
+   focal point and deficiency reporting method for organic and sustained software.
+   3.2. The 552d Operations Group (552 OG) reviews Category I and II CSCRs for validity,
+   duplication elimination, impact assessment, consolidated position and priority assignment of
+   1 through 5 for PERs/SDRs IAW the CSCR Priority Scheme (Attachment 4). This review is
+   conducted through the 552 OG Requirements Review Board (RRB) or equivalent automated
+   process. The 552 OG will convene a RRB or equivalent on at least a quarterly basis for all
+   outstanding routine PERs/SDRs. The 552 OG will convene an immediate level RRB, if a
+   PER/SDR is a potential priority 1 or 2. PERs/SDRs approved at the RRB are forwarded to
+   552 ACNS/SCXC for a wing tracking number and distribution to the responsible wing
+   agency per Attachment 2. The submitted Category I and II CSCRs may subsequently be
+   converted to AF Deficiency Reports for handling.
+   3.3. The 552 Air Control Group (ACG) reviews all 552 ACW initiated Category III through
+   V CSCRs submitted against organic software prior to submission to 552 ACNS/SCXC for
+   tracking number and distribution. The review will verify validity, eliminate duplication,
+   assess impact and assign priority. The 552 ACG will analyze Category I and II SDRs and
+   PIRs, against organic software, subsequent to the OG review. Validated PIRs are
+   resubmitted as PERs providing recommended corrective actions. SDR and PER analysis
+   reports will provide an initial engineering/technical evaluation of the required software
+   changes and include defined requirements, initial design analysis, proposed software
+ 4                                                        552ACWI63-101 31OCTOBER 2011
+
+
+     requirements (timing, sizing and etc.), resource requirements and estimated impacts
+     (hardware, documentation, workload and etc). 552 OSS/OSR receives the analysis to
+     support build recommendations and Software Configuration Control Board (SCCB) actions.
+     3.4. The 552 ACNS/SCXC, Configuration Management Section, logs all CSCRs originating
+     within the 552 ACW referencing organic software in the CSCR tracking database and
+     forwards to appropriate software development organization for analysis. OC-ALC/552
+     SMXS logs all CSCR’s originating within the OC-ALC reference organic maintained
+     software in the CSCR tracking database and forwards to appropriate software development
+     organization for analysis. For software maintained outside the 552 ACW and OC-ALC/557
+     ACSS refer to Attachment 2 for configuration management OPR, engineering OPR, 552
+     ACW focal point and deficiency reporting method. CSCR’s established in or forwarded to
+     OC-ALC will be processed according to approved configuration management governing
+     directives. For 552 ACW initiated CSCR’s the goal is to complete the PIR analysis in no
+     more than 45 days, measured from the date the PIR is received by 552 ACNS/SCF until peer
+     review is completed. PER’s based on known errors may be completed as necessary. SDR
+     analysis, with the recommended corrective action, is to be conducted and completed IAW the
+     wing SCCB priority listing.       However, should the 552 ACG/CC or the 552 OG/CC
+     determine any change to be of critical nature and normal resource allocation will not satisfy
+     crucial operational requirements in a timely manner, the PIR or PER will be given priority
+     over all SCCB items. If required, a special Consolidated Review Meeting (CRM) may be
+     convened to present the analysis.        Normal results of 552 ACW initiated CSCR
+     (PIR/PER/SDR/TIR) analyses will be presented at the next scheduled CRM meeting. The
+     applicable Software Program Manager, 552 OSS/OSR and 552 ACW/XPR, receive an
+     information copy of the CSCR.
+     3.5. The E-3 System Program Director (SPD) is the Single Manager (SM) responsible for
+     Configuration Management (CM) of the AWACS. The Memorandum of Agreement (MOA)
+     between ESC/AW, 552 ACW and OC-ALC/PSW delegates Configuration Control Board
+     authority to 552 ACW for E-3 organic software managed by the 552 ACW, IAW the MOA.
+     The 552 ACW/CV or the SCCB designee is the chairman of the 552 ACW SCCB. The 552
+     ACW/CV or the SCCB designee will convene and chair a wing level SCCB annually for
+     CSCRs against organic software with a semi-annual review of the prioritized list. Electronic
+     SCCB may be conducted in lieu of the annual board. An immediate wing level SCCB will
+     be held if a CSCR against organic software is a priority 1 or 2. The wing level SCCB will
+     identify/prioritize CSCRs requiring contractor action. Representatives from the 552
+     OG/ACG/MXG will attend wing level and ALC (when applicable) SCCBs. The wing SCCB
+     will assign a sequential priority, validate requirements and determine build content
+     requirements against organic software. Approval of the requirements analysis and software
+     design is provided at the monthly Requirements Specification Reviews (RSRs) and Software
+     Design Reviews during the CRM.
+4. RESPONSIBILITIES: All personnel using or maintaining U.S. E-3 software are
+responsible for identifying program, database, documentation incidents/errors and suggested
+changes by submitting appropriate CSCRs as specified within this wing instruction. Individuals
+observing a potential software problem against operational software must submit a PIR against
+that E-3 software. Only programmers of the applicable software can verify a software error and
+submit a PER. Individuals will submit an SDR to recommend software enhancements. It is the
+552ACWI63-101 31 OCTOBER 2011                                                                 5
+
+
+responsibility of all CSCR originators and analysts to ensure their respective portions of the
+CSCR are accurate and completely comply with the instructions in Attachments 6-12 of this
+document.
+   4.1. The 552 ACW Vice Commander or designee (552 ACW/XP) will:
+       4.1.1. Have overall responsibility for the 552 ACW SCCB. The SCCB acts as the
+       Configuration Management Authority for modification to E-3 Mission Systems software
+       maintained within the 552 ACW by the 552 ACG IAW AFI 63-1201, Assurance of
+       Operational Safety, Suitability, & Effectiveness. The Single Manager (System Program
+       Office) responsible for CM has delegated SCCB approval authority for wing managed
+       software to the 552 ACW (ref. MOA).
+       4.1.2. Chair 552 ACW SCCBs (immediate and routine) for Category 1 & 2 CSCRs
+       against organic software.
+       4.1.3. Approve and sign the SCCB approval form, listing the CSCRs in priority order to
+       be developed and incorporated by the 552 ACG into the next feasible software baseline.
+   4.2. The 552d Air Control Wing Requirements Section (552 ACW/XPR) will:
+       4.2.1. Coordinate new acquisition software requirements within the wing and as
+       necessary with HQ ACC, HQ ESC, ALC, WR-ALC and others. Act as single point of
+       contact to external agencies for programs/projects requiring an acquisition solution in
+       order to provide a single requirements voice to outside agencies.
+       4.2.2. Review CSCRs for impact or conflict with new or long-term enhancements,
+       interoperability implementation and compliance and coordinate the resolution of conflicts
+       with group representatives.
+       4.2.3. Attend 552 ACW SCCB and 552 ACG CRM.
+       4.2.4. Coordinate software configuration management procedures and processes
+       memorandum of agreements, as necessary, with other agencies maintaining E-3
+       operational software (i.e., OC-ALC, OO-ALC, WR-ALC, and etc.).
+       4.2.5. Administer 552 ACW SCCB and will:
+          4.2.5.1. Ensure the 552 ACW SCCB voting membership includes all Group CC’s.
+          Supporting offices includes as a minimum 552 ACW/XP/XPR, 552 OG/CD, 552
+          OSS/CC/OSR, 552 ACG/CD/SCX, 552 ACNS/CC/SCF, 552 MXG/CD/MXGQP and
+          552 ACW/SE (for potential priority 1 CSCRs).
+          4.2.5.2. Invite OC-ALC supporting organizations (557 SMXS/CL, 558
+          SMXS/MXDEB/ MXDEA to attend the SCCB, as required, when software changes
+          being boarded affect the interface with software maintained by OC-ALC.
+          4.2.5.3. Upon request support other E-3 SCCBs (i.e., ESC, OC-ALC, etc) and other
+          software forums or meetings as required, for E-3 software managed outside the wing.
+          4.2.5.4. Convene SCCB annually to consider ongoing or recommended actions for
+          routine CSCRs, recommendations for CSCRs status changes and recommended
+          changes to the prioritized CSCR lists against organic software. Electronic SCCBs
+          can be conducted in lieu of face-to-face SCCBs.
+6                                                        552ACWI63-101 31OCTOBER 2011
+
+
+          4.2.5.5. Convene an immediate SCCB; if a CSCR against organic software is a
+          potential priority 1 (Emergency) or 2 (Urgent).
+       4.2.5.6. Convene a pre-SCCB to incorporate 552 ACW/XP/XPR, 552 ACG/CD/SCX,
+       552 ACNS/CC/SCF, 552 OSS/OSR and 552 MXG/CD/MXGQ products/priorities into
+       the SCCB list prior to presentation to the SCCB.
+              4.2.5.6.1. The pre-SCCB will maintain product priorities from one SCCB list to
+              the next within 10% of the previous placement (for example: for a list of 100
+              products, an item can move plus or minus 10 places from its previous placement -
+              #35 on the first list can be #25 through #45 on the following list). The SCCB can
+              allow a greater change if required; possible justifications are urgent changes in
+              tactics or operations, HHQ requirements, funding or a change in the E-3 Task List
+              approved by the OG RRB.
+          4.2.5.7. Present 552 ACW Pre-SCCB Rack and Stack results to the SCCB
+          membership for their concurrence on at least an annual basis.
+          4.2.5.8. Verify products meeting the SCCB comply with the Single Manager’s
+          delegated configuration management authority as defined in the MOA.
+          4.2.5.9. Forward signed SCCB form, defining in priority order, CSCRs to be
+          developed and incorporated into the next feasible software baseline to the 552
+          ACG/CC or appropriate agencies for action.
+          4.2.5.10. Ensure CSCRs are closed with the concurrence of 552 OSS/OSR.
+       4.2.5.11. Attend the 552 OG RRB meeting as an advisor to RRB members.
+    4.3. The 552d Communications Group (552 ACG) will:
+       4.3.1. Provide an initial engineering/technical evaluation of 552 ACW initiated PIRs,
+       SDRs TIRs, and PERs, based on the timeline provide in 3.4 against 552 ACW organic
+       software. Evaluations will include proposed software requirements, an initial design
+       analysis, proposed software requirements, resource requirements and estimated impacts
+       (timing, sizing, hardware, documentation, workload, etc.) through the established RSR
+       during the 552 ACG CRM.
+       4.3.2. Conduct development and implementation of 552 ACW initiated CSCRs for
+       organic software in accordance with approved SCCB CSCR list.
+       4.3.3. Provide 552 ACW SCCB members updates on the status of the current software
+       development schedule; to include, projected software release schedule and status of
+       prioritized CSCRs under development for the first three quarters of the software cycle
+       and a final all inclusive list at the end of the cycle.
+       4.3.4. Designate a central point of contact for receipt, tracking and processing of all 552
+       ACW initiated CSCRs.
+       4.3.5. Enter validated 552 ACW initiated CSCRs, against the applicable software
+       managed by the 552 ACW as listed in Attachment 2 into the CSCR tracking system.
+       OC-ALC CSCR’s will be entered into the CSCR tracking system by OC-ALC/557
+       ACSS. 552 MXG/MXGQP will enter sustained software deficiencies (outlined in
+       Attachment 2) governed under TO 00-35D-54 into the G021 system. CSCR’s against
+552ACWI63-101 31 OCTOBER 2011                                                               7
+
+
+     sustained software that are not governed by TO 00-35D-54 will be entered in the CSCR
+     tracking system by 552 OSS/OSR.
+     4.3.6. Provide a CSCR listing upon request by appropriate organizations.
+     4.3.7. Develop, validate, publicize and release Map, CAF, JTIDS and ESM
+     documentation according to a suspense established with the 552 OG.
+     4.3.8. Provide wing agencies, 552 OSS/OSR, deployed locations (as applicable) and the
+     PACAF Squadrons (961 and 962 AACS) with updated Map, CAF, JTIDS and ESM
+     database listings of each new version release in the quantities identified by 552
+     OSS/OSR.
+     4.3.9. Coordinate with 552 OSS/CC through 552 OSS/OSR E-3 aircraft requirements for
+     the release and testing of 552 ACG maintained operational programs and databases.
+     4.3.10. Coordinate training support before a new version of organic software is released.
+     This should be accomplished through the Software Delivery Working Group (SDWG)
+     and its chartered members. SDWG charter is available on the AWACS portal at the 552
+     OG/OSS/OSR organizational directory in place to support software fielding. Need dates
+     will be defined within the release schedule.
+     4.3.11. Coordinate with 552 OG/OGV, 552 OSS/OSR, 552 OSS/OST and 552
+     MXG/MXGQP when a firmware update or release is valid and required for organic and
+     sustained software.
+     4.3.12. Coordinate with external agencies and contractors, through 552 ACW/XPR, to
+     analyze and correct system software deficiencies that impact AOCP software. Submit
+     independent CSCRs where applicable.
+     4.3.13. Convene and chair a 552 ACG CRM which will be the single forum to present
+     CSCR analysis, obtain/update the operational requirements, present design details, etc.
+     4.3.14. Submit User Project Work Request (UPWR) to the SCCB, listing in priority
+     order, CSCRs incorporated into the designated software baseline.
+     4.3.15. Submit Baseline Change Request (BCR) form to the SCCB for changes to the
+     SCCB approved designated software baseline.
+     4.3.16. Submit documentation changes to any affected T.O.s and 552 ACW Positional
+     Handbooks, to support fielding of wing developed software releases.
+     4.3.17. Analyze CSCRs received against Foreign Military AWACS software. Submit
+     PER against program errors applicable to US AWACS software. Forward enhancements
+     to 552 OSS/OSR for their review and action. 552 OSS/OSR review will verify validity
+     and applicability against the associated US software baseline, determine if there is a
+     duplication of an existing U.S. CSCR and submit a SDR to 552 ACNS/SCXC.
+  4.4. The 552d Maintenance Group Commander (552 MXG/CC) through the 552d Quality
+  Assurance Flight, Product Improvement Section (552 MXG/MXGQP) will:
+     4.4.1. Act as Maintenance Group representative and attend software meetings (OG RRB,
+     ACG CRM and etc.) and design reviews as required.
+8                                                         552ACWI63-101 31OCTOBER 2011
+
+
+       4.4.2. Designate POCs to coordinate on SDRs, PERs and subsequent design change
+       proposals.
+       4.4.3. Serve as coordination/certification official on all SDRs.
+       4.4.4. Review SDRs and PERs for accuracy, maintenance impacts and 552 MXG
+       training requirements. Submit comments, recommendations and impacts to 552
+       OSS/OSR in support of OG RRB activities.
+       4.4.5. Attend 552 ACW and ALC SCCBs.
+       4.4.6. Coordinate with OC-ALC, 552 ACG, 552 OG, OO-ALC, WR-ALC and
+       contractors to analyze and correct system software deficiencies impacting mission
+       accomplishment.
+       4.4.7. Provide personnel needed to form the 552 OG Software Support Team (SST)
+       when 552 OSS/OSR requests 552 MXG assistance.
+       4.4.8. Coordinate with the maintainers, FTD, etc., to determine training requirements.
+       4.4.9. Validate and verify E-3 flight manuals and T.O.updates for software releases
+       4.4.10. Forward GPS Integrated Navigation System (GINS) and JTIDS Terminal
+       software CSCR’s to 552 OSS/OSR for operational validation prior to entry into the G021
+       System (DO-00-35D-54).
+       4.4.11. Enter sustained software deficiencies (outlined in Attachment 2) governed under
+       TO 00-35D-54 into the G021 system.
+    4.5. 552 OG/OGV: The 552d Operations Group, Standardization/Evaluation Division (552
+    OG/OGV) will:
+       4.5.1. Designate individuals in each crew position to comply with OGV responsibilities
+       and as members of the OG RRB, AOCP Database Configuration Board (DCB) and
+       SDWG. RRB members will be appointed by the 552 OSS/CC.
+          4.5.1.1. OG RRB members will attend quarterly and emergency RRB’s convened by
+          552 OSS/OSR and comply with RRB procedures established by this regulation, 552
+          OSS/OSR and squadron OI.
+          4.5.1.2. OG DCB members will attend DCB’s convened by 552 OSS/OSR and
+          comply with RRB procedures established by 552 OSS/OSR or squadron OI.
+          4.5.1.3. 552 OG/OGV board members will evaluate database and software issues
+          from their perspective as the wing’s experts in their respective positions; operations,
+          tactics, training and human factors must be considered.
+          4.5.1.4. The SDWG charter and organizational responsibility therein, is available on
+          the AWACS portal at the 552 OG/OSS/OSR organizational directory.
+       4.5.2. Designate individuals to augment the 552 OG SST.
+       4.5.3. Notify Operational Squadrons and aircrew members by Flight Crew Information
+       File (FCIF) of operational data changes involving flight safety, prior to the release of
+       operations data documents or media.
+552ACWI63-101 31 OCTOBER 2011                                                                9
+
+
+     4.5.4. Notify Operational Squadrons and aircrew members by FCIF of software release
+     for operational use.
+     4.5.5. Evaluate all software releases for T.O.s and flight manual impacts and ensure
+     appropriate documentation changes are fielded to support software release.
+     4.5.6. Review, validate and incorporate appropriate Positional Handbook changes for
+     validated CSCRs to ensure the documents accurately reflect software design.
+     4.5.7. Provide updated positional handbooks and T.O.s required for software releases.
+  4.6. 552 OSS/OSR: The 552 OSS/OSR, Operation Group Requirements, is responsible to
+  the 552d Operations Group (552 OG) Commander through the 552 OSS/CC. 552 OSS/OSR
+  will:
+     4.6.1. Act as 552 OG representatives to coordinate on current requirements with
+     squadron(s), staff agency(s) and the 552 ACW to establish a unified position.
+     4.6.2. Act as 552 ACW focal point to evaluate, review and coordinate organic and
+     sustained E-3 operational software programs to include CSCRs (Category I and II)
+     submitted by 552 ACW, ALCs, contractors and other US E-3 operational software users
+     (i.e. geographically separated units (GSU).
+     4.6.3. Act as the OG RRB Chair and convene the RRB at least once every quarter (or use
+     an equivalent process in conjunction with or instead of the board meeting) to evaluate,
+     review and prioritize all Category I and II CSCR’s. 552 OSS/OST, 552 OG/OGV, 552
+     OSS/OSK will provide board members to be appointed by the 552 OSS/CC. The RRB
+     will:
+        4.6.3.1. Maintain an E-3 Task List detailing the tasks carried out by aircrew members
+        and listing them in order of required efficiency, from greatest to least. Sub-task
+        additions to major tasks can be done with a consensus of all board members; changes
+        to major tasks and changes in the major task priority order require a unanimous vote
+        of all board members.
+        4.6.3.2. Review Category I and II CSCRs to prevent duplication, determine possible
+        impact on, or conflicts with, hardware, documentation, training or other future
+        enhancements and determine if each CSCR satisfies a valid operational requirement.
+        If a 552 MXG/MXGQP CSCR is disapproved or invalid notify 552 MXG/MXGQP of
+        action.
+        4.6.3.3. Forward valid organic CSCRs to 552 ACNS/SCXC for subsequent tracking
+        number assignment.
+        4.6.3.4. Maintain database on all 552 ACW sustained software write-ups in
+        accordance with deficiency reporting method for product listing in Attachment 2.
+        4.6.3.5. Review available engineering analysis and design packages of proposed
+        CSCRs for their impact on operations, logistics, tactics and training.
+        4.6.3.6. Amend CSCRs with consolidated RRB evaluation/review comments,
+        recommendations, impacts and design changes, as applicable; a priority IAW
+        Attachment 4; and a sort category based on defined OSR guidelines.
+10                                                       552ACWI63-101 31OCTOBER 2011
+
+
+        4.6.3.7. Assign valid CSCRs to the appropriate task(s) on the E-3 Task List.
+            4.6.3.7.1. Prioritize all CSCR’s: first, by their major task rank; second, by their
+            subtasks (first sub-task rank, on to the second, etc., if more than one exists); third,
+            by their sort category; and finally, by the number of sort categories assigned (from
+            greatest to least). Exceptions to the outcome of this list can only be made by
+            unanimous agreement of the board; justification shall be noted on the list
+            submitted for OG/CC approval.
+        4.6.3.8. Submit the prioritized CSCR listing to the 552 OG/CC for approval, then
+        forward to 552 ACW/XP for SCCB approval and use at the pre-SCCB meeting to
+        determine wing requirements.
+        4.6.3.8.1. Perform cursory review of SCCB approved products (CSCR listing) at six
+        month point and request an out-of-cycle SCCB if necessary.
+     4.6.3. 9. Convene RRB immediately if a CSCR is a potential priority 1 or 2 IAW
+     Attachment 4.
+     4.6.4. Populate the OG DBC CSCR tracking system with CSCR’s written against
+     sustained software not governed by TO 00-35D-54.
+     4.6.5. Act as the sole operations liaison to 552 ACG and attend software meetings as
+     required.
+     4.6.6. Coordinate current requirements on organic and sustained software, with the 552
+     ACG, 552 MXG/MXGQP and 552 ACW/XPR focal points.
+     4.6.7. Act as liaison with the operational squadrons to evaluate engineering/contractual
+     CSCRs affecting the configuration and operational mission of the E-3.
+     4.6.8. Support other E-3 SCCBs (i.e., ESC, ALC’s and etc) and other software forums or
+     meetings as required, for E-3 sustained software managed outside the wing.
+     4.6.9. Coordinate with applicable ALCs, 552 ACG and contractors to analyze and
+     correct system software deficiencies impacting mission accomplishment.
+     4.6.10. Author the User Project Work Request (UPWR) for special projects requiring
+     particular coordination between CSCRs for presentation at the 552 ACW SCCB or
+     equivalent for sustained software.
+     4.6.11. Attend the ACG CRM, acting as the OG representative and sign the
+     Requirements Specification Document (RSD) when satisfactory.
+     4.6.12. Attend Design Review (Preliminary, Critical, Independent Test) meetings, acting
+     as the OG representative.
+     4.6.13. Attend the User Release/Approval Review meeting acting as the OG
+     representative and either approve the system for operational use or request corrections of
+     the discrepancies (or equivalent for sustained software).
+     4.6.14. Ensure 552 ACG, ALC and Contractor generated products are operationally
+     acceptable by assisting 552 ACNS/SCT and other test directors in system testing of major
+     releases of operational programs and serve as operations approving official for contractor
+     developed software. For IMT 1067 Modification Proposals efforts notify 552
+552ACWI63-101 31 OCTOBER 2011                                                            11
+
+
+     MXG/MXGQP of any mission and/or flight hardware/software/firmware testing
+     requirements.
+     4.6.15. Act as the Office of Primary Responsibility (OPR) for E-3 operational databases
+     (Map, CAF, JTIDS and ESM).
+        4.6.15.1. Ensure the accuracy and currency of the worldwide E-3 operational
+        databases.
+        4.6.15.2. Coordinate with 552d Operations Support Squadron, Airspace Management
+        Element (552 OSS/OSOR) to ensure that operational databases accurately reflect
+        information from current LOAs between military agencies and civilian aviation
+        administrations.
+        4.6.15.3. Coordinate with 552d OG, OGV and 552 OSS/OSOR to alert aircrews of
+        known airspace changes or errors that pose a hazard to flight safety.
+        4.6.15.4. Provide notification of map/adaptation updates and corrections to 552 OSS,
+        Weapons and Tactics Element (552 OSS/OSK) and Operational Squadron Tactics
+        Sections (DOW) for dissemination to all crewmembers.
+        4.6.15.5. Maintain one worldwide set of map/adaptation, map/CAF database data,
+        two copies of the TP-1000s, two copies of the JTIDS database listing, two copies of
+        the ESM-1000s and one copy of all LOAs for reference, unless such information can
+        be electronically retrieved via the internet or intranet.
+        4.6.15.6. Provide OG agencies/squadrons with updated electronic and paper
+        map/adaptation TP-1000s; JTIDS database listings and ESM-1000s of each new
+        version release.
+        4.6.15.7. Assist wing agencies in accomplishing operational contingency and
+        exercise map/adaptation, ESM and JTIDS database changes as required. This
+        excludes demonstration tapes and exercise scenario media contracted by 552d OSS,
+        Contract Liaison Office (552 OSS/OSTQ) for use solely in simulators.
+        4.6.15.8. Act as AOCP DCB chair and convene the board to determine CAF/Map,
+        JTIDS and ESM database requirements. 552 OSS/OST, 552 OG/OGV, 552
+        OSS/OSX and 552 OSS/OSK will provide board members to be appointed by the 552
+        OSS/CC. Timing and procedures for the DCB will be determined by current 552
+        ACG policy and procedures. The DCB will:
+            4.6.15.8.1. Determine database priorities for each database ―build‖ utilizing
+            procedures developed by 552 OSS/OSR.
+            4.6.15.8.2. Coordinate with the RRB for software enhancements needed to satisfy
+            database requirements.
+     4.6.16. Act as the 552 ACW OPR for conducting/scheduling software ground and flight
+     tests. Coordinate with MXG, ACG and OG to ensure resources, logistics and assets are
+     available to support testing effort.
+     4.6.17. Act as the SST lead and put a team together as required to support software
+     testing. 552 OSS/OST, 552 OSS/OSK, 552 OG/OGV, 552 ACNS/SCT and 552 MXG
+     will provide supplemental personnel appointed by their respective CC. The SST will:
+12                                                     552ACWI63-101 31OCTOBER 2011
+
+
+        4.6.17.1. Fly test sorties to conduct testing on major software releases.
+        4.6.17.2. Validate CSCRs in flight or in the simulator, as applicable.
+        4.6.17.3. Test products under development at 552 ACG’s request.
+        4.6.17.4. Conduct all testing and coordinate with applicable personnel/agencies IAW
+        552 OSS/OSR procedures.
+     4.6.18. Review for operational validation GINS and JTIDS Terminal software CSCR’s
+     prior to entry into the G021 System (DO-00-35D-54). Forward approval/disapproval
+     with action to 552 MXG/MXGQP.
+     4.6.19. Act as the SDWG Chairman. The SDWG charter, including required
+     membership, responsibilities, and AOCP software fielding time is available on the
+     AWACS portal at the 552 OG/OSS/OSR organizational directory.
+  4.7. 552 OSS/OST: The 552d Operations Support Squadron, Training Flight Commanders
+  (552 OSS/OST) will:
+     4.7.1. Designate individuals in each crew position to comply with OST responsibilities
+     and as members of the OG RRB and AOCP DCB and SDWG. RRB and DBC members
+     will be appointed by the 552 OSS/CC.
+        4.7.1.1. RRB members will attend quarterly and emergency RRB’s convened by 552
+        OSS/OSR and comply with RRB procedures established by this regulation, 552
+        OSS/OSR and squadron OI.
+        4.7.1.2. DCB members will attend DCB’s convened by 552 OSS/OSR and comply
+        with RRB procedures established by 552 OSS/OSR or squadron OI.
+        4.7.1.3. 552 OSS/OST board members will evaluate database and software issues
+        primarily on their impacts on the training program. They will also discuss with the
+        board their opinions regarding operations, tactics and human factors involved SST.
+     4.7.1.4. The SDWG charter, and organizational responsibility therein, is available on
+     the AWACS portal at the 552 OG/OSS/OSR organizational directory.
+     4.7.2. Designate SMEs in each crew position to develop and provide pre-release training
+     on new software versions.
+     4.7.3. Evaluate all software releases for training requirements, ensuring appropriate
+     crewmember training is provided to allow their use of the fielded software. This will
+     include:
+        4.7.3.1. Ensure upgrade of the applicable trainers/simulators and/or scenarios in
+        concert with the release process.
+  4.8. 552 Operational Support Squadron, Operations Group Weapons and Tactics Element
+  (552 OSS/OSK) will:
+     4.8.1. Designate individuals in each crew position to comply with OSK responsibilities
+     and as members of the OG RRB and AOCP DCB and SDWG. RRB and DCB members
+     will be appointed by the 552 OSS/CC.
+552ACWI63-101 31 OCTOBER 2011                                                               13
+
+
+        4.8.1.1. RRB members will attend quarterly and emergency RRB’s convened by 552
+        OSS/OSR and comply with RRB procedures established by this regulation, 552
+        OSS/OSR and squadron OI.
+        4.8.1.2. DCB members will attend DCB’s convened by 552 OSS/OSR and comply
+        with RRB procedures established by 552 OSS/OSR or squadron OI.
+        4.8.1.3. 552 OSS/OSK board members will evaluate database and software issues
+        primarily on their impacts on tactical employment of the E-3. They will also discuss
+        with the board their opinions regarding operations, tactics, training and human factors
+        involved.
+     4.8.1.4. The SDWG charter, and organizational responsibility therein, is available on
+     the AWACS portal at the 552 OG/OSS/OSR organizational directory.
+     4.8.2. Designate individuals to augment the 552 OG SST.
+     4.8.3. The 552d Operations Support Squadron, Contingency Plans Element Chief (552
+     OSS/OSKX), will: Advise 552 OSS/OSR of operational contingency requirements that
+     necessitate database modifications NLT one month prior to deployment. If initial notice
+     of the contingency makes this impossible, 552 OSS/OSKX will inform 552 OSS/OSR
+     immediately if a database modification may be needed and provide 552 OSS/OSR with
+     database information as it is generated, avoiding a single, later, bulk delivery.
+  4.9. The 552 OSS, Intelligence Flight Commander (552 OSS/IN) will:
+     4.9.1. Verify the operations database accurately reflects official political borders,
+     military and economic zones and enemy air order of battle in coordination with 552
+     OSS/OSR.
+     4.9.2. Provide appropriate database inputs/updates, if available, to 552 OSS/OSR during
+     preparation for contingency deployments, i.e. known SAM, AAA, airfield, radar
+     locations for deployment location. Coordinate with 552 OSS/OSK to ensure no
+     duplication of requested points.
+     4.9.3. Review applicable (i.e., 552 ACW Managed Software) software modifications and
+     documentation for disclosure and releasability to foreign countries.
+  4.10. The 552 OSS, Current Operations Exercises Element Chief (552 OSS/OSOE) will:
+     4.10.1. Advise 552 OSS/OSR of exercise map/adaptation and JTIDS requirements that
+     necessitate database modification NLT one month prior to deployment to the exercise.
+     4.10.2. Provide 552 OSS/OSR with database information as it is provided during initial
+     planning and subsequent conferences, avoiding a single, later, bulk delivery.
+     4.10.3. Direct tasked operational squadrons to provide 552 OSS/OSR with database
+     information as it is provided during initial planning and subsequent conferences, avoiding
+     a single, later, bulk delivery.
+     4.10.4. Advise tasked operational squadrons that final database modifications must be
+     submitted to 552 OSS/OSR NLT 15 working days prior to deployment to the exercise.
+  4.11. The 552d Operations Support Squadron, Airspace Management Element Chief (552
+  OSS/OSOR) will:
+14                                                   552ACWI63-101 31OCTOBER 2011
+
+
+     4.11.1. Coordinate with appropriate commands, range groups, NORAD Regions and
+     FAA Centers to determine accuracy of airspace-related operational information.
+     4.11.2. Notify aircrew members and 552 OSS/OSR of the LOA changes that will affect
+     the database and video displays.
+     4.11.3. Notify 552 OSS/OSR of reported errors or discrepancies in video map displays.
+     4.11.4. Perform annual inspections of 552 OSS/OSR LOA files for currency.
+  4.12. The 960 AACS/CC, 963 AACS/CC, 964 AACS/CC, 965 AACS/CC, 552 TRS/CC,
+  966 AACS/CC and 970 AACS/CC will:
+     4.12.1. Through their DOW:
+        4.12.1.1. Advise 552 OSS/OSR of operational contingency requirements and
+        exercise      map/adaptation requirements that modify the existing E-3 computer
+        database. For exercises, after initial coordination with 552 OSS/OSOE, provide 552
+        OSS/OSR with database information as it is provided during initial planning and
+        subsequent conferences, avoiding a single, later, bulk delivery. Final database
+        modifications must be submitted to 552 OSS/OSR NLT 15 working days prior to
+        deployment to the exercise. OG/CC to ACG/CC coordination required if under the
+        15 day limit.
+        4.12.1.2. Contact 552 OSS/OSR upon notification of a contingency deployment to
+        ensure additional maps/adaptation TP-1000s, JTIDS database listings and ESM-1000s
+        are available if required.
+        4.12.1.3. Disseminate all E-3 database updates and modifications to mission
+        crewmembers.
+        4.12.1.4. Maintain sufficient electronic/paper copies of TP-1000s, JTIDS database
+        listings and ESM-1000s to conduct CONUS and deployed operations simultaneously.
+        4.12.1.5. Provide assistance to mission crewmembers in preparing DBCRs then
+        forward them expeditiously to 552 OSS/OSR.
+     4.12.2. Through their Standardization/Evaluation Sections (CCV):
+        4.12.2.1. Provide expertise on the CSCR process necessary to assist mission
+        crewmembers in preparing and submitting SDRs, PIRs and DERs.
+5. PROCEDURES:
+  5.1. Map/adaptation, ESM and JTIDS DBC changes:
+     5.1.1. Database Change Requests (552 ACW IMT 8) are initiated by any E-3
+     crewmember whenever a suspected error or enhancement to the theater operation
+     database is identified or to provide feedback to 552 OSS/OSR on the accuracy and
+     completeness of the map and adaptation data.
+        5.1.1.1. As a minimum, DBCRs must provide the following information:
+            5.1.1.1.1. Title of request.
+            5.1.1.1.2. Current date.
+552ACWI63-101 31 OCTOBER 2011                                                                  15
+
+
+            5.1.1.1.3. Classification.
+            5.1.1.1.4. Requirement point of contact.
+            5.1.1.1.5. Database use (e.g. operational, exercise, simulated).
+            5.1.1.1.6. Desired delivery date of product.
+            5.1.1.1.7. Apply change to Airborne AOCP version.
+            5.1.1.1.8. Affected region(s).
+            5.1.1.1.9. Desired action/Proposed solution.
+            5.1.1.1.10. DBCRs are given to the squadron Operational Readiness Center or
+            DOW and then expeditiously forwarded to 552 OSS/OSR.
+     5.1.2. 552 OSS/OSR will evaluate and validate all requested/suggested changes to the
+     database (ESM, JTIDS, MAP, CAF).
+     5.1.3. Notify the originator of the action taken. If a suggestion is not valid or not
+     accepted OSR will notify the suggestor with the reason the suggestion was invalid or not
+     accepted.
+     5.1.4. 552 OSS/OSR is the only 552 OG office to submit database changes in the form of
+     a DBCR (552 ACW IMT 8) to 552 ACG/SCXX.
+     5.1.5. 552 ACG/SCXX will advise 552 OSS/OSR when revised map/adaptation media
+     will be validated. 552 OSS/OSR certification, including visual inspection, will be
+     accomplished during the validation process.
+  5.2. CSCRs will be submitted using the appropriate form as follows:
+     5.2.1. PIR – ACW IMT 6 (Reference Attachment 5)
+     5.2.2. PER/SDR – ACW Office Form 1 (Reference Attachment 6 )
+     5.2.3. DER – ACW IMT 7 (Reference Attachment 7)
+     5.2.4. DBCR – ACW IMT 8 (Reference Attachment 8)
+     5.2.5. DBCR – Deployed ACW IMT 9 (Reference Attachment 9)
+     5.2.6. TIR – Reference Attachment 10 (initiated by 552 ACNS/SCT personnel)
+  5.3. Ramp testing for all software requirements and enhancements will be coordinated
+  through 552d Operations Support Squadron Commander (552 OSS/CC). 552 OSS will
+  manage all software ramp testing through 552 OSS/OSR.
+     5.3.1. The 552 OSS/OSR will coordinate ramp test/aircraft requirements with 552
+     MXG/MXAS and 552 MXG/MXGQP (normally) 30 days in advance.
+     5.3.2. The 552 OSS/OSR will keep 552 ACW/XPR, 552 MXG/MXGQP and 552
+     ACG/SCXX informed on all ramp testing scheduling/requirements.
+     5.3.3. Final testing of all new versions of E-3 operational software will consist of at least
+     one ramp test on applicable aircraft/system configurations before release for flight-
+     testing. The intent of this requirement may be fulfilled through adequate lab/facility
+     testing accomplished as a subset of the software manager’s release/TCTO process. In
+16                                                      552ACWI63-101 31OCTOBER 2011
+
+
+     those cases, 552 OSS/OSR will determine if duplicate and/or independent ramp testing is
+     required.
+     5.3.4. The applicable test directors are responsible for providing a current software test
+     plan and for managing each test session.
+  5.4. The 552 OG SST will participate in the testing of all E3 operational software and
+  databases.
+     5.4.1. 552 OSS/OSR is lead for the SST. 552 OSS/OST, 552 OSS/OSK, 552 OG/OGV,
+     552 ACNS/SCT and 552 MXG will provide supplemental personnel as required.
+     5.4.2. Depending on the nature of changes under test and test plan/directives, the 552 OG
+     Software Support Team will be comprised of the appropriate crew/maintenance personnel
+     composition necessary for the E3 software under test.
+  5.5. Flight-testing for all software requirements and enhancements will be coordinated
+  through 552 OSS/CC. The 552 OSS will manage all software flight-testing through 552
+  OSS/OSR.
+     5.5.1. Final testing of all new versions of E-3 operational software will consist of at least
+     one sortie on each applicable aircraft/system configuration before release to the aircrews/
+     maintenance. On sustained software, the intent of this requirement may be fulfilled as a
+     subset of the software manager’s release/TCTO process. In those cases, duplicate and
+     independent testing by the wing is not necessarily required.
+     5.5.2. Flight testing for mission software build changes, prior to actual
+     certification/acceptance testing, will be on a non-interference basis, coordinated with the
+     E-3 Mission Crew Commander (MCC) prior to the first mission planning briefing and
+     giving the MCC the final decision concerning mission and/or training impact of
+     conducting the testing.
+        5.5.2.1. The 552 ACG and/or organization requesting flight test will provide training
+        for each affected mission crew position on all program changes before mission
+        planning of the flight.
+        5.5.2.2. For 552 ACG configuration managed software, the 552 OG SST and test
+        directors will be loaded on the flight in addition to filling vacant crew positions from
+        the squadron assigned the flight.
+     5.5.3. All requests for dedicated software and other flight-testing requirements will
+     normally be made at least 3 and no less than 1 month(s) in advance.
+        5.5.3.1. 552 OSS/OSR will coordinate/schedule dedicated flight test activities with
+        552 OSS/OSO.
+        5.5.3.2. All requests for flight-tests will be accompanied with a Test Plan and
+        Procedures within 30 days of test conduct.
+     5.5.4. Test directors will forward a request to 552 OSS/OSOF and 552 OSS/OSR, as
+     needed to update personnel authorized to fly (IAW AFI 11-401, AFI 11-401/ACC Sup 1)
+     for both those on and not on aeronautical orders. Courtesy copies will be forwarded to
+     each flying squadron SARM and 552 MXG/MXGQP. For short notice requests, letters
+     must be submitted to 552 OSS/OSOF and 552 OSS/OSR a minimum of 5 days prior to
+552ACWI63-101 31 OCTOBER 2011                                                                17
+
+
+     flight for approval. Outside agency, test directors will submit requests through 552
+     ACW/XPR for 552 ACW/CC approval.
+     5.5.5. Software functions will be tested operationally as prescribed in the test plan (i.e.
+     weapons, ESM, surveillance, communications, Link 11 and 16 activity with data
+     exchange, frequency control and System M.).
+     5.5.6. 552 OSS/OSR Test directors will complete a quick look/after action report on all
+     testing.
+  5.6. E-3 Software Releases.
+     5.6.1. All U.S. E-3 operational programs, including but not limited to, AOCP, AOCP
+     related databases, AOCP related programs, Radar operational programs, Radar
+     Harmonization programs, Maintenance Computer Programs, Nutcracker Programs and
+     Electronic Support Measures operational programs will be coordinated with the
+     appropriate wing agencies and external organizations when ready for release by the 552
+     ACW E-3 Software Program Manager (552 ACG/SCXX). 552 OSS/OST will determine
+     and coordinate training requirements; to include required SIM/trainer upgrades and
+     ensure appropriate training updates are in place to support training requirements upon the
+     software’s release. A software release letter will be issued from 552 ACG and the RMAs
+     will be updated as appropriate. 552 OG/OGV, with input from the OG, MXG and the
+     ACG, will determine the release date for CONUS and PACAF evaluation and worldwide
+     release via FCIF, once coordination by 552 ACG/SCXX is completed. Proper fielding of
+     AOCP software updates, including training requirements, standards/evaluation
+     requirements, and future operational techniques/procedures development is guided by the
+     SDWG.
+     5.6.1. 1. The SDWG charter, and organizational responsibility therein, is available on the
+     AWACS portal at the 552 OG/OSS/OSR organizational directory.
+
+
+
+
+                                          Patricia D. Hoffman, Colonel, USAF Commander,
+                                          552d Air Control Wing
+ 18                                                    552ACWI63-101 31OCTOBER 2011
+
+
+                                        Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 63-101, Acquisition Systems, 11 May 94
+IEEE/EIA 12207.2, Software Life cycle Processes – Implementation Considerations, 1 Jan 98
+T.O. 00-35D-54, USAF Deficiency Reporting, Investigating and Resolution,1 July 04
+Adopted Forms.
+AF 847, Recommendation for Change of Publication
+552ACW 6, Program Incident Report
+552ACW 7, Document Error Report
+552ACW 8 E-3, Database Change Request
+552ACW 9 E-3, Database Change Request Deployed
+552 ACW Office Form 1, Computer Software Change Request
+
+TERMS
+
+Adaptation Data—Data that modifies an E-3 AOCP database to a specific environment or
+theater of operation. Adaptation data is established by 552d Operations Group Commander
+(552 OG/CC) and controlled by 552d Computer Systems Group Commander (552 ACG/CC).
+Airborne Operational Computer Program (AOCP)— E-3 central computer's operational
+program. It is the controlling element for most mission functions. The mission routines of
+AOCP perform the following functions: Sensor tracking, weapons guidance tactics, controlled
+aircraft status, data link encoding and decoding, frequency management, display data, switch
+action implementation, internal simulation and management of information peculiar to battle
+staff needs.
+Baseline Change Request (BCR)— Modifies UPWR by adding additional products to the
+UPWR. Used when outside source delivers software product. BCR may be initiated by 552 OG
+representative, Program Manager, Project Team members, or by Outside agency. There are two
+types: Class I- Requirements or Interface change and Class II- Small change to existing
+requirement.
+Computer Software Change Request (CSCR)— A change request for a perceived operational
+requirement/system improvement, or to correct errors in computer software. There are six types
+of CSCRs: Document Error Report (DER), Program Error Reports (PER), Program Incident
+Report (PIR), Database Change Request (DBCR), Trouble Incident Report (TIR) and System
+Design Request (SDR)
+Consolidated Review Meeting (CRM)— Monthly meeting between 552 OSS/OSR and 552
+ACG to discuss requirements, software development and problem analysis to ensure software
+development is on target.
+552ACWI63-101 31 OCTOBER 2011                                                                19
+
+
+Critical Design Review (CDR)— At the CRM 552 OG and MXG representative attend to
+evaluate that the critical (detailed) design will meet the operational needs. 552 OG
+representative and Program Manager concur on minutes with action items resolved.
+Database Change Request (DBCR) 552 ACW IMT 8— A DBCR identifies a change to the
+maps and adaptation databases. A DBCR may be an original request or may result from a PER,
+PIR or SDR.
+Database Change Request (DBCR) - Deployed 552 ACW IMT 8A— The DBCR –
+Deployed, will be used to initiate changes to contents of the E-3 operational databases (ESM,
+JTIDS, map, or CAF adaptation data) as required to improve the operational effectiveness of the
+E-3 system.
+Document Error Report (DER) (552 ACW IMT 7)— A DER is the vehicle for any individual
+associated with the E-3 system to initiate a correction to official software documentation. The
+DER may also be utilized to improve format and clarity of official documentation.
+ESM Emitter Library Listing - ESM-1000— A publication used by mission planning
+personnel that contains a summary of critical ESM emitter library data.
+Independent Test Review (ITR)— Project Manager convenes and chairs meeting, after
+integration testing and system testing. Attended at a minimum by 552 ACG and OG
+representatives. 552 OG representative signs release letter.
+Joint Tactical Information Distribution System (JTIDS)— A time division multiple access
+(TDMA) communication system operating in the L-band (960-1215 MHz) frequency range. It
+provides real time, jam resistant, secure, digital communication of data voice for command and
+control, navigation, relative positioning and identification. The E-3 is equipped with a Class2H
+JTIDS terminal.
+JTIDS Library Listing— JTIDS DATABASE LISTING - A publication used by mission
+planning personnel which contains a summary of critical JTIDS network data.
+Map— AOCP geographical database information used to create a display of the theater of
+operations. Several geographical maps can be merged on each AOCP media. Map data is
+established by 552 OG and controlled by 552 ACG.
+Map and Adaptation Technical Publication 1000— Publication used by mission planning
+personnel, containing summary of critical map/adaptation data, contained on each AOCP master
+tape. Information in the TP-1000 is extracted from map/CAF database listings. (See TP-1000)
+Map/CAF Database Listing— A complete database list of all AOCP adaptation and map data.
+Network Interface Computer Program (NICP)— Housed in the JTIDS Digital Data Processor
+(DDP), the NICP processes all message data for transmission and reception.
+Operations Group Requirements Review Board (OG RRB)— Quarterly meeting, hosted by
+552 OSS/CC. Purpose is to review all open CSCRs and PERs to determine OG priority.
+Attended at a minimum by 552 OG/OGV, 552 OSS/OSTM, 552 OSS/OSK and 552 OSS/OSR.
+The OG level RRB is responsible for reviewing proposed Category I and II changes/ enhance-
+ments to the E-3 system for completeness and accuracy and to avoid duplication. The OG level
+RRB will also verify the priority 1-5 assigned by the originator.
+ 20                                                       552ACWI63-101 31OCTOBER 2011
+
+
+Preliminary Design Review (PDR)— At the CRM 552 OG and MXG representatives attends to
+evaluate if the preliminary design will meet the operational requirements.
+Priority— Customer assigned priority of importance of a CSCR (See Attachment 4).
+Program Error Report (PER)— The PER will be used to report a confirmed program error.
+Only programmers/analyst/engineers responsible for software support may initiate a PER. Users
+will submit PIRs to report suspected software problems. Only after verification that a software
+error exists will the analyst open a corresponding PER. PERs receive a Value Assessment based
+upon the following criteria, in accordance with IEEE/EIA 12207.2 Software Life Cycle
+Processes – Implementation Considerations.
+Program Incident Report (PIR) (552 ACW IMT 6)— The PIR will be used to report a
+program incident or suspected program error. Any individual involved in operating,
+maintaining, or observing an E-3 software driven system may initiate a PIR.
+Project Start Review (PSR)— Project Team identified, User signs UPWR.
+Requirements Specification Review (RSR)— Review to ensure that the Program Manager and
+the programmer-analysts assigned to do the analysis of CSCR understand the user requirements.
+Requirements Specification Documents (RSDs) are written for each CSCR received, against 552
+ACW managed software and analysis is presented to the user at the CRM.
+Software Change Report (SCR) Listing— A listing that displays the status of all open SDRs,
+PIRs, PERs, TIRs, DBCRs and DERs.
+Software Configuration Control Board (SCCB)— Wing level board responsible for
+configuration management of organic software. Configuration control is accomplished through
+the approval or disapproval of mission software changes/enhancements to the organic E-3
+software and establishing a wing sequential priority for all open CSCRs.
+Software Delivery Working Group (SDWG)— Led by 552 OSS/OSR to clarify requirements
+and level of effort to properly field AOCP software upgrades as well as other upgrades relevant
+to E-3 mission systems (ESMOCP, RSIP, JTIDS, etc.).
+Subscriber Interface Computer Program (SICP)— Housed in the JTIDS Interface Unit (IU),
+the SICP is tailored to the E-3 interface. It interfaces all message traffic to and from the E-3 on
+board computers with the Digital Data Processor.
+Software Support Team (SST)— 552 MXG representatives who provide support when 552
+OSS/OSR requests 552 MXG assistance.
+Subject Matter Expert (SME)— Subject Matter Expert is that individual who exhibits the
+highest level of expertise in performing a specialized job, task, or skill within the organization.
+System Design Request (SDR)— An SDR allows an individual associated with the E-3 system
+to propose a change to improve system performance, program design, or add a new capability.
+Any individual associated with the E-3 system may submit an SDR. SDRs receive a Value
+Assessment based upon the following criteria, in accordance with IEEE/EIA 12207.2 Software
+Life Cycle Processes – Implementation Considerations.
+Trouble Incident Report (TIR)— The TIR is used to report a program incident or suspected
+program error found during interoperability testing. TIR can only be written by software test
+flight personnel.
+552ACWI63-101 31 OCTOBER 2011                                                                 21
+
+
+Test Readiness Review (TRR)— 552 OG representative meets with the project team to review
+test results, determines whether the project has been successfully implemented for release to the
+customer for user acceptance testing or joint service testing and determines if there are any
+system shortfalls that should be re-worked prior to system testing.
+TP-1000— Map and Adaptation Technical Publication 1000 - A publication used by mission
+planning personnel which contains a summary of critical map/adaptation data contained on each
+AOCP master tape. Information in the TP-1000 is extracted from map/CAF database listings.
+User Project Work Request (UPWR)— This memorandum describes a project or work to be
+done by the 552 ACG. This request describes the operational need, outlines the project, the
+deliverables and any other commitments made between the 552 ACG and user.
+User Release/Approval Review— occurs after user acceptance of software. 552 OG/OGV
+authors FCIF to inform Operational Squadrons of software CONUS release. 552 OG
+representative meets with key program team members to list any discrepancies found during user
+acceptance testing. 552 OG representative approves the system for operational use, or requests
+that any discrepancies are corrected. User Release/Approval Review meeting is documented in
+the User Acceptance/Release Letter.
+552 ACW Managed Software— E-3 Missions Critical application and associated support
+software which the 552 ACW/552 ACG has Organizational levels maintenance/sustainment
+responsibility for. The E-3 System Program Director (SPD) is the Single Manager (SM)
+responsible for Configuration Management (CM) of AWACS. The Service Level Agreement
+(MOA) between ESC/AW and the 552 ACW delegates CM responsibilities this software to the
+552 ACW.
+ 22                                                     552ACWI63-101 31OCTOBER 2011
+
+
+                                         Attachment 2
+                 MISSION CRITICAL COMPUTER SOFTWARE TABLE
+
+Table A2.1. E-3 MISSION CRITICAL COMPUTER SOFTWARE PROGRAM(S)/OPRs
+                                Configuration   Engineering/     Deficiency    Wing
+                                                Programming      Reporting     Focal
+Mission Critical Computer         Manager
+                                                    OPR            IAW         Point
+        Software
+Flight Deck:
+  AF Mission Support            OO-ALC          OO-ALC         TO 00-35D-54   552
+  System (AFMSS)                                                              OSS/OSR
+      Portable Flight Planning OO-ALC           OO-ALC         TO 00-35D-54   552
+      System (PFPS)                                                           OSS/OSR
+        Flight Performance      ACC Eglin                      TO 00-35D-54   552
+        Module (FPM)                                                          OSS/OSR
+      Digital Aeronautical      OO-ALC          OO-ALC         TO 00-35D-54   552
+      Flight Information File                                                 OSS/OSR
+      (DAFIF)
+      Aircraft/Weapons/Elect    OO-ALC          OO-ALC         TO 00-35D-54   552
+      ronic (A/W/E)                                                           OSS/OSR
+      Falcon View               OO-ALC          OO-ALC         TO 00-35D-54   552
+                                                                              OSS/OSR
+      National Imagery &        OO-ALC          OO-ALC         TO 00-35D-54   552
+      Mapping Agency                                                          OSS/OSR
+      (NIMA)
+      Mission Planning          OO-ALC          OO-ALC         TO 00-35D-54   552
+      Ground Support                                                          OSS/OSR
+      (MPGS)
+  Control Display Unit          OO-ALC          OO-ALC         TO 00-35D-54   552
+  (CDU) Operation Flight                                                      OSS/OSR
+  Program (OFP)
+  Embedded Global Position      WR-ALC          WR-ALC         TO 00-35D-54   552
+  System (GPS) Inertial                                                       OSS/OSR
+  Navigation Unit (INU)
+  (EGI) OFP (Hardware)
+       GEM Version              WR-ALC          WR-ALC         TO 00-35D-54   552
+                                                                              OSS/OSR
+  Navigation Computer           OC-ALC/         OC-ALC         TO 00-35D-54   552
+  Program (NCP)                 557 ACSS        OO-ALC                        OSS/OSR
+552ACWI63-101 31 OCTOBER 2011                                               23
+
+
+                                                                      **
+SENSORS:
+  Digital Land Mass Blanker    552 ACW     552 ACG     552 ACWI       552
+  (DLMB) Atlases (35                                   63-101         OSS/OSR
+  regions)
+
+
+  RSIP Surveillance Radar      OC-ALC/     OC-ALC/     552 ACWI       552
+  Operational Program          557 ACSS    558 SMXS/   63-101         OSS/OSR
+  (SROP) - Consisting of 19                MXDEB
+  Files
+  Electronic Support           OC-ALC/     OC-ALC      552 ACWI       552
+  Measures Operational         557 ACSS    558 SMXS/   63-101         OSS/OSR
+  Computer Program                         MXDEA
+  (ESMOCP)
+IFF                            WR-ALC      WR-ALC      TO 00-35D-54   552
+                               752 CBSG/   752 CBSG/                  OSS/OSR
+                               ENN         ENN
+Bench top Reconfigurable       WR-ALC      WR-ALC      TO 00-35D-54   552
+Automated Tester (BRAT)                                               MXG/
+                                                                      MXGQP
+Trainers/SIMs
+  Surveillance Radar Trainer   OO-ALC      OO-ALC      Via contract   N/A
+  Set (SRTS)                   Proactive   Proactive   procedures
+
+
+  MTC                          OO-ALC      OO-ALC      Via contract   N/A
+                               PLEXYS      PLEXYS      procedures
+
+
+                               OO-ALC      OO-ALC      Via contract
+  Flight SIM
+                               L-3 Comm    L-3 Comm    procedures     N/A
+
+
+
+  External ESM Simulator                                              552
+                               OC-ALC      OC-ALC      552 ACWI
+  Operational Computer                                                OSS/OSR
+                               557 ACSS    558 SMXS    63-101
+  Program (EESOCP)
+
+Comm
+HF-ALE                         WR-ALC      WR-ALC      TO 00-35D-54   552
+                               578 SMXS/   578 SMXS/                  OSS/OSR
+ 24                                                552ACWI63-101 31OCTOBER 2011
+
+
+                                LFTC        LFTC
+BI                                                        552 ACWI       552
+                                                          63-101         OSS/OSR
+                                WR-ALC      WR-ALC
+
+                                                          TO 00-35D-54   552
+JTIDS (Terminal)                WR-ALC      WR-ALC
+                                                          552 ACWI       OSS/OSR
+                                569 CBSS/   569 CBSS/
+                                                          63-101         **
+                                GBECD       GBECD
+
+
+
+Integrated DATA/GATM                                      TO 00-35D-54   552
+                                OO-ALC      OO-ALC
+                                                                         OSS/OSR
+                                            Rockwell
+                                            Collins &
+                                            Raytheon
+
+HF Messenger                                                             552
+                                                          TO-00-35D-54
+                                WR-ALC      WR-ALC                       OSS/OSR
+Airborne Operational            552 ACW     552 ACG       552 ACWI       552
+Computer Program (AOCP)                                   63-101         OSS/OSR
+     In-Flight Performance      552 ACW     552 ACG       552 ACWI       552
+     Program (IFPP)                                       63-101         OSS/OSR
+     Utility Computer Program   552 ACW     552 ACG       552 ACWI       552 ACG/
+     (UCP)                                                63-101         SCXX
+     System Exercise and        552 ACW     552 ACG       552 ACWI       552 ACG/
+     Analysis Computer                                    63-101         SCXX
+     Program (SEACP)
+Electronic Support Measures     552 ACW*    552 ACG       552 ACWI       552
+Database Update Program                                   63-101         OSS/OSR
+External ESM Simulator          552 ACW*    552 ACG       552 ACWI       552
+Database Update Program                                   63-101         OSS/OSR
+Mission Simulation              552 ACW*    552 ACG       552 ACWI       552
+Computer Program                                          63-101         OSS/OSR
+
+
+
+
+Maintenance Computer            OC-ALC      OC-ALC/       552 ACWI       552
+Program (MCP)                   557 ACSS    558 SMXS      63-101         MXG/
+                                                                         MXGQP
+552ACWI63-101 31 OCTOBER 2011                                                               25
+
+
+Hardware Diagnostics
+Nutcracker                     OC-ALC            OC-ALC/          552 ACWI          552
+                               557 ACSS          558 SMXS         63-101            MXG/
+                                                                                    MXGQP
+* IAW AFI 63-1201, the E-3 System Program Director (SPD), as the Single Manager,
+delegates configuration management for this software to the 552 ACW (Ref. Service
+Level Agreement between the E-3 System Program Office and 552 ACW).
+ ** 552 OSS/OSR will determine appropriate logistics center for problem error reports based on
+                      software determination (i.e. embedded software)
+ 26                                                    552ACWI63-101 31OCTOBER 2011
+
+
+                                        Attachment 3
+        COMPUTER SOFTWARE CHANGE REQUEST CATEGORY SCHEME
+
+A3.1. All CSCRs will be categorized based upon the following criteria:
+   A3.1.1. Category I - Major Operational Programs. AOCP and all programs used in
+   direct support or performance of the E-3 mission.
+   A3.1.2. Category II - Major Support Programs. All other contractual programs not in
+   Category I. These programs build and control versions of Category I programs, perform
+   operational data reduction, initialization/adaptation functions and generate or analyze crew
+   training products.
+   A3.1.3. Category III - Major Support Programs (Non-Contractual). All non-contractual
+   programs used to build and control sub-versions/versions of Category I programs, perform
+   data reduction, initialization or adaptation functions and generate or analyze crew training
+   products.
+   A3.1.4. Category IV - Multi-Flight Use. Other external support software or programs that
+   perform technical data reduction, build scenario media, aid in library maintenance, or are
+   programs not related to the creation of Category I programs.
+   A3.1.5. Category V - Internal 552 ACG utilities. These programs do not fit into any of the
+   above categories. They are used by only one flight within 552 ACG. The using flight will
+   maintain the program.
+   A3.1.6. Category S - System Software. These programs may fit into any one of the above
+   categories. The impact/severity and who will fix the problem will determine which category
+   it is assigned.
+552ACWI63-101 31 OCTOBER 2011                                                                       27
+
+
+                                           Attachment 4
+           COMPUTER SOFTWARE CHANGE REQUEST PRIORITY SCHEME
+
+Table A4.1. Computer Software Change Request Priority Scheme
+Priority    Applies if a problem could:
+   1        a. Prevent the accomplishment of an operational or mission essential capability.
+
+
+            b. Jeopardize safety, security, or other requirements designated ―critical‖.
+   2        a. Adversely affect the accomplishment of an operational or mission essential
+            capability and no work-around solution is known.
+
+
+            b. Adversely affect technical, cost or schedule risks to the project or to life cycle
+            support of the system and no work-around solution is known.
+   3        a. Adversely affect the accomplishment of an operational or mission essential
+            capability but a work-around solution is known.
+
+
+            b. Adversely affect technical, cost or schedule risks to the project or to life cycle
+            support of the system, but a work-around solution is known.
+   4        a. Result in user/operator inconvenience or annoyance but does not affect a required
+            operational or mission essential capability.
+
+
+            b. Result in inconvenience or annoyance for development or support personnel but,
+            does not prevent the accomplishment of those responsibilities.
+   5        Any other effect
+Priority 1 = Emergency
+Priority 2 = Urgent
+Priorities 3-5 = Routine
+ 28                                                       552ACWI63-101 31OCTOBER 2011
+
+
+                                          Attachment 5
+                           PROGRAM INCIDENT REPORT (PIR)
+
+A5.1. PURPOSE. PIR will be used to report a program incident or suspected program error.
+A5.2. INITIATION. Any individual involved in operating, maintaining or observing an E-3
+software driven system may initiate a PIR. The originator must review the PIR and all
+attachments for classification purposes. The PIR and attachments will be properly marked with
+classification markings before being submitted. The use of acronyms and jargon should be
+avoided. All Category 1 and II programs will be forwarded by the originating organization to the
+wing focal point (552 OSS/OSR) for evaluation before being forwarded to 552 ACNS/SCXC.
+All other PIRs will be sent directly to 552 ACNS/SCXC by the originating agency. The
+completed PIR is given to the appropriate focal point who will thoroughly investigate and review
+the report to assure accuracy, completeness, clarity and legibility of information supplied. Only
+one problem and one program should be identified or analyzed per report.           A PIR may be
+converted to a PER, SDR, DBCR, TIR or DER by the analyzing organization should further
+action be necessary. If the PIR is to be converted to an SDR, the originator or appropriate focal
+point of the PIR should generate the SDR.
+A5.3. FORMAT. Authorized users will submit PIRs on 552 ACW IMT 6 or by electronic
+message format (Figure 1) when at a deployed location and when the urgency of circumstances
+precludes use of standard forms. An electronic message PIR will be followed up with a
+completed 552 ACW IMT 6 and associated data as soon as possible. NOTE: It is mandatory
+that the name/grade/phone number of originator, program name, version, priority and statement
+of problem be completed prior to submitting the PIR. Omission of such items as date, cartridge
+numbers, etc., will make analysis of the incident difficult. If the incident occurred at a deployed
+location, indicate this information in the FROM block, e.g., ―961/Kadena, Deployed‖ etc., along
+with home station address. PIRs should be completed in ink in a legible print style. Instructions
+for completing the 552 ACW IMT 6, PIR, are as follows:
+   A5.3.1. The originator will complete the following items in Section 1, Report of Incident:
+       A5.3.1.1. Item 1. Date/Zulu Time. The date and Greenwich Mean Time (GMT) when
+       the incident occurred. Give the beginning and end times when the problem occurred.
+       For the aircraft and mission simulator, the time will be computer-generated time as
+       displayed on the Situation Display Console (SDC) or Digital Display Indicator (DDI).
+       A5.3.1.2. Item 3. Title. Enter an abbreviated unclassified title, which is descriptive of
+       the problem.
+       A5.3.1.3. From. Organization and functional address symbol of the PIR originator. If
+       deployed, give home station address also
+       A5.3.1.4 Item 4. Name and grade of originator.
+       A5.3.1.5. Item 5. DSN/Commercial/WATS.The DSN, commercial or wide area
+       telephone service number of the individual identified in Item 3.
+       A5.3.1.6. Item 6. Alternate point of contact. Give the name of someone else that knows
+       about the problem in case the originator cannot be contacted.
+552ACWI63-101 31 OCTOBER 2011                                                               29
+
+
+     A5.3.1.7. Item 7. DSN/Commercial/WATS. The DSN, commercial or wide area
+     telephone service number of the individual identified in Item 5.
+     A5.3.1.8. Item 8. System. The particular system experiencing the incident such as
+     aircraft, 4 PI, mission simulator, ES9000, etc.
+     A5.3.1.9. Item 9. Program. The specific computer program in use when the incident
+     occurred, i.e.; AOCP, SRCP, etc.
+     A5.3.1.10. Item 10. Version. Identify the specific version/subversion of the computer
+     program on which the incident occurred, i.e., E10A, E11A, RSIP Chg 21.1, etc.
+     A5.3.1.11. Item 11. Document reference.          The specifications, user’s manual, or
+     handbook that the incident violates.
+     A5.3.1.12. Item 12. Priority. Enter a priority as described in Attachment 4.
+     A5.3.1.13. Item 13. Statement of problem. A detailed description of the reported
+     incident. Include sequence of actions taken, any corrective action and results, the status
+     of any error indicators, any other information which may aid in problem analysis.
+     A5.3.1.14. Items 15-22. Reference identification. Complete the numbered blocks.
+     A5.3.1.15. The originator will also complete items 34-57, mission system details, if the
+     incident occurred in the aircraft or mission simulator.
+  A5.3.2. 552 ACNS/SCXC will enter a log number upon receipt of the PIR in block 2. The
+  log number is an internal control number.
+  A5.3.3. The following items will be completed by the analyzing organization:
+     A5.3.3.1. Item 22. Programmer/Analyst/Engineer.           The name of the individual
+     performing the analysis of the problem.
+     A5.3.3.2. Item 23. The DSN/Commercial/WATS of the individual referred to in Item
+     22.
+     A5.3.3.3. Item 24. The functional address symbol of the individual referred to in Item
+     22.
+     A5.3.3.4. Item 25. Analysis. The findings of the programmer/analyst/engineer.
+     A5.3.3.5. Items 26-30. Complete the total time expressed in man-hours, mainframe time
+     used and time required to analyze reported incident.
+     A5.3.3.6. Items 31-33. The technical advisor or program manager will complete these
+     items after analysis is complete.
+     NOTES: (1) The PIR form may be accessed at the ePublishing site at:
+      http://www.e-publishing.af.mil/. Under search option, select Form option and then
+     search for ―552ACW6‖, Program Incident Report.
+ 30                                                       552ACWI63-101 31OCTOBER 2011
+
+
+
+(2) The PIR being submitted to 552 ACNS/SCXC may be sent electronically to
+552 ACNS/SCXC Configuration Control
+
+PROGRAM INCIDENT REPORT (PIR) ELECTRONIC MESSAGE FORMAT
+FROM: (Your unit)
+TO: 552 ACNS TINKER AFB OK//SCXC//.
+UNCLAS
+SUBJ: PIR
+PARA 1. Type of report, PIR.
+PARA 2. Priority (EMERGENCY, URGENT, ROUTINE). Reference Attachment 4.
+PARA 3. System/Program/Version.
+PARA 4. Originator. Indicate name, rank, title and organization of originator and include the
+DSN/Commercial/WATS phone number of the individual.
+PARA 5. Document reference. The specifications, user’s manuals, or positional handbooks,
+which the incident violates.
+PARA 6. Statement of problem. Describe in as much detail as possible all elements of the
+incident. Give time/date, aircraft tail number, flight number the incident occurred and cartridge
+numbers of recordings that may be available for analysis.
+552ACWI63-101 31 OCTOBER 2011                                                                    31
+
+
+                                          Attachment 6
+                 COMPUTER SOFTWARE CHANGE REQUEST (CSCR)
+
+A6.1. PURPOSE. The CSCR will be used to submit either a PER or SDR. As a PER, it will be
+used by Software Engineering to report a confirmed program error. As a SDR, it allows an
+individual associated with the E-3 system to propose a change to improve system performance,
+program design or add a new capability.
+A6.2. INITIATION.
+   A6.2.1. As a PER, only programmers/analysts/engineers responsible for software support
+   may initiate a PER. Programmer initiated PERs must go to 552 ACNS/SCXC for assignment
+   of a tracking number, then are forwarded to 552 OSS/OSR. Users will submit PIRs to report
+   suspected software problems. Only after verification that a software error exists will the
+   analyst open a corresponding PER. The originator must review the CSCR for classification
+   purposes and properly mark with classification markings before submitting.
+   A6.2.2. As a SDR, the originator will thoroughly review each SDR to ensure all information
+   provided is clear and specific before forwarding it to their group focal point for review. The
+   originator must review the SDR for classification purposes and properly mark with
+   classification markings before submitting. The group focal point reviews each SDR to insure
+   validity, suitability and clarity of statement before forwarding. All Category I and II reports
+   will be forwarded by the originating organization to the 552 ACW focal point (552
+   OSS/OSR) for evaluation before being forwarded to 552 ACNS/SCXC. Group or 552 ACW
+   focal points will return disapproved SDRs to the originator. Approved SDRs will be
+   forwarded to 552 ACNS/SCXC for control and processing. All Category III through V
+   reports will be forwarded by the originating organization to 552 ACNS/SCXC for
+   processing.
+A6.3. FORMAT. Authorized E-3 software support personnel will utilize ACW Office Form 1
+(Attachment 6), CSCR, for submitting PERs or SDRs. Instructions for completing the ACW
+Office Form 1 for submission are as follows:
+   A6.3.1. CSCR originator will complete the following items:
+       A6.3.1.1. CSCR Type. Circle either SDR or PER.
+       A6.3.1.2. Tracking No. For ACG only. 552 ACNS/SCXC will complete the 552 ACW
+       CSCR tracking number for 552 ACW initiated CSCRs as outlined in Attachment 11.
+       A6.3.1.3. To. Enter either 552 OSS/OSR or 552 ACNS/SCXC.
+       A6.3.1.4. Date. Enter the date the form is prepared.
+       A6.3.1.5. Title. Enter an abbreviated unclassified title that is descriptive of the problem.
+       A6.3.1.6. Requester. Enter the originator’s name and grade.
+       A6.3.1.7. Organization. Enter the originator’s organization, address and zip code.
+       A6.3.1.8. Phone Number. Enter the originator’s DSN/commercial phone number.
+       A6.3.1.9. System. The particular system experiencing the incident such as aircraft, 4 PI,
+       mission simulator ES9000, etc.
+ 32                                                     552ACWI63-101 31OCTOBER 2011
+
+
+      A6.3.1.10. S/W Program. The specific computer program in use when the incident
+      occurred, i.e.; AOCP, SRCP, etc.
+      A6.3.1.11. Version. Identify the specific version/subversion of the computer program
+      on which the incident occurred, i.e., E10A, E11A, RSIP Chg 21.1, etc.
+      A6.3.1.12. Reference. The specifications, user’s manual, or handbook that the incident
+      violates.
+      A6.3.1.13. Crew Position Affected. Enter crew position or N/A, if not applicable.
+      A6.3.1.14. Problem/Current Operation. Describe in detail the problem being
+      identified by the PER or SDR
+      A6.3.1.15. Proposed Solution/Desired Operation. Enter the proposed solution of the
+      problem or the desired operation.
+      A6.3.1.16. Impact. Enter the effect of implementing/not implementing the request of
+      CSCR.
+      A6.3.1.17. Affected Items. Enter the T.O.s, subsystems, ATDS, etc if applicable.
+   A6.3.2. The following items are for 552 OSS/OSR internal use: Initially, the reported
+   change request will be reviewed by the 552 OG focal point before being submitted. The OG
+   focal point will ensure the originator has completed all applicable items on the SDR and an
+   accurate write-up is provided before forwarding. Disapproved SDRs will be returned by the
+   OG focal point to the originator without coordination. The program OG focal point will
+   complete the following:
+      POC. Enter Name and grade.
+      Organization. Enter Office Symbol.
+      Priority. Enter a priority as described in Attachment 4
+      OG RRB Major Task.
+      OG RRB Sub-Task.
+      OG Sort Category.
+      OG RRB Rank.
+      Reviewed By. Name and grade.
+      Date. Enter date CSCR reviewed.
+      Current Status. Circle as appropriate.
+      Effective Date. Applies to current status only.
+   A6.3.3. The form may be accessed at the 552 ACW/XPR home page:
+https://wwwmil.awacs.af.mil/552acw/acw/XP/library_&_links.htm Then select 552 ACW
+Office Form 1.
+NOTE: The CSCR being submitted to 552 ACNS/SCXC may be sent electronically to
+552 ACNS/SCXC Configuration Control
+552ACWI63-101 31 OCTOBER 2011                                                33
+
+
+Figure A6.1. 552ACW Office Form 1
+
+CSCR TYPE     COMPUTER SOFTWARE CHANGE REQUEST                      TRACKING NO.
+(SDR, PER)                                                          (552 ACG use)
+TO (552 OG Personnel:552 OSS/OSR; all others:552 ACNS/SCXC)         DATE
+TITLE
+REQUESTER (Name/Grade)                 ORGANIZATION          PHONE NO. (DSN or
+                                                             commercial)
+SYSTEM:     S/W      VERSION                REFERENCE:        CREW POSITION
+            POGRAM                                            AFFECTED
+PROBLEM / CURRENT OPERATION
+
+
+
+
+PROPOSED SOLUTION / DESIRED OPERATION (Performance Parameters)
+
+
+
+
+IMPACT (Effect of implementing / not implementing request)
+
+
+
+
+AFFECTED ITEMS (TOs, Subsystems, ATDs, etc.)
+
+
+
+
+552 OG REVIEW
+POC (Name and        ORGN       SDR/PER     OG RRB Major     OG     OG Sort OG
+Grade)               (Off       PRIORITY    Task             RRB    Category RRB
+                     Symbol)    per ACWI                     Sub-            Rank
+                                63-1                         Task
+
+REVIEWED BY OG       DATE       CURRENT STATUS (Circle As Appropriate)
+RRB on (Date)
+                                      Closed / Withdrawn      EFFECTIVE DATE
+552 ACW Office
+Form 1, Jun 04
+ 34                                                      552ACWI63-101 31OCTOBER 2011
+
+
+                                        Attachment 7
+                          DOCUMENT ERROR REPORT (DER)
+
+A7.1. PURPOSE. The DER, 552 ACW IMT 7, is the vehicle for any individual associated with
+the E-3 system to initiate a correction to official software documentation. The DER may also be
+utilized to improve format and clarity of official documentation. Additionally, an AFTO form 22
+may have to be submitted to update T.O.s .
+A7.2. PROCESSING. 552 ACG reviews the reports against 552 ACW managed software
+documentation, generates updated pages and upon OPR approval, reproduces and distributes
+them to authorized agencies. Distribution instructions of the copies of each official document
+that an authorized agency should receive will be maintained by 552 ACG documentation section,
+except those controlled and distributed by OGV. Normally, the updated pages will be distributed
+when program version/subversions are released. However, if the number or importance of
+corrections warrants, the DER may be used as the authority to make out-of-cycle changes to the
+affected document(s). The originator must review the DER for classification purposes and
+properly mark with classification markings before submitting to the group focal point who will
+review for validity, suitability and clarity before signing and forwarding to 552 ACNS/SCXC.
+A7.3. FORMAT. A 552 ACW IMT 7, DER, will be used to initiate a DER. Instructions for
+completing the 552 ACW IMT 7 for submission are as follows:
+   A7.3.1. The DER originator will complete the following items:
+       A7.3.1.1. To. The address in this block is 552 ACNS/SCXC.
+       A7.3.1.2. From. Include originator’s organization and address.
+       A7.3.1.3. Item 2. The name and grade of the individual who may be contacted
+       regarding the DER.
+       A7.3.1.4. Item 3. The DSN/Commercial/WATS number of the individual identified in
+       Item 2.
+       A7.3.1.5. Item 4. Document. See Items 4a through 4j.
+          A7.3.1.5.1. Item 4a. Number. The designator of the document requiring correction.
+          A7.3.1.5.2. Item 4b. Title. The name or title of the document requiring correction.
+          A7.3.1.5.3. Item 4c. Date. The date of publication of the document requiring
+          correction.
+          A7.3.1.5.4. Item 4d. Part I or II. The part number of the specification, if applicable.
+          A7.3.1.5.5. Item 4e. Volume. The volume of the document requiring correction, if
+          applicable.
+          A7.3.1.5.6. Item 4f. Appendix. The appendix of the document requiring correction,
+          if applicable.
+          A7.3.1.5.7. Item 4g. The paragraph, figure, or table designator of the document
+          requiring correction, to include number and title, if applicable.
+552ACWI63-101 31 OCTOBER 2011                                                                 35
+
+
+          A7.3.1.5.8. Item 4h. The page number of the document requiring correction, if
+          applicable.
+          A7.3.1.5.9. Item 4i. The line number of the document that is in error, if applicable.
+          A7.3.1.5.10. Item 4j. The subject matter of the document requiring change.
+       A7.3.1.6. Item 5. Statement of problem Identify error or omission.
+       A7.3.1.7. Item 6. Recommended action or correction. Describe the correction
+       associated with the error or omission. When possible, proposed solutions should be
+       presented in directive change format (―Change line 4.3 to read...‖) for clarity.
+       A7.3.1.8. Item 7. Signature of group focal point. All 552 ACW HB 55-1 DERs will be
+       forwarded to 552 OG/OGV who will indicate concurrence/non-concurrence by
+       completing Block 8 (1st endorsement) after control of the DER has been established by
+       552 ACNS/SCXC.
+   A7.3.2. Instructions to the Programmer/Analyst for completing the IMT 7 are as follows:
+       A7.3.2.1. Item 10. List all changes that were necessary to resolve the DER.
+       A7.3.2.2. Item 11. After completing the DER, attach the change pages and forward to
+       the program technical advisor or program manager who will approve the changes by
+       signing the cover sheet for the 552 ACW HB 55-1 DERs or signing Block 11 (Approval)
+       for all other DERs.
+   A7.3.3. After approval of the DER, forward the package to 552 ACNS/SCXC for
+   processing.
+   A7.3.4. 552 ACNS/SCXC will forward all 552 ACW HB 55-1 DERs to 552 OG/OGV for
+   final approval (complete Block 11).
+NOTE: The DER form may be accessed at the ePublishing site at: http://www.e-
+publishing.af.mil/. Under search option, select Form option and then search for ―552ACW7‖,
+Document Error Report.
+NOTE: The DER being submitted to 552 ACNS/SCXC may be sent electronically to
+552 ACNS/SCXC Configuration Control
+ 36                                                     552ACWI63-101 31OCTOBER 2011
+
+
+                                        Attachment 8
+                       DATABASE CHANGE REQUEST (DBCR)
+
+A8.1. PURPOSE. The DBCR will be used to initiate changes to contents of the E-3 operational
+databases (ESM, JTIDS, map, or CAF adaptation data) as required to improve the operational
+effectiveness of the E-3 system.
+A8.2. PROCESSING. 552 OSS/OSR will complete DBCRs for required database changes and
+must review the DBCR for classification purposes and properly mark with classification
+markings before submitting.
+A8.3. FORMAT. The 552 ACW IMT 8, DBCR, will be utilized when initiating a DBCR. The
+following instructions outline procedures for use of the 552 ACW IMT 8.
+   A8.3.1. The DBCR originator will complete the following items:
+      A8.3.1.1. Title of Request. Enter an abbreviated unclassified title, which differentiates
+      this request from any others. For example: exercise name and year or database version
+      and type of change.
+      A8.3.1.2. Date. Enter the date the form is prepared.
+      A8.3.1.3. Classification. Classification of the information on the form.
+      A8.3.1.4. Requirement Point of Contact.       Enter 552 OSS/OSR name and grade of
+      originator or primary point of contact.
+      A8.3.1.5. Organization. Enter 552 OSS/OSR.
+      A8.3.1.6. Phone No. Enter 552 OSS/OSR DSN/commercial phone number.
+      A8.3.1.7. Database Use. Check the type of mission that requires the new database.
+      A8.3.1.8. Desired Delivery Date. Enter the date the new database must be available.
+      A8.3.1.9. AOCP Version. Enter the AOCP version to be used with the new database.
+      A8.3.1.10. EEDB Baseline. Leave blank
+      A8.3.1.11. Database Change. Check the type of database requiring the change.
+      A8.3.1.12. Affected Regions. Check any affected regions.
+      A8.3.1.13. Desired Operation/Proposed Solution. Enter a complete description of the
+      desired change. Changes to map data must include coordinates, text and line texture
+      information. JTIDS changes must include CAF/CIF text files in electronic format and
+      associated menu sheets. Describe any unique considerations that have an impact, for
+      example, special missions and training exercise dependent upon the change. Attachments
+      in electronic format (floppy disk and email attachments) are not only acceptable but are
+      preferred when they contain input data.
+   A8.3.2. 552 ACNS/SCXC will complete the following item:
+      A8.3.2.1. Tracking No. Enter the DBCR tracking number.
+      A8.3.2.2. EEDB Baseline. Enter the AF designator for the database baseline.
+552ACWI63-101 31 OCTOBER 2011                                                                  37
+
+
+NOTE: The ACW IMT 8 may be accessed at the ePublishing site at:
+http://www.e-publishing.af.mil/. Under search option, select Form option and then search for
+―552ACW8‖, E-3 Database Change Request.
+NOTE: The DBCR form being submitted to 552 ACNS/SCXC may be sent electronically to
+552 ACNS/SCXC Configuration Control
+ 38                                                      552ACWI63-101 31OCTOBER 2011
+
+
+                                         Attachment 9
+                DATABASE CHANGE REQUEST (DBCR) - DEPLOYED
+
+A9.1. PURPOSE. The DBCR – Deployed, will be used to initiate changes to contents of the E-
+3 operational databases (ESM, JTIDS, map, or CAF adaptation data) as required to improve the
+operational effectiveness of the E-3 system.
+A9.2. PROCESSING. DETCO or designated Database POC will complete DBCRs for
+required database changes and must review the DBCR for classification purposes and properly
+mark with classification markings before submitting.
+A9.3. FORMAT. The 552 ACW IMT 9, DBCR - Deployed, will be utilized when initiating a
+DBCR. The following instructions outline procedures for use of the 552 ACW IMT 9.
+   A9.3.1. The DBCR originator will complete the following items:
+       A9.3.1.1. Title of Request. Enter an abbreviated unclassified title, which differentiates
+       this request from any others. For example: exercise name and year or database version
+       and type of change.
+       A9.3.1.2. Date. Enter the date the form is prepared.
+       A9.3.1.3. Classification. Classification of the information on the form.
+       A9.3.1.4. Requirement Point of Contact. Enter DETCO name or designated database
+       POC and grade of originator or primary point of contact.
+       A9.3.1.5. Organization. Enter 552 OG/Deployed.
+       A9.3.1.6. Phone No. Enter 552 OG/Deployed DSN/commercial phone number.
+       A9.3.1.7. Database Use. Check the type of mission that requires the new database.
+       A9.3.1.8. Desired Delivery Date. Enter the date the new database must be available.
+       A9.3.1.9. AOCP Version. Enter the AOCP version to be used with the new database.
+       A9.3.1.10. EEDB Baseline. Leave blank
+       A9.3.1.11. Database Change. Check the type of database requiring the change.
+       A9.3.1.12. Affected Regions. Check any affected regions.
+       A9.3.1.13. Desired Operation/Proposed Solution. Enter a complete description of the
+       desired change. Changes to map data must include coordinates, text and line texture
+       information. JTIDS changes must include CAF/CIF text files in electronic format and
+       associated menu sheets. Describe any unique considerations that have an impact, for
+       example, special missions and training exercise dependent upon the change. Attachments
+       in electronic format (8mm tape, floppy disk, email attachments) are not only acceptable
+       but are preferred when they contain input data.
+NOTE: The ACW IMT may be accessed at the ePublishing site at: http://www.e-
+publishing.af.mil/. Under search option, select Form option and then search for ―552ACW9‖,
+E-3 Database Change Request Deployed.
+552ACWI63-101 31 OCTOBER 2011                                                            39
+
+
+                                      Attachment 10
+                         TROUBLE INCIDENT REPORT (TIR)
+
+A.10.1. PURPOSE. The TIR is used to document Trouble Reports (TR) generated during
+interoperability testing of AOCP.
+
+A.10.2. INITIATION. A TIR is initiated by the external test section (552 ACNS/SCTE) upon
+receipt of a TR from an interoperability test. This is done by forwarding the TR to the
+configuration management section (552 ACNS/SCXC). The configuration management section
+assigns a tracking number to the TIR and forwards to the AOCP project manager for analysis.
+The external test section is the ONLY office that can initiate a TIR.
+ 40                                                  552ACWI63-101 31OCTOBER 2011
+
+
+A.10.3. FORMAT. The information boxes on the TIR form are self explanatory.
+
+.Figure A10.1. TROUBLE INCIDENT REPORT
+TIR Number:                     Title:
+
+Analysis:
+
+
+
+
+Resulting CSCR Number if applicable:
+Switch Actions taken/TD used
+
+
+
+
+Analyst                                  Phone                           Date
+
+
+Technical Advisor                        Phone                           Date
+552ACWI63-101 31 OCTOBER 2011                                                      41
+
+
+                                       Attachment 11
+               COMPUTER SOFTWARE CHANGE REQUEST NUMBERS
+
+A11.1. E-3 system software changes will be documented by CSCR. Each CSCR will be
+assigned a unique alphanumeric designator by 552 ACNS/SCXC as follows:
+1. One Alpha-computer program system:
+A – 20/25 Airborne Operational Computer Program
+B - Surveillance Radar Maintenance Computer Program
+D -E-3 Databases/Maintenance Computer Program
+E – 30/35 Airborne Operational Computer Program
+G - Ground Support Computer Program
+J - Joint Tactical Information Distribution System Operational Computer Programs
+K - Surveillance Radar Ground Support Program
+M - Mission Simulator Computer Program
+N - Navigator Computer Program
+P - Mainframe Plotter Computer Program
+R - Surveillance Radar Computer Program
+S - System Exercise and Analysis Computer Program
+T - System Maintenance Computer Program Fault Trees
+U - Utility Computer Program
+W - Electronic Support Measures Operational Computer Program
+X - IBM 390 Operating System
+Y - Non-Contractual Programs
+Z - Micro Plotter Computer Program
+2. Two Numeric - version number (version the CSCR is opened against)
+3. One Alpha Numeric - sub-version designator
+4. Three Alpha - type of report
+DBCR - Database Change Request
+DER - Document Error Report
+PER - Program Error Report
+PIR - Program Incident Report
+SDR - System Design Request
+ 42                                                  552ACWI63-101 31OCTOBER 2011
+
+
+5. Five Numeric - sequential number. (Note – AOCP CSCRs written from PIR analysis will
+retain the same number as the original PIR.)
+6. One Alpha - change to basic document
+552ACWI63-101 31 OCTOBER 2011                                                                        43
+
+
+                                          Attachment 12
+                USER PROJECT/WORK REQUEST (UPWR) TEMPLATE
+
+A12.1. General Instructions:
+   A12.1.1. Refer to the Template Instructions document (Pal\TEMPLATE\INSTRUCT.DOC)
+   for instructions applying to all templates in the Process Asset Library (PAL).
+MEMORANDUM FOR 552 ACG/SCX
+FROM: {Enter organization and office symbol}
+SUBJECT: User Project/Work Request for {enter project name}
+1. This memorandum describes a project or work to be done by the 552d Computer System
+Group (552 ACG). This request describes the operational need, outlines the project, the
+deliverables and any other communications made between the 552 ACG and the
+{user/person/group being tasked}. [In the opening paragraph, state the formal topic of the
+tasking. Discuss the in formation that is pertinent to the topic and could be useful to the
+successful accomplishment of the tasking. Briefly describe the end result of the task and if
+applicable, how this task fits into the larger program.]
+2. Needed Operational Capability.
+a. {In one or two paragraphs, describe the operational capability needed. Describe the
+operational need in terms of operational requirements. Do not specify software or hardware
+configurations (unless there is an ACW, ACC, or USAF requirement, or the request is a software
+maintenance effort); just state the operational requirements which must be met. These
+paragraphs do not serve as the requirements document - a separate requirement document will be
+generated during the Requirements Analysis Phase of the project.}
+b. System Operators: {State who the day-to-day operators of the system will be.}
+c. Need Dates: {Enter the date the operational capability is needed.}
+d. Items to be delivered: {State specifically if hardware, software, or both, is to be delivered.}
+e. Initial training. Identify what initial training 552 ACG personnel must provide to the user, if
+any. Will any course material or other training information be needed?
+f. Support efforts. Identify who (i.e. what organization) will perform hardware and/or software
+maintenance. {If system administration is needed, who will provide system administration? If
+the system is using data, (e.g. a database program or other data) who will update and maintain
+the data? If re-occurring training is required who will provide re-occurring training?}
+3. Known Alternatives.
+In this paragraph, the user/tasker should list other options that were explored to meet this
+capability. {For example, are there any Commercial-Off-The-Shelf products studied? Are there
+any known alternatives to meet the needed operational capability other than developing new
+software, or buying new hardware?}
+ 44                                                         552ACWI63-101 31OCTOBER 2011
+
+
+4. User Involvement:
+a. The 552 ACG project team will keep the user representatives involved throughout the
+development process. The user will refer to the Work Breakdown Schedule (WBS) to see when
+meetings are scheduled.
+b. User acceptance testing. {Should the user desire acceptance testing, state the type of testing
+desired. If an acceptance test is performed, the following question must be answered, ―What
+criteria will the validation of operational requirements be based on?‖ If there is a user
+acceptance test, user representatives must provide written feedback on the results of the user
+acceptance testing to the 552 ACG Program Manager.
+Alternatively, instead of user acceptance testing, the user representatives can participate in the
+552 ACG system testing.
+There are numerous ways to organize a user acceptance test. For example, a one-week test to a
+45-day trail period evaluation. The purpose of this testing is an operational shake-out of the
+system. In User Acceptance Testing, the system should be evaluated against the project’s
+requirements document(s).}
+5. This section identifies how the user must support the 552 ACG project team. The user will:
+a. Provide a day-to-day point of contact, called the user representative. The user representative
+will work directly with the 552 ACG Project Manager and the project team. The user’s
+organization should also provide a user sponsor, who is the sponsor of the project or a
+management level above the day-to-day user representative.
+b. Participate in developing a requirement document for the project. [For new developments
+this involves a series of meetings which culminates with a project requirements document. The
+user will participate in Requirements Specification Reviews (RSRs) and the Project Start Review
+(PSR).
+c. Participate in meetings. Have the opportunity to participate in the following reviews
+throughout the project:
+   1. User Project Review (UPR) - The user attends to approve the project plan and schedule.
+   2. Configuration Control Boards (CCB) - The CCB meet to approve or disapprove system
+   requirement changes to the baseline. The user representative is the co-chair.
+   3. Preliminary Design Review (PDR) - the user attends to evaluate if the preliminary design
+   will meet the operational requirements.
+   4. Critical Design Review (CDR) - The user attends to evaluate that the critical design (i.e.,
+   the detailed design) will meet the operational requirements.
+   5. Independent Test Review (ITR) - The user attends to evaluate the system test results and
+   accept or reject software to start user acceptance testing.
+   6. User Release Acceptance Review (URAR) - This occurs after user acceptance testing (if
+   any). The user representative meets with key 552 ACG project team members to list any
+   discrepancies found during user acceptance testing. The user then approves the system for
+   operational use, or requests that any discrepancies be fixed. This is documented in the user
+   acceptance and release letter.
+552ACWI63-101 31 OCTOBER 2011                                               45
+
+
+6. Signatures:
+
+
+_______________________________       __________________________________
+552 ACG Commander                            552 OG Commander
+[Enter Name, Rank, USAF/DAF                  [Enter Name, Rank, USAF/DAF
+Office System, Phone Number]                 Office System, Phone Number]
+
+
+
+_______________________________       __________________________________
+552 ACNS Project Manager              User Representative
+[Enter Name, Rank, USAF/DAF           [Enter Name, Rank, USAF/DAF
+Office System, Phone Number]          Office System, Phone Number]
+
+
+
+_______________________________       __________________________________
+552 ACG Program Manager               Senior User Representative
+[Enter Name, Rank, USAF/DAF           [Enter Name, Rank, USAF/DAF
+Office System, Phone Number]          Office System, Phone Number]
+
+
+
+_______________________________       __________________________________
+Title of person/office being tasked   552 ACNS Commander
+[Enter Name, Rank, USAF/DAF           [Name, Rank, USAF/DAF
+Office System, Phone Number]          Office System, Phone Number]

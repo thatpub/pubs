@@ -1,0 +1,2197 @@
+BY ORDER OF THE                                                  AIR FORCE MANUAL 33-116
+SECRETARY OF THE AIR FORCE
+                                                                                  16 MAY 2013
+                                                      Incorporating Change 1, 5 September 2014
+
+                                                              Communications and Information
+
+                                                           LONG-HAUL COMMUNICATIONS
+                                                                        MANAGEMENT
+
+              COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-publishing.af.mil for downloading or ordering.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: 38 CYRS/SCC                                                      Certified by: AF/A3C/A6C
+                                                                             (Maj Gen Matthews)
+Supersedes:    AFI33-116, 17 April 2002                                                Pages: 55
+
+
+This manual implements Air Force Policy Directive (AFPD) 33-1, Cyberspace Support. It
+describes the procedures to provision, process and manage Air Force Long-Haul
+Communications in accordance with the Defense Information Systems Agency (DISA) circulars
+and documents referenced in Attachment 1. This manual applies to all Air Force military,
+civilians, and contractor personnel under contract by the Department of Defense (DoD) who
+develop, use, operate, or manage Air Force communications and information systems. Unless
+otherwise specified, the term major command (MAJCOM) includes field operating agencies
+(FOA) and direct reporting units (DRU). This publication applies to the Air National Guard
+(ANG) and the Air Force Reserve Command (AFRC). The authorities to waive wing/unit level
+requirements in this publication are identified with a Tier (“T-0, T-1, T-2, T-3”) number
+following the compliance statement. See AFI 33-360, Publications and Forms Management,
+Table 1.1 for a description of the authorities associated with the Tier numbers. Send questions or
+comments on the content of this manual through appropriate command channels to the 38
+Cyberspace Readiness Squadron (CYRS)/SCC. Refer recommended changes and conflicts
+between this and other publications to 38 CYRS/SCC, using AF Form 847, Recommendation for
+Change of Publication, with information copy to Air Force Cyberspace Strategy & Policy
+Division (SAF/A6CS). Ensure that all records created as a result of processes prescribed in this
+publication are maintained in accordance with AFMAN 33-363, Management of Records, and
+disposed of in accordance with Air Force Information Management System (AFRIMS) Records
+Disposition Schedule (RDS). See Attachment 1 for a glossary of references and supporting
+information.
+ 2                                                                                                AFMAN33-116 16 MAY 2013
+
+
+SUMMARY OF CHANGES
+
+This interim change identifies the authorities to waive wing and unit level requirements with a
+Tier number (“T-0, T-1, T-2, T-3”); provides additional details for the Networx commercial
+long-distance services; removes on DMS requirements; and other administrative changes.
+
+Chapter 1—LONG-HAUL COMMUNICATIONS (LHC)                                                                                                       4
+       1.1.    Overview. ...............................................................................................................       4
+       1.2.    DISN Organizations. ..............................................................................................              5
+       1.3.    DSS. .......................................................................................................................    6
+Table 1.1.     DSS Package Size & Bandwidth. ..........................................................................                        6
+Table 1.2.     DSS Package Assignment & Definition. ...............................................................                            7
+
+Chapter 2—ROLES AND RESPONSIBILITIES                                                                                                           8
+       2.1.    Air Force. ...............................................................................................................      8
+       2.2.    Headquarters Air Force. .........................................................................................               8
+       2.3.    Commander, Air Force Space Command (AFSPC/CC). .......................................                                          9
+       2.4.    Commander, Twenty-Fourth Air Force (24 AF/CC)/AFCYBER. .........................                                                9
+       2.5.    624th Operation Center (624 OC). .........................................................................                      9
+       2.6.    26th Network Operations Squadron (26 NOS). .....................................................                               10
+       2.7.    Integrated Network Operations and Security Centers (I-NOSCs). ........................                                         10
+       2.8.    38th Cyberspace Engineering and Installation Group (38 CEIG). ........................                                         10
+       2.9.    38th Cyberspace Readiness Squadron (38 CYRS). ...............................................                                  11
+       2.10.   MAJCOM, Management Headquarters (MHQ), and Air Force-level FOA/DRU.                                                            12
+       2.11.   Installation Commanders. ......................................................................................                13
+       2.12.   Centers, Agencies, and Other Key Stakeholder Relationships: .............................                                      14
+       2.13.   Functional Long Haul Communications Responsibilities. ....................................                                     15
+
+Chapter 3—SUPPORT APPLICATIONS                                                                                                                20
+       3.1.    Facility Circuit Information Tracking (FaCIT). .....................................................                           20
+       3.2.    The Air Force Telecommunications Certifications Office Support System
+               (TCOSS). ...............................................................................................................       20
+
+Chapter 4—PROCEDURES                                                                                                                          21
+       4.1.    Ordering Communications Service. .......................................................................                       21
+       4.2.    Defense Switched Network (DSN). .......................................................................                        22
+       4.3.    Air Force NIPRNET/SIPRNET. ............................................................................                        22
+AFMAN33-116 16 MAY 2013                                                                                                                   3
+
+
+     4.4.    DELETED. ............................................................................................................        24
+     4.5.    JWICS. ...................................................................................................................   24
+     4.6.    Defense RED Switch Network (DRSN). ...............................................................                           24
+     4.7.    Networx Contract for Commercial Long Distance Services . ................................                                    25
+     4.8.    DISN Subscription Services (DSS). ......................................................................                     25
+     4.9.    Commercial Satellite Communications (SATCOM) Service. ...............................                                        26
+     4.10.   INMARSAT. ..........................................................................................................         26
+     4.11.   Enhanced Mobile Satellite Service (EMSS) (Iridium). .........................................                                26
+     4.12.   DISA Control Numbers (DCN) for Military Exercise. ..........................................                                 27
+     4.13.   TSP Restoration and Provisioning/National Security Emergency Preparedness
+             (NS/EP). .................................................................................................................   27
+     4.14.   Accepting LHC Service. ........................................................................................              29
+     4.15.   Review & Revalidation (R&R). .............................................................................                   31
+     4.16.   Expired Communications Service Authorization (ECSA). ....................................                                    31
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                            32
+
+Attachment 2—LONG-HAUL COMMUNICATIONS (LHC) REQUIREMENTS
+             MANAGEMENT PROCESS                                                                                                           41
+
+Attachment 3—LMB STANDARD WORK GUIDE                                                                                                      47
+ 4                                                                AFMAN33-116 16 MAY 2013
+
+
+                                            Chapter 1
+
+                         LONG-HAUL COMMUNICATIONS (LHC)
+
+1.1. Overview. The Air Force Information Networks (AFIN) (formerly the Air Force-Global
+Information Grid [AF-GIG]) is the Air Force unique information capabilities in the DoD
+Information Networks (DODIN) for which the Air Force has primary responsibility for the
+procurement, operations, and defense. JP 3-12, Cyberspace Operations, renames the Global
+Information Grid (GIG) to DODIN and these terms may appear interchangeably in this
+publication as GIG is still in use in Joint Publication (JP) 6-0, Joint Communications System, as
+well as DISA LHC publications and processes. As defined in JP 6-0, the DODIN (formerly the
+GIG) is not limited to Nonsecure Internet Protocol Router Network (NIPRNET) and SECRET
+Internet Protocol Router Network (SIPRNET). As such the AFIN includes all DODIN
+infrastructure and services for which the Air Force has responsibility. In Accordance With
+(IAW) AFPD 33-1, Cyberspace Support, the Air Force centrally manages and provisions this
+AFIN infrastructure.
+     1.1.1. The Defense Information Systems Network (DISN) LHC is an integral part of the
+     DODIN, providing global infrastructure and services including voice, data, video switching
+     and transmission services entering or leaving the confines of a Post, Camp, Station, Base,
+     Installation Headquarters, or Federal building and associated network management, including
+     regional services, Metropolitan Area Networks and edge devices. In accordance with
+     Department of Defense (DoD) policy, Defense Information Systems Agency (DISA) is
+     responsible for obtaining and managing DISN services, facilities, and equipment and “…is
+     the preferred Unified Capabilities (UC) transport provider for Internet and commercial
+     satellite connections used for voice, video, and/or data services on DoD networks”. The
+     DISN is a significant component of the AFIN. It has three segments: sustaining base, long
+     haul, and deployed. As the Core Function Lead Integrator (CFLI) for Cyberspace
+     Superiority and Lead Command for Cyberspace, Headquarters, Air Force Space Command
+     (AFSPC) is responsible for administering, maintaining and sustaining the associated AFIN
+     infrastructure and services, to include the Air Force provisioned portions of the DISN.
+     1.1.2. The Air Force, through AFSPC, centrally provisions, manages and funds the Air Force
+     enterprise portion of the AFIN DISN infrastructure and services supporting Air Force
+     installations.   MAJCOMs, as Management Headquarters, are responsible for their
+     MAJCOM-unique, base-level, and non-DODIN infrastructure, systems and services. All Air
+     Force organizations including MAJCOMs, FOAs, and DRUs obtain LHC through DISA
+     according to this AFMAN, DoD, CJCS instructions, DISA Circulars, DISN Notices, and
+     DISN Connection Process Guide.
+     1.1.3. The DISN Subscription Service (DSS) is the Defense Working Capital Fund cost
+     recovery mechanism for the DISN LHC. In 2004, Program Budget Decision (PBD) 723
+     established the DSS which changed the DISN billing structure from one based on individual
+     connection/service costs to a fixed-fee structure where costs are set based on a finite number
+     of service packages comprised of DISN services and bandwidth consumed at each DISN host
+     site. AFSPC, as the Lead Command for Cyberspace, ensures centralized planning,
+     programming, budgeting, and execution for the Air Force’s DSS costs for all DSS locations
+AFMAN33-116 16 MAY 2013                                                                           5
+
+
+   where the Air Force has been assigned by Office of the Under Secretary of Defense (OUSD)
+   Comptroller as the site host.
+   1.1.4. In accordance with DoD policy, DISA is responsible for obtaining and managing LHC
+   services, facilities, and equipment for the DoD. DoDI 8100.04, DoD Unified Capabilities
+   (UC), states, “the DISA is the preferred UC transport provider for Internet and commercial
+   satellite connections used for voice, video, and/or data services on DoD networks”.
+   Exemptions and waiver authority to this policy are detailed in DoDI 8100.04. AFSPC is the
+   Air Force DISN LHC Lead Command, and 38 CYRS/SCC executes AFSPC’s DISN LHC
+   Lead Command responsibilities.
+1.2. DISN Organizations. There are multiple organizations responsible for developing and
+delivering DODIN services and DISN infrastructure. JP 6-0, CJCSI 6211.02, Defense
+Information Systems Network (DISN) Responsibilities, and DoD Directive 5105.19 define the
+organizations primarily responsible for planning, acquiring and sustaining cyberspace
+capabilities to include United States Strategic Command (USSTRATCOM), United States
+Cyberspace Command (USCYBERCOM), the DISA and the service components and agencies.
+   1.2.1. USSTRATCOM. Conducts global operations in coordination with other Combatant
+   Commands, Services, and appropriate U.S. Government agencies (CC/S/A) to deter and
+   detect strategic attacks against the U.S. and its allies, and is prepared to defend the nation as
+   directed.      The USSTRATCOM Commander (CDRUSSTRATCOM) has overall
+   responsibility for global network operations and defense in coordination with the Chairman
+   of the Joint Chiefs of Staff (CJCS) and the other combatant commands.
+   CDRUSSTRATCOM directs DoD information networks operations and defense of DoD
+   information network including the DISN, synchronizes cyberspace operations planning, and
+   delineates USCYBERCOM roles and responsibilities to plan, coordinate, and direct DISN
+   network operations and defense.
+   1.2.2. USCYBERCOM. Plans, coordinates, integrates, synchronizes, and conducts
+   activities to: direct operations and defense of specified Department of Defense information
+   networks, prepare, and when directed, conduct full-spectrum military cyberspace operations
+   in order to enable actions in all domains. Ensure US/Allied freedom of action in cyberspace
+   and deny the same to our adversaries. USCYBERCOM has operational and tactical level
+   planning and day-to-day management of the operations and defense of the DODIN.
+   1.2.3. DISA. Provides, operates, and assures command and control, information sharing
+   capabilities, and a globally accessible enterprise information infrastructure in direct support
+   to joint warfighters, National level leaders, and other mission and coalition partners across
+   the full spectrum of operations. DISA is responsible for planning, engineering, acquiring,
+   testing, fielding, and supporting global net-centric information and communications solutions
+   to serve the needs of the President, the Vice President, the Secretary of Defense, and the DoD
+   Components, under all conditions of peace and war, including national security
+   communications requirements as identified in the National Security Presidential Directive –
+   28 (Reference (c)) and Executive Order 12472 (as amended) (Reference (d)). DISA plans,
+   programs, implements, and operates long-haul DISN services supporting the DODIN for
+   Services and Agencies, extending to the Service Delivery Point (SDP) at a
+   base/post/camp/station. (DISAC 310-70-1)
+ 6                                                               AFMAN33-116 16 MAY 2013
+
+
+     1.2.4. Service Components and Agencies (S/A). Provide communications capabilities to
+     meet combatant command-validated connectivity requirements, including combatant
+     command connectivity through DISN collection and distribution sites for both deployed and
+     garrison local infrastructures. All activities in support of the provided capabilities are
+     managed, funded, and supported by the hosting service component. S/A responsibilities
+     include support (e.g., power, security, space, manpower, etc.)
+1.3. DSS. PBD 723, dated 10 Dec 2004, changed DISA’s DISN billing structure from one
+based on each connection and service provided, to a flat-fee based on a combination of the total
+services and bandwidth assignment at DISN host sites. The combination of the bandwidth and
+services are defined as the location’s DSS Package.
+     1.3.1. DSS package assignments are reviewed during the Program Object Memorandum
+     (POM) cycle and are established two years in advance of the fiscal year in which they are
+     billed. A concerted effort is made to ensure all future requirements that may bring changes
+     in a location’s bandwidth requirement or the services delivered are captured and documented
+     in the annual DSS data call conducted first quarter of each Fiscal Year (FY). Submission of
+     DSS changes will be made at the MAJCOM and/or Agency Vice-Commander level.
+        1.3.1.1. The DISN Customer Forum (DCF) meets regularly to identify emerging
+        program requirements of all the Services and Hosts that might affect DSS package
+        assignment. The DCF makes change recommendations to Office of the Secretary of
+        Defense (OSD) who has ultimate authority over DSS.
+        1.3.1.2. Requirements that have a DISN service and/or bandwidth component must be
+        identified in the Cyberspace Infrastructure Planning System (CIPS). CIPS is the Air
+        Force enterprise-wide communications and information equipment, systems and
+        infrastructure planning tool. CIPS includes downward directed enterprise solutions, as
+        well as MAJCOM, base and in-theatre planning. Quantified, validated and prioritized
+        requirements must be identified as early as possible to ensure the required equipment,
+        infrastructure and funding are available to support the requirements. Attachments 2 and 3
+        provide specific guidance on how to document and process LHC requirements.
+     1.3.2. DISN services between any two DSS sites are centrally funded, and the cost is based
+     on package and size assignment. DSS size assignments are categorized as Small, Medium,
+     Large and Mega. DSS package assignments are categorized as (1) Transport/Intelligence,
+     Surveillance and Reconnaissance (ISR) Only, (2) Mission Essential, (3) Command and
+     Control (C2), (4) C2 Plus, and, (5) C2 ISR. DSS Package size and assignment descriptions
+     are in tables 1.0 and 1.1.
+
+Table 1.1. DSS Package Size & Bandwidth.
+ DSS Package Size Small           Medium                Large                    Mega
+
+ Bandwidth             ≤45Mbps >45Mbps≤155Mbps >155Mbps≤ 622Mbps >622Mbps
+AFMAN33-116 16 MAY 2013                                                                 7
+
+
+Table 1.2. DSS Package Assignment & Definition.
+Package Assignment                   Package Definition
+Transport/ISR Only                   Raw Data/No DISN Services
+Mission Essential                    Transport/ISR plus SIPRNET, NIPRNET, Defense
+                                     Switched Network (DSN), DISN Video Services
+                                     (DVS)
+C2                                   Mission Essential With Logical Diversity
+C2 Plus                              C2 plus Defense Red Switch Network (DRSN) or C2
+                                     plus Joint Worldwide Intelligence Communications
+                                     System (JWICS)
+C2 ISR                               C2+DRSN+JWICS+ISR
+ 8                                                              AFMAN33-116 16 MAY 2013
+
+
+
+                                           Chapter 2
+
+                             ROLES AND RESPONSIBILITIES
+
+2.1. Air Force. IAW DoD Directive 5100.01, Functions of the Department of Defense and Its
+Major Components, the Department of the Air Force shall organize, train, equip, and provide air,
+space, and cyberspace forces for the conduct of prompt and sustained combat operations,
+military engagement, and security cooperation in defense of the Nation, and to support the other
+Military Services and joint forces. With regards to DISN LHC, the Air Force will:
+     2.1.1. Program, budget, fund, and provide support for assigned portions of the DISN
+     including procurement, training, operations, maintenance, usage fees, Cross Domain service
+     (CDS), CDS development, physical security, electronic security, and survivability measures.
+     2.1.2. Coordinate with DISA on all activities related to Command, Control,
+     Communications, and Computers (C4) and information systems for which DISA has
+     development, execution, review, integration, testing, or support responsibilities. Further,
+     identify requirements for DISA support for networks, telecommunications, and IT systems,
+     services, and capabilities to the Director, DISA, in accordance with DoDD 5105.19, Defense
+     Information Systems Agency (DISA).
+     2.1.3. Centrally manage and provision AFIN infrastructure, including the Air Force’s
+     assigned portion of the DISN LHC, and establish, and extend AFIN services.
+2.2. Headquarters Air Force.
+     2.2.1. The Assistant Secretary for Acquisition (SAF/AQ) will:
+        2.2.1.1. In coordination with SAF/CIO A6 and AFSPC, ensure that all procured and
+        developed AFIN components and systems clearly identify and program for DISN and
+        DODIN bandwidth requirements and costs.
+        2.2.1.2. Work with SAF/CIO A6 and the Air Force Office of Business Transformation
+        (SAF/US(M)) to develop and publish guidance and processes to ensure the bandwidth
+        efficiency of systems that impact the AFIN infrastructure.
+        2.2.1.3. Provide policy and direction to ensure effective and efficient procurement of
+        LHC resources.
+     2.2.2. The Deputy Chief of Staff for Operations, Plans, and Requirements (AF/A3/5)
+     and the Chief of Information Dominance and Chief Information Officer (SAF/CIO A6),
+     through their assigned Cyberspace Support responsibilities, will:
+        2.2.2.1. Provide policy and direction to ensure effective and efficient management of
+        LHC resources including circuits, services, systems, equipment, and personnel.
+        2.2.2.2. Approve/disapprove GIG waivers IAW CJCSI 6211.02, enclosure D, sections 10
+        and 11, and DISA’s connection process guide. If an organization requires a connection to
+        the Internet via a Commercial Internet Service Provider (ISP), waiver requests will be
+        submit through AF/A3C/A6C, as the Air Force representative to the OSD GIG Waiver
+        Panel.
+AFMAN33-116 16 MAY 2013                                                                       9
+
+
+       2.2.2.3. Participate as a member of the Long Haul Communications Management Board
+       (LMB) in their respective role to provide oversight and guidance for the development,
+       deployment, administration, maintenance, and sustainment of the AFIN and associated
+       infrastructure.
+2.3. Commander, Air Force Space Command (AFSPC/CC). As the CFLI for Cyberspace
+Superiority and Lead Command for Cyberspace, AFSPC has overall responsibility for AFIN
+operations and defense and is the Air Force Lead for the DISN. As such, HQ AFSPC, and its
+subordinate units will execute the following responsibilities with regards to DISN LHC:
+   2.3.1. Assist SAF/CIO A6 to develop policy and guidance for Cyberspace Support, the
+   AFIN, AFIN infrastructure, AF IT Services, and operations of the AFIN.
+   2.3.2. Plan, program, budget, and manage the Air Force-assigned portion of DISN LHC.
+   2.3.3. Review, prioritize and manage Air Force LHC service requirements enabled by DISN
+   LHC services identified in attachments 2 and 3. (T-1)
+   2.3.4. Act as the final approval authority for AF LHC service requirements enabled by DISN
+   services. (T-1)
+2.4. Commander, Twenty-Fourth Air Force (24 AF/CC)/AFCYBER. As the cyberspace
+component Numbered Air Force (C-NAF) under AFSPC established to maintain and defend the
+AFIN as the execution arm for AFSPC, 24 AF/CC may be delegated day-to-day responsibility
+from AFSPC/CC to direct the operation, defense, security, maintenance, and control of the
+AFIN; or when acting as AFCYBER/CC, provides forces to CCDRs when required.
+Responsibilities include extending, operating, and defending the Air Force portion of the DISN.
+The 24 AF/CC will:
+   2.4.1. Execute DISN LHC operational reporting IAW CJCSM 3150.70, Joint Reporting
+   Structure Cyber Operations Status, AFI 10-206, Operational Reporting, and AFI 33-138,
+   Enterprise Network Operations Notification and Tracking.
+   2.4.2. Develop and establish escalation reporting process for circuit outages, degradations
+   and facility Hazardous Conditions (HAZCON). (T-1)
+   2.4.3. Track and report Air Force circuit operational capability impact from circuit outages,
+   degradations and HAZCONs to USCYBERCOM. (T-1)
+   2.4.4. Maintain situational awareness of DISN LHC authorized service interruption (ASIs)
+   that affect the AFIN. (T-1)
+2.5. 624th Operation Center (624 OC). The 624 OC is the AF operations center under 24 AF
+for directing the operation, defense, security, maintenance, and control of the AFIN. The 624
+OC will:
+   2.5.1. Establish, plan, direct, coordinate, assess, command & control cyber operations and
+   capabilities in support of Air Force and Joint requirements.
+   2.5.2. Maintain situational awareness of ASIs that affect the AFIN. (T-1)
+   2.5.3. Track, monitor and report circuit, system, and network outages.
+   2.5.4. Track, monitor and report HAZCONs. (T-1)
+ 10                                                              AFMAN33-116 16 MAY 2013
+
+
+2.6. 26th Network Operations Squadron (26 NOS). Operates and provides computer network
+defense for the Air Force enterprise NIPRNET and SIPRNET networks. In addition to operating
+and defending the Air Force Enterprise Network Gateways, 26 NOS provides command and
+control and computer defense for more than 250 locations, with more than 1,100 wide area
+network circuits supporting war fighting efforts while executing 24/7 sustainment of all Air
+Force active duty, Air Force Reserve, and Air National Guard NIPRNET/SIPRNET. With
+regards to Air Force DISN LHC, 26 NOS/CC will:
+   2.6.1. Monitor and maintain the Air Force Network Enterprise providing 24/7/365
+   operations and support of Air Force NIPRNET, SIPRNET and community of interest (COI)
+   SDP worldwide.
+   2.6.2. Provide guidance, technical support and on-site assistance to network operations,
+   security centers and network control centers worldwide.
+   2.6.3. Serve as the Air Force focal point for ASIs affecting NIPRNET and SIPRNET
+   originating from the USCYBERCOM, DISA, and those submitted by local ASI coordinators,
+   Technical Control Facility (TCF), base-level network operations, Agencies, and individual
+   organizations.
+   2.6.4. Track, monitor and coordinate ASIs with subordinate units. (T-1)
+   2.6.5. Track and monitor bandwidth utilization on NIPRNET and SIPRNET circuits and
+   recommend bandwidth changes to Air Force Systems Networking (AFSN). (T-2)
+2.7. Integrated Network Operations and Security Centers (I-NOSCs). Provides global
+network connectivity, services, and defense. Executes full spectrum management and defense
+for Air Force Network Operations (NetOps) supporting Cyberspace Operations and
+USCYBERCOM. With respect to Air Force DISN LHC responsibilities, I-NOSC/CCs will:
+   2.7.1. Coordinate ASIs with subordinate units and the 26 NOS IAW AFI 10-1701,
+   Command and Control (C2) for Cyberspace Operations. (T-1)
+   2.7.2. Track, monitor and coordinate applicable DISN LHC circuit, system, and network
+   outages and facility HAZCONs. (T-1)
+   2.7.3. Track and report LHC circuits that fail to meet management thresholds and
+   performance objectives outlined in Defense Information Systems Agency Circular (DISAC)
+   310-130-2 Management Thresholds and Performance Objectives. (T-2)
+2.8. 38th Cyberspace Engineering and Installation Group (38 CEIG). The 38 CEIG plans,
+engineers, and delivers survivable and resilient infrastructure to establish the cyberspace domain
+and enable the Air Force to conduct net-centric offensive and defensive air, space, and
+cyberspace operations. With regards to DISN LHC, the 38 CEIG will:
+   2.8.1. Within the scope of the 38 CEIG mission, ensures that DISN LHC requirements and
+   impacts are included in communications infrastructure engineering at the Base, MAJCOM,
+   Air Force and Theater level. (T-3)
+   2.8.2. Ensure CIPS includes accurate DISN LHC commodity information, including
+   requirements coordination and tracking of Air Force, MAJCOM, and Base programs and/or
+   projects that will impact DISN LHC. (T-2)
+AFMAN33-116 16 MAY 2013                                                                    11
+
+
+2.9. 38th Cyberspace Readiness Squadron (38 CYRS). The Long Haul Communications
+Flight (SCC) is the Air Force’s DISN LHC Program manager. As such, it will:
+   2.9.1. Execute lead command responsibilities for the DISN LHC on behalf of HQ AFSPC,
+   including associated planning, programming and budgeting for the LHC program and
+   management of the Air Force’s corporate DISN LHC requirements.
+   2.9.2. Serve as the Air Force Lead Authorized Funding Official (LAFO).
+   2.9.3. Serve as the Top Registration Authorized Official (TRAO) in DISA Direct Order
+   Entry (DDOE) for approving the Registration Official (RO), LAFO, Routing List Official
+   (RLO) and Subscription Official (SO) roles for the Air Force. (T-2)
+   2.9.4. Assist AF/A3/5 and SAF/CIO A6 in the development of Air Force policy and
+   procedural guidance on the acquisition and management of DISN LHC services.
+   2.9.5. Provide assistance to process GIG waivers. For information on GIG Waivers refer to
+   https://www.disa.mil/Services/Network-Services/Enterprise-Connections/Connection-
+   Process-Guide/Service-Appendices/OSD-GIG-Waiver-Process
+   2.9.6. Manage the Consolidated MAJCOM Circuit Management Office (CMO) for all
+   MAJCOMs and executes MAJCOM CMO duties as detailed in paragraph 2.13.
+   2.9.7. Serve as the Air Force Program Designator Code (PDC) manager. Creates PDCs for
+   all local funded Air Force organizations and missions including Air Force Supported Unified
+   Combatant Commander Activities. Creates, manages, and tracks PDCs for all AF
+   corporately funded DISN Services and MAJCOM Dedicated LHC circuits and services.
+   Responsibilities include ensuring Defense Finance and Accounting Services (DFAS) posts
+   expenditures correctly. Establish a line of accounting and funding for all new PDCs with an
+   AF Form 406, Miscellaneous Obligation/Reimbursement Document (MORD), and ensure all
+   new PDCs are loaded by Defense Information Technology Contracting Office (DITCO) in
+   the billing system. (T-2)
+   2.9.8. Assist SAF/CIO A6 by providing SME support to Air Force and MAJCOM IG teams
+   as needed.
+   2.9.9. Serve as the Air Force customer interface and focal point with DISA, DITCO, and the
+   General Services Administration (GSA) for long-haul circuit and service requirements.
+   2.9.10. Coordinate with DISA, DITCO, GSA, commercial vendors and users to resolve
+   management, acquisition and technical issues with LHC systems, circuits, equipment, and
+   services. Identifies problems, facilitates solutions, and requests changes and improvements
+   to the Air Force, DISA, and DoD long-haul process.
+   2.9.11. Serve as the Air Force Designated Agency Representative Administrator for GSA’s
+   Networx Universal and Enterprise contracts. Air Force focal point for registration and
+   maintenance of Agency Hierarchy Codes through DITCO and requesting user entitlements to
+   vendor web-based portal applications direct from the vendor. Air Force lead for Networx
+   Fair Opportunity Source Selection activities and subsequent contracts. (T-2)
+   2.9.12. Deny/terminate DISN LHC requests when it is in the best interest of the Air Force.
+   This can happen when the customer has not completed all required Certification and
+12                                                            AFMAN33-116 16 MAY 2013
+
+
+  Accreditation and/or provisioning requirements. This activity will not be accomplished
+  indiscriminately and must be coordinated with the customer. (T-2)
+  2.9.13. Represents the Air Force at meetings, conferences, workshops and surveys with
+  civilian, government, DoD, Joint Chiefs of Staff (JCS), MAJCOM, FOA, DRU, and joint
+  agencies pertaining to DISN LHC.
+  2.9.14. Represents the Air Force with government and DoD procurement actions involving
+  long-haul requirements and participates in contract evaluation panels when required.
+  2.9.15. Coordinate with DISA, MAJCOMs, FOAs, DRUs, and other services and agencies
+  on transitions and/or actions of LHC systems, circuits, equipment, and services on contracts
+  and new LHC technologies.
+  2.9.16. Validate and certify DISA and the Office of the Secretary of Defense Statistical
+  Sampling Report. (T-3)
+2.10. MAJCOM, Management Headquarters (MHQ), and Air Force-level FOA/DRU.
+  2.10.1. MAJCOM responsibilities for LHC are derived from their role as a MHQ. The
+  MHQ supports the Commander’s responsibilities of overseeing, directing and controlling
+  subordinate organizations and units by: developing and issuing policies; providing policy
+  guidance; defining operational capability requirements; evaluating program performance;
+  allocating and distributing resources; and conducting planning, programming, budgeting and
+  analyses. Other responsibilities include strategic planning; communications planning and
+  oversight; infrastructure construction, repair and maintenance; and logistics planning and
+  system sustainment. For the purpose of this instruction, Air Force-level FOAs/DRUs are
+  considered a MAJCOM/MHQ unless their parent organization serves as the MHQ. The
+  MAJCOM/MHQ/AF FOA/DRU will:
+  2.10.2. Maintain situational awareness of circuit inventories and programs by reviewing the
+  MAJCOM, AF FOA/DRU specific information contained in DDOE, TCOSS, and
+  Telecommunication Services Enterprise Acquisition Services (TSEAS) Inventory and Billing
+  Information (TIBI). (T-2)
+  2.10.3. Provide MAJCOM LHC point of contact (POC) for circuit management issues and
+  LAFO POCs to 38 CYRS/SCC. (T-3)
+  2.10.4. Appoint one or more Telecommunications Service Priority Invoking Officials in
+  writing IAW NCS Directive 3-1, Telecommunications Service Priority (TSP) System for
+  National Security Emergency Preparedness (NS/EP); NCS Manual 3-1-1, Service User
+  Manual for the Telecommunications Service Priority (TSP) System; DISAC 310-130-1 and
+  DISAC 310-130-4, Defense User’s Guide to the Telecommunications Service Priority (TSP)
+  System. An Invocation Official is a designated individual with the authority and
+  responsibility to approve the cost and criticality of a provisioning request for
+  telecommunications service, certifying that the NS/EP service is so vital that it must be
+  expeditiously provisioned. The invoking official is the MAJCOM or MAJCOM-equivalent
+  commander for the organization. This responsibility may be delegated to a flag officer or
+  civilian equivalent within the command. Forward appointment letters to 38 CYRS/SCC
+  (CMO.AF@us.af.mil). 38 CYRS/SCC will ensure Invoking Official letters remain updated
+  with the DHS TSP Program Office. (T-0)
+AFMAN33-116 16 MAY 2013                                                                       13
+
+
+   2.10.5. Execute for MAJCOM unique and dedicated LHC requirements. During the Fiscal
+   Year Execution Plan identify programmed funds that will be transferred to 38CYRS/SCC
+   using the Functional Realignment process, commonly known as D-22 transfers. 38
+   CYRS/SCC will validate that the D-22 transfer covers costs for existing requirements.
+   Transfer additional funds during the Fiscal Year when D-22 transferred funds are insufficient
+   to cover additional or changing requirements. 38 CYRS/SCC cannot approve and execute
+   MAJCOM unique and dedicated requirements without full funding. This is not applicable to
+   ANG since ANG has no MAJCOM Dedicated funds. (T-2)
+   2.10.6. Appoint a LAFO and alternate. Air Force-level FOAs and DRUs that have LHC
+   requirements (circuits and services) need to appoint a LAFO and alternate. (T-3)
+   2.10.7. Fully fund command-unique DISN LHC requirements. (T-1)
+   2.10.8. Review and assess LHC bandwidth and DISN service levels in support of DSS
+   planning, including base and all tenant requirements. Provide funding for all additional
+   bandwidth and services costs for their requirements that exceed the location’s programmed
+   DSS rate. Non-Air Force tenants are responsible for these costs if their own requirement(s)
+   result in exceeding the programmed DSS rate. (T-2)
+   2.10.9. Ensure 38 CYRS/SCC, 26 NOS and AFSN are promptly notified on mission changes
+   and projects that will impact NIPRNET and SIPRNET usage on their respective bases. (T-2)
+   2.10.10. Maintain situational awareness of ASIs, Review & Revalidation (R&R) status and
+   expired communications service authorizations (CSA) status with subordinate units
+   impacting their command.
+   2.10.11. Validate and approve Air Force Top Secret/Sensitive Compartmented Information
+   (TS/SCI) JWICS and National Security Agency Network (NSANet) requirements and
+   network connections and forward them to Headquarters (HQ) Air Force Intelligence,
+   Surveillance and Reconnaissance Agency (AFISRA), Attention: Air Force JWICS
+   PMO/A6OO, 102 Hall Blvd, Ste 235, San Antonio TX 78243-7099. (T-2)
+   2.10.12. Coordinate LHC requirements with host base that will impact DSS services and
+   bandwidth.
+   2.10.13. Air Force-level FOAs and DRUs that have LHC requirements (circuits and
+   services) will annually appoint a Circuit Manager in writing to 38 CYRS/SCC email to
+   CMO.AF@us.af.mil. (T-3)
+2.11. Installation Commanders.
+   2.11.1. Most Air Force installations have a DISN presence. Under CJCSI 6211.02,
+   installation commanders provide requisite site support for DISN equipment located on bases,
+   posts, camps, and stations. This includes providing power, physical security, floor space, and
+   onsite coordination for the DISN network POPs on these bases, posts, camps, and stations.
+   The installation commander is responsible for providing Base Operations Support (BOS) to
+   DISN LHC infrastructure installed on the base. The Installation commander may delegate
+   appointed responsibilities to the base Communications Squadron/Flight commander. The
+   installation commander, or delegated authority, will:
+ 14                                                            AFMAN33-116 16 MAY 2013
+
+
+   2.11.2. Appoint a DISN Node Site Coordinator (NSC) and alternate IAW to DISAC 310-55-
+   9, Base Level Support for the Defense Information System Network (DISN) Services, on Air
+   Force installations where DISN equipment resides. (T-0)
+   2.11.3. Manage the base LHC functions, both DISA-provided transport/services and
+   commercial long distance services obtained through GSA Networx or other government-wide
+   and DoD-authorized contracts, in accordance with DISA Circulars and this AFMAN. (T-0)
+   2.11.4. Safeguard all DISA-owned DISN equipment assigned to the installation against loss,
+   damage, destruction, misuse or pilferage. (T-1)
+2.12. Centers, Agencies, and Other Key Stakeholder Relationships:
+   2.12.1. Air Force Intelligence, Surveillance and Reconnaissance Agency (AFISRA)
+   organizes, trains, equips and presents assigned forces and capabilities to conduct ISR for
+   combatant commanders and the country. The 70 ISRW, 480 ISRW, National Air and Space
+   Intelligence Center (NASIC), and Air Force Technical Applications Center are aligned under
+   AFISRA. The Commander, AFISRA, is dual-hatted as the SCC/CC, with final determination
+   of any changes in authority to be determined at a later date. In that role, the SCC/CC
+   provides oversight of service cryptologic activities for operational elements of 24 AF
+   (AFCYBER).
+      2.12.1.1. AFISRA/A6 is responsible for managing the Air Force JWICS requirements
+      process, to include managing the prioritization, execution and implementation with final
+      approval by the AF/A2. AFISRA is the focal point to validate and approve Air Force
+      TS/SCI JWICS and NSANet requirements and network connections.
+      2.12.1.2. DELETED.
+   2.12.2. Network Operations Branch, ESC Enterprise Information Systems Directorate
+   Operations Division (AFMC ESC/HIZB) Air Force Systems Networking (AFSN)
+   provides modernization, analysis, design, test, implementation, installation, integration and
+   sustainment support for the Air Force wide-area network and Air Force network operations.
+   AFSN implements and sustains enterprise Air Force network (AFNET) NIPRNET and
+   SIPRNET infrastructure, which provides the backbone for warfighter command and control
+   communications across the Air Force. With respect to Air Force DISN LHC, AFSN will:
+      2.12.2.1. Conduct analysis of LHC stakeholder requirements relative to centrally funded
+      NIPRNET and SIPRNET connections to the DISN transport, and Internet Protocol (IP)
+      addressing. AFSN translates customer requirements into technical solutions and weighs
+      impacts of DISA provisioning to the Air Force network. Acquires IP address allocation
+      for the Air Force from DISA and distributes based on validated requirements. Procures
+      and sustains necessary equipment and materials in support of LHC stakeholder
+      requirements. Coordinates and tracks requirements implementation and termination with
+      DISA, 38 CYRS/SCC, and 26 NOS.
+      2.12.2.2. Validates on centrally funded NIPRNET/SIPRNET connections, and Internet
+      Protocol addressing, on-site assistance requests and systems configuration. This
+      responsibility includes conducting R&R on the centrally funded NIPRNET/SIPRNET
+      connections. (T-2)
+AFMAN33-116 16 MAY 2013                                                                     15
+
+
+      2.12.2.3. Terminate unused Air Force corporately funded NIPRNET and SIPRNET
+      connections when no longer required. (T-2)
+   2.12.3. Program Management Offices (PMO). PMOs or PMO-like entities manage the
+   acquisition and sustainment of information technology, including National Security Systems
+   (NSS).     PMO’s engineer and deliver platform information technology, automated
+   information systems, and outsourced information technology (IT). These deliveries may be
+   systems and/or applications based on commercial-off-the-shelf or government-off-the-shelf
+   systems, or a hybrid of each. PMOs will:
+      2.12.3.1. Ensure networked systems are bandwidth-efficient and include implementation
+      of software and/or hardware compression/acceleration technologies.
+      2.12.3.2. Track system DISN LHC bandwidth requirements by base/camp/post/station
+      and submit bandwidth requirements IAW Attachment 2 of this instruction.
+      2.12.3.3. Review/revalidate DISN bandwidth requirements prior to initial fielding, and
+      for every subsequent system modification, change, or upgrade. Submit bandwidth
+      revisions/upgrades at least 2 years in advance of the need date. PMOs will be responsible
+      for all costs associated with base DISN bandwidth upgrades that are required outside the
+      2-year DSS requirements cycle.
+      2.12.3.4. Include DISN LHC costs as part of the overall Program lifecycle costs and
+      POM. 38 CYRS/SCC will assist with cost estimates based on the PMO’s projected
+      bandwidth requirements.
+2.13. Functional Long Haul Communications Responsibilities.
+   2.13.1. MAJCOM Consolidated CMO and AF-FOA/DRU CMO.
+      2.13.1.1. The CMO is the office responsible for provisioning, tracking, and managing
+      LHC circuits and service throughout their life cycle.
+      2.13.1.2. MAJCOM CMO workload responsibilities were consolidated to 38 CYRS/SCC
+      as a result of Program Budget Directive (PBD) 723 in 2007. Air Force-level FOAs and
+      DRUs were not part of the consolidation effort and retained their CMO responsibilities.
+      All CMOs will:
+      2.13.1.3. Register and obtain the appropriate role assignments in DDOE for their
+      respective organizations. The DDOE roles and responsibilities are: (T-2)
+      2.13.1.4. Registration Official (RO): Responsible for approving or denying role requests
+      submitted by persons within their Agency or Organization with exception of the
+      Authorized Billing Official (ABO) and AFO. The RO role is approved by the Air Force
+      TRAO. (T-2)
+      2.13.1.5. Routing List Official (RLO): Establish and maintain DDOE routing matrices
+      as needed by defining business rules for routing Telecommunications Requests (TR)
+      based upon the PDC using the Request Routing application. The RLO role is approved
+      by the Air Force TRAO. (T-2)
+      2.13.1.6. Review and Revalidation (R&R) Approval Official: Manages circuits and
+      services in the DISA R&R inventory biennial (every 2 years). Responsible for approving
+16                                                              AFMAN33-116 16 MAY 2013
+
+
+     TRs in DDOE to discontinue, reconfigure, or downgrade circuits and services as certified
+     by the R&R Certification Official. (T-2)
+     2.13.1.7. Authorized Requesting Official (ARO): Submits and tracks TRs in DDOE as
+     required.
+     2.13.1.8. Authorized Billing Official (ABO): Allows the user to view their Agency's
+     inventory and financial information via TIBI. The ABO role is approved by the Agency's
+     Lead Authorized Funding Official.
+     2.13.1.9. Address Directory Official (ADO): Manages the Point of Contact (POC)
+     records in the DDOE Central Address Directory (CAD). Responsible to maintain
+     accurate POC records; this role allows the ADO to look for duplicate entries and 'clean-
+     up' their Agency POC records; ADO is approved by the Agency's RO. (T-3)
+     2.13.1.10. Prepare, review, validate, approve or reject TRs in DDOE for long-haul
+     circuits, services, and equipment submitted by subordinate organizations ensuring all
+     requests include the approved CIPS Control Number for the requested long haul circuit,
+     services, and equipment. A validation will be conducted to ensure service costs are in
+     line with industry norms. (T-1)
+     2.13.1.11. Assist and guide subordinate organizations on LHC management including:
+     2.13.1.12. DDOE and TCOSS registration. Users require DDOE and TCOSS accounts
+     to manage LHC circuits, services, and funding.
+     2.13.1.13. Preparing DDOE orders according to DISAC 310-130-1 and DISA
+     Provisioning Notices. (T-0)
+     2.13.1.14. Identifying and obtaining special circuit considerations (i.e., diversity,
+     avoidance, redundancy, and survivability) to meet mission specifications.
+     2.13.1.15. Identifying proper TSP level. According to DISAC 310-130-1 and DISAC
+     310-130-4. (T-0)
+     2.13.1.16. Ensure TS/SCI connections (JWICS, NSANet) are submitted for validation
+     and approval to the MAJCOM, FOA, DRU A2 designated office. (T-2)
+     2.13.1.17. Ensure all DSN dedicated precedence service requests are approved according
+     to CJCSI 6211.02. (T-0)
+  2.13.2. Technical Control Facility (TCF), Patch and Test Facility (PTF), Network
+  Control Center (NCC), Communications Focal Point (CFP), and /or Circuit Actions
+  Office.
+     2.13.2.1. Responsibilities in this section apply to the facility that serves as the interface
+     between the transmission elements of the GIG and the users of the system. Traditionally
+     these activities were accomplished by what was called the TCF or PTF. The
+     responsibility has migrated to the NCC, CFP, Circuit Actions Office and/or to the Base
+     Telecom manager in many cases. These responsibilities must be complied with
+     regardless of the facility designation.          The applicable base/camp/post/station
+     TCF/PTF/NCC/CFP/Circuit Actions Office will:
+AFMAN33-116 16 MAY 2013                                                                       17
+
+
+     2.13.2.2. Be responsible for base LHC management according to DoD Directives and
+     Instructions, DISA Circulars and Notices, and Air Force policies.
+     2.13.2.3. Register and obtain the following role assignments in DDOE. Each of these
+     roles has defined responsibilities. (T-1)
+     2.13.2.4. Appoint an Authorized Requesting Official (ARO) in writing. The ARO will:
+     (T-2)
+        2.13.2.4.1. Prepare TRs in DDOE for long-haul circuits, services, and equipment
+        requests. All service orders will include the approved CIPS Control Number for the
+        requested long haul circuit, services, and equipment. (T-2)
+        2.13.2.4.2. Submit and tracks TRs in DDOE as necessary. (T-2)
+        2.13.2.4.3. Ensure all orders submitted for Networx commercial long distance service
+        include a registered Agency Hierarchy Code (AHC) which corresponds to the
+        Program Designator Code (PDC) used on the order. (T-2)
+     2.13.2.5. Appoint, in writing, an R&R Certification Official. The R&R Certification
+     Official is responsible for certifying circuits and services in the DISA R&R inventory
+     biennially (every 2 years) on all circuits and services assigned by the authorized CMO.
+     (T-2)
+     2.13.2.6. Establish and maintain provisioning records, temporary and permanent circuit
+     history folders according to DISAC 310-70-1. (T-0)
+     2.13.2.7. Establish and maintain site specific systems diagrams that depict signal flow
+     through the facility readily available in the operations area of the TCF, PTF, or NCC to
+     aid restoration and troubleshooting efforts according to DISAC 310-70-1. (T-0)
+     2.13.2.8. Establish and maintain Circuit Layout Records (CLR) according to DISAC
+     310-70-1. (T-0)
+     2.13.2.9. Maintain a Master Station Log (MSL) according to DISAC 310-70-1. (T-0)
+     2.13.2.10. Track facility, link, trunk, circuit, channel, equipment outages, and
+     HAZCONs the activity is responsible for. Outage and restoration records must be
+     maintained according to DISAC 310-70-1 and DISAC 310-55-1. (T-0)
+     2.13.2.11. Establish a trend analysis program on all circuits, trunks for which they are the
+     Circuit Control Office (CCO) or servicing activity, and on all circuits and trunks which
+     terminate at their station according to DISAC 310-70-1 and DISAC 310-130-2. (T-0)
+     2.13.2.12. Maintain an inventory of all base telecommunications equipment and services
+     according to CJCSI 6211.02. (T-0)
+     2.13.2.13. Review and revalidate all requirements for base telecommunications
+     equipment and services. Terminate services that are uneconomical or no longer needed
+     according to CJCSI 6211.02. (T-0)
+     2.13.2.14. Coordinate ASIs with subordinate units and/or customers and submit
+     concurrence or non-concurrence to the I-NOSCs for NIPRNET, SIPRNET, and 24 AF
+     designated mission critical circuits. All other ASI’s are coordinated directly with DISA
+     according to DISAC 310-55-1, Status Reporting, and AFI 33-138, Enterprise Network
+18                                                            AFMAN33-116 16 MAY 2013
+
+
+     operations Notifications and Tracking. Coordinate power outages scheduled by base
+     Civil Engineering that will affect communication facilities, rooms, racks, and equipment;
+     schedule and coordinate ASIs with DISA, MAJCOM, I-NOSCs, and customers for the
+     circuits and/or systems affected by the power outage according to DISAC 310-55-1. (T-
+     0)
+     2.13.2.15. Use Facility Circuit Information Tracking (FaCIT) to manage LHC records
+     according to DISAC 310-70-1. FaCIT is the only Air Force approved application to
+     manage LHC services. To access and download FaCIT go to https://ceds.gunter.af.mil/.
+     (T-0)
+        2.13.2.15.1. If FaCIT cannot be installed due to network or IA restrictions, FaCIT is
+        not required. However, organizations must manage their LHC records in accordance
+        with DISAC 310-70-1. The unit must document why FaCIT cannot be used and
+        retain on file for inspection purposes. (T-0)
+     2.13.2.16. Send GIG user notification letters to each user within 30 days of activation of
+     a new circuit and annually thereafter according to DISAC 310-70-1. (T-0)
+  2.13.3. DISN Node Site Coordinator (NSC).
+     2.13.3.1. The NSC and alternate will be appointed by the unit Commander or Operations
+     Supervisor according to DISAC 310-55-9 on Air Force installations where DISN
+     equipment resides. A copy of the NSC appointment letter will be sent to the appropriate
+     DISA office designated in DISAC 310-55-9 and emailed to 38 CYRS/SCC at
+     38CYRS.scc.ccmo@us.af.mil. (T-0)
+     2.13.3.2. The NSC will support DISA and accomplish the roles and responsibilities
+     according to CJCSI 6211.02, DISAC 310-55-9, and DISAC 310-70-1. (T-2)
+     2.13.3.3. NSC       must    contact     the    DISA      NSC      training     group    at
+     DISANSCTrainingGroup@disa.mil to register for training. The NSC appointment
+     letter must be up-to-date and on file with DISA to register and obtain training. All NSCs
+     are required to complete the DISA NSC training according to DISAC 310-55-9. (T-0)
+     2.13.3.4. Unless otherwise delegated by the installation commander or his/her delegated
+     authority, the NSC is responsible for all assigned DISA-owned equipment at the NSC’s
+     facility(s). The NSC or designated responsible individual will: (T-2)
+        2.13.3.4.1. Inventory all DISA property on an annual basis, 1 May-30 June, and
+        provide documentation, signed by the unit commander, of results to the supporting
+        DISA designated property accountability office NLT 30 Jun of each year. (T-0)
+        2.13.3.4.2. Will sign a DoD property accountability sub-hand receipt (DD Form
+        1150, Request for Issue/Transfer/Turn-in) for all equipment at all locations under
+        their physical control and will sign a DISA-furnished, DPAS-generated sub-hand
+        receipt to certify annual inventories. (T-0)
+        2.13.3.4.3. Will safeguard all equipment against loss, damage, destruction, misuse or
+        pilferage. (T-0)
+        2.13.3.4.4. Will provide copies of new shipping, receiving, and disposal
+        documentation, as well as signed DD Form 1150s, showing acceptance of property to
+AFMAN33-116 16 MAY 2013                                                                 19
+
+
+        the DISA property accountability office on a monthly basis on the fifth day of each
+        month. The signed DD Form 1150s are utilized by DISA to update DPAS. (T-0)
+        2.13.3.4.5. Will maintain copies of all shipping, receiving, and disposal
+        documentation in accordance with DoDD 5015.2, DoD Records Management
+        Program, and DoDI 5000.64, Accountability and Management of DoD Equipment
+        and other Accountable Property. (T-0)
+        2.13.3.4.6. Will maintain life-cycle replacement and tech refresh documentation in
+        accordance with Department of Defense policies and guidelines. (T-0)
+        2.13.3.4.7. Will ensure DISA-owned equipment is not loaded or tracked in the Air
+        Forces Asset Inventory Management (AIM) system or any other AF IT asset
+        management system. (T-0)
+  2.13.4. Authorized Funding Official (AFO).
+     2.13.4.1. Each unit that owns/funds DISN LHC circuits/services must appoint an AFO in
+     writing to the MAJCOM LAFO. The AFO is the unit level individual responsible for
+     managing LHC funding for circuits and services. Each AFO will: (T-1)
+     2.13.4.2. At the beginning of each fiscal year, update PDC with a certified MORD
+     number and Line of Accounting (LOA) in TIBI. (T-1)
+     2.13.4.3. Approve and/or Disapprove DDOE TRs. (T-1)
+     2.13.4.4. Reconcile LHC invoices for telecommunications equipment and service
+     inventories, CSAs and/or other acquisition documents before authorizing payment. (T-2)
+     2.13.4.5. Submit PDC requests to 38 CYRS/SCC at 38CYRS.LHC.funding@us.af.mil.
+     (T-1)
+  2.13.5. MAJCOM LAFO.
+     2.13.5.1. Each MAJCOM/MHQ/AF-FOA/DRU will appoint a LAFO in writing to 38
+     CYRS/SCC. The LAFO provides AFOs and ABOs guidance and oversight with regards
+     to DISN LHC funding. Each LAFO will: (T-1)
+     2.13.5.2. Ensure units under their purview reconcile their LHC invoices for
+     telecommunications equipment and service inventories, CSA, and/or other acquisition
+     documents before authorizing payment. Ensure units are aware they can obtain access to
+     Networx vendor on-line systems for commercial long distance usage and billing data by
+     contacting the AF DAR Administrator at 38CYRS/SCC. (T-2)
+     2.13.5.3. Approve AFO and ABO role requests under their command. (T-1)
+     2.13.5.4. Ensure AFO POCs are kept up-to-date in the TIBI database for local funded
+     PDCs under their MAJCOM. (T-3)
+ 20                                                           AFMAN33-116 16 MAY 2013
+
+
+                                         Chapter 3
+
+                               SUPPORT APPLICATIONS
+
+3.1. Facility Circuit Information Tracking (FaCIT).
+   3.1.1. FaCIT is the base level Air Force application developed to support LHC management
+   and will be used at all Air Force bases. FaCIT provides the following functions: MSL, trend
+   analysis, outage tracking, circuit history folder management, circuit layout records, ASI
+   tracking, and Quality Control testing schedule. The office that accomplishes the base LHC
+   mission (TCF, PTF, NCC, or Circuit Actions Office) will utilize FaCIT. FaCIT integrates
+   with TCOSS to download circuit history actions.                  FaCIT is available at
+   https://ceds.gunter.af.mil/.
+   3.1.2. The FaCIT Global Circuit Manager module provides MAJCOMs situational
+   awareness and the capability to view aggregated FaCIT information which includes: circuits,
+   equipment, trouble tickets (circuit outage and restoration), and Master Station Log entries
+   throughout their organizations.
+3.2. The Air Force Telecommunications Certifications Office Support System (TCOSS).
+   3.2.1. TCOSS is the Air Force Enterprise financial management system to track LHC
+   expenditures and is the repository for electronic circuit message files such as
+   Telecommunications Service Request (TSR), Telecommunications Service Order (TSO),
+   Delayed Service Report (DSR), Exception Report (EXC), In-Effect Report (IER) and Status
+   Acquisition Message (SAM). TCOSS provides users the capability to query circuit history
+   files and access to the Air Force Mobile Satellite Services (MSS) database. TCOSS also
+   contains a module to assist the Air Force Networx Management Office create and update
+   AHC, Entitlements and Networx POC records
+   3.2.2. Users such as LAFO, AFO, ABO, ARO, Circuit Actions, MSS Managers, and CMO
+   are required to obtain a TCOSS account to accomplish their roles and responsibilities
+   identified in this AFMAN.
+   3.2.3. Register for TCOSS account at https://tcoss.scott.af.mil. For account assistance,
+   contact the TCOSS Helpdesk at 38CYRS.SCC.TCOSS-Helpdesk@us.af.mil.
+AFMAN33-116 16 MAY 2013                                                                         21
+
+
+                                           Chapter 4
+
+                                        PROCEDURES
+
+4.1. Ordering Communications Service.
+   4.1.1. In accordance with attachment 2, approved CIPS LHC requirements are forwarded to
+   the ARO. The ARO submits a TR in DDOE according to DISAC 310-130-1 and DISA
+   Provisioning Notices.
+   4.1.2. The responsible CMO validates the requirement, conducts a technical review, ensures
+   accuracy, and validates completeness of the TR in DDOE. CMOs will track and manage the
+   requirement from submission to completion.
+   4.1.3. AFO approves the funds, reviews the PDC, Cost Threshold Not To Exceed (NTE),
+   Monthly Recurring Charge (MRC), and Non-Recurring Charge (NRC). AFO will select the
+   Bona Fide Need Fiscal Year statement. All PDCs must have a LOA in TIBI.
+   4.1.4. The approved TR is released as a TSR and routes to the responsible DISA or DITCO
+   office for further action.
+   4.1.5. The DISA provisioning office creates the TSO. The TSO provides the authorization
+   to allocate resources to fulfill the requirement and assigns a lifetime circuit identifier known
+   as the Command Communications Service Designator (CCSD). If DISA cannot fulfill the
+   requirement, DDOE routes the order directly to DITCO for leasing action.
+   4.1.6. DITCO creates and issues a SAM (if applicable), DITCO Europe issues both a circuit
+   demand and SAM. The SAM and circuit demand messages advise the customer of the
+   acquisition status and assigns the CSA.
+   4.1.7. The organization assigned as CCO in the TSO accepts the service on behalf of the
+   government and will submit the appropriate completion report if required according to
+   DISAC 310-70-1 and DISAC 310-130-1. TCOSS provides an automated completion report
+   writer to assist compilation of the report.
+   4.1.8. Joint Hawaii Information Transfer System (JHITS) is used for leased commercial
+   services in the state of Hawaii, defined to be the eight primary islands. JHITS provides
+   enhanced information transfer capabilities to DoD and certain other authorized users in the
+   State of Hawaii. The JHITS provides a full range of GIG compliant end-to-end switched
+   voice, video, data and DISN transmission services for both the backbone as well as for the
+   infrastructure of the base, post, camp and station.
+   4.1.9. The DISA and commercial vendors operate on a meet-me basis with the customer
+   responsible for procuring and maintaining connectivity from their equipment to the
+   commercial or DISN POP. Local service agreements dictate how to obtain connectivity
+   along with associated costs. When the local communications unit cannot install a service,
+   customers may obtain service installation support using the DISA Site Support contracts.
+   These contracts extend service over existing infrastructure. Installation of base or site fiber
+   or copper between buildings is outside of the contract scope.
+ 22                                                              AFMAN33-116 16 MAY 2013
+
+
+4.2. Defense Switched Network (DSN).
+   4.2.1. MAJCOMs serve as the approval authority for DSN requirements according to
+   AFMAN 33-145, Collaboration Services and Voice Systems Management, and submit DSN
+   order requirements through the servicing DISA office via DDOE according to CJCSI
+   6211.02 ENCLOSURE D.
+   4.2.2. MAJCOMs prepare precedence dial capability requests according to CJCSI 6211.02
+   ENCLOSURE D.
+   4.2.3. MAJCOMs send DSN requests for connection to a Pacific or European DSN switch
+   according to CJCSI 6211.02 ENCLOSURE D.
+   4.2.4. MAJCOMs submit DSN DDOE order(s) following CJCSI 6211.02 approval. Do not
+   provide information copies to other CJCSI addressees. Refer to date time group of the CJCSI
+   6211.02 approval message in remarks block of DDOE order.
+4.3. Air Force NIPRNET/SIPRNET.
+   4.3.1. For NIPRNET and SIPRNET requirements follow the LHC requirements management
+   process detailed in attachments 2 and 3.
+   4.3.2. Customers on Air Force installations will coordinate with the base communications
+   squadron Plans and Implementation Flight to validate and approve requests to connect to the
+   base LAN. If the requirement is not satisfied at the local level, the Plans Flight will enter a
+   valid requirement into CIPS and route the requirement to their supporting MAJCOM, AF
+   FOA/DRU headquarters for approval and to the LMB if required.
+   4.3.3. Backside Connections.
+       4.3.3.1. Backside connections are permissible between DoD entities. Mission partners
+       and defense contractors are permissible but require DoD CIO approval according to
+       CJCSI 6211.02. Backside connections and network backdoors to the AFNET are
+       generally prohibited due to mission assurance requirements. AFNET backside
+       connections must have 24 AF/CC approval.
+       4.3.3.2. Backside connections between DoD entities. The Air Force Authorizing Official
+       (DAA) may authorize connections between DoD facilities operated by another CC/S/A to
+       provide access to DISN provided transport and information services (e.g., DoD tenant or
+       GSU connecting to DISN through the base local infrastructure). Connections made
+       between two connecting sites must be established consistent with the requirements in the
+       network STIG.
+       4.3.3.3. Backside connections between DoD facilities and defense contractor facilities
+       shall be procured through DISA after receiving AF DAA approval in accordance with
+       paragraph 4.3.5.
+Note: Use of non-DISN commercial transport as an alternative to DISN-provided transport
+requires a GIG Waiver Panel (GWP) approved Commercial ISP Connection Waiver.
+       4.3.3.4. Backside access circuits are funded by the unit or parent MAJCOM/MHQ/AF
+       FOA/DRU.
+AFMAN33-116 16 MAY 2013                                                                     23
+
+
+     4.3.3.5. Ensure customers with backside connections contact the unit or base providing
+     the connection rather than DISA in the event of a circuit problem associated with the
+     provided connection.
+     4.3.3.6. Ensure mission partners and defense contractors do not provide a backside
+     connection to another organization.
+     4.3.3.7. Backside connections must be implemented behind appropriately protected
+     enclaves and ensure an MOA is established for Computer Network Defense (CND)
+     services with protections equivalent to DISA STIGs or federal security requirements.
+  4.3.4. The DoD facilities are expected to be geographically adjacent (e.g., base/camp/station
+  or metropolitan area). Exceptions may be authorized related to mission needs. Requests for
+  connection exceptions will be processed through DISA to the Defense Information
+  Assurance Security Accreditation Working Group (DSAWG).
+  4.3.5. Mission partner and defense contractor connections. All connection requests for
+  mission partner and defense contractor (i.e. contractor facilities) to the DISN provided
+  transport and information services require a sponsor (MAJCOM/24AF/FOA/DRU), funding,
+  and Computer Network Defense Service Provider approval. Mission partner and defense
+  contractor system access must be limited only to the information and services required to
+  execute the DoD-approved mission. The Air Force designated approval authority (DAA) or
+  Air Force DAA-delegated authority must validate and endorse all mission partner and
+  defense contractor connections to the DISN and forward to DoD CIO for approval according
+  to CJCSI 6211.02.
+  4.3.6. The Air Force must obtain DoD CIO approval to connect mission partner or defense
+  contractor facilities or information systems to the base infrastructure (e.g., base enclave),
+  which is connected to the DISN.
+  4.3.7. Once approved by the DoD CIO, mission partner and DoD contractor connections
+  must be ordered through the DDOE process according to the DISA Connection Process
+  Guide (reference p).
+  4.3.8. If SIPRNET email is required in support of a contract, the contractors must obtain
+  their SIPRNET email via their sponsor’s enclave (email clients).
+  4.3.9. Air Force connection responsibilities.
+     4.3.9.1. The Air Force DAA must accept responsibility for the connection in the security
+     authorization documentation according to DoDI 8510.01 (reference h) and update DISN
+     connection package with the DISA, to include a copy of any interconnection agreements
+     and detailed topology diagrams including all connections.
+     4.3.9.2. Provide details on all existing and proposed connections (including, but not
+     limited to, interconnection agreements and topology diagrams) to the DISN connection
+     approval office as part of the connection request package.
+     4.3.9.3. Provide supporting encryption equipment, keying material, or a channel
+     servicing unit/data servicing unit except for what may be ordered with vendor leasing
+     action and the TSO.
+ 24                                                            AFMAN33-116 16 MAY 2013
+
+
+      4.3.9.4. Sponsoring organizations are responsible for submitting the DDOE provisioning
+      request.
+      4.3.9.5. Providing an unauthorized DISN connection to a mission partner or defense
+      contractor will be grounds for individual or organizational sanctions including immediate
+      disconnection of the CC/S/A connection to DISN-provided transport and information
+      services.
+   4.3.10. All NIPRNET and SIPRNET connections must be certified and accredited in
+   accordance with DoDI 8500.01, Cybersecurity, using DoDI 8510.01, Risk Management
+   Framework (RMF) for DoD Information Technology. Accreditation packages in Enterprise
+   Mission Assurance Support Service (EMASS) must be started and completed as early in the
+   provisioning process as possible. If the accreditation process has not been completed, DISA
+   will not activate the circuit.
+      4.3.10.1. Accreditation for SIPRNET circuits must be processed through the Classified
+      Connection Approval Division (CCAD), DISA/NSC. (http://www.disa.mil/connect).
+      4.3.10.2. Accreditation for NIPRNET circuits must be processed through the
+      Unclassified Connection Approval Office (UCAO) Division, DISA/NSC.
+      (http://www.disa.mil/connect).
+      4.3.10.3. Failure to reaccredit existing enclaves prior to accreditation expiration will
+      result in direction by the USCYBERCOM to disconnect the enclave.
+   4.3.11. Owners of LHC connection requirements will fund and/or acquire necessary
+   modems, cabling, connectors, and encryption devices according to Air Force and DISA
+   provisioning guidance. Contact 38 CYRS/SCC with any questions concerning this process.
+4.4. DELETED.
+   4.4.1. DELETED.
+4.5. JWICS.
+   4.5.1. JWICS Connection Process Requests will be according to Network Connection Policy
+   for the Joint Worldwide Intelligence Communications System.
+   4.5.2. Route JWICS TS/SCI and NSANet validated and approved requirements through the
+   operational MAJCOM/A2 to HQ Air Force Intelligence, Surveillance and Reconnaissance
+   Agency (AFISRA), Attention: Air Force JWICS PMO/A6OO, 102 Hall Blvd, Ste 235, San
+   Antonio TX 78243-7099. Air Force JWICS PMO/A6OO will process in accordance with
+   National Intelligence Communications Directive to ensure compliance with the standard
+   TS/SCI network design.           Circuit request letters will be emailed to:
+   afisra.af.jwics@us.af.mil.
+4.6. Defense RED Switch Network (DRSN).
+   4.6.1. All MAJCOM requests for DRSN service are approved and processed according to
+   CJCSI 6211.02; Enclosure D provides specific instructions for ordering DRSN service.
+   4.6.2. A DDOE order must be submitted if a LHC circuit is required for connection to the
+   DRSN switch. Reference the CJCSI 6211.02 approval in the remarks block of the DDOE
+   order.
+AFMAN33-116 16 MAY 2013                                                                        25
+
+
+4.7. Networx Contract for Commercial Long Distance Services.
+   4.7.1. The Air Force uses the GSA Networx contract world-wide for dedicated and switched
+   long-distance telephone and toll free service, calling cards, dial-up video conference service,
+   audio conferencing service, and internet protocol service. The Air Force also uses Networx
+   to support other requirements according to DoD policy when a DISN solution is not
+   available.
+      4.7.1.1. Per DOD CIO Memorandum, Base and Long-Haul Telecommunications
+      Equipment and Services-Policy Clarification Memorandum, 10 May 2007, all
+      commercial long distance service must be ordered through DISA.
+      4.7.1.2. Under the terms of the Networx contract, a registered Agency Hierarchy Code
+      (AHC) must be included on each Networx order. The AHC is used to ensure accurate
+      billing by the Networx vendor and by the Air Force DAR Administrator for the Networx
+      contract to grant entitlements to the Networx vendors’ on-line systems where usage,
+      billing, trouble ticket and order status information is available.
+      4.7.1.3. Requirements for commercial Internet Protocol Service (IPS) cannot be
+      submitted without an OSD waiver IAW DODI 8100.04, and AFI 33-129, Web
+      Management and Internet Use.
+      4.7.1.4. Dedicated point-to-point circuits may also be provisioned from the Networx
+      contract if DISA determines Networx is most advantageous to the government. Orders
+      for Dedicated Point-to-Point service are entered in DDOE through the “Dedicated”
+      module, not the “Networx” module.
+      4.7.1.5. Requirement owners should ensure Networx orders for dedicated long distance
+      service are accompanied by a parallel order for Switched long distance with the same
+      number range(s) as the Dedicated order to avoid Casual Billing issues resulting from PIC
+      overflow. In addition, each number within the range should be individually billed for
+      long distance usage versus “bill-to-number” for the range to increase accountability and
+      billing accuracy.
+   4.7.2. Process Networx requirements according to DISAC 310-130-1 and DISA
+   Provisioning Notices. Only DITCO is authorized to place orders for DoD against the
+   Networx contract. Do not directly contact Networx vendors to place orders. For additional
+   information on the Networx contract see the Networx Contract page on the Air Force Long-
+   Haul Communications Community of Practice (LHC CoP) SharePoint site or contact the Air
+   Force     DAR       Administrator     for     the    Networx      Contract     at     the
+   38CYRS.SCC.networx@us.af.mil.
+4.8. DISN Subscription Services (DSS).
+   4.8.1. MAJCOMs will not use DISN subscription PDCs when ordering circuits or services.
+   4.8.2. MAJCOMs will use local funded and/or MAJCOM dedicated PDCs when ordering
+   circuits or services between DSS locations to reflect ownership.
+   4.8.3. 26 NOS managed NIPRNET and SIPRNET circuits between DSS locations will use
+   standard common user PDCs.
+ 26                                                             AFMAN33-116 16 MAY 2013
+
+
+4.9. Commercial Satellite Communications (SATCOM) Service. See AFI 33-134 for
+additional information.
+Note: AFI 33-134 is being rewritten as AFMAN 33-570 Satellite Communications (SATCOM)
+Systems).
+   4.9.1. MAJCOMs must have all SATCOM service requests approved through the CJCSI
+   6250.01, Satellite Communications process before submitting a DDOE order to DISA.
+   4.9.2. Show the SDB number in the appropriate DDOE block. For urgent requirements with
+   no assigned control number, enter "NONE" in this item, and cite the approval
+   correspondence in the DDOE remarks block.
+4.10. INMARSAT.
+   4.10.1. INMARSAT is a commercial satellite communications system. The INMARSAT
+   terminal is a radio communications device using a satellite link to interface with terrestrial
+   telephone systems or other INMARSAT terminals. To find additional required information
+   about Air Force INMARSAT use and policy consult AFI 33-134 or contact your MAJCOM,
+   FOA, or DRU MSS Manager. All INMARSAT terminal airtime services must be
+   provisioned using the DISA/DITCO contract prior to use.
+   4.10.2. Air Force customers will purchase INMARSAT airtime service using the
+   DISA/DITCO contract. If using the DISA/DITCO contract causes a conflict see AFI 33-134
+   and contact 38 CYRS/SCC, for assistance at 203 W. Losey St., Scott AFB IL 62225-5222,
+   email 38CYRS.commercial.satcom@us.af.mil
+      4.10.2.1. Customer submits airtime service request through DDOE. All newly activated
+      equipment will be barred from INMARSAT service until service is secured through the
+      DISA/DITCO contract. MAJCOMs, FOAs, and DRUs will establish procedures to
+      ensure requested service meets mission requirements and is cost effective. Ensure
+      procedures are established to verify INMARSAT bills.
+   4.10.3. Process requirements to add, change, transfer or delete INMARSAT service
+   according to AFI 33-134, CIPS and MAJCOM supplemental procedures.
+   4.10.4. INMARSAT equipment will be properly accounted for in Asset Inventory
+   Management (AIM) using the MSS tab of the Personnel Wireless Communications System
+   module. AIM is the system of record for tracking and inventory of INMARSAT equipment.
+   See AFI 33-590 for INMARSAT equipment management accountability procedures.
+4.11. Enhanced Mobile Satellite Service (EMSS) (Iridium).
+   4.11.1. The EMSS is a satellite-based, global wireless personnel communications network
+   designed to permit any type of narrow-band wireless transmission, (i.e., voice, data, fax,
+   short burst messaging, or paging) to reach its destination with a minimum reliance on land-
+   based infrastructures. Cross-linking between satellites and up and down-linking through the
+   DoD terrestrial satellite gateway in Wahiawa HI, allows DoD users Network and DSN secure
+   global access and coverage through specially designed portable and mobile telephones
+   known as Iridium Subscriber Units. The EMSS systems support DoD missions and
+   operations as well as other federal and NS/EP communications. The DoD - EMSS systems
+   complement military terrestrial and satellite communications (SATCOM) and improve
+   warfighter beyond line-of-sight connectivity by offering near-worldwide to global access to
+AFMAN33-116 16 MAY 2013                                                                        27
+
+
+   all echelons of the DoD. For more information about EMSS, DoD, and Air Force policy can
+   be        found        at      the       MSS         Community        of       Practice
+   https://www.my.af.mil/afknprod/community/views/home.aspx?Filter=OO-SC-CA-22.
+   4.11.2. Hardware and services must be procured through DISA/DITCO contracts. See AFI
+   33-134 for exceptions to this policy.
+   4.11.3. MAJCOMs, FOAs, and DRUs will establish procedures to ensure the requested
+   service meets mission requirements and is cost effective and ensures procedures are
+   established to verify EMSS billing.
+   4.11.4. Air Force users requiring EMSS follow the provisioning process already in place for
+   ordering LHC as directed in DISAC 310-130-1 and this instruction. Questions on
+   MAJCOM, FOA, and DRU EMSS process be addressed by the command’s MSS Manager.
+      4.11.4.1. Iridium equipment will be properly accounted for in Asset Inventory
+      Management using the MSS tab of the Personnel Wireless Communications System
+      module. AIM is the system of record for tracking and inventory of Iridium equipment.
+      See AFI 33-590 for Iridium equipment management accountability procedures.
+4.12. DISA Control Numbers (DCN) for Military Exercise.
+   4.12.1. DISA uses DCN as unclassified project control numbers to manage joint and military
+   exercise requirements. Obtain DCN early for use and release to all exercise participants
+   submitting requirements.
+   4.12.2. MAJCOMs, FOAs, and DRUs submit requests for DCN to the appropriate DISA
+   provisioning activity. The DCN request must include the exercise name, the inclusive dates
+   of the exercise, and identify the request as JCS or Air Force-directed. Send a separate
+   classified message to the DISA provisioning activity if using classified information.
+   4.12.3. Submit DCN requests to:
+      4.12.3.1. DISN Service Center (DSC), 604 Tyler St, Scott AFB IL 62225-5421, if a
+      Continental United States (CONUS)-based activity sponsors the exercise. All CONUS-
+      based Combatant Commands (CCMD) will go through DISA CONUS for DCN.
+      4.12.3.2. DISA Europe, Unit 30403 Box 357, APO AE 09131-4103, if a European-based
+      activity sponsors the exercise.
+      4.12.3.3. DISA Pacific, 477 Essex Street Suite 183 Pearl Harbor, HI 96860-5815, if a
+      Pacific-based activity sponsors the exercise.
+4.13. TSP Restoration and Provisioning/National Security Emergency Preparedness
+(NS/EP).
+   4.13.1. The Telecommunications Service Priority (TSP) Program provides national security
+   and emergency preparedness (NS/EP) users with priority restoration and provisioning of
+   telecommunications services that are vital to coordinating and responding to crises. The TSP
+   Program has two components, restoration and provisioning. A restoration priority is applied
+   to new or existing telecommunications services to ensure restoration before services with
+   lower or no priority. Priority restoration is necessary for a TSP service because interruptions
+   may have a serious, adverse effect on the supported NS/EP function.
+ 28                                                               AFMAN33-116 16 MAY 2013
+
+
+   4.13.2. Obtaining restoration TSP.
+       4.13.2.1. For new and existing circuits that are ordered through DISA; complete the TSP
+       section of the TR in DDOE. DISA routes TSP request to the Department of Homeland
+       Security for processing and TSP assignment. See DISAC 310-130-4 for TSP criteria and
+       DISAC 310-130-1 for DDOE procedures.
+       4.13.2.2. For new starts and re-awards processed directly through DITCO, the customer
+       must:
+           4.13.2.2.1. Complete the DDOE TR and obtain a CSA from DITCO.
+           4.13.2.2.2. After receiving the CSA identifier, the customer will complete a TSP
+           request. TSP is requested by submitting the SF 315 TSP Request for Service Users to
+           the TSP Program Office (TSPPO) or by completing the automated version of the
+           form at http://www.dhs.gov/publication/tsp-documents.
+           4.13.2.2.3. Once the TSP is received, the customer will amend the DDOE TR to
+           include the TSP and associated funding.
+       4.13.2.3. Requesting a TSP for an existing circuit that was ordered initially without a
+       TSP and was processed through DITCO:
+           4.13.2.3.1. The customer will complete a TSP request. TSP is requested by
+           submitting the SF 315 to the TSPPO or by completing the automated version of the
+           form at http://www.dhs.gov/publication/tsp-documents.
+           4.13.2.3.2. Once the TSP is received, the customer will submit a change DDOE TR
+           to include the TSP and associated funding.
+   4.13.3. Obtaining provisioning TSP (NS/EP)
+       4.13.3.1. A key feature of the TSP Program is that service users can obtain provisioning
+       priority from service vendors for the installation of new NS/EP services. A provisioning
+       priority authorizes the service vendor to take steps to provide the service earlier than the
+       service vendor's normal business procedures would allow. Customers invoking NS/EP
+       are liable for all installation fees regardless of the cost. NS/EP requirements fall into two
+       categories emergency and essential.
+Note: NS/EP is not applicable to foreign Telecommunications Carriers within Europe. Air
+Force MAJCOMs requiring Emergency or Essential, INTRA EUR circuits, need to know that
+exceptional provisioning is the process used for circuits solely within EUR. To obtain
+exceptional provisioning expedited assistance in the European Theater, contact the United States
+Air Force Europe (USAFE) CMO office, commercial, 618-229-9933, DSN 312-779-9933 or
+9934, Email: CMO.USAFE@US.AF.MIL.
+   4.13.4. Invoking NS/EP.
+       4.13.4.1. The requesting organization must justify and validate the need to invoke
+       NS/EP. The two types of NS/EP are emergency and essential. Emergency NS/EP
+       requirements are for critical service needed at the earliest possible time, regardless of
+       costs associated with obtaining the service. DISAC 310-130-1 contains a detailed
+       description of emergency service. Essential NS/EP requirements are for critical service
+       requested by a specified date, regardless of costs associated with overtime or expediting
+AFMAN33-116 16 MAY 2013                                                                          29
+
+
+       the service and the date is not achievable without invoking NS/EP. DISAC 310-130-1
+       contains a detailed description of essential service.
+Note: NS/EP is NOT invoked to:
+   Compensate for time lost as a result of inadequate advance planning.
+   Activate service(s) for which required customer premise equipment (e.g., government
+      furnished modems, encryption equipment, or other terminal equipment), customer premise
+      wiring, or network facilities will not be available by the service user's requested date.
+   Facilitate the normal relocation or rearrangement of existing service(s) (e.g., internal
+      organizational moves) unless required to support the start of a new NS/EP
+      telecommunications service.
+   Disconnect existing service(s) unless required to support the start of a new NS/EP
+      telecommunications service.
+   Obtain the U.S. half circuit segment(s) or the U.S. tail (extension) segment(s) of an
+      international telecommunications service(s) for which the foreign half-circuit segment(s)
+      or the foreign tail (extension) segment(s) will not be available at the service user's service
+      due date.
+       4.13.4.2. The requesting organization must contact their AF-Level FOA/DRU or
+       MAJCOM A6 office to coordinate the NS/EP request with the invoking official.
+       4.13.4.3. The requesting organization submits a DDOE TR and completes the
+       provisioning TSP section. DISA routes TSP request to the Department of Homeland
+       Security for processing and TSP assignment. See DISAC 310-130-4 for TSP criteria and
+       DISAC 310-130-1 for DDOE procedures.
+4.14. Accepting LHC Service.
+   4.14.1. The CCO identified in the TSO is responsible for the initial activation of circuits and
+   trunks, and to accept leased services on behalf of the U.S. Government and submitting the
+   appropriate completion report. The report will submitted within 72 hours (based on 24-hour
+   workday, not including weekends and holidays) of the service date as documented on the
+   TSR or TSO, and IAW DISAC 310-130-1 and DISAC 310-70-1. The CCO will:
+       4.14.1.1. Accept service by submitting a completion report. There are four types of
+       completion reports: DSR, EXC, Ready for Use (RFU), and IER. The CCO,
+       Communications Management Office, or agency designated in the TSR or TSO is
+       responsible to submit these reports.
+       4.14.1.2. Submit completion reports via email for every DDOE order, unless otherwise
+       specified in the TSR or TSO. Submit copies of the completion reports to the originator of
+       the DDOE order and all addressees on the TSR or TSO. In the case of a DDOE order for
+       leased equipment or service not requiring a TSO, submit a completion report as specified
+       in the TSR. TCOSS has an automated completion report writer to assist in developing all
+       of these reports.
+   4.14.2. The CCO or Communications Management Office coordinates with the commercial
+   vendor at least five working days before the scheduled service date.
+   4.14.3. If the commercial vendor cannot or does not meet the scheduled service date, the
+   designated CCO will:
+30                                                             AFMAN33-116 16 MAY 2013
+
+
+     4.14.3.1. Issue a DSR due to vendor difficulties. A delayed service report will be
+     telephoned to DITCO and the requestor by the facility or activity designated in the TSO
+     to report on the circuit. The requestor will telephonically advise DITCO or the
+     appropriate DITCO field activity. The verbal report will be confirmed by a formatted
+     DSR to the requestor and to the originator and all addressees of the TSO within 72 hours.
+     4.14.3.2. Submit a DSR according to DISAC 310-70-1 when the established service date
+     cannot be met due to governmental causes. This report will be sent to the requestor, the
+     originator, and all addressees of the TSO. It will be sent as soon as the inability to meet
+     the required service date becomes known. When possible, this message report will be
+     preceded by a verbal notification to the requestor. If the forecasted delay, as reported in
+     item 8 of the delayed service report, is excessive (e.g., unknown), a report will be
+     submitted each 30 days until a firm date is established. The problem may be resolved by
+     exceptional procedures as outlined in subparagraph 2.4.2 of Chapter 2 of DISAC 310-
+     130-1 (reference 4.6).
+     4.14.3.3. Advise the requestor who will issue an amended TR reflecting the new or
+     revised required service date.
+     4.14.3.4. Submit an amended DDOE order adjusting service date to coincide with
+     government's readiness to accept the service.
+     4.14.3.5. Contact, notify and confirm with appropriate DISA provisioning activity of the
+     delay if there is not enough time to submit an amended DDOE order.
+     4.14.3.6. Validate notification with amended DDOE order within 10 duty days.
+     4.14.3.7. Contact appropriate DISA provisioning activity for instructions if government
+     is responsible for delaying the service 30 days beyond initial scheduled service date.
+     4.14.3.8. Accept the service and submit an EXC if the service deviates from the
+     specifications of the DDOE order, TSR or TSO, or the technical parameters of the
+     applicable schedules. Prior to accepting service, advise the TSO issuing authority of
+     those technical parameters failing to meet established standards, who will in turn advise
+     the facility or activity if service is to be accepted with these exceptions. An EXC report
+     will be submitted every 30 days until exception has been cleared.
+     4.14.3.9. Submit an IER within 72 hours of the service's installation. This final report
+     indicates the installed service meets all details of the DDOE order, TSR, TSO and
+     technical parameters of the specified technical schedule. Clear all DSR and EXC with an
+     IER after resolving all delays or exceptions.
+     4.14.3.10. Use DD Form 1368, Modified Use of Leased Communications Facilities, to
+     inform DISA/DITCO of interruptions to leased services. Unscheduled Commercial
+     carrier outages must be reported by the facility designated in the TSO for reimbursement
+     of service not provided. Reporting interruptions to leased services has two purposes:
+        4.14.3.10.1. To allow monetary reimbursement for unusable service that exceeds 2
+        hours.
+        4.14.3.10.2. To document vendor substandard performance.
+AFMAN33-116 16 MAY 2013                                                                          31
+
+
+4.15. Review & Revalidation (R&R).
+   4.15.1. 38 CYRS/SCC manages the Air Force R&R program and monitors the DISA R&R
+   database to ensure R&Rs are accomplished according to CJCSI 6211.02, Defense
+   Information System Network (DISN) Responsibilities.
+   4.15.2. The CMOs will monitor the DISA R&R database to ensure that the required R&R
+   actions are accomplished for their areas of responsibility.
+      4.15.2.1. The CMOs are responsible for ensuring that each sub-unit in their area of
+      responsibility completes their required R&R actions.
+      4.15.2.2. The CMOs will approve all changes and/or discontinues in the R&R database
+      upon receipt of valid TR from responsible party(ies) for required action.
+   4.15.3. Base level TCF and/or Base Circuit Actions offices are responsible to ensure that
+   R&R actions are accomplished for circuits and services in their area of responsibilities. They
+   are required to:
+      4.15.3.1. Contact end users to confirm status of all circuits and/or services in their area of
+      responsibility.
+      4.15.3.2. Certify all circuits and services in the R&R database for their areas of
+      responsibility. They will certify each circuit and service with one of the three allowable
+      R&R database statuses (Meets mission needs, Can be reconfigured or downgraded, or
+      may be discontinued). All circuits and services that no longer satisfy a mission need will
+      be terminated or discontinued. For circuits and services that can be migrated to a more
+      cost effective service, change or amend actions will be processed via a TR in the DDOE
+      system.
+   4.15.4. Customers (end users, funding authority) shall coordinate with their servicing TCF or
+   Circuit Actions office for any required changes in status or required termination of circuits
+   and services they use.
+4.16. Expired Communications Service Authorization (ECSA).
+   4.16.1. 38 CYRS/SCC manages the Air Force ECSA program.
+   4.16.2. CMOs monitor the CSA Management tool in TCOSS and coordinate re-award or
+   discontinue actions with the customer.
+   4.16.3. Service owner will access CSA Management in TCOSS and determine which CSAs
+   still meets mission needs and have a bona-fid need.
+      4.16.3.1. If the CSA is required submit a Re-award TR (accomplish prior to expiration).
+      4.16.3.2. If the CSA is no longer required submit a Discontinue TR.
+
+
+
+
+                                             MICHAEL J. BASLA, Lt Gen, USAF
+                                             Chief, Information Dominance and
+                                             Chief Information Officer
+ 32                                                              AFMAN33-116 16 MAY 2013
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+Joint Publication 3-12, Cyberspace Operations, 5 February 2013
+Joint Publication 6-0, Joint Communication System, 10 June 2010
+DoDD 5015.2, DoD Records Management Program, 6 March 2000
+DoDD 5100.01, Functions of the Department of Defense and Its Major Components, 21
+December 2010
+DoDD 5105.19, Defense Information Systems Agency, 26 July 2006
+DoDD 8500.01E, Information Assurance, 24 Oct 2002
+DoDD-O 8530.1, Computer Network Defense (CND), 8 January 2001
+DoDI 5000.64, Accountability and Management of DoD Equipment and other Accountable
+Property, 19 May 2011
+DoDI 8100.04, DoD Unified Capabilities (UC), 9 December 2010
+DoDI 8500.01, Cybersecurity, 14 March 2014
+DoDI 8510.01, Risk Management Framework (RMF) for DoD Information Technology, 12
+March 2014
+DoDI 8510.01 DoD Information Assurance Certification and Accreditation Process (DIACAP),
+28 Nov 2007
+CJCSI 6211.02D, Defense Information System Network (DISN) Responsibilities, 24 January
+2012
+CJCSI 6250.01, Satellite Communications, 17 Feb 2010
+NCS Directive 3-1, Telecommunications Service Priority (TSP) System for National Security
+Emergency Preparedness (NS/EP), 10 Aug 2000
+NCS Manual 3-1-1, TSP Service User Manual for the Telecommunications Service Priority
+(TSP) Systems, 5 May 2000
+DISAC 310-55-1, Status Reporting, 1 Jan 2000
+DISAC 310-55-9, Base Level Support for the Defense Information System Network (DISN), 12
+July 2006, with changes
+DISAC 310-70-1, Global Information Grid (GIG) Technical Control, 17 Jul 2009
+DISAC 310-130-1, Submission of Telecommunications Service Requests, 25 May 2006
+DISAC 310-130-2, Management Thresholds (MT5) and Performance Objectives (POs), 1
+October 2012
+DISAC 310-130-4, Defense User’s Guide to the Telecommunications Service Priority (TSP)
+System, 25 May 2006
+AFMAN33-116 16 MAY 2013                                                                   33
+
+
+DISA-DITCO Circular 350-135-1, Commercial Communications, Defense Commercial
+Communications Acquisition Procedures, 12 Feb 1996, Includes Change 10, 1 Oct 2005
+AFPD 33-1, Cyberspace Support, 9 Aug 2012
+AFI 33-134, Mobile Satellite Services Management, 10 February 2005
+AFI 33-138, Enterprise Network Operations Notification and Tracking, 28 November 2005
+AFI 33-360, Publications and Forms Management, 25 September 2013
+AFI 33-590, Radio Management, 8 Apr 2013
+AFMAN 33-145, Collaboration Services and Voice Systems Management, 6 Sep 2012
+AFMAN 33-363, Management of Records, 1 March 2008
+ASD (C3I) Memo, Policy Clarification Letter – Long-Haul and Regional Telecommunications
+Systems and Services for the Department of Defense (DoD), 5 May 1997
+DISA/DAF Memorandum of Agreement, Property Accountability of DISA-owned Equipment
+(MPS-12-011), 2012
+SAF/XC Memorandum, Designation of Computer Network Defense (CND) Service Provider
+(CNDSP) for the Department of the Air Force, Jan 8, 2010
+24 AF/CC memo to 67 NWW “Removal of the Network Backdoors from the AFNet”, 27 Jan
+2012
+Network Connection Policy for the Joint Worldwide Intelligence Communications System, 1995
+Prescribed Forms
+No forms are prescribed by this publication
+Adopted Forms
+DD Form 1368, Modified Use of Leased Communication Facilities
+DD Form 1150, Request for Issue/Transfer/Turn-in
+AF Form 847, Recommendation for Change of Publication
+SF 315, Telecommunications Service Priority (TSP) System TSP Request for Service Users
+
+Abbreviations and Acronyms
+AF-GIG—Air Force Global Information Grid
+AFI—Air Force Instruction
+AFISRA—Air Force Intelligence, Surveillance and Reconnaissance Agency
+AFMAN—Air Force Manual
+ABO—Authorized Billing Official
+ADO—Address Directory Official
+AFNET—Air Force Network
+AFO—Authorized Funding Official
+ 34                                                       AFMAN33-116 16 MAY 2013
+
+
+AFPD—Air Force Policy Directive
+AFSN—Air Force Systems Network
+AFSPC—Air Force Space Command
+AHC—Agency Hierarchy Code
+AIM—Asset Inventory Management
+ARO—Authorized Requesting Official
+ASI—Authorized Service Interruption
+CAD—Central Address Directory
+CCAD—Classified Connection Approval Division
+CCO—Circuit Control Office
+CCSD—Command and Control Service Designated
+CDS—Cross-Domain Service
+CFLI—Core Function Lead Integrator
+CFP—Communications Focal Point
+CIO—Chief Information Officer
+CIPS—Cyberspace Infrastructure Planning System
+CJCS—Chairman of the Joint Chiefs of Staff
+CJCSI—Chairman of the Joint Chiefs of Staff Instruction
+CMO—Circuit Management Office
+CND—Computer Network Defense
+COCOM—Combatant Command
+COI—Community of Interest
+CONUS—Continental United States
+CDRUSSTRATCOM—Commander United States Strategic Command
+CSA—Communications Service Authorization
+CSI—Cyberspace Systems Integrators
+C2—Command and Control
+C4—Command, Control, Communications, and Computers
+DAA—Designated Approval Authority
+DCF—DISA Customer Forum
+DCN—DISA Control Number
+DDOE—DISA Direct Order Entry
+AFMAN33-116 16 MAY 2013                                                        35
+
+
+DISA—Defense Information Systems Agency
+DISAC—Defense Information Systems Agency Circular
+DISN—Defense Information Systems Network
+DITCO—Defense Information Technology Contracting Office
+DIACAP—Defense Information Assurance Certification and Accreditation Process
+DISN—Defense Information Systems Network
+DMS—Defense Message Service (DELETED)
+DoD—Department of Defense
+DODIN—Department of Defense Information Networks
+DPAS—
+DRSN—Defense RED Switch Network
+DRU—Direct Reporting Unit
+DSAWG—Defense Information Assurance Security Accreditation Working Group
+DSC—DISN Service Center
+DSN—Defense Switched Network
+DSR—Delayed Service Report
+DSS—DISN Subscription Services
+DVS—DISN Video Services
+DWCF—Defense Working Capital Fund
+ECSA—Expired Communications Service Authorization
+Email—Electronic Mail
+EMASS—Enterprise Mission Assurance Support Service
+EMSS—Enhanced Mobile Satellite Service
+EUR—Europe
+EXC—Exception Report
+FaCIT—Facility Circuit Information Tracking
+FY—Fiscal Year
+FOA—Field Operating Agency
+GIG—Global Information Grid
+GSA—General Services Administration
+GSU—Geographically Separated Unit
+GWP—GIG Waiver Panel
+ 36                                                    AFMAN33-116 16 MAY 2013
+
+
+HAZCON—Hazardous Conditions
+HQ—Headquarters
+IAW—In Accordance With
+IER—In-Effect Report
+IG—Inspector General
+IP—Internet Protocol
+ISP—Internet Service Provider
+ISR—Intelligence Surveillance Reconnaissance
+JCS—Joint Chiefs of Staff
+JHITS—Joint Hawaii Information Transfer System
+JWICS—Joint Worldwide Intelligence Communications System
+LAFO—Lead Authorized Funding Official
+LHC—Long-Haul Communications
+LMB—LHC Management Board
+LOA—Line of Accounting
+MAJCOM—Major Command
+MHQ—Management Headquarters
+MOA—Memorandum of Agreement
+MORD—Miscellaneous Obligation Reimbursement Document
+MRC—Monthly Recurring Charge
+MSL—Master Station Log
+MSS—Mobile Satellite Service
+NASIC—National Air and Space Intelligence Center
+NCC—Network Control Center
+NCS—National Communications System
+NIPRNET—Nonsecure Internet Protocol Router Network
+NRC—Non-Recurring Charge
+NSANet—National Security Agency Network
+NSC—Node Site Coordinator
+NTE—Not To Exceed
+NS/EP—National Security/Emergency Preparedness
+OPR—Office of Primary Responsibility
+AFMAN33-116 16 MAY 2013                                                           37
+
+
+OSD—Office of the Secretary of Defense
+PAD—Program Action Directive
+PBD—Program Budget Decision
+PDC—Program Designator Code
+PMO—Program Management Office
+POC—Point Of Contact
+POM—Program Objective Memorandum
+POP—Point of Presence
+PTF—Patch and Test Facility
+R&R—Review and Revalidation
+RDS—Records Disposition Schedule
+RFU—Ready For Use
+RMF—Risk Management Framework
+RO—Registration Official
+RLO—Routing List Official
+SAM—Status of Acquisition Message
+SATCOM—Satellite Communications
+SDB—Satellite Data Base
+SDP—Service Delivery Point
+SF—Standard Form
+SIPRNET—SECRET Internet Protocol Router Network
+SO—Subscription Official
+STIG—Security Technical Implementation Guide
+SWG—Standard Work Guide
+TCF—Technical Control Facility
+TCOSS—Telecommunications Certification Office Support System
+TIBI—Telecommunication Services/Enterprise Acquisition Services (TSEAS) Inventory and
+Billing Information
+TR—Telecommunications Request
+TRAO—Temporary Role Approval Office
+TSEAS—Telecommunications Services Enterprise Acquisition Services
+TSO—Telecommunications Service Order
+TSP—Telecommunications Service Priority
+ 38                                                                 AFMAN33-116 16 MAY 2013
+
+
+TSR—Telecommunications Service Request
+TS/SCI—Top Secret/Sensitive Compartmented Information
+UCAO—Unclassified Connection Approval Office
+UC—Unified Capabilities
+USCYBERCOM—United States Cyberspace Command
+USAFE—United States Air Force Europe
+USSTRATCOM—United States Strategic Command
+
+Terms
+Air Force Information Networks (AFIN)—Globally interconnected, end-to-end set of Air
+Force information capabilities, and associated processes for collecting, processing, storing,
+disseminating, and managing information on-demand to warfighters, policy makers, and support
+personnel, including owned and leased communications and computing systems and services,
+software (including applications), data, security services, other associated services, and national
+security systems.
+Backside connection—Use of another organization’s direct connection for connectivity into the
+Defense Information System’s Network (DISN) backbone by another DoD entity, mission
+partner, or contractor, (CJCSI 6211.01D).
+Communications Control Office (CCO)—The CCO is typically a facility such as a TCF or
+PTF and is responsible for tasks associated with the initial activation of a circuit or trunk such as
+accepting leased service on behalf of the U.S. Government and submitting the appropriate
+completion report within 72 hours of the service date as documented on the TSR, TSO,
+according to DISAC 310-130-1. It is also responsible for coordinating the realignment of the
+circuit or trunk when necessary to maintain the end-to-end engineered values as stated in the
+TSO. A CCO is assigned to every circuit and trunk, for the life of the circuit or trunk. A CCO is
+designated in the TSO and will receive copies of subsequent TSO's issued on the circuit.
+Communications Management Office—The facility or office assigned administrative
+responsibility for GIG trunks and circuits when it is not possible to assign a GIG facility as the
+CCO. The CMO serves as the focal point for day-to-day monitoring of service performance,
+accepts service on behalf of the U.S. Government, and submits applicable reports in accordance
+with DISAC 310-130-1. The CMO is responsible for the same basic functions as a CCO with
+the exception of actual monitoring, testing, and troubleshooting. If any form of monitoring and
+testing capabilities does exist, the CMO must make every effort to assist when necessary.
+Cyberspace Infrastructure Planning System (CIPS)—CIPS is the Air Force enterprise-wide
+communications and information equipment, systems and infrastructure planning tool. CIPS
+includes downward directed enterprise solutions, MAJCOM, base and in-theatre planning.
+Additional information can be found at the CIPS SharePoint site.
+Defense Contractor—Means an employer engaged in (1) the production, maintenance, or
+storage of arms, armament, ammunition, implements of war, munitions, machinery, tools,
+clothing, food, fuel, or any articles or supplies, or parts or ingredients of any articles or supplies;
+or (2) the construction, reconstruction, repair, or installation of a building, plant, structure, or
+AFMAN33-116 16 MAY 2013                                                                        39
+
+
+facility; under a contract with the United States or under any contract which the President, the
+Secretary of War [the Secretary of the Army and the Secretary of the Air Force], the Secretary of
+the Navy, or the Secretary of Transportation certifies to such employer to be necessary to the
+national defense. (Title 41, Chapter 1, reference v)
+Defense Information Systems Network (DISN)—DoD’s information long-haul information
+transfer utility designed to provide dedicated point-to-point, switched voice and data, imagery,
+and video teleconferencing services.
+DISN Node Site—The physical location of the DISN equipment. Normally, this equipment
+consists of an Internet Protocol Router (IPR), Promina, Asynchronous Transfer Mode (ATM),
+Multiservice Provisioning Platform, and Optical Cross Connect (ODXC) across an Optical OTS
+backbone and Synchronous Optical Networks (SONET).
+DSS Site—Locations that have on-site DISN transport equipment (i.e. Asynchronous Transfer
+Mode (ATM) or Multiservice Provisioning Platform switch, Promina/Internet Domain Name
+Exchange, optical router, or other DISA owned and operated communications equipment).
+DSS Program—DSS is a cost recovery program implemented in FY06 by the Office of the
+Secretary of the Defense to simplify and stabilize DoD’s cost for DISN bandwidth and services.
+DSS covers the cost to provide the following; NIPRNET and SIPRNET circuits supporting main
+operating bases. DSN, DRSN, JWICS, DVS and other services are also covered under the DSS
+program.
+GIG Waiver—When a request cannot be satisfied by a DISN solution, or when the DISN
+solution is unsatisfactory or rejected by the customer, a GIG waiver maybe requested for an
+exemption.      The waiver process and additional information can be found at
+https://www.disa.mil/Services/Network-Services/Enterprise-Connections/Connection-
+Process-Guide/Service-Appendices/OSD-GIG-Waiver-Process.
+Geographically Separated Unit (GSU)—Any Air Force unit separated from its host or main
+operating base beyond a reasonable commuting distance. The host or main operating base is
+defined as the base where the member’s MPF is located.
+Long Haul Communications (LHC)—All general purpose and special purpose long-distance
+facilities and services (including terminal equipment and local circuitry supporting the long-haul
+service) used to support the electromagnetic and/or optical dissemination transmission or
+reception of information via voice data video integrated telecommunications wire or radio to or
+from post camp base or station switch and/or main distribution frame (except for trunk lines to
+the first serving commercial central office for local communications services). This includes
+Metropolitan Area Networks (MANs) ATM Edge devices Networx, DSN, dedicated point-to-
+point service. Any telecommunication leaving base, post, camp, or station premises regardless
+of mileage is considered long-haul.
+Mission Partners—Those with whom the Department of Defense cooperates to achieve national
+goals, such as other departments and agencies of the U.S. government; state and local
+governments; allies, Coalition members, host nations and other nations; multinational
+organizations; non-governmental organizations; and the private sector. (DoDD 8000.01,
+reference d)
+ 40                                                              AFMAN33-116 16 MAY 2013
+
+
+National Security Emergency Preparedness (NS/EP) Telecommunication Services (or
+NS/EP Services)—Telecommunication services that are used to maintain a state of readiness or
+to respond to and manage any event or crises (local, national, or international) that causes or
+could cause injury or harm to the population, damage to or loss of property, or degrades or
+threatens the NS/EP posture of the United States. Within the TSP System, these services fall into
+two specific categories; Emergency NS/EP and Essential NS/EP, and are assigned priority levels.
+Service Owner—The organization that owns the mission requirement for the CSA.
+Serving Technical Control and or Patch and Test (TCF and or PTF)—Provides direct
+interface between local users and the GIG. The serving TCF and PTF are responsible for
+coordination with the user and ensuring complete end-to-end service for that user.
+Site Support Task—Provides customer connectivity from the DISN Service Delivery Node or
+commercial demarcation to the customer’s telecommunications equipment. The customer’s site
+support requirements (equipment and technical support) are evaluated by 38 CYRS/SCC and
+resourced to meet the mission requirement. In some cases the customer may be required to fund
+their own installations.
+Technical Control Facility (TCF)—The TCF is the part of a GIG station that functions as the
+interface between the transmission elements of the GIG and the users of the system. It has the
+physical and electrical capabilities necessary to perform the required functions of technical
+control described in this AFMAN and DISA Circulars. A TCF is a facility which supports more
+than one major user and; is normally manned 24 hours a day; can access all circuits and trunks
+traversing the facility for purposes of monitoring, testing, and restoral; has complete testing
+capabilities; can restore major equipment components (i.e., receivers, transmitters, multiplexers,
+etc.).
+Telecommunications Request (TR)—The TR permits customers to provide the details of their
+requirement for ordering a data, voice, video or other type of telecommunications service.
+Telecommunications Service Priority (TSP)—A TSP assignment is the priority level(s)
+designated for the provisioning and/or restoration of a particular NS/EP service.
+AFMAN33-116 16 MAY 2013                                                                           41
+
+
+                                          Attachment 2
+   LONG-HAUL COMMUNICATIONS (LHC) REQUIREMENTS MANAGEMENT
+                          PROCESS
+
+A2.1. Background.
+   A2.1.1. LHC provides mission-essential interbase bandwidth and communications services
+   for the Air Force and DoD via the DISN. These services and associated bandwidth are
+   funded via the Defense Working Capital Fund (DWCF). The DSS is the cost recovery
+   mechanism for the DWCF with a tiered, share-based cost structure based on the location,
+   services and bandwidth required. Office of the Secretary of Defense (OSD) establishes the
+   share costs for the DoD Components and Agencies 2 years in advance of the year of
+   execution. The Air Force portion of the DSS bill is funded corporately.
+   A2.1.2. The Air Force’s mission is one that is heavily reliant on information technology and
+   the associated LHC that permits world-wide operations, particularly from home. While IT
+   and our LHC have enabled the Air Force to be more effective, efficient and has driven
+   operations costs down, there has been a corresponding increase in our LHC costs which, until
+   recently, has not received any attention. Our LHC costs, as a corporate bill, have been
+   permitted to grow unconstrained; the result of the way the Air Force fights. However, recent
+   fiscal realities have highlighted the fact that our resources are not limitless. This includes our
+   LHC resources, which are neither limitless, nor free.
+   A2.1.3. Under the OSD DSS construct, the Air Force’s LHC bill is a must pay bill which we
+   have little ability to reduce once the bandwidth and services have been established. At
+   $550M+ in FY14, the Air Force must exercise better control over its demand and more
+   diligently scrutinize requirements before the Air Force is obligated to future increases in
+   these costs. All LHC requirements that may impact the Air Force corporate bill must be
+   submitted and approved through the requirements management process outlined below. The
+   Cyberspace Infrastructure Planning System (CIPS) will be used to identify, validate, route
+   and approve all Air Force LHC requests prior to submission to DISA/DITCO via the DDOE
+   system. Requests that have a DSS or LHC requirement must be identified as early as
+   possible to ensure the required equipment, infrastructure and funding are available to support
+   the requests. No Air Force DDOE requests will be processed without an approved LHC
+   requirement that has been vetted via this process.
+A2.2. Purpose.
+   A2.2.1. This process provides a means to review, validate, approve, or disapprove DISN
+   LHC requirements that may impact the DSS and LHC funding.
+   A2.2.2. This process only applies to Air Force requirements or those requirements for which
+   the Air Force is the owner or generator. The Air Force is not permitted to restrict or bill Joint
+   tenants. Once this process matures, the process may be evolved to include those tenants who
+   also drive the Air Force corporate bill.
+A2.3. LHC Requirements Process. The Air Force Long Haul Requirements management
+process consists of 8 phases and is detailed below.
+ 42                                                        AFMAN33-116 16 MAY 2013
+
+
+Figure A2.1. LHC Requirements Process Flowchart.
+
+
+
+
+A2.4. LHC Requirements Process.
+   A2.4.1. Customer. The customer is the originator of the LHC requirement. The customer
+   may reside at any Air Force organizational level from base to Air Force. Work with the
+AFMAN33-116 16 MAY 2013                                                                     43
+
+
+  appropriate planning organization to identify bandwidth and LHC service needs. The
+  customer in developing the LHC requirement is responsible for ensuring that all requirements
+  are well justified and include sufficient documentation to include bandwidth analysis to
+  support the request. The customer is also responsible for ensuring funding is available for
+  installation and sustainment of leased services. In the last phase of the requirements
+  management process, the customer will work with the local TCF, PTF, or circuit actions
+  office to ensure the approved requirement is submitted into the DDOE system so that
+  DISA/DITCO can provision the requested service.
+  A2.4.2. Base. The base communications squadron assists customers in the documentation of
+  LHC requirements via CIPS and exercises base-level review and approval responsibilities as
+  defined in this document. The communications squadron is also responsible for reviewing,
+  validating and approving requirements at the base level before the requirement continues
+  coordination in CIPS. The base communications squadron is also responsible for submitting
+  requirements approved through the requirements management process defined in this
+  document into DDOE at the end of the requirements management process.
+  A2.4.3. MAJCOMs, FOAs, and DRUs. Reviews, validates and approves all requirements
+  submitted from the base as prescribed in this document. As part of this phase, the
+  MAJCOMs, FOAs, and DRUs will ensure funding is available for initiatives and ensures
+  only validated and justified requests for service are approved and forwarded for higher level
+  consideration. MAJCOMs, FOAs, and DRUs will ensure that requirements make the most
+  efficient use of available network resources, bandwidth efficiency technologies and where
+  required, take action to reduce demand.
+  A2.4.4. AFISRA (JWICS Only). The AFISRA is the Air Force lead for all JWICS
+  requirements. AFISRA will review, validate, and approve all JWICS requirements before
+  forwarding the requirement for review and coordination.
+  A2.4.5. AFSN will review NIPRNET, SIPRNET new starts and bandwidth increase
+  requirements for completeness and coordinate a bandwidth assessment with the 26th NOS.
+  AFSN will verify whether hardware assets will need to be upgraded to support new
+  requirements or an increase in bandwidth for existing NIPRNET and SIPRNET circuits.
+  Additionally, AFSN is the acquisition arm for procuring hardware assets.
+  A2.4.6. 26 NOS monitors and analyzes NIPRNET and SIPRNET utilization and makes
+  bandwidth change recommendations based on mission requirements and usage. The 26 NOS
+  will follow the same process as a customer when recommending bandwidth changes to the
+  Air Force’s NIPRNET and SIPRNET circuits. 26 NOS will also review and coordinate on
+  all common user funded Air Force requirements involving NIPRNET and SIPRNET
+  services.
+  A2.4.7. 38 CYRS/SCC (LHC Provisioning). 38 CYRS/SCC has provisioning responsibility
+  for all DISN services for the Air Force, to include financial management; DSS impact
+  assessments, circuit management, and DDOE order processing. 38 CYRS/SCC’s key role is
+  in assessing the financial impact to the Air Force’s LHC bill and providing recommendations
+  to the Long Haul Communications Management Board (LMB). As the Requirements Lead
+  for LHC, 38 CYRS/SCC will serve as the Executive Secretariat to the LMB. The LMB
+  Executive Secretariat schedules and facilitates the CCB meeting, publishes minutes and
+  returns the final LMB package to the Capability Lead or service requestor for action.
+ 44                                                            AFMAN33-116 16 MAY 2013
+
+
+   A2.4.8. HQ AFSPC (LMB). This final phase consists of obtaining a LMB decision for the
+   requirements as detailed in table 4.
+A2.5. LHC Management Board (LMB) Membership, Roles and Responsibilities.
+   A2.5.1. LMB Board Panel membership is comprised of LMB Chairperson, Executive
+   Secretariat, Voting Panel Members, and other Participants.
+   A2.5.2. LMB Chairperson.
+      A2.5.2.1. Presides over the LMB, and is headed by AFSPC/A3, AFSPC/A6, or other
+      AFSPC General Officer as designated by AFSPC/CC.
+      A2.5.2.2. Approves, approves with comments, disapproves or defers all items.
+      A2.5.2.3. Formalizes the decision by signing LMB Approval Document.
+      A2.5.2.4. Delegates board responsibilities.
+      A2.5.2.5. Indentifies board core membership with official letter.
+      A2.5.2.6. Designates additional members of the board.
+      A2.5.2.7. Has the authority to make ancillary members a part of the board core.
+      A2.5.2.8. Determines board meeting frequency             based      on   the   secretariat’s
+      recommendation and mission requirements.
+      A2.5.2.9. Establishes requirements package approval criteria and timelines.
+   A2.5.3. LMB Executive Secretariat.
+      A2.5.3.1. Serves as the focal point for all official documentation for board items between
+      the customer and the LMB, and is head by the 38 CYRS/SCC.
+      A2.5.3.2. Maintains applicable LMB documentation.
+      A2.5.3.3. Ensures official letters are published and maintained. Examples include board
+      appointment letters and LMB charter.
+      A2.5.3.4. Maintains the records of requests for requirements submitted for LMB
+      disposition, and records the final disposition of the effort.
+      A2.5.3.5. Develops and maintains LMB action item tracking and distributes those action
+      items to the appropriate OPRs for action.
+      A2.5.3.6. Maintains LMB checklists and templates.
+      A2.5.3.7. Ensures requirement submitted is validated.
+      A2.5.3.8. Assists PM in preparing the LMB Approval Document.
+      A2.5.3.9. Reviews all packages submitted to the LMB for accuracy and completeness.
+      A2.5.3.10. Advises chairman on board meeting frequency.
+      A2.5.3.11. Develops and distributes LMB schedule, agenda and packages.
+      A2.5.3.12. Provides telecon or video teleconference (VTC) number to non-local LMB
+      memers.
+AFMAN33-116 16 MAY 2013                                                                      45
+
+
+      A2.5.3.13. Identifies open action items to the LMB.
+      A2.5.3.14. Obtains coordination regarding the Chairperson’s decision if not provided
+      before the LMB.
+      A2.5.3.15. Records and publishes official LMB minutes approved by the LMB
+      Chairperson and distributes copies of the minutes to all board members and board
+      attendees.
+A2.6. LMB Voting Member(s).
+   A2.6.1. Participates or designates a representative to participate in the LMB meeting, and is
+   head by the AFSPC Directors, 24 AF/CC or designated representative(s).
+   A2.6.2. Reviews LMB agenda and packages prior to the LMB meeting and provides input
+   and concurrence or non-concurrence to the LHC Management Board Executive Secretariat
+   and RL.
+   A2.6.3. Concurs or non-concurs with the LMB Chairperson’s decision and documents
+   concurrence on the LHC Management Board Approval Document.
+A2.7. Other Participants.
+   A2.7.1. Project Manager/Requirement Owner develops the requirement briefing to meet
+   LMB and attends LMB to advocate for their requirement.
+   A2.7.2. Additional Panel participants include stakeholders and other individuals that may be
+   called upon by the Chairperson and/or the requirement owner to represent the individual
+   LHC requirements being considered by the Board. These individuals include:
+      A2.7.2.1. AF/A3C/A6C and SAF/CIO A6P
+      A2.7.2.2. MAJCOMs and Air Force-level FOAs and DRUs
+      A2.7.2.3. 38 CEIG and ANG Cyberspace Systems Integrators (CSI)
+      A2.7.2.4. Affected System, Platform, and/or IPT
+      A2.7.2.5. Affected Base Tech Control Facility
+      A2.7.2.6. Air Force or FOA, DRU Circuit Management Office
+      A2.7.2.7. Project Manager and/or Requirements Owner
+      A2.7.2.8. Defense Red Switch Network Joint Staff Office, according to CJCSI 6211.02,
+      reviews, validates and recommends for approval all DRSN service requests prior to LMB
+      review.
+      A2.7.2.9. Air Force JWICS/NSANet Lead Command (AFISRA/A6) reviews, validates
+      and recommends for approval all JWICS service requests prior to LMB review.
+      A2.7.2.10. Other Joint Services and Agencies.
+      A2.7.2.11. Program Element Monitor for 33126 LHC.
+A2.8. LMB Procedures. The procedures in this paragraph describe a physical meeting.
+However, procedures may be developed and executed for a virtual or otherwise electronic
+ 46                                                             AFMAN33-116 16 MAY 2013
+
+
+boarding in place of the physical board. The forum for the LMB is at the discretion of the board
+chairperson.
+   A2.8.1. LMB Meetings: The LMB shall be held as required to accommodate the LHC
+   change request activity.
+   A2.8.2. Attendance: Core members or designee attendance is mandatory.
+   A2.8.3. Meeting Notice and Agenda: Project manager provides a copy of their final briefing
+   and presentation to the LMB Executive Secretariat, no later than seven (7) working days
+   prior to the LMB. A meeting notice, including an agenda, is provided to each LMB member
+   at least three (3) working days prior to each scheduled meeting. Each member reviews the
+   agenda and determines their organization’s position on each proposed item.
+   A2.8.4. Special Provisions.
+       A2.8.4.1. All Air Force organizations invoking NS/EP will coordinate the NS/EP with
+       the LMB for situational awareness, mission impact, and funding impact the NS/EP may
+       have on the Air Force LHC bill. NS/EP orders will be processed according to DISA
+       Circular 310-130-1, 310-130-4, NCSSD 3-1, and NCSM 3-1-1. Documenting in CIPS
+       will be completed as soon as possible after the NS/EP is approved. However, DDOE
+       processing will not be delayed for completion of the CIPS requirements process.
+Note: See Chapter 4 of this AFMAN for NS/EP process. Lack of LMB coordination on NS/EP
+will not impede provisioning of NS/EP requirements.
+       A2.8.4.2. DSS package threshold. All requests for locations where allocated bandwidth
+       has exceeded the thresholds in Attachment 3, Table 5, will require LMB approval,
+       regardless of the approval level identified in Attachment 3, Tables 1 - 4.
+AFMAN33-116 16 MAY 2013                                                                         47
+
+
+                                        Attachment 3
+                             LMB STANDARD WORK GUIDE
+
+A3.1. Introduction.
+   A3.1.1. The Standard Work Guide (SWG) details the process for managing all DISN LHC
+   requirements. It ensures the preparation, evaluation, coordination and management of LHC
+   requirements and proposed changes. The requirements management process seeks to ensure
+   changes are cost effective, timely, and required.
+   A3.1.2. This SWG drives standardization of the LHC requirements management process
+   across the Air Force. In addition it ensures implementation of repeatable processes, enables
+   cradle-to-grave tracking of the change request, and provides compliance with Air Force
+   strategic goals and objectives.
+A3.2. LHC Requirements Process.
+   A3.2.1. Decision criteria for topics that need to go before the LMB:
+       A3.2.1.1. All LHC service requirements will be approved at the appropriate level as
+       outlined in, Attachment 3 Tables 1 - 4, Request Approval Levels, and Table 5, Bandwidth
+       Approval Thresholds. Approval or disapproval at each level will be documented within
+       the CIPS tool, include the authorizing officials name, phone number, email address, and
+       rational for the action.
+       A3.2.1.2. All requirements that will break a DSS subscription or bring total package size
+       within the thresholds identified in Table 5 will require LMB approval.
+Tables 1-4 identify the LHC Request approval levels. The tables prescribe the approval
+levels for specific LHC services. In all cases, if any requirement will result in a change to
+the DSS subscription for a location that increases the cost to the Air Force corporate bill,
+that request must be approved by AFSPC.
+
+Table A3.1. Base Level Approval.
+                               BASE
+          (MAJCOM’s may require higher levels of authorization)
+             LHC Requirement/Service                  Funding source
+Calling cards                                               Local
+Current NETWORX services                                    Local
+Switched toll free service                                  Local
+Switched Long-distance                                      Local
+Dedicated Toll Free Service                                 Local
+Dedicated Long-distance                                     Local
+Audio Conferencing Services                                 Local
+ISDN                                                        Local
+Commercial Business Lines (CBL)                             Local
+
+Table A3.2. MAJCOM/Headquarters Approval.
+                      MAJCOM/HEADQUARTERS
+ 48                                                               AFMAN33-116 16 MAY 2013
+
+
+            LHC Requirement/Service                         Funding source
+Mobile Satellite Services (MSS)                            Local or MAJCOM
+VTC connections                                            Local or MAJCOM
+DVS-G                                                      Local or MAJCOM
+DRSN long-locals (see CJCSI 6211.02)                       Local or MAJCOM
+JWICS terminals (coordinated and approved by               Local or MAJCOM
+AFISRA)
+
+Table A3.3. 38 CYRS/SCC Approval.
+                                38 CYRS/SCC
+              LHC Requirement/Service                       Funding source
+NIPRNET/SIPRNET less than or equal to DS-3 (may            Local, MAJCOM,
+not exceed one per year for any single project, circuit    Common user
+or location)
+Point-to-point dedicated less than a DS-3                  Local, MAJCOM
+DISN administrative actions such as: Re-home of            Local, MAJCOM,
+services                                                   Common user
+Approval of existing service that DISA requested a         Local, MAJCOM,
+start vice a change, transition, or part of contract re-   Common user
+award
+
+Table A3.4. LMB Approval.
+         Long Haul Communications Management Board (LMB)
+             LHC Requirement/Service                        Funding source
+Annual DSS subscription starts/changes/discontinues Common user
+NIPRNET/SIPRNET Starts equal to or greater than           Local, MAJCOM,
+DS-3 (not existing service that DISA requested a start Common user
+vice a change)
+NIPRNET/SIPRNET changes greater than DS-3                 Local, MAJCOM,
+                                                          Common user
+Point-to-point dedicated equal to or greater than DS-3 Local, MAJCOM
+Fixed Commercial SATCOM                                   Local, MAJCOM
+New Nodes/Subscriptions affecting DSS location            Common user
+ - JWICS Nodes                                             - Rqmt Owner
+ - DRSN Switches                                           - MAJCOM
+ - DSN Switches                                            - Local,
+                                                               MAJCOM
+Any LHC diversity request                                 Local, MAJCOM,
+                                                          Common user
+Information Support Plan                                  Local, MAJCOM
+*LMB must approve any requirements that will break the DSS subscription
+or bring total package size within the thresholds identified in Table 2.
+** Equipment cost
+AFMAN33-116 16 MAY 2013                                                                        49
+
+
+Table A3.5. Bandwidth Threshold Approval Levels.
+                        Bandwidth Approval Thresholds
+    DSS Location           Package Maximum        LMB Approval Required
+    Package Size           Bandwidth (Mbps)           if Bandwidth Total
+                                                        Exceeds (Mbps)
+        Small                      <45                       >35
+       Medium                    45<155                      >130
+        Large                   155<622                      >575
+        Mega                      >622                       N/A
+   A3.2.2. Customer. Customer can be a unit, base, base tenant, AF FOA/DRU, MAJCOM,
+   SPO, PMO, SAF, or other Air Force entity.
+       A3.2.2.1. Define and clearly articulate LHC requirements.
+       A3.2.2.2. Provide ample justification to support the requirement; mission impact,
+       mission capability provided, does it fill a gap in a capability, etc.
+       A3.2.2.3. Forward the requirement to the appropriate reviewing authority (i.e. reviewing
+       authority can be the base Communications Squadron Plans Flight, MAJCOM/A6X, etc.).
+Note: In some cases, such as large programs or projects that impact multiple locations, the
+customer may be a program or project manager that does not resident on the bases that will be
+impacted. Not residing on an Air Force installation does not alleviate the PM of responsibility to
+properly coordinate LHC requirements according to this document and will contact the base
+Plans flight on the impacted installations.
+   A3.2.3. Base Communication Squadron.
+       A3.2.3.1. Receive requirements document from customer.
+       A3.2.3.2. Review and validate customer requirement.
+       A3.2.3.3. Schedule a meeting with the customers. Ensure requirement and justification
+       are properly defined.
+       A3.2.3.4. Requirement approval/disapproval.
+           A3.2.3.4.1. If the base has final approval authority according to Table 1 and the
+           requirement requested is disapproved. Provide the customer with an explanation and
+           documentation as to why the requirement was disapproved.
+           A3.2.3.4.2. If the base has final approval authority according to Table 1and the
+           requirement is approved. Enter requirement into CIPS, and have the customer submit
+           an order in DDOE so DISA/DITCO can provision the requested circuit or service.
+           A3.2.3.4.3. If the base does not have final approval authority forward CIPS
+           documentation to MAJCOM/A6 LHC requirements POC.
+   A3.2.4. MAJCOM/A6.
+       A3.2.4.1. Receive notification from CIPS routing slip for pending requirement.
+       A3.2.4.2. Review and validate customer requirement.
+50                                                          AFMAN33-116 16 MAY 2013
+
+
+     A3.2.4.3. Requirement approval/disapproval.
+        A3.2.4.3.1. If the MAJCOM/FOA/DRU has final approval authority according to
+        Table 2 and the requirement requested is disapproved; provide the base plans flight
+        with an explanation and documentation stating why the requirement was disapproved.
+        A3.2.4.3.2. If the MAJCOM/FOA/DRU has final approval authority according to
+        Table 2 and approves the requirement; advise the Base plans flight to have the
+        customer submit an order in DDOE system so that DISA/DITCO can provision the
+        requested service.
+        A3.2.4.3.3. If MAJCOM does not have final approval authority forward CIPS
+        documentation as prescribed below.
+            A3.2.4.3.3.1. Forward requirements for new NIPRNET and SIPRNET circuits,
+            bandwidth increase for existing NIPRNET or SIPRNET circuits to AFSN.
+            A3.2.4.3.3.2. Forward all other DSS, LHC, and circuit diversity (physical or
+            logical) requirements to 38 CYRS/SCC.
+        A3.2.4.3.3.3. A2 offices review and evaluate command JWICS requirements and
+        forward all JWICS requirements to AFISRA requirements POC.
+  A3.2.5. AFSN.
+     A3.2.5.1. Receive notification from CIPS routing slip for pending NIPRNET or
+     SIPRNET requirement.
+     A3.2.5.2. Review and validate the requirement.
+     A3.2.5.3. Determine if requirement is for a bandwidth increase for an existing NIPRNET
+     or SIPRNET circuit, a new start, discontinue or circuit logical diversity.
+        A3.2.5.3.1. Bandwidth increase requirements forward to 26 NOS to conduct
+        bandwidth and traffic analysis.
+            A3.2.5.3.1.1. Review bandwidth increase recommendation of 26 NOS.
+            A3.2.5.3.1.2. Determine equipment needed and cost; attach hardware and cost
+            solution to CIPS and forward to 38 CYRS/SCC.
+            A3.2.5.3.1.3. Once requirement is approved by LMB in CIPS, procure equipment
+            and ship to customer as appropriate.
+            A3.2.5.3.1.4. Once requirement is approved by LMB in CIPS, submit change
+            request in DDOE.
+        A3.2.5.3.2. New start NIPRNET/SIPRNET circuit requirements.
+            A3.2.5.3.2.1. Determine equipment and cost solutions; attach hardware and cost
+            solution to CIPS and forward to 38 CYRS/SCC.
+            A3.2.5.3.2.2. Once requirement is approved by LMB in CIPS, procure equipment
+            and ship to customer as appropriate.
+            A3.2.5.3.2.3. Once requirement is approved by LMB in CIPS, place order in
+            DDOE.
+AFMAN33-116 16 MAY 2013                                                               51
+
+
+        A3.2.5.3.3. NIPRNET/SIPRNET diversity requirements.
+            A3.2.5.3.3.1. Determine equipment and cost solution; attach hardware and cost
+            solution to CIPS and forward to 38 CYRS/SCC.
+            A3.2.5.3.3.2. Once requirement is approved by LMB in CIPS, procure equipment
+            and ship to customer as appropriate.
+            A3.2.5.3.3.3. Once requirement is approved by LMB in CIPS, have base Plans
+            flight place order in DDOE.
+  A3.2.6. 26th NOS.
+     A3.2.6.1. Receive notification from CIPS routing slip for pending requirement.
+     A3.2.6.2. Review/validate the requirement.
+     A3.2.6.3. Conduct bandwidth and traffic analysis.
+     A3.2.6.4. Attach analysis documentation to CIPS and forward to AFSN.
+     A3.2.6.5. Provide bandwidth change recommendations.
+        A3.2.6.5.1. The 26 NOS monitors and analyzes NIPRNET and SIPRNET utilization
+        and makes bandwidth change recommendations based on usage and identified
+        mission changes.
+        A3.2.6.5.2. The 26 NOS will coordinate with the base plans flight when
+        recommending bandwidth changes to the Air Force’s NIPRNET and SIPRNET
+        circuits.
+  A3.2.7. AFISRA.
+     A3.2.7.1. Receive notification from CIPS routing slip for pending requirement
+     A3.2.7.2. Review and validate the requirement.
+     A3.2.7.3. Requirement approval or disapproval.
+        A3.2.7.3.1. If AFISRA has final approval authority and approves the requirement;
+        advise the MAJCOM to have the customer submit an order in DDOE to start the
+        provisioning process.
+  A3.2.8. 38 CYRS/SCC.
+     A3.2.8.1. Receive notification from CIPS routing slip for pending requirement.
+     A3.2.8.2. Review and validate the requirement.
+     A3.2.8.3. Requirement approval/disapproval.
+        A3.2.8.3.1. If 38 CYRS/SCC does not have final approval authority ensure all
+        supporting documents are attached in CIPS and forward to the LMB.
+        A3.2.8.3.2. If 38 CYRS/SCC has final approval authority and approves the
+        requirement; advise the MAJCOM to have the customer submit an order in DDOE to
+        start the provisioning process.
+ 52                                                              AFMAN33-116 16 MAY 2013
+
+
+           A3.2.8.3.3. If requirement is disapproved provide the MAJCOM with an explanation
+           and supporting documentation why the requirement was disapproved.
+
+Figure A3.1. Requirement Owner/Customer LMB Briefing Example.
+
+
+
+                                   Requirement/Project X
+  Project Description:                          Objectives/Milestones:
+      • Brief description of what the project   •    Bed-down scheduled for 24 July 2011
+        supports                                •    Circuits need to be in place 30 days prior
+      • Include what this does operationally         to allow testing
+      • Provides surveillance of Mid-West
+      • Detail the LHC requirements
+      • Install 100Mb Dedicated circuit
+        between Scott AFB and Luke AFB
+      • Requires physical diversity
+
+   POC:                                             Cost
+      • CMSgt G.I. Joe                                  • $4.2M/year (Small Trans to Large C2+)
+        DSN 555-5555                                    • Diversity Install: $1.2M NRC
+        Cmcl (555) 555-5555
+        e-mail g.i.joe@us.af.mil
+
+
+
+
+                                            19 Sep 07                                       1
+
+   A3.2.9. The LHC Requirements Interactive Worksheet can be accessed at the LHC
+   Community                                  of                          Practice
+   at: (https://afkm.wpafb.af.mil/community/views/home.aspx?Filter=24578)
+1. Requirement:
+a. Requirement Title:
+b. Requirement “As of” Date:
+c. Requirement Action:(New Service, Increase Existing Service, Decrease Existing Service,
+Terminate Existing Service)
+d. Description of Requirement:
+e. Additional Comments (optional):
+
+2. Defense Information System Network Service Requirement
+a. Type Service: (Data Transport Only, Defense Messaging Service (DMS), Defense Switch
+Network(DSN), DISN Video Service (DVS-VTC), Defense Red Switch Network(DRSN),
+JWICS(Provide JWICS to Base), NIPRNET, SIPRNET)
+AFMAN33-116 16 MAY 2013                                                                        53
+
+
+b.   Bandwidth Required (Mbps):
+c.   Date Required (on or around):
+d.   Location(s):
+e.   Additional Comments (optional):
+
+3. Requirement Justification
+a. Alignment to Air Force Service Core Functions’ Capabilities and Core Function Master Plans
+-What Service Core Function does this requirement support: (1. Nuclear Deterrence Operations,
+2. Air Superiority, 3. Space Superiority, 4. Cyberspace Superiority, 5. Rapid Precision Attack, 6.
+Rapid Global Mobility, 7. Special Operations, 8. Global Integrated ISR, 9.Command and
+Control, 10. Personnel and Recovery, 11.Building Partnerships, 12. Agile Combat Support,13..
+Other).
+- Which capability(ies) this requirement align under the associated Core Function Master Plan
+(CFMP).
+- What is the Core Function Lead Integrator’s & MAJCOM/CC’s capability priority for this
+requirement:
+b. Requirement Justification.
+c. Mission Impact.
+- What is the mission impact if this requirement is not met?
+- Mission impact if 50 to 75% of the bandwidth requirement is met?
+d. Does this requirement replace an existing program, system or other requirement? If yes,
+please explain.
+e. Is this requirement a result of an IT consolidation effort? If so, identify the locations where
+service is being consolidated to and from. (Yes, No)
+- Consolidation Location (To):
+- Consolidation Location (From):
+f. Is the purpose of this DISN requirement to provide a “dual path” or “redundancy” for an
+existing circuit or path? If yes, please explain. (Yes, No)
+g. For bed down of new capabilities or systems, were DISN LHC bandwidth requirements
+evaluated during (or included as part of) site selection? If so, please provide a copy of the site
+survey report or a point of contact to obtain the report.
+h. Additional comments (optional):
+
+4. Bandwidth Requirement Analysis
+a. How did you determine the amount of bandwidth needed to satisfy this requirement? Please
+provide a copy of any supporting analysis documentation.
+b. What technologies/actions have been implemented to ensure efficient use of allocated
+bandwidth?
+c. Are there peak hours for bandwidth demand?
+d. Bandwidth utilization supporting the mission/application capability (Mbps):
+If yes, what are the peak periods (days of the week, hours of the day)?
+                           Minimum             Peak               Average
+        24 hour period
+        7 day period
+        30 day period
+Answer 4.e through 4.k if the answer to question 1.c. is “Change to Existing Service”.
+ 54                                                               AFMAN33-116 16 MAY 2013
+
+
+e. What is/are the circuit identifiers for the existing circuits (if known)?
+f. What is the current circuit size (Mbps)?
+g. Existing circuit bandwidth utilization without the new mission/application (in Mbps)
+                            Minimum              Peak                 Average
+      24 hour period
+      7 day period
+      30 day period
+h. Combined bandwidth utilization (existing and new mission/application capability) (in Mbps).
+                            Minimum              Peak                 Average
+      24 hour period
+      7 day period
+      30 day period
+i. What is the average bandwidth utilization during duty hours (Mbps)? Specify Duty Hours:
+k. What is the collateral impact to the other missions and applications on this circuit if you are
+unable to attain the required additional bandwidth?
+l. Additional Comments (optional):
+
+5. Program Information
+a. What is/are the Program Element(s) (PE) associated with the program/mission capability that
+is driving this DISN service requirement? (Do not use PE 33126, Long Haul Communications)
+b. Identify program funding that has been programmed for the DISN services in this
+requirement: (include specific PE code, if available)
+        FY14            FY15              FY16           FY17              FY18
+
+c. Would the program face delays/major changes/relocation/cancellation if bandwidth needs are
+not satisfied or delayed?
+d. Additional Comments (optional):
+
+6. Point of Contact Information
+a. Requirement Point of Contact:
+   Name:
+   Office Symbol:
+   NIPRNET Email:
+   SIPRNET Email:
+   DSN Phone:
+
+b. MAJCOM Point of Contact (if different from the Requirement POC):
+   Name:
+   Office Symbol:
+   NIPRNET Email:
+   SIPRNET Email:
+   DSN Phone:
+
+c. Funding Point of Contact (if different from the Requirement POC):
+   Name:
+   Office Symbol:
+AFMAN33-116 16 MAY 2013                                55
+
+
+  NIPRNET Email:
+  SIPRNET Email:
+  DSN Phone:
+
+d. Certification and Accreditation Point of Contact:
+   Name:
+   Office Symbol:
+   mail:
+   SIPRNET Email:
+   DSN Phone:
+
+
+e. Information Support Plan (if applicable):
+   Name:
+   Office Symbol:
+   NIPRNET Email:
+   SIPRNET Email:
+   DSN Phone:

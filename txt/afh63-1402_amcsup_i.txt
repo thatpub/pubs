@@ -1,0 +1,2402 @@
+BY ORDER OF THE                                                                                AIR FORCE HANDBOOK 63-1402
+SECRETARY OF THE AIR FORCE                                                                                                    19 MARCH 2001
+
+                                                                                                         AIR MOBILITY COMMAND
+                                                                                                                       Supplement
+                                                                                                                                 21 APRIL 2008
+
+                                                                                                                                        Acquisition
+
+                                                                                    AIRCRAFT INFORMATION PROGRAM
+
+
+ACCESSIBILITY:             Publications and forms are available for downloading or ordering on the e-Pub-
+                           lishing website at www.e-Publishing.af.mil.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: HQ AFSC/SEF                                                       Certified by: AF/SE (Maj. Gen. Timothy A. Peppe)
+                                                                                                              Pages: 59
+
+                                                                 (AMC)
+OPR: HQ AMC/SEF                                                                                                Certified by: HQ AMC/SE
+                                                                                                                (Colonel David R. Miller)
+                                                                                                                                Pages: 2
+
+This handbook assists in the establishment of Aircraft Information Programs and provides guidance in
+selecting recording parameters and functional requirements for information collection systems.
+(AMC) AFH 63-1402, dated 19 March 2001 is supplemented as follows: provides guidance for the acqui-
+sition of a standard 2-hour digital Cockpit Voice Recorder (CVR) for all aircraft for which Air Mobility
+Command (AMC) is lead command. This product does not replace or override current or future regula-
+tions. This instruction applies only to AMC-owned assets and personnel. Ensure that all records created as
+a result of processes prescribed in this publication are maintained in accordance with AFMAN 33-363,
+Management of Records, and disposed of in accordance with the Air Force Records Disposition Schedule
+(RDS) located at https://afrims.amc.af.mil/. Refer recommended changes and questions about this pub-
+lication to the Office of Primary Responsibility (OPR) using the AF IMT 847, Recommendation for
+Change of Publication; route AF IMT 847s from the field through the appropriate functional chain of
+command.
+      1.     Introduction ................................................................................................................        3
+      2.     Program Goals ...........................................................................................................            3
+      3.     Standardization ..........................................................................................................           4
+      4.     AIWG Formation. ......................................................................................................               6
+      5.     Aircraft Information Management Plan ....................................................................                            6
+      6.     Parameter Selection Process.                    ..................................................................................   6
+2                                                                     AFH63-1402_AMCSUP_I 21 APRIL 2008
+
+
+Table 1.   Fixed Wing Aircraft Parameters. ...............................................................................    8
+Table 2.   Rotary Wing Aircraft Parameters. .............................................................................    35
+
+Attachment 1— GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                              58
+
+Attachment 1—(AMC) GLOSSARY OF REFERENCES AND SUPPORTING
+           INFORMATION                                                                                                       59
+AFH63-1402_AMCSUP_I 21 APRIL 2008                                                                         3
+
+
+1. Introduction
+   1.1. The Aircraft Information Program (AIP) supports mishap investigations, Flight Operational
+   Quality Assurance (FOQA), Reliability Centered Maintenance (RCM), Aircraft and Engine Structural
+   Integrity Programs (ASIP/ENSIP), aircraft development programs and training. Its primary goal is to
+   balance information needs with program resources and operational considerations. This handbook
+   provides guidance in selecting the appropriate recording parameters and functional requirements for
+   information collection systems.
+   1.2. Mishap investigations are relatively straightforward processes where causes and contributing
+   factors are determined and used to produce a list of recommendations that should prevent future mis-
+   haps. However, many investigations are inconclusive due to lack of evidence to support mishap sce-
+   narios. This allows insidious conditions to persist and cause future mishaps.
+
+2. Program Goals
+   2.1. Institutionalize Mishap Investigative Information Requirements
+      2.1.1. Voice and data recorders for mishap information collection have traditionally lacked advo-
+      cates in the operational and acquisition communities.
+      2.1.2. Standing policy requiring Flight Data Recorders (FDRs) was issued in 1973. Lessons
+      Learned since that time have illustrated the need to institutionalize a process requiring the explicit
+      addressing of investigative information data gathering needs.
+      2.1.3. Numerous customers exist for recorded aircraft information. Training and mishap investi-
+      gation are two obvious reasons to record the performance of the aircraft and crew. Industry has
+      pioneered the use of such information in a proactive mode. A FOQA program examines non-mis-
+      hap flight data in a non-attribution basis to identify hazardous flight procedures and environments.
+      2.1.4. The engine and structural communities have been performing RCM for many years. The
+      utility of predicting component wearout or imminent failure has resulted in extensive cost savings.
+      The ability to remove or repair on an as needed basis versus scheduled intervals has saved costs
+      and circumvented component failures leading to mishaps.
+   2.2. Improve Quality of Mishap Investigation and Reporting
+      2.2.1. The Air Force forms boards to investigate and determine the cause(s) of mishaps. While
+      many mishaps are straightforward and benefit from surviving crew testimony, the majority
+      requires extensive analysis, test and simulation. With modern aircraft employing electronic con-
+      trol systems and video displays, some physical evidence no longer exists at the mishap scene.
+      2.2.2. Those aircraft with crash survivable data recorders have demonstrated more conclusive
+      investigations than those without recorders. This allows the board to spend less time determining
+      what occurred and more time determining why a mishap occurred.
+   2.3. Enable FOQA and RCM Programs
+      2.3.1. Commercial aviation has pioneered the use of “non-mishap” data to detect hazardous oper-
+      ational trends. Examples of such trends would include excessive bank angles, hard landings, and
+      unstabilized approaches. In general, looking for any trigger that would focus attention on a haz-
+      ardous situation.
+4                                                          AFH63-1402_AMCSUP_I 21 APRIL 2008
+
+
+       2.3.2. The implementation of a FOQA program presents a number of challenges. One hotly
+       debated topic is the potential use of FOQA data for punitive action. The identity of the crew must
+       be stripped from the data within a short time span and at the lowest organizational level feasible.
+       Consequently, pre-processing of the data must be accomplished in a timely manner to allow inter-
+       viewing the crew for clarification of unique data trends. Flight crew acceptance of FOQA as a
+       non-punitive program is a fundamental building block that cannot be compromised.
+       2.3.3. Another FOQA challenge is the sheer volume of collected information. Ground support
+       software requires specific “triggers” to analyze the recorded data and detect hazardous conditions.
+       These suspect records then require closer human evaluation to validate the concern of the expert
+       system.
+       2.3.4. Commercial aviation includes equipment monitoring and trending in its definition of
+       FOQA while the Air Force refers to it as Reliability Centered-Maintenance (RCM). In any event,
+       it has been shown in both government and industry that impressive cost savings can be accom-
+       plished. Whether it’s extending the removal interval of engines, or detecting excessive fuel con-
+       sumption due to flight control misrigging, both safety and cost avoidance are accomplished.
+    2.4. Assure Integrated Solution
+       2.4.1. There are many sources of information on an aircraft. Modern aircraft systems have digital
+       databuses with volumes of parametric data readily available for recorders. Cockpit Voice Record-
+       ers are on many aircraft capturing valuable acoustic information. Training needs often result in
+       Heads-Up-Display (HUD) and Multi-Function Display (MFD) video recorders.
+       2.4.2. Future weapon systems may have separate acoustic, video and parametric information
+       sources or achieve optimizations through integration of the technologies. Analyzing the total sys-
+       tem requirements will provide the best and lowest cost solution to the program.
+    2.5. Enhance Training Effectiveness
+       2.5.1. Videotapes of Heads-Up-Display (HUD) and Multi-Function Display (MFD) images are
+       currently used in crew training. The tapes occasionally survive crash dynamics and contribute to
+       board investigations. Emerging recording system technologies are capable of integrating acoustic,
+       image and parametric information into crash survivable packages.
+       2.5.2. Integration of these information sources coupled with real time simulators will provide
+       higher fidelity training opportunities.
+    2.6. Assist new aircraft development programs.
+       2.6.1. Identification of information customers should occur prior to the Engineering, Manufactur-
+       ing and Development phase of a program. Early identification will result in the most cost effective
+       and integrated solution for the program. Establish the AIWG early to assist in specification of
+       requirements.
+
+3. Standardization
+    3.1. Mishap investigators ascertain the cause of an accident by determining the state of the aircraft,
+    the environment in which it was operating, and the actions of the crew that led up to the event.
+    3.2. Early recorders were designed to capture the fundamental parameters of altitude, heading, air-
+    speed and vertical acceleration. These parameters enabled the investigator to recreate the flight path
+AFH63-1402_AMCSUP_I 21 APRIL 2008                                                                        5
+
+
+  of the air vehicle and then postulate what subsystem failures or crew actions would result in such a
+  flight profile. These postulations along with other evidence were used by the investigator to conduct
+  analyses and arrive at a cause of the mishap.
+  3.3. These fundamental parameters were selected in an environment where parameter recording was
+  not as simple an endeavor as it is today. Designing a recording system that would both record param-
+  eters to sufficient resolution and survive an impact was no small feat in the 1950’s. However, as more
+  resources were put to the task and technology advanced it became feasible to increase both the dura-
+  tion and number of parameters recorded.
+  3.4. The next generation of parameters added pitch attitude, roll attitude, longitudinal acceleration,
+  pitch trim and engine thrust. These new parameters added to the accuracy of determining aircraft
+  dynamics and most probable crew actions. The requirement to record either control column displace-
+  ment or pitch control surface position was also added at this time to help distinguish when aircraft
+  dynamics were directly attributable to crew action or subsystem failure.
+  3.5. The next expansion of recorded parameters included most crew control inputs and control sur-
+  face positions thereby clearly distinguishing between crew commanded maneuvers and aircraft fail-
+  ures.
+  3.6. With the proliferation of digital data buses and computer technology it is now possible to record
+  hundreds of parameters for many hours. Modern military aircraft demonstrate this ability by record-
+  ing a plethora of information. Consequently, one of the challenges now becomes assuring critical
+  parameters are captured in crash survivable media and not overlooked while identifying parameters
+  used for other purposes.
+  3.7. The National Transportation Safety Board (NTSB), the European Organization for Civil Aviation
+  Equipment (EUROCAE) and the U.S. military services have periodically recommended specific
+  parameters for mishap investigation. Many of these parameters have subsequently been required to be
+  recorded as a minimum allowable set by various worldwide regulatory agencies such as the FAA and
+  Joint Aviation Authority (JAA).
+  3.8. Table 1. and Table 2. reflect an extensive list of parameters available for recording on both air-
+  craft and helicopters, respectively. These parameters are essential to either investigative or preventa-
+  tive maintenance efforts. While the list is extensive, there will always be “just one more” parameter
+  that could be captured. Additionally, military aircraft may have mission specific or special equipment
+  status that could also be recorded. So while the list appears complete, mission needs and requirements
+  may dictate a more extensive list when deciding on data recording requirements.
+  3.9. Parameters listed in Table 1. and Table 2. are categorized further based on their importance to
+  the investigative and mishap prevention process. Category 1 and 2 data satisfy the Chief of Staff
+  directive that requires a standard set of Digital Flight Data Recorder parameters for inclusion in exist-
+  ing and planned future weapon systems.
+  3.10. Performance and functional requirements for information recording systems should be deter-
+  mined by exhaustive review of current industry standards and mishap lessons learned. FAA Technical
+  Standard Orders (TSOs) such as C-124a and C-123a should be consulted. International standardiza-
+  tion efforts by EUROCAE and International Civil Aviation Organization (ICAO) should be reviewed
+  along with recommendations of the NTSB and USAF Safety Center. The USAF Safety Center will be
+  able to provide the latest standards and USAF positions relative to these standards.
+6                                                           AFH63-1402_AMCSUP_I 21 APRIL 2008
+
+
+    3.10. (AMC) The AMC standard is for all aircraft to have a 2-Hour digital CVR capability. Any ret-
+    rofit of legacy aircraft will be determined by prioritization through the command’s Requirements and
+    Planning Council Process.
+    3.11. Federal Aviation Regulation (FAR) 25.1457, Cockpit Voice Recorders and FAR 25.1459, Flight
+    Data Recorders should be reviewed by the AIWG for the applicability to each program.
+
+4. AIWG Formation. Each aircraft program will establish an Aircraft Information Working Group
+(AIWG). The purpose of the AIWG is to ensure that decisions affecting aircraft system capabilities
+account for information needs of the operational, maintenance and safety communities.
+    4.1. The program manager/director or his designated representative will chair the AIWG and oversee
+    the writing of its charter and the Aircraft Information Management Plan (AIMP). The AIWG chair
+    will solicit appropriate members and advisors in accordance with the guidance of AFI 63-1401. The
+    AIWG shall assure the members and advisors are empowered to represent their organization and suf-
+    ficiently trained and experienced in the subject matter to contribute positively.
+    4.2. Membership of the AIWG shall consist of the following individuals whose roles and responsibil-
+    ities are defined in AFI 63-1401.
+    The chairman
+    The Chief Engineer or representative
+    Representatives from the lead command to address operational, logistical and maintenance issues.
+    Representative from the Air Force Safety Center
+    4.3. The AIWG will determine the appropriate inspection period for validating the quality and func-
+    tionality of all AIP components.
+
+5. Aircraft Information Management Plan
+    5.1. The AIMP will address all information needs of the subject aircraft. All forms of information
+    regardless of recording media or transmission method will be considered.
+    5.2. Acoustic, imagery, datalink, and parametric information shall be considered when arriving at an
+    integrated solution for the program.
+    5.3. The AIWG will advise when the AIMP is required and draft the document for Program Manage-
+    ment approval.
+
+6. Parameter Selection Process.
+    6.1. To record all possible information on every aircraft would be both cost prohibitive and unrealis-
+    tic. However, a balance must be struck between optimization for the information customer and cost
+    avoidance.
+    6.2. Even though the USAF participates in many commercial standardization efforts we seldom have
+    sufficient influence to require parameters that could be viewed as military unique. Parameter Table 1.
+    and Table 2. were specifically crafted for military aircraft from participation in international working
+    groups, recommendations of the NTSB and military lessons learned. The parameter category reflects
+    it’s hierarchical importance and is described below. References to FAR and WG-50 numbers are
+AFH63-1402_AMCSUP_I 21 APRIL 2008                                                                    7
+
+
+  solely provided as a tool to correlate AIP parameters to those recommended by national and interna-
+  tional bodies.
+  1 – Required
+  2 – Required if electronic displays/glass cockpit otherwise, recommended
+  3 – Highly desirable if data stream accessible
+  4 – Recommended if readily available
+  6.3. Ability for the user to delete geographical, flight path, and performance information should be
+  considered in the system design to address both wartime and peacetime security concerns. However,
+  this ability must be validated by the customer of the information being deleted and provided only as
+  unique operational requirements dictate. Sufficient safeguards against arbitrary and capricious dele-
+  tion of information must be included in the system design.
+Table 1. Fixed Wing Aircraft Parameters.
+
+
+
+
+                                                                                                                                            8
+                                                           Range        Interval     Limits       Resolution           Remarks
+                                                                         (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+1.0 Recorder, System or
+Mission Parameters
+1.1 CVR/DFDR                     1         -      8
+Synchronization Reference
+1.2 Microphone/ Transmitter      1        8       8      Discrete(s)       1            -             -           Preferably each crew
+Keying                                                                                                          member but one discrete
+                                                                                                                    acceptable for all
+                                                                                                               transmissions provided the
+                                                                                                                   CVR/FDR system
+                                                                                                                complies with 1.1 of this
+                                                                                                                          table
+1.3 Data Time Tag reference     -          -      -           -            -            -             -                     -
+
+
+
+
+                                                                                                                                            AFH63-1402_AMCSUP_I 21 APRIL 2008
+1.3.1 Recorder Elapsed Time    1c          -      -
+1.3.2 Relative Time Count      1b          -     1b       0 to 4095        4       ± 0.125% per    1 second    Counter increments each 4
+                                                                                       hour                       seconds of system
+                                                                                                                       operation
+1.3.3 UTC                      1a         1      1a       24 hours         4       ± 0.125% per    1 second            Preferred
+                                                                                       hour
+1.4 Event Marker                 1         -     76       Discrete         1             -                         Cockpit Switch
+1.5 Date                         3         -     77       366 Days      Power On         -          1 Day        UTC Time Preferred
+                                                                                                                  Where Available
+1.6 Aircraft Number              3         -       -     As Installed   Power On        -             -
+1.7 Departure Base               4         -       -     As Installed   Power On        -             -
+1.8 Aircraft Weight              4         -       -     As Installed   Power On
+                                                                                                                                            AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range        Interval       Limits       Resolution          Remarks
+                                                                          (secs)
+
+
+
+
+                             Category
+
+
+
+
+                                               WG-50#
+                                        FAR#
+2.0 Aircraft Dynamics
+2.1 Velocity                    -        -       -             -            -             -                -                  -
+2.1.1 Indicated Airspeed        1        3       3      Minimum value       1           ± 5%         1 kt (0.5 kt Should be obtained from
+(KIAS)                                                  from installed                              recommende     the air data computer
+                                                          pitot static                                    d)          where installed
+                                                         system to 1.2
+                                                              VNE
+2.1.2 Calibrated Airspeed       4        3       3      Minimum value       1           ± 3%         1 kt (0.5 kt Should be obtained from
+(KCAS)                                                  from installed                              recommende     the air data computer
+                                                          pitot static                                    d)          where installed
+                                                         system to 1.2
+                                                             VNE
+2.1.3 Groundspeed               4       34      31        As installed      1       Data should be      1 kt                 -
+                                                                                     obtained from
+                                                                                       the most
+                                                                                    accurate system
+2.1.4 Taxi Speed                4         -       -      As installed       1       Data should be 1 kt                Not required/
+                                                                                     obtained from                   recommended if
+                                                                                       the most                    Groundspeed (2.1.1.3)
+                                                                                    accurate system                  captures the data.
+2.2 Attitude                    -        -       -             -            -              -              -                  -
+2.2.1 Pitch Attitude            1        6       6       ± 90 degrees     0.25        ± 2 degrees    0.5 degree     Accuracy will apply
+                                                                                                                    within ± 75° range
+2.2.2 Roll Attitude             1        7       7      ± 180 degrees      0.5        ± 2 degrees    0.5 degree              -
+2.3 Accelerations               -        -       -            -             -              -              -                  -
+2.3.1 Linear Accelerations      -        -       -            -             -              -              -                  -
+
+
+
+
+                                                                                                                                            9
+                                                                                                                                                  10
+                                                            Range        Interval       Limits        Resolution             Remarks
+                                                                          (secs)
+
+
+
+
+                               Category
+
+
+
+
+                                                 WG-50#
+                                          FAR#
+2.3.1.1 Vertical/Normal           1        5       5         ±12g         0.125          ± 1% of        0.004G                   -
+Acceleration                                                                         specified range
+                                                                                       excluding a
+                                                                                    datum error of ±
+                                                                                    5% of specified
+                                                                                          range
+2.3.1.2 Lateral Acceleration      1       18      17          ±2g         0.25          ± 1.5% of       0.004G                   -
+                                                                                     specified range
+                                                                                    excluding datum
+                                                                                    error of ± 5% of
+                                                                                     specified range
+2.3.1.3     Longitudinal          1       11      16          ±3g         0.25          ± 1.5% of       0.004G                   -
+Acceleration                                                                         specified range
+                                                                                    excluding datum
+
+
+
+
+                                                                                                                                                  AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                    error of ± 5% of
+                                                                                     specified range
+2.3.1.4 Thrust of Each 1                   9      9a      Full Range      Each         as installed  0.1 % of full     Sufficient parameters
+Engine                (6.2.                                              engine                          range          must be recorded to
+                       7)                                                 each                                        determine power in both
+                                                                         second                                      normal and reverse thrust.
+                                                                                                                       A margin for possible
+                                                                                                                        overspeed should be
+                                                                                                                             provided.
+2.3.2 Angular Accelerations       -         -       -          -            -              -               -                      -
+2.3.2.1 Pitch Acceleration        4         -       -     As Installed    0.25             -               -                      -
+2.3.2.2 Roll Acceleration         4         -       -     As Installed    0.25             -               -                      -
+2.3.2.3 Yaw Acceleration          4         -       -     As Installed    0.25             -               -                      -
+                                                                                                                                                       AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range          Interval        Limits         Resolution             Remarks
+                                                                            (secs)
+
+
+
+
+                            Category
+
+
+
+
+                                              WG-50#
+                                       FAR#
+2.4 Angles                     -        -       -              -              -              -                 -                      -
+2.4.1 Yaw (y) or Sideslip      3       70      68         Full range          1            ± 5%           0.5 degree                  -
+Angle (b)
+2.4.2 Angle of Attack (a)      3       32      29        As installed        0.5        As installed      0.3% of full If left and right sensors are
+Left & Right if available                                                                                    range        available, each may be
+                                                                                                                            recorded at 1 second
+                                                                                                                           intervals so as to give
+                                                                                                                          interleaved data points
+                                                                                                                         each half second. If the
+                                                                                                                       aircraft is equipped with a
+                                                                                                                         suitable data source for
+                                                                                                                          this parameter the data
+                                                                                                                              must be recorded.
+3.0 Aircraft Environment
+3.1 Altitude                   -        -       -               -             -               -                -                     -
+3.1.1 Pressure Altitude        1        2       2          -1000 to           1       ± 100 ft to ± 700       5 ft       Should be obtained from
+                                                          maximum                             ft                          the air data computer
+                                                          altitude of                                                        where installed
+                                                       aircraft +5000 ft
+
+
+
+
+                                                                                                                                                       11
+                                                                                                                                                      12
+                                                              Range           Interval       Limits        Resolution            Remarks
+                                                                               (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+3.1.2 Radio/Radar Altitude       3       26      20      -20 ft to +2500 ft      1        ± 2 ft or ± 3% 1 ft below     For autoland/category 3
+                                                                                           whichever is 500 ft, 1 ft +    operations, each radio
+                                                                                          greater below 0.5% of full       altimeter should be
+                                                                                         500 ft and ±5% range above recorded, but arranged so
+                                                                                           above 500 ft    500 ft           that at least one is
+                                                                                          recommended                    recorded each second.
+                                                                                                                          Radio altitude can go
+                                                                                                                         negative depending on
+                                                                                                                       aircraft attitude and sensor
+                                                                                                                                calibration
+3.1.3 GPS Altitude               4         -       -         -1000 to
+                                                            maximum
+                                                            altitude of
+                                                         aircraft +5000 ft
+
+
+
+
+                                                                                                                                                      AFH63-1402_AMCSUP_I 21 APRIL 2008
+3.2 Geodetic Position (Lat/      3       39     33d         As installed         4       Data should be 0.002 degree     Where capacity permits,
+Long)                                                                                     obtained from                    latitude/longitude
+                                                                                            the most                      resolution should be
+                                                                                         accurate system                     0.0002 degree
+                                                                                           as installed
+3.3 Heading (Primary Crew        1        4       4        0-360° and            1         ± 2 degrees   0.5 degrees      When true or magnetic
+Reference)                                               discrete 'true' or                                             heading can be selected as
+                                                              'mag'                                                        the primary heading
+                                                                                                                           reference, a discrete
+                                                                                                                         indicating selection must
+                                                                                                                                be recorded
+3.4 Airflow                       -        -       -             -               -              -               -                    -
+                                                                                                                              AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range         Interval       Limits        Resolution   Remarks
+                                                                           (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+3.4.1 WindDirection              3       38     33c       As installed       1       Data should be     1 degree       -
+                                                                                      obtained from
+                                                                                        the most
+                                                                                     accurate system
+                                                                                       as installed
+3.4.2 Wind Speed                 3       38     33b       As installed       1       Data should be      1 knot        -
+                                                                                      obtained from
+                                                                                        the most
+                                                                                     accurate system
+                                                                                       as installed
+3.4.3 Drift Angle                3       37     33a       As installed       4       Data should be    0.1 degree      -
+                                                                                      obtained from
+                                                                                        the most
+                                                                                     accurate system
+                                                                                       as installed
+3.5 Temperature               1           -       -             -            -               -             -           -
+3.5.1      Outside     A i r 1b          24      14      -50°C to +90°C      2            ± 2°C          0.3°C         -
+Temperature                                                or available
+                                                           sensor range
+3.5.2 Total Air Temperature    1a        24      14      -50°C to +90°C      2           ± 2°C           0.3°C         -
+                                                           or available
+                                                           sensor range
+4.0 Aircraft Aerodynamic
+Configuration
+4.1 Primary Control Surface       -        -       -           -             -              -              -           -
+Configurations
+
+
+
+
+                                                                                                                              13
+                                                                                                                                               14
+                                                              Range       Interval       Limits        Resolution          Remarks
+                                                                           (secs)
+
+
+
+
+                                  Category
+
+
+
+
+                                                    WG-50#
+                                             FAR#
+4.1.1 Pitch Axis Primary             1       15     18a      Full range    0.25        ± 2 degrees     0.2% of full            -
+Control Surface Positions                                                             unless higher    range or the
+                                                                                        accuracy         resolution
+                                                                                         uniquely       required to
+                                                                                       required or      operate the
+                                                                                        available          aircraft
+4 . 1 . 2 P i t c h A x i s Tr i m 1         19      19      Full range      1         ± 3% unless   0.3% of full Where dual surfaces are
+Control Surface Positions          (or                                               higher accuracy range or the provided it is permissable
+                                  5.4.1                                                  uniquely      resolution   to record each surface
+                                    )                                                  required or    required to         alternately
+                                                                                        available     operate the
+                                                                                                         aircraft
+4.1.3 Roll Axis Primary              1       16     18b      Full range    0.25        ± 2 degrees   0.2% of full              -
+Control Surface Positions                                                             unless higher range or the
+
+
+
+
+                                                                                                                                               AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                        accuracy       resolution
+                                                                                         uniquely     required to
+                                                                                       required or    operate the
+                                                                                        available        aircraft
+4 . 1 . 4 R o l l A x i s Tr i m 1           67      67      Full range      2         ± 3% unless   0.3% of full              -
+Control Surface Positions        (or                                                 higher accuracy      range
+                                5.4.2                                                    uniquely
+                                  )                                                    required or
+                                                                                        available
+                                                                                                                                            AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                         Range       Interval       Limits       Resolution            Remarks
+                                                                      (secs)
+
+
+
+
+                             Category
+
+
+
+
+                                               WG-50#
+                                        FAR#
+4.1.5 Yaw Axis Primary          1       17     18c      Full range     0.5        ± 2 degrees   0.2% of full               -
+Control Surface Positions                                                        unless higher range or the
+                                                                                   accuracy      resolution
+                                                                                    uniquely    required to
+                                                                                  required or   operate the
+                                                                                   available       aircraft
+4 . 1 . 6 Ya w A x i s Tr i m 1         66      66      Full range      2         ± 3% unless   0.3% of full               -
+Control Surface Positions     (or                                               higher accuracy     range
+                             5.4.3                                                  uniquely
+                               )                                                  required or
+                                                                                   available
+4.2 Secondary Flight -                    -       -         -           -               -              -                   -
+Control Surface Positions
+4.2.1 Trailing Edge Flap 1              20     10a      Full range      2         ± 3 degrees   0.5% of full               -
+Position                   (or                                                                     range
+                          5.2.1
+                            )
+4.2.2 Leading Edge Flap/ 1              21     11a      Full range      1         ± 3 degrees   0.5% of full    Left and right sides may
+Slat Position              (or                                                                     range          each be sampled at 2
+                          5.2.2                                                                                 second intervals so as to
+                            )                                                                                     give interleaved data
+                                                                                                                   points each second.
+4.2.3 Wing Sweep Position       1         -       -     Full range                                             Variable Geometry/Swing
+                                                                                                                   Wing Aircraft Only
+
+
+
+
+                                                                                                                                            15
+                                                                                                                                                     16
+                                                              Range           Interval       Limits       Resolution            Remarks
+                                                                               (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+4.2.4 Ground Spoiler             1       23     13a        Full range or        0.5        ± 2% unless   0.2% of full Sufficient to determine the
+Position                                                   each discrete                 higher accuracy    range      position of the surfaces
+                                                             position                        uniquely
+                                                                                             required
+4.2.5 Speedbrake Position        3       87     13c        Full range or        0.5        ± 2% unless   0.2% of full Sufficient to determine the
+                                                           each discrete                 higher accuracy    range      position of the surfaces
+                                                             position                        uniquely
+                                                                                             required
+4.3 Propulsion Thrust             -        -       -             -               -               -            -                     -
+Positions
+4.3.1 Thrust reverse status      1       22      12         Turbo-jet =         Each            -              -       Turbo-jet three states can
+                                                         stowed, in transit   reverser                                    be determined with 2
+                                                            and reverse         each                                   discretes, Propellor with 1
+                                                            Propellor =        second
+
+
+
+
+                                                                                                                                                     AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                              reverse
+4.3.2 Nozzle Position/Area       3         -       -        As installed
+4.3.3 Nozzle Rotation            3         -       -        As installed
+Position
+4.4 Computed Center of           3       73      55        As installed          64       As installed      1 % Full                -
+Gravity                                                                                                      range
+4.5 Landing Gear Position       1        36     32a         Discrete(s)         4 (0.5          -              -        A suitable combination of
+                               (or                                            recommen                                      discretes should be
+                              5.2.5                                              ded)                                    recorded to determine in
+                                )                                                                                       transit, down and lock, up
+                                                                                                                                  and lock
+4.6 Tailhook                     4         -       -       As installed
+                                                                                                                                             AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                Range        Interval   Limits   Resolution            Remarks
+                                                                              (secs)
+
+
+
+
+                                   Category
+
+
+
+
+                                                     WG-50#
+                                              FAR#
+4.7       S t o r e s / We a p o n 3            -       -     As installed
+Configuration
+4.8 External Door/Panel 4                       -       -     As installed
+Positions
+5.0       Crew Control
+Parameters
+5.1 Primary Control, -                        88      75           -            1         -            -                    -
+Cockpit Inputs & Forces
+5.1.1 Control wheel cockpit 1/4               88     75a       ± 30 Kgs         1       ± 5%     0.2 % of full  For fly-by-wire aircraft
+input forces                                                                                      range or as    where control surface
+                                                                                                   installed    position is a function of
+                                                                                                                the displacement of the
+                                                                                                              control input device only it
+                                                                                                               is not necessary to record
+                                                                                                                     this parameter.
+5 . 1 . 2 C o n t r o l c o l u m n 1/4       88     75b       ± 40Kgs          1       ± 5%     0.2 % of full For fly-by-wire aircraft
+cockpit input forces                                                                              range or as    where control surface
+                                                                                                   installed    position is a function of
+                                                                                                                the displacement of the
+                                                                                                              control input device only it
+                                                                                                               is not necessary to record
+                                                                                                                     this parameter.
+
+
+
+
+                                                                                                                                             17
+                                                                                                                                             18
+                                                       Range       Interval      Limits       Resolution               Remarks
+                                                                    (secs)
+
+
+
+
+                           Category
+
+
+
+
+                                             WG-50#
+                                      FAR#
+5.1.3 Rudder pedal cockpit 1/4        88     75c      ± 75 Kgs        1          ± 5%         0.2 % of full     For fly-by-wire aircraft
+input forces                                                                                   range or as       where control surface
+                                                                                                installed       position is a function of
+                                                                                                                the displacement of the
+                                                                                                              control input device only it
+                                                                                                               is not necessary to record
+                                                                                                                     this parameter.
+5.1.4 Pitch Axis Primary      1       12     18a      Full range    0.25       ± 2 degrees    0.2% of full      For airplanes that have a
+Flight Control Input                                                          unless higher   range or the     flight control break away
+                                                                                accuracy        resolution        capability that allows
+                                                                                uniquely       required to     either pilot to operate the
+                                                                               required or     operate the      controls independently,
+                                                                                available         aircraft    record both control inputs.
+                                                                                                              The control inputs may be
+
+
+
+
+                                                                                                                                             AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                                                   sampled alternately.
+5.1.5 Roll Axis Primary       1       13     18b      Full range    0.25       ± 2 degrees    0.2% of full      For airplanes that have a
+Flight Control Input                                                          unless higher   range or the     flight control break away
+                                                                                accuracy        resolution        capability that allows
+                                                                                uniquely       required to     either pilot to operate the
+                                                                               required or     operate the      controls independently,
+                                                                                available         aircraft    record both control inputs.
+                                                                                                              The control inputs may be
+                                                                                                                   sampled alternately.
+                                                                                                                                                    AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                           Range        Interval         Limits          Resolution            Remarks
+                                                                         (secs)
+
+
+
+
+                             Category
+
+
+
+
+                                               WG-50#
+                                        FAR#
+5.1.6 Yaw Axis Primary          1       14     18c       Full range        0.5         ± 2 degrees       0.2% of full For airplanes that have a
+Flight Control Input                                                                  unless higher      range or the flight control break away
+                                                                                        accuracy           resolution    capability that allows
+                                                                                        uniquely          required to either pilot to operate the
+                                                                                       required or        operate the   controls independently,
+                                                                                        available            aircraft record both control inputs.
+                                                                                                                      The control inputs may be
+                                                                                                                          sampled alternately.
+5.1.7 Thrust/Power Lever 1/4            42     9b &      Full range     Each lever       ± 2% or          2% of full     Must be recorded for
+Angle                                           35f                       each         sufficient to          range         aeroplanes with
+                                                                         second       determine any                    non-mechanically linked
+                                                                                      gated position                   cockpit engine controls,
+                                                                                                                       otherwise recommended.
+5.1.8    Engine Thrust          3       57      53      As installed        2          As installed       2% of full                -
+Command                                                                                                       range
+5.1.9 Engine Thrust Target      3       58      54      As installed        4          As installed         2% Full                 -
+                                                                                                              range
+5.1.10            Stability 1             -     15        Discrete          1                -                   -                  -
+Augmentation System
+Engagement
+5.2 All Secondary Control, -              -       -           -             -                -                -                    -
+Cockpit Inputs & Forces
+5.2.1 Trailing edge flap 1              85     10b      Full range or       2          sufficient to          -                    -
+cockpit control selection   (or                         each discrete                 determine each
+                           4.2.1                          position                   discrete position
+                             )
+
+
+
+
+                                                                                                                                                    19
+                                                                                                                                                         AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                  Range        Interval       Limits          Resolution           Remarks
+                                                                                (secs)
+
+
+
+
+                                   Category
+
+
+
+
+                                                     WG-50#
+                                              FAR#
+5.2.2 Leading edge flap/slat 1                86     11b       Full range or      1         sufficient to         -                     -
+cockpit control selection    (or                               each discrete               determine each
+                            4.2.2                                position                 discrete position
+                              )
+5.2.3 Speedbrake cockpit              1       87     13d       Full range or     0.5        ± 2% unless   0.2% of full Sufficient to determine the
+selection/lever position                                       each discrete              higher accuracy   range or   use of the cockpit selector
+                                                                 position                     uniquely      discrete
+                                                                                              required
+5.2.4 Ground Spoiler                  1       23     13b       Full range or     0.5        ± 2% unless   0.2% of full Sufficient to determine the
+cockpit selection                                              each discrete              higher accuracy   range or   use of the cockpit selector
+                                                                 position                     uniquely      discrete
+                                                                                              required
+5.2.5 Landing Gear Selector 1                 36     32b       Discrete(s)       4 (0.5           -               -        A suitable combination of
+Position                    (or                                                recommen                                        discretes should be
+                            4.5)                                                  ded)                                       recorded to determine
+                                                                                                                              position of the gear
+                                                                                                                                     selector
+5.2.6 Left and Right Brake            1       69     34b       Full Range         1            ± 5%                          To determine braking
+Pedal Position                                                                                                             effort applied by pilots or
+                                                                                                                                  by autobrakes
+5.3 Autopilot/Autothrottle/           1       10      15        A suitable        1               -               -          Discretes should show
+AFCS Engagement Status                                        combination of                                                   which systems are
+                                                                discretes                                                   engaged and controlling
+                                                                                                                                   the aircraft
+5.4 All Cockpit, Primary               -        -       -            -            -               -               -                      -
+C o n t r o l , Tr i m I n p u t
+Positions
+
+
+
+
+                                                                                                                                                         20
+                                                                                                                                         AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range        Interval   Limits   Resolution            Remarks
+                                                                          (secs)
+
+
+
+
+                               Category
+
+
+
+
+                                                 WG-50#
+                                          FAR#
+5.4.1 Pitch Trim Control 1                82      72      Full Range        1       ± 5%     0.2% of full   When mechanical means
+Input Position           (or                                                                    range       for control inputs are not
+                        4.1.2                                                                                   available cockpit
+                          )                                                                                 displayed trim positions
+                                                                                                               should be recorded
+5.4.2 Roll Trim Control 1                 83      73      Full Range        1       ± 5%     0.2% of full   When mechanical means
+Input Position          (or                                                                     range       for control inputs are not
+                       4.1.4                                                                                    available cockpit
+                         )                                                                                  displayed trim positions
+                                                                                                               should be recorded
+5.4.3 Yaw Trim Control 1                  84      74      Full Range        1       ± 5%     0.2% of full   When mechanical means
+Input Position         (or                                                                      range       for control inputs are not
+                      4.1.6                                                                                     available cockpit
+                        )                                                                                   displayed trim positions
+                                                                                                               should be recorded
+5.5 Propulsion Controls           -         -       -          -            -         -           -                      -
+5.5.1 Nozzle Rotation             3         -       -     As installed
+Control
+5.5.2 Afterburner Select          3         -       -     As installed
+5.5.3 Thrust Reverser Select      3         -       -     As installed
+5.5.4 Bleed Air Select            4         -       -     As installed
+5.6 Calibration, Navigation,      -         -       -          -            -         -           -                     -
+Performance, and Warning
+Settings
+
+
+
+
+                                                                                                                                         21
+                                                                                                                                               22
+                                                             Range        Interval     Limits       Resolution           Remarks
+                                                                           (secs)
+
+
+
+
+                                Category
+
+
+
+
+                                                  WG-50#
+                                           FAR#
+5.6.1 Selected Altitude (All       2       48      39      As installed      1       As installed   Selectable   To be recorded for aircraft
+pilot selectable modes of                                                                           resolution   where electronic displays
+operation)                                                                                                                are fitted
+5.6.2     Pilot Selected           2       47     38a      As installed     64       As installed     1 hPa         Where practicable, a
+Barometric Setting                                                                                                 sampling interval of 4
+                                                                                                                 seconds is recommended.
+                                                                                                                 To be recorded for aircraft
+                                                                                                                 where electronic displays
+                                                                                                                         are fitted.
+5.6.3 First Officer Selected       2       47     38a      As installed     64       As installed     1 hPa         Where practicable, a
+Barometric Setting                                                                                                 sampling interval of 4
+                                                                                                                 seconds is recommended.
+                                                                                                                 To be recorded for aircraft
+                                                                                                                 where electronic displays
+
+
+
+
+                                                                                                                                               AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                                                         are fitted.
+5.6.4 Selected Decision            2       54      45      As installed     64       As installed   Selectable   To be recorded for aircraft
+Heights (All pilot selectable                                                                       resolution   where electronic displays
+modes of operation)                                                                                                       are fitted
+5.6.5 Selected Flight Path          -      53        -          -            -            -             -                     -
+(All pilot selectable modes
+of operation)
+5.6.5.1 Course/DSTRK               2         -    44a      As installed      1       As installed   Selectable   To be recorded for aircraft
+                                                                                                    resolution   where electronic displays
+                                                                                                                          are fitted
+5.6.5.2 Path Angle                 2         -    44b      As installed      1       As installed   Selectable   To be recorded for aircraft
+                                                                                                    resolution   where electronic displays
+                                                                                                                          are fitted
+                                                                                                                                              AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                           Range         Interval     Limits       Resolution           Remarks
+                                                                          (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+5.6.5.3 Selected Heading         2       52      43      As installed       1       As installed   Selectable   To be recorded for aircraft
+                                                                                                   resolution   where electronic displays
+                                                                                                                         are fitted
+5.6.6 Selected Frequencies       -        -       -            -            -            -             -                     -
+5.6.6.1 Navigation               1       46      25      Sufficient to      4       As installed       -        An offset value or channel
+Frequencies                                               determine                                                  counter would be
+                                                           selected                                             acceptable. The frequency
+                                                         frequencies                                             to be recorded should be
+                                                                                                                  that associated with the
+                                                                                                                 information displayed to
+                                                                                                                          the pilot.
+5.6.6.2 Communication            3         -       -     Sufficient to      4       As installed       -        An offset value or channel
+Frequencies                                               determine                                                  counter would be
+                                                           selected                                             acceptable. The frequency
+                                                         frequencies                                             to be recorded should be
+                                                                                                                  that associated with the
+                                                                                                                communication frequency
+                                                                                                                     used by the pilot.
+5.6.7 Selected Mach (All         2       50      41      As installed       1       As installed   Selectable   To be recorded for aircraft
+pilot selectable modes of                                                                          resolution    where electronic displays
+operation)                                                                                                                are fitted
+5.6.8 Selected Speed (All        2       49      40      As installed       1       As installed   Selectable   To be recorded for aircraft
+pilot selectable modes of                                                                          resolution    where electronic displays
+operation)                                                                                                                are fitted
+5.6.9 Selected Ve rtical         2       51      42      As installed       1       As installed   Selectable   To be recorded for aircraft
+Speed (All pilot selectable                                                                        resolution    where electronic displays
+modes of operation)                                                                                                       are fitted
+
+
+
+
+                                                                                                                                              23
+                                                                                                                                 24
+                                                         Range       Interval   Limits   Resolution          Remarks
+                                                                      (secs)
+
+
+
+
+                            Category
+
+
+
+
+                                              WG-50#
+                                       FAR#
+5.7 Subsystem Functional        -        -       -          -           -         -          -                   -
+Selection
+5.7.1 De-icing and/or          3       72      69      Discretes        4         -          -                   -
+Anti-icing System Select
+5.7.2 Secondary Power          3         -       -      Discrete        1         -          -
+System (APU/EPU) Select
+5.7.3 Landing Gear Select      3         -       -     Discrete(s)      4         -          -          Down Lock Switch
+                                                                                                       Position or Equivalent
+5.8     Ground Spoiler         3         -       -      Discrete        1
+Position/Speed Brake
+Selection
+5.9 Ejection Selection/        3         -       -      Discrete        1         -          -                   -
+Handle Pull
+
+
+
+
+                                                                                                                                 AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.0 Warnings, Cautions,
+Advisories, Statusing
+6.1 Warnings, Cautions &       1       30      24      Discretes        1         -          -           A discrete must be
+Advisories (WCAS)                                                                                      recorded for the master
+                                                                                                         warning. Each 'red'
+                                                                                                         warning should be
+                                                                                                         recorded when the
+                                                                                                      warning condition cannot
+                                                                                                      be determined from other
+                                                                                                       parameters or from the
+                                                                                                       cockpit voice recorder.
+6.1.1 Navigation WCAS
+                                                                                                                                                             AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                         Range       Interval        Limits      Resolution           Remarks
+                                                                                      (secs)
+
+
+
+
+                                     Category
+
+
+
+
+                                                           WG-50#
+                                                 FAR#
+6.1.1.1 Ground Proximity                1            35     28         Discretes         1                                    A suitable combination of
+Warning System (GPWS)                                                                                                         discretes to convey status
+Terrain Alerts, Cautions,                                                                                                           of the system
+Warnings, Advisories,
+on/off position, Selection of
+Te r r a i n D i s p l a y M o d e
+including pop up display
+status.
+6.1.1.2 Traffic alerting and            1            44     36         Discretes         1        As installed                A suitable combination of
+Collision Avoidance System                                                                                                      discretes to determine
+                                                                                                                              sensitivity level and status
+                                                                                                                                of system, Combined
+                                                                                                                              Control, Vertical Control,
+                                                                                                                               Up Advisory and Down
+                                                                                                                                       Advisory
+6.1.1.3 Windshear Warning 3                     41        37        Discrete         1          As installed
+6.1.2 Flight Control WCAS
+6.1.2.1 AFCS Malfunction    3                                         Discrete(s)        1
+6.1.2.2 SAS/SCAS Failure    3                                          Discrete          1
+6.1.2.3 Operational Stall 3                          40     59        As installed       1        As installed                A suitable combination of
+Protection, Stick Shaker/                                                                                                      discretes to determine
+Pusher activation                                                                                                                     activation
+6.1.3 Propulsion WCAS
+6.1.3.1 Vibration Warning, 3                         62     62        As installed       1        As installed
+Each Engine
+
+
+
+
+                                                                                                                                                             25
+                                                                                                                                                  26
+                                                                    Range        Interval     Limits       Resolution         Remarks
+                                                                                  (secs)
+
+
+
+
+                                       Category
+
+
+
+
+                                                         WG-50#
+                                                  FAR#
+6.1.3.2 Oil Press Low                     3       64      64      As installed      1       As installed
+Warning, Each Engine
+6.1.3.3 Over Temp Warning,                3       63      63      As installed      1       As installed
+Each Engine
+6.1.3.4 Overspeed Warning,                3       65      65      As installed      1       As installed
+Each Engine
+6.1.3.5 Engine Controller                 3
+Failure
+6.1.4 Computer Failure                    1       79      52      Discrete(s)       4       As installed                Safety Critical Control
+                                                                                                                               Systems
+6.1.5 Electrical System
+WCAS
+6.1.5.1 Converter(s) Fail/                3                       Discrete(s)       1
+
+
+
+
+                                                                                                                                                  AFH63-1402_AMCSUP_I 21 APRIL 2008
+Malfunction
+6.1.5.2 Generator(s) Fail                 3                       Discrete(s)       1
+6.1.5.3 Inverter                          3                       Discrete(s)       1
+6 . 1 . 5 . 4 B a t t e r y Te m p /      4                       Discrete(s)       1
+Failures
+6.1.6 Fuel System WCAS
+6.1.6.1 Low Fuel Warning                  3                       Discrete(s)       4
+6.1.6.2 Fuel Pump Fail                    3                       Discrete(s)       1
+6.1.7 Secondary Power                     3                        Discrete         1
+(APU/EPU) System Fail
+                                                                                                                                                AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                           Range          Interval     Limits       Resolution             Remarks
+                                                                           (secs)
+
+
+
+
+                            Category
+
+
+
+
+                                              WG-50#
+                                       FAR#
+6.1.8 Hydraulic Pressure       1       33     30a       Discrete(s) or       2       As installed   0.5% of full   Each essential system to
+Low Warning                                            available sensor                                range             be recorded
+                                                            range
+6.1.9 Pneumatic Low            4       33     30b       Discrete(s) or       2       As installed   0.5% of full   Each essential system to
+Pressure Warning                                       available sensor                                range             be recorded
+                                                            range
+6.1.10        Crew/Cabin
+Environment WCAS
+6.1.10.1 Los s of Cabi n       1       78      71         Discrete           1
+Pressure Warning
+6.1.10.2           Oxygen      3                          Discrete           4
+Concentration Low
+6.1.10.3 Oxygen Back Up        3                          Discrete           4
+6.1.10.4 Canopy Unlock         4                          Discrete          0.5
+6.1.10.5 Seat Ejection/        3                          Discrete          0.1
+Initiation
+6.1.11 Anti Icing System
+6.1.11.1 Anti Ice Fail         4                          Discrete
+6.1.11.2 Ice Detection         3       61      61        As installed        4                                     A suitable combination of
+                                                                                                                   discretes to determine the
+                                                                                                                     status of each system
+6.1.11.3 Ice Rate              4                         As installed        1       As installed
+6.1.12 Landing Gear
+System WCAS
+
+
+
+
+                                                                                                                                                27
+                                                                                                                                                         28
+                                                                      Range           Interval   Limits         Resolution          Remarks
+                                                                                       (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                         WG-50#
+                                             FAR#
+6.1.12.1 Nose Gear Steering      3                                    Discrete           1
+Fail
+6.1.12.2 Anti Skid/Brakes        3                                    Discrete           1
+Fail/Inop
+6.1.13 Fire Detection &
+Suppression WCAS
+6.1.13.1 Fire Warning            3                                  Discrete(s)          1
+6.1.14 Exterior Panel(s)         4                                  Discrete(s)          1
+Open/Unlatched
+6.1.15 Launch/Jettison Fail      3                                  Discrete(s)          1
+6.2 Statusing
+6.2.1          Autopilot/        1           25           15         A suitable          1                                    Discretes should show
+
+
+
+
+                                                                                                                                                         AFH63-1402_AMCSUP_I 21 APRIL 2008
+Autothrottle/AFCS mode                                             combination of                                            which systems and modes
+status                                                               discretes                                                   are engaged and
+                                                                                                                              controlling the aircraft
+6.2.2 Engine Bleed Valve                 3          71        50       Discrete(s)           4   As installed                   Sufficient discretes
+Position                                                                                                                       should be recorded to
+                                                                                                                                   determine the
+                                                                                                                              configuration of engine
+                                                                                                                                    bleed valve
+6.2.3 Para Visual Display                3          81        58       As installed          1   As installed
+On
+                                                                                                                                                                   AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                      Range          Interval       Limits         Resolution              Remarks
+                                                                                      (secs)
+
+
+
+
+                               Category
+
+
+
+
+                                                          WG-50#
+                                              FAR#
+6.2.4 Multi function/engine/              2          56        47      Discrete(s)            4     As installed                   Discretes should show the
+alerts Display Format                                                                                                              display system status (e.g.
+                                                                                                                                     off, normal, fail) and the
+                                                                                                                                     identity of display pages
+                                                                                                                                  for emergency procedures,
+                                                                                                                                   checklists. Information in
+                                                                                                                                    checklists and procedures
+                                                                                                                                        need not be recorded.
+6.2.5 Pilot EFIS Display                  2          55      46a       Discrete(s)            4     As installed                   Discretes should show the
+Format                                                                                                                             display system status (e.g.
+                                                                                                                                              off, normal, fail,
+                                                                                                                                      composite, sector, plan,
+                                                                                                                                   rose, nav aids, wxr, range,
+                                                                                                                                                          copy
+6.2.6 First Officer EFIS                  2          55     46b        Discrete(s)            4     As installed                   Discretes should show the
+Display Format                                                                                                                     display system status (e.g.
+                                                                                                                                              off, normal, fail,
+                                                                                                                                      composite, sector, plan,
+                                                                                                                                   rose, nav aids, wxr, range,
+                                                                                                                                                          copy
+6.2.7 Engine Status/                                 43        35
+Parameters (see 2.3.1.4)
+6.2.7.1 Engine Pressure           3                       35a       As installed      Each        As installed     0.1% of full
+Ratio (EPR)                                                                          engine                           range
+                                                                                      each
+                                                                                     second
+
+
+
+
+                                                                                                                                                                   29
+                                                                                                                           30
+                                                           Range        Interval     Limits       Resolution     Remarks
+                                                                         (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.7.2 Fan speed (N1)           3              35b      As installed    Each      As installed   0.1% of full
+                                                                        engine                       range
+                                                                         each
+                                                                        second
+6.2.7.3 Indicated vibration      3              35c      As installed    Each      As installed   0.1% of full
+level                                                                   engine                       range
+                                                                         each
+                                                                        second
+6.2.7.4 Core Speed (N2)          3              35d      As installed    Each      As installed   0.1% of full
+                                                                        engine                       range
+                                                                         each
+                                                                        second
+6.2.7.5    Exhaust Gas           3              35e      As installed    Each      As installed   0.1% of full
+Temperature (EGT)                                                       engine                       range
+
+
+
+
+                                                                                                                           AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                         each
+                                                                        second
+6.2.7.6 Fuel Flow                3              35g      As installed    Each      As installed   0.1% of full
+                                                                        engine                       range
+                                                                         each
+                                                                        second
+6.2.7.7 Fuel Cutoff Lever        3              35h      As installed    Each      As installed   0.1% of full
+Position                                                                engine                       range
+                                                                         each
+                                                                        second
+6.2.7.8 Oil Pressure             3                       As installed
+6.2.7.9 Oil Temperature          3                       As installed
+6.2.7.10 Torque                  3                       As installed
+                                                                                                                                                                AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                        Range           Interval      Limits         Resolution            Remarks
+                                                                                         (secs)
+
+
+
+
+                                        Category
+
+
+
+
+                                                          WG-50#
+                                                   FAR#
+6 . 2 . 7 . 11 Tu r b i n e I n l e t      3                         As installed
+Temperature
+6.2.7.12 Chip Lights                       3                         As installed
+6.2.7.13 Engine Stall                      3                         As installed
+6.2.7.14 Fuel Pressure                     3                         As installed
+6.2.8 Navigation System
+Status
+6 . 2 . 8 . 1 Ve r t i c a l B e a m       1       28      21
+Deviation
+6.2.8.1.1               ILS/GPS          1a               21a       ± 0.22 DDM or          1       As installed. ±   0.3% of full   For autoland/category 3
+Glidepath                                                           available sensor                    3%              range       operations, each system
+                                                                   range as installed              recommended                      should be recorded but
+                                                                                                                                    arranged so that at least
+                                                                                                                                      one is recorded each
+                                                                                                                                             second.
+6.2.8.1.2 MLS Elevation                  1b               21b        +0.9 to +30           1       As installed. ±   0.3% of full   For autoland/category 3
+                                                                      degrees                           3%              range       operations, each system
+                                                                                                   recommended                      should be recorded but
+                                                                                                                                    arranged so that at least
+                                                                                                                                      one is recorded each
+                                                                                                                                             second.
+6.2.8.2 Horizontal Beam                    1       27      22
+Deviation
+
+
+
+
+                                                                                                                                                                31
+                                                                                                                                                       32
+                                                              Range           Interval      Limits         Resolution             Remarks
+                                                                               (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.8.2.1 ILS/GPS Localizer    1a               22a       ± 0.22 DDM or          1       As installed. ±   0.3% of full    For autoland/category 3
+                                                          available sensor                    3%              range        operations, each system
+                                                         range as installed              recommended                       should be recorded but
+                                                                                                                           arranged so that at least
+                                                                                                                             one is recorded each
+                                                                                                                                    second.
+6.2.8.2.2 MLS Azimuth          1b               22b        ± 62 degrees          1       As installed. ±   0.3% of full    For autoland/category 3
+                                                                                              3%              range        operations, each system
+                                                                                         recommended                       should be recorded but
+                                                                                                                           arranged so that at least
+                                                                                                                             one is recorded each
+                                                                                                                                    second.
+6.2.8.2.3 TACAN (Channel,        3
+Bearing, Range)
+
+
+
+
+                                                                                                                                                       AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.2.8.3 Primary Navigation       1       60      60        As installed          4        As installed                    A suitable combination of
+System Reference (ex: GPS,                                                                                                discretes to determine the
+INS, VOR/DME, MLS,                                                                                                           Primary Navigation
+Loran C, Localizer                                                                                                        System reference if more
+Glideslope)                                                                                                                   than one system is
+                                                                                                                                   available
+6.2.8.4 Marker Beacon            1       29      23         Discrete(s)          1                                           A single discrete is
+Passage                                                                                                                   acceptable for all markers
+6.2.8.5 DME 1 and 2              1       45      26         0 200 NM             4        As installed        1 NM
+Distance
+6.2.9 Electrical Subsystem
+Status
+                                                                                                                                   AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                    Range        Interval     Limits       Resolution   Remarks
+                                                                                  (secs)
+
+
+
+
+                                       Category
+
+
+
+
+                                                         WG-50#
+                                                  FAR#
+6.2.9.1 AC Electrical Bus                 1       74      48      Discrete(s)       4       As installed                Each bus
+Status
+6.2.9.2 DC Electrical Bus                 1       75      49      Discrete(s)       4       As installed                Each bus
+Status
+6.2.10 Fuel System Status
+6.2.10.1 Fuel Quantity
+6 . 2 . 1 0 . 1 . 1 E a c h Ta n k        1               56      As installed      4       As installed   1% of full
+Quantity                                                                                                     range
+6 . 2 . 1 0 . 1 . 2 To t a l F u e l      3                       As installed     64       As installed   1% of full
+Quantity                                                                                                     range
+6.2.10.2 Fuel Flow                        3                       As installed
+6.2.10.3 Fuel Transfer                    3                       As installed
+6.2.10.4 Fuel Boost                       3                       As installed
+6.2.10.5 Fuel Filter/Bypass               3                       As installed
+6.2.10.6 Inflight Refueling               4                       As installed
+Probe
+6.2.10.7 Inflight Refueling               4                       As installed
+Engage
+6.2.10.8 Fuel Dump Switch                 4                       As installed
+Position
+6.2.10.9 Fuel Dump Valve                  4                       As installed
+Position
+6.2.11 Hydraulic Pressure,                1       77      70      Full range        2          ± 5%         100 psi
+Each System
+
+
+
+
+                                                                                                                                   33
+                                                                                                                                               34
+                                                             Range        Interval     Limits       Resolution           Remarks
+                                                                           (secs)
+
+
+
+
+                              Category
+
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.12 APU Bleed Valve           3       76      51        Discrete(s)       4       As installed
+Position
+6.2.13 HUD Statusing
+6.2.13.1 HUD Display             4
+Parameters
+6.2.13.2 Head Up Display in      1       80      57        As installed      4       As installed
+use
+6.2.14 Cabin Pressure            4
+6.2.15 Landing System
+Status
+6.2.15.1 Air/Ground Status       1       31      27        Discrete(s)     1 (0.25
+& each landing gear WOW                                                  recommen
+as installed                                                                ded)
+
+
+
+
+                                                                                                                                               AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.2.15.2 Left and Right          1       68     34a      Maximum brake        1         ± 5%                       To determine braking
+Brake Pressure                                           system pressure                                         effort applied by pilots or
+                                                              range                                                    by autobrakes
+6.2.15.3 Parking Brake On        4                           Discrete         2
+6.2.15.4 Wheel Speed             4
+6.2.16 Strain Gauges             4                         As installed
+Table 2. Rotary Wing Aircraft Parameters.
+
+
+
+
+                                                                                                                                         AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                         Range        Interval     Limits       Resolution          Remarks
+                                                                       (secs)
+
+
+
+
+                            Category
+
+
+
+                                              WG-50#
+                                       FAR#
+1.0 Recorder, System or
+Mission Parameters
+1.1 CVR/DFDR                   1                8
+Synchronization Reference
+1.2 Microphone/                1                8      Discrete(s)       1                                      Preferably each crew
+Transmitter Keying                                                                                           member but one discrete
+                                                                                                                  acceptable for all
+                                                                                                              transmissions provided
+                                                                                                               the CVR/FDR system
+                                                                                                             complies with 1.1 of this
+                                                                                                                        table
+1.3 Data Time Tag
+reference
+1.3.1 Recorder Elapsed       1c
+Time
+1.3.2 Relative Time Count    1b                1b       0 to 4095        4       ± 0.125% per    1 second    Counter increments each
+                                                                                     hour                      4 seconds of system
+                                                                                                                    operation
+1.3.3 UTC                    1a                1a       24 hours         4       ± 0.125% per    1 second           Preferred
+                                                                                     hour
+1.4 Event Marker               1                        Discrete         1                                       Cockpit Switch
+1.5 Date                       3                        366 Days      Power On                    1 Day        UTC Time Preferred
+                                                                                                                Where Available
+1.6 Aircraft Number            3                       As Installed   Power On
+
+
+
+
+                                                                                                                                         35
+                                                                                                                                                 36
+                                                            Range            Interval       Limits        Resolution          Remarks
+                                                                              (secs)
+
+
+
+
+                            Category
+
+
+
+                                              WG-50#
+                                       FAR#
+1.7 Departure Base             4                          As Installed       Power On
+1.8 Aircraft Weight            4                          As Installed       Power On
+2.0 Aircraft Dynamics
+2.1 Velocity
+2.1.1 Indicated Airspeed       1                3       Minimum value           1            ± 5%            1 kt      Should be obtained from
+(KIAS)                                                   from installed                                                 the air data computer
+                                                       pitot static system                                                 where installed
+                                                           to 1.2 VNE
+2.1.2 Calibrated Airspeed      4                        Minimum value           1            ± 3%            1 kt      Should be obtained from
+(KCAS)                                                   from installed                                                 the air data computer
+                                                       pitot static system                                                 where installed
+                                                           to 1.2 VNE
+
+
+
+
+                                                                                                                                                 AFH63-1402_AMCSUP_I 21 APRIL 2008
+2.1.3 Groundspeed              4                          As installed          1       Data should be       1 kt
+                                                                                         obtained from
+                                                                                           the most
+                                                                                        accurate system
+2.1.4 Yaw Rate                 1               18          ±400°/Sec           0.25           ±1%           2°/Sec       An equivalent yaw
+                                                                                                                          acceleration is an
+                                                                                                                        acceptable alternative
+2.1.5 Altitude Rate (VVI)      3               34         As installed          1        As installed
+2.2 Attitude
+2.2.1 Pitch Attitude           1                6        ± 90 degrees          0.5        ± 2 degrees     0.5 degree     Accuracy will apply
+                                                                                                                         within ± 75° range
+2.2.2 Roll Attitude            1                7        ± 180 degrees         0.5        ± 2 degrees     0.5 degree
+2.3 Accelerations
+                                                                                                                                               AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                         Range        Interval       Limits        Resolution             Remarks
+                                                                       (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+2.3.1 Linear Accelerations
+2.3.1.1 Vertical/Normal         1                5      3G to +9G       0.125        ± 1% of         0.004G
+Acceleration                                                                     specified range
+                                                                                   excluding a
+                                                                                 datum error of
+                                                                                     ± 5% of
+                                                                                 specified range
+2.3.1.2 Lateral                 1               21        ± 1G          0.25        ± 1.5% of        0.004G
+Acceleration                                                                     specified range
+                                                                                    excluding
+                                                                                 datum error of
+                                                                                     ± 5% of
+                                                                                 specified range
+2.3.1.3 Longitudinal            1               20        ± 1G          0.25       ± 1.5% of         0.004G
+Acceleration                                                                     specified range
+                                                                                   excluding
+                                                                                 datum error of
+                                                                                    ± 5% of
+                                                                                 specified range
+2.3.1.4 Power of Each          1                 9      Full Range   Each engine As installed      0.1 % of full     Sufficient parameters
+Engine                       (6.2.                                   each second                       range           appropriate to the
+                              7)                                                                                   particular engine must be
+                                                                                                                    recorded to determine
+                                                                                                                     power. A margin for
+                                                                                                                      possible overspeed
+                                                                                                                      should be provided.
+
+
+
+
+                                                                                                                                               37
+                                                                                                                                                       38
+                                                           Range           Interval       Limits           Resolution              Remarks
+                                                                            (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+2.3.2 Angular
+Accelerations
+2.3.2.1 Pitch Acceleration       4
+2.3.2.2 Roll Acceleration        4
+2.3.2.3 Yaw Acceleration         4              18                                                                                  see 2.1.4
+2.4 Main Rotor Speed             1              10a       50 130%            0.5            2%          0.3% of full range
+3.0 Aircraft Environment
+3.1 Altitude
+3.1.1 Pressure Altitude          1                2 1000 to maximum           1        ± 100 ft to ±           5 ft
+                                                     certified altitude                   700 ft
+                                                    of aircraft +5000 ft
+
+
+
+
+                                                                                                                                                       AFH63-1402_AMCSUP_I 21 APRIL 2008
+3.1.2 Radio/Radar Altitude       3               22 20 ft to +2500 ft         1        ± 2 ft or ± 3% 1 ft below 500 ft,      Radio altitude can go
+                                                                                        whichever is 1 ft + 0.5% of full     negative depending on
+                                                                                       greater below range above 500           aircraft attitude and
+                                                                                      500 ft and ±5%           ft               sensor calibration
+                                                                                        above 500 ft
+                                                                                       recommended
+3.1.3 GPS Altitude               4
+3.2 Geodetic Position (Lat/      3              29d      As installed         1       Data should be      0.002 degree       Where capacity permits,
+Long)                                                                                  obtained from                           latitude/longitude
+                                                                                         the most                             resolution should be
+                                                                                      accurate system                            0.0002 degree
+                                                                                        as installed
+                                                                                                                                             AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                       Range           Interval       Limits        Resolution           Remarks
+                                                                        (secs)
+
+
+
+
+                       Category
+
+
+
+                                         WG-50#
+                                  FAR#
+3.3 Heading (Primary      1                4        0 360° and            1         ± 2 degrees     0.5 degrees   When true or magnetic
+Crew Reference)                                   discrete 'true' or                                              heading can be selected
+                                                       'mag'                                                      as the primary heading
+                                                                                                                    reference, a discrete
+                                                                                                                  indicating the selection
+                                                                                                                   must also be recorded
+3.4 Airflow
+3.4.1 WindDirection       3              29c        As installed          4       Data should be     1 degree
+                                                                                   obtained from
+                                                                                     the most
+                                                                                  accurate system
+                                                                                    as installed
+3.4.2 Wind Speed          3              29b        As installed          4       Data should be      1 knot
+                                                                                   obtained from
+                                                                                     the most
+                                                                                  accurate system
+                                                                                    as installed
+3.4.3 Drift Angle         3              29a        As installed          4       Data should be    0.1 degree
+                                                                                   obtained from
+                                                                                     the most
+                                                                                  accurate system
+                                                                                    as installed
+3.5 Temperature          1
+3.5.1 Outside Air       1b                13      50°C to +90°C or        2           ± 2°C           0.3°C
+Temperature                                        available sensor
+                                                        range
+
+
+
+
+                                                                                                                                             39
+                                                                                                                                   40
+                                                             Range          Interval       Limits        Resolution      Remarks
+                                                                             (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+3.5.2 Total Air               1a                        50°C to +90°C or       2           ± 2°C           0.3°C
+Temperature                                              available sensor
+                                                              range
+4.0 Aircraft Aerodynamic
+Configuration
+4.1 Primary Control
+Configurations
+4.1.1 Collective Pitch          1              11a         Full range         0.5        ± 3% unless      0.5% of
+Position                                                                               higher accuracy Operating Range
+                                                                                         is uniquely
+                                                                                           required
+4.1.2 Longitudinal Cyclic       1              11b         Full range         0.5        ± 3% unless      0.5% of
+
+
+
+
+                                                                                                                                   AFH63-1402_AMCSUP_I 21 APRIL 2008
+Pitch Position                                                                         higher accuracy Operating Range
+                                                                                         is uniquely
+                                                                                           required
+4.1.3 Lateral Cyclic Pitch      1              11c         Full range         0.5        ± 3% unless      0.5% of
+Position                                                                               higher accuracy Operating Range
+                                                                                         is uniquely
+                                                                                           required
+4.1.4 Tail Rotor Pitch          1              11d         Full range         0.5        ± 3% unless      0.5% of
+Position                                                                               higher accuracy Operating Range
+                                                                                         is uniquely
+                                                                                           required
+                                                                                                                                               AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                          Range        Interval       Limits        Resolution             Remarks
+                                                                        (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+4.1.5 Controllable              1              11e      Full range       0.5       ± 3% unless       0.5% of
+Stabilator Position                                                                   higher      Operating Range
+                                                                                   accuracy is
+                                                                                     uniquely
+                                                                                     required
+4.1.6 Hydraulic System          1              11f       Discrete         1
+Active
+4.2 Computed Center of          3                       As installed     64        As installed   1 % Full range
+Gravity
+4.3 Landing Gear Position       3               30      Discrete(s)       4                                          A suitable combination
+                                                                                                                      of discretes should be
+                                                                                                                    recorded to determine in
+                                                                                                                     transit, down and lock,
+                                                                                                                           up and lock
+5.0 Crew Control
+Parameters
+5.1 Primary Flight Control
+Inputs
+5.1.1 Collective Pitch          1              11a      Full Range       0.5        ± 3% unless      0.5% of
+Input                                                                             higher accuracy Operating Range
+                                                                                    is uniquely
+                                                                                      required
+
+
+
+
+                                                                                                                                               41
+                                                                                                                                                 42
+                                                            Range         Interval       Limits        Resolution            Remarks
+                                                                           (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+5.1.2 Longitudinal Cyclic        1              11b       Full Range        0.5        ± 3% unless      0.5% of
+Pitch Input                                                                          higher accuracy Operating Range
+                                                                                       is uniquely
+                                                                                         required
+5.1.3 Lateral Cyclic Pitch       1              11c       Full Range        0.5        ± 3% unless      0.5% of
+Input                                                                                     higher     Operating Range
+                                                                                       accuracy is
+                                                                                         uniquely
+                                                                                         required
+5.1.4 Tail Rotor Pitch/          1              11d       Full Range        0.5       ± 3% unless      0.5% of
+Pedal Input                                                                              higher     Operating Range
+                                                                                      accuracy is
+                                                                                        uniquely
+
+
+
+
+                                                                                                                                                 AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                        required
+5.1.5 Controllable               1              11e       Full Range        0.5       ± 3% unless      0.5% of
+Stabilator Input                                                                         higher     Operating Range
+                                                                                      accuracy is
+                                                                                        uniquely
+                                                                                        required
+5.1.6 Hydraulic System           1              11f       Discrete(s)        1
+Selected
+5.2 Rotor Brake                  3              10b         Discrete         1
+5.3 Autopilot/Autothrottle/      1                         A suitable        1                                          Discretes should show
+AFCS Engagement Status                                   combination of                                                  which systems are
+                                                           discretes                                                   engaged and controlling
+                                                                                                                             the aircraft
+                                                                                                                                        AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                        Range       Interval   Limits      Resolution              Remarks
+                                                                     (secs)
+
+
+
+
+                            Category
+
+
+
+                                              WG-50#
+                                       FAR#
+5.4 All Cockpit, Primary
+Control, Trim Input
+Positions
+5.4.1 Collective Trim          1                       Full Range      1       ± 5%     0.2% of full range When mechanical means
+Position                                                                                                   for control inputs are not
+                                                                                                           available cockpit display
+                                                                                                           trim positions should be
+                                                                                                                   recorded
+5.4.2 Longitudinal Cyclic      1                       Full Range      1       ± 5%     0.2% of full range When mechanical means
+Trim Position                                                                                              for control inputs are not
+                                                                                                           available cockpit display
+                                                                                                           trim positions should be
+                                                                                                                   recorded
+5.4.3 Lateral Cyclic Trim      1                       Full Range      1       ± 5%     0.2% of full range When mechanical means
+Position                                                                                                   for control inputs are not
+                                                                                                           available cockpit display
+                                                                                                           trim positions should be
+                                                                                                                   recorded
+5.5 Propulsion Controls
+5.5.1 Bleed Air Select         4
+5.5.2 Throttle Setting         3
+5.6 Calibration,
+Navigation, Performance,
+and Warning Settings
+
+
+
+
+                                                                                                                                        43
+                                                                                                                                             44
+                                                            Range        Interval     Limits       Resolution           Remarks
+                                                                          (secs)
+
+
+
+
+                               Category
+
+
+
+                                                 WG-50#
+                                          FAR#
+5.6.1 Selected Altitude           2                       As installed      1       As installed   Selectable       To be recorded for
+(All pilot selectable modes                                                                        resolution    aircraft where electronic
+of operation)                                                                                                        displays are fitted
+5.6.2 Pilot Selected              2                       As installed     64       As installed     1 hPa         Where practicable, a
+Barometric Setting                                                                                                sampling interval of 4
+                                                                                                                seconds is recommended.
+                                                                                                                    To be recorded for
+                                                                                                                 aircraft where electronic
+                                                                                                                    displays are fitted.
+5.6.3 First Officer Selected      2                       As installed     64       As installed     1 hPa         Where practicable, a
+Barometric Setting                                                                                                sampling interval of 4
+                                                                                                                seconds is recommended.
+                                                                                                                    To be recorded for
+
+
+
+
+                                                                                                                                             AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                                                 aircraft where electronic
+                                                                                                                    displays are fitted.
+5.6.4 Selected Decision           2                       As installed     64       As installed   Selectable       To be recorded for
+Heights (All pilot                                                                                 resolution    aircraft where electronic
+selectable modes of                                                                                                  displays are fitted
+operation)
+5.6.5 Selected Flight Path
+(All pilot selectable modes
+of operation)
+5.6.5.1 Course/DSTRK              2                       As installed      1       As installed   Selectable      To be recorded for
+                                                                                                   resolution   aircraft where electronic
+                                                                                                                    displays are fitted
+                                                                                                                                                  AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                              Range           Interval     Limits       Resolution           Remarks
+                                                                               (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+5.6.5.2 Path Angle               2                          As installed         1       As installed   Selectable       To be recorded for
+                                                                                                        resolution    aircraft where electronic
+                                                                                                                          displays are fitted
+5.6.5.3 Selected Heading         2                          As installed         1       As installed   Selectable       To be recorded for
+(All pilot selectable modes                                                                             resolution    aircraft where electronic
+of operation)                                                                                                             displays are fitted
+5.6.6 Each Navigation            1               27         Sufficient to        4       As installed                    An offset value or
+Frequency Selected                                       determine selected                                          channel counter would be
+                                                             frequency                                                     acceptable. The
+                                                                                                                     frequency to be recorded
+                                                                                                                     should be that associated
+                                                                                                                        with the information
+                                                                                                                       displayed to the pilot.
+5.6.7 Selected Mach (All         2                          As installed         1       As installed   Selectable      To be recorded for
+pilot selectable modes of                                                                               resolution   aircraft where electronic
+operation)                                                                                                               displays are fitted
+5.6.8 Selected Speed (All        2                          As installed         1       As installed   Selectable      To be recorded for
+pilot selectable modes of                                                                               resolution   aircraft where electronic
+operation)                                                                                                               displays are fitted
+5.6.9 Selected Vertical          2                          As installed         1       As installed   Selectable      To be recorded for
+Speed (All pilot selectable                                                                             resolution   aircraft where electronic
+modes of operation)                                                                                                      displays are fitted
+5.7 Subsystem Functional
+Selection
+5.7.1 De icing and/or Anti       3                           Discretes           4
+icing System Select
+
+
+
+
+                                                                                                                                                  45
+                                                                                                                                  46
+                                                          Range       Interval   Limits   Resolution          Remarks
+                                                                       (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+5.7.2 Secondary Power           3                        Discrete        1
+System (APU/EPU) Select
+5.7.3 Landing Gear Select       3               30       Discrete        4
+6.0 Warnings, Cautions,
+Advisories, Statusing
+6.1 Warnings, Cautions &        1               26      Discretes        1                                A discrete must be
+Advisories (WCAS)                                                                                       recorded for the master
+                                                                                                          warning. Each 'red'
+                                                                                                           warning should be
+                                                                                                           recorded when the
+                                                                                                       warning condition cannot
+                                                                                                       be determined from other
+                                                                                                        parameters or from the
+
+
+
+
+                                                                                                                                  AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                                                                        cockpit voice recorder.
+6.1.1 Navigation WCAS
+6.1.1.1 Ground Proximity        1                       Discrete(s)      1                              A suitable combination
+Warning System (GPWS)                                                                                   of discretes to convey
+Terrain Alerts, Cautions,                                                                                status of the system
+Warnings, Advisories, on/
+off position, Selection of
+Terrain Display Mode
+including pop up display
+status.
+                                                                                                                                            AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range        Interval     Limits       Resolution          Remarks
+                                                                          (secs)
+
+
+
+
+                               Category
+
+
+
+                                                 WG-50#
+                                          FAR#
+6.1.1.2 Traffic alerting and      1                        Discretes        1       As installed                 A suitable combination
+Collision Avoidance                                                                                             of discretes to determine
+System                                                                                                            sensitivity level and
+                                                                                                                    status of system,
+                                                                                                                   Combined Control,
+                                                                                                                  Vertical Control, Up
+                                                                                                                  Advisory and Down
+                                                                                                                        Advisory
+6.1.1.3 Windshear                 3                        Discrete         1       As installed
+Warning
+6.1.2 Flight Control
+WCAS
+6.1.2.1 AFCS Malfunction          3                        Discrete         1
+6.1.2.2 SAS/SCAS Failure          1                        Discrete         1
+6.1.2.3 Operational Stall         3                       As installed      1       As installed                 A suitable combination
+Protection, Stick Shaker/                                                                                       of discretes to determine
+Pusher activation                                                                                                       activation
+6.1.3 Propulsion WCAS             *              35d
+6.1.3.1 Vibration Warning,        3              35d      As installed      1       As installed
+Each Engine
+6.1.3.2 Oil Press Low             3              35d      As installed      1       As installed
+Warning, Each Engine
+6.1.3.3 Over Temp                 3              35d      As installed      1       As installed
+Warning, Each Engine
+
+
+
+
+                                                                                                                                            47
+                                                                                                                                                   48
+                                                            Range          Interval     Limits          Resolution             Remarks
+                                                                            (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+6.1.3.4 Overspeed               3              35d        As installed        1       As installed
+Warning, Each Engine
+6.1.4 Computer Failure          1                         Discrete(s)         4       As installed                      Safety Critical Control
+                                                                                                                               Systems
+6.1.5 Electrical System
+WCAS
+6.1.5.1 Converter(s) Fail/      3                         Discrete(s)         1
+Malfunction
+6.1.5.2 Generator(s) Fail       3                         Discrete(s)         1
+6.1.5.3 Inverter                3                         Discrete(s)         1
+6.1.5.4 Battery Temp/           4                         Discrete(s)         1
+Failures
+
+
+
+
+                                                                                                                                                   AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.1.6 Fuel System WCAS
+6.1.6.1 Low Fuel Warning        3                          Discrete           4
+6.1.6.2 Fuel Pump Fail          3                         Discrete(s)         1
+6.1.7 Secondary Power           3                          Discrete           1
+(APU/EPU) System Fail
+6.1.8 Hydraulic Pressure        1                         Discrete(s)         1                                         Each essential system to
+Low Warning                                                                                                                   be recorded
+6.1.9 Pneumatic Low             4                        Discrete(s) or       2       As installed   0.5% of full range Each essential system to
+Pressure Warning                                        available sensor                                                      be recorded
+                                                             range
+6.1.10 Crew/Cabin
+Environment WCAS
+                                                                                                                                           AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                           Range        Interval     Limits       Resolution          Remarks
+                                                                         (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+6.1.10.1 Loss of Cabin           1                        Discrete         1
+Pressure Warning
+6.1.10.2 Oxygen                  3                        Discrete         4
+Concentration Low
+6.1.10.3 Oxygen Back Up          3                        Discrete         4
+6.1.10.4 Canopy Unlock           4                        Discrete        0.5
+6.1.10.5 Seat Ejection           3                        Discrete        0.5
+6.1.11 Anti Icing System
+6.1.11.1 Anti Ice Fail           4                        Discrete         4
+6.1.11.2 Ice Detection           3               35      As installed      1       As Installed                 A suitable combination
+                                                                                                               of discretes to determine
+                                                                                                               the status of each system
+6.1.11.3 Ice Rate                4                       As installed      1       As Installed
+6.1.12 Landing Gear
+System WCAS
+6.1.12.1 Nose Gear               3                        Discrete         1
+Steering Fail
+6.1.12.2 Anti Skid/Brakes        3                        Discrete         1
+6.1.13 Fire Detection &
+Suppression WCAS
+6.1.13.1 Fire Warning            3                       Discrete(s)       1
+6.1.14 Exterior Panel(s)         4                       Discrete(s)       1
+Open/Unlatched
+6.1.15 Launch/Jettison Fail      3                        Discrete         1
+
+
+
+
+                                                                                                                                           49
+                                                                                                                                           50
+                                                           Range         Interval     Limits       Resolution          Remarks
+                                                                          (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+6.1.16 Gearbox Low Oil          1               26         Discrete         1
+Pressure Warning
+6.1.17 Rotor RPM Low            3                          Discrete         1
+6.1.18 Transmission(s) Oil      3                          Discrete         1
+Pressure
+6.1.19 Transmission Oil         3                          Discrete         1
+Bypass
+6.1.20 Intermediate             3                          Discrete         1
+Gearbox Overtemp
+6.1.21 Tail Rotor Gearbox       3                          Discrete         1
+Overtemp
+6.2 Statusing
+
+
+
+
+                                                                                                                                           AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.2.1 Autopilot/                1                         A suitable        1                                   Discretes should show
+Autothrottle/AFCS mode                                  combination of                                            which systems and
+status                                                    discretes                                             modes are engaged and
+                                                                                                                controlling the aircraft
+6.2.2 Engine Bleed Valve        3                        Discrete(s)        4       As installed                  Sufficient discretes
+Position                                                                                                         should be recorded to
+                                                                                                                     determine the
+                                                                                                                configuration of engine
+                                                                                                                      bleed valve
+6.2.3 Para Visual Display       3                        As installed       1       As installed
+On
+                                                                                                                                                    AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                        Range         Interval       Limits          Resolution               Remarks
+                                                                       (secs)
+
+
+
+
+                           Category
+
+
+
+                                             WG-50#
+                                      FAR#
+6.2.4 Multi function/         2                       Discrete(s)        4         As installed                          Discretes should show
+engine/alerts Display                                                                                                  the display system status
+Format                                                                                                                   (e.g. off, normal, fail)
+                                                                                                                           and the identity of
+                                                                                                                            display pages for
+                                                                                                                        emergency procedures,
+                                                                                                                        checklists. Information
+                                                                                                                            in checklists and
+                                                                                                                        procedures need not be
+                                                                                                                                recorded.
+6.2.5 Pilot EFIS Display      2                       Discrete(s)        4         As installed                          Discretes should show
+Format                                                                                                                 the display system status
+                                                                                                                         (e.g. off, normal, fail,
+                                                                                                                        composite, sector, plan,
+                                                                                                                          rose, nav aids, wxr,
+                                                                                                                               range, copy
+6.2.6 First Officer EFIS      2                       Discrete(s)        4         As installed                          Discretes should show
+Display Format                                                                                                         the display system status
+                                                                                                                         (e.g. off, normal, fail,
+                                                                                                                        composite, sector, plan,
+                                                                                                                          rose, nav aids, wxr,
+                                                                                                                               range, copy
+6.2.7 Engine Status/
+Parameters
+6.2.7.1 Engine Pressure       3                       As installed   Each engine   As installed   0.1% of full range
+Ratio (EPR)                                                          each second
+
+
+
+
+                                                                                                                                                    51
+                                                                                                                                    52
+                                                           Range         Interval       Limits          Resolution        Remarks
+                                                                          (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.7.2 Gas Generator            3               9c      As installed   Each engine   As installed   0.1% of full range
+Speed (NG/N1)                                                           each second
+6.2.7.3 Indicated vibration      3                       As installed   Each engine   As installed   0.1% of full range
+level                                                                   each second
+6.2.7.4 Power Turbine            3               9a      As installed   Each engine   As installed   0.1% of full range
+Speed (NP/N2)                                                           each second
+6.2.7.5 Exhaust Gas              3               31      As installed        4        As installed
+Temperature (EGT)
+6.2.7.6 Fuel Flow                3                       As installed   Each engine   As installed   0.1% of full range
+                                                                        each second
+6.2.7.7 Fuel Cutoff Lever        3                       As installed   Each engine   As installed   0.1% of full range
+Position                                                                each second
+
+
+
+
+                                                                                                                                    AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.2.7.8 Oil Pressure             3
+6.2.7.9 Oil Temperature          3
+6.2.7.10 Torque                  1               9b      Full range     Each engine   As installed   0.1% of full range
+                                                                        each second
+6.2.7.11 Turbine Inlet           3               32      As installed        4
+Temperature
+6.2.7.12 Chip Detector/          3              35b
+Lights
+6.2.7.13 Engine Stall            3
+6.2.7.14 Fuel Pressure           3
+6.2.8 Navigation System
+Status
+                                                                                                                                                        AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                            Range           Interval      Limits           Resolution              Remarks
+                                                                             (secs)
+
+
+
+
+                            Category
+
+
+
+                                              WG-50#
+                                       FAR#
+6.2.8.1 Vertical Beam          1
+Deviation
+6.2.8.1.1 ILS/GPS            1a               23a       ± 0.22 DDM or          1       As installed. ± 0.3% of full range It is not intended for both
+Glidepath                                               available sensor                    3%                               ILS and MLS data be
+                                                       range as installed              recommended                            recorded at the same
+                                                                                                                           time, only the aid in use
+                                                                                                                                   at the time.
+6.2.8.1.2 MLS Elevation      1b               23b        +0.9 to +30           1       As installed. ± 0.3% of full range It is not intended for both
+                                                          degrees                           3%                               ILS and MLS data be
+                                                                                       recommended                            recorded at the same
+                                                                                                                           time, only the aid in use
+                                                                                                                                   at the time.
+6.2.8.2 Horizontal Beam        1
+Deviation
+6.2.8.2.1 ILS/GPS            1a               24a       ± 0.22 DDM or          1       As installed. ± 0.3% of full range It is not intended for both
+Localizer                                               available sensor                    3%                               ILS and MLS data be
+                                                       range as installed              recommended                            recorded at the same
+                                                                                                                           time, only the aid in use
+                                                                                                                                   at the time.
+6.2.8.2.2 MLS Azimuth        1b               24b        ± 62 degrees          1       As installed. ± 0.3% of full range It is not intended for both
+                                                                                            3%                               ILS and MLS data be
+                                                                                       recommended                            recorded at the same
+                                                                                                                           time, only the aid in use
+                                                                                                                                   at the time.
+6.2.8.2.3 TACAN                3
+(Channel, Bearing, Range)
+
+
+
+
+                                                                                                                                                        53
+                                                                                                                                                54
+                                                          Range        Interval     Limits         Resolution              Remarks
+                                                                        (secs)
+
+
+
+
+                             Category
+
+
+
+                                               WG-50#
+                                        FAR#
+6.2.8.3 Primary Navigation      1                       As installed      4       As installed                       A suitable combination
+System Reference (ex:                                                                                               of discretes to determine
+GPS, INS, VOR/DME,                                                                                                   the Primary Navigation
+MLS, Loran C, Localizer                                                                                             System reference if more
+Glideslope)                                                                                                             than one system is
+                                                                                                                             available
+6.2.8.4 Marker Beacon           1               25       Discrete         1                                            A single discrete is
+Passage                                                                                                                  acceptable for all
+                                                                                                                             markers
+6.2.8.5 DME 1 and 2             1               28      0 200 NM          4       As installed        1 NM          A sampling interval of 64
+Distance                                                                                                              seconds is acceptable
+                                                                                                                     where other navigation
+                                                                                                                    parameters are recorded
+
+
+
+
+                                                                                                                                                AFH63-1402_AMCSUP_I 21 APRIL 2008
+6.2.9 Electrical Subsystem
+Status
+6.2.9.1 AC Electrical Bus       1                       Discrete(s)       4       As installed                              Each bus
+Status
+6.2.9.2 DC Electrical Bus       1                       Discrete(s)       4       As installed                              Each bus
+Status
+6.2.10 Fuel System Status
+6.2.10.1 Fuel Quantity                          33
+6.2.10.1.1 Each Tank            1                       As installed      4       As installed   1% of full range
+Quantity
+6.2.10.1.2 Total Fuel           3                       As installed     64       As installed   1% of full range
+Quantity
+                                                                                                                            AFH63-1402_AMCSUP_I 21 APRIL 2008
+                                                           Range        Interval     Limits        Resolution     Remarks
+                                                                         (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.10.2 Fuel Flow               3
+6.2.10.3 Fuel Transfer           3
+6.2.10.4 Fuel Boost              3
+6.2.10.5 Fuel Filter/Bypass      3
+6.2.10.6 Inflight Refueling      4
+Probe
+6.2.10.7 Inflight Refueling      4                        Discrete         1
+Engage
+6.2.11 Hydraulic Pressure,       1                       Full range        2          ± 5%           100 psi
+Each System
+6.2.12 APU Bleed Valve           3                       Discrete(s)       4       As installed
+Position
+6.2.13 HUD Statusing
+6.2.13.1 HUD Display             4
+Parameters
+6.2.13.2 Head Up Display         1                       As installed      4       As installed
+in use
+6.2.14 Main Gearbox Oil          3                       As installed      1       As installed   6.895kN/m2 (1
+Pressure                                                                                               psi)
+6.2.15 Gearbox Oil
+Temperatures
+6.2.15.1 Main Gearbox Oil        3                       As installed      2       As installed       1° C
+Temperatures
+
+
+
+
+                                                                                                                            55
+                                                                                                                                                       56
+                                                             Range          Interval      Limits        Resolution               Remarks
+                                                                             (secs)
+
+
+
+
+                              Category
+
+
+
+                                                WG-50#
+                                         FAR#
+6.2.15.2 Intermediarie           3                         As installed        2       As installed         1° C
+Gearbox Oil Temperature
+6.2.15.3 Tail Rotor              3                         As installed        2       As installed         1° C
+Gearbox Oil Temperature
+6.2.16 Cabin Pressure            4                         As installed        1       As installed
+6.2.17 Indicated Sling Load      3               19       0 200% of           0.5        ± 3% of          ± 0.5% of
+Force                                                      maximum                      maximum          maximum
+                                                          certified load               certified load   certified load
+6.2.18 Landing System
+Status
+6.2.18.1 Air/Ground Status       1                         Discrete(s)       1 (0.25
+& each landing gear WOW                                                    recommend
+
+
+
+
+                                                                                                                                                       AFH63-1402_AMCSUP_I 21 APRIL 2008
+as installed                                                                   ed)
+6.2.18.2 Left and Right          1                       Maximum brake         1           ± 5%                            To determine braking
+Brake Pressure                                           system pressure                                                 effort applied by pilots or
+                                                              range                                                             by autobrakes
+6.2.18.3 Parking Brake On        4                           Discrete          2
+AFH63-1402_AMCSUP_I 21 APRIL 2008                                                          57
+
+
+                                    LAWRENCE J. DELANEY
+                                    Assistant Secretary of the Air Force for Acquisition
+
+                                    (AMC)
+
+                                    ARTHUR J. LICHTE, General, USAF
+                                    Commander, Air Mobility Command
+58                                                      AFH63-1402_AMCSUP_I 21 APRIL 2008
+
+
+                                           Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFH 63-1402, Aircraft Information Program
+AFPD 63-14, Aircraft Information Programs
+AFI 63-1401, Aircraft Information Program
+AFI 63-1201, Assurance of Operational Safety, Suitability, and Effectiveness
+
+Abbreviations and Acronyms
+AFMC—Air Force Material Command
+AFSC—Air Force Safety Center
+AIMP—Aircraft Information Management Plan
+AIP—Aircraft Information Program
+AIWG—Aircraft Information Working Group
+ANG—Air National Guard
+NASA—National Aeronautics & Space Administration
+AFH63-1402_AMCSUP_I 21 APRIL 2008                                59
+
+
+                                       Attachment 1 (AMC)
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 33-363, Management of Records
+
+Abbreviations and Acronyms
+AF—Air Force
+AFB—Air Force Base
+AFH—Air Force Handbook
+AFMAN—Air Force Manual
+AMC—Air Mobility Command
+CVR—Cockpit Voice Recorder
+IMT—Information Management Tool
+OPR—Office of Primary Responsibility
+RDS—Records Disposition Schedule

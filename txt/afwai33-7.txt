@@ -1,0 +1,203 @@
+BY ORDER OF THE COMMANDER                                     AIR FORCE WEATHER AGENCY
+AIR FORCE WEATHER AGENCY                                                INSTRUCTION 33-7
+
+                                                                             24 OCTOBER 2013
+
+                                                               Communications and Information
+
+                                                           AUTOMATED HARDWARE AND
+                                                        SOFTWARE SYSTEM MONITORING
+
+              COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing web site at
+               http://www.e-publishing.af.mil for downloading or ordering.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: 2 SYOS/SYO                                                         Certified by: 2 WXG/CC
+                                                                           (Col David E. Bacot)
+                                                                                         Pages: 5
+Supersedes:    AFWAI 33-7,
+               1 October 2008
+
+
+This Instruction establishes responsibilities, policies, and procedures for the management of
+hardware, software, infrastructure connectivity, and administrative resources using the Enterprise
+Management (EM) Environment. Tivoli Enterprise Management System (TEMS) is the Air
+Force Weather Agency’s (AFWA) primary EM system for management, monitoring, and trouble
+detection on all network, computer hardware and software systems. This instruction applies to
+all personnel involved in resource acquisition, hardware configuration, software development,
+and system administration of HQ AFWA and 2d Weather Group (2 WXG) resources. Ensure
+that all records created as a result of processes prescribed in this publication are maintained in
+accordance with Air Force Manual (AFMAN) 33-363, Management of Records, and disposed of
+in accordance with Air Force Web RIMS Records Disposition Schedule (RDS) located at
+https://afrims.amc.af.mil/. Refer recommended changes and questions about this publication to
+the Office of Primary Responsibility (OPR) using the AF Form 847, Recommendation for
+Change of Publication; route the AF Forms 847 from the field to the appropriate functional chain
+of command.
+
+SUMMARY OF CHANGES
+
+This instruction has been revised to update office symbols.
+ 2                                                             AFWAI33-7 24 OCTOBER 2013
+
+
+1. General.
+     1.1. AFWA EM utilizes commercial off-the-shelf (COTS) products to provide a framework
+     that enables automated system, software and data error alerts to be displayed for 2d Systems
+     Operations Squadron (2 SYOS) 24 x 7 personnel in the AFWA Single Point of Operations
+     and Control (ASPOC).
+     1.2. The Tivoli Framework provides an automated method to remotely administer and
+     monitor network components and computer systems from a single point. This includes
+     hardware status and the state of software applications running on the monitored system.
+     Computer systems within the HQ AFWA and 2 WXG enterprise will use automated alerts
+     through Tivoli to the fullest extent and not establish locally developed solutions or purchase
+     other off-the-shelf enterprise monitoring tools.
+     1.3. Tivoli allows escalating levels of monitoring, control, and administration. Monitoring
+     levels are determined by the System Administrator (SA) when systems are initially installed,
+     but may be changed by submitting a Remedy ticket to the 2 SYOS/SYO EM work center.
+2. Roles and Responsibilities.
+     2.1. 2d Weather Group (2 WXG).
+        2.1.1. 2d Systems Operations Squadron (2 SYOS). Act as the center of expertise for
+        enterprise management planning, deployment, implementation, and administration of
+        Tivoli. Provide a single point of control for operations, maintenance, and responses to
+        alerts.
+        2.1.2. Operations Flight (2 SYOS/SYO). Assist all SAs, programmers, and contract
+        personnel with Tivoli requirements and provide solutions, troubleshooting, and
+        maintenance to meet EM requirements. SYO EM administrators will operate and
+        maintain all software and hardware infrastructure that support the Tivoli environments at
+        all classification levels.
+        2.1.3. System Duty Officer (SDO). In accordance with Attachment 2, provide 24 x 7
+        monitoring of Tivoli events and ensure actions are taken or notifications are made to
+        appropriate POCs and AFWA Operations Center when alerts occur.
+        2.1.4. Ensure new capabilities developed within the current architecture and
+        infrastructure provide necessary monitoring level requirements for management by Tivoli
+        (Attachment 2).
+     2.2. Strategic Plans, Requirements, and Programs Directorate (HQ AFWA/A5/8) and
+     Communications and Information Directorate (HQ AFWA/A6).
+        2.2.1. Ensure all new system planning, configurations, and acquisitions employ Tivoli
+        Enterprise Management software where possible. In order to promote interoperability
+        and minimize the total cost of ownership, all new or reengineered systems shall be based
+        on one of the core operating systems supported by Tivoli. Currently, these operating
+        systems are IBM AIX, HP Unix, Sun Solaris, Microsoft Windows, and Linux.
+        2.2.2. Ensure newly developed systems and software are designed to meet monitoring
+        level requirements for management by Tivoli (Attachment 2). In coordination with 2
+AFWAI33-7 24 OCTOBER 2013                                                                       3
+
+
+      SYOS/SYO EM, ensure Tivoli is integrated at both system and application levels on all
+      infrastructure devices.
+   2.3. All System Administrators (to include contractors). Ensure Tivoli monitors are
+   configured for key system health indicators. Implement Tivoli agents on all critical partitions
+   of their server to watch for warning and critical file disk usage. Ensure all Tivoli alert text
+   comments are kept up to date with changes in the systems and organization. System
+   administrators will submit Remedy tickets to the SYO EM work center for new or changing
+   requirements.
+   2.4. All Software Developers (to include contractors). Ensure newly developed and existing
+   software meet coding requirements for management by Tivoli Distributed Monitoring and
+   Enterprise Console. Utilize Tivoli development channels to log and monitor events when
+   testing software to ensure test events are not mingled with production events. Ensure all
+   Tivoli alert text comments are kept up to date with changes in the systems and organization.
+   2.5. All development and testing will be done on the development systems then moved to
+   production systems when approved.
+
+3. Procedures.
+   3.1. Planning. All system planning activities and documentation will address how the
+   systems will be incorporated into the AFWA EM environment and propose a monitoring
+   level (Attachment 2).        System administrators and/or application programmers, in
+   coordination with 2 SYOS/SYO EM technicians, will establish monitoring levels for systems
+   using the criteria in Attachment 2.
+   3.2. Deployment. The 2 SYOS/SYO EM work center will deploy Tivoli software and
+   provide assistance to system administrators, programmers, and contract personnel in all
+   activities.
+   3.3. Backup. The System Administrators will conduct a full back up of Tivoli
+   configurations in all security enclaves on a monthly basis.
+   3.4. Simple Network Management Protocol (SNMP).              The SNMP agent software
+   continuously monitors its device for error conditions defined in the installed Management
+   Information Base (MIB). When an error condition is detected, a trap message is
+   automatically forwarded to all devices listed in the agent’s trap-forwarding list. When
+   configuring the SNMP agent on each network device, configure the agent’s trap forwarding
+   list or trap destination list to include the network management servers host name or IP
+   address. The SNMP agent on all network devices will also be setup to respond to GET and
+   SET commands from the network management server for critical error condition and
+   performance monitoring. The SNMP agent community names / strings will be provided
+   along with a current copy of the agent’s MIB file.
+
+
+
+
+                                            LOUIS V. ZUCCARELLO, Colonel, USAF
+                                            Commander
+ 4                                                        AFWAI33-7 24 OCTOBER 2013
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 33-363, Management of Records, 1 March 2008
+Adopted Forms
+AF Form 847, Recommendation for Change of Publication
+
+Abbreviations and Acronyms
+2 SYOS—2d Systems Operations Squadron
+2 WXG—2d Weather Group
+AFWA—Air Force Weather Agency
+EM—Enterprise Management
+HQ AFWA—Headquarters Air Force Weather Agency
+HQ AFWA/A5/8—Strategic Plans, Requirements, and Programs Directorate
+HQ AFWA/A6—Communications and Information Directorate
+MIB—Management Information Base
+OPR—Office of Primary Responsibility
+SA—System Administrator
+SDO—System Duty Officer
+SNMP—Simple Network Management Protocol
+SYO—Operations Flight
+
+Terms
+Distributed Monitoring—A Tivoli application meant to enable monitoring of networked
+resources, such as hosts, applications, and processes.
+Tivoli Enterprise Console—A Tivoli application that acts as a central display for all system
+messages and notifications.
+AFWAI33-7 24 OCTOBER 2013                                                                     5
+
+
+                                        Attachment 2
+                        TIVOLI EM MONITORING LEVELS 1-3
+
+                                           LEVEL 2                        LEVEL 3
+           LEVEL 1
+                                   DEV/ADMIN (Monitored             NON-Air Force Weather
+        PRODUCTION
+                                   by user via the Tivoli web          Production, Dev
+  (24 x 7 monitoring by SDO)
+                                             page)                        or Admin
+                                                                       (No monitoring)
+ System Health Monitoring        Host Up & Down (Ping)            NONE
+ Heartbeat                       Disk space Used/Free
+ Host Up & Down (Ping)           Critical Directory Monitor
+ Disk Space Used/Free            Hardware Inventory
+ Input/Output Packets            Software Inventory
+ Application Status              Log file Monitoring
+ Critical Directory Monitor      TEC Events
+ Hardware Inventory
+ Software Inventory
+ Log file Monitoring
+ Tivoli Enterprise Console
+ (TEC) Events
+ User Administration
+ Automated Events
+ Specialized Scripts
+ Specialized Monitoring
+ All Remaining Monitors
+                               Tivoli Severity/Notification Times
+    Severity Levels                Description                    POC Notification Times
+ Critical                 Severe mission impact (no       Immediate, unless prior instructions has
+                          work around)                    been provided to the SDO
+ Warning                  Caution (possible mission       None; SDO will use this information
+                          impact if left unattended)      for situational awareness to monitor
+                                                          mission impact if conditions persist
+ Harmless                 Informational (application      None; POC may use the Tivoli
+                          starts and finishes)            webpage to monitor application events

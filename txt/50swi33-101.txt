@@ -1,0 +1,475 @@
+BY ORDER OF THE COMMANDER                         50TH SPACE WING INSTRUCTION 33-101
+
+                                                                              19 AUGUST 2010
+
+                                                             Communications and Information
+
+                                                      AFSCN COMMUNICATIONS OUTAGE
+                                                                       RESOLUTION
+
+
+
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-publishing website at
+               www.e-publishing.af.mil.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: 50 SCS/SCO                                                         Certified by: 50 SCS/CC
+Supersedes: 50 SWI 33-101, 1 April 2003                                  (Lt Col Fred H. Taylor)
+                                                                                        Pages: 13
+
+
+This publication implements Air Force Technical Manual 00-33A-1001, General
+Communications Activities Management Procedures and Practice Requirements. This
+document provides guidance for the Air Force Satellite Control Network (AFSCN) on resolving
+outage conditions. It addresses specific resolution procedures required to troubleshoot, restore,
+and properly manage the Operational Switch Replacement (OSR) that encompasses all AFSCN
+communications. It applies to all AFSCN tenant organizations, Schriever AFB (SAFB), Remote
+Tracking Stations (RTS) and other Remote Ground Facilities (RGF), AFSCN External Users
+(EXU), and all contractors tasked by this instruction, as stipulated by contract.
+Recommendation for Change of Publication; route AF IMT 847s from the field through the
+appropriate functional’s chain of command. Ensure that all records created as a result of
+processes prescribed in this publication are maintained in accordance with Air Force Manual
+(AFMAN) 33-363, Management of Records, and disposed of in accordance with Air Force
+Records Information Management System (AFRIMS) Records Disposition Schedule (RDS)
+located at https://www.my.af.mil/gcss-af61a/afrims/afrims/.
+
+SUMMARY OF CHANGES
+
+Changes incorporated into this document include: moving the second paragraph of the summary
+to the overview; removing any references to specific carrier agencies, equipment models, and
+communications types; adding the use of the Schriever Conference Bridge and direction thereof;
+adding references to 50SWI10-224, AFSCN Outage Reporting System; updating work centers
+and contact numbers; and correcting minor spelling errors and some language usage.
+ 2                                                           50SWI33-101 19 AUGUST 2010
+
+
+1. Overview.
+     1.1. The 22nd Space Operations Squadron (22 SOPS) is responsible for overall AFSCN
+     operations. The 50th Space Communications Squadron (50 SCS) is responsible for the
+     overall operations and maintenance of the AFSCN communication segment. The 50 SCS
+     will be responsible for the day-to-day operations and maintenance of the SAFB Operational
+     Control Node (OCN) as well as fault detection/fault isolation (FD/FI) of those resources.
+     The Onizuka Network Operations Flight (OAFS) (21 SOPS/DON), as delegated by the 50
+     SCS, is responsible for operations and maintenance of OAFS OCN and FD/FI of all AFSCN
+     communication outages that affects both OCNs.
+     1.2. OSR is a dynamic communication environment that uses inter-dependent and redundant
+     communications systems and links. Due to this network implementation, user coordination
+     for FD/FI and fault recovery activities between the OCNs and Remote Ground Facilities
+     (RGF) is of paramount importance. As with previous AFSCN communications systems, the
+     primary source for identifying anomalies is the user. The OSR Distributed Communications
+     Controller (DCC) will identify problems and indicate communication system problems,
+     notably failure to establish connections.
+     1.3. What may have been an appropriate action in the past can be problematic in OSR. OSR
+     network implementation has built-in redundancy and depending on the problem detected, it
+     may still be providing full operational capabilities, despite fault indications. Immediate
+     action may not always be warranted.
+2. Organizations.
+     2.1. The various agencies, facilities and work centers involved in outage resolution are
+     described in Table 2.1.
+     2.2. Many agencies and work centers coordinate efforts on shared voice nets or voice
+     conferences. Call-signs are used to help distinguish between organizations on a net. The
+     organizational descriptions in Table 2.1 include call signs used by those agencies.
+
+Table 2.1. Organizations and Call Signs.
+ Organization         Work Center                                       Call-sign
+ 50 SCS               Comm Focal Point                                  Comm Focal Point
+                      Tech Control Facility                             Schriever Tech
+                      AFSCN Maintenance                                 Schriever Maintenance
+ 21 SOPS/DON          Network Director (Comm Control)                   Comm Control
+                      Integrated Mission Operations Center (IMOC)       Dice Tech
+                      Crypto Operations (also part of IMOC)             Dice Comm
+                      AFSCN Maintenance (also part of IMOC)             Dice Maintenance
+                      AFSCN Site Administrator (also part of IMOC)      Dice Admin
+                      TCSS Voice Operations (also part of IMOC)         Voice
+ 21 SOPS/MAO          Camp Parks Communications Annex                   Park
+ 22 SOPS              AFSCN Network Crew Commander                      Crew Commander
+ 22 SOPS/CTS          Colorado Tracking Station                         Pike
+ 22 SOPS, Det 1       Vandenberg Tracking Station                       Cook
+                      Eastern Vehicle Checkout Facility                 Beach
+50SWI33-101 19 AUGUST 2010                                                                    3
+
+
+ Organization        Work Center                                        Call-sign
+ 22 SOPS, Det 2      Diego Garcia Tracking Station                      Reef
+ 22 SOPS, Det 3      Thule Tracking Station                             Pogo
+ 22 SOPS, Det 4      Hawaii Tracking Station                            Hula
+ 22 SOPS, Det 5      Guam Tracking Station                              Guam
+ OL-AE 22 SOPS       Oakhanger Telemetry and Command Station            Lion
+ 23 SOPS             New Hampshire Tracking Station                     Boss
+ SWC/XRM             Aerospace Fusion Center (AFC) & ALERT              2121
+ Navsoc Det D        SOC 77                                             Ankr
+ 6 SOPS              SOC 61 (Esoc)                                      Peak
+ SMC/TEO (Ceres)     SOC 97                                             King
+ SMC/TEOE            RTD&E Satellite Center (RSC)                       Mesa
+ NOPS                NRO Operations Squadron (NOPS)                     Rocc
+
+
+
+
+3. Coordination Procedures.
+   3.1. To ensure all actions that could affect AFSCN communications are properly
+   coordinated, there are specific coordination procedures that must be followed. These
+   coordination procedures are included in Attachment 1.
+Note: Many coordination procedures are used during the resolution of communication outages,
+but some coordination procedures will occur on a regular basis as a part of preventative
+maintenance, scheduled downtimes, and crypto operations. These coordination procedures must
+be followed to prevent any communication outages.
+   3.2. All coordination procedures follow these basic precepts:
+       3.2.1. Any action that will affect the normal operation of OSR communication
+       equipment requires prior coordination with 22 SOPS, 50 SCS, and 21 SOPS/DON.
+       3.2.2. All those involved in an OSR communication effort will meet on the OSR Tech
+       Net before taking any action.
+          3.2.2.1. Should the OSR Tech Net be unavailable, all parties will make all efforts to
+          coordinate with the applicable parties through whatever means are available.
+       3.2.3. Should any anomaly or outage condition occur during a routine crypto operation,
+       administrative change, or maintenance effort, all further actions will be suspended while
+       50 SCS and 21 SOPS/DON investigate.
+4. OSR Tech Net.
+   4.1. The OSR Tech Net is conference that facilitates coordination between agencies while
+   troubleshooting is in progress. It is established on both the SAFB Conference Bridge and on
+   the OAFS TCSS (Traffic Control Switching Set).
+       4.1.1. 50 SCS will maintain a conference dedicated to the OSR Tech Net on the SAFB
+       Conference Bridge.
+ 4                                                          50SWI33-101 19 AUGUST 2010
+
+
+        4.1.2. 21 SOPS Voice Operations will maintain a voice net dedicated to the OSR Tech
+        Net on the TCSS.
+        4.1.3. 21 SOPS Network Director (Comm Control) will maintain an active connection
+        between the dedicated TCSS voice net at OAFS and the dedicated SAFB conference for
+        the OSR Tech Net.
+     4.2. 50 SCS and 21 SOPS/DON will request AFSCN users and communication work centers
+     to join the OSR Tech Net as needed to aid troubleshooting efforts.
+     4.3. Comm Control will continuously monitor the TCSS voice net connected with the SAFB
+     Conference Bridge and will oversee and assist any coordination efforts.
+     4.4. OAFS communication work centers have direct access to the OSR Tech Net via TCSS
+     phones. When needed, Comm Control will contact the work center to have the area access
+     the OSR Tech Net.
+     4.5. The RTS communication areas can access the OSR Tech Net via the TCSS operator or
+     by dialing direct into the SAFB Conference Bridge.
+     4.6. All others agencies and work centers can access the OSR Tech Net by dialing directly
+     into the SAFB Conference Bridge at CMCL (719) 567-1117 or DSN 560-1117, and entering
+     the conference with 2666# (C-O-M-M-#), or by contacting the TCSS operator at CMCL
+     (408) 7523661 or DSN 5613661, and providing a call back number to be added to the TCSS
+     voice net.
+        4.6.1. Should Comm Control not be readily available on the OSR Tech Net, immediately
+        contact Comm Control directly at CMCL (408) 752-3331 or DSN 561-3331.
+     4.7. The TCSS operator may contact agencies and work centers to add them to the OSR
+     Tech Net upon the request of other parties already on the OSR Tech Net.
+Note: Call signs are used on the OSR Tech Net to distinguish between agencies and work
+centers communicating on the net. (see Table 2.1)
+5. Responsibilities.
+     5.1. 50th Space Communications Squadron Comm Focal Point (50 SCS CFP):
+        5.1.1. Is the focal point for all incoming troubles and outages for AFSCN
+        communications. All calls will be directed to CMCL (719) 5676517, 6518 or
+        DSN 5606517, 6518.
+        5.1.2. Gathers and tracks anomalous sortie information, outage information, and 50 SW
+        maintenance activities.
+        5.1.3. Notifies 50 SCS Tech Control Facility (TCF) and/or 21 SOPS Comm Control of
+        all OSR communication related problems, outages, and trends.
+        5.1.4. Reports AFSCN Outage Conditions IAW 50SWI10-224.
+        5.1.5. Coordinates with 22 SOPS to obtain any needed windows or downtime required to
+        perform restoration actions.
+     5.2. AFSCN Users:
+50SWI33-101 19 AUGUST 2010                                                                  5
+
+
+     5.2.1. Contact 50 SCS CFP immediately upon identification of an outage condition.
+     Failures are to be reported as soon as possible, but no later than 15 minutes after
+     occurrence or outage declaration.
+     5.2.2. Note anomalies during sorties and report them to 50 SCS CFP within 15 minutes
+     for tracking and analysis.
+  5.3. 50th Space Communication Squadron Tech Control Facility (TCF):
+     5.3.1. Monitors AFSCN communications with SAFB.
+     5.3.2. Reports outage conditions to the 50 SCS CFP.
+     5.3.3. Coordinates with Comm Control on the OSR Tech Net for any OSR
+     troubleshooting efforts.
+  5.4. 21st Space Operations Squadron Network Directors (Comm Control):
+     5.4.1. Monitors AFSCN communications from OAFS.
+     5.4.2. Reports outage conditions to the 50SCS CFP.
+     5.4.3. Coordinates with TCF on the OSR Tech Net for any OSR troubleshooting efforts.
+     5.4.4. Reports AFSCN Outage Conditions IAW 50SWI10-224.
+     5.4.5. Coordinates with 22 SOPS to obtain any needed windows or downtimes required
+     to perform restoration actions.
+  5.5. 22nd Space Operations Squadron:
+     5.5.1. Tracks AFSCN resource status for real-time scheduling.
+     5.5.2. Ensures up-to-date AFSCN resource status is available to all AFSCN elements.
+  5.6. Remote Tracking Station Communication Areas:
+     5.6.1. Contact 50 SCS CFP immediately upon identification of an comm outage
+     condition. Failures are reported as soon as possible, but no later than 15 minutes after
+     occurrence or outage declaration.
+     5.6.2. Note anomalies during sorties and report them within 15 minutes to 50 SCS CFP
+     for tracking and analysis.
+     5.6.3. Join TCF and Comm Control on the OSR Tech Net for any OSR troubleshooting
+     efforts involving that site.
+     5.6.4. Contact TCF and Comm Control prior to performing any maintenance on OSR
+     equipment or crypto updates.
+ 6                                                            50SWI33-101 19 AUGUST 2010
+
+
+6. Restoration Checkouts.
+     6.1. After restoration of any AFSCN communications, TCF and Comm Control will ensure
+     that all services have been restored to nominal levels prior to closing network outages IAW
+     50SWI10-224.
+     6.2. Prior to an outage being closed any service affected or potentially affected by a
+     communication outage should be tested to ensure nominal capability is restored.
+
+
+
+
+                                             WAYNE R. MONTEITH, Col, USAF
+                                             50 Space Wing, Commander
+50SWI33-101 19 AUGUST 2010                                                               7
+
+
+                                      Attachment 1
+        GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+Air Force Manual 33-363, Management of Records, 1 March 2008
+Air Force Technical Manual 00-33A-1001, General Communication Activities Managemnt
+Procedures and Practice Requirements, March 2010
+50 Space Wing Intruction 10-224 (50 SWI) AFSCN Outage Reporting System, 1 October 2003
+
+Abbreviations and Acronyms
+AFSCN—Air Force Satellite Control Network
+CFP—Comm Focial Point
+DCC—Distributed Communications Controller
+IAW—In Accordance With
+EXU—External Users
+RGF—Remote Ground Facilities
+OAFS—Onizuka Network Operations Flight
+OCN—Operationa Control Node
+OSR—-Operational Switch Replacement
+SAFB—Schriever Air Force Base
+SCS—Space Communications Squadron
+SOPS—Space Operaations Squadron
+TCF—Tech Control Facility
+TRS—Remote Tracking Stations
+ 8                                                          50SWI33-101 19 AUGUST 2010
+
+
+                                        Attachment 2
+                            COORDINATION PROCEDURES.
+
+A2.1. Crypto Operations. All crypto operations coordination procedures involve the following
+four agencies: 21 SOPS Network Director (Comm Control), 50 SCS Tech Control Facility
+(Schriever Tech), 21 SOPS Crypto Operations (Dice Comm), and a Remote Ground Facility
+communications area (RGF Comm).
+     A2.1.1. Additional Path Aggregate Crypto Material Changes. RGF Comm will initiate
+     this coordination procedure based on the given schedule for crypto material changes.
+        A2.1.1.1. Comm Control, Schriever Tech, RGF Comm, and Dice Comm will meet on
+        the OSR Tech Net.
+Note: Should any anomalies or outage conditions occur during the crypto material change, RGF
+Comm will inform Schriever Tech and Comm Control. Crypto material changes will be
+suspended while Schriever Tech and Comm Control investigate.
+        A2.1.1.2. RGF Comm will request Schriever Tech and/or Comm Control coordinate the
+        release of any connections mapped over the additional path aggregate. Once connections
+        have been released, Schriever Tech and/or Comm Control will inform RGF Comm that
+        they may proceed.
+        A2.1.1.3. RGF Comm will coordinate with Schriever Tech and Dice Comm the required
+        crypto material change as per local procedures.
+        A2.1.1.4. RGF Comm will notify Schriever Tech and/or Comm Control when the crypto
+        material change has been accomplished successfully.
+        A2.1.1.5. Schriever Tech and/or Comm Control will coordinate the restoration of any
+        required connections that were dropped earlier.
+     A2.1.2. Secure Voice Crypto Material Changes. A RGF will initiate this coordination
+     procedure based on the given schedule for crypto material changes.
+        A2.1.2.1. Comm Control, Schriever Tech, RGF Comm, and Dice Comm will meet on
+        the OSR Tech Net.
+Note: Should any anomalies or outage conditions occur during the crypto material change, RGF
+Comm will inform Schriever Tech and Comm Control. Crypto material changes will be
+suspended while Schriever Tech and Comm Control investigate.
+        A2.1.2.2. RGF Comm will request Schriever Tech and/or Comm Control coordinate the
+        restoration of the DRSN connections should they be down. Once connections have been
+        restored, Schriever Tech and/or Comm Control will inform RGF Comm that they may
+        proceed.
+        A2.1.2.3. RGF Comm will coordinate with Schriever Tech and Dice Comm the required
+        crypto material change as per local procedures.
+        A2.1.2.4. RGF Comm will notify Schriever Tech and/or Comm Control when the crypto
+        material change has been accomplished successfully.
+50SWI33-101 19 AUGUST 2010                                                                    9
+
+
+       A2.1.2.5. Schriever Tech and/or Comm Control will coordinate restoral of secure voice
+       connections that were dropped for the crypto material change, if required.
+   A2.1.3. Crypto Variable Changes. RGF Comm will initiate this coordination procedures
+   based on the given schedule for crypto variable changes.
+Note: Should any anomalies or outage conditions occur during the crypto variable changes,
+Comm Control, Schriever Tech, RGF Comm, and Dice Comm will meet on the OSR Tech Net.
+Crypto variable changes will be suspended while Schriever Tech and Comm Control investigate.
+       A2.1.3.1. RGF Comm will contact Schriever Tech and/or Dice Comm direct to
+       coordinate crypto variable changes.
+   A2.1.4. Fastlane Virtual Communications Re-initialization. Schriever Tech and Comm
+   Control will initiate this coordination procedure based on a given outage condition. Should a
+   routine maintenance action require a virtual path re-initialization to take place, Schriever
+   Tech and Comm Control will be contacted to coordinate.
+Note: Any work center discovering a virtual path outage will immediately notify Schriever
+Tech and Comm Control. Schriever Tech and Comm Control will investigate and direct further
+action.
+       A2.1.4.1. Comm Control, Schriever Tech, RGF Comm and Dice Comm will meet on the
+       OSR Tech Net.
+       A2.1.4.2. Schriever Tech and Comm Control will ensure the virtual path is free of any
+       traffic.
+       A2.1.4.3. Schriever Tech and Comm Control will direct re-initialization of the virtual
+       connection.
+       A2.1.4.4. Schriever Tech and Comm Control will ensure full capability is restored.
+   A2.1.5. Crypto Restarts. Schriever Tech and Comm Control will initiate this coordination
+   procedure based on a given outage condition. Should a routine maintenance action require a
+   crypto restart to take place, Schriever Tech and Comm Control will be contacted to
+   coordinate.
+Note: Any work center discovering a crypto down will immediately notify Schriever Tech and
+Comm TE Control. Schriever Tech and Comm Control will investigate and direct further action.
+       A2.1.5.1. Comm Control, Schriever Tech, RGF Comm and Dice Comm will meet on the
+       OSR Tech Net.
+       A2.1.5.2. Schriever Tech and Comm Control will ensure the crypto is free of any traffic.
+       A2.1.5.3. Schriever Tech and Comm Control will direct the restart of the crypto.
+       A2.1.5.4. Schriever Tech and Comm Control will ensure full capability is restored.
+   A2.1.6. Crypto Material Reload. Schriever Tech and Comm Control will initiate this
+   coordination procedure based on a given outage condition. Should a routine maintenance
+   action require a crypto material reload to take place, Schriever Tech and Comm Control will
+   be contacted to coordinate.
+ 10                                                          50SWI33-101 19 AUGUST 2010
+
+
+       A2.1.6.1. Comm Control, Schriever Tech, RGF Comm and Dice Comm will meet on the
+       OSR Tech Net.
+       A2.1.6.2. Schriever Tech and Comm Control will ensure the crypto is free of any traffic.
+       A2.1.6.3. Schriever Tech and Comm Control will direct the reload and restart of the
+       crypto.
+       A2.1.6.4. Schriever Tech and Comm Control will ensure full capability is restored.
+   A2.1.7. Crypto Replacement. Schriever Tech and Comm Control will initiate this
+   coordination procedure based on a given outage condition. Should a routine maintenance
+   action require a crypto replacement to take place, Schriever Tech and Comm Control will be
+   contacted to coordinate.
+       A2.1.7.1. Comm Control, Schriever Tech, RGF Comm and Dice Comm will meet on the
+       OSR Tech Net.
+       A2.1.7.2. Schriever Tech and Comm Control will ensure the crypto is free of any traffic.
+       A2.1.7.3. Schriever Tech and Comm Control will direct the replacement, reload and
+       restart of the crypto.
+       A2.1.7.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.2. Communication Equipment. All communication equipment coordination procedures
+involve the following agencies: 21 SOPS Network Director (Comm Control), 21 SOPS AFSCN
+Maintenance (Dice Maintenance), 50 SCS Tech Control Facility (Schriever Tech), 50 SCS
+AFSCN Maintenance (Schriever Maintenance) and a Remote Ground Facility communications
+area (RGF Comm).
+A2.3. WANIU Reboot, Power Down and Power Up, or Configuration
+Reload/Restoration. Schriever Tech and Comm Control will initiate this coordination
+procedure based on a given outage condition. Should a routine maintenance action require a
+WANIU power down or configuration change, Schriever Tech and Comm Control will be
+contacted to coordinate.
+   A2.3.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If an OAFS WANIU is affected, Dice Maintenance will join the OSR Tech Net.
+   If a SAFB WANIU is affected, Schriever Maintenance will join the OSR Tech Net.
+   A2.3.2. Schriever Tech and Comm Control will ensure the WANIU is free of any traffic.
+   A2.3.3. Schriever Tech and Comm Control will direct the reboot, power down, any
+   appropriate maintenance, and/or power up of designated WANIU equipment.
+   A2.3.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.4. CISCO Switch Power Down and Power Up or Configuration Reload/
+Restoration. Schriever Tech and Comm Control will initiate this coordination procedure based
+on a given outage condition. Should a routine maintenance action require a CISCO switch
+power down or configuration change, Schriever Tech and Comm Control will be contacted to
+coordinate.
+50SWI33-101 19 AUGUST 2010                                                                  11
+
+
+   A2.4.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If an OAFS CISCO switch is affected, Dice Maintenance will join the OSR Tech
+   Net. If a SAFB CISCO switch is affected, Schriever Tech may have their circuit actions join
+   the OSR Tech Net.
+   A2.4.2. Schriever Tech and Comm Control will ensure the CISCO Switch is free of any
+   traffic.
+   A2.4.3. Schriever Tech and Comm Control will direct the power down, appropriate
+   maintenance actions, and/or power up of affected equipment.
+   A2.4.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.5. CISCO Switch Module Hot Swap. Schriever Tech and Comm Control will initiate this
+coordination procedure based on a given outage condition. Should a routine maintenance action
+require a CISCO switch module swap, Schriever Tech and Comm Control will be contacted to
+coordinate.
+   A2.5.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If an OAFS module is being swapped, Dice Maintenance will join the OSR Tech
+   Net. If a SAFB module is being swapped, Schriever Tech may have their circuit actions join
+   the OSR Tech Net.
+   A2.5.2. Schriever Tech and Comm Control will ensure the module is free of any traffic.
+   A2.5.3. Schriever Tech and Comm Control will direct the module swap.
+   A2.5.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.6. Other communications equipment Power Down and Power Up or Configuration
+Reload/ Restoration. Schriever Tech and Comm Control will initiate this coordination
+procedure based on a given outage condition. Should a routine maintenance action require a
+power down or configuration change, Schriever Tech and Comm Control will be contacted to
+coordinate.
+   A2.6.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If an OAFS equipment is affected, Dice Maintenance will join the OSR Tech Net.
+   A2.6.2. Schriever Tech and Comm Control will ensure the communications equipment is
+   free of any traffic.
+   A2.6.3. Schriever Tech and Comm Control will direct the power down, appropriate
+   maintenance actions, and/or power up of affected equipment.
+   A2.6.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.7. Other communications equipment Card Reset. Schriever Tech and Comm Control will
+initiate this coordination procedure based on a given outage condition. Should a routine
+maintenance action require a card reset, Schriever Tech and Comm Control will be contacted to
+coordinate.
+   A2.7.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If an OAFS card is affected, Dice Maintenance will join the OSR Tech Net.
+   A2.7.2. Schriever Tech and Comm Control will ensure the card is free of any traffic.
+ 12                                                          50SWI33-101 19 AUGUST 2010
+
+
+   A2.7.3. Schriever Tech and Comm Control will direct the card reset.
+   A2.7.4. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.8. Path Procedures. All path procedures involve the following AFSCN agencies: 21 SOPS
+Network Director (Comm Control), 21 SOPS Integrated Mission Operations Center (Dice Tech)
+and 50 SCS Tech Control Facility (Schriever Tech) and any appropriate carrier agency for the
+communications path.
+A2.9. Virtual Communications Testing or Downtime. Schriever Tech and Comm Control
+will initiate this coordination procedure based on a given outage condition or scheduled carrier
+agency downtime. Schriever Tech and Comm Control do this to prevent AFSCN traffic from
+routing over the virtual communications given over to the carrier agency for testing during an
+outage or for scheduled maintenance.
+   A2.9.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net. If OAFS virtual communications is affected, Dice Tech will join the OSR Tech
+   Net.
+   A2.9.2. Schriever Tech and Comm Control will ensure the virtual communications is free of
+   traffic.
+   A2.9.3. Schriever Tech and Comm Control will direct the shutdown of the virtual interface
+   to prevent any new traffic.
+   A2.9.4. Schriever Tech and Comm Control will contact the carrier agency to proceed with
+   testing or downtime.
+   A2.9.5. Schriever Tech and Comm Control will direct the restoration of the virtual interface
+   upon return of service from the carrier agency.
+   A2.9.6. Schriever Tech and Comm Control will ensure full capability is restored.
+A2.10. Serial Communications Testing or Downtime. Schriever Tech and Comm Control
+will initiate this coordination procedure based on a given outage condition or scheduled
+downtime. Schriever Tech and Comm Control do this to prevent AFSCN traffic from routing
+over the serial communications given over to the carrier agency for testing during an outage or
+for scheduled maintenance.
+   A2.10.1. Comm Control, affected RGF Comm(s), and Schriever Tech will meet on the OSR
+   Tech Net.
+   A2.10.2. Schriever Tech and Comm Control will ensure the serial communications is free of
+   traffic.
+   A2.10.3. Schriever Tech and Comm Control will contact the carrier agency to proceed with
+   testing or downtime.
+   A2.10.4. Schriever Tech and Comm Control will ensure full capability is restored upon
+   return of service from the carrier agency.
+A2.11. Inter-nodal Communications Testing or Downtime. Schriever Tech and Comm
+Control will initiate this coordination procedure based on a given outage condition or scheduled
+carrier agency downtime. Schriever Tech and Comm Control do this to prevent AFSCN traffic
+50SWI33-101 19 AUGUST 2010                                                                   13
+
+
+from routing over inter-nodal communications given over to the carrier agency for testing during
+an outage or for scheduled maintenance.
+   A2.11.1. Comm Control, Dice Tech and Schriever Tech will meet on the OSR Tech Net.
+   A2.11.2. Schriever Tech and Comm Control will ensure inter-nodal communication is free
+   of traffic.
+   A2.11.3. Schriever Tech and Comm Control will direct the shutdown of both inter-nodal
+   communication interfaces to prevent any new traffic.
+   A2.11.4. Schriever Tech and Comm Control will contact the carrier agency to proceed with
+   testing or their downtime.
+   A2.11.5. Schriever Tech and Comm Control will direct the restoration of the interface upon
+   return of service from the carrier agency.
+   A2.11.6. Schriever Tech and Comm Control will ensure full capability is restored.

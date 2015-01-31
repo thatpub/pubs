@@ -1,0 +1,522 @@
+BY ORDER OF THE COMMANDER                                       AIR MOBILITY COMMAND
+AIR MOBILITY COMMAND                                                 INSTRUCTION 33-103
+
+                                                                           20 OCTOBER 2011
+
+                                                            Communications and Information
+
+                                                               HFGCS TRAFFIC ANALYSIS
+                                                                         PROCEDURES
+
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-Publishing.af.mil for downloading or ordering.
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: HQ AMC/A6OC                                                   Certified by: HQ AMC/A6O
+                                                                              (Col Arthur Price)
+                                                                                      Pages: 14
+
+
+This docume nt is new and must be completely reviewed. This Instruction is to describe the
+concept and entire process of HFGCS traffic analysis and the methods used to conduct it. It
+implements Air Force Policy Directive (AFPD) 33-1, Information Resources Management. The
+procedures identified throughout this instruction will be used unless advised by a competent
+authority to do otherwise. Compliance with this instruction is mandatory. This instruction does
+not apply to Air National Guard or Air Force Reserve units; it only applies to active duty AMC
+units, personnel, and equipment. Ensure that all records created as a result of processes
+prescribed in this publication are maintained in accordance with (IAW) AFMAN 33-363,
+Management of Records, and disposed of IAW the Air Force Records Information Management
+System (AFRIMS) Records Disposition Schedule located at https://www.my.af.mil/gcss-
+af61a/afrims/afrims/rims.cfm.     Refer recommended changes and questions about this
+publication to the Office of Primary Responsibility using AF Form 847, Recommendation for
+Change of Publication. Route AF Form 847 from the field through the appropriate functional‟s
+chain of command. See Attachment 1 for a glossary of references and supporting information.
+ 2                                                             AMCI33-103 20 OCTOBER 2011
+
+
+
+                                            Chapter 1
+
+                            TRAFFIC ANALYSIS PROCEDURES
+
+1.1. Overview. The purpose of traffic analysis is to provide a detailed snapshot of all High
+Frequency (HF) transmitted messages, Automatic Link Establishment (ALE) links, and phone
+patches (ZAF). All Emergency Action Messages (EAM), aircraft (ACFT) advisories (FOX),
+ZAFs, each time an ACFT type is supported, and ALE links, preprogrammed (PREPRO) ZAFs,
+and Automatic Message Display (AMD) directly dialed ZAFs are totaled for each HF Global
+Communications System (HFGCS) global station (STN). This data enables leadership, users,
+potential users, and other agencies to acquire and maintain Situational Awareness (SA) of the
+type and volume of support we provide to our users.
+     1.1.1. This data is compiled at the end of each radio day (RADAY; 0001Z-2400Z).
+     1.1.2. The entire traffic analysis must be complete prior to the end of the local duty day
+     (2400L). Otherwise, a system administrator must change the Operating System‟s (OS) date
+     to that of the specific RADAY in which traffic analysis is being co nducted.
+1.2. Roles and Responsibilities.
+     1.2.1. HFGCS Master Net Control Station (MNCS): The HFGCS NCS that has OPCON,
+     for the RADAY that traffic analysis is being conducted for, is responsible for performing
+     traffic analysis as described within paragraph 1.3. At the end of the RADAY, the MNCS
+     will collect the following information for the previous RADAY:
+        1.2.1.1. ALE Data. Tally all ALE data for each global STN:
+            1.2.1.1.1. Total of links with all ground STNs and other global STNs combined.
+            1.2.1.1.2. Total of links with only other global STNs.
+            1.2.1.1.3. Total of links with ACFT.
+            1.2.1.1.4. Total of PREPRO ZAF‟s (A.K.A. ALE Phone Patches).
+            1.2.1.1.5. Total of AMD directly dialed ZAF‟s.
+            1.2.1.1.6. Total of operator-assisted ALE ZAF‟s.
+            1.2.1.1.7. Tally all links to all STNs combined, from each of the following ACFT:
+               1.2.1.1.7.1. C-5
+               1.2.1.1.7.2. C-9
+               1.2.1.1.7.3. C-17
+               1.2.1.1.7.4. C-141
+               1.2.1.1.7.5. KC-10
+               1.2.1.1.7.6. KC-135
+               1.2.1.1.7.7. SAM
+AMCI33-103 20 OCTOBER 2011                                                                   3
+
+
+      1.2.1.2. ZAF total of each STN. Tally all non-ALE ZAF‟s, for each global STN, that
+      began within the RADAY for which traffic analysis is being conducted for.
+      1.2.1.3. FOX’s. Tally all FOX‟s for the entire RADAY.
+      1.2.1.4. EAM’s. Tally all EAM‟s for the entire RADAY.
+      1.2.1.5. ZAF total of entire HFGCS system. Tally all non-ALE ZAF‟s, of all the
+      global STNs combined, for the entire RADAY.
+      1.2.1.6. OEF/OIF traffic from JDG. Tally the total of FOX‟s, ZAF‟s, and all radio
+      contacts (CTC), individually, for the Diego Garcia global STN.
+      1.2.1.7. EAM & FOX totals in 3-hour increments. Tally the total of EAM‟s and
+      FOX‟s, separately, for the following Zulu (Z) time periods.
+          1.2.1.7.1. 0000Z-0259Z
+          1.2.1.7.2. 0300Z-0559Z
+          1.2.1.7.3. 0600Z-0859Z
+          1.2.1.7.4. 0900Z-1159Z
+          1.2.1.7.5. 1200Z-1459Z
+          1.2.1.7.6. 1500Z-1759Z
+          1.2.1.7.7. 1800Z-2059Z
+          1.2.1.7.8. 2100Z-2359Z
+      1.2.1.8. Mission support. Tally the total number of missions supported for each user
+      (e.g. count the amount of P-1 Mystic Star missions supported, AFSPC missions, Navy
+      missions, and the total number of instances that HF data support was provided to a user)
+   1.2.2. HFGCS Network Control Station: The control station that is not the MNCS, for the
+   RADAY that traffic analysis is being conducted for, is responsible for relaying the
+   information pertaining to the stations they are in charge of no later than (NLT) within the
+   first hour of the new RADAY (NLT 0059Z) to the NCS that is performing traffic analysis.
+   The contact information for both HFGCS control stations is located on the HFGCS CoP site.
+   Go to https://www.my.af.mil/afknprod/community/views/home.aspx?Filter=OO-SC-
+   MC-15. Once logged into the HFGCS CoP open the “Org Charts/Station contact list”
+   folder.
+1.3. Performing Traffic Analysis. Note: Traffic analysis must be complete prior to the end
+of the NCS’s local duty day (2400L). Otherwise, a system administrator must change the
+OS’s date to that of the specific RADAY in which traffic analysis is being conducted.
+   1.3.1. Begin traffic analysis immediately after the RADAY has ended. Follow the
+   instructions in all subparagraphs and gather the data mentioned in paragraphs 1.1 & 1.2.1 in
+   order to complete the Traffic Analysis Worksheet and the Metrics spreadsheet:
+      1.3.1.1. Collect all HF Radio Facility Contact and Phone Patch Records, AF Form 3655,
+      used for the previous RADAY.
+4                                                        AMCI33-103 20 OCTOBER 2011
+
+
+    1.3.1.2. Collect all EAMs printed from the Strategic Automated Co mmand and Control
+    System (SACCS) or manually typed or written on an Emergency Action Message, AF
+    IMT 3654, processed for the previous RADAY.
+    1.3.1.3. Collect all HF Radio Facility Foxtrot Message Blanks, AF Form 3656, processed
+    for the previous RADAY.
+    1.3.1.4. Collect all activity logs, from all global stations, for the previous RADAY.
+    Acquire these activity logs by performing the following functions:
+       1.3.1.4.1. Retrieve them from the log file server (NOTE: Some log files‟ upload to
+       the file server are delayed up to 30-45 minutes; Waiting to download the files until
+       0045Z, may reduce troubleshooting efforts.):
+           1.3.1.4.1.1. Using a Non-secured Internet Protocol Router Network (NIPRNET)
+           Government Information System (GIS) with access to the location in which the
+           activity logs and other traffic analysis files are stored on, open a web browser and
+           go to the following Universal Resource Locator (URL) address:
+              1.3.1.4.1.1.1. PRIMARY: https://logfiles1.hfgcs.amc.af.mil/logfiles
+              1.3.1.4.1.1.2. ALTERNATE: https://logfiles2.hfgcs.amc.af.mil/logfiles
+              1.3.1.4.1.1.3. If a message is displayed saying “There is a problem with this
+              website's security certificate.”, select the option that says “Continue to this
+              website (not recommended).”.
+              1.3.1.4.1.1.4. If a message is displayed saying “The current webpage is trying
+              to open a site in your Trused Sites list. Do you want to allow this?” Click
+              “Yes”.
+           1.3.1.4.1.2. A dialog box will eventually appear. Enter the following information
+           into their correlating fields:
+              1.3.1.4.1.2.1. USER NAME: HFGCS\user.name
+                1.3.1.4.1.2.1.1. Replace “user.name” with your HFGCS domain user id
+                (usually, firstname.lastname). Ensure after the acronym „HFGCS‟, a
+                backslash “\”is used, not a forward slash “/”.
+              1.3.1.4.1.2.2. PASSWORD: enter your HFGCS domain password
+           1.3.1.4.1.3. Once logged on, select your desired STN. NOTE: IKF, NCS,
+           NCS1, NCS2, WEBCALL1, and WEBCALL2 DO NOT apply to traffic analysis.
+           1.3.1.4.1.4. In the STN‟s log file directory, download the ZIP file
+           (MM_DD_YY.ZIP) that has the name that corresponds to the RADAY in which
+           traffic analysis is being conducted for. Note: For instructions on how to
+           download a file please consult your OS‟s or other software manuals. Or, seek
+           guidance from your Communications Focal Point (CFP; AKA the „Help Desk‟).
+           This is the same on how to use any software you may use to handle compressed
+           files (e.g. ZIP files).
+           1.3.1.4.1.5. Open the ZIP file.
+AMCI33-103 20 OCTOBER 2011                                                                    5
+
+
+           1.3.1.4.1.6. When viewing the contents of the ZIP file, select the activity lo g with
+           the name that correlates to the correct RADAY (MM_DD_YY.act), indicated by
+           the file name ending in „.act‟. You may have to view the properties of each file to
+           distinguish the difference between the files. The keywords you are looking for
+           are „file type; ACT file‟. NOTE: MAKE SURE YOU SELECT THE
+           ACTIVITY LOG THAT HAS THE FILE NAME THAT CORRESPONDS
+           TO THE RELEVEANT RADAY.
+              1.3.1.4.1.6.1. To enable viewing all file extensions in Microsoft (MS)
+              Windows, open the control panel, open „Folder Options‟, select the „View‟
+              tab, uncheck „Hide extensions for known file types‟, uncheck „Remember
+              each folder‟s view settings‟, click „Apply‟, and then click „Ok‟.
+           1.3.1.4.1.7. Extract the ACT file to its STN‟s folder. Normally, this is
+           C:\STATIONS\XXX , where XXX is the correlating STN‟s ALE address. (e.g.
+           Elmendorf global STN‟s ALE address is AED). NOTE: THIS LOCATION
+           CAN ONLY BE CHANGED BY EDITING THE SOURCE CODE (SEE
+           CHAPTER 2). To see a list of ALE addresses go to paragraph 1.3.1.6.1
+           1.3.1.4.1.8. Return to the „Parent Directory‟ and repeat the tasks in paragraphs
+           1.3.1.4.1.3. through 1.3.1.4.1.7. for the remaining STN‟s. Note: It may be
+           necessary to leave the browser open and logged into the log file server, in order to
+           aid in troubleshooting.
+           1.3.1.4.1.9. IF AN ACT FILE IS MISSING, DO NOT PUT ANOTHER
+           STN’S IN ITS PLACE OR CREATE A FICTICIOUS ACT FILE IN ITS
+           PLACE, EVER. If a log is missing, complete the following:
+              1.3.1.4.1.9.1. File an Incident Report (IR) with maintenance personnel.
+              1.3.1.4.1.9.2. Follow the instructions in paragraph 1.3.1.4.2. or 1.3.1.4.3.
+        1.3.1.4.2. Use the CCMS‟s „file maintenance‟ capability to backup the desired
+        activity log:
+           1.3.1.4.2.1. Acquire access to CCMS located on „Any Console‟ and connect to
+           „Any Station‟, regardless of which STN‟s log file you are seeking.
+           1.3.1.4.2.2. In the menu bar, select „Sys Mgmt‟, select „File Maintenance‟ sub-
+           menu, and then select „Activity‟. A dialog box titled „Activity Log File
+           Maintenance‟ will appear.
+           1.3.1.4.2.3. In the „Location‟ field, select the desired STN. Wait for the CCMS
+           to connect to the STN‟s database and retrieve the list of stored ACT files.
+           1.3.1.4.2.4. In the „System Files‟ field, select the ACT file that has the name that
+           corresponds with the RADAY in which traffic analysis is being conducted for
+           (MM_DD_YY.ACT).
+           1.3.1.4.2.5. In the „Backup Disk‟ field, select the „A: (ZIP)‟ radio button.
+           1.3.1.4.2.6. Confirm that there is a blank formatted floppy disk inserted into the
+           floppy drive.
+6                                                     AMCI33-103 20 OCTOBER 2011
+
+
+      1.3.1.4.2.7. Click the „Backup‟ button. A dialog box titled „File Backup Check‟
+      should appear. Click the „Ok‟ button in this box.
+      1.3.1.4.2.8. View the contents of the compressed ZIP file („filename‟.ZIP),
+      located on the floppy disk, and confirm that the correct ACT file was successfully
+      backed up. Repeat the instructions provided in paragraphs 1.3.1.4.2.1. through
+      1.3.1.4.2.8. for all remaining STNs that were missing the necessary ACT file.
+      1.3.1.4.2.9. Using the same NIPRNET GIS mentioned in paragraph 2.1.1.2,
+      extract the ACT file(s) from the ZIP file(s) to the corresponding STN(s) folder(s),
+      as described in paragraph 2.1.1.2.
+         1.3.1.4.2.9.1. If that GIS does not have a properly functioning floppy drive,
+         use another GIS to E-mail the ACT file(s) to a mailbox that can be accessed
+         from the GIS that is being used to conduct traffic analysis. Note: Some
+         government Exchange servers will not permit ZIP files to be sent or received.
+    1.3.1.4.3. IN THE EVENT THE CCMS’s FILE MAINTENANCE
+    CAPABILITY IS NOT FUNCTIONING PROPERLY, manually locate and save
+    the log files by performing the following tasks:
+      1.3.1.4.3.1. Acquire access to CCMS located on „Any Console‟ and connect to
+      „Any Station‟, regardless of which STN‟s log file you are seeking.
+      1.3.1.4.3.2. In the menu bar, select „Sys Mgmt‟, select „Reports‟ sub-menu, and
+      then select „Activity Log‟.
+      1.3.1.4.3.3. In the „Activity Log Files Report‟ dialog box, select the desired STN
+      in the „Location:‟ field, select the desired activity log (MM_DD_YY.act) in the
+      „System Files‟ field, and then click view.
+      1.3.1.4.3.4. Allow the system time to retrieve the log. When the log opens, save
+      it to the desktop, using the „file-save-as‟ function. All efforts must be made to
+      ensure you do not save the file as a Word or notepad document, do not c hange the
+      file extension (file name ending in „.ACT‟), and do not change the contents of the
+      file in any way.
+         1.3.1.4.3.4.1. The alternative way to save the file is by using the following
+         method:
+           1.3.1.4.3.4.1.1. Minimize everything to the desktop (a keyboard shortcut is
+           [windows key] + D). You should now be able to view the contents of the
+           desktop.
+           1.3.1.4.3.4.1.2. Open „My Computer‟ in order to view all storage devices.
+           1.3.1.4.3.4.1.3. Open the „Apps‟ drive. This should be the „D:\‟ drive.
+           1.3.1.4.3.4.1.4. Open the „temp‟ folder.
+           1.3.1.4.3.4.1.5. „Right-click‟ the proper ACT file and then select „copy‟
+           from the context menu. Note: If you cannot view the ACT file, in addition
+           to following the directions in paragraph 1.3.1.4.1.6.1 Select the radio button
+           to „Show hidden files and folders‟ and uncheck „Hide protected operating
+AMCI33-103 20 OCTOBER 2011                                                                     7
+
+
+                  system files‟.
+                  1.3.1.4.3.4.1.6. Return to the desktop, „right-click‟ in an empty area, and
+                  select „paste‟ from the context menu.
+                  1.3.1.4.3.4.1.7. Once the ACT file has finished copying, „right-click‟ on it,
+                  select the „Winzip‟ sub-menu from the context menu, and then select “add
+                  to:” „MM_DD_YY.ZIP‟. Wait for file compression to complete. There
+                  should now be a new file on the desktop with the same name as the ACT
+                  file, except it ends in „.ZIP‟. Note: You must attain proper authorization
+                  (e.g. HFGCS System Manager and/or the Designated Approval
+                  Authority (DAA)) prior to using a preapproved portable Hard Disk
+                  Drive (NOTHING with flash-based storage). If written, non-refutable,
+                  authorization is obtained, this and the next step may be skipped; then
+                  copy the ACT file to the device.
+                  1.3.1.4.3.4.1.8. Copy the ZIP file to a properly formatted floppy disk.
+                  Repeat the instructions provided in paragraphs 1.3.1.4.3.4.1.1. through
+                  1.3.1.4.3.4.1.8. for all remaining STNs that were missing the necessary ACT
+                  file.
+                  1.3.1.4.3.4.1.9. Using the same NIPRNET GIS mentioned in paragraph
+                  1.3.1.4.1.1., extract the ACT file(s) from the ZIP file(s) to the corresponding
+                  STN(s) folder(s), as described in paragraph 1.3.1.4.1.1.
+                      1.3.1.4.3.4.1.9.1. If that GIS does not have a properly functioning
+                      floppy drive, use another GIS to E-mail the ACT file(s) to a mailbox that
+                      can be accessed from the GIS that is being used to conduct traffic
+                      analysis. Note: Some government Exchange servers will not permit
+                      ZIP files to be sent or received.
+     1.3.1.5. Run the traffic analysis script file (e.g. Traffic Anal ysis.pl) or a compiled
+     executable version of the script. This will produce a spread sheet, or CSV file, named
+     „MM_DD_YY.CSV‟, which corresponds to the previous RADAY. This file will be
+     created in the directory in which the actual script or executable file is located, not where
+     shortcuts are located (e.g. if the script or executable is located in „C:\STATIONS‟ and
+     there is a shortcut to it on the desktop, the CSV file will be created in „C: \STATIONS‟).
+     Note: Count the total number of blocks of calculated data that correspond to a global
+     STN‟s ALE information. If there are more or less than 13, delete the CSV file and
+     confirm all instructions in paragraph 1.3.1.4 were followed accurately.
+        1.3.1.5.1. For details regarding the traffic analysis script (commonly referred to as
+        the „traffic analysis program‟), see chapter 2.
+        1.3.1.5.2. If the CSV file is created prior to discovering a missing ACT file, delete
+        the CSV file prior to correcting the issue and rerunning the traffic analysis script.
+        Additionally, do not run the script more than once. Otherwise, the data will be
+        appended to the bottom of the data that was created in the previous instance the script
+        was run.
+8                                                         AMCI33-103 20 OCTOBER 2011
+
+
+    1.3.1.6. Use the data from the CSV file to manually fill out the traffic analysis
+    worksheet. The ALE data is grouped by STN on the CSV file. However, sometimes an
+    unknown error will cause the name of a STN to be altered. Only the following two
+    instances should be ignored, as the calculated data is accurate.
+       1.3.1.6.1. Sometimes the name of a STN is followed by „SPR‟ on the CSV file (e.g.
+       ADWSPR). The data for that STN is still accurate and is to be used.
+       1.3.1.6.2. Sometimes the name of a STN is substituted in the place of other STNs
+       that follow the first instance of the copied STN‟s name. However, you will notice the
+       values for the calculated data will all differ from every section of data that the STN‟s
+       name was substituted for. Each block of data applies to one of the global STNs in
+       alphabetical order of their ALE address, regardless of what STN is identified as
+       the owner. (For example: ADW is the first STN, if the next block of data says it too
+       is also ADW‟s information, but the values are different, then the second block of data
+       belongs to AED. OR: If all blocks of data has ADW or ADWSPR identified as the
+       owner, but there are 13 blocks of data, all with varying calculated data, then each
+       block of data applies to one of the global STNs in alphabetical order of their ALE
+       address.) The following is the alphabetical listing of the global STNs‟ ALE
+       addresses:
+           1.3.1.6.2.1. ADW = ANDREWS
+           1.3.1.6.2.2. AED = ELMENDORF
+           1.3.1.6.2.3. CRO = CROUGHTON
+           1.3.1.6.2.4. GUA = GUAM (AKA ANDERSON)
+           1.3.1.6.2.5. HAW = ASCENSION
+           1.3.1.6.2.6. HIK = HICKAM
+           1.3.1.6.2.7. ICZ = SIGONELLA
+           1.3.1.6.2.8. JDG = DIEGO GARCIA
+           1.3.1.6.2.9. JNR = PUERTO RICO (AKA SALINAS)
+           1.3.1.6.2.10. JTY= YOKOTA
+           1.3.1.6.2.11. MCC = MCCLELLAN (AKA WEST COAST)
+           1.3.1.6.2.12. OFF = OFFUTT
+           1.3.1.6.2.13. PLA = LAJES
+    1.3.1.7. Use the filled out worksheet to aid in transcribing the data to the weekly metrics
+    and the monthly/annual metrics. Normally, this is C:\STATIONS\#METRICS\YYYY\##
+    MMM\, where „YYYY‟ is the correlating year and „## MMM‟ is the two digit month
+    followed by a space and the three letter abbreviation of the month (e.g.
+    C:\STATIONS\#METRICS\2010\06 JUN\). NOTE: THIS LOCATION CAN BE
+    CHANGED AND WAS CREATED FOR CONVIENIENCE ONLY.
+    1.3.1.8. Input the information from paragraphs 1.2.1.5. and 1.2.1.7. into the CSA power
+    point slideshow on the SIPRNET GIS.
+AMCI33-103 20 OCTOBER 2011                                                                     9
+
+
+     1.3.1.9. Properly maintain and destroy all the physical or electronic records mentioned in
+     paragraphs 1.3.1.1., 1.3.1.2., 1.3.1.3., and 1.3.1.4. in accordance with the respective file
+     plan disposition.
+     1.3.1.10. After the completion of traffic analysis for the last RADAY of the month, E-
+     mail a copy of the preceding month‟s weekly metrics and the current year-to-date
+     monthly/annual metrics to:
+        1.3.1.10.1. AFNIC.HFGCS@us.af.mil
+        1.3.1.10.2. ACCA6OWC2SB@langley.af.mil
+        1.3.1.10.3. The HFGCS Network Control Station that was not the MNCS during the
+        preceding month. See the contact information in paragraphs 1.2.2.
+ 10                                                              AMCI33-103 20 OCTOBER 2011
+
+
+                                               Chapter 2
+
+                        TRAFFIC ANALYSIS CODING AND SUPPORT
+
+2.1. Synopsis of the Traffic Analysis Coding. The traffic analysis script was developed by the
+89th Communications Squadron in 2004.
+      2.1.1. The following is needed in order for the traffic analysis script to run successfully.
+         2.1.1.1. The traffic analysis script file with the source code. The file must have the
+         correct extension („filename‟.PL).
+         2.1.1.2. The following directories created for the ACT files to be stored (Note: This
+         location can be changed as long as the new location is reflected in line 69 of the traffic
+         analysis source code):
+             2.1.1.2.1. C:\STATIONS\ADW
+             2.1.1.2.2. C:\STATIONS\AED
+             2.1.1.2.3. C:\STATIONS\CRO
+             2.1.1.2.4. C:\STATIONS\GUA
+             2.1.1.2.5. C:\STATIONS\HAW
+             2.1.1.2.6. C:\STATIONS\HIK
+             2.1.1.2.7. C:\STATIONS\ICZ
+             2.1.1.2.8. C:\STATIONS\JDG
+             2.1.1.2.9. C:\STATIONS\JNR
+             2.1.1.2.10. C:\STATIONS\JTY
+             2.1.1.2.11. C:\STATIONS\MCC
+             2.1.1.2.12. C:\STATIONS\OFF
+             2.1.1.2.13. C:\STATIONS\PLA
+         2.1.1.3. Perl programming language compiler software. However, most compiler
+         software is free and open source. Such software is prohibited IAW AFI 33-114,
+         paragraph 8.2. and requires approval from the System Administrator or Network
+         Manager servicing your organization.
+             2.1.1.3.1. The only approved software is ActivePerl. ActivePerl, version 5, a Perl
+             programming language compiler developed by ActiveState Software Inc., is
+             authorized IAW the Transitional Air Force Evaluated/Approved Products List (AF
+             E/APL).            Current     products     list     can    be       found      at
+             (https://afkm.wpafb.af.mil/ASPs/docman/DOCMain.asp?Tab=0&FolderID=OO-SC-
+             IA-01-31-14-2&Filter=OO-SC-IA-01). However, the Authority To Operate (ATO)
+             expires      MAR2011.             Refer     to      AF     E/APL        Guidance
+             (https://afkm.wpafb.af.mil/ASPs/docman/DOCMain.asp?Tab=0&FolderID=OO-
+             SC-IA-01-31-14-2&Filter=OO-SC-IA-01).
+AMCI33-103 20 OCTOBER 2011                                                                     11
+
+
+          2.1.1.3.2. All other software must first be certified and approved for use on the Air
+          Force Provisioned Portion of the Global Information Grid (AF-GIG) IAW AFI 33-
+          210, Air Force Certification And Accreditation (C&A) Program (AFCAP),
+          paragraphs 3.4.2., 3.4.3., and 3.4.3.1.
+2.2. Installation and Setup. The following simple steps are all that are necessary to be
+prepared to conduct traffic analysis:
+   2.2.1. Create the directories identified in paragraph 2.1.1.2. You can create a batch file to
+   automatically do this in the following manner (Note: This location can be changed as long
+   as the new location is reflected in line 69 of the traffic analysis source code):
+       2.2.1.1. In Windows, open the start menu, select programs, select accessories, and then
+       select Notepad.
+       2.2.1.2. Copy the text from the stations‟ activity log parent directory creation batch file
+       into the Notepad window.
+       2.2.1.3. Open the file menu, select „Save As‟, change the „Save as type‟ field to „All
+       Files‟, name the file TA-dirs.bat (this name can be changed to anything as long as the
+       extension remains as .bat).
+       2.2.1.4. Execute the batch file by double-clicking on it.
+   2.2.2. Create the traffic analysis Perl script by performing the following:
+       2.2.2.1. In Windows, open the start menu, select programs, select accessories, and then
+       select Notepad.
+       2.2.2.2. Copy the text from the traffic analysis source code into the Notepad window.
+       2.2.2.3. Open the file menu, select „Save As‟, change the „Save as type‟ field to „All
+       Files‟, name the file TFC-ANLS.pl (this name can be changed to anything as long as the
+       extension remains as .pl).
+   2.2.3. Install the Perl programming language compiler software. Refer to the manufacturer
+   for installation and other supporting documentation
+2.3. Software Support. Utilize the support provided by the manufacturer of each product used
+to comply to the standards and procedures established within any portion of this OI. For the
+mentioned products and procedures, seek support from the following:
+   2.3.1. ActivePerl: http://www.activestate.com
+   2.3.2. Microsoft Products: http://www.microsoft.com
+
+
+
+
+                                             MITCHEL H BUTIKOFER, Colonel, USAF
+                                             Director of Communications and Chief Information
+                                             Officer
+ 12                                                      AMCI33-103 20 OCTOBER 2011
+
+
+                                        Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+ACP 131 (F), Communications Instructions Operating Signals, April 2006
+AFI 33-115, Volume 1, Network Operations (NETOPS), 24 May 2006
+AFI 33-210, Air Force Certification And Accreditation Program, 23 December 2008
+Prescribed Forms
+No forms or IMT‟s prescribed by this publication
+Adopted Forms
+AF Form 847, Recommendation for Change of Publication
+
+Abbreviations and Acronyms
+ADW—Andrews Global
+ACAS—Any Console Any Station
+ACFT—Aircraft
+ACP—Allied Communications Publications
+ACS—Andrews Control Station
+ACT—Activity Log
+ADW—Andrews Global
+AED—Elmendorf Global
+AF—Air Force
+AF E/APL—Air Force Evaluated/Approved Products List
+AF—GIG — Air Force Provisioned Portion of the Global Information Grid
+AFCAP—Air Force Certification And Accreditation Program
+AFI—Air Force Instruction
+AFRIMS—Air Force Records Information Management System
+AKA—Also Known As
+ALE—Automatic Link Establishment
+AMC—Air Mobility Command
+AMD—-- Automatic Message of the Day
+ANCS—Andrew Network Control Station
+ATO—Authority To Operate
+C&A—Certification And Accreditation
+AMCI33-103 20 OCTOBER 2011                                      13
+
+
+CFP—Communications Focal Point
+Comm—Commercial
+CNCS—Centralized Net Control Station
+CTC—Contact
+DAA—Designated Approval Authority
+DSN—Defense Switched Network
+E-mail—Electronic mail
+EAM—Emergency Action Message
+FOX—Aircraft Advisory
+GFNCS—- Grand Forks Network Control Station
+GIS—Government Information System
+GUA—Guam Global (AKA Anderson)
+HAW—Ascension Global
+HF—High Frequency
+HFGCS—HF Global Communications System
+HIK—Hickam Global
+IAW—In Accordance With
+ICZ—Sigonella Global
+IR—Incident Report
+JDG—Diego Garcia Global
+JNR—Puerto Rico Global
+JTY—Yokota Global
+MCC—McClellan Global
+MS—Microsoft
+NCS—Net Control Station
+NIPRNET—Non-secured Internet Protocol Router Network
+NLT—Not Later Than
+OFF—Offutt Global
+OI—Operating Instruction
+OS—Operating System
+PLA—Lajes Global
+PREPRO—Preprogrammed telephone number for unassisted ALE ZAFs
+ 14                                                        AMCI33-103 20 OCTOBER 2011
+
+
+RADAY—Radio Day
+RDS—Records Disposition Schedule
+SA—Situational Awareness
+SACCS—Strategic Automated Command and Control System
+STN—Station
+TBD—To Be Determined
+UCMJ—Uniform Code of Military Justice
+URL—Universal Resource Locator
+Z—Zulu time (Greenwich Mean Time/ Coordinated Universal Time)
+ZAF—Phone patch
+
+Terms
+ACT file— Activity log file created by CCMS. Record of all events and actions that occur for a
+particular STN or system. The file name is followed by the extension „.ACT‟.
+CSV file— A MS Excel compatible spreadsheet file. The file name is followed by the extension
+„.CSV‟.
+RADAY— The RADAY signifies an entire day from start to finish using the Coordinated
+Universal Time (UTC) (AKA GMT and Zulu Time). RADAY begins at 0001Z and ends at
+2400Z.
+ZIP file— Compressed file containing one or more files and/or folders. The file name is
+followed by the extension „.ZIP‟.

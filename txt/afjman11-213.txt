@@ -1,0 +1,1844 @@
+BY ORDER OF THE SECRETARIES OF THE                                                  AIR FORCE JOINT MANUAL 11-213
+AIR FORCE, ARMY, AND NAVY                                                                                AR 95-11
+                                                                                                OPNAVINST 3722.8L
+                                                                                                                  26 AUGUST 1994
+
+                                                                                                                  Flying Operations
+
+                                                                                          MILITARY FLIGHT DATA
+                                                                                    TELECOMMUNICATIONS SYSTEM
+
+
+NOTICE: This publication is available digitally on the SAF/AAD WWW site at: http://afpubs.hq.af.mil.
+If you lack access, contact your Publishing Distribution Office (PDO).
+
+
+OPR: HQ AFFSA/XVA                                                                                Certified by: HQ AFFSA/CC
+       (MSgt David F. Craig, Jr.)                                                                      (Col Dennis W. Traynor)
+Supersedes AFR 55-56/AR 95-11/OPNAVINST                                                                              Pages: 53
+           3722.8K, 16 February 1993.                                                           Distribution: See Attachment 4
+
+This manual explains how to process flight data through Department of Defense (DoD) and Federal Avi-
+ation Administration (FAA) telecommunications system. It applies to all DoD locations with military
+base operations.
+SUMMARY OF CHANGES
+This revision aligns this manual with AFPD 11-2, changes the numbering format, and adds a glossary of
+abbreviations.
+
+Chapter 1— GENERAL PROCEDURES                                                                                                         4
+       1.1.   Methods of Submitting Flight Data. ..........................................................................          4
+       1.2.   Message Format (General). ........................................................................................      5
+Figure 1.1.   Common Message Address Format. ..........................................................................               5
+
+Chapter 2— DEPARTURE NOTIFICATION MESSAGES                                                                                            7
+       2.1.   Base Operations Responsibility. ................................................................................        7
+Figure 2.1.   Departure Notification Message Format. ...................................................................              7
+       2.2.   Sample VFR Departure (Flight Notification) Messages: ..........................................                         8
+       2.3.   Sample Instrument Flight Rules ................................................................................         9
+       2.4.   Sample Composite IFR, VFR, and IFR Departure Notices: ......................................                           10
+       2.5.   Other Departure Notices. ...........................................................................................   10
+
+Chapter 3— DOMESTIC IFR FLIGHT PLANS HANDLING                                                                                        11
+       3.1.   IFR Flight Plan Proposals (CONUS). ........................................................................            11
+2                                                                                          AFJMAN11-213 26 AUGUST 1994
+
+Figure 3.1.   IFR Flight Plan Format (Domestic). ..........................................................................                 11
+       3.2.   Altitude Reservations (ALTRV): ...............................................................................                15
+       3.3.   Canceling or Amending Messages. ...........................................................................                   16
+Figure 3.2.   Amendment Message Format. ...................................................................................                 17
+Figure 3.3.   Remove Strip Message Format. .................................................................................                18
+       3.4.   Error and CMs. ..........................................................................................................     19
+       3.5.   ARTCC Computer Acknowledgment Messages. ......................................................                                20
+       3.6.   ARTCC Computer Identifying Number (CID). .........................................................                            20
+       3.7.   Stereo Flight Plan. ......................................................................................................    21
+       3.8.   System Saturation. .....................................................................................................      21
+
+Chapter 4— MILITARY TRAINING ROUTES (MTR)                                                                                                   22
+       4.1.   MTR Policy. ...............................................................................................................   22
+       4.2.   Scheduling Requirements. .........................................................................................            22
+
+Chapter 5— ICAO FLIGHT PLAN HANDLING (FAAH 7110.10, CHAPTER 7,
+          SECTION 1)                                                                                                                        23
+       5.1.   ICAO IFR Flight Plans (FPL). ...................................................................................              23
+Figure 5.1.   ICAO IFR Flight Plan Format. ..................................................................................               23
+       5.2.   Stopover Flight Plans. ................................................................................................       27
+       5.3.   ICAO Departure Message. .........................................................................................             28
+Figure 5.2.   ICAO Departure Notification Message Format. ........................................................                          28
+       5.4.   ICAO Delay Message. ...............................................................................................           28
+Figure 5.3.   ICAO Delay Message Format. ...................................................................................                29
+       5.5.   ICAO Change Message. ............................................................................................             29
+Figure 5.4.   ICAO Change Message Format. ................................................................................                  30
+       5.6.   ICAO Cancellation Message. ....................................................................................               30
+Figure 5.5.   ICAO Cancellation Message Format. ........................................................................                    30
+
+Chapter 6— TRANSBORDER MESSAGES                                                                                                             31
+       6.1.   General Information. ..................................................................................................       31
+       6.2.   Canada Transborder Messages. .................................................................................                31
+       6.3.   Mexico Transborder Messages. .................................................................................                32
+AFJMAN11-213 26 AUGUST 1994                                                                                                              3
+
+Chapter 7— MISCELLANEOUS MESSAGES                                                                                                       34
+       7.1.   About This Chapter. ...................................................................................................   34
+Figure 7.1.   Flight Advisory Message Format. .............................................................................             36
+       7.2.   Equipment Outage and Circuit Interruptions. ............................................................                  36
+
+Chapter 8— OVERDUE AIRCRAFT                                                                                                             38
+       8.1.   Agency Responsibilities. ...........................................................................................      38
+       8.2.   Extended Communications Search. ...........................................................................               39
+
+Attachment 1— GLOSSARY OF ABBREVIATIONS AND ACRONYMS                                                                                    43
+
+Attachment 2— VOICE INTERPHONE PROCEDURES                                                                                               45
+
+Attachment 3— INSTRUMENT FLIGHT RULES (IFR) FLIGHT PLAN MESSAGE                                                                         47
+
+Attachment 4— DISTRIBUTION LIST                                                                                                         51
+4                                                                   AFJMAN11-213 26 AUGUST 1994
+
+                                                Chapter 1
+                                      GENERAL PROCEDURES
+
+1.1. Methods of Submitting Flight Data. There are two methods of submitting flight data into the
+national air traffic system: by automated teleprocessing and by voice. The primary method of processing
+this data is through the automated Service B telecommunications system. Service B is part of the
+National Airspace Data Interchange Network (NADIN). This network provides DoD base operations
+with the capability to send and receive flight plans and related air traffic messages between worldwide US
+military base operations, Air Route Traffic Control Centers (ARTCC), and FAA Flight Service Stations
+(FSS). At base operations where voice procedures are used, flight data is submitted by interphone direct
+to the FAA FSS. Voice procedures are specified in attachment 3. The lead DoD agency for this program
+is Headquarters Air Force Flight Standards Agency (HQ AFFSA/XVA).
+    1.1.1. Equipment Provided. Continental United States (CONUS) military base operations are
+    equipped with state-of-the-art equipment for sending and receiving air traffic messages. This equip-
+    ment is leased by the FAA and provided for DoD use. Procedures on equipment usage are found in
+    publications issued to and available at base operations. If equipment must be moved, the circum-
+    stances describing the move must be provided, in writing, to the DoD Service B Program Manager
+    (HQ AFFSA/XVA) 90 calendar days before requested move date.
+    1.1.2. System Circuitry. Military base operations are provided with a dedicated circuit (or dial
+    access) through which all messages are transmitted. Message traffic is automatically processed
+    through the FAA switching centers and distributed according to address coding. Therefore, messages
+    must be prepared according to the instructions provided in this publication. Incorrectly prepared mes-
+    sages will be rejected and the originator subsequently notified.
+    1.1.3. NADIN Switch. Two NADIN switching centers, one in Atlanta GA and one in Salt Lake City
+    UT, monitor and control the Service B system. DoD bases east of the Mississippi River and in the
+    Minneapolis ARTCC area are connected to NADIN Atlanta. Bases west of the Mississippi, except
+    those in Minneapolis ARTCC are connected to NADIN Salt Lake City. These switching centers have
+    the capability to selectively monitor any message and will reject unauthorized messages. DoD facili-
+    ties will use this communications system and equipment for authorized air traffic messages only.
+    Examples of nonacceptable materials are:
+        • Classified messages or material.
+        • Unnecessary or anonymous signals or correspondence.
+        • Personal messages. Its use for unauthorized messages may be grounds for disciplinary action.
+            Since each base is on a dedicated circuit, circuit control will immediately know the originator
+            of the transmission.
+    1.1.4. Equipment/Circuit Problems and Rerouting Traffic. When an equipment outage occurs or
+    is anticipated, the involved facility will immediately notify its ARTCC who in turn will notify the
+    appropriate NADIN switch (Atlanta NADIN 404-946-7675 or Salt Lake City NADIN 801-539-3172)
+    of the situation. If base operations personnel are unable to transmit data, they will ask an adjacent
+    facility to make the notification. NADIN will initiate action to reroute traffic to the tie-in FSS. Base
+    operations personnel will also notify the local ARTCC and contractor repair facility. The appropriate
+    800 telephone number is 1-800-336-1551 when communicating with the repair facility. Base opera-
+AFJMAN11-213 26 AUGUST 1994                                                                           5
+
+     tions personnel will report outages in excess of 24 hours to the Service B Program Manager, DSN
+     858-4779, HQ AFFSA/XVA, 1535 Command Dr, Suite D309, Andrews AFB MD 20331-7002.
+
+1.2. Message Format (General). There are several different formats used for transmitting air traffic
+control and movement messages. Although each type of message is explained in detail, certain entries are
+common to each message (figure 1.1).
+
+Figure 1.1. Common Message Address Format.
+
+
+/B
+System Authorization
+FF                                        ADW
+Precedence Indicator              Addressee(s) (3- or 8-letter Ident)
+(Control D*)           011500             KBLVYXYX
+Date Time Group (6 numbers)           Originator (8-letter ICAO)
+(Control B*) IFR WAXY74 C29 BLV ADW 1635
+                        Message Text
+* Hold down the control key and the D or B key as required for this entry. The control D and B
+characters will print on the CRT screen, but will not print on the base operations printer.
+NOTE: Self-addressing is not authorized as this action doubles the amount of data being processed
+     •   Each message will be preceded by the function "/B."
+     •   Each message will include a precedence identifier from the following list:
+
+
+Identifier            Message Type
+SS                    Messages involving safety of life and property. Re-
+                      stricted to emergency information.
+DD                    Priority operational and circuit control messages.
+FF                    Flight movement, including modification and
+                      change messages directly relating to the safe and ef-
+                      ficient operation of the aircraft.
+GG                    Flight cancellation, delay messages, and all others.
+NOTE: Routinely, base operations personnel will use precedence identifier "FF." Message acknowledg-
+ments must be the same precedence as the message being received. Each message will also contain:
+   • One or more addressees, using a three-letter identifier (Ident) for CONUS facilities or an
+      eight-letter Ident for international agencies. Do not exceed seven addressees on the message
+      address line. (69 characters including separating spaces.)
+   • Date and time group (281630) in Coordinated Universal Time (UTC). UTC is the mean solar
+      time at the meridian of Greenwich, England, used as a basis for standard time throughout the
+      world. Normally expressed in four numerals 0001 through 2400. Also called Greenwich Mean
+      Time, GMT, Greenwich civil time, universal time, Z-time, or Zulu Time.
+6                                                                    AFJMAN11-213 26 AUGUST 1994
+
+    •   Originators eight-letter ICAO identifier (KHTBYXYX).
+    •   The fifth through the eighth letters of an international ICAO identifier specify the agency or office
+        receiving or sending a message. The most frequently used and authorized are:
+          YAYX-Government Civil Aviation Authority (FAA RO or HDQTRS)
+          YCYX-Rescue Coordination Center (RCC)
+          YDYX-Authority Supervising the Aerodrome
+          YFYX-Aeronautical Fixed Station (FSS/IFSS/IATSC)
+          YMYX-Meteorological Office (NWS)
+          YNYX-International NOTAM Office (NOF)
+          YTYX-Telecommunications authority
+          YWYX-Military Flight Operational Control Center (ACP)
+          YXYX-Military Organization (Base Operations)
+          YYYX-Organizations not allocated a two letter designator
+          ZOZX-Oceanic Air Traffic Control Center
+          ZPZX-Air Traffic Service Reporting Office
+          ZQZX-Computer Facility at a Aeronautical Control Center
+           (ACC) or Air Route Traffic Control Center (ARTCC)
+          ZRZX-ACC/ARTCC. (Center in charge of a Flight Information Region (FIR) and
+               Upper Information Region (UIR) when the message is relevant to a Visual Flight
+               Rules (VFR) flight (AMIS))
+          ZTZX-Aerodrome Control Tower
+          ZZZX-Aircraft in flight
+AFJMAN11-213 26 AUGUST 1994                                                                                   7
+
+                                                  Chapter 2
+                             DEPARTURE NOTIFICATION MESSAGES
+
+2.1. Base Operations Responsibility. Immediately after a departure, base operations personnel will sub-
+mit a flight notification departure message to the next point of landing (figure 2.1). If this facility is not a
+full Service B location, submit the message to the destination tie-in FAA FSS. Initial departure messages
+will contain, as a minimum:
+    • Type of flight plan
+    • Aircraft identification
+    • Type aircraft
+    • Departure point
+    • Destination
+    • ETA
+    • Remarks; e.g., coded data pertinent to services, passengers, or cargo. In the absence of remarks,
+         enter the letter "N" (meaning none) in the remarks field. When an FSS is an addressee precede
+         remarks with a dollar sign ($).
+NOTES:
+1. The remarks section will include items applicable to that segment of flight. Enter "AERO CLUB" for
+those aircraft assigned to a base AERO CLUB. EXAMPLE: VFR N214MC C172 BLV BYH 1630 S
+BLV AERO CLUB.
+2. For civil aircraft enter users name and landing permit number, which should be indicated on the DD
+Form 175, Military Flight Plan, or FAA 7233-1, Flight Plan. (Obtain FAA Form 7233-1 from any FAA
+Flight Service Center.) Remember the pilot is required to enter this information as stated in his or her
+landing permit authorization letter. EXAMPLE: WOODALL HAF 900001C.
+3. Destination station base operations will check the monthly Civil Aircraft Landing Permit Report to
+verify permit currency. User name will be listed by individuals last name or company first name, such as
+Admire, Mark A = Admire and Crown Central Petroleum Corp = Crown.
+
+Figure 2.1. Departure Notification Message Format.
+
+
+/B
+_________________
+System Authorization
+FF                                        BAD
+Precedence Indicator                      Addressee(s) (3- or 8-letter Ident)
+(Control D*) 072305                       KRNDYXYX
+Date Time Group (6 numbers)               Originator (8-letter identifier)
+(Control B*) VFR TALL 11 T38 RND BAD 0015 N
+                        Message Text
+8                                                                     AFJMAN11-213 26 AUGUST 1994
+
+2.2. Sample VFR Departure (Flight Notification) Messages:
+    2.2.1. Visual Flight Rules (VFR) One Way. Only the destination station will be addressed (or the
+    tie-in FSS if the destination is not a full Service B location). When the FSS is an addressee, remarks
+    must be preceded by a dollar sign ($) to allow automatic processing by AFSS.
+
+
+EXAMPLE:
+/B                         /B
+FF BAD                     FF KDRIYFYX
+072305 KRNDYXYX            072305 KRNDYXYX
+VFR TALL11 T38             VFR TALL11 T38 RND
+RND BAD 0015               BAD 0015
+(Destination Barksdale     (To BAD Tie-in FSS,
+AFB)                       De Ridder FSS)
+These messages transmitted from Randolph base operations to Barksdale base operations or De Ridder
+FSS (BAD service B out) indicate: Type flight plan, aircraft call sign, aircraft type, departure point, des-
+tination, and estimated time of arrival (ETA) (including en route delays).
+    2.2.2. VFR Stopover Departure (Flight Notification) Messages. Address messages to all base
+    operations or FSSs having tie-in responsibility for the different points of intended landing. Separate
+    stopover legs by a slant (/) at the end of each leg except the last. Before the slant, include remarks and,
+    if the message is addressed to DoD base operations only, include the proposed departure time applica-
+    ble to each leg. Place remarks that apply to the entire route at the end of the message. Begin each
+    stopover leg as a new line. The first leg will show ETA to the first stop. The additional legs will show
+    estimated time en route (ETE) between legs. Enter a void time as a last line item.
+NOTE: Although shown in the following example, an FAA FSS is not required to include a proposed
+departure time from stopover points in Departure Notification Messages:
+EXAMPLE:
+          /B
+          FF SKF BSM HLR
+          071400 KNGPYXYX
+          VFR R23467 UH1 NGP SKF 1532 P1600/
+          BSM 0+30 P1730/
+          HLR 1+50
+This message, transmitted by Corpus Christi Naval Air Station base operations, indicates stopovers at
+Kelly and Bergstrom AFBs with the destination being Fort Hood. To calculate the void time, take the
+total time from takeoff to final destination, rounded to the next whole hour.
+    2.2.3. VFR Departure (Flight Notification) Message from Stopover Point. En route stations are
+    responsible for sending departure notices when an aircraft departs their location.
+EXAMPLE
+AFJMAN11-213 26 AUGUST 1994                                                                      9
+
+         /B
+         FF BSM
+         071600 KSKFYXYX
+         R23467 D1605
+This message sent by Kelly AFB to Bergstrom AFB indicates the aircraft departed at 1605.
+   2.2.4. VFR Arrival and Cancellation Messages. When an aircraft arrives at its destination and an
+   arrival or cancellation message has been requested, follow the following example:
+EXAMPLE:
+         /B
+         FF RND
+         072020 KHLRYXYX
+         R23467 RND A2015 HLR
+This message sent by Ft Hood Army Airfield to Randolph AFB indicates an arrival at 2015.
+
+2.3. Sample Instrument Flight Rules (IFR) Departure (Flight Notification) Messages:
+   2.3.1. IFR One Way. The same elements used in a VFR departure notice will be used in an IFR
+   departure notice, except the type of flight will be shown as IFR.
+EXAMPLE:
+IFR One Way (C-9 Air Evacuation (EVAC) Andrews AFB to Plattsburgh AFB):
+         /B
+         FF PBG
+         281421 KADWYXYX
+         IFR E116 C9 ADW PBG 1430
+Spoken, this departure message would read: "IFR, EVAC one one six, C9, Andrews to Plattsburgh, ETA
+1430."
+   2.3.2. IFR Stopover. An example of a message of a C-21 from Andrews AFB to Plattsburgh AFB,
+   Loring AFB, Logan Intl, TF Green State, Newark, Andrews AFB, Wright-Patterson AFB, and Scott
+   AFB follows:
+EXAMPLE:
+         /B
+         FF PBG LIZ BDR MIV FFO BLV
+         281425 KADWYXYX
+         IFR TUG11 C21 ADW PBG 1430 N/
+         LIZ 0+45 S/
+10                                                                   AFJMAN11-213 26 AUGUST 1994
+
+          BOS 0+45 $S/
+          PVD 0+10 $N/
+          EWR 0+25 $N/
+          ADW 0+30 AP A5O SMITH S/
+          FFO 0+50 A5O N/
+          BLV 0+40 DP A5O SMITH
+Andrews base operations sends this departure notification message to Plattsburgh base operations, to
+Loring base operations, to Bridgeport Connecticut (services Logan Airport and TF Green State Airport),
+to Millville New Jersey FSS (services Newark New Jersey), to Wright-Patterson base operations, and to
+Scott base operations. The message also indicates that service is required at Loring AFB and Boston
+International (Intl), and a USAF code 5 M/Gen (A5) who requests no assistance (O) will be on loaded at
+Andrews AFB and offloaded at Scott AFB. See chapter 4 of DoD FLIP (General Planning) for VIP codes.
+Proposed times from each stop may be included if the message is between DoD base operations.
+NOTE: AP is used at onload station to depict passenger pickup. DP indicates passenger deplaning sta-
+tion.
+     2.3.3. Departure From Stopover Point. When the aircraft departs from a stopover point, base oper-
+     ations personnel at the stopover location will send a departure notice to the next destination.
+EXAMPLE:
+          /B
+          FF LIZ
+          281615 KPBGYXYX
+          TUG11 D1605
+
+2.4. Sample Composite IFR, VFR, and IFR Departure Notices:
+EXAMPLE:
+          /B
+          FF NIR RND NBE
+          081945 KNGPYXYX
+          IFR VV27548 C9 NGP NIR 2104 P2130/
+          VFR RND 0+45 S P2220/
+          IFR NBE 1+10
+
+2.5. Other Departure Notices. It is not practical to provide examples of every possible departure notice.
+It is important however, to use the format specified above. If the departure message becomes involved,
+such as in the case of tactical missions that originate as formation flights and return as single ship, do not
+hesitate to use clear text to explain the mission more completely.
+AFJMAN11-213 26 AUGUST 1994                                                                       11
+
+                                             Chapter 3
+                         DOMESTIC IFR FLIGHT PLANS HANDLING
+
+3.1. IFR Flight Plan Proposals (CONUS). Base operations personnel will submit all IFR flight plan
+proposals to the ARTCC computer within whose control area the IFR flight originates (figure 3.1). See
+attachment 2 for specific IFR message text requirements. Messages will be addressed to CONUS
+ARTCC (three-letter) facility identifier; i.e., ZDC.
+   3.1.1. One-Way Flight Plan. An example of a C-9 Air EVAC Andrews AFB to Plattsburgh AFB
+   follows:
+EXAMPLE:
+         /B
+         FF ZDC
+         281530 KADWYXYX
+         ADW1530002 FP E116 C9/A 460 ADW P1320 310\
+         ADW..OTT.J61.PSB.J59.SYR.J29.PLB..VAL172015..PBG/0050
+
+Figure 3.1. IFR Flight Plan Format (Domestic).
+
+
+/B
+System Authorization
+FF___________                     _____________
+__
+Precedence Indi-                  Addressee(s)
+cator
+                  _____________                   _____________
+(Control D)       Date Time Group                 Originator
+(Control B)       _____________   _____________   _____________
+                  Message Ident   Message Type    Aircraft Ident
+_____________ _____________       ______________ _____________   _____________
+Aircraft Type/ True Air Speed     Departure Point Departure Time Altitude
+Equipment
+Route of Flight
+______________________________________________________________________________
+Remarks
+   3.1.2. Stopover Flight Plan. Sample messages of a C-9 departing Andrews AFB with en route stops
+   at Plattsburgh AFB, Loring AFB, Logan Intl\Airport, TF Green State Airport, Newark Intl Airport
+   back to Andrews AFB are shown in the following examples. Andrews base operations personnel send
+   all IFR flight plan proposals:
+12                                                             AFJMAN11-213 26 AUGUST 1994
+
+EXAMPLES:
+     First Leg-Andrews AFB to Plattsburgh AFB sent to Washington ARTCC:
+         /B
+         FF ZDC
+         281233 KADWYXYX
+         ADW1230025 FP E116 C9/A 460 ADW P1320 310\
+         ADW..OTT.J61.PSB.J59.SYR.J29.PLB..VAL172015..PBG/0050
+     Second Leg-Plattsburgh AFB to Loring AFB sent to Boston ARTCC:
+         /B
+         FF ZBW
+         281234 KADWYXYX
+         ADW1234026 FP E116 C9/A 460 PBG P1410 290\
+         PBG..PLB.J29.PQI..AWD..LIZ/0100
+     Third Leg-Loring AFB to Logan Intl Airport sent to Boston ARTCC:
+         /B
+         FF ZBW
+         281235 KADWYXYX
+         ADW1234027 FP E116 C9/A 460 LIZ P1610 310\
+         LIZ..PQI.J29.BGR.J79.SCUPP..BOS/0045
+         Fourth Leg-Logan Intl to TF Green State Airport sent to Boston ARTCC:
+         /B
+         FF ZBW
+         281248 KADWYXYX
+         ADW1248028 FP E116 C9/A 400 BOS P1710 100\
+         BOS..BOSOX..PVD/0010
+     Fifth Leg-Providence to Newark Intl leg sent to Boston ARTCC:
+
+
+         /B
+         FF ZBW
+         281249 KADWYXYX
+         ADW1249029 FP E116 C9/A 420 PVD P1855 IALS..EWR/0025
+     Sixth Leg-Newark Intl to Andrews AFB leg sent to New York ARTCC:
+AFJMAN11-213 26 AUGUST 1994                                                                         13
+
+         /B
+         FF ZNY
+         281250 KADWYXYX
+         ADW1250030 FP E116 C9/A 450 EWR P2005 200\
+         EWR.SMST5.EMI..ADW180010..ADW/0030
+   3.1.3. Composite IFR to VFR. Following is an example of a C-9 Air EVAC Plattsburgh AFB to
+   Loring AFB. IFR Plattsburgh AFB to Presque Isle VORTAC, VFR to Loring AFB. Submit IFR leg
+   to appropriate ARTCC.
+EXAMPLE:
+         /B
+         FF ZBW
+         311210 KPBGYXYX
+         PBG1210003 FP E116 C9/A 460 PBG P1410 290\
+         PBG..PLB.J29.PQI.VFR.LIZ/0045
+   3.1.4. Composite VFR to IFR. Following is an example of a C-9 Air EVAC Plattsburgh AFB to
+   Loring AFB, VFR Plattsburgh AFB to Presque Isle VORTAC, IFR to Loring AFB.
+EXAMPLE:
+         /B
+         FF ZBW
+         311300 KPBGYXYX
+         PBG1300009 FP E116 C9/A 460 PQI P1410 290\
+         PQI..AWD..LIZ/0025 :PU IFR OVER PQI
+
+
+NOTE: Use of the colon (:) preceding remarks indicates that the remark is for all ARTCCs through
+which the flight transits.
+   3.1.5. Delay En Route Flight Plans. A delay en route flight plan normally requires a separate mes-
+   sage for each leg of flight. The following examples indicate a departure from Randolph AFB with ter-
+   minal area delays, for approaches, at San Angelo, Texas, at Bergstrom AFB, Texas, and an arrival
+   back at Randolph AFB. Such a flight plan requires three messages:
+EXAMPLES:
+         /B
+         FF ZHU
+         151600 KRNDYXYX
+         RND1516002 FP TALL23 T38/P 420 RND P1650 260\
+14                                                                   AFJMAN11-213 26 AUGUST 1994
+
+           RND..SAT.J2.JCT..SJT222016..SJT/0022:D0+20 APCHS SJT RND
+
+
+           /B
+           FF ZHU
+           151700 KRNDYXYX
+          RND1517012 FP TALL23 T38/P 420 SJT P1730 150\ SJT.V77.J50.ACT..BSM325050..BSM/
+      0040:D0+20
+           APCHS BSM RND
+
+
+           /B
+           FF ZHU
+           151900 KRNDYXYX
+           RND1519019 FP TALL23 T38/P 310 BSM P1935 040\
+           BSM..MARCS.V68.SAT..RND050012..RND/00 16
+
+
+The following flight plan specifies a delay en route at altitude and no change in the altitude structure. The
+delay may be indicated in the route of flight:
+
+
+           /B
+           FF ZME
+           191607 KNQAYXYX
+           NQA1607010 FP SKULL04 A4/P 360 NQA P1630 190\
+           NQA..MEM/D1+00..IGB..MEI..NMM/0040
+     3.1.6. Instrument Route (IR) Flight Plan. IFR flight plan messages indicating IR usage will
+     include the entry and exit fixes in the route of flight and entry and exit times plus MARSA in the
+     remarks.
+EXAMPLE:
+           /B
+           FF ZHU
+           081955 KDLFYXYX
+           DLF1955053 FP RAKE12 T38/P 322 DLF P2230 060\
+           DLF..DLF327020..DLF329028.IR169.SJT2O9035..FST..
+           ELP115030..ELP/0110 :IR169E2245X2305MARSA
+AFJMAN11-213 26 AUGUST 1994                                                                             15
+
+The remarks that indicate route entry and exit times will be formatted in consecutive sequence, without
+spaces.
+   3.1.7. Short Notice IFR Flight Plan Messages. If the IFR flight plan indicates a time en route of 30
+   minutes or less to the first stop, identify the destination as an addressee on the IFR proposal message.
+EXAMPLE:
+         /B
+         FF ZME NMM
+         191607 KNQAYXYX
+         NQA1607010 FP SKULL04 A4/P 370 NQA P1630 190\
+         NQA..MEM..IGB..MEI..NMM/0030
+
+3.2. Altitude Reservations (ALTRV):
+   3.2.1. CONUS. Flight plans that include ALTRV information in CONUS airspace are processed to
+   the FAA ARTCC by the Central Altitude Reservation Facility. Base operations should not resubmit
+   to the CONUS ARTCC that portion of the flight plan, DD Form 175, Military Flight Plan, that con-
+   tains an ALTRV being flown in US airspace.
+       3.2.1.1. If the ALTRV starts at the originating base, that is the aircraft is on an ALTRV immedi-
+       ately after departure, base operations personnel do not submit an IFR flight plan proposal mes-
+       sage. The ARTCC performs all actions.
+       3.2.1.2. If the ALTRV is initiated or begins en route, use the following procedure:
+           3.2.1.2.1. The originating base operations submits a flight data message specifying the fix
+           where the ALTRV begins, followed by the amount of time required to fly from the ALTRV
+           entry point to the ALTRV exit point, followed by the exit point and remainder of route.
+           EXAMPLE: flight plan route to (entry point) ABC 136050/D02+00..XYZ (exit point) and
+           flight plan route to destination. This base operations message is similar to the message used to
+           show a delay en route at altitude. The ALTRV duration, or delay time, is determined from the
+           ALTRV approval message.
+           3.2.1.2.2. Local procedures should ensure base operations personnel understand the ALTRV
+           entry point, ALTRV delay time and exit point. The remarks section of the flight data message
+           should specify the point where the ALTRV is joined and the ALTRV name. EXAMPLE:
+           JOIN DING BAT1 ALTRV at ABC 136050.
+   3.2.2. International Flight Plans. The ALTRV must be included in the International flight plan DD
+   Form 1801, International Flight Plan, when the entire ALTRV takes place outside CONUS air-
+   space. Base operations personnel will ensure that the ALTRV is included in the IFR flight data mes-
+   sage (FPL) sent to the CONUS ARTCC computer. If the ALTRV begins in CONUS airspace and
+   extends into another country’s airspace, base operations personnel will have to transmit two flight plan
+   messages. The first flight plan message will be submitted in domestic format using the procedures
+   above and sent to the CONUS ARTCC computer. The flight plan will also be sent to all addressees
+   except the ARTCC computer.
+   3.2.3. Summary:
+16                                                                 AFJMAN11-213 26 AUGUST 1994
+
+        3.2.3.1. If the ALTRV is all in CONUS airspace, do not include ALTRV as part of the flight plan
+        message. Include the ALTRV entry and exit points and ALTRV duration in the text of the IFR
+        flight plan message. Identify the ALTRV in remarks.
+        3.2.3.2. If the ALTRV is all in international airspace, include the entire ALTRV in the route of
+        flight. Identify the ALTRV in remarks.
+        3.2.3.3. If the ALTRV begins in CONUS airspace and continues into international airspace, two
+        messages are required:
+            • Send one IFR flight plan proposal message (domestic format) as in 3.2.3.1. above.
+            • Send the second message in International Civil Aviation Organization (ICAO) format to
+                all addressees.
+
+NOTE:
+The local ARTCC may have requirements that amend the above directions. Base operations personnel
+must work closely with the ARTCC to ensure a mutual understanding of ALTRV procedures exists.
+
+3.3. Canceling or Amending Messages. Flight plans previously submitted to the CONUS ARTCC
+computer may be amended by an amendment message (AM) or canceled by using a remove strip (RS)
+message until 30 minutes before the proposed departure time. After 30 minutes before the proposed
+departure time, base operations personnel must call the ARTCC for manual coordination.
+     3.3.1. AM Message. The AM message (figure 3.2) is used to modify, add to, or delete previously
+     filed flight plan data. When accepted, the amendment information becomes a part of the flight plan
+     data base. An AM is user-generated and is different than a correction message (CM) which is sent to
+     respond to an error message generated by the ARTCC computer. If Field 02 (aircraft identification) is
+     to be amended, no other field may be amended in the same AM. If Field 02 and other fields are to be
+     amended, send a RS message (figure 3.3) and reenter a corrected flight plan.
+EXAMPLE:
+           /B
+           FF ZHU
+           121900 KRNDYXYX
+           RND1827055 AM HUNT12 02 HUNT33
+In this message, the change applies to "field two", aircraft identification. Spoken, it would read "Hunt
+field two, is amended to read Hunt 33."
+
+
+EXAMPLE:
+Randolph AFB needs to amend the proposed departure time-Field 07.
+           /B
+           FF ZHU
+           150545 KRNDYXYX
+AFJMAN11-213 26 AUGUST 1994                                                                            17
+
+          RND0827055 AM HUNT33 07 P0730
+
+Figure 3.2. Amendment Message Format.
+
+
+/B
+_________________
+System Authorization
+FF                     .        _________________
+1-Precedence Indicator          2-Addressee(s)
+(Control D)                 .               .
+                                3-Date Time Group              4-Originator
+(Control B)                   . AM             .               _____________
+             5-Message Ident    6-Message Type                 7-Aircraft Ident
+___________________             _________________
+8-Number of Field being         9-Change Information
+amended
+1-Precedence Indicator -- normally FF.
+2-Addressee - three-letter ARTCC identifier.
+3-Date Time Group -- current date and time group (UTC). NOTE: In most cases, you may enter
+a 1 in place of the DTG, the center’s computer will input the correct DTG automatically. Check
+with your center to see if this applies to you.
+4-Originator -- eight-letter ICAO listing.
+5-Message Identification -- three-letter ICAO identifier code followed by time group and mes-
+sage number.
+6-Message Type -- AM for amendment message.
+7-Aircraft Identification -- aircraft call sign.
+8-Field Being Amended -- enter the two-digit number indicating the flight plan field to be
+amended.
+9-Enter corrected information.
+EXAMPLES:
+McChord AFB needs to amend the requested altitude-Field 09.
+          /B
+          FF ZSE
+          222200 KTCMYXYX
+          TCM2127072 AM A12341 09 350
+Little Rock AFB needs to amend the second leg of a stopover it originated. All legs are controlled by the
+same ARTCC (in this case, Memphis) and the leg to be amended is out of Blytheville AFB.
+          /B
+18                                                               AFJMAN11-213 26 AUGUST 1994
+
+          FF ZME
+          100815 KLRFYXYX
+          LRF1008050 AM DUMP55/BYH 09 350
+This message amends DUMP 55’s altitude (Field 09) out of Blytheville AFB.
+
+Figure 3.3. Remove Strip Message Format.
+
+
+/B
+_________________
+System Authorization
+GG                         . _________________
+1-Precedence Indicator          2-Addressee(s)
+(Control D)                 .                .
+                                3-Date Time Group          4-Originator
+(Control B)                 . AM               .           _____________
+           5-Message Ident 6-Message Type                  7-Aircraft Ident
+___________________             _________________
+1-Precedence Indicator -- GG.
+2-Addressee -- three-letter ICAO ARTCC identifier.
+3-Date/Time Group -- current date/time group.
+4-Originator -- eight-letter ICAO identifier.
+5-Message Identification -- three-letter originator ICAO followed by time and message
+number.
+6-Message Type -- RS for remove strip.
+7-Aircraft Identification -- self-explanatory.
+     3.3.2. RS Message. The RS message is used to remove from the computer system a flight plan previ-
+     ously submitted.
+EXAMPLE:
+          /B
+          GG ZKC
+          011705 KBLVYXYX
+          BLV1652147 RS R12345
+
+
+This message cancels the stored flight plan for Army 12345. NOTE: If there is more than one flight plan
+on an aircraft, operating in the same ARTCC, the RS message must contain the call sign and location of
+the aircraft that is being canceled. The message text will read: BLV1652147 RS R12345/LRF, or another
+example: GSB2313091 RS CHIEF41/ILM037070.
+AFJMAN11-213 26 AUGUST 1994                                                                          19
+
+3.4. Error and CMs. Errors in IFR flight plan proposal messages are identified by the FAA computer
+and a rejection message is generated to the originator. Base operations uses a CM to provide the correct
+information.
+   3.4.1. Sample Error Message:
+Base operations sends the following IFR proposal message:
+          /B
+          FF ZSE
+          121200 KTCMYXYX
+          TCM1800031 FP LK04 F106/P 05000 TCM P1700 400\
+          TCM..PDX/0030
+The computer sends the following error message to base operations:
+          FF KTCMYXYX
+          121220 KZSEZQZX
+          ERROR 031 05 SPD 05000
+This message tells you that base operations message 031, field 05 (air speed) is in error.
+   3.4.2. Base operations CM. This is the only time when base operations personnel will repeat a mes-
+   sage number-field 00.
+EXAMPLE:
+          /B
+          FF ZSE
+          121225 KTCMYXYX
+          TCM1800031 CM 500
+
+
+NOTES:
+1. The ARTCC computer stores or holds an erroneous flight plan for a specified period of time. This
+period varies between ARTCCs, but normally is no longer than 10 minutes after computer receipt. If base
+operations personnel do not transmit a CM within the time frame established by the ARTCC, the entire
+flight plan must be resubmitted.
+EXAMPLE:
+Computer Message: ERROR 070 10 RTE..FLACK..FIX NOT STORED CM: TCM1908070 CM
+..FLAAK..
+2. IFR proposed flight plan messages that contain errors and are sent to ARTCC computers outside or
+beyond the local ARTCC may not be identified back to the originator. The message originator will
+receive a normal ARTCC computer acknowledgment and a rejection message will be identified at the
+ARTCC receiving the proposal. EXAMPLE: Ft Campbell KY (served by Memphis ARTCC) sends an
+IFR proposal message to Jacksonville ARTCC on an aircraft stopping over at Cairns AAF. This message
+20                                                                  AFJMAN11-213 26 AUGUST 1994
+
+has an error in the route of flight. The Jacksonville ARTCC computer will acknowledge the message
+back to Ft Campbell and a rejection message will be printed out in Jacksonville center. If the IFR mes-
+sage was sent to the wrong center, that ARTCC may generate a message back to originator indicating the
+error. The originator is then responsible for transmission to the correct center.
+
+3.5. ARTCC Computer Acknowledgment Messages. When a flight plan message is accepted by the
+ARTCC computer, an acknowledgment or "Roger" will be received as follows:
+EXAMPLE:
+          FF KRNDYXYX
+          121320 KZCHZQZX
+          R002
+Houston ARTCC computer (KZCHZQZX) acknowledges Randolph AFB (KRNDYXYX) IFR Message
+number 2.
+
+3.6. ARTCC Computer Identifying Number (CID). The CID is an automatic numbering system gen-
+erated by the ARTCC computer. When a base sends an IFR flight plan message (e.g., LRF2100003) and
+the message is correct, the ARTCC computer "Rogers" the message by sending the base "R003." At the
+same time, the ARTCC computer assigns an in-house CID. If several IFR messages are sent on the same
+aircraft, as is the case with the stopover flight plan, each message is assigned a CID. Base operations per-
+sonnel are unaware of the CID but they may need the information under certain circumstances.
+EXAMPLE:
+DUMP 55 is a C-130 operating out of Little Rock AFB on a stopover flight plan all within the Memphis
+ARTCC control area. The stopover flight plan route is Little Rock AFB to Eaker AFB to Little Rock AFB
+to Memphis. Little Rock AFB sends three messages:
+          LRF0700002 (originating at Little Rock AFB)
+          LRF0701003 (stopover at Eaker AFB)
+          LRF0703004 (stopover at Little Rock AFB)
+Approximately 45 minutes before original departure, Little Rock base operations wants to amend the filed
+altitude of the stopover leg from Little Rock to Memphis. Little Rock base operations sends the following:
+          LRF1015012 AM DUMP55/LRF 09 260
+The ARTCC computer looks for DUMP 55 and finds two flight plan messages on DUMP 55 out of Little
+Rock AFB. The computer sends this message to Little Rock AFB:
+          ERROR 012 02 AID DUMP55 FILD DUPLICATION
+          LRF P1100
+          BYH P0930
+          LRF P0800
+This error message translates to: Error message 012, Field 02, aircraft identification (AID) DUMP 55
+has more than one (duplication) flight plan message on file. The computer message then identifies all the
+AFJMAN11-213 26 AUGUST 1994                                                                              21
+
+messages on DUMP 55 using CID numbers, departure point, and proposed time. Now base operations
+can amend the stopover leg out of Little Rock AFB using the CID (070): LRF0715010 AM 070 09 260.
+
+3.7. Stereo Flight Plan. A stereo flight plan is used to activate a route of flight that is prestored in the
+ARTCC computer. The flight plan message may be entered with the stereo identification as the only field
+10 entry. The departure location (field 06) must agree with the stereo departure point. Variations from
+these procedures do occur within some centers. Letters of agreement must be established between base
+operations and the applicable ARTCC. Sample stereo entry:
+          /B
+          FF ZAB
+          192300 KABQYXYX
+          ABQ1230025 SP TACO21 A7/P 450 P1530 300 LOLA36
+Field two must read SP. If it reads FP then a computer error message, message too short, will be trans-
+mitted to the originator.
+
+3.8. System Saturation. If the telecommunications system becomes saturated so that you cannot deliver
+your IFR proposed flight plan messages, revert to these alternate procedures:
+    • Immediately verify with the ARTCC what the problem is.
+    • Coordinate with the center and telephone in your immediate IFR proposals; that is, those that are
+       proposed for departure in less than 30 minutes. Other IFR proposals will be voiced to the local
+       FSS.
+    • Avoid sending duplicate messages via the telecommunications system.
+    • Voice call all your message traffic, including departure notices, to the FAA FSS.
+    • Notify your local flying organizations and ask them to submit their flight plans well in advance of
+       the departure time.
+22                                                                 AFJMAN11-213 26 AUGUST 1994
+
+                                               Chapter 4
+                              MILITARY TRAINING ROUTES (MTR)
+
+4.1. MTR Policy. Flight plans that indicate flights along MTR require special handling. Flight plan fil-
+ing lead times and submission times to the ARTCC, as outlined in the FLIP Document, must be adhered
+to.
+
+4.2. Scheduling Requirements. MTRs are scheduled in advance. Instrument Routes (IR) and Visual
+Routes (VR) cannot be used without being scheduled. Unit scheduling organizations "owning" these
+routes provide base operations (with Service B capability) or the tie-in FSS with a daily schedule of route
+usage. Base operations personnel do not schedule these routes but will issue the scheduled usage to all
+FSSs, ARTCCs, and other base operations within 100 NM of the training route (see FLIP Document AP/
+1B). Messages will include route identifier, time of use, and altitude involved. (NOTE: Slow-speed,
+low-altitude training routes are not to be transmitted, briefed on, or posted). FAA FSS and ARTCCs are
+not required to acknowledge MTR schedules. While scheduling flexibility is necessary, local procedures
+should ensure that changes 2 hours before scheduled departure are held to a minimum.
+EXAMPLE:
+          /B
+          FF HBR GAG PNC ICT SLN KZFWZRZX KZKCZRZX CDS SPS
+          111500 KTIKYXYX
+          IR145 1400-1445 SFC-6000
+          IR145 1545-1630 SFC-6000
+          IR145 1715-1830 SFC-8000
+AFJMAN11-213 26 AUGUST 1994                                                                              23
+
+                                                Chapter 5
+         ICAO FLIGHT PLAN HANDLING (FAAH 7110.10, CHAPTER 7, SECTION 1)
+
+5.1. ICAO IFR Flight Plans (FPL). Address FPL messages to the ARTCC servicing the airport of
+departure using the three-letter ARTCC identifier and to all air traffic units providing air traffic control
+service (not including CONUS air traffic units). Transmit all IFR FPL proposals to the ARTCC not less
+than 1 hour before the proposed departure time. Dashes "-" and both open and closed parentheses "( )" are
+required functions included in an IFR ICAO FPL message. Messages must adhere to ICAO standards,
+submitted in the exact format ( figure 5.1) and be free of errors. ICAO FPL proposal messages will not be
+automatically acknowledged by the ARTCC computer. A voice call will be required to verify receipt of
+an FPL or AM. (See FLIP General Planning for additional information regarding ICAO FPLs.)
+
+Figure 5.1. ICAO IFR Flight Plan Format.
+
+
+/B
+_________________
+System Authorization
+FF
+________________                     ________________
+ 1-Precedence Indicator              2-Addressee(s)
+(Control D)                          ________________                _____________________
+                                     3-Date Time Group               4-Originator
+(Control B)                          ________________
+                                     5-Message Type
+__________________
+6-Aircraft Identification
+_________________________
+7-Flight Rules and Type of Flight
+__________________________________________
+8-Number/Aircraft Type/Wake Turbulence Category
+_____________________________________________________________________________
+9-Equipment - Communications, Navigation, Approach Aid, Secondary Surveillance Radar Data
+10-Aerodrome of Departure and Estimated Off Block Time
+__________________                ________________
+11-True Air Speed and Flight lev- 12-Route of flight
+el
+__________________________ ________________
+13-Destination and Estimated En 14-Alternate Airdrome
+Route Time
+__________________________)
+24                                                                   AFJMAN11-213 26 AUGUST 1994
+
+15-Other Information
+Numbers (1), (2), (3), etc., are used with the following information to explain flight data computer entries.
+They do not refer to the numbers printed on the DD Form 1801.
+1-Precedence Indicator. Normally "FF"
+2-Addressees. Eight-letter ICAO identifiers as required; do not exceed seven addressees (each addressee
+separated by a space or 69 characters including spaces per line. Only one line of address indicators may
+be sent at one time preceded by a precedence indicator. Messages concerning flights originating in the
+United States will be sent to the computer at the ARTCC; e.g., ZME.
+3-Six-character date and time group; e.g., 121500.
+4-Originator. Eight-letter ICAO identifier.
+5-Message Type. Insert left parentheses "(" (which indicates start of message), followed by the message
+type.
+
+
+FPL                           Filed flight plan
+CHG                           Changed or modification
+CNL                           Cancellation
+DLA                           Delay
+DEP                           Departure
+ARR                           Arrival
+6-Aircraft identification. Insert dash and aircraft identification (no more than seven characters; e.g.,
+-M50237).
+7-Flight Rules and Type of Flight. Insert dash, then I or V for IFR or VFR, followed by M if military, or
+S if scheduled air transport; e.g., -IM.
+8-Number, type aircraft, and wake turbulence category. Precede by a dash; e.g., -C141/H, -E3/H, -F16.
+9-Radio Communications, Navigation, and Approach and SSR (Transponder) Equipment. Preceded by a
+dash (IM). One or more of the following letters are used to indicate communications/navigation/approach
+aid equipment:
+
+
+A                LORAN A            M                  Omega
+B                (Not allocated)    O                  VOR
+C                LORAN C            P                  Doppler
+D                DME                Q                  (Not allocated)
+E                Decca R            R                  NAV Route Equipment
+F                ADF                T                  TACAN
+G                (Not allocated)    U                  UHF RTF
+H                HF RTF             V                  VHF RTF
+AFJMAN11-213 26 AUGUST 1994                                                                                 25
+
+I                Inertial Nav        W                 When prescribed by
+                                                       ARTCC
+J                (Not allocated)     X                 When prescribed by
+                                                       ARTCC
+K                (Not allocated)     Y                 When prescribed by
+                                                       ARTCC
+L                ILS                 Z                 Other equipment carried
+Standard equipment is represented by an S and is considered to be Very High Frequency (VHF), Radio-
+telephone (RTF), Automatic Direction Finder (ADF), Very High Frequency Omnidirectional (VOR), and
+Instrument Landing System (ILS). If the letter Z is used, specify in item 15 (item 18 of DD Form 1801)
+the other equipment carried preceded by COM/____ or NAV/___.
+SSR Equipment (Transponder)
+     N None
+     Transponder--Mode A, no coding
+     Transponder--Mode A, two digits--64 codes
+     Transponder--Mode A, four digits--4096 codes
+     C Transponder--Mode A, four digits--4096 codes and Mode C
+Sample entry of 5, 6, 7, 8, and 9, above:
+(FPL = Flight plan message
+-M50237 = Aircraft identification
+-IM = Flight rules and type flight
+-C141/H = Type aircraft and wake turbulence category
+-SI = Communications Navigation (COMNAV)/ approach aid equipment /C = Transponder
+CRT Entry: (FPL-M50237-IM-C141/H-SI/C
+10-Aerodrome of departure and estimated off block time, preceded by a dash; e.g., -KRND1548.
+11-True Airspeed and Flight Level. The true airspeed and flight level are part of the route of flight but
+separated here for clarification. Insert the first cruising speed in knots (indicated by N) in four digits, and
+the first cruising level in three digits (preceded by an F) without a space between them; e.g., -N0290F230
+(290 knots at an initial flight level of 230). A Mach number may also be used. Indicate Mach number to
+the nearest hundredths of unit Mach preceded by the letter "M" (MO82). All requests for block altitudes
+will be identified in remarks (other information) section only. Do not show block altitudes in the route of
+flight section.
+12-Route of Flight. The route of flight starts one space after the True Airspeed (TAS) and flight level.
+Use direct (DCT) when implying direct between all like elements; e.g., JAX DCT GNV DCT COVIA. If
+a change in altitude or airspeed is planned, insert a slash immediately after the point where the change is
+to take place; e.g., DCT MINOW DCT FISHR/N0440F330. This procedure is required even if only one
+of these quantities will be changed. Indicate latitude and longitude without a slash between them.
+26                                                                  AFJMAN11-213 26 AUGUST 1994
+
+Latitude and Longitude - Degrees Only (Seven Characters). Two figures describing latitude in degrees,
+followed by "N" (North) or "S" (South), followed by three figures describing longitude in degrees fol-
+lowed by "E" (East) or "W" (West). Insert zeros, where necessary to compile the correct number of fig-
+ures; e.g., 46N078W. (Do not separate latitude and longitude by a slash "/".)
+Latitude and Longitude - Degrees and Minutes (11 Characters). Four figures describing latitude in
+degrees and minutes followed by five figures describing longitude in degrees and minutes followed by
+"E" (East) or "W" (West). Insert zeros where necessary, to makeup the correct number of figures; e.g.,
+4620N07805W. (Do not separate latitude and longitude by a slash "/".)
+Bearing and distance from a navigation aid. The identification of the navigation aid (normally a VOR), in
+the form of two or three characters, then the bearing from the aid in the form of three figures giving
+degrees magnetic, then the distance from the aid in the form of three figures expressing nautical miles.
+Insert zeros where necessary, to makeup the correct number of figures; e.g., a point 180 degrees magnetic
+at a distance of 40 nautical miles from VOR "DUB" would read DUB180040.
+13-Aerodrome of destination and Estimated Elapsed Time (EET), preceded by a dash; e.g., -MPHO0415.
+14-Alternate Aerodrome. Enter ICAO identifier, one space after EET.
+15-Other information, preceded by a dash; i.e., -0 indicates no other information (note after this entry the
+right parentheses, ")", must be inserted to complete the message). If additional information is added, use
+one of the following abbreviations, a slash and the appropriate information in plain text or accepted abbre-
+viation. If there are no remarks, indicate 0; i.e., -0). Do not use a dash within the text of the remarks.
+EET and significant points or FIR boundary designators and accumulated elapsed time to such points or
+boundaries.
+REG/. The registration marking of the aircraft, if different from the aircraft identification above.
+SEL/. SELCAL Code, if so prescribed by the appropriate Air Traffic Service (ATS) authority.
+OPR/. Name of the operator, if not obvious from the aircraft identification.
+STS/. Reason for special handling by ATS; e.g., hospital aircraft or one engine inoperative, e.g., STS/
+HOSP, STS/ONE ENG INOP.
+
+
+TYP/. Type(s) of aircraft, preceded if necessary by number(s) of aircraft, such as for a formation flight.
+PER/. Aircraft performance data, if so prescribed by the appropriate ATS Authority.
+COM/. Any additional COM equipment carried.
+NAV/. Any additional NAV equipment.
+DEP/. ICAO 4-letter location indicator of the location of the Air Traffic Services (ATS) unit from which
+supplementary flight plan data can be obtained, if Air File (AFIL) is inserted in item 13.
+  RMK/. Any other plain language remarks when required by the appropriate ATS authority as deemed
+necessary.
+EXAMPLES:
+          /B
+AFJMAN11-213 26 AUGUST 1994                                                                             27
+
+        FF MPLBYSYX MMIDZQZX MHTGZQZX MKJKZQZX MPZLZRZX MPZLZQZX
+     MPHOYXYX MHSCZTZX ZJX
+          291326 KHTBYXYX
+          (FPL-M644-IM
+          -C141/H-SI/C
+          -KCHS1500
+          -N0435F350 J121 JAX DCT GNV DCT COVIA DCT MINOW DCT
+          FRISH/N0440F330 UA9 DANUL UA321 TBG DCT
+          -MPHO0415 MHSC
+          -EET/MMID0149 MHTG0219 MPZL0300 REG/A40644 OPR/USAF
+          STS/HAZ CARGO)
+
+
+          /B
+          FF KZNYZOZX CZQMZQZX CZQXZQZX BIRDZQZX BIKFYXYX ZFW
+          262330 KTIKYXYX
+          (FPL-TOWN3O-IM
+          -E3/H-SHUIMPRT/C
+          -KTIK0130
+          -N0435F330 DCT TUL DCT SGF062068 DCT VHP089017 DCT CXR DCT SYR DCT
+          ALB018067
+          AR212 PQI339024/M074F330 DCT YZV110050 DCT YYR DCT LOACH DCT
+          58N050W DCT 61N040W DCT 63N030W DCT KF280120 DCT KF202012 DCT KF DCT
+          BIKF0900 EGUN
+          EET/CZQM0432 CZQX0503 BIRD0730 50W0710 40W0757 30W0837 REG/50559
+          RMKS/AIRFL W REFER 98 AR212 FL250B270)
+
+5.2. Stopover Flight Plans. While multiple stopover flights are not authorized on the DD Form 1801,
+separate flight plan forms for subsequent legs of flight may be filed at the first departure aerodrome. The
+originating base operations will transmit the first flight plan message to the ARTCC controlling the depar-
+ture point. Separate messages for the other legs may be transmitted by the originating base operations to
+the base operations at each intermediate stop. Base operations, in receipt of this flight plan information,
+will transmit the data to their local ARTCC facility. EXAMPLE: McGuire base operations receives
+ICAO flight plans for a flight with intermediate stops at Lajes Field, Mildenhall RAF, and terminating at
+Ramstein AB. McGuire AFB sends the initial leg (McGuire to Lajes) to New York ARTCC for initial
+clearance. They then transmit to Lajes base operations, the flight plan from Lajes Field to Mildenhall
+RAF, and to Mildenhall base operations, the flight plan from Mildenhall AFB to Ramstein AB. Upon
+28                                                                  AFJMAN11-213 26 AUGUST 1994
+
+receipt, Lajes Field and Mildenhall RAF will submit the appropriate flight plan to their air traffic control
+facility.
+
+5.3. ICAO Departure Message. Base operations personnel at the originating station will send all ICAO
+departure notification messages (figure 5.2.). Messages will be sent to the same agencies addressed in
+the FPL message not including the originating ARTCC.
+
+Figure 5.2. ICAO Departure Notification Message Format.
+
+
+/B
+_________________
+System Authorization
+FF_________________           _________________
+1-Precedence Indicator        2-Addressee(s)
+(Control D)
+__________                    __________
+3-Date Time Group             4-Originator
+(Control B) DEP
+_________ _________           ________        ________        ________
+             5-Message        6-Aircraft      7-Departure     8-Destina-
+             Type             Ident           Point and       tion
+                                              Time
+1-Precedence Indicator. Normally FF
+2-Addressee(s). Same addressee(s) as specified on the FPL message (except the originating ARTCC).
+3-Current Date Time Group. Six-number date and time group.
+4-Originator. Self explanatory.
+5-Message Type. DEP.
+6-Aircraft Identification Call Sign, i.e. M65432.
+7-Departure Point and Time, i.e. KCHS1505
+8-Destination. i.e. MPHO.
+EXAMPLE:
+          /B
+        FF KZMAZRZX MUHAZQZX MMIDZQZX MHTGZQZX MKJKZQZX MPZLZQZX
+     MPHOYXYX
+          281507 KHTBYXYX
+          (DEP-M644-KCHS1505-MPHO)
+
+5.4. ICAO Delay Message. Send a delay message (figure 5.3) when a delay is being incurred or is antic-
+ipated. Include all addressees in the original message.
+AFJMAN11-213 26 AUGUST 1994                                                                      29
+
+EXAMPLE:
+         /B
+       GG KZMAZRZX MUHAZOZX MMIDZQZX MHTGZQZX MKJKZQZX MPZLZQZX
+    MPHOYXYX
+         281400 KHTBYXYX
+         (DLA-M644-KCHS1600-MPHO)
+
+Figure 5.3. ICAO Delay Message Format.
+
+
+/B
+________________
+System Authorization
+GC____________       ________________
+1-Precedence Indi-   2-Addressee(s)
+cator
+(Control D)          ________________        ________________
+                     3-Date Time Group       4-Originator
+(Control B) (DLA     ________________        ________________       ________________)
+5-Message Type       6-Aircraft Ident        7-Departure Point      8-Destination
+                                             and Block Time
+1-Precedence Indicator. Normally GG.
+2-Addressee(s). Same addressee(s) as on the FPL message.
+3-Current Date Time Group. Six-number date time group.
+4-Originator. Self explanatory.
+5-Message Type. DLA.
+6-Aircraft Identification. i.e. M65432.
+7-Departure Point and Revised Off Block Time. i.e. KCHS1600.
+8-Destination. i.e. MPHO.
+
+5.5. ICAO Change Message. A change or modification message (figure 5.4) is authorized if you need to
+change flight plan data that has been submitted.
+EXAMPLE:
+         /B
+         FF MMMXZQZX MMIDZQZX MHTGZQZX MZBZYFYX MGGTYFYX KZHUZRZX
+         091512 KSKFYXYX
+          (CHG-A23456-KSKF0600 EGUN-15/N0400F350
+NOTE: The "15" indicates that item 15 on the ICAO flight plan form is being changed.
+30                                                          AFJMAN11-213 26 AUGUST 1994
+
+Figure 5.4. ICAO Change Message Format.
+
+
+/B
+_________________
+System Authorization
+FF__________           __________
+Precedence Indicator   Addressee(s)
+(Control D)            _____________            ____________
+                       Date Time Group          Originator
+(Control B) (CHG       ___________________      ___________________    _____________
+                       Message Type             Aircraft Ident         Departure Point and
+                                                                       Time
+_______________        ___________________      ___________________    ___________________
+Destination            Total Elapsed Time       Alternate              Change Information
+
+5.6. ICAO Cancellation Message. Use the following message format (figure 5.5) when canceling a
+message previously sent:
+EXAMPLE:
+         /B
+         FF MMMXZQZX MMIDZQZX MHTGZQZX MZBZYFYX MGGTYFYX KZHUZRZX
+         091512 KSKFYXYX
+         (CNL-A23456-KSKF-MPHO)
+
+Figure 5.5. ICAO Cancellation Message Format.
+
+
+/B
+_________________
+System Authorization
+FF___________          ___________
+Precedence Indicator   Addressee(s)
+(Control D) ________   ___________
+Date Time Group        Originator
+(Control B) (CNL       ___________              ___________            ___________)
+Message Type           Aircraft Ident           Planned Departure Sta- Planned Destination
+                                                tion
+AFJMAN11-213 26 AUGUST 1994                                                                             31
+
+                                               Chapter 6
+                                    TRANSBORDER MESSAGES
+
+6.1. General Information. Air traffic messages between the United States, Canada, and Mexico are con-
+sidered transborder messages. Military bases that experience difficulties in processing flight data to Can-
+ada should contact the Seattle FSS; for Mexico contact the San Antonio FSS. These facilities will provide
+guidance, as necessary.
+
+6.2. Canada Transborder Messages. Military base operations will transmit VFR and IFR departure
+notification messages concerning aircraft landing in Canada. Canadian FSSs will acknowledge VFR
+departure messages but normally do not acknowledge IFR departure messages.
+   6.2.1. Flight plans must indicate a designated airport of entry as point of destination.
+   6.2.2. Transmit flight notification messages in the following format:
+EXAMPLE:
+
+
+/B
+_________________
+System Authorization
+FF                     CZYZZQZX
+Precedence             Addressee
+________               KOFFYXYX
+Date Time Group        Originator
+IFR                    M3456                 C141      OFF        YYZ          1745           ADCUS 6
+Type Flt Plan          Ident                 Type      Dept       Dest         ETA            Remarks
+NOTE: ADCUS 6 indicates that customs should be advised and that six persons are on board. In this
+example, all passengers are US citizens:
+EXAMPLE:
+          /B
+          FF CQWGYFYX
+          081700 KTCMYXYX
+          VFR SCOTT22 3/CT114 TCM YYO 1725 ADCUS 1US 2CAN
+
+NOTE:
+This message indicates one US passenger and two Canadians.
+   6.2.3. If acknowledgment of a VFR message is not received within 30 minutes after departure, trans-
+   mit the contraction "REQ ACP" (request acceptance) and complete aircraft identification.
+EXAMPLE:
+          /B
+32                                                                    AFJMAN11-213 26 AUGUST 1994
+
+              FF CZYZYFYX
+              091440 KOFFYXYX
+              REQ ACP MAC3456
+If acknowledgment is not received within 1 hour after departure, use the telephone to deliver the message.
+     6.2.4. When correcting or revising a message, re-transmit the complete message preceded by the con-
+     traction "CHG" (change).
+EXAMPLE:
+/B
+FF CZYZZQZX
+091442 KOFFYXYX
+CHG IFR M3456 C141 OFF YYZ 1815 ADCUS 7US
+
+6.3. Mexico Transborder Messages. Mexico requires notification of an inbound aircraft before its
+arrival. Transmittal of a flight notification message with "ADMISA" (Advise Customs and Public Health
+Services) in the remarks is one method of satisfying this requirement.
+     6.3.1.   Transmission of flight notification message will consist of the following items:
+         •    Aircraft identification.
+         •    Aircraft type.
+         •    Departure time.
+         •    Departure point.
+         •    Destination..
+         •    Estimated time en route.
+         •    Remarks:
+     ADMISA, number of persons aboard, nationality, and pilot's name (if customs notification
+     requested).
+     REQ ACK (request acknowledgment).
+EXAMPLE:
+              /B
+              FF MMMYYFYX
+              091540 KSKFYXYX
+              A48750 C141 D1535 SKF ADN 0305 ADMISA 5US JACKSON REQ ACK
+     6.3.2. The departure station is responsible for Search and Rescue (SAR) action until an acknowledg-
+     ment is received from Mexico. If an acknowledgment is not received within 30 minutes of transmis-
+     sion time, the flight notification message should be retransmitted to the destination station and to
+     Mexico City (MMMXXMOW), which will then send an acknowledgment to the departure station and
+     assume responsibility for the message.
+AFJMAN11-213 26 AUGUST 1994                                                                              33
+
+  6.3.3. As some Mexican facilities operate on a part-time basis, do not request SAR operations for
+  overdue aircraft unless the destination confirms that the aircraft has not arrived or circumstances indi-
+  cate that an accident may have occurred. Make inquiries to the destination station and Mexico City
+  when an acknowledgment has not been received within 2 hours of the aircraft’s ETA, provided this is
+  within the hours of operation of the destination station.
+  6.3.4. If no reply is received within 1 hour after the inquiry is transmitted or if the reply is negative,
+  initiate preliminary communications search actions and transmit an information request (QALQ) mes-
+  sage to stations along the route within the United States.
+  6.3.5. If preliminary communications search actions are not successful, notify your tie-in FSS and ask
+  for their assistance. Maintain suspense files of all unclosed flight plans until the aircraft is located,
+  even though this may be for an indefinite period.
+34                                                                 AFJMAN11-213 26 AUGUST 1994
+
+                                                Chapter 7
+                                   MISCELLANEOUS MESSAGES
+
+7.1. About This Chapter. This chapter includes selected Service (SVC), Arrival, Acknowledgment, and
+Flight Advisory messages.
+     7.1.1. SVC Messages. SVC messages are used for a variety of information pertaining to or affecting
+     the movement of air traffic (also see attachment 2).
+     To request a repeat of a message from the originating station, see following examples:
+EXAMPLES:
+           /B
+           FF PANCYFYX
+           111200 KRDNYXYX
+           QSMB A24591
+           /B
+           FF HIF
+           091820 KRNDYXYX
+           QSMB AJAX32
+Aircraft returned to departure point and flight plan canceled.
+EXAMPLE:
+           /B
+           FF SUU
+           192230 KTCMYXYX
+           CNL M50237 RETURNED TCM
+To obtain information on a particular flight, you may send the following message:
+EXAMPLE:
+           /B
+           FF AUS
+           091620 KDLFYXYX
+           QRUQ R34657
+     7.1.2. Arrival Message. Send an arrival message on Canadian Ministry of Transportation, US
+     Department of Transportation, FAA Aircraft, when requested or when an aircraft arrives without a
+     departure message being received.
+EXAMPLES:
+           /B
+AFJMAN11-213 26 AUGUST 1994                                                                           35
+
+         FF LFI
+         211200 KVPSYXYX
+         TUG11 LFI A1155 VPS
+         /B
+         FF BLV
+         101345 KBSMYXYX
+         A46789 BLV A1340 BSM FPNO
+   7.1.3. Message Acknowledgments. Base operations personnel will acknowledge receipt of all Ser-
+   vice B flight data messages within 10 minutes after receipt. Acknowledgments for inbound aircraft
+   will be accomplished by transmitting the con traction "R" followed by the aircraft identification; for
+   example, TUG11 a C21 out of Andrews AFB going to Wright-Patterson AFB, the Wright-Patterson
+   acknowledgment would read:
+EXAMPLES:
+         /B
+         FF ADW
+         131500 KFFOYXYX
+         R TUG11
+
+
+         Sample acknowledgment message:
+         /B
+         FF VPS
+         132230 KSUUYXYX
+         R R23914
+
+
+Sample acknowledgment of a numbered message:
+         /B
+         FF LFI
+         211300 KADWYXYX
+         R001
+   7.1.4. Flight Advisory Messages:
+      7.1.4.1. IFR Flight Advisory Message. (See figure 7.1.) Service B circuits may be used to notify
+      an aircraft when hazardous airfield conditions exist; for example, weather below minimums at
+      destination. Advisories for IFR aircraft will be sent to the appropriate ARTCC (ZRZX).
+EXAMPLE:
+36                                                            AFJMAN11-213 26 AUGUST 1994
+
+         /B
+         FF KZDCZRZX
+         231500 KADWYXYX
+         FLT ADVY TUG11 C21 FFO ADW
+         ADW WEA BLO LNDG MIN. SUG PROCD LFI
+         ADZ INTENTIONS. DLVR 1625
+         FFO BASEOPS
+
+Figure 7.1. Flight Advisory Message Format.
+
+
+/B
+FF________   __________
+Precedence   Addressee(s)
+(Control D)  __________      __________.
+             Date     Time Originator
+             Group
+(Control B)  FLT ADVY        __________     __________        __________       __________.
+             Flight Adviso- Aircraft Ident Type Aircraft Departure             Destination
+             ry                                               Point
+__________. __________.
+Text (advise Delivery Time
+intentions)
+NOTE: Normally limit addressees to the ARTCC controlling the aircraft.
+      7.1.4.2. VFR Flight Advisories. Flight advisory messages for VFR aircraft will be sent to the
+      appropriate FSS nearest the aircraft’s estimated position.
+      7.1.4.3. En Route Flight Plan Changes. Normally all en route changes to flight plans will be
+      made with a FSS through the en route ARTCC controller. An example of a Service B message
+      indicating a change of destination follows (C-21 TUG11 en route Andrews AFB to Wright-Patter-
+      son AFB changed destination to Scott AFB over Zanesville, new ETA 2030).
+EXAMPLE:
+         /B
+         FF BLV FFO ADW
+         151945 KZZVYFYX
+         IFR TUG11 C21 BLV 2030 $OVR ZZV 1930 ORIG DEST FFO
+
+7.2. Equipment Outage and Circuit Interruptions. When an equipment outage occurs or you experi-
+ence circuit problems, notify the ARTCC, the tie-in FSS and NADIN. If the ARTCC indicates that the
+AFJMAN11-213 26 AUGUST 1994                                                                        37
+
+problem is not at the GS-200 equipment or circuit end, then also contact the Customer Service Center.
+Restoration of the outage requires that the same facilities or offices be notified.
+   7.2.1. Notification for scheduled or unscheduled closures, is required by NADIN and the tie-in FSS.
+   A local letter of agreement may negate the need for scheduled closure notifications.
+   7.2.2. Notification may be made by message or telephone.
+38                                                                   AFJMAN11-213 26 AUGUST 1994
+
+                                                 Chapter 8
+                                         OVERDUE AIRCRAFT
+
+8.1. Agency Responsibilities. Overdue aircraft communications search responsibility is shared between
+the DoD and FAA. The destination host base operations is responsible for preliminary communication
+search activities, and the FAA destination tie-in FSS is responsible for all extended communication search
+actions.
+     8.1.1. Destination Base Operations. If an inbound aircraft (including aircraft flying locally and
+     round robin) has not arrived or communications cannot be established within 30 minutes after ETA,
+     the destination host base operations will initiate preliminary communications search actions.
+         • Contact local air traffic control agencies. (This action frequently resolves questions regarding
+             IFR aircraft.)
+         • Initiate a ramp check.
+        •    Check adjacent airports.
+        •    If 1, 2, or 3 above fails to ascertain the aircraft's whereabouts, transmit a "QALQ" message to
+             the original departure station and to each point of intended landing:
+EXAMPLE:
+            /B
+            FF SPS
+            091543 KSKFYXYX
+          QALQ N2821Z
+        • Notify the destination tie-in FSS, by voice, of the overdue aircraft and the preliminary com-
+           munications search actions taken.
+     8.1.2. Action by Departure Station. Upon receipt of a QALQ inquiry, the departure station will
+     complete a ramp check and local communications search for the aircraft. This action should be com-
+     pleted within 15 minutes. If the aircraft is located, send the following message to the destination base,
+     the destination tie-in FSS, and the controlling ARTCC:
+EXAMPLE:
+            /B
+            FF SKF SAT KZHUZRZX
+            101650 KAFBYXYX
+            N2821Z QAL 1625
+        8.1.2.1. If unable to locate the aircraft, immediately provide the destination and the destination
+        tie-in FSS with all flight plan information.
+EXAMPLE:
+            /B
+            FF SKF SAT
+AFJMAN11-213 26 AUGUST 1994                                                                             39
+
+          091555 KREEYXYX
+          N2821Z C172 TAS 110 D1320 REE 65 DCT MWL
+          AUS SKF FEXHA 1720 PILOT JOHN JACOBS FONE 656-7823
+          AF AERO CLUB ACFT 4POB WHITE WITH RED TRIM.
+          (FEXHA is defined as fuel exhaustion time).
+NOTE: At this point, the FAA assumes responsibility for all overdue aircraft communications (extended
+communications search). The military base operations will continue to cooperate with the tie-in FSS, as
+may be required.
+
+8.2. Extended Communications Search. Although the FAA is responsible for extended communica-
+tions search activity, the military base operations may be in receipt of communications search traffic that
+will require a response. As a result, the following information is provided: (Ref: FAAH 7110.10, chap 8).
+   8.2.1. Information Request (INREQ) Message. If the reply to the QALQ is negative, or if the air-
+   craft has not been located within 30 minutes after it becomes overdue (1 hour after ETA), the FAA
+   will:
+       • Transmit a numbered INREQ message to the departure station, flight watch stations with
+           communications outlets (see FAA M14 charts) along the route, other FSSs along the route,
+           and the Rescue Coordination Center. If these stations are within 50 miles of the Great Lakes,
+           also transmit the INREQ to the Cleveland FSS.
+       • Include all information in the INREQ message that will assist in search activities.
+EXAMPLE:
+          /B
+          DD REE SPS FTW MWL AUS SAT KZFWZRZX KZHUZRZX KRCCYCYX
+          091655 KSATYFYX
+        INREQ N2821Z C172 TAS 110 D1320 REE 65 DCT MWL AUS SKF FEXHA 1720 PILOT
+     JOHN JACOBS FONE 656-7823
+          AF AERO CLUB ACFT 4POB WHITE WITH RED TRIM
+NOTE: INREQ messages are also addressed to ARTCCs along the route of flight and the Air Force Res-
+cue Coordination Center-KRCCYCYX. An eight-letter identifier must be used when sending to the RCC.
+   8.2.2. INREQ Action Upon Receipt. All stations in receipt of an INREQ are required to take some
+   type of action.
+       8.2.2.1. Departure Station will hold the INREQ message in suspense.
+       8.2.2.2. En Route Stations will seek information about the aircraft:
+           •   Check operational records.
+           •   Check airports in their area.
+           •   Check local Air Traffic Control agencies and initiate a ramp check.
+40                                                                     AFJMAN11-213 26 AUGUST 1994
+
+            •   Reply to the INREQ within 1 hour. If the reply contains pertinent information, send a
+                numbered message to the INREQ originator.
+EXAMPLE:
+           /B
+           DD SAT SPS MWL AUS REE SKF KZFWZRZX KZHUZRZX KRCCYCYX
+           091718 KFTWYFYX
+           REF INREQ N2821Z 30N MWL 1355. REQD AUS WX.
+           NO OTHER INFO AVAIL
+     8.2.3. Alert Notice (ALNOT) Message. ALNOT messages are sent 1 hour after transmission of the
+     INREQ message, or upon FEXHA time, whichever comes first (if all inquires to the INREQ were
+     negative).
+        8.2.3.1. ALNOT messages contain all items of the INREQ plus any information received as a
+        result of the INREQ inquiries.
+        8.2.3.2. ALNOT messages are addressed with priority indicator of "SS".
+        8.2.3.3. The FAA calls the RCC at Scott AFB 10 minutes after issuance of the ALNOT to assure
+        delivery and to answer any inquiries.
+        8.2.3.4. ALNOTs are addressed to all Service B circuits serving the ALNOT search area plus the
+        RCC.
+
+NOTE:
+ALNOTs are not numbered.
+     8.2.4. Receipt of ALNOT Action. Upon receipt of an ALNOT, each station whose area extends into
+     the ALNOT search area will:
+        8.2.4.1. Immediately conduct a communications search of those airports. That could accommo-
+        date the aircraft and were not checked during the INREQ status. Notify originator of search
+        results within 1 hour of receipt. Use a numbered message.
+        8.2.4.2. Deliver ALNOT information to adjacent terminal facilities.
+        8.2.4.3. Request appropriate law enforcement agencies to check airports which could not be con-
+        tacted, otherwise.
+        8.2.4.4. Request search assistance from aircraft traversing the search area.
+        8.2.4.5. Suspense ALNOT until canceled.
+     8.2.5. Cancellation of INREQ or ALNOT. INREQs will be canceled by the originator of the mes-
+     sage. ALNOTs are canceled by the RCC or the facility that originated the message. When informa-
+     tion is received indicating an aircraft arrival, cancellation, extension of flight plan, or information that
+     the aircraft has been located, the INREQ/ALNOT originator will transmit a cancellation message.
+EXAMPLES:
+           /B
+AFJMAN11-213 26 AUGUST 1994                                                                          41
+
+         DD SPS FTW MWL AUS KZFWZRZX KZHUZRZX KRCCYCYX
+         091740 KSATYFYX
+         INREQ N2821Z CNLD ACFT LCTD BSM
+
+
+         /B
+         SS XXMM XXEE XXBB KRCCYCYX
+         091810 KSATYFYX
+         ALNOT N2821Z CNLD WRECKAGE LCTD 35NW SAT
+
+
+NOTE: XXMM, etc., indicates an all circuit message; base operations cannot use all circuit message
+addressing.
+42                                                            AFJMAN11-213 26 AUGUST 1994
+
+
+OFFICIAL
+                                           BUSTER C. GLOSSON, Lt General, USAF
+                                           DCS/Plans and Operations
+
+
+
+                                           GORDON R. SULLIVIAN
+                                           General, United States Army
+
+
+
+MILTON H. HAMILTON
+Administrative Assistant to the
+Secretary of the Army
+
+
+
+                                           J.M. BOORDA
+                                           Admiral, United States Navy
+                                           Chief of Naval Operations
+
+
+
+F.J. HERRON
+Captain, United States Navy
+Assistant Vice Chief of Naval Operations
+
+
+
+                                       ,
+AFJMAN11-213 26 AUGUST 1994                                  43
+
+                                         Attachment 1
+                    GLOSSARY OF ABBREVIATIONS AND ACRONYMS
+
+Abbreviations and Acronyms
+ADF—Automatic Direction Finder
+ADMISA—Advise Customs and Public Health Services
+AFB—Air Force Base
+AID—Aircraft Identification
+ALNOT—Alert Notice
+ALTRV—Altitude Reservations
+AM—Amendment Message
+ARTCC—Air Route Traffic Control
+CID—Computer Identifying Number
+COMNAV—Communication Navigation
+CONUS—Continental United States
+DCT—Direct
+DoD—Department of Defense
+DTG—Date Time Group
+EET—Estimated Elapsed Time
+ETE—Estimated Time En Route
+FAA—Federal Aviation Administration
+FIR—Flight Information Region
+FLP—Flight Plans
+FSS—Flight Service Stations
+GMT—Greenwich Mean Time
+ICAO—International Civil Aviation Organization
+ILS—Instrument Landing System
+IR—Instrument Route
+MTR—Military Training Routes
+NADIN—National Airspace Data Interchange Network
+SAR—Search and Rescue
+SVC—Service
+RS—Remove Strip
+44                                        AFJMAN11-213 26 AUGUST 1994
+
+RTF—Radiotelephone
+TAS—True Airspeed
+UIR—Upper Information Region
+VFR—Visual Flight Rules
+VHF—Very High Frequency
+VOR—Very High Frequency Omindirectional
+AFJMAN11-213 26 AUGUST 1994                                                                          45
+
+                                            Attachment 2
+                              VOICE INTERPHONE PROCEDURES
+
+A2.1. All flight data will be voiced to the tie-in Flight Service Station (FSS) when Service B automated
+equipment is not available.
+   A2.1.1. Manner of Speaking . Clear enunciation is necessary at all times. Speak directly into the
+   interphone instrument in a moderate tone of voice. To avoid repetition, do not speak faster than the
+   FSS specialist can accurately copy. Spelling is not necessary unless the word is peculiar or seldom
+   used. Where spelling is required, use the International Civil Aviation (ICAO) phonetic alphabet.
+   A2.1.2. Initiating and Terminating a Conversation:
+       A2.1.2.1. Military base operations Initiating. Before using the interphone, ensure the circuit is
+       not in use; then activate the proper ringing device. When the FSS answers, state your location,
+       facility, and type messages. The following are examples of initiating communications:
+           A2.1.2.1.1. IFR Flight Plan Message. McCalister Flight Service receives a call from Tinker
+           AFB base operations (figure A2.1).
+
+Figure A2.1. Sample IFR Flight Plan Message.
+
+
+-Flight Service answers: "Flight Service".
+-Operator at Tinker replies: "Tinker base operations-IFR Flight Plan".
+-FSS replies: "Go ahead". (This indicates the FSS specialist is ready to copy.)
+-Tinker: "IFR, Air Force 71926, C-130/A, 320/ knots, Departing T-I-K, proposing at
+1715, Flight Level 210/, Victor 163, A-D-M, Victor 358 Dallas, D-A-L, Direct and land-
+ing Navy Dallas, N-B-E, 45 minutes en route". (End the message with an exchange of op-
+erator’s initials. Operator initials will be used as established locally.)
+           A2.1.2.1.2. Departure Notification Message. Tinker AFB calls McCalister Flight Service
+           (figure A2.2):
+
+Figure A2.2. Sample Departure Notification Message.
+
+
+-FSS answers: "Flight Service".
+-Tinker Base Operations: "Departure".
+-FSS: "Go ahead".
+-Tinker: "Air Force 71926 departed Tinker, ETA N-B-E is 1800 (operator initials)."
+           A2.1.2.1.3. Delay En Route Flight Plan. The following IFR delay en route flight plan is
+           called by Scott AFB to St Louis FSS: "Scott Base Operations, IFR, TUG04, C21A, true air-
+           speed 250, proposing from Scott at 1500Z, 6000 feet, direct Centralia, E-N-L, V313, Decatur
+           D-E-C, direct Springfield, C-A-P, remarks, delay 0+30 at C-A-P, final destination Scott,
+           B-L-V. Next leg (pause) proposing from C-A-P at 1700Z, airspeed 250, 5000 feet, direct
+46                                                            AFJMAN11-213 26 AUGUST 1994
+
+          Decatur, D-E-C, V313 Centralia, E-N-L, direct landing Scott Air Force Base, B-L-V, 1+30 en
+          route (operators initials)."
+          A2.1.2.1.4. Stopover VFR Flight Plan. This voice notification is provided by Tinker AFB
+          base operations to Oklahoma City FSS. "Tinker Base Operations, Stopover Flight Plan
+          (pause), VFR, Army 211, UH1, Departed Tinker, landing McConnell I-A-B, ETA 1910, next
+          leg (pause), landing Richards-Gebaur, G-V-W, 1 hour en route (operator’s initials)."
+          A2.1.2.1.5. Stopover IFR Flight Plan. This notification is provided by Tinker AFB base
+          operations to McCalister flight service: "Tinker Base Operations, IFR Stopover Flight Plan
+          (pause), IFR, TALL 22, T38P, Departed Tinker T-I-K for McConnell AFB, I-A-B, ETA 1123,
+          next leg (pause), 480, proposed 1200, 350, direct Wichita, I-C-T, J28 Pueblo, P-U-B, J17
+          Rapid City, R-A-P, direct and landing Ellsworth AFB, R-C-A, 1+45 En Route, next leg
+          (pause), 480 proposed 1400, 350, direct Rapid City, R-A-P, J151 Billings, B-I-L, J136 Spo-
+          kane, G-E-G, direct and landing Fairchild AFB, S-K-A, 1+45 en route (operators initials)."
+      A2.1.2.2. FSS Initiating. St Louis FSS has an inbound flight plan to deliver to Scott AFB. St
+      Louis activates the appropriate ringing device (figure A2.3).
+
+Figure A2.3. Sample FSS Initiated Message.
+
+
+Scott answers: "Base Operations".
+FSS: "Inbound".
+Scott: "Go ahead".
+AFJMAN11-213 26 AUGUST 1994                                                                           47
+
+                                             Attachment 3
+               INSTRUMENT FLIGHT RULES (IFR) FLIGHT PLAN MESSAGE
+
+A3.1. IFR Flight Plan. The purpose of the IFR proposal message is to establish a data base for the flight
+plan. Each message is composed of fields and elements and when accepted by the computer, becomes
+part of the data base.
+   A3.1.1. Fields. The "body" (not including the address and originator elements) of an IFR flight plan
+   message is made up of 11 data fields in a fixed order. Each data field is made up of one or more ele-
+   ments. Fields are separated from each other by a space.
+   A3.1.2. Element. An element is made up of one or more nonspace characters; e.g., SPS, separated
+   from other elements in a field by a slash or a period.
+   A3.1.3. IFR Flight Plan Message (Fields and Elements):
+
+
+Field 00       Field 01 MSG     Field02 ACFT      Field03 ACFT     Field04 USED        Field 05
+SOURCE         TYPE IDENT       IDENT             DATA             ONLY IF DI-         AIRSPEED
+                                                                   RECTED
+Field 06 Field 07                                 Field 09         Field 10 ALTI-      Field 11
+DEPT PT                                           PROP TIME        TUDE                ROUTE RE-
+                                                                                       MARKS
+Sample Entries:
+Field 00      Field 01 FP   Field 02 E116         Field 03 C9/A    Field 05460
+ADW153000
+2
+Field 06      Field 07P1320 Field 09310           Field 10
+ADW                                               ADW..OTT.J61.PSB.J59.SYR.J29.PLB..VAL1720015.
+                                                  .PBG
+
+A3.2. Data Fields Required For IFR Flight Plan Messages:
+   A3.2.1. Field 00 . Source Identification - ten characters required:
+      • Three-letter ICAO identification (station identifier)
+      • Time (UTC)
+      • Local three-digit message number.
+   Sample Entry: ADW1530002
+   A3.2.2. Field 01 . Message Type-two letters followed by a space:
+      • FP (Flight Plan)- used when transmitting a flight plan. Sample entry: FP
+      • AM (Amendment) - used to amend flight plan data.
+      • CM (Correction) - used to correct an error as identified by the ARTCC computer.
+      • RS (Remove Strip) - used to remove a flight plan.
+      • SP (Stereo Plan) - used to enter a stereo flight plan.
+48                                                                   AFJMAN11-213 26 AUGUST 1994
+
+     A3.2.3. Field 02. Aircraft Identification - (two to seven characters), followed by a space. If there
+     are more than seven characters, abbreviate to seven characters and explain in the remarks. Examples:
+     TOXEN22, M12345, E116.
+     A3.2.4. Field 03. Aircraft Data - Consists of two to nine characters including /, followed by a space.
+     Examples: T38/A, H/C141/R, 3H/C141/R, 2/F15/P.
+        • Number of aircraft and or "Heavy" Indicator (two-character limit).
+        • Type of Aircraft (four-character limit).
+        • Equipment Suffix (one-character limit).
+     A3.2.5. Field 04. Used only when specifically directed by the ARTCC.
+     A3.2.6. Field 05. Airspeed (True Airspeed) - Two to four characters followed by a space. Sample
+     Entry: 350
+     A3.2.7. Field 06. Departure point or point where clearance begins - (must be a fix, and may also
+     include fix radial distance). Consists of two to twelve characters, followed by a space. Sample Entry:
+     DLF
+     A3.2.8. Field 07. Proposed Departure Time. Consists of the letter "P" and a four-digit time group
+     (UTC) followed by a space. If an error is made in the proposed time and the error indicates a proposed
+     departure time that is "before" the current actual time, the computer will acknowledge the message
+     and store the flight plan for departure the next day. For example, if the current time is 1400Z and the
+     proposed time is entered as 1300Z, the computer will think the proposed time is 1300Z the next day.
+     Sample Entry: 1400
+     A3.2.9. Field 09. Requested Altitude. Two to seven characters followed by a backward slant.
+     -Altitudes or flight levels will be expressed in hundreds of feet without leading zeros; e.g., 410. Other
+     approved entries are: VFR on top (OTP) Block altitude (190B240) (When placed in proper message
+     format, the requested altitude element is followed, without a space, by a backward slash and then a
+     new line.)
+     A3.2.10. Field 10. Proposed Route of Flight. Forty element limit except flight plans submitted to
+     New York, Washington, and Cleveland ARTCCs which have a limit of 32 elements. Double periods
+     count as one.
+        A3.2.10.1. Elements. Separated by one or two periods.
+           • Unlike elements are separated by one period: FIX.RTE.FIX.RTE.FIX
+           • Like elements are separated by two periods: FIX..FIX.RTE..RTE.FIX
+        A3.2.10.2. Fix elements. Describes a geographical location.
+        A3.2.10.3. Fix name. Consists of two to five alphanumeric characters.
+        A3.2.10.4. Fix, radial, distance. Consists of eight to eleven alphanumeric characters; e.g.,
+        RND135021.
+        A3.2.10.5. Latitude and Longitude. Consists of nine to twelve alphanumeric characters; e.g.,
+        3640N/09250W. EXAMPLE: DLF..THX056012..2955N/09912W..3122N/10112W..ABI.
+AFJMAN11-213 26 AUGUST 1994                                                                       49
+
+     A3.2.10.6. Route Elements. Consists of airways, routes, Standard Instrument Departures (SID),
+     Standard Arrival Routes (STAR), published radials, Military Training Routes (MTR), and special
+     route elements.
+     A3.2.10.7. Airways. Indicate the airway designator; e.g., V163, J21.
+     A3.2.10.8. Routes. This includes Radar Navigation (RNAV) routes, Oceanic Routes, and North
+     American Routes:
+EXAMPLE:
+       RNAV-J843R
+       Oceanic-A15,B12
+       North American-NA50,NA9
+     A3.2.10.9. Standard Instrument Departure. If used, the SID must be specified as the second
+     element in Field 10. EXAMPLE: LAX.OCEN3.DAG..GFS.V210.GCN. (This example indi-
+     cates an Ocean 3 (OCEN3) SID to Dagget (DAG)).
+     A3.2.10.10. Standard Terminal Arrival Route. If used, the STAR must be specified as next to
+     the last element in Field 10.
+EXAMPLE: RND..MARCS.V198.GLAND.BLUMS5.HOU. (This example indicates a BLUMS 5
+arrival to Houston.)
+     A3.2.10.11. Published Radials. Published radials (e.g., within a preferred route) are considered
+     airways. EXAMPLE: LRD012..SAT202.
+     A3.2.10.12. Military Training Routes (MTR). Certain military routes are considered coded
+     routes; e.g., IR-routes, Refueling Tracks and Anchors. The route designator must be preceded and
+     followed by the entry and exit fixes in terms of fix, radial, and distance.
+EXAMPLES:
+       TNP355025.IR252.PKE107012
+       ABQ..TCC..ONM..ONM075057.IR134+2.ALS080070..
+       GAG.AR114.CIM276038..LVS..TCC.J6.AMA.J26.TXO..
+       CVS001035..CVS0445 : TANKER BLAST 41
+     A3.2.10.13. VFR Element. Used when an aircraft is proceeding IFR to a fix and then VFR or
+     VFR to an IFR pickup point. NOTE: The ARTCC computer stops processing whenever it reads
+     VFR. EXAMPLE: Aircraft is going from New Orleans to Randolph AFB. The pilot files VFR to
+     CRP and then IFR. The route of flight will read CRP.V163.THX..RND (Flight Plan remarks will
+     indicate: VFR Departure). EXAMPLE: Aircraft files IFR to SAT then VFR to COT:
+     HLR..AUS.V17.SAT.VFR.COT.
+     A3.2.10.14. Stereo Routes. A stereo route must specify the identification of a prestored flight
+     plan. The flight plan message may be entered with the stereo identification as the only Field 10
+     entry. The stored data will automatically replace the stereo identification when received at the
+     ARTCC.
+50                                                                   AFJMAN11-213 26 AUGUST 1994
+
+        A3.2.10.15. Estimated Time En Route (ETE). Consists of an element separator (/) and four
+        digits applicable to the destination: CVS/0445.
+     A3.2.11. Field 11 Remarks. This is an optional field. Data in this field are separated from Field 10
+     by a space and is limited to air traffic control remarks.
+         • Full Route Clearance (FRC) will be added to the flight plan remarks any time the route of
+            flight transmitted to the ARTCC is different than the route the pilot filed. This action requires
+            the ARTCC controller to issue an FRC to the pilot, thus eliminating any possible confusion.
+            When used, FRC must be the first remark in Field 11.
+         • The overcast symbol, represented by a question mark (?) on the Cathode Ray Tube (CRT)
+            keyboard, is followed by the remarks applicable to the ARTCC controlling the departure
+            point.
+         • The clear weather symbol, represented by a colon (:) on the CRT key board, is followed by the
+            remarks applicable to all ARTCCs through which the flight transits, including the originating
+            ARTCC.
+AFJMAN11-213 26 AUGUST 1994                                                             51
+
+                                           Attachment 4
+                                      DISTRIBUTION LIST
+
+
+Distribution:
+Air Force: F
+Army: Distribution of this publication is made in accordance with the requirements on
+DA Form 12-09-E, block number 3884, intended for command level A for the Active Ar-
+my, the Army National Guard, and the U.S. Army Reserve.
+Navy:
+SNDL          A6            Headquarters U. S. Marine Corps
+              B2A           Special Agencies, Staff, Boards, and Committees
+                            (Director, Defense Mapping Agency only)
+              B2E           Defense Mapping Agency Components and Elements
+              B5            U.S. Coast Guard
+              21A           Fleet Commanders in Chief
+              22A           Fleet Commanders
+                            Force Commanders
+                            Type Commanders
+              26A           Amphibious Group
+              26F           Operational Test and Evaluation Force Detachment
+              26G           FBM Operational Test
+              26JJ          Fleet Area Control and Surveillance Facility
+              27G           Support Force
+              28A           Carrier Group
+              28C           Surface Group and Force Representative
+              28L           Amphibious Squadron
+              29B           Aircraft Carrier (CV), (CVN)
+              31A           Amphibious Command Ship (LCC)
+              31B           Amphibious Cargo Ship (LKA)
+              31H           Amphibious Assault Ship (LHA), (LPH)
+              32TT          Auxiliary Aircraft Landing Training Ship (AVT)
+                            Naval Aviation
+                            Fleet Marine Force - Aviation
+              C3B           Naval Personnel at FAA Activities
+              FA5           Air Facility LANT
+              FA6           Air Station LANT
+              FB6           Air Facility PAC
+              FB7           Air Station PAC
+52                                                        AFJMAN11-213 26 AUGUST 1994
+
+           FB10        Station PAC
+           FB34        Fleet Activities
+           FC4         Air Facility NAVUR
+           FC5         Support Activity NAVEUR
+           FC7         Station NAVEUR
+           FD1         Oceanography Command
+           FD3         Fleet Numrical Oceanography Center
+           FD5         Oceanography Command Center
+           FD6         Oceanography Command Facility
+           FF3         Station CNO
+           FF5         Safety Center
+           FG1         Computer and Telecommunications Command
+           FG2         Communication Station
+           FKA1A       Air Systems Command
+           FKA1B       Space and Naval Warfare Systems Command
+           FKA1C       Facilities Engineering Command
+           FKR1A       Air Station NAVAIRSYSCOM
+           FKR1B       Aviation Depot
+           FKR2A       Plant Representative Office NAVAIRSYSCOM
+           FKR4B       Missile Range Facility
+           FKR6A       Air Warfare Center Aircraft Division (Warminster, Lake-
+                       hurst, Patuzent River, only)
+           FR4         Air Reserve
+           FT1         Chief of Naval Education and Training
+           FT2         Chief of Naval Air Training
+           FT5         Chief of Naval Technical Training
+           FT6         Air Station CNET
+           FT10        Aviation Schools Command
+           FT12        Air Maintenance Training Group
+           V3          Marine Corps Air Bases Commanders
+           V4          Marine Corps Air Facility
+           V5          Marine Corps Air Station
+           V6          4th Marine Aircraft Wing
+
+
+
+CNO N09B34, N882, N885, N885F (35)
+Stocked:
+AFJMAN11-213 26 AUGUST 1994               53
+
+Navy Aviation Supply Office
+Physical Distribution Division Code 103
+Tabor Avenue
+Philadelphia PA 19120-5099 (200)

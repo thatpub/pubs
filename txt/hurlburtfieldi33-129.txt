@@ -1,0 +1,184 @@
+BY ORDER OF THE COMMANDER,                                HURLBURT FIELD INSTRUCTION 33-129
+16TH SPECIAL OPERATIONS WING (AFSOC)                                                         1 June 2001
+
+                                                                                        Communications
+
+                                                                   BASE NETWORK WEB SERVER
+                                                                 MANAGEMENT AND PUBLISHING
+
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE: This publication is available digitally via the Electronic Transaction System (ETS) site at:
+http://afpubs.hq.af.mil. If you lack access, contact the OPR and/or publications manager.
+
+
+OPR: 16 CS/SCB (Mr. Johnathan F. Van                Certified by: 16 CS/SCB (Maj Roftiel Constantine)
+     Houten)                                                                                 Pages: 6
+                                                                                      Distribution: F
+
+This Hurlburt Field Instruction (HFI) defines the responsibilities and duties of the Base Network Web
+Server Manager and establishes policies and procedures for initiating and maintaining public, lim-
+ited-access, and Intranet web environments for all units residing on Hurlburt Field. This instruction
+applies to all base organizations that rely on the services of the Base Network Web Servers or use or
+access the communications infrastructure maintained by the Network Control Center (NCC) and the 16th
+Communications Squadron. This instruction is established by guidelines found in AFI 33-115, Networks
+Management, 1 April 1996, AFI 33-129, Transmission of information via the Internet, 1 January 1997,
+Web Style Guide: Basic Design Principles for Creating Web Sites, CAIM (Center for Advanced Informa-
+tion Management) Yale University, available from Yale University Press in March of 1999, Shneiderman,
+B. 1992, Designing the user interface: Effective strategies for effective human-computer interaction. 2nd
+ed., Reading, Mass.: Addison-Wesley, and implements AFPD 33-1, Command, Control, Communica-
+tions, and Computer (C4) Systems.
+
+
+
+1. Web Server Manager Functions. The Base Network Web Server Manager is a support function
+aligned under the 16th Communications Squadron. AFI 33-129, Transmission of Information via the
+Internet, establishes the requirement for the web server manager as the single focal point on base to pro-
+vide access to and guidance for web-based services. The web manager will establish local procedures that
+accommodate HHQ processing directives.
+
+2. The Hurlburt Webmaster will:
+   2.1. Review and assess requirements and applications for access and/or site development. No user or
+   unit shall have access to a base webserver without demonstrating absolute requirement. (See Attach-
+   ment 2).
+2                                                                               HFI 33-129 1 June 2001
+
+    2.2. Operate, secure, maintain and manage all non C-2 web servers under NCC control. The Webmas-
+    ter will establish and update guidelines for document publishing as well as procedures for page devel-
+    opers/maintainers to place information on Hurlburt web servers.
+    2.3. Determine proper host for information. Documents required for use solely by on-base personnel
+    need not be placed on the public Internet or the limited access Internet site. Such documents will be
+    published to the Intranet server – guarded by base firewall protection.
+    2.4. Establish file size and script code limitations as defined in Attachment 1 of this document. Site
+    must follow ‘look and feel’ (defined as using similar modular configuration and moderate use of
+    graphics to maintain a professional image), of parent site. Also, AFI 33-129 para 12 defines require-
+    ments for ‘Page Layout and Design’. Site must have no external links to commercial or non-profit
+    organizations. (E.g. .com, .net, or .org).
+    2.5. Prior to initial placement, examine candidate html, and scripting code for vulnerabilities.
+    2.6. Assess requirements for access to servers based upon update schedules and security require-
+    ments.
+    2.7. Provide page maintainers access to a single directory for read/write access. Multiple access
+    points increase the opportunity for exploitation and decrease focal point control of document publish-
+    ing. If a unit requires a backup maintainer, said individual will have access granted upon the tempo-
+    rary revocation of the primary.
+    2.8. Revoke access to network servers for violations of procedure and security vulnerabilities.
+       2.8.1. Violations of procedure include: posting unauthorized information on the web servers,
+       posting unauthorized code on the web servers, failure to follow established guidelines such as this
+       document.
+       2.8.2. Security vulnerabilities include certain java-based functions and the attempt to initiate
+       server-side executables, (FrontPage or Cold Fusion extensions, etc.) or any other code/script as
+       defined in this document. Exception: Does not apply to AF/XO or USSOCOM downward
+       directed Command and Control programs that are tested and approved for operational use.
+    2.9. Permit or deny access to cgi-bin, (server-side script functional directory) based upon knowledge
+    and requirement, determined by the Webmaster.
+    2.10. Adhere to policy and network regulatory measures as described in applicable instructions. All
+    information is subject to monitoring. At no time shall a developer use his account on a server to
+    attack, modify, or access external applications, servers, and/or systems.
+
+3. Web Page Developers/Maintainers will:
+    3.1. Comply with Attachment 1 of this document.
+    3.2. Not abuse the use of animated graphics in such a fashion as to degrade the appearance or percep-
+    tion of the unit or the Air Force.
+    3.3. Request post capability on any Hurlburt web server using the following procedures:
+       3.3.1. Forward a request letter to the base Webmaster signed by the unit commander. This letter
+       will include request reason, name, rank, and telephone number of primary and alternate prospec-
+       tive page maintainers.
+HFI 33-129 1 June 2001                                                                                3
+
+       3.3.2. (Internet server only) Submit all information and imagery to a review process conducted by
+       base 16 SOW Public Affairs. 16 SOW/PA will conduct a content review and record required
+       changes on the PA review form.
+       3.3.3. Upon completion of 16 SOW/PA review, all technical formats must be approved for use by
+       the base Webmaster. Ensure completed 16 SOW/PA checklist accompanies site information. If
+       the unit uses in-house development, approved material may then be constructed into applicable
+       web site.
+       3.3.4. Submit applications for access and/or site development for review to the base Webmaster.
+
+4. Information Technologies Office will:
+   4.1. Review any changes to this publication to ensure that any web server or web design guidelines
+   don’t conflict with AF/XO or USSOCOM downward directed Command and Control programs.
+   4.2. Ensure that publication changes do not effect wing automation programs approved by 16 SOW/
+   CC.
+
+
+
+                                           DAVID J. SCOTT, Colonel, USAF
+                                           Commander
+4                                                                               HFI 33-129 1 June 2001
+
+                                              Attachment 1
+
+                             LIMITATIONS AND ACCESS CONTROLS
+
+Table A1.1. Webserver Limitations and Access Controls.
+ SERVER             Internet           Internet                    Intranet              SIPRnet
+                    Public Access      Limited Access
+ Phone Numbers/     No                 No                          Yes                   Yes
+ Directories
+ Average Total File 70K*               70K*                        250K*                 150K*
+ Size (measured in
+ KB)
+ Commercial Link    Yes                Yes                         No                    No
+ Restricted
+ Biographical       No                 No                          Yes                   Yes
+ Information Per-
+ mitted
+ Local-Only Use     No                 No                          Yes                   Yes***
+ Information
+File size limitations are approximate,+/-10K. Restriction based on average visitor connection of
+33.6kilobits per second.
+Access Issues: Bandwidth and Interaction
+Users will not tolerate long delays. Human-factors research has shown that for most computing tasks the
+threshold of frustration is around 10 seconds. Web page designs that are not well "tuned" to the network
+access speed of your typical users will only frustrate them. If your users are primarily general public
+browsers "surfing" the Web via 33.6 kbps phone line connections, (industry standard according to census
+- Jan 1998) it is foolish to put huge bitmap graphics on your pages the average user will not be patient
+enough to wait endlessly while your graphics download over the phone line. However, if you are building
+a university or corporate Intranet site where most users will be accessing your Web server at Ethernet
+speeds or better you can be much more ambitious in your use of graphics and multimedia.
+The image data itself is sent in ’blocked’ format and reassembled on the client machine. Under normal
+conditions, 5 - 30% of data is lost and must be re-sent by the host. What this equates to in large bitmapped
+imagery, is an exponentially longer period of reconstruction - hence the massive delay with large graphic
+files.
+Additionally, when you compose script - such as JavaScript or DHTML - download time and reconstruc-
+tion is further complicated as scripted code must be compiled and successfully executed on the client
+machine. Modern browsers attempt various error corrections for scripted code.
+Information provided by the following references:
+Shneiderman, B. 1992. Designing the user interface: Effective strategies for effective human-computer
+interaction. 2nd ed., Reading, Mass.: Addison-Wesley.
+Web Style Guide: Basic Design Principles for Creating Web Sites, CAIM (Center for Advanced Informa-
+tion Management – Yale University) available from Yale University Press in March of 1999. ]
+Commercial links are not permitted on Internet sites per AFI 33-129.
+HFI 33-129 1 June 2001                                                                               5
+
+With the understanding that any information placed on the SIPR web server is open to the entire SIPRNet
+community.
+In no case shall any java or java script be published prior to approval by base Webmaster. Exception:
+Does not apply to AF?XO or USSOCOM downward directed Command and Control programs that are
+tested and approved for operational use.
+6                                                                           HFI 33-129 1 June 2001
+
+                                            Attachment 2
+
+                     PAGE ACCESS AND MAINTAINER REQUIREMENTS
+
+A2.1. Requirements for Unit Page Maintainer Authorization.
+    A2.1.1. Units must display a genuine need for dedicated access – major updates must occur daily.
+    A2.1.2. Unit member assigned the task of accomplishing updates must display capability to accom-
+    plish said updates. When available, member must have completed web developer course.
+
+A2.2. Methods for publishing web sites onto any of the base web servers.
+    A2.2.1. Unit Developed – No Access Required, Determined by an update requirement of greater then
+    once per week. Updates are sent electronically to Webmaster for update.
+    A2.2.2. Unit Developed – Access Required, Site developed by unit member and access is required to
+    make daily updates.
+    A2.2.3. Webmaster Developed – No Access Required, Base webmaster will accomplish site creation
+    and, based on information provided by the unit POC, perform all updates. (Limited option - based on
+    contract and availability of Webmaster.)
+    A2.2.4. Webmaster Developed – Access Required, Base Webmaster will create the initial start-up and
+    the unit POC will have access granted for updates. (Limited option – based on availability of Web-
+    master.)
+
+A2.3. Web developers need to be familiar with web publishing policy found in this document as well as
+AFI 33-129.

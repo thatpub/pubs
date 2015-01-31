@@ -1,0 +1,459 @@
+Administrative Changes to 309MXWI23-105, Backorder Reconciliation and Cancellation
+
+OPR: OO-ALC/OBWP
+
+References to 309 MXW should be changed to OO-ALC throughout the publication.
+
+27 March 2014
+BY ORDER OF THE DIRECTOR                                                                 309TH MAINTENANCE WING
+309TH MAINTENANCE WING                                                                          INSTRUCTION 23-105
+
+                                                                                                              9 FEBRUARY 2011
+
+                                                                                                         Materiel Management
+
+                                                                                   BACKORDER RECONCILIATION
+                                                                                          AND CANCELLATION
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+               publishing website at www.e-Publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: 309 MXW/OBW                                                                                 Certified by: 309 MXW/OB
+                                                                                                   (Mr. Theodore W. Eaton)
+                                                                                                                   Pages: 20
+
+
+This instruction provides guidance for production support technicians/production support
+specialists (PST/PSS) to process front-end edits performing backorder (B/O) reconciliation and
+cancellation to include B/Os against closed job order numbers (JONs). Any references to
+personnel or organizations outside of the 309th Maintenance Wing are for continuity purposes
+only. References include Air Force Manual (AFMAN) 23-110, Vol. III, Part Two, Chapter 5-6,
+Depot Supply Procedures, and Air Force Materiel Command Instruction (AFMCI) 21-130,
+Depot Maintenance Materiel Control. Ensure that all records created as a result of processes
+prescribed in this publication are maintained in accordance with (IAW) AFMAN 33-363,
+Management of Records, and disposed of IAW the Air Force Records Disposition Schedule
+(RDS) located at https://www.my.af.mil/gcssaf61a/afrims/afrims/afrims/rims.cfm. Refer
+recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the Air Force Information Management Tool (AF IMT) 847,
+Recommendation for Change of Publication; route AF IMTs 847 from the field through the
+appropriate functional‘s chain of command.
+
+
+       1.     General Information. ..............................................................................................   2
+       2.     Front-End Edit Overrides. ......................................................................................      2
+       3.     B/Os Against Closed JONS. ..................................................................................          3
+       4.     B/O Reconciliation Process. ..................................................................................        5
+       5.     Prescribed and Adopted Forms. .............................................................................           6
+ 2                                                       309MXWI23-105 13 JANUARY 2011
+
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                   7
+
+Attachment 2—JON STATUS CODES.                                                                   8
+
+Attachment 3—DCAST JON MATERIAL ERROR REPORT.                                                    9
+
+Attachment 4—B/O MODIFY/CANCEL DOC ID – ‘ZF‘ AND TYPE TRANSACTION CODE ‘B‘.
+                                                                         10
+
+Attachment 5—B/O MODIFY/CANCEL DOC ID ‘DG’ TYPE TRANSACTION ‘BLANK’.                            12
+
+Attachment 6—B/O MODIFY/CANCEL DOC ID ‘ZF’ TYPE TRANSACTION ‘D’.                                14
+
+Attachment 7—WARRS/D035K BOC INDICATOR                                                          16
+
+Attachment 8—JOB ORDER INQUIRY.FIGURE                                                           17
+
+Attachment 9—NIMMS MN123P B/O MODIFY/CANCEL SCREEN ZF A/B COST CODE.                            18
+
+
+1. General Information. This instruction must be completely reviewed and complied with. It
+defines the roles and responsibilities for the PST/PSS, combined the backorder cancellation
+(BOC) and Non bill of material (NONBOM) B/O reconciliation OIs and added a requirement to
+input demand codes on material orders. Caution and discipline must be used when processing
+direct material requests in order to prevent excessive stockpiles of material, expenditure of
+unnecessary funds and placing erroneous or inconsistent demands on the supply systems. The
+front-end edits process within the automated bill of material (ABOM) system. This is an
+important tool in preventing the issue of direct material that is excess to production requirements
+and should be used to the maximum extent. Material issued in excess of requirements directly
+impacts end-item sales costs and affects the accuracy of the bill of material (BOM). The
+Wholesale and Retail Receiving and Shipping System (WARRS, D035K) retains all B/O
+information which has obligated depot maintenance activity group funds. The PST/PSS will
+conduct a monthly review on B/Os to ensure requirements are still valid, and when no longer
+required request cancellation.
+2. Front-End Edit Overrides. The planner will approve the front-end edit override if the
+quantity ordered exceeds the planned quantity per assembly. The shop supervisor is ultimately
+accountable for material usage and direct material costs in their shop. The PST/PSS is not
+authorized to override ABOM front-end edits without the planner‘s approval. The PST/PSS will
+validate each requirement and will inform the shop supervisor of all disapprovals.
+     2.1. The PST/PSS will use either the ABOM single requisition screen for consumable items,
+     or the ABOM exchangeable material requisition by unique ID screen for exchange items.
+     ABOM pick lists can also be used to order consumables. The data on the pick list comes
+     from the daily Depot Maintenance Material Support System (G005M)/Job Order Production
+     Master System (JOPMS/G004L) feed; using this capability reduces data entry. The initial
+     requisition passed from ABOM to the WARRS/D035K must be a 'B3' priority or higher,
+     include the standard reporting designator and required delivery date to pass the information
+     required to place the end item in awaiting parts.
+309MXWI23-105 13 JANUARY 2011                                                                   3
+
+
+   2.2. The PST/PSS will not use the ABOM NONBOM function without receiving written
+   approval from the planner prior to, the issue request being input. Material will not be ordered
+   directly into the WARRS/D035K when ABOM is operational. If the item is unplanned for or
+   the production number and quantity requested exceeds the units per assembly, a message will
+   appear on the screen.
+      2.2.1. The PST/PSS will print the screen displaying the message and provide a copy of
+      the screen print to the planner responsible for the BOM.
+      2.2.2. The PST/PSS validates the requirement with the requester and recommends to the
+      shop supervisor approval/disapproval. The PST/PSS will decide if there is a recurring
+      demand. For recurring material orders through ABOM, use a demand code ‗R‘ and non-
+      recurring use a demand code ‗N‘. NOTE: Demand code ‗R‘ builds a consumption data
+      and drive stock levels in WARRS/D035K. Demand code ‗N‘ will not build consumption
+      data or drive stock levels in WARRS/D035K.
+      2.2.3. If the shop supervisor disagrees with the recommendation and the disagreement
+      cannot be resolved, it must be elevated to the shop supervisor‘s superior (i.e., production
+      section) for decision.
+      2.2.4. Once the decision is made to approve the override of the front-end edits, the
+      planner annotates the screen print with their approval and initials. The annotated screen
+      print will be returned to the PST/PSS ordering material. The PST/PSS will process the
+      material request using the ABOM NONBOM function. The PST/PSS will validate the
+      operation number, production control number and the JON to ensure they are compatible
+      with the resource control center (RCC). The PST/PSS will maintain the signed copy for
+      1 year.
+   2.3. A material request for items ordered through the Material Processing System (MPS) that
+   establishes a BOM override cannot be processed by the PST/PSS. The PST/PSS can view
+   the front-end edits, but does not have the access capability to change or process any data.
+   These front-end edits are electronically sent directly to the planner. NOTE: MPS will only
+   recognize/edit transactions that are over the maximum quantity authorized on the BOM.
+   Over standard quantity front-end edits will automatically process the issue or B/O. (An
+   option has been added to the main menu used by the PST/PSS that will set the front-end edits
+   to standard by RCC. This is the F11 key, update commodity RCC.)
+3. B/Os Against Closed JONS. All B/Os against a closed JON must be rolled to another end-
+item, new JON or a cancellation requested prior to the JON moving to JON status code 2 or 3
+(see Attachment 2).
+   3.1. The PST/PSS will roll the JON or request cancellation on all B/Os prior to, or upon
+   notification of JON closure. NOTE: When production is ready to turn a repaired item into
+   supply, the PST/PSS will ensure all B/Os that are linked to that same end-item are rolled to
+   another end-item, new JON or cancellation requested through Naval Air Industrial Material
+   Management System (NIMMS). If the end-item has been turned into supply and a B/O is
+   still linked to the end item, an ―AK‖ exception will generate. The Defense Logistics Agency
+   (DLA) has the responsibility of working ―AK‖ exceptions with the applicable PST/PSS to
+   cancel, file and maintain the B/O.
+      3.1.1. The PST/PSS will make sure the following steps are completed for JON closure:
+4                                                            309MXWI23-105 13 JANUARY 2011
+
+
+           3.1.1.1. Ensure the B/O associated with applicable JONs are moved or cancelled in
+           NIMMS.
+           3.1.1.2. Ensure unserviceable turn-in has processed in the ABOM and passed to
+           WARRS/D035K.
+           3.1.1.3. Coordinate with the DLA Retail Item Manager if the turn-in has not
+           processed in WARRS/D035K.
+           3.1.1.4. Clear report for receipt (507) errors.
+    3.2. The Depot Cost and Schedule Tool (DCAST) System is available on the Hill Portal
+    https://opinfoc.hill.af.mil/portal/page/portal/portal_home/login/Tab87021 and will be
+    used to ensure all B/Os are file maintained or cancellations requested. The PST/PSS is also
+    responsible to ensure that all financial errors are corrected on the Defense Industrial
+    Financial Management System (DIFMS). DCAST will be used for this requirement and it
+    will provide all errors regardless of the age of the error when the JON closure Material Error
+    Report option is selected (see Attachment 3).
+       3.2.1. The PST/PSS will access DCAST and follow the steps below to access reports for
+       JON closure:
+           3.2.1.1. Select Reports
+           3.2.1.2. Select JON Closure
+           3.2.1.3. Select Material Errors
+           3.2.1.4. Enter JON
+           3.2.1.5. Select ‗JON CLOSURE‘
+       3.2.2. Coordinate with the workload manager to determine if the B/O can be moved to an
+       open JON. When the B/O can be file maintained, process the change in NIMMS
+       (MN123P) B/O modify cancel request screen using document identifier (DOC ID) ‗ZF‘
+       and type transaction code ‗B‘ (see Attachment 4). NOTE: Change will pass to
+       WARRS/D035K. Some areas may use the Job Order Management System e-mail
+       notification process. These notices provide the same information that can be accessed in
+       DCAST and can be used to clear the errors in the same manner.
+       3.2.3. Ensure the material due record is complete and updated on the NIMMS (MN084P
+       screen).
+       3.2.4. Ensure there are no outstanding dues on the DIFMS (MN036P screen).
+    3.3. If determined that the B/O cannot be moved to an open JON or there is no longer a
+    requirement for the item, request cancellation using the NIMMS (MN123P) B/O modify
+    request cancel screen (Attachment 5) using a DOC ID ‗DG‘ and leaving the type transaction
+    code blank. NOTE: Change will pass to WARRS/D035K.
+       3.3.1. When a response is received from the source of supply that a B/O cannot be
+       cancelled (WARRS/D035K BOC ‗3‘) and the B/O cannot be rolled to another end-item
+       or JON, the material due can be modified to bring the material into the ‗Y‘ store when it
+       is received.
+309MXWI23-105 13 JANUARY 2011                                                                    5
+
+
+          3.3.1.1. The document number requiring update will be processed on the NIMMS
+          (NM123P screen), DOC ID ‗ZF‘ and type transaction code ‗D‘ (see Attachment 6).
+          This will change the RCC designations and notify supply of the change for delivery
+          purposes. The system will update the JON to the inventory JON. This transaction
+          includes: Closing the original B/O and creating a new B/O with the new RCC and
+          overlaying the notification to WARRS/D035K. A change may be required to update
+          the building station for delivery purposes.
+          3.3.1.2. Partial cancellations will follow the same logic. The B/O will be reduced to
+          the quantity that can be satisfied by the system. NOTE: A list of BOCs and
+          definitions can be found in WARRS/DO35K BOC list (see Attachment 7).
+4. B/O Reconciliation Process.
+   4.1. A monthly review of all B/Os is necessary to determine if the quantity ordered is in
+   excess of current requirements and to verify specific data elements. It is the responsibility of
+   the PST/PSS to validate B/Os for the RCC or production numbers they manage using the
+   NIMMS report in the COGNOS system.
+   4.2. B/O validation will be performed using the reports in COGNOS to ensure the NIMMS
+   and WARRS/D035K contain identical data. Required reports include:
+      4.2.1. NIMMS not in WARRS/D035K – (MN244R03), due is in NIMMS, no B/O in
+      WARRS/D035K
+      4.2.2. WARRS/D035K not in NIMMS – (MN244R02), B/O is in WARRS/D035K, no
+      due in NIMMS
+      4.2.3. 5 days shipped - (MN244R01), material released past 5-days or less
+      4.2.4. 5 days not shipped – (MN244R04), overdue shipment report material released > 5
+      days
+   4.3. Validation will include JON, cost codes, B/O over 90 days old, cancellation status codes
+   and priorities. The PST/PSS will:
+      4.3.1. Verify JON is open (JON status code 0) by querying the NIMMS (MN095P) job
+      order inquiry screen (Attachment 8). When the JON is closed, coordinate with the shop
+      to determine if requirement still exists, if the B/O can be rolled to an open JON or if a
+      cancellation request should be processed.
+      4.3.2. Verify if the cost code is correct; if correction is required process a ‗ZFA/B‘ cost
+      code change on the NIMMS (MN123P) B/O modify/cancel screen (Attachment 9).
+      4.3.3. Review B/Os in coordination with production to determine if B/Os are still valid.
+      If it is determined the B/Os are no longer valid, process the cancellation request.
+      4.3.4. Review B/Os with cancellation codes. When BOC code is a ‗1‘, awaiting
+      response from the source of supply and processed over 15 calendar days, coordinate with
+      DLA for follow-up. NOTE: If BOC is a ‗2‘, source of supply has responded that the
+      order cannot be cancelled, coordinate with DLA to process a ‗ZFA/Y‘ response in
+      WARRS/D035K.
+ 6                                                        309MXWI23-105 13 JANUARY 2011
+
+
+            4.3.4.1. Once the BOC is a ‗2‘ or ‗3‘, establish a ‗Y‘ detail in ABOM. To place the
+            B/O into the ‗Y‘ store, the PST/PSS will process a document number change in
+            (MN123P) B/O modify cancel request screen using a DOC ID ‗ZF‘ and type
+            transaction code ‗D‘. NOTE: Change will pass to WARRS/D035K.
+        4.3.5. Annotate all actions/cancellations on the B/O listing and keep on file for 2 months.
+5. Prescribed and Adopted Forms.
+     5.1. Prescribed Forms.
+         No forms are prescribed by this publication.
+     5.2. Adopted Forms.
+         AF IMT 847, Recommendation for Change of Publication
+
+
+
+
+                                              SUE DRYDEN, SES, DAF
+                                              Director, 309th Maintenance Wing
+309MXWI23-105 13 JANUARY 2011                                                            7
+
+
+                                        Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 23-110, Vol. III, Part Two, Chapter 5-6, Depot Supply Procedures, 1 January 2011
+AFMCI 21-130, Depot Maintenance Materiel Control, 15 Nov 2007
+AFMAN 33-363, Management of Records, 1 Mar 2008
+
+Abbreviations and Acronyms
+ABOM—Automated Bill of Material System
+AFIMT— Information Management Tool
+AFMAN— Air Force Manual
+AFMCI— Air Force Materiel Command Instruction
+B/O— Backorder
+BOC— Backorder Cancellation
+BOM— Bill of Material
+DCAST— Depot Cost and Schedule Tool
+DIFMS— Defense Industrial Financial Management System
+DLA— Defense Logistics Agency
+DOC ID— Document Identifier
+IAW— In Accordance With
+JON— Job Order Number
+MPS— Material Processing System
+NIMMS— Naval Air Industrial Material Management System
+NONBOM— Non Bill of Material
+OI— Operating Instruction
+OPR— Office of Primary Responsibility
+PST/PSS— Production Support Technician/Production Support Specialist
+RCC— Resource Control Center
+RDS— Records Disposition Schedule
+WARRS/D035K— Wholesale and Retail Receiving and Shipping System
+ 8                                                      309MXWI23-105 13 JANUARY 2011
+
+
+                                         Attachment 2
+                                    JON STATUS CODES
+
+Status Code = Blank: There are no JONs. Completions, production count and material
+transactions are not allowed.
+
+Status Code = 0: The JON is active. For permanent JONs, this status code is established when
+the first induction is processed. Completions, production count and material transactions are
+allowed.
+
+Status Code = 1: The JON is sold. For permanent JONs, this will be at or after the end of the
+JON period (month or quarter). For temporary JONs, this code will be assigned regardless of the
+JON period during the end of month processing cycle. Trailing production count and material
+transactions are still authorized.
+
+Status Code = 2: The JON is complete. This code is assigned at the end of month after the JON
+has been sold (status code 2= for a full month). Trailing production count and material
+transactions are not allowed.
+
+Status Code = 3: The JON is cancelled. When this code applies it is assigned when the
+inductions, completions and on-work order balances are all zero. Trailing production count and
+material transactions are not allowed.
+
+Status Code = 7: The JON is retained for historical purposes. This migration will allow the
+G004B system to record status code 2 JONs in the project order master, before the actual
+deletion of the record by G004L.
+309MXWI23-105 13 JANUARY 2011                         9
+
+
+                                  Attachment 3
+                   DCAST JON MATERIAL ERROR REPORT.
+
+Figure A3.1. DCAST JON Material Error Report
+ 10                                               309MXWI23-105 13 JANUARY 2011
+
+
+                                   Attachment 4
+      B/O MODIFY/CANCEL DOC ID – ‘ZF‘ AND TYPE TRANSACTION CODE ‘B‘.
+
+Figure A4.1. B/O Modify/Cancel DOC ID – ‘ZF‘ and Type Transaction Code ‘B
+
+
+
+
+Enter: DOCUMENT ID ‗DG‘
+       TYPE TRANSACTION-CD ‗BLANK‘
+309MXWI23-105 13 JANUARY 2011       11
+
+
+Figure A4.2. Modify B/O.
+
+
+
+
+Enter: NEW ‗JOB ORDER NUMBER‘
+
+Figure A4.3. Modify B/O Complete.
+ 12                                               309MXWI23-105 13 JANUARY 2011
+
+
+                                   Attachment 5
+       B/O MODIFY/CANCEL DOC ID ‘DG’ TYPE TRANSACTION ‘BLANK’.
+
+Figure A5.1. B/O Modify/Cancel DOC ID ‘DG’ Type Transaction ‘Blank’.
+
+
+
+
+Enter: DOCUMENT NUMBER
+       DOCUMENT ID: ‗DG‘
+       TYPE TRANSACTION-CD: ‗BLANK‘
+309MXWI23-105 13 JANUARY 2011       13
+
+
+Figure A5.2. Cancel B/O.
+
+
+
+
+Enter: ‗QUANTITY CANCELLED‘
+
+Figure A5.3. Cancel B/O Complete.
+ 14                                               309MXWI23-105 13 JANUARY 2011
+
+
+                                   Attachment 6
+          B/O MODIFY/CANCEL DOC ID ‘ZF’ TYPE TRANSACTION ‘D’.
+
+Figure A6.1. B/O Modify/Cancel DOC ID ‘ZF’ Type Transaction ‘D’
+
+
+
+
+Enter: DOCUMENT NUMBER
+       DOCUMENT ID ‗ZF‘
+       TYPE-TRANSACTION-CD ‗D‘
+309MXWI23-105 13 JANUARY 2011           15
+
+
+
+
+Figure A6.2. Modify B/O UIC.
+
+
+
+
+Enter: NEW ‗RCC‘
+       NEW ‗B/O SHOP‘
+       NEW ‗B/O STORE CD‘
+
+Figure A6.3. Modify B/O UIC Complete.
+16                                            309MXWI23-105 13 JANUARY 2011
+
+
+                               Attachment 7
+                      WARRS/D035K BOC INDICATOR
+
+Table A7.1. WARRS/DO35K BOC List.
+
+
+               CODE                                  DEFINITION
+             0 OR Blank                  Cancellation has never been attempted.
+
+                 1                   Backorder cancellation has been attempted and
+                                         customer is waiting for response from the
+                                                     Source of Supply.
+                 2                   Order cannot be cancelled; ZFA/X notification
+                                        has been sent to customer and is awaiting a
+                                                         response.
+                 3                    Customer or system has replied with ZFA‘Y‘
+                                     stating material can be shipped and will be paid
+                                                            for.
+309MXWI23-105 13 JANUARY 2011                                             17
+
+
+                                       Attachment 8
+                            JOB ORDER INQUIRY.FIGURE
+
+Figure A8.1. Job Order Inquiry
+
+
+
+
+RESTRICTION CODES - Position 2 of the restriction code is for material:
+     111 – All transactions can be processed
+     888 – Only cost adjustments can be processed
+     999 – No transactions can be processed
+ 18                                             309MXWI23-105 13 JANUARY 2011
+
+
+                                 Attachment 9
+      NIMMS MN123P B/O MODIFY/CANCEL SCREEN ZF A/B COST CODE.
+
+Figure A9.1. NIMMS MN123P B/O Modify/Cancel Screen ZF A/B Cost Code
+
+
+
+
+Enter: DOCUMENT NUMBER
+       DOCUMENT ID – ‗ZF‘
+       TYPE-TRANSACTION-CD – ‗B‘
+309MXWI23-105 13 JANUARY 2011       19
+
+
+Figure A9.2. Modify B/O.
+
+
+
+
+Enter NEW ‗COST CODE‘
+
+Figure A9.3. Modify B/O Complete.
+20   309MXWI23-105 13 JANUARY 2011

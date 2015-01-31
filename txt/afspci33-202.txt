@@ -1,0 +1,469 @@
+BY ORDER OF THE COMMANDER                                   AIR FORCE SPACE COMMAND
+AIR FORCE SPACE COMMAND                                             INSTRUCTION 33-202
+
+oo                                                                          15 JANUARY 2009
+
+                                                             Communications and Information
+
+                                                          INFORMATION ASSURANCE (IA)
+
+            COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+ ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+                www.e-Publishing.af.mil
+ RELEASABILITY: There are no releasibility restrictions on this publication.
+
+OPR: A6NI                                                Certified by: A6N (Col Thomas Hains)
+Supersedes: AFSPCI 33-202, 3 Jan 06.                                                Pages:11
+This instruction implements Department of Defense Directive (DoDD) 8500.01E, Information
+Assurance, DoDD 8581.1, Information Assurance (IA) Policy for Space Systems Used by the
+Department of Defense (DoD), DoDI 8580.1, Information Assurance (IA) in the Defense
+Acquisition System, National Security Space Acquisition Policy (NSSAP) Number 03-01,
+Guidance for DoD Space System Acquisition Process, Air Force Policy Directive (AFPD) 33-2,
+Information Assurance(IA) Program, Air Force Instruction (AFI) 33-202, Volume 1, Network
+and Computer Security (will become AFI 33-210, Air Force Certification and Accreditation
+(C&A) Program), and DoDI 8510.01, DoD Information Assurance Certification and
+Accreditation Process (DIACAP). This instruction applies to all Air Force Space Command
+(AFSPC) systems and to DoD-owned or -controlled space information systems for which
+AFSPC has been designated as the Designated Accrediting Authority (DAA). This instruction
+also applies to non-AFSPC systems (to include contractor owned– or –operated systems) that
+need to connect to an AFSPC system. More restrictive DoD and Director of Central Intelligence
+Agency directive requirements governing Special Access Program information take precedence
+over this instruction. This instruction is not applicable to Sensitive Compartmented Information
+(SCI) systems. For SCI systems, refer to the Joint Department of Defense Intelligence
+Information Systems/Cryptologic SCI Information Systems Security Standards.                Refer
+recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the AF IMT 847, Recommendation for Change of Publication;
+route AF IMT 847s from the field through the appropriate functional’s chain of command.
+Ensure that all records created as a result of processes prescribed in this publication are
+maintained in accordance with AFMAN 37-123 (will convert to AFMAN33-363), Management
+of Records, and disposed of in accordance with the Air Force Records Disposition Schedule
+(RDS) located at https://afrims.amc.af.mil/
+
+SUMMARY OF CHANGES
+This document is substantially revised and must be completely reviewed. This change
+introduces policy on IA strategies and accreditation strategies, the risk assessment methodology,
+AFSPCI33-202 15 JANUARY 2009                                                                         2
+
+
+cross domain solutions (CDS), the Enterprise Information Environment Data Repository
+(EITDR), the limited use of Information Technology (IT) Lean with Security, Interoperability,
+Supportability, Sustainability, and Usability (SISSU), the Senior IA Officer (SIAO), and a new
+Certifying Authority (CA) construct consisting of the CA, the CA Representative, and Agents of
+the CA. The former Letter of Agreement is changed to the Letter of Assurance.
+
+1. GENERAL:
+
+1.1. This instruction provides high-level direction. Details of the AFSPC IA and C&A
+processes, procedures, and documentation are posted on the AFSPC IA Community of Practice
+(CoP); shall be in compliance with the most current DoD, Air Force, and AFSPC guidance; and
+must be approved by the DAA support staff leadership.
+
+1.2. AFPD 33-2 paragraph 4.8, defers to DoDD 8581.1 for implementation of IA policy for
+space systems (as defined in DoDD 8581.1). Although AFSPC has aligned its IA program with
+AFPD 33-2, some concepts in AFPD 33-2 do not apply to space systems. In particular, AFSPC
+does not use the role of Information System Owner. Also, space systems shall be treated as non-
+Air Force systems in the IT Lean and SISSU process. Space systems funded by the Air Force
+must be registered in the EITDR for other purposes but need not complete the entire SISSU
+process. Rather, space systems connecting to the Air Force provisioned portion of the Global
+Information Grid (AF-GIG) enter SISSU and bypass to SISSU Phase 3 to request an
+Authorization to Connect (ATC) from the Air Force DAA.
+
+2. POLICY:
+
+2.1. Information Assurance Strategies. Program Managers shall prepare IA strategies in
+accordance with DoDI 8580.1 and NSSAP 03-01 (i.e., for mission critical or mission essential
+national security systems) and submit those IA strategies to the AFSPC Chief Information
+Officer (CIO) for approval prior to all acquisition milestone decisions, program decision reviews,
+and acquisition contract awards. Upon AFSPC-CIO approval, the Program Manager may then
+submit the IA strategies to the Air Force CIO.
+
+2.2. Accreditation Strategy. Program Managers shall prepare an accreditation strategy for all
+systems. The accreditation strategy is not equivalent to an IA strategy. Where an IA strategy is
+otherwise required as discussed above, the accreditation strategy will be included in the IA
+strategy. The accreditation strategy will, where feasible, consolidate accreditation boundaries,
+combine certification efforts, reduce the number of DIACAP packages, eliminate resource waste,
+and ultimately provide a comprehensive evaluation of an entire system or portfolio for
+accreditation. In DIACAP Activity 1 (prior to acquisition milestone A or Key Decision Point-
+A), Program Managers will coordinate with the DAA Representative to develop a system
+accreditation strategy. For systems in development past DIACAP Activity 1, but where no
+accreditation strategy was developed and approved, Program Managers will coordinate with the
+DAA Representative to determine the course of action to meet the intent of this policy. The
+DAA Representative will approve any modifications to the accreditation strategy.
+AFSPCI33-202 15 JANUARY 2009                                                                       3
+
+
+2.3. Risk Assessment Methodology. Results of certification activities shall be expressed using
+the risk assessment methodology prescribed on the AFSPC IA CoP (reference CNSSI 4016,
+National Information Assurance Training Standard for Risk Analysts).
+
+2.4. Site Certification of Type Accredited Systems. The AFSPC DAA may issue type
+accreditations and require site certifications where a common set of software, hardware, and/or
+firmware is installed at multiple locations for a baseline operating environment. A site
+certification shall be provided to the DAA for each system instance to validate correct
+implementation of installation and configuration requirements or operational security needs
+assumed by the hosting location.
+
+2.5. Cross Domain Solutions (CDS). All CDSs must be designed, developed, integrated,
+certified, and accredited as part of the DIACAP and documented in a DIACAP Package. Special
+CDS procedures within the DIACAP, including registration and review by the National Security
+Agency (NSA) and community-wide risk assessment, must be followed.
+
+2.5.1. The DAA support staff includes the AFSPC CDS office of primary responsibility.
+Program Managers shall coordinate all CDS actions with this office prior to contacting external
+or higher-level CDS organizations throughout the CDS approval process.
+
+2.5.1.1. The AFSPC DAA must validate the operational requirement for all connections between
+security domains (i.e., CDSs) prior to development of engineering solutions. This validation
+coincides with DIACAP Activity 1, Initiate and Plan IA C&A.
+
+2.5.1.2. The AFSPC DAA shall review and sign the Cross Domain Appendix (CDA) prior to
+each acquisition milestone decision (in conjunction with the appropriate DIACAP activity) as the
+CDA is submitted in accordance with the CDS approval process.
+
+2.5.2. Where a CDS provides no connectivity to the Defense Information System Network
+(DISN) and the DISN DAAs do not issue a CDS approval or connection decision, system DAAs
+involved must accredit their individual systems including the CDS. Those DAAs may rely on
+CDS risk evaluations from the NSA, Cross Domain Resolution Board (CDRB), and Defense
+IA/Security Accreditation Working Group (DSAWG). If those evaluations are not provided, the
+affected DAAs, through the systems’ Program Managers, must ensure a Certification Test and
+Evaluation (CT&E) is performed by an independent and competent entity using the NSA CT&E
+methodology and criteria (i.e., Security Requirements 1-9) as input to a risk evaluation and
+accreditation decision.
+
+2.6. Letter of Assurance. Program Managers shall submit a Letter of Assurance with the
+Agent of the Certifying Authority (ACA) indorsement to the DAA for all accreditation decisions.
+Details on the Letter of Assurance format and content may be found on the AFSPC IA CoP.
+
+2.7. Plan of Action and Milestones (POA&M). Program Managers shall submit system
+POA&Ms (initial and quarterly) to the AFSPC DAA for concurrence. Quarterly submissions
+shall include updates to reflect actions taken to resolve open items in a timely manner. HQ
+AFSPC/A6N will submit approved POA&Ms to higher levels in accordance with the DIACAP.
+AFSPCI33-202 15 JANUARY 2009                                                                        4
+
+
+
+3. ROLES AND RESPONSIBILITIES:
+
+3.1. AFSPC Commander:
+
+3.1.1. Assignment of AFSPC Designated Accrediting Authority (DAA):
+
+3.1.1.1. The AFSPC Commander is the DAA for:
+
+3.1.1.1.1. Space systems which the Commander of United States Strategic Command
+(USSTRATCOM) has designated AFSPC as DAA in accordance with DoDD 8581.1.
+
+3.1.1.1.2. Multi-Component space systems assigned to AFSPC through other than DoDD
+8581.1 authority, including Secretary of Defense, Chairman of the Joint Chiefs of Staff, and/or
+Service-level agreements or Memorandums of Agreement/Understanding.
+
+3.1.1.1.3. Air Force space systems assigned to AFSPC in accordance with AFPD 33-2 or by the
+Undersecretary of the Air Force, as the DoD Executive Agent for Space in accordance with
+DoDD 5101.2, DoD Executive Agent for Space.
+
+3.1.1.2. The AFSPC Commander may delegate DAA for any and all assigned systems. Current
+DAA delegation memos may be found on the AFSPC IA CoP. Although DAA may be
+delegated, the AFSPC Commander retains ultimate accreditation responsibility. DAA is
+assigned to the position, not a person; therefore, anyone serving in the position assigned as DAA
+may act as DAA, provided that person is trained and certified as a DAA in accordance with DoD
+guidelines. Further delegation is prohibited, but the delegated DAA shall appoint a single DAA
+Representative residing in Headquarters AFSPC.
+
+3.1.1.3. The DAA will be trained to satisfy standards in CNSSI 4012, National IA Training
+Standard for Senior System Managers. The Defense Information Systems Agency provides
+links to DAA training on the Information Assurance Support Environment at http://iase.disa.mil/.
+(Reference DAA training and certification requirements in DoD 8570.01-M, Information
+Assurance Workforce Improvement Program.)
+
+3.1.2. Assignment of AFSPC Chief Information Officer (CIO):
+
+The Federal Information Security Management Act (FISMA) requires agencies to designate a
+CIO. The AFSPC Commander appoints the AFSPC CIO. A current CIO appointment memo
+may be found on the AFSPC IA CoP.
+
+3.2. Senior Information Assurance Officer (SIAO).
+
+3.2.1. The AFSPC CIO assigns the SIAO. A current SIAO assignment memo can be found on
+the AFSPC IA CoP. The AFSPC SIAO also functions as the CA. The AFSPC SIAO/CA may
+also serve as the DAA Representative, depending on the current DAA’s desires.
+AFSPCI33-202 15 JANUARY 2009                                                                     5
+
+
+3.2.2. The SIAO has Direct Liaison Authority to facilitate communications up and down the IA
+chain between the DAA, DAA Representative, CA, CA Representatives, Agents of the CA
+(ACA), Wing Information Assurance Offices, Information Assurance Managers (IAMs)
+(formerly known as Information System Security Manager (ISSM)), User Representatives, and
+Program Managers.
+
+3.3. AFSPC DAA Representative.
+
+3.3.1. The DAA appoints a single DAA Representative from his immediate support staff. A
+current DAA Representative assignment memo can be found on the AFSPC IA CoP.
+
+3.3.2. The DAA Representative manages day-to-day C&A issues of and ensures all users are
+operating systems according to documented C&A packages. The DAA Representative can
+perform any of the duties of the DAA, with one exception; the DAA Representative has no
+authority to accept risk by issuing an Interim Authorization to Operate (IATO), an Approval to
+Operate (ATO), or an Interim Authorization to Test (IATT). The DAA Representative may,
+however, issue an ATC or an Interim ATC (IATC) to systems under the purview of the AFSPC
+DAA.
+
+3.3.3. The DAA Representative will be trained to the same standard as a DAA, to satisfy
+standards in CNSSI 4012 as well as DAA training and certification requirements in DoD
+8570.01-M . The Defense Information Assurance Agency provides links to DAA training on the
+Information Assurance Support Environment at http://iase.disa.mil/.
+
+3.3.4. The DAA Representative shall ensure personnel in key C&A positions are trained.
+
+3.3.5. The DAA Representative shall approve assignment of or change to the Mission
+Assurance Category (MAC) and Confidentiality Level for each system based upon
+recommendations from the other DIACAP Team members.
+
+3.4. Certifying Authority.
+
+3.4.1. USSTRATCOM is the DoD Component for multi-Component space systems; therefore,
+the USSTRATCOM CIO assigns the SIAO/CA for those systems. For multi-Component space
+systems assigned to AFSPC as DAA, CA duties follow that assignment. Therefore, the AFSPC
+SIAO is also the CA for assigned multi-Component space systems.
+
+3.4.2. AFPD 33-2 assigns DAA for all Air Force space systems to AFSPC. CA responsibilities
+follow that assignment of DAA; therefore, the AFSPC SIAO is the CA for those systems.
+
+3.4.3. The CA shall ensure the certification cadre (i.e., CA Representative and ACA) are
+independent from the acquisition and development organizations to provide the most objective
+certification information to the DAA. Per authority granted by the DIACAP, the CA established
+the certification construct below.
+
+3.5. Certifying Authority Representative.
+AFSPCI33-202 15 JANUARY 2009                                                                          6
+
+
+
+3.5.1. The Certifying Authority assigns the CA Representative. A current CA Representative
+assignment memo can be found on the AFSPC IA CoP.
+
+3.5.2. The CA may delegate any CA duties to the CA Representative at the CA’s discretion.
+The major CA Representative responsibility is to ensure Program Managers integrate IA
+throughout the systems acquisition lifecycle.
+
+3.6. Agent of the Certifying Authority (ACA).
+
+3.6.1. ACAs conduct hands-on validation of IA controls. Given the wide variety of expertise
+needed for complex systems, ACAs may employ a team of experts.
+
+3.6.2. ACAs shall be independent from the developer and Program Manager, to ensure the most
+objective certification information is provided to the CA and the DAA to make accreditation
+decisions.
+
+3.6.3. Program Managers nominate ACAs for appointment by the CA. In effect, Program
+Managers “hire out” certification activities to ensure independent validation of IA controls.
+ACA responsibilities may not be re-delegated or assumed.
+
+3.6.4. ACAs must be trained in accordance with National Security Telecommunications and
+Information Systems Security Instruction (NSTISSI) 4015, National Training Standard for
+System Certifiers. ACAs must also be qualified and certified in their area of expertise in
+accordance with DoDD 8570.1, IA Training, Certification, and Workforce Management.
+
+3.6.5. ACAs indorse Letters of Assurance submitted by Program Managers to the DAA.
+
+3.6.6. ACAs will be engaged by the system IAM to assess the risk of changes to a system or its
+environment after accreditation. If the ACA determines there is no additional risk, the DIACAP
+Package is updated and no further action is required (i.e., the DAA need not be engaged). If the
+ACA determines there is additional risk, the ACA shall make a certification determination and
+accreditation recommendation to the DAA.
+
+3.7. User Representative.
+
+3.7.1. The Director of Air and Space Operations ensures a User Representative from the
+operational/functional community is appointed for each system.
+
+3.7.2. The User Representative shall assist the C&A Team in identifying the appropriate level
+of confidentiality, integrity, and availability necessary to satisfy operational requirements. This
+is accomplished by identifying (for DAA approval) the appropriate MAC, Confidentiality Level,
+and other factors which determine the robustness of the C&A effort.
+
+3.8. Program Manager:
+AFSPCI33-202 15 JANUARY 2009                                                                      7
+
+
+3.8.1. Program Manager is synonymous with Single Manager, Program Director, or Project
+Manager. In accordance with the Federal Acquisition Regulation, Program Managers head
+system program offices and provide cradle-to-grave support. However, some systems may be
+developed by the operational community, or there may be systems for which the program office
+no longer exists (i.e., the formal Program Manager turned over a system to the operational
+community). In those cases, the Numbered Air Force Commander, Wing Commander, or
+equivalent operational community cognizant authority (or designee) who operates and maintains
+the system assumes Program Manager responsibilities with respect to the IA program and C&A
+over the lifecycle of the system.
+
+3.8.2. The Program Manager has significant responsibilities in the IA program. Program
+Managers plan, program, budget, and execute all aspects of acquisition/development, to include
+implementing IA controls and conducting certification activities. The Program Manager ensures
+the DIACAP Team participates throughout the system development lifecycle in security analyses
+performed in conjunction with all design and specification reviews.
+
+3.8.2.1. The Program Manager shall appoint an IAM in writing for each system and make the
+appointment memo available to the DAA Representative upon request. If the appointee is not
+qualified to serve as an IAM, the DAA Representative may request a suitable replacement.
+
+3.8.2.2. In concert with the User and Test and Evaluation communities, Program Managers
+shall conduct integrated IA assessments during testing and evaluation (e.g., Developmental
+Testing and Evaluation, Operational Testing and Evaluation, Joint Test and Evaluation, etc.).
+
+3.8.2.3. The Program Manager shall ensure systems are registered in and continuously updated
+in the EITDR to comply with FISMA, Clinger Cohen Act, and other reporting requirements.
+
+3.8.2.4. The Program Manager shall acquire agreement from the ACA (or the CA
+Representative or CA, if the ACA has not yet been selected) prior to each DIACAP activity
+transition to ensure assigned IA controls are identified, designed, implemented, and maintained
+for the system and that the appropriate IA posture will be provided at system delivery and
+maintained throughout the system lifecycle.
+
+3.8.2.5. For accreditation decisions, the Program Manager shall submit a Letter of Assurance
+with the ACA’s indorsement to the DAA.
+
+3.8.2.6. For connections to the AF-GIG, SIPRNet, or NIPRNet, the Program Manager shall
+comply with connection approval processes, submit accreditation documentation as required, and
+provide artifacts showing compliance with assigned IA controls and other security requirements.
+
+3.8.2.7. Program Managers must develop and provide an accreditation strategy for all systems
+to the AFSPC DAA and an IA strategy for appropriate systems to the AFSPC CIO in accordance
+with paragraphs 1.2 and 1.3 above.
+
+3.9. Information Assurance Managers (IAMs).
+AFSPCI33-202 15 JANUARY 2009                                                                       8
+
+
+3.9.1. IAMs in this context are appointed for each system or program. These IAMs are aligned
+with a program office and are not typically assigned to the base or center IA office.
+
+3.9.2. IAMs shall monitor accredited systems to maintain the risk level accepted by the DAA.
+The IAM shall evaluate all system changes (software, hardware, processes, procedures,
+environment, etc.), assess the impact to accepted risk, obtain the ACA's coordination if the
+change did not increase accepted risk, and document the change in the DIACAP package. If the
+assessment determines the risk has increased, the IAM initiates actions with the ACA through
+the Program Manager to notify the DAA and obtain appropriate approval.
+
+3.10. Program Management Offices (PMO). PMOs are encouraged to provide direct IA staff
+support to the AFSPC Information Assurance Branch to ensure the PMO’s C&A packages
+receive due attention throughout the system lifecycle, from inception to decommission. Close
+coordination such as this between the PMO and Headquarters AFSPC will ensure IA
+requirements are identified early in acquisition with other requirements, included in system
+designs, incorporated into system builds, and integrated with functional requirements testing,
+thereby significantly reducing the potential for program delays and cost overruns.
+
+3.11. Wing Information Assurance Office (WIAO):
+
+3.11.1. The host base/wing WIAOs shall fulfill the functions indicated in higher level Air Force
+policy and directives. Organizations shall route all C&A packages and correspondence for
+systems connected to or impacting the base network through the WIAO to ensure completeness,
+consistency, and compliance with AFSPC and local policy and directives. The DAA Support
+staff will accept and process C&A packages only if submitted through and approved by the
+WIAO. Approval will be annotated via “In Turn” indorsement on the Letter of Assurance,
+following the ACA’s indorsement.
+
+3.11.2.  Space and Missile System Center (SMC), Acquisition Systems Protection Office
+(SMC/PIP) shall serve as the Center's IA Office for SMC's System Program Offices/Wings and
+Groups for space systems accredited by AFSPC. SMC/PIP shall coordinate directly with the
+AFSPC DAA Representative or CA Representative and is not required to coordinate through the
+host base/wing WIAO. 
+.
+3.11.3. 850 Electronic System Group (ELSG)/NGI, Information Assurance
+Manager, shall serve as the System Program Office's IA Office for 850 ELSG
+Program Managers developing space systems accredited by AFSPC. 850 ELSG
+shall coordinate directly with the AFSPC DAA Representative or CA
+Representative and is not required to coordinate through the host base/wing
+WIAO.
+
+4. AFSPC-UNIQUE CERTIFICATION AND ACCREDITATION PROCESS:
+
+4.1. Authorization to Connect (ATC). AFSPC follows the DIACAP with one addition. If a
+non-AFSPC system must connect to an AFSPC system or enclave, in addition to the
+AFSPCI33-202 15 JANUARY 2009                                                                     9
+
+
+Memorandum of Agreement or Memorandum of Understanding required by Chairman of the
+Joint Chiefs of Staff guidance, an ATC from the AFSPC DAA is required.
+
+4.2. Urgent and Compelling C&A Process. The Urgent and Compelling C&A Process
+expedites fielding of systems urgently needed to support warfighters. The process shall not be
+used to circumvent timely submittals of accreditation packages. DIACAP Team members may
+recommend to the DAA Representative and the AFSPC-CIO the Urgent and Compelling C&A
+Process be implemented, but the DAA Representative and AFSPC-CIO shall weigh the evidence
+and decide if the Urgent and Compelling C&A Process will be implemented. An ATO will not
+be granted under this process. At most an IATO will be issued.
+
+
+
+
+                                           DAVID B. WARNER, Brig Gen, USAF
+                                           Director, Communications and Information
+AFSPCI33-202 15 JANUARY 2009                                                                10
+
+
+                                      Attachment 1
+
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+Title 44, U.S.C., § 3541, Information Security (a.k.a., FISMA of 2002)
+National Security Space Acquisition Policy No. 03-01, Guidance for DoD Space System
+Acquisition Process, 27 December 2004
+CNSSI 4012, National IA Training Standard for Senior System Managers, June 2004
+NSTISSI 4015, National Training Standard for Systems Certifiers, December 2000
+CNSSI 4016, National Information Assurance Training Standard for Risk Analysts,
+November 2005
+DoDD 5101.2, DoD Executive Agent for Space, 3 June 2003
+DoDD 8500.01E, Information Assurance, 24 October 2002
+DoDI 8510.01, DoD Information Assurance Certification and Accreditation Process (DIACAP),
+28 November 2007
+DoDD 8570.1, Information Assurance Training, Certification, and Workforce Management,
+15 August 2004
+DoD 8570.01-M, Information Assurance Workforce Improvement Program, 19 December
+2005
+DoDI 8580.1, Information Assurance (IA) in the Defense Acquisition System, 9 July 2004
+DoDD 8581.1, Information Assurance (IA) Policy for Space Systems Used by the Department
+of Defense, 21 June 2005
+AFPD 33-2, Information Assurance, 19 April 2007
+AFI 33-202, Volume 1, Network and Computer Security, 3 February 2006
+AFPAM 63-1701, Program Protection Planning, 27 March 2003
+
+Abbreviations and Acronyms
+ACA – Agent of the Certifying Authority
+AFI – Air Force Instruction
+AF-GIG – Air Force Provisioned Portion of the GIG
+AFPAM – Air Force Pamphlet
+AFPD – Air Force Policy Directive
+AFSPC – Air Force Space Command
+ATC – Authorization to Connect
+ATO – Authorization to Operate
+C&A – Certification and Accreditation
+CA – Certifying Authority
+CDRB – Cross Domain Resolution Board
+CDS – Cross Domain Solution
+CIO – Chief Information Officer
+CoP – Community of Practice
+CNSSI – Committee on National Security Systems Instruction
+CT&E – Certification Test and Evaluation
+DAA – Designated Accrediting Authority
+DIACAP – DoD Information Assurance Certification and Accreditation Process
+AFSPCI33-202 15 JANUARY 2009                                                                  11
+
+
+DISN – Defense Information System Network
+DoD – Department of Defense
+EITDR – Enterprise Information Technology Data Repository
+FISMA – Federal Information Security Management Act
+IA – Information Assurance
+IAM – Information Assurance Manager
+IATO – Interim Authorization to Operate
+MAC – Mission Assurance Category
+NSA – National Security Agency
+NSTISSI – National Security Telecommunications and Information Systems Security Instruction
+PMO – Program Management Office
+POA&M – Plan of Action and Milestones
+SCI – Sensitive Compartmented Information
+SIAO – Senior Information Assurance Officer
+SMC – Space and Missile Systems Center
+USSTRATCOM – United States Strategic Command
+WIAO – Wing Information Assurance Office

@@ -1,0 +1,397 @@
+Administrative Changes to 309MXWI23-107, Processing Demand History Adjustment (DHA)
+Data to Defense Logistics Agency (DLA)
+
+OPR: OO-ALC/OBWP
+
+References to 309 MXW should be changed to OO-ALC throughout the publication.
+
+28 March 2014
+BY ORDER OF THE DIRECTOR 309TH                                                             309TH MAINTENANCE WING
+MAINTENANCE WING                                                                                  INSTRUCTION 23-107
+
+                                                                                                                   24 AUGUST 2011
+
+                                                                                                            Materiel Management
+
+                                                                           PROCESSING DEMAND HISTORY
+                                                                     ADJUSTMENT (DHA) DATA TO DEFENSE
+                                                                                LOGISTICS AGENCY (DLA)
+
+            COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+               Publishing website at www.e-Publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+OPR: 309 MXW/OBWP                                                                                   Certified by: 309 MXW/OB
+                                                                                                            (Mr. Bernard Josten)
+                                                                                                                      Pages: 30
+
+
+This instruction provides guidance for the production support technician/production support
+specialist (PST/PSS) on how to report demand data to Defense Logistics Agency (DLA) source
+of supply (SOS), when a depot maintenance requirement is satisfied through other than normal
+supply channels. Processes pertaining to organizations other than the 309th Maintenance Wing
+(309 MXW) are not meant to be directive, but only describes the touch points and hand-offs
+between the 309 MXW, and the other organizations. This procedure augments the process
+outlined in Air Force Materiel Command Instruction (AFMCI) 21-130, Depot Maintenance
+Materiel Control, Chapter 2, Section 33 “Recovering Unbudgeted Workaround Costs Caused by
+Parts Shortages”. This instruction does not apply to 309th Aerospace Maintenance and
+Regeneration Group (309 AMARG). Ensure that all records created as a result of processes
+prescribed in this publication are maintained in accordance with (IAW) Air Force Manual
+(AFMAN) 33-363, Management of Records, and disposed of IAW the Air Force Records
+Disposition Schedule (RDS) located at https://www.my.af.mil/afrims/afrims/afrims/rims.cfm.
+Refer recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the Air Force Information Management Tool (AF IMT) 847,
+Recommendation for Change of Publication; route AF IMTs 847 from the field through the
+appropriate functional chain of command.
+
+
+       1.     General Information. ..............................................................................................       2
+       2.     Responsibilities. .....................................................................................................   3
+       3.     IMPRESA Procedures to Capture DHA Information. ...........................................                                4
+ 2                                                                309MXWI23-107 24 AUGUST 2011
+
+
+        4.     Non-IMPRESA Procedures to Capture DHA Information. ...................................      4
+        5.     Notification of Demand in WARRS/D035K (Kadena). ........................................    4
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                             7
+
+Attachment 2—DHA CHECKLIST                                                                                 9
+
+Attachment 3—DHA SUMMARY REPORT FROM IMPRESA                                                              10
+
+Attachment 4—IMPRESA SAVE FLAG PROCESS                                                                    11
+
+Attachment 5—NON-IMPRESA PROCEDURES                                                                       12
+
+Attachment 6—DHA SPREADSHEET                                                                              13
+
+Attachment 7—DHAA SCREEN PRINT                                                                            14
+
+Attachment 8—DHAB SCREEN PRINT                                                                            17
+
+Attachment 9—DHAC SCREEN PRINT                                                                            22
+
+Attachment 10—DHAA SCREEN PRINT                                                                           26
+
+Attachment 11—ZF9 SCREEN PRINT                                                                            27
+
+
+1. General Information. Materiel shortages at DLA SOS often result in accomplishing
+workarounds for depot maintenance. When workaround methods are used to acquire needed
+materiel, the requirements are not passed to the supplier DLA, and the suppliers historical
+forecast is not accurate. This results in under purchasing, and stocking items for the depot
+maintenance wing. A manual method of updating the materiel demand/requirement to DLA, is
+achieved through the use of a demand history adjustment (DHA) transaction in the Wholesale
+and Retail Receiving and Shipping System (WARRS/D035K). The PST/PSS is required to
+communicate those demands to DLA for DHA processing. DHAs are processed by DLA
+personnel for DLA SOS business systems modernization item (SMS) (managed items only), and
+are not used to communicate demands for Air Force-managed SOS. In addition, the Depot
+Maintenance Support System (G005M) bill of materiel may require updating by the planner as
+needed. The preferred method and frequency for submitting DHAs, is to notify the DLA
+customer support specialist (CSS) at the time the part is consumed, and the SOS could not fill the
+demand.
+     1.1. The DHA checklist (Attachment 2) provides common types of workarounds; normally
+     used when materiel cannot be acquired from the SOS, and will necessitate the need for a
+     DHA transaction. There should already be a backorder in the system, and the estimated
+     delivery date does not meet the required delivery date.
+        1.1.1. Cannibalization/Temporary Reclamation (Air Force Materiel Command {AFMC}
+        Form 206, Temporary Work Request, is required): Removing materiel components from
+        an end item not being overhauled;
+        1.1.2. Materiel acquired from the Defense Reutilization Marketing Service (DRMS);
+        1.1.3. Materiel acquired from AMARG;
+309MXWI23-107 24 AUGUST 2011                                                                     3
+
+
+       1.1.4. Local manufactured materiel acquired directly through local manufacturing
+       facilities;
+       1.1.5. Materiel acquired on the government purchase card (GPC);
+       1.1.6. Equipment Specialist approved route/repair process for DLA materiel (AFMC
+       Form 202, Nonconforming Technical Assistance Request and Reply, is required).
+       NOTE: Local purchase/local manufacture processed through the DLA priority cell, does
+       not need to be reported by 309 MXW personnel; DLA will submit the DHAs in these
+       instances.
+   1.2. If the intent of maintenance is to continue to satisfy requirements through workaround
+   methods (i.e., technical orders changed to directed reclamation/reuse of parts), or the materiel
+   is no longer going to be requisitioned through DLA in the future, the demand should not be
+   reported to DLA for DHA processing.
+       1.2.1. Because DHA transactions do not overlay or update the interfacing maintenance
+       systems (i.e., G005M), no materiel usage (replacement percentage) or cost data is
+       updated. Therefore, the data needs to be provided to the materiel planner for manual
+       updates to replacement factors in G005M. NOTE: To minimize updates to G005M, the
+       desired method is for the PST/PSS to place an order in Automated Bill of Materiel
+       System (ABOM). If a workaround is required, and the backorder is not needed or cannot
+       be moved to another end item, request cancellation of the item and notify DLA to process
+       DHA.
+       1.2.2. All workarounds will impact the suppliers’ historical requirements and buying
+       patterns. The workarounds will be submitted to the demand forecasting specialist (DFS),
+       or the process initiator for analysis to determine if the workaround quantity will affect
+       future requirements. If it’s a maintenance demand trigger, the requirements will be
+       passed to planning for DLA managed consumables (PDMC) cell for demand data
+       exchange (DDE) processing.
+       1.2.3. All demands satisfied by a workaround, must be communicated to DLA within the
+       current month. DHA transactions will not be used as a method to collect historical data,
+       and input large quantities to the SOS to “catch-up” for previous workaround situations.
+       The demand data should be reported to DLA at the time of issue to the end
+       item/consumption.
+   1.2.4. In all instances, the PST/PSS will ensure the quantity reported for DHA processing
+   matches the item purchased/received, the quantity on the AFMC Form 206, or exact GPC
+   buy. The quantity for the DHA cannot exceed the quantity per assembly.
+2. Responsibilities.
+   2.1. The production mechanic will notify the PST/PSS when the estimated deliver date is not
+   acceptable, and a workaround is required.
+   2.2. The PST/PSS will report the workaround demand data to DLA CSS, when a back order
+   is cancelled due to the materiel requirement being satisfied by a workaround.
+   2.3. DLA processes the DHA; the PST/PSS will request confirmation from DLA when the
+   DHA is processed. The PST/PSS will retain a copy of confirmation (i.e., signature on
+   spreadsheet, screen prints, or report) for 6 months. NOTE: Maintenance Overhaul and
+ 4                                                           309MXWI23-107 24 AUGUST 2011
+
+
+     Repair Impresa System (IMPRESA) users will run the validation report, and retain for 6
+     months.
+3. IMPRESA Procedures to Capture DHA Information.
+     3.1. The PST/PSS will run the DHA summary report (see Attachment 3) in maintenance
+     repair overhaul application in IMPRESA for the prior month, and send the DHA information
+     to DLA CSS in a spreadsheet.
+        3.1.1. PST/PSS receives email confirmation from DLA point of contact by the 15th of
+        each month, with the actions taken for the DHAs.
+        3.1.2. PST/PSS will run the validation report from IMPRESA and combine with
+        confirmation, and file for 6 months.
+        3.1.3. Review the save flag process (see Attachment 4) for items subject to the
+        IMPRESA reclamation process.
+4. Non-IMPRESA Procedures to Capture DHA Information.
+     4.1. Mechanic will notify PST/PSS if reclaim materiel has been used by following non-
+     IMPRESA procedures (see Attachment 5).
+     4.2. PST/PSS will work closely with production in identifying insufficient required delivery
+     dates and workarounds.
+     4.3. PST/PSS will document required workarounds on DHA spreadsheet (see Attachment 6)
+     to include: national stock number (NSN), noun, quantity, and type of workaround. This
+     information will be given to DLA CSS for the DHA input. NOTE: The DHA requirement
+     will be added to the spreadsheet, and given to DLA CSS at the time of requirement; do not
+     use a monthly total.
+     4.4. If the backorder is no longer required, request cancellation through DLA.
+5. Notification of Demand in WARRS/D035K (Kadena).
+     5.1. The Demand History Data Inquiry (DHAA) screen (Attachment 7.1.) provides a 90-day
+     history of past workarounds for specific NSNs. The “Date From” and “Date To” fields are
+     optional. If the “Date From” field is left blank, it will use a default date of 90-days prior to
+     the current date. If the “Date To” field is left blank, it will default to the current date.
+        5.1.1. If a document number is entered, 90 days of data will be displayed. When
+        entering data to “Date To/Date From” field, it must contain the current year (i.e., 2011)
+        and the Julian date (see Attachment 7.2.).
+        5.1.2. If the DHAA history screen indicates an “R” in position 7 of the response screen,
+        the document is a reversal (see Attachment 7.3.).
+     5.2. The Initiate DHA Demand Transaction (DHAB) screen (Attachment 8.1.) allows users
+     to initiate a transaction that will provide DLA SOS with demand data that was not reported
+     through the normal supply chain. This establishes demand history at the SOS for future
+     procurement.
+309MXWI23-107 24 AUGUST 2011                                                                   5
+
+
+      5.2.1. On the DHAB screen (see Attachment 8.2.), the NSN, and quantity must be
+      entered by the user. The WARRS/D035K system will automatically assign the routing
+      ID, the unit of issue, priority, and the document number (see Attachment 8.3.).
+      5.2.2. A priority of 01-15 may be entered; however if left blank, a priority of 15 will be
+      assigned (see Attachment 8.4.).
+      5.2.3. When entering/return key is pressed, the assigned data will be highlighted, and the
+      user will be prompted to press the F9 key to process the transaction. Once the F9 key is
+      pressed, a notice should appear on the left hand bottom portion of the screen stating
+      “Processing Successfully Completed” (see Attachment 8.5.).
+   5.3. The Initiate DHA Demand Reversal (DHAC) screen (Attachment 9.1.) allows users to
+   initiate a transaction that will reverse, or modify the demand quantity that was previously
+   submitted to DLA SOS using the DHAB screen.
+      5.3.1. On the DHAC screen, enter the NSN, document number, and entire demand
+      quantity or any portion of the originally submitted demand quantity requiring reversal
+      action (see Attachment 9.2.). Once data is entered into the fields, press enter/return. The
+      system will provide all the remaining fields of data for the original DHAB (see
+      Attachment 9.3.). NOTE: If no record is found, an error message will appear on the
+      screen. A reversal action cannot be processed if there is no corresponding record in the
+      history file.
+      5.3.2. When the enter/return key is pressed, the assigned data will be highlighted and the
+      user will be prompted to press the F9 key to process the transaction. Once the F9 key is
+      pressed, a notice should appear on the left hand bottom portion of screen stating
+      “Processing Successfully Completed” (see Attachment 9.4.).
+   5.3.3. Once the reversal is accomplished, process a DHAA inquiry (see Attachment 10) to
+   ensure the reversal transaction has posted.
+5.4. Demand/Repair Cycle Data File Maintenance (ZF9).
+      5.4.1. Retail demand data also requires update when the maintenance requirement has
+      not been reported in the WARRS/D035K system. This is accomplished by processing a
+      ZF9 (see Attachment 11.1.) transaction into the WARRS/D035K system. This allows the
+      number of demands, and the quantity of those demands to be updated for inclusion when
+      WARRS/D035K is computing retail stock levels (see Attachment 11.2.).
+      5.4.2. These procedures will only be used in those situations where an actual demand has
+      been satisfied through either a cannibalization, reclaim or GPC buy, and will not be used
+      as a means of building demand history (see Attachment 11.3.). NOTE: ZF9s will not be
+      processed for any other scenario.
+6                                                      309MXWI23-107 24 AUGUST 2011
+
+
+
+    5.4.3. The section analyst will document on the ZF9 screen print with the justification for
+    the ZF9, the date processed, and their signature (see Attachment 11.4.). The ZF9 screen
+    print will be attached to the DHA screen print provided by the retail item manager, and
+    kept on file for 1 year.
+
+
+
+
+                                         HERMAN RAIFF, GS-15, DAF
+                                         Vice Director, 309th Maintenance Wing
+309MXWI23-107 24 AUGUST 2011                                                         7
+
+
+                                          Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMCI 21-130, Depot Maintenance Materiel Control, 15 November 2007
+AFMAN 33-363, Management of Records, 1 March 2008
+Prescribed Forms
+No forms prescribed in this publication
+Adopted Forms
+AF IMT 847, Recommendation for Change of Publications, 22 September 2009
+AFMC Form 202, Nonconforming Technical Assistance Request and Reply, 22 March 2006
+AFMC Form 206, Temporary Work Request, 20 October 2006
+
+Abbreviations and Acronyms
+ABOM—Automated Bill of Materiel System
+AF IMT—Air Force Information Management Tool
+AFMAN—Air Force Manual
+AFMC—Air Force Materiel Command
+AFMCI—Air Force Materiel Command Instruction
+CSS—Customer Support Specialist
+DDE—Demand Data Exchange
+DFS—Demand Forecasting Specialist
+DHA—Demand History Adjustment
+DHAA—Demand History Data Inquiry
+DHAB—Initiate DHA Demand Transaction
+DHAC—Initiate DHA Demand Reversal
+DLA—Defense Logistics Agency
+DRMS—Defense Reutilization Marketing Service
+G005M—Depot Maintenance Support System
+GPC—Government Purchase Card
+IAW—- In Accordance With
+IMPRESA—Maintenance Overhaul and Repair Impresa System
+NSN—National Stock Number
+OPR—Office of Primary Responsibility
+ 8                                                   309MXWI23-107 24 AUGUST 2011
+
+
+PDMC—Planning for DLA Managed Consumables
+PST/PSS—Production Support Technician/Production Support Specialist
+RDS—Records Disposition Schedule
+SMS—Business Systems Modernization Item
+SOS—Source of Supply
+WARRS/D035K—Wholesale and Retail Receiving and Shipping System
+ZF9—Demand/Repair Cycle Data File Maintenance
+309 AMARG—Aerospace Maintenance Regeneration Group
+309 MXW—Maintenance Wing
+309MXWI23-107 24 AUGUST 2011                  9
+
+
+                               Attachment 2
+                           DHA CHECKLIST
+10                             309MXWI23-107 24 AUGUST 2011
+
+
+                Attachment 3
+     DHA SUMMARY REPORT FROM IMPRESA
+309MXWI23-107 24 AUGUST 2011                     11
+
+
+                               Attachment 4
+                     IMPRESA SAVE FLAG PROCESS
+12                        309MXWI23-107 24 AUGUST 2011
+
+
+           Attachment 5
+     NON-IMPRESA PROCEDURES
+309MXWI23-107 24 AUGUST 2011                  13
+
+
+                               Attachment 6
+                          DHA SPREADSHEET
+ 14                                             309MXWI23-107 24 AUGUST 2011
+
+
+                                 Attachment 7
+                             DHAA SCREEN PRINT
+
+Figure A7.1. DHAA Screen Print
+309MXWI23-107 24 AUGUST 2011     15
+
+
+Figure A7.2. DHAA Screen Print
+ 16                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A7.3. DHAA Screen Print
+309MXWI23-107 24 AUGUST 2011                     17
+
+
+                                 Attachment 8
+                             DHAB SCREEN PRINT
+
+Figure A8.1. DHAB Screen Print
+ 18                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A8.2. DHAB Screen Print
+309MXWI23-107 24 AUGUST 2011     19
+
+
+Figure A8.3. DHAB Screen Print
+ 20                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A8.4. DHAB Screen Print
+309MXWI23-107 24 AUGUST 2011     21
+
+
+Figure A8.5. DHAB Screen Print
+ 22                                             309MXWI23-107 24 AUGUST 2011
+
+
+                                 Attachment 9
+                             DHAC SCREEN PRINT
+
+Figure A9.1. DHAC Screen Print
+309MXWI23-107 24 AUGUST 2011     23
+
+
+Figure A9.2. DHAC Screen Print
+ 24                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A9.3. DHAC Screen Print
+309MXWI23-107 24 AUGUST 2011     25
+
+
+Figure A9.4. DHAC Screen Print
+26                      309MXWI23-107 24 AUGUST 2011
+
+
+        Attachment 10
+     DHAA SCREEN PRINT
+309MXWI23-107 24 AUGUST 2011                        27
+
+
+                                   Attachment 11
+                                 ZF9 SCREEN PRINT
+
+Figure A11.1. ZF9 Screen Print
+ 28                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A11.2. ZF9 Screen Print
+309MXWI23-107 24 AUGUST 2011     29
+
+
+Figure A11.3. ZF9 Screen Print
+ 30                              309MXWI23-107 24 AUGUST 2011
+
+
+Figure A11.4. ZF9 Screen Print

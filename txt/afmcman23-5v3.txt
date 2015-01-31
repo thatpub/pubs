@@ -1,0 +1,1309 @@
+BY ORDER OF THE COMMANDER                              AIR FORCE MATERIEL COMMAND
+AIR FORCE MATERIEL COMMAND                                      MANUAL 23-5, Volume 3
+
+                                                                                  9 JUNE 2014
+
+                                                                         Materiel Management
+
+                                               REUTILIZATION & DISPOSITION SYSTEM
+                                                      (D035G FOR WHOLESALE ITEMS
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-Publishing.af.mil for downloading or ordering
+
+RELEASABILITY: There are no releasability restrictions on this publication
+
+
+OPR: HQ AFMC/A4R                                                  Certified by: HQ AFMC/A4R
+                                                                          (Mr. Richard D. Reed)
+                                                                                      Pages: 37
+
+
+
+This volume implements AFI 23-101, Materiel Management Policy. It establishes procedural
+guidance for the logistics management of wholesale items to effectively manage materiel
+utilization and disposition program from guidance formerly found in AFMAN 23-110, USAF
+Supply Manual (V3 P1 C9). The Reutilization and Disposition System (D035G) supports this
+function within the Stock Control System (SCS) using data from the AFMC requirements
+computations and other support AF systems. This publication applies to all personnel responsible
+for adjusting, computing, reviewing, validating, managing and approving materiel utilization and
+disposition programs within the Air Force Reutilization and Disposition System (D035G). This
+manual does not apply to the US Air Force Reserve or Air National Guard units or its members.
+
+Refer recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using an AF Form 847, Recommendation for Change of Publication; route
+AF Forms 847 from the field through the appropriate functional chain of command. All waiver
+requests must be routed to the OPR for approval prior to implementation. This manual may be
+supplemented at any level, but all supplements must be routed to HQ AFMC/A4R for
+coordination prior to certification and approval. Ensure that all records created as a result of
+processes prescribed in this publication are maintained in accordance with (IAW) Air Force
+Manual (AFMAN) 33-363, Management of Records, and disposed of IAW Air Force Records
+Information Management System (AFRIMS) Records Disposition Schedule. See Attachment 1
+for glossary of references and supporting information.
+ 2                                                                                       AFMCMAN23-5V3 9 JUNE 2014
+
+
+Chapter 1—PROCEDURAL GUIDANCE AND RESPONSIBILITIES                                                                                          4
+       1.1.    Overview. ...............................................................................................................    4
+       1.2.    Objectives. .............................................................................................................    4
+       1.3.    Management Concepts and Responsibilities. .........................................................                          4
+
+Chapter 2—RDS/D035G FUNCTIONALITY                                                                                                           7
+       2.1.    Overview. ...............................................................................................................    7
+       2.2.    Stock Control System and D035G RDS System. ..................................................                                7
+Table. 2.1.    Timeout Table ........................................................................................................       8
+
+Chapter 3—EXCESS REVIEW GENRAL INFORMATION                                                                                                 10
+       3.1.    AF wholesale inventory .........................................................................................            10
+Table 3.1.     Stratification Inventory ..........................................................................................         10
+       3.2.    Excess Review List (ERL) Process. .......................................................................                   10
+       3.3.    ERL Release Logic. ...............................................................................................          11
+       3.4.    RDS Workbaskets. .................................................................................................          11
+Table 3.2.     Error Messages ......................................................................................................       12
+Table 3.3.     Error Logs Review .................................................................................................         13
+       3.5.    Disposal Quantity. .................................................................................................        13
+       3.6.    DEMIL Codes F, G, and P. ....................................................................................               14
+       3.7.    Controlled Inventory Item Code (CIIC) Security Code 9 Items. ...........................                                    14
+       3.8.    Nuclear Weapon-Related Materiel (NWRM). .......................................................                             15
+       3.9.    Automatic Data Processing Equipment (ADPE) Items. ........................................                                  15
+       3.10.   End Item Reclamation. ..........................................................................................            15
+Table 3.4.     Disposal Reason Codes ..........................................................................................            16
+       3.11.   Adjusting RDS Disposal Quantities. ......................................................................                   16
+       3.12.   Recall Option. ........................................................................................................     17
+       3.13.   User Initiated. .........................................................................................................   17
+
+Chapter 4—FRONT END SCREENING (FES)                                                                                                        18
+       4.1.    Front End Screening. .............................................................................................          18
+       4.2.    User Initiated FES (“Pull” Process). ......................................................................                 19
+       4.3.    Demilitarization of Excess Items. ..........................................................................                19
+       4.4.    RDS Reclamation (Engines and Aircraft). .............................................................                       20
+
+Chapter 5—DISPOSITION PROGRAM AND DIRECTED DISPOSAL FREEZE CODES                                                                           22
+AFMCMAN23-5V3 9 JUNE 2014                                                                                                               3
+
+
+     5.1.   Overview. ...............................................................................................................   22
+     5.2.   Responsibilities. .....................................................................................................     22
+     5.3.   Management Review of Inventory Control Point Controlled Excess Assets. .......                                              24
+     5.4.   Freeze/Deferred Disposal Code Notice Criteria. ...................................................                          24
+     5.5.   Preparation of Disposal Freeze Notice. .................................................................                    24
+     5.6.   Buy Back of FMS Excesses. ..................................................................................                26
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                          27
+
+Attachment 2—MANAGEMENT REPORTS                                                                                                         31
+
+Attachment 3—ITEMS AUTHORIZED IMMEDIATE TRANSFER TO DLADS                                                                               33
+
+Attachment 4—GUIDANCE FOR REVIEWING AND COMPUTING RETENTION
+             LEVELS, AND PROCESSING WHOLESALE ITEMS TO DISPOSAL                                                                         36
+ 4                                                             AFMCMAN23-5V3 9 JUNE 2014
+
+
+                                             Chapter 1
+
+                   PROCEDURAL GUIDANCE AND RESPONSIBILITIES
+
+1.1. Overview. This volume provides guidance and direction to manage an effective materiel
+utilization and disposition program at the wholesale level. The Air Force Reutilization and
+Disposition Program is supported by increment 3.5. The D035G Reutilization/Disposition
+System (RDS) within the Stock Control System (SCS) using data from the AFMC requirements
+computation systems and other supporting Air Force systems.
+1.2. Objectives. The objectives of the D035G Reutilization/Disposition System enable users to:
+     1.2.1. Make full use of available assets in the Department of Defense inventory.
+     1.2.2. Preclude buying assets while usable assets of the same item are being sent to disposal.
+     1.2.3. Preclude repair or overhaul of unserviceable assets when serviceable assets are
+     available within DoD.
+     1.2.4. Provide a tool for management, audit, and oversight agencies to analyze or survey
+     actions.
+     1.2.5. Provide a tool to remove excess materiel from the AF inventory.
+1.3. Management Concepts and Responsibilities.
+     1.3.1. This chapter provides guidance and direction for the administration and control of the
+     reutilization and disposition management programs. Items that meet DoD Item Management
+     (IM) coding criteria are coded for Integrated Materiel Management (IMM).
+     1.3.2. The D035G RDS OPR will:
+        1.3.2.1. Assist AFMC/A4R in the development and execution of procedural guidance to
+        ensure compliance with established policies.
+        1.3.2.2. Establish and maintain utilization and reutilization disposition control functions.
+        1.3.2.3. Develop new or alternate applications of materiel.
+        1.3.2.4. Prepare data, reports, recommendations and maintain backup materiel for audit
+        or review. See Attachment 2
+     1.3.3. The Air Logistics Complex (ALC) OPRs serve as RDS Points of Contact (POC) for
+     development, implementation, maintenance, surveillance, and evaluation of policy and
+     procedures. Areas of responsibilities include but not limited to: forwarding release notices
+     with a suspense date, monitoring performance metrics, assisting Site OPRs.
+        1.3.3.1. The ALC will designate site POCs to provide management assistance when
+        required and to ensure continuity and program execution:
+            1.3.3.1.1. Disposition Program Control Officer (DPCO).
+            1.3.3.1.2. Front End Screening Program Control Officer (FESPCO).
+            1.3.3.1.3. Reclamation Program Control Officer (RPCO).
+            1.3.3.1.4. Product Director (PD)/Squadron (Sq) Monitors.
+AFMCMAN23-5V3 9 JUNE 2014                                                                 5
+
+
+     1.3.3.2. Disposition Program Control Officer (DPCO) will serve as the site focal point
+     for receiving/releasing the quarterly ERL data flow and resolve Error Logs incurred
+     during data release.
+     1.3.3.3. Front End Screening Program Control Officer (FESPCO) will:
+        1.3.3.3.1. Ensure management of FES for all organizations within the site.
+        1.3.3.3.2. Receive/review all data flow (FES daily, ERL quarterly, and Reclamation
+        Save List) as assigned by MDC IAW Table 2.1
+     1.3.3.4. RPCO’s will ensure management of Reclamation for all organizations within the
+     SCM Site and work the Reclamation data flow receiving/releasing.
+     1.3.3.5. PD/Sq monitors serves as a focal point for receiving/releasing data flows
+     (ERL/FES/Reclamation) will:
+        1.3.3.5.1. Monitor transactions in progress.
+        1.3.3.5.2. Ensure all User profiles for D035G RDS access are current.
+        1.3.3.5.3. Elevate problems that cannot be resolved to the appropriate supervisory
+        level.
+     1.3.3.6. Ensure overage/suspended items are worked and appropriate actions are taken
+     IAW Table 2.1.
+        1.3.3.6.1. The first-level supervisor must reassign workbaskets of users that are on
+        leave or TDY that impact the completion of work. The first-level supervisor must
+        initiate a DD Form 2875, System Authorization Access Request to remove RDS
+        access authorization for members no longer performing RDS duties.
+        1.3.3.6.2. Ensure RDS table contains accurate information on his/her employees.
+        Accurate information includes but is not limited to: ES/IM code, name, and office
+        symbol.
+        1.3.3.6.3. The first-line supervisor will provide changes/new information to the PD
+        Monitor and System OPR for file maintenance and DD Form 2875 updates when an
+        employee is absent from duty due to long-term leave/TDY, transfer to a new position,
+        or retirement.
+     1.3.3.7. The designated IM will:
+        1.3.3.7.1. Receive/review all data flow (Front End Screening [FES] daily, Excess
+        Review List [ERL] quarterly, and Reclamation Save List) assigned by Manager
+        Designator Code (MDC) IAW Table 2.1.
+        1.3.3.7.2. Ensure all overage/suspended items are worked and communicate with the
+        Equipment Specialist (ES) and supervisor if assistance is required.
+        1.3.3.7.3. Any problems that cannot be resolved by the IM/MM will be elevated,
+        documented, justified, and maintained in the National Stock Number (NSN) folder as
+        an audit trail.
+     1.3.3.8. The designated ES will:
+6                                                 AFMCMAN23-5V3 9 JUNE 2014
+
+
+    1.3.3.8.1. Receive/review all assigned data flows (FES daily, ERL quarterly, and
+    Reclamation Save List) assigned IAW Table 2.1.
+    1.3.3.8.2. Ensure all overage/suspended items are worked and communicate with the
+    IM and supervisor if assistance is required.
+    1.3.3.8.3. Identify system/functional problems and elevate through the PD/Sq
+    monitors in efforts to ensure continuity and success of the program.
+AFMCMAN23-5V3 9 JUNE 2014                                                                     7
+
+
+                                          Chapter 2
+
+                              RDS/D035G FUNCTIONALITY
+
+2.1. Overview.
+2.1.1. This chapter provides guidance and direction for operation of the Air Force Materiel
+Reutilization Disposition System. D035G RDS provides AFMC materiel management personnel
+the capability to identify AF assets for the purpose of: reutilization, saving/disposing, or
+transferring to DLADS for use by other organizations.
+   2.1.2. D035G RDS system provides a workflow mechanism which maintains historical data
+   for use by management, auditors, and investigative agencies. The system is a secure web-
+   based application with automated on-line “workbaskets”. Workbaskets are configured based
+   on the user’s profile and role. Each of these users can select which items to be released, or
+   can release the entire list without reviewing it. Completing work in the workbaskets will
+   facilitate the routing and approval/disapproval process for three workflows: ERL, FES, and
+   Reclamation.
+   2.1.3. Assets selected for disposal will be approved by the appropriate IMS and ES
+   supervisory levels prior to being transferred to DLADS.
+2.2. Stock Control System and D035G RDS System.
+   2.2.1. RDS data flow is a “PUSH” down workflow process that requires users to conduct a
+   time-sensitive review. The first-level supervisor must reassign workbaskets of users that are
+   unavailable and would cause an impact to the completion of work IAW Table 2.1
+   2.2.2. Users must log-in at a minimum every 30 days to prevent your account from being
+   DISABLED. Disabled user account hinders the completion of time-sensitive work and
+   results in delinquent reviews. RDS users that no longer requires system access must
+   delete/terminate their RDS workflow account, see paragraph 1.3.3.6.1. for required action.
+   2.2.3. RDS provides a log-in dialogue screen/workload pop-up notice capability to users
+   with pending workload in the workbasket.
+   2.2.4. The system maintains a record of assets and requirements for ERL, FES, and
+   Reclamation Utilization processes under the Work In Progress (WIP) Menu until the
+   workload is reviewed.
+       2.2.4.1. RDS receives, reviews, releases workflow processes on wholesale cataloged
+       items with national stock numbers.
+       2.2.4.2. The induction of the latest computation data will archive existing in-process
+       work flow activities; however, items in suspended status will not be archived.
+       2.2.4.3. A “Helps” link (system tutorial) and system operation information is available.
+       A “Training” and “Simulation” module is located within the “Helps” hyperlink function.
+       2.2.4.4. The WIP list. All users have visibility of items currently in the system for
+       FES/ERL/Reclamation based on the assigned profile, the available categories are: New,
+       Overage, Disapproved, Suspended, Recall, and Rework.
+ 8                                                            AFMCMAN23-5V3 9 JUNE 2014
+
+
+     2.2.5. Workflow Recall.        Users have the ability to recall Interchangeability and
+     Substitutability (I&S) subgroup master NSN from any subsequent user’s workflow
+     workbasket during the ERL review while in the workbasket of the approving/coordinating
+     official. Items cannot be recalled once finalized.
+        2.2.5.1. A notice will display, “NIIN no longer available in workflow” if the NIIN has
+        been processed and exited workflow.
+        2.2.5.2. A notice will display, “Recalled item is not in your workflow path” if the NIIN
+        has not been processed and exited workflow.
+        2.2.5.3. A notice will display, “Item is already in your workbasket” if you try to recall an
+        item as the current user of the item.
+     2.2.6. RDS Options:
+        2.2.6.1. A History Option is available for User’s to view previous actions/item history.
+        2.2.6.2. The Workbasket Loan Option is used to conduct reviews when leaves, TDYs,
+        etc will impact working baskets. The supervisor will contact the PD Monitor or RDS
+        OPR for the LOAN function to ensure the work in the workbasket is completed.
+        2.2.6.3. Approval Range is the approval/disapproval levels at various supervisory levels
+        on the actions that need to be taken by the IMs/MMs/ESs. RDS allows each site to
+        determine/designate supervisor approval signature level.
+        2.2.6.4. The requirements data maintained in RDS are organized within the “ORDERS”
+        function and are used to determine or identify FES and Reclamation activity.
+     2.2.7. Timeout Table. The Timeout Table defines workload requirements. When workflow
+     exceeds the prescribed Timeout Table timeline, it results in an overage status that requires
+     immediate attention (see Table 2.1) for the standard.
+
+Table. 2.1. Timeout Table
+ PROGRAM                     ROLE                     Standard Timeout Table
+   ERL                       DPCO                              0 days
+   ERL                        PD                               2 days
+   ERL                        ES                              10 days
+   ERL                      IM/MM                             20 days
+                         DESIGNATED
+       ERL               SUPERVISOR                             5 days
+       FES                  FESPCO                              1 days
+       FES             FES PD MONITOR                           2 days
+       FES                  IM/MM                               5 days
+       FES                    ES                                5 days
+                         DESIGNATED
+     FES                 SUPERVISOR                             5 days
+  Reclamation                RPCM                               2 days
+  Reclamation                RPCO                               2 days
+  Reclamation                 PD                                2 days
+  Reclamation               IM/MM                               5 days
+AFMCMAN23-5V3 9 JUNE 2014             9
+
+
+ Reclamation         ES      5 days
+                DESIGNATED
+ Reclamation    SUPERVISOR   5 days
+ 10                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+
+                                           Chapter 3
+
+                       EXCESS REVIEW GENRAL INFORMATION
+
+3.1. AF wholesale inventory
+   3.1.1. See Table 3.1. The AF wholesale inventory is stratified into one of four categories.
+
+Table 3.1. Stratification Inventory
+Potential Reutilization Disposal   Potential reutilization (excess) is the quantity of an item
+                                   above all authorized levels for which final determination as
+                                   excess has not been made.
+Contingency Retention Stock        Contingency retention stock is retained for specific
+                                   contingencies. It is stock for which there is no predictable
+                                   demand or quantifiable requirement. CRS is stock above the
+                                   AAO and above the ERS level.
+Economic Retention Stock           Economic retention stock has no present requirement;
+                                   however, it has been determined that it is more economical
+                                   to retain the stock for future peacetime use instead of
+                                   satisfying possible future needs through procurement.
+Approved Acquisition Objective     The approved acquisition objective is held to support
+(AAO)                              operating levels and war reserve requirements
+                                   (apportionment year (ay), budget year (by), plus lead-time (2
+                                   to 3 years)).
+3.2. Excess Review List (ERL) Process.
+   3.2.1. ERL Process is one of RDS’s workflow functions (ERL/FES/Reclamation) that allow
+   users to review, dispose, or retain assets that have been identified as potential excess by
+   D200A for secondary items and D200C for primary equipment items on a quarterly basis.
+   ERL is designed to review only depot/wholesale reported items and not Base Excess Report
+   Listing items.
+   3.2.2. The ERL is a “push” process within SCS. Using the latest depot reported, Purpose
+   Code “09” assets position; it provides the capability to identify potential excess to determine
+   the amount or quantity that is transferred to DLADS.
+       3.2.2.1. The suggested disposal candidates are displayed by the least preferred AF order
+       of use within the I&S subgroup family and condition of A-H.
+       3.2.2.2. If there is no depot reported Purpose Code “09” inventory available, the NIIN is
+       removed from the ERL candidate list.
+       3.2.2.3. If partial inventory is available, the ERL will display partial D200A/C disposal
+       candidate quantity.
+       3.2.2.4. NSN with Acquisition Advice Code (AAC) V/Y terminal items not included in
+       the requirements system (D200). Users will take User-initiated disposal actions.
+AFMCMAN23-5V3 9 JUNE 2014                                                                     11
+
+
+      3.2.2.5. The RDS users must conduct a review of the entire candidates ERL for retention
+      or disposal. The ERL candidate is obtained under “ASSETS” button and then the drop
+      down selection “EXCESS”, “DESIGNATED IM/MM NAME”, and “WORK IN
+      PROGRESS”.
+3.3. ERL Release Logic.
+   3.3.1. RDS compares the Requirements Computations System’s Excess data with the latest
+   SCS D035K, “Purpose Code 09” account reported assets postures. If there is no “09”
+   reported inventory available at the depot, the NIIN will be removed from the ERL candidates
+   list. If partial inventory is available, the ERL will display partial D200A/C disposal
+   candidate quantity. If an “A5J Disposal Release Order” transaction occurs prior to the D200
+   cycle cutoff date) and prior to the ERL release date (e.g. ERL release date is approximately 3
+   months after D200 cycle cutoff date), the NIIN will be removed from the ERL candidate.
+   3.3.2. ERL Management Tool Footprint outlines the direction of order of how work flows
+   into the RDS workbaskets: AF RDS Functional OPR, Site DPCO (Including Prime
+   IM/MM), Excess Product Directorate (PD) Monitor, IM/MM, ES, Designated Supervisor(s),
+   and RDS ERL Workflow Process.
+3.4. RDS Workbaskets.
+   3.4.1. The RDS workbasket serves as a preliminary selection page, allowing users to select
+   what type of item they wish to review. If a displayed category contains any number greater
+   than zero, a VIEW button appears on the right side of the page. If the number is zero, the
+   VIEW button will be absent, which means there is no item to be reviewed. To preclude
+   inclusion in following quarterly excess receipt/review/release, the designated users must
+   review all ERL candidates and code each for retention or disposal prior to RDS submission
+   and processing. The ERL workbasket access allows for three options to entered:
+      3.4.1.1. Pop-Up Notice to Access Workbasket.
+      3.4.1.2. Access Workbasket from Homepage.
+      3.4.1.3. Displays Total NIINs in Workbasket for Review.
+3.4.2. The ERL release quarterly feed from D200A with semi-annual feed from D200C (31 Mar
+updates and 30 Sep Comps). The AF Functional RDS OPR initiate the ERL process will:
+      3.4.2.1. Pull Insurance (INS)/ Numeric Stockage Objective (NSO) items from Interactive
+      Requirement Information Services (IRIS).
+      3.4.2.2. Send a random number of INS/NSO NIINs to the D200A OPR for validation.
+      3.4.2.3. Forward INS/NSO items to RDS Contract System Administrators for loading
+      into the quarterly COMP/ERL.
+      3.4.2.4. Randomly validate RDS Contract System Administrators load of INS/NSO
+      items.
+      3.4.2.5. Send an electronic release notification to DPCOs.
+      3.4.2.6. Align Asset Cutoff Date to the last day of the month of the COMP cycle.
+      3.4.2.7. Release ERL/COMP Workflow Initiation data to Site DPCOs.
+  12                                                      AFMCMAN23-5V3 9 JUNE 2014
+
+
+    3.4.3. Site DPCOs conduct the following steps:
+       3.4.3.1. Approximately two weeks prior to the quarterly ERL release, Site DPCOs
+       receive a pop-up screen notice “Workflow Initiation Date Pending” post logging in.
+       3.4.3.2. The Site DPCOs use the notice to set an anticipated ERL initiation date on the
+       Assets/Excess/Initiation drop-down menu. This triggers Users to complete reviewing on
+       all remaining ERL NIINs and prep for the new forthcoming ERL release.
+       3.4.3.3. Upon receipt of the “Ready to Release” email notification from the RDS OPR at
+       Wright Patterson AFB; Site DPCOs take proper ERL Initiation Pending actions to bring
+       the ERL data from D200A/C to the DPCO’s staging area within SCS.
+       3.4.3.4. The Site DPCO accepts the initiation pending action that is preceded by the
+       Workflow Initiation action which introduces ERL workflow into the DPCO’s
+       workbasket.
+       3.4.3.5. Once the candidates are initiated and moved to the DPCO’s workbasket, the Site
+       DPCO sorts/removes AF Secondary Inventory Control Activity (SICA) and
+       Nonconsumable Item Materiel Support Code (3, 4, 5, 8, 9, and 12) items.
+       3.4.3.6. The DPCO releases the remainder of the ERL data to the assigned workflow PD
+       monitor. The ERL Time Stamp starts with the release from the DPCO to the PD
+       monitors’ workbasket. An email notification is sent from the DPCO to the PD monitor’s
+       workbasket with a suspense date.
+       3.4.3.7. Any transactions that did not flow to the PD monitor will flow to the Site
+       DPCO’s on-screen 30-day error log workbasket for managing, (see Table 3.2).
+
+ Table 3.2. Error Messages
+ Subgroup NSN     User ID                        Error Message                  Timestamp
+ Master NIIN
+                        No Potential Excess due to A5Js since ACD item is           2011-05-27
+    014653764     SMITHC
+                        deleted from Workflow.                                      09:53:31.0
+                        Disposal of Excess Review Item cannot be started -          2011-05-31
+    000527965    SMITHC
+                        No assets found.                                            10:24:01.0
+                        Disposal of Excess Review Item cannot be started -          2011-06-02
+SMITHC
+    000527965
+        SM       SMITHC
+                        No assets found.                                            08:50:54.0
+       3.4.3.8. RDS Users will generate a Disposal “A0A/VD” transaction to the managing
+       D035A site for a stock number where D035A is a SICA and the Primary Inventory
+       Control Activity (PICA) has disposition authority.
+       3.4.3.9. The Site DPCO will run and review the Error Logs (see Table 3.3):
+AFMCMAN23-5V3 9 JUNE 2014                                                                  13
+
+
+
+Table 3.3. Error Logs Review
+Require Site      Error Messages
+System OPR’s
+assistance
+  *                IM Office Symbol Not Found
+  *                User Not Found due to Disabled Account
+  *                MDC Mismatch
+  *                PD Monitor Not Found
+  *                Item Manager Not Found
+  *                No Related Object Found (No Service Manager)
+  *                Organization Not Found
+                   No Related Object Found (Could Not Find
+                   Organization)
+                   Invalid Excess Review NIIN
+                   Item Cannot Be Auto-Deleted
+                   Item Exists As Suspended
+                   Item Is No Longer A Subgroup Master
+                   Invalid Excess Review NIIN
+                   No Assets Found
+1. Note: Asterisk means ‘Yes” and Blank means “No”.
+   3.4.4. The designated PD Monitor reviews/releases the ERL workbasket to the next
+   subordinate IM/MM.
+   3.4.5. The workbasket is a preliminary selection allowing PD monitors to choose the type of
+   item they wish to review and release to the IM/MM’s workflow. If there are no NSNs for
+   release, the “View” button will not be present.
+   3.4.6. The designated IM receives the ERL workflow from the PD Monitor, but will not
+   know the workflow is in his/her workbasket until he/she logs into the SCS. To ensure
+   proper management/processing of ERL/FES/Reclamation workflows, the IM must log into
+   the SCS.
+   3.4.7. The IM/MM will review the entire workflow and code NIINS for disposal or retention
+   decisions that are forwarded to the ES for review.
+3.5. Disposal Quantity.
+   3.5.1. The system suggested disposal quantity must be the same as D200A/C’s potential
+   excess quantity less D200 deferred disposal quantity. If the RDS recommended disposal
+   quantity does not match, the ES must perform research and provide documentation or
+   rationale for not disposing of the entire D200A excess quantity to the IM/MM. The D200A
+   documentation must be annotated on the D200A paper copy for the audit trail. Prior to the
+   ERL review, all D200A/C final computations that are potential reutilization (excess) items
+   must be reviewed, documented with the intended action, coordinated amongst the IM/MM,
+   ES, and appropriate level of approval IAW AFMCMAN 23-1, Requirements for Secondary
+   Items             (D200A,D200N)               (located           at         http://www.e-
+   publishing.af.mil/shared/media/epubs/afmcman23-1.pdf           and     AFMCMAN       23-4,
+ 14                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+   Computation of Requirements for Equipment Items(located                    at   http://www.e-
+   publishing.af.mil/shared/media/epubs/AFMCMAN23-4.pdf .
+   3.5.2. Exception: If the item requires a DEMIL disposal action or end item reclamation,
+   IMs/MMs WILL NOT take disposal action thru RDS. Process the ERL disposal quantity
+   with “zero” on the RDS ERL review screen in order to close out the workflow and then
+   create the appropriate offline disposal action.
+3.6. DEMIL Codes F, G, and P.
+   3.6.1. All DEMIL Code “F” items must have special disposition instructions in the Army
+   Electronic      Product      Support      (AEPS)      “TULSA”       database,   located     at
+   https://tulsa.tacom.army.mil/index.cfm. During the ERL review, the IM will get a pop-up
+   notice for the special instruction validation at the AEPS link. The IM must contact the ES for
+   validity.
+      3.6.1.1. The ES determines if the correct demilitarization code has been assigned to
+      assets using the excess detail view screen.
+      3.6.1.2. If the correct demilitarization code is assigned, the ES will record on the excess
+      detail view screen: states that the code is correct and identifies an AFMC Form 206,
+      Temporary Work request is required.
+      3.6.1.3. If assigned incorrectly, the ES will record that the code is incorrect along with
+      any other comments on the excess detail view screen, identify an AF Form 86, Request
+      for Cataloging Data/Action is required and input a date for actions taken (allows item to
+      leave the ES’ workbasket).
+   3.6.2. Demilitarization code “G” requires inert certification; if not attached to the item,
+   forward to maintenance with AFMC Form 206.
+   3.6.3. Upon completion of the AFMC Form 206, the maintenance activity will turn in the
+   residue, segregated by NSN, to the local materiel management activity. LRS/Materiel
+   Management activity will complete the disposal turn-in process. The Disposal Turn-in
+   Document (DTID) will contain a certification and authorized signature to the effect that
+   declassification or demilitarization has been accomplished. Reference AFMAN 23-122,
+   Materiel Management Procedures.
+   3.6.4. Component parts that have valid requirements will be reclaimed from excess end
+   items prior to disposal. Upon completion of the required declassification, demilitarization, or
+   reclamation action, excess classified and hazardous items will be processed according to AFI
+   31-401, Information Security Program Management, and AFMAN 23-122.
+   3.6.5. Demilitarization code “P” is required for Security Classified items on the Munitions
+   List. (NOTE: This code will NOT be assigned to Classified Ammunitions).
+   3.6.6. For end items requiring reclamation, process an inter-condition transfer to transfer all
+   the items from their present condition to condition code "P."
+3.7. Controlled Inventory Item Code (CIIC) Security Code 9 Items.
+   3.7.1. Cryptological/Cryptographic capable (CIIC 9) inventories that are disposed through
+   RDS are placed in suspended supply conditions. A disposal action always require disposition
+   instructions from the National Security Agency for DEMIL action on an AFMC Form 206.
+AFMCMAN23-5V3 9 JUNE 2014                                                                  15
+
+
+   The assets are not turned into DLADS on the original NSN/Part Number/Nomenclature that
+   can be identified with the original Crypto properties.
+   3.7.2. All CIIC 9 assets require special DEMIL actions from the ES prior to releasing to
+   DLADS and are identified in the Supply/DLADS system on a locally generated NSN/Part
+   number.
+   3.7.3. The ES is required to reject the RDS disposal action on all CIIC 9 items and provide
+   an explanation.
+   3.7.4. The IM/MM must input zero disposal quantity and provide a comment to close out the
+   ERL review workflow and document the intended action (e.g., AFMC Form 206) in D200A
+   paper copy.
+3.8. Nuclear Weapon-Related Materiel (NWRM).
+   3.8.1. ERL and NWRM. The IM/MM and ES receives a pop-up notice/dialog in the
+   workbasket if the item is a NWRM items within RDS.
+      3.8.1.1. IMs or ESs can interrogate the RDS system by NSN. Log-in and click on the
+      “Assets” tab, then “Interrogations”, and lastly “Stock Number Interrogatin” to view all
+      NWRM items.
+      3.8.1.2. RDS displays the NWRM indicator on the ERL history (historical reference
+      detail page).
+      3.8.1.3. The IM/MM must input zero disposal quantity, provide a comment, and take the
+      appropriate disposal action IAW AFI 20-110, Nuclear Weapons-Related Materiel
+      Management at (http://www.e-publishing.af.mil/shared/media/epubs/AFI20-110.pdf)
+      for NWRM data flowing into the ERL.
+3.9. Automatic Data Processing Equipment (ADPE) Items.
+   3.9.1. Certain restrictions are inherent to the system design for User-initiated and ERL
+   disposal actions. The following examples are not inclusive:
+      3.9.1.1. Federal Supply Group “70” or Materiel Management Aggregation Code
+      (MMAC) “JZ” ADPE requires a Certification of Hard Drive Disposition (Degaussing)
+      IAW Disposition of unclassified DoD Computer Hard Drives and, AFMAN 33-282,
+      Computer Security (COMPUSEC).
+      3.9.1.2. The ES must ensure the Federal Stock Class (FSC) and MMAC are properly
+      cataloged prior to taking disposal actions.
+   3.9.2. The IM/MM must provide a clear text memo on the Disposal Addendum Sheet prior
+   to DLADS transfer. The ES must take the appropriate offline disposal action.
+3.10. End Item Reclamation.
+   3.10.1. The IM/MM/ES will consider possible needs for the component parts associated with
+   the end item reclamation process IAW AFMCI 23-111, Reclamation of Air Force Property
+   Chapter 9, located at (http://www.e-publish.af.mil/shared/media/epubs/AFMCI23-
+   111.pdf). If End Item Reclamation is feasible, the IM/MM/ES must document the intended
+   action on D200A paper copy.
+ 16                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+   3.10.2. The IM/MM/ES must take end item disposal reclamation offline and will input zero
+   disposal quantity in the RDS ERL review screen in order to exit the RDS. IM/MM/ES will
+   then take a manual disposal action.
+   3.10.3. The IM/MM has the option to override (increase/decrease) the RDS suggested
+   disposal quantity. If the decision is to retain/disposal all or part of the RDS system suggested
+   disposal quantities, the IM/MM must enter appropriate Disposal Reason Codes shown below.
+   The ES must provide justification/rationale to the IM/MM for the action which must be
+   included in the comment text box and should be consistent with the D200A paper copy
+   documentation.
+
+Table 3.4. Disposal Reason Codes
+  CODE      DEFINITION
+   AA       Disposal Authorized - Obsolete DoD aircraft or end item.
+   BB       Disposal Authorized - Consumable unserviceable item - No repair capability exists or
+            uneconomical to repair and no Expendability, Recoverability, Reparability Category
+            (ERRC) change pending.
+      CC    Disposal Authorized – Shelf life item (supply condition code "C")
+      DD    Disposal Authorized - DSP/NON PUB item (AAC "Y" and/or phrase code "N" or
+            Source of Supply (SOS) is "JCD," no known usage).
+      EE    Disposal Authorized - Peculiar FMS aircraft, no demand in past four years (including
+            the two year buy out period)
+      FF    Disposal Authorized - Electronic Warfare item. (Must include reference in
+            comments block citing Retention criteria in AFI 23-101that authorizes disposal.)
+      PP    Disposal Authorized - Partial quantity determined not needed for the remaining life
+            of the weapon system/end item due to weapon system/end item phase-down,
+            modification, etc.
+      RR    Disposal Authorized - Active weapon system in inventory 18 years or more with
+            positive retention quantity. Retention quantity offers sufficient support for remaining
+            life of system.
+      SS    Disposal Authorized - Active weapon system in inventory 18 years or more with
+            AFMC retention quantity. No current/future requirement for partial manually
+            computed as potential reutilization.
+      TT    Disposal Authorized - Rationale and authority contained in NSN file.
+      XX    Disposal action authorized or accomplished during Comp Review
+3.11. Adjusting RDS Disposal Quantities.
+   3.11.1. IM/MM may override (increase/decrease) the recommended disposal quantity;
+   however, the D200A paper copy or D200C on-line notepad documentation of the intended
+   retention/disposal action must be reflected IAW AFMCMAN 23-1 and AFMCMAN 23-4.
+   3.11.2. The ES must perform research and provide justification/rationale to the IM/MM to
+   address the difference. If the ERL recommended quantity is not adequate enough to dispose
+   of the D200 excess. Annotate the justification on the D200A paper copy or D200C on-line
+   notepad.
+AFMCMAN23-5V3 9 JUNE 2014                                                                      17
+
+
+3.12. Recall Option. Prior to the final process, the recall option is available for retrieving the
+action during the ERL review. Utilized this option in the Workflow Recall Menu.
+3.13. User Initiated.
+   3.13.1. This option is available for IMs/MMs to take disposal actions within RDS under the
+   “Assets” menu button and drop-down selections “Excess, User Initiated Disposal”. All
+   assets must relate directly to an assigned RDS wholesale IM/MM-ES-Supervisory “string” in
+   order to progress through the workflow processes.
+   3.13.2. RDS only process items with Supply Condition Codes A, B, C, D, F, G, and H.
+   Assets that are already in the system will reject and here are some reasons for taking user
+   initiated disposal actions within RDS:
+       3.13.2.1. IM/MM may opt to take early disposal actions prior to the ERL release.
+       3.13.2.2. IM/MM may dispose of NIINS not computed in D200 system: terminated
+       (AAC-Y), non-stocked centrally procured (AAC-J) and semi-active no replacement items
+       (AAC-X).
+       3.13.2.3. Non-cataloged/Non-definitive control number and modification kit items.
+           3.13.2.3.1. Time Compliance Technical Order (TCTO kits) will not be disposed
+           inside of RDS.
+           3.13.2.3.2. TCTO kits will be disposed of using an AFMC Form 206.
+           3.13.2.3.3. TCTO kits will be broken down prior to going to DLADS.
+   3.13.3. User initiated disposal transactions result in “A0A/VD” transactions within RDS to
+   format an A5J transaction (Disposal Release Order) in D035A to the storage sites.
+   3.13.4. The disposal document number is made up of: Department of Defense Activity
+   Address Code (DoDAAC) 1-6 (SOS of the item should be indicated), Julian Date 7-10
+   (YDDMM), and Serial Number 11-14 (User-initiated the first position will be a “Y”. If
+   system initiated the first position will be a “Z”).
+ 18                                                         AFMCMAN23-5V3 9 JUNE 2014
+
+
+                                          Chapter 4
+
+                             FRONT END SCREENING (FES)
+
+4.1. Front End Screening.
+   4.1.1. The FES “push” process offers worldwide asset availability, time-sensitive and
+   notifications to the item manager. The FES notification passes to RDS on a daily basis,
+   during the sequential flow, users must review the workflow within the timeframes
+   established in the Timeout Table (see Table 2.1).
+   4.1.2. The RDS generated FES “push” process located under the “ORDERS” function of the
+   RDS Display. As each DLADS receipt is recorded in the DAISY, the FES process identifies
+   the wholesale item manager.
+      4.1.2.1. The Site FESPCO will release the transaction to the PD Monitors when RDS
+      sees DLADS Daisy transaction; RDS checks the reported assets against the D200A/C
+      requirement positions and J018R Pre and Post award data. If there are due-in assets and a
+      requirement, a FES candidate will be created and placed in the Site FESPCO’s workflow.
+      4.1.2.2. The IM/MM and ES receive a pop-up notice/dialog box in the workbasket if the
+      item is a NWRM item.
+      4.1.2.3. FESPCO and PD Monitor’s must release the FES referral candidates to the
+      designated users for review.
+          4.1.2.3.1. The IM/MM will conduct a review in the designated workbasket and make
+          a determination to “Accept or Reject” assets. Justification for rejection or acceptance
+          of assets having a valid requirement will be required when system prompts (pop-up
+          message).
+          4.1.2.3.2. The IM/MM will not accept for return unless there is a valid requirement
+          and documentation obtained in the D200A/C computation.
+          4.1.2.3.3. The work will flow to the ES and supervisor for approval or disapproval.
+          Approvals of accepted FES transactions result in the release of transactions from RDS
+          to D035A. Disapprovals of FES transactions result in the work flowing back to the
+          IM’s/MM’s workbasket for appropriate closure actions.
+      4.1.2.4. The DTID originated at the owning (requisitioning) site.
+          4.1.2.4.1. The user states the original disposal action was “Preventable” or “Non
+          Preventable” by making the appropriate selection.
+          4.1.2.4.2. Enters the reason in the free text field and “Comments/Endorsement”
+          section. The free text box is located at the bottom of the screen. The system stores
+          the codes N (Non Preventable) or P (Preventable) with the I&S subgroup master NSN
+          record and makes them available for HQ AFMC program analysis to generate the
+          Disposal Withdrawal/Coral Reduce report.
+      4.1.2.5. Note: The “Push” process prevents requisitioning of quantities greater than the
+      displayed requirements position or the due-in quantity.
+AFMCMAN23-5V3 9 JUNE 2014                                                                      19
+
+
+4.2. User Initiated FES (“Pull” Process).
+   4.2.1. The RDS “ORDERS” button and drop down selection “FES”, “USER INITIATED”
+   provides the user with the capability to directly query DLADS stock by FSC, NIIN or
+   NOUN.
+       4.2.1.1. Input the rationale for the withdrawal reason (preventable or non-preventable) as
+       it appears in the comments section assigned to the item manager.
+       4.2.1.2. Only item managers can initiate requisitions for DLADS held materiel.
+       4.2.1.3. The IM/MM will see the screen showing quantity and condition of assets
+       available.
+       4.2.1.4. To generate the FES action.
+          4.2.1.4.1. The IM/MM will select ‘SUBMIT’ and then review the FES IM’s/MM’s
+          workbasket.
+          4.2.1.4.2. Post IM’s/MM’s review/release, FES transaction will flow to the managing
+          ES/Supervisor for review.
+          4.2.1.4.3. ES approve/accepted FES action results in release of a transaction from
+          RDS to D035A.
+          4.2.1.4.4. Disapprovals are returned to IMs/MMs workbaskets for appropriate
+          closure.
+   4.2.2. When a requirement is not identified and a candidate is not produced, the DLADS
+   transaction is retained in RDS for manual interrogation and User initiated action if desired.
+4.3. Demilitarization of Excess Items.
+   4.3.1. Activities engaged in the processing of weapon systems for transfer, donation, static
+   display, and disposal will comply with demilitarization policies and procedures prescribed in
+   AFI 23-101 and AFI 20-110 for NWRM assets.
+   4.3.2. The review and coordination of the computed excess is accomplished during the
+   requirements computation (D200A/C) reviewed/documentation or during the
+   reviewing/coding of the computed excess within RDS. A coordinated effort among the
+   IMs/MMs, ESs, and appropriate supervisory levels is required by the RDS workflow logic.
+   4.3.3. The ES must coordinate on all excess review NSNs coded for disposal or retention
+   decisions forwarded by the IMs/MMs to the ESs. In addition, the ES must validate the
+   DEMIL and CIIC codes and initiate any required cataloging actions to correct the codes.
+   4.3.4. Pending cataloging action will result in suspension of RDS activity for the Subgroup
+   Master.
+       4.3.4.1. The suspension action occurs at the point of last required approval level,
+       returning to the IM/MM workbasket.
+       4.3.4.2. For suspended items, exit the workflow when cataloging actions are complete.
+       4.3.4.3. In circumstances where IM/MM and ES cannot agree on asset disposition action,
+       the matter is elevated to the appropriate IM and ES supervisory levels.
+ 20                                                        AFMCMAN23-5V3 9 JUNE 2014
+
+
+      4.3.4.4. If the IM or ES does not have sufficient knowledge to review the NSN in
+      question, the Program Manager (PM), System Manager (SM), and/or System Engineer(s)
+      should be consulted.
+   4.3.5. The User may override (increase/decrease) potential reutilization quantities (system
+   suggested disposal) via input of a retention quantity. For a partial disposal there must be a
+   retention code and a disposal code input to process the transaction.
+   4.3.6. To preclude inclusion in future excess review lists, the IM/MM must ensure the
+   requirements computation system reflects decisions to retain all or part of a quantity that
+   would otherwise compute into potential excess. This may involve assignment of deferred
+   disposal codes, adjustments to maintenance factors, or catalog action to reactivate
+   inaccurately coded items (e.g., items erroneously defined as terminal items with AAC V, X
+   or Y).
+   4.3.7. Retention and disposal reason codes are compatible with the application listed and the
+   commodity of item being reviewed. Some retention and disposal reason code examples:
+   retention or disposal reason codes are compatible with active and obsolete end item
+   applications; disposal reason codes are compatible with obsolete end item application;
+   disposal reason code denoting disposal authorized because item is consumable unserviceable
+   and is applicable to consumable (ERRC Designator XB3 and XF3) items; immediate action
+   was taken to reactivate terminal and inactive items that are not coded for disposal.
+4.4. RDS Reclamation (Engines and Aircraft).
+   4.4.1. Reclamation is one of RDS’ workflow functions (ERL/FES/Reclamation). RDS
+   provides the Programmed/Non Programmed Save list as a process and it allows IMs/MMs to
+   obtain Air Force managed items from aircrafts/missiles/engines stored at Aerospace
+   Maintenance and Regeneration Group (AMARG) or other designated sites.          Refer to
+   AFMCI 23-111 for Reclamation and End Item Reclamation guidance.
+   4.4.2. The Reclamation Program Manager (RPM) serves as the focal point on Reclamation
+   matters and generates Programmed/Non Programmed lists as a “Push” process. The
+   Programmed/Non Programmed lists are time sensitive (30 calendar days) and users must
+   conduct the review IAW Table 2.1.
+      4.4.2.1. Upon the release of the list to the Site RPCOs, PD Monitors, IMs, ESs, and
+      Supervisors are required to review approval of the Reclamation candidates on the
+      ORDERS/RECLAMATION dropdown menu.
+      4.4.2.2. The final reviewed/approved items by the first-level supervisor through
+      squadron level will be ready to generate AFMC Form 110, Reclamation Requisition.
+      4.4.2.3. The Site RPCO generates the AFMC Form 110 and forwards it to the Weapon
+      System Reclamation Officer for final RDS closure.
+   4.4.3. Programmed Reclamation. The programmed reclamation process allows the IM/MM
+   to obtain Air Force managed items by participating in a programmed reclamation project and
+   designating assets to be removed from aircraft/missiles or engines stored at AMARG.
+   Assets reclaimed from AMARG are removed by maintenance from WSs in AMARG storage.
+   4.4.4. Non Programmed Reclamation Save Lists. The non-programmed reclamation save
+   list serves as a potential source of component items required to satisfy Air Force
+AFMCMAN23-5V3 9 JUNE 2014                                                                  21
+
+
+  requirements when battle or crash-damaged aircraft or other systems (WSs, aircraft, engines,
+  etc.) are considered no longer air worthy and must be reclaimed in-place. This process
+  allows the IM/MM to obtain Air Force managed items by participating in a non-programmed
+  project to designate assets removal from designated systems. Reclamation is performed by
+  base and/or depot maintenance activities.
+ 22                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+                                           Chapter 5
+
+       DISPOSITION PROGRAM AND DIRECTED DISPOSAL FREEZE CODES
+
+5.1. Overview. This chapter prescribes guidance for managing the AF disposition program and
+directed disposal freeze codes.
+5.2. Responsibilities.
+   5.2.1. AF RDS Functional OPR Responsibilities.
+       5.2.1.1. The AFSC will administer all disposal freeze directives according to procedures.
+       5.2.1.2. Serve as the point of contact between ALCs regarding weapon system wide
+       disposal freeze notices.
+       5.2.1.3. Coordinate on all requests for disposal freezes.
+       5.2.1.4. Ensure all required information and substantiation for the freeze are furnished.
+       The AF RDS Functional OPR maintains a record of all active freeze notices and
+       distributes copies to the appropriate ALC.
+   5.2.2. The ALCs must ensure the IM/MM has the latest information on active disposal
+   freezes prior to each requirements computation for input or deletion of appropriate codes.
+   5.2.3. The recoverable/consumable IM/MM or SM will comply with AFMCMAN 23-1, and
+   AFMCMAN 23-4, when updating codes and levels in D200A. This action will preclude
+   potential excess records from being passed to the RDS system for items involved in the
+   freeze.
+   5.2.4. If an item has several applications and all applications are coded "P" (peculiar); all
+   Potential Reutilization (PR) quantities above the Economic Retention level will stratify to
+   Contingency Retention. However, if one or more of the item applications are coded "P" but
+   at least one other application is not coded "P," it will be necessary for the IM/MM to file
+   maintain the item to ensure the appropriate excess PR assets are frozen.
+   5.2.5. The IM/MM will justify assignment of deferred disposal code “F”, “G”, “M”, or "R"
+   to a subgroup master stock number in the requirements data systems.
+       5.2.5.1. Attain written approval from the group level commander at the ALC or ESC that
+       manages the items for use of these codes.
+       5.2.5.2. Retain current written justification for historical and audit purposes.
+       Specifications: NSNs must be kept, why, how many, for how long, and why the
+       computed Economic Retention level is not sufficient. These deferred codes cause assets
+       above the Economic Retention level to stratify into the contingency retention segment of
+       the D200N. These assets are part of the retention quantity passed to the RDS system. The
+       “F”, “G”, “M”, and “R” code is preferred over Wright Patterson AFB controlled deferred
+       disposal codes “C” and “P” because the “F”, “G”, “M”, and “R” is applied to the specific
+       NSNs that must be retained.
+       5.2.5.3. Assignment of deferred disposal code "C" or "P" causes all assets on purchase
+       request to stratify into the contingency retention segment of the Central Secondary Item
+AFMCMAN23-5V3 9 JUNE 2014                                                                    23
+
+
+     Stratification. High level directed weapon system wide freeze codes “C” and “P” takes
+     precedence over the IM/MM assigned deferred disposal codes.
+     5.2.5.4. These are items with asset quantities that exceed any possible use, considering
+     all inventories of end items or aircraft. In these cases, individual decisions will be made
+     to dispose of partial or total quantities regardless of a disposal freeze application.
+  5.2.6. The IM/MM will provide disposition instructions to any base that reports excess assets
+  of items that are affected by disposal freezes.
+  5.2.7. The recoverable/consumable IM/MM will review deferred disposal codes according to
+  the review schedules in AFMCMAN 23-1. The recoverable/consumable IM/MM will remove
+  deferred disposal codes “F”, “G”, “M” and “R” that have served their legitimate purpose and
+  are no longer justified. Failure to remove unneeded deferred disposal codes causes excess
+  inactive inventory, which can lead to reduced spares funding.
+  5.2.8. The equipment IM/MM or SM will comply with the procedures in AFMCMAN 23-4,
+  Computation of Requirements for Equipment Items (D039/D200C) for the retention of excess
+  assets. This action will preclude potential excess records from being passed to the RDS
+  system for items involved in the freeze.
+  5.2.9. The HQ AFMC programming activity, in collaboration with the AFMC equipment
+  program office at Robins AFB assigns Deferred Disposal Code “R” to primary items that are
+  covered by an approved disposal freeze.
+  5.2.10. AFSC has the capability in D200F to input a Disposal Freeze Code to a weapon
+  system, aircraft engine, application program element code or the NSN of an individual
+  equipment item. This will cause Disposal Deferred Code of C or P to be assigned to
+  equipment items that have components in Secondary Item Requirements System (SIRS).
+  This code cannot be overridden and can only be removed if the D200A from Wright
+  Patterson AFB removes the Disposal Freeze Code or if the component items are deleted from
+  the end item’s indentures in D200F Applications, Programs and Indentures segment of RMS.
+  5.2.11. The equipment IM/MM can, when justified, input a retention additive requirement to
+  a subgroup master stock number in the requirements data systems. For historical and audit
+  purposes, the IM/MM must retain written justification specifying which NSNs must be kept,
+  why, how many, and for how long. Use of a retention additive will cause excess assets to
+  stratify into the Directed/Elected to hold retention segment of the D200C Item and Dollar
+  Stratification Summary report.
+  5.2.12. The equipment IM/MM will review each cycle retention additives and ensure they
+  have been deleted once they have served their legitimate purpose and are no longer justified.
+  Overuse and failure to remove unnecessary retention additives can cause too much inactive
+  inventory to negatively impact warehouse costs and spaces.
+  5.2.13. Regardless of a disposal freeze application or the retention additive, disposal action
+  may be appropriate for some items. These are items with asset quantities exceeding any
+  possible use, considering all inventories of interchangeable or like items. In these cases,
+  individual decisions will be made to dispose of partial or total quantities.
+  5.2.14. The equipment IM/MM will provide disposition instructions to any base that reports
+  excess assets of items that are affected by disposal freezes.
+ 24                                                           AFMCMAN23-5V3 9 JUNE 2014
+
+
+5.3. Management Review of Inventory Control Point Controlled Excess Assets.
+   5.3.1. Determined excess must be processed to the disposal activity not later than the
+   quarter. An exception is when items are suspended due to required DEMIL code changes.
+   Pending DEMIL code changes may cause disposal activities to spill over to the next quarter.
+   RDS will produce a quarterly Excess Review Listing (ERL) for the Item Manager to review
+   for disposal or retention. The ERL will be approved and justified according to the
+   determined signature level criteria.
+   5.3.2. The aircraft, product, or combat sustainment group will ensure the IM/MM
+   accomplishes the required review action no later than the quarter. An exception is when
+   items are suspended due to required DEMIL code changes. Pending DEMIL code changes
+   may cause disposal activities to spill over to the next quarter. The aircraft, product, or combat
+   sustainment group will ensure that necessary revisions and cancellations directed by the
+   IMs/MMs are accomplished.
+   5.3.3. The success of the AF disposition program is dependent upon the ALC, or Site
+   processing all documents produced from one cycle prior to the next quarterly cycle output.
+   Management/supervisory attention must be focused toward this accomplishment. The most
+   effective means of completing quarterly reviews is to ensure internal self- inspections are
+   established and current.
+5.4. Freeze/Deferred Disposal Code Notice Criteria.
+   5.4.1. Disposal freezes will not be imposed unless fully justified and in the case of new
+   programs will be lifted as soon as a firm program is known that can be incorporated into the
+   normal requirements computation. The formal written directive will state the expiration date
+   for all freezes.
+   5.4.2. A disposal freeze may be requested for a weapon system, federal supply class (FSC)
+   commodity, or individual NSN. For further guidance on Freeze/Deferred Disposal Code, see
+   AFI 23-101 Materiel Management and AFMCMAN 23-1 located at (http://www.e-
+   publishing.af.mil/shared/media/epubs/afmcman23-1.pdf)
+   5.4.3. When further justification and substantiation information furnished is incomplete or
+   inadequate, the request may be returned to the requesting activity.
+   5.4.4. The appropriate site may initiate a request at any time for a formal weapon system
+   wide disposal freeze notice, revision, or cancellation.
+       5.4.4.1. The requesting organization must provide complete justification IAW
+       Paragraph 5.5.1.4.1. of this manual along with an Economic Analysis as outlined in
+       Chapter 3 of AFMAN 65-506, Economic Analysis against each NSN.
+       5.4.4.2. The requesting organization must identify the source of funding for the storage
+       costs associated with the stock retention.
+       5.4.4.3. Submit the request through the chain of command and flow to HQ AF/A4L for
+       approval.
+5.5. Preparation of Disposal Freeze Notice.
+AFMCMAN23-5V3 9 JUNE 2014                                                                      25
+
+
+  5.5.1. The Wright Patterson AFB Functional RDS OPR will coordinate efforts to ensure the
+  applicable information is included in each disposal freeze notice for HQ AFMC, and HQ
+  USAF:
+     5.5.1.1. A disposal freeze control number will include the last four digits of the current
+     calendar year, Julian date, office, and a sequence freeze number (beginning with "1" at
+     the start of each calendar year). For example, the first control number issued by Wright
+     Patterson AFB DPCO in calendar year 2011 on 28 Jan 2011 will have control number
+     2011-028-01.
+         5.5.1.1.1. A freeze control number that is rescinded, expired, or canceled will not be
+         reissued.
+         5.5.1.1.2. Any approved revision or extension to a disposal freeze that is not
+         rescinded, expired, or canceled will continue to use the freeze control number that
+         was originally assigned.
+         5.5.1.1.3. The disposal freeze notice directive will contain the following information:
+         5.5.1.1.3.1. Property affected: aircraft mission, design, and series (MDS); engine
+         type, model, and series; number of aircraft involved; peculiar/common spares;
+         Support Equipment (SE); SE spares and FSC/materiel management code.
+            5.5.1.1.3.2. Freeze control number.
+            5.5.1.1.3.3. Expiration date.
+            5.5.1.1.3.4. Attach the requesting organizations signed moratorium, Economic
+            Analysis (IAW Chapter 3 of AFMAN 65-506) against each NSN identifying the
+            source of funding for the storage costs associated with the stock retention.
+     5.5.1.2. The disposal freeze directive for HQ AFMC, HQ USAF or higher level will
+     include the following statements or references:
+         5.5.1.2.1. “This freeze applies to all AF base excesses reported to HQ AFMC for
+         disposition.”
+         5.5.1.2.2. “Applicable recoverable/consumables IM/MM will update their deferred
+         disposal deferral codes and levels tables.”
+         5.5.1.2.3. “All materiel not transferred to disposal is included in this freeze. Disposal
+         documents will be canceled.”
+         5.5.1.2.4. “This freeze does not apply to obsolete materiel, directed condemned
+         items, or materiel transferred to disposal activities.” Items with disposal reason code
+         “DD ("DSP/NON-PUB ITEM,” see Table 3.4) or has been approved for this code are
+         considered obsolete.
+         5.5.1.2.5. “This freeze does apply to obsolete materiel, directed condemned items,
+         and materiel located in disposal activities.” If the freeze applies to assets at disposal
+         activities, the IM/MM will take immediate action to return needed assets to active
+         stock.
+  5.5.2. A list of items authorized for immediate transfer to disposal is contained in
+  Attachment 3.
+ 26                                                       AFMCMAN23-5V3 9 JUNE 2014
+
+
+   5.5.3. Guidance for reviewing and processing items to disposal is contained in Attachment
+   4.
+5.6. Buy Back of FMS Excesses. Buy Back information for Foreign Military Service Excesses
+can be found in AFI 23-101.
+
+
+
+
+                                          LORNA ESTEP, SES
+                                          Directorate of Logistics
+AFMCMAN23-5V3 9 JUNE 2014                                                              27
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFI 21-204, Nuclear Weapons Maintenance Procedures, 30 Nov 09
+AFI 31-401, Information Security Program Management, 1 Nov 05
+AFI 32-7042, Waste Management, 15 Apr 09
+AFI 90-201, The Air Force Inspection System, 23 Mar 12
+AFMAN 65-506, Economic Analysis, 29 Aug 11
+AFMCI 20-102, Requirements Definition and Purchase Instrument Development, 11 Jul 13
+AFMCI 23-111, Reclamation of Air Force Property, 9 Feb 12
+AFMCMAN 23-1, Requirements for Secondary Items (D200A, D200N), 12 Jun 08
+AFMCMAN 23-4, Computation of Requirements for Equipment Items, 26 Jul 11
+AFMCMAN 25-1, Repair Parts Kits Users Manual, 6 Jan 07
+AFMAN 33-282, Computer Security (COMPUSEC),27 Mar 12
+AFPD 23-1, Materiel Management, 15 Feb 11
+TO 00-20-3, Maintenance Processing of Reparable Property and The Repair Cycle Asset
+Control System 38, 2 Feb 1999
+Adopted Forms
+DD Form 2875, System Authorization Access Request (SAAR)
+AF Form 86, Request for Cataloging Data/Action
+AF Form 847, Recommendation for Change of Publication
+AFMC Form 110, Reclamation Requisition
+AFMC Form 206, Temporary Work Request
+
+Abbreviations and Acronyms
+AAO—Approved Acquisition Objective
+AEPS—Army Electronic Product Support
+AFI—Air Force Instruction
+AFMC—Air Force Materiel Command
+AFSAC—Air Force Security Assistance Cooperation
+ALC—Air Logistics Complex
+AMARG—Aerospace Maintenance and Regeneration Group
+CIIC—Controlled Inventory Item Code
+ 28                                                    AFMCMAN23-5V3 9 JUNE 2014
+
+
+CRS—Contingency Retention Stock
+DAISY—Defense Automated Information System
+DLA—Defense Logistics Agency
+DLADS—Defense Logistics Agency Disposition Services
+DoD—Department of Defense
+DODAAC—Department of Defense Activity Address Code
+DoDI—Department of Defense Instruction
+DPCO—Disposition Program Control Officer
+DTID—Disposal Turn-in Document
+ERL—Excess Review List
+ERRC—Expendability, Recoverability, Reparability Category
+ERS—Economic Retention Stock
+ES—Equipment Specialist
+FESPC—Front End Screening Program Control Officer
+FSC—Federal Supply Class
+HM/HW—Hazardous Materiel/Hazardous Waste
+I&S—Interchangeability and Substitutability
+IAW—In Accordance With
+IM—Item Manager
+IMM—Integrated Materiel Manager
+INS—Insurance
+IRIS—Interactive Requirements Information Services
+MAJCOM—Major Command
+MDC—Manager Designator Code
+MILSTRIP—Military Standard Requisitioning and Issue Procedures
+MIPR—Military Interdepartmental Purchase Request
+MM—Materiel Managers
+NIIN—National Item Identification Number
+NSN—National Stock Number
+NSO—Numeric Stockage Objective
+NWRM—Nuclear Weapon Related Materiel
+OPR—Office of Primary Responsibility
+AFMCMAN23-5V3 9 JUNE 2014                                                                    29
+
+
+PD—- Product Director
+PICA—Primary Inventory Control Activity
+PR—Potential Reutilization
+RDS—Reutilization and Disposition System
+RIMCS—Reparable Item Movement Control System
+RMS—Requirements Management System
+RPCO—Reclamation Program Control Officer
+RPM—Reclamation Program Manager
+SCS—Stock Control System
+SE—Support Equipment
+SICA—Secondary Inventory Control Activity
+SIRS—Secondary Item Requirements System
+SM—System Manager
+SOS—Source of Supply
+TCTO—Time Compliance Technical Order
+T-Job—Temporary Work Request
+USAF—United States Air Force
+WIP—Work in Progress
+
+Terms
+Air Force Security Assistance Cooperation (AFSAC)— That portion of United States security
+assistance authorized by the Foreign Assistance Act of 1961, as amended, and the Arms Export
+Control Act, as amended. This assistance differs from the Military Assistance Program and the
+International Military Education and Training Program in that the recipient provides
+reimbursable funds.
+Approved Acquisition Objective (AAO)— The quantity of an item authorized for peacetime
+and wartime requirements to equip and sustain U.S. and friendly forces in accordance with
+current DoD policies and plans and with applicable statutes. This quantity will be sufficient to
+support other DoD components who use the item as a Secondary Inventory Control Agency.
+Condition Code— A codification of the physical appearance and capability of Special Tool and
+Special Test Equipment (ST/STE) consisting of one alpha and one numeric position.
+Contingency Retention Stock (CRS)— The quantity of an item that is greater than the AAO
+and economic retention level but is being retained by management decision. These quantities
+normally would stratify as Potential Reutilization.
+Economic Retention Stock (ERS)— The quantity of an item’s assets that exceed AAO and are
+determined to be more economical to retain for future peacetime issues than to dispose. To
+warrant economic retention, an item must have a reasonably predictable demand rate.
+ 30                                                            AFMCMAN23-5V3 9 JUNE 2014
+
+
+End Item— A final combination of end products, component parts, or material ready for its
+intended use (e.g., a ship, tank, mobile machine shop, or aircraft).
+Potential Reutilization (PR)— Component materiel identified by an item manager for possible
+disposal but with potential for reutilization; or materiel that has the potential for being sent by an
+item manager to the Defense Reutilization and Marketing Service for possible reutilization by
+another component or by a federal, state, or local governmental agency, or for disposal through
+sale to the public.
+Primary Inventory Control Activity (PICA)— An organization or activity that is assigned
+primary responsibility for the management of the item.
+Retention Limit— The maximum quantity of on-hand materiel that will be retained in stock, as
+determined by applicable retention rules.
+Secondary Inventory Control Activity (SICA)— An organization or activity that is assigned
+the secondary responsibility for the management of the item.
+Secondary Items— Consumable and reparable items other than principal items.
+AFMCMAN23-5V3 9 JUNE 2014                                                                   31
+
+
+                                        Attachment 2
+                                MANAGEMENT REPORTS
+
+A2.1. Management Reports: RDS produces management reports for management, control and
+analysis. A brief description of available RDS reports are described in this chapter. The data
+from the reports are used to provide information to AFSCs, HQ AFMC, HAF, and Office of
+Secretary of Defense.
+A2.2. Excess Summary Report (SCS-RDS-QT-001). This report displays data relating to the
+most recent computation quarter. The displayed data is sorted by organization and MDC. Totals
+are reported by unit, section, branch, division, and directorate.
+A2.3. Initiations Listing Report (SCS-RDS-AR-012). The Initiation Listing Report displays a
+list of transactions (A0A VD and FES initiations) for disposed items associated with a user-
+specified site and date range.
+A2.4. Weekly Disposal Transactions Summary (SCS-RDS-WK-002). Part 1 contains
+organizational detail data sorted by Manager Designator Code and includes all A5J transactions
+for a specific week. Part 2 contains ALC or summary data sorted by organization and ERRC.
+A2.5. Monthly DAISY Detail Report (SCS-RDS-MO-027). The Monthly DAISY Detail
+Report displays detailed information about all requisitions that have received confirmation of
+disposal requests.
+A2.6. Year-to-Date DAISY Summary for Headquarters (SCS-RDS-MO-028). This report
+displays DLADs receipts for items sent to disposal containing a Disposal Turn-In Document
+(DTID) number beginning with “F”, “EY”, or “EZ”.
+A2.7. DAISY Requirements System Summary (SCS-RDS-MO-029). The DAISY
+Requirements System Summary report summarizes disposal transactions (XR1 and XR3)
+received at DLADS during the last complete month. Information is generated for each ALC,
+Site or sustainment group, sorted by ERRC, DODAAC, and Supply Condition Code. The
+number of transactions (items), number of units, and extended costs is displayed for the month
+and fiscal year to date, along with a grand total of this data for the group.
+A2.8. DAISY DLADS Summary Report (SCS-RDS-MO-030). The DAISY DLADS
+Summary Report summarizes all disposal (XR1 and XR3) transactions received by the DLADS
+during the last completed month. Data is reported for each DLADS, sorted by ALC or Site and
+by groups of ERRCs (C, T, N, and P for secondary items (spare parts): S and U for primary items
+(equipment) within the ALC. Totals for each of the ERRC groups are displayed, with the totals
+for the DLADS consisting of combined ALC data. Finally, all DLADS data is summarized into
+an aggregated report for ALC and Headquarters use.
+A2.9. DLADS Receipts/Withdrawals by DODAAC (SCS-RDS-MO-031). The DLADS
+Receipts/Withdrawals by DODAAC report displays a detailed list of an ALC’s withdrawals from
+DLADS during the last completed month. This report is also known as the DAISY 2 report.
+A2.10. Disposal Withdrawal Analysis (Coral Reduce Report) (SCS-RDS-AR-003). The
+Disposal Withdrawal Analysis (Coral Reduce Report) displays the number of previously
+disposed items that were withdrawn during a selected date range. The data is displayed for a
+user-specified site and date range.
+ 32                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+A2.11. Reclamation Requirements for Project Number (SCS-RDS-AR-019). The
+Reclamation Requirements for Project Number report displays requirements, project quantity,
+and quantity per application list for a user-specified site and project number.
+A2.12. Reclamation Requirements Summary (SCS-RDS-AR-020). The Reclamation
+Requirements Summary report displays a reclamation requirements summary for a specific
+project number, based upon the latest computation cycle data received from the Secondary Item
+Requirements System (SIRS) (D200A).
+A2.13. Reclamation Rejected Records (SCS-RDS-AR-021). The Reclamation Rejected
+Records report identifies project number data that contained errors when it was received from the
+Applications, Programs, and Indentures (D200F) system. The data is displayed for a user-
+specified site and project code.
+A2.14. DTS Single NIIN Disposal/Rebuy Report (SCS-RDS-AR-036). The DTS Single NIIN
+Disposal/Rebuy Report displays a list of disposal and rebuy transactions that occurred within a
+selected number of months of each other (time span).
+A2.15. DTS Site Disposal Summary (SCS-RDS-AR-037). The DTS Site Disposal Summary
+report summarizes disposal quantities and the dollar value of those disposals for a user-specified
+site and date range.
+A2.16. DTS NSN Summary Report (SCS-RDS-AR-38). The DTS NSN Summary Report
+displays quantities and dollar values for disposal and rebuy transactions that occurred within a
+selected number of months of each other (time span).
+A2.17. DTS Detail Data Report (SCS-RDS-AR-041). The DTS Detail Data Report displays
+all including disposal, and purchase request (rebuy) transactions that occurred during the
+specified time period augmented by the selected time span.
+A2.18. OSI Disposal with Rebuy (SCS-RDS-AR-042). The OSI Disposal with Rebuy report
+lists only those disposal transactions within selected time period where rebuy transactions have
+occurred during a computed time span of 90 days and selected time span parameter augmented
+by additional conditions selected.
+A2.19. OSI Single NIIN Transactions History (SCS-RDS-AR-043). The OSI Single NIIN
+Transaction History lists all transactions of disposal, purchase requests, DLADS receipts, and
+DLADS sales. Rebuys are available in the RDS history for the last 10 years.
+A2.20. Summary of OSI Items Disposed but not Denied/Received/Sold by DLADS (SCS-
+RDS-AR- 045). This report lists MMAC and FSC codes and descriptions, the dollar value of
+discrepancies by DEMIL code (shortages and excesses) between all disposals (A5J), DLA
+denials, and receipts and sales at the DLADS.
+A2.21. Disposal Denial Report (SCS-RDS-AR-004). This report displays a list of all denials
+(A6J) associated with a user-specified site.
+A2.22. Recycling Control Point (RCP) Transactions Report (SCS-RDS-AR-022). This
+report displays all RCP transactions for a user-specified site and date range.
+A2.23. Disposal Resolution Summary Report (SCS-RDS-AR-053). This report displays five
+fiscal years of history for all sites in regards to disposal transactions, quantities, and dollar
+values.
+AFMCMAN23-5V3 9 JUNE 2014                                                                        33
+
+
+                                         Attachment 3
+              ITEMS AUTHORIZED IMMEDIATE TRANSFER TO DLADS
+
+A3.1. The following items are not subject to a retention period and are authorized for immediate
+transfer to DLAD or compliance with the referenced regulation/ guidance. Applicability is to
+both wholesale and retail except where indicated (see Table A3.1):
+
+Table A3.1. Items authorized Immediate Transfer to DLADs
+Item                        Procedure
+Ammunition.                 Upon compliance with AFI 21-201, Conventional Munitions
+                            Maintenance Management.
+Condemned                   When authorized by TO 00-20-3, repair cost exceeds 75 percent of
+                            acquisition cost (except critical items) or items with source of
+                            supply "JCK." Items ERRC coded "XD" with a unit cost of $1,000
+                            or more will not be condemned at field level regardless of whether
+                            repair cost exceeds 75 percent of the acquisition cost, unless totally
+                            beyond repair, i.e., crushed, burned, battle damaged, etc. It is
+                            essential that field units advise the prime item managers before
+                            taking condemnation action on XD items below the $1,000
+                            threshold as stated in AFMAN 23-122 and AFI 23-101 of this
+                            manual.
+DSP/N-PUB Items (items If research determines needs for an item, that NSN will be
+with acquisition advice reactivated in the cataloging system; otherwise, these items are not
+code "Y" and/or phrase  subject to retention.
+code "N," or items with
+SOS code "JCD").
+
+Equipment ("ND"/"NF")       Wholesale - If no longer reflected in any table of allowance (TA)
+items.                      and/or the item manager (IM), equipment specialist (ES), and for
+                            support equipment (SE), the system program manager (SPM)
+                            validates no further AF requirement exists.
+Equipment ("ND"/"NF")       Retail - Upon receipt of disposition instructions with disposal
+items.                      authorization from the wholesale manager.
+Hazardous Materiel/         Process in accordance with AFI 32-7042, Waste Management, and
+Hazardous Waste             AFMAN 23-122 and AFI 23-101.
+(HM/HW).
+Items declared unsafe for   Self-explanatory.
+flight or personnel.
+Items removed as a result   Provided sufficient assets are on hand to ensure continued support
+of modification.            through completion of the modification, or to support that portion
+                            of the fleet not undergoing modification.
+ 34                                                           AFMCMAN23-5V3 9 JUNE 2014
+
+
+Obsolete items.              Obsolescence being based on no further application to active
+                             weapons systems/end items due to complete weapon system/end
+                             item phase out, design change, engineering change proposal,
+                             modification, etc.
+Reclamation residue          Reclamation residue, from end item reclamation, will not be
+(Remainder of the excess     returned to stock.
+weapons system/end item
+after parts to be
+reclaimed have been
+removed).
+Retail unserviceable         Upon receipt of disposition instructions (to dispose) from the
+assets requiring reporting   wholesale manager.
+to the wholesale manager
+Shelf life items             Provided the shelf life cannot be extended and there is no potential
+(condition code "B" or       use for the item before expiration of the shelf life.
+"C").
+TCTO kits.                   Upon approved rescission of the TCTO (Disassemble and return all
+                             required NSN and NC numbered items to stock).
+Tires.                       If condemned or cannot be recapped.
+Unserviceable assets         Self-explanatory.
+peculiar to weapons
+systems/end items used
+solely by FMS countries.
+Vehicles.                    Upon compliance with AFMAN 23-122 and AFI 23-101.
+ERRC Designator "XB3"        Provided no repair requirement exists or no ERRC code change is
+unserviceable items.         pending.
+ERRC Designator "XF3"        Upon validation that no known repair requirement exists, the assets
+unserviceable assets at      cannot be repaired because of lack of tools/technical data and/or
+the retail level which are   there is no requirement to send the assets to a centralized repair
+not required to be           activity within the Commands.
+reported in RIMCS
+returned to the wholesale
+manager or a specialized
+repair activity.
+AFMCMAN23-5V3 9 JUNE 2014                        35
+
+
+Other items not required     Self-explanatory.
+to be held for a specified
+period of time by
+retention policy
+elsewhere in this manual
+and for which there is no
+known requirement.
+ 36                                                          AFMCMAN23-5V3 9 JUNE 2014
+
+
+                                         Attachment 4
+   GUIDANCE FOR REVIEWING AND COMPUTING RETENTION LEVELS, AND
+             PROCESSING WHOLESALE ITEMS TO DISPOSAL
+
+A4.1. The following items, subject to retention limits: Are authorized for transfer to DLADS
+upon compliance with the specified guidance. Exclusions must be documented, justified, and
+maintained in the NSN folder.
+   A4.1.1. ERRC Designator "XF3" unserviceable assets will be transferred to DLADS, unless
+   retained by the IM to cover temporary and exceptional situations such as critical item or
+   mission capable requirements or for which cataloging action has been initiated to change
+   them to recoverable items.
+   A4.1.2. Potential reutilization assets applicable to active weapons systems or end items in
+   the inventory will be considered for transfer to disposal with the following restriction
+       A4.1.2.1. Total quantities of on-hand active assets must not be approved for disposal.
+       A4.1.2.2. D200A computes retention levels for INS and NSO items. D200A will use
+       default minimum retention levels for INS and NSO items when there has been no usage
+       and are no additives or special levels. The assets of INS/NSO items that exceed the
+       computed INS/NSO retention level or quantities will be transferred to disposal.
+       A4.1.2.3. For recoverable/consumable items with usage in the past two years, used on
+       weapon systems over 18 years old, establish an IM file-maintained deferred disposal code
+       and level if the D200A computed retention is not sufficient to provide support for the life
+       of the weapon system. For items common to two or more weapons systems or end items,
+       use the age of the youngest system for determining length of time in the inventory.
+       A4.1.2.4. The IM must comply with the procedures in AFMCMAN 23-1, for computing
+       insurance or numeric stockage objective levels.
+       A4.1.2.5. The IM will use the procedures in AFMCMAN 23-1 to ensure the selected
+       retention level for computing items is computed correctly.
+       A4.1.2.6. The IM must transfer all assets to disposals that have no usage, no
+       authorization, and no allowance for retention.
+       A4.1.2.7. All serviceable and economically reparable assets will be retained for NSNs in
+       the inventory seven years or less. The NSN is not mature enough for retention or disposal
+       decisions.
+   A4.1.3. A retention level up to, but not to exceed, five (5) each will be established for
+   insurance items. Assets in excess of this quantity must be transferred to disposal.
+   A4.1.4. With the approval of HQ AF/A4L, weapon systems deferred disposal codes will be
+   assigned. Assets with deferred disposal codes will not appear on the RDS excess review
+   listing for retention or disposal decisions, but will be reviewed for possible disposal action
+   when conducting review of the requirements computation.
+   A4.1.5. Assets no longer applicable to active weapons systems due to design change,
+   engineering change proposals, modification, etc., will be assigned acquisition advice code
+AFMCMAN23-5V3 9 JUNE 2014                                                                     37
+
+
+  "Y" in the cataloging system. This allows the assets to appear on the excess review listing for
+  subsequent disposal action, regardless of the presence of a deferred disposal code.
+  A4.1.6. Potential reutilization (PR) applicable to weapon systems or end items phasing out
+  of the inventory -- dispose of that quantity which exceeds all known requirements.
+  A4.1.7. Contingency retention stock (CRS) assets that are grossly impacting warehouse
+  storage space -- dispose upon validation that disposal will not adversely impact the AF
+  mission. The IM documents and keeps the rationale for this decision in the NSN file.
+  A4.1.8. Serviceable assets peculiar to weapons systems or end items used solely by FMS --
+  dispose of if no demands in the past two years.
+  A4.1.9. Wholesale IMs will offer excess assets to other using service wholesale managers
+  before initiating disposal action. Do not defer or delay disposal action pending response.

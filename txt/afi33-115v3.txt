@@ -1,0 +1,242 @@
+BY ORDER OF THE                                        AIR FORCE INSTRUCTION 33-115 VOLUME 3
+SECRETARY OF THE AIR FORCE                                                                  15 APRIL 2004
+
+                                                                        Communications and Information
+
+                                                                 AIR FORCE NETWORK OPERATING
+                                                                                INSTRUCTIONS
+
+
+
+                  COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE:        This publication is available digitally on the AFDPO WWW site at:
+               http://www.e-publishing.af.mil.
+
+OPR: HQ AFCA/GCLO (MSgt James Pickard)                Certified by: HQ USAF/ILCO (Col Michael Sinisi)
+                                                                                             Pages: 6
+                                                                                      Distribution: F
+
+This Air Force instruction (AFI) implements Air Force Policy Directive (AFPD) 33-1, Command, Con-
+trol, Communications, and Computer (C4) Systems, and prescribes the publication and distribution of Air
+Force Network Operating Instructions (AFNOI). It applies to all Air Force military and civilian personnel
+and Air Force contractors who operate, maintain, or troubleshoot Air Force network software and equip-
+ment. Major commands (MAJCOM) may supplement AFNOIs as necessary to meet unique mission
+requirements. Refer technical questions about this instruction to Headquarters, Air Force Communica-
+tions Agency (HQ AFCA/GCLO), 203 West Losey Street, Room 3100, Scott AFB IL 62225-5222. Send
+recommended changes or comments to HQ AFCA/ITXD, 203 West Losey Street, Room 1100, Scott AFB
+IL 62225-5222, through appropriate channels, using AF Form 847, Recommendation for Change of
+Publication, with an information copy to HQ AFCA/GCLO. Ensure that all records created as a result of
+processes prescribed in this publication are maintained in accordance with Air Force Manual (AFMAN)
+37-123, Management of Records, and disposed of in accordance with Air Force WEB-RIMS Records Dis-
+position Schedule (RDS) located at https://webrims.amc.af.mil/rds/index.cfm. Public Law 104-13,
+Paperwork Reduction Act of 1995, and AFI 33-360, Volume 2, Content Management Program-Informa-
+tion Management Tool (CMP-IMT), affect this publication. Refer to Attachment 1 for a glossary of refer-
+ences and supporting information.
+This is the initial publication of AFI 33-115, Volume 3.
+
+
+1. Definition - Air Force Network Operating Instructions (AFNOI). These are directive specialized
+publications as prescribed in AFI 33-360, Volume 1, Publications Management Program. Network Man-
+agers will ensure they are used in day-to-day operations to operate and maintain network software and
+equipment. AFNOIs provide specific procedures and checklists on how to operate or maintain Air Force
+network components and respond to events. AFNOIs are used to document standard operating procedures
+as currently defined in special instruction to communicators (SPIN-C) documents. AFNOIs are directly
+tied to career field job qualification standards as the training reference for all systems that do not have a
+2                                                                      AFI33-115V3 15 APRIL 2004
+
+
+technical order as well as any standard processes. AFCA is responsible for creating AFNOIs via the pro-
+cess outlined in paragraph 3.2.
+
+2. Responsibilities.
+    2.1. Headquarters United States Air Force, Director of Communications Operations (HQ USAF/
+    ILC):
+       2.1.1. HQ USAF/ILCO has responsibility for developing communications and information poli-
+       cies and procedures for Air Force enterprise operations and maintenance. HQ USAF/ILCO is the
+       approval authority for all new AFNOIs.
+    2.2. Headquarters Air Force Communications Agency, Global Connectivity Directorate (HQ AFCA/
+    GC) will:
+       2.2.1. Exercise functional control over all AFNOIs.
+       2.2.2. Act as the certification authority for all AFNOIs that it publishes/posts electronically.
+       AFNOIs will reflect the current authentication element of HQ USAF/IL.
+       2.2.3. Determine the method of identifying and numbering AFNOI specialized publications (see
+       paragraph 3.3.). Maintain an index of these publications at the Air Force Operationalizing & Pro-
+       fessionalizing the Network (OPTN) web site (https://private.afca.af.mil/optn/).
+       2.2.4. Notify Air Force Departmental Publishing Office (AFDPO/PP) when the URL for the Air
+       Force OPTN web site changes.
+       2.2.5. Notify MAJCOM/SCs and HQ USAF/ILCO quarterly, via E-mail, on added and deleted
+       AFNOIs with a synopsis describing significant changes.
+       2.2.6. Initiate a review every 2 years in the anniversary month using AF Form 1382, Request for
+       Review of Publication and/or Form(s) of AFNOIs for continued need, accuracy and currency.
+       2.2.7. Establish, maintain, and dispose of record sets as required by AFI 33-360, Volume 1,
+       AFMAN 33-123, and Air Force WEB-RIMS RDS located at
+       https://webrims.amc.af.mil/rds/index.cfm, for published AFNOIs and the directory. No require-
+       ment exists for back stock of physical products.
+    2.3. Air Force Network Operations and Security Center (AFNOSC) will:
+       2.3.1. Participate in review of all AFNOIs.
+       2.3.2. Distribute updated AFNOIs via a Directive Command, Control, Communications and
+       Computer Notice to Airmen (C4 NOTAM). See paragraph 3.2.7.
+    2.4. MAJCOMs will:
+       2.4.1. Appoint a MAJCOM AFNOI OPR as the focal point for all AFNOI issues. The MAJCOM
+       focal point will work closely with and provide inputs to HQ AFCA Global Connectivity Director-
+       ate, Local Networks Division, Network Strategies Branch (HQ AFCA/GCLO), to develop and
+       revise AFNOIs as required. The OPR should be familiar with the day-to-day operations and pro-
+       cedures within their MAJCOM Network Operations and Security Center (NOSC) and respective
+       base Network Control Centers (NCC). Preferably the OPR will be the NOSC itself or a subset
+       therein.
+AFI33-115V3 15 APRIL 2004                                                                              3
+
+
+      2.4.2. MAJCOM AFNOI OPRs will:
+          2.4.2.1. Coordinate all draft AFNOIs submitted for Air Force publication with the appropriate
+          MAJCOM offices.
+          2.4.2.2. Provide HQ AFCA/GCLO recommended changes and updates as required.
+          2.4.2.3. Evaluate and validate AFNOIs before forwarding to HQ AFCA/GCLO for publica-
+          tion.
+
+3. General.
+   3.1. Introduction. AFNOIs are directive specialized publications providing operating procedures and
+   checklists for network operations. AFNOIs are used to document standard processes as well as oper-
+   ate, maintain, or troubleshoot network software and equipment and are generated for technical sub-
+   jects not covered by Air Force publications or technical orders. All AFNOIs are specifically linked to
+   one or more of the Network Operations AFSC’s Job Qualification Standards (JQS) as the training ref-
+   erence. Network Managers must ensure their use in day-to-day operations.
+   3.2. Process.
+      3.2.1. AFNOIs are developed and processed one of two ways.
+          3.2.1.1. HQ AFCA/GCLO will develop new and revised AFNOIs as technical, operational,
+          and training demands require. HQ AFCA/GCLO will utilize NCC/NOSC/AFNOSC opera-
+          tional expertise to help develop AFNOIs.
+          3.2.1.2. MAJCOMs/agencies help develop new and revised AFNOIs. MAJCOMs will coordi-
+          nate intent to develop an AFNOI with AFCA to help eliminate duplication of effort. NCCs for-
+          ward AFNOI proposals through their respective MAJCOM OPR.
+      3.2.2. Local AFNOIs. The Officer in Charge (OIC)/Noncommissioned Officer in Charge
+      (NCOIC) of any NCC/NOSC/AFNOSC may authorize development and use of local Network
+      Operating Instructions (NOI). These local NOIs may be in the form of supplements to AFNOIs or
+      may be unique to the MAJCOM/NCC. Local NOIs (whether at base, MAJCOM, or AFNOSC)
+      will be forwarded through the respective MAJCOM or Headquarters-level for consideration as an
+      Air Force-level AFNOI. The requirement to accomplish local AFNOIs must be documented in a
+      local JQS or AF Form 797, Job Qualification Standard Continuation/Command JQS.
+          3.2.2.1. Local NCC/NOSC may supplement Air Force or MAJCOM NOIs as local require-
+          ments dictate. When supplementing AFNOIs, only subparagraphs may be added. Do not
+          change or renumber main paragraph headings. This will maintain standard steps throughout
+          the Air Force.
+          3.2.2.2. MAJCOM/NCC may develop local NOIs that are unique to their organization or
+          Command. Do not create local NOIs for which there is already an AFNOI. In most cases, local
+          NOIs are created for MAJCOM-unique systems that are not used Air Force-wide.
+          3.2.2.3. Local NOI procedures:
+              3.2.2.3.1. Conspicuously mark or label the NOI as local use only.
+              3.2.2.3.2. Number local NOIs using the system in paragraph 3.3.
+4                                                                       AFI33-115V3 15 APRIL 2004
+
+
+              3.2.2.3.3. Rescind local NOIs after an Air Force or MAJCOM NOI is published on the
+              same subject.
+           3.2.2.4. Local NOIs cannot contradict an AFNOI or MAJCOM NOI. Changes can restrict
+           requirements but not override or negate them.
+           3.2.2.5. The Air Force OPTN web page referenced in paragraph 2.2.3. provides guidance on
+           format and content of local NOIs. An AFNOI template can be downloaded from the web page
+           and used as a guide for developing local NOIs.
+           3.2.2.6. Maintain and dispose of local NOIs according to procedures in AFI 33-360, Volume
+           1, AFMAN 37-123, and Air Force WEB-RIMS RDS located at
+           https://webrims.amc.af.mil/rds/index.cfm for NOI publication record sets.
+       3.2.3. Proposed AFNOIs. MAJCOMs will evaluate and field-test proposed AFNOIs before for-
+       warding them to HQ AFCA/GCLO, 203 W. Losey St, Room 3100, Scott AFB IL 62225-5222,
+       email: mailto:afca.gclo@scott.af.mil.
+       3.2.4. Changes to AFNOIs. Forward changes (except for minor punctuation and spelling errors)
+       as AFNOI revisions. To revise an AFNOI, the completed AFNOI is reaccomplished and processed
+       in the same manner as new AFNOIs. Submit recommended changes, additions, or deletions
+       through the MAJCOM channels (MAJCOM AFNOI OPR) to HQ AFCA/GCLO.
+       3.2.5. Implementation. Implement AFNOIs upon notification unless otherwise specified.
+       3.2.6. Approval Process. Prior to certification, each AFNOI will go through a thorough review
+       process.
+           3.2.6.1. Initial review will be an internal AFCA review.
+           3.2.6.2. Following AFCA internal coordination, AFNOIs will be sent out to all MAJCOM
+           AFNOI POCs as well as the AFNOSC for review. MAJCOM POCs are expected to coordinate
+           with the appropriate offices or personnel to ensure an accurate analysis is done. For example,
+           if the AFNOI covers network outage reporting, then the NOSC crew should be involved in the
+           analysis. MAJCOMs and the AFNOSC will be given 30 days for review and coordination on
+           AFNOIs.
+           3.2.6.3. Once all coordination is complete, HQ AFCA/GCL will certify and HQ AFCA/GC
+           will approve the AFNOI.
+       3.2.7. Notification. Notification of new or revised AFNOIs will take place via C4 NOTAM. HQ
+       AFCA/GCLO will notify the AFNOSC, as described in AFI 33-115 Volume 1, Network Manage-
+       ment (will become Network Operations), that a new AFNOI is available for download and use.
+       The AFNOSC will then generate a Directive C4 NOTAM to each MAJCOM announcing the new
+       AFNOI and directing units to download and use the new document.
+       3.2.8. Rescission of AFNOIs. AFNOIs are rescinded when no longer pertinent. Notify HQ
+       AFCA/GCLO, through command channels, on an AF Form 1382, when an AFNOI should be
+       rescinded.
+    3.3. Numbering and Indexing. AFNOIs are broken down into 9 series and 4 subseries.
+       3.3.1. Functional area series numbering:
+           3.3.1.1. 100-series - Workgroup Management (i.e., end-user desktop/office applications).
+AFI33-115V3 15 APRIL 2004                                                                               5
+
+
+          3.3.1.2. 200-series - Information Protection Operations (i.e., security/firewall/virtual private
+          networks/intrusion detection system).
+          3.3.1.3. 300-series - Network Administration (i.e., operating systems, router access control
+          lists, messaging).
+          3.3.1.4. 400-series - Network Management (i.e., network management software).
+          3.3.1.5. 500-series – NOSC Crew Operations.
+          3.3.1.6. 600-series - Reserved/TBD.
+          3.3.1.7. 700-series - Reserved/TBD.
+          3.3.1.8. 800-series - Reserved/TBD.
+          3.3.1.9. 900-series - Reserved/TBD.
+      3.3.2. AFNOIs are numbered in 4 subseries:
+          3.3.2.1. -1000 subseries - Installation, Configuration and Operational Procedures.
+          3.3.2.2. -2000 subseries - Abbreviated Checklists (i.e., Quick Reaction Checklists).
+          3.3.2.3. -3000 subseries - Troubleshooting and Test procedures.
+          3.3.2.4. -4000 subseries - Periodic Tasks (i.e., Preventative Maintenance Inspections (PMI)).
+      3.3.3. AFNOIs are indexed on the HQ AFCA web page (https://www.afca.scott.af.mil/optn/)
+      maintained by HQ AFCA/GCLO. In the event one of the Reserved/TBD series is used, the web
+      page will reflect the latest numbering scheme.
+
+4. Information Collections, Records, and Forms or Information Management Tools (IMT).
+   4.1. Information Collections. No information collections are created by this publication.
+   4.2. Records. Master record sets are created and controlled as stated in paragraph 2.2.8. Retain and
+   dispose of these records according to Air Force WEB-RIMS RDS, Table 37-9, Rule 2, located at
+   https://webrims.amc.af.mil/rds/index/cfm.
+   4.3. Forms or IMTs (Adopted and Prescribed).
+      4.3.1. Adopted Forms or IMTs: AF Form 847, Recommendation for Change of Publication;
+      AF Form 1382, Request for Review of Publications and/or Forms; AF Form 797, Job Qualifi-
+      cation Standard Continuation/Command JQS.
+      4.3.2. Prescribed Forms or IMTs: No forms or IMTs are prescribed by this publication.
+
+
+
+                                                    DONALD J. WETEKAM, Lt Gen, USAF
+                                                    DCS/Installations and Logistics
+6                                                                  AFI33-115V3 15 APRIL 2004
+
+
+                                          Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+Paperwork Reduction Act of 1995
+AFPD 33-1, Command, Control, Communications, and Computer (C4) Systems
+AFI 33-115 Volume 1, Network Management (will become Network Operations)
+AFI 33-115 Volume 2, Licensing Network Users and Certifying Network Professionals
+AFI 33-360, Volume 1, Air Force Content Management Program--Publications
+AFI 33-360, Volume 2, Content Management Program-Information Management Tool (CMP-IMT)
+AFMAN 37-123, Management of Records
+
+Abbreviations and Acronyms
+AFCA—Air Force Communications Agency
+AFI—Air Force Instruction
+AFMAN—Air Force Manual
+AFNOI—Air Force Network Operating Instruction
+AFNOSC—Air Force Network Operations and Security Center
+AFPD—Air Force Policy Directive
+C4 NOTAM—Command, Control, Communications and Computer Notice to Airmen
+MAJCOM—Major Command
+NCC—Network Control Center
+NCOIC—Noncommissioned Officer in Charge
+NOI—Network Operating Instruction
+NOSC—Network Operations and Security Center
+OIC—Officer in Charge
+OPR—Office of Primary Responsibility
+OPTN—Operationalizing & Professionalizing the Network
+RDS—Records Disposition Schedule

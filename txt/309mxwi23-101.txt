@@ -1,0 +1,398 @@
+Administrative Changes to 309MXWI23-101, Due-In From Maintenance/Due-Out To
+Maintenance (DIFM/DOTM) Process
+
+OPR: OO-ALC/OBWP
+
+References to 309 MXW should be changed to OO-ALC throughout the publication.
+
+27 March 2014
+BY ORDER OF THE COMMANDER                                     309TH MAINTENANCE WING
+309TH MAINTENANCE WING                                               INSTRUCTION 23-101
+
+                                                                                  17 MAY 2012
+
+                                                                         Materiel Management
+
+                                                DUE-IN FROM MAINTENANCE/DUE-OUT
+                                                      TO MAINTENANCE (DIFM/DOTM)
+                                                                         PROCESS
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+               Publishing website at http://www.e-Publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication
+
+OPR: 309 MXW/OBWP                                                   Certified by: 309 MXW/OB
+                                                                            (Mr. Bernard Josten)
+                                                                                      Pages: 17
+
+
+This instruction establishes responsibilities for ordering and turning-in of exchangeable items
+with expendability, recoverability, and reparability category (ERRC) code of ‘C’ or ‘T’, by the
+production support technician/production support specialist (PST/PSS). This instruction applies
+to all groups within the 309th Maintenance Wing (309 MXW) that handle material in support of
+the Depot Maintenance Program; with the exception of the 309th Aerospace Maintenance and
+Regeneration Group, located at Davis-Monthan Air Force Base, and 571st Aircraft Maintenance
+Squadron, located at Randolph Air Force Base, who follow Air Force Manual (AFMAN) 23-110,
+USAF Supply Manual, Volume. II, Part Two, USAF Standard Base Supply System. Personnel
+assigned to the Support Center Pacific (SCP), located at Kadena Air Base, will follow the
+directions in paragraph 7.1 and paragraph 7.7.1 of this instruction. This procedure augments
+the process in AFMAN 23-110, Volume III, Part Two, Chapter 6, Depot Supply Procedures; and
+Air Force Materiel Command Instruction (AFMCI) 21-130, Equipment Maintenance Material
+Control. The use of the name or mark of any specific manufacturer, commercial product,
+commodity, or service in the publication does not imply endorsement by the Air Force (AF).
+Ensure that all records created as a result of processes prescribed in this publication are
+maintained in accordance with (IAW) AFMAN 33-363, Management of Records, and disposed
+of      IAW       AF       Records      Disposition      Schedule      (RDS)      located     at
+https://www.my.af.mil/afrims/afrims/afrims/rims.cfm. Refer recommended changes and
+questions about this publication to the Office of Primary Responsibility (OPR) using the Air
+Force Information Management Tool (AF IMT) 847, Recommendation for Change of
+Publication; route AF IMTs 847 from the field through the appropriate functional chain of
+command.
+ 2                                                                                               309MXWI23-101 17 May 2012
+
+
+
+        1.      General Information. ..............................................................................................             2
+        2.      Systems. .................................................................................................................      3
+        3.      Policy. ....................................................................................................................    3
+        4.      Responsibilities. .....................................................................................................         3
+        5.      Depot Level Reparable (DLR) With Missing Components. ..................................                                         4
+        6.      Follow-Up Actions Required After Processing an Exchangeable Turn-In. ...........                                                5
+        7.      Additional DIFM/DOTM Responsibilities for SCP at Kadena. ............................                                           5
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                                  7
+
+Attachment 2—RINE SCREEN SHOT                                                                                                                   9
+
+Attachment 3—ABOM MAIN MENU                                                                                                                    10
+
+Attachment 4—NIMMS MN045P SCREEN                                                                                                               13
+
+Attachment 5—DIFMS INQUIRY SCREEN                                                                                                              14
+
+Attachment 6—NIMMS MN045P SCREEN                                                                                                               15
+
+Attachment 7—MATERIAL SUPPORT FOLDER                                                                                                           16
+
+
+1. General Information. This instruction identifies process changes due to Base Realignment
+and Closure 2005 and must be complied with. Major changes include the roles and
+responsibilities of the PST/PSS in this process, and the transfer of some material roles from the
+AF to the Defense Logistics Agency (DLA). Also, the Supply Management Activity Group and
+the Depot Maintenance Activity Group (DMAG) combined to form the Consolidated
+Sustainment Activity Group (CSAG). DIFM/DOTM is the term used to track the issue and turn-
+in of exchangeable assets used in the repair of aircraft, engines or other major end items. The
+main purpose of the process is to ensure unserviceable assets are returned to the supply chain in a
+timely manner. Training on DIFM/DOTM using the Depot Maintenance Accounting and
+Production System has been placed on the 309 MXW Production Support Office
+(309 MXW/OBWP) Workload Analysis & Material SharePoint site in the Material Support
+folder                                            located                                        at
+https://cs.eis.afmc.af.mil/sites/309MXWOPS/IADP/workloading/default.aspx. Throughout
+this instruction, the reference website will be referred to as SharePoint.
+     1.1. The CSAG funds all budget code ‘8’ items with an ERRC of ‘T’ or ‘C’, and issues them
+     to depot maintenance at no initial costs. The cost code, which is used at the time the order is
+     processed, will determine how the job order number (JON) is expensed.
+     1.2. When an item with an ERRC of ‘T’ or ‘C’ is ordered and issued with a document
+     identifier of a D7R and a cost code of ‘B’, ‘K’ or ‘E’, a DIFM detail suspense record is
+     established in the Automated Bill of Material (ABOM) System, and the Wholesale and Retail
+     Receiving and Shipping System (WARRS/D035K). When an ERRC ‘T’ or ‘S’ item is
+     turned in with a document identifier of a D6R and the cost code is ‘B’, ‘K’ or ‘C’, a credit
+309MXWI23-101 17 May 2012                                                                    3
+
+
+   DIFM detail is established in ABOM and D035K. To clear these records a D7R and D6R
+   must be processed in the systems with the same document number.             NOTE:
+   WARRS/D035k will be referred to as D035K in this instruction.
+       1.2.1. ERRC ‘T’ or ‘C’ with a numeric budget code ‘8’ will be ordered with a cost code
+       of ‘B’, and will establish a DIFM detail in the D035K to track the return of the
+       unserviceable asset. NOTE: If a ‘K’ is in the fifth position of the stock number, order
+       the item with a cost code ‘D’ to bypass the DIFM edits in D035K.
+       1.2.2. Items used in the repair of the shop support equipment. For example, a
+       maintenance test stand is a piece of support equipment and one of the internal items has
+       an ERRC of ‘T’ or ‘C’ and needs to be replaced. This will be ordered using indirect JON
+       (X563014SXXXX) and a cost code ‘K’. The cost of the item will be charged to
+       maintenance over head, and a DIFM detail will be established in D035K until the
+       unserviceable item is turned in.
+       1.2.3. ERRC ‘T’ or ‘C’ with alpha budget codes will be ordered with a cost code of ‘E’,
+       and will establish a DIFM detail in the D035K.
+   1.3. DIFM detail records control and identify DIFM/DOTM items and are linked by the 14-
+   digit document number. The turn-in and issue request must contain the same document
+   number before the suspended detail record will clear. NOTE: Only one exchangeable item
+   will be ordered or turned in per document number.
+   1.4. Condition code ‘A’ and Quality Deficiency Report (QDR) condition code ‘Q’ turn-ins
+   will be processed in both ABOM and NAVAIR Industrial Material Management System
+   (NIMMS). Turn-ins done in ABOM will establish a DIFM/DOTM credit, and turn-ins done
+   in NIMMS will credit the JON.
+2. Systems. The following systems are used in the processing of DIFM/DOTM items:
+   2.1. D035K issues the material to DMAG and maintains accountability of issues, turn-ins,
+   and detail records for DIFM/DOTM items.
+   2.2. ABOM is used to order and turn-in all material.
+   2.3. NIMMS is the accountable system used for the overall management and inventory of
+   DMAG owned material. Condition code ‘A’ and ‘Q’ material will be turned into ABOM
+   first; then use the established ABOM document number to turn material into NIMMS.
+   2.4. The Depot Industrial Financial Management System (DIFMS) is the official financial
+   system of records for organic depot maintenance; it expenses the cost of the material to the
+   applicable resource control center (RCC) and JON.
+3. Policy. The control of DIFM/DOTM assets is a joint responsibility between DLA Aviation
+and the 309 MXW groups. This instruction will only address the tasks used to order or turn-in
+exchange items.
+   3.1. The scheduling supervisor will ensure that all PST/PSSs are knowledgeable of the
+   responsibilities for ordering or turning in exchange material outlined in this instruction.
+4. Responsibilities.
+   4.1. The PST/PSS will:
+ 4                                                              309MXWI23-101 17 May 2012
+
+
+        4.1.1. Query D035K RINE screen (attachment 2) for valid credits prior to ordering an
+        exchangeable item in ABOM. NOTE: The credit must be in both D035K and ABOM.
+        If it is only in ABOM, the credit is invalid and must be deleted unless the item was
+        recently turned in and has not had a chance to post in D035K. Contact 309
+        MXW/OBWP (production support office) to have the invalid/erroneous credit detail
+        deleted from ABOM.
+        4.1.2. Process all exchangeable issue requests through the ABOM Exchangeable Module
+        Main Menu (Attachment 3, Figures A3.1. through A3.6.). Use the document number
+        with the oldest turn-in date for the issue request. NOTE: ABOM maintains a historical
+        record of all DIFM/DOTM transactions. The PST/PSS will use the oldest history record
+        to match open DIFM/DOTM details for issue or turn-in requests to minimize
+        accumulating overage credits.
+     4.2. Turn-in of QDR condition code ‘Q’ and serviceable material condition code ‘A’ will be
+     processed in ABOM and NIMMS on the NIMMS MN045P screen (Attachment 4). Enter
+     the cost of the item that was expensed to JON; the cost can be found in DIFMS Inquiry
+     screen (MS036P screen, option 9) (Attachment 5).
+     4.3. Turn-in of exchangeable components from end item disassembly/reclamation, shop
+     floor clean-up, or components acquired during condemnation of the end item will not be
+     processed under DIFM/DOTM control. These components will be turned-in by the PSS
+     (scheduling function) in the Exchangeable Production System (G402A). The PST (material
+     function) will process all non-exchangeable turn-ins as a found-on-base (FOB) in NIMMS on
+     the MN045P screen.
+        4.3.1. Enter ‘N’ in the CREDIT EXPCTD field, leave the JOB ORDER NUMBER
+        blank, and enter an ‘X’ in the MEDIA & STATUS field and COST CODE ‘M’ into the
+        NIMMS MN045P screen (Attachment 6). See training package on SharePoint under the
+        turn in folder.
+        4.3.2. For all DIFM/DOTM problems or errors that need to be corrected in D035K,
+        contact the DLA Material Support Specialist (MSS) assigned to the production shop.
+5. Depot Level Reparable (DLR) With Missing Components. When depot maintenance
+receives a DLR for repair with a shop repair unit missing, the following options may be used
+based on the impact to the shop’s delivery schedule: Obtain approval from the material manager
+(MM)/item manager (IM) to order the missing component using a cost code ‘M’ request; or
+obtain the squadron director’s approval to use the cost code ‘S’ to order the missing item. Use of
+cost codes ‘M’ or ‘S’ will not create a DIFM/DOTM detail. By obtaining permission from the
+prime MM/IM to order the missing component with a cost code ‘M’, the MM/IM is provided the
+visibility to see that field units may be stock piling parts, which could result in an overall
+shortage for the AF. It is the responsibility of the MM/IM to remedy the recurring situations.
+NOTE: Before initiating the cost code ‘M’ request, check with the shop to see if the item was
+removed during a reclaim or harvest process and turned in as FOB. If it was a FOB turn-in,
+contact the MSS for a reversal transaction to set up a DIFM credit prior to ordering the item.
+     5.1. The PST/PSS will obtain written authorization from the MM/IM to use the cost code
+     ‘M’. An example of use of the cost code ‘M’ letter is located in the Material Support
+     SharePoint in the DIFM/DOTM sub-folder (Attachment 7, Figures A7.1 and A7.2). The
+309MXWI23-101 17 May 2012                                                                      5
+
+
+   PST/PSS must submit a supply discrepancy report (SDR) prior to requesting the cost code
+   ‘M’ authorization. NOTE: If the shipping activity cannot be determined, submit the SDR
+   and state that the origin of the shipment cannot be determined.
+      5.1.1. The SDR must be submitted through the WEB SDR system located at
+      https://www.daas.dla.mil/daashome/homepage.asp.         Click on ‘Continue to this
+      website’ to get to the WEB SDR page. Additional training for the WEB SDR is located
+      on SharePoint in the Material Support folder (Attachment 7, Figures A7.1 and A7.3).
+   5.2. When the cost code ‘M’ authorization is received, the PST/PSS will process the request
+   in ABOM Exchangeable Module with a cost code ‘M’.
+      5.2.1. All cost code ‘M’ authorizations and approvals will be maintained for 6 months.
+      5.2.2. If the MM/IM does not approve the free issue, the PST/PSS will obtain written
+      approval from the squadron director to order the material using cost code ’S’.
+      5.2.3. Use the sample of the cost code ‘M’ request letter located in the DIFM/DOTM
+      sub-folder, change the cost code from ‘M’ to ‘S’, and send to the squadron director.
+      After approval is received, process the issue request in ABOM with the cost code ‘S’.
+      5.2.4. If the squadron director does not approve the cost code ‘S’ for the order, the PSS
+      (scheduler) will request a condition code from the MM/IM to turn the end item into
+      supply.
+      5.2.5. The PST/PSS will ensure that the condition tag attached to the end item has the
+      stock number and part number of the missing items listed on the back of the condition
+      tag.
+6. Follow-Up Actions Required After Processing an Exchangeable Turn-In.
+   6.1. The PST/PSS will:
+      6.1.1. Ensure the item is placed in the agreed upon hand-off point for material returns to
+      supply.
+      6.1.2. Document the hand-off with the following: national stock number (NSN),
+      document number, serial number, name of the person the item was handed off to and the
+      date of the hand-off.
+      6.1.3. 10 days after handing the item off to the MSS, review the transaction history
+      screen in D035K to see if the receipt has been processed.
+      6.1.4. If the receipt has not been processed after 10 days, contact the MSS and provide
+      the document number, NSN and the date the item was handed off. The MSS can do the
+      necessary research to determine why the turn-in was not processed in a timely manner.
+      Make a note of the date of the follow-up with the MSS.
+          6.1.4.1. If the receipt has not processed after 21 days, elevate it to the scheduling
+          supervisor for assistance.
+   6.2. Additional information can be found on the Material Support Maintenance Wing
+   SharePoint in the DIFM/DOTM folder.
+7. Additional DIFM/DOTM Responsibilities for SCP at Kadena.
+6                                                             309MXWI23-101 17 May 2012
+
+
+    7.1. This section prescribes procedures unique to the SCP production support section when
+    ordering or turning-in DIFM/DOTM assets. The SCP is an off-site operating location
+    supporting the Pacific bases, and is part of the 309th Electronics Maintenance Group.
+    ABOM and D035K will be used to process all DIFM/DOTM transactions. Physical
+    movement of the unserviceable DIFM assets from the SCP is handled by the local 309th
+    Electronics Maintenance Squadron (309 EMXS) personnel.
+    7.2. The SCP PST will order and turn in exchangeable material IAW the process in
+    paragraphs 4.1.1. through 4.3.1. of this instruction.
+    7.3. The SCP PST and the retail item manager (RIM) will work together to resolve any
+    material discrepancies associated with DIFM/DOTM items shipped to or from the SCP. The
+    RIM will contact the local point of contact (POC) in the 309 EMXS whenever the
+    discrepancies cannot be locally resolved.
+    7.4. The SCP PST will process the unserviceable turn-in transaction through ABOM. The
+    system will generate the turn-in documentation; this documentation will be packed with the
+    material when it is shipped to the 309 EMXS POC.
+    7.5. The SCP PST will prepare the off-line shipping document and take the material to the
+    local shipping and planning section in the transportation unit for shipment to the 309 EMXS
+    POC.
+    7.6. The SCP PST will notify the local 309 EMXS POC of the shipment by email and
+    provide the shipment number. Maintain a copy of the shipment and turn in paperwork for
+    research purposes. If the transaction has not processed in 30 days, engage the RIM and the
+    309 EMXS POC for assistance.
+    7.7. Monthly Validation: The RIM will monitor the monthly DIFM/DOTM review listing
+    (A-D035K-BE7-M08-L87) to ensure that DIFM details are cleared within 60 days, and that
+    the shop does not accumulate over age credits (i.e., credit details over 18 months are
+    considered over age).
+       7.7.1. If the credits are over 18 months old, the RIM will perform a manual deletion
+       (ZFX/M) in D035K, and validation with production is not required; the RIM will ensure
+       enough DIFM credits are maintained to be matched with the backorders tied to awaiting
+       parts end items.
+
+
+
+
+                                            ALLAN E. DAY, Col, USAF
+                                            Commander, 309th Maintenance Wing
+309MXWI23-101 17 May 2012                                             7
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 23-110, USAF Supply Manual, 1 April 2009
+AFMCI 21-130, Depot Maintenance Material Control, 15 November 2007
+AFMAN 33-363, Management of Records, 1 March 2008
+Adopted Forms
+AF Form 847, Recommendation for change of Publication, 22 Sept 2009
+
+Abbreviations and Acronyms
+ABOM—Automated Bill of Material
+AF—Air Force
+AF IMT—Air Force Information Management Tool
+AFMAN—Air Force Manual
+AFMCI—Air Force Materiel Command Instruction
+CSAG—Consolidated Sustainment Activity Group
+DIFM—Due-In From Maintenance
+DIFMS—Defense Industrial Financial Management System
+DLA—Defense Logistics Agency
+DLR—Depot Level Reparable
+DMAG—Depot Maintenance Activity Group
+DOTM—Due-out to Maintenance
+ERRC—Expendability, Recoverability, Reparability Category
+FOB—Found-on-Base
+IAW—In Accordance With
+IM—Item Manager
+JON—Job Order Number
+MM—Material Manager
+MSS—Material Support Specialist
+NIMMS—NAVAIR Industrial Material Management System
+NSN—National Stock Number
+OPR—Office of Primary Responsibility
+POC—Point of Contact
+ 8                                                        309MXWI23-101 17 May 2012
+
+
+PST/PSS—Production Support Technician/Production Support Specialist
+QDR—Quality Deficiency Report
+RCC—Resource Control Center
+RDS—Records Disposition Schedule
+RIM—Retail Item Manager
+SCP—Support Center Pacific
+SDR—Supply Discrepancy Report
+WARRS/D035K—Wholesale and Retail Receiving and Shipping System
+WEBSDR—An automated system used to submit SDRs
+309 EMXS—Electronics Maintenance Squadron
+309 MXW—Maintenance Wing
+309 MXW/OBWP—Production Support Office
+309MXWI23-101 17 May 2012                       9
+
+
+                                 Attachment 2
+                             RINE SCREEN SHOT
+
+Figure A2.1. DIFM/DOTM Details in D035K
+ 10                                                 309MXWI23-101 17 May 2012
+
+
+                                     Attachment 3
+                                 ABOM MAIN MENU
+
+Figure A3.1. Main Menu Welcome Screen
+
+
+
+
+Figure A3.2. Requisition Material Option
+309MXWI23-101 17 May 2012            11
+
+
+Figure A3.3. Unique ID Entry Field
+
+
+
+
+Figure A3.4. Response Screen
+ 12                                                  309MXWI23-101 17 May 2012
+
+
+Figure A3.5. Requisition Response Screen
+
+
+
+
+Figure A3.6. DIFM/DOTM Requisition Response Screen
+309MXWI23-101 17 May 2012                          13
+
+
+                                    Attachment 4
+                             NIMMS MN045P SCREEN
+
+Figure A4.1. Turn-in Input Screen
+ 14                                                    309MXWI23-101 17 May 2012
+
+
+                                   Attachment 5
+                            DIFMS INQUIRY SCREEN
+
+Figure A5.1. DIFMS Inquiry, Option 9 Response Screen
+309MXWI23-101 17 May 2012                          15
+
+
+                                   Attachment 6
+                             NIMMS MN045P SCREEN
+
+Figure A6.1. FOB Turn-in Input Screen
+ 16                                                   309MXWI23-101 17 May 2012
+
+
+                                  Attachment 7
+                         MATERIAL SUPPORT FOLDER
+
+Figure A7.1. Navagation to the DIFM/DOTM Sub-folder
+309MXWI23-101 17 May 2012           17
+
+
+Figure A7.2. DIFM/DOTM Sub-folder
+
+
+
+
+Figure A7.3. SDR Process

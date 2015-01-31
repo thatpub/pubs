@@ -1,0 +1,328 @@
+BY ORDER OF THE                                                       AIR FORCE INSTRUCTION 33-220
+SECRETARY OF THE AIR FORCE                                                            21 NOVEMBER 2007
+                                                                        Certified Current 17 December 2009
+                                                                         Communications and Information
+
+                                                                     ON-HOOK TELEPHONE SECURITY
+
+
+
+
+                  COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY:          Publications and forms are available for downloading or ordering on the
+                        e-Publishing website at www.e-publishing.af.mil/.
+RELEASABILITY: There are no releasability restrictions on this publication.
+
+
+OPR: SAF/IGX                                                     Certified by: SAF/XCP (Col Jack Jibilian)
+Supersedes AFI 33-220, 1 March 1997 and                                                         Pages: 8
+           AFMAN 33-274, 1 July 1997.
+
+This Air Force instruction (AFI) discusses the vulnerabilities of telephone systems and outlines responsi-
+bilities for on-hook telephone security. It implements AFPD 33-2, Information Assurance, and sets guide-
+lines for on-hook telephone security for all Air Force organizations using administrative telephone
+systems in both sensitive and classified discussion areas. This publication does not address portable elec-
+tronic devices, cellular telephones, laptop computers, handheld computers, or personal digital assistants
+used in sensitive or classified discussion areas. This instruction applies to all Air Force military, civilians,
+and contractor personnel under contract by the Department of Defense (DoD) that develop, use, operate,
+or manage Air Force communications and information systems. Unless otherwise specified, the term
+major command (MAJCOM) includes field operating agencies (FOA) and direct reporting units (DRU).
+This publication applies to the Air National Guard and the Air Force Reserve Command. Additional
+instructions and manuals are listed on the Air Force Publishing Website at uniform resources locator
+(URL): http://www.e-publishing.af.mil, under Electronic Publications. Field activities must send imple-
+menting publications to the higher headquarters functional OPR for review and coordination before pub-
+lishing. Direct questions on the contents of this instruction to your servicing Air Force Office of Special
+Investigations (AFOSI) detachment. Send recommended changes and conflicts between this and other
+publications, using AF Form 847, Recommendation for Change of Publication, to The Air Force Inspec-
+tor General, Directorate of Special Investigations (SAF/IGX), 1140 Air Force Pentagon, Room 4E1081,
+Washington DC 20330-1140, with information copy to SAF/XCIN (A6N), Enterprise Networks Division,
+1800 Air Force Pentagon, Washington DC 20330-1800. Ensure that all records created as a result of pro-
+cesses prescribed in this publication are maintained in accordance with Air Force Manual (AFMAN)
+37-123, Management of Records (will become AFMAN 33-363), and disposed of in accordance with Air
+Force Records Information Management System (AFRIMS) Records Disposition Schedule (RDS)
+located at https://afrims.amc.af.mil/rds_series.cfm. See Attachment 1 for a glossary of references and
+supporting information.
+2                                                                    AFI33-220 21 NOVEMBER 2007
+
+
+
+SUMMARY OF CHANGES
+This document has been substantially revised and must be completely reviewed. Major changes include
+the addition of information from AFM 33-274, On-Hook Telephone Security Guidelines, updates to tele-
+phone security measures to include those associated with Voice Over Internet Protocol (VOIP) and direc-
+tion on Telephone Security Guidelines 1 – 8 published by the Committee on National Security Systems,
+National Telecommunications Security Working Group.
+
+
+1. Roles and Responsibilities.
+    1.1. Commanders responsible for the security of an activity or location where personnel hold recur-
+    ring sensitive presentations, such as scheduled conferences or briefings, or where personnel routinely
+    discuss classified or sensitive information, as defined in AFI 33-202, Volume 1, Network and Com-
+    puter Security (soon to be AFI 33-200, Information Assurance Management), should:
+       1.1.1. Ensure the number of telephones used is the minimum necessary to meet operational
+       requirements.
+       1.1.2. Apply appropriate telephone security measures in discussion areas and ensure adequate
+       protection for classified or sensitive discussions IAW National Telephone Security Working
+       Group (NTSWG) publications (reference para 10.).
+       1.1.3. Use physical security safeguards to prevent unauthorized personnel from obtaining clan-
+       destine physical access to the telephone system or components of the system.
+    1.2. Air Force Office of Special Investigations (AFOSI). AFOSI is the office of primary responsi-
+    bility (OPR) for on-hook telephone technical security matters, to include providing guidance for
+    installing and operating telephone systems within the Air Force, and Department of Defense facilities
+    occupied by Air Force affiliated personnel. AFOSI will:
+       1.2.1. Provide Air Force representation to the U.S. Government intelligence community’s
+       NTSWG. The group is the primary technical and policy resource in the U.S. intelligence commu-
+       nity for all aspect of the Technical Surveillance Countermeasures (TSCM) program involving
+       telephone systems in areas where sensitive government information is discussed.
+       1.2.2. Examine the TSCM needs of the Air Force and tailor Air Force telephone security stan-
+       dards to those established by the NTSWG.
+       1.2.3. Provide guidance to Air Force organization on selecting local equipment for installing tele-
+       phone systems in sensitive discussion areas in conjunction with the host base Communications
+       and Information Systems Officer (CSO) (AFI 33-111, Voice Systems Management).
+       1.2.4. Determine the effectiveness and applicability of protective security devices and TSCM pro-
+       cedures for qualified facilities; when warranted, provide technical threat information and briefings
+       concerning telephone systems and the countermeasures intended to nullify existing threats. Fur-
+       ther information on requesting TSCM services or threat briefing is contained in AFI 71-101, Vol-
+       ume 3, The Air Force Technical Surveillance Countermeasures Program.
+
+2. Risk Associated with the Administrative Telephone System. Telephone systems, which also
+includes facsimile machines and computer MODEMs, are so common place the risks associated with their
+AFI33-220 21 NOVEMBER 2007                                                                                 3
+
+
+use are often overlooked. When installed in sensitive discussion areas, these systems can pose a signifi-
+cant threat to classified and sensitive information. The objective of this manual is to provide guidance for
+audio and data security relating to telephone systems when the telephone instruments are “on-hook’ or in
+their idle state. This manual does not address the vulnerability to intercept or countermeasures related to
+securing telephone conversations or the intentional transmission of data.
+   2.1. It is generally accepted that all information carried over telephone circuits is vulnerable to inter-
+   ception at any point along the path of the communication. It is also understood, there is not an effec-
+   tive method to protect discussions carried by communications circuits outside of a facility short of
+   strong encryption. Therefore, the best solution to protecting unencrypted communication systems lies
+   in preventing compromise at the source (i.e., the equipment). However, before determining specific
+   countermeasures, the sensitivity of the information to be protected and the specificity of the threat to
+   that information should be considered.
+
+3. Determining the Need for Protection. The sensitivity of the information and the degree of physical
+and personnel access control will determine the need for protective security devices and TSCM. Classi-
+fied information must always be protected. However, the bulk of the discussions in the Air Force involve
+sensitive information. This information must also be protected, but at an appropriately lower level. Mini-
+mum standards, as published in the NTSWG Standards (see paragraph 10.), were developed to protect
+classified communications but the standard practices set forth in these documents may also be applied (as
+warranted) to areas of lesser security processing sensitive information. The NTSWG Standards were
+intended for classified discussion areas or other compartmented program areas where on-hook vulnerabil-
+ities and the nature of the information generate significant risk regardless of the threat. Commanders
+requiring assistance assessing the local threat or determining the appropriate level of on-hook telephone
+security are encouraged to contact their servicing AFOSI detachment.
+
+4. Principal Security Vulnerabilities. Telephone system components may be used to monitor nearby
+conversations or activities when the system is on-hook. This is particularly dangerous because personnel
+are not generally aware this type of monitoring can occur. Principal vulnerabilities include inherent vul-
+nerabilities, signals exploitation, equipment modification, and device installation all of which take advan-
+tage of the electrical path provided by the existing system to transmit information from an area.
+   4.1. Inherent system vulnerabilities includes the manipulation of standard convenience features built
+   in to the telephone system (i.e., speakerphone options, conference call capability, ability to have the
+   same telephone number on multiple phones, auto-answer option, etc.).
+   4.2. Signals exploitation involves intercepting signals generated by inherent system design character-
+   istics which allow normal room conversation to be passed from an area.
+   4.3. Equipment modification causes existing telephone system equipment to generate signals that
+   allow normal room conversation to be passed from an area.
+   4.4. Device installation involves placement of a technical surveillance device which collects and
+   passes information from an area.
+
+5. Technical Surveillance Countermeasures (TSCM). The protective methods and equipment
+employed to deny the use of telephone systems for other than intended communications constitutes
+TSCM. These measures ensure on-hook audio signals are not available for interception or exploitation.
+4                                                                      AFI33-220 21 NOVEMBER 2007
+
+
+Excluding all telephone equipment and wiring from discussion areas is the most effective, if least practi-
+cal countermeasure. In all cases, limit telephone instruments to the minimum number required.
+    5.1. For sensitive compartmented information facilities (SCIF), follow directives in DCID 6/9 Man-
+    ual, Physical Security Standards for Sensitive Compartmented Information Facilities, published
+    NTSWG Standards and remove all extraneous telephone system wiring and components which are
+    not contained or protected within the Physically Protected Space (PPS). This may require the re-rout-
+    ing of telephone system wiring which does not service the facility. In areas where personnel routinely
+    discuss classified information, add isolation or disconnect devices (as defined in NTSWG Standards)
+    to the telephone lines, either at the station equipment or at the point where the lines leave the PPS.
+    Proper installation of isolation or disconnect devices will prevent audio signals from being passed
+    from the PPS over telephone lines when the system is not in normal use (i.e., on-hook).
+    5.2. Isolate station equipment from all uncontrolled telephone lines. Installing isolation or disconnect
+    devices is the first line of defense, however, occupants must ensure the protected equipment is not
+    later modified or technical surveillance devices subsequently installed. This responsibility falls within
+    the purview of physical security and access control.
+
+6. Characterizing Telephone Systems. Telephone systems can be characterized according to their rela-
+tionship to the PPS. The system’s relationship to the PPS can be categorized as: without external connec-
+tion, with external connection, and systems in areas with limited security.
+    6.1. Internal Telephone System Without External Connections. This is a telephone system com-
+    pletely contained within a PPS and not connected to, or served by any component extending beyond
+    that perimeter. No components, to include wiring, are accessible by unauthorized personnel or vulner-
+    able to surreptitious access. It is essentially a private telephone system and requires no special TSCM
+    or protective security devices.
+    6.2. Internal Telephone System With External Connections. These systems are located within a
+    secure perimeter, but are connected to, or served by system components (including wiring) extending
+    beyond the PPS. If personnel discuss classified information within the area, the telephone equipment
+    must be installed according to this manual. Routine discussion of sensitive information should be
+    addressed on a case by case basis for each area, considering both the criticality of the information and
+    frequency of discussion, to determine the applicability of this manual. For assistance, contact your
+    servicing AFOSI detachment.
+    6.3. Telephone System in Area of Limited Security. These systems are located within a perimeter
+    where only minimal physical security is provided. The telephone equipment is connected to, or served
+    by system components extending beyond the perimeter and some or all of the components within the
+    area may be accessible by unauthorized persons. In this situation, security can best be provided by
+    excluding all discussion of classified or sensitive information. Where it is not possible to exclude clas-
+    sified discussion, the telephone system serving the area must be installed according to this manual.
+    Routine discussion of sensitive information should be addressed on a case by case basis for each area;
+    for assistance contact your servicing AFOSI detachment.
+
+7. Types of Telephone Service. The type of service can be categorized as central office (CO) or private
+branch exchange (PBX). Central office service is generally provided by a commercial, local exchange
+carrier who provides the main hub for telephone communication within a geographic area. The CO serves
+both residential and business telephone subscribers within the community. A PBX operates as a private
+AFI33-220 21 NOVEMBER 2007                                                                                5
+
+
+telephone sub-network and may be either manual or computerized. It ties an internal group of subscribers
+into an independent network and provides external connections to the CO. A Computerized Telephone
+System (CTS), analogous to the brains of a modern computerized PBX, uses stored programs to perform
+the necessary message switching functions. A typical CTS incorporates a multitude of attractive features
+which enhance and extend basic telephone service. In addition to processing telephone calls, a CTS may
+also support data processing, energy consumption control, and communications traffic analysis.
+   7.1. Voice Over Internet Protocol (VoIP). VoIP telephone systems are connected via a distributed
+   network to the “telephone switch”. The instrument’s connection, therefore, is no longer restricted to
+   the “telephone switch” alone, but can be addressed by other devices on the network. Additionally, the
+   VoIP telephone instrument is remarkably different from the conventional telephone attached to a tra-
+   ditional CTS. A VoIP instrument is essentially a computer with a microphone and network connectiv-
+   ity and many have a built-in web server to permit easier administration of its features. It follows that
+   the administration of the “telephone switch” is no longer limited to a dedicated hardwire connection,
+   but to a distributed network. This substantially reduces the security of the “telephone switch” that pre-
+   viously had sole control over the telephone configuration. Also, note that most traditional CTSes use
+   proprietary protocols whereas most VoIP configurations use open-standard protocols. The use of an
+   open-standard protocol increases the number of individuals knowledgeable about system commands,
+   escalating the possibility that someone could compromise the system. Additional VoIP guidance is in
+   AFI 33-202, Volume 1, and AFI 33-111.
+
+8. Special Equipment Considerations. Installing specialized telephone equipment, such as cordless
+telephones, speakerphones and telephone answering devices within discussion areas can create additional
+security vulnerabilities. When protecting classified information, or sensitive information under the guid-
+ance of this manual, the following additional considerations apply:
+   8.1. Cordless telephones must not be installed within sensitive or classified discussion areas (see AFI
+   33-111 policy on cordless telephones).
+   8.2. Speakerphones in discussion areas must be installed so that all cabling, amplifiers and associated
+   control units are contained within the boundaries of the PPS. Note: Speaker phones are not authorized
+   in SCIFs without accrediting agency’s approval.
+   8.3. Telephone answering devices must be installed outside the PPS and be selectively activated by
+   means of a line transfer or call forwarding function. The answering device and associated telephone
+   equipment for the called number must not activate at the same time within the PPS.
+   8.4. Some telephone answering devices have the capability to remotely monitor room audio. These
+   devices will not be used in classified discussion environments even when the feature is protected with
+   an access or Personal Identification Number (PIN) code.
+   8.5. Do not install intercommunications systems within discussion areas except when operationally
+   justified and the system is installed in accordance with the attached guidance.
+       8.5.1. If a dial intercommunications system capability is engineered into the administrative tele-
+       phone system, no further action is required if the telephone system is installed according to this
+       instruction.
+       8.5.2. If a separate telephone intercommunications system is installed, no station equipment or
+       system wiring will be located outside of the discussion area.
+6                                                                     AFI33-220 21 NOVEMBER 2007
+
+
+9. Applying Protective Countermeasures. Given the wide variety of security considerations impacting
+the diversity of telephone systems in use throughout the USAF, the only effective approach for determin-
+ing specific requirements is risk management. Classified information must always be protected and the
+guidance in this manual applies. Sensitive information must be evaluated on a case by case basis for each
+area, with consideration given to the criticality of the information, inherent system vulnerabilities and the
+specificity of the threat. When considering the type of telephone service, all protective countermeasures
+to deny on-hook audio now accepted for CO service and manual PBX systems are equally effective for a
+CTS.
+    9.1. Telephone systems incorporating accepted conventional isolation/disconnect protective counter-
+    measures to deny on-hook audio are not subject to further installation or operational restrictions,
+    unless it is to address concerns other than on-hook audio.
+    9.2. The type of information and frequency of discussion within the area to be serviced must deter-
+    mine the method of isolation. If classified information is routinely discussed, the entire area should be
+    designated as a PPS. The telephone system should be located within the PPS and installed as outlined
+    in the NTSWG Standards. If the majority of discussion involves sensitive, but unclassified informa-
+    tion, a PPS should be established only for those areas where classified, or sensitive information requir-
+    ing this level of protection, is routinely discussed. If the telephone system is located in an area of
+    limited security and information requiring protection is routinely discussed, the telephone installation
+    within each PPS should include proper individual isolation.
+
+10. National Telephone Security Working Group Standards (NTSWG). To mitigate the risks associ-
+ated with telephone systems and ensure proper precautions are taken to protect sensitive and classified
+discussions, follow the guidance set forth in these standards. These standards were prepared by the
+NTSWG. The NTSWG, formerly known as the Telecommunication Security Group (TSG), is a Joint
+Working Group of the Committee on National Security Systems (CNSS) which was established under
+Executive Order 13231 to protect National Security Systems. The charter members of the NTSWG are:
+Department of the Air Force, Department of the Army, Central Intelligence Agency, Defense Intelligence
+Agency, Department of Energy, Federal Bureau of Investigation, Department of the Navy, National
+Reconnaissance Office, National Security Agency, US Secret Service, and the Department of State. The
+NTSWG is the primary technical and policy resource in the US Intelligence Community for all aspects of
+the TSCM program involving telephone systems. The NTSWG standards contain guidance for providing
+on-hook security for telephone systems located in areas where sensitive government information is dis-
+cussed. Implementation of NTSWG standards does not preclude the application of more stringent require-
+ments and may not satisfy the requirements of other security programs such as TEMPEST, COMSEC, or
+OPSEC. The standards are available electronically for download at The Committee for National Security
+System’s website (http://www.cnss.gov/).
+
+
+
+                                                MICHAEL W. PETERSON, Lt Gen, USAF
+                                                Chief of Warfighting Integration and
+                                                Chief Information Officer
+AFI33-220 21 NOVEMBER 2007                                                                         7
+
+
+                                           Attachment 1
+
+             GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+DCID 6/9, Physical Security Standards for Sensitive Compartmented Information Facilities
+DoDI 5240.05, Technical Surveillance Countermeasures (TSCM) Program
+AFI 71-101 Volume 3, The Air Force Technical Surveillance Countermeasures Program
+AFI 33-111, Voice Systems Management
+AFI 33-202, Volume 1, Network and Computer Security
+NTSWG Standard 1, Introduction to Telephone Security
+NTSWG Standard 2, TSG Guidelines for Computerized Telephone Systems
+NTSWG Standard 2a, NTSWG Guidelines for Computerized Telephone Systems Supplemental
+NTSWG Standard 2b, NTSWG Guidelines for Voice Over Internet Protocol (VoIP) Computer Telephony
+NTSWG Standard 3, Type-Acceptance Program for Telephones Used With the Conventional Central
+Office Interface
+NTSWG Standard 4, Type-Acceptance Program for Electronic Telephones Used In Computerized Tele-
+phone Systems
+NTSWG Standard 5, On-Hook Telephone Audio Security Performance Specifications
+NTSWG Standard 6, Telephone Security Group Approved Equipment
+NTSWG Standard 7, TSG Guidelines for Cellular Telephones
+NTSWG Standard 8, Microphonic Response Criteria for Noncommunications Devices
+
+Abbreviations and Acronyms
+AFI — Air Force Instruction
+AFOSI — Air Force Office of Special Investigations
+CO — Central Office. The CO is the physical building used to house inside plant equipment including
+telephone switches, which make phone calls "work" in the sense of making connections and relaying the
+speech information.
+CTS — Computerized Telephone Switch
+MODEM — (from MODulate and DEModulate) a MODEM is a computer device that converts data into
+sounds that can be transmitted over standard telephone lines.
+NTSWG — National Telephone Security Working Group
+ON-HOOK — The condition that exists when a telephone is in the idle state.
+8                                                                    AFI33-220 21 NOVEMBER 2007
+
+
+PBX — Private Branch Exchange. A Private Branch Exchange is a telephone exchange that serves a
+particular business or office, as opposed to one a common carrier or telephone company operates for
+many businesses or for the general public.
+PPS — Physically Protected Space
+SCIF — sensitive compartmentalized information facility
+SENSITIVE INFORMATION — Information that the loss, misuse, or unauthorized access to or
+modification of could adversely affect the national interest or the conduct of federal programs, or the
+privacy to which individuals are entitled under Title 5 U.S.C. Section 552a (Privacy Act), but that has not
+been specifically authorized under criteria established by an Executive Order or an act of Congress to be
+kept secret in the interest of national defense or foreign policy. (Note: Systems that are not national
+security systems, but contain sensitive information are subject to be protected in accordance with the
+requirements of the Computer Security Act of 1987 [P.L. 100-235].).
+TSCM — Technical Surveillance Countermeasures
+VoIP — Voice Over Internet Protocol. VoIP is the routing of voice conversations over the Internet or
+through any other internet protocol-based network.

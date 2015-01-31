@@ -1,0 +1,638 @@
+BY ORDER OF THE COMMANDER                          45TH SPACE WING INSTRUCTION 91-701
+45TH SPACE WING
+                                                                             5 NOVEMBER 2014
+
+                                                                                             Safety
+
+                                                       45TH SPACE WING LAUNCH SAFETY
+                                                               SOFTWARE MANAGEMENT
+
+             COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+               Publishing website at www.e-Publishing.af.mil
+
+RELEASABILITY: There are no releasability restrictions on this publication
+
+OPR: 45 SW/SEL                                                             Certified by: 45 SW/SE
+                                                                           (Col Daniel F. Gottrich)
+                                                                                          Pages: 19
+
+
+This instruction implements Air Force Space Command Instruction 91-701, Launch Safety
+Program Policy. It establishes a uniform process to validate Launch Safety Software for
+operational use and establishes configuration control guidance for hardware and software
+modifications to the Safety Hazards Analysis and Risk Processing (SHARP) system. It also
+details how 45 SW/SEL will interact with the 45th Range Management Squadron (45 RMS)
+operational acceptance process, 45SWI10-602 45th Space Wing Eastern Range Acceptance
+Process. This instruction applies to 45th Space Wing Safety Office (45 SW/SE) and 45th
+Operations Group (45 OG) personnel. It is not applicable to Air National Guard or Air Force
+Reserve. Ensure that all records created as a result of processes prescribed in this publication are
+maintained in accordance with Air Force Manual (AFMAN) 33-363, Management of Records,
+and disposed of in accordance with Air Force Records Information Management Systems
+(AFRIMS) Records Disposition Schedule (RDS). Refer recommended changes and questions
+about this publication to the Office of Primary Responsibility (OPR) using the AF Form 847,
+Recommendation for Change of Publication; route AF Form 947 from the field through the
+appropriate functional chain of command. This publication may be supplemented at any level,
+but all direct Supplements must be routed to the OPR of this publication for coordination prior to
+certification and approval. Submit requests for waivers through the chain of command to the
+approval authority, or alternately, to the Publication OPR.
+
+SUMMARY OF CHANGES
+
+This publication has been substantially revised and must be completely reviewed. Minor
+changes include the replacement of 45 SW/SELP responsibilities with 45 SW/SEL and
+administrative corrections.
+ 2                                                                                           45SWI91-701 5 NOVEMBER 2014
+
+
+
+        1.      Objective. ...............................................................................................................           2
+        2.      Applicability. .........................................................................................................             3
+        3.      Organizational Responsibilities for the Eastern Range LSS Management Process.
+                .................................................................................................................................    3
+        4.      Safety Software Requirements Management. ........................................................                                    3
+        5.      Safety Software Development Planning and Authorization. .................................                                            4
+        6.      Safety Software Deficiency Review Board (SSDRB) Responsibilities. ................                                                   5
+        7.      Safety Software User Evaluation. ..........................................................................                          5
+        8.      Safety Software Validation Board (SSVB). ...........................................................                                 6
+        9.      Safety Software Version Control. ..........................................................................                          8
+        10.     ERIS ICD Coordination and Approval. .................................................................                                8
+        11.     Operations Security (OPSEC). ...............................................................................                         8
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                                      10
+
+Attachment 2—SAFETY SOFTWARE REQUIREMENT MEMORANDUM                                                                                                 13
+
+Attachment 3—VERIFICATION CORRELATION REQUIREMENTS MATRIX                                                                                           14
+
+Attachment 4—SAFETY SOFTWARE PROJECT AUTHORIZATION MEMORANDUM                                                                                       15
+
+Attachment 5—SAFETY SOFTWARE USER EVALUATION PLAN TEMPLATE                                                                                          16
+
+Attachment 6—SAFETY SOFTWARE USER EVALUATION REPORT TEMPLATE                                                                                        17
+
+Attachment 7—SAFETY SOFTWARE VALIDATION MEMORANDUM                                                                                                  18
+
+Attachment 8—SAFETY SOFTWARE/ERIS ICD APPROVAL                                                                                                      19
+
+
+1. Objective.
+     1.1. This instruction provides management guidelines for 45 SW/SEL LSS developed and
+     used to perform safety hazards analysis or risk management computation in support of ER
+     missions. It addresses:
+        1.1.1. Requirements definitions and requirements change control.
+        1.1.2. Software development project planning and authorization.
+        1.1.3. Deficiency reporting and prioritization.
+        1.1.4. User evaluation of new or modified LSS.
+        1.1.5. Validation of new of modified LSS.
+        1.1.6. Operational Acceptance Board (OAB) acceptance of the data format generated by
+        LSS for use as input to the Eastern Range Instrumentation System (ERIS).
+45SWI91-701 5 NOVEMBER 2014                                                                    3
+
+
+       1.1.7. Coordination and approval of associated ERIS interface control documentation.
+2. Applicability.
+   2.1. This instruction applies to the management of LSS developed by 45 SW/SEL that
+   performs non-real time flight safety hazards analysis or risk management computations in
+   support of ER missions. It establishes essential activities for validating this software as
+   suitable for ER mission support and, when required, operationally accepting its data products
+   for use as input to an ERIS component. All legacy software versions fielded prior to 22 Aug
+   08 (the initial effective date of this instruction) do not have to be compliant with this
+   instruction’s provisions. All new software, and upgrades or modifications to legacy LSS,
+   shall be compliant with this instruction’s provisions. Compliance with AFMAN 33-153,
+   Information Technology (IT) Asset Management (ITAM), is mandatory.
+3. Organizational Responsibilities for the Eastern Range LSS Management Process.
+   3.1. The 45th Space Wing Chief Safety Engineer (45 SW/SED):
+       3.1.1. Chairs, and is the approval authority for, the Safety Software Validation Board
+       (SSVB).
+       3.1.2. Approves Safety Software Validation Memoranda (SSVM) and LSS requirements
+       documentation.
+   3.2. The 45 OG:
+       3.2.1. Coordinates on Project Management Plans (PMP) for LSS projects that generate
+       data products used as input to a 45 RMS-managed ERIS component.
+       3.2.2. Coordinates on Interface Control Document (ICD) changes associated with data
+       products used as input to a 45 RMS-managed ERIS component.
+       3.2.3. Works with 45 SW/SE to prepare an Operational Acceptance Memorandum
+       package for LSS that produces input data to a 45 RMS-managed ERIS component.
+       3.2.4. Optional advisor to the SSVB for LSS products that produce input data to a 45
+       RMS-managed ERIS component.
+   3.3. Space and Missile Systems Center Launch Range Patrick (SMC/OL-U).
+       3.3.1. Coordinates on PMPs for LSS projects that generate data products used as input to
+       a 45 RMS-managed ERIS component.
+4. Safety Software Requirements Management.
+   4.1. Requirements Definition for New Safety Software Projects. 45th Space Wing Launch
+   Safety Office Flight Analysis (45 SW/SELF) or 45th Space Wing Launch Safety Office Risk
+   Analysis (45 SW/SELR) will draft initial requirements for the proposed LSS. Requirements
+   may include data input, graphical user interface, processing functionality, output content and
+   output format. The 45 SW/SEL analysts will review and comment on the draft requirements.
+   45 SW/SEL will review the comments and incorporate applicable comments. 45 SW/SELF
+   or 45 SW/SELR will present the updated requirements lists to the SSVB for approval. If
+   acceptable, the SSVB will approve the requirements by signing the requirements document
+   that captures the information required in paragraph 4.2. Attachment 2 provides a template
+   for a SSRM.
+ 4                                                         45SWI91-701 5 NOVEMBER 2014
+
+
+     4.2. Requirement Change Process.
+        4.2.1. Requirement Change Request. Anyone associated with the use or development of
+        LSS can request a requirement change by drafting a requirement document and providing
+        this to the respective 45 SW/SEL 4-letter section chief. The request can be for a new
+        requirement, a modification of an existing requirement or a request to delete an existing
+        requirement.
+        4.2.2. Requirement Change Assessment. Each 45 SW/SEL 4-letter section chief will
+        assess the technical and programmatic aspects of implementing a requested requirement
+        change associated with LSS within their section and provide this information to 45
+        SW/SEL. The assessment must include an estimate of cost, schedule impacts and
+        impacts to existing requirements and LSS.
+        4.2.3. Requirement Change Approval. After assessment, the 45 SW/SEL 4-letter section
+        chief will present to the SSVB a recommendation regarding their requested requirement
+        change. If the SSVB approves the requirement, the SSVB chair will sign the requirement
+        document.
+        4.2.4. Requirement Implementation. The Safety Software Project Lead (SSPL) will be
+        responsible for maintaining the Verification Correlation Requirements Matrix (VCRM)
+        to reflect requirement changes in approved requirement documents. Attachment 3
+        provides a template for a VCRM. The SSPL will also enter a Deficiency Report (DR)
+        associated with the approved requirement change in a DR database. The SSPL must have
+        the deficiency resolved by a software modification or by developing a suitable
+        workaround.
+5. Safety Software Development Planning and Authorization.
+     5.1. Project Management Plan. If funding and manpower are available for a new 45 SW/SE
+     software project outside of an existing contract, or the new 45 SW/SE software project will
+     affect an external ICD, 45 SW/SED will initiate a software development project to meet
+     validated LSS requirements. 45 SW/SED will task 45 SW/SEL to draft a PMP. At a
+     minimum the PMP will address:
+        5.1.1. Scope of work.
+        5.1.2. Software functionality.
+        5.1.3. Software products.
+        5.1.4. Software development process.
+        5.1.5. Software interfaces.
+        5.1.6. Software version control.
+        5.1.7. Test.
+        5.1.8. Verification and validation.
+        5.1.9. Administration and maintenance.
+        5.1.10. Documentation and training.
+        5.1.11. Hardware requirements.
+45SWI91-701 5 NOVEMBER 2014                                                                  5
+
+
+      5.1.12. System Security.
+      5.1.13. Schedule.
+      5.1.14. The PMP will require 45 OG and SMC/OL-U coordination if the new or
+      modified software produces data that will be used as input to an ERIS component
+      managed by 45 RMS. 45 SW/SED will approve the PMP after it receives appropriate
+      coordination.
+   5.2. Project Authorization. 45 SW/SEL will present an executive summary of the PMP to
+   the SSVB and submit a Safety Software Project Authorization Memorandum requesting
+   authorization to initiate a software development/verification project. Attachment 4 provides
+   a template for a project authorization memorandum. If warranted, the SSVB chair will sign
+   the memorandum to authorize the software development project and 45 SW/SEL to start a
+   dialog with the contracting office to determine required contract actions.
+   5.3. Project Execution. In accordance with the approved PMP, LSS development projects
+   will be executed.
+6. Safety Software Deficiency Review Board (SSDRB) Responsibilities.
+   6.1. The SSDRB is responsible for prioritizing and tracking corrective action status of DRs
+   for new LSS under development or existing LSS being modified under sustainment.
+   Recommended SSDRB membership:
+      6.1.1. The responsible 45 SW/SEL 4-letter section chief or delegate (chair).
+      6.1.2. Safety Software Project Lead if DRs are associated with a LSS development
+      project.
+      6.1.3. Additional representatives from the responsible 45 SW/SEL 4-letter section.
+      6.1.4. A secretariat appointed by 45 SW/SEL.
+      6.1.5. The 45 SW/SE Information Assurance Manager or delegate.
+      6.1.6. DR author(s) or delegate(s).
+   6.2. The SSDRB chair will evaluate all DRs and assign them initial priority categories. The
+   board will then convene to establish and maintain a DR priority list for DR resolution. The
+   SSDRB chair will have responsibility for maintaining the DR database and will call another
+   board to convene when he/she feels reprioritization is required. The 45 SW/SEL analyst will
+   have the responsibility for updating a DR database which includes changing the DR status
+   from “New” to a DRB verified status such as “Assigned”.
+7. Safety Software User Evaluation.
+   7.1. User Evaluation Objectives. The overall evaluation objective is to obtain enough
+   information for the Safety Software User Evaluation Team (SSUET) to make a technically
+   sound Unit Under Test (UUT) validation recommendation to the SSVB based on the UUT’s
+   ability to meet user requirements.
+   7.2. User Evaluation Execution. Testing will demonstrate how the UUT is properly used
+   and determine if user requirements are either met or not met. At a minimum, the user
+   evaluation shall be performed in accordance with a Safety Software User Evaluation Plan
+ 6                                                           45SWI91-701 5 NOVEMBER 2014
+
+
+     (SSUEP) which must include a VCRM. For each requirement, the VCRM will list test
+     methods, associated test steps that are in the SSUEP, test pass/fail criteria and pass/fail
+     results. Attachment 3 provides a template for a VCRM and Attachment 5 provides a
+     template for the SSUEP. DRs must be generated and entered into a DR database for
+     unfulfilled requirements. User evaluation results will be documented in a Safety Software
+     User Evaluation Report (SSUER). If the new LSS is to replace existing software, the user
+     evaluation should include comparisons between the new and legacy results with differences
+     explained in the SSUER. Attachment 6 provides a template for a SSUER.
+     7.3. Safety Software User Evaluation Team (SSUET).
+        7.3.1. SSUET Composition. For a task that will develop/modify LSS, the SSUET should
+        be formed after the SSVB approves the requirements documentation. SSUET members
+        will be composed of 45 SW/SEL personnel and, if needed, Safety support personnel who
+        are not part of the development team. The responsible 45 SW/SEL 4-letter section chief
+        will approve the team lead and supporting members.
+        7.3.2. SSUET lead responsibilities:
+            7.3.2.1. Draft the SSUEP.
+            7.3.2.2. Execute testing in accordance with the SSUEP.
+            7.3.2.3. Draft the SSUER which will include a UUT validation recommendation and
+            any use constraints.
+            7.3.2.4. Brief the user evaluation results to the SSVB.
+            7.3.2.5. Brief the Independent Verification and Validation (IV&V) results, if
+            accomplished, to the SSVB.
+        7.3.3. SSUET member responsibilities. The SSUET will ensure the UUT can perform
+        the full range of functionality to ingest data and produce desired outputs needed for ER
+        mission support. SSUET members have the following responsibilities:
+            7.3.3.1. Support requirement definitions.
+            7.3.3.2. Participate in technical interchange meetings.
+            7.3.3.3. Provide user feedback to the developer in support of the test-analyze-fix
+            development process.
+            7.3.3.4. Assist the SSUET lead in drafting the SSUEP and SSUER.
+            7.3.3.5. If an IV&V is pursued, provide the following to the IV&V contractor:
+               7.3.3.5.1. Approval of the IV&V test plan as developed by the IV&V contractor.
+               7.3.3.5.2. All code relevant to the IV&V (source/executable).
+               7.3.3.5.3. All documentation and test cases relevant to the IV&V.
+8. Safety Software Validation Board (SSVB).
+     8.1. SSVB Responsibilities. The SSVB approves software requirements, authorizes
+     software development or modification and validates new or updated LSS that is used to
+     support ER missions. The SSVB also coordinates on updates to ICDs that define an interface
+45SWI91-701 5 NOVEMBER 2014                                                                   7
+
+
+  between LSS data products and an ERIS component that is managed by 45 RMS. Such ICDs
+  require 45 SW/SED and 45 OG coordination and SMC/OL-U approval.
+  8.2. SSVB Members. 45 SW/SED will chair the SSVB. Other required SSVB members
+  include the responsible 45 SW/SEL 4-letter section chief, at least one 45 SW/SEL technical
+  lead appointed by the responsible 4-letter section chief, a secretariat appointed by 45
+  SW/SEL, and the 45 SW/SE Information Assurance Manager (IAM) or delegate. The IAM
+  position is required per Defense Information Assurance Certification and Accreditation
+  Process (control # DCCB-2). For LSS that produces input data for an ERIS component
+  managed by 45 RMS, the secretariat will invite 45 RMS and SMC/OL-U to provide an
+  advisor from their respective offices. Their attendance will be optional.
+  8.3. Requirements Change Control. In accordance with Section 4.0, the SSVB will approve
+  the addition, deletion or modification of requirements.
+  8.4. Software Development Project Authorization.       In accordance with Section 5.0, the
+  SSVB will authorize software development projects.
+  8.5. Software Validation.
+     8.5.1. IV&V. If the LSS is currently in use, then an IV&V is not required unless 45
+     SW/SEL determines that an update changes critical aspects of the software. If an IV&V
+     is required, then the LSS may not be used as the sole basis for the independent
+     assessment and the software may not be used for an operational assessment until the
+     evaluation is complete and is accepted by the SSVB.
+     8.5.2. SSVB Scheduling. Prior to scheduling an SSVB, the responsible 45 SW/SEL 4-
+     letter section chief will coordinate with the secretariat to ensure all documents listed
+     below have been generated and are available for SSVB member coordination at least 5
+     working days prior to convening the board. Once the secretariat has confirmed all of the
+     required documentation is available, the board will convene as scheduled by the
+     secretariat. Prerequisites for the board to convene are:
+         8.5.2.1. User requirements documented on an approved requirements document have
+         been approved by the SSVB.
+         8.5.2.2. VCRM approved by the SSUET lead certifying all SSRM requirements have
+         been tested and pass/fail determinations have been made.
+         8.5.2.3. Pass/fail determinations have been made for all requirements in the VCRM.
+         8.5.2.4. SSUEP approved by applicable 45 SW/SEL 4-letter section chief certifying
+         that SSUET review is complete and all comments have been addressed.
+         8.5.2.5. SSUER approved by 4-letter section chief.
+            8.5.2.5.1. User evaluation conducted IAW SSUEP/VCRM.
+            8.5.2.5.2. All category 1 DRs have been resolved.
+         8.5.2.6. Draft SSVM that includes:
+            8.5.2.6.1. Any acceptance use constraints.
+ 8                                                            45SWI91-701 5 NOVEMBER 2014
+
+
+                8.5.2.6.2. Acceptance recommendations that are consistent with those in the
+                SSUER.
+                8.5.2.6.3. If accomplished, IV&V summary/results.
+        8.5.3. SSVB Execution. The SSUET lead will brief the board on the evaluation criteria
+        and present evidence that the UUT has passed these criteria favorably. The SSVB will
+        evaluate the UUT’s demonstrated performance and decide if user requirements have been
+        met, if documentation is complete and adequate, and if version control is present and
+        effective. If these criteria are met, the SSVB chair will sign the SSVM. Attachment 7
+        provides a template for an SSVM. The SSVM authorizes 45 SW/SEL to use the
+        validated software for ER mission support. It also authorizes the secretariat and 45 RMS
+        to prepare an Operational Acceptance Memorandum package if the LSS data product
+        interfaces with an ERIS component that is managed by 45 RMS. Operational acceptance
+        of such software will be done in accordance with 45 SWI 10-602, 45th Space Wing
+        Eastern Range Acceptance Process. If the board decides that requirements have not been
+        adequately met, the Secretariat will document the board findings and the SSVB will task
+        the responsible 45 SW/SEL 4-letter section chief to perform corrective action(s).
+9. Safety Software Version Control.
+     9.1. 45 SW/SEL-developed software tools and models can only be used to support an ER
+     mission if the SSVB validated them and, if required, have been operationally accepted by 45
+     RMS in accordance with 45 SWI 10-602. A signed SSVM authorizes 45 SW/SEL to have
+     the validated software placed under a version control process. The version control process
+     ensures that 45 SW/SEL analysts will use the latest approved software version.
+10. ERIS ICD Coordination and Approval.
+     10.1. New or modified LSS, which will cause an interface change with a 45 RMS-managed
+     ERIS component, will require an ICD update. If the 45 RMS-managed ERIS component is
+     an operational system, LSS data products will be designed to retain the same format and
+     content as that of the current legacy program system-generated data. Such ICD updates
+     require 45 SW/SED and 45 OG coordination prior to SMC/OL-U approval. ICD
+     coordination and approval is depicted in Attachment 8. A web-based tool, such as the
+     SMC/OL-U maintained Visual RV, will be used to manage the timeline and process for ICD
+     update activities.
+11. Operations Security (OPSEC).
+     11.1. All operational processes and software used in support of the 45th Space Wing and
+     Eastern Range operations are critical to mission success. Operations Security processes and
+     policies provide a methodology to mitigate, through the use of traditional security disciplines,
+45SWI91-701 5 NOVEMBER 2014                                                                     9
+
+
+
+  potential compromise or loss of mission due to an adversary’s actions. These actions could
+  result in damage to national assets, corruption of operational software, loss of mission, and in
+  the extreme case, loss of life. These outcomes are dependent on the threat and subsequent
+  risk. LSS management will comply with AFI 10-701, Operations Security, and local OPSEC
+  procedures to mitigate operational risks.
+
+
+
+
+                                            NINA M. ARMAGNO, Brigadier General, USAF
+                                            Commander
+ 10                                                    45SWI91-701 5 NOVEMBER 2014
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 33-363, Management of Records, 1 Mar 08
+AFSPCI91-701, Launch Safety Program Policy, 1 Jun 05
+45 SWI 10-602, 45th Space Wing Eastern Range Acceptance Process, 25 Jan 08
+Technical Order 00-35D-54, USAF Deficiency Reporting and Investigation System, 1 Nov 11
+AFI 10-701, Operations Security, 8 Jun 11
+AFMAN 33-153, Information Technology (IT) Asset Management (ITAM), 19 Mar 14
+
+Abbreviations and Acronyms
+45 OG—45th Operations Group
+45 RMS—45th Range Management Squadron
+45 SW/SE—45th Space Wing Safety Office
+45 SW/SED—45th Space Wing Chief Safety Engineer
+45 SW/SEL—45th Space Wing Launch Safety Office
+45 SW/SELF—45th Space Wing Launch Safety Office Flight Analysis
+45 SW/SELR—45th Space Wing Launch Safety Office Risk Analysis
+DR—Deficiency Report
+ER—Eastern Range
+ERIS—Eastern Range Instrumentation System
+ICD—Interface Control Document
+IRR/CCB—Installation Readiness Review/Configuration Control Board
+IV&V—Independent Verification and Validation
+LSS—Launch Safety Software
+OAB—Operational Acceptance Board
+PMP—Project Management Plan
+SMC/OL—U - Space and Missile Systems Center Launch Range Patrick
+SSDRB—Safety Software Deficiency Review Board
+SSRM—Safety Software Requirement Memorandum
+SSUEP—Safety Software User Evaluation Plan
+SSUER—Safety Software User Evaluation Report
+SSUET—Safety Software User Evaluation Team
+45SWI91-701 5 NOVEMBER 2014                                                                  11
+
+
+SSPL—Safety Software Project Lead
+SSVB—Safety Software Validation Board
+SSVM—Safety Software Validation Memorandum
+UUT—Unit Under Test
+VCRM—Verification Correlation Requirements Matrix
+
+Terms
+45 SW Operational Acceptance Board (OAB)— A board chaired by 45 RMS that accepts
+components and external data sources for the ERIS.
+Authority to Operate (ATO)— An ATO is a formal declaration by a Designated Approving
+Authority that authorizes operation of an automated information system and explicitly accepts
+the risk to agency operations. The ATO is signed after a Certification Agent certifies that the
+system has met and passed all requirements to become operational.
+Deficiency— A deficiency is a shortcoming of LSS or hardware which precludes it from
+meeting an approved requirement.
+Deficiency Report (DR)— DRs document LSS deficiencies. DRs will be generated and tracked
+using a database that has been approved by 45 SW/SED.
+DR Categories— A management tool used to categorize DRs with respect to mission support
+impacts. The LSS DR categories will be compliant with Technical Order 00-35D-54, USAF
+Deficiency Reporting and Investigation System.
+Flight Safety Hazards Analysis— Analysis performed to protect the public and workforce from
+potential blast, debris and toxic hazards associated with rockets, unmanned aerial vehicles,
+balloons and laser operations.
+Launch Safety Software (LSS)— Within this instruction LSS will be used to denote software
+tools and models developed by 45 SW/SEL to perform Flight Safety Hazards Analysis and Risk
+Management computations.
+Risk Management— Risk management is a process of measuring or assessing risk and then
+developing strategies to mitigate the risk or reduce it to acceptable levels.
+Safety Software Deficiency Review Board (SSDRB)— A formal board chaired by the
+applicable 45 SW/SEL 4-letter section chief that categorizes the severity of LSS DRs and
+prioritizes corrective actions for them.
+Safety Software Project Lead (SSPL)— The government employee in 45 SW/SEL who is
+responsible for a LSS development project.
+Safety Software Requirement Memorandum (SSRM)— A 45 SW/SED approved
+memorandum; the SSRM documents requirements for a proposed LSS tool or model.
+Requirements will address data input, graphical user interface, processing functionality, output
+content and output format.
+Safety Software User Evaluation Plan (SSUEP)— The SSUEP is approved by applicable
+ 12                                                      45SWI91-701 5 NOVEMBER 2014
+
+
+45 SW/SEL 4—letter section chief. The SSUEP will provide background information on why
+the UUT is needed, how it was developed, test objectives and a test schedule.
+Safety Software User Evaluation Report (SSUER)— A report that summarizes the test results
+of the SSUEP. The report should include a validation recommendation and include any use
+constraints.
+Safety Software User Evaluation Team (SSUET)— A team that performs user tests on LSS
+and, if warranted, recommends it be validated by the SSVB.
+Safety Software Validation Board (SSVB)— A formal board chaired by 45 SW/SED that
+approves LSS requirements, authorizes LSS development or modification, and validates that new
+or modified LSS can be used by 45 SW/SEL for ER mission support.
+Safety Software Validation Memorandum (SSVM)— A 45 SW/SED approved, formal report
+that provides UUT user evaluation results. It will include legacy comparisons if available, a
+deficiency report summary, use constraints and associated impacts on mission support,
+recommended system improvements and if warranted, a recommendation for the SSVB to
+validate the UUT.
+Unit Under Test (UUT)— New/modified LSS being evaluated by a SSUET.
+Verification Correlation Requirements Matrix (VCRM)— A matrix that correlates test
+method(s), test steps, pass/fail criteria and state of compliance for each requirement. A VCRM
+provides an easy way to ensure all user requirements are tested and documents requirement
+validation results. The SSUET lead approves the VCRM. A VCRM is a mandatory component
+for all LSS user evaluations.
+45SWI91-701 5 NOVEMBER 2014                                   13
+
+
+                                        Attachment 2
+                 SAFETY SOFTWARE REQUIREMENT MEMORANDUM
+
+Figure A2.1. SAFETY SOFTWARE REQUIREMENT MEMORANDUM
+SSVB Date:
+
+Safety Software Program:
+
+Proposed New Requirement, Change or Deletion:
+
+Impacts to ICD, Authority to Operate (ATO) or architecture:
+
+Justification:
+
+Impact if not Implemented:
+
+Requirement Number(s):
+
+Documents Effected:
+ICD ______, CSR Ops ______, 127-1 ______
+ORD ______, 91-710 ______, Other ______
+
+Prepared by:
+
+Approved by/Disapproved by (circle one):
+
+SSVB Chair:
+
+Coordinated with:
+
+Comments:
+
+Note: Tailored version allowed if approved by 45 SW/SED.
+ 14                                                      45SWI91-701 5 NOVEMBER 2014
+
+
+                                        Attachment 3
+             VERIFICATION CORRELATION REQUIREMENTS MATRIX
+
+A3.1. The VCRM is a multipurpose document. It will be the file of record for requirements
+definitions, test methods for requirement verifications, test procedures (steps) to test for
+requirement compliance (can be hyperlinked), pass/fail criteria for requirement compliance and
+successful requirement compliance. Note: This shows VCRM format. The actual form will be in
+landscape layout.
+
+Table A3.1. VCRM Format
+                                Test                                                 Pass
+Number     Requirement                          Test Steps      Pass/Fail Criteria
+                                Method(s)                                            Yes/No
+
+
+
+
+Requirement number will contain product, component and revision identifiers.
+
+Deleted requirements will be lined through.
+
+Test method will be:
+T—Test.
+D—Demonstration.
+A—Analysis.
+I—Inspection.
+
+Verified by SSUET lead:
+
+Note: Tailored version allowed if approved by 45 SW/SED.
+45SWI91-701 5 NOVEMBER 2014                                                 15
+
+
+                                        Attachment 4
+        SAFETY SOFTWARE PROJECT AUTHORIZATION MEMORANDUM
+
+Figure A4.1. SAFETY SOFTWARE PROJECT AUTHORIZATION MEMORANDUM
+SSVB Date:
+
+Software Development Project Description:
+
+Associated Requirement Number(s):
+
+New Software Produced or Software Modified:
+
+Funding Source:
+
+Contract Vehicle if Applicable:
+
+Required PMP Changes:
+
+Impacts to ICD, ATO, or architecture:
+
+Authorization to Proceed Granted by:
+
+45 SW/SED (Chair)
+
+Coordinated with:
+
+45 OG (required if data is generated for ERIS that is managed by 45 RMS):
+
+SMC/OL-U (required if an ERIS ICD is impacted or required):
+
+Note: Tailored version allowed if approved by 45 SW/SED.
+ 16                                                          45SWI91-701 5 NOVEMBER 2014
+
+
+                                           Attachment 5
+             SAFETY SOFTWARE USER EVALUATION PLAN TEMPLATE
+
+Figure A5.1. SAFETY SOFTWARE USER EVALUATION PLAN TEMPLATE
+Title Page - presents software model/sub-function tested, identifies document as the test plan,
+identifies the author and gives date of report.
+Section 1 - Introduction: describes functionality of the UUT and test objectives.
+
+Section 2 - Test Overview: describes test approach which should include test methods, input
+data and expected results for successful tests. This section also describes the content in the rest
+of the test plan/procedure.
+
+Section 3 - Assumptions: lists assumptions made in the collection of data, test setup and tester’s
+subject matter knowledge.
+
+Section 4 - Test Plan Outline:
+Describes how to setup/configure the UUT.
+Specifies input data.
+Lists or references test steps.
+Tells how output data and test logs will be collected/documented.
+Describes analysis of output.
+
+Signature Blocks:
+
+SSUET Member Coordination/Comments (required for each team member).
+45 SW/SEL 4-letter Section Chief Approval.
+45SWI91-701 5 NOVEMBER 2014                                                                     17
+
+
+                                          Attachment 6
+           SAFETY SOFTWARE USER EVALUATION REPORT TEMPLATE
+
+Figure A6.1. SAFETY SOFTWARE USER EVALUATION REPORT TEMPLATE
+Title Page: presents software model/sub-function tested, identifies document as a user
+evaluation report, identifies the author and gives date of report.
+Section 1 - Introduction: describes functionality of the UUT and test objectives.
+Section 2 - Evaluation Summary: provides overall test approach, gives a synopsis of open and
+closed deficiency reports, discusses UUT use constraints if any, and provides top-level summary
+of test results.
+Section 3 - Safety Software Validation Recommendation: provides the SSUET’s
+recommendation for SSVB validation of the UUT. If the team recommends partial validation,
+the use constraints and additional testing must be described. This section should contain the
+same wording as the validation recommendation in the respective SSVM.
+Section 4 - Test Conduct: State that the user evaluation was conducted in accordance with the
+user evaluation plan and embed the evaluation plan in this section. A template for the evaluation
+plan is provided in Attachment 5.
+Section 5 - Findings: State that the test results are captured in the evaluation plan and embed the
+evaluation plan in this section.
+Signature Blocks:
+
+45 OG Coordination (if required).
+SMC Coordination (if required).
+SSUET Member Coordination/Comments (required for each team member).
+45 SW/SEL 4-letter Section Chief Approval.
+ 18                                                    45SWI91-701 5 NOVEMBER 2014
+
+
+                                      Attachment 7
+                   SAFETY SOFTWARE VALIDATION MEMORANDUM
+
+Figure A7.1. SAFETY SOFTWARE VALIDATION MEMORANDUM
+SSVB Date:
+Unit Under Test:
+User Evaluation Report Summary:
+Use Constraint(s):
+Validation Recommendation:
+Prepared by:
+Approved by:
+45 SW/SED
+Coordinated with:
+Note: Tailored version allowed if approved by 45 SW/SED.
+45SWI91-701 5 NOVEMBER 2014                         19
+
+
+                              Attachment 8
+                SAFETY SOFTWARE/ERIS ICD APPROVAL
+
+Figure A8.1. SAFETY SOFTWARE/ERIS ICD APPROVAL

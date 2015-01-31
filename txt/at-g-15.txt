@@ -1,0 +1,3727 @@
+DEPARTMENT OF THE AIR FORCE                          AT-G-15
+AIR FORCE FLIGHT STANDARDS AGENCY
+1535 COMMAND DRIVE, SUITE D-306
+ANDREWS AFB, MD 20762-7002
+
+
+
+
+            AIR TRAFFIC CONTROL TRAINING SERIES
+
+
+
+
+                                    GENERAL
+
+              FLIGHT INFORMATION PROCESSING SYSTEM
+                    (FLIPS) OPERATOR'S MANUAL
+
+
+
+                              1 AUGUST 2000
+                                            FOREWORD
+
+
+PURPOSE. This publication is for use in the training of USAF air traffic controllers on the operation of
+the FLIPS system and is not intended to replace, substitute for, or supersede official regulations,
+procedures, or directives.
+
+
+
+
+                                                   JAMES MUNN JR, Lt Col, USAF
+                                                   Chief, Airfield Operations and Training Division
+
+
+
+
+                                           -- Prepared by --
+
+                                    The United States Air Force
+                  Headquarters Electronic Systems Center, Operating Location D/E
+                                    Air Traffic Systems Division
+
+
+
+
+___________________________
+Supersedes AT-G-15, 1 May 1997
+OPR: HQ AFFSA/XAOT
+Distribution: F
+                        CORRECTIONS TO “AT” TRAINING SERIES
+
+
+When you encounter an item that is not correct or needs clarification, write to us about it. Use this page
+and reference the series number, the page, and paragraph number. State briefly what is wrong and then
+write your correction or suggestion to correct or improve it. Detach this page from the booklet and return
+it to:
+
+            HQ ESC OL-D/E/TG/3S
+            3580 D AVE BLDG 201W
+            TINKER AFB OK 73145
+AT-G-15, 1 August 2000                                                                                                                         5
+
+
+                                                       TABLE OF CONTENTS
+
+
+1. TRADEMARK ACKNOWLEDGMENTS ................................................................................. 9
+
+2. INTRODUCTION .................................................................................................................... 10
+2.1.   Operational Program Description ................................................................................................10
+2.2.   System Warnings .......................................................................................................................10
+2.3.   System Capacity........................................................................................................................11
+2.4.   Power Failure Recovery.............................................................................................................12
+3. TERMS AND ABBREVIATIONS............................................................................................ 13
+
+4. FACILITY RESPONSIBILITIES.............................................................................................. 15
+4.1. FLIPS Program Disks ................................................................................................................15
+4.2. Implementation ..........................................................................................................................15
+   4.2.1. Program Changes and Corrections .......................................................................................15
+   4.2.2. Replacements .....................................................................................................................15
+4.3. Documents................................................................................................................................15
+4.4. Facility Management..................................................................................................................17
+5. EQUIPMENT DESCRIPTION ................................................................................................. 18
+5.1. Computer ...................................................................................................................................18
+5.2. Monitor .....................................................................................................................................18
+5.3. Printer.......................................................................................................................................18
+5.4. Interface Connection..................................................................................................................18
+6. NORMAL OPERATIONS........................................................................................................ 19
+6.1. Initialization ...............................................................................................................................19
+6.2. FLIPS/PIDP Interface...............................................................................................................20
+6.3. Duplicate ACID and Discrete Beacon Codes ..............................................................................22
+6.4. FDS Functionality ......................................................................................................................23
+   6.4.1. Description .........................................................................................................................23
+   6.4.2. Message Formats................................................................................................................24
+      6.4.2.1. Flight Plan (FP) Messages ............................................................................................24
+      6.4.2.2. Amendment (AM) Messages........................................................................................25
+      6.4.2.3. Remove Strip (RS) Messages .......................................................................................26
+      6.4.2.4. Strip Request (SR) Messages........................................................................................26
+      6.4.2.5. Request Transfer (RF) Messages..................................................................................26
+      6.4.2.6. Retransmit Database (RB) Messages............................................................................26
+6.5. Add Flight Plan..........................................................................................................................26
+   6.5.1. General Instructions for Departures, Arrivals, and Overflights................................................26
+      6.5.1.1. Aircraft ID (ACID)......................................................................................................28
+      6.5.1.2. Aircraft Type ...............................................................................................................28
+      6.5.1.3. Beacon Code ...............................................................................................................29
+      6.5.1.4. Time............................................................................................................................29
+6                                                                                                       AT-G-15, 1 August 2000
+
+      6.5.1.5. Airport/Fix ...................................................................................................................29
+      6.5.1.6. Altitude........................................................................................................................30
+      6.5.1.7. Route of Flight .............................................................................................................30
+      6.5.1.8. Remarks ......................................................................................................................30
+      6.5.1.9. Blocks 10 - 18..............................................................................................................31
+   6.5.2. Stereo Flight Plans ..............................................................................................................31
+      6.5.2.1. Single Leg Routes ........................................................................................................31
+   6.5.3. Training Flight Plans ............................................................................................................34
+      6.5.3.1. <A> Load File ..............................................................................................................35
+      6.5.3.2. <B> Scroll File .............................................................................................................36
+      6.5.3.3. <C> Save File ..............................................................................................................36
+      6.5.3.4. <D> Delete Options .....................................................................................................37
+      6.5.3.5. <E> Create File ............................................................................................................37
+      6.5.3.6. <F> Append Current File ..............................................................................................37
+      6.5.3.7. <G> Print Options ........................................................................................................37
+      6.5.3.8. <H> Transmit ..............................................................................................................37
+6.6. Airport Data ..............................................................................................................................39
+   6.6.1. General Information ............................................................................................................39
+   6.6.2. <A> Load File ....................................................................................................................39
+   6.6.3. <B> Edit File ......................................................................................................................40
+      6.6.3.1. <A> Edit Airport ..........................................................................................................40
+      6.6.3.2. <B> Edit Fix ................................................................................................................41
+   6.6.4. <C> Save File .....................................................................................................................41
+   6.6.5. <D> Delete Options ............................................................................................................42
+   6.6.6. <E> Add Airports ...............................................................................................................42
+   6.6.7. <F> Add Fix .......................................................................................................................42
+   6.6.8. <G> Build Report................................................................................................................42
+   6.6.9. <H> Print Options ...............................................................................................................44
+6.7. Management .............................................................................................................................44
+   6.7.1. <A> Enter or Change Password ..........................................................................................45
+   6.7.2. <B> Change Locked Options ...............................................................................................45
+   6.7.3. <C> Change Configuration Options ......................................................................................46
+   6.7.4. <D> Print Log File ..............................................................................................................46
+   6.7.5. <E> Reset Log File .............................................................................................................46
+6.8. Position Time.............................................................................................................................47
+   6.8.1. <A> Load File ....................................................................................................................49
+   6.8.2. <B> Enter Position Time .....................................................................................................49
+   6.8.3. <C> Edit Options ................................................................................................................50
+      6.8.3.1. Edit RFC Position.........................................................................................................50
+      6.8.3.2. Edit Position (Other Than RFC) ....................................................................................51
+   6.8.4. <D> Save File .....................................................................................................................52
+   6.8.5. <E> Delete Options.............................................................................................................53
+   6.8.6. <F> Add Controller .............................................................................................................53
+   6.8.7. <G> Build Report................................................................................................................53
+   6.8.8. <H> Print Options ...............................................................................................................53
+   6.8.9. <I> Reset Options ..............................................................................................................54
+6.9. Amend Flight Plan .....................................................................................................................54
+AT-G-15, 1 August 2000                                                                                                                          7
+
+6.10. Print Flight Plan .......................................................................................................................56
+   6.10.1. Manual Print Request ........................................................................................................56
+   6.10.2. Automatic Strip Printing.....................................................................................................58
+6.11. Delete Flight Plan.....................................................................................................................58
+   6.11.1. Manual Flight Plan Delete ..................................................................................................58
+   6.11.2. Automatic Flight Plan Delete..............................................................................................60
+6.12. Scroll.......................................................................................................................................60
+6.13. Form Feed...............................................................................................................................62
+6.14. Configuration ...........................................................................................................................62
+   6.14.1. <A> Beacon Code Assignments.........................................................................................62
+   6.14.2. <B> Stereo Flight Plan Routes ...........................................................................................63
+      6.14.2.1. Add Stereo <A>, <B>, <C> ........................................................................................64
+      6.14.2.2. <D> Delete Stereo .....................................................................................................65
+      6.14.2.3. <E> Edit Stereo..........................................................................................................65
+      6.14.2.4. <F> Rearrange List ....................................................................................................66
+   6.14.3. <C> System Time/Date .....................................................................................................67
+   6.14.4. <D> Flight Plan Delete Time..............................................................................................68
+   6.14.5. <E> Flight Plan Output Time ..............................................................................................68
+   6.14.6. <F> Save Database...........................................................................................................68
+   6.14.7. <G> Load Database ..........................................................................................................69
+   6.14.8. <H> Printer Configuration..................................................................................................70
+   6.14.9. <I> Delete Files From Disk...............................................................................................71
+7. SPECIAL OPERATIONS......................................................................................................... 72
+7.1. Editing Commands .....................................................................................................................72
+7.2. Critical Data Recording..............................................................................................................73
+7.3. Printer Set-Up...........................................................................................................................73
+   7.3.1. DIP Switch Settings ............................................................................................................73
+   7.3.2. Operating Panel..................................................................................................................74
+   7.3.3. Ribbons ..............................................................................................................................74
+   7.3.4. Loading Fan Fold Paper.......................................................................................................74
+8. SYSTEM MESSAGES.............................................................................................................. 74
+8.1.   Content .....................................................................................................................................74
+8.2.   Error Messages and Explanations ...............................................................................................75
+8.3.   Status Messages and Explanations ..............................................................................................87
+8.4.   Printed status messages and explanations ....................................................................................90
+8.5.   Screen Windows........................................................................................................................92
+9. INSTALLATION...................................................................................................................... 93
+9.1.   Initial Equipment Configuration for FLIPS ...................................................................................93
+9.2.   Initial Installation........................................................................................................................93
+9.3.   Re-Installation ...........................................................................................................................94
+9.4.   Testing FLIPS...........................................................................................................................94
+8                                                                                                                             AT-G-15, 1 August 2000
+
+
+                                                                    TABLE OF FIGURES
+
+FIGURE 6-1: FLIPS MAIN MENU............................................................................................................................................... 20
+FIGURE 6-2: SYSTEM MESSAGES ............................................................................................................................................ 22
+FIGURE 6-3: FDS FUNCTIONALITY......................................................................................................................................... 24
+FIGURE 6-4: ADD DEPARTURE MENU ................................................................................................................................... 27
+FIGURE 6-5: CREATE STRIP(S) MENU..................................................................................................................................... 32
+FIGURE 6-6: ADDITIONAL STRIP(S) MENU .......................................................................................................................... 34
+FIGURE 6-7: TRAINING MAIN MENU ..................................................................................................................................... 35
+FIGURE 6-8: AIRPORT DATA - EDIT AIRPORT .................................................................................................................... 40
+FIGURE 6-9: AIRPORT DATA - EDIT FIX................................................................................................................................ 41
+FIGURE 6-10: MANAGEMENT MAIN MENU......................................................................................................................... 45
+FIGURE 6-11: MANAGEMENT - CHANGE LOCKED OPTIONS .......................................................................................... 46
+FIGURE 6-12: POSITION TIME MENUS ................................................................................................................................... 47
+FIGURE 6-13: EDIT POSITION TIME LOG................................................................................................................................ 50
+FIGURE 6-14: EDIT RFC POSITION ........................................................................................................................................... 51
+FIGURE 6-15: EDIT POSITION.................................................................................................................................................... 52
+FIGURE 6-16: AMEND ADDITIONAL STRIPS........................................................................................................................ 55
+FIGURE 6-17: DELETE MENU..................................................................................................................................................... 59
+FIGURE 6-18: SCROLL MENU..................................................................................................................................................... 61
+FIGURE 6-19: STEREO ROUTE NAME MENU ........................................................................................................................ 64
+FIGURE 6-20: EDIT STEREO FP MENU..................................................................................................................................... 65
+FIGURE 6-21: STEREO REARRANGE MENU........................................................................................................................... 67
+FIGURE 6-22: SAVE DISK MENU............................................................................................................................................... 69
+FIGURE 6-23: PRINTER CONFIGURATION MENU................................................................................................................ 71
+AT-G-15, 1 August 2000                                                               9
+
+
+
+1. TRADEMARK ACKNOWLEDGMENTS
+
+      The following Trademarks are referenced within this document:
+
+      ALPS is a registered Trademark of ALPS Electric Co., Ltd.
+
+      Epson is a registered Trademark of Seiko Epson Corp.
+
+      Microsoft and MS-DOS are registered trademarks of the Microsoft Corporation.
+10                                                                          AT-G-15, 1 August 2000
+
+
+
+2. INTRODUCTION
+
+       The purpose of this publication is to provide air traffic controllers with the knowledge necessary
+to operate the Flight Information Processing System (FLIPS) in accordance with AFI 13-203,
+paragraph 2.27. This is the authoritative source for operation of this system and is directive in nature.
+The National Air Traffic Training Program manual “Flight Data Input and Output” (FDIO) published by
+the Federal Aviation Administration (FAA) Academy provides an excellent reference for message
+composition not covered by this document.
+
+         FLIPS uses a 486 personal computer, a color monitor, and a dot matrix printer to perform flight
+plan entry, editing, strip printing, and mass flight plan storage functions. FLIPS performs functions
+similar to FDIO for USAF air traffic control facilities, for example: adding full flight plans and strip
+printing capabilities.
+
+          FLIPS is not an Instrument Flight Rules (IFR) clearance issuing system like the National
+Airspace System (NAS) or Japanese Air Traffic Control Center (Japanese ACC) flight data systems
+are. FLIPS may only be used to record IFR clearances that have been obtained by other means from
+the appropriate IFR clearance issuing facility. The requirements for obtaining and coordinating flight
+data entered into FLIPS are the same as for non-automated flight plans. Use of FLIPS for initial entry
+of local IFR/VFR flight data (data not required to be obtained from or coordinated with any other
+facilities) must be described in a facility directive.
+
+      Although the system contains on-screen assistance and prompts, the operator must be familiar
+with the standard format of all types of flight progress strips as specified in FAAO 7110.65. FLIPS
+does not support the FDIO-style weather symbols.
+
+        FLIPS will be interfaced with the Programmable Indicator Data Processor (PIDP) computer for
+transmitting flight plans and airport data between the two systems.
+
+
+2.1. Operational Program Description
+
+       FLIPS operational software is an application program and, as such, runs under control of the
+Microsoft Disk Operating System (MS-DOS). MS-DOS uses special keyboard entries that perform
+specific functions, such as returning control to MS-DOS. The next section, System Warnings, contains
+information on some special MS-DOS keyboard entries that should not be used.
+
+
+2.2. System Warnings
+
+      The following key codes produce special MS-DOS commands and should NOT be pressed
+simultaneously. If these keys are depressed simultaneously, the operational program will terminate. If
+AT-G-15, 1 August 2000                                                                              11
+
+
+this happens, the system must be reinitialized. Once again, DO NOT simultaneously press the following
+key combinations:
+
+<Ctrl> <C>                <Ctrl> <Break>             <Ctrl> <2>                <Ctrl> <Alt> <Del>
+<Ctrl> <Alt> <Ins>        <Ctrl> <Alt> <F>           <Ctrl> <PrtSc>
+
+Additionally, the following keys have special meanings:
+<Shift><PrtSc> will cause whatever is displayed on the monitor to print on the printer. If this special
+                      MS-DOS command is entered from the keyboard, the printer form alignment will
+                      probably need to be readjusted.
+<Alt>                 should never be depressed.
+<Ctrl>                should only be depressed in conjunction with another key when this option is
+                      available from a specific function.
+<NumLock>             alternates the function of the numeric keypad between numeric entry and cursor
+                      control. This can change the function of the <Left> and <Right> arrow keys, the
+                      <Up> and <Down> arrow keys, and the <Home> and <End> keys, and the
+                      <Ins> and <Del> keys.
+
+
+2.3. System Capacity
+
+       FLIPS will store a maximum of 500 flight plans. If the flight plan database is full (500 flight
+plans), the flight plan count will be displayed in red (FP = 500). Function key <F1> <A>, <B>, <C>,
+and <D> are not available when the flight plan database is full.
+
+       FLIPS will store a maximum of 100 training strips. If the training database is full (100 training
+strips), the message "<<== THE TRAINING DATABASE IS FULL - HIT ANY KEY TO
+CONTINUE ==>>" will be displayed. No more training strips can be entered.
+
+     If the training database is empty, only the menu items <A> and <E> are available in the Training
+Menu. Selecting any other options from the menu will display the message "<<== THIS OPTION IS
+NOT AVAILABLE - HIT ANY KEY TO CONTINUE ==>>".
+
+      The position time option will allow a maximum of 99 controllers to be entered. Each controller
+can have up to 25 positions to receive time in.
+
+     If the position time database is full (99 controllers), the message "<<== THIS DATABASE IS
+FULL - HIT ANY KEY TO CONTINUE ==>>" will be displayed in the middle of the monitor. No
+more controllers can be entered.
+
+      If the position time database is empty, only the menu items <A>, <F>, and <H> are available on
+the Position Time Menu. Selecting any other options from the menu will display the message "<<==
+THIS OPTION IS NOT AVAILABLE - HIT ANY KEY TO CONTINUE ==>>".
+12                                                                           AT-G-15, 1 August 2000
+
+
+
+      The airport data option will allow a maximum of 45 airports to be entered. Each airport can
+receive information on up to 10 runways.
+
+     If the airport database is full (45 airports), a message "<<== THIS DATABASE IS FULL -
+HIT ANY KEY TO CONTINUE ==>>" will be displayed. No more airports can be entered.
+
+      If the airport database is empty, only the menu items <A>, <E>, and <F> are available on the
+Airport Data Menu. Selecting any other options from the menu will display the message "<<== THIS
+OPTION IS NOT AVAILABLE - HIT ANY KEY TO CONTINUE ==>>".
+
+
+2.4. Power Failure Recovery
+
+      FLIPS is designed to reinitialize upon recovery from a power failure. At worst, data entered or
+received during the last 30 seconds prior to power failure could be lost. The operational program will
+automatically reload any critical data. The configuration data will also be reloaded once the system
+power is restored. Any flight plan(s) in the database that are within the flight plan output time will be
+printed if they were not already printed prior to power loss. Any flight plans that are outside the delete
+time parameter will be deleted. Currently signed-in Automatic Position Time entries will remain
+signed-in upon power restoration.
+AT-G-15, 1 August 2000                                                                         13
+
+
+
+3. TERMS AND ABBREVIATIONS
+
+ACID                   Aircraft identification or call sign
+
+<Alt>                  Alternate Key on keyboard
+
+<Backspace>            Backspace key on keyboard
+
+CID                    Computer Identification - A three digit number (001-500)
+                       assigned by the computer used to identify specific flight plans
+
+<Ctrl>                 Control key on the keyboard
+
+Database               Storage area for flight plans in the system
+
+<Del>                  Delete key on the keyboard
+
+<Down Arrow>           Down arrow key on the numeric key pad
+
+<End>                  End key on the numeric keypad
+
+<Enter>                Enter key on keyboard
+
+<Esc>                  Escape key on keyboard
+
+ESC OL-D/E             Electronic Systems Center, Operating Location D/E
+
+FDIO                          Flight Data Input and Output
+
+FAA                    Federal Aviation Administration
+
+FAAO 7110.65           Air Traffic Control Order
+
+Flight Plan Search The entry of an ACID, beacon code, or CID to locate a specific flight
+                   plan. Used in <F5> AMEND, <F6> PRINT, and <F7> DELETE modes
+
+Flight Strip           Area at the top of the monitor that resembles a flight progress strip
+Working Area
+
+FLIPS                  Flight Information Processing System
+14                                                                        AT-G-15, 1 August 2000
+
+
+<Home>                The Home key on the numeric keypad
+
+
+IFR                   Instrument Flight Rules
+
+<Insert>              Insert key on the numeric keypad
+
+Japanese ACC          Japanese Air Traffic Control Center
+
+JCID                  Japanese Computer Identification - A four digit number (0001-0199)
+                      used to identify specific Japanese flight plans. This number can not be
+                      used in a flight plan search.
+
+<Left Arrow>          Left arrow key on the numeric key pad
+
+Main Menu              Opening display with the operational program version number, the date,
+                the traffic workload table, and the 10 FLIPS function keys
+
+NAS                   National Airspace System
+
+Offset Time     The time difference between the first and second leg of a stereo
+                flight plan, same as time en route.
+
+PIDP                  Programmable Indicator Data Processor
+
+<Right Arrow>         Right arrow key on the numeric key pad
+
+<Up Arrow>            Up arrow key on the numeric key pad
+
+<Space> or <SP>       Space bar on the keyboard
+
+VFR                   Visual Flight Rules
+
+Window                 Area at the center of the monitor used to display information
+                pertaining to a specific mode.
+
+<key>                 Key or keys named within < > symbols.
+
+<Ctrl (x)>            Key sequence done by pressing the <Ctrl> key and another key
+                      simultaneously
+AT-G-15, 1 August 2000                                                                            15
+
+
+
+4. FACILITY RESPONSIBILITIES
+
+
+4.1. FLIPS Program Disks
+
+      Each FLIPS equipped facility will receive two identical 3.5” floppy diskettes containing the
+FLIPS operational program. The files from either of the diskettes must be copied onto the hard disk
+and then the program initialized (follow the instructions included with each release of the software).
+Remember the general rules for storing software:
+
+      Never touch the diskette's magnetic media.
+      Store between 50 and 125 degrees Fahrenheit
+      Never allow software near a magnetic source, including telephone ringers.
+
+
+4.2. Implementation
+
+     The documentation sent with each release of the operational program will contain instructions on
+how and when to implement the new release.
+
+4.2.1. Program Changes and Corrections
+
+      Any suggested changes or corrections should be forwarded to ESC OL-DE via letter, e-mail or
+telephone. The address and phone numbers are:
+
+       ESC OL-DE/GA
+       3580 D AVENUE
+       BUILDING 201WEST
+       TINKER AFB, OK 73145-9155
+
+       DSN : 884-7004
+       COMM : (405) 734-7004
+
+       E-Mail: atcals@tinker.af.mil
+
+4.2.2. Replacements
+
+    If at any time one of the operational diskettes appears to be unusable, request a replacement from
+ESC OL-DE.
+
+
+4.3. Documents
+16                                                                       AT-G-15, 1 August 2000
+
+
+       It is suggested that the Owner/User Manuals for the personal computer, the color monitor, and
+the printer be stored near FLIPS for operator use.
+AT-G-15, 1 August 2000                                                                              17
+
+
+4.4. Facility Management
+
+        As a suggestion to ensure facility standardization some items should be considered for control by
+facility management. The items to be controlled should be locked from the <F3> MANAGE option.
+
+The following items should be considered:
+
+      1. Stereo Templates
+
+            A. Naming conventions
+            B. Location in stereo list
+            C. Required Information
+
+      2. Beacon Code Blocks
+
+      3. Delete Time
+
+      4. Print Time
+
+      5. Airport Data
+
+      Items 1-4 are located in the <F10> CONFIG option and item 5 is located in the <F2>
+SAT_DATA option. If they are locked, they can only be accessed through the <F3> MANAGE
+option.
+18                                                                           AT-G-15, 1 August 2000
+
+
+
+5. EQUIPMENT DESCRIPTION
+
+
+5.1. Computer
+
+     A 486 personal computer, one 3-½ inch 1.44MB Floppy Drive, one hard drive, and the
+Microsoft Disk Operating System (MS-DOS version 3.2 or greater) are required.
+
+
+5.2. Monitor
+
+       A color monitor is required. The monitor will display a Flight Strip Working Area at the top of
+the screen that resembles a flight progress strip. The lower half of the screen contains prompts and
+assistance. The left side of the screen displays the system time and the right side displays the number of
+flight plans in the database. The bottom line of the screen displays abbreviated descriptions of what
+each available function key performs.
+
+
+5.3. Printer
+
+        An ALPS P2000G, or an Epson-compatible printer that can effectively print on flight progress
+strips, is required. It is strongly recommended that the printer have "push" style tractor feeds.
+
+
+5.4. Interface Connection
+
+       FLIPS will be connected to the PIDP processor with an RS-232 synchronous serial interface.
+FLIPS and PIDP will exchange Local and Japanese ACC formatted flight plan data messages as
+required to keep the PIDP flight plan database updated. FLIPS will not be interfaced with the NAS or
+the Japanese ACC. For Automated Position Time to function properly PIDP and FLIPS need to be
+interfaced.
+AT-G-15, 1 August 2000                                                                          19
+
+
+
+6. NORMAL OPERATIONS
+
+
+6.1. Initialization
+
+       The program is loaded from the hard disk after being copied from a floppy diskette. Specific
+system installation instructions are included in Chapter 9 - INSTALLATION. After the program is
+loaded, the monitor will display the FLIPS Main Menu. The menu contains the current time, the number
+of flight plans in storage, and the following function keys (see Figure 6-1, “FLIPS Main Menu”):
+
+       <F1> Add_FP                    1FLT_PLAN
+       <F2> Airport Data              2SAT_DATA
+       <F3> Management                3MANAGE
+       <F4> Position Time             4TIME
+       <F5> Amend_FP                  5AMEND
+       <F6> Print_FP                  6PRINT
+       <F7> Delete_FP                 7DELETE
+       <F8> Scroll                    8SCROLL
+       <F9> Form Feed                 9FMFEED
+       <F10> Configuration            10CONFIG
+20                                                                           AT-G-15, 1 August 2000
+
+
+
+
+ 12:08:51                         FLIPS VERSION 054 - 01 NOV 99                              FP = 000
+
+
+
+
+ 1FLT_PLAN 2 SAT_DATA 3 MANAGE 4TIME 5 AMEND 6 PRINT 7DELETE 8SCROLL 9FM FEED 10CONFIG
+
+
+                                   Figure 6-1: FLIPS Main Menu
+
+
+6.2. FLIPS/PIDP Interface
+
+       FLIPS and PIDP are connected by an interface designed to pass flight plans and related
+messages between the systems. All messages concerning the movement of aircraft in the local area and
+not serviced by the PIDP/NAS or PIDP/Japanese ACC interface will be handled by FLIPS. Certain
+functions in the FLIPS program will be changed whenever the interface is up.
+
+        When the interface is down, a flag will be displayed. A red box will appear below the flight plan
+counter with the letters PF (see Figure 6-2, Systems Messages”). This indicates that the interface is
+down and will only be deleted when a message comes in from PIDP. FLIPS will operate normally if
+this flag is displayed, with no restrictions
+
+       When the interface is up, flight plans will be sent to PIDP when the current time is within 15
+minutes of the flight plan activation time. PIDP will respond with an appropriate message to tell FLIPS
+of the flight plans status in the system. FLIPS ability to amend or cancel flight plans will be determined
+by the status assigned to the flight plan by PIDP. Also while the interface is up Position Time sign-ins
+and sign-outs can be sent from PIDP to FLIPS. Any restrictions to these functions will be discussed in
+the appropriate sections of this manual.
+AT-G-15, 1 August 2000                                                                                 21
+
+
+
+       When a flight plan is sent to PIDP over the interface, a return message is sent. Flight plans will be
+assigned a status based on this message. A status of (FL) indicates that the flight plan has not been sent
+to PIDP. Data Accept (DA) means the flight plan was sent to PIDP and it is in the system. Data
+Reject (DR) indicates that the flight plan was rejected by PIDP and it should be checked for duplicates
+or errors. A DR message may also be sent if the PIDP database is full. If a DR is received, the flight
+plan will not be retransmitted. Data Retransmit (DX) also shows that the flight plan was rejected by
+PIDP. However, FLIPS will attempt to send it over the interface once more. If it is not accepted the
+second time, it will not be sent again. A Departure Message (DM) is sent by PIDP when a flight plan in
+the system is activated and a tracked target is assigned to it.
+
+       All messages from PIDP contain the current PIDP system time. FLIPS will automatically update
+its system time to match the time in the message. If a wrong time is entered, the first test message that
+FLIPS receives will reset the FLIPS time to the incorrect time. This could cause flight plans that are not
+ready for transmission to PIDP to be dumped into the system. It can also cause FLIPS to delete flight
+plans in the database and move some to yesterday or tomorrow. Care should be taken when updating
+the PIDP system time.
+
+       Japanese flight plans will be assigned a computer identification number called the JCID. The
+JCID is located on the strip next to the CID. The JCID is on the strip for coordination purposes only.
+It can not be used for a flight plan search.
+
+ AIRCRAFT ID        BEACON
+        REV#
+ AIRCRAFT DATA
+
+ CID    JCID
+22                                                                               AT-G-15, 1 August 2000
+
+
+
+
+                            ==>>         THIS IS A REQUIRED ENTRY           <<==
+
+                                                MENU TITLE
+                                                                                                 FP = 000
+ 12:08:51
+
+
+                                                                                                       PF
+
+
+                                                               NO FLIGHT PLANS !
+
+
+
+
+                                   ==>> THE PRINTER IS OFF-LINE         <<==
+
+  1FLT_PLAN 2 SAT_DATA 3MANAGE 4TIME 5AMEND 6PRINT 7DELETE 8 SCROLL 9FM FEED 10CONFIG
+
+
+                                     Figure 6-2: System Messages
+
+
+6.3. Duplicate ACID and Discrete Beacon Codes
+
+       FLIPS permits the entry of a flight plan having a callsign or a discrete beacon code that duplicates
+this data in an existing flight plan, but only under certain specific conditions. Two aircraft may have the
+same beacon code only if one flight plan is an arrival and the other is a departure and one of the aircraft
+is being tracked by PIDP with a DM message having been sent from PIDP to FLIPS. Three aircraft
+may have the same callsign if one aircraft is an arrival, the other two are departures (the two departures
+must also have different departure airports) and any one of the three aircraft is being tracked by PIDP
+with a DM message having been sent from PIDP to FLIPS. Other than the above noted exceptions, a
+flight plan having duplicate data will only be accepted if its total active time period does not overlap the
+total active time period of an existing flight plan. The active time period for a single leg flight plan is from
+the flight plan's activation time minus the system Flight Plan Delete Time to the flight plan's activation
+time plus the system Flight Plan Delete Time. The active time period for a stereo flight plan composed
+of two legs (actually two separate flight plans) extends from the activation time of the first leg minus the
+system Flight Plan Delete Time to the activation time of the second leg plus the system Flight Plan Delete
+Time. For example, if an existing flight plan is not composed of two legs and has an activation time of
+1330 and the system Flight Plan Delete Time parameter is set for 90 minutes, then this flight plan's active
+time period is from 1200 to 1500. A new flight plan having a duplicate callsign or discrete beacon code
+AT-G-15, 1 August 2000                                                                               23
+
+
+will not be accepted if any part of its active time period falls between 1200 and 1500 (unless it falls
+under the exceptions noted at the beginning of this section.)
+
+      An attempted entry of a new flight plan containing an illegal duplicate callsign or discrete beacon
+code (that does not meet the specific conditions in the paragraph above) will result in a system error
+message identifying the existing flight plan by CID. The illegal duplicate condition must be resolved
+before the system will accept the new flight plan.
+
+      If a duplicate flight plan is received from the PIDP interface, and it falls within the same time
+period as a flight plan within FLIPS, then FLIPS will delete the duplicate in the database and insert the
+PIDP flight plan (unless it is one of the exceptions for beacon code and callsign noted in the first
+paragraph of this section).
+
+
+6.4. FDS Functionality
+
+6.4.1. Description
+
+       The FDS functionality allows the use of FDS type keyboard inputs to be used in FLIPS. It is an
+alternative to using the function keys and menus method of FLIPS. This option is selected by entering
+the same keystrokes as the message format for FDS. When the first alphanumeric key is typed, FLIPS
+enters the FDS mode. A space is used as a field separator when entering an FDS type message. A
+window of four blank lines is opened up in the menu window of the display (see Figure 6-3, “FDS
+Functionality”). Japanese flight plans can not be entered or amended from FLIPS.
+24                                                                          AT-G-15, 1 August 2000
+
+
+
+
+ 12:08:51                                                                                   FP = 000
+                                  FLIPS VERSION 054 - 01 NOV 99
+
+
+
+
+                                        <ENTER> - TO SAVE
+                                        <ESC> - TO EXIT
+
+
+
+                                                                                  9FM FEED
+
+
+                                   Figure 6-3: FDS Functionality
+
+
+6.4.2. Message Formats
+
+The available message formats for this function are as follows:
+
+            FP - Flight Plan
+            AM - Amendment
+            RS - Remove Strip
+            SR - Strip Request
+            RF - Forces a flight plan into the PIDP database
+            RB - Retransmit database to PIDP
+
+6.4.2.1. Flight Plan (FP) Messages
+
+      A Flight Plan (FP) message is used to enter and store the initial flight plan data in the computer.
+The FP must include the following information: ACID, type, coordination fix, time, altitude, and the
+route data. Beacon code and remarks are optional.
+AT-G-15, 1 August 2000                                                                                  25
+
+
+The time field requires a “P” for proposed flight plans, an “A” for arrivals, or an “E” for en route. These
+characters tell FLIPS what type of flight plan is being entered and must proceed the time. If the time
+field consists of only a letter then the current time will be used. Since a space is required between fields,
+the flight plan is validated first and then entered into the database. The new flight plan will then be
+displayed in the strip window. A beacon code block may be used in place of a beacon code.
+
+Example and format of FP message:
+
+Field Number           02       03           04     06      07           08          10        11
+Message               ACID     Type        Beacon   Fix    Time       Requested   Route
+                                           Code                        Altitude   of Flight   Remarks
+
+FP                  VARK01 H/C141       (None       END   P1720         170       END..TIK      DV
+                                        entered)
+
+
+*NOTE: Only one space allowed between each field. Above shows more spaces for readability.
+
+6.4.2.2. Amendment (AM) Messages
+
+      An Amendment Message (AM) is used to modify previously entered flight plan data. It must
+contain a message type designator; ACID, CID, or beacon code; field reference (number or
+abbreviation), and the data to be entered. Flight plans that have been flagged as Departure Messages
+(DM) from PIDP cannot be amended. NOTE: Japanese flight plans cannot be amended.
+
+     Flight Plan amendments result in a one-for-one field substitution. The flight plan is then validated
+and entered in the database with the revision number being incremented. A space must be entered
+between the message type, field references and revised data.
+
+      Field reference numbers:
+
+               02     ACID
+               03     Type
+               04     Beacon Code
+               06     Fix
+               07     Time
+               08     Altitude
+               10     Route of Flight
+               11     Remarks
+
+Examples and format of AM message:
+
+Message         Flight Plan    Field        Amend         Field        Amend
+                Reference      Reference    Data          Reference    Data
+26                                                                              AT-G-15, 1 August 2000
+
+AM            002            07          1515         06         TIK
+AM            2364           03          4/F111       07         1800
+AM            VARK01         02          HIKER45      11         VFRLOCAL
+      When amending stereo flight plans with multiple first or second legs, the opportunity will be given
+to make amendments to these additional legs.
+
+6.4.2.3. Remove Strip (RS) Messages
+
+      The Remove Strip (RS) message is used to delete flight plan data for the flight specified. The
+message consists of the message type designator and identification of the specified stored flight plan to
+be canceled. A flight plan that has been flagged as a Departure Message (DM) by PIDP cannot be
+deleted.
+
+6.4.2.4. Strip Request (SR) Messages
+
+       The Strip Request (SR) message is used to request the printing (or reprinting) of a flight progress
+strip. The message consists of the message type designator and the ACID, CID number, or beacon
+code.
+
+6.4.2.5. Request Transfer (RF) Messages
+
+       The Request Transfer (RF) message causes the transmission or retransmission of flight plan data
+to the PIDP computer system regardless of the scheduled time for transmission. This message is also
+used to force a flight plan back into the PIDP system if it has been dropped out. The message contains
+the message type designator and ACID, CID, or beacon code.
+
+6.4.2.6. Retransmit Database (RB) Messages
+
+      The Retransmit Database (RB) message is used to retransmit the complete current flight plan
+database to PIDP, usually after a PIDP failure. The RB message contains a message type designator.
+
+
+6.5. Add Flight Plan
+
+<F1> FLT_PLAN
+
+6.5.1. General Instructions for Departures, Arrivals, and Overflights
+
+       The Add Flight Plan Menu is displayed after selecting <F1> from the FLIPS Main Menu. This
+menu allows the controller to enter the desired flight plan type. The controller can enter <A>
+Departure, <B> Arrival, <C> Overflight, <D> Stereo, or <E> Training Flight Plans. The menu to add
+a flight plan is displayed after selecting the letter for the appropriate type flight plan from the Add Flight
+Plan Menu. The flight strip working area is unique to the type of flight plan selected. As data is entered,
+AT-G-15, 1 August 2000                                                                                    27
+
+
+it will be displayed in the appropriate field of the flight strip work area (see Figure 6-4, “Add Departure
+Training Main Menu”). Each field will be highlighted on the menu while data is being entered. A
+flashing cursor indicates the current character position. Corrections may be performed before the
+completed flight plan is entered. The special keys used for editing can be found in Section 7.1., Editing
+Commands. Spaces are permitted for data separation in the remarks and route of flight fields by using
+the right arrow key. Each data field will be checked, as appropriate, for validity. The ACID and
+beacon code will be checked against flight plans currently in the system to ensure illegal duplicate flight
+plan data is not entered. Error messages are provided for invalid entries and for duplicate ACID or
+beacon codes. The completed flight plan is saved with the <Enter> key or abandoned by pressing the
+<Esc> key at any time. Japanese flight plans can not be entered from FLIPS.
+
+
+
+
+                   P                                                                     FL
+
+
+
+
+  09:50:28                                    DEPARTURE                                       FP = 001
+                                         AIRCRAFT ID
+                                         AIRCRAFT DATA
+  *PARENT CID                            BEACON CODE
+                                         TIME                                              *INTERFACE
+    [      ]                                                                                  [ FL ]
+                                         REQUESTED ALTITUDE
+                                         DEPARTURE AIRPORT
+                                         COORDINATION FIX
+                                         ROUTE INFORMATION
+                                         REMARKS
+                                         BLOCKS 10 - 18
+
+                                         <ENTER> -- TO SAVE
+                                         <ESC> -- TO EXIT
+
+                                                                                    9FM FEED
+
+
+                                  Figure 6-4: Add Departure Menu
+
+
+      The following strips show the correct format for each entry of data used to create a flight plan.
+28                                                                             AT-G-15, 1 August 2000
+
+
+      1. Departure Flight Plan
+
+ AIRCRAFT ID       BEACON DEPART            ROUTE INFORMATION
+        REV#                                                                          SITE SPECIFIC
+                          AIRPORT
+ AIRCRAFT DATA     PTIME                    ROUTE INFORMATION                         INFORMATION
+
+ CID NUMBER        ALT         CRD FIX      REMARKS
+
+
+      PTIME is the proposed departure time.
+
+
+      2. Arrival Flight Plan
+
+ AIRCRAFT ID       BEACON A ETA AT         ALTITUDE                  REMARKS
+        REV#                                                                          SITE SPECIFIC
+                            COORD.
+ AIRCRAFT DATA     PREV FIX FIX            REMARKS                                    INFORMATION
+
+ CID NUMBER        CRDFIX                  DEST AIRPORT              REMARKS
+
+
+      A ETA, is estimated arrival time at the coordination fix.
+
+
+      3. Overflight Flight Plan
+
+ AIRCRAFT ID       BEACON E ETA AT         ALTITUDE                  ROUTE INFO
+         REV#                                                                         SITE SPECIFIC
+                           COORD.
+ AIRCRAFT DATA     CRD FIX FIX             ROUTE INFORMATION                          INFORMATION
+
+ CID NUMBER        CRD IND                 REMARKS
+
+
+      E ETA, is the estimated arrival time at the coordination fix
+
+
+6.5.1.1. Aircraft ID (ACID)
+
+      Entries must be 2 - 7 alphanumeric characters with the first character being alphabetic. Spaces
+are not permitted and all data entered beyond 7 characters will be ignored. Duplicate ACIDs are not
+allowed unless their active times do not overlap. If no ACID is entered or there is an invalid entry, an
+error message will be displayed. A valid ACID must be entered before the system will allow the
+controller to move to any other data field. Pressing the <Enter> key saves the flight plan.
+
+6.5.1.2. Aircraft Type
+
+      Up to 11 characters may be entered to identify the number of aircraft in a flight, the class, the
+type, and the equipment suffix. This data will be in 'free-form' format and will not be checked for
+AT-G-15, 1 August 2000                                                                                    29
+
+
+validity. However, flight plans sent to PIDP are validated and will be rejected if errors are found. The
+equipment suffix and the number of aircraft will only be stored in FLIPS. Dashes are NOT allowed in
+the AIRCRAFT TYPE.
+
+6.5.1.3. Beacon Code
+
+     The controller has the option to manually enter a beacon code, allow the system to auto assign a
+beacon code, or leave the beacon code field blank.
+
+       During flight plan entry, the controller may select A through H for auto beacon code assignment.
+The beacon code will be auto assigned immediately before the strip is printed (either manual or auto
+print). If all beacon codes have been allocated from the code block selected during flight plan entry, the
+system will set the beacon code field to blanks. Additionally, a system message will be output to the
+printer when all beacon codes from a predefined block are in use. If the controller selects a letter (A -
+H) that has not been predefined an error message will be displayed on the monitor.
+
+      Beacon codes are manually assigned by entering the four numbers (0000 - 7777). An error
+message is displayed on the monitor when an invalid or duplicate beacon code is entered. Beacon
+codes 1236, 7500, 7600, and 7700 are restricted from use.
+
+      The controller may space through the beacon code field during flight plan entry. This will result in
+the beacon code field being blank when the strip is printed.
+
+6.5.1.4. Time
+
+        Time consists of four numeric characters, whether the time field is a Proposed Departure Time or
+an Estimated Time of Arrival (ETA) at the Coordination Fix. The system automatically generates a "P"
+for departure flight plans, an "A" for arrival flight plans, or an "E" for overflight flight plans in the first
+character position of the time field. Spacing past the field or entering the flight plan before reaching the
+time field (no time input) will result in the current system time being entered as the activation time when
+the flight plan is saved.
+
+      If the time entered is one minute less than the current time, the flight plan will be considered
+tomorrow's flight plan. If the flight plan is sent from PIDP, the activation time can be up to 59 minutes
+before current time and still be considered today's flight plan.
+
+6.5.1.5. Airport/Fix
+
+       The Departure Airport field on a departure flight plan and the Destination Airport on an arrival
+flight plan may contain a maximum of 5 alphanumeric characters. Spaces are not permitted.
+30                                                                          AT-G-15, 1 August 2000
+
+
+       Arrivals and overflights may contain a maximum of 12 characters in the Previous Fix, the
+Coordination Fix, and the Coordination Indicator fields. This data will be in 'free-form' format and will
+not be checked for validity. Spaces are permitted. Only the first three characters of the Airport/Fix
+fields will be sent to PIDP.
+
+6.5.1.6. Altitude
+
+      A maximum of 7 characters may be entered in the Altitude field. The first 3 characters must be
+alphanumeric and the last 4 may contain spaces and special characters.
+
+6.5.1.7. Route of Flight
+
+Departure
+
+       A maximum of 52 characters (2 lines of 26 characters each) may be entered for a departure flight
+plan. This data will be entered 'free-form' and will not be checked for format or correctness (fix
+identifier validation, logical routings, etc.). Spaces may be inserted between data items by using the
+<Right Arrow> key. As characters are entered, FLIPS automatically moves the cursor to the second
+line when the end of the first line is reached.
+
+Overflight
+
+       A maximum of 40 characters (one line of 14 characters and a second line of 26 characters) may
+be entered for overflight flight plans. This data will be entered 'free-form' and will not be checked for
+format or correctness (fix identifier validation, logical routings, etc.). Spaces may be inserted between
+data items by using the <Right Arrow> key. As characters are entered, FLIPS automatically moves
+the cursor to the second line when the end of the first line is reached.
+
+6.5.1.8. Remarks
+
+Departure and Overflights
+
+     A maximum of 26 characters (1 line) may be entered in 'free-form'. Spaces may be inserted
+between data items by using the <Right Arrow> key.
+
+Arrival
+
+      A maximum of 54 characters on 3 lines may be entered in 'free-form' (first line holds 14
+characters, second line holds 26, and the third line holds 14). Spaces may be inserted between data
+items by using the <Right Arrow> key. As characters are entered, FLIPS automatically moves the
+cursor to a new line when the end of the current line is reached.
+AT-G-15, 1 August 2000                                                                                 31
+
+
+6.5.1.9. Blocks 10 - 18
+
+        A maximum of 36 characters (three lines of 12 characters) may be entered in ‘free-form’ in
+blocks 10 through 18 of the arrival, the departure and the overflight flight strips. Spaces may be
+inserted between data items by using the <Right Arrow> key. When the controller reaches the end of
+a line, the <Down Arrow> key will be used to move to the next available line.
+
+6.5.2. Stereo Flight Plans
+
+<F1> <D> STEREO
+
+      The controller selects the stereo flight plan mode by pressing <F1> from the FLIPS Main Menu
+and then <D> from the Flight Plan Menu. If no stereo routes were entered from the configuration
+mode, a blank Stereo Menu will be displayed. Press <Esc> to return to the FLIPS Main Menu.
+Stereo flight plan templates must be entered through <F3> MANAGE, if the stereo flight plan options is
+locked, or <F10> CONFIG.
+
+6.5.2.1. Single Leg Routes
+
+       After selecting <F1> from the FLIPS Main Menu and <D> Stereo from the Flight Plan Menu,
+the controller is prompted to select the stereo alpha character <A - T>. <Space> will display another
+set of 20 stereo templates, if any are defined, and <Esc> will return the controller to the Flight Plan
+Menu. If the stereo route selected has one leg, it will be displayed in the flight strip work area. Enter
+additional information as needed, then press <Enter> to save the flight plan or <Esc> to exit. After the
+flight plan is saved, the selected stereo flight plan template will be redisplayed in the flight strip work
+area. The controller may now create additional strips as needed by following the prompts. The flight
+plans are checked for duplicate ACID and Beacon Code entries. If an activation time is not entered,
+the current time will be used as the activation time. Pressing <Esc> abandons an entry and returns to
+the Create Strip(s) Menu.
+
+6.5.2.2. Two Legged Routes
+
+       If the stereo template selected has two legs, the Create Strip(S) Menu will be displayed (see
+Figure 6-5, “Create Strip(s) Menu”). The controller has the option of creating multiple strips for the first
+leg, the second leg, or both legs of the stereo flight plan.
+32                                                                            AT-G-15, 1 August 2000
+
+
+
+
+ 15:37:04                                        PAPA
+                                                                                               FP = 000
+                                 SELECT ONE OF THE FOLLOWING :
+
+                              <A> CREATE STRIP(S) FOR 1ST LEG
+
+                              <B> CREATE STRIP(S) FOR 2ND LEG
+
+                              <C> CREATE STRIP(S) FOR BOTH LEGS
+
+
+
+                                      <ESC> -- TO EXIT
+
+
+
+
+                                                                                   9FM FEED
+
+
+                                  Figure 6-5: Create Strip(s) Menu
+
+
+<A> First Leg
+
+       When choice <A> Create Strip(s) for 1st leg is selected, the controller can create one or more
+strips for the first leg of the stereo route.
+
+      The flight plan template for the first leg is displayed in the flight strip work area. The controller
+can then edit the template using the standard editing procedures explained in section 7.1., Editing
+Commands.
+
+     If an activation time is not entered, the current system time will be used as the activation time.
+None of the data will be transferred to the second leg. Only the first leg will be added to the database.
+
+       Pressing the <Enter> key saves the flight plan. After the flight plan is saved, the first leg of the
+selected stereo flight plan template will be redisplayed in the flight strip work area. The controller can
+create additional strips as needed by following the prompts. The flight plans are checked for duplicate
+ACID and Beacon Code entries. Pressing <Esc> abandons an entry and returns to the Create Strip(s)
+Menu.
+AT-G-15, 1 August 2000                                                                                  33
+
+
+<B> Second Leg
+
+       When choice <B> Create Strip(s) for 2nd leg is selected, the controller can create one or more
+strips for the second leg of the stereo route.
+
+      The stereo flight plan template for the second leg is displayed in the flight strip work area. The
+controller can then edit the template using the standard editing procedures explained in section 7.1.,
+Editing Commands.
+
+       Only the second leg will be inserted in the database when <Enter> is pressed. After the flight
+plan is saved the selected stereo flight plan template will be redisplayed in the flight strip work area. The
+controller can create additional strips as needed by following the prompts. The flight plans are checked
+for duplicate ACID and Beacon Code entries. Pressing <Esc> abandons an entry and returns to the
+Create Strip(s) Menu.
+
+<C> Both Legs
+
+       When choice <C> Create strip(s) for both legs is selected, the controller can create one or more
+strips for both legs of the stereo route. Option <C> is not available if the second leg of the template has
+an undefined Beacon Code Block in the beacon field.
+
+      The stereo flight plan template for the first leg is displayed in the flight strip work area. The
+controller can then edit the template using the standard editing procedures explained in section 7.1,
+Editing Commands.
+
+        The ACID will automatically be transferred to the second segment of the stereo flight plan. The
+second leg activation time is automatically assigned based on the offset time selected when the template
+was created. Each leg of the flight will be assigned a separate CID number. Additionally, the flight plan
+counter will be incremented by two when a stereo flight plan with two legs is entered. The beacon code
+will be carried over to the second leg if a “#” sign was entered into the beacon code field of the second
+leg flight plan when the stereo flight plan was created in <F10>.
+
+      When <Enter> is pressed, the 2nd Leg Aircraft Type Menu is displayed. If the first leg Aircraft
+Type was amended, the second leg will contain the new Aircraft Type. Enter any change to the second
+leg Aircraft Type and then press <Enter>. The first leg template will be redisplayed. The first leg
+template will also be redisplayed if <Esc> was pressed.
+
+      Press <Esc> when done creating strips for both legs. After the <Esc> key is pressed, the
+Additional Strips Menu is displayed prompting the controller to create additional strips for the first or
+second leg (see Figure 6-6, “Additional Strip(s) Menu” ). If the first leg is chosen, the controller can
+enter as many first leg strips as needed. If the second leg is chosen, the controller can enter as many
+34                                                                            AT-G-15, 1 August 2000
+
+
+second leg strips as needed. Additional strips are all linked to the second leg stereo flight plan.
+Pressing <Esc> abandons an entry and returns to the Create Strip(S) Menu.
+
+
+
+
+ 07:26:18                                      PAPA
+                                                                                                FP = 003
+                                 IF YOU NEED ADDITIONAL STRIPS
+
+                                 SELECT ONE OF THE FOLLOWING :
+
+                               <A> CREATE STRIP(S) FOR 1ST LEG
+
+                               <B> CREATE STRIP(S) FOR 2ND LEG
+
+
+
+                                      <ESC> -- TO EXIT
+
+
+
+
+                                                                                    9FM FEED
+
+
+                                Figure 6-6: Additional Strip(s) Menu
+
+
+
+PIDP Interface
+
+       When the first leg is within 15 minutes of activation time it will be sent to PIDP. If the second leg
+is transmitted while the first leg is in the system, PIDP will send a Data Reject (DR) message on the
+second leg because of duplication.
+
+6.5.3. Training Flight Plans
+
+<F1> <E> TRAINING
+
+      The Training Menu is displayed after selecting <F1> from the FLIPS Main Menu and <E> from
+the Flight Plan Menu. The current FLIPS flight plan count and the number of strips in the training
+database are both displayed. Some options are not available with an empty database (<F9> Form
+AT-G-15, 1 August 2000                                                                                 35
+
+
+Feed is available). Press <Esc> <Esc> to exit to the FLIPS Main Menu. The strip displayed will be
+smaller than the normal FLIPS strip to more closely match the printed strip. The controller may enter
+'free form' strips for use in training scenarios. The entire length of all three lines for each strip may be
+edited using the 'free-form' format (within the limits of the FLIPS character set). The entire scenario may
+be printed or each strip may be printed individually. The controller may delete a scenario. Training
+scenarios can be saved to or loaded from the current drive. (see Figure 6-7, “Training Main Menu”)
+
+***NOTE: Strips entered as part of a training scenario will have no effect on active flight plans in the
+FLIPS system.
+
+
+
+
+ 09:41:08                                      TRAINING
+                                                                                                FP = 001
+                                    <A>   LOAD FILE
+                                                                                               TFP = 002
+                                    <B>   SCROLL FILE
+                                    <C>   SAVE FILE
+                                    <D>   DELETE OPTIONS
+                                    <E>   CREATE FILE
+                                    <F>   APPEND CURRENT FILE
+                                    <G>   PRINT OPTIONS
+                                    <H>   TRANMIT CURRENT FILE
+
+                                    <ESC> -- TO EXIT
+
+
+
+
+                                                                                    9FM FEED
+
+
+                                  Figure 6-7: Training Main Menu
+
+
+6.5.3.1. <A> Load File
+
+       The controller can load a previously saved training scenario from the current drive to the training
+strip database. Upon selecting choice <A>, a menu will be displayed to allow the controller to select
+the drive to load from (A, B, or C). When the controller is ready to continue, the <Esc> key should be
+pressed. The selected drive will remain current until a different drive is selected. A directory of the
+current drive will be displayed with only the files that contain training strips (filenames with a .TNG
+36                                                                              AT-G-15, 1 August 2000
+
+
+extension). The first file will be highlighted and the <Up Arrow> and <Down Arrow> keys will move
+the highlighted box from one filename to another. If more than one page of filenames exist, the space
+and backspace keys will move the directory forward and backward. Positioning the highlighted box
+over a filename and pressing the <Enter> key will select that filename. A filename can be entered
+manually by typing the filename from the keyboard. The first key entered will cause the directory to
+disappear. The filename must be 1-8 alphanumeric characters (extensions will automatically be added
+to the filename). If a good file is loaded, any training strips previously in the system will be deleted and
+strips from the selected file will be put into the training database. If a file is not compatible with the
+FLIPS version then an attempt will be made to convert the file. If the file can be converted, it will be
+loaded. After a successful load, the Training Menu is displayed.
+
+6.5.3.2. <B> Scroll File
+
+       Upon selecting this option, the flight strip work area is displayed along with the first training strip
+in the scenario. The first and last strips are identified by a message in the scroll menu. <Space>
+advances to the next strip and <Backspace> moves back to the previous strip. The displayed strip
+can be amended, printed or deleted while in the scroll mode. <F9> can be pressed to advance strips
+on the printer. Pressing <A> allows the controller to create a new strip and insert it in the training
+database after the strip that is being displayed. Pressing <B> inserts the new strip before the strip that
+is being displayed. Press <Esc> to exit to the Training Main Menu.
+
+6.5.3.3. <C> Save File
+
+       The controller has the option to save the current training scenario to the current drive for later use.
+Ensure the diskette is formatted (MS DOS version 3.2 or later) and not write protected before an
+attempt is made to write to the diskette. Upon selecting choice <C> Save File from the Training Main
+Menu, a menu will be displayed allowing the controller to change the drive to save to. When the
+controller has selected a drive, <Esc> should be pressed to continue (if C drive was selected, a menu
+will be displayed to enter or change the password or continue with the save. The password feature is
+included here to prevent accidentally deleting the training strips on C drive). After selecting a drive and
+entering the password, if required, a directory will be displayed with only the files that contain training
+strips (filenames with a .TNG extension). The first file will be highlighted and the <Up Arrow> and
+<Down Arrow> keys will move the highlighted box from one filename to another. If more than one
+page of filenames exist, the <Space> and <Backspace> keys will move the directory forward and
+backward. Positioning the highlighted box over a filename and pressing the <Enter> key will select that
+filename. A filename can be entered manually by typing the filename from the keyboard. The first key
+entered will cause the directory to disappear. The filename must be 1-8 alphanumeric characters
+(extensions will automatically be added to the filename). After a successful save, the Training Main
+Menu is displayed.
+AT-G-15, 1 August 2000                                                                                  37
+
+
+6.5.3.4. <D> Delete Options
+
+      Upon selecting this option, the controller is given the opportunity to delete the current training
+scenario from memory. If <Y> is pressed, the scenario is deleted. After a successful deletion, the
+Training Main Menu displayed.
+
+6.5.3.5. <E> Create File
+
+       Upon selecting this option, the controller will be allowed to enter training strips. If a training
+database is currently loaded, it will be deleted before the controller can input new training strips. Each
+strip can be entered in 'free form' format on 3 lines by 68 characters within the limits of the acceptable
+FLIPS character set. A <Space> advances to the next line and<Backspace> backs up to the previous
+line. Pressing <Enter> will save the strip and allow you to enter another strip, if needed. Press <Esc>
+to exit to the Training Main Menu without saving the current strip.
+
+6.5.3.6. <F> Append Current File
+
+       Upon selecting this option, the controller will be allowed to enter additional strips into the current
+training database. The training strips will be appended to the end of the training database. Each strip
+can be entered in 'free form' format on 3 lines by 68 characters within the limits of the acceptable FLIPS
+character set. A <Space> advances to the next line and<Backspace> backs up to the previous line.
+Pressing <Enter> will save the strip and allow you to enter another strip, if needed. Press <Esc> to
+exit to the Training Main Menu without saving the current strip.
+
+6.5.3.7. <G> Print Options
+
+       Upon selecting this option, a menu will appear prompting the controller to enter <A> to print the
+entire training scenario, <B> to print a randomly generated scenario, or <C> to print and transmit a
+random scenario. When either of the random scenario options are selected, the controller is asked how
+many strips are wanted for the scenario. Any number from one to the number of training strips in the
+current training database may be entered. The controller will be prompted for the number of copies of
+the scenario to be printed. The number of strips chosen will be printed for each copy. The print feature
+of the training scroll function may be used to print individual strips. Press <Esc> to exit to the Training
+Main Menu.
+
+6.5.3.8. <H> Transmit
+
+      Upon selecting this option, the entire current scenario will be transmitted to PIDP. For the system
+to access the appropriate data the following rules apply:
+38                                                                           AT-G-15, 1 August 2000
+
+
+                                               Departure
+
+                      ACID             - Line 1 columns 1 through 7
+                      Code             - Line 1 columns 15 through 19
+                      Dept Apt               - Line 1 columns 21 through 28
+                      Type             - Line 2 columns 1 through 11
+                      Time             - Line 2 columns 15 through 19
+
+                                                 Arrival
+
+                      ACID             - Line 1 columns 1 through 7
+                      Code             - Line 1 columns 15 through 19
+                      Time             - Line 1 columns 21 through 28
+                      Type             - Line 2 columns 1 through 11
+                      Coord Fix        - Line 3 columns 15 through 19
+                      Dest Apt         - Line 3 columns 30 through 34
+
+                                              Overflights
+
+                      ACID             - Line 1 columns 1 through 7
+                      Code             - Line 1 columns 15 through 19
+                      Time             - Line 1 columns 21 through 28
+                      Type             - Line 2 columns 1 through 11
+                      Coord Fix        - Line 2 columns 15 through 19
+                      Coord Ind        - Line 3 columns 15 through 19
+
+     The fields need to be in the appropriate columns of the training strip. If the strips are correct,
+PIDP will accept the strips as training strips.
+
+        The required fields are the ACID and type of Training Strip. The type of strip is indicated by the
+first character of the time field and formatted as the following:
+
+                                       P - departure
+                                       A - arrival
+                                       E - overflight
+
+      The default type is an overflight.
+AT-G-15, 1 August 2000                                                                                      39
+
+
+6.6. Airport Data
+
+<F2> SAT_DATA
+
+6.6.1. General Information
+
+      Pressing <F2> from the FLIPS Main Menu will put the controller in the airport and fix data
+option. The controller will then be able to choose airport or fix editing. This option can also be locked
+through <F3> MANAGE. If it is locked, you still have the option to view the data. Until this option is
+unlocked, changes can only be made through <F3> MANAGE - <C> Change Configuration Options.
+
+        The controller may enter information on primary and surrounding airports and fixes. Each airport
+will contain information about the airport and on all of its runways. Each airport, runway, and fix may
+be edited to change the information previously stored. The airport and fix data information may be
+saved by choosing the save or build option. You can use A, B, or C drive and read it back in at a later
+date. All the airport and fix data information may be printed in a report form. The controller may delete
+all fixes, a single fix, all the airports, a single airport, or a single runway from an airport. There will be an
+airport counter (APT) located below the FLIPS flight plan counter (FP).
+
+      Airport and fix data information can be sent to the PIDP computer when requested. This
+information will be contained in PIDP_LINE1 and PIDP_LINE2. Each line can hold up to 20
+characters. FLIPS can respond to satellite airport data messages and satellite fix data messages from
+PIDP. The airport identifier can be used for a specific airport or the bearing and distance can be used
+to find the closest airport. Indicating the minimum acceptable runway length can also modify this
+request, if required. The fix identifier can be used for a specific fix.
+
+6.6.2. <A> Load File
+
+       The controller has the option to load a previously saved airport database from the selected drive
+into the active airport database. Upon selecting choice <A>, a menu will be displayed to allow the
+controller to change the drive to load from. When the controller is ready to continue, the <Esc> key
+should be pressed. A directory of the current drive will be displayed with only the files that airport data
+can use (filenames with a .APD extension). The first file will be highlighted and the <Up Arrow> and
+<Down Arrow> keys will move the highlighted box from one filename to another. If more than one
+page of filenames exist, the <Space> and <Backspace> keys will move the directory forward and
+backward. Positioning the highlighted box over a filename and pressing the <Enter> key will select that
+filename. A filename can be entered manually by typing the filename from the keyboard. The first key
+entered will cause the directory to disappear. The filename must be 1 - 8 alphanumeric characters
+(extensions will automatically be added to the filename). If a good file is loaded, any airport data
+previously in the system will be deleted and the airport data from the file will be put into the airport
+database. If a file is not compatible with the current FLIPS version then an attempt will be made to
+40                                                                              AT-G-15, 1 August 2000
+
+
+convert the file. If the file can be converted it will be loaded. After a successful load is completed, the
+Airport Data Menu will be displayed again.
+
+6.6.3. <B> Edit File
+
+     Upon entering <B> Edit File option, the controller will be asked to enter <A> edit airport or
+<B> edit fix.
+
+6.6.3.1. <A> Edit Airport
+
+       The controller will be asked for the airport ID to edit. The controller will then be prompted to
+enter <A> for airport or <R> for runway. The appropriate information will be displayed to edit. If
+airport information is chosen, the selected airport information will be displayed. The controller can then
+edit the airport (see Figure 6-8, “Airport Data - Edit Airport”). If runway information is chosen, the
+runway names will be displayed. The controller will need to enter a runway name so they can edit it.
+<Space> advances to the next field and <Backspace> backs up to the previous field. Press <Enter>
+to save the information or press <Esc> to exit this option without saving.
+
+
+
+     [                        ]            [DFW]             [       ]      [     ]              [          ]
+         [                           ][                          ]
+         [                                                                                             ]
+         [                                                                                             ]
+         [                                                                                              ]
+
+
+
+
+                                              EDIT AIRPORT
+ 09:41:08                                                                                            FP = 001
+                                      AIRPORT NAME
+                                                                                                 APT = 002
+                                      AIRPORT ID
+                                      BEARING FROM PRIMARY AIRPORT
+                                      DISTANCE FROM PRIMARY AIRPORT
+                                      FIELD ELEVATION
+                                      PIDP DATA LINE 1
+                                      PIDP DATA LINE 2
+                                      NAVAIDS
+                                      REMARKS
+
+                                      <ENTER> -- TO SAVE
+                                      <ESC> -- TO EXIT
+
+
+
+                                                                                      9FM FEED
+
+
+                                  Figure 6-8: Airport Data - Edit Airport
+AT-G-15, 1 August 2000                                                                                41
+
+
+      Information contained in PIDP_LINE1 and PIDP_LINE2 will be transmitted to PIDP when
+requested. These lines are 'free-form'.
+
+6.6.3.2. <B> Edit Fix
+
+       The controller will be asked for the fix ID to edit. The appropriate information will be displayed
+to edit the fix (see Figure 6-9, “Airport Data - Edit Fix”). <Space> advances to the next field,
+<Backspace> backs up to the previous field. Press <Enter> to save the information. Press <Esc> to
+exit this option without saving.
+
+
+
+   [                            ]            [DFW]             [     ]          [     ]
+         [                           ][                    ]
+         [                                                                                        ]
+
+
+
+
+                                               EDIT FIX
+ 09:41:08                                                                                    FP = 001
+                                    FIX NAME
+                                                                                           APT = 002
+                                    FIX ID
+                                    BEARING FROM PRIMARY AIRPORT
+                                    DISTANCE FROM PRIMARY AIRPORT
+                                    PIDP DATA LINE 1
+                                    PIDP DATA LINE 2
+                                    REMARKS
+
+
+
+                                    <ENTER> -- TO SAVE
+                                    <ESC> -- TO EXIT
+
+
+
+                                                                                    9FM FEED
+
+
+                                 Figure 6-9: Airport Data - Edit Fix
+
+      Information contained in PIDP_LINE1 and PIDP_LINE2 will be transmitted to PIDP when
+requested. These lines are 'free-form'.
+
+6.6.4. <C> Save File
+
+       The controller may save the airport database to a selected drive for later use. Ensure the diskette
+is formatted (MS-DOS version 3.2 or later) and not write protected before an attempt is made to write
+to the diskette. Upon selecting choice <C>, a menu will be displayed to allow the controller to change
+the drive to save to. When the controller is ready to continue, the <Esc> key should be pressed. A
+42                                                                             AT-G-15, 1 August 2000
+
+
+directory of the current drive will be displayed with only the files that airport data can use (filenames
+with a .APD extension). The first file will be highlighted and the <Up Arrow> and <Down Arrow>
+keys will move the highlighted box from one filename to another. If more than one page of filenames
+exist, the <Space> and <Backspace> keys will move the directory forward and backward.
+Positioning the highlighted box over a filename and pressing the <Enter> key will select that filename.
+A filename can be entered manually by typing the filename from the keyboard. The first key entered will
+cause the directory to disappear. The filename must be 1 - 8 alphanumeric characters (extensions will
+automatically be added to the filename). Upon completion of the save, the Airport Data Menu will be
+displayed.
+
+6.6.5. <D> Delete Options
+
+       Upon selecting option <D>, the controller has the option to delete the airport database, an
+airport, an individual runway, all fixes or individual fixes. If the controller chooses to delete the
+database, they are asked if they are sure they want to delete the entire database. If <Y> is pressed, the
+entire current database is deleted. If the controller chooses to delete all airports or fixes, the controller
+is asked if they are sure they want to delete all airports or fixes. If <Y> is pressed, all airports or fixes
+are deleted (depending on which option was chosen). If an airport needs to be deleted, the menu is
+displayed prompting for the airport ID to delete. If a runway needs to be deleted, the menu is displayed
+to select the airport. After the airport has been selected, a menu is displayed with the runway names.
+The controller then enters the runway name to delete. If a fix needs to be deleted, the user will be
+prompted to enter the fix ID to be deleted.
+
+6.6.6. <E> Add Airports
+
+      Upon entering option <E>, the controller will be allowed to enter airports into the database.
+Information for runways and airports can be entered and edited through the edit option.
+
+6.6.7. <F> Add Fix
+
+      Upon entering option <F>, the controller will be allowed to enter fixes into the database.
+Information for fixes can be entered and edited through the edit option.
+
+6.6.8. <G> Build Report
+
+       Upon selecting option <G>, the current airport database will be made into a report. Ensure the
+diskette is formatted (MS-DOS version 3.2 or later) and not write protected before an attempt is made
+to write to the diskette. Upon selecting choice <G>, a menu will be displayed to allow the controller to
+change the drive to save to. When the controller is ready to continue, the <Esc> key should be
+pressed. A directory of the current drive will be displayed with only the files that airport data can use
+(filenames with a .APR extension). The first file will be highlighted and the <Up Arrow> and <Down
+Arrow> keys will move the highlighted box from one filename to another. If more than one page of
+AT-G-15, 1 August 2000                                                                             43
+
+
+filenames exist, the <Space> and <Backspace> keys will move the directory forward and backward.
+Positioning the highlighted box over a filename and pressing the <Enter> key will select that filename.
+A filename can be entered manually by typing the filename from the keyboard. The first key entered will
+cause the directory to disappear. The filename must be 1 - 8 alphanumeric characters (extensions will
+automatically be added to the filename). Upon completion of building the report, the Airport Data
+Menu will be displayed.
+44                                                                            AT-G-15, 1 August 2000
+
+
+6.6.9. <H> Print Options
+
+       The controller has the option to print airport data reports. Upon selecting choice <H>, a menu
+will be displayed to allow the controller to change the drive to read from. When the controller is ready
+to continue, the <Esc> key should be pressed. A directory of the current drive will be displayed with
+only the files that airport data can use (filenames will be displayed with a .APR extension). The first file
+will be highlighted and the <Up Arrow> and <Down Arrow> keys will move the highlighted box from
+one filename to another. If more than one page of filenames exist, the <Space> and <Backspace>
+keys will move the directory forward and backward. Positioning the highlighted box over a filename
+and pressing the <Enter> key will select that filename. A filename can be entered manually by typing
+the filename from the keyboard. The first key entered will cause the directory to disappear. The
+filename must be 1 - 8 alphanumeric characters (extensions will automatically be added to the filename).
+The printer will need 8.5 x 11 white paper and it automatically sets to print the report. After the report
+is printed, the printer will reset to the FLIPS format. Upon completion of the print function, the Airport
+Data Menu will be displayed.
+
+
+6.7. Management
+
+<F3> MANAGE
+
+       The management section allows controlled access to the locked Configuration and Airport Data
+options, only if the controller knows the password. Upon entering <F3> MANAGE, the user will be
+asked to type in the password. If a valid password is given, the Management Menu will be displayed.
+The controller then has the option of Entering or Changing the Password, Changing Locked Options
+(see paragraph 4.4. for the suggested items to be locked), or Changing Configuration Options. If an
+invalid password is entered, an error message is displayed and the controller is asked to try again. If the
+password has not been set, the Management Menu will be displayed so the user can select ENTER OR
+CHANGE PASSWORD (see Figure 6-10, “Management Main Menu”).
+AT-G-15, 1 August 2000                                                                              45
+
+
+
+
+                                            MANAGEMENT
+  09:41:08                                                                                 FP = 001
+
+                               <A> ENTER OR CHANGE PASSWORD
+                               <B> CHANGE LOCKED OPTIONS
+                               <C> CHANGE CONFIGURATION OPTIONS
+                               <D> PRINT LOG FILE
+                               <E> RESET LOG FILE
+
+                               <ESC> TO EXIT
+
+
+
+
+                                                                                 9FM FEED
+
+
+                              Figure 6-10: Management Main Menu
+
+
+6.7.1. <A> Enter or Change Password
+
+      After selecting Enter or Change Password, the controller is asked to enter a password. For each
+key typed on the keyboard an asterisk will appear. After the password is entered, the user will be
+asked to enter the password again. Entering the password twice allows the controller to be sure the
+password was entered correctly. A password consists of 1 to 8 alphanumeric characters, no spaces
+allowed.
+
+6.7.2. <B> Change Locked Options
+
+        This option allows the controller to lock and unlock the Configuration and Airport Data options.
+All the Configuration and Airport Data options are displayed on the screen. The symbol "L=>" is
+displayed before the locked options. Press the corresponding letter to lock or unlock the option.
+Initially all the options are unlocked. (see Figure 6-10, “Management Main Menu”)
+46                                                                         AT-G-15, 1 August 2000
+
+
+
+
+                                             MANAGEMENT
+ 09:44:08                                                                                  FP = 001
+                                    <A> BEACON CODE ASSIGNMENTS
+                                    <B> STEREO FLIGHT PLANS
+                                    <C> SYSTEM TIME
+                               L => <D>FLIGHT PLAN DELETE TIME
+                               L => <E> FLIGHT PLAN OUTPUT TIME
+                                    <F> SAVE DATA BASE
+                                    <G> LOAD DATA BASE
+                                    <H> PRINTER CONFIGURATION
+                                    < I> DELETE FILES FROM DISK
+                                    <J> AIRPORT DATA
+                                    <ESC>-- TO EXIT
+                                    <LETTER>-- TO UNLOCK/UNLOCK
+
+
+                                                                                  9FM FEED
+
+
+                      Figure 6-11: Management - Change Locked Options
+
+
+6.7.3. <C> Change Configuration Options
+
+      This option allows the controller to access the Configuration and Airport Data options. All
+options can be accessed whether they are locked or unlocked from this menu. A detailed description of
+the Configuration options can be found in Section 6.14., “Configuration” and Airport Data can be found
+in Section 6.6., “Airport Data”.
+
+6.7.4. <D> Print Log File
+
+       This option will print the Position Time Log File. This option is available so that a list of the
+position time entries can be produced before resetting the Log File. Log File contains several types of
+messages. When any position time message from PIDP is received, an entry is made in the Log File.
+When Position Time entries are made manually, and entry is made in the Log File. When FLIPS starts
+up or shuts down, an entry is made in the Log File. The Log File accumulates these messages until it is
+reset.
+
+6.7.5. <E> Reset Log File
+AT-G-15, 1 August 2000                                                                                 47
+
+
+      This option clears the Log File of all data and RESETS IT to start updating automatically.
+
+
+
+
+                                               POSITION TIME
+ 09:44:08
+                                     <A> LOAD FILE
+                                     <B> ENTER POSITION TIME
+                                     <C> EDIT OPTIONS
+                                     <D>SAVE FILE
+                                     <E> DELETE OPTIONS
+                                     <F> ADD CONTROLLER
+                                     <G> BUILD REPORT
+                                     <H> PRINT OPTIONS
+                                     < I> RESET OPTIONS
+
+
+                                     <ESC>-- TO EXIT
+
+
+
+
+                                                                                     9FM FEED
+
+
+                                 Figure 6-12: Position Time Menus
+
+
+
+6.8. Position Time
+
+<F4> TIME
+
+       The controller may maintain proficiency/training times on all the controllers in the facility. Each
+controller will have the positions that they are proficient in and/or training in typed in FLIPS so they can
+be edited. Position times can be loaded from the current drive or saved to the current drive and read
+back in again at a later date. The controller can sign in and sign out at the PIDP Indicator Position (See
+PIDP operators manual) that will allow FLIPS to keep an automated position time. Controllers and
+positions must already be entered into FLIPS for the automated position time to function. A number of
+reports can be generated on position times. The controller may delete all the controllers in a facility, all
+the controllers on a specific crew, a certain controller, or a position from a certain controller. Pressing
+<F4> from the FLIPS Main Menu will enter the position time option. There will be a person counter
+(PER), located below the FLIPS flight plan counter (FP), that displays the number of controllers loaded
+into FLIPS.
+48   AT-G-15, 1 August 2000
+AT-G-15, 1 August 2000                                                                                        49
+
+
+6.8.1. <A> Load File
+
+        The controller has the option to load a previously saved position time database from the selected
+drive into the active position time database. Upon selecting choice <A>, a menu will be displayed to
+allow the controller to change the drive to load from. When the controller is ready to continue, the
+<Esc> key should be pressed. A directory of the current drive will be displayed with only the files that
+position time can use (filenames with a .PTD extension). The first file will be highlighted and the <Up
+Arrow> and <Down Arrow> keys will move the highlighted box from one filename to another. If more
+than one page of filenames exist, the <Space> and <Backspace> keys will move the directory forward
+and backward. Positioning the highlighted box over a filename and pressing the <Enter> key will select
+that filename. A filename can be entered manually by typing the filename from the keyboard. The first
+key entered will cause the directory to disappear. The filename must be 1 - 8 alphanumeric characters
+(extensions will automatically be added to the filename). If a good file is loaded, any position times
+previously in the system will be deleted and the position times from the file will be put in the position time
+database. If a file is not compatible with the FLIPS version, an attempt will be made to convert the file.
+If the file can be converted, it will be loaded. After a successful load is completed, the Position Time
+Menu will be displayed.
+
+6.8.2. <B> Enter Position Time
+
+       The controller has the option of entering proficiency/training times from the position logs. To have
+proficiency/training times updated, the controller is asked to enter the position and then the start time,
+the initials, and the stop time. The program will calculate the amount of time accumulated and add it to
+the position time for that controller. If a controller is receiving training time, the first set of initials is the
+trainees and the second set is the trainers. If the total amount of time a controller has in position is
+known, the total can be entered in the start/min time. The range is 1 to 999 and only one set of initials
+are entered. The time entered will then be added to the position time for that controller. This process
+can be done for all positions (see Figure 6-13, “Edit Position Time Log”). Also the log file is updated
+every time position time is edited or when a controller signs in at a position using the Automated Position
+Time Function.
+50                                                                           AT-G-15, 1 August 2000
+
+
+
+
+ 09:41:08                                         EDIT
+                                                                                               FP = 001
+                                                                                              PER = 015
+                             LAST [0000] [AA ] [0100]
+
+                                  START/
+                                    MIN INIT        STOP
+                             NEXT [0100] [   ]     [   ]
+
+
+
+
+                             <ENTER> -- TO SAVE
+                             <ESC> -- TO EXIT
+
+
+
+                                                                                   9FM FEED
+
+
+                                Figure 6-13: Edit Position Time Log
+
+6.8.3. <C> Edit Options
+
+       Upon entering <C> Edit Options, the controller will be prompted for a crew ID. Once entered,
+the controller will be allowed to enter information on a position. A list of the initials will be displayed
+and the controller prompted for the initials to edit. After the controller enters the initials, a list of
+positions will be displayed. Once the position has been entered, the information for that position will be
+displayed on the screen. The controller can then edit the position information.
+
+6.8.3.1. Edit RFC Position
+
+       When the controller chooses to edit the RFC position, the edit RFC position screen will be
+displayed. The controller can edit PAR and ASR runs data. The maximum number of runs allowed in
+each category (PAR and ASR) is 5000. The number of runs entered are added to the displayed total
+for that category. If the number is entered with a “-” sign in front of it, that number will be subtracted
+from the displayed total. A <Space> advances the cursor to the next field and the <Backspace>
+moves the cursor back to the previous field. Press <ENTER> to save the information or press <Esc>
+to exit this option without saving (see Figure 6-14, “Edit RFC Position”).
+AT-G-15, 1 August 2000                                                                           51
+
+
+
+
+ 09:41:08                                      EDIT
+                                                                                           FP = 001
+                                POSITION [RFC]     CREW [A ]                             PER = 015
+                                TYPE [ P ] => <P>RO or <T>RAIN
+
+                                              NOW         ADD
+                                PAR RUNS        0     [         ]
+                                ASR RUNS        0     [         ]
+
+
+
+                                 <ENTER> -- TO SAVE
+                                 <ESC> -- TO EXIT          << AA >>
+
+
+
+                                                                                9FM FEED
+
+
+                                 Figure 6-14: Edit RFC Position
+
+
+6.8.3.2. Edit Position (Other Than RFC)
+
+       The OTHERS label can be changed to any position name the controller wishes. The time range
+that is allowed in a single category is 0 to 248 hours. Time can be entered in minutes or hours and
+minutes, with a "+" sign after the hours. Example: two hours = 120 or 2+00. Minutes entered with a "-"
+sign in front means that number is negative and will be subtracted from the total. A <Space> advances
+to the next field and<Backspace> backs up to the previous field. Press <Enter> to save the
+information or press <Esc> to exit this option without saving (see Figure 6-15, “Edit Position”).
+52                                                                            AT-G-15, 1 August 2000
+
+
+
+
+ 09:41:08                                            EDIT
+                                                                                                FP = 001
+                              POSITION [AC ]                                                   PER = 015
+                              TYPE [P] => <P>RO or <T>RAIN
+                              CREW [A ]
+
+                              LIVE            1:00          [   ]
+                              SIM              :00          [   ]
+                              NR               :00          [   ]
+                              CLASS\MON        :00          [   ]
+                              OTHER            :00          [   ]
+
+                              <ENTER> -- TO SAVE
+                              <ESC> -- TO EXIT                  << AA >>
+
+
+
+                                                                                    9FM FEED
+
+
+                                      Figure 6-15: Edit Position
+
+
+6.8.4. <D> Save File
+
+       The controller has the option of saving the position time database to the selected drive for later
+use. Ensure the diskette is formatted (MS-DOS version 3.2 or later) and not write protected before an
+attempt is made to write to the diskette. Upon selecting choice <D>, a menu will be displayed to allow
+the controller to change the drive to save to. When the controller is ready to continue, the <Esc> key
+should be pressed. A directory of the current drive will be displayed with only the files that position
+time can use (filenames will be displayed with a .PTD extension). The first file will be highlighted and the
+<Up Arrow> and <Down Arrow> keys will move the highlighted box from one filename to another. If
+more than one page of filenames exist, the <Space> and <Backspace> keys will move the directory
+forward and backward. Positioning the highlighted box over a filename and pressing the <Enter> key
+will select that filename. A filename can be entered manually by typing the filename from the keyboard.
+The first key entered will cause the directory to disappear. The filename must be 1-8 alphanumeric
+characters (extensions will automatically be added to the filename). Upon completion of the save, the
+Position Time Menu will be displayed.
+AT-G-15, 1 August 2000                                                                                 53
+
+
+6.8.5. <E> Delete Options
+
+       Upon selecting option <E>, the controller has the option of <A> Delete Facility, <B> Delete
+Crew, <C> Delete Person or <D> Delete Position. With any deletion the controller is prompted for
+confirmation. If <Y> is pressed, information that the controller chose will be deleted. Delete Facility
+will delete the Facility with all its Crews, Controllers and their Positions. Delete Crew will delete all of
+the controllers on that crew and their positions by prompting for Crew. If a controller needs to be
+deleted, the menu is displayed prompting for the crew then the controller initials to be deleted. If a
+position needs to be deleted, the menu is displayed to select the crew then the controller initials. Once
+selected, a menu is displayed to select the position name to delete.
+
+6.8.6. <F> Add Controller
+
+       Upon entering option <F>, the controller will be allowed to enter controllers into the position time
+database. Initials will be displayed in alphabetic order. The controller will be asked to assign the
+controller to a specific crew. Positions can be entered and edited through <C> Edit Options. FLIPS
+will accept controller initials until the <Esc> key is pressed.
+
+6.8.7. <G> Build Report
+
+        Upon selecting option <G>, the current position time information will be built into a report.
+Ensure the diskette is formatted (MS-DOS version 3.2 or later) and not write protected before an
+attempt is made to write to the diskette. The controller will be asked to select the report based on a
+crew or facility. The controller will be asked which type of report is needed. A menu will be displayed
+to allow the controller to change the drive to save to. When the controller is ready to continue, the
+<Esc> key should be pressed. A directory of the selected drive will be displayed with only the files that
+position time can use (filenames with a .PTR extension). The first file will be highlighted and the <Up
+Arrow> and <Down Arrow> keys will move the highlighted box from one filename to another. If more
+than one page of filenames exist, the <Space> and <Backspace> keys will move the directory forward
+and backward. Positioning the highlighted box over a filename and pressing the <Enter> key will select
+that filename. A filename can be entered manually by typing the filename from the keyboard. The first
+key entered will cause the directory to disappear. The filename must be 1 - 8 alphanumeric characters
+(extensions will automatically be added to the filename). Upon completion of the save, the Position
+Time Menu will be displayed.
+
+6.8.8. <H> Print Options
+
+       The controller has the option to print proficiency time reports. Upon selecting choice <H>, a
+menu will be displayed to allow the controller to change the drive to read from. When the controller is
+ready to continue, the <Esc> key should be pressed. A directory of the selected drive will be
+displayed with only the files that position time can use (filenames with a .PTR extension). The first file
+will be highlighted and the <Up Arrow> and <Down Arrow> keys will move the highlighted box from
+54                                                                               AT-G-15, 1 August 2000
+
+
+one filename to another. If more than one page of filenames exist, the <Space> and <Backspace>
+keys will move the directory forward and backward. Positioning the highlighted box over a filename
+and pressing the <Enter> key will select that filename. A filename can be entered manually by typing
+the filename from the keyboard. The first key entered will cause the directory to disappear. The
+filename must be 1 - 8 alphanumeric characters (extensions will automatically be added to the filename).
+The printer will need 8.5 x 11 white paper and it automatically sets to print the report. After the report
+is printed, the printer will reset to the FLIPS format. Upon completion of the print function, the Position
+Time Menu will be displayed.
+
+6.8.9. <I> Reset Options
+
+       The controller has the option to reset the proficiency times on a certain crew from the <I> option.
+The controller is asked to enter a crew name. Once done, the controller is asked if they are sure they
+want to reset all of the crew information. If <Y> is pressed, positions containing proficiency times will
+reset to zero. Training times will not be reset. Upon completion of the reset, the Position Time Menu
+will be displayed.
+
+
+6.9. Amend Flight Plan
+
+<F5> AMEND
+
+       The Amend Flight Plan Mode is selected by pressing <F5>. The controller is prompted for the
+ACID, discrete beacon code, or Computer ID (CID) of the flight plan to be amended. The selected
+flight plan is then displayed in the flight strip work area. The controller can not amend a flight plan if it is
+flagged as a Departure Message (DM), if the second leg is selected and the first leg is a (DM), or if it is
+a Japanese flight plan. The edit procedures used to amend flight plans are the same as those listed in the
+Section 7.1., Editing Commands. Error messages are provided for no match or invalid entries. If more
+than one flight plan exists with the same identifier, the duplicate flight plan information will be displayed
+below the flight strip work area, sorted by the activation time. The controller may select the specific
+flight plan desired by the CID number. If a CID is entered that is not in the list of duplicate flight plans,
+an error message will be displayed. When a valid CID is entered, the appropriate flight plan will be
+displayed in the flight strip work area for modification.
+
+      If the first leg aircraft type is amended and <Enter> is pressed, a menu is displayed prompting
+the controller to change the second leg aircraft type. If the second leg aircraft type was amended, the
+menu will prompt for a change to the first leg aircraft type.
+
+       If the Interface is up, flight plans can be amended in both systems if the flight plan does not have a
+status message of DM or is a Japanese flight plan. When the flight plan to be amended is a Data
+Accept (DA) or the second leg is amended and the first leg is a (DA), an amendment message is
+generated and sent to PIDP. Even though all the amended fields will be displayed in FLIPS, only
+certain fields can be sent across the interface. All flight plans will send amendments for the ACID, the
+AT-G-15, 1 August 2000                                                                              55
+
+
+aircraft type, the beacon code, and the time. Additionally, Departure flight plans can send an amended
+departure airport, Arrival flight plans can send amendments for coordination fixes and arrival airports,
+and En Route flight plans can send amendments for coordination fixes and coordination indicators.
+
+NOTE: The beacon code must be changed in both legs of a stereo flight plan, if it needs to be changed.
+The beacon code is only carried over to the second leg by the program the first time the flight plan is
+entered. If the beacon code must be changed after the flight plan has been entered, it must be manually
+changed in both legs.
+
+       The <Enter> key is used to save amended flight plans. The revision number is automatically
+updated. The <Esc> key is used to abort the change. Amended flight strips will be printed immediately
+if they were printed previously.
+
+
+       If a flight plan with additional legs is amended, a menu will be displayed showing the additional
+strips. Amendments can then be done to the additional strips (see Figure 6-16 “Amend Additional
+Strips”).
+
+
+
+
+ 07:26:18                                    DEPENDENT
+                                                                                             FP = 007
+                         EAGLE12 A0920 007
+
+
+
+
+                         PLEASE ENTER CID OF DESIRED STRIP :
+                         PRESS <SP> TO SCROLL OR <ESC> TO EXIT
+
+
+
+
+                                                                                 9FM FEED
+
+
+                              Figure 6-16: Amend Additional Strips
+56                                                                              AT-G-15, 1 August 2000
+
+
+      Note: The system will compute revision numbers and print them on flight progress strips, up to
+the ninth revision. After revision number nine, the flight plan can be amended but the strip revision
+number will not be incremented.
+
+
+6.10. Print Flight Plan
+
+<F6> PRINT
+
+       The Print Flight Plan mode is selected by pressing <F6> from the FLIPS Main Menu. Individual
+strips can be selected for printing from this menu by entering the CID, the ACID, or the beacon code.
+Additional options available are: print the entire active flight plan database, quit a print, form feed, or
+print a canned strip to align the printer.
+
+6.10.1. Manual Print Request
+
+       Individual flight plans can be printed at the controller’s request by selecting the <F6> function
+key. Bulk printing of all flight plans in the database is also available. The controller may request a
+specific flight plan by using the ACID, the beacon code, or the CID of the flight plan. If the flight plan is
+not found, an error message will be displayed and the controller given the opportunity to select and print
+another flight plan or exit the print mode. If more than one flight plan exists with the same identifier, the
+duplicate flight plan information will be displayed below the strip template, sorted by activation time.
+After the controller selects the specific flight plan desired, it will be printed and displayed in the flight
+strip work area. Additional flight plans may be identified and printed until the <Esc> key is pressed
+exiting the print mode.
+
+Other options included are:
+
+<Ctrl A>     - Prints all the flight plans in the system
+
+<Ctrl B>     - Prints a block of flight plans within a range of time defined by the controller
+
+<Ctrl Q> - Stops the printing of flight plans not yet in the print buffer
+
+<F9>         - Form Feed advances two flight progress strips and reinitializes the printer to large
+               print and short forms
+
+<F10>        - Prints a TEST flight plan to check the alignment of the printer. If the printer is not
+        aligned, the TEST strip will be used as a guide to manually align the printer
+
+<Esc>        - Exits to FLIPS Main Menu
+AT-G-15, 1 August 2000                                                                         57
+
+
+Note: Flight plans may also be printed in the FDS mode by using the Strip Request (SR) message (see
+Section 6.4.2.4., “Strip Request (SR) messages”).
+58                                                                              AT-G-15, 1 August 2000
+
+
+6.10.2. Automatic Strip Printing
+
+      Flight plans will automatically print at a selected time parameter prior to the flight plan activation
+time. The Flight Plan Printing Time parameter is the length of time prior to the flight plan activation time.
+The default value is 20 minutes but can be reset from <F10> CONFIG. When the interface is up, the
+output time parameter will be 15 minutes prior to activation time.
+
+       Note: If the printer is not working, an error message will be displayed. For example, if the
+printer is placed OFF-LINE for any reason and an attempt is made to print a strip (either automatically
+or manually), an error message "THE PRINTER IS OFF-LINE" will be displayed. The error
+message will remain displayed until the printer is placed back ON-LINE and the printer is used again
+(see Figure 6-2, System Messages).
+
+
+6.11. Delete Flight Plan
+
+<F7> DELETE
+
+       Individual flight plans are deleted automatically or by controller request. Additionally, all or some
+of the flight plans in the system can be deleted by controller request.
+
+6.11.1. Manual Flight Plan Delete
+
+       To manually delete an individual flight plan, the controller enters the ACID, the beacon code, or
+the CID of the flight plan to be deleted (see Figure 6-17, “Delete Menu”). If more than one flight plan
+exists with the same identifier, the duplicate flight plan information will be displayed below the flight strip
+work area, sorted by activation time. The controller may then select the specific flight plan to delete
+based on the CID number. The selected flight plan is displayed in the flight strip work area and
+automatically deleted with no other prompts. A Cancel message (CX) will be sent to PIDP and the
+flight plan will be deleted from both systems. When the PIDP interface is up, flight plans flagged with a
+Departure Message (DM) can not be deleted. An error message will be displayed if the requested flight
+plan cannot be found.
+
+      Whenever a flight plan is deleted manually or by the system, a message will be sent to the printer
+displaying the ACID, the strip revision number, and the CID of the flight plan that was deleted from the
+database. This message will not be printed if the print messages option has been turned off.
+AT-G-15, 1 August 2000                                                                                    59
+
+
+
+
+                                                DELETE _FP
+ 07:26:18                                                                                          FP = 007
+                                  ENTER ONE OF THE FOLLOWING :
+
+                                           COMPUTER_ID
+                                           AIRCRAFT_ID
+                                           BEACON_CODE
+
+                                      <CTRL-A> -- DELETE
+                                      <CTRL-B> -- DELETE BLOCK
+                                         <ESC> -- TO EXIT
+
+
+
+
+                                                                                      9FM FEED
+
+
+                                       Figure 6-17: Delete Menu
+
+
+      If a Stereo flight plan having two legs is manually deleted, the other leg of the stereo route will also
+be deleted by this entry. If the second leg of a two-leg flight plan is selected for deletion and the first leg
+has a departure message (DM), neither leg will be deleted.
+
+        To delete all flight plans in the database, including departure messages (DM), enter <Ctrl A>
+while in the <F7> Flight Plan Delete Mode. A system warning will be given requiring verification prior
+to all flight plans being purged. No CX messages will be sent to PIDP. A message will be sent to the
+printer that reads:
+
+      ALL FLIGHT PLANS WERE
+      DELETED FROM DATABASE
+      AT => HH:MM:SS
+
+      This message will not be printed if the print messages option has been turned off.
+
+      The controller may delete a block of flight plans by entering <Ctrl B>. FLIPS will prompt the
+controller for the starting and ending beacon codes. When entered, FLIPS will delete all flight plans
+60                                                                                 AT-G-15, 1 August 2000
+
+
+with beacon codes that are within the start and stop values, including all flight plans containing letters for
+beacon code blocks if part of the beacon code block is within the delete block.
+
+        If a two-leg stereo flight plan is deleted, all additional strips are also deleted. If an additional strip
+is deleted, the controller will be asked to delete the single additional strip or the entire flight. If the first
+leg of a two-leg stereo has been auto-deleted, the second leg becomes a single parent with additional
+strips attached. If the parent is deleted, the controller will be asked to delete the single strip or the entire
+flight.
+
+6.11.2. Automatic Flight Plan Delete
+
+       Flight plans will automatically be deleted after the Flight Plan Delete Time. The Flight Plan Delete
+Time is the designated length of time after the flight plan activation time that the flight plan will be
+deleted. The default time is 120 minutes but can be reset from <F10> CONFIG. If the PIDP interface
+is up, the Flight Plan Delete Time is defaulted to 125 minutes. This default time can not be altered from
+configuration. Only flight plans flagged as (DR) or (DX) will automatically be deleted when the interface
+is up. Flight plans with the status of DM or DA will only be deleted when a delete message is sent from
+PIDP. NOTE: Japanese flight plans are not automatically deleted.
+
+
+       Note: Whenever a flight plan is deleted manually or by the system, a message will be sent to the
+printer displaying the ACID, the strip revision number, and the CID of the flight plan that was deleted
+from the database.
+
+EXAMPLE:          REMOVE STRIPS
+                  ABLE21 01 027
+             * FLIGHT PLAN DELETED *
+
+      This message will not be printed if the printer messages have been turned off. If the printer has
+been OFF-LINE during the time flight plans were removed by the system, only the most recent 50 flight
+plans deleted from the flight plan database will receive the "REMOVE STRIPS" message.
+
+When a flight strip that has additional strips linked to it is deleted, a new parent is formed and all the
+additional strips are re-linked. This allows the strips to be linked until they are all deleted.
+
+
+6.12. Scroll
+
+<F8> SCROLL
+
+       Upon entering the Scroll mode, the flight strip work area is displayed along with the first flight plan
+in the database. The first and last flight plans in the database are identified by a message in the Scroll
+Menu. If there are no flight plans in the database, a message will be displayed in the scroll menu. The
+AT-G-15, 1 August 2000                                                                                 61
+
+
+controller must press <Esc> to exit. The <Space> and <Backspace> keys are used to scroll forward
+and backward through the flight plan database. The flight plan database is sequenced by time. The
+controller may edit, delete, or print the flight plan being viewed by pressing the appropriate function
+key(s) (see Figure 6-18, “Scroll Menu”). If an additional strip is being displayed, the CID of the parent
+is displayed in the right bottom corner of the strip.
+
+
+  EAGLE34                           TNK        TIK . . OKC . . END . . TIK
+                      2345
+
+   F16/P              P1005
+
+
+   001                 350                     TRAINING FLIGHT
+
+
+
+
+                                                   SCROLL
+ 07:26:18                                                                                        FP = 007
+                             <SP>  TO VIEW NEXT FLIGHT PLAN
+                             <BSP> TO VIEW PREVIOUS FLIGHT PLAN
+
+                             <F5>    AMEND
+                             <F6>    PRINT
+                             <F7>    DELETE
+                             <F9>    FORM FEED        FIRST FLIGHT PLAN
+
+                             <ESC> TO EXIT
+
+
+
+
+                                                                                     9FM FEED
+
+
+                                          Figure 6-18: Scroll Menu
+
+
+Options available are:
+
+<F5>        - allows amendments to done on the displayed flight plan. If the first leg aircraft type
+              is edited and <Enter> is pressed, a menu is displayed prompting the controller to
+            change the second leg aircraft type. If the second leg aircraft type was edited, the
+            menu will prompt for a change to the first leg aircraft type. Pressing <Esc> returns to
+            the Scroll Menu.
+
+              If the PIDP interface is up and the flight plan to be amended has a status of DM or it is the
+              second leg and the first leg has a DM status, amendments will not be allowed. NOTE:
+              Japanese flight plans cannot be amended.
+62                                                                             AT-G-15, 1 August 2000
+
+
+<F6>      - Prints the displayed strip.
+
+<F7>      - Prompts "ARE YOU SURE Y/N". Pressing <Y> deletes the displayed flight plan
+            and automatically moves to the previous flight plan. Pressing <N> aborts the delete.
+
+            If the PIDP interface is up and the flight plan to be deleted has a status of DM or it is
+          the second leg and the first leg has a DM status, deletions will not be allowed.
+
+<F9>      - Feeds out two flight progress strips.
+
+<Esc>     - Exits out of Scroll to the FLIPS Main Menu.
+
+
+6.13. Form Feed
+
+<F9> FMFEED
+
+     The controller may execute a printer "form feed" command by pressing <F9> FMFEED. Form
+Feed will advance two (2) flight progress strips. The <F9> FMFEED command is constantly operative
+and may be selected at any time from within the FLIPS program.
+
+       The form feed will reinitialize the printer to large print and small forms. This is useful should the
+printer be turned off and back on while FLIPS has been idle.
+
+
+6.14. Configuration
+
+<F10> CONFIG
+
+      Selecting <F10> CONFIG allows the controller to do the following: add, view or delete beacon
+code blocks; enter, delete, or edit stereo flight plan templates; rearrange the stereo template list, change
+the system time and date, configure flight plan output and delete limits, load/save files from or to the
+current drive, delete files from the current drive, and configure the printer. Options in Configuration can
+be locked through <F3> MANAGE. If an option is locked, the "L=>" symbol will appear before the
+option. If an option is locked, it may only be accessed through <F3> MANAGE - <C> Change
+Configuration Options.
+
+     Note: To save any changes or additions made in configuration, you must return to the FLIPS
+Main Menu.
+
+6.14.1. <A> Beacon Code Assignments
+AT-G-15, 1 August 2000                                                                                  63
+
+
+      The controller may add, view or delete the beacon code blocks from <F10> CONFIG or <F3>
+MANAGE. The beacon code blocks are saved to the hard drive any time one of them has been
+modified. If this option is locked, selecting <A> will display the current status of the beacon code
+blocks A - H. No changes are allowed in the view mode.
+
+6.14.1.1. <A> Add Beacon Code Block
+
+       The controller may define up to 8 separate beacon code blocks in <F10> CONFIG. The
+beacon code blocks will be identified as A - H. Each of the eight predefined beacon codes is initialized
+to a start and stop value of 0000. The <Space> and <Backspace> keys are used to scroll through the
+code blocks. Beacon code blocks cannot overlap. The beacon code stop value must be greater than
+the beacon code start value. A beacon code block stop value cannot exceed 7777. Beacon codes
+1236, 7500, 7600, and 7700 are restricted and cannot be used as a start or a stop value. Error
+messages are displayed for invalid entries.
+
+6.14.1.2. <B> View Beacon Code Block
+
+       View Beacon Code Block displays the current status of the beacon code blocks. No changes
+are allowed in the view mode.
+
+6.14.1.3. <C> Delete Beacon Code Block
+
+      Select a letter A - H to delete a previously defined beacon code block. By pressing a valid letter,
+the corresponding block start and stop values are reset to 0000. If a current flight plan in the system
+has a beacon code block assigned and that beacon code block is later deleted, the system will assign
+blanks at print time and an error message will be sent to the printer.
+
+6.14.2. <B> Stereo Flight Plan Routes
+
+      The controller may add, delete, edit and rearrange stereo templates from <F3> MANAGE if the
+option is locked or <F10> CONFIG if the option is unlocked.
+
+       The controller may enter up to forty unique stereo flight plans, each of which may be composed
+of one or two segments of different flight plan types (i.e., departure/arrival legs). Each stereo flight plan
+is identified by a unique stereo flight plan name consisting of 1 - 7 characters. If the stereo route has
+two segments, the delay or offset time between the first and second legs of the flight plan may also be
+entered. The ACID and aircraft type are automatically transferred to the second segment of a two-leg
+stereo flight plan when the flight plan is entered from the <F4> Stereo mode. The beacon code will be
+carried over to the second segment when the first segment beacon code field is left blank and a “#” is
+entered in the second segment beacon code field. There are NO required entries for a stereo template.
+The controller may also delete templates, edit templates, and rearrange the stereo template list.
+64                                                                            AT-G-15, 1 August 2000
+
+
+6.14.2.1. Add Stereo <A>, <B>, <C>
+
+       Options Add Arrival, Add Departure and Add Overflight allow the controller to create new
+stereo templates. Once selected, the controller is prompted to enter a letter <A - T> with which to
+identify the stereo route, the letter must not already contain a stereo route. <Space> will display
+another list of 20 stereo templates and <Esc> will return the controller to the Stereo FP Menu. After
+the letter is selected, the controller is prompted to enter a unique stereo route name (see Figure 6-19,
+“Stereo Route Name Menu”). After entering the stereo route name, the first leg of the stereo template
+is displayed. The controller may now configure the stereo route as needed. After completing the first
+leg, the controller is prompted to enter the second leg time in route. If there is a time, enter it in the
+format shown. If no time is entered, the first and second leg will become active at the same time. If the
+controller wants the beacon code to carry over from the first leg to the second leg of a stereo flight plan,
+leave the first leg beacon code field blank and put a “#” sign in the second beacon code field. This will
+cause the beacon code entered in the first leg to be transferred (“carry over”) to the second leg when a
+flight plan is created using this stereo flight template. Press <Esc> for no second leg. After entering an
+offset time the Add 2nd Leg Stereo Menu will be displayed. The controller is asked to choose the type
+flight plan for the second leg and configure the route as needed.
+
+
+
+
+ 09:41:08                                         ADD
+                                                                                                FP = 001
+
+
+                                ENTER THE STEREO ROUTE NAME:
+
+                                                      <C> =>
+
+
+
+                                    <ENTER> -- TO SAVE
+                                    <ESC> -- TO EXIT
+
+
+
+
+                                                                                    9FM FEED
+
+
+                              Figure 6-19: Stereo Route Name Menu
+AT-G-15, 1 August 2000                                                                                  65
+
+
+6.14.2.2. <D> Delete Stereo
+
+       This option allows the controller to delete existing stereo templates. When option <D> is
+selected, the Stereo Delete Menu is displayed. Enter the letter of the stereo route or routes to be
+deleted (invalid keys are ignored) and the stereo template will be deleted as the letter of the stereo route
+is pressed. Press <Esc> to exit to the Stereo FP Menu.
+
+6.14.2.3. <E> Edit Stereo
+
+      This option allows the controller to edit a previously configured stereo template.
+
+        When option <E> is selected, the controller is prompted to enter the letter <A - T> of the stereo
+route to be edited (see Figure 6-20, “Edit Stereo FP Menu”). <Space> will display another set of 20
+stereo templates. The selected stereo route name is shown with an option to change it. If <Y> is
+selected, enter the new stereo route name and press <Enter> to save the change and move on to edit
+the first leg. If <N> is selected, the first leg of the stereo template will be displayed for editing without
+changing the stereo route name.
+
+
+
+
+                                            EDIT
+ 09:41:08                                                                                        FP = 001
+                                         STEREO LIST 1
+                      SELECT LETTER OF STEREO FLIGHT PLAN DESIRED
+                           <A> TANGO              <K>
+                           <B>                    <L>
+                           <C>                    <M>
+                           <D>                    <N>
+                           <E>                    <O>
+                           <F>                    <P> PAPA
+                           <G>                    <Q>
+                           <H>                    <R>
+                           <I>                    <S>
+                           <J>                    <T>
+                           <ESC> -- TO EXIT       <SP> -- FOR MORE
+
+
+
+                                                                                     9FM FEED
+
+
+                                  Figure 6-20: Edit Stereo FP Menu
+66                                                                              AT-G-15, 1 August 2000
+
+
+       After editing of the first leg is complete on a single leg stereo template, the controller will be asked
+if the one leg needs to be changed into a two leg. If a second leg is desired, the controller will edit the
+new second leg template. If a second leg is not desired, the controller can hit <N> or <Esc> to return
+to the Stereo FP Menu.
+
+       After editing on the first leg of a two leg stereo template is complete, the current offset time will be
+displayed with an option to change it. If <Esc> is pressed, the controller will be asked if the second leg
+should be deleted. If <Y>, the stereo template second leg will be deleted. If <N> is pressed, the
+Stereo FP Menu will be displayed. If the offset is changed or <N> is hit for no change, the second leg
+of the stereo template will be displayed for editing. If <Enter> is pressed, the stereo template is saved.
+If <Esc> is pressed, the controller will be asked if the second leg should be deleted. If <Y>, the
+second leg stereo template leg is deleted. If <N> or <Esc> is pressed, the Stereo FP Menu is
+displayed. When <Enter> is pressed, changes are saved. When <Esc> is pressed, previously saved
+information is retained and all changes are ignored. The Stereo FP Menu is then redisplayed.
+
+      RESTRICTIONS: The ACID, AIRCRAFT TYPE, and TIME fields of the second leg cannot
+be accessed. The controller may edit other fields of the template as required.
+
+6.14.2.4. <F> Rearrange List
+
+       This option allows the controller to rearrange the stereo template list. When option <F> is
+selected, the Stereo Rearrange Menu is displayed prompting the controller to enter the letter of the
+stereo route to be moved (see Figure 6-21, “Stereo Rearrange Menu”). The first position of a move
+must contain a defined stereo route. Error messages are provided as needed and invalid keys are
+ignored.
+AT-G-15, 1 August 2000                                                                                    67
+
+
+
+
+                                           REARRANGE
+ 09:41:08                                                                                          FP = 001
+                                          STEREO LIST 1
+                       MOVE < --1> TO < -- > => <ENTER> TO REARRANGE
+                            <A> TANGO              <K>
+                            <B>                    <L>
+                            <C>                    <M>
+                            <D>                    <N>
+                            <E>                    <O>
+                            <F>                    <P> PAPA
+                            <G>                    <Q>
+                            <H>                    <R>
+                            <I>                    <S>
+                            <J>                    <T>
+                            <ESC> -- TO EXIT       <SP> -- FOR MORE
+
+
+
+                                                                                       9FM FEED
+
+
+                                Figure 6-21: Stereo Rearrange Menu
+
+
+       Stereo routes may be moved to any location and can also be moved between lists. <Space> will
+display another list of stereo templates. If a route is moved to a location that contains another route, the
+two routes swap places and the Stereo Rearrange Menu is reset for another move. Otherwise, the
+route is moved to the new location and the menu is reset to accept the first letter.
+
+       If the controller selects the first letter and presses <Esc> before pressing <Enter>, the Stereo
+Rearrange Menu will be reset to accept the first letter. If the controller selects the first two letters of the
+move and presses <Esc> before pressing <Enter>, the Stereo Rearrange Menu will be reset to accept
+the first letter and no stereos are moved. The Stereo Rearrange Menu is also reset after the <Enter>
+key is pressed. Press <Esc> before selecting the first letter to exit to the Stereo Menu.
+
+6.14.3. <C> System Time/Date
+
+      The system time and date are displayed with the option to change the time, the date, or both the
+time and date. The time is displayed in the HHMMSS format. If the time is changed, the hours and
+minutes are required entries. The "seconds" entry is optional and will default to "00" if no value is
+entered. Pressing <Enter> with no changes does not change the clock. The date is displayed in the
+MMDDYY format. If the date is changed, the month and day are required entries. The year entry is
+68                                                                            AT-G-15, 1 August 2000
+
+
+optional and will not change if it isn’t entered. The <Space> and <Backspace> keys toggle between
+the time and date. The time and date are changed by overwriting the old time and date. Before a time
+change is accepted that might delete some or all flight plans, this message is displayed:
+
+This time change may result in some FLIGHT PLAN DELETIONS. Enter <Y> to PROCEED
+or any other key to ABORT changes.
+
+      If <Y> is selected or there is no chance of more deletions, the new time and date will be
+displayed and the clock set. The Configuration Menu will then be displayed. If <Y> was not chosen,
+the change is aborted and the display returns to the Configuration Menu.
+
+NOTE: If the PIDP Interface is up, the system time will be sent from PIDP to FLIPS every 32
+seconds. The FLIPS time will use the PIDP time to refresh the clock. The clock cannot be changed
+from FLIPS when the interface is up.
+
+6.14.4. <D> Flight Plan Delete Time
+
+       The system will automatically delete flight plans at a specified period of time after the Flight Plan
+Activation Time. This time period will be entered in increments of 30 minutes with the valid range being
+30 - 150 minutes. A system default value of 120 minutes will be used if no changes are made. If the
+PIDP Interface is up, the delete time will default to 125 minutes. If this option is locked, selecting <D>
+will display the current delete time. No changes are allowed in the view mode.
+
+6.14.5. <E> Flight Plan Output Time
+
+       The Flight Plan Printing Time period is the time in advance of the flight plan activation time that a
+flight progress strip will be printed. This time period will be entered in increments of 10 minutes with the
+valid range being 10 - 60 minutes. A system default value of 20 minutes will be used if no changes are
+made. If this option is locked, selecting <E> will display the current status of the output time. No
+changes are allowed in the view mode. When the interface is up, the output time is 15 minutes.
+
+6.14.6. <F> Save Database
+
+        The controller can save the current FLIPS database to the selected drive for later use. Ensure the
+diskette is formatted (MS-DOS version 3.2 or later) and not write protected before an attempt is made
+to write to the diskette. Upon selecting choice <F>, a menu will be displayed to allow the controller to
+change the drive to save to. When the controller is ready to continue, the <Esc> key should be pressed
+(see Figure 6-22, “Save Disk Menu”). A directory of the current drive will be displayed with only the
+files that contain flight plans (filenames will be displayed with a .FLP extension). The first file will be
+highlighted and the <Up Arrow> and <Down Arrow> keys will move the highlighted box from one
+filename to another. If more than one page of filenames exist, the <Space> and <Backspace> keys
+will move the directory forward and backward. Positioning the highlighted box over a filename and
+AT-G-15, 1 August 2000                                                                              69
+
+
+pressing the <Enter> key will select that filename. A filename can be entered manually by typing the
+filename from the keyboard. The first key entered will cause the directory to disappear. The file name
+must be 1 - 8 alphanumeric characters (extensions will automatically be added to the filename). Error
+and Status messages are displayed on the monitor during the save process. Upon completion of the
+save, the Configuration Menu will be displayed.
+
+
+
+
+ 09:41:45                                     SAVE DISK
+                                                                                             FP = 000
+    DIR C:
+  MON.FLP                          CURRENT DRIVE IS => C:
+
+
+                                   ENTER FILE NAME =>
+
+
+
+
+                                   <ENTER> -- TO CONTINUE
+                                   <ESC>   -- TO EXIT
+
+  ENTER-SELECT
+
+                                                                                  9FM FEED
+
+
+                                   Figure 6-22: Save Disk Menu
+
+
+6.14.7. <G> Load Database
+
+       The controller has the option to load a previously saved database from the selected drive to the
+FLIPS database. Upon selecting choice <G>, a menu will be displayed to allow the controller to
+change the drive to load from. When the controller is ready to continue, the <Esc> key should be
+pressed. A directory of the current drive will be displayed with only the files that contain flight plans
+(filenames with a .FLP extension). The first file will be highlighted and the <Up Arrow> and <Down
+Arrow> keys will move the highlighted box from one filename to another. If more than one page of
+filenames exist, the <Space> and <Backspace> keys will move the directory forward and backward.
+Positioning the highlighted box over a filename and pressing the <Enter> key will select that filename.
+A filename can be entered manually by typing the filename from the keyboard; the first key entered will
+cause the directory to disappear. The file name must be 1 - 8 alphanumeric characters (extensions will
+70                                                                             AT-G-15, 1 August 2000
+
+
+automatically be added to the filename). Any flight plans loaded from the selected drive which duplicate
+any flight plans currently in FLIPS will be rejected. If this occurs, a message will be sent to the printer
+that reads "REJECT FLIGHT PLAN (ACID, BEACON, TIME)". When additional legs for a
+stereo are loaded, they are relinked to the parent. If any strips time falls over 24 hours in the future, the
+entire stereo flight plan with all additional strips will not be loaded. If a file is not compatible with the
+FLIPS version, an attempt will be made to convert the file. If the file can be converted, it will be
+loaded. Upon completion of the save, the Configuration Menu will be displayed.
+
+6.14.8. <H> Printer Configuration
+
+      This option allows the user to configure the printer to output only the strips or messages desired.
+
+      <A> AMENDED STRIPS: Toggles on and off the printing of all amended strips.
+
+      <B> FLIGHT STRIPS: Toggles on and off the printing of flight strips that are stored in the
+      FLIPS database.
+
+      <C> MANUAL TRACKS: Toggles on and off the printing of active and inactive flight plans
+      entered from the PIDP keyboard.
+
+      <D> MESSAGES: Toggles on and off the printing of messages.
+
+       When <Esc> is pressed, all of the printer configuration options will be saved at their current
+settings (see Figure 6-23, “Printer Configuration Menu).
+AT-G-15, 1 August 2000                                                                                 71
+
+
+
+
+                                              PRINT MENU
+ 09:13:49                                                                                       FP = 007
+                                 <A>   AMENDED STRIPS         ON/OFF
+                                 <B>   FLIGHT STRIPS          ON/OFF
+                                 <C>   MANUAL TRACKS          ON/OFF
+                                 <D>   MESSAGES               ON/OFF
+
+
+
+
+                                 <ESC> -- TO EXIT
+
+
+
+                                                                                    9FM FEED
+
+
+                              Figure 6-23: Printer Configuration Menu
+
+
+6.14.9. <I> Delete Files From Disk
+
+       The controller has the option to delete the following types of files from the current drive: flight
+plans, training strips, airport data, and proficiency/training times. Upon selecting choice <I>, a menu
+will be displayed showing the types of files that can be deleted. The user should choose the letter that
+corresponds to the type of file they want to delete. After the type of file has been selected, the user will
+be prompted for the drive (A, B or C) to delete the selected type of file from. After the drive has been
+selected, a directory of the selected drive will be displayed showing only the type of files that the user
+wants to delete. The first file will be highlighted and the <Up Arrow> and <Down Arrow> keys will
+move the highlighted box from one filename to another. If more than one page of filenames exist, the
+<Space> and <Backspace> keys will move the directory forward and backward. Positioning the
+highlighted box over a filename and pressing the <Enter> key will select that filename. A filename can
+be entered manually by typing the filename from the keyboard. The filename must be 1 - 8
+alphanumeric characters (extensions will automatically be added to the filename). When the file has
+been selected, it will be deleted from the selected drive.
+72                                                                                AT-G-15, 1 August 2000
+
+
+
+7. Special Operations
+
+
+7.1. Editing Commands
+
+       All editing is done using the same special keys. The following is a list of the keys and their
+functions used when editing:
+
+      Key Command              Description of Function
+
+      <Space> or <SP>        moves forward from field to field during flight plan entry and from
+                     flight plan to flight plan in <F8> SCROLL. It also will toggle
+                between Stereo template lists when prompted to select a location
+
+      <Backspace>             moves backward from field to field during flight plan entry and
+                        from flight plan to flight plan in <F8> SCROLL
+
+      <End>                    moves the cursor to the right limit of the field
+
+      <Home>                   moves the cursor to the left limit of the field
+
+      <Enter>                  saves changes or additions
+
+      <Esc>                    aborts changes not "Entered" and then resets for other options or
+                               continues a function
+
+      <Up Arrow>              moves the cursor from the lower field to the right limit of the next
+                        upper field in the ROUTE and REMARKS fields
+
+      <Down Arrow>             moves the cursor from the upper field to the left limit of the next
+                               lower field in the ROUTE and REMARKS fields
+
+      <Left Arrow>             moves the cursor one character position left within the field.
+                        Inserts a space if the insert is on
+
+      <Right Arrow>            moves the cursor one character position right within the field.
+                        Inserts a space if the insert is on
+
+      <Delete>                 deletes characters at the current cursor position
+
+      <Insert>                 Toggles insert mode on and off. The character will be inserted at
+                               the current cursor position
+AT-G-15, 1 August 2000                                                                                   73
+
+
+
+      Note: Insert toggles OFF when the <Space> or <Backspace> key is pressed. A space may
+be inserted with the <Left Arrow> and <Right Arrow> keys.
+
+       Note: After any field is edited, all characters in the edited field are displayed in a different color
+after the <Space> or <Backspace> key is pressed. If the controller spaces into the next field and
+does not edit the line, the characters will be displayed in white because no editing was done.
+
+      The following keys will not be used in the editing of "free-form" fields:
+
+      {    }        |       ~    `
+
+
+7.2. Critical Data Recording
+
+        The FLIPS utilizes a hard drive to store critical data such as the flight plan database, stereo flight
+plan routes, beacon code table, flight plan input/output parameters, and position time information. If
+FLIPS loses power, all critical data that has been saved to the hard drive will be returned to the system
+once power is restored. The flight plan database is saved to the hard drive twice a minute on the 15-
+second and 45-second update, if it has changed. Any changes to stereo flight plan routes or to flight
+plan input/output parameters are saved to the hard drive upon exit from the particular menu. Changes
+to critical data that hasn’t been saved to the hard drive will not be returned to the system upon recovery
+from a power failure.
+
+
+7.3. Printer Set-Up
+
+      Install the printer following the instructions in the ALPS Printer Users Manual.
+
+7.3.1. DIP Switch Settings
+
+      Set the DIP Switches located under the Font Cartridge Cover following the "Checking or
+Changing DIP Switch Settings" on page 2-18 in the ALPS Printer Users Manual. DIP Switches 1
+through 3 are to be set as follows:
+
+   87654321             87654321        87654321
+                         1                    1          ON
+   00000000             0 000000        000000 0         OFF
+  DIP SWITCH 3          DIP SWITCH 2 DIP SWITCH 1
+
+
+Dip Switch 3 - All DIP Switches set to OFF
+
+Dip Switch 2 - ONLY DIP Switch number 7 is set to ON, all others are OFF.
+74                                                                            AT-G-15, 1 August 2000
+
+
+
+Dip Switch 1 - ONLY DIP Switch number 2 is set to ON, all others are OFF.
+
+7.3.2. Operating Panel
+
+      Set the Type Style, Mode, Pitch and Spacing to the Printers HOST MODE.
+
+      Note: "When the printer is first turned on it is in the ON-LINE Status and in the Host Mode".
+Reference: ALPS Printer Users Manual, page 1-6, Power Switch.
+
+7.3.3. Ribbons
+
+      The printer ribbon may jump off the print head when printing reports. This problem is caused by
+an old printer ribbon. Obtain a new ribbon to correct the problem. Follow the instructions in the ALPS
+Printer Users Manual pages 2-7 through 2-9 to change the ribbon.
+
+      Note: When the print characters become faint in color, it is best to change the ribbon.
+
+7.3.4. Loading Fan Fold Paper
+
+       Install the Flight Strip Forms following the Install Fan Fold Paper instructions on page 2-10 in the
+ALPS Printer Users Manual. Use the Push Method for paper installation as described on page 2-13.
+Always refer to the ALPS Printer Users Manual for additional instructions on the operation of the
+printer.
+
+
+8. System Messages
+
+
+8.1. Content
+
+       There are two types of system messages: error and status. Error messages are displayed in
+response to an invalid keyboard entry or a warning condition and are shown in red below the strip
+template. Error messages require controller action to resolve the error or warning. Status messages are
+displayed to provide the controller with pertinent system information and are shown on the bottom of
+the screen above the menu line or output to the printer.
+AT-G-15, 1 August 2000                                                                         75
+
+
+8.2. Error Messages and Explanations
+
+ACID MUST BE 2 - 7 ALPHANUMERICS & BEGIN WITH A LETTER
+
+EXPLANATION: An invalid ACID was entered during a flight plan entry.
+
+
+AIRPORT DOES NOT EXIST - TRY AGAIN
+
+EXPLANATION: A search was made for an airport identifier and was not found in the database.
+
+
+BEACON BLOCK LIMITS MUST BE OCTAL
+
+EXPLANATION: An invalid beacon code block value was entered in the Add Beacon Code block
+mode.
+
+
+BEACON BLOCK START CANNOT BE 7777 - TRY AGAIN
+
+EXPLANATION: A beacon code block cannot start with the maximum available value.
+
+
+BEACON BLOCK STOP MUST BE GREATER THAN THE BLOCK START
+
+EXPLANATION: A beacon code STOP block value was entered that was not greater than the
+START block value.
+
+
+THIS BEACON CODE IS RESTRICTED - TRY AGAIN
+
+EXPLANATION: Beacon code 1236, 7500, 7600, or 7700 was entered during a flight plan entry, a
+flight plan search, or a beacon code block start/stop entry.
+
+
+BEACON CODE MUST BE OCTAL OR A THROUGH H
+
+EXPLANATION: An invalid beacon code was entered during a flight plan entry or flight plan search.
+76                                                                         AT-G-15, 1 August 2000
+
+
+CANNOT LOAD TO FULL DATABASE
+
+EXPLANATION: The FLIPS database is full. The LOAD DATABASE option is not available.
+
+
+CANNOT MONITOR YOURSELF IN POSITION
+
+EXPLANATION: The same set of initials was entered twice for the same time period while editing the
+position log.
+
+
+CANNOT WORK POSITION ALONE - NOT PROFICIENT
+
+EXPLANATION: The initials entered for this time period are for a controller who is in training for this
+position. The trainee must have a set of monitor initials entered to record the time.
+
+
+CID MUST BE A NUMBER BETWEEN (001 - 500) - TRY AGAIN
+
+EXPLANATION: An invalid CID was entered during a flight plan search.
+
+
+CLOSE CURRENT DRIVE DOOR - HIT ANY KEY
+
+EXPLANATION: The disk drive door was opened during a load or a save operation.
+
+
+CURRENT DRIVE IN USE
+
+EXPLANATION: The current drive is being used. If it is a floppy drive then DO NOT remove the
+diskette.
+
+
+DATABASE PROCESSING COMPLETE
+
+EXPLANATION: Message displayed on the monitor when all the flight plans loaded from the disk
+have been stored in FLIPS.
+
+
+DELETE ENTIRE FLIGHT <Y/N>
+AT-G-15, 1 August 2000                                                                          77
+
+
+EXPLANATION: When a Flight plan is to be deleted that has additional strips attached, the controller
+can delete the single flight plan or the entire flight plan.
+
+DISK ERROR
+
+EXPLANATION:        This disk directory error message suggests a possible disk drive mechanical
+problem.
+
+
+DISK ERROR - CHECK OP MANUAL - HIT ANY KEY
+
+EXPLANATION: This error message suggests a possible disk drive mechanical problem.
+
+
+DUPLICATE AIRPORT ID ALREADY EXISTS - TRY AGAIN
+
+EXPLANATION: An ID was entered to create a new airport and a search of the database indicates
+that this ID already exists.
+
+
+DUPLICATE INITIALS ALREADY EXISTS - TRY AGAIN
+
+EXPLANATION: A set of initials were entered to create a new controller record and a search of the
+database indicates that these initials already exist.
+
+
+DUPLICATE POSITION ALREADY EXISTS - TRY AGAIN
+
+EXPLANATION: An ID was entered to create a new operating position for a controller and a search
+of the database indicates that this position already exists.
+
+
+DUPLICATE RUNWAY ALREADY EXISTS - TRY AGAIN
+
+EXPLANATION: An ID was entered to create a new runway and a search of the database indicates
+that this runway already exists.
+
+
+FILE COMPLETELY LOADED
+
+EXPLANATION: The file has been completely loaded.
+78                                                                         AT-G-15, 1 August 2000
+
+
+
+FILE CONTAINS FLIGHT PLANS AND BAD DATA
+
+EXPLANATION: The file that was loaded has good flight plan data that will be processed by FLIPS
+but there is also bad data that will not be processed.
+FILE DOES NOT EXIST ON CURRENT DRIVE
+
+EXPLANATION: This message is displayed when the controller selected choice "Y" to overwrite an
+existing file on a floppy disk but put in a new disk before overwriting the file. The new disk does not
+contain the selected filename.
+
+
+FILE NOT SAVED - CURRENT DRIVE FULL
+
+EXPLANATION: The current drive is full. The save file to current drive option is not available. None
+of the data has been saved.
+
+
+FILE PARTIALLY LOADED
+
+EXPLANATION: While loading a file from the current drive, the drive door was opened and some of
+the training strips were lost.
+
+
+FILE PARTIALLY LOADED - BUILDING DATABASE
+
+EXPLANATION: While loading a file from the current drive, the drive door was opened and some of
+the flight plans were lost.
+
+
+FLOPPY DISK NOT FORMATTED - HIT ANY KEY
+
+EXPLANATION: This floppy disk is unformatted. A load operation cannot be performed. Ensure
+the floppy diskette is formatted with (MS-DOS) version 3.2 or later.
+
+
+FLOPPY WRITE PROTECTED - REMOVE TAPE
+
+EXPLANATION: The floppy disk is write protected.
+
+
+INITIALS DO NOT EXIST - TRY AGAIN
+AT-G-15, 1 August 2000                                                               79
+
+
+
+EXPLANATION: A search of the database did not find the initials that were entered.
+80                                                                     AT-G-15, 1 August 2000
+
+
+INSERT FLOPPY DISK AND THEN HIT ANY KEY
+
+EXPLANATION: An attempt was made to load/save a file to the floppy disk. The diskette was not in
+the drive or the drive door was open.
+
+
+INVALID MESSAGE TYPE - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: The message type entered for FDS is not a valid function.
+
+
+INVALID PASSWORD WAS ENTERED - TRY AGAIN
+
+EXPLANATION: An attempt was made to input a bad password in the system.
+
+
+LOAD COMPLETE -- BUILDING DATABASE
+
+EXPLANATION: The system has completed loading the file and is now building the FLIPS database.
+The diskette may be removed.
+
+
+NO FILES
+
+EXPLANATION: This is a disk directory error message. The current drive contains no files that
+FLIPS can access.
+
+
+NO FLOPPY PRESENT
+
+EXPLANATION: This is a disk directory error message. The current drive is a floppy drive without a
+floppy disk inserted or the floppy door was not shut.
+
+
+OFFSET TIME MUST BE BETWEEN (0000-0959) - TRY AGAIN
+
+EXPLANATION: An invalid offset time was entered during the input of the offset time in a stereo
+template.
+
+
+POSITION DOES NOT EXIST - TRY AGAIN
+AT-G-15, 1 August 2000                                                                          81
+
+
+EXPLANATION: The position entered could not be found in the database.
+
+RADIAL MUST BE A NUMBER BETWEEN (000 - 359) - TRY AGAIN
+
+EXPLANATION: This error is displayed if the controller tries to input a radial outside the bounds of
+the compass rose.
+
+
+RUNWAY DOES NOT EXIST - TRY AGAIN
+
+EXPLANATION: The runway entered could not be found in the database.
+
+
+SAVE COMPLETE ON CURRENT DRIVE
+
+EXPLANATION: The system has completed writing to the current drive.
+
+
+SECOND SET OF INITIALS IS NOT PROFICIENT
+
+EXPLANATION: This error is displayed if a set of initials are entered as the monitor and the monitor
+is not proficient in that position.
+
+
+THE 2ND LEG OF THIS STEREO EXCEEDS NEXT DAY LIMITS - TRY LATER
+
+EXPLANATION: During <F1> <D> Stereo Flight Plan entry, a stereo route with two segments had a
+computed second leg activation time greater than 23:59 of the following day.
+
+THE STEREO DATABASE IS FULL
+
+EXPLANATION: The controller has tried to exceed the maximum of forty stereo templates.
+
+
+THE BEACON BLOCK OF THE SECOND LEG IS UNDEFINED
+
+EXPLANATION: The second leg of this stereo template has an A, B, C, D, E, F, G, or H in the
+beacon code field that is no longer defined. The beacon block must be redefined or the template's
+second leg must be edited before this template can be selected.
+
+
+THE FIRST 3 CHARACTERS OF AN ALTITUDE MUST BE ALPHANUMERIC
+82                                                                    AT-G-15, 1 August 2000
+
+
+
+EXPLANATION: An invalid altitude was entered.
+
+
+THE FIRST POSITION FOR A REARRANGE MUST BE A DEFINED STEREO
+
+EXPLANATION: This error message is displayed when the first position for a rearrange does not
+contain a defined stereo route. Enter a defined stereo route to continue.
+
+
+THE SECOND LEG OF A STEREO ROUTE CAN'T COME BEFORE THE FIRST LEG
+
+EXPLANATION: An attempt was made to change the time of a second leg to a time prior to the
+activation time of the first leg.
+
+
+THIS ACID WAS NOT FOUND IN THE DATABASE - TRY AGAIN
+
+EXPLANATION: A search was made for an aircraft using an ACID that is not in the database.
+
+
+THIS BEACON CODE BLOCK IS NOT DEFINED - TRY AGAIN
+
+EXPLANATION: The letter for an undefined beacon code block was entered in the beacon code field
+during a flight plan or stereo route entry.
+
+
+THIS BEACON CODE NOT FOUND IN THE DATABASE - TRY AGAIN
+
+EXPLANATION: The beacon code entered for flight plan search was not found in the database.
+
+THIS CID HAS A DUPLICATE ACID ENTRY - TRY AGAIN
+
+EXPLANATION: The CID displayed to the left of the arrow has the same callsign as the one just
+entered.
+
+
+THIS CID HAS A DUPLICATE BEACON CODE ENTRY - TRY AGAIN
+
+EXPLANATION: The CID displayed to the left of the arrow has the same beacon code as the one
+just entered.
+AT-G-15, 1 August 2000                                                                          83
+
+
+
+THIS CID HAS BEEN AUTO DELETED - TRY AGAIN
+
+EXPLANATION: The CID displayed in the duplicate list was auto deleted.
+
+
+THIS CID WAS NOT FOUND IN THE DATABASE - TRY AGAIN
+
+EXPLANATION: During a flight plan search using the CID displayed to the left of the arrow, no
+matching flight plan was found.
+
+
+THIS CID IS NOT ONE OF THE DUPLICATES FOUND - TRY AGAIN
+
+EXPLANATION: A search was attempted using a CID that was not listed in the duplicate list.
+
+
+THIS DATABASE IS FULL - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: This error message is displayed when the controller tries to exceed the number of
+controllers allowed for proficiency/training times or the number of allowable airports.
+
+
+THIS ENTRY CAN ONLY BE ALPHANUMERIC - TRY AGAIN
+
+EXPLANATION: An invalid character was entered in the ACID or the five character Route field
+during flight plan entry or in a filename during a load from current drive.
+
+
+THIS ENTRY CAN ONLY BE NUMERIC - TRY AGAIN
+
+EXPLANATION: Something other than a number was entered into a numeric field.
+
+THIS ENTRY MUST BE A 'P' OR 'T'
+
+EXPLANATION: A character other than P or T was entered into the position type during editing.
+
+THIS ENTRY MUST CONTAIN ONLY ALPHA CHARACTERS
+
+EXPLANATION: A character other than a letter was entered.
+84                                                                    AT-G-15, 1 August 2000
+
+
+THIS FIELD IS TOO LONG - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: During a FDS entry, too many characters were typed in for the field being entered.
+AT-G-15, 1 August 2000                                                                          85
+
+
+THIS FILE ALREADY EXISTS - OVERWRITE <Y/N>
+
+EXPLANATION: The file above already exists on the current drive. If the file is to be overwritten, a
+“Y” is required. If the file is not to be overwritten, a “N” is required.
+
+
+THIS FILE CONTAINS BAD DATA
+
+EXPLANATION: An attempt was made to read a file that does not conform to the FLIPS format.
+The file can't be read.
+
+
+THIS FILE DOES NOT EXIST - HIT ANY KEY
+
+EXPLANATION: An attempt was made to read a file on the current drive that does not exist.
+
+
+THIS FILE IS READ ONLY - HIT ANY KEY
+
+EXPLANATION: An attempt was made to write over a file that has an attribute of read only.
+
+
+THERE ARE NO FLIGHT PLANS IN THE DATABASE
+
+EXPLANATION: If no flight plans are available, the only FDS function available is entering flight
+plans. Message will be displayed if any other functions are attempted.
+
+
+THIS FLIGHT PLAN CANNOT BE ALTERED BY FLIPS
+
+EXPLANATION: An attempt was made to amend or delete a flight plan that PIDP is tracking. The
+flight plan in FLIPS will have the status of DM.
+
+
+THIS IS A REQUIRED ENTRY
+
+EXPLANATION: The ACID was not entered during flight plan entry.
+
+
+THIS FP HAS BEEN AUTO DELETED
+86                                                                      AT-G-15, 1 August 2000
+
+
+EXPLANATION: While in the <F8> SCROLL mode, an attempt was made to amend a flight plan
+that was auto deleted.
+
+THIS OPTION IS LOCKED - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: Option is locked and can not be accessed until it is unlocked.
+
+
+THIS OPTION IS NOT AVAILABLE - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: The database does not exist so this selection is not available.
+
+
+THIS OPTION IS NOT AVAILABLE WITH A FULL DATABASE
+
+EXPLANATION: Trying to enter a flight plan using FDS with a full database.
+
+
+THIS STEREO ROUTE NAME ALREADY EXISTS - TRY AGAIN
+
+EXPLANATION: A duplicate stereo route name was entered during a stereo route entry in the <F10>
+CONFIG mode.
+
+
+THIS TIME CHANGE MAY RESULT IN SOME FLIGHT PLAN DELETIONS. ENTER
+<Y> TO PROCEED OR ANY OTHER KEY TO ABORT CHANGES
+
+EXPLANATION: A time change to the future was made when there were flight plans in the system.
+
+TIME MUST BE BETWEEN (0000 - 2359) - TRY AGAIN
+
+EXPLANATION: An invalid time was entered during a flight plan entry or during a time change.
+
+
+TIME MUST BEGIN WITH A, E, OR P - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: When entering a flight plan from the FDS Function, the type flight plan has been
+omitted from the time field.
+
+
+TOTAL POSITION TIME MUST BE BETWEEN 0 AND 248 HOURS
+AT-G-15, 1 August 2000                                                                        87
+
+
+EXPLANATION: A time has been entered that will cause the total time in that category to be out of
+range.
+
+YOU CANNOT OVERLAP AN ALREADY DEFINED BEACON BLOCK
+
+EXPLANATION: During Add Beacon Code Block, the code entered overlapped an existing START
+or STOP block.
+
+
+YOU CAN'T ENTER A 2 LEG STEREO AT THIS TIME - TRY LATER
+
+EXPLANATION: During a <F1> <D> Stereo flight plan entry, an attempt was made to enter a stereo
+route with 2 segments while the flight plan database contained 499 flight plans.
+
+
+YOU MUST USE A DISCRETE BEACON CODE - TRY AGAIN
+
+EXPLANATION: A non-discrete beacon code was used for a flight plan search.
+
+
+YOU CANNOT WORK IN POSITION FOR MORE THAN 12 HOURS
+
+EXPLANATION: A time was entered that would cause the total daily position time to exceed 12
+hours.
+
+
+YOUR DATE WAS INVALID - TRY AGAIN
+
+EXPLANATION: An invalid date was entered during a date change in the <F10> CONFIG mode.
+
+
+
+8.3. Status Messages and Explanations
+
+
+FIRST FLIGHT PLAN
+
+EXPLANATION: The first flight plan in the database is displayed in the strip template while in the
+<F8> SCROLL mode.
+
+
+LAST FLIGHT PLAN
+88                                                                        AT-G-15, 1 August 2000
+
+
+EXPLANATION: The last flight plan in the database is displayed in the strip template while in the
+<F8> SCROLL mode.
+NO FLIGHT PLANS!
+
+EXPLANATION: The <F8> SCROLL mode was selected and there were no flight plans in the
+database.
+
+
+PRINTER ERROR OCCURRED - CHECK THE PRINTER
+
+EXPLANATION: The printer was turned off-line during a print or off-line and then back on-line while
+an attempt was made to print.
+
+
+THE PRINTER HAS NO PAPER
+
+EXPLANATION: The printer has no paper or cannot detect the presence of paper. Load the paper
+into the printer according to the printer manufacturer's instructions.
+
+
+THE PRINTER HAS NOT BEEN INITIALIZED
+
+EXPLANATION: The printer was turned off and an attempt was made to print before the printer was
+initialized. Correct the printer by pressing <F9> FMFEED.
+
+
+THE PRINTER IS DISCONNECTED
+
+EXPLANATION: The printer cable is disconnected. Check the connections and try again. If there is
+still a problem, call maintenance.
+
+
+THE PRINTER IS OFF-LINE
+
+EXPLANATION: The printer is off line. Press the on-line button on the front of the printer.
+
+
+THE PRINTER IS TURNED OFF
+
+EXPLANATION: The printer has been turned off. Turn the power switch on the side of the printer to
+the on position or check to see if the printer is plugged in.
+AT-G-15, 1 August 2000   89
+90                                                                           AT-G-15, 1 August 2000
+
+
+UNKNOWN PRINTER ERROR - CHECK OPERATOR'S MANUAL
+
+EXPLANATION: If this error occurs, the printer has a hardware problem. Have maintenance check
+out the printer. If the problem cannot be determined, call HQ SSG OL-B.
+
+
+THE STEREO DATABASE IS FULL - YOU CAN ONLY DELETE
+
+EXPLANATION: In the <F10> <B> STEREO FLIGHT PLAN ROUTE mode, choice A, B or C
+was selected to enter a stereo flight plan route and all stereo unique names are full.
+
+
+THE TRAINING DATABASE IS FULL - HIT ANY KEY TO CONTINUE
+
+EXPLANATION: There are 100 training strips in the system. This message is displayed across the
+middle of the screen below the strip window. The next key depressed will return to the Training Menu.
+If either option, load a new scenario or make a scenario, is selected then the 100 training strips already
+in the system will be deleted.
+
+
+ARE YOU SURE Y/N:
+
+EXPLANATION: This appears in several different places. It requires a “Y” or “N” answer.
+
+
+
+8.4. Printed status messages and explanations
+
+
+ALL FLIGHT PLANS WERE DELETED FROM THE DATABASE AT => HH:MM:SS
+
+EXPLANATION: The Delete All menu option was selected while in the <F7> DELETE mode.
+
+
+ALL BEACON CODES IN BEACON CODE BLOCK x ARE CURRENTLY BEING USED
+
+EXPLANATION: All of the beacon codes in a predefined beacon code block have been assigned to
+flight plans in the system.
+AT-G-15, 1 August 2000                                                                    91
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+DUP ACID ON CID # : xxx
+
+EXPLANATION: A flight plan was read in from the current drive that has a duplicate ACID with a
+flight plan currently in the system database.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+DUP BEACON ON CID # : xxx
+
+EXPLANATION: A flight plan was read in from the current drive that has a duplicate beacon code
+with a flight plan currently in the system database.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+UNKNOWN ERROR
+
+EXPLANATION: A message was rejected by PIDP because of an unknown error. A reject message
+was sent back to FLIPS.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+DUPLICATE ACID
+
+EXPLANATION: A message was rejected by PIDP because of a duplicate ACID. A reject message
+was sent back to FLIPS.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+DUPLICATE BEACON
+
+EXPLANATION: A message was rejected by PIDP because of a duplicate beacon code. A reject
+message was sent back to FLIPS.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+NOT FOUND
+
+EXPLANATION: A message was rejected by PIDP because the flight plan was not found in the PIDP
+database. A reject message was sent back to FLIPS.
+92                                                                       AT-G-15, 1 August 2000
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+ALREADY ACTIVE
+
+EXPLANATION: A message was rejected by PIDP because the flight plan was already active in the
+PIDP database. A reject message was sent back to FLIPS.
+
+
+REJECT FLIGHT PLAN (ACID, BEACON, TIME)
+DATABASE FULL
+
+EXPLANATION: A message was rejected by PIDP because the PIDP database was full. A reject
+message was sent back to FLIPS.
+
+
+REMOVE STRIPS (ACID, Rev #, CID) *FLIGHT PLAN DELETED*
+
+EXPLANATION: Message sent to the printer when a flight plan is deleted from the database.
+
+
+REJECT FLIGHT PLAN (ACID,BEACON,TIME)
+NO ROOM IN DATABASE
+
+EXPLANATION: The flight plan database is currently full but a file was trying to be loaded with more
+flight plans.
+
+
+REJECT FLIGHT PLAN (ACID,BEACON,TIME)
+SECOND LEG EXCEED LIMITS
+
+EXPLANATION: A two leg flight plan was read in with the first leg time of tomorrow and the second
+leg time of two days in the future.
+
+
+
+8.5. Screen Windows
+
+       The FLIPS utilizes ten primary menus and other sub-menus to display data on the monitor to
+assist the controller. The FLIPS Main Menu is displayed when the system is initialized and after a
+specific mode <F1> - <F10> or the FDS mode is exited.
+AT-G-15, 1 August 2000                                                                              93
+
+
+
+9. INSTALLATION
+
+      This chapter contains instructions for initial equipment configuration, installing the FLIPS
+operational program, re-installing original distribution disks and testing FLIPS without installing.
+
+       The FLIPS program will be installed in a sub-directory on C drive called FLIPS. All the data
+and report files created in FLIPS that are to be saved on C drive will be sent to the FLIPS sub-
+directory. <Ctrl O> will exit the FLIPS program and allow you to use another program. To re-enter
+the FLIPS program type: FLIPSXXX <Enter> (XXX is the current version number). The FLIPS
+program will automatically start running when the power is turned on to the computer.
+
+
+9.1. Initial Equipment Configuration for FLIPS
+
+      Equipment should be installed following the manufacturer's instructions and configured as follows:
+
+                  The hard drive should NOT be partitioned. All MS-DOS software should be
+            copied from the floppy disks to the hard drive into a sub directory called DOS.
+
+                  During initial equipment SETUP, the system should be configured to boot from the
+            hard disk drive only. The system date and time should be set to the current Zulu time, and
+            the Daylight Savings Time feature should be disabled. All other options in the SETUP
+            program should be defined as required by the hardware in use.
+
+                    The Alps P2000G printer tractor feed mechanism should be setup to push the
+             flight plan strips through the printer. This will reduce the number of wasted strips
+      when only one or two are printed. It may prove useful to place the "tractor/friction"
+      lever of the printer into the "friction" position after the strips are positioned in the
+      printer. This will help prevent the strips from bunching up and clogging the printer.
+
+
+9.2. Initial Installation
+
+      This section contains instructions for implementing new versions of the FLIPS operational
+program and for re-installing from the original distribution disks.
+
+      The FLIPS operational program is distributed on a single 3½-inch floppy disk. All program
+information is contained on the disk. A second duplicate disk is provided as a backup.
+
+        Upon receiving a new operational FLIPS program, install the program to ensure your disks will
+install the program correctly. If the implementation date shown in the Version Description Document is
+other than "Upon Receipt" or today's date is before the implementation date, re-load the current
+94                                                                                 AT-G-15, 1 August 2000
+
+
+operational version by performing the operations in 1, 2, 3 and 4 for the current operational program
+disk.
+
+      Notify HQ ESC OL-D/E/TG/3S by message when the current version is implemented.
+
+INITIAL INSTALLATION
+
+1. Insert one of the new operational disks into A Drive of the 486 personal computer.
+
+2. If the FLIPS program is currently running, interrupt its operation by simultaneously pressing the
+   <Ctrl> and <O> keys.
+
+3. Type the following command from the keyboard:
+
+      A:INSTALL<Enter>
+
+During the operation of the INSTALL function, all previous versions of the FLIPS operational program
+are erased from the hard disk and the new version is placed on the hard disk. Existing data files will not
+be erased unless specifically stated in the Version Description Document. When install is completed,
+FLIPS should automatically begin running. All the previous databases that FLIPS was using will
+automatically be converted to the new format if the convert is possible.
+
+4. Remove the floppy disk from the computer and store it in a safe place.
+
+5. Repeat the operations in 1, 2, 3 and 4 above for the second operational disk to ensure that it will
+   load the program correctly.
+
+
+9.3. Re-Installation
+
+      If the program becomes suspect and it is necessary to re-install from the original program disks,
+follow the instructions for the initial installation (See section 9.2. Initial Installation). This will re-install
+the current flips program without damaging the database files.
+
+
+9.4. Testing FLIPS
+
+       When the FLIPS system is installed, it takes control of the computer. The autoexec.bat file is
+changed to start running FLIPS when the system is turned on. The FLIPS software can run on a
+machine without having total control of it. To test FLIPS software without installing the software, use
+the following instructions. FLIPS requires the use of a virtual disk to execute the program.
+
+      1. Insert a FLIPS disk into A Drive.
+AT-G-15, 1 August 2000                                                                    95
+
+
+
+     2. From C Drive, enter the following commands:
+
+           MD FLIPS <Enter>
+
+           CD FLIPS <Enter>
+
+      NOTE: These two commands will make a directory called FLIPS and then change to the FLIPS
+sub-directory.
+
+     3. From C:\FLIPS, enter the following command:
+
+           COPY A:INSTXXX.EXE <Enter> (XXX is the current version number)
+
+     4. To unload FLIPS files, enter the following command:
+
+           INSTXXX <Enter> (XXX is the current version number)
+
+     5. Load FLIPS .EXT to the virtual disk:
+
+           COPY C:\FLIPS\FLIPSXXX.EXT "VDISK" <Enter>
+
+     NOTE: XXX is the current version number and VDISK is your VDISK Drive letter (ex:
+     'D').
+
+     6. To run FLIPS, enter the following command:
+
+           FLIPSXXX <Enter> (XXX is the current version number)
+
+     7. To remove FLIPS from your machine, enter the following command from the FLIPS
+     sub-directory:
+
+           DELETE *.* <Enter>
+           Y <Enter>
+
+     8. To remove the FLIPS sub directory, enter the following commands:
+
+           CD.. <Enter>
+           RD FLIPS <Enter>
+96   AT-G-15, 1 August 2000
+AT-G-15, 1 August 2000                                                    97
+
+
+INDEX
+
+ACID, 5                           Duplicates
+Add Flight Plans, 10, 17              ACID, 13
+   ACID, 19                           Beacon Code, 13
+   Aircraft Type, 19              Editing Commands, 61
+   Airport/Fix, 20                    Different Color Characters, 62
+   Altitude, 21                   Equipment
+   Beacon Code, 20                    Computer, 9
+   Blocks 10-18, 22                   Interface Connection, 9
+   Remarks, 21                        Monitor, 9
+       Arrival, 21                    Printer, 9
+       Departure, 21              Equipment, 9
+       Overflight, 21             Error Messages, 64
+   Route of Flight, 21            ESC OL-D/E, 5, 7
+       Departure, 21              FAA, 5
+       Overflight, 21             Facility Management, 8
+   Time, 20                       Facility Responsibilities, 7
+Airport Data, 10                  FDIO, 5
+   Add Airports, 33               FDS
+   Add Fix, 33                        Description, 14
+   Build Report <F>, 33               Message Formats, 15
+   Delete Options, 33                 Message Formats
+   Edit File, 31                          Amendments (AM), 16
+       Edit Airport, 31                   Flight Plan (FP), 15
+       Edit Fix, 32                       Remove Strips (RS), 17
+   Load Airport Data, 30                  Request Transfer (RF), 17
+   Print Options, 35                      Request Transfer(RF), 17
+   Save File, 32                          Retransmit Data base (RB), 17
+Amend Flight Plan, 10                     Strip Request, 17
+Beacon Codes                      Flight Plan Delete Time, 57
+   Add Beacon Code Block, 52      Flight Plan Output Time, 57
+   Assigning, 51                  Flight Strip Format, 18
+   Delete Beacon Code Block, 52   Flight Strip Working Area, 5, 9
+   View Beacon Code Blocks, 52    FLIPS, 5
+CID, 5                            Form Feed, 10
+Configuration, 10, 51             Function Keys
+   Beacon Codes, 51                   <F1> Add Flight Plan, 17
+   Delete Files From Disk, 60         <F10> Configuration, 51
+   Flight Plan Delete Time, 57        <F2> Airport Data, 30
+   Flight Plan Output Time, 57        <F3> Management, 35
+   Load Data Base, 58                 <F4> Position Time, 38
+   Printer, 59                        <F5> Amend Flight Plan, 44
+   Save Data Base, 57                 <F6> Print Flight Plans, 46
+   Stereo Templates, 52               <F7> Delete Flight Plans, 47
+   System Time/Date, 56               <F8> Scroll, 49
+Critical Data Recording, 62           <F9> Form Feed, 51
+Database, 5                       Initialization, 10
+Delete Files From Disk, 60        Installation, 79
+Delete Flight Plans, 10               Equipment Configuration, 79
+   Automatic, 49                      Initial, 79
+   Manual, 47                         Re-Installation, 80
+98                                                          AT-G-15, 1 August 2000
+
+   Testing FLIPS, 80                     Edit Options, 40
+Introduction, 2                              Edit Position(Other Than RFC), 41
+Japanese ACC, 6                              Edit RFC Position, 40
+JCID, 6, 12                              Enter Position Time, 39
+Load Data Base, 58                       Load File, 39
+Loading Paper, 63                        Print Options, 43
+Management, 10, 35                       Reset Options, 44
+   Change Configuration Options, 37      Save File, 42
+   Change Locked Options, 36          Power Failure Recovery, 4
+   Enter or Change Password, 36, 37   Print Flight Plans, 10
+Menu                                     Automatic Print, 47
+   2nd Leg Aircraft Type, 24             Manual Print, 46
+   Add Departure, 18                     Options, 46
+   Add Flight Plan, 17                Printer
+   Additional Strips, 25                 ALPS, 9
+   Airport Data, 31                      Configuration, 59
+   Create Strips, 22, 23                 DIP Switch Settings, 62
+   Delete, 48                            EPSON, 9
+   Delete Flight Plan, 47                Loading Fan Fold Paper, 63
+   Edit Stereo FP, 54                    Operating Panel, 63
+   Flight Strip Format, 19               Ribbons, 63
+   FLIPS Main, 11                        Set-Up, 62
+   Main, 6                            Program
+   Management, 35, 36                    Changes, 7
+   Position Time, 39                     Corrections, 7
+   Printer Configuration, 60             Disks, 7
+   Save Disk, 58                      Save Data Base, 57
+   Scroll, 49, 50                     Screen Windows, 78
+   Stereo Delete, 54                  Scroll, 10
+   Stereo Flight Plan, 53             Software
+   Stereo Rearrange, 55, 56              Implementation, 7
+   Stereo Route Name, 53                 Program Disks, 7
+   Training, 25, 26                      Replacement, 7
+MS-DOS, 1, 2                             Storage, 7
+Normal Operations, 10                 Special Operations, 61
+Offset Time, 6                           Critical Data Recording, 62
+Operational Program Description, 2       Editing Commands, 61
+PF, 11                                   Printer Setup, 62
+PIDP Interface, 2                            DIP Switch Settings, 62
+   Amend Flight Plans, 44                    Loading Fan Fold Paper, 63
+   Automatic Strip Printing, 47              Operating Panel, 63
+   Delete Flight Plans, 47                   Ribbons, 63
+   Description, 11                    Status Messages, 74
+   Duplicates, 13                     Stereo Flight Plan Routes
+   Flight Plan Times, 20                 Add Stereo Templates, 53
+   PF, 11                                Delete Stereo Templates, 54
+   Status Flags, 12                      Edit Stereo Templates, 54
+   Stereo Flight Plans, 22               Making Stereo Templates, 52
+   System Time, 56                       Rearrange List, 55
+Position Time, 10                     Stereo Flight Plans, 22
+   Add Person, 43                        PIDP Interface, 25
+   Build Report, 43                      Single Leg Routes, 22
+   Delete Options, 43                    Two Legged Routes, 22
+AT-G-15, 1 August 2000                                    99
+
+     <A> First Leg, 23       Training Flight Plans, 25
+     <B>Second Leg, 24          Append Current File, 28
+     <C> Both Legs, 24          Create File, 28
+System Capacity, 3              Delete Options, 28
+System Messages, 63             Load File, 26
+  Error Messages, 64            Print Options, 28
+  Printed Messages, 76          Save File, 27
+  Status Messages, 74           Scroll File, 27
+System Time/Date, 56            Transmit, 28
+System Warnings, 2           Window, 6
+Terms and Abbreviations, 5

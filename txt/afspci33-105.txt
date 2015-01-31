@@ -1,0 +1,670 @@
+BY ORDER OF THE COMMANDER                                            AIR FORCE SPACE COMMAND
+AIR FORCE SPACE COMMAND                                                      INSTRUCTION 33-105
+                                                                                       2 AUGUST 2004
+                                                                       Certified Current 21 August 2013
+                                                                     Communications and Information
+
+                                                                      DISTRIBUTION OF HQ AFSPC
+                                                                       ASTRODYNAMIC SOFTWARE
+
+                 COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+NOTICE:       This publication is available digitally on the AFDPO WWW site at:
+              http://www.e-publishing.af.mil.
+
+OPR: XOCS (Major Donald J. Davis)                           Certified by: XOC (Col Steven R. Prebeck)
+Supersedes AFSPCI 33-105, 2 Feb 98.                                                        Pages: 19
+                                                                                      Distribution: F
+
+This instruction implements Air Force Policy Directive 33-1, Command, Control, Communications, and
+Computer (C4) Systems, and specifies how to distribute astrodynamic software developed by or belong-
+ing to HQ AFSPC units. It applies to Headquarters Air Force Space Command (HQ AFSPC), subordinate
+units, supporting activities and contractors who develop, acquire, maintain or deliver computer software,
+including all systems that require astrodynamic algorithms. It also applies to Air Force Reserve Command
+(AFRC) and Air National Guard (ANG) units gained by HQ AFSPC. It further details particular proce-
+dures for release of software developed by or for HQ AFSPC. For guidance on the DoD Freedom of Infor-
+mation, refer to: Department of Defense Directive (DoDD) 5400.7, The DoD Freedom of Information
+Act Program. DoD 5200.1-R, Information Security Program, Appendix 3, Section 2 describes the use of
+the marking “For Official Use Only” in the context of software and other applications. DoD 5200.1-R ref-
+erences DoDI 7930.2 and DoDD 8500.1, Security Requirements for Automated Information Systems.
+AFSPCI 60-102, Space Surveillance Astrodynamic Standards, mandates that only standard constants,
+physical models and astrodynamic algorithms will be used in all AFSPC systems requiring space vehicle
+trajectory data from or providing space vehicle trajectory data to the Space Control Center (SCC). Refer
+to Attachment 1 for a glossary of references and terms.
+
+SUMMARY OF REVISIONS
+This document is substantially revised and must be completely reviewed.
+
+
+1. General. This instruction defines procedures for release of HQ AFSPC astrodynamic software,
+including the AFSPC Astrodynamic Standards Software used in the SCC for the space control mission
+and various Orbital Analysis Software. Attachment 5 provides a listing of all HQ AFSPC software cur-
+rently governed by this instruction.
+   1.1. Over the past 15 years or so, various commercial companies have produced and marketed prod-
+   ucts that they claim contain some of HQ AFSPC’s astrodynamic algorithms. These claims are very
+   difficult to confirm. In many cases, HQ AFSPC has no documentation that states why, when, and from
+2                                                                    AFSPCI33-105 2 AUGUST 2004
+
+
+    whom the contractor obtained the Command’s code. Consequently, HQ AFSPC and other DoD units
+    may have unknowingly purchased its own software.
+    1.2. If the claims are true, the algorithms and code contained in these products may be outdated ver-
+    sions or had even been modified without consultation and certification from HQ AFSPC. Since the
+    contractor rarely provides source code of its proprietary system, HQ AFSPC cannot confirm whether
+    the system’s software actually contains the HQ AFSPC “astrodynamic algorithms.” Consequently,
+    HQ AFSPC cannot perform verification and validation that the astrodynamic algorithms have been
+    utilized correctly in decision support systems, potentially critical to the space support provided to
+    other combat units. Because of the severity of the problem with HQ AFSPC’s astrodynamic algo-
+    rithms, an overall instruction for control and release of all of the command’s astrodynamic standards
+    software is required.
+
+2. Responsibilities:
+    2.1. HQ AFSPC/XPY Responsibilities.
+       2.1.1. The HQ AFSPC/XPY maintains all Astrodynamic Standards Software and is responsible
+       for software updates, changes, etc. The Integrated Space Command and Control (ISC2) contractor
+       will assume responsibility for maintaining the Astrodynamic Standards Software library on a date
+       specified by HQ AFSPC/XPY.
+       2.1.2. HQ AFSPC/XPY sends the specified astrodynamic algorithms in the code format specified
+       by the requesting agency upon receipt of distribution authorization from HQ AFSPC/XOC.
+       2.1.3. HQ AFSPC/XPY maintains the Satellite Track (SATRAC) Orbital Analysis Software.
+    2.2. Space Warfare Center (SWC)/XID Responsibilities.
+       2.2.1. SWC/XID maintains the Satellite and Missile Analysis Tool (SMAT), and Space Common
+       Operating Picture and Exploitation System (SCOPES) in the Orbital Analysis Software library.
+       2.2.2. Forward all internal SMAT requirements to HQ AFSPC/DRC (Space Superiority Branch).
+       2.2.3. Develop and maintain SMAT and SCOPES software.
+       2.2.4. With assistance of AFSPC/XPY, test software and perform Validation and Verification
+       (V&V) according to US Air Force Validation and Accreditation policy.
+       2.2.5. Provide development team/technical software support to appropriate units for SMAT/
+       SCOPES issues, as required.
+       2.2.6. SWC/XID sends the specified HQ AFSPC Orbital Analysis Software, SMAT or SCOPES,
+       in the code format specified by the requesting agency upon receipt of distribution authorization
+       from HQ AFSPC/XOC.
+           2.2.6.1. Place Validated and Verified software releases on the proper web server(s) for distri-
+           bution.
+           2.2.6.2. Distribute SMAT/SCOPES software via CD-ROM in the event SIPRNET and/or
+           NIPRNET is unavailable.
+    2.3. HQ AFSPC/XOCS Responsibilities. The AFSPC Space Situation Awareness Branch Chief
+    (HQ AFSPC/XOCS) will be the final approving authority, on behalf of HQ AFSPC/XOC, for all
+    requests for distribution of Astrodynamic Standards Software or Orbital Analysis Software. Upon
+AFSPCI33-105 2 AUGUST 2004                                                                            3
+
+
+  receipt of a request for distribution of HQ AFSPC Astrodynamic Standards Software or Orbital Anal-
+  ysis Software, a HQ AFSPC/XOCS action officer (AO) will:
+     2.3.1. Review the request to ensure that the Requesting or Sponsoring Organization has identified
+     the government requirement for the HQ AFSPC-owned software and stated its technical justifica-
+     tions.
+     2.3.2. Coordinate requests that involve contractor organizations through other HQ AFSPC offices
+     and consolidate responses. At a minimum, these agencies will include:
+         2.3.2.1. HQ AFSPC/XPY (Space Analysis Division). Coordinates on all requests that involve
+         contractor organizations.
+         2.3.2.2. HQ AFSPC/DRC. Coordinates on all requests that involve contractor organizations.
+         2.3.2.3. HQ AFSPC/PKM. Coordinates on all requests that involve contractor organizations.
+         2.3.2.4. Requests that deviate from standard practices will be reviewed by HQ AFSPC/JAI
+         (International Law). Deviation from standard practices is defined as a practice that raises the
+         level of concern of approval authorities. For example a requester that has made modifications
+         to a Memorandum of Agreement (MOA) or Non Disclosure Agreement (NDA) from the
+         established format prescribed by this regulation would require review by HQ AFSPC/JAI to
+         ensure the original intent of the MOA or NDA is maintained.
+         2.3.2.5. Requests involving possible release to foreign entities or governments (including
+         aliens resident in the U.S.) will be coordinated with HQ AFSPC/JAI and HQ AFSPC/XPIF
+         (International Affairs Division).
+         2.3.2.6. Requests that involve the Combatant Commanders Integrated C2 System (CCIC2S)
+         or its contractors will be coordinated with HQ AFSPC/DRN (C3 and Navigation Division).
+     2.3.3. Requests that involve only military organizations can be approved without formal staffing
+     by HQ AFSPC/XOCS.
+     2.3.4. Prepare Recommended Response. Once all tasked agencies have completed coordination,
+     the HQ AFSPC/XOCS AO will provide a consolidated recommended response for approval/dis-
+     approval to the Space Situation Awareness Branch Chief (HQ AFSPC/XOCS).
+     2.3.5. Resolution of Non Concur Issues. HQ AFSPC/XOCS will attempt to resolve any non-con-
+     currence for release of the software with the coordinating, requesting or sponsoring organizations.
+     If resolution cannot be accomplished, the issue shall be referred to Chief of the Space Control
+     Division (HQ AFSPC/XOC) or higher for final decision.
+     2.3.6. Disapproval. If the request is disapproved, the HQ AFSPC/XOCS AO will notify (in writ-
+     ing) the Requesting or Sponsoring Organization, and will provide the rationale for the disapproval.
+     The Requesting or Sponsoring Organization may present any additional information regarding
+     requests that may assist XOCS in reconsidering its decision.
+     2.3.7. Approval. Upon approval of the request, the HQ AFSPC/XOCS AO will:
+         2.3.7.1. Ensure government/contractor signatures of NDA/MOA comply with paragraph
+         2.4.2. and 2.4.3.
+         2.3.7.2. Ensure that NDA/MOAs have tracking numbers assigned if applicable.
+4                                                                   AFSPCI33-105 2 AUGUST 2004
+
+
+          2.3.7.3. Obtain HQ AFSPC/XOCS signature for the MOA/NDA.
+          2.3.7.4. Notify HQ AFSPC/XPY or SWC/XID of approval to distribute software. Provide
+          courtesy copy of signed MOA/NDA to HQ AFSPC/XPY or SWC/XID as applicable.
+          2.3.7.5. Provide copies of signed MOA/NDA to the requesting government organization, con-
+          tractor and distributing organization (HQ AFSPC/XPY or SWC/XID).
+          2.3.7.6. Maintain a library of approved and disapproved requests for Astrodynamic Standards
+          Software and Orbital Analysis Software.
+    2.4. Requesting or Sponsoring Organization:
+       2.4.1. Request Letter Submission Guidance:
+          2.4.1.1. The requesting agency will send a request letter (Attachment 2) to HQ AFSPC/
+          XOCS, identifying the specific U.S. Government requirement, including the contract vehicle
+          if acquiring for use by a Government contractor. Request letters will include a statement of
+          impact describing consequence(s) if request is denied and will attach either an NDA or MOA,
+          as applicable, in the format prescribed by Attachment 3 and Attachment 4. All requests for
+          distribution of HQ AFSPC Astrodynamic Software will be submitted in writing to:
+
+
+              HQ AFSPC/XOCS
+                     150 Vandenberg Street, Suite 1105
+                     Peterson AFB, CO 80914-4420
+
+
+       2.4.2. Non Disclosure Agreement (NDA) Submission Guidance:
+          2.4.2.1. When the requesting agency will utilize government personnel to meet the require-
+          ment for which the software is required, it will submit an executed NDA (Attachment 3) to
+          HQ AFSPC/XOCS. The agency will maintain a copy of that agreement for a minimum of one
+          (1) year after it returns the software to HQ AFSPC/XOCS. A military squadron commander,
+          civilian equivalent or higher, will sign the NDA. Promptly report to HQ AFSPC/XOCS any
+          violations of the signed NDA.
+       2.4.3. Memorandum of Agreement (MOA) Submission Guidance:
+          2.4.3.1. When the requesting agency will utilize contractor personnel to meet the requirement
+          for which the software is requested, the responsible Contractor Program Manager will submit
+          a MOA (Attachment 4) through the government program manager and cognizant contracting
+          officer to HQ AFSPC/XOCS. Each subcontractor organization will also complete a MOA and
+          submit it through the government program manager and government contracting officer to HQ
+          AFSPC/XOCS. The responsible government program manager, government contracting
+          officer, and responsible contractor program manager will sign the MOA prior to submission to
+          HQ AFSPC/XOCS. Promptly report to HQ AFSPC/XOCS any violations of the signed MOA.
+          Note: Every contractor/subcontractor that requires access to the software must sign a separate
+          MOA with HQ AFSPC/XOCS. However, a single contractor may request copies of multiple
+          applications via a single request letter and MOA.
+AFSPCI33-105 2 AUGUST 2004                                                                                 5
+
+
+         2.4.3.2. Ensure that, upon termination of the contract or completion of the effort for which it
+         was needed, all copies of the HQ AFSPC software (including all documentation) that were
+         provided pursuant to the MOA are either returned to HQ AFSPC/XOCS or destroyed with
+         proof of destruction maintained.
+         2.4.3.3. Ensure the MOA is incorporated in the contract file and maintained IAW the provi-
+         sions of the Federal Acquisition Regulations and its supplements and AFI 25-201, Support
+         Agreements Procedures.
+         2.4.3.4. In the event a MOA is deviated from, the contracting officer will ensure the contract
+         is modified to incorporate the MOA IAW HQ AFSPC/XOCS and HQ AFSPC/JA guidance.
+         2.4.3.5. Contractors are responsible to notify HQ AFSPC/XOCS of contract extensions to
+         remain eligible to receive HQ AFSPC software updates.
+         2.4.3.6. Contract Re-competition/Award. HQ AFSPC astrodynamic software will be trans-
+         ferred between outgoing and incoming contractors after contract re-competition/award by hav-
+         ing the incoming contractor complete a new request letter and MOA IAW with this instruction.
+      2.4.4. Special Justification for Astrodynamic Standards Software Source Code. R e q u e s t e d
+      Astrodynamic Standards Software will be provided by HQ AFSPC IAW AFSPCI 60-102, Space
+      Surveillance Astrodynamic Standards. These Astrodynamic algorithms may be linked using the
+      shared libraries and configuration controlled interface as provided by HQ AFSPC. Source code
+      will be provided as needed to ensure operational continuity by allowing the recompilation of the
+      shared library(s) in the event of operating system upgrades or platform changes. Source code of
+      the shared libraries shall be used for reference and recompilation only, and shall not be altered
+      from the form provided to the contractor without specific approval of HQ AFSPC/XOC. Justifica-
+      tion for source code will be clearly identified in the request letter.
+      2.4.5. Distribution Compliance. HQ AFSPC/XPY and SWC/XID are responsible for distribut-
+      ing any version (standard or previously developed) of the HQ AFSPC Astrodynamic Standards
+      Software and HQ AFSPC Orbital Analysis Software. The HQ AFSPC/XPY is responsible for the
+      distribution of the designated HQ AFSPC Astrodynamic Standards Software and subsequent
+      releases. HQ AFSPC/XPY is also responsible for the distribution of the Orbital Analysis Software
+      (SATRAC). The ISC2 contractor will assume responsibility for distribution of HQ AFSPC Soft-
+      ware on a date specified by HQ AFSPC/XPY. SWC/XID is responsible for the distribution of
+      Orbital Analysis Software (SMAT/SCOPES) and subsequent releases.
+
+3. Releasing HQ AFSPC Astrodynamic Standards Software and HQ AFSPC Orbital Analysis Soft-
+ware:
+   3.1. HQ AFSPC/XPY or SWC/XID Responsibilities. Distributes the software based on HQ
+   AFSPC/XOC approved NDAs/MOAs.
+   3.2. New Versions:
+      3.2.1. If a requester has a NDA/MOA on file and requires updates to specific software identified
+      in its NDA/MOA, the agency may receive updated versions. Updates will be provided given the
+      justification in the NDA/MOA on file is still valid and the requester agrees to all of the restrictions
+      and terms described in NDA/MOA for the new software releases.
+6                                                                       AFSPCI33-105 2 AUGUST 2004
+
+
+    3.3. Classified Algorithms. If the purpose for which the Astrodynamic Standards Software or
+    Orbital Analysis Software is being developed is classified, the request for distribution of the algo-
+    rithms shall be written as an unclassified request, but shall indicate that the use for which distribution
+    of the algorithms is desired is classified. The Requesting or Sponsoring Organization should be pre-
+    pared to provide additional details upon request by HQ AFSPC/XOCS. The security manager of the
+    sponsoring/requesting organization will verify the security clearance(s) of the personnel that will be
+    receiving the software.
+    3.4. Clarifications. If policy clarification is required, coordinate request package with HQ AFSPC/
+    XOCS (Space Situation Awareness Branch).
+    3.5. New Astrodynamic Standards Software or Orbital Analysis Software. Directions for han-
+    dling additional astrodynamic standards software or Orbital Analysis Software will be provided IAW
+    this regulation as new applications become available. Contact HQ AFSPC/XPY or SWC/XID as
+    applicable.
+
+
+
+                                                       DOUGLAS M. FRASER, Brig Gen, USAF
+                                                       Director of Air and Space Operations
+AFSPCI33-105 2 AUGUST 2004                                                                                7
+
+
+                                              Attachment 1
+
+              GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+DoD Directive 8500.1, Information Assurance (IA).
+DoD Instruction 7930.2, ADP Software Exchange and Release.
+DoD Directive 5400.7, DoD Freedom of Information Act Program.
+DoD Regulation 5200.1-R, Information Security Program.
+AFI 25-201, Support Agreement Procedures.
+AFSPCI 60-102, Space Surveillance Astrodynamic Standards.
+
+Terms
+Algorithm—A step-by-step method for solving a mathematical problem. As an example for this
+instruction, an algorithm is used to compute a satellite’s orbit.
+Astrodynamic Algorithms—Algorithms which utilize geophysical constants and satellite Element Sets
+(“ELSET”) or vectors to accurately define the past, present and future positions of space objects in orbit
+around the earth.
+Executable Code (or “Executable”)—A commonly-used term that describes the file (or files) of a
+software program. The file(s) consists solely of computer machine language that can be “executed” or
+operated. If executable files are printed, the printout is unintelligible machine language letters, numbers,
+and symbols. With executable code, one can “run” the software program but cannot read it, understand it,
+or modify it.
+Object Code—The code produced by a compiler. Programmers write programs in a form called source
+code. The source code consists of instructions in a particular language, like C or FORTRAN. Computers,
+however, can only execute instructions written in a low-level language called machine language. To get
+from source code to machine language, the programs must be transformed by a compiler. The compiler
+produces an intermediary form called object code. Object code is often the same as, or similar to, a
+computer’s machine language. The final step in producing an executable program is to transform the
+object code into machine language, if it is not already in this form. This can be done by a number of
+different types of programs, called assemblers, binders, linkers, and loaders.
+Office of Primary Responsibility—An individual or organization within HQ AFSPC, or any military
+organization designated to provide information and management on a specific activity.
+Orbital Analysis Software—HQ AFSPC Orbital Analysis Software are approved tools for operational
+support, decision making, orbital and missile trajectory analysis and training and education. SMAT,
+SCOPES and SATRAC are examples of Orbital Analysis Software.
+Product—The Astrodynamic Standards Software or Orbital Analysis Software to be delivered.
+Requesting Organization—The organization requesting a copy of the executable (or object) or source
+code of one or more pieces of HQ AFSPC-owned software or algorithms.
+Source Code—Program instructions in their original form. The word source differentiates code from
+8                                                                  AFSPCI33-105 2 AUGUST 2004
+
+
+various other forms that it can have (for example, object code and executable code). Source code is the
+only format that is readable by humans. Possession of source code allows modification of the program.
+Sponsoring Organization—The Government agency requesting a copy of the executable (or object) or
+source code of one or more pieces of HQ AFSPC-controlled software or algorithms for use by a
+contractor who is providing direct support through an authorized contract vehicle.
+AFSPCI33-105 2 AUGUST 2004                                                                                9
+
+
+                                              Attachment 2
+
+                                          REQUEST LETTER
+
+
+
+
+Date
+MEMORANDUM FOR HQ AFSPC/XOCS
+       150 Vandenberg St, Ste 1105
+        Peterson AFB CO 80914-4420
+
+
+FROM: Requesting organization
+        Address
+
+
+SUBJECT: Request for Astrodynamic Standards Software and/or Orbital Analysis Software
+
+
+1. Requesting organization requires the Astrodynamic Standards Software/Orbital Analysis Software
+name(s) of algorithm(s) requested for brief description of organization’s use of the software, and include
+specific projects you are supporting and impact to that project if software is not provided. Additional per-
+tinent information can be found on the completed draft NDA/MOA attached to this request.
+2. I acknowledge this software is classified as U.S. Only, Export-Controlled and will protect both the soft-
+ware and its products at the appropriate level.
+3. POC for this effort is name, org, DSN phone number and FAX extension and e-mail address.
+
+
+                                                     Action Officer Signature Block
+
+
+Attachment
+Draft MOA or Draft NDA
+10                                                                     AFSPCI33-105 2 AUGUST 2004
+
+
+                                              Attachment 3
+
+                   NON—DISCLOSURE AGREEMENT FOR GOVERNMENT
+
+
+
+
+  NON-DISCLOSURE AGREEMENT FOR HQ AFSPC SOFTWARE AND/OR ALGORITHMS TO
+                         GOVERNMENT AGENCY
+The Name of Government Agency, by its authorized representative, has requested executable code, source
+code and/or test cases for, the Headquarters Air Force Space Command (HQ AFSPC) name of software to
+be released. The specific algorithms to be delivered are listed in Part 1 (hereafter jointly referred to as
+"products"). The products, developed by name of HQ AFSPC organization that developed or maintains
+the software to be released, will be used solely by the requester for purposes listed in Part 2. HQ AFSPC
+has exclusive authority for the software distribution to ensure the interoperability, accuracy, and cost
+effectiveness of space systems. The products are under the control of the Arms Export Control Act
+because they are part of an extensive and sensitive military capability.
+In consideration therefore the undersigned hereby accepts:
+(1) Name of Government Agency agrees that the products identified in Part 1 of this agreement shall be
+used only for purposes listed in Part 2.
+(2) Name of Government Agency shall not provide or disclose the products or any part of the package to
+any other company, person or entity, civilian or government, except that disclosure may be made to a con-
+tractor or potential contractor with the approval of HQ AFSPC provided, however, that no such disclosure
+to a contractor or potential contractor shall be made unless the contractor or potential contractor has exe-
+cuted the Contractor Memorandum of Agreement with no alterations except to suitably identify the par-
+ties and products.
+(3) Name of Government Agency agrees to adopt operating procedures and physical security measures
+designed to protect the products from disclosure or release to unauthorized third parties.
+(4) Name of Government Agency agrees to accept the terms and conditions of this agreement from the date
+the products are transferred until such time HQ AFSPC provides further disposition instructions for the
+products.
+(5) Acceptance of Responsibility: The undersigned hereby accepts the products solely for purposes listed
+in Part 2. The products are under the control of the Arms Export Control Act because they are part of an
+extensive and sensitive military operational capability. No software code, manual or media containing any
+representation of the capabilities of the products may be assigned, copied, or transferred to any non-autho-
+rized person, contractor or government agency. Any documentation to be published as a result of using the
+products must be coordinated through HQ AFSPC.
+(6) This agreement shall survive HQ AFSPC's collaboration with Name of Government Agency and shall
+be effective until Name of Government Agency is notified by HQ AFSPC that the limitation has expired.
+REQUESTOR                                            USAF APPROVING AUTHORITY
+AFSPCI33-105 2 AUGUST 2004                                                                                  11
+
+
+Must be Military Squadron Commander or
+Civilian Equivalent
+
+
+Name of Government Agency                              HQ AFSPC/XOCS
+Street Address of Government Agency                    150 Vandenberg Street, Suite 1105
+City/Military Base, State Zip Code                     Peterson AFB CO 80914-4420
+
+
+Name:________________________                          Name:_____________________________
+
+
+Title:_________________________                        Title:______________________________
+
+
+Signature:_____________________                        Signature:__________________________
+
+
+Date:__________                                        Date:_________
+
+
+Parts:
+1. Description of Software Transferred
+2. Justification for Transfer of Software and/or Algorithms
+
+
+
+
+Part 1 to the NDA.
+                          DESCRIPTION OF SOFTWARE TRANSFERRED
+                              (Covered by the Non-Disclosure Agreement)
+The specific software and technical data to be delivered is:
+Software names(s): List names of all software modules you are requesting: (you may also include format
+and interface information, e.g. “SGP4 Dynamic Linked Library (DLL)”.)
+Host platform(s): List platform type(s) on which software will be used, e.g. SGI IRIX 5.2, LINUX, NT, etc.
+(include operating system version if pertinent)
+Other data, technical data, computer software, computer software documentation, computer programs,
+and other information of like kind, type or quality, either commercial or noncommercial, all of which may
+be subject to limited rights, restricted rights, Government purpose license rights, patents, copyrights, trade
+secrets, or other confidential or proprietary constraints.
+Under this agreement, updates to the specific software listed above may be obtained as they become avail-
+able providing the justification listed in Part 2 is still valid and providing the Requester, by receiving the
+12                                                                    AFSPCI33-105 2 AUGUST 2004
+
+
+updated software, agrees to all of the restrictions and terms described in this agreement for the new soft-
+ware releases.
+The above data is collectively referred to as "products". These products will be used solely by the
+requester for purposes listed in Part 2.
+
+
+
+
+Part 2 to the NDA.
+
+
+                       JUSTIFICATION FOR TRANSFER OF PRODUCTS:
+                                        Description of Purposes
+The following describes the permissible uses of the data (described in Part 1) that is covered by the
+Non-Disclosure Agreement:
+The products will be used solely in the performance of official work in support of:
+Name of Program Supported: Enter Program Name(s)
+Description of the Role this Software Plays in the Program: Describe the purpose for which the Request-
+ing Agency is requesting use of the products.
+AFSPCI33-105 2 AUGUST 2004                                                                               13
+
+
+                                              Attachment 4
+
+                       CONTRACTOR MEMORANDUM OF AGREEMENT
+
+
+
+
+                       CONTRACTOR MEMORANDUM OF AGREEMENT
+                      FOR HQ AFSPC SOFTWARE AND/OR ALGORITHMS
+1. I/we the undersigned, authorized representative(s) of Name of Company (hereinafter referred to as the
+“Requester”), request release of HQ AFSPC software described in Part 1 to this agreement for use in per-
+forming efforts required pursuant to Government Contract # XXXXXX-XXX-XXXX, and agree to the fol-
+lowing:
+a. NON-DISCLOSURE AGREEMENT for HQ AFSPC software/algorithms identified in
+Part 1 to this agreement (Applies to commercial components with limited or restricted
+rights accessed through Government reuse libraries). Name of Company requests from
+Headquarters Air Force Space Command (HQ AFSPC) software and technical data consisting of:
+Name of Software and description of software, including format (e.g. executable code, type of
+platform, language in which source code is written, and name of software being released):
+detailed description of modules to be released, including both acronyms and full description of name. And
+some or all of the following: other data, technical data, computer software, computer software documen-
+tation, computer programs, and other information of like kind, type or quality, either commercial or non-
+commercial, all of which may be subject to limited rights, restricted rights, Government purpose license
+rights, patents, copyrights, trade secrets, or other confidential or proprietary constraints (collectively,
+“products”).
+In consideration therefore, Name of Company agrees:
+(1) That the products shall be used only for Government purposes;
+(2) To strictly abide by and adhere to any and all restrictive markings placed on the products, and
+requester shall not knowingly disclose or release the products to third parties except approved subcontrac-
+tors who have themselves executed Memorandums of Agreement with HQ AFSPC;
+(3) That any restrictive markings on the products shall be included on all copies, modifications, and deriv-
+ative works, or any parts or portions thereof, in any form, manner or substance, which are produced by or
+for Name of Company including, but not limited to, incorporation of the products into any other data,
+technical data, computer software, computer software documentation, computer programs, or other infor-
+mation of like kind, type or quality. In all such events, Name of Company shall clearly denote where such
+products initiate and conclude by use of annotations or other standard markings.
+(4) This agreement specifically extends beyond the end of any contract under which the products are pro-
+vided as Government Furnished Property and is binding on the contractor, its successor, or its assigns, as
+long as the requester is in possession of such products or any derivative thereof.
+b. WAIVER OF WARRANTIES AND LIMITATIONS OF DAMAGES AGREEMENT.
+14                                                                     AFSPCI33-105 2 AUGUST 2004
+
+
+The Name of Company and HQ AFSPC agree that:
+(1) No guaranties, representations, or warranties either expressed or implied shall be construed to exist in
+any language, provision, or term contained in this Memorandum of Agreement, or in any other documen-
+tation provided by HQ AFSPC (all such items are collectively referred to as “the Agreement”). Further-
+more, HQ AFSPC disclaims and Name of Company waives and excludes any and all warranties of
+merchantability and any and all warranties of fitness for any particular purpose;
+ (2) Name of Company shall obtain from HQ AFSPC all of the products (defined in the Non-Disclosure
+Agreement above), or any other products or services contemplated by the Agreement, in an “as is” condi-
+tion.
+c. Name of Company’s use of the products shall not prevent the Government from releasing the products
+at any point in the future.
+d. Requester shall not offer the released products or any modified version thereof for resale to the Govern-
+ment, in whole or as part or subpart of a Government.deliverable, without explicitly stating that it is doing
+so by providing certification documentation to the contracting officer before contract award.
+e. Name of Company may use the released products in the specified contract with the Government, but
+understands that the Government shall not pay Name of Company for rights of use of such PRODUCTS
+in performance of Government contracts or for the later delivery to the Government of such products.
+Name of Company may be entitled to compensation for converting, modifying or enhancing the PROD-
+UCTS into another form for reproduction and delivery to the Government, if authorized under a contract
+with the Government.
+f. Name of Company shall not release products that are subject to national defense classification or are
+limited rights technical data or restricted rights software (hereafter referred to as “restricted PROD-
+UCTS”). Name of Company/Requester shall promptly report to HQ AFSPC the discovery of any unautho-
+rized release of products.
+g. As required, Name of Company shall be responsible for compliance with any proscriptions on foreign
+disclosure of the released products (e.g., contained in the Department of State International Traffic in
+Arms Regulations, the Arms Export Control Act, etc.).
+h. There may be a fee to cover copying and shipping of the products and any documentation.
+i. Name of Company and HQ AFSPC intend that all agreements under this Memorandum of Agreement
+shall be governed by the laws of the United States of America.
+
+
+REQUESTER                                             USAF APPROVING AUTHORITY
+Must be signed by the responsible
+Contractor Program Manager
+
+
+Name of Company                                       HQ AFSPC/XOCS
+Street Address of Company                             150 Vandenberg Street, Suite 1105
+City, State Zip code                                  Peterson AFB, CO 80914-4420
+AFSPCI33-105 2 AUGUST 2004                                                                                 15
+
+
+
+Name:________________________                          Name:_____________________________
+Title:_________________________                        Title:______________________________
+Signature:_____________________                        Signature:__________________________
+Date:__________                                        Date:_________
+Parts:
+1. Description of Data
+2. Justification for Transfer of Software and/or Algorithms
+
+
+
+
+Part 1 to the MOA.
+
+
+                                        DESCRIPTION OF DATA
+                                          (Covered by the MOA)
+The specific software and technical data to be delivered is:
+Software name(s): List names of all software modules you are requesting: (you may also include format
+and interface information, e.g., "SGP4 executable code to interface with a C language call.”)
+Host platform(s): List platform type(s) on which software will be used, e.g., SGI Irix 5.2, LINUX, NT, etc.
+(include operating system version if pertinent)
+Other data, technical data, computer software, computer software documentation, computer programs,
+and other information of like kind, type or quality, either commercial or noncommercial, all of which may
+be subject to limited rights, restricted rights, Government purpose license rights, patents, copyrights, trade
+secrets, or other confidential or proprietary constraints.
+Under this agreement, updates to the specific software listed above may be obtained as they become avail-
+able providing the justification listed in Part 2 is still valid and providing the Requester, by receiving the
+updated software, agrees to all of the restrictions and terms described in this agreement for the new soft-
+ware releases.
+The above data is collectively referred to as "products. These products will be used solely by the requester
+for purposes listed in Part 2.
+16                                                                    AFSPCI33-105 2 AUGUST 2004
+
+
+Part 2 to the MOA.
+
+
+                       JUSTIFICATION FOR TRANSFER OF PRODUCTS:
+                                        Description of Purposes
+The following describes the permissible uses of the data (described in Part 1) covered by the MOA:
+The products will be used solely in the performance of official work in support of:
+Name of Program Supported: Enter program name(s)
+Description of the Role this Software Plays in the Program: Describe the purpose for which the Request-
+ing Agency is requesting use of the Products.
+Government Contract #: Enter government contract number(s)
+Contracting Officer's Technical Representative (COTR) or Quality Assurance Evaluator (QAE): Enter
+COTR/QAE name(s) here. If more than one contract, specify which contract number the representative is
+associated with.
+COTR/QAE Address: Enter address(es) here. If more than one, include each COTR/QAE's name in the
+appropriate address block.
+COTR/QAE Phone: Enter COTR/QAE phone here. If multiple contracts and associated COTR/QAE's are
+listed, specify a number for each COTR/QAE.
+COTR/QAE Fax: Enter COTR/QAE fax here. If multiple contracts and associated COTR/QAE's are
+listed, specify a number for each COTR/QAE.
+COTR/QAE Email Address: Enter COTR/QAE Email address here
+Contracting Officer (CO) Name, Organization, Phone and Email. Enter CO name, organization, phone
+and email here
+End of Contract Date: Enter the scheduled contract completion date.
+Accordingly, the products shall be used only for Government purposes under the Name of Contract con-
+tract.
+COTR/QAE Signature: __________________________________________________________
+Ensure the MOA is incorporated in the contract file and maintained IAW the provisions of the Federal
+Acquisition Regulations and its supplements and AFI 25-201, Support Agreements Procedures.
+Contracting Officer Signature ______________________________________________________
+AFSPCI33-105 2 AUGUST 2004                                                         17
+
+
+                                             Attachment 5
+
+           HQ AFSPC SOFTWARE REQUIRIG APPROVAL FOR DISTRIBUTION
+
+Table A5.1. HQ AFSPC Software That Requires Approval for Distribution.
+            Astrodynamic Standards Software Requiring Approval for Distribution
+                                  EPHEMERIS GENERATION
+SOFTWARE NAME                                       OFFICE DISTRIBUTING SOFTWARE
+Simplified General Perturbations theory 4 (SGP4)    HQ AFSPC/XPY
+Semi-Analytic Liu Theory (SALT)                     HQ AFSPC/XPY
+Special Perturbations EPHemeris (SPEPH)             HQ AFSPC/XPY
+INITIAL ORBIT GENERATION
+Initial Orbit MODule (IOMOD)                        HQ AFSPC/XPY
+                                     ORBIT CORRECTION
+SGP4 Differential Correction (SGP4DC)               HQ AFSPC/XPY
+SALT Differential Correction (SALTDC)               HQ AFSPC/XPY
+Special Perturbations Differential Correction       HQ AFSPC/XPY
+(SPDC)
+Sequential Differential Correction (SEQDC)          HQ AFSPC/XPY
+Report/Observation Association (ROTAS)              HQ AFSPC/XPY
+Generalized Element Conversion (GELCON)             HQ AFSPC/XPY
+                                     ORBIT APPLICATIONS
+Look Angle MODule (LAMOD)                           HQ AFSPC/XPY
+Computation of Miss Between Orbits (COMBO)          HQ AFSPC/XPY
+Area Over Flight (AOF)                              HQ AFSPC/XPY
+Field-of-View (FOV)                                 HQ AFSPC/XPY
+                Orbital Analysis Software Requiring Approval for Distribution
+SMAT                                                SWC/XID
+SCOPES                                              SWC/XID
+SATRAC                                              HQ AFSPC/XPY
+NOTE: See AFSPCI 60-102 for a functional description of the algorithms.
+18                                                           AFSPCI33-105 2 AUGUST 2004
+
+
+                                    Attachment 6
+
+                           AFSPCI33-105 ACRONYM LISTING
+
+Table A6.1. Acronym Listing.
+Acronym                                    Definition
+AOF                                        Area Over Flight
+AFRC                                       Air Force Reserve Command
+ANG                                        Air National Guard
+AO                                         Action Officer
+COMBO                                      Computation of Miss Between Orbits
+COTR                                       Contracting Officer’s Technical Representative
+DLL                                        Dynamic Linked Library
+DoD                                        Department of Defense
+DoDD                                       Department of Defense Directive
+FOV                                        Field-of-View
+GELCON                                     Generalized Element Conversion
+HQ AFSPC                                   Air Force Space Command
+ISC2                                       Integrated Space Command and Control
+IOMOD                                      Initial Orbit MODule
+LAMOD                                      Look Angle MODule
+MOA                                        Memorandum of Agreement
+NDA                                        Non Disclosure Agreement
+QAE                                        Quality Assurance Evaluator
+SALT                                       Semi-Analytic Liu Theory
+ROTAS                                      Report/Observation Association
+SATRAC                                     Satellite Track
+SCC                                        Space Control Center
+SCOPES                                     Space Common Operating Picture and
+                                           Exploitation System
+SEQDC                                      Sequential Differential Correction
+SGP4                                       Simplified General Perturbations theory 4
+SGP4DC                                     SGP4 Differential Correction
+SMAT                                       Satellite and Missile Analysis Tool
+SPEPH                                      Special Perturbations EPHemeris
+AFSPCI33-105 2 AUGUST 2004                                                   19
+
+
+Acronym                      Definition
+SPDC                         Special Perturbations Differential Correction
+SWC                          Space Warfare Center
+V&V                          Validation and Verification

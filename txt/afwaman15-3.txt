@@ -1,0 +1,1674 @@
+BY ORDER OF THE COMMANDER                       AIR FORCE WEATHER AGENCY MANUAL
+AIR FORCE WEATHER AGENCY                                                    15-3
+
+                                                                              8 JANUARY 2014
+
+                                                                                        Weather
+
+                                                         FILE NAMING CONVENTION FOR
+                                                                  WEATHER PRODUCTS
+
+              COMPLIANCE WITH THIS PUBLICATION IS MANDATORY
+
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at
+               www.e-publishing.af.mil for downloading or ordering.
+
+RELEASABILITY: Further dissemination only as directed by HQ AFWA or higher DoD
+               authority.
+
+OPR: AFWA/A6W                                                           Certified by: AFWA/A6
+                                                                         (Mr. Bradley Kassube)
+Supersedes:   AFWAMAN15-3,                                                             Pages: 38
+              25 March 2005
+
+
+This manual is applicable to all terrestrial and space weather products. It specifies the file
+naming convention to be used for all shared products created on systems operated by Air Force
+Weather Agency (AFWA) units. Legacy systems may waive compliance with this manual, but
+this manual shall guide the acquisition of new production systems to further interoperability,
+reduce maintenance costs, and support improved backup capabilities. New systems may waive
+compliance if the developer/Program Office has compelling evidence that compliance with the
+convention will adversely impact development costs or system effectiveness.
+
+In general, product files created by processing centers outside of AFWA will not be renamed
+upon ingest into the Air Force Weather Weapon System (AFWWS). Exceptions may be made,
+however, in order to maintain key information about product files. A good example of this
+involves the extensive use of directory structures by the National Centers for Environmental
+Prediction (NCEP) to identify their product files. As the files are separated from their native
+directory tree for insertion into AFWWS storage, critical file information may be lost. In order
+to maintain all necessary information to unambiguously identify the content of the files, some
+NCEP files will be renamed by appending the original filename to filename elements contained
+in the NCEP directory tree. Renaming of files created by external organizations will be handled
+on a case-by-case basis in accordance with AFWA processes.
+
+Ensure all records created as a result of processes prescribed in this publication are maintained
+IAW Air Force Manual (AFMAN) 33-363 Management of Records, and disposed of IAW Air
+Force Records Information Management System (AFRIMS) Records Disposition Schedule
+ 2                                                                                     AFWAMAN15-3 8 JANUARY 2014
+
+
+(RDS) located at https://afrims.amc.af.mil/.       Send comments, suggested changes, or
+improvements through channels to HQ AFWA/A6W, 101 Nelson Dr, Offutt AFB, NE 68113-
+1023. Refer recommended changes and questions about this publication to the Office of Primary
+Responsibility (OPR) using the AF IMT 847, Recommendation for Change of Publication; route
+AF IMT 847s from the field through the appropriate chain of command.
+
+SUMMARY OF CHANGES
+
+This publication was revised substantially to add numerous new filename element descriptors
+and must be completely reviewed. No major changes to the structure of the file naming
+convention were affected by this rewrite.
+
+        1.      General. ..................................................................................................................    2
+        2.      The Convention. .....................................................................................................          4
+Table 2.1.      Filename Element Descriptions. ............................................................................                    4
+Table 2.2.      Special Character Usage. .......................................................................................               5
+Table 2.3.      Sequence of Elements. ...........................................................................................              5
+
+Attachment 1—GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION                                                                                 7
+
+Attachment 2—FORMAT AND DESCRIPTORS OF FILENAME ELEMENTS                                                                                       8
+
+Attachment 3—SAMPLE FILENAMES                                                                                                                 32
+
+Attachment 4—ALPHANUMERIC CDC AREA DESCRIPTORS                                                                                                38
+
+
+1. General.
+     1.1. Purpose. This document outlines the filename convention to be used in naming
+     weather product files produced by the Air Force Weather Agency (AFWA).
+     1.2. Background. In order to fully optimize the benefits of product filename
+     standardization, the standard employed by two other national processing centers (Fleet
+     Numerical Meteorology and Oceanography Center (FNMOC) and the National Centers for
+     Environmental Prediction (NCEP)) was used as the basis for the AFWA convention. The
+     NCEP standard can be viewed at: http://www.nws.noaa.gov/datamgmt/filstnd.html.
+     Adoption of a single filename convention across AFWA is expected to result in benefits
+     including improved center-to-center interoperability, faster troubleshooting of data transfer
+     issues, improved cross-center backup capabilities, easier product identification by customers,
+     more coordinated growth of systems, reduced translation processing, improved automation
+     capabilities, and reduced system maintenance cost.
+        1.2.1. While based upon the standard developed by NCEP and FNMOC, the AFWA
+        standard makes some departures from its predecessor. General departures are explained
+        in the following paragraphs, while element-specific departures are detailed later in this
+        document.
+AFWAMAN15-3 8 JANUARY 2014                                                                       3
+
+
+           1.2.1.1. Filename lengths will not exceed 128 characters. While this limitation is not
+           identified in NCEP’s documentation, it is not exceeded at NCEP or FNMOC.
+           1.2.1.2. Filenames generated within AFWA systems will not use lowercase
+           characters (a-z) to avoid overwriting files on operating systems that are not case-
+           sensitive, such as Microsoft Windows. This is more restrictive than the NCEP
+           standard, which allows uppercase and lowercase characters.
+Note: Some applications and utilities may add filename extensions that are lower case by
+default. Care must be taken to override this behavior by specifying an output filename extension.
+           1.2.1.3. With few exceptions, filename elements are not required to be of fixed
+           length. The use of special characters as delimiters trivializes fixed position elements.
+           Note: NCEP’s document lists fixed length as a requirement, but NCEP has
+           operationally abandoned this restriction.
+           1.2.1.4. Reliance on directory name for product information shall be avoided
+           whenever possible. Inclusion of all necessary information in the filename greatly
+           reduces the chance of losing critical information once a product file is separated from
+           its native directory. This restriction is not intended to prevent development of a
+           structured directory system, but only to ensure all key product information is also
+           included in the stand-alone filename.
+           1.2.1.5. The use of the hyphen character has been expanded. The NCEP standard
+           restricted its use to only temporal or spatial intervals, but AFWA needs a way to
+           identify parameters needing multiple descriptors. As such, the use of hyphens has
+           been expanded to be a general separator between multi-part element descriptors.
+           1.2.1.6. The plus sign character (‘+’) has been added to separate multiple parameters
+           or multiple areas contained within a single product. The NCEP standard does not use
+           the plus sign. For the AFWA predominant operating systems (Windows and Unix),
+           this character is allowable in filenames.
+   1.3. Phased Implementation Approach. Transition of legacy systems to a new filename
+   convention is not expected to be a trivial effort. Some older systems may be too close to the
+   end of their lifecycle to merit the expense of transition. Program management will determine
+   which systems will migrate to the new standard and the timing of the transitions.
+   1.4. Change Procedures. As this convention is to be applied across the AFWA enterprise,
+   changes to it must be carefully managed to minimize negative impacts to systems using the
+   convention. Careful consideration must be given to coordination and scheduling of changes.
+       1.4.1. Office of Primary Responsibility (OPR). The Data Administrator (DAd) at HQ
+       AFWA shall be the OPR for updating the filename convention. Change requests shall be
+       submitted     to    the   organizational    email   account    for    the    office:
+       AFWAA6WN@offutt.af.mil.
+       1.4.2. Coordination Process. While the DAd is the OPR for changes to the publication,
+       AF/A3O-WP shall have oversight to ensure broad coordination of changes. Interim
+       changes shall be posted on the shared documents portion of the AFWA/A6W SharePoint
+       site to allow implementation prior to the next release of the formal filename convention
+       document. Contact DAd for a link to the SharePoint site. For those who do not have
+ 4                                                         AFWAMAN15-3 8 JANUARY 2014
+
+
+        access to the SharePoint site, advanced draft updates can be requested from the DAd
+        using the organizational email account listed in paragraph 1.4.1.
+2. The Convention.
+     2.1. Filename Elements. Filenames are constructed from individual elements of
+     information. Each element is identified by a two-character element identifier (ID), which is
+     followed by a single period and a variable length descriptor. For example, PS.AFWA
+     indicates the product source is AFWA. The filename elements that will be employed by
+     AFWA are generally a subset of those listed in the NCEP standard, with a couple of
+     additions. Table 2.1 lists alphabetically the complete set of elements that will be employed
+     by AFWA. A more detailed description of the use of each of the elements can be found in
+     Attachment 2.
+
+Table 2.1. Filename Element Descriptions.
+Element ID      Description
+AR              Area of Data – identifies the geographic coverage of the product
+CY              Cycle of Run – identifies the cycle time upon which the product is based
+DC              Data Category – identifies the broad category representative of the product
+DD              Data Date – identifies the single date for which the product is valid
+DF              Data Format – identifies the format of the data (often related to MIME type file
+                extension)
+DI              Distribution – identifies the distribution statement for the product
+DP              Data Date Period – identifies the range of dates for which the product is valid or
+                the period of record for climatological products
+DS              Data Subcategory – identifies the specific category representative of the product
+DT              Data Time – identifies the single time for which the product is valid
+FH              Forecast Hour – identifies the offset in hours from the cycle time to the valid time
+                of a forecast
+GP              Generating Process – identifies the model, system, or method from which the
+                product derives
+GR              Grid – identifies the projection and resolution of product
+LV              Level of Data – identifies single level to which the product pertains
+LY              Layer of Data – identifies the range of levels to which the product pertains
+PA              Parameter – identifies the atmospheric parameter or product description detailed
+                in the product
+PD              Publication Date – identifies the date a publication was released
+PN              Publication Number – identifies the library number of a publication
+PS              Product Source – identifies the organization that generated the product
+SC              Security Classification – identifies the classification level of the product
+SN              Sequence Number – identifies a particular product placement in a series of
+                related products (primarily for animations)
+SP              Special Processing – identifies special processing applied to a product to
+                differentiate it from the standard product
+TP              Data Time Period – identifies the range of times for which the product is valid
+AFWAMAN15-3 8 JANUARY 2014                                                                           5
+
+
+     2.2. Special Characters. The use of special character is consistent with NCEP
+     documentation, except as noted in paragraph 1.2.1.5. Only four special characters are
+     allowable, and each has a unique purpose within the filenames. Table 2.2 identifies the
+     allowable special characters and the acceptable use of each. Allowable “non-special”
+     characters include the uppercase alphabet characters (A-Z) and the numerals (0-9).
+
+Table 2.2. Special Character Usage.
+Character Name        Character ASCII Value         Use
+Period                .         46                  Separates element ID from its descriptor
+                                                    Example: PS.AFWA…
+Underscore            _            95               Separates individual filename elements
+                                                    Example: PS.AFWA_SC.U...
+Hyphen                -            45               Separates multi-part descriptors within a
+                                                    single filename element
+                                                    Example: …PA.MAX-SFC-TEMP…
+Plus Sign             +            43               Separates multiple descriptors within a single
+                                                    filename element
+                                                    Example: …PA.WND+DVAL…
+     2.3. Sequence of Elements. The NCEP/FNMOC standard does not mandate any particular
+     sequencing of filename elements, but rather allows each processing center to determine the
+     order of the elements. The AFWA standard further restricts the ordering of elements, but
+     still allows some flexibility to account for differing needs across the continuum of products.
+     Table 2.3 identifies the sequence of elements by group. While not all elements are needed to
+     describe all files, those used will be ordered relative to the other elements in the same order
+     as listed in the table. In general, only those elements needed to uniquely and unambiguously
+     identify the contents of the file are required to be used, but four elements are mandatory: PS,
+     SC, DI, and DF.
+
+Table 2.3. Sequence of Elements.
+Group Element ID(s)           Notes
+1     PS                      Product Source will always be the first element in the filename.
+2     SC                      Security Classification will always be the second element in the
+                              filename.
+3         DI                  Distribution will always be the third element in the filename.
+                              Selection of correct distribution statement shall be coordinated with
+                              the Scientific and Technical Information (STINFO) Officer.
+4         DC, DS
+5         GP, SP
+6         GR
+7         AR
+8         LV, LY
+9         PA
+10        DD, DP
+11        DT, TP, CY, FH
+12        PN
+ 6                                     AFWAMAN15-3 8 JANUARY 2014
+
+
+13   PD
+14   SN
+15   DF   Data Format will always be the last element in the filename to allow
+          proper function of applications or systems that employ file
+          extension recognition.
+
+
+
+
+                          LOUIS V. ZUCCARELLO, Colonel, USAF
+                          Commander
+AFWAMAN15-3 8 JANUARY 2014                                   7
+
+
+                                       Attachment 1
+         GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION
+
+References
+AFMAN 33-363, Management of Record, 1 March 2008
+
+Abbreviations and Acronyms
+AFMAN—Air Force Manual
+AFWA—Air Force Weather Agency
+AFWTL—Air Force Weather Technical Library
+AFWWS—Air Force Weather Weapon System
+ASCII—American Standard Code for Information Interchange
+CDC—Consolidated Dissemination Capability
+DAd—Data Administrator
+DoD—Department of Defense
+DoDD—Department of Defense Directive
+FAA—Federal Aviation Administration
+FNMOC—Fleet Numerical Meteorology and Oceanography Center
+HQ—Headquarters
+ICAO—International Civil Aviation Organization
+ID—Identifier
+MIME—Multi-Purpose Internet Mail Extension
+NCEP—National Centers for Environmental Prediction
+OPR—Office of Primary Responsibility
+OWS—Operational Weather Squadron
+STINFO—Scientific and Technical Information
+TIROS—Television and Infrared Observation Satellite
+URSI—Union Radio Scientifique Internationale
+WMO—World Meteorological Organization
+ 8                                                         AFWAMAN15-3 8 JANUARY 2014
+
+
+                                          Attachment 2
+               FORMAT AND DESCRIPTORS OF FILENAME ELEMENTS
+
+Notes on syntax employed in describing formats:
+       - Each element starts with its two-character element ID. The element IDs are typed
+       exactly as they should appear in a filename.
+       - Character-based descriptors are normally represented as a series of X’s, but in some
+       cases other characters are used to distinguish special descriptor parts.
+       - Numeric-based descriptors are represented as a series of D’s, except for date and time.
+       - Dates are represented by YYYY for year, MM for month, and DD for day.
+       - Times are represented by HH for hour and MM for minute.
+       - A bracketed ellipsis ( “[…]” ) is used to indicate additional characters or digits may be
+       used to fully describe the element of information. Indicates a variable-length field.
+
+Section A2.1. – Area of Data.
+A2.1. Area of Data. This describes the geographic coverage of the product. Descriptors below
+can be combined with compass headings (e.g., N, E, S, W, NE, NW) to more clearly delineate
+product coverage. For example, SW-ASIA would indicate Southwest Asia.
+     A2.1.1. Format. AR.X[…], where X[…] is one or a combination of the descriptors in
+     Table A2.1 or for a point product, the approved International Civil Aviation Organization
+     (ICAO) identifier, World Meteorological Organization (WMO) identifier, or Union Radio
+     Scientifique Internationale (URSI) identifier for the location for which the product is valid.
+     Multiple descriptors may be used to fully describe the area of coverage. In the case of
+     multiple areas of coverage, the individual area will be separated by the plus sign character
+     (‘+’). An example of this would be, “AR.EUR+N-AFRICA.” For point products, if a
+     location does not have an officially sanctioned identifier, the location name may be
+     substituted. User specified area descriptors will be encouraged to identify the area of custom
+     mission support products (e.g., 11-OWS, GCCS-402). This will support the consistent
+     identification of a customized area for numerous related products and reduce the proliferation
+     of multiple areas defined by the same more general descriptor (e.g. SW-ASIA). User
+     specified area descriptors must be negotiated between the product producer and user to
+     ensure clear understanding of area boundaries. The alphanumeric portion of the
+     Consolidated Dissemination Capability (CDC) at AFWA has binned text-based bulletins into
+     pre-defined 20 x 20 degree latitude/longitude boxes. The area descriptions for those boxes,
+     as well as map graphically depicting their layout are included as Attachment 4 to this
+     manual. The Space Weather Analysis and Forecast System (SWAFS) uses a satellite
+     identifier in the AR element to indicate geographic coverage of certain data types as
+     shorthand to indicate the sensor field of view during the measurement.
+AFWAMAN15-3 8 JANUARY 2014                                                                  9
+
+
+
+
+Table A2.1. Area of Data Descriptors.
+Descriptor                                      Definition
+AFRICA                                          Africa
+AK                                              Alaska
+AMER                                            America
+ANTARC                                          Antarctica
+ARCTIC-OCN                                      Arctic Ocean
+ASIA                                            Asia
+ATLC-OCN                                        Atlantic Ocean
+AUS                                             Australia
+CONUS                                           Contiguous United States
+CONxx, where xx is a number                     Contingency Area number xx
+CANADA                                          Canada
+CARIB                                           Caribbean
+CEN                                             Central
+E                                               East(ern)
+EUR                                             Europe
+GLOBAL                                          Global
+GRNLND                                          Greenland
+HEM                                             Hemisphere
+IND-OCN                                         Indian Ocean
+MED                                             Mediterranean
+MEXICO                                          Mexico
+N                                               North(ern)
+NE                                              Northeast(ern)
+NW                                              Northwest(ern)
+PAC-OCN                                         Pacific Ocean
+S                                               South(ern)
+SE                                              Southeast(ern)
+SW                                              Southwest(ern)
+VCNTY                                           Vicinity
+W                                               West(ern)
+
+Section A2.2. – Cycle of Run.
+A2.2. Cycle of Run. This is used in conjunction with data date to indicate the cycle time of a
+model run. (See also A2.9. Data Time and A2.22. Data Time Period.)
+   A2.2.1. Format. CY.HH[MM], where HH is an hour between 00 and 23, inclusive, and
+   MM is a minute between 00 and 59, inclusive. MM is an optional field allowing
+   differentiation between multiple runs within an hour. Note: HH and MM are fixed length
+   fields. Hours or minutes requiring less than two digits will be zero padded to two digits.
+ 10                                                       AFWAMAN15-3 8 JANUARY 2014
+
+
+Section A2.3. – Data Category.
+A2.3. Data Category. This identifies the broad category representative of the product.
+   A2.3.1. Format. DC.X[…], where X[…] is one of the descriptors listed in Table A2.2
+
+Table A2.2. Data Category Descriptors.
+Descriptor     Definition
+ANLYS          Analysis
+BRFG           Briefing
+CLIMO          Climatology
+CMPST          Composite
+FCST           Forecast
+INFO           Information files (used for description of numerical model output)
+INFO-PRE       Preliminary information files (used for description of early model output)
+LTNG           Lightning data
+NMRCL          Numerical
+OBS            Observation data
+OBS-ACFT       Aircraft observation data
+OBS-SFC        Surface observation data
+OBS-UA         Upper air observation data
+OCEAN          Oceanographic
+PUB            Publication
+RADAR          RADAR data
+SAT            Satellite data
+SPACE          Space/Solar
+TEXT           Textual
+
+Section A2.4. – Data Date.
+A2.4. Data Date. This is used in conjunction with data time, data time period, or cycle of run to
+indicate valid date of product. (See also A2.7. Data Date Period.)
+   A2.4.1. Format. DD.YYYYMMDD, where YYYY is the four-digit year, MM is the two-
+   digit month, and DD is the two-digit day. Month and day numbers requiring fewer digits will
+   be zero filled.
+Section A2.5. – Data Format.
+A2.5. Data Format. This identifies the format of the data file (often related to standard file
+extension).
+   A2.5.1. Format. DF.X[…], where X[…] is one or a combination of the descriptors listed in
+   Table A2.3.
+Note: This element represents a departure from the NCEP standard in one area. Data Format
+may contain multiple period (‘.’) characters to fully identify modified file format. For example,
+a tar file that has been compressed typically has a file extension of “.TAR.GZ”. Both extensions
+are necessary to fully identify the file. This is the only filename element that can have multiple
+periods.
+AFWAMAN15-3 8 JANUARY 2014                                                                11
+
+
+Table A2.3. Format Descriptors.
+Descriptor   Definition
+AVI          Audio Video Interleaved (video)
+BMP          Windows Bit MaP
+BUF          Binary Universal Form for the Representation of meteorological data (BUFR)
+BZ2          bzip2 compression algorithm/tool
+CRC          Cyclical Redundancy Check (checksum) file
+CRX          Character form for the Representation and Exchange of data (CREX)
+CSV          Comma Separated (Delimited) Values
+DAT          Data file
+DBF          Database file
+DOC          Microsoft Word Document
+GIF          Graphics Interchange Format
+GR1          GRIdded Binary (GRIB) Edition 1
+GR2          General Regular-spaced Information in Binary (GRIB) Edition 2
+GVS          Global Vector System
+GZ           GNU Zip
+H5           Hierarchical Data Format (HDF) Version 5
+HTM          Hyper Text Markup Language (HTML)
+JPG          Joint Photographic Experts Group (JPEG)
+JP2          JPEG2000
+KML          Keyhole Markup Language (Google Earth XML)
+KMZ          Zipped Keyhole Markup Language (Google Earth XML)
+LAH          Long ASCII Header (LAH) included
+MDB          Microsoft Access database
+MPG          Moving Picture Experts Group (MPEG)
+NC           Network Common Data Form (NetCDF)
+NRLEDR       Naval Research Laboratory (NRL) Environmental Data Record (EDR) file
+NRLSDR       Naval Research Laboratory (NRL) Sensor Data Record (SDR) file
+NTF          National Imagery Transmission Format (NITF)
+PDF          Portable Document Format
+PGM          Portable Grey Map
+PNG          Portable Network Graphics
+PPT          Microsoft PowerPoint
+RTF          Rich Text Format
+SHP          Shape file
+SHX          Shape Index
+SVG          Scalable Vector Graphics
+TAR          Tape Archive format
+TIF          Tag Image File Format (TIFF)
+TXT          ASCII Text
+WAV          Microsoft Windows Wave (audio)
+WMP          Microsoft Windows Media Player (video)
+XLS          Microsoft Excel Spreadsheet
+ 12                                                        AFWAMAN15-3 8 JANUARY 2014
+
+
+XML           Extensible Markup Language document
+XSL           Extensible Markup Language (XML) Stylesheet
+ZIP           Zip compression utility
+
+Section A2.6. – Distribution.
+A2.6. Distribution. This identifies the distribution statement for the product.
+   A2.6.1. Format. DI.X[-X…], where X is one of the distribution statement labels in Table
+   A2.4 and “–X…” represents an optional coalition code from Table A2.5 indicating a
+   coalition or dialog to which a limited distribution is authorized (distribution statement F).
+   Note: These distribution statements are governed by DoD Directive (DoDD) 5230.24. If
+   any discontinuities are identified in this filename convention, the DoDD 5230.24 takes
+   precedence.
+
+Table A2.4. Distribution Statement Descriptors.
+Descriptor    Definition
+    A         Approved for public release.
+    B         Releasable to U.S. government agencies only.
+    C         Releasable to U.S. government agencies and their contractors only.
+    D         Releasable to DoD components and their contractors only.
+    E         Releasable to DoD components only.
+    F         Releasable to recipients as directed by the DoD Controlling Office or higher DoD
+              authority.
+      X       Releasable to U.S. government agencies and private individuals or enterprises
+              eligible to obtain export-controlled technical data.
+
+Table A2.5. Coalition/Dialog Descriptors.
+Coalition     Definition
+ Code
+ MDN          Mediterranean Dialog Nations
+ NATO         North Atlantic Treaty Organization (NATO)
+  PFP         Partnership For Peace
+ RUD          Russia/Ukraine Dialog
+
+Section A2.7. – Data Date Period.
+A2.7. Data Date Period. This identifies the range of dates for which the product is valid. For
+climatological products, the Data Date Period field indicates the period of record from which the
+climatology was derived. (See also A.2.4. Data Date.)
+   A2.7.1. Format. DP.YYYY1MM1DD1-YYYY2MM2DD2, where YYYY1 is the four-
+   digit year, MM1 is the two-digit month, and DD1 is the two-digit day for the start of the
+   period; and YYYY2 is the four-digit year, MM2 is the two-digit month, and DD2 is the two-
+   digit day for the end of the period. Month and day numbers requiring fewer digits will be
+   zero filled.
+AFWAMAN15-3 8 JANUARY 2014                                                                         13
+
+
+Section A2.8. – Data Subcategory.
+A2.8. Data Subcategory. This identifies the specific category representative of the product.
+This element differs from the parameter element in paragraph A2.15 primarily in that this
+describes a type of data, rather than describing specific environmental parameters.
+   A2.8.1. Format. DS.X[…], where X[…] is one of the descriptors in Table A2.6
+
+Table A2.6. Data Subcategory Descriptors.
+Descriptor      Definition
+ACARS           Automated Aircraft Report (Aircraft Communication Addressing and Reporting
+                System)
+AERO            Aerological Report
+AIREP           Aircraft Report
+AMSUA           Advanced Microwave Sounding Unit A
+ARP             Application Related Product (METSAT)
+ATMS            Advanced Technology Microwave Sounder (ATMS)
+ATOVS           Satellite Report (Advanced Television and Infrared Observation Satellite (TIROS)
+                Operational Vertical Sounder)
+AUTO            Report from an Automatic Station
+BOGUS           Bogus Report
+CERES           Clouds and the Earth’s Radiant Energy System (CERES)
+CMPST           Composite
+CNTGNCY         Contingency
+CRIMSS          Cross-track Infrared Microwave Sounder Sensors (CrIMSS)
+CRIS            Cross-track Infrared Sounder (CrIS)
+DISASTER        Disaster
+DOPLR           Digital Radar Report
+EDR             Satellite Report (Environmental Data Record)
+ENSEMBLE        Numerical model ensemble
+FALOP           Forward Area Limited Observing Program Report
+FM-12           Synoptic Report of Surface Observation from a Fixed Land Station (SYNOP)
+FM-13           Ship Report of Surface Observation from a Sea Station (SHIP)
+FM-14           Synoptic Mobile Report of Surface Observation from a Mobile Land Station (SYNOP
+                MOBIL)
+FM-15           Meteorological Aviation Routine Weather Report (METAR)
+FM-16           Aviation Selected Special Weather Report (SPECI)
+FM-18           Report of a Buoy Observation (BUOY)
+FM-20           Report of Ground Radar Weather Observation (RADOB)
+FM-22           Radiological Data Report (Monitored on a Routine Basis and/or In Case of Accident)
+                (RADREP)
+FM-32           Upper-Wind Report from a Fixed Land Station (PIBAL / PILOT)
+FM-33           Upper-Wind Report from a Sea Station (PIBAL / PILOT SHIP)
+FM-34           Upper-Wind Report from a Mobile Land Station (PIBAL / PILOT MOBIL)
+FM-35           Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Fixed Land
+                Station (Rawinsonde / TEMP)
+FM-36           Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Sea Station
+                (Rawinsonde / TEMP SHIP)
+FM-37           Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Balloon or
+14                                                   AFWAMAN15-3 8 JANUARY 2014
+
+
+        Aircraft (Dropsonde / TEMP DROP)
+FM-38   Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Mobile Land
+        Station (Rawinsonde / TEMP MOBIL)
+FM-39   Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Land Station
+        (Rocketsonde / ROCOB)
+FM-40   Upper-Level Pressure/ Temperature/ Humidity and Wind Report from a Station on a
+        Ship (Rocketsonde / ROCOB SHIP)
+FM-41   Upper-Air Report from an Aircraft (other than Weather Reconnaissance) (CODAR)
+FM-42   Aircraft Report (Aircraft Meteorological Data Relay) (AMDAR)
+FM-44   Ice Analysis (ICEAN)
+FM-45   Analysis in Full Form (IAC)
+FM-46   Analysis in Abbreviated Form (IAC FLEET)
+FM-47   Processed Data in the Form of Grid-Point Values (GRID)
+FM-49   Processed Data in the Form of Grid-Point Values (Abbreviated Code Form) (GRAF)
+FM-50   Forecast Upper-Wind and Temperature for Aviation (WINTEM)
+FM-51   Terminal Aerodrome Forecast (TAF)
+FM-53   Area Forecast for Aviation (ARFOR)
+FM-54   Route Forecast for Aviation (ROFOR)
+FM-57   Radiological Trajectory Dose Forecast (Defined Time of Arrival and Location)
+        (RADOF)
+FM-61   Forecast for Shipping (MAFOR)
+FM-62   Report of Marine Surface Observation along a Ships Track (TRACKOB)
+FM-63   Report of Bathythermal Observation (BATHY)
+FM-64   Temperature/ Salinity and Current Report from a Sea Station (TESAC)
+FM-65   Report of Spectral Wave Information from a Sea Station or from a Remote Platform
+        (Aircraft or Satellite) (WAVEOB)
+FM-67   Report of Hydrological Observation (HYDRA)
+FM-68   Hydrological Observation (HYFOR)
+FM-71   Report of Monthly Values from a Land Station (CLIMAT)
+FM-72   Report of Monthly Means and Totals from an Ocean Weather Station (CLIMAT SHIP)
+FM-73   Report of Monthly Means for Oceanic Area (NACLI / CLINP / SPCLI / CLISA /
+        INCLI)
+FM-75   Report of Monthly Aerological Means from a Land Station (CLIMAT TEMP)
+FM-76   Report of Monthly Aerological Means from an Ocean Weather Station (CLIMAT
+        TEMP SHIP)
+FM-81   Synoptic Report of Bearings of Sources of Atmospherics (SFAZI)
+FM-82   Synoptic Report of the Geographical Location of Sources of Atmospherics (SFLOC)
+FM-83   Detailed Report of the Distribution of Sources of Atmospherics by Bearings for any
+        period up to including 24 hours (SFAZU)
+FM-85   Report of Synoptic Interpretation of Cloud Data obtained by a Meteorological Satellite
+        (SAREP)
+FM-86   Report of Satellite Remote Upper-Air Soundings of Pressure/ Temperature/ and
+        Humidity (SATEM)
+FM-87   Report of Satellite Clear Radiance Observations (SARAD)
+FM-88   Report of Satellite Wind/ Surface Temperature/ Cloud/ Humidity/ and Radiation
+        Observations (SATOB)
+FR      Forecast Review/Study
+FTW     Satellite Report (Feature Track Winds) (High Density Geostationary Satellite Winds)
+GEO     Geolocation data (METSAT auxiliary data)
+AFWAMAN15-3 8 JANUARY 2014                                                                15
+
+
+GSR         Geodetic Survey Report
+HAZ         Hazard
+HDOBS       High Density Aircraft Reconnaissance Observation
+HIRS        Satellite Report (High Resolution Infrared Radiation Sounder)
+IP          Intermediate Product (METSAT data)
+IR          Infrared
+MDCRS       Aircraft Report (Meteorological Data Collection and Reporting System) (BUFR
+            ACARS)
+MODIS       Moderate-resolution Imaging Spectroradiometer (MODIS)
+OMPS        Ozone Mapping and Profiler Suite (OMPS)
+PIREP       Pilot Report
+PLTAF       Plain Language Terminal Area Forecast (TAF)
+RADAR       Radar Report
+RDR         Raw Data Record (meteorological satellite data)
+RECCO       Aircraft Report (Meteorological Reconnaissance Flight)
+RPO         Random Point Observation
+RTOVS       Satellite Report (Revised TIROS Operational Vertical Sounder)
+SA          Situational Awareness
+SA-AU       Airways and Auto Merged Report
+SAO         Airways Report (includes Record Specials)
+SAOSP       Airways Special Report (excluding Record Specials)
+SDR         Satellite Report (Sensor Data Record)
+SHEF        Standard Hydrologic Exchange Format
+SMARS       Supplementary Marine Reporting Station Report
+SPACE-OBS   Space/solar environment observations
+S-S-A       Synoptic/ Airways and Auto
+SSIES       Special Sensor for Ions, Electrons and Scintillation
+SSJ         DMSP Special Sensor Precipitating Electron and Ion Spectrometer
+SSM         DMSP Special Sensor Magnetometer
+SSMI        DMSP Special Sensor Microwave Imager
+SSMIS       DMSP Special Sensor Microwave Imager and Sounder
+SSMT1       DMSP Special Sensor Microwave Thermal Sensor
+SSMT2       DMSP Special Sensor Microwave Moisture Sensor
+SSULI       DMSP Special Sensor Ultraviolet Limb Imager
+SSUSI       DMSP Special Sensor Ultraviolet Spectrographic Imager
+STORM       Special Operations Forces Weather Observation/Forecast Report
+SVDM        Aircraft Report (Supplemental Vortex Data Message)
+SVR         Severe (Surface Observations with Severe Parameters)
+SWAFS       Space Weather Analysis and Forecast System data
+SY-AE       Synoptic and AERO Merged Report
+SY-AU       Synoptic and AUTO Merged Report
+SY-MT       Synoptic and METAR Merged Report
+SY-SA       Synoptic and Airways Merged Report
+TDR         Temperature Data Record (METSAT)
+TFRN        Terminal Forecast Reference Notebook
+TLS         Track Line Survey
+TM          Technical Memorandum
+TN          Technical Note
+ 16                                                           AFWAMAN15-3 8 JANUARY 2014
+
+
+TOVS             Satellite Reports (TIROS Operational Vertical Sounder)
+TR               Technical Regulation
+TRMM             Satellite Report (Tropical Rainfall Measuring Mission)
+UAMRG            Upper-Air Merged Report
+UH               User Handbook
+UPTMP            Upper-Level Thermodynamic Data from a Rawinsonde Report
+UPWND            Upper-Level Winds from a PIBAL or a Rawinsonde Report
+UWCND            Mine Counter Measures Report Under Water Condition
+VDM              Aircraft Report (Vortex Data Message)
+VIIRS            Visible Infrared Imaging Radiometer Suite (VIIRS)
+VIS              Visual
+WV               Water Vapor
+
+Section A2.9. – Data Time.
+A2.9. Data Time. This identifies the single time for which the product is valid. (See also A2.2
+Cycle of Run and A2.22 Data Time Period.)
+     A2.9.1. Format. DT.HHMM[SS], where HH is the two-digit hour in the range 00 to 23
+     and MM is the two-digit minute in the range 00 to 59 and SS is the two-digit second in the
+     range 00-59. Hour, minute, and second numbers requiring fewer digits will be zero filled.
+Section A2.10. – Forecast Hour.
+A2.10. Forecast Hour. This identifies the offset in hours from the cycle time to the valid time
+of a forecast.
+     A2.10.1. Format. FH.HHH[MM], where HHH is the number of hours between the base
+     (cycle) time and the forecast valid time, and MM is the number of minutes. The minutes can
+     be included to allow differentiation of forecast periods between whole hour boundaries.
+     Note: HHH and MM are fixed length fields. Hours requiring less than three digits will be
+     zero padded to three digits. Likewise, minutes requiring less than two digits will be zero
+     padded. For example, a six hour forecast would be labeled as “FH.006”.
+Note: This departs from the NCEP usage of forecast hour. NCEP instead lists the valid time of
+the product in the forecast hour.
+
+Section A2.11. – Grid.
+A2.11. Grid. This identifies the projection and resolution of product.
+     A2.11.1. Format. GR.PD[…]U[…], where P indicates the projection as indicated in Table
+     A2.7., D[…] specifies the value of the grid size, and U[…] indicates the units of measure as
+     indicated in Table A2.8 The value specified by D[…] uses as many digits as necessary to
+     identify the grid spacing. A couple of examples may be in order. A 45km mid-latitude
+     Lambert Conformal MM5 product grid would be identified as GR.L45KM, while an eighth-
+     mesh (25nm) Polar Stereographic cloud forecast grid would be identified as GR.P25NM.
+     For fractional values, a ‘P’ shall be used to signify the decimal point, since the decimal point
+     is a reserved character. For example, two-and-a-half degree data in lat/lon projection would
+     be represented as “GR.C2P5DEG”. For resolutions less than one unit of measure, ‘0’ shall
+AFWAMAN15-3 8 JANUARY 2014                                                                    17
+
+
+   precede the fractional specification. For example, half degree lat/lon data is specified as
+   GR.C0P5DEG.
+
+Table A2.7. Projection Descriptors.
+Descriptor   Definition
+    C        Cylindrical Equidistant (CED) (Latitude/Longitude)
+    E        Stretched Equidistant
+    G        Gaussian
+    L        Lambert Conformal
+    M        Mercator
+    P        Polar Stereographic
+    S        Satellite Coordinates
+
+Table A2.8. Units of Measure Descriptors.
+Descriptor   Definition
+  DEG        Degrees
+   KM        Kilometers
+   NM        Nautical Miles
+
+Section A2.12. – Generating Process.
+A2.12. Generating Process. This identifies the process, model, or method creating the product.
+   A2.12.1. Format. GP.X[…], where X[…] is one or a combination of the descriptors listed
+   in Table A2.9. In the event that more than one descriptor could potentially describe the
+   product, the order of precedence identified in Table A2.9 shall be followed. The lower the
+   precedence number, the higher precedence it has. For example, if a forecaster produced a
+   surface analysis chart based on the 0 hour forecast fields from GFS and used LEADS
+   software to draw the features, FITL would be used, since its precedence is 1, while GFS’s is
+   2, and LEAD’s is 3. In some cases, multiple descriptors may be needed to fully distinguish
+   the product. In this case, the descriptors shall be separated by hyphen characters with higher
+   precedence descriptors being in front (to the left) of lower precedence descriptors.
+
+Table A2.9. Descriptors.
+Descriptor      Precedence    Definition
+FITL                 1        Forecaster-in-the-loop (FITL)
+MG                   1        Meteogram
+UAMG                 1        Meteogram (upper air)
+PA                   1        Point Analysis model
+
+3DVAR                2        3-dimensional variational analysis
+3DWF                 2        3-Dimensional Wind Fields model
+ACE                  2        Advanced Composition Explorer
+ACMES                2        Advanced Climate Modeling and Environmental Simulations
+AF-UHF-              2        Air Force Ultra High Frequency Scintillation
+SCINT
+18                                         AFWAMAN15-3 8 JANUARY 2014
+
+
+AGRMET      2   Agricultural Meteorology Model
+AQUA        2   Aqua meteorological satellite (part of MODIS constellation)
+AURORAL-    2   Auroral Boundary Model
+BOUND
+BFM         2   Battlescale Forecast Model
+COAMPS      2   Coupled Ocean Atmospheric Mesoscale Prediction System
+                (COAMPS)
+DAF         2   Derived Atmospheric Fields
+DBDB-V      2   Digital Bathymetric Database –Variable Resolution
+DCF         2   Diagnostic Cloud Forecast
+DIOPS       2   Distributed Integrated Ocean Prediction System
+DRAP        2   D-Region Absorption Prediction model
+DTA         2   Dust Transport Application
+ECMWF       2   European Centre for Medium-Range Weather Forecasts
+                (ECMWF) Model
+FAROP       2   Forecast of Aerosol Radiative Optical Properties
+FCST-       2   Forecast Editor
+EDITOR
+F13         2   DMSP F13
+F14         2   DMSP F14
+F15         2   DMSP F15
+F16         2   DMSP F16
+F17         2   DMSP F17
+F18         2   DMSP F18
+F2C         2   FengYun 2C (Chinese geostationary satellite)
+GAIM        2   Global Assimilation of Ionospheric Measurements
+GDB         2   Geophysical Database
+GDEM-V      2   Generalized Digital Environment Model – Variable Resolution
+GEOPRECIP   2   Geostationary satellite based precipitation estimate model
+GEPS        2   Global Ensemble Prediction Suite
+GFDN        2   Geophysical Fluid Dynamics Navy model
+GFS         2   Global Forecast System
+GOES13      2   Geostationary Operational Environmental Satellite (GOES) 13
+                (currently serving in GOES “East” orbit)
+GOES15      2   Geostationary Operational Environmental Satellite (GOES) 15
+                (currently serving in GOES “West” orbit)
+GOE         2   Geostationary Operational Environmental Satellite (GOES) East
+GOW         2   Geostationary Operational Environmental Satellite (GOES) West
+GPOST       2   Generic Post-processor (GENPOST)
+HAF         2   Hakamada-Akasofu-Fry Kinematic Solar Wind Model
+HFBL        2   High Frequency Bottom Loss
+HF-PROP-    2   High Frequency Propagation Prediction
+PRED
+HFL         2   High Flyer
+AFWAMAN15-3 8 JANUARY 2014                                                    19
+
+
+ICECAP        2     ICE age Chemistry And Proxies (ICECAP) model
+IDPS          2     Interface Data Processing Segment (IDPS)
+IFM           2     Ionospheric Forecasting Model
+INGEST        2     Ingest Process
+LFBL          2     Low Frequency Bottom Loss
+LIS           2     Land Information System (3-hourly production)
+LIS12         2     Land Information System (12-hourly production)
+LIS24         2     Land Information System (24-hourly production)
+LRCF          2     Long Range Cloud Forecast
+LSM           2     Land Surface Model
+MAG-          2     Geomagnetic Analysis
+ANALYSIS
+MARKIVB       2     Air Force MARK IVB Meteorological Data Station (AN/UMQ-
+                    13(V))
+ME0           2     METEOSAT 10 (European geostationary satellite)
+ME7           2     METEOSAT 7 (European geostationary satellite)
+MEPS          2     Mesoscale Ensemble Prediction Suite
+MODAS         2     Modular Ocean Data Assimilation System
+MODAS-        2     Modular Ocean Data Assimilation System – Lite
+LITE
+MODIS         2     Moderate Resolution Imaging Spectroradiometer
+MSFM          2     Magnetospheric Specification and Forecast Model
+MSG           2     METEOSAT Second Generation (METEOSAT 10)
+MT1           2     MTSAT-1R (Japanese geostationary satellite)
+MT2           2     MTSAT-2 (Japanese geostationary satellite)
+NA15          2     NOAA 15 (POES)
+NA16          2     NOAA 16 (POES)
+NA17          2     NOAA 17 (POES)
+NA18          2     NOAA 18 (POES)
+NA19          2     NOAA 19 (POES)
+NAAPS         2     Navy Aerosol Analysis and Prediction System
+NAM           2     North American Mesoscale model
+NAVGEM        2     Navy Global Environmental Model
+NAVY-         2     Navy Ultra High Frequency Scintillation
+UHF-SCINT
+NCOM          2     NRL (Naval Research Laboratory) Coastal Ocean Model
+NPP           2     Suomi National Polar-orbiting Partnership
+OAML          2     Oceanographic and Atmospheric Master Library
+OBSLCT        2     GTWAPS Observation Selection
+OPUP          2     Open System Principal User Processor
+OTIS          2     Optimum Thermal Interpolation System
+POES          2     Polar Operational Environmental Satellite
+PPS           2     Proton Prediction System
+PRISM         2     Parameterized Realtime Ionospheric Specification Model
+RAC           2     Radar Auroral Clutter
+20                                         AFWAMAN15-3 8 JANUARY 2014
+
+
+RAP         2   Rapid Refresh model
+REFM        2   Relativistic Electron Forecast Model
+REP         2   Relativistic Electron Prediction model
+SAA         2   South Atlantic Anomaly
+SCFM        2   Stochastic Cloud Forecast Model
+SFCTMP      2   Surface Temperature Model
+SNODEP-M    2   Snow Analysis Model – forecaster Modified
+SNODEP-U    2   Snow Analysis Model – Unmodified
+SN          2   Shipping Noise
+SOHO        2   Solar and Heliospheric Observatory
+SRCF        2   Short Range Cloud Forecast model
+TERRA       2   Terra meteorological satellite (part of MODIS constellation)
+TOPS        2   Thermodynamic Ocean Prediction System
+UHF-SCINT   2   Ultra High Frequency Scintillation application
+UHF-        2   Ultra High Frequency Signal Fade
+SIGNAL-
+FADE
+UKMO        2   United Kingdom Meteorological Office (UKMO) model
+UM          2   UKMO Unified Model
+UPP         2   Unified Post Processor
+VSS         2   Volume Scattering Strength
+WAM         2   Wave Model
+WARN-       2   Warning and Monitoring
+MON
+WDAOBS      2   WDA Observation Product Generator
+WRE         2   Weather Running Estimate
+WRF         2   Weather Research and Forecasting model
+WRF-CHEM    2   Weather Research and Forecasting Air Chemistry model
+WRF-VOLC    2   Weather Research and Forecasting Volcano model
+WRN         2   Wind Residual Noise
+WWMCA-M     2   Worldwide Merged Cloud Analysis (WWMCA) model –
+                forecaster Modified
+WWMCA-U     2   Worldwide Merged Cloud Analysis (WWMCA) model –
+                Unmodified
+
+CDC         3   Consolidated Dissemination Capability
+GRADS       3   Grid Analysis and Display System (visualization tool)
+HORACE      3   Horace (UKMO developed forecaster workstation)
+IDL         3   Interactive Data Language (visualization tool)
+LEADS       3   Leading Environmental Analysis and Display System
+SW          3   Space Weather
+SWAFS       3   Space Weather Analysis and Forecast System
+WDA         3   Weather Data Analysis
+AFWAMAN15-3 8 JANUARY 2014                                                                      21
+
+
+Section A2.13. – Level of Data.
+A2.13. Level of Data. This identifies the single atmospheric level pertaining to the product.
+   A2.13.1. Format. LV.SD[…][U…][-V…], where S indicates the type of level as indicated
+   in Table A2.10., D[…] specifies the value of the level, [U…] indicates units of measure,
+   where applicable as indicated in Table A2.11., and [-V…] indicates the vertical reference
+   where applicable as indicated in Table A2.12. The value of the level uses as many digits as
+   necessary to identify the level. The value “99999” shall be used to indicate multiple levels
+   (not to be confused with a continuous layer, which would be handled by LY). For unit-less
+   levels, such as sigma, the units of measure and vertical reference are not required. Examples
+   may help clarify this element. A product containing soil moisture at 5cm would include
+   “…LV.D5CM…” in its filename. A 500mb wind chart would include “…LV.P500MB…”.
+   A product with flight level winds might include “…LV.H30000FT-AGL…”. An alternative
+   format can be used to describe levels that are defined by something other than by vertical
+   reference datum. For example, a product depicting freezing level would be labeled
+   “LV.FRZ”, a product describing the tropopause would be labeled “LV.TROP”, and a product
+   describing something at the surface would be labeled “LV.SFC”.
+Note: This departs from the NCEP usage of level. The NCEP standard does not include the zeta
+level type, nor does it include units of measure or vertical reference.
+
+Table A2.10. Level types.
+Type Designator     Meaning
+      D             Depth
+      H             Height
+      P             Pressure
+      S             Sigma
+      T             Potential Temperature
+      Z             Zeta
+
+Table A2.11. Units of measure.
+   Descriptor       Definition
+      CM            Centimeters
+      FT            Feet
+      IN            Inches
+       K            degrees Kelvin
+      KM            Kilometers
+       M            Meters
+      MB            Millibars (HectoPascals)
+ 22                                                       AFWAMAN15-3 8 JANUARY 2014
+
+
+Table A2.12. Vertical references.
+   Descriptor       Definition
+     AGL            Above Ground Level
+     MSL            (From) Mean Sea Level
+
+Section A2.14. – Layer of Data.
+A2.14. Layer of Data. This indicates the range of levels pertaining to the product.
+   A2.14.1. Format. LY.SD[…][U…][-V…]1-SD[…][U…][-V…]2, where SD[…][U…][-
+   V…]1 identifies the bottom of the layer, and SD[…][U…][-V…]2 identifies the top of the
+   layer. The top and bottom levels conform to the format specified in paragraph A2.13.1 and
+   are separated by a hyphen, indicating a spatial interval. The value “99999” shall be used to
+   indicate multiple layers. For example, a product containing low-level flight hazards might
+   contain the following layer descriptor in its filename: “…LY.H0FT-AGL-H10000FT-
+   AGL….”
+Section A2.15. – Parameter.
+A2.15. Parameter. This identifies the atmospheric parameter or product description detailed in
+the product.
+   A2.15.1. Format. PA.X[…], where X[…] is one or more of the descriptors identified in
+   A2.15.2. For publications, the document title or name shall be used rather than the
+   descriptors.
+   A2.15.2. Descriptors. The parameter descriptors are taken from the Federal Aviation
+   Administration’s (FAA) Contractions Manual, wherever possible. Where no FAA
+   contraction is available, common practice among Air Force Weather forecasters prevails.
+   The descriptors may be combined to fully describe product parameters. When multiple
+   descriptors are used to define a single parameter, the hyphen (‘-‘) character shall be used to
+   separate the descriptors. When multiple parameters make up a product, the parameters will
+   be separated by plus signs (‘+’). This allows full identification of products containing
+   multiple parameters. When multiple parameters are included in the product, they will be
+   listed in the order presented in the following table to reduce the number of possible
+   filenames. This should not be confused with a single parameter that requires multiple
+   contractions to describe it, in which case the contractions should be used in the order which
+   correctly describes the parameter. For example, pressure change would be represented by
+   PA.PRES-CHG. An example of a product containing multiple parameters is PA.MAX-
+   GST+PRES-CHG (maximum gust and pressure change). Table A2.13 contains the
+   parameter descriptors, sorted alphabetically by parameter, rather than by descriptor, for ease
+   of use.
+Note: At the end of the table is a list of packaged parameter descriptors. These descriptors
+identify standard packages of many parameters, as agreed to in Interface Control Documents or
+Interface Specifications between AFWA and specific customers. Since the parameters are
+agreed to in advance and the products contain a great number of parameters (sometimes in
+excess of 90), this approach was taken to limit filename size. This parameter set naming
+AFWAMAN15-3 8 JANUARY 2014                                                                23
+
+
+convention may be extended to support custom parameter sets by a growing customer base.
+Unique sets of parameters should always have unique descriptors to avoid confusion.
+
+Table A2.13. Parameter Descriptors.
+Parameter                                                       Descriptor
+Accumulation                                                    ACCUM
+Above Ground Level                                              AGL
+Absolute                                                        ABS
+Aircraft                                                        ACFT
+Advanced Composition Explorer                                   ACE
+Advection                                                       ADVCTN
+Advisory                                                        ADZY
+Aircraft Meteorological Information                             AIRMET
+Alpha Particle, High Energy                                     AH
+Alpha Particle, Low Energy                                      AL
+Altimeter Setting                                               ALSTG
+Amount                                                          AMT
+Analysis                                                        ANLYS
+Angle                                                           ANGL
+Ap-Index (Daily Planetary Geomagnetic Index)                    AP
+Area Forecast                                                   ARFOR
+Average                                                         AVG
+Aviation Routine Weather Report                                 METAR
+
+Backdrop                                                        BCKDRP
+Base                                                            BASE
+Blowing Dust                                                    BLDU
+Blowing Sand                                                    BLSA
+Blowing Snow                                                    BLSN
+Blizzard                                                        BLZD
+Boundary                                                        BNDRY
+Bulletin                                                        BUL
+Buoy Data                                                       BUOY
+
+Ceiling                                                         CIG
+Change                                                          CHG
+Cloud                                                           CLD
+Cloud Free                                                      CLDFR
+Cloud Tops                                                      CLDTOP
+Cold Front                                                      CDFNT
+Composite                                                       CMPST
+Condensation Trails                                             CONTRAILS
+Condition                                                       COND
+Convective                                                      CNVTV
+Convective Available Potential Energy                           CAPE
+ 24                                                      AFWAMAN15-3 8 JANUARY 2014
+
+
+Convective Inhibition                                           CINH
+Convergence                                                     CNVRGC
+Corrected Electron                                              CE
+Corrected Proton, Zwickled                                      CPZ
+
+D-Value                                                         DVAL
+Daily                                                           DAILY
+Depth                                                           DPTH
+Dew Point                                                       DP
+Dew Point Depression                                            DPD
+Divergence                                                      DVRGC
+Drift                                                           DRFT
+Drifting                                                        DR
+Drifting Dust                                                   DRDU
+Drifting Sand                                                   DRSA
+Drifting Snow                                                   DRSN
+Drizzle                                                         DRZL or DZ
+Duration                                                        DUR
+Dust                                                            DU
+
+Earthquake                                                      ERTHQUAK
+Echo                                                            ECHO
+Electron Density Profile (of the ionosphere)                    EDP
+Elevation                                                       ELEV
+Environmental Data Record                                       EDR
+Equivalent Potential Temperature                                EPT
+Error                                                           ERR
+Estimate                                                        EST
+Exercise                                                        EXER
+
+F10.7 Centimeter Flux (a measure of the noise level generated   F10
+by the sun at a wavelength of 10.7cm at the earth’s surface)
+Flight                                                          FLGT
+Foot or Feet                                                    FT
+Forecast                                                        FCST
+Frequency                                                       FREQ
+Freeze                                                          FRZ or FZ
+Freezing Drizzle                                                FZDZ
+Freezing Fog                                                    FZFG
+Freezing Rain                                                   FZRA
+Front                                                           FNT
+Frozen                                                          FRZN
+
+Geopotential                                                    GEOPOT
+Global Positioning Satellite                                    GPS
+AFWAMAN15-3 8 JANUARY 2014                                 25
+
+
+Gust                                              GST
+
+Hazard                                            HAZ
+Haze                                              HZ
+Heat Stress                                       HTSTRS
+Heavy                                             HVY
+Height                                            HGT
+Helicity Index                                    EHI
+High Frequency                                    HF
+Horizontal Weather Depiction                      HWD
+Hour                                              HR
+Hurricane                                         HURCN
+
+Icing                                             ICG
+Instability                                       INSTBY
+Instrument Flight Rules                           IFR
+Ionospheric Activity Index                        IACTIN
+
+Jet Stream                                        JTSTR
+
+K-Index                                           KI
+Kp-Index (Planetary magnetic field disturbance)   KP
+
+Layer, layered, or layers                         LYR
+Level                                             LVL
+Lid Strength Index                                LSI
+Lifted Index                                      LI
+Light                                             LGT
+Lightning                                         LTNG
+Local Area Weather Chart                          LAWC
+Low Level Wind Shear                              LLWS
+
+Magnetometer                                      MAG
+Magnetospheric Electron Detector                  MAGED
+Magnetospheric Proton Detector                    MAGPD
+Maximum                                           MAX
+Mean                                              MEAN
+Mean Sea Level                                    MSL
+Medium Range Forecast                             MRF
+Meteorological                                    MET
+Meteorological Satellite                          METSAT
+Middle                                            MID
+Mission Operational Area Forecast                 MOAF
+Mission Execution Forecast                        MEF
+Military Weather Advisory                         MWA
+ 26                                                      AFWAMAN15-3 8 JANUARY 2014
+
+
+Minimum                                                       MIN
+Mixed                                                         MXD
+Mixing                                                        MXG
+Model of Consistency                                          MOC
+Moderate                                                      MDT
+Moisture                                                      MST
+
+Naval Research Laboratory algorithmic parameters (prefix)     NRL
+Next Generation Ionosonde                                     NEXION
+“Nowcast” (very short term forecast)                          NOWCAST
+
+Observation                                                   OBS
+Occluded Front                                                OCFNT
+Operations                                                    OPS
+Outlook                                                       OTLK
+Oval Variation, Assessment, Tracking, Intensity, and Online   OVATION
+Nowcasting (OVATION) model
+
+Penticton Observatory                                         PENTICTON
+Pilot Report                                                  PIREP
+Point Weather Warning                                         PWW
+Positive Vorticity Advection                                  PVA
+Potential Maximum Hail Size                                   PMHS
+Precipitable                                                  PCPTBL
+Precipitation                                                 PCPN
+Pressure                                                      PRES
+Propagation                                                   PROPA
+Proton Prediction Model                                       PPM
+
+Qual Scan Algorithm (ionospheric soundings)                   QUALSCAN
+Quantity                                                      QNTY
+Quantitative Precipitation Forecast                           QPF
+
+RADAR                                                         RADAR
+Radiosonde Observation                                        RAOB
+Ratio                                                         RATIO
+Reflectivity                                                  REFLCT
+Regional Area Weather Chart                                   RAWC
+Relative                                                      REL
+Relative Humidity                                             RH
+Relativistic Electron Forecast Model                          REFM
+Route                                                         RTE
+
+Scintillation Network Decision Aid                            SCINDA
+Sea                                                           SEA
+AFWAMAN15-3 8 JANUARY 2014                                          27
+
+
+Sea Level Pressure                                        SLP
+Search and Rescue                                         SAR
+Sector                                                    SECT
+Sensor Data Record                                        SDR
+Showalter Index                                           SI
+Significant                                               SGFNT
+Significant Meteorological Information                    SIGMET
+Significant Weather                                       SIGWX
+Single Channel Solid State Particle Detector              SNGL
+Skew-T                                                    SKEWT
+Solar Wind Electron, Proton and Alpha Monitor             SWEPAM
+Space                                                     SPACE
+Special Sensor J (DMSP)                                   SSJ
+Special Sensors Ion, Electron, and Scintillation (DMSP)   SSIES
+Special Sensor Magnetometer (DMSP)                        SSM
+Special Sensor Ultraviolet Spectrographic Imager (DMSP)   SSUSI
+Snow                                                      SNOW
+Standard Archiving Output                                 SAO
+State                                                     STATE
+Stationary Front                                          STNRFNT
+Storm Relative Helicity                                   SRH
+Storm Relative Motion (RADAR)                             SRM
+Streamline                                                STRM
+Summary                                                   SMRY
+Sun Spot Number                                           SSN
+Surface                                                   SFC
+Sweat Index                                               SWTI
+Synoptic                                                  SYNOP
+
+Temperature                                               TEMP
+Temporary                                                 TEMPO
+Terminal/Aerodrome Forecast                               TAF
+Thermal Heat Indices                                      THI
+Theta-E                                                   THETAE
+Thickness                                                 THKNS
+Thunderstorm                                              TSTM
+Thunderstorm Index                                        TSTMI
+Tidal                                                     TIDAL
+Top                                                       TOP
+Total                                                     TOT
+Total Electron Count                                      TEC
+Total Electron Count Network                              TENET
+Total Totals Index                                        TTI
+Tropical                                                  TRPCL
+Tropopause                                                TROP
+ 28                                                  AFWAMAN15-3 8 JANUARY 2014
+
+
+Trough                                                        TROF
+Turbulence                                                    TURBC
+Type                                                          TYP
+
+UI Gust Potential Index (Upper-level stability)               UI
+Uncorrected Electron                                          UE
+Uncorrected Proton, High-level Energy                         UPH
+Uncorrected Proton, Low-level Energy                          UPL
+Ultra High Frequency                                          UHF
+Upper Air                                                     UA
+Upper Winds                                                   UWNDS
+
+Velocity                                                      VLCTY
+Velocity Azimuth Display (RADAR)                              VAD
+Vertical                                                      VER
+Vertically Integrated Liquid (RADAR)                          VIL
+Very High Frequency                                           VHF
+Very Long Range                                               VLR
+Visual Flight Rules                                           VFR
+Visibility                                                    VSBY
+Volcanic                                                      VLCANC
+Vorticity                                                     VOT
+
+Watch                                                         WA
+Warm                                                          WRM
+Warm Front                                                    WRMFNT
+Warning                                                       WRNG
+Water                                                         WTR
+Wave                                                          WV
+Weather                                                       WX
+Wet Bulb Zero                                                 WBZ
+Wide Band Model                                               WBMOD
+Wide Band Model, Gridded Version                              WBMGRID
+Wind                                                          WND
+Wind Chill                                                    WNDCHL
+Wind Direction                                                WNDDRCTN
+Wind Speed                                                    WNDSPD
+Predefined model parameter packages
+Defense Threat Reduction Agency (DTRA) Global Forecast        DTRAGFS
+Model parameter set
+Operational Weather Squadrons (OWSs) standard parameter set   OWS
+Radio refractivity parameter set                              REFRACT
+National Centers for Environmental Prediction (NCEP) Eta      NCEP
+backup parameter set
+Integrated Meteorological System (IMETS) sigma level          IMETS
+AFWAMAN15-3 8 JANUARY 2014                                                                      29
+
+
+parameter set
+National Oceanic and Atmospheric Administration (NOAA) Air          NARL
+Resources Laboratory (ARL) parameter set
+National Atmosphere Release Advisory Capability (NARAC)             NARAC
+parameter set
+Naval Research Laboratory (NRL) parameter set                       NRL
+NCEP Global Forecast System (GFS) supplemental parameter            GFSSUP
+set (AFWA post-processed)
+Full Generic Post-Processor output parameter set                    GPOST
+United Kingdom Meteorology Office parameter set                     UKMO
+
+Section A2.16. – Publication Date.
+A2.16. Publication Date. This identifies the date a publication was released. This field will
+generally not be used for operational weather products, but rather for technical publications,
+user’s manuals, etc.
+Note: This element represents a departure from the NCEP standard, as that standard contains
+nothing to represent this concept. This element was added largely in consideration of the need to
+make available products maintained by the Air Force Weather Technical Library (AFWTL).
+   A2.16.1. Format. PD.YYYYMMDD, where YYYY is the four-digit year, MM is the two-
+   digit month, and DD is the two-digit day. Month and day numbers requiring fewer digits will
+   be zero filled.
+Section A2.17. – Publication Number.
+A2.17. Publication Number. This identifies the library number of a publication. This field
+will generally not be used for operational weather products, but rather for technical publications,
+user’s manuals, etc.
+Note: This element represents a departure from the NCEP standard, as that standard contains
+nothing to represent this concept. This element was added largely in consideration of the need to
+make available products maintained by the AFWTL.
+   A2.17.1. Format. PN.X[…], where X[…] is the alphanumeric string associated with the
+   publication catalog number. The numbers may not contain underscore (‘_’) or period (‘.’)
+   characters, as these characters are reserved for use as file element delimiters.
+Section A2.18. – Product Source.
+A2.18. Product Source. This identifies organization producing the product.
+Note: This element represents a departure from the NCEP/FNMOC standard. It is similar to the
+Server Location element employed by NCEP, but that element was not used in the AFWA
+convention for a few reasons. First, it identifies the server, rather than the originator of the
+product. To allow backup of the OWSs at AFWA, many products may reside on a server at
+AFWA that were generated at a different location. Second, the implementation of Server
+Location uses the World Meteorological Organization (WMO) Common Code Table C-1
+“Identification of originating/generating center” paired with locally defined sub-center codes to
+identify the organization. While this unambiguously identifies an organization, it conflicts with
+ 30                                                            AFWAMAN15-3 8 JANUARY 2014
+
+
+the NCEP/FNMOC stated decision to “rely more heavily on alphabetic rather than numeric
+information elements” as outlined in their jointly developed standard. If the Server Location
+element were used, for example to identify the 11th OWS, the following element would be
+created: SL.US057080. This is not particularly human-readable, when compared to
+“PS.11OWS” and requires knowledge of the WMO table and the AFWA-defined sub-center
+values. While a computer would easily recognize either style of element, the AFWA Product
+Source is more intuitive and more easily recognizable to an untrained individual. Finally, the use
+of WMO center and sub-center does not allow identification of products produced at Combat
+Weather Team locations, due to the limited number of sub-center IDs available.
+   A2.18.1. Format. PS.X[…], where X[…] is one of the descriptors in Table A2.14, or the
+   ICAO, WMO, or URSI identifier for the producing station. Each organization should
+   consistently use only one descriptor.
+
+Table A2.14. Product Source Descriptors.
+Descriptor                                  Definition
+AFWA                                        Air Force Weather Agency, Offutt AFB
+AFWTL                                       Air Force Weather Technical Library
+CAOC                                        Coalition Air and Space Operations Center
+FNMOC                                       Fleet Numerical Meteorology and Oceanography Center
+IMETS                                       Integrated Meteorological System (Army)
+NASA                                        National Aeronautics and Space Administration
+NCEP                                        National Centers for Environmental Prediction
+NESDIS                                      National Environmental Satellite, Data, and Information
+                                            Service
+MK4-xxx                                     Mark IVB Site xxx (xxx to be filled by site identifier)
+SWPC                                        Space Weather Prediction Center
+USAFE                                       USAFE OWS, Sembach AB
+14WS                                        14th WS, Asheville, NC (formerly AFCCC)
+15OWS                                       15th OWS, Scott AFB
+17OWS                                       17th OWS, Hickam AFB
+25OWS                                       25th OWS, Davis-Monthan AFB
+26OWS                                       26th OWS, Barksdale AFB
+28OWS                                       28th OWS, Shaw AFB
+
+Section A2.19. – Security Classification.
+A2.19. Security Classification. This identifies security classification of product. This element
+will only identify classification at a high level. More detailed classification information may be
+contained within a product as governed by security policies and procedures.
+Note: This element represents a departure from the NCEP/FNMOC standard, as that standard
+does not have any method for identification of security classification.
+   A2.19.1. Format. SC.X, where X is one of the descriptors in Table A2.15
+AFWAMAN15-3 8 JANUARY 2014                                                                      31
+
+
+Table A2.15. Security Classification Descriptors.
+Descriptor    Definition
+    C         Confidential
+    S         Secret
+    T         Top Secret
+    U         Unclassified
+
+Section A2.20. – Sequence Number.
+A2.20. Sequence Number. This identifies a product’s placement in a series of related products.
+Primarily used for animation loops. May also be used for packages containing multiple files
+(e.g., TAR packages) to ensure package file does not overwrite previous packages. The
+individual filenames contained inside the package should comply with the filename convention.
+   A2.20.1. Format. SN.D[…], where D[…] is the sequence number, a variable length integer
+   in the range 1 to n, where n represents the number of products in the sequence. To ensure
+   correct sort order, the serial number descriptor should be padded with a sufficient number of
+   zeros to represent the full sequence of files. For example, if an animation sequence will
+   contain 12 products, the first product would be labeled as “SN.01” and the last as “SN.12”.
+   For a sequence of products containing 100 products, the labels would be “SN.001” through
+   “SN.100”.
+Section A2.21. – Special Processing.
+A2.21. Special Processing. This identifies special processing applied to a product
+differentiating it from the standard product. This element will be used to uniquely identify a
+non-standard product to avoid confusion with the standard product from a product line.
+   A2.21.1. Format. SP.X[…], where X[…] is one of the descriptors in Table A2.16.
+
+Table A2.16. Special Processing Descriptors.
+Descriptor          Definition
+INT                 Integer representation of floating point values. In some cases, floating
+                    point values are reformatted to scaled integers for compactness. In these
+                    products, the special processing element shall be used to distinguish the
+                    product from the standard version.
+NON-WMO             The product has been tailored to a non-WMO compliant format.
+
+Section A2.22. – Data Time Period.
+A2.22. Data Time Period. This identifies the range of times the product is valid. Data valid
+times are always reported in Greenwich Mean Time (GMT). (See also A2.2. Cycle of Run and
+A2.9. Data Time.)
+   A2.22.1. Format. TP. HH1MM1-HH2MM2, where HH1MM1 is the two-digit hour (in the
+   range 00 to 23) and the two-digit minute (in the range 00-59) representing the start of the
+   time period and HH2MM2 is the two-digit hour and the two-digit minute representing the end
+   of the period. Hour and minute numbers requiring fewer digits will be zero filled.
+ 32                                                      AFWAMAN15-3 8 JANUARY 2014
+
+
+                                         Attachment 3
+                                   SAMPLE FILENAMES
+
+Note: The following filenames do not reflect products actually produced, but are provided only
+as samples to be used in developing filenames for actual products.
+
+Section A3.1. – Gridded Data Products.
+A3.1. Gridded Data Product Sample 1 – WRF 15km resolution Contingency Window with
+release                                 restrictions. PS.AFWA_SC.S_DI.F_GP.WRF-
+GPOST_GR.L15KM_AR.CON01_PA.OWS_DD.20120430_CY.00_FH.012_DF.GR1
+Filename Element                 Explanation
+PS.AFWA                          Product Source is Air Force Weather Agency
+SC.S                             Security Classification is Secret
+DI.F                             Distribution is authorized only as directed by DoD Controlling
+                                 Office or higher DoD authority
+GP.WRF-GPOST                     Generating Process is the Weather Research and Forecasting
+                                 model and the Generic Post-Processor
+GR.L15KM                         Grid is Lambert Conformal projection at 15 kilometer
+                                 resolution
+AR.CON01                         Area of Data is Contingency Window 01
+PA.OWS                           Parameter is the standard set of parameters distributed to the
+                                 Operational Weather Squadrons (OWSs)
+DD.20120430                      Data Date is April 30, 2012
+CY.00                            Cycle of Run (base hour) is 00Z
+FH.012                           Forecast Hour is 12 (i.e., product valid time is 30 Apr 04/12Z)
+DF.GR1                           Data Format is GRIB Edition 1
+   A3.1.1. Gridded Data Product Sample 2 – WRF 5km resolution Contingency Window
+   with              release              restrictions. PS.AFWA_SC.S_DI.F_GP.WRF-
+   GPOST_GR.L5KM_AR.CON01_PA.OWS_DD.20120430_CY.00_FH.003_DF.GR1
+Filename Element                 Explanation
+PS.AFWA                          Product Source is Air Force Weather Agency
+SC.S                             Security Classification is Secret
+DI.F                             Distribution is authorized only as directed by DoD Controlling
+                                 Office or higher DoD authority
+GP.WRF-GPOST                     Generating Process is the Weather Research and Forecasting
+                                 model and the Generic Post-Processor
+GR.L5KM                          Grid is Lambert Conformal projection at 5 kilometer resolution
+AR.CON01                         Area of Data is Contingency Window 01
+PA.OWS                           Parameter is the standard set of parameters distributed to the
+                                 Operational Weather Squadrons (OWSs)
+DD.20120430                      Data Date is April 30, 2012
+CY.00                            Cycle of Run (base hour) is 00Z
+FH.003                           Forecast Hour is 3 (i.e., product valid time is 30 Apr 04/03Z)
+DF.GR1                           Data Format is GRIB Edition 1
+AFWAMAN15-3 8 JANUARY 2014                                                                  33
+
+
+   A3.1.2. Gridded Data Product Sample 3 – WRF 5km resolution Contingency Window
+   with release restrictions – full parameter set. PS.AFWA_SC.S_DI.F_GP.WRF-
+   GPOST_GR.L5KM_AR.CON01_PA.GPOST_DD.20120430_CY.00_FH.003_DF.GR1
+Filename Element           Explanation
+PS.AFWA                    Product Source is Air Force Weather Agency
+SC.S                       Security Classification is Secret
+DI.F                       Distribution is authorized only as directed by DoD Controlling
+                           Office or higher DoD authority
+GP.WRF-GPOST               Generating Process is the Weather Research and Forecasting
+                           model and the Generic Post-Processor
+GR.L5KM                    Grid is Lambert Conformal projection at 5 kilometer resolution
+AR.CON01                   Area of Data is Contingency Window 01
+PA.GPOST                   Parameter is the full Generic Post-Processor set of parameters
+DD.20120430                Data Date is April 30, 2012
+CY.00                      Cycle of Run (base hour) is 00Z
+FH.003                     Forecast Hour is 3 (i.e., product valid time is 30 Apr 04/03Z)
+DF.GR1                     Data Format is GRIB Edition 1
+   A3.1.3. Gridded Data Product Sample 4 – Global GFS file with full parameter
+   set. PS.AFWA_SC.U_DI.A_GP.GFS-
+   GPOST_GR.C1DEG_AR.GLOBAL_PA.GFSSUP_DD.20040430_CY.12_FH.003_DF.GR1
+Filename Element           Explanation
+PS.AFWA                    Product Source is Air Force Weather Agency
+SC.U                       Security Classification is Unclassified
+DI.A                       Distribution is authorized for public release
+GP.GFS-GPOST               Generating Process is NCEP Global Forecast System and the
+                           AFWA Generic Post-Processor
+GR.C1DEG                   Grid is Cylindrical Equidistant projection at 1 degree
+                           resolution
+AR.GLOBAL                  Area of Data is global
+PA.GFSSUP                  Parameter is the full GFS supplemental set of parameters
+DD.20040430                Data Date is April 30, 2004
+CY.12                      Cycle of Run (base hour) is 12Z
+FH.003                     Forecast Hour is 3 (i.e., product valid time is 30 Apr 04/15Z)
+DF.GR1                     Data Format is GRIB Edition 1
+   A3.1.4. Gridded Data Product Sample 5 – DCF 15km CONUS with a single
+   parameter. PS.AFWA_SC.U_DI.A_GP.DCF_GR.L15KM_AR.CONUS_PA.5LYR-CLD-
+   FCST _DD.20040430_CY.12_FH.003_DF.GR1
+Filename Element           Explanation
+PS.AFWA                    Product Source is Air Force Weather Agency
+SC.U                       Security Classification is Unclassified
+DI.A                       Distribution is authorized for public release
+GP.DCF                     Generating Process is Diagnostic Cloud Forecast
+GR.L15KM                   Grid is Lambert Conformal at 15 kilometer resolution
+AR.CONUS                   Area of Data is the Contiguous United States
+ 34                                                   AFWAMAN15-3 8 JANUARY 2014
+
+
+PA.5LYR-CLD-FCST             Parameter is five layer cloud forecast
+DD.20040430                  Data Date is April 30, 2004
+CY.12                        Cycle of Run (base hour) is 12Z
+FH.003                       Forecast Hour is 3 (i.e., product valid time is 30 Apr 04/15Z)
+DF.GR1                       Data Format is GRIB Edition 1
+   A3.1.5. Gridded Data Product Sample 6 – Global ensemble member – OWS parameter
+   set. PS.AFWA_SC.U_DI.A_GP.GEFS-
+   MEMB01_GR.C0P5DEG_AR.GLOBAL_PA.OWS_DD.20120712_CY.12_FH.003_DF.GR
+   1
+Filename Element             Explanation
+PS.AFWA                      Product Source is Air Force Weather Agency
+SC.U                         Security Classification is Unclassified
+DI.A                         Distribution is authorized for public release
+GP.GEFS-MEMB01               Generating Process is the Global Ensemble Forecast System,
+                             Member 1
+GR.C0P5DEG                   Grid is Cylindrical Equidistant projection at 0.5 degree
+                             resolution
+AR.GLOBAL                    Area of Data is global
+PA.OWS                       Parameter is the standard set of parameters distributed to the
+                             Operational Weather Squadrons (OWSs)
+DD.20120712                  Data Date is July 12, 2012
+CY.12                        Cycle of Run (base hour) is 12Z
+FH.003                       Forecast Hour is 3 (i.e., product valid time is 12 Jul 12/15Z)
+DF.GR1                       Data Format is GRIB Edition 1
+   A3.1.6. Gridded Data Product Sample 7 – Snow Depth analysis in polar stereographic
+   projection. PS.AFWA_SC.U_DI.A_GP.SNODEP_GR.P12P5NM_AR.N-
+   HEM_DD.20040430_DT.1200_DF.GR1
+Filename Element             Explanation
+PS.AFWA                      Product Source is Air Force Weather Agency
+SC.U                         Security Classification is Unclassified
+DI.A                         Distribution is authorized for public release
+GP.SNODEP                    Generating Process is Snow Depth Model
+GR.P12P5NM                   Grid is Polar Stereographic at 12.5 nautical mile resolution
+AR.N-HEM                     Area of Data is the Northern Hemisphere
+                             Note: Parameter is not specified. This is an indication that all
+                             available output parameters for the generating process are
+                             included in the product.
+DD.20040430                  Data Date is April 30, 2004
+DT.1200                      Data Time is 1200Z
+DF.GR1                       Data Format is GRIB Edition 1
+AFWAMAN15-3 8 JANUARY 2014                                                                      35
+
+
+Section A3.2. – Graphic Products.
+A3.2. Graphic   Product   Sample   1    –   Forecaster drawn    turbulence
+chart. PS.15OWS_SC.U_DI.D_GP.FITL_AR.NE-CONUS_LY.H10000FT-MSL-H55000FT-
+MSL_PA.TURBC_DD.20011127_TP.0300-0900_DF.GVS
+Filename Element                    Explanation
+PS.15OWS                            Product Source is 15th OWS
+SC.U                                Security Classification is Unclassified
+DI.D                                Distribution is approved for DoD and U.S. DoD contractors
+                                    only
+GP.FITL                             Generating Process is Forecaster In The Loop
+AR.NE-CONUS                         Area of Data is the Northeastern Contiguous United States
+LY.H10000-H55000FT                  Layer is height from 10000 to 55000 feet MSL
+PA.TURBC                            Parameter is turbulence
+DD.20011127                         Data Date is November 27, 2001
+TP.0300-0900                        Data Time Period is 0300Z to 0900Z
+DF.GVS                              Data Format is Global Vector Space
+   A3.2.1. Graphic Product Sample 2 – LEADS-generated 500mb winds and D-Value
+   chart. PS.17OWS_SC.U_DI.A_GP.ETA-LEADS_AR.AK-
+   VCNTY_LV.P500MB_PA.WND+DVAL_DD.20041025_DT.1500_DF.GIF
+Filename Element                    Explanation
+PS.11OWS                            Product Source is 17th OWS
+SC.U                                Security Classification is Unclassified
+DI.A                                Distribution is authorized for public release
+GP.ETA-LEADS                        Generating Process is Eta model as visualized by LEADS
+AR.AK-VCNTY                         Area of Data is the vicinity of Alaska
+LV.P500MB                           Level is defined by 500 millibars of pressure
+PA.WND+DVAL                         Parameters are winds and D-Values
+DD.20041025                         Data Date is October 25, 2004
+DT.1500                             Data Time is 1500 GMT
+DF.GIF                              Data Format is Graphic Image Format
+   A3.2.2. Graphic Product Sample 3 – Forecaster built space weather situational
+   awareness                                 presentation. PS.AFWA_SC.U_DI.A_
+   DC.SPACE_DS.SA_GP.FITL_AR.GLOBAL_ DD.20041025_DT.1200_DF.PPT
+Filename Element                    Explanation
+PS.AFWA                             Product Source is AFWA
+SC.U                                Security Classification is Unclassified
+DI.A                                Distribution is authorized for public release
+DC.SPACE                            Data Category is space/solar
+DS.SA                               Data Subcategory is situational awareness
+GP.FITL                             Generating Process is Forecaster In The Loop
+AR.GLOBAL                           Area of Data is global
+DD.20041025                         Data Date is October 25, 2004
+DT.1200                             Data Time is 1200 GMT
+DF.PPT                              Data Format is Microsoft PowerPoint presentation
+ 36                                                     AFWAMAN15-3 8 JANUARY 2014
+
+
+   A3.2.3. Graphic Product Sample 4 – Machine generated GPS Error
+   chart. PS.AFWA_SC.U_DI.E_ DC.SPACE-ANLYS_GP.SW_AR.N-AMER_ PA.GPS-
+   ERR_DD.20041025_DT.1200_DF.JPG
+Filename Element                Explanation
+PS.AFWA                         Product Source is AFWA
+SC.U                            Security Classification is Unclassified
+DI.E                            Distribution is authorized for DoD components only
+DC.SPACE-ANLYS                  Data Category is space/solar analysis
+GP.SW                           Generating Process is space weather
+AR.N-AMER                       Area of Data is North America
+PA.GPS-ERR                      Parameter is Global Positioning Satellite Error
+DD.20041025                     Data Date is October 25, 2004
+DT.1200                         Data Time is 1200 GMT
+DF.JPG                          Data Format is Joint Photographic Experts Group imagery
+                                format
+   A3.2.4. Graphic  Product    Sample  5    -   Google   Earth  (KML)
+   Product. PS.AFWA_SC.U_DI.A_DC.ANLYS_DS.HAZ_GP.HORACE_AR.CONUS_
+   LY.H0FT-MSL-H18000FT-MSL_PA.TURBC_DD.20090724_DT.1800_DF.KML
+Filename Element                Explanation
+PS.AFWA                         Product Source is AFWA
+SC.U                            Security Classification is Unclassified
+DI.A                            Distribution is authorized for public release
+DC.ANLYS                        Data Category is analysis
+DS.HAZ                          Data Subcategory is hazards
+GP.HORACE                       Generating Process is HORACE
+AR.CONUS                        Area of Data is the continental United States
+LY.H0-H18000FT                  Layer is height from 0 to 18000 feet MSL
+PA.TURBC                        Parameter is turbulence
+DD.20090724                     Data Date is July 24, 2009
+DT.1800                         Data Time is 1800 GMT
+DF.KML                          Data Format is KML
+
+Section A3.3. – Alphanumeric Products.
+A3.3. Alphanumeric Product Sample 1 – Textual surface observation from
+Offutt. PS.KOFF_SC.U_DI.A_AR.KOFF_PA.SFC-OBS_DD.20040915_DT.1755_DF.TXT
+Filename Element                Explanation
+PS.KOFF                         Product Source is Offutt AFB, NE (example of CWT product
+                                using the ICAO identifier of the CWT, consistent with
+                                paragraph A2.18.1)
+SC.U                            Security Classification is Unclassified
+DI.A                            Distribution is authorized for public release
+AR.KOFF                         Area of Data is Offutt AFB (example of use of ICAO ID as
+                                area description, consistent with paragraph A2.1.1)
+PA.SFC-OBS                      Parameter is surface observation
+AFWAMAN15-3 8 JANUARY 2014                                                                 37
+
+
+DD.20040915                     Data Date is September 15, 2004
+DT.1755                         Data Time is 1755 GMT
+DF.TXT                          Data Format is ASCII text
+   A3.3.1. Alphanumeric Product Sample 2 – BUFR encoded SYNOP surface observation
+   product for a region of Antarctica (area reference to Attachment
+   4). PS.AFWA_SC.U_DI.A_DC.OBS-SFC_DS.FM-12_GP.WDA_AR.AN02_DF.BUF
+Filename Element                Explanation
+PS.AFWA                         Product Source is AFWA
+SC.U                            Security Classification is Unclassified
+DI.A                            Distribution is authorized for public release
+DC.OBS-SFC                      Data Category is surface observations
+DS.FM-12                        Data Subcategory is SYNOP (WMO FM-12)
+GP.WDA                          Generating Process is Weather Data Analysis (WDA)
+AR.AN02                         Area of Data is the box bounded by 70-90 degrees South and
+                                120-140 degrees West
+DF.BUF                          Data Format is WMO BUFR
+                                This example shows the filename for a predefined regional
+                                alphanumeric bulletin containing synoptic surface observations
+                                encoded in the Binary Universal Form for the Representation
+                                of meteorological data (BUFR).
+
+Section A3.4. – Publications.
+A3.4. Publication  Sample   1    –   PDF     formatted  technical   note
+document. PS.AFWTL_SC.U_DI.A_DC.PUB_DS.TN_PA.AFGWC-TN-79-003_PN.AD-
+A100324_PD.19850300_DF.PDF
+Filename Element                Explanation
+PS.AFWTL                        Product Source is the Air Force Weather Technical Library
+SC.U                            Security Classification is Unclassified
+DI.A                            Distribution is authorized for public release
+DC.PUB                          Data Category is publication
+DS.TN                           Data Subcategory is technical note
+PA.AFGWC-TN-79-003              Parameter is AFGWC/TN-79/003 (this is an example of
+                                substituting a publication title for the parameter field)
+PN.AD-A100324                   Publication Number is AD-A100324 (this is the Defense
+                                Technical Information Center’s ID for this publication)
+PD.19850300                     Publication Date is March, 1985 (Note: no publication day is
+                                known, so day field is zero filled)
+DF.PDF                          Data Format is Portable Document Format
+ 38                                                       AFWAMAN15-3 8 JANUARY 2014
+
+
+                                         Attachment 4
+                      ALPHANUMERIC CDC AREA DESCRIPTORS
+
+A4.1. The alphanumeric portion of the AFWA Consolidated Dissemination System (CDC)
+creates text-based bulletins including content segregated by geographic location. The pre-
+defined bulletins are built on a 20 x 20 degree latitude/longitude grid as shown in Figure A.4.1.
+
+Figure A4.1. AN CDC Product Regions Map.
