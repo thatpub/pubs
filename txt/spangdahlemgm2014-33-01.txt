@@ -1,0 +1,384 @@
+                          DEPARTMENT OF THE AIR FORCE
+                                52D FIGHTER WING (USAFE)
+
+
+
+
+                                                            SPANGDAHLEMABGM2014-33-01
+
+                                                                                  14 August 2014
+
+
+MEMORANDUM FOR SPANGDAHLEM NETWORK INFORMATION SYSTEMS USERS
+
+FROM: 52 FW/CC
+      Unit 3680 Box 190
+      APO AE 01926
+
+SUBJECT: 52 Fighter Wing Guidance Memorandum for AFMAN 33-282 Computer Security
+
+        By Order of the Commander, 52nd Fighter Wing, this Guidance Memorandum
+immediately implements changes to AFMAN 33-282 Computer Security incorporating
+Spangdahlem requirements for Chapter 6 End Point Security and Chapter 7 COMPUSEC
+Incident Reporting. Compliance with this memorandum is mandatory. To the extent its
+direction is inconsistent with other Air Force publications; the information herein prevails IAW
+AFI 33-360, Publications and Forms Management.
+
+      This memorandum becomes void after one-year has elapsed from the date of this
+memorandum, or upon publication of an Interim Change or rewrite of the affected publication,
+whichever is earlier.
+
+
+
+
+                                                     PETER M. BILODEAU, Colonel, USAF
+                                                     Commander
+
+Attachments:
+1. References
+2. Spangdahlem COMPUSEC Guidance
+                                       Attachment 1
+
+                                        References
+
+(a) DoD CIO Memorandum, “DoD Commercial Mobile Device (CMD) Interim Policy,” January
+17, 2012
+
+(b) DoD CIO Memorandum, “Use of Commercial Mobile Devices (CMD) in the Department of
+Defense (DoD),” April 6, 2011
+
+(c) Deputy DoD CIO Memorandum, “Use of Commercial Mobile Devices Not Connected to
+Department of Defense Networks,” July 31, 2012
+
+(d) DoDD 8100.2, Use of Commercial Wireless Devices, Services, and Technologies in the
+Department of Defense (DoD) Global Information Grid (GIG)
+
+(e) Combined Implementation Guidance for United Stated Cyber Command (USCYBERCOM)
+Communications Tasking Orders (CTO) 10-084 Removable Flash Media device implementation
+within and between Department of Defense (DoD) networks and CTO 10-133 Protection of
+Classified Information on DoD Secret Internet Protocol Router Network (SIPRNet)
+
+(f) DISA Security Implementation Technical Guidance (STIG) U_Mobile_Policy
+
+(g) DISA STIG U_General_Mobile_Device_Technical_(NEA)
+
+(h) DISA STIG U_General_Mobile_Device_Policy_(NEA)
+
+(i) DISA STIG U_BlackBerry_OS_(version 5-7)
+
+(j) DISA STIG U_PDA_Smartphone
+
+(k) DISA STIG U_Smartphone_Policy
+
+(l) DISA STIG u_Apple_iOS_7
+
+(m) DISA STIG U_Keyboard_Video_and_Mouse_Switch
+
+(n) DISA STIG U_Benchmark_Removable_Storage_and_External_Connection_Technologies
+
+(o) AFI 33-200 Information Assurance
+
+(p) AFI 33-152 User Responsibilities and Guidance for Information Systems
+
+(q) AFI 33-129 Web Management and Internet Use
+
+(r) AFI 33-360, Publications and Forms Management
+                                        Attachment 2
+
+                        SPANGDAHLEM COMPUSEC Guidance
+
+
+1. Remote Access
+
+   1.1. Any requests for telework on Spangdahlem Air Base (SAB) will be submitted through
+   the Work Order Management System (WOMS) process to be reviewed by the Wing
+   Information Assurance office (WIAO). These requests will follow the procedures outlined in
+   AFMAN 33-282 section 6.6.
+
+   1.2. Virtual Private Network (VPN)
+
+        1.2.1. All SAB VPN requests will be processed through the Remedy ticket system.
+        The unit Information Assurance Officer (IAO) will upload the completed VPN user
+        agreement/request MFR.
+
+        1.2.2. VPN users will annually sign/re-confirm the VPN user agreement/request and
+        sign an AF Form 4433 US Air Force Unclassified Wireless Mobilie Device User
+        Agreement with the laptops specified that they will utilize for VPN.
+
+        1.2.3. All SAB systems with the VPN software loaded will be tracked by the unit IAO
+        and validated annually.
+
+   1.3. VPN wireless access
+
+        1.3.1. Approved VPN Access Locations
+
+               1.3.1.1. DoD/Government site-managed Wi-Fi access point to the NIPRNet
+               (Enclave-NIPRNet Connected).
+
+               1.3.1.2. DoD/Government site-managed Wi-Fi access point connected to the
+               Internet only (Internet Gateway Only Connection).
+
+               1.3.1.3. Home Wi-Fi network (user-managed) is approved with signed
+               agreement that they are using WPA2 with AES encryption and password.
+
+        1.3.2. Disapproved Access Locations
+
+               1.3.2.1. Public Wi-Fi Hotspot (coffee shops, restaurants, etc.)
+
+               1.3.2.2. Hotel Wi-Fi Hotspot (including Base Hotels)
+
+2. Commercial Mobile Devices, Smartphones, BlackBerry’s and iPhones/iPads
+
+   2.1. Non-enterprise Activated (NEA) Commercial Mobile Devices (CMD)
+     2.1.1. SAB devices will be reviewed through the WOMS requirement process prior to
+     purchase. Only devices listed on the Unified Command Approved Product List
+     (APLITS)
+     (https://aplits.disa.mil/processAPList.do;jsessionid=pDKbTDKGJ4Kcn12yRTLpzpQ2
+     BJH1j6MQTSQ3wdvvy3vJLxhkb1lS!751080892) will be authorized for use. All of
+     the devices will be approved and tracked by the unit IAO.
+
+     2.1.2. Devices will be configured per the DISA STIG U_Mobile_Policy by 52
+     CS/SCOS.
+
+            2.1.2.1. They will NOT be authorized to connect to the AF Network
+
+            2.1.2.2. They will NOT process PII, FOUO, or controlled unclassified
+            information.
+
+            2.1.2.3. Any incident (see incident response procedures section 6) involving a
+            NEA CMD will need to be directed to unit IAO and referred to WIAO for
+            sanitization procedures (this includes PII, FOUO and controlled unclassified
+            information)
+
+     2.1.3. Requesting unit IAO
+
+            2.1.3.1. Will ensure personnel issued NEA CMDs annually sign the AF Form
+            4433 and complete DISA Smartphone/Tablet training
+            (http://iase.disa.mil/eta/index.html).
+
+            2.1.3.2. Will ensure all devices are configured and follow the NEA CMD
+            policies outlined in references (a), (b) and (c) and AFMAN 33-282, DISA
+            STIGs U_General_Mobile_Device_Technical_(NEA) and
+            U_General_Mobile_Device_Policy_(NEA).
+
+            2.1.3.3. Will create a local CMD Standard Operating Procedures (SOP) based
+            on the guidance in references (a), (b), (c), and AFMAN 33-282. Users will sign
+            for the SOP when their annual training is initially turned in. The IAO will
+            annotate the user has received the SOP and track this in the IAO continuity
+            binder along with the training certificate.
+
+      2.1.4. All SAB and GSU facilities with controlled areas (SCIFs, OSSA or rooms that
+      process classified) will incorporate into their Site Physical Security Policy that any
+      device with a camera or video capability is not authorized in the controlled areas.
+
+2.2. Smartphones
+
+     2.2.1. If the smartphone is listed as a NEA CMD please refer to 2.1 for guidance.
+
+     2.2.2. SAB devices will be reviewed through the WOMS requirement process prior to
+     purchase. Only devices listed on the Unified Command Approved Product List
+     (APLITS) will be authorized for use. All of the devices will approved and tracked by
+     the unit IAO.
+     2.2.3. Requesting unit IAO
+
+            2.2.3.1. Will ensure personnel issued Smartphones annually sign the AF Form
+            4433 and complete DISA Smartphone/Tablet training
+            (http://iase.disa.mil/eta/index.html).
+
+            2.2.3.2. Will create a local Smartphone Standard Operating Procedures (SOP)
+            based on the guidance in references (a), (b), (c), and AFMAN 33-282. Users
+            will sign for the SOP when their annual training is initially turned in. The IAO
+            will annotate the user has received the SOP and track this in the IAO continuity
+            binder along with the training certificate.
+
+            2.2.3.3. Will ensure All SAB Smartphone devices will be configured per the
+            DISA STIGs U_Mobile_Policy and U_Smartphone_Policy.
+
+     2.2.4. All SAB and GSU facilities with controlled areas (SCIFs, OSSA or rooms that
+     process classified) will incorporate into their Site Physical Security Policy that any
+     device with a camera or video capability is not authorized in the controlled areas.
+
+2.3. BlackBerrys
+
+     2.3.1. All requests to purchase BlackBerry devices on SAB will be done through the
+     WOMS process. These requests will be reviewed by 52 CS/SCOS.
+
+     2.3.2. Requesting unit IAO
+
+            2.3.2.1. Will ensure personnel issued BlackBerrys annually sign the AF Form
+            4433 and complete DISA Smartphone/Tablet training
+            (http://iase.disa.mil/eta/index.html).
+
+            2.3.2.2. Will create a local BlackBerry Standard Operating Procedures (SOP).
+            Users will sign for the SOP when their annual training is initially turned in. The
+            IAO will annotate the user has received the SOP and track this in the IAO
+            continuity binder along with the training certificate.
+
+     2.3.3. 52 CS/SCOS will ensure all SAB approved BlackBerry devices are configured
+     per the following DISA STIGs: U_BlackBerry_OS_(version 5-7),
+     U_PDA_Smartphone, U_Smartphone_Policy, and U_Mobile_Policy.
+
+2.4. iPhones/iPads
+
+     2.4.1. All requests to purchase of iPhones or iPads will be done through the WOMS
+     process. These requests will be reviewed by 52 CS/SCOS and WIAO.
+
+     2.4.2. Requesting unit IAO
+                2.4.2.1. Will ensure personnel issued iPhone/iPad annually sign the AF Form
+                4433 and complete DISA Smartphone/Tablet training
+                (http://iase.disa.mil/eta/index.html).
+
+                2.4.2.2. Will create a local iPhone/iPad Standard Operating Procedures (SOP).
+                Users will sign for the SOP when their annual training is initially turned in. The
+                IAO will annotate the user has received the SOP and track this in the IAO
+                continuity binder along with the training certificate.
+
+        2.4.3. 52 CS/SCOS will configure all approved SAB iOS devices per the DISA STIG
+        u_Apple_iOS_7.
+
+        2.4.4. All requests for iOS apps to be added to devices will be requested through the
+        WOMS process and reviewed by WIAO.
+
+3. Wireless and Generation 2 (GEN2) Wireless (NIPRNet)
+
+   3.1. All SAB systems with access to GEN2 will be tracked by the unit IAO and provided to
+   WIAO for base wide master tracking.
+
+   3.2. Unit IAOs will ensure all personnel utilizing systems with wireless capability will fill
+   out an AF Form 4433 Wireless Agreement. This agreement will be re-accomplished
+   annually to ensure all systems are current and accurate and maintained by the unit IAO in
+   their continuity binder.
+
+   3.3. Approved and unapproved access point for NEA CMDs
+
+        3.3.1. Approved access points will be: any approved 52 Force Support Squadron
+        commercial network
+
+        3.3.2. All locations not listed in 3.3.1 are not authorized for government owned NEA
+        CMDs to connect to the network.
+
+4. Keyboard, Video Mouse (KVM) Switches
+
+   4.1. All KVM switches will be requested through WOMS and must be on the NIAP listing
+   (https://www.niap-
+   ccevs.org/CCEVS_Products/pcl.cfm?tech_name=Peripheral+Switch&CFID=26884035&CF
+   TOKEN=1581c5385d230c3c-3A0115BF-D1E4-735A-118BC33FB146BFA0) and at least
+   EAL2 augmented with ALC_FLR.2.
+
+   4.2. All KVM switches utilized on SAB will be configured per DISA STIG
+   U_Keyboard_Video_and_Mouse_Switch.
+
+   4.3. All KVM switches being utilized on SAB will be approved though the unit IAO. Unit
+   IAOs will complete an approval MFR and provide it to WIAO. These devices will be
+   included in the equipment list of the EMSEC package for units using them on SIPRNet or in
+   the same room as SIPRNet.
+   4.4. Unit IAOs will ensure all personnel using KVM switches accomplish annual KVM user
+   agreement and training. This will be maintained in the Unit IAO’s continuity binder.
+
+5. Removable Media
+
+   5.1. Flash media will not be authorized on the Spangdahlem network unless it is embedded
+   into a system (i.e. laptop, printer) which will be reviewed during the WOMS process prior to
+   purchase.
+
+        5.1.1. When illegal devices/Flash media are detected on the network, 52 CS/SCOO
+        will immediately disable the user’s account. The unit commander and Information
+        Assurance Officer (IAO) will be notified of the event.
+
+                5.1.1.1. First offense, the user’s network account will be disabled for 1 week.
+
+                5.1.1.2. Second offense, the user’s network account will be disabled for 1
+                month.
+
+                5.1.1.3. Third offense, the user’s network account will be disabled for 6
+                months.
+
+        5.1.2. After each violation, the user must re-accomplish their annual Cyber Awareness
+        Challenge via ADLS before the user’s network account will be restored. A letter from
+        user’s unit commander for first offense and group commander for any subsequent
+        offenses will also be required prior to reinstatement. Unit commanders are encouraged
+        to use other administrative actions as they see fit to ensure future compliance and
+        security of the Spangdahlem network.
+
+   5.2. External hard drives are authorized and must meet the requirements below.
+
+        5.2.1. The hard drive is government purchased and owned.
+
+        5.2.2. The drive has magnetic media and no flash-based storage.
+
+        5.2.3. The justification for the hard drive is considered mission essential/critical.
+
+        5.2.4. An approval letter is signed by the unit’s IAO. The approval is sent to WIAO
+        and 52 CS/SCOO for devices to be added to the SAB white list. The approval will be
+        maintained in the unit IAO’s continuity binder. Any device detected during a scan that
+        is not on the white list will be treated as illegal and procedures in 5.1 will be followed.
+
+        5.2.5. Before initial use, each external hard drive must be scanned on a non-networked
+        AF standalone system with current antivirus definition and configured per DISA STIG
+        U_Benchmark_Removable_Storage_and_External_Connection_Technologies. The
+        device will be formatted as NTFS and renamed using the following convention:
+        UNITOFFSYMLAST4Serialnumber (i.e. 52CSSCXS1234).
+
+        5.2.6. All subsequent uses the device will be scanned on any system with updated
+        antivirus prior to opening the drive on the machine.
+        5.2.7. External hard drives will be stored in a secure location when not in use and will
+        have the AF Form 711 affixed with the Unit IAOs contact information. The device will
+        also have the correct classification sticker affixed. The unit IAO will maintain 100%
+        accountability of all devices.
+
+   5.3. For the purposes of ISOPREP and the transfer of digital camera images, user will be
+   able to utilize a standalone laptop or desktop to transfer images and then burn them to a CD
+   or DVD or approved external hard drives. These standalone machines will require the proper
+   Certification and Accreditation paperwork.
+
+   5.4. SIPRNet Write Waiver
+
+        5.4.1. All requests will follow direction outlined in reference (e) and routed through the
+        unit IAO.
+
+        5.4.2. Unit IAO will work with WIAO in verifying all the information is accurate on
+        the Request.
+
+        5.4.3. Unit IAO will route the request through their group for the Wing/CC’s signature
+
+        5.4.4. Once the waiver is fully signed the unit IAO will provide a copy to WIAO and
+        then open a Remedy ticket (SIPRNet) in order to have the waiver enabled.
+
+        5.4.5. Unit IAO will ensure a SIPRNet Waiver write log is sent to WIAO for every
+        system listed on the waiver. If not transfers have been accomplished the log can state
+        “There were no transfers for MONTH YEAR.”
+
+6. Incident Response
+
+   6.1. All incidents to include Classified Message Incidents, malicious logic, and data spillage
+   will be handled according to the Spangdahlem Incident Response Plan.
+
+   6.2. SAB users will follow the following steps as outlined on the Spangdahlem Visual Aid
+   33-201
+
+        6.2.1. User disconnects system from network (unplug network cable or disable WI-FI
+        for Gen2)- do not power down and do not turn off the system.
+
+        6.2.2. User contacts the unit IAO and Unit Security Manager (USM) and provides
+        them with as much information as possible (in person or via secure means) as to what
+        happened prior to incident (i.e. items disappearing from desktop or email attachment
+        marked SECRET).
+
+        6.2.3. The unit IAO will contact WIAO or Communication Focal Point (CFP) via
+        secure means.
+
+        6.2.4. Affected users account will be locked out until sanitization or determination of
+        incident.
+   6.3. All Spam received on SAB will be sent to the USAFE Spam box by following these
+   steps.
+
+         6.3.1. Open a new email
+
+         6.3.2. DRAG Spam mail into the new email as an attachment
+
+         6.3.3. Send the email to USAFE.spamreporting@us.af.mil. If the inbox is full the IAO
+         will open a trouble ticket with ESD and provide the draft email (with the spam inside)
+         as an attachment.
+
+7. DISA STIGs can be found at iase.disa.mil/stigs. 52 FW system administrators are responsible
+for updating configurations IAW current STIGs quarterly.

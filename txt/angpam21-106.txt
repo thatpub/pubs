@@ -2574,18 +2574,21 @@ among the independent variables. Data to be analyzed should be in at least inter
 Frequency Polygon - A graphic display of data where single points are plotted above the
 measures of performance. The height where the point is placed indicates the frequency of
 occurrence. The points are connected by a series of straight lines.
- 72                                                                 ANGPAM21-106 10 NOVEMBER 2011
+ 72                                                             ANGPAM21-106 10 NOVEMBER 2011
 
 
 Friedman ANOVA by Ranks ( x r ) - A test of the hypothesis of difference on ordinal data when
-                                                  2
+                                              2
 
 
 the sample groups have either been matched or a single sample has been measured repeatedly.
 The Friedman ANOVA is the ordinal counterpart of the correlated F.
-           12
-xr2                (  R12   R22   R32 )  3 N ( k  1) .
-        Nk ( k  1)
+          12
+xr 
+ 2
+                   (  R1   R2   R3 )  3 N ( k  1) .
+                        2      2      2
+       Nk ( k  1)
 Gambler's Fallacy - An erroneous assumption that independent events are somehow related. If
 a coin is flipped ten times and comes up heads each of those times, the gambler's fallacy predicts
 that it is virtually certain for the coin to come up tails on the next flip. Since each coin flip is
@@ -2706,7 +2709,8 @@ Multiple R - A single numerical value that quantifies the correlation among thre
 variables. The equation for a three-variable multiple R is as follows:
             ry2,1  ry2,2  2 ry ,1ry ,2 r1,2
 R y1,2                                        .
-                      1  r12,2
+                      1  r122
+                            ,
 
 Multiple Regression - Technique using the multiple R for making predictions of one variable
 given measures on two or more others. It requires the calculation of the intercept (a) and also at
@@ -2750,8 +2754,9 @@ situation, the partial correlation rules out the influence of the third variable
 between the remaining two variables. The equation for separating out out the influence of the
 third variable is as follows:
                ry ,1  ry ,2 r1,2
-ry ,12                                .
-             (1  ry2,2 )(1  r12,2 )
+ry ,12                               .
+             (1  ry2,2 )(1  r122 )
+                                ,
 
 Pearson r - Statistical technique introduced by Karl Pearson for showing the degree of
 relationship between two variables. Also called the product-moment correlation coefficient, it is
@@ -2881,25 +2886,24 @@ s                   N      .
                 N 1
 When the standard deviation is calculated on the basis of all scores in the entire population, it is
 designated as  (Greek letter sigma)
- 78                                                                           ANGPAM21-106 10 NOVEMBER 2011
+ 78                                                                          ANGPAM21-106 10 NOVEMBER 2011
 
 
-Standard Error of Difference ( s X                             ) - An estimate of the standard deviation of the entire
-                                                       1 X2
+Standard Error of Difference ( s X                            ) - An estimate of the standard deviation of the entire
+                                                      1 X2
 
 distribution of differences between pairs of, successively and randomly selected samples means.
 This estimate can be made on the basis of the information contained in just two samples.
-sX             s 2X  s 2X .
-     1  X2         1      2
+sX             s2  s2 .
+     1  X2      X1   X2
 
-
-When sample selections are independent of each other, the correlation term ( 2r1,2 s X s X ) is equal       1   2
+When sample selections are independent of each other, the correlation term ( 2r1,2 s X s X ) is equal      1   2
 
 to zero and is, therefore, not used. The equation for the standard error of difference for
 independent samples is, thus, as follows:
 
-sX             s 2X  s 2X  2r1,2 s X s X
-     1 X2           1     2               1   2   .
+sX             s 2  s 2  2r1,2 s X s X
+     1 X2        X 1   X 2               1   2   .
 Standard Error of Estimate (SEest) - A technique for establishing the accuracy of a predicted
 Y value obtained by using the regression equation. The higher the correlation between X and Y,
 the lower is the resulting value of the standard error of estimate and the more accurate is the
@@ -2916,15 +2920,16 @@ Standard Error of Multiple Estimate - A technique for assessing the accuracy of 
 that has been generated from the multiple regression equation. For the three-variable situation,
 the standard error of multiple estimate is as follows:
 
-SE M est  S y 1  Ry21,2
-                                  .
+SE M est  S y 1  Ry1,2
+                    2
+                                 .
 Statistic - Any measure that is obtained from a sample as opposed to the entire population. The
 range (or the standard deviation or the mean) of a set of sample scores is a statistic.
 Sum of Squares (SS) - An important concept for ANOVA; the sum of squares equals the sum of
 the squared deviations of all scores around the mean.
-                               ( X )2
-SS   x 2   X 2                    .
-                                 N
+                              ( X )2
+SS   x 2   X 2                   .
+                                N
 When the sum of squares is divided by its appropriate degrees of freedom, the resulting value is
 called the mean square, or variance.
 t Ratio - Statistical test used to establish whether or not a significant (non-chance) difference

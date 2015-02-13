@@ -826,127 +826,126 @@ RANGE ERROR / OVERRIDE                                  Enables the supervisor t
 
 
                                                                15
-AT-E-07                                                                                                JULY 04
+AT-E-07                                                                                              JULY 04
 
 
 
-LOCAL / REMOTE                                     Indicates control of the beacon system. The lower half,
-                                                   RMT, illuminates green to indicate facility control of the
-                                                   interrogator at the B box. The upper half, LOCAL, glows
+LOCAL / REMOTE                                   Indicates control of the beacon system. The lower half,
+                                                 RMT, illuminates green to indicate facility control of the
+                                                 interrogator at the B box. The upper half, LOCAL, glows
        INTRG
                    RANGE
                    ERROR
                             RF PWR
                              MAX
-                                         APGU      amber to indicate maintenance control of the interrogator.
-                                        1    2
-                            RF PWR        AZ
+                                       APGU      amber to indicate maintenance control of the interrogator.
+                                      1    2
+                            RF PWR      AZ
           OFF      OVRD
-                              LO        ERROR
-                                                   NOTE: When both RMT indicators glow green the facility
+                              LO      ERROR
+                                                 NOTE: When both RMT indicators glow green the facility
       DEFRUIT
                   LCL LCL    IR / 1
-                                        TARGET
-                                         LOAD      B Box has control of the system. When both LCL indicators
+                                      TARGET
+                                       LOAD      B Box has control of the system. When both LCL indicators
         ON
                   RMT RMT    IR / 2
-                                          NO       glow amber the maintenance site has control of the system.
-                                        BACKUP
-                                                   When a split configuration is indicated (one RMT green and
-                                                   one LCL amber) neither site has complete control of the
-                                                   system.
+                                        NO       glow amber the maintenance site has control of the system.
+                                      BACKUP
+                                                 When a split configuration is indicated (one RMT green and
+                                                 one LCL amber) neither site has complete control of the
+                                                 system.
 
-RF POWER LO / MAX                                  Selects interrogator power output. Most USAF facilities will
-                                                   operate in the RF PWR LO (radio frequency power low)
+RF POWER LO / MAX                                Selects interrogator power output. Most USAF facilities will
+                                                 operate in the RF PWR LO (radio frequency power low)
        INTRG
-                   RANGE    RF
-                            RF PWR
-                               PWR       APGU      position. When the RF PWR LO switch is depressed, the
+                   RANGE    RF PWR
+                            RF PWR     APGU      position. When the RF PWR LO switch is depressed, the
                    ERROR     MAX
-                              MAX       1    2
-                            RF
+                              MAX     1    2
                             RF PWR
-                                PWR       AZ
-                                                   indicator glows amber. RF PWR MAX (radio frequency
+                            RF PWR      AZ
+                                                 indicator glows amber. RF PWR MAX (radio frequency
           OFF      OVRD
-                               LO
-                               LO       ERROR      power maximum) position will normally be used only in
+                              LO
+                              LO      ERROR      power maximum) position will normally be used only in
       DEFRUIT
                   LCL LCL    IR / 1
-                                        TARGET
-                                         LOAD
-                                                   emergency conditions and glows green when selected.
-        ON                                NO
+                                      TARGET
+                                       LOAD
+                                                 emergency conditions and glows green when selected.
+        ON                              NO
                   RMT RMT    IR / 2
-                                        BACKUP
+                                      BACKUP
 
 
 
 
-INTERROGATOR/RECEIVER                              Selects either of the two IR (interrogator / receiver) units
-SELECT                                             and indicates which is on-line. Depress the reserve IR if
-                                                   synthetic information is lost. When IR/1 is selected, IR/2 is
+INTERROGATOR/RECEIVER                            Selects either of the two IR (interrogator / receiver) units
+SELECT                                           and indicates which is on-line. Depress the reserve IR if
+                                                 synthetic information is lost. When IR/1 is selected, IR/2 is
           INTRG
                    RANGE
                    ERROR
                             RF PWR
                              MAX
-                                         APGU      in standby. When IR/2 is selected, IR/1 is in standby. Either
-                                        1    2
-                            RF PWR        AZ
-                                                   the top or bottom half of the button glows green to indicate
+                                       APGU      in standby. When IR/2 is selected, IR/1 is in standby. Either
+                                      1    2
+                            RF PWR      AZ
+                                                 the top or bottom half of the button glows green to indicate
           OFF      OVRD
-                              LO        ERROR
-                                                   the operational unit.
-                                        TARGET
-                  LCL LCL    IR
-                              IR / 11
-      DEFRUIT                            LOAD
-        ON                                NO
-                  RMT RMT    IR
-                              IR / 22
-                                        BACKUP
+                              LO      ERROR
+                                                 the operational unit.
+                                      TARGET
+                  LCL LCL    IR / 1
+                              IR 1
+      DEFRUIT                          LOAD
+        ON                              NO
+                  RMT RMT    IR / 2
+                              IR 2
+                                      BACKUP
 
 
 
 
-APGU / AZ ERROR INDICATOR                          *Selects either of the two Azimuth Pulse Generators,
-                                                   indicates which is on-line and also indicates detection of an
+APGU / AZ ERROR INDICATOR                        *Selects either of the two Azimuth Pulse Generators,
+                                                 indicates which is on-line and also indicates detection of an
           INTRG
-                   RANGE    RF PWR       APGU
-                                          APGU     AZ ERROR (azimuth error) in the processor. During normal
-                   ERROR                11    22
-                             MAX
-                                          AZ
-                                          AZ
-                                                   operation, the on-line APGU (azimuth pulse generator unit)
+                   RANGE    RF PWR     APGU
+                                        APGU     AZ ERROR (azimuth error) in the processor. During normal
+                   ERROR              1      2
+                             MAX       1
+                                        AZ
+                                        AZ
+                                            2
+                                                 operation, the on-line APGU (azimuth pulse generator unit)
                             RF PWR
           OFF      OVRD
-                              LO        ERROR
-                                        ERROR      APGU 1 or 2 selector will glow green. The off line APGU
-                  LCL LCL     IR / 1
-                                        TARGET
-                                         LOAD
-                                                   is selected by depressing the APGU 1/2 selector switch.
+                              LO      ERROR
+                                      ERROR      APGU 1 or 2 selector will glow green. The off line APGU
+                  LCL LCL    IR / 1
+                                      TARGET
+                                       LOAD
+                                                 is selected by depressing the APGU 1/2 selector switch.
       DEFRUIT
         ON
-                  RMT RMT     IR / 2
-                                          NO       When the processor detects that either numerics or
-                                        BACKUP
-                                                   symbology information being displayed on the radar
-                                                   indicator isn't in the proper azimuth, the bottom portion of
-                                                   the selector AZ ERROR glows red. To correct this problem,
-                                                   immediately activate the standby APGU. If the AZ ERROR
-                                                   light fails to go out, notify maintenance.
+                  RMT RMT    IR / 2
+                                        NO       When the processor detects that either numerics or
+                                      BACKUP
+                                                 symbology information being displayed on the radar
+                                                 indicator isn't in the proper azimuth, the bottom portion of
+                                                 the selector AZ ERROR glows red. To correct this problem,
+                                                 immediately activate the standby APGU. If the AZ ERROR
+                                                 light fails to go out, notify maintenance.
 
-                                                   NOTE: AZ ERROR will illuminate when the standby
-                                                   APGU is selected. It normally will extinguish within one
-                                                   rotation of the antenna.
-
-
+                                                 NOTE: AZ ERROR will illuminate when the standby
+                                                 APGU is selected. It normally will extinguish within one
+                                                 rotation of the antenna.
 
 
-                                                         16
+
+
+                                                       16
 AT-E-07                                                                                                    JULY 04
 
 
